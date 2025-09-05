@@ -1,0 +1,306 @@
+---
+title: "Preprocessing"
+date: "Last updated: `r Sys.Date()`"
+output: 
+  html_document:
+    theme: cosmo
+    toc: true
+    toc_float:
+      collapsed: false
+    df_print: paged
+    code-tools: true
+    code-fold: true
+editor_options: 
+  markdown: 
+    wrap: sentence #Wrap texts in code cells
+---
+
+```{r setup}
+library(tidyverse)
+library(tinytable)
+
+options(digits = 3)
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
+```
+
+# =========turns & trial info=========
+## Make the trial information dataframe and export it as a csv file
+```{r}
+df_turns = read_csv("data/all_turns_original.csv") %>% 
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial),
+         speaker = factor(speaker))
+
+
+### add the condition information
+df_participant = read_tsv("data/participant_info.txt") %>% 
+  mutate(pair = factor(as.integer(pair)),
+         condition = factor(condition))
+df_cond = df_participant %>% select(pair, condition) %>% distinct()
+
+
+### add the trial information from the presentation logs
+df_presentation = read_csv("data/presentation_logs_merged.csv") %>% 
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial),
+         duration_ms = total_duration_seconds * 1000,
+         duration_m = total_duration_seconds / 60) %>% 
+  select(-total_duration_seconds) %>% 
+  filter(pair != 48) %>% 
+  rename(begin = start_time_final,
+         end = end_time_final)
+
+df_trial = left_join(df_presentation, df_cond)
+
+
+### add the accuracy based on the transcript
+# manually add trial info
+df_turns[df_turns$pair == 7 & round(df_turns$end, 0) == 1401, ]$trial = factor("5_10")
+df_turns[df_turns$pair == 9 & round(df_turns$start, 0) == 1301, ]$trial = factor("4_14")
+df_turns[df_turns$pair == 26 & round(df_turns$start, 0) == 1035, ]$trial = factor("4_14")
+df_turns[df_turns$pair == 26 & round(df_turns$start, 0) == 1189, ]$trial = factor("5_13")
+df_turns[df_turns$pair == 26 & round(df_turns$start, 0) == 1222, ]$trial = factor("6_1")
+df_turns[df_turns$pair == 38 & round(df_turns$start, 0) == 1321, ]$trial = factor("5_11")
+df_turns[df_turns$pair == 12 & round(df_turns$start, 0) == 1509, ]$original_text = "*H*"
+
+df_responses = df_turns %>% 
+  filter(str_detect(original_text, "\\*")) %>% 
+  #add director information
+  left_join(select(df_trial, pair, trial, director)) %>%
+  #extract response like *A* and remove the asterisks
+  mutate(matcher = ifelse(director == "A", "B", "A"),
+         given_response = str_sub(str_extract(original_text, "\\*..?\\*"), 2, -2),
+         # clean the response (upper case and remove periods)
+         given_response = toupper(str_remove_all(given_response, "\\.")),
+         len_given_response = nchar(given_response)) %>%  
+  #take the responses only from the matcher
+  filter(speaker == matcher,
+         !is.na(given_response)) %>%
+  ##remove duplicates. if the matcher called out different responses, keep the last one
+  arrange(desc(turn_id)) %>% 
+  distinct(pair, trial, .keep_all = TRUE) %>% 
+  #rearrange the rows
+  arrange(turn_id) %>% 
+  #manually remove the response for pair 26 trial 3_15 because it was skipped
+  filter(!(pair == 26 & trial == "3_15"))
+
+# manually change the given answer for dyad 047, trial 6_1 (she corrected herself in the next trial)
+df_responses[df_responses$pair == 47 & df_responses$trial == "6_1", ]$given_response = "1"
+
+
+response_count = df_responses %>% 
+  group_by(pair) %>% 
+  summarize(count = n())
+
+
+### add accuracy to the trial dataframe
+df_trial = left_join(df_trial, 
+                     df_responses %>% select(pair, trial, given_response), 
+                     by = c("pair", "trial")) %>% 
+  mutate(accuracy = ifelse(given_response == correct_answer, 1, 0)) %>% 
+  # reorder the columns
+  select(pair:correct_answer, given_response, accuracy, everything())
+
+
+### compute number of words for each trial
+trial_pair = df_turns %>% 
+  group_by(pair, trial) %>% 
+  summarize(num_words = sum(num_words),
+            num_content_words = sum(num_content_words)) %>% 
+  complete(trial, fill = list(num_words = 0, num_content_words = 0)) %>%
+  ungroup() %>% 
+  filter(!is.na(trial))
+
+### compute number of lexical alignment per trial
+df_lex_align = read_csv("data/lexical_alignment.csv") %>% 
+  mutate(pair = as.factor(pair),
+         trial = as.factor(trial_2)) %>%
+  group_by(pair, trial) %>%
+  summarize(num_lex_align = n()) %>% 
+  complete(trial, fill = list(num_lex_align = 0)) %>%
+  ungroup()
+
+### compute number of gestures per trial
+df_gesture = read_csv("data/gestures_type.csv") %>% 
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial)) %>% 
+  group_by(pair, trial) %>% 
+  summarize(num_gestures = n(),
+            num_iconic_gestures = sum(iconic == 1),
+            num_deictic_gestures = sum(iconic == 0 & deictic == 1),
+            num_representational_gestures = sum(representational == 1),
+            num_other_gestures = sum(representational == 0)) %>%
+  complete(trial, fill = list(num_gestures = 0, num_iconic_gestures = 0,
+                               num_deictic_gestures = 0, num_representational_gestures = 0,
+                               num_other_gestures = 0)) %>%
+  ungroup()
+
+### compute number of gestural alignment per trial
+df_gestural_align = read_csv("data/gestural_alignment.csv") %>% 
+  # manually add pairs with no gestural alignment
+  bind_rows(., data.frame(pair = "42")) %>%
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial_2)) %>%
+  # manually add pairs with no gestural alignment
+  # bind_rows(., data.frame(pair = c("pair10", "pair18"), count = 0)) %>% 
+  group_by(pair, trial) %>%
+  summarize(num_gestural_align = n()) %>% 
+  complete(trial, fill = list(num_gestural_align = 0)) %>%
+  filter(!is.na(trial)) %>%
+  ungroup()
+
+### merge all the dataframes
+df_trial = left_join(df_trial, trial_pair) %>% 
+  left_join(df_lex_align) %>%
+  left_join(df_gesture) %>%
+  left_join(df_gestural_align) %>% 
+  select(c("pair", "condition", "round", "trial", 
+           "begin", "end", "duration_ms", "duration_m",
+           "director", "accuracy", "target", 
+           "num_words", "num_content_words", "num_lex_align", 
+           "num_gestures", "num_iconic_gestures", "num_deictic_gestures", 
+           "num_representational_gestures", "num_other_gestures", "num_gestural_align"))
+
+
+### export the files
+write_csv(df_cond, "data/condition_info.csv")
+write_csv(df_trial, "data/trial_info.csv")
+```
+
+Given responses are missing for 26 trials because (i) participants didn't read out the Fribble numbers/letters for 22 trials (026: 19 odd numbered trials for from 1_1 to 3-5, 031:1_3, 032:1_1, 036_1_1), and (ii) 4 trials were skipped (3 from pair 23 and 1 from pair 26 [3_15]).
+
+
+## Descriptive statistics
+```{r}
+### participants
+df_participant_used = df_participant %>% 
+  filter(used == "Y") %>% 
+  mutate(condition = factor(condition, levels = c("Sym", "Asym", "AO")))
+
+### overall participants info
+mean_age = mean(df_participant_used$age)
+sd_age = sd(df_participant_used$age)
+range_age = paste(range(df_participant_used$age)[1], range(df_participant_used$age)[2], sep = " - ")
+n_participants = nrow(df_participant_used)
+n_female = nrow(filter(df_participant_used, gender == "F"))
+n_male = nrow(filter(df_participant_used, gender == "M"))
+
+data.frame(mean_age, sd_age, range_age, n_participants, n_female, n_male)
+
+
+### participants info per condition
+descriptive_cond = df_participant_used %>% 
+  group_by(condition) %>% 
+  summarize(mean_age = mean(age),
+            sd_age = sd(age),
+            range_age = paste0(range(age)[1], " - ", range(age)[2]),
+            n_participants = n(),
+            n_female = sum(gender == "F", na.rm = TRUE),
+            n_male = sum(gender == "M", na.rm = TRUE))
+
+descriptive_cond
+
+### dyads
+# make a dataframe with dyad information (for each pair, gender & age of speaker 1 & 2)
+df_dyad = df_participant_used %>% 
+  select(-notes) %>%
+  pivot_wider(names_from = speaker, 
+              values_from = c("gender", "age")) %>% 
+  mutate(mixed_gender = ifelse(gender_A == gender_B, "N", "Y"),
+         mixed_gender = ifelse(is.na(mixed_gender), "Y", mixed_gender),
+         gender_dyad = paste0(gender_A, "_", gender_B))
+
+df_dyad %>% 
+  group_by(condition, mixed_gender) %>% 
+  summarize(n = n())
+
+df_dyad %>% 
+  group_by(condition, mixed_gender, gender_dyad) %>% 
+  summarize(n = n())
+
+
+
+### total num words
+total_words = sum(df_trial$num_words)
+total_content_words = sum(df_trial$num_content_words)
+
+data.frame(total_words, total_content_words)
+
+
+### num words across conditions
+df_trial %>% 
+  group_by(condition) %>% 
+  summarize(mean_words = mean(num_words),
+            sd_words = sd(num_words),
+            lci_words = mean_words - 1.96 * sd_words / sqrt(n()),
+            uci_words = mean_words + 1.96 * sd_words / sqrt(n()),
+            ## content words
+            mean_content_words = mean(num_content_words),
+            sd_content_words = sd(num_content_words),
+            lci_content_words = mean_content_words - 1.96 * sd_content_words / sqrt(n()),
+            uci_content_words = mean_content_words + 1.96 * sd_content_words / sqrt(n()))
+
+
+### trial duration
+dur_by_pair = df_trial %>% 
+  group_by(pair, condition, round) %>% 
+  summarize(duration_m = sum(duration_m))
+
+dur_by_pair %>% 
+  group_by(pair) %>%
+  summarize(duration_m = sum(duration_m)) %>%
+  summarize(mean = mean(duration_m),
+            sd = sd(duration_m),
+            lci = mean - 1.96 * sd / sqrt(n()),
+            uci = mean + 1.96 * sd / sqrt(n()),
+            min = min(duration_m),
+            max = max(duration_m))
+
+dur_by_pair %>% 
+  group_by(pair, condition) %>%
+  summarize(duration_m = sum(duration_m)) %>%
+  group_by(condition) %>% 
+  summarize(mean = mean(duration_m),
+            sd = sd(duration_m),
+            lci = mean - 1.96 * sd / sqrt(n()),
+            uci = mean + 1.96 * sd / sqrt(n()),
+            min = min(duration_m),
+            max = max(duration_m))
+
+dur_by_pair %>% 
+  group_by(round) %>% 
+  summarize(mean = mean(duration_m),
+            sd = sd(duration_m),
+            lci = mean - 1.96 * sd / sqrt(n()),
+            uci = mean + 1.96 * sd / sqrt(n()),
+            min = min(duration_m),
+            max = max(duration_m))
+
+dur_by_pair %>% 
+  group_by(condition, round) %>% 
+  summarize(mean = mean(duration_m),
+            sd = sd(duration_m),
+            lci = mean - 1.96 * sd / sqrt(n()),
+            uci = mean + 1.96 * sd / sqrt(n()),
+            min = min(duration_m),
+            max = max(duration_m))
+
+
+### accuracy and duration across conditions
+df_trial %>% 
+  group_by(condition) %>% 
+  summarize(n_correct = sum(accuracy, na.rm = TRUE),
+            n_incorrect = sum(!accuracy, na.rm = TRUE),
+            mean_acc = mean(accuracy, na.rm = TRUE),
+            sd_acc = sd(accuracy, na.rm = TRUE),
+            lci_acc = mean_acc - 1.96 * sd_acc / sqrt(n()),
+            uci_acc = mean_acc + 1.96 * sd_acc / sqrt(n()),
+            mean_dur_m = mean(duration_m),
+            sd_dur_m = sd(duration_m),
+            lci_dur_m = mean_dur_m - 1.96 * sd_dur_m / sqrt(n()),
+            uci_dur_m = mean_dur_m + 1.96 * sd_dur_m / sqrt(n()))
+```
+
+
+
+

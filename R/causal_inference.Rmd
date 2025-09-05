@@ -1,0 +1,263 @@
+---
+title: "Causal inference"
+date: "Last updated on `r Sys.Date()`"
+output: 
+  html_document:
+    theme: cosmo
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: true
+    number_sections: true
+    df_print: paged
+    code-tools: true
+    code-fold: true
+    code_folding: hide #hide the code section initially
+editor_options: 
+  markdown: 
+    wrap: sentence #Wrap texts in code cells
+---
+
+```{r setup, echo=T, results='hide', message=F, warning=F}
+library(DiagrammeR) #grViz for causal diagrams
+library(dagitty)    #for DAGs
+library(ggdag)      #for DAGs
+library(tidyverse)
+
+
+### Set global options
+options(digits = 3) # set the default number of digits to 3 
+
+
+### Rmd settings
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
+```
+
+# Introduction
+In this module, we will examine a few case studies to understand the concept of causal inference. In particular, we focus on understanding (i) how to correctly estimate the causal effect of the predictor variable on the response variable, and (ii) whether we can infer the direction of causality from observational data.
+
+To explore these questions, we will simulate data. The advantage of simulating data is that we know the true causal relationships between the variables. This allows us to compare the estimated causal effects with the true causal effects.
+
+# Case study 1: A confounded relationship
+In this case study, we will estimate the correct causal effect of a predictor variable on a response variable for the following DAG:
+
+```{r}
+dag <- dagitty('dag {
+  X [pos="-1,0"]
+  Y [pos="1,0"]
+  Z [pos="0, 1"]
+  Z -> X
+  Z -> Y
+}')
+
+ggdag(dag) +
+  theme_dag() +
+  annotate("text", x = -0.6, y = 0.5, label = "100") +
+  annotate("text", x = 0.6, y = 0.5, label = "200")
+
+adjustmentSets(dag, exposure = "X", outcome = "Y")
+```
+
+In this causal diagram, $Z$ is a confounder that affects both $X$ and $Y$. The true causal effect of $X$ on $Y$ is 0. To correctly estimate the causal effect of $X$ on $Y$, we need to adjust for the confounder $Z$. We will check cases where we do and do not adjust for the confounder $Z$ and estimate the causal effect of $X$ on $Y$.
+
+Let's simulate data and estimate the causal effect of $X$ on $Y$.
+
+## Simulate data
+```{r}
+set.seed(123)
+
+### set the effect sizes
+beta_zx = 100
+beta_zy = 200
+
+### simulate data
+n = 10000
+z = rbinom(n, 1, 0.6)
+x = beta_zx * z + rnorm(n, 500, 100)
+y = beta_zy * z + rnorm(n, 500, 100)
+
+data = data.frame(x = x, y = y, z = z)
+data
+```
+
+## Estimate the confounded causal effect
+```{r}
+m = lm(y ~ x, data = data)
+summary(m)
+```
+
+This confounded model estimates a significant positive association between $X$ and $Y$, when we set the causal effect of $X$ on $Y$ and vice verse to be 0. This shows that the confounded model does not correctly estimate the causal effect of $X$ on $Y$. 
+
+## Estimate the causal effect of $Z$ on $X$ and $Y$
+```{r}
+mx = lm(x ~ z, data = data)
+summary(mx)
+
+my = lm(y ~ z, data = data)
+summary(my)
+```
+
+Both models correctly estimate the causal effect of $Z$ on $X$ and $Y$.
+
+## Estimate the causal effect of $X$ on $Y$ adjusting for $Z$
+```{r}
+m = lm(y ~ x + z, data = data)
+summary(m)
+```
+Now, the model with the minimum adjustment set correctly estimates the causal effect of $X$ on $Y$ to be near 0.
+
+*********************************************************
+
+# Case study 2: Determining the direction of causality
+In this case study, we will examine whether we can infer the direction of causality from observational data. We will consider the following DAG:
+
+```{r}
+dag <- dagitty('dag {
+  X [pos="-1,0"]
+  Y [pos="1,0"]
+  X -> Y
+}')
+
+ggdag(dag) +
+  theme_dag() +
+  scale_y_continuous(limits = c(-1, 1)) +
+  annotate("text", x = 0, y = 0.1, label = "0.5")
+```
+
+In this causal diagram, $X$ causes $Y$. We will estimate the causal effect of $X$ on $Y$ and $Y$ on $X$ and compare the results.
+
+## Simulate data
+```{r}
+set.seed(123)
+
+### set the effect sizes
+beta_xy = 0.5
+
+### simulate data
+n = 10000
+x = rnorm(n, 500, 100)
+y = beta_xy * x + rnorm(n, 500, 100)
+
+data = data.frame(x = x, y = y)
+data
+```
+
+## Estimate the causal effect of $X$ on $Y$
+```{r}
+m = lm(y ~ x, data = data)
+summary(m)
+```
+
+The model correctly estimated the causal effect of $X$ on $Y$ to be 0.5.
+
+Next, we will check the causal effect of $Y$ on $X$, which should be 0.
+
+## Estimate the causal effect of $Y$ on $X$
+```{r}
+m = lm(x ~ y, data = data)
+summary(m)
+```
+
+The model incorrectly estimated the causal effect of $Y$ on $X$ to be 0.4, when the true causal effect is 0. This shows that we cannot infer the direction of causality from observational data, at least with regression models.
+
+We will also check if this holds when we adjust for the confounder $Z$.
+
+*********************************************************
+
+# Case study 3: Determining the direction of causality with a confounder
+In this case study, we will examine whether we can infer the direction of causality from observational data when there is a confounder. We will consider the following DAG:
+
+```{r}
+dag <- dagitty('dag {
+  X [pos="-1,0"]
+  Y [pos="1,0"]
+  Z [pos="0, 1"]
+  X -> Y
+  Z -> X
+  Z -> Y
+}')
+
+ggdag(dag) +
+  theme_dag() +
+  annotate("text", x = -0.6, y = 0.5, label = "100") +
+  annotate("text", x = 0.6, y = 0.5, label = "200") +
+  annotate("text", x = 0, y = 0.05, label = "0.5")
+```
+
+## Simulate data
+```{r}
+set.seed(123)
+
+### set the effect sizes
+beta_zx = 100
+beta_zy = 200
+beta_xy = 0.5
+
+### simulate data
+n = 10000
+z = rbinom(n, 1, 0.6)
+x = beta_zx * z + rnorm(n, 500, 100)
+y = beta_zy * z + beta_xy * x + rnorm(n, 500, 100)
+
+data = data.frame(x = x, y = y, z = z)
+data
+```
+
+## Estimate the causal effect of $X$ on $Y$
+```{r}
+m = lm(y ~ x + z, data = data)
+summary(m)
+```
+
+The model correctly estimated the causal effect of $X$ on $Y$ to be 0.5 and of $Z$ on $Y$ to be 200.
+
+Next, we will check the causal effect of $Y$ on $X$, which should be 0.
+
+## Estimate the causal effect of $Y$ on $X$
+```{r}
+m = lm(x ~ z, data = data)
+summary(m)
+
+m = lm(x ~ y, data = data)
+summary(m)
+
+m = lm(x ~ y + z, data = data)
+summary(m)
+```
+
+Although the first model without y correctly estimated the causal effect of $Z$ on $X$, the second model with y incorrectly estimated the causal effect of $Y$ on $X$ to be 0.4, when the true causal effect is 0, as well as of $Z$ on $X$, which should be 100. This shows that we cannot infer the direction of causality from observational data, even when adjusting for the confounder $Z$. In addition, it shows that conditioning on a collider can introduce bias in the causal effect estimates.
+
+
+<br>
+
+***
+
+# Case study 4: Effect of using the same variable for calculating rate
+In this case study, we explore whether calculating the rates using the same variable introduces spurious correlation.
+
+## Simulate data
+```{r}
+set.seed(123)
+
+### simulate data
+n = 10000
+x = rnorm(n, 500, 100)
+y = rnorm(n, 500, 100)
+z = rnorm(n, 500, 100)
+x_rate = x / z
+y_rate = y / z
+
+data = data.frame(x = x, y = y, z = z, 
+                  x_rate = x_rate, y_rate = y_rate)
+data
+```
+
+## Check the correlation
+```{r}
+cor(data$x, data$y)
+cor(data$x_rate, data$y_rate)
+cor(data$x, data$y_rate)
+```
+
+This shows that calculating rates based on the same variable leads to spurious correlation.
+

@@ -1,0 +1,97 @@
+date	pair	condition	speaker	gender	age	used	notes
+4/24/2023	001	Sym	A	F	26	Y	
+4/24/2023	001	Sym	B	F	23	Y	
+5/2/2023	002	Asym	A	F	22	Y	"The camera was on for both speakers at first; the experimenter turned it off later and then told speaker A that she cannot see speaker B"
+5/2/2023	002	Asym	B	M	20	Y	Speaker B didn't know that speaker A cannot see him at first and then they had a discussion about it during the task
+5/2/2023	003	AO	A	F	25	Y	
+5/2/2023	003	AO	B	F	23	Y	
+5/23/2023	004	Sym	A	F	20	N	"The audio wasn't recorded for speaker A; we need to remove this pair from analysis"
+5/23/2023	004	Sym	B	F	21	N	
+5/25/2023	005	Sym	A	M	22	Y	Sym condition again to replace the pair 004
+5/25/2023	005	Sym	B	F	25	Y	
+5/30/2023	006	Asym	A	F	21	Y	
+5/30/2023	006	Asym	B	F	26	Y	
+6/2/2023	007	AO	A	F	29	Y	
+6/2/2023	007	AO	B	F	23	Y	
+6/19/2023	008	Sym	A	M	22	Y	
+6/19/2023	008	Sym	B	F	24	Y	
+6/28/2023	009	Asym	A	F	20	Y	
+6/28/2023	009	Asym	B	F	21	Y	
+6/29/2023	010	AO	A	F	25	Y	
+6/29/2023	010	AO	B	F	28	Y	
+7/5/2023	011	Sym	A	F	20	Y	
+7/5/2023	011	Sym	B	F	23	Y	We were interrupted during naming task 1, by another researcher who thought he had registered the room. 
+7/12/2023	012	Asym	A	F	22	Y	
+7/12/2023	012	Asym	B	F	23	Y	
+7/12/2023	013	AO	A	F	20	Y	
+7/12/2023	013	AO	B	M	21	Y	
+7/14/2023	014	Sym	A	F	24	N	List 5 contained target Fribbles that appeared multiple times consecutively for the same speaker
+7/14/2023	014	Sym	B	F	24	N	We decided to remove this pair as same Fribbles appearing for the same speaker in a row makes analysis difficult (one speaker almost always a director for a Fribble)
+7/24/2023	015	Sym	A	F	31	Y	
+7/24/2023	015	Sym	B	M	22	Y	
+8/29/2023	016	Asym	A	F	23	Y	"She had some eye conditions; pupil of the right eye was big because one eye has to rest. But she can see Fribbles without any problems"
+8/29/2023	016	Asym	B	F	24	Y	
+8/31/2023	017	AO	A	F	27	Y	"They were having a small chat in the waiting room (""are you waiting for the zoom experiment as well?""); But they didn't know each other"
+8/31/2023	017	AO	B	F	23	Y	the experimenter unmuted the microphone after starting the first trial, leading to a longer trial duration
+9/11/2023	018	Sym	A	F	28	Y	She was using more than 3 words in the naming task
+9/11/2023	018	Sym	B	F	21	Y	
+9/18/2023	019	Asym	A	F	19	Y	
+9/18/2023	019	Asym	B	F	22	Y	
+9/20/2023	020	AO	A	F	26	Y	
+9/20/2023	020	AO	B	F	21	Y	
+9/25/2023	021	Sym	A	F	22	Y	
+9/25/2023	021	Sym	B	F	18	Y	
+9/26/2023	022	Asym	A		21	Y	
+9/26/2023	022	Asym	B	F	22	Y	
+9/27/2023	023	AO	A	F	22	Y	
+9/27/2023	023	AO	B	M	19	Y	"He might have pressed a button when he was a director (R1 or 2?); they skipped two trials because they each pressed the button"
+9/28/2023	024	Sym	A	M	20	Y	
+9/28/2023	024	Sym	B	F	18	Y	
+9/28/2023	025	Asym	A	F	26	Y	
+9/28/2023	025	Asym	B	F	24	Y	
+10/9/2023	026	AO	A	M	30	Y	
+10/9/2023	026	AO	B	F	20	Y	
+10/16/2023	027	Sym	A	F	27	Y	Sensitive hearing: put down the volume from 50 to 30
+10/16/2023	027	Sym	B	F	19	Y	
+10/23/2023	028	Asym	A	F	25	Y	Accidentally started the first naming/features in English. Aborted and restarted the task in Dutch
+10/23/2023	028	Asym	B	F	24	Y	
+10/25/2023	029	AO	A	F	21	Y	
+10/25/2023	029	AO	B	M	26	Y	
+10/30/2023	030	Sym	A	M	23	Y	
+10/30/2023	030	Sym	B	M	21	Y	
+10/31/2023	031	Asym	A	F	21	Y	"They were having a small chat in the waiting room; But they didn't know each other"
+10/31/2023	031	Asym	B	M	18	Y	
+1/17/2024	032	AO	A	F	32	Y	
+1/17/2024	032	AO	B	F	23	Y	
+1/24/2024	033	Sym	A	F	18	Y	
+1/24/2024	033	Sym	B	F	23	Y	
+1/31/2024	034	Asym	A	F	24	Y	
+1/31/2024	034	Asym	B	F	20	Y	
+2/6/2024	035	AO	A	F	19	Y	
+2/6/2024	035	AO	B	F	21	Y	
+2/20/2024	036	Sym	A	F	20	Y	
+2/20/2024	036	Sym	B	F	27	Y	
+2/21/2024	037	Asym	A	F	24	Y	
+2/21/2024	037	Asym	B	F	19	Y	
+2/27/2024	038	AO	A	F	24	Y	She said the bottom screen was too low, so we had to raise the desk. Also she was standing closer to the desk, which might affect the kinematic analysis
+2/27/2024	038	AO	B	F	21	Y	
+3/5/2024	039	Sym	A	M	23	Y	
+3/5/2024	039	Sym	B	F	22	Y	
+3/6/2024	040	Asym	A	F	19	Y	
+3/6/2024	040	Asym	B	F	24	Y	
+3/26/2024	041	AO	A	F	20	Y	
+3/26/2024	041	AO	B	M	22	Y	
+4/2/2024	042	Sym	A	F	27	Y	
+4/2/2024	042	Sym	B	M	23	Y	
+4/10/2024	043	Asym	A	F	20	Y	
+4/10/2024	043	Asym	B	F	20	Y	
+5/8/2024	044	AO	A	F	24	Y	
+5/8/2024	044	AO	B	F	20	Y	"Someone tried to come into the room during the Zoom conversation; the participant briefly looked at the door but continued talking"
+5/14/2024	045	Sym	A	M	33	Y	
+5/14/2024	045	Sym	B	F	21	Y	
+5/15/2024	046	Asym	A	F	20	Y	
+5/15/2024	046	Asym	B	F	25	Y	
+5/22/2024	047	AO	A	F	18	Y	
+5/22/2024	047	AO	B	F	22	Y	
+5/29/2024	048	Sym	A	F	23	N	
+5/29/2024	048	Sym	B	F	20	N	
