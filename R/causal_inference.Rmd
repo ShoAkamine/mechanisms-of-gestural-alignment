@@ -11,6 +11,7 @@ output:
     code-tools: true
     code-fold: true
   github_document:
+    df_print: paged
 editor_options: 
   markdown: 
     wrap: sentence #Wrap texts in code cells
