@@ -137,7 +137,7 @@ x = rnorm(n, 500, 100)
 y = beta_xy * x + rnorm(n, 500, 100)
 
 data = data.frame(x = x, y = y)
-data
+head(data)
 ```
 
 ## Estimate the causal effect of $X$ on $Y$
@@ -198,7 +198,7 @@ x = beta_zx * z + rnorm(n, 500, 100)
 y = beta_zy * z + beta_xy * x + rnorm(n, 500, 100)
 
 data = data.frame(x = x, y = y, z = z)
-data
+head(data)
 ```
 
 ## Estimate the causal effect of $X$ on $Y$
@@ -247,7 +247,7 @@ y_rate = y / z
 
 data = data.frame(x = x, y = y, z = z, 
                   x_rate = x_rate, y_rate = y_rate)
-data
+head(data)
 ```
 
 ## Check the correlation
