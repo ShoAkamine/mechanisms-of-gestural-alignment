@@ -1,0 +1,2513 @@
+---
+title: "gestural_alignment_rate"
+date: "Last updated: `r Sys.Date()`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: pygments
+    toc: true
+    toc_float: true
+    df_print: paged
+    code-tools: true
+    code-fold: true
+  github_document:
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: sentence #Wrap texts in code cells
+---
+
+```{r setup, echo=T, results='hide', message=F, warning=F}
+library(tidyverse)
+library(plotrix)    #std.error
+library(hypr)       #for generating contrast coding
+library(ggthemes)
+library(ggh4x)
+library(dagitty)    #dagitty for causal diagrams
+library(DiagrammeR) #grViz for causal diagrams
+library(DiagrammeRsvg)
+library(rsvg)
+library(plotly)     #ggplotly for interactive plots
+library(brms)       #bayesian regression
+library(bayestestR) #p_direction, hdi
+library(tidybayes)  #add_epred_draws
+library(emmeans)
+library(doParallel) #set the number of cores
+library(ppcor)      #partial correlation
+library(svglite)
+
+
+### Set global options
+options(digits = 3) # set the default number of digits to 3
+cores = as.integer(detectCores(logical = FALSE) * 0.8) # set the number of cores to use
+registerDoParallel(cores=cores) # register the number of cores to use for parallel processing
+options(mc.cores = cores)
+options(brms.backend = "cmdstanr")  #this will speed up the model fitting
+
+### MCMC options
+niter = 20000  #number of iterations
+nwu = 2000 #number of warmups
+
+### Rmd settings
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, fig.path="figures_md/speakerB/gest_alignment/")
+```
+
+```{r functions, echo=T, results='hide', message=F, warning=F}
+### Custom functions
+
+########### pp_check_each_round ############
+pp_check_each_round <- function(m, data, round_info) {
+  df_sub = filter(data, round == round_info)
+  p = pp_check(m,
+               type = "bars",
+               ndraws = 100,
+               newdata = df_sub) +
+    coord_cartesian(xlim = c(0, 10)) +
+    ggtitle(round_info)
+  return(p)
+}
+
+
+########### pp_check_each_condition ############
+pp_check_each_condition <- function(m, data, condition_info) {
+  df_sub = filter(data, condition == condition_info)
+  p = pp_check(m,
+               type = "bars",
+               ndraws = 100,
+               newdata = df_sub) +
+    coord_cartesian(xlim = c(0, 10)) +
+    ggtitle(condition_info)
+  return(p)
+}
+
+
+########### plot_posterior ############
+plot_posterior <- function(model, model2=NA, model3=NA, 
+                           interaction=FALSE, include_intercept=FALSE, 
+                           xlim_cond=1.5, xlim_round=2, xlim_lex=0.4){
+  ### extract the posterior draws
+  posterior_beta1 <- model %>% 
+    gather_draws(`b_.*`, regex = TRUE) %>% 
+    mutate(intercept = str_detect(.variable, "Intercept"),
+           component = ifelse(str_detect(.variable, ":"), "Interaction", 
+                              ifelse(str_detect(.variable, "round"), "Round", 
+                                     ifelse(str_detect(.variable, "Intercept"), "Intercept",
+                                            ifelse(str_detect(.variable, "lex_align"), "N. lex align",
+                                                   "Visibility")))))
+  
+  if (length(model2) == 1){ #if model2 is NA 
+    posterior_beta = posterior_beta1
+  } else {
+    posterior_beta1 <- posterior_beta1 %>% 
+      filter(.variable != "b_lex_align_c")
+    posterior_beta2 <- model2 %>% 
+      gather_draws(`b_.*`, regex = TRUE) %>% 
+      filter(.variable == "b_lex_align_c") %>% 
+      mutate(component = "N. lex align")
+    posterior_beta3 <- model3 %>% 
+      gather_draws(`b_.*`, regex = TRUE) %>% 
+      filter(.variable == "b_condition_sumAO_Sym") %>% 
+      mutate(component = "Visibility")
+    posterior_beta = rbind(posterior_beta1, posterior_beta2, posterior_beta3)
+  }
+  
+  posterior_beta = posterior_beta %>% 
+    mutate(.variable = recode(.variable, 
+                              "b_Intercept" = "Intercept",
+                              "b_conditionAsymAV" = "SymAV--AsymAV",
+                              "b_conditionAO" = "SymAV--AO",
+                              "b_conditionAsym_Sym" = "AsymAV--SymAV",
+                              "b_conditionAO_Asym" = "AO--AsymAV",
+                              "b_condition_sumAO_Sym" = "AO--SymAV",
+                              "b_lex_align_c" = "N. lex align",
+                              "b_round_c" = "Centered round",
+                              "b_log_round_c" = "Centered log(round)",
+                              "b_roundR12" = "R1--R2",
+                              "b_roundR23" = "R2--R3",
+                              "b_roundR34" = "R3--R4",
+                              "b_roundR45" = "R4--R5",
+                              "b_roundR56" = "R5--R6",
+                              "b_conditionAsymAV:round1" = "SymAV--AsymAV: R1--R2",
+                              "b_conditionAsymAV:round2" = "SymAV--AsymAV: R2--R3",
+                              "b_conditionAsymAV:round3" = "SymAV--AsymAV: R3--R4",
+                              "b_conditionAsymAV:round4" = "SymAV--AsymAV: R4--R5",
+                              "b_conditionAsymAV:round5" = "SymAV--AsymAV: R5--R6",
+                              "b_conditionAO:round1" = "SymAV--AO: R1--R2",
+                              "b_conditionAO:round2" = "SymAV--AO: R2--R3",
+                              "b_conditionAO:round3" = "SymAV--AO: R3--R4",
+                              "b_conditionAO:round4" = "SymAV--AO: R4--R5",
+                              "b_conditionAO:round5" = "SymAV--AO: R5--R6",
+                              "b_conditionAsym_Sym:round_c" = "Centered round: Asym--Sym",
+                              "b_conditionAO_Sym:round_c" = "Centered round: AO--Sym",
+                              "b_conditionAO_Asym:round_c" = "Centered round: AO--Asym",
+                              "b_conditionAsym_Sym:log_round_c" = "Centered log(round): Asym--Sym",
+                              "b_conditionAO_Sym:log_round_c" = "Centered log(round): AO--Sym",
+                              "b_conditionAO_Asym:log_round_c" = "Centered log(round): AO--Asym"),
+           .variable = factor(.variable,
+                              levels = c("AO--SymAV", "AO--AsymAV", "AsymAV--SymAV", 
+                                         "R1--R2", "R2--R3", "R3--R4", "R4--R5", "R5--R6",
+                                         "N. lex align")),
+           component = factor(component, 
+                              levels = c("Intercept", "Visibility", "Round", 
+                                         "Interaction", "N. lex align")))
+  
+  if (include_intercept == F){
+    posterior_beta = posterior_beta %>% filter(component != "Intercept")
+  }
+  ### change variables if only main effects are plotted
+  if (interaction == F) {
+    posterior_beta = filter(posterior_beta, !str_detect(.variable, ":"))
+    fill_manual_values = c("steelblue", "steelblue", "steelblue")
+  } else{
+    fill_manual_values = c("steelblue", "steelblue", "steelblue", "steelblue")
+  }
+  
+  
+  ### plot the posterior distributions
+  p_posterior = ggplot(posterior_beta, 
+                       aes(x = .value, y = fct_rev(.variable),
+                           fill = component)) +
+    geom_vline(xintercept = 0, size = 1) +
+    stat_halfeye(aes(slab_alpha = intercept),
+                 normalize = "panels", 
+                 slab_alpha = .5,
+                 .width = c(0.89, 0.95), 
+                 point_interval = "median_hdi") +
+    scale_fill_manual(values = fill_manual_values) +
+    scale_slab_alpha_discrete(range = c(0.8, 0.4)) +
+    guides(fill = "none", slab_alpha = "none") +
+    labs(x = "Coefficient", y = "Effect") +
+    theme_clean(base_size = 15) +
+    theme(axis.text.x = element_text(colour = "black", size = 14),
+          axis.text.y = element_text(colour = "black", size = 14),
+          axis.title = element_text(size = 15, face = 'bold'),
+          axis.title.x = element_text(vjust = -2),
+          axis.title.y = element_text(vjust = 2),
+          legend.position = "none",
+          strip.text = element_text(size = 15, face = 'bold'),
+          strip.background = element_blank(),
+          panel.grid.major.x = element_line(color = "grey90", 
+                                            linetype = "solid",
+                                            size = 0.5),
+          panel.grid.major.y = element_line(color = "grey90", 
+                                            linetype = "solid",
+                                            size = 0.5),
+          plot.background = element_blank(),
+          plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+    facet_wrap(vars(component), ncol = 3, scales = "free") + 
+    facetted_pos_scales(
+      x = list(
+        scale_x_continuous(limits = c(-xlim_cond, xlim_cond)),
+        scale_x_continuous(limits = c(-xlim_round, xlim_round)),
+        scale_x_continuous(limits = c(-xlim_lex, xlim_lex))))
+  
+  return(p_posterior)
+}
+
+
+########### pp_update_plot ############
+pp_update_plot <- function(post_sample, model_type="nb", interaction=TRUE){
+  sum = ifelse("b_condition_sumAO_Sym" %in% colnames(post_sample), T, F)
+  round_bd = ifelse("b_roundR12" %in% colnames(post_sample), T, F)
+  
+  intercept = ggplot(post_sample) +
+    geom_density(aes(prior_Intercept), fill="steelblue", color="black",alpha=0.6) +
+    geom_density(aes(b_Intercept), fill="#FC4E07", color="black",alpha=0.6) + 
+    xlab('Intercept') +
+    theme_classic()
+  
+  ### Visibility condition
+  if (sum == F){
+    cond1 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_conditionAsym_Sym), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Asym--Sym') +
+      theme_classic()
+    cond2 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_conditionAO_Asym), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('AO--Asym') +
+      theme_classic()
+  } else {
+    cond1 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_condition_sumAO_Sym), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('AO--Sym') +
+      theme_classic()
+    cond2 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_condition_sumAsym_Sym), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Asym--Sym') +
+      theme_classic()
+  }
+  
+  ### Round
+  if (interaction) {
+    if (round_bd){
+      r1 = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(b_roundR12), fill="#FC4E07", color="black",alpha=0.6) + 
+        xlab('R1--R2') +
+        theme_classic()
+      r2 = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(b_roundR23), fill="#FC4E07", color="black",alpha=0.6) + 
+        xlab('R2--R3') +
+        theme_classic()
+      r3 = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(b_roundR34), fill="#FC4E07", color="black",alpha=0.6) + 
+        xlab('R3--R4') +
+        theme_classic()
+      r4 = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(b_roundR45), fill="#FC4E07", color="black",alpha=0.6) + 
+        xlab('R4--R5') +
+        theme_classic()
+      r5 = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(b_roundR56), fill="#FC4E07", color="black",alpha=0.6) + 
+        xlab('R5--R6') +
+        theme_classic()
+    } else {
+      if ("b_round_c" %in% colnames(post_sample)) {
+        round = ggplot(post_sample) +
+          geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+          geom_density(aes(b_round_c), fill="#FC4E07", color="black",alpha=0.6) + 
+          xlab('Centered round') +
+          theme_classic()
+        if (sum == F){
+          cond1_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_conditionAsym_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered Round: Asym--Sym') +
+            theme_classic()
+          cond2_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_conditionAO_Asym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered Round: AO--Asym') +
+            theme_classic()
+        } else {
+          cond1_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_condition_sumAO_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered Round: AO--Sym') +
+            theme_classic()
+          cond2_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_condition_sumAsym_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered Round: Asym--Sym') +
+            theme_classic()
+        }
+      } else {
+        round = ggplot(post_sample) +
+          geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+          geom_density(aes(b_log_round_c), fill="#FC4E07", color="black",alpha=0.6) + 
+          xlab('Centered log(round)') +
+          theme_classic()
+        if (sum == F){
+          cond1_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_conditionAsym_Sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered log(round): Asym--Sym') +
+            theme_classic()
+          cond2_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_conditionAO_Asym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered log(round): AO--Asym') +
+            theme_classic()
+        } else {
+          cond1_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_condition_sumAO_Sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered log(round): AO--Sym') +
+            theme_classic()
+          cond2_round = ggplot(post_sample) +
+            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+            geom_density(aes(`b_condition_sumAsym_Sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+            xlab('Centered log(round): Asym--Sym') +
+            theme_classic()
+        }
+      }
+    }
+  }
+  
+  if (model_type == "nb"){
+    shape = ggplot(post_sample) +
+      geom_density(aes(prior_shape), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(shape), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Shape') +
+      scale_x_continuous(limits = c(0, 10)) +
+      theme_classic()} 
+  else if (model_type == "zinb") {
+    shape = ggplot(post_sample) +
+      geom_density(aes(prior_shape), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(shape), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Shape') +
+      scale_x_continuous(limits = c(0, 10)) +
+      theme_classic()
+    zi = ggplot(post_sample) +
+      geom_density(aes(prior_zi), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(zi), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Zero-inflation') +
+      theme_classic()} 
+  else if (model_type == "zibt"){
+    phi = ggplot(post_sample) +
+      geom_density(aes(prior_phi), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(phi), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Precision') +
+      theme_classic()
+    zoi = ggplot(post_sample) +
+      geom_density(aes(prior_zoi), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(zoi), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Zero-inflation') +
+      theme_classic()
+    coi = ggplot(post_sample) +
+      geom_density(aes(prior_coi), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(coi), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('One-inflation') +
+      theme_classic()
+  }
+  
+  ### display the plots
+  if (interaction==F){
+    if (model_type=="nb"){
+      gridExtra::grid.arrange(intercept, cond1, cond2, shape, ncol=2)} 
+    else if (model_type=="zinb"){
+      gridExtra::grid.arrange(intercept, cond1, cond2, shape, zi, ncol=3)} 
+    else if (model_type=="zibt"){
+      gridExtra::grid.arrange(intercept, cond1, cond2, phi, zoi, coi, ncol=3)
+    }
+  } else {
+    if (round_bd == T){
+      if (model_type=="nb"){
+        gridExtra::grid.arrange(intercept, cond1, cond2, shape, ncol=3)} 
+      else if (model_type=="zinb"){
+        gridExtra::grid.arrange(intercept, cond1, cond2, shape, zi, ncol=3)} 
+      else if (model_type=="zibt"){
+        gridExtra::grid.arrange(intercept, cond1, cond2, phi, zoi, coi, ncol=3)
+      }
+    } else {
+      if (model_type=="nb"){
+        gridExtra::grid.arrange(intercept, cond1, cond2, round,
+                                cond1_round, cond2_round, shape, ncol=3)} 
+      else if (model_type=="zinb"){
+        gridExtra::grid.arrange(intercept, cond1, cond2, round,
+                                cond1_round, cond2_round, shape, zi, ncol=3)} 
+      else if (model_type=="zibt"){
+        gridExtra::grid.arrange(intercept, cond1, cond2, round,
+                                cond1_round, cond2_round,  phi, zoi, coi, ncol=3)
+      }
+    }
+  }
+}
+```
+
+
+# 1. Data preparation
+## 1.1 Load data
+```{r}
+### trial_info_speaker.csv
+df_trial_info = read.csv("data/trial_info_speaker.csv", stringsAsFactors = TRUE) %>% 
+  filter(num_words != 0) %>%  # remove trials that were accidentally skipped)
+  mutate(pair = factor(pair),
+         role = factor(ifelse(speaker == director, "director", "matcher")),
+         round_c = as.integer(round) - mean(as.integer(round)),
+         round_n = factor(round),
+         round = factor(paste0("R", round)),
+         log_round = log(as.integer(round)),
+         log_round_c = log_round - mean(log_round),
+         condition = factor(condition,
+                            levels = c("Sym", "Asym", "AO"),
+                            labels = c("SymAV", "AsymAV", "AO")),
+         condition_sum = condition,
+         duration_s = duration_ms / 1000,
+         n_words_100 = num_words / 100,
+         n_iconic_c = num_iconic_gestures - mean(num_iconic_gestures),
+         n_iconic_per_100words = num_iconic_gestures / n_words_100,
+         n_iconic_100 = num_iconic_gestures / 100,
+         lex_align_c = num_lex_align - mean(num_lex_align),
+         lex_align_rate = num_lex_align / n_words_100,
+         gest_align_rate_100words = num_gestural_align / n_words_100,
+         gest_align_rate = num_gestural_align / num_iconic_gestures) %>% 
+  rename(trial_duration_s = duration_s, trial_duration_m = duration_m) %>% 
+  filter(speaker == "B")
+
+### condition info
+df_condition_info = read.csv("data/condition_info.csv", stringsAsFactors = TRUE) %>% 
+  mutate(pair = factor(pair),
+         condition = factor(condition,
+                            levels = c("Sym", "Asym", "AO"),
+                            labels = c("SymAV", "AsymAV", "AO")))
+```
+
+<br>
+
+
+## 1.2 Summarize data
+```{r}
+summarize_demographics <- function(df) {
+  df %>%  
+    summarize(total_s = sum(trial_duration_s),
+              total_m = total_s / 60,
+              ### trial duration ###
+              mean_trial_dur_s = mean(trial_duration_s),
+              mean_trial_dur_m = mean(trial_duration_m),
+              sd_trial_dur_m = sd(trial_duration_m),
+              lci_trial_dur_m = mean_trial_dur_m - 1.96 * sd_trial_dur_m / sqrt(n()),
+              uci_trial_dur_m = mean_trial_dur_m + 1.96 * sd_trial_dur_m / sqrt(n()),
+              ### words ###
+              # number of words
+              num_words_total = sum(num_words),
+              mean_num_words = mean(num_words),
+              num_words_100 = mean(num_words / 100),
+              sd_num_words = sd(num_words),
+              lci_num_words = mean_num_words - 1.96 * sd_num_words / sqrt(n()),
+              uci_num_words = mean_num_words + 1.96 * sd_num_words / sqrt(n()),
+              num_words_per_min = num_words_total / total_m,
+              # number of content words
+              num_content_total = sum(num_content_words),
+              mean_num_content = mean(num_content_words),
+              sd_num_content = sd(num_content_words),
+              lci_num_content = mean_num_content - 1.96 * sd_num_content / sqrt(n()),
+              uci_num_content = mean_num_content + 1.96 * sd_num_content / sqrt(n()),
+              num_content_per_min = num_content_total / total_m,
+              ### lexical alignment ###
+              # raw frequency
+              num_lex_align_total = sum(num_lex_align, na.rm = T),
+              mean_num_lex_align = mean(num_lex_align, na.rm = T),
+              sd_num_lex_align = sd(num_lex_align, na.rm = T),
+              lci_num_lex_align = mean_num_lex_align - 1.96 * sd_num_lex_align / sqrt(n()),
+              uci_num_lex_align = mean_num_lex_align + 1.96 * sd_num_lex_align / sqrt(n()),
+              num_lex_align_per_min = num_lex_align_total / total_m,
+              # rate per 100 words
+              mean_lex_align_per_100words = mean(lex_align_rate, na.rm=T),
+              sd_lex_align_per_100words = sd(lex_align_rate, na.rm=T),
+              se_lex_align_per_100words = std.error(lex_align_rate, na.rm=T),
+              lci_lex_align_per_100words = mean_lex_align_per_100words - 1.96 * se_lex_align_per_100words,
+              uci_lex_align_per_100words = mean_lex_align_per_100words + 1.96 * se_lex_align_per_100words,
+              ### iconic gestures ###
+              # raw frequency
+              num_iconic_total = sum(num_iconic_gestures, na.rm = T),
+              mean_num_iconic = mean(num_iconic_gestures, na.rm = T),
+              sd_num_iconic = sd(num_iconic_gestures, na.rm = T),
+              lci_num_iconic = mean_num_iconic - 1.96 * sd_num_iconic / sqrt(n()),
+              uci_num_iconic = mean_num_iconic + 1.96 * sd_num_iconic / sqrt(n()),
+              num_iconic_per_min = num_iconic_total / total_m,
+              # rate per 100 words
+              mean_iconic_per_100words = mean(n_iconic_per_100words, na.rm=T),
+              sd_iconic_per_100words = sd(n_iconic_per_100words, na.rm=T),
+              se_iconic_per_100words = std.error(n_iconic_per_100words, na.rm=T),
+              lci_iconic_per_100words = mean_iconic_per_100words - 1.96 * se_iconic_per_100words,
+              uci_iconic_per_100words = mean_iconic_per_100words + 1.96 * se_iconic_per_100words,
+              ### gestural alignment ###
+              # raw frequency
+              num_gest_align_total = sum(num_gestural_align, na.rm = T),
+              mean_num_gest_align = mean(num_gestural_align, na.rm = T),
+              sd_num_gest_align = sd(num_gestural_align, na.rm = T),
+              lci_num_gest_align = mean_num_gest_align - 1.96 * sd_num_gest_align / sqrt(n()),
+              uci_num_gest_align = mean_num_gest_align + 1.96 * sd_num_gest_align / sqrt(n()),
+              num_gest_align_per_min = num_gest_align_total / total_m,
+              # rate per 100 words
+              mean_gest_align_per_100words = mean(gest_align_rate_100words, na.rm=T),
+              sd_gest_align_per_100words = sd(gest_align_rate_100words, na.rm=T),
+              se_gest_align_per_100words = std.error(gest_align_rate_100words, na.rm=T),
+              lci_gest_align_per_100words = mean_gest_align_per_100words - 1.96 * se_gest_align_per_100words,
+              uci_gest_align_per_100words = mean_gest_align_per_100words + 1.96 * se_gest_align_per_100words,
+              # rate per iconic gestures
+              mean_gest_align_prop = mean(gest_align_rate, na.rm=T),
+              sd_gest_align_prop = sd(gest_align_rate, na.rm=T),
+              se_gest_align_prop = std.error(gest_align_rate, na.rm=T),
+              lci_gest_align_prop = mean_gest_align_prop - 1.96 * se_gest_align_prop,
+              uci_gest_align_prop = mean_gest_align_prop + 1.96 * se_gest_align_prop,
+              ### number of trials ###
+              trial_n = n()) %>% 
+    ungroup()
+}
+
+summarize_dur <- function(df){
+  df %>% 
+    summarize(mean_dur_m = mean(total_m),
+              sd_dur_m = sd(total_m),
+              se_dur_m = std.error(total_m),
+              lci_dur_m = mean_dur_m - 1.96 * se_dur_m,
+              uci_dur_m = mean_dur_m + 1.96 * se_dur_m) %>% 
+    ungroup()
+}
+```
+
+<br>
+
+### mean by condition
+```{r}
+### demographics by pair
+trial_info_pair = df_trial_info %>% 
+  group_by(pair) %>% 
+  summarize_demographics() %>% 
+  left_join(., df_condition_info) %>% 
+  dplyr::select(pair, condition, total_s:trial_n)
+
+### calculate mean experiment duration
+mean_dur_cond = trial_info_pair %>% 
+  group_by(condition) %>% 
+  summarize_dur()
+
+### summary statistics
+trial_info_cond  = df_trial_info %>% 
+  group_by(condition) %>% 
+  summarize_demographics() %>% 
+  left_join(., mean_dur_cond) %>% 
+  dplyr::select(condition, total_m, mean_dur_m:uci_dur_m, 
+                everything(), 
+                -ends_with("_s"))
+
+trial_info_cond
+
+
+### export it as csv
+tbl = trial_info_cond %>% 
+  dplyr::select(!starts_with(c("sd_", "se_", "num_", "trial_")) 
+                & !contains("total")) %>% 
+  pivot_longer(cols = !condition,
+               names_to = "name",
+               values_to = "value") %>% 
+  mutate(stats = sub("_.*", "", name),
+         name = sub("[[:alpha:]]+_", "", name),
+         across(where(is.numeric), ~ str_squish(format(round(., 2), scientific = FALSE)))) %>% 
+  pivot_wider(names_from = c("condition", "stats"),
+              values_from = "value") %>% 
+  mutate(SymAV_ci = paste0("[", SymAV_lci, ", ", SymAV_uci, "]"),
+         AsymAV_ci = paste0("[", AsymAV_lci, ", ", AsymAV_uci, "]"),
+         AO_ci = paste0("[", AO_lci, ", ", AO_uci, "]")) %>% 
+  dplyr::select(name, SymAV_mean, SymAV_ci, AsymAV_mean, AsymAV_ci, AO_mean, AO_ci)
+
+write_csv(tbl, "tables/descriptive_B.csv")
+```
+
+<br>
+
+### mean by round
+```{r}
+trial_info_pair_round = df_trial_info %>% 
+  group_by(pair, round, round_n) %>%
+  summarize_demographics() %>% 
+  left_join(., df_condition_info)
+
+### calculate mean round duration
+mean_dur_round = trial_info_pair_round %>% 
+  group_by(round, round_n) %>% 
+  summarize_dur()
+
+trial_info_round = df_trial_info %>% 
+  group_by(round, round_n) %>% 
+  summarize_demographics() %>% 
+  left_join(., mean_dur_round) %>%
+  dplyr::select(round, round_n, total_m, mean_dur_m:uci_dur_m, 
+                everything(), 
+                -ends_with("_s"))
+
+trial_info_round
+```
+
+<br>
+
+### mean by condition x round
+```{r}
+### calculate mean duration by condition x round
+mean_dur_cond_round = trial_info_pair_round %>% 
+  group_by(condition, round, round_n) %>% 
+  summarize_dur()
+
+trial_info_cond_round = df_trial_info %>% 
+  group_by(condition, round, round_n) %>% 
+  summarize_demographics() %>% 
+  left_join(., mean_dur_cond_round) %>%
+  dplyr::select(condition, round, round_n,
+                total_m, mean_dur_m:uci_dur_m, 
+                everything(), 
+                -ends_with("_s"))
+
+trial_info_cond_round
+```
+
+
+<br>
+
+******************************
+
+# 3. Contrast coding
+```{r}
+### visibility condition: difference coding
+h_cond = hypr(AO_Asym = AsymAV ~ AO,
+              Asym_Sym = SymAV ~ AsymAV,
+              levels = levels(df_trial_info$condition))
+h_cond
+
+contrasts(df_trial_info$condition) = contr.hypothesis(h_cond)
+
+
+### visibility condition: sum coding
+h_cond = hypr(AO_Sym = SymAV ~ AO,
+              Asym_Sym = SymAV ~ AsymAV,
+              levels = levels(df_trial_info$condition))
+h_cond
+contrasts(df_trial_info$condition_sum) = contr.hypothesis(h_cond)
+
+
+### round
+bacward_diff = hypr(R12 = R2 ~ R1,
+                    R23 = R3 ~ R2,
+                    R34 = R4 ~ R3,
+                    R45 = R5 ~ R4,
+                    R56 = R6 ~ R5,
+                    levels = levels(df_trial_info$round))
+bacward_diff
+
+contrasts(df_trial_info$round) = contr.hypothesis(bacward_diff)
+
+
+### role (director / matcher)
+contrasts(df_trial_info$role) = c(-0.5, 0.5)
+contrasts(df_trial_info$role)
+```
+
+<br>
+
+**************************************************************************************
+
+# ==== Iconic gestures ====
+
+# 4. Number of iconic gestures
+## 4.1 DataViz: frequency
+### bp: total by condition
+```{r bp_iconic_by_cond}
+bp_iconic_by_cond = ggplot(data=trial_info_pair, 
+                           aes(x=condition, y=num_iconic_total, fill=condition)) +
+  geom_jitter(aes(color = pair), 
+              size = 1, alpha = 1, 
+              width = 0.07, height = 0) +
+  geom_boxplot(width = .2,
+               outlier.shape = NA, alpha = 0.7) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  labs(x = "Visibility",
+       y = "Total N of iconic gestures per pair") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+ggplotly(bp_iconic_by_cond)
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/iconic/bp_cond.svg", dpi=600, width=6, height=4)
+```
+
+<br>
+
+
+### bp: mean by condition
+```{r bp_mean_iconic_by_cond}
+bp_mean_iconic_by_cond = ggplot(data=trial_info_pair, 
+                                aes(x=condition, y=mean_num_iconic, fill=condition)) +
+  geom_jitter(aes(color = pair), 
+              size = 1, alpha = 1, 
+              width = 0.07, height = 0) +
+  geom_boxplot(width = .2,
+               outlier.shape = NA, alpha = 0.7) +
+  geom_point(data = trial_info_cond, 
+             aes(y = mean_num_iconic), 
+             shape = 21, size = 3, fill = "white") +
+  scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, 1)) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  labs(x = "Visibility",
+       y = "Mean N. iconic gest per trial") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+ggplotly(bp_mean_iconic_by_cond)
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/iconic/bp_mean_cond.svg", dpi=600, width=4, height=3.5)
+```
+
+<br>
+
+### bp: mean by condition x round
+```{r bp_mean_iconic_by_round_cond}
+bp_mean_iconic_by_round_cond = ggplot(data=df_trial_info, 
+                                      aes(x=round, y=num_iconic_gestures, fill=condition)) +
+  geom_boxplot(outlier.shape = NA,
+               alpha = 0.7) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_y_continuous(limits = c(0, 15), breaks = seq(0, 15, 5)) +
+  labs(x = "Round",
+       y = "Mean N of iconic gestures per trial") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "top",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+bp_mean_iconic_by_round_cond
+```
+
+The figure shows that the decline in iconic gestures across rounds does not follow a linear pattern. This suggests that log-transformed round may improve the model fit.
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/iconic/bp_mean_round_cond.svg", dpi=600, width=6, height=4)
+```
+
+
+
+<br>
+
+******************************
+
+# 5. [Chosen] Rate of iconic gestures per 100 words
+## 5.1 DataViz: rate per 100 words
+### bp: mean by condition
+```{r bp_mean_iconic_rate_by_cond}
+bp_mean_iconic_rate_by_cond = ggplot(data=trial_info_pair, 
+                                     aes(x=condition, y=mean_iconic_per_100words, fill=condition)) +
+  geom_jitter(aes(color = pair), 
+              size = 1, alpha = 1, 
+              width = 0.07, height = 0) +
+  geom_boxplot(width = .2,
+               outlier.shape = NA, alpha = 0.7) +
+  geom_point(data = trial_info_cond, 
+             aes(y = mean_iconic_per_100words), 
+             shape = 21, size = 3, fill = "white") +
+  scale_y_continuous(limits = c(0, 8.1), breaks = seq(0, 8, 2)) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  labs(x = "Visibility",
+       y = "Mean rate of iconic gestures") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+ggplotly(bp_mean_iconic_rate_by_cond)
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/iconic/bp_mean_rate_cond.svg", width=6, height=4, dpi=600)
+```
+
+<br>
+
+### bp: mean by condition x round
+```{r bp_mean_rate_cond_round}
+pd = position_dodge(width = .75)
+
+ggplot(data=df_trial_info, 
+       aes(x=round, y=n_iconic_per_100words, fill=condition)) +
+  geom_boxplot(outlier.shape = NA,
+               alpha = 0.7) +
+  geom_point(data = trial_info_cond_round, 
+             aes(y = mean_iconic_per_100words, 
+                 group = condition),
+             position = pd,
+             shape = 21, size = 2, fill = "white") +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_y_continuous(limits = c(0, 22), breaks = seq(0, 20, 5)) +
+  labs(x = "Round",
+       y = "Mean rate of iconic gestures") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "top",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/iconic/bp_mean_rate_cond_round.svg", width=6, height=4, dpi=600)
+```
+
+<br>
+
+
+## 5.2 [Chosen] ZI negative binomial regression models
+### 5.2.1 Prior specification
+As the unit of the dependent variable is different from the previous model, we will set different priors for the rate of iconic gestures per 100 words. We will use weakly informative priors for the regression each parameter. To specify priors for the intercept, we will refer to the number of iconic gestures and words reported in Akamine et al. (2024). In the paper, the authors analyzed data from 19 dyads involving in the same task as the current study but in co-present interaction. The total number of iconic gestures reported was 4413, which was collected from 19 dyads, each performing 96 trials. The total number of words produced was 71695 (28152 content) words. Therefore, the expected rate of iconic gestures per 100 words per speaker is $4413 / (71695 / 100) / 2 = 3.08$ (log(3.08) = 1.12).
+
+For the fixed effects, we will set unbiased priors with a mean of 0 and a standard deviation of 0.5.
+
+For the standard deviation of the random effects, we set the prior to be normal with mean 0 and standard deviation 0.5. For the correlation between the random effects, we set the prior to be LKJ(2).
+
+For the models including the round as fixed effects (whether backward-difference coded or centered + log-transformed), the intercept will represent the mean expected number of iconic gestures (ground mean). As the meaning of the intercept doesn't change when adding the round variable, we use the same prior for the intercept. 
+
+Note that we do not expect the rate of iconic gestures to change across rounds (i.e., we expect the number of words and gestures to decrease at an approximately same pace across the rounds). Also, it is common to set the mean of slopes to be 0 to avoid favoring any directions. Therefore we will set the mean of the prior for slope to 0.
+
+```{r}
+priors_rslope_rate = c(
+  prior(normal(1.12, 0.5), class = Intercept),
+  prior(normal(0, 0.5), class = b),
+  prior(normal(0, 0.5), class = sd),
+  prior(lkj(2), class = cor))
+
+priors_rslope_rate_zinb = c(
+  prior(normal(1.12, 0.5), class = Intercept),
+  prior(normal(0, 0.5), class = b),
+  prior(normal(0, 0.5), class = sd),
+  prior(lkj(2), class = cor),
+  prior(normal(0, 0.5), class = zi), # on the logit scale
+  prior(normal(0, 50), class = shape))
+```
+
+<br>
+
+
+### 5.2.2 Model 1: condition x round (pair)
+In the previous section, we analyzed the number of iconic gestures produced per trial. However, it is common to analyze the rate of iconic gestures per 100 words to account for the differences in the length of the trials and speech rate. Here, we will include the log of speech rate (number of words / 100) as an exposure variable and analyze the rate of iconic gestures per 100 words by condition. Note that the syntax for the exposure variable is different from the Poisson regression model; for negative binomial regression, the exposure variable is included with the rate() function.
+
+<br>
+
+#### Model effect: round
+```{r}
+nb_iconic_rate_cond_round = brm(num_iconic_gestures | rate(n_words_100) ~ 
+                                  1 + condition * round + 
+                                  (1+round|pair) + (1|target),
+                                family = negbinomial(),
+                                prior = priors_rslope_rate,
+                                data = df_trial_info,
+                                sample_prior = T,
+                                warmup = nwu, iter = niter,
+                                control = list(adapt_delta = 0.9, 
+                                               max_treedepth = 15),
+                                file = "models/speakerB/nb_iconic_rate_cond_round")
+
+nb_iconic_rate_cond_round_c = brm(num_iconic_gestures | rate(n_words_100) ~ 
+                                    1 + condition * round_c + 
+                                    (1+round_c|pair) + (1|target),
+                                  family = negbinomial(),
+                                  prior = priors_rslope_rate,
+                                  data = df_trial_info,
+                                  sample_prior = T,
+                                  warmup = nwu, iter = niter,
+                                  control = list(adapt_delta = 0.9, 
+                                                 max_treedepth = 15),
+                                  file = "models/speakerB/nb_iconic_rate_cond_round_c")
+
+nb_iconic_rate_cond_round_log = brm(num_iconic_gestures | rate(n_words_100) ~ 
+                                      1 + condition * log_round_c + 
+                                      (1+log_round_c|pair) + (1|target),
+                                    family = negbinomial(),
+                                    prior = priors_rslope_rate,
+                                    data = df_trial_info,
+                                    sample_prior = T,
+                                    warmup = nwu, iter = niter,
+                                    control = list(adapt_delta = 0.9, 
+                                                   max_treedepth = 15),
+                                    file = "models/speakerB/nb_iconic_rate_cond_round_log")
+
+
+
+### loo compare
+if (!file.exists("models/speakerB/loo_nb_iconic_rate_cond_round.rds")){
+  nb_cond_round_loo = loo(nb_iconic_rate_cond_round)
+  saveRDS(nb_cond_round_loo, file = "models/speakerB/loo_nb_iconic_rate_cond_round.rds")
+}
+
+if (!file.exists("models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")){
+  nb_cond_round_c_loo = loo(nb_iconic_rate_cond_round_c)
+  saveRDS(nb_cond_round_c_loo, file = "models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")
+}
+
+if (!file.exists("models/speakerB/loo_nb_iconic_rate_cond_round_log.rds")){
+  nb_cond_round_log_loo = loo(nb_iconic_rate_cond_round_log)
+  saveRDS(nb_cond_round_log_loo, file = "models/speakerB/loo_nb_iconic_rate_cond_round_log.rds")
+}
+
+nb_cond_round_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round.rds")
+nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")
+nb_cond_round_log_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round_log.rds")
+
+loo_compare(nb_cond_round_loo, nb_cond_round_c_loo, nb_cond_round_log_loo)
+```
+
+The leave-one-out (LOO) Effect shows that centered round provides a larger predictive power (elpd_diff) and smaller standard error (se_diff) compared to the backward-difference coded round or centered log-transformed round. Therefore, we will use the centered round.
+
+<br>
+
+
+#### Model effect: ZI or not
+```{r}
+zinb_iconic_rate_cond_round_c = brm(num_iconic_gestures ~ 1 + condition * round_c + 
+                                      offset(log(n_words_100)) +
+                                      (1+round_c|pair) + (1|target),
+                                    family = zero_inflated_negbinomial(),
+                                    prior = priors_rslope_rate_zinb,
+                                    data = df_trial_info,
+                                    sample_prior = T,
+                                    warmup = nwu, iter = niter,
+                                    control = list(adapt_delta = 0.9, 
+                                                   max_treedepth = 15),
+                                    file = "models/speakerB/zinb_iconic_rate_cond_round_c")
+
+
+
+### loo compare
+if (!file.exists("models/speakerB/loo_zinb_iconic_rate_cond_round_c.rds")){
+  zinb_cond_round_c_loo = loo(zinb_iconic_rate_cond_round_c)
+  saveRDS(zinb_cond_round_c_loo, file = "models/speakerB/loo_zinb_iconic_rate_cond_round_c.rds")
+}
+
+nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")
+zinb_cond_round_c_loo = readRDS("models/speakerB/loo_zinb_iconic_rate_cond_round_c.rds")
+
+loo_compare(nb_cond_round_c_loo, zinb_cond_round_c_loo)
+```
+
+The leave-one-out (LOO) Effect shows that zero-inflation model has a higher predictive power. As such, we will use zero-inflated negative binomial regression model.
+
+<br>
+
+
+#### Prior predictive check
+```{r pp_check_m1}
+zinb_iconic_rate_cond_round_c_prior = brm(num_iconic_gestures ~ 1 + condition * round_c + 
+                                            offset(log(n_words_100)) +
+                                            (1+round_c|pair) + (1|target),
+                                          family = zero_inflated_negbinomial(),
+                                          prior = priors_rslope_rate_zinb,
+                                          sample_prior = "only",
+                                          data = df_trial_info,
+                                          file = "models/speakerB/zinb_iconic_rate_cond_round_c_prior")
+
+pp_check(zinb_iconic_rate_cond_round_c_prior, ndraws = 100, type = "bars") +
+  coord_cartesian(xlim = c(0, 20),
+                  ylim = c(0, 4000))
+```
+
+The prior predictive check shows that the model generates data that are somewhat similar to the observed data.
+
+<br>
+
+#### Fit the model
+```{r}
+zinb_iconic_rate_cond_round_c = brm(num_iconic_gestures ~ 1 + condition * round_c + 
+                                      offset(log(n_words_100)) +
+                                      (1+round_c|pair) + (1|target),
+                                    family = zero_inflated_negbinomial(),
+                                    prior = priors_rslope_rate_zinb,
+                                    data = df_trial_info,
+                                    sample_prior = T,
+                                    save_pars = save_pars(all = TRUE),
+                                    warmup = nwu, iter = niter,
+                                    control = list(adapt_delta = 0.9, 
+                                                   max_treedepth = 15),
+                                    file = "models/speakerB/zinb_iconic_rate_cond_round_c")
+
+model = zinb_iconic_rate_cond_round_c
+summary(model)
+bayestestR::hdi(model)
+# bayestestR::hdi(model, ci = 0.89)
+```
+
+The coefficients show that the condition does not have a significant effect on the rate of iconic gestures per 100 words. However, there was a significant decrease in the rate of iconic gestures per 100 words across the rounds. This means that the number of iconic gestures decreased more than the number of words did across the rounds. A formal hypothesis testing will be performed later using Bayes factor.
+
+<br>
+
+#### Visualize the posterior distributions
+```{r pd_m1, fig.width=6, fig.height=5}
+p = plot_posterior(model, interaction = T)
+p
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/iconic/posterior_zinb_iconic_rate.svg", width=6, height=5, dpi=600)
+```
+
+<br>
+
+
+#### Hypothesis testing: Bayes factor
+```{r}
+### varying priors for sensitivity analysis
+prior_size = c("xs", "s", "l", "xl")
+prior_sd = c(0.1, 0.3, 1, 1.5)
+bfs_cond_ao_asym = c()
+bfs_cond_asym_sym = c()
+bfs_round = c()
+
+for (i in 1:length(prior_sd)){
+  priors = c(
+    prior(normal(1.82, 0.5), class = Intercept),
+    set_prior(paste0("normal(0,", prior_sd[i], ")"), class = "b"),
+    prior(normal(0, 0.5), class = sd),
+    prior(lkj(2), class = cor),
+    prior(normal(0, 0.5), class = zi), # on the logit scale
+    prior(normal(0, 50), class = shape))
+  
+  fname = paste0("models/speakerB/zinb_iconic_rate_cond_round_c_", prior_size[i])
+  
+  fit = brm(num_iconic_gestures ~ 
+              1 + condition * round_c + 
+              offset(log(n_words_100)) +
+              (1+round_c|pair) + (1|target),
+            family = zero_inflated_negbinomial(),
+            prior = priors,
+            data = df_trial_info,
+            sample_prior = T,
+            save_pars = save_pars(all = TRUE),
+            warmup = nwu, iter = niter,
+            control = list(adapt_delta = 0.9, 
+                           max_treedepth = 15),
+            file = fname)
+  
+  # BF for sym - asym
+  h = hypothesis(fit, "conditionAO_Asym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_cond_ao_asym = c(bfs_cond_ao_asym, bf)
+  
+  # BF for sym - ao
+  h = hypothesis(fit, "conditionAsym_Sym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_cond_asym_sym = c(bfs_cond_asym_sym, bf)
+  
+  # BF for round
+  h = hypothesis(fit, "round_c = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_round = c(bfs_round, bf)
+}
+
+### add BF for the main/medium model
+prior_size[3:5] = c("m", prior_size[3:4])
+prior_sd[3:5] = c(0.5, prior_sd[3:4])
+
+# BF for sym - asym
+h = hypothesis(model, "conditionAO_Asym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_cond_ao_asym[3:5] = c(bf, bfs_cond_ao_asym[3:4])
+
+# BF for sym - ao
+h = hypothesis(model, "conditionAsym_Sym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_cond_asym_sym[3:5] = c(bf, bfs_cond_asym_sym[3:4])
+
+# BF for round
+h = hypothesis(model, "round_c = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_round[3:5] = c(bf, bfs_round[3:4])
+
+
+### make a df for BFs
+df_bf = data.frame(size = prior_size,
+                   sd = prior_sd,
+                   ao_asym = bfs_cond_ao_asym,
+                   asym_sym = bfs_cond_asym_sym,
+                   round = bfs_round) %>% 
+  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
+  pivot_longer(cols = c("ao_asym", "asym_sym", "round"),
+               names_to = "Effect",
+               values_to = "BF10") %>% 
+  mutate(Effect = factor(Effect,
+                         levels = c("ao_asym", "asym_sym", "round"),
+                         labels = c("AO-AsymAV", "AsymAV-SymAV", "Round")),
+         Predictor = ifelse(Effect == "round", "Round", "Visibility"),
+         BF10_log10 = log10(BF10))
+
+df_bf %>% arrange(Effect, sd)
+```
+
+```{r bf_iconic_rate}
+#### Plot BFs ####
+ggplot(df_bf, aes(x = prior, y = BF10, group = Effect)) +
+  geom_hline(yintercept = 1, linetype="dashed") +
+  geom_point(aes(color=Effect)) +
+  geom_line(aes(color=Effect)) +
+  facet_wrap(vars(Predictor), scales="free_y") +
+  theme_bw(base_size = 12)+
+  theme(legend.position = "top")+
+  scale_y_log10("Bayes factor (BF10)",
+                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
+                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
+  xlab("prior")
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/iconic/bf_iconic_rate.svg", width=8, height=4, dpi=600)
+```
+
+
+
+<br>
+
+#### Posterior predictive check
+```{r ppd_m1}
+model = zinb_iconic_rate_cond_round_c
+pp_check_sym = pp_check_each_condition(model, df_trial_info, "SymAV")
+pp_check_asym = pp_check_each_condition(model, df_trial_info, "AsymAV")
+pp_check_ao = pp_check_each_condition(model, df_trial_info, "AO")
+
+gridExtra::grid.arrange(pp_check_sym, pp_check_asym, pp_check_ao, ncol = 2)
+
+
+pp_check_r1 = pp_check_each_round(model, df_trial_info, "R1")
+pp_check_r2 = pp_check_each_round(model, df_trial_info, "R2")
+pp_check_r3 = pp_check_each_round(model, df_trial_info, "R3")
+pp_check_r4 = pp_check_each_round(model, df_trial_info, "R4")
+pp_check_r5 = pp_check_each_round(model, df_trial_info, "R5")
+pp_check_r6 = pp_check_each_round(model, df_trial_info, "R6")
+
+gridExtra::grid.arrange(pp_check_r1, pp_check_r2, pp_check_r3, pp_check_r4, pp_check_r5, pp_check_r6, ncol = 3)
+```
+
+
+<br>
+
+
+#### Pair-wise Effect
+```{r}
+emmeans(model, pairwise ~ condition)$contrasts
+emmeans(model, pairwise ~ condition, level = 0.89)$contrasts
+```
+
+
+<!-- <br> -->
+
+<!-- #### Visualize the model estimates -->
+<!-- ```{r} -->
+<!-- plot(conditional_effects(model), ask = FALSE) -->
+<!-- ``` -->
+
+
+<br>
+
+******************************
+
+# ==== Gestural alignment ====
+
+# 6. Causal model of gestural alignment
+
+Experts in the field of statistics and causal inference have advised that researchers should build a causal model and examine which factors should be included and excluded from regression models if their aim is to infer the causal effects (e.g., [McElreath, 2020](https://www.taylorfrancis.com/books/mono/10.1201/9780429029608/statistical-rethinking-richard-mcelreath), [Pearl, 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2836213/), [Cinelli, Forney, & Pearl, 2020](https://journals.sagepub.com/doi/full/10.1177/00491241221099552)). Following this advice, we will build a causal model to infer the direct effect of speaker visibility on gestural alignment.
+
+We assume the following causal model:
+```{r dag}
+### causal model for gestural alignment rate
+dag_gest <- dagitty('dag {
+  visibility -> gest_align
+  visibility -> n_words
+  visibility -> n_gestures
+  n_words -> lex_align
+  n_words -> n_gestures
+  round -> n_words
+  round -> lex_align
+  round -> gest_align
+  round -> n_gestures
+  role -> n_words
+  role -> lex_align
+  role -> gest_align
+  role -> n_gestures
+  n_gestures -> gest_align
+  lex_align -> gest_align
+}')
+
+plot(dag_gest)
+
+### check the minimam adjustment set
+print("Direct effect of visibility on gestural alignment frequency")
+adjustmentSets(dag_gest, exposure = "visibility", outcome = "gest_align", effect = "direct")
+
+print("Direct effect of lexical alignment rate on gestural alignment frequency")
+adjustmentSets(dag_gest, exposure = "lex_align", outcome = "gest_align", effect = "direct")
+
+print("Direct effect of round on gestural alignment frequency")
+adjustmentSets(dag_gest, exposure = "round", outcome = "gest_align", effect = "direct")
+```
+
+The minimum adjustment set for estimating the direct causal effect of speaker visibility on gestural alignment frequency is {lex_align, n_words, round}. Note that because dagitty didn't find any adjustment set for the direct effect of visibility on lexical alignment frequency *when we expected bidirectional causation between lexical and gestural alignment*, we assumed a unidirectional causation from lexical alignment to gestural alignment only in this model. This will be reversed in the causal model for lexical alignment frequency, such that we assume a unidirectional causation from gestural alignment to lexical alignment. 
+
+In addition, we are also interested in the direct effect of lexical alignment frequency on gestural alignment frequency. The minimum adjustment set for is {visibility, n_gestures, round}.
+
+As the minimum adjustment sets for the direct effects of visibility, lexical alignment frequency, and round on gestural alignment frequency are identical (i.e., {visibility, lex_align, n_gestures, round}), we can estimate the direct effect of these variables on gestural alignment frequency with the following model:
+
+$$
+gest\_align \: | \: \text{rate}(n\_iconic\_gesture) \sim \\
+\text{visibility} * \text{round} + \text{n_lexical_alignment} + \\
+(1+\text{round} | \text{participant}) + (1 | \text{item})
+$$
+
+<br>
+
+******************************
+
+# 7. Number of gestural alignment
+## 7.1 DataViz: number of gestural alignment
+### bp: mean by condition
+```{r bp_mean_cpt_cond}
+bp_mean_gest_alignment_by_cond = ggplot(data=trial_info_pair, 
+                                        aes(x=condition, y=mean_num_gest_align, fill=condition)) +
+  geom_jitter(aes(color = pair), 
+              size = 1, alpha = 1, 
+              width = 0.07, height = 0) +
+  geom_boxplot(width = .4,
+               outlier.shape = NA, alpha = 0.7) +
+  geom_point(data = trial_info_cond, 
+             aes(y = mean_num_gest_align), 
+             size = 2, shape = 4) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  labs(x = "Visibility",
+       y = "Mean gestural alignment count") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+ggplotly(bp_mean_gest_alignment_by_cond)
+```
+
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/gest_alignment/bp_mean_cpt_cond.svg", width=6, height=4, dpi=600)
+```
+
+<br>
+
+## 7.2 Negative binomial regression
+### 7.2.1 Prior specification
+We will set priors for the intercept based on the expected number of gestural alignment reported in Akamine et al. (2024). In the paper, the authors analyzed data from 19 dyads involving in the same task as the current study but in co-present interaction. The total number of gestural alignment reported was 1086, which was collected from 19 dyads, each performing 96 trials. This leads to the expected number of gestural alignment per speaker to be 1086 / (19 * 96) / 2 = 0.3 (log(0.3) = -1.2). As such, we will set the prior for the intercept to be normal with a mean of -1.2 and a standard deviation of 0.5.
+
+For the fixed effects, we will set unbiased priors with a mean of 0. We set different SDs for each effect because the scale of each predictor is different. For N. lexical alignment and N. iconic gestures, we set a prior of Normal(0, 0.2). This means that if the mean N. lex align increases by 1, we expect the mean N. gestural alignment to change by -0.2 to 0.5, with the most likely size of change to be 0. As for the other predictors, we set a prior of Normal(0. 0.5).
+
+
+We will also specify a prior for the shape parameter to prevent the model from returning divergent transitions. We will set the prior to be normal with a mean of 0 and a wide standard deviation of 50.
+
+For the standard deviation of the random effects, we set the prior to be normal with mean 0 and standard deviation 0.5. For the correlation between the random effects, we set the prior to be LKJ(2).
+
+```{r}
+### pair
+priors_rslope_gest_align_zinb = c(
+  prior(normal(-1.2, 0.5), class = Intercept),
+  prior(normal(0, 0.5), class = b),
+  prior(normal(0, 0.2), class = b, coef = "n_iconic_c"),
+  prior(normal(0, 0.2), class = b, coef = "lex_align_c"),
+  prior(normal(0, 0.2), class = b, coef = "lex_align_c:conditionAO_Asym"),
+  prior(normal(0, 0.2), class = b, coef = "lex_align_c:conditionAsym_Sym"),
+  prior(normal(0, 0.5), class = sd),
+  prior(lkj(2), class = cor),
+  prior(normal(0, 0.5), class = zi), # on the logit scale
+  prior(normal(0, 50), class = shape))
+```
+
+
+<br>
+
+### 7.2.2 Model 2: [ppB] effect of lex align on gest align
+#### Prior predictive check
+```{r pp_check_m2}
+zinb_gest_align_prior = brm(num_gestural_align ~
+                              1 + lex_align_c * condition + round + n_iconic_c + role +
+                              (1+round|pair) + (1|target),
+                            family = zero_inflated_negbinomial(),
+                            prior = priors_rslope_gest_align_zinb,
+                            data = df_trial_info,
+                            sample_prior = "only",
+                            control = list(adapt_delta = 0.9, 
+                                           max_treedepth = 20),
+                            file = "models/speakerB/zinb_gest_align_prior")
+
+pp_check(zinb_gest_align_prior, ndraws = 100, type = "bars") +
+  coord_cartesian(xlim = c(0, 20),
+                  ylim = c(0, 4000))
+```
+
+The prior predictive check shows that the model expects fewer amount of 2, 3, and 4. This suggests that the zero-inflation prior may be too large or the mean for the intercept prior is too low. We will check the prior-posterior update plot and posterior predictive check to see if the model generates data that are similar to the observed data. If not, we will consider modifying the priors.
+
+<br>
+
+#### Fit the model
+```{r}
+zinb_align_cond_round = brm(num_gestural_align ~ 
+                              1 + lex_align_c * condition + round + n_iconic_c + role +
+                              (1+round|pair) + (1|target),
+                            family = zero_inflated_negbinomial(),
+                            prior = priors_rslope_gest_align_zinb,
+                            data = df_trial_info,
+                            sample_prior = T,
+                            save_pars = save_pars(all = TRUE),
+                            warmup = nwu, iter = niter,
+                            control = list(adapt_delta = 0.9, 
+                                           max_treedepth = 15),
+                            file = "models/speakerB/zinb_align_cond_round")
+
+model = zinb_align_cond_round
+summary(model)
+bayestestR::hdi(model)
+```
+
+The coefficients show that the number of lexical alignment is a reliable predictor of the number of gestural alignment.
+
+<br>
+
+#### Hypothesis testing: Bayes factor
+```{r}
+### varying priors for sensitivity analysis
+prior_size = c("xs", "s", "l", "xl")
+prior_sd = c(0.05, 0.1, 0.3, 0.5)
+bfs_lex_align = c()
+bfs_ao_asym_lex = c()
+bfs_asym_sym_lex = c()
+
+for (i in 1:length(prior_sd)){
+  priors = c(
+    prior(normal(-1.2, 0.5), class = Intercept),
+    prior(normal(0, 0.5), class = b),
+    prior(normal(0, 0.2), class = b, coef = "n_iconic_c"),
+    prior(normal(0, 0.2), class = b, coef = "lex_align_c"),
+    prior(normal(0, 0.2), class = b, coef = "lex_align_c:conditionAO_Asym"),
+    prior(normal(0, 0.2), class = b, coef = "lex_align_c:conditionAsym_Sym"),
+    prior(normal(0, 0.5), class = sd),
+    prior(lkj(2), class = cor),
+    prior(normal(0, 0.5), class = zi),
+    prior(normal(0, 50), class = shape))
+  
+  fname = paste0("models/speakerB/zinb_align_cond_round_", prior_size[i])
+  
+  fit = brm(num_gestural_align ~ 
+              1 + lex_align_c * condition + round + n_iconic_c + role +
+              (1+round|pair) + (1|target),
+            family = zero_inflated_negbinomial(),
+            prior = priors,
+            data = df_trial_info,
+            sample_prior = T,
+            save_pars = save_pars(all = TRUE),
+            warmup = nwu, iter = niter,
+            control = list(adapt_delta = 0.9, 
+                           max_treedepth = 15),
+            file = fname)
+  
+  ### BF for N. lex alignment
+  h = hypothesis(fit, "lex_align_c = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_lex_align = c(bfs_lex_align, bf)
+  
+  ### BF for interaction
+  h = hypothesis(fit, "lex_align_c:conditionAO_Asym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_asym_lex = c(bfs_ao_asym_lex, bf)
+  
+  h = hypothesis(fit, "lex_align_c:conditionAsym_Sym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_asym_sym_lex = c(bfs_asym_sym_lex, bf)
+}
+
+
+### add BF for the main/medium model
+prior_size[3:5] = c("m", prior_size[3:4])
+prior_sd[3:5] = c(0.2, prior_sd[3:4])
+
+### BF for N. lex alignment
+h = hypothesis(model, "lex_align_c = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_lex_align[3:5] = c(bf, bfs_lex_align[3:4])
+
+### BF for interaction
+h = hypothesis(model, "lex_align_c:conditionAO_Asym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_asym_lex[3:5] = c(bf, bfs_ao_asym_lex[3:4])
+
+h = hypothesis(model, "lex_align_c:conditionAsym_Sym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_asym_sym_lex[3:5] = c(bf, bfs_asym_sym_lex[3:4])
+
+
+### make a df for BFs
+df_bf_lex = data.frame(size = prior_size,
+                       sd = prior_sd,
+                       lex_align = bfs_lex_align,
+                       ao_asym_lex = bfs_ao_asym_lex,
+                       asym_sym_lex = bfs_asym_sym_lex) %>% 
+  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
+  pivot_longer(cols = c("lex_align", "ao_asym_lex", "asym_sym_lex"),
+               names_to = "Effect",
+               values_to = "BF10") %>% 
+  mutate(Effect = ifelse(Effect == "lex_align", "N. lex align",
+                         ifelse(Effect == "ao_asym_lex", "AO--AsymAV:Lex align",
+                                "AsymAV--SymAV: Lex align")),
+         Predictor = "N. lex align")
+```
+
+```{r bf_freq}
+#### Plot BFs ####
+ggplot(filter(df_bf_lex, Effect != "N. lex align"),
+       aes(x = factor(sd), y = BF10, group = Effect)) +
+  geom_hline(yintercept = 1, linetype="dashed") +
+  geom_point(aes(color=Effect)) +
+  geom_line(aes(color=Effect)) +
+  facet_wrap(vars(Predictor)) +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "top",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+  scale_y_log10("Bayes factor (BF10)",
+                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
+                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
+  xlab("SD for the prior")
+```
+
+<br>
+
+******************************
+
+# 8. Gestural alignment rate per iconic gestures (n_gest_alignment / n_iconic)
+We can analyze the proportion of gestural alignment in two ways: (1) modeling the rate of gestural alignment per iconic gesture using a negative binomial regression model and (2) modeling the probability of gestural alignment using a zero-one-inflated beta regression model.
+
+Key differences in the two models are that the negative binomial regression model assumes that the rate of gestural alignment is a count variable, while the zero-one-inflated beta regression model assumes that the proportion of gestural alignment is a continuous variable bounded between 0 and 1. Also, while negative binomial regression models the rate of events, the zero-one-inflated beta regression models the probability of events. In the case of the proportion of gestural alignment, two models should yield similar results, but it is important to note that the two models are conceptually different.
+
+As it is a common practice to analyze the frequency measures (e.g., number of gestures) as rates, we will use negative binomial regressions.
+
+<br>
+
+## 8.1 DataViz: proportion of gestural alignment
+### bp: mean by condition
+```{r bp_mean_prop_cond}
+bp_mean_gest_alignment_prop_by_cond = ggplot(data=trial_info_pair, 
+                                             aes(x=condition, y=mean_gest_align_prop, fill=condition)) +
+  geom_jitter(aes(color = pair), 
+              size = 1, alpha = 1, 
+              width = 0.07, height = 0) +
+  geom_boxplot(width = .3,
+               outlier.shape = NA, alpha = 0.7) +
+  geom_point(data = trial_info_cond, 
+             aes(y = mean_gest_align_prop), 
+             shape = 21, size = 3, fill = "white") +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  labs(x = "Visibility",
+       y = "Mean gest align rate") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+ggplotly(bp_mean_gest_alignment_prop_by_cond)
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/gest_alignment/bp_mean_prop_cond.svg", width=4, height=3.5, dpi=600)
+```
+
+<br>
+
+### bp: mean by condition and round
+```{r bp_mean_prop_cond_round}
+pd = position_dodge(width = .75)
+
+bp_mean_gest_alignment_prop_by_round_cond = 
+  ggplot(data=trial_info_pair_round, 
+         aes(x=round_n, y=mean_gest_align_prop, fill = condition)) +
+  geom_jitter(aes(color = pair), 
+              size = 0.5, alpha = 0.7, 
+              width = 0.07, height = 0) +
+  geom_boxplot(width = .5,
+               outlier.shape = NA, alpha = 0.7) +
+  geom_point(data = trial_info_cond_round, 
+             aes(y = mean_gest_align_prop),
+             position = pd,
+             shape = 21, size = 2, fill = "white") +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(x = "Round",
+       y = "Mean gest align rate") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+  facet_grid(cols = vars(condition))
+
+ggplotly(bp_mean_gest_alignment_prop_by_round_cond)
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/gest_alignment/bp_mean_prop_cond_round.svg", width=6.5, height=3.5, dpi=600)
+```
+
+<br>
+
+
+
+## 8.2 Prepare data
+To model the proportion of gestural alignment, we need to remove trials where the number of iconic gestures is 0. This is because dividing any numbers by 0 results in an undefined value (NA) and prevents model from running.
+```{r}
+df_gest_align_posreg_prop = df_trial_info %>%
+  filter(num_iconic_gestures > 0)
+
+print(paste0("Number of rows before removing trials with no iconic gestures: ", nrow(df_trial_info)))
+print(paste0("Number of rows before after trials with no iconic gestures: ", nrow(df_gest_align_posreg_prop)))
+print(paste0("Number of removed trials: ", nrow(df_trial_info) - nrow(df_gest_align_posreg_prop)))
+```
+
+
+
+## 8.3 Prior specification
+We will set priors based on Akamine et al. (2024). As mentioned in the previous analysis, they detected 4413 iconic gestures and 1086 instances of gestural alignment. Dividing the number of gestural alignment by the number of iconic gestures gives 0.25 (1086/4413) (-1.39 on the log scale). This means that we expect 1 gestural alignment per 4 iconic gestures.
+
+For the slope parameters, we set the mean of 0 with a SD of 0.5. This means that for example, we expect the mean difference between the AO and AsymAV conditions to range from -0.16 to 0.43.
+
+```{r}
+### pair
+priors_rint_gest_align_prop = c(
+  prior(normal(-1.39, 0.5), class = Intercept),
+  prior(normal(0, 0.5), class = b),
+  prior(normal(0, 50), class = shape),
+  prior(normal(0, 0.5), class = sd))
+
+priors_rslope_gest_align_prop = c(
+  prior(normal(-1.39, 0.5), class = Intercept),
+  prior(normal(0, 0.5), class = b),
+  prior(normal(0, 50), class = shape),
+  prior(normal(0, 0.5), class = sd),
+  prior(lkj(2), class = cor))
+
+priors_rslope_gest_align_prop_zinb = c(
+  prior(normal(-1.39, 0.5), class = Intercept),
+  prior(normal(0, 0.5), class = b),
+  prior(normal(0, 0.5), class = sd),
+  prior(lkj(2), class = cor),
+  prior(normal(0, 0.5), class = zi), # on the logit scale
+  prior(normal(0, 50), class = shape))
+```
+
+
+<br>
+
+
+## 8.4 Negative binomial regression models
+
+### 8.4.1 Model 3: [ppB] condition * round + lex_align_c
+#### Model effect: round
+```{r}
+nb_align_rate_cond_round = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+                                 1 + condition * round + lex_align_c + role +
+                                 (1+round|pair) + (1|target),
+                               family = negbinomial(),
+                               prior = priors_rslope_gest_align_prop,
+                               data = df_gest_align_posreg_prop,
+                               sample_prior = T,
+                               save_pars = save_pars(all = TRUE),
+                               warmup = nwu, iter = niter,
+                               control = list(adapt_delta = 0.9, 
+                                              max_treedepth = 15),
+                               file = "models/speakerB/nb_align_rate_cond_round")
+
+nb_align_rate_cond_round_c = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+                                   1 + condition * round_c + lex_align_c + role +
+                                   (1+round_c|pair) + (1|target),
+                                 family = negbinomial(),
+                                 prior = priors_rslope_gest_align_prop,
+                                 data = df_gest_align_posreg_prop,
+                                 sample_prior = T,
+                                 save_pars = save_pars(all = TRUE),
+                                 warmup = nwu, iter = niter,
+                                 control = list(adapt_delta = 0.9, 
+                                                max_treedepth = 15),
+                                 file = "models/speakerB/nb_align_rate_cond_round_c")
+
+nb_align_rate_cond_round_log = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+                                     1 + condition * log_round_c + lex_align_c + role +
+                                     (1+log_round_c|pair) + (1|target),
+                                   family = negbinomial(),
+                                   prior = priors_rslope_gest_align_prop,
+                                   data = df_gest_align_posreg_prop,
+                                   sample_prior = T,
+                                   save_pars = save_pars(all = TRUE),
+                                   warmup = nwu, iter = niter,
+                                   control = list(adapt_delta = 0.9, 
+                                                  max_treedepth = 15),
+                                   file = "models/speakerB/nb_align_rate_cond_round_log")
+
+
+
+### loo compare
+if (!file.exists("models/speakerB/loo_nb_align_rate_cond_round.rds")){
+  nb_cond_round_loo = loo(nb_align_rate_cond_round)
+  saveRDS(nb_cond_round_loo, file = "models/speakerB/loo_nb_align_rate_cond_round.rds")
+}
+
+if (!file.exists("models/speakerB/loo_nb_align_rate_cond_round_c.rds")){
+  nb_cond_round_c_loo = loo(nb_align_rate_cond_round_c)
+  saveRDS(nb_cond_round_c_loo, file = "models/speakerB/loo_nb_align_rate_cond_round_c.rds")
+}
+
+if (!file.exists("models/speakerB/loo_nb_align_rate_cond_round_log.rds")){
+  nb_cond_round_log_loo = loo(nb_align_rate_cond_round_log)
+  saveRDS(nb_cond_round_log_loo, file = "models/speakerB/loo_nb_align_rate_cond_round_log.rds")
+}
+
+nb_cond_round_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round.rds")
+nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round_c.rds")
+nb_cond_round_log_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round_log.rds")
+
+loo_compare(nb_cond_round_loo, nb_cond_round_c_loo, nb_cond_round_log_loo)
+```
+
+The leave-one-out (LOO) Effect shows that the backward-difference coded round provides a far larger predictive power (elpd_diff) and a far smaller standard error (se_diff) compared to the centered round or centered log-transformed round. Thus, we will use the bd coded round as a predictor for further analyses.
+
+<br>
+
+#### Model effect: ZI or not
+```{r}
+zinb_align_rate_cond_round = brm(num_gestural_align ~ 
+                                   1 + condition * round + lex_align_c + role +
+                                   offset(log(num_iconic_gestures)) +
+                                   (1+round|pair) + (1|target),
+                                 family = zero_inflated_negbinomial(),
+                                 prior = priors_rslope_gest_align_prop_zinb,
+                                 data = df_gest_align_posreg_prop,
+                                 sample_prior = T,
+                                 warmup = nwu, iter = niter,
+                                 control = list(adapt_delta = 0.9, 
+                                                max_treedepth = 15),
+                                 file = "models/speakerB/zinb_align_rate_cond_round")
+
+
+
+### loo compare
+if (!file.exists("models/speakerB/loo_zinb_align_rate_cond_round.rds")){
+  zinb_cond_round_c_loo = loo(zinb_align_rate_cond_round)
+  saveRDS(zinb_cond_round_c_loo, file = "models/speakerB/loo_zinb_align_rate_cond_round.rds")
+}
+
+nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round.rds")
+zinb_cond_round_c_loo = readRDS("models/speakerB/loo_zinb_align_rate_cond_round.rds")
+
+loo_compare(nb_cond_round_c_loo, zinb_cond_round_c_loo)
+```
+
+The loo comparsion shows that non-inflation model has a higher predictive power than the zero-inflation model. As such, we will use NB regression models for further analyses.
+
+<br>
+
+#### Prior predictive check
+```{r pp_check_m3}
+nb_gest_align_prop_prior = brm(num_gestural_align | rate(num_iconic_gestures) ~
+                                 1 + condition + round + lex_align_c + role +
+                                 (1+round|pair) + (1|target),
+                               family = negbinomial(),
+                               prior = priors_rslope_gest_align_prop,
+                               data = df_gest_align_posreg_prop,
+                               sample_prior = "only",
+                               control = list(adapt_delta = 0.9, 
+                                              max_treedepth = 20),
+                               file = "models/speakerB/nb_gest_align_prop_prior")
+
+pp_check(nb_gest_align_prop_prior, ndraws = 100, type = "bars") +
+  coord_cartesian(xlim = c(0, 20),
+                  ylim = c(0, 3000))
+```
+
+The prior predictive check shows that the model expects fewer amount of 2, 3, and 4. This suggests that the zero-inflation prior may be too large or the mean for the intercept prior is too low. We will check the prior-posterior update plot and posterior predictive check to see if the model generates data that are similar to the observed data. If not, we will consider modifying the priors.
+
+<br>
+
+#### Fit the model
+```{r}
+nb_align_rate_cond_round = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+                                 1 + condition * round + lex_align_c + role +
+                                 (1+round|pair) + (1|target),
+                               family = negbinomial(),
+                               prior = priors_rslope_gest_align_prop,
+                               data = df_gest_align_posreg_prop,
+                               sample_prior = T,
+                               save_pars = save_pars(all = TRUE),
+                               warmup = nwu, iter = niter,
+                               control = list(adapt_delta = 0.9, 
+                                              max_treedepth = 15),
+                               file = "models/speakerB/nb_align_rate_cond_round")
+
+model = nb_align_rate_cond_round
+summary(model)
+bayestestR::hdi(model)
+# bayestestR::hdi(model, ci = 0.89)
+```
+
+The coefficients show that the proportion of gestural alignment was significantly higher in the SymAV condition than in the AO condition. Also, the rate of gestural alignment significantly increased from R1--R2 and R2--R3 and stabilized afterwards.
+
+<br>
+
+#### Hypothesis testing: Bayes factor
+```{r}
+### varying priors for sensitivity analysis
+prior_size = c("xs", "s", "l", "xl")
+prior_sd = c(0.1, 0.3, 0.7, 1)
+bfs_cond_ao_asym = c()
+bfs_cond_asym_sym = c()
+bfs_round12 = c()
+bfs_round23 = c()
+bfs_round34 = c()
+bfs_round45 = c()
+bfs_round56 = c()
+bfs_lex_align = c()
+bfs_ao_asym_round12 = c()
+bfs_ao_asym_round23 = c()
+bfs_ao_asym_round34 = c()
+bfs_ao_asym_round45 = c()
+bfs_ao_asym_round56 = c()
+bfs_asym_sym_round12 = c()
+bfs_asym_sym_round23 = c()
+bfs_asym_sym_round34 = c()
+bfs_asym_sym_round45 = c()
+bfs_asym_sym_round56 = c()
+
+for (i in 1:length(prior_sd)){
+  priors = c(
+    prior(normal(-1.39, 0.5), class = Intercept),
+    set_prior(paste0("normal(0,", prior_sd[i], ")"), class = "b"),
+    prior(normal(0, 0.5), class = sd),
+    prior(lkj(2), class = cor),
+    prior(normal(0, 50), class = shape))
+  
+  fname = paste0("models/speakerB/nb_align_rate_cond_round_", prior_size[i])
+  
+  fit = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+              1 + condition * round + lex_align_c + role +
+              (1+round|pair) + (1|target),
+            family = negbinomial(),
+            prior = priors,
+            data = df_gest_align_posreg_prop,
+            sample_prior = T,
+            save_pars = save_pars(all = TRUE),
+            warmup = nwu, iter = niter,
+            control = list(adapt_delta = 0.9, 
+                           max_treedepth = 15),
+            file = fname)
+  
+  ### BF for visibility conditions
+  # ao - asym
+  h = hypothesis(fit, "conditionAO_Asym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_cond_ao_asym = c(bfs_cond_ao_asym, bf)
+  
+  # asym - sym
+  h = hypothesis(fit, "conditionAsym_Sym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_cond_asym_sym = c(bfs_cond_asym_sym, bf)
+  
+  ### BF for rounds
+  # R1 - R2
+  h = hypothesis(model, "roundR12 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_round12 = c(bfs_round12, bf)
+  
+  # R2 - R3
+  h = hypothesis(model, "roundR23 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_round23 = c(bfs_round23, bf)
+  
+  # R3 - R4
+  h = hypothesis(model, "roundR34 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_round34 = c(bfs_round34, bf)
+  
+  # R4 - R5
+  h = hypothesis(model, "roundR45 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_round45 = c(bfs_round45, bf)
+  
+  # R5 - R6
+  h = hypothesis(model, "roundR56 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_round56 = c(bfs_round56, bf)
+  
+  ### BF for N. lex alignment
+  h = hypothesis(fit, "lex_align_c = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_lex_align = c(bfs_lex_align, bf)
+  
+  ### BF for interaction
+  # ao - asym: R1 - R2
+  h = hypothesis(model, "conditionAO_Asym:roundR12 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_asym_round12 = c(bfs_ao_asym_round12, bf)
+  
+  # ao - asym: R2 - R3
+  h = hypothesis(model, "conditionAO_Asym:roundR23 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_asym_round23 = c(bfs_ao_asym_round23, bf)
+  
+  # ao - asym: R3 - R4
+  h = hypothesis(model, "conditionAO_Asym:roundR34 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_asym_round34 = c(bfs_ao_asym_round34, bf)
+  
+  # ao - asym: R4 - R5
+  h = hypothesis(model, "conditionAO_Asym:roundR45 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_asym_round45 = c(bfs_ao_asym_round45, bf)
+  
+  # ao - asym: R5 - R6
+  h = hypothesis(model, "conditionAO_Asym:roundR56 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_asym_round56 = c(bfs_ao_asym_round56, bf)
+  
+  # asym - sym: R1 - R2
+  h = hypothesis(model, "conditionAsym_Sym:roundR12 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_asym_sym_round12 = c(bfs_asym_sym_round12, bf)
+  
+  # asym - sym: R2 - R3
+  h = hypothesis(model, "conditionAsym_Sym:roundR23 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_asym_sym_round23 = c(bfs_asym_sym_round23, bf)
+  
+  # asym - sym: R3 - R4
+  h = hypothesis(model, "conditionAsym_Sym:roundR34 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_asym_sym_round34 = c(bfs_asym_sym_round34, bf)
+  
+  # asym - sym: R4 - R5
+  h = hypothesis(model, "conditionAsym_Sym:roundR45 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_asym_sym_round45 = c(bfs_asym_sym_round45, bf)
+  
+  # asym - sym: R5 - R6
+  h = hypothesis(model, "conditionAsym_Sym:roundR56 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_asym_sym_round56 = c(bfs_asym_sym_round56, bf)
+}
+
+
+### add BF for the main/medium model
+prior_size[3:5] = c("m", prior_size[3:4])
+prior_sd[3:5] = c(0.5, prior_sd[3:4])
+
+### BF for visibility
+# ao - asym
+h = hypothesis(model, "conditionAO_Asym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_cond_ao_asym[3:5] = c(bf, bfs_cond_ao_asym[3:4])
+
+# asym - sym
+h = hypothesis(model, "conditionAsym_Sym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_cond_asym_sym[3:5] = c(bf, bfs_cond_asym_sym[3:4])
+
+
+### BF for rounds
+# R1 - R2
+h = hypothesis(model, "roundR12 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_round12[3:5] = c(bf, bfs_round12[3:4])
+
+# R2 - R3
+h = hypothesis(model, "roundR23 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_round23[3:5] = c(bf, bfs_round23[3:4])
+
+# R3 - R4
+h = hypothesis(model, "roundR34 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_round34[3:5] = c(bf, bfs_round34[3:4])
+
+# R4 - R5
+h = hypothesis(model, "roundR45 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_round45[3:5] = c(bf, bfs_round45[3:4])
+
+# R5 - R6
+h = hypothesis(model, "roundR56 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_round56[3:5] = c(bf, bfs_round56[3:4])
+
+
+### BF for N. lex alignment
+h = hypothesis(model, "lex_align_c = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_lex_align[3:5] = c(bf, bfs_lex_align[3:4])
+
+
+### BF for interaction
+# ao - asym: R1 - R2
+h = hypothesis(model, "conditionAO_Asym:roundR12 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_asym_round12[3:5] = c(bf, bfs_ao_asym_round12[3:4])
+
+# ao - asym: R2 - R3
+h = hypothesis(model, "conditionAO_Asym:roundR23 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_asym_round23[3:5] = c(bf, bfs_ao_asym_round23[3:4])
+
+# ao - asym: R3 - R4
+h = hypothesis(model, "conditionAO_Asym:roundR34 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_asym_round34[3:5] = c(bf, bfs_ao_asym_round34[3:4])
+
+# ao - asym: R4 - R5
+h = hypothesis(model, "conditionAO_Asym:roundR45 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_asym_round45[3:5] = c(bf, bfs_ao_asym_round45[3:4])
+
+# ao - asym: R5 - R6
+h = hypothesis(model, "conditionAO_Asym:roundR56 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_asym_round56[3:5] = c(bf, bfs_ao_asym_round56[3:4])
+
+# asym - sym: R1 - R2
+h = hypothesis(model, "conditionAsym_Sym:roundR12 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_asym_sym_round12[3:5] = c(bf, bfs_asym_sym_round12[3:4])
+
+# asym - sym: R2 - R3
+h = hypothesis(model, "conditionAsym_Sym:roundR23 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_asym_sym_round23[3:5] = c(bf, bfs_asym_sym_round23[3:4])
+
+# asym - sym: R3 - R4
+h = hypothesis(model, "conditionAsym_Sym:roundR34 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_asym_sym_round34[3:5] = c(bf, bfs_asym_sym_round34[3:4])
+
+# asym - sym: R4 - R5
+h = hypothesis(model, "conditionAsym_Sym:roundR45 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_asym_sym_round45[3:5] = c(bf, bfs_asym_sym_round45[3:4])
+
+# asym - sym: R5 - R6
+h = hypothesis(model, "conditionAsym_Sym:roundR56 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_asym_sym_round56[3:5] = c(bf, bfs_asym_sym_round56[3:4])
+
+
+### make a df for BFs
+df_bf = data.frame(size = prior_size,
+                   sd = prior_sd,
+                   ao_asym = bfs_cond_ao_asym,
+                   asym_sym = bfs_cond_asym_sym,
+                   round12 = bfs_round12,
+                   round23 = bfs_round23,
+                   round34 = bfs_round34,
+                   round45 = bfs_round45,
+                   round56 = bfs_round56,
+                   lex_align = bfs_lex_align,
+                   ao_asym_round12 = bfs_ao_asym_round12,
+                   ao_asym_round23 = bfs_ao_asym_round23,
+                   ao_asym_round34 = bfs_ao_asym_round34,
+                   ao_asym_round45 = bfs_ao_asym_round45,
+                   ao_asym_round56 = bfs_ao_asym_round56,
+                   asym_sym_round12 = bfs_asym_sym_round12,
+                   asym_sym_round23 = bfs_asym_sym_round23,
+                   asym_sym_round34 = bfs_asym_sym_round34,
+                   asym_sym_round45 = bfs_asym_sym_round45,
+                   asym_sym_round56 = bfs_asym_sym_round56) %>% 
+  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
+  pivot_longer(cols = c("ao_asym", "asym_sym", 
+                        "round12", "round23", "round34", "round45", "round56",
+                        "lex_align",
+                        "ao_asym_round12", "ao_asym_round23", "ao_asym_round34",
+                        "ao_asym_round45", "ao_asym_round56",
+                        "asym_sym_round12", "asym_sym_round23", "asym_sym_round34",
+                        "asym_sym_round45", "asym_sym_round56"),
+               names_to = "Effect",
+               values_to = "BF10") %>% 
+  mutate(Predictor = ifelse(grepl("_round", Effect), "Interaction",
+                            ifelse(grepl("round", Effect), "Round", 
+                                   ifelse(Effect == "lex_align", "N. lex align", 
+                                          "Visibility"))))
+
+df_bf$Effect = recode(df_bf$Effect,
+                      ao_asym = "AO--AsymAV",
+                      asym_sym = "AsymAV--SymAV",
+                      round12 = "R1--R2",
+                      round23 = "R2--R3",
+                      round34 = "R3--R4",
+                      round45 = "R4--R5",
+                      round56 = "R5--R6",
+                      lex_align = "N. lex align",
+                      ao_asym_round12 = "AO--AsymAV:R1--R2",
+                      ao_asym_round23 = "AO--AsymAV:R2--R3",
+                      ao_asym_round34 = "AO--AsymAV:R3--R4",
+                      ao_asym_round45 = "AO--AsymAV:R4--R5",
+                      ao_asym_round56 = "AO--AsymAV:R5--R6",
+                      asym_sym_round12 = "AsymAV--SymAV:R1--R2",
+                      asym_sym_round23 = "AsymAV--SymAV:R2--R3",
+                      asym_sym_round34 = "AsymAV--SymAV:R3--R4",
+                      asym_sym_round45 = "AsymAV--SymAV:R4--R5",
+                      asym_sym_round56 = "AsymAV--SymAV:R5--R6")
+```
+
+```{r, fig.height=8}
+#### Plot BFs ####
+# ggplot(filter(df_bf, Effect!="R1--R2"), #exclude R1--R2 because BF is too huge
+#        aes(x = factor(sd), y = BF10, group = Effect)) +
+#   geom_hline(yintercept = 1, linetype="dashed") +
+#   geom_point(aes(color=Effect)) +
+#   geom_line(aes(color=Effect)) +
+#   facet_wrap(vars(Predictor)) +
+#   theme_clean(base_size = 15) +
+#   theme(axis.text.x = element_text(colour = "black", size = 14),
+#         axis.text.y = element_text(colour = "black", size = 14),
+#         axis.title = element_text(size = 15, face = 'bold'),
+#         axis.title.x = element_text(vjust = -2),
+#         axis.title.y = element_text(vjust = 2),
+#         legend.position = "top",
+#         strip.text = element_text(size = 15, face = 'bold'),
+#         plot.background = element_blank(),
+#         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+#   scale_y_log10("Bayes factor (BF10)",
+#                 breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
+#                 labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
+#   xlab("SD for the prior")
+```
+
+<br>
+
+
+<!-- #### Probability of direction -->
+<!-- ```{r} -->
+<!-- p_direction(model) -->
+<!-- ``` -->
+
+<br>
+
+#### Pair-wise effect
+```{r}
+emmeans(model, pairwise ~ condition)$contrasts
+emmeans(model, pairwise ~ condition, level = 0.89)$contrasts
+```
+
+
+<br>
+
+#### Prior-posterior update plot
+```{r update_m3}
+post_sample = as_draws_df(model)
+pp_update_plot(post_sample, model_type="nb")
+```
+
+<br>
+
+#### Posterior predictive check
+```{r ppd_m3}
+pp_check_overall = pp_check(model, ndraws = 100, type = "bars") +
+  coord_cartesian(xlim = c(0, 20),
+                  ylim = c(0, 3000))
+pp_check_sym = pp_check_each_condition(model, df_gest_align_posreg_prop, "SymAV")
+pp_check_asym = pp_check_each_condition(model, df_gest_align_posreg_prop, "AsymAV")
+pp_check_ao = pp_check_each_condition(model, df_gest_align_posreg_prop, "AO")
+
+gridExtra::grid.arrange(pp_check_overall, pp_check_sym, 
+                        pp_check_asym, pp_check_ao, 
+                        ncol = 2)
+```
+
+Although the model prediction is not perfect, this model had a higher predictive power than the negative binomial model. As such, we will use this model.
+
+
+#### Back-transform the effects
+```{r}
+### visibility effects
+# draw samples
+samples = as_draws_df(model)
+alpha = samples$b_Intercept
+beta_ao_asym = samples$b_conditionAO_Asym
+beta_asym_sym = samples$b_conditionAsym_Sym
+
+# convert the samples to the original scale
+alpha_orig = exp(alpha)
+ao_orig = exp(alpha - beta_ao_asym)
+sym_orig = exp(alpha + + beta_asym_sym)
+beta_ao_asym_orig = ao_orig - alpha_orig
+beta_asym_sym_orig = sym_orig - alpha_orig
+
+# summarize the mean and CI of the samples as dataframe
+tibble(estimates = c("intercept_asym", "ao", "sym", "beta_ao_asym", "beta_asym_sym"),
+       mean = c(mean(alpha_orig), mean(ao_orig), mean(sym_orig), 
+                mean(beta_ao_asym_orig), mean(beta_asym_sym_orig)),
+       ci_low = c(quantile(alpha_orig, 0.025), quantile(ao_orig, 0.025), 
+                  quantile(sym_orig, 0.025), quantile(beta_ao_asym_orig, 0.025), 
+                  quantile(beta_asym_sym_orig, 0.025)),
+       ci_high = c(quantile(alpha_orig, 0.975), quantile(ao_orig, 0.975), 
+                  quantile(sym_orig, 0.975), quantile(beta_ao_asym_orig, 0.975), 
+                  quantile(beta_asym_sym_orig, 0.975)))
+```
+
+
+<!-- <br> -->
+
+<!-- #### Visualize the model estimates -->
+<!-- ```{r} -->
+<!-- plot(conditional_effects(model), ask=FALSE) -->
+<!-- ``` -->
+
+
+<br>
+
+******************************
+
+### 8.4.2 Model 4: [ppB] condition_sum * round + lex_align_c
+Here, we will run another model to compare the rate of gestural alignment between the SymAV and AO conditions.
+
+<br>
+
+#### Prior predictive check
+```{r pp_check_m4}
+nb_gest_align_prop_sum_prior = brm(num_gestural_align | rate(num_iconic_gestures) ~
+                                     1 + condition_sum + round + lex_align_c + role +
+                                     (1+round|pair) + (1|target),
+                                   family = negbinomial(),
+                                   prior = priors_rslope_gest_align_prop,
+                                   data = df_gest_align_posreg_prop,
+                                   sample_prior = "only",
+                                   control = list(adapt_delta = 0.9, 
+                                                  max_treedepth = 20),
+                                   file = "models/speakerB/nb_gest_align_prop_sum_prior")
+
+pp_check(nb_gest_align_prop_sum_prior, ndraws = 100, type = "bars") +
+  coord_cartesian(xlim = c(0, 20),
+                  ylim = c(0, 3000))
+```
+
+The prior predictive check shows that the model expects fewer amount of 2, 3, and 4. This suggests that the zero-inflation prior may be too large or the mean for the intercept prior is too low. We will check the prior-posterior update plot and posterior predictive check to see if the model generates data that are similar to the observed data. If not, we will consider modifying the priors.
+
+<br>
+
+#### Fit the model
+```{r}
+nb_align_rate_cond_round_sum = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+                                     1 + condition_sum * round + lex_align_c + role +
+                                     (1+round|pair) + (1|target),
+                                   family = negbinomial(),
+                                   prior = priors_rslope_gest_align_prop,
+                                   data = df_gest_align_posreg_prop,
+                                   sample_prior = T,
+                                   save_pars = save_pars(all = TRUE),
+                                   warmup = nwu, iter = niter,
+                                   control = list(adapt_delta = 0.9, 
+                                                  max_treedepth = 15),
+                                   file = "models/speakerB/nb_align_rate_cond_round_sum")
+
+model = nb_align_rate_cond_round_sum
+summary(model)
+bayestestR::hdi(model)
+# bayestestR::hdi(model, ci = 0.89)
+```
+
+The coefficients show that the proportion of gestural alignment was significantly higher in the SymAV condition than in the AO condition. Also, the rate of gestural alignment significantly increased from R1--R2 and R2--R3 and stabilized afterwards.
+
+<br>
+
+#### Visualize posterior distributions
+```{r pd_m4, width=6, height=8}
+main_model = nb_align_rate_cond_round
+model1 = zinb_align_cond_round
+plot_posterior(main_model, model1, model)
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/gest_alignment/posterior_prop_nb.svg", width=11.5, height=3.5, dpi=600)
+```
+
+<br>
+
+#### Hypothesis testing: Bayes factor
+```{r}
+### varying priors for sensitivity analysis
+prior_size = c("xs", "s", "l", "xl")
+prior_sd = c(0.1, 0.3, 0.7, 1)
+bfs_cond_ao_sym = c()
+bfs_ao_sym_round12 = c()
+bfs_ao_sym_round23 = c()
+bfs_ao_sym_round34 = c()
+bfs_ao_sym_round45 = c()
+bfs_ao_sym_round56 = c()
+
+
+for (i in 1:length(prior_sd)){
+  priors = c(
+    prior(normal(-1.39, 0.5), class = Intercept),
+    set_prior(paste0("normal(0,", prior_sd[i], ")"), class = "b"),
+    prior(normal(0, 0.5), class = sd),
+    prior(lkj(2), class = cor),
+    prior(normal(0, 50), class = shape))
+  
+  fname = paste0("models/speakerB/nb_align_rate_cond_round_sum_", prior_size[i])
+  
+  fit = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+              1 + condition_sum * round + lex_align_c + role +
+              (1+round|pair) + (1|target),
+            family = negbinomial(),
+            prior = priors,
+            data = df_gest_align_posreg_prop,
+            sample_prior = T,
+            save_pars = save_pars(all = TRUE),
+            warmup = nwu, iter = niter,
+            control = list(adapt_delta = 0.9, 
+                           max_treedepth = 15),
+            file = fname)
+  
+  ### BF for visibility conditions
+  # BF for ao - sym
+  h = hypothesis(fit, "condition_sumAO_Sym = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_cond_ao_sym = c(bfs_cond_ao_sym, bf)
+  
+  ### BF for interaction
+  # ao - sym: R1 - R2
+  h = hypothesis(model, "condition_sumAO_Sym:roundR12 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_sym_round12 = c(bfs_ao_sym_round12, bf)
+  
+  # ao - sym: R2 - R3
+  h = hypothesis(model, "condition_sumAO_Sym:roundR23 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_sym_round23 = c(bfs_ao_sym_round23, bf)
+  
+  # ao - sym: R3 - R4
+  h = hypothesis(model, "condition_sumAO_Sym:roundR34 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_sym_round34 = c(bfs_ao_sym_round34, bf)
+  
+  # ao - sym: R4 - R5
+  h = hypothesis(model, "condition_sumAO_Sym:roundR45 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_sym_round45 = c(bfs_ao_sym_round45, bf)
+  
+  # ao - sym: R5 - R6
+  h = hypothesis(model, "condition_sumAO_Sym:roundR56 = 0")
+  bf = 1 / abs(h$hypothesis$Evid.Ratio)
+  bfs_ao_sym_round56 = c(bfs_ao_sym_round56, bf)
+}
+
+### add BF for the main/medium model
+prior_size[3:5] = c("m", prior_size[3:4])
+prior_sd[3:5] = c(0.5, prior_sd[3:4])
+
+### BF for visibility conditions
+# ao - sym
+h = hypothesis(model, "condition_sumAO_Sym = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_cond_ao_sym[3:5] = c(bf, bfs_cond_ao_sym[3:4])
+
+### BF for interaction
+# ao - sym: R1 - R2
+h = hypothesis(model, "condition_sumAO_Sym:roundR12 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_sym_round12[3:5] = c(bf, bfs_ao_sym_round12[3:4])
+
+# ao - sym: R2 - R3
+h = hypothesis(model, "condition_sumAO_Sym:roundR23 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_sym_round23[3:5] = c(bf, bfs_ao_sym_round23[3:4])
+
+# ao - sym: R3 - R4
+h = hypothesis(model, "condition_sumAO_Sym:roundR34 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_sym_round34[3:5] = c(bf, bfs_ao_sym_round34[3:4])
+
+# ao - sym: R4 - R5
+h = hypothesis(model, "condition_sumAO_Sym:roundR45 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_sym_round45[3:5] = c(bf, bfs_ao_sym_round45[3:4])
+
+# ao - sym: R5 - R6
+h = hypothesis(model, "condition_sumAO_Sym:roundR56 = 0")
+bf = 1 / abs(h$hypothesis$Evid.Ratio)
+bfs_ao_sym_round56[3:5] = c(bf, bfs_ao_sym_round56[3:4])
+
+
+### make a df for BFs
+# df_bf_temp = data.frame(size = prior_size,
+#                         sd = prior_sd,
+#                         Effect = "AO--SymAV",
+#                         BF10 = bfs_cond_ao_sym) %>% 
+#   mutate(prior = paste0("N(0, ", sd, ")"),
+#          Predictor = "Visibility")
+
+df_bf_temp = data.frame(size = prior_size,
+                   sd = prior_sd,
+                   ao_sym = bfs_cond_ao_sym,
+                   ao_sym_round12 = bfs_ao_sym_round12,
+                   ao_sym_round23 = bfs_ao_sym_round23,
+                   ao_sym_round34 = bfs_ao_sym_round34,
+                   ao_sym_round45 = bfs_ao_sym_round45,
+                   ao_sym_round56 = bfs_ao_sym_round56) %>% 
+  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
+  pivot_longer(cols = c("ao_sym", 
+                        "ao_sym_round12", "ao_sym_round23", "ao_sym_round34",
+                        "ao_sym_round45", "ao_sym_round56"),
+               names_to = "Effect",
+               values_to = "BF10") %>% 
+  mutate(Predictor = ifelse(grepl("_round", Effect), "Interaction", "Visibility"))
+
+df_bf_temp$Effect = recode(df_bf_temp$Effect,
+                      ao_sym = "AO--SymAV",
+                      ao_sym_round12 = "AO--SymAV:R1--R2",
+                      ao_sym_round23 = "AO--SymAV:R2--R3",
+                      ao_sym_round34 = "AO--SymAV:R3--R4",
+                      ao_sym_round45 = "AO--SymAV:R4--R5",
+                      ao_sym_round56 = "AO--SymAV:R5--R6")
+
+df_bf_new = df_bf %>% 
+  filter(Effect != "N. lex align") %>% 
+  rbind(df_bf_temp) %>% 
+  rbind(df_bf_lex) %>% 
+  filter(!(Predictor == "N. lex align" & Effect != "N. lex align")) %>% 
+  mutate(Effect = factor(Effect,
+                         levels = c("AO--SymAV", "AO--AsymAV", "AsymAV--SymAV", 
+                                    "R1--R2", "R2--R3", "R3--R4", "R4--R5", "R5--R6",
+                                    "N. lex align",
+                                    "AO--SymAV:R1--R2", "AO--SymAV:R2--R3", "AO--SymAV:R3--R4",
+                                    "AO--SymAV:R4--R5", "AO--SymAV:R5--R6",
+                                    "AO--AsymAV:R1--R2", "AO--AsymAV:R2--R3", "AO--AsymAV:R3--R4",
+                                    "AO--AsymAV:R4--R5", "AO--AsymAV:R5--R6",
+                                    "AsymAV--SymAV:R1--R2", "AsymAV--SymAV:R2--R3", "AsymAV--SymAV:R3--R4",
+                                    "AsymAV--SymAV:R4--R5", "AsymAV--SymAV:R5--R6")),
+         Predictor = factor(Predictor,
+                            levels = c("Visibility", "Round", "N. lex align", "Interaction")))
+
+df_bf_new %>% arrange(Effect, sd)
+```
+
+```{r bf_align_rate}
+#### Plot BFs ####
+ggplot(
+  filter(df_bf_new, 
+         Effect != "R1--R2", Predictor != "N. lex align", #exclude effects/predictors where BF is too large
+         Predictor != "Interaction"), #exclude interactions
+  aes(x = factor(sd), y = BF10, group = Effect)) +
+  geom_hline(yintercept = 1, linetype="dashed") +
+  geom_point(aes(color=Effect)) +
+  geom_line(aes(color=Effect)) +
+  facet_wrap(vars(Predictor), scales = "free_x") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        # legend.position = "top",
+        legend.title=element_text(size=14), 
+        legend.text=element_text(size=13),
+        strip.text = element_text(size = 15, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+  scale_y_log10("Bayes factor (BF10)",
+                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
+                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
+  xlab("SD for the prior")
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave("figures/speakerB/gest_alignment/bayes_factor.svg", width=10, height=4, dpi=600)
+```
+
+
+<br>
+
+
+#### Probability of direction
+```{r}
+p_direction(model)
+```
+
+<br>
+
+#### Prior-posterior update plot
+```{r update_m4}
+post_sample = as_draws_df(model)
+pp_update_plot(post_sample, model_type="nb")
+```
+
+<br>
+
+#### Posterior predictive check
+```{r ppd_m4}
+pp_check_overall = pp_check(model, ndraws = 100, type = "bars") +
+  coord_cartesian(xlim = c(0, 20),
+                  ylim = c(0, 3000))
+pp_check_sym = pp_check_each_condition(model, df_gest_align_posreg_prop, "SymAV")
+pp_check_asym = pp_check_each_condition(model, df_gest_align_posreg_prop, "AsymAV")
+pp_check_ao = pp_check_each_condition(model, df_gest_align_posreg_prop, "AO")
+
+gridExtra::grid.arrange(pp_check_overall, pp_check_sym, 
+                        pp_check_asym, pp_check_ao, 
+                        ncol = 2)
+```
+
+Although the model prediction is not perfect, this model had a higher predictive power than the negative binomial model. As such, we will use this model.
+
+<!-- <br> -->
+
+<!-- #### Visualize the model estimates -->
+<!-- ```{r} -->
+<!-- plot(conditional_effects(model), ask=FALSE) -->
+<!-- ``` -->
+
+
+<br>
+
+******************************
+
+# 9. Correlation btw lexical and gestural alignment
+```{r}
+cor = pcor.test(df_trial_info$lex_align_c, df_trial_info$num_gestural_align, df_trial_info$log_round_c)
+cor
+```
+
+<br>
+
+******************************
+
+# =====Session info=====
+```{r}
+sessionInfo()
+```
+
+
+

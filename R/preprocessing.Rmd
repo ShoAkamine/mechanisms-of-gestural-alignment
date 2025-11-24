@@ -167,7 +167,7 @@ write_csv(df_cond, "data/condition_info.csv")
 write_csv(df_trial, "data/trial_info.csv")
 ```
 
-Given responses are missing for 26 trials because (i) participants didn't read out the Fribble numbers/letters for 22 trials (026: 19 odd numbered trials for from 1_1 to 3-5, 031:1_3, 032:1_1, 036_1_1), and (ii) 4 trials were skipped (3 from pair 23 and 1 from pair 26 [3_15]).
+Given responses are missing for 26 trials because (i) participants didn't read out the Fribble numbers/letters for 22 trials (026: 18 odd numbered trials for from 1_1 to 3-5, 031:1_3, 032:1_1, 036_1_1), and (ii) 5 trials were skipped (3 from pair 23 and 2 from pair 26).
 
 
 ## Descriptive statistics
@@ -302,5 +302,88 @@ df_trial %>%
 ```
 
 
+<br>
+
+***
+
+# =========[speaker] turns & trial info=========
+## Make the trial information dataframe and export it as a csv file
+```{r}
+### compute number of words for each trial
+trial_speaker = df_turns %>% 
+  group_by(pair, trial, speaker) %>% 
+  summarize(num_words = sum(num_words),
+            num_content_words = sum(num_content_words)) %>% 
+  ungroup() %>% 
+  complete(pair, trial, speaker, 
+           fill = list(num_words = 0, num_content_words = 0)) %>%
+  filter(!is.na(trial))
+
+
+### compute number of lexical alignment per trial
+df_lex_align = read_csv("data/lexical_alignment.csv") %>% 
+  mutate(pair = as.factor(pair),
+         trial = as.factor(trial_2),
+         speaker = as.factor(speaker_2)) %>%
+  group_by(pair, trial, speaker) %>%
+  summarize(num_lex_align = n()) %>% 
+  ungroup() %>% 
+  complete(pair, trial, speaker, 
+           fill = list(num_lex_align = 0))
+
+### compute number of gestures per trial
+df_gesture = read_csv("data/gestures_type.csv") %>% 
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial),
+         speaker = gesturer) %>% 
+  group_by(pair, trial, speaker) %>% 
+  summarize(num_gestures = n(),
+            num_iconic_gestures = sum(iconic == 1),
+            num_deictic_gestures = sum(iconic == 0 & deictic == 1),
+            num_representational_gestures = sum(representational == 1),
+            num_other_gestures = sum(representational == 0)) %>%
+  ungroup() %>% 
+  complete(pair, trial, speaker, 
+           fill = list(num_gestures = 0, num_iconic_gestures = 0,
+                       num_deictic_gestures = 0, num_representational_gestures = 0,
+                       num_other_gestures = 0)) %>% 
+  filter(!is.na(trial))
+
+### compute number of gestural alignment per trial
+df_gestural_align = read_csv("data/gestural_alignment.csv") %>% 
+  # manually add pairs with no gestural alignment
+  bind_rows(., data.frame(pair = "42")) %>%
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial_2),
+         speaker = factor(speaker_2)) %>%
+  # manually add pairs with no gestural alignment
+  # bind_rows(., data.frame(pair = c("pair10", "pair18"), count = 0)) %>% 
+  group_by(pair, trial, speaker) %>%
+  summarize(num_gestural_align = n()) %>% 
+  ungroup() %>% 
+  complete(pair, trial, speaker, 
+           fill = list(num_gestural_align = 0)) %>%
+  filter(!is.na(trial), !is.na(speaker))
+
+### merge all the dataframes
+df_trial = df_trial %>% 
+  select(pair:target)
+
+df_trial_new = right_join(df_trial, trial_speaker,
+                          by = join_by(pair, trial)) %>% 
+  left_join(df_lex_align) %>%
+  left_join(df_gesture) %>%
+  left_join(df_gestural_align) %>% 
+  select(c("pair", "speaker", "condition", "round", "trial", 
+           "begin", "end", "duration_ms", "duration_m",
+           "director", "accuracy", "target", 
+           "num_words", "num_content_words", "num_lex_align", 
+           "num_gestures", "num_iconic_gestures", "num_deictic_gestures", 
+           "num_representational_gestures", "num_other_gestures", "num_gestural_align"))
+
+
+### export the file
+write_csv(df_trial_new, "data/trial_info_speaker.csv")
+```
 
 

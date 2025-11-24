@@ -2773,7 +2773,7 @@ font-size: 0.95em;
 
 
 <h1 class="title toc-ignore">Preprocessing</h1>
-<h4 class="date">Last updated: 2025-08-22</h4>
+<h4 class="date">Last updated: 2025-10-06</h4>
 
 </div>
 
@@ -2943,10 +2943,9 @@ df_trial = left_join(df_trial, trial_pair) %&gt;%
 write_csv(df_cond, &quot;data/condition_info.csv&quot;)
 write_csv(df_trial, &quot;data/trial_info.csv&quot;)</code></pre>
 <p>Given responses are missing for 26 trials because (i) participants
-didn’t read out the Fribble numbers/letters for 22 trials (026: 19 odd
+didn’t read out the Fribble numbers/letters for 22 trials (026: 18 odd
 numbered trials for from 1_1 to 3-5, 031:1_3, 032:1_1, 036_1_1), and
-(ii) 4 trials were skipped (3 from pair 23 and 1 from pair 26
-[3_15]).</p>
+(ii) 5 trials were skipped (3 from pair 23 and 2 from pair 26).</p>
 </div>
 <div id="descriptive-statistics" class="section level2">
 <h2>Descriptive statistics</h2>
@@ -3116,6 +3115,90 @@ df_trial %&gt;%
 {"columns":[{"label":["condition"],"name":[1],"type":["fct"],"align":["left"]},{"label":["n_correct"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["n_incorrect"],"name":[3],"type":["int"],"align":["right"]},{"label":["mean_acc"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["sd_acc"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lci_acc"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["uci_acc"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["mean_dur_m"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["sd_dur_m"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["lci_dur_m"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["uci_dur_m"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[{"1":"AO","2":"1406","3":"10","4":"0.993","5":"0.0838","6":"0.989","7":"0.997","8":"0.245","9":"0.249","10":"0.232","11":"0.258"},{"1":"Asym","2":"1427","3":"12","4":"0.992","5":"0.0910","6":"0.987","7":"0.996","8":"0.248","9":"0.252","10":"0.235","11":"0.261"},{"1":"Sym","2":"1425","3":"14","4":"0.990","5":"0.0982","6":"0.985","7":"0.995","8":"0.256","9":"0.241","10":"0.244","11":"0.269"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="speaker-turns-trial-info" class="section level1">
+<h1>=========[speaker] turns &amp; trial info=========</h1>
+<div id="make-the-trial-information-dataframe-and-export-it-as-a-csv-file-1" class="section level2">
+<h2>Make the trial information dataframe and export it as a csv
+file</h2>
+<pre class="r"><code>### compute number of words for each trial
+trial_speaker = df_turns %&gt;% 
+  group_by(pair, trial, speaker) %&gt;% 
+  summarize(num_words = sum(num_words),
+            num_content_words = sum(num_content_words)) %&gt;% 
+  ungroup() %&gt;% 
+  complete(pair, trial, speaker, 
+           fill = list(num_words = 0, num_content_words = 0)) %&gt;%
+  filter(!is.na(trial))
+
+
+### compute number of lexical alignment per trial
+df_lex_align = read_csv(&quot;data/lexical_alignment.csv&quot;) %&gt;% 
+  mutate(pair = as.factor(pair),
+         trial = as.factor(trial_2),
+         speaker = as.factor(speaker_2)) %&gt;%
+  group_by(pair, trial, speaker) %&gt;%
+  summarize(num_lex_align = n()) %&gt;% 
+  ungroup() %&gt;% 
+  complete(pair, trial, speaker, 
+           fill = list(num_lex_align = 0))
+
+### compute number of gestures per trial
+df_gesture = read_csv(&quot;data/gestures_type.csv&quot;) %&gt;% 
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial),
+         speaker = gesturer) %&gt;% 
+  group_by(pair, trial, speaker) %&gt;% 
+  summarize(num_gestures = n(),
+            num_iconic_gestures = sum(iconic == 1),
+            num_deictic_gestures = sum(iconic == 0 &amp; deictic == 1),
+            num_representational_gestures = sum(representational == 1),
+            num_other_gestures = sum(representational == 0)) %&gt;%
+  ungroup() %&gt;% 
+  complete(pair, trial, speaker, 
+           fill = list(num_gestures = 0, num_iconic_gestures = 0,
+                       num_deictic_gestures = 0, num_representational_gestures = 0,
+                       num_other_gestures = 0)) %&gt;% 
+  filter(!is.na(trial))
+
+### compute number of gestural alignment per trial
+df_gestural_align = read_csv(&quot;data/gestural_alignment.csv&quot;) %&gt;% 
+  # manually add pairs with no gestural alignment
+  bind_rows(., data.frame(pair = &quot;42&quot;)) %&gt;%
+  mutate(pair = factor(as.integer(pair)),
+         trial = factor(trial_2),
+         speaker = factor(speaker_2)) %&gt;%
+  # manually add pairs with no gestural alignment
+  # bind_rows(., data.frame(pair = c(&quot;pair10&quot;, &quot;pair18&quot;), count = 0)) %&gt;% 
+  group_by(pair, trial, speaker) %&gt;%
+  summarize(num_gestural_align = n()) %&gt;% 
+  ungroup() %&gt;% 
+  complete(pair, trial, speaker, 
+           fill = list(num_gestural_align = 0)) %&gt;%
+  filter(!is.na(trial), !is.na(speaker))
+
+### merge all the dataframes
+df_trial = df_trial %&gt;% 
+  select(pair:target)
+
+df_trial_new = right_join(df_trial, trial_speaker,
+                          by = join_by(pair, trial)) %&gt;% 
+  left_join(df_lex_align) %&gt;%
+  left_join(df_gesture) %&gt;%
+  left_join(df_gestural_align) %&gt;% 
+  select(c(&quot;pair&quot;, &quot;speaker&quot;, &quot;condition&quot;, &quot;round&quot;, &quot;trial&quot;, 
+           &quot;begin&quot;, &quot;end&quot;, &quot;duration_ms&quot;, &quot;duration_m&quot;,
+           &quot;director&quot;, &quot;accuracy&quot;, &quot;target&quot;, 
+           &quot;num_words&quot;, &quot;num_content_words&quot;, &quot;num_lex_align&quot;, 
+           &quot;num_gestures&quot;, &quot;num_iconic_gestures&quot;, &quot;num_deictic_gestures&quot;, 
+           &quot;num_representational_gestures&quot;, &quot;num_other_gestures&quot;, &quot;num_gestural_align&quot;))
+
+
+### export the file
+write_csv(df_trial_new, &quot;data/trial_info_speaker.csv&quot;)</code></pre>
 </div>
 </div>
 
