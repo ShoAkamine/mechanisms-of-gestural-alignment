@@ -2,6 +2,7 @@
 title: "Causal inference"
 date: "Last updated on `r Sys.Date()`"
 output:
+  github_document:
   html_document:
     theme: cosmo
     highlight: pygments
@@ -10,8 +11,6 @@ output:
     df_print: paged
     code-tools: true
     code-fold: true
-  github_document:
-    df_print: paged
 editor_options: 
   markdown: 
     wrap: sentence #Wrap texts in code cells
@@ -76,7 +75,7 @@ x = beta_zx * z + rnorm(n, 500, 100)
 y = beta_zy * z + rnorm(n, 500, 100)
 
 data = data.frame(x = x, y = y, z = z)
-data
+head(data)
 ```
 
 ## Estimate the confounded causal effect
