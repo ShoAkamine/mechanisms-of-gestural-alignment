@@ -1,18 +1,16 @@
 ---
 title: "Causal inference"
 date: "Last updated on `r Sys.Date()`"
-output: 
+output:
   html_document:
     theme: cosmo
+    highlight: pygments
     toc: true
-    toc_depth: 4
-    toc_float:
-      collapsed: true
-    number_sections: true
+    toc_float: true
     df_print: paged
     code-tools: true
     code-fold: true
-    code_folding: hide #hide the code section initially
+  github_document:
 editor_options: 
   markdown: 
     wrap: sentence #Wrap texts in code cells
@@ -30,7 +28,7 @@ options(digits = 3) # set the default number of digits to 3
 
 
 ### Rmd settings
-knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, fig.path="figures_md/causal_inference/")
 ```
 
 # Introduction
@@ -41,7 +39,7 @@ To explore these questions, we will simulate data. The advantage of simulating d
 # Case study 1: A confounded relationship
 In this case study, we will estimate the correct causal effect of a predictor variable on a response variable for the following DAG:
 
-```{r}
+```{r dag_confound}
 dag <- dagitty('dag {
   X [pos="-1,0"]
   Y [pos="1,0"]
@@ -111,7 +109,7 @@ Now, the model with the minimum adjustment set correctly estimates the causal ef
 # Case study 2: Determining the direction of causality
 In this case study, we will examine whether we can infer the direction of causality from observational data. We will consider the following DAG:
 
-```{r}
+```{r dag_direction}
 dag <- dagitty('dag {
   X [pos="-1,0"]
   Y [pos="1,0"]
@@ -167,7 +165,7 @@ We will also check if this holds when we adjust for the confounder $Z$.
 # Case study 3: Determining the direction of causality with a confounder
 In this case study, we will examine whether we can infer the direction of causality from observational data when there is a confounder. We will consider the following DAG:
 
-```{r}
+```{r dag_direction_with_confounder}
 dag <- dagitty('dag {
   X [pos="-1,0"]
   Y [pos="1,0"]
