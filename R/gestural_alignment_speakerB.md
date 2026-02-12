@@ -1,31 +1,18 @@
 gestural_alignment_rate
 ================
-Last updated: 2025-11-24
+Last updated: 2026-02-11
 
 ``` r
-library(tidyverse)
-library(plotrix)    #std.error
-library(hypr)       #for generating contrast coding
-library(ggthemes)
-library(ggh4x)
-library(dagitty)    #dagitty for causal diagrams
-library(DiagrammeR) #grViz for causal diagrams
-library(DiagrammeRsvg)
-library(rsvg)
-library(plotly)     #ggplotly for interactive plots
-library(brms)       #bayesian regression
-library(bayestestR) #p_direction, hdi
-library(tidybayes)  #add_epred_draws
-library(emmeans)
-library(doParallel) #set the number of cores
-library(ppcor)      #partial correlation
-library(svglite)
+pckgs <- c("plotly", "parallelly", "tidyverse", "plotrix", "hypr", 
+           "ggthemes", "RColorBrewer", "ggh4x", "dagitty", "DiagrammeR", "patchwork",
+           "DiagrammeRsvg", "rsvg", "brms", "bayestestR", "tidybayes",
+           "marginaleffects", "emmeans", "doParallel", "ppcor", "svglite")
+pacman::p_load(pckgs, character.only = TRUE)
 
 
 ### Set global options
 options(digits = 3) # set the default number of digits to 3
-cores = as.integer(detectCores(logical = FALSE) * 0.8) # set the number of cores to use
-registerDoParallel(cores=cores) # register the number of cores to use for parallel processing
+cores = ifelse(availableCores() < 4, 4L, availableCores())
 options(mc.cores = cores)
 options(brms.backend = "cmdstanr")  #this will speed up the model fitting
 
@@ -38,353 +25,436 @@ knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, fig.path="figures
 ```
 
 ``` r
-### Custom functions
-
-########### pp_check_each_round ############
-pp_check_each_round <- function(m, data, round_info) {
-  df_sub = filter(data, round == round_info)
-  p = pp_check(m,
-               type = "bars",
-               ndraws = 100,
-               newdata = df_sub) +
-    coord_cartesian(xlim = c(0, 10)) +
-    ggtitle(round_info)
-  return(p)
-}
-
-
-########### pp_check_each_condition ############
-pp_check_each_condition <- function(m, data, condition_info) {
-  df_sub = filter(data, condition == condition_info)
-  p = pp_check(m,
-               type = "bars",
-               ndraws = 100,
-               newdata = df_sub) +
-    coord_cartesian(xlim = c(0, 10)) +
-    ggtitle(condition_info)
-  return(p)
-}
-
-
-########### plot_posterior ############
-plot_posterior <- function(model, model2=NA, model3=NA, 
-                           interaction=FALSE, include_intercept=FALSE, 
-                           xlim_cond=1.5, xlim_round=2, xlim_lex=0.4){
-  ### extract the posterior draws
-  posterior_beta1 <- model %>% 
-    gather_draws(`b_.*`, regex = TRUE) %>% 
-    mutate(intercept = str_detect(.variable, "Intercept"),
-           component = ifelse(str_detect(.variable, ":"), "Interaction", 
-                              ifelse(str_detect(.variable, "round"), "Round", 
-                                     ifelse(str_detect(.variable, "Intercept"), "Intercept",
-                                            ifelse(str_detect(.variable, "lex_align"), "N. lex align",
-                                                   "Visibility")))))
+########### posterior_beta ############
+posterior_beta <- function(model, round_int=TRUE, lex_int=FALSE){
+  # check if the model uses round_c or round
+  round_term = ifelse("round_c" %in% names(model$data), "round_c", 
+                      ifelse("round" %in% names(model$data), "round", NA))
   
-  if (length(model2) == 1){ #if model2 is NA 
-    posterior_beta = posterior_beta1
-  } else {
-    posterior_beta1 <- posterior_beta1 %>% 
-      filter(.variable != "b_lex_align_c")
-    posterior_beta2 <- model2 %>% 
-      gather_draws(`b_.*`, regex = TRUE) %>% 
-      filter(.variable == "b_lex_align_c") %>% 
-      mutate(component = "N. lex align")
-    posterior_beta3 <- model3 %>% 
-      gather_draws(`b_.*`, regex = TRUE) %>% 
-      filter(.variable == "b_condition_sumAO_Sym") %>% 
-      mutate(component = "Visibility")
-    posterior_beta = rbind(posterior_beta1, posterior_beta2, posterior_beta3)
+  # check if the model includes lex_align_c
+  lex = ifelse("lex_align_c" %in% names(model$data), T, F)
+  
+  ### define columns to select based on the model specification
+  select_cols = c("b_Intercept", 
+                  "b_conditionAO_Asym", "b_conditionAsym_Sym", "ao_sym")
+  if (round_term == "round_c") {
+    select_cols = c(select_cols, c("b_round_c"))
+    if (round_int == TRUE){
+      select_cols = c(select_cols, "ao_sym:round_c",
+                      "b_conditionAO_Asym:round_c", "b_conditionAsym_Sym:round_c")
+    }
+  } else if (round_term == "round") {
+    select_cols = c(select_cols,
+                    c("b_roundR12", "b_roundR23", "b_roundR34", 
+                      "b_roundR45", "b_roundR56"))
+    if (round_int == TRUE){
+      select_cols = c(select_cols,
+                      "b_conditionAO_Asym:roundR12", "b_conditionAO_Asym:roundR23",
+                      "b_conditionAO_Asym:roundR34", "b_conditionAO_Asym:roundR45",
+                      "b_conditionAO_Asym:roundR56",
+                      "b_conditionAsym_Sym:roundR12", "b_conditionAsym_Sym:roundR23",
+                      "b_conditionAsym_Sym:roundR34", "b_conditionAsym_Sym:roundR45",
+                      "b_conditionAsym_Sym:roundR56",
+                      "ao_sym:roundR12", "ao_sym:roundR23", "ao_sym:roundR34",
+                      "ao_sym:roundR45", "ao_sym:roundR56")
+    }
   }
+    
+  # add b_lex_align_c if lex is True
+  select_cols = if (lex) c(select_cols, "b_lex_align_c") else select_cols
+  select_cols = if (lex & lex_int) c(select_cols, "b_lex_align_c:conditionAO_Asym", 
+                                      "b_lex_align_c:conditionAsym_Sym", 
+                                      "lex_align_c:ao_sym") else select_cols
+  
+  
+  ### extract the posterior draws
+  posterior_beta = model %>% 
+    spread_draws(`b_.*`, regex = TRUE) %>% 
+    mutate(ao_sym = b_conditionAO_Asym + b_conditionAsym_Sym)
+  
+  if (round_term == "round_c" & round_int == TRUE) {
+    posterior_beta = posterior_beta %>% 
+      mutate(`ao_sym:round_c` = `b_conditionAO_Asym:round_c` + `b_conditionAsym_Sym:round_c`)
+    
+  } else if (round_term == "round" & round_int == TRUE) {
+    posterior_beta = posterior_beta %>% 
+      mutate(`ao_sym:roundR12` = `b_conditionAO_Asym:roundR12` + `b_conditionAsym_Sym:roundR12`,
+             `ao_sym:roundR23` = `b_conditionAO_Asym:roundR23` + `b_conditionAsym_Sym:roundR23`,
+             `ao_sym:roundR34` = `b_conditionAO_Asym:roundR34` + `b_conditionAsym_Sym:roundR34`,
+             `ao_sym:roundR45` = `b_conditionAO_Asym:roundR45` + `b_conditionAsym_Sym:roundR45`,
+             `ao_sym:roundR56` = `b_conditionAO_Asym:roundR56` + `b_conditionAsym_Sym:roundR56`)
+  }
+  
+  if (lex & lex_int) {
+    posterior_beta = posterior_beta %>% 
+      mutate(`lex_align_c:ao_sym` = `b_lex_align_c:conditionAO_Asym` + `b_lex_align_c:conditionAsym_Sym`)
+  }
+  
+  posterior_beta = posterior_beta %>%
+    pivot_longer(
+      cols = select_cols,
+      names_to = ".variable",
+      values_to = ".value") %>% 
+    mutate(component = case_when(str_detect(.variable, ":") ~ "Interaction",
+                                 str_detect(.variable, "round") ~ "Round",
+                                 str_detect(.variable, "Intercept") ~ "Intercept",
+                                 str_detect(.variable, "lex_align") ~ "N. lex align",
+                                 .default = "Visibility"))
+  
+  ### recode variable names and set factor levels
+  fct_levels = c("Intercept",
+                 "AO--AsymAV", "AsymAV--SymAV", "AO--SymAV",
+                 "Round", "Centered log(round)",
+                 "R1--R2", "R2--R3", "R3--R4", "R4--R5", "R5--R6",
+                 "Round: AO--AsymAV", "Round: AsymAV--SymAV", "Round: AO--SymAV",
+                 "AO--AsymAV: R1--R2", "AO--AsymAV: R2--R3", "AO--AsymAV: R3--R4", 
+                 "AO--AsymAV: R4--R5", "AO--AsymAV: R5--R6",
+                 "AsymAV--SymAV: R1--R2", "AsymAV--SymAV: R2--R3", "AsymAV--SymAV: R3--R4",
+                 "AsymAV--SymAV: R4--R5", "AsymAV--SymAV: R5--R6",
+                 "AO--SymAV: R1--R2", "AO--SymAV: R2--R3", "AO--SymAV: R3--R4",
+                 "AO--SymAV: R4--R5", "AO--SymAV: R5--R6",
+                 "N. lex align", "AO--AsymAV:\n N. lex align", 
+                 "AsymAV--SymAV:\n N. lex align", "AO--SymAV:\n N. lex align")
   
   posterior_beta = posterior_beta %>% 
     mutate(.variable = recode(.variable, 
                               "b_Intercept" = "Intercept",
-                              "b_conditionAsymAV" = "SymAV--AsymAV",
-                              "b_conditionAO" = "SymAV--AO",
-                              "b_conditionAsym_Sym" = "AsymAV--SymAV",
                               "b_conditionAO_Asym" = "AO--AsymAV",
-                              "b_condition_sumAO_Sym" = "AO--SymAV",
-                              "b_lex_align_c" = "N. lex align",
-                              "b_round_c" = "Centered round",
-                              "b_log_round_c" = "Centered log(round)",
+                              "b_conditionAsym_Sym" = "AsymAV--SymAV",
+                              "ao_sym" = "AO--SymAV",
+                              "b_round_c" = "Round",
                               "b_roundR12" = "R1--R2",
                               "b_roundR23" = "R2--R3",
                               "b_roundR34" = "R3--R4",
                               "b_roundR45" = "R4--R5",
                               "b_roundR56" = "R5--R6",
-                              "b_conditionAsymAV:round1" = "SymAV--AsymAV: R1--R2",
-                              "b_conditionAsymAV:round2" = "SymAV--AsymAV: R2--R3",
-                              "b_conditionAsymAV:round3" = "SymAV--AsymAV: R3--R4",
-                              "b_conditionAsymAV:round4" = "SymAV--AsymAV: R4--R5",
-                              "b_conditionAsymAV:round5" = "SymAV--AsymAV: R5--R6",
-                              "b_conditionAO:round1" = "SymAV--AO: R1--R2",
-                              "b_conditionAO:round2" = "SymAV--AO: R2--R3",
-                              "b_conditionAO:round3" = "SymAV--AO: R3--R4",
-                              "b_conditionAO:round4" = "SymAV--AO: R4--R5",
-                              "b_conditionAO:round5" = "SymAV--AO: R5--R6",
-                              "b_conditionAsym_Sym:round_c" = "Centered round: Asym--Sym",
-                              "b_conditionAO_Sym:round_c" = "Centered round: AO--Sym",
-                              "b_conditionAO_Asym:round_c" = "Centered round: AO--Asym",
-                              "b_conditionAsym_Sym:log_round_c" = "Centered log(round): Asym--Sym",
-                              "b_conditionAO_Sym:log_round_c" = "Centered log(round): AO--Sym",
-                              "b_conditionAO_Asym:log_round_c" = "Centered log(round): AO--Asym"),
+                              "b_lex_align_c" = "N. lex align",
+                              "b_conditionAO_Asym:round_c" = "Round: AO--AsymAV",
+                              "b_conditionAsym_Sym:round_c" = "Round: AsymAV--SymAV",
+                              "ao_sym:round_c" = "Round: AO--SymAV",
+                              "b_conditionAO_Asym:roundR12" = "AO--AsymAV: R1--R2",
+                              "b_conditionAO_Asym:roundR23" = "AO--AsymAV: R2--R3",
+                              "b_conditionAO_Asym:roundR34" = "AO--AsymAV: R3--R4",
+                              "b_conditionAO_Asym:roundR45" = "AO--AsymAV: R4--R5",
+                              "b_conditionAO_Asym:roundR56" = "AO--AsymAV: R5--R6",
+                              "b_conditionAsym_Sym:roundR12" = "AsymAV--SymAV: R1--R2",
+                              "b_conditionAsym_Sym:roundR23" = "AsymAV--SymAV: R2--R3",
+                              "b_conditionAsym_Sym:roundR34" = "AsymAV--SymAV: R3--R4",
+                              "b_conditionAsym_Sym:roundR45" = "AsymAV--SymAV: R4--R5",
+                              "b_conditionAsym_Sym:roundR56" = "AsymAV--SymAV: R5--R6",
+                              "ao_sym:roundR12" = "AO--SymAV: R1--R2",
+                              "ao_sym:roundR23" = "AO--SymAV: R2--R3",
+                              "ao_sym:roundR34" = "AO--SymAV: R3--R4",
+                              "ao_sym:roundR45" = "AO--SymAV: R4--R5",
+                              "ao_sym:roundR56" = "AO--SymAV: R5--R6",
+                              "b_lex_align_c:conditionAO_Asym" = "AO--AsymAV:\n N. lex align",
+                              "b_lex_align_c:conditionAsym_Sym" = "AsymAV--SymAV:\n N. lex align",
+                              "lex_align_c:ao_sym" = "AO--SymAV:\n N. lex align"),
            .variable = factor(.variable,
-                              levels = c("AO--SymAV", "AO--AsymAV", "AsymAV--SymAV", 
-                                         "R1--R2", "R2--R3", "R3--R4", "R4--R5", "R5--R6",
-                                         "N. lex align")),
+                              levels = fct_levels),
            component = factor(component, 
                               levels = c("Intercept", "Visibility", "Round", 
                                          "Interaction", "N. lex align")))
-  
-  if (include_intercept == F){
-    posterior_beta = posterior_beta %>% filter(component != "Intercept")
-  }
+  return(posterior_beta)
+}
+
+
+
+########### plot_posterior ############
+plot_posterior <- function(df_post_beta, interaction=FALSE, include_intercept=FALSE,
+                           x_lab = "Coefficient", y_lab = "Effect", title_lab = "",
+                           xlim_cond=1.5, xlim_round=2, xlim_lex=0.4, ncol_wrap=1){
   ### change variables if only main effects are plotted
   if (interaction == F) {
-    posterior_beta = filter(posterior_beta, !str_detect(.variable, ":"))
-    fill_manual_values = c("steelblue", "steelblue", "steelblue")
-  } else{
-    fill_manual_values = c("steelblue", "steelblue", "steelblue", "steelblue")
-  }
+    # df_post_beta = filter(df_post_beta, !str_detect(.variable, ":"))}
+    df_post_beta = filter(df_post_beta, component != "Interaction")}
   
+  fill_manual_values = c("steelblue", "steelblue", "steelblue", "steelblue")
+  space_option = ifelse(ncol_wrap == 1, "free_y", "fixed")
   
   ### plot the posterior distributions
-  p_posterior = ggplot(posterior_beta, 
+  p_posterior = ggplot(filter(df_post_beta, component != "Intercept"),
                        aes(x = .value, y = fct_rev(.variable),
                            fill = component)) +
     geom_vline(xintercept = 0, size = 1) +
     stat_halfeye(aes(slab_alpha = intercept),
-                 normalize = "panels", 
-                 slab_alpha = .5,
-                 .width = c(0.89, 0.95), 
+                 normalize = "panels",
+                 slab_alpha = 0.5,
+                 .width = c(0.89, 0.95),
                  point_interval = "median_hdi") +
     scale_fill_manual(values = fill_manual_values) +
     scale_slab_alpha_discrete(range = c(0.8, 0.4)) +
     guides(fill = "none", slab_alpha = "none") +
-    labs(x = "Coefficient", y = "Effect") +
+    labs(x = x_lab, y = y_lab, title=title_lab) +
     theme_clean(base_size = 15) +
     theme(axis.text.x = element_text(colour = "black", size = 14),
           axis.text.y = element_text(colour = "black", size = 14),
-          axis.title = element_text(size = 15, face = 'bold'),
+          axis.title = element_text(size = 13, face = 'bold'),
           axis.title.x = element_text(vjust = -2),
           axis.title.y = element_text(vjust = 2),
           legend.position = "none",
-          strip.text = element_text(size = 15, face = 'bold'),
+          strip.text = element_text(size = 14, face = 'bold'),
           strip.background = element_blank(),
-          panel.grid.major.x = element_line(color = "grey90", 
+          plot.title.position = "plot",
+          panel.grid.major.x = element_line(color = "grey90",
                                             linetype = "solid",
                                             size = 0.5),
-          panel.grid.major.y = element_line(color = "grey90", 
+          panel.grid.major.y = element_line(color = "grey90",
                                             linetype = "solid",
                                             size = 0.5),
           plot.background = element_blank(),
           plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
-    facet_wrap(vars(component), ncol = 3, scales = "free") + 
+    facet_wrap(vars(component), ncol = ncol_wrap,
+               scales = "free", space = space_option) +
     facetted_pos_scales(
       x = list(
         scale_x_continuous(limits = c(-xlim_cond, xlim_cond)),
         scale_x_continuous(limits = c(-xlim_round, xlim_round)),
-        scale_x_continuous(limits = c(-xlim_lex, xlim_lex))))
+        scale_x_continuous(limits = c(-xlim_lex, xlim_lex))
+      ))
   
   return(p_posterior)
 }
 
 
+
 ########### pp_update_plot ############
-pp_update_plot <- function(post_sample, model_type="nb", interaction=TRUE){
-  sum = ifelse("b_condition_sumAO_Sym" %in% colnames(post_sample), T, F)
+pp_update_plot <- function(post_sample, model_type="nb", interaction=TRUE, 
+                           fam_par = TRUE, ncol=3, return_grob=FALSE){
   round_bd = ifelse("b_roundR12" %in% colnames(post_sample), T, F)
+  lex_align = ifelse("lex_align" %in% colnames(post_sample), T, F)
   
-  intercept = ggplot(post_sample) +
-    geom_density(aes(prior_Intercept), fill="steelblue", color="black",alpha=0.6) +
-    geom_density(aes(b_Intercept), fill="#FC4E07", color="black",alpha=0.6) + 
-    xlab('Intercept') +
+  # define fill colors manually
+  post_sample_temp = post_sample %>% 
+    pivot_longer(cols = everything(), names_to = "parameter", values_to = "value") %>% 
+    filter(parameter %in% c("b_Intercept", "prior_Intercept")) %>%
+    mutate(parameter = factor(parameter, 
+                              levels = c("prior_Intercept", "b_Intercept"),
+                              labels = c("prior", "posterior")))
+  
+  ### Intercept
+  mean_post = mean(post_sample$b_Intercept)
+  intercept = ggplot(post_sample_temp) +
+    geom_density(aes(value, fill=parameter), color="black",alpha=0.6) +
+    # geom_density(aes(b_Intercept, fill="#FC4E07"), color="black",alpha=0.6) + 
+    geom_vline(aes(xintercept = mean_post), linetype = "dashed") +
+    scale_fill_manual(values = c("steelblue", "#FC4E07")) +
+    labs(x = 'Intercept', fill = '') +
     theme_classic()
   
   ### Visibility condition
-  if (sum == F){
-    cond1 = ggplot(post_sample) +
-      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(b_conditionAsym_Sym), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Asym--Sym') +
-      theme_classic()
-    cond2 = ggplot(post_sample) +
-      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(b_conditionAO_Asym), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('AO--Asym') +
-      theme_classic()
-  } else {
-    cond1 = ggplot(post_sample) +
-      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(b_condition_sumAO_Sym), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('AO--Sym') +
-      theme_classic()
-    cond2 = ggplot(post_sample) +
-      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(b_condition_sumAsym_Sym), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Asym--Sym') +
-      theme_classic()
-  }
+  cond1 = ggplot(post_sample) +
+    geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+    geom_density(aes(b_conditionAO_Asym), fill="#FC4E07", color="black",alpha=0.6) +
+    stat_summary(aes(x = b_conditionAO_Asym, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+    labs(x = 'AO--AsymAV', y = "density") +
+    theme_classic()
+  cond2 = ggplot(post_sample) +
+    geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+    geom_density(aes(b_conditionAsym_Sym), fill="#FC4E07", color="black",alpha=0.6) +
+    stat_summary(aes(x = b_conditionAsym_Sym, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+    labs(x = 'AsymAV--SymAV', y = "density") +
+    theme_classic()
+  cond3 = ggplot(post_sample) +
+    geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+    geom_density(aes(ao_sym), fill="#FC4E07", color="black",alpha=0.6) + 
+    stat_summary(aes(x = ao_sym, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+    labs(x = 'AO--SymAV', y = "density") +
+    theme_classic()
+  
+  ### Lex align
+  if (lex_align) {
+    lex = ggplot(post_sample) +
+      geom_density(aes(prior_lex_align), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(lex_align), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = lex_align, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'N. lex align', y = "density") +
+      # scale_x_continuous(limits = c(-1, 1),
+      #                    breaks = c(-1, 0, 1)) +
+      theme_classic()}
   
   ### Round
-  if (interaction) {
-    if (round_bd){
-      r1 = ggplot(post_sample) +
-        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-        geom_density(aes(b_roundR12), fill="#FC4E07", color="black",alpha=0.6) + 
-        xlab('R1--R2') +
-        theme_classic()
-      r2 = ggplot(post_sample) +
-        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-        geom_density(aes(b_roundR23), fill="#FC4E07", color="black",alpha=0.6) + 
-        xlab('R2--R3') +
-        theme_classic()
-      r3 = ggplot(post_sample) +
-        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-        geom_density(aes(b_roundR34), fill="#FC4E07", color="black",alpha=0.6) + 
-        xlab('R3--R4') +
-        theme_classic()
-      r4 = ggplot(post_sample) +
-        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-        geom_density(aes(b_roundR45), fill="#FC4E07", color="black",alpha=0.6) + 
-        xlab('R4--R5') +
-        theme_classic()
-      r5 = ggplot(post_sample) +
-        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-        geom_density(aes(b_roundR56), fill="#FC4E07", color="black",alpha=0.6) + 
-        xlab('R5--R6') +
-        theme_classic()
-    } else {
-      if ("b_round_c" %in% colnames(post_sample)) {
-        round = ggplot(post_sample) +
-          geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-          geom_density(aes(b_round_c), fill="#FC4E07", color="black",alpha=0.6) + 
-          xlab('Centered round') +
-          theme_classic()
-        if (sum == F){
-          cond1_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_conditionAsym_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered Round: Asym--Sym') +
-            theme_classic()
-          cond2_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_conditionAO_Asym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered Round: AO--Asym') +
-            theme_classic()
-        } else {
-          cond1_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_condition_sumAO_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered Round: AO--Sym') +
-            theme_classic()
-          cond2_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_condition_sumAsym_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered Round: Asym--Sym') +
-            theme_classic()
-        }
-      } else {
-        round = ggplot(post_sample) +
-          geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-          geom_density(aes(b_log_round_c), fill="#FC4E07", color="black",alpha=0.6) + 
-          xlab('Centered log(round)') +
-          theme_classic()
-        if (sum == F){
-          cond1_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_conditionAsym_Sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered log(round): Asym--Sym') +
-            theme_classic()
-          cond2_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_conditionAO_Asym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered log(round): AO--Asym') +
-            theme_classic()
-        } else {
-          cond1_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_condition_sumAO_Sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered log(round): AO--Sym') +
-            theme_classic()
-          cond2_round = ggplot(post_sample) +
-            geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
-            geom_density(aes(`b_condition_sumAsym_Sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
-            xlab('Centered log(round): Asym--Sym') +
-            theme_classic()
-        }
-      }
-    }
-  }
-  
-  if (model_type == "nb"){
-    shape = ggplot(post_sample) +
-      geom_density(aes(prior_shape), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(shape), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Shape') +
-      scale_x_continuous(limits = c(0, 10)) +
-      theme_classic()} 
-  else if (model_type == "zinb") {
-    shape = ggplot(post_sample) +
-      geom_density(aes(prior_shape), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(shape), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Shape') +
-      scale_x_continuous(limits = c(0, 10)) +
+  if (round_bd) {
+    r1 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_roundR12), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_roundR12, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'R1--R2', y = "density") +
       theme_classic()
-    zi = ggplot(post_sample) +
-      geom_density(aes(prior_zi), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(zi), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Zero-inflation') +
-      theme_classic()} 
-  else if (model_type == "zibt"){
-    phi = ggplot(post_sample) +
-      geom_density(aes(prior_phi), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(phi), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Precision') +
+    r2 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_roundR23), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_roundR23, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'R2--R3', y = "density") +
       theme_classic()
-    zoi = ggplot(post_sample) +
-      geom_density(aes(prior_zoi), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(zoi), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('Zero-inflation') +
+    r3 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_roundR34), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_roundR34, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'R3--R4', y = "density") +
       theme_classic()
-    coi = ggplot(post_sample) +
-      geom_density(aes(prior_coi), fill="steelblue", color="black",alpha=0.6) +
-      geom_density(aes(coi), fill="#FC4E07", color="black",alpha=0.6) + 
-      xlab('One-inflation') +
+    r4 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_roundR45), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_roundR45, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'R4--R5', y = "density") +
       theme_classic()
-  }
-  
-  ### display the plots
-  if (interaction==F){
-    if (model_type=="nb"){
-      gridExtra::grid.arrange(intercept, cond1, cond2, shape, ncol=2)} 
-    else if (model_type=="zinb"){
-      gridExtra::grid.arrange(intercept, cond1, cond2, shape, zi, ncol=3)} 
-    else if (model_type=="zibt"){
-      gridExtra::grid.arrange(intercept, cond1, cond2, phi, zoi, coi, ncol=3)
-    }
+    r5 = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_roundR56), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_roundR56, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'R5--R6', y = "density") +
+      theme_classic()
+  } else if ("b_round_c" %in% colnames(post_sample)) {
+    round = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_round_c), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_round_c, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'Centered round', y = "density") +
+      theme_classic()
   } else {
-    if (round_bd == T){
-      if (model_type=="nb"){
-        gridExtra::grid.arrange(intercept, cond1, cond2, shape, ncol=3)} 
-      else if (model_type=="zinb"){
-        gridExtra::grid.arrange(intercept, cond1, cond2, shape, zi, ncol=3)} 
-      else if (model_type=="zibt"){
-        gridExtra::grid.arrange(intercept, cond1, cond2, phi, zoi, coi, ncol=3)
-      }
-    } else {
-      if (model_type=="nb"){
-        gridExtra::grid.arrange(intercept, cond1, cond2, round,
-                                cond1_round, cond2_round, shape, ncol=3)} 
-      else if (model_type=="zinb"){
-        gridExtra::grid.arrange(intercept, cond1, cond2, round,
-                                cond1_round, cond2_round, shape, zi, ncol=3)} 
-      else if (model_type=="zibt"){
-        gridExtra::grid.arrange(intercept, cond1, cond2, round,
-                                cond1_round, cond2_round,  phi, zoi, coi, ncol=3)
-      }
-    }
+    round = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_log_round_c), fill="#FC4E07", color="black",alpha=0.6) + 
+      stat_summary(aes(x = b_log_round_c, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+      labs(x = 'Centered log(round)', y = "density") +
+      theme_classic()
   }
+  
+  ### Interaction
+  if (interaction) {
+    if (round_bd){}
+    else if ("b_round_c" %in% colnames(post_sample)) {
+      cond1_round = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(`b_conditionAsym_Sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = `b_conditionAsym_Sym:round_c`, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Centered Round: Asym--Sym', y = "density") +
+        theme_classic()
+      cond2_round = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(`b_conditionAO_Asym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = `b_conditionAO_Asym:round_c`, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Centered Round: AO--Asym', y = "density") +
+        theme_classic()
+      cond3_round = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(`ao_sym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = `ao_sym:round_c`, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Centered Round: AO--Sym', y = "density") +
+        theme_classic()}
+    else {
+      cond1_round = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(`b_conditionAsym_Sym:log_round_c`), fill="#FC4E07", 
+                     color="black",alpha=0.6) + 
+        stat_summary(aes(x = `b_conditionAsym_Sym:log_round_c`, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Centered log(round): Asym--Sym', y = "density") +
+        theme_classic()
+      cond2_round = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(`b_conditionAO_Asym:log_round_c`), fill="#FC4E07", 
+                     color="black",alpha=0.6) + 
+        stat_summary(aes(x = `b_conditionAO_Asym:log_round_c`, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Centered log(round): AO--Asym', y = "density") +
+        theme_classic()
+      cond3_round = ggplot(post_sample) +
+        geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(`ao_sym:log_round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = `ao_sym:log_round_c`, xintercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Centered log(round): AO--Sym', y = "density") +
+        theme_classic()}
+  }
+
+  ### Family-specific parameters
+  if (fam_par == F) {} 
+  else {
+    if (model_type == "nb"){
+      shape = ggplot(post_sample) +
+        geom_density(aes(prior_shape), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(shape), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = shape, x_intercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Shape', y = "density") +
+        scale_x_continuous(limits = c(0, 10)) +
+        theme_classic()} 
+    else if (model_type == "zinb") {
+      shape = ggplot(post_sample) +
+        geom_density(aes(prior_shape), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(shape), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = shape, x_intercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Shape', y = "density") +
+        scale_x_continuous(limits = c(0, 10)) +
+        theme_classic()
+      zi = ggplot(post_sample) +
+        geom_density(aes(prior_zi), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(zi), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = zi, x_intercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Zero-inflation', y = "density") +
+        theme_classic()} 
+    else if (model_type == "zibt"){
+      phi = ggplot(post_sample) +
+        geom_density(aes(prior_phi), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(phi), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = phi, x_intercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Precision', y = "density") +
+        theme_classic()
+      zoi = ggplot(post_sample) +
+        geom_density(aes(prior_zoi), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(zoi), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = zoi, x_intercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'Zero-inflation', y = "density") +
+        theme_classic()
+      coi = ggplot(post_sample) +
+        geom_density(aes(prior_coi), fill="steelblue", color="black",alpha=0.6) +
+        geom_density(aes(coi), fill="#FC4E07", color="black",alpha=0.6) + 
+        stat_summary(aes(x = coi, x_intercept = ..x.., y = 0), 
+                 fun = mean, geom = "vline", linetype = "dashed", orientation = "y") +
+        labs(x = 'One-inflation', y = "density") +
+        theme_classic()}
+  }
+  
+  
+  ### define the set of plots to display
+  p_list = c(intercept, cond1, cond2, cond3)
+  
+  if (lex_align == T) {p_list = c(p_list, lex)}
+  
+  if (round_bd == T) {p_list = c(p_list, r1, r2, r3, r4, r5)} 
+  else {p_list = c(p_list, round)}
+  
+  if (interaction == T & round_bd == F) {
+    p_list = c(p_list, cond1_round, cond2_round, cond3_round)} 
+    
+  if (fam_par == T) {
+    if (model_type=="nb") {p_list = c(p_list, shape)} 
+    else if (model_type=="zinb") {p_list = c(p_list, shape, zi)} 
+    else if (model_type=="zibt") {p_list = c(p_list, phi, zoi, coi)}}
+  
+  ### show the plot
+  wrap_plots(p_list) + 
+    plot_layout(guides = "collect", ncol = ncol) & theme(legend.position = "bottom")
 }
 ```
 
@@ -615,7 +685,7 @@ trial_info_round
     ## # A tibble: 6 × 64
     ##   round round_n total_m mean_dur_m sd_dur_m se_dur_m lci_dur_m uci_dur_m
     ##   <fct> <fct>     <dbl>      <dbl>    <dbl>    <dbl>     <dbl>     <dbl>
-    ## 1 R1    1         420.        9.34    2.26    0.338       8.67     10.0 
+    ## 1 R1    1         420.        9.34    2.26    0.338       8.67     10.00
     ## 2 R2    2         209.        4.64    1.26    0.188       4.27      5.01
     ## 3 R3    3         142.        3.15    0.771   0.115       2.92      3.37
     ## 4 R4    4         115.        2.55    0.618   0.0921      2.37      2.73
@@ -717,46 +787,14 @@ h_cond
 ``` r
 contrasts(df_trial_info$condition) = contr.hypothesis(h_cond)
 
-
-### visibility condition: sum coding
-h_cond = hypr(AO_Sym = SymAV ~ AO,
-              Asym_Sym = SymAV ~ AsymAV,
-              levels = levels(df_trial_info$condition))
-h_cond
-```
-
-    ## hypr object containing 2 null hypotheses:
-    ##   H0.AO_Sym: 0 = SymAV - AO
-    ## H0.Asym_Sym: 0 = SymAV - AsymAV
-    ## 
-    ## Call:
-    ## hypr(AO_Sym = ~SymAV - AO, Asym_Sym = ~SymAV - AsymAV, levels = c("SymAV", 
-    ## "AsymAV", "AO"))
-    ## 
-    ## Hypothesis matrix (transposed):
-    ##        AO_Sym Asym_Sym
-    ## SymAV   1      1      
-    ## AsymAV  0     -1      
-    ## AO     -1      0      
-    ## 
-    ## Contrast matrix:
-    ##        AO_Sym Asym_Sym
-    ## SymAV   1/3    1/3    
-    ## AsymAV  1/3   -2/3    
-    ## AO     -2/3    1/3
-
-``` r
-contrasts(df_trial_info$condition_sum) = contr.hypothesis(h_cond)
-
-
 ### round
-bacward_diff = hypr(R12 = R2 ~ R1,
-                    R23 = R3 ~ R2,
-                    R34 = R4 ~ R3,
-                    R45 = R5 ~ R4,
-                    R56 = R6 ~ R5,
-                    levels = levels(df_trial_info$round))
-bacward_diff
+backward_diff = hypr(R12 = R2 ~ R1,
+                     R23 = R3 ~ R2,
+                     R34 = R4 ~ R3,
+                     R45 = R5 ~ R4,
+                     R56 = R6 ~ R5,
+                     levels = levels(df_trial_info$round))
+backward_diff
 ```
 
     ## hypr object containing 5 null hypotheses:
@@ -790,7 +828,7 @@ bacward_diff
     ## R6  1/6  1/3  1/2  2/3  5/6
 
 ``` r
-contrasts(df_trial_info$round) = contr.hypothesis(bacward_diff)
+contrasts(df_trial_info$round) = contr.hypothesis(backward_diff)
 
 
 ### role (director / matcher)
@@ -828,19 +866,19 @@ bp_iconic_by_cond = ggplot(data=trial_info_pair,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "none",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
 ggplotly(bp_iconic_by_cond)
 ```
 
-<div class="plotly html-widget html-fill-item" id="htmlwidget-d7f6286e491d893bfef7" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-d7f6286e491d893bfef7">{"x":{"data":[{"x":[0.93345060656778511],"y":[74],"text":"condition: SymAV<br />num_iconic_total:  74<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93106604002416138],"y":[43],"text":"condition: SymAV<br />num_iconic_total:  43<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0219547438248993],"y":[173],"text":"condition: SymAV<br />num_iconic_total: 173<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0549276188109069],"y":[127],"text":"condition: SymAV<br />num_iconic_total: 127<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98051802857313308],"y":[118],"text":"condition: SymAV<br />num_iconic_total: 118<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0479560897080227],"y":[155],"text":"condition: SymAV<br />num_iconic_total: 155<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0062652051774785],"y":[21],"text":"condition: SymAV<br />num_iconic_total:  21<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94867436942644412],"y":[148],"text":"condition: SymAV<br />num_iconic_total: 148<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95698206841014322],"y":[48],"text":"condition: SymAV<br />num_iconic_total:  48<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.034110229499638],"y":[58],"text":"condition: SymAV<br />num_iconic_total:  58<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0047107633994892],"y":[93],"text":"condition: SymAV<br />num_iconic_total:  93<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0422730219690128],"y":[137],"text":"condition: SymAV<br />num_iconic_total: 137<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0003410079795867],"y":[68],"text":"condition: SymAV<br />num_iconic_total:  68<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0654153870465235],"y":[26],"text":"condition: SymAV<br />num_iconic_total:  26<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.018333567455411],"y":[136],"text":"condition: SymAV<br />num_iconic_total: 136<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9556078946450726],"y":[17],"text":"condition: AsymAV<br />num_iconic_total:  17<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0367339139198886],"y":[100],"text":"condition: AsymAV<br />num_iconic_total: 100<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9882557998085395],"y":[137],"text":"condition: AsymAV<br />num_iconic_total: 137<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9506686406722293],"y":[140],"text":"condition: AsymAV<br />num_iconic_total: 140<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9867552621243521],"y":[15],"text":"condition: AsymAV<br />num_iconic_total:  15<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0554394656093793],"y":[231],"text":"condition: AsymAV<br />num_iconic_total: 231<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9722932650800795],"y":[140],"text":"condition: AsymAV<br />num_iconic_total: 140<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9863796464679764],"y":[212],"text":"condition: AsymAV<br />num_iconic_total: 212<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9502991200331599],"y":[19],"text":"condition: AsymAV<br />num_iconic_total:  19<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.955456520896405],"y":[121],"text":"condition: AsymAV<br />num_iconic_total: 121<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.984840079518035],"y":[74],"text":"condition: AsymAV<br />num_iconic_total:  74<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9693342034285888],"y":[92],"text":"condition: AsymAV<br />num_iconic_total:  92<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0110815116809682],"y":[5],"text":"condition: AsymAV<br />num_iconic_total:   5<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0236184543650597],"y":[4],"text":"condition: AsymAV<br />num_iconic_total:   4<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9659763086959721],"y":[4],"text":"condition: AsymAV<br />num_iconic_total:   4<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0238978502713145],"y":[5],"text":"condition: AO<br />num_iconic_total:   5<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9391510738153013],"y":[50],"text":"condition: AO<br />num_iconic_total:  50<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9606886987248435],"y":[5],"text":"condition: AO<br />num_iconic_total:   5<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9396187689714135],"y":[94],"text":"condition: AO<br />num_iconic_total:  94<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9587202364066614],"y":[188],"text":"condition: AO<br />num_iconic_total: 188<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0202126408042385],"y":[151],"text":"condition: AO<br />num_iconic_total: 151<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0023904627561571],"y":[15],"text":"condition: AO<br />num_iconic_total:  15<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.024048624932766],"y":[63],"text":"condition: AO<br />num_iconic_total:  63<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0315568756172433],"y":[157],"text":"condition: AO<br />num_iconic_total: 157<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9342412176541983],"y":[23],"text":"condition: AO<br />num_iconic_total:  23<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9898331553442405],"y":[154],"text":"condition: AO<br />num_iconic_total: 154<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.010579871563241],"y":[30],"text":"condition: AO<br />num_iconic_total:  30<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0152209206903353],"y":[13],"text":"condition: AO<br />num_iconic_total:  13<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9685014613438399],"y":[176],"text":"condition: AO<br />num_iconic_total: 176<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0137437202222643],"y":[48],"text":"condition: AO<br />num_iconic_total:  48<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[74,58,155,43,93,21,173,137,148,127,68,48,118,26,136],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[17,121,100,74,140,137,92,212,140,5,19,15,4,231,4],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[5,50,154,15,5,30,63,94,13,157,188,176,23,151,48],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":37.119999999999997,"r":21.119999999999997,"b":64.623528435035269,"l":73.921992528019928},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-7.3500000000000014,242.34999999999999],"tickmode":"array","ticktext":["0","50","100","150","200"],"tickvals":[0,50,100,150,200],"categoryorder":"array","categoryarray":["0","50","100","150","200"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132018,"tickwidth":0.90569455451149117,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0.90569455451149117,"zeroline":false,"anchor":"x","title":{"text":"<b> Total N of iconic gestures per pair <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":2.5769506084466713,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"21cc444d477c":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"21cc52c297b":{"x":{},"y":{},"fill":{}}},"cur_data":"21cc444d477c","visdat":{"21cc444d477c":["function (y) ","x"],"21cc52c297b":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-dc26e3684989ccdce542" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-dc26e3684989ccdce542">{"x":{"data":[{"x":[0.95494992343708873],"y":[74],"text":"condition: SymAV<br />num_iconic_total:  74<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0319909673230723],"y":[43],"text":"condition: SymAV<br />num_iconic_total:  43<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0431982580805197],"y":[173],"text":"condition: SymAV<br />num_iconic_total: 173<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0524375019269063],"y":[127],"text":"condition: SymAV<br />num_iconic_total: 127<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0465495270304381],"y":[118],"text":"condition: SymAV<br />num_iconic_total: 118<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93588728480041028],"y":[155],"text":"condition: SymAV<br />num_iconic_total: 155<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97888561161234977],"y":[21],"text":"condition: SymAV<br />num_iconic_total:  21<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96692490894813088],"y":[148],"text":"condition: SymAV<br />num_iconic_total: 148<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0013650150876492],"y":[48],"text":"condition: SymAV<br />num_iconic_total:  48<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0275078827189281],"y":[58],"text":"condition: SymAV<br />num_iconic_total:  58<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99031953818164764],"y":[93],"text":"condition: SymAV<br />num_iconic_total:  93<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99288873043842618],"y":[137],"text":"condition: SymAV<br />num_iconic_total: 137<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94136844042688606],"y":[68],"text":"condition: SymAV<br />num_iconic_total:  68<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93683951464947313],"y":[26],"text":"condition: SymAV<br />num_iconic_total:  26<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97229465074837207],"y":[136],"text":"condition: SymAV<br />num_iconic_total: 136<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9816135811153799],"y":[17],"text":"condition: AsymAV<br />num_iconic_total:  17<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0268582529667767],"y":[100],"text":"condition: AsymAV<br />num_iconic_total: 100<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9500705836294219],"y":[137],"text":"condition: AsymAV<br />num_iconic_total: 137<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0482232714258135],"y":[140],"text":"condition: AsymAV<br />num_iconic_total: 140<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9926274938927964],"y":[15],"text":"condition: AsymAV<br />num_iconic_total:  15<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9446792373992503],"y":[231],"text":"condition: AsymAV<br />num_iconic_total: 231<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9508543297741563],"y":[140],"text":"condition: AsymAV<br />num_iconic_total: 140<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0382434130087494],"y":[212],"text":"condition: AsymAV<br />num_iconic_total: 212<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9679245319776237],"y":[19],"text":"condition: AsymAV<br />num_iconic_total:  19<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9970845176326111],"y":[121],"text":"condition: AsymAV<br />num_iconic_total: 121<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0293798496527597],"y":[74],"text":"condition: AsymAV<br />num_iconic_total:  74<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9757718023005872],"y":[92],"text":"condition: AsymAV<br />num_iconic_total:  92<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0208759999508037],"y":[5],"text":"condition: AsymAV<br />num_iconic_total:   5<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0496099099470304],"y":[4],"text":"condition: AsymAV<br />num_iconic_total:   4<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0601502700801939],"y":[4],"text":"condition: AsymAV<br />num_iconic_total:   4<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9907169510098175],"y":[5],"text":"condition: AO<br />num_iconic_total:   5<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9516322949994356],"y":[50],"text":"condition: AO<br />num_iconic_total:  50<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.945635812105611],"y":[5],"text":"condition: AO<br />num_iconic_total:   5<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0443907279334961],"y":[94],"text":"condition: AO<br />num_iconic_total:  94<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0578672965243459],"y":[188],"text":"condition: AO<br />num_iconic_total: 188<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0199424430821091],"y":[151],"text":"condition: AO<br />num_iconic_total: 151<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0632795732561497],"y":[15],"text":"condition: AO<br />num_iconic_total:  15<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9798064088262617],"y":[63],"text":"condition: AO<br />num_iconic_total:  63<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9695616145757957],"y":[157],"text":"condition: AO<br />num_iconic_total: 157<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0333972520846872],"y":[23],"text":"condition: AO<br />num_iconic_total:  23<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9382851912779735],"y":[154],"text":"condition: AO<br />num_iconic_total: 154<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9641535034542903],"y":[30],"text":"condition: AO<br />num_iconic_total:  30<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9473851020867006],"y":[13],"text":"condition: AO<br />num_iconic_total:  13<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9749988042283801],"y":[176],"text":"condition: AO<br />num_iconic_total: 176<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9726655427133664],"y":[48],"text":"condition: AO<br />num_iconic_total:  48<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[74,58,155,43,93,21,173,137,148,127,68,48,118,26,136],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[17,121,100,74,140,137,92,212,140,5,19,15,4,231,4],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[5,50,154,15,5,30,63,94,13,157,188,176,23,151,48],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":37.120000000000005,"r":21.120000000000005,"b":61.966824408468248,"l":71.265288501452901},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.925280199252807},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-7.3500000000000014,242.34999999999999],"tickmode":"array","ticktext":["0","50","100","150","200"],"tickvals":[0,50,100,150,200],"categoryorder":"array","categoryarray":["0","50","100","150","200"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969286},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Total N of iconic gestures per pair <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"148a42e541bbb":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"148a413e8a9c0":{"x":{},"y":{},"fill":{}}},"cur_data":"148a42e541bbb","visdat":{"148a42e541bbb":["function (y) ","x"],"148a413e8a9c0":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 <br>
 
@@ -864,19 +902,19 @@ bp_mean_iconic_by_cond = ggplot(data=trial_info_pair,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "none",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
 ggplotly(bp_mean_iconic_by_cond)
 ```
 
-<div class="plotly html-widget html-fill-item" id="htmlwidget-e7ca5c5094b84cdb101e" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-e7ca5c5094b84cdb101e">{"x":{"data":[{"x":[0.99665533636230974],"y":[0.77083333333333337],"text":"condition: SymAV<br />mean_num_iconic: 0.7708<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0331714183045551],"y":[0.44791666666666669],"text":"condition: SymAV<br />mean_num_iconic: 0.4479<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95331838240381328],"y":[1.8020833333333333],"text":"condition: SymAV<br />mean_num_iconic: 1.8021<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97016448993701487],"y":[1.3229166666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.3229<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97281306680757551],"y":[1.2291666666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.2292<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96796128814108673],"y":[1.6145833333333333],"text":"condition: SymAV<br />mean_num_iconic: 1.6146<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0154007847048343],"y":[0.21875],"text":"condition: SymAV<br />mean_num_iconic: 0.2188<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9509805560065433],"y":[1.5416666666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.5417<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93445589597336953],"y":[0.5],"text":"condition: SymAV<br />mean_num_iconic: 0.5000<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93730840723030273],"y":[0.60416666666666663],"text":"condition: SymAV<br />mean_num_iconic: 0.6042<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94352960060350599],"y":[0.96875],"text":"condition: SymAV<br />mean_num_iconic: 0.9688<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0643559013213961],"y":[1.4270833333333333],"text":"condition: SymAV<br />mean_num_iconic: 1.4271<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98247439457103614],"y":[0.70833333333333337],"text":"condition: SymAV<br />mean_num_iconic: 0.7083<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0405663769645617],"y":[0.27083333333333331],"text":"condition: SymAV<br />mean_num_iconic: 0.2708<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93976321564987297],"y":[1.4166666666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.4167<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9314498336985708],"y":[0.17708333333333334],"text":"condition: AsymAV<br />mean_num_iconic: 0.1771<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9546055845404045],"y":[1.0416666666666667],"text":"condition: AsymAV<br />mean_num_iconic: 1.0417<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9619176956219599],"y":[1.4270833333333333],"text":"condition: AsymAV<br />mean_num_iconic: 1.4271<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9347893748618663],"y":[1.4583333333333333],"text":"condition: AsymAV<br />mean_num_iconic: 1.4583<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0533544464875013],"y":[0.15625],"text":"condition: AsymAV<br />mean_num_iconic: 0.1562<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9948741387529298],"y":[2.40625],"text":"condition: AsymAV<br />mean_num_iconic: 2.4062<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9399144373694435],"y":[1.4583333333333333],"text":"condition: AsymAV<br />mean_num_iconic: 1.4583<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0462053268635647],"y":[2.2083333333333335],"text":"condition: AsymAV<br />mean_num_iconic: 2.2083<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0516566031984986],"y":[0.19791666666666666],"text":"condition: AsymAV<br />mean_num_iconic: 0.1979<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0490301941195503],"y":[1.2604166666666667],"text":"condition: AsymAV<br />mean_num_iconic: 1.2604<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.052621841249056],"y":[0.77083333333333337],"text":"condition: AsymAV<br />mean_num_iconic: 0.7708<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0693990107905118],"y":[0.95833333333333337],"text":"condition: AsymAV<br />mean_num_iconic: 0.9583<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0208273449353875],"y":[0.052083333333333336],"text":"condition: AsymAV<br />mean_num_iconic: 0.0521<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0024535127822309],"y":[0.041666666666666664],"text":"condition: AsymAV<br />mean_num_iconic: 0.0417<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9694738801941276],"y":[0.041666666666666664],"text":"condition: AsymAV<br />mean_num_iconic: 0.0417<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9533336766157299],"y":[0.052083333333333336],"text":"condition: AO<br />mean_num_iconic: 0.0521<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9965055516501891],"y":[0.52083333333333337],"text":"condition: AO<br />mean_num_iconic: 0.5208<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9743920963583514],"y":[0.052083333333333336],"text":"condition: AO<br />mean_num_iconic: 0.0521<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9317731488030403],"y":[0.97916666666666663],"text":"condition: AO<br />mean_num_iconic: 0.9792<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9559737508744002],"y":[1.9583333333333333],"text":"condition: AO<br />mean_num_iconic: 1.9583<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9404782385798169],"y":[1.5729166666666667],"text":"condition: AO<br />mean_num_iconic: 1.5729<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0594481088314205],"y":[0.16129032258064516],"text":"condition: AO<br />mean_num_iconic: 0.1613<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0315294528147207],"y":[0.67021276595744683],"text":"condition: AO<br />mean_num_iconic: 0.6702<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.066129384529777],"y":[1.6354166666666667],"text":"condition: AO<br />mean_num_iconic: 1.6354<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0687818108266218],"y":[0.23958333333333334],"text":"condition: AO<br />mean_num_iconic: 0.2396<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0514022795110942],"y":[1.6041666666666667],"text":"condition: AO<br />mean_num_iconic: 1.6042<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9996034022746607],"y":[0.3125],"text":"condition: AO<br />mean_num_iconic: 0.3125<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9467537538334727],"y":[0.13541666666666666],"text":"condition: AO<br />mean_num_iconic: 0.1354<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0576954201655462],"y":[1.8333333333333333],"text":"condition: AO<br />mean_num_iconic: 1.8333<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9814444252429531],"y":[0.5],"text":"condition: AO<br />mean_num_iconic: 0.5000<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[0.77083333333333337,0.60416666666666663,1.6145833333333333,0.44791666666666669,0.96875,0.21875,1.8020833333333333,1.4270833333333333,1.5416666666666667,1.3229166666666667,0.70833333333333337,0.5,1.2291666666666667,0.27083333333333331,1.4166666666666667],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.17708333333333334,1.2604166666666667,1.0416666666666667,0.77083333333333337,1.4583333333333333,1.4270833333333333,0.95833333333333337,2.2083333333333335,1.4583333333333333,0.052083333333333336,0.19791666666666666,0.15625,0.041666666666666664,2.40625,0.041666666666666664],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.052083333333333336,0.52083333333333337,1.6041666666666667,0.16129032258064516,0.052083333333333336,0.3125,0.67021276595744683,0.97916666666666663,0.13541666666666666,1.6354166666666667,1.9583333333333333,1.8333333333333333,0.23958333333333334,1.5729166666666667,0.5],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3],"y":[0.98958333333333337,0.91041666666666665,0.81672473867595818],"text":["condition: SymAV<br />mean_num_iconic: 0.990<br />condition: white","condition: AsymAV<br />mean_num_iconic: 0.910<br />condition: white","condition: AO<br />mean_num_iconic: 0.817<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.119999999999997,"r":21.119999999999997,"b":64.623528435035269,"l":55.325064342050652},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.20000000000000001,4.2000000000000002],"tickmode":"array","ticktext":["0","1","2","3","4"],"tickvals":[0,1,2,3,4],"categoryorder":"array","categoryarray":["0","1","2","3","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132018,"tickwidth":0.90569455451149117,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0.90569455451149117,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean N. iconic gest per trial <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":2.5769506084466713,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"21cc2dd26297":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"21cc7a2713ad":{"x":{},"y":{},"fill":{}},"21cc6a347287":{"x":{},"y":{},"fill":{}}},"cur_data":"21cc2dd26297","visdat":{"21cc2dd26297":["function (y) ","x"],"21cc7a2713ad":["function (y) ","x"],"21cc6a347287":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1b340d7215164245918c" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-1b340d7215164245918c">{"x":{"data":[{"x":[0.99644370687194173],"y":[0.77083333333333337],"text":"condition: SymAV<br />mean_num_iconic: 0.7708<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9966610008478165],"y":[0.44791666666666669],"text":"condition: SymAV<br />mean_num_iconic: 0.4479<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0629764211736619],"y":[1.8020833333333333],"text":"condition: SymAV<br />mean_num_iconic: 1.8021<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99504146991763265],"y":[1.3229166666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.3229<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98898122098762542],"y":[1.2291666666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.2292<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0436093498114496],"y":[1.6145833333333333],"text":"condition: SymAV<br />mean_num_iconic: 1.6146<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96038143409881738],"y":[0.21875],"text":"condition: SymAV<br />mean_num_iconic: 0.2188<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97890569291543217],"y":[1.5416666666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.5417<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98901047133374964],"y":[0.5],"text":"condition: SymAV<br />mean_num_iconic: 0.5000<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0123069257568569],"y":[0.60416666666666663],"text":"condition: SymAV<br />mean_num_iconic: 0.6042<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94057276449631899],"y":[0.96875],"text":"condition: SymAV<br />mean_num_iconic: 0.9688<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9380059675127268],"y":[1.4270833333333333],"text":"condition: SymAV<br />mean_num_iconic: 1.4271<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96227771141100671],"y":[0.70833333333333337],"text":"condition: SymAV<br />mean_num_iconic: 0.7083<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.011263900147751],"y":[0.27083333333333331],"text":"condition: SymAV<br />mean_num_iconic: 0.2708<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0155566253839061],"y":[1.4166666666666667],"text":"condition: SymAV<br />mean_num_iconic: 1.4167<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9980369512084872],"y":[0.17708333333333334],"text":"condition: AsymAV<br />mean_num_iconic: 0.1771<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0313446235703303],"y":[1.0416666666666667],"text":"condition: AsymAV<br />mean_num_iconic: 1.0417<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.934734869399108],"y":[1.4270833333333333],"text":"condition: AsymAV<br />mean_num_iconic: 1.4271<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9678399318270385],"y":[1.4583333333333333],"text":"condition: AsymAV<br />mean_num_iconic: 1.4583<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0086099268961699],"y":[0.15625],"text":"condition: AsymAV<br />mean_num_iconic: 0.1562<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0424079747172073],"y":[2.40625],"text":"condition: AsymAV<br />mean_num_iconic: 2.4062<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0487314431555568],"y":[1.4583333333333333],"text":"condition: AsymAV<br />mean_num_iconic: 1.4583<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.998173532760702],"y":[2.2083333333333335],"text":"condition: AsymAV<br />mean_num_iconic: 2.2083<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0207094291597603],"y":[0.19791666666666666],"text":"condition: AsymAV<br />mean_num_iconic: 0.1979<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9898452039435506],"y":[1.2604166666666667],"text":"condition: AsymAV<br />mean_num_iconic: 1.2604<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0555873026931657],"y":[0.77083333333333337],"text":"condition: AsymAV<br />mean_num_iconic: 0.7708<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0673285429459067],"y":[0.95833333333333337],"text":"condition: AsymAV<br />mean_num_iconic: 0.9583<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.95026598372031],"y":[0.052083333333333336],"text":"condition: AsymAV<br />mean_num_iconic: 0.0521<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9741378318984062],"y":[0.041666666666666664],"text":"condition: AsymAV<br />mean_num_iconic: 0.0417<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0040327046299353],"y":[0.041666666666666664],"text":"condition: AsymAV<br />mean_num_iconic: 0.0417<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.979003027100116],"y":[0.052083333333333336],"text":"condition: AO<br />mean_num_iconic: 0.0521<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9368535657692703],"y":[0.52083333333333337],"text":"condition: AO<br />mean_num_iconic: 0.5208<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.990459254225716],"y":[0.052083333333333336],"text":"condition: AO<br />mean_num_iconic: 0.0521<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.040203957557678],"y":[0.97916666666666663],"text":"condition: AO<br />mean_num_iconic: 0.9792<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0546706207282841],"y":[1.9583333333333333],"text":"condition: AO<br />mean_num_iconic: 1.9583<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9676719637960196],"y":[1.5729166666666667],"text":"condition: AO<br />mean_num_iconic: 1.5729<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9774730505328626],"y":[0.16129032258064516],"text":"condition: AO<br />mean_num_iconic: 0.1613<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9493588096695023],"y":[0.67021276595744683],"text":"condition: AO<br />mean_num_iconic: 0.6702<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9670894043985756],"y":[1.6354166666666667],"text":"condition: AO<br />mean_num_iconic: 1.6354<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0362054548133166],"y":[0.23958333333333334],"text":"condition: AO<br />mean_num_iconic: 0.2396<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9782527352776378],"y":[1.6041666666666667],"text":"condition: AO<br />mean_num_iconic: 1.6042<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9414202112238854],"y":[0.3125],"text":"condition: AO<br />mean_num_iconic: 0.3125<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0431634088000283],"y":[0.13541666666666666],"text":"condition: AO<br />mean_num_iconic: 0.1354<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0321661529224366],"y":[1.8333333333333333],"text":"condition: AO<br />mean_num_iconic: 1.8333<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0198392208991574],"y":[0.5],"text":"condition: AO<br />mean_num_iconic: 0.5000<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[0.77083333333333337,0.60416666666666663,1.6145833333333333,0.44791666666666669,0.96875,0.21875,1.8020833333333333,1.4270833333333333,1.5416666666666667,1.3229166666666667,0.70833333333333337,0.5,1.2291666666666667,0.27083333333333331,1.4166666666666667],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.17708333333333334,1.2604166666666667,1.0416666666666667,0.77083333333333337,1.4583333333333333,1.4270833333333333,0.95833333333333337,2.2083333333333335,1.4583333333333333,0.052083333333333336,0.19791666666666666,0.15625,0.041666666666666664,2.40625,0.041666666666666664],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.052083333333333336,0.52083333333333337,1.6041666666666667,0.16129032258064516,0.052083333333333336,0.3125,0.67021276595744683,0.97916666666666663,0.13541666666666666,1.6354166666666667,1.9583333333333333,1.8333333333333333,0.23958333333333334,1.5729166666666667,0.5],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3],"y":[0.98958333333333337,0.91041666666666665,0.81672473867595818],"text":["condition: SymAV<br />mean_num_iconic: 0.990<br />condition: white","condition: AsymAV<br />mean_num_iconic: 0.910<br />condition: white","condition: AO<br />mean_num_iconic: 0.817<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.120000000000005,"r":21.120000000000005,"b":61.966824408468248,"l":52.668360315483618},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.925280199252807},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.20000000000000001,4.2000000000000002],"tickmode":"array","ticktext":["0","1","2","3","4"],"tickvals":[0,1,2,3,4],"categoryorder":"array","categoryarray":["0","1","2","3","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969286},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean N. iconic gest per trial <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"148a41bd4d259":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"148a4313ddf55":{"x":{},"y":{},"fill":{}},"148a455115eb4":{"x":{},"y":{},"fill":{}}},"cur_data":"148a41bd4d259","visdat":{"148a41bd4d259":["function (y) ","x"],"148a4313ddf55":["function (y) ","x"],"148a455115eb4":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 <br>
 
@@ -894,11 +932,11 @@ bp_mean_iconic_by_round_cond = ggplot(data=df_trial_info,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "top",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
@@ -915,15 +953,16 @@ may improve the model fit.
 
 ------------------------------------------------------------------------
 
-# 5. \[Chosen\] Rate of iconic gestures per 100 words
+# 5. Rate of iconic gestures per 100 words
 
 ## 5.1 DataViz: rate per 100 words
 
 ### bp: mean by condition
 
 ``` r
-bp_mean_iconic_rate_by_cond = ggplot(data=trial_info_pair, 
-                                     aes(x=condition, y=mean_iconic_per_100words, fill=condition)) +
+bp_mean_iconic_rate = 
+  ggplot(data=trial_info_pair, 
+         aes(x=condition, y=mean_iconic_per_100words, fill=condition)) +
   geom_jitter(aes(color = pair), 
               size = 1, alpha = 1, 
               width = 0.07, height = 0) +
@@ -939,19 +978,19 @@ bp_mean_iconic_rate_by_cond = ggplot(data=trial_info_pair,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "none",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_mean_iconic_rate_by_cond)
+ggplotly(bp_mean_iconic_rate)
 ```
 
-<div class="plotly html-widget html-fill-item" id="htmlwidget-fee1da787c67468e017f" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-fee1da787c67468e017f">{"x":{"data":[{"x":[0.93135959119535983],"y":[3.4350715918423389],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.435<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0402449682215229],"y":[1.7959619361802943],"text":"condition: SymAV<br />mean_iconic_per_100words: 1.796<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0620319355512038],"y":[5.1716985326243465],"text":"condition: SymAV<br />mean_iconic_per_100words: 5.172<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9917865500273183],"y":[3.4072091710343506],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.407<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0231637349119409],"y":[3.4124240046344245],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.412<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0140437857946381],"y":[5.9759077648299517],"text":"condition: SymAV<br />mean_iconic_per_100words: 5.976<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97797256351448592],"y":[0.7796172973819907],"text":"condition: SymAV<br />mean_iconic_per_100words: 0.780<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0223019578447565],"y":[3.6605629780109714],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.661<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96351403579115869],"y":[0.87307360932203204],"text":"condition: SymAV<br />mean_iconic_per_100words: 0.873<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0405888879951091],"y":[1.6375527279874325],"text":"condition: SymAV<br />mean_iconic_per_100words: 1.638<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0285624677874148],"y":[3.8371553542536767],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.837<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0573154718754814],"y":[5.2947408619057583],"text":"condition: SymAV<br />mean_iconic_per_100words: 5.295<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93113898905459791],"y":[1.195834478869094],"text":"condition: SymAV<br />mean_iconic_per_100words: 1.196<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0672034617234021],"y":[0.52854919268368838],"text":"condition: SymAV<br />mean_iconic_per_100words: 0.529<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0245038078725337],"y":[4.8090750938708755],"text":"condition: SymAV<br />mean_iconic_per_100words: 4.809<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9992478396277875],"y":[0.48923629280772141],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.489<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.06955359374173],"y":[3.2887216251435372],"text":"condition: AsymAV<br />mean_iconic_per_100words: 3.289<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0664238827861845],"y":[5.5346868526016308],"text":"condition: AsymAV<br />mean_iconic_per_100words: 5.535<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0691257620882242],"y":[3.9367829459296599],"text":"condition: AsymAV<br />mean_iconic_per_100words: 3.937<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9377696636738255],"y":[0.35054786368215318],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.351<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0461760386731473],"y":[7.0523900179913355],"text":"condition: AsymAV<br />mean_iconic_per_100words: 7.052<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0281976824766024],"y":[4.7911399290461913],"text":"condition: AsymAV<br />mean_iconic_per_100words: 4.791<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9669131465442478],"y":[8.0397277056951086],"text":"condition: AsymAV<br />mean_iconic_per_100words: 8.040<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9505474920291455],"y":[0.77137754906507749],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.771<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9399914790270849],"y":[4.3298083652334451],"text":"condition: AsymAV<br />mean_iconic_per_100words: 4.330<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0076231946237386],"y":[2.4801700519878214],"text":"condition: AsymAV<br />mean_iconic_per_100words: 2.480<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0352722864924],"y":[3.7550804882689208],"text":"condition: AsymAV<br />mean_iconic_per_100words: 3.755<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9591880086855964],"y":[0.1388888888888889],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.139<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9953112325444817],"y":[0.1457701086200574],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.146<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9973682859726249],"y":[0.11897412152081083],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.119<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9554740707715972],"y":[0.29864107836273579],"text":"condition: AO<br />mean_iconic_per_100words: 0.299<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0397221277700739],"y":[0.93071771729667718],"text":"condition: AO<br />mean_iconic_per_100words: 0.931<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.01477527001407],"y":[0.10969065656565657],"text":"condition: AO<br />mean_iconic_per_100words: 0.110<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0560491752391683],"y":[2.5402786693990054],"text":"condition: AO<br />mean_iconic_per_100words: 2.540<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9817936591897158],"y":[6.0717288551239177],"text":"condition: AO<br />mean_iconic_per_100words: 6.072<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9664522332744672],"y":[4.7148753756554145],"text":"condition: AO<br />mean_iconic_per_100words: 4.715<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0298193045891821],"y":[0.31472489533295733],"text":"condition: AO<br />mean_iconic_per_100words: 0.315<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.951305600279011],"y":[1.8141364319958131],"text":"condition: AO<br />mean_iconic_per_100words: 1.814<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0469971937220546],"y":[3.6964309761756429],"text":"condition: AO<br />mean_iconic_per_100words: 3.696<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0476760646933689],"y":[1.4838362617074001],"text":"condition: AO<br />mean_iconic_per_100words: 1.484<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0373170704813672],"y":[5.2234897702515157],"text":"condition: AO<br />mean_iconic_per_100words: 5.223<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9772018403373659],"y":[1.7198535500745866],"text":"condition: AO<br />mean_iconic_per_100words: 1.720<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.936318369694054],"y":[0.51291008580686515],"text":"condition: AO<br />mean_iconic_per_100words: 0.513<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0078155374433844],"y":[6.8022204519760976],"text":"condition: AO<br />mean_iconic_per_100words: 6.802<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0218716659210623],"y":[2.7552412181850849],"text":"condition: AO<br />mean_iconic_per_100words: 2.755<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[3.4350715918423389,1.6375527279874325,5.9759077648299517,1.7959619361802943,3.8371553542536767,0.7796172973819907,5.1716985326243465,5.2947408619057583,3.6605629780109714,3.4072091710343506,1.195834478869094,0.87307360932203204,3.4124240046344245,0.52854919268368838,4.8090750938708755],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.48923629280772141,4.3298083652334451,3.2887216251435372,2.4801700519878214,4.7911399290461913,5.5346868526016308,3.7550804882689208,8.0397277056951086,3.9367829459296599,0.1388888888888889,0.77137754906507749,0.35054786368215318,0.1457701086200574,7.0523900179913355,0.11897412152081083],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.29864107836273579,0.93071771729667718,5.2234897702515157,0.31472489533295733,0.10969065656565657,1.7198535500745866,1.8141364319958131,2.5402786693990054,0.51291008580686515,3.6964309761756429,6.0717288551239177,6.8022204519760976,1.4838362617074001,4.7148753756554145,2.7552412181850849],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3],"y":[3.0542956396954151,3.0148868537654905,2.6051219845751281],"text":["condition: SymAV<br />mean_iconic_per_100words: 3.05<br />condition: white","condition: AsymAV<br />mean_iconic_per_100words: 3.01<br />condition: white","condition: AO<br />mean_iconic_per_100words: 2.61<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.119999999999997,"r":21.119999999999997,"b":64.623528435035269,"l":55.325064342050652},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.40500000000000003,8.504999999999999],"tickmode":"array","ticktext":["0","2","4","6","8"],"tickvals":[-5.5511151231257827e-17,2.0000000000000009,4,6,7.9999999999999991],"categoryorder":"array","categoryarray":["0","2","4","6","8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132018,"tickwidth":0.90569455451149117,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0.90569455451149117,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean rate of iconic gestures <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":2.5769506084466713,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"21cc5af46bf8":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"21cc17b96cdd":{"x":{},"y":{},"fill":{}},"21cc3e3f3dcf":{"x":{},"y":{},"fill":{}}},"cur_data":"21cc5af46bf8","visdat":{"21cc5af46bf8":["function (y) ","x"],"21cc17b96cdd":["function (y) ","x"],"21cc3e3f3dcf":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-aa760f2fb5902f3491c0" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-aa760f2fb5902f3491c0">{"x":{"data":[{"x":[1.0553443334018811],"y":[3.4350715918423385],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.435<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9840617932192981],"y":[1.7959619361802945],"text":"condition: SymAV<br />mean_iconic_per_100words: 1.796<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.004426159420982],"y":[5.1716985326243456],"text":"condition: SymAV<br />mean_iconic_per_100words: 5.172<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0528076328011229],"y":[3.4072091710343493],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.407<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98255897985771301],"y":[3.4124240046344245],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.412<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96502717278897765],"y":[5.9759077648299517],"text":"condition: SymAV<br />mean_iconic_per_100words: 5.976<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0418036465393379],"y":[0.77961729738199104],"text":"condition: SymAV<br />mean_iconic_per_100words: 0.780<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0245447248546407],"y":[3.6605629780109701],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.661<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0213525882549583],"y":[0.87307360932203149],"text":"condition: SymAV<br />mean_iconic_per_100words: 0.873<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0269501687353477],"y":[1.6375527279874342],"text":"condition: SymAV<br />mean_iconic_per_100words: 1.638<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.029905090755783],"y":[3.8371553542536776],"text":"condition: SymAV<br />mean_iconic_per_100words: 3.837<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9522270623594522],"y":[5.2947408619057592],"text":"condition: SymAV<br />mean_iconic_per_100words: 5.295<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0318913799524307],"y":[1.1958344788690931],"text":"condition: SymAV<br />mean_iconic_per_100words: 1.196<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98395176453981548],"y":[0.52854919268368872],"text":"condition: SymAV<br />mean_iconic_per_100words: 0.529<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0597411725576966],"y":[4.8090750938708764],"text":"condition: SymAV<br />mean_iconic_per_100words: 4.809<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0307055359473454],"y":[0.48923629280772163],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.489<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0268287383299319],"y":[3.2887216251435367],"text":"condition: AsymAV<br />mean_iconic_per_100words: 3.289<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9585847965069114],"y":[5.5346868526016326],"text":"condition: AsymAV<br />mean_iconic_per_100words: 5.535<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9394911399250849],"y":[3.936782945929659],"text":"condition: AsymAV<br />mean_iconic_per_100words: 3.937<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0322328737145288],"y":[0.35054786368215302],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.351<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0646853105956691],"y":[7.0523900179913355],"text":"condition: AsymAV<br />mean_iconic_per_100words: 7.052<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0298369570448993],"y":[4.7911399290461922],"text":"condition: AsymAV<br />mean_iconic_per_100words: 4.791<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.995192167814821],"y":[8.0397277056951086],"text":"condition: AsymAV<br />mean_iconic_per_100words: 8.040<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9586317852325736],"y":[0.77137754906507738],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.771<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9492898922460153],"y":[4.3298083652334451],"text":"condition: AsymAV<br />mean_iconic_per_100words: 4.330<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.97457784159109],"y":[2.4801700519878209],"text":"condition: AsymAV<br />mean_iconic_per_100words: 2.480<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0178385904431342],"y":[3.7550804882689208],"text":"condition: AsymAV<br />mean_iconic_per_100words: 3.755<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9831228982191533],"y":[0.1388888888888887],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.139<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9461830810317771],"y":[0.14577010862005738],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.146<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9618700562417508],"y":[0.11897412152081081],"text":"condition: AsymAV<br />mean_iconic_per_100words: 0.119<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9860150648513808],"y":[0.29864107836273607],"text":"condition: AO<br />mean_iconic_per_100words: 0.299<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9749953428935259],"y":[0.93071771729667607],"text":"condition: AO<br />mean_iconic_per_100words: 0.931<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.958866970757954],"y":[0.10969065656565651],"text":"condition: AO<br />mean_iconic_per_100words: 0.110<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0566375234443695],"y":[2.5402786693990058],"text":"condition: AO<br />mean_iconic_per_100words: 2.540<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0591580860130487],"y":[6.0717288551239177],"text":"condition: AO<br />mean_iconic_per_100words: 6.072<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0085325615247713],"y":[4.7148753756554154],"text":"condition: AO<br />mean_iconic_per_100words: 4.715<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.005778274820186],"y":[0.31472489533295722],"text":"condition: AO<br />mean_iconic_per_100words: 0.315<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0505640051513909],"y":[1.8141364319958129],"text":"condition: AO<br />mean_iconic_per_100words: 1.814<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0358454020600765],"y":[3.6964309761756438],"text":"condition: AO<br />mean_iconic_per_100words: 3.696<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.017299197856337],"y":[1.4838362617074001],"text":"condition: AO<br />mean_iconic_per_100words: 1.484<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9584518571337686],"y":[5.2234897702515157],"text":"condition: AO<br />mean_iconic_per_100words: 5.223<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9930460197944195],"y":[1.7198535500745866],"text":"condition: AO<br />mean_iconic_per_100words: 1.720<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0469572050170974],"y":[0.51291008580686503],"text":"condition: AO<br />mean_iconic_per_100words: 0.513<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9832610261393713],"y":[6.8022204519760967],"text":"condition: AO<br />mean_iconic_per_100words: 6.802<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9438511891802772],"y":[2.7552412181850836],"text":"condition: AO<br />mean_iconic_per_100words: 2.755<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[3.4350715918423385,1.6375527279874342,5.9759077648299517,1.7959619361802945,3.8371553542536776,0.77961729738199104,5.1716985326243456,5.2947408619057592,3.6605629780109701,3.4072091710343493,1.1958344788690931,0.87307360932203149,3.4124240046344245,0.52854919268368872,4.8090750938708764],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.48923629280772163,4.3298083652334451,3.2887216251435367,2.4801700519878209,4.7911399290461922,5.5346868526016326,3.7550804882689208,8.0397277056951086,3.936782945929659,0.1388888888888887,0.77137754906507738,0.35054786368215302,0.14577010862005738,7.0523900179913355,0.11897412152081081],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.29864107836273607,0.93071771729667607,5.2234897702515157,0.31472489533295722,0.10969065656565651,1.7198535500745866,1.8141364319958129,2.5402786693990058,0.51291008580686503,3.6964309761756438,6.0717288551239177,6.8022204519760967,1.4838362617074001,4.7148753756554154,2.7552412181850836],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3],"y":[3.0542956396954168,3.0148868537654971,2.6051219845751241],"text":["condition: SymAV<br />mean_iconic_per_100words: 3.05<br />condition: white","condition: AsymAV<br />mean_iconic_per_100words: 3.01<br />condition: white","condition: AO<br />mean_iconic_per_100words: 2.61<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.120000000000005,"r":21.120000000000005,"b":61.966824408468248,"l":52.668360315483618},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.925280199252807},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.40500000000000003,8.504999999999999],"tickmode":"array","ticktext":["0","2","4","6","8"],"tickvals":[-5.5511151231257827e-17,2.0000000000000009,4,6,7.9999999999999991],"categoryorder":"array","categoryarray":["0","2","4","6","8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969286},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean rate of iconic gestures <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"148a4743cafcf":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"148a43c3a7aa7":{"x":{},"y":{},"fill":{}},"148a4234a88d5":{"x":{},"y":{},"fill":{}}},"cur_data":"148a4743cafcf","visdat":{"148a4743cafcf":["function (y) ","x"],"148a43c3a7aa7":["function (y) ","x"],"148a4234a88d5":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 <br>
 
@@ -960,8 +999,9 @@ ggplotly(bp_mean_iconic_rate_by_cond)
 ``` r
 pd = position_dodge(width = .75)
 
-ggplot(data=df_trial_info, 
-       aes(x=round, y=n_iconic_per_100words, fill=condition)) +
+bp_mean_iconic_rate_cond_round = 
+  ggplot(data=df_trial_info, 
+         aes(x=round_n, y=n_iconic_per_100words, fill=condition)) +
   geom_boxplot(outlier.shape = NA,
                alpha = 0.7) +
   geom_point(data = trial_info_cond_round, 
@@ -976,20 +1016,35 @@ ggplot(data=df_trial_info,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "top",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+bp_mean_iconic_rate_cond_round
 ```
 
 ![](figures_md/speakerB/gest_alignment/bp_mean_rate_cond_round-1.png)<!-- -->
 
 <br>
 
-## 5.2 \[Chosen\] ZI negative binomial regression models
+## 5.2 Negative binomial regression models
+
+In the previous section, we analyzed the number of iconic gestures
+produced per trial. However, it is common to analyze the rate of iconic
+gestures per 100 words to account for the differences in the length of
+the trials and speech rate. Here, we will include the log of speech rate
+(number of words / 100) as an exposure variable and analyze the rate of
+iconic gestures per 100 words by condition. Note that the syntax for the
+exposure variable is different from the Poisson regression model; for
+negative binomial regression, the exposure variable is included with the
+rate() function.
+
+<br>
 
 ### 5.2.1 Prior specification
 
@@ -1030,7 +1085,8 @@ priors_rslope_rate = c(
   prior(normal(1.12, 0.5), class = Intercept),
   prior(normal(0, 0.5), class = b),
   prior(normal(0, 0.5), class = sd),
-  prior(lkj(2), class = cor))
+  prior(lkj(2), class = cor),
+  prior(normal(0, 50), class = shape))
 
 priors_rslope_rate_zinb = c(
   prior(normal(1.12, 0.5), class = Intercept),
@@ -1043,80 +1099,71 @@ priors_rslope_rate_zinb = c(
 
 <br>
 
-### 5.2.2 Model 1: condition x round (pair)
+### 5.2.2 Model comparison
 
-In the previous section, we analyzed the number of iconic gestures
-produced per trial. However, it is common to analyze the rate of iconic
-gestures per 100 words to account for the differences in the length of
-the trials and speech rate. Here, we will include the log of speech rate
-(number of words / 100) as an exposure variable and analyze the rate of
-iconic gestures per 100 words by condition. Note that the syntax for the
-exposure variable is different from the Poisson regression model; for
-negative binomial regression, the exposure variable is included with the
-rate() function.
-
-<br>
-
-#### Model effect: round
+#### Round
 
 ``` r
-nb_iconic_rate_cond_round = brm(num_iconic_gestures | rate(n_words_100) ~ 
-                                  1 + condition * round + 
-                                  (1+round|pair) + (1|target),
-                                family = negbinomial(),
-                                prior = priors_rslope_rate,
-                                data = df_trial_info,
-                                sample_prior = T,
-                                warmup = nwu, iter = niter,
-                                control = list(adapt_delta = 0.9, 
-                                               max_treedepth = 15),
-                                file = "models/speakerB/nb_iconic_rate_cond_round")
+nb_iconic_rate_cond_round = 
+  brm(num_iconic_gestures | rate(n_words_100) ~ 
+        1 + condition * round + 
+        (1+round|pair) + (1|target),
+      family = negbinomial(),
+      prior = priors_rslope_rate,
+      data = df_trial_info,
+      sample_prior = T,
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/iconic/nb_iconic_rate_cond_round")
 
-nb_iconic_rate_cond_round_c = brm(num_iconic_gestures | rate(n_words_100) ~ 
-                                    1 + condition * round_c + 
-                                    (1+round_c|pair) + (1|target),
-                                  family = negbinomial(),
-                                  prior = priors_rslope_rate,
-                                  data = df_trial_info,
-                                  sample_prior = T,
-                                  warmup = nwu, iter = niter,
-                                  control = list(adapt_delta = 0.9, 
-                                                 max_treedepth = 15),
-                                  file = "models/speakerB/nb_iconic_rate_cond_round_c")
+nb_iconic_rate_cond_round_c = 
+  brm(num_iconic_gestures | rate(n_words_100) ~ 
+        1 + condition * round_c + 
+        (1+round_c|pair) + (1|target),
+      family = negbinomial(),
+      prior = priors_rslope_rate,
+      data = df_trial_info,
+      sample_prior = T,
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/iconic/nb_iconic_rate_cond_round_c")
 
-nb_iconic_rate_cond_round_log = brm(num_iconic_gestures | rate(n_words_100) ~ 
-                                      1 + condition * log_round_c + 
-                                      (1+log_round_c|pair) + (1|target),
-                                    family = negbinomial(),
-                                    prior = priors_rslope_rate,
-                                    data = df_trial_info,
-                                    sample_prior = T,
-                                    warmup = nwu, iter = niter,
-                                    control = list(adapt_delta = 0.9, 
-                                                   max_treedepth = 15),
-                                    file = "models/speakerB/nb_iconic_rate_cond_round_log")
+nb_iconic_rate_cond_round_log = 
+  brm(num_iconic_gestures | rate(n_words_100) ~ 
+        1 + condition * log_round_c + 
+        (1+log_round_c|pair) + (1|target),
+      family = negbinomial(),
+      prior = priors_rslope_rate,
+      data = df_trial_info,
+      sample_prior = T,
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/iconic/nb_iconic_rate_cond_round_log")
 
 
 
 ### loo compare
-if (!file.exists("models/speakerB/loo_nb_iconic_rate_cond_round.rds")){
+if (!file.exists("models/speakerB/iconic/loo_nb_iconic_rate_cond_round.rds")){
   nb_cond_round_loo = loo(nb_iconic_rate_cond_round)
-  saveRDS(nb_cond_round_loo, file = "models/speakerB/loo_nb_iconic_rate_cond_round.rds")
+  saveRDS(nb_cond_round_loo, file = "models/speakerB/iconic/loo_nb_iconic_rate_cond_round.rds")
 }
 
-if (!file.exists("models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")){
+if (!file.exists("models/speakerB/iconic/loo_nb_iconic_rate_cond_round_c.rds")){
   nb_cond_round_c_loo = loo(nb_iconic_rate_cond_round_c)
-  saveRDS(nb_cond_round_c_loo, file = "models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")
+  saveRDS(nb_cond_round_c_loo, file = "models/speakerB/iconic/loo_nb_iconic_rate_cond_round_c.rds")
 }
 
-if (!file.exists("models/speakerB/loo_nb_iconic_rate_cond_round_log.rds")){
+if (!file.exists("models/speakerB/iconic/loo_nb_iconic_rate_cond_round_log.rds")){
   nb_cond_round_log_loo = loo(nb_iconic_rate_cond_round_log)
-  saveRDS(nb_cond_round_log_loo, file = "models/speakerB/loo_nb_iconic_rate_cond_round_log.rds")
+  saveRDS(nb_cond_round_log_loo, file = "models/speakerB/iconic/loo_nb_iconic_rate_cond_round_log.rds")
 }
 
-nb_cond_round_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round.rds")
-nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")
-nb_cond_round_log_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round_log.rds")
+nb_cond_round_loo = readRDS("models/speakerB/iconic/loo_nb_iconic_rate_cond_round.rds")
+nb_cond_round_c_loo = readRDS("models/speakerB/iconic/loo_nb_iconic_rate_cond_round_c.rds")
+nb_cond_round_log_loo = readRDS("models/speakerB/iconic/loo_nb_iconic_rate_cond_round_log.rds")
 
 loo_compare(nb_cond_round_loo, nb_cond_round_c_loo, nb_cond_round_log_loo)
 ```
@@ -1133,31 +1180,33 @@ log-transformed round. Therefore, we will use the centered round.
 
 <br>
 
-#### Model effect: ZI or not
+#### ZI or not
 
 ``` r
-zinb_iconic_rate_cond_round_c = brm(num_iconic_gestures ~ 1 + condition * round_c + 
-                                      offset(log(n_words_100)) +
-                                      (1+round_c|pair) + (1|target),
-                                    family = zero_inflated_negbinomial(),
-                                    prior = priors_rslope_rate_zinb,
-                                    data = df_trial_info,
-                                    sample_prior = T,
-                                    warmup = nwu, iter = niter,
-                                    control = list(adapt_delta = 0.9, 
-                                                   max_treedepth = 15),
-                                    file = "models/speakerB/zinb_iconic_rate_cond_round_c")
+zinb_iconic_rate_cond_round_c = 
+  brm(num_iconic_gestures ~ 
+        1 + condition * round_c + 
+        offset(log(n_words_100)) +
+        (1+round_c|pair) + (1|target),
+      family = zero_inflated_negbinomial(),
+      prior = priors_rslope_rate_zinb,
+      data = df_trial_info,
+      sample_prior = T,
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/iconic/zinb_iconic_rate_cond_round_c")
 
 
 
 ### loo compare
-if (!file.exists("models/speakerB/loo_zinb_iconic_rate_cond_round_c.rds")){
+if (!file.exists("models/speakerB/iconic/loo_zinb_iconic_rate_cond_round_c.rds")){
   zinb_cond_round_c_loo = loo(zinb_iconic_rate_cond_round_c)
-  saveRDS(zinb_cond_round_c_loo, file = "models/speakerB/loo_zinb_iconic_rate_cond_round_c.rds")
+  saveRDS(zinb_cond_round_c_loo, file = "models/speakerB/iconic/loo_zinb_iconic_rate_cond_round_c.rds")
 }
 
-nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_iconic_rate_cond_round_c.rds")
-zinb_cond_round_c_loo = readRDS("models/speakerB/loo_zinb_iconic_rate_cond_round_c.rds")
+nb_cond_round_c_loo = readRDS("models/speakerB/iconic/loo_nb_iconic_rate_cond_round_c.rds")
+zinb_cond_round_c_loo = readRDS("models/speakerB/iconic/loo_zinb_iconic_rate_cond_round_c.rds")
 
 loo_compare(nb_cond_round_c_loo, zinb_cond_round_c_loo)
 ```
@@ -1166,59 +1215,62 @@ loo_compare(nb_cond_round_c_loo, zinb_cond_round_c_loo)
     ## nb_iconic_rate_cond_round_c     0.0       0.0  
     ## zinb_iconic_rate_cond_round_c -13.1       5.6
 
-The leave-one-out (LOO) Effect shows that zero-inflation model has a
-higher predictive power. As such, we will use zero-inflated negative
-binomial regression model.
+The leave-one-out (LOO) Effect shows that non-zero-inflation model has a
+higher predictive power. As such, we will use a negative binomial
+regression model.
 
 <br>
 
-#### Prior predictive check
+### 5.2.3 Prior predictive check
 
 ``` r
-zinb_iconic_rate_cond_round_c_prior = brm(num_iconic_gestures ~ 1 + condition * round_c + 
-                                            offset(log(n_words_100)) +
-                                            (1+round_c|pair) + (1|target),
-                                          family = zero_inflated_negbinomial(),
-                                          prior = priors_rslope_rate_zinb,
-                                          sample_prior = "only",
-                                          data = df_trial_info,
-                                          file = "models/speakerB/zinb_iconic_rate_cond_round_c_prior")
+nb_iconic_rate_cond_round_c_prior = 
+  brm(num_iconic_gestures | rate(n_words_100) ~ 
+        1 + condition * round_c + 
+        (1+round_c|pair) + (1|target),
+      family = negbinomial(),
+      prior = priors_rslope_rate,
+      sample_prior = "only",
+      data = df_trial_info,
+      file = "models/speakerB/iconic/nb_iconic_rate_cond_round_c_prior")
 
-pp_check(zinb_iconic_rate_cond_round_c_prior, ndraws = 100, type = "bars") +
-  coord_cartesian(xlim = c(0, 20),
-                  ylim = c(0, 4000))
+pp_check(nb_iconic_rate_cond_round_c_prior, ndraws = 100, 
+         type = "bars_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 10),
+                  ylim = c(0, 1500))
 ```
 
-![](figures_md/speakerB/gest_alignment/pp_check_m1-1.png)<!-- -->
+![](figures_md/speakerB/gest_alignment/pp_check_iconic-1.png)<!-- -->
 
 The prior predictive check shows that the model generates data that are
 somewhat similar to the observed data.
 
 <br>
 
-#### Fit the model
+### 5.2.4 Fit the model
 
 ``` r
-zinb_iconic_rate_cond_round_c = brm(num_iconic_gestures ~ 1 + condition * round_c + 
-                                      offset(log(n_words_100)) +
-                                      (1+round_c|pair) + (1|target),
-                                    family = zero_inflated_negbinomial(),
-                                    prior = priors_rslope_rate_zinb,
-                                    data = df_trial_info,
-                                    sample_prior = T,
-                                    save_pars = save_pars(all = TRUE),
-                                    warmup = nwu, iter = niter,
-                                    control = list(adapt_delta = 0.9, 
-                                                   max_treedepth = 15),
-                                    file = "models/speakerB/zinb_iconic_rate_cond_round_c")
+nb_iconic_rate_cond_round_c = 
+  brm(num_iconic_gestures | rate(n_words_100) ~ 
+        1 + condition * round_c + 
+        (1+round_c|pair) + (1|target),
+      family = negbinomial(),
+      prior = priors_rslope_rate_nb,
+      data = df_trial_info,
+      sample_prior = T,
+      save_pars = save_pars(all = TRUE),
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/iconic/nb_iconic_rate_cond_round_c")
 
-model = zinb_iconic_rate_cond_round_c
+model = nb_iconic_rate_cond_round_c
 summary(model)
 ```
 
-    ##  Family: zero_inflated_negbinomial 
-    ##   Links: mu = log; shape = identity; zi = identity 
-    ## Formula: num_iconic_gestures ~ 1 + condition * round_c + offset(log(n_words_100)) + (1 + round_c | pair) + (1 | target) 
+    ##  Family: negbinomial 
+    ##   Links: mu = log 
+    ## Formula: num_iconic_gestures | rate(n_words_100) ~ 1 + condition * round_c + (1 + round_c | pair) + (1 | target) 
     ##    Data: df_trial_info (Number of observations: 4315) 
     ##   Draws: 4 chains, each with iter = 20000; warmup = 2000; thin = 1;
     ##          total post-warmup draws = 72000
@@ -1226,59 +1278,44 @@ summary(model)
     ## Multilevel Hyperparameters:
     ## ~pair (Number of levels: 45) 
     ##                        Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
-    ## sd(Intercept)              1.07      0.12     0.86     1.32 1.00    22737
-    ## sd(round_c)                0.18      0.03     0.12     0.25 1.00    24819
-    ## cor(Intercept,round_c)     0.64      0.14     0.33     0.85 1.00    45391
+    ## sd(Intercept)              1.08      0.12     0.87     1.34 1.00    23791
+    ## sd(round_c)                0.18      0.03     0.12     0.25 1.00    25899
+    ## cor(Intercept,round_c)     0.62      0.14     0.30     0.84 1.00    49599
     ##                        Tail_ESS
-    ## sd(Intercept)             38254
-    ## sd(round_c)               43353
-    ## cor(Intercept,round_c)    52376
+    ## sd(Intercept)             39933
+    ## sd(round_c)               41911
+    ## cor(Intercept,round_c)    52791
     ## 
     ## ~target (Number of levels: 16) 
     ##               Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    ## sd(Intercept)     0.09      0.03     0.03     0.16 1.00    20734    21617
+    ## sd(Intercept)     0.09      0.04     0.02     0.17 1.00    18926    23115
     ## 
     ## Regression Coefficients:
     ##                           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
-    ## Intercept                     1.06      0.16     0.74     1.37 1.00    12895
-    ## conditionAO_Asym              0.04      0.30    -0.54     0.64 1.00    17833
-    ## conditionAsym_Sym             0.30      0.30    -0.30     0.88 1.00    16364
-    ## round_c                      -0.15      0.03    -0.22    -0.08 1.00    26726
-    ## conditionAO_Asym:round_c     -0.02      0.07    -0.16     0.12 1.00    27271
-    ## conditionAsym_Sym:round_c    -0.05      0.07    -0.19     0.09 1.00    26257
+    ## Intercept                     1.02      0.16     0.70     1.34 1.00    16198
+    ## conditionAO_Asym              0.05      0.30    -0.55     0.65 1.00    21385
+    ## conditionAsym_Sym             0.31      0.30    -0.29     0.90 1.00    20699
+    ## round_c                      -0.15      0.03    -0.22    -0.08 1.00    33070
+    ## conditionAO_Asym:round_c     -0.02      0.07    -0.17     0.12 1.00    34260
+    ## conditionAsym_Sym:round_c    -0.06      0.07    -0.20     0.08 1.00    33884
     ##                           Tail_ESS
-    ## Intercept                    23113
-    ## conditionAO_Asym             29556
-    ## conditionAsym_Sym            28836
-    ## round_c                      40828
-    ## conditionAO_Asym:round_c     42495
-    ## conditionAsym_Sym:round_c    41516
+    ## Intercept                    25747
+    ## conditionAO_Asym             35082
+    ## conditionAsym_Sym            32844
+    ## round_c                      44515
+    ## conditionAO_Asym:round_c     44755
+    ## conditionAsym_Sym:round_c    46209
     ## 
     ## Further Distributional Parameters:
     ##       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    ## shape    27.46     14.13    12.22    65.98 1.00    97158    54751
-    ## zi        0.06      0.02     0.03     0.10 1.00    97748    46648
+    ## shape    17.06      2.70    12.73    23.24 1.00   102026    47786
     ## 
     ## Draws were sampled using sample(hmc). For each parameter, Bulk_ESS
     ## and Tail_ESS are effective sample size measures, and Rhat is the potential
     ## scale reduction factor on split chains (at convergence, Rhat = 1).
 
 ``` r
-bayestestR::hdi(model)
-```
-
-    ## Highest Density Interval
-    ## 
-    ## Parameter                 |        95% HDI
-    ## ------------------------------------------
-    ## (Intercept)               | [ 0.75,  1.38]
-    ## conditionAO_Asym          | [-0.54,  0.64]
-    ## conditionAsym_Sym         | [-0.28,  0.90]
-    ## round_c                   | [-0.22, -0.08]
-    ## conditionAO_Asym:round_c  | [-0.16,  0.12]
-    ## conditionAsym_Sym:round_c | [-0.19,  0.09]
-
-``` r
+# bayestestR::hdi(model)
 # bayestestR::hdi(model, ci = 0.89)
 ```
 
@@ -1291,43 +1328,99 @@ hypothesis testing will be performed later using Bayes factor.
 
 <br>
 
-#### Visualize the posterior distributions
+### 5.2.5 Posterior predictive check
 
 ``` r
-p = plot_posterior(model, interaction = T)
-p
+pp_check(model, ndraws = 100, 
+         type = "bars_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 10),
+                  ylim = c(0, 1200))
 ```
 
-![](figures_md/speakerB/gest_alignment/pd_m1-1.png)<!-- -->
+![](figures_md/speakerB/gest_alignment/ppd_iconic-1.png)<!-- -->
+
+``` r
+pp_check(model, ndraws = 100, 
+         type = "bars_grouped", group = "round_c") +
+  coord_cartesian(xlim = c(0, 5),
+                  ylim = c(0, 700))
+```
+
+![](figures_md/speakerB/gest_alignment/ppd_iconic-2.png)<!-- -->
 
 <br>
 
-#### Hypothesis testing: Bayes factor
+### 5.2.6 Posterior distributions
+
+``` r
+df_post_beta = posterior_beta(model)
+
+# summarize the posterior distribution
+post_beta_summary = df_post_beta %>%
+  group_by(.variable) %>%
+  summarize(mean = mean(.value),
+            est_error = sd(.value),
+            lci = quantile(.value, 0.025),
+            uci = quantile(.value, 0.975))
+post_beta_summary
+```
+
+    ## # A tibble: 8 × 5
+    ##   .variable               mean est_error    lci     uci
+    ##   <fct>                  <dbl>     <dbl>  <dbl>   <dbl>
+    ## 1 Intercept             1.02      0.161   0.702  1.34  
+    ## 2 AO--AsymAV            0.0509    0.305  -0.550  0.646 
+    ## 3 AsymAV--SymAV         0.305     0.303  -0.291  0.900 
+    ## 4 AO--SymAV             0.356     0.350  -0.335  1.05  
+    ## 5 Round                -0.148     0.0347 -0.220 -0.0834
+    ## 6 Round: AO--AsymAV    -0.0233    0.0729 -0.169  0.119 
+    ## 7 Round: AsymAV--SymAV -0.0594    0.0716 -0.202  0.0815
+    ## 8 Round: AO--SymAV     -0.0827    0.0751 -0.233  0.0645
+
+``` r
+# visualize the posterior distribution
+plot_posterior(df_post_beta, interaction = F,
+               xlim_cond = 1.2, xlim_round = 0.25, xlim_lex = 0.25)
+```
+
+![](figures_md/speakerB/gest_alignment/pd_iconic-1.png)<!-- -->
+
+<br>
+
+### 5.2.7 Hypothesis testing: Bayes factor
 
 ``` r
 ### varying priors for sensitivity analysis
-prior_size = c("xs", "s", "l", "xl")
-prior_sd = c(0.1, 0.3, 1, 1.5)
-bfs_cond_ao_asym = c()
-bfs_cond_asym_sym = c()
-bfs_round = c()
+prior_size = c("xs", "s", "m", "l", "xl")
+prior_sd = c(0.1, 0.3, 0.5, 1, 1.5)
+
+
+### list of hypotheses
+hps = c("conditionAO_Asym = 0",
+        "conditionAsym_Sym = 0",
+        "conditionAO_Asym + conditionAsym_Sym = 0",
+        "round_c = 0",
+        "conditionAO_Asym:round_c = 0",
+        "conditionAsym_Sym:round_c = 0",
+        "conditionAO_Asym:round_c + conditionAsym_Sym:round_c = 0")
+effects = c("AO--AsymAV", "AsymAV--SymAV", "AO--SymAV", "Round", 
+            "AO--AsymAV:Round", "AsymAV--SymAV:Round", "AO--SymAV:Round")
 
 for (i in 1:length(prior_sd)){
   priors = c(
-    prior(normal(1.82, 0.5), class = Intercept),
+    prior(normal(1.12, 0.5), class = Intercept),
     set_prior(paste0("normal(0,", prior_sd[i], ")"), class = "b"),
     prior(normal(0, 0.5), class = sd),
     prior(lkj(2), class = cor),
-    prior(normal(0, 0.5), class = zi), # on the logit scale
     prior(normal(0, 50), class = shape))
   
-  fname = paste0("models/speakerB/zinb_iconic_rate_cond_round_c_", prior_size[i])
+  fname = paste0("models/speakerB/iconic/nb_iconic_rate_cond_round_c_", prior_size[i])
+  fname = gsub("_m", "", fname) # remove "_m" for the medium prior
   
-  fit = brm(num_iconic_gestures ~ 
-              1 + condition * round_c + 
-              offset(log(n_words_100)) +
+  fit = brm(num_iconic_gestures | rate(n_words_100) ~ 
+              1 + condition * round_c +
               (1+round_c|pair) + (1|target),
-            family = zero_inflated_negbinomial(),
+            family = negbinomial(),
             prior = priors,
             data = df_trial_info,
             sample_prior = T,
@@ -1337,160 +1430,175 @@ for (i in 1:length(prior_sd)){
                            max_treedepth = 15),
             file = fname)
   
-  # BF for sym - asym
-  h = hypothesis(fit, "conditionAO_Asym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_cond_ao_asym = c(bfs_cond_ao_asym, bf)
-  
-  # BF for sym - ao
-  h = hypothesis(fit, "conditionAsym_Sym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_cond_asym_sym = c(bfs_cond_asym_sym, bf)
-  
-  # BF for round
-  h = hypothesis(fit, "round_c = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_round = c(bfs_round, bf)
+  ### compute BFs for all hypotheses and store them as dataframe
+  for (j in 1:length(hps)){
+    h = hypothesis(fit, hps[j])
+    # transform the result to dataframe
+    result = data_frame(h$hypothesis) %>%
+      mutate(size = prior_size[i],
+             sd = prior_sd[i],
+             Effect = effects[j])
+    # combine the result
+    if (i==1 & j==1){
+      df_results = result
+    } else {
+      df_results = rbind(df_results, result)}
+  }
 }
 
-### add BF for the main/medium model
-prior_size[3:5] = c("m", prior_size[3:4])
-prior_sd[3:5] = c(0.5, prior_sd[3:4])
-
-# BF for sym - asym
-h = hypothesis(model, "conditionAO_Asym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_cond_ao_asym[3:5] = c(bf, bfs_cond_ao_asym[3:4])
-
-# BF for sym - ao
-h = hypothesis(model, "conditionAsym_Sym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_cond_asym_sym[3:5] = c(bf, bfs_cond_asym_sym[3:4])
-
-# BF for round
-h = hypothesis(model, "round_c = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_round[3:5] = c(bf, bfs_round[3:4])
-
-
-### make a df for BFs
-df_bf = data.frame(size = prior_size,
-                   sd = prior_sd,
-                   ao_asym = bfs_cond_ao_asym,
-                   asym_sym = bfs_cond_asym_sym,
-                   round = bfs_round) %>% 
-  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
-  pivot_longer(cols = c("ao_asym", "asym_sym", "round"),
-               names_to = "Effect",
-               values_to = "BF10") %>% 
-  mutate(Effect = factor(Effect,
-                         levels = c("ao_asym", "asym_sym", "round"),
-                         labels = c("AO-AsymAV", "AsymAV-SymAV", "Round")),
-         Predictor = ifelse(Effect == "round", "Round", "Visibility"),
-         BF10_log10 = log10(BF10))
-
-df_bf %>% arrange(Effect, sd)
+df_results = df_results %>%
+  mutate(prior = paste0("N(0, ", sd, ")"),
+         BF10 = 1 / abs(Evid.Ratio),
+         Effect = factor(Effect,
+                         levels = c("AO--SymAV", "AO--AsymAV", "AsymAV--SymAV", "Round",
+                                    "AO--SymAV:Round", "AO--AsymAV:Round", "AsymAV--SymAV:Round")),
+         Predictor = factor(ifelse(grepl(":Round", Effect), "Interaction",
+                                   ifelse(grepl("Round", Effect), "Round", "Visibility")),
+                            levels = c("Visibility", "Round", "Interaction")),
+         across(where(is.numeric), ~ round(., 3)),
+         Star = ifelse(BF10 >= 30 | BF10 <= 1/30, "***",
+                       ifelse(BF10 >= 10 | BF10 <= 1/10, "**",
+                              ifelse(BF10 >= 3 | BF10 <= 1/3, "*", ""))),
+         Star = ifelse(BF10 < 1, str_replace_all(Star, "[*]", "="), Star)) %>% 
+  dplyr::select(size, sd, prior, Effect, Predictor,
+                Estimate, Est.Error, `CI.Lower`, `CI.Upper`, BF10, Star) %>% 
+  arrange(Effect, sd)
 ```
-
-    ## # A tibble: 15 × 7
-    ##    size     sd prior     Effect           BF10 Predictor  BF10_log10
-    ##    <chr> <dbl> <chr>     <fct>           <dbl> <chr>           <dbl>
-    ##  1 xs      0.1 N(0, 0.1) AO-AsymAV       0.990 Visibility   -0.00451
-    ##  2 s       0.3 N(0, 0.3) AO-AsymAV       0.786 Visibility   -0.105  
-    ##  3 m       0.5 N(0, 0.5) AO-AsymAV       0.595 Visibility   -0.225  
-    ##  4 l       1   N(0, 1)   AO-AsymAV       0.365 Visibility   -0.437  
-    ##  5 xl      1.5 N(0, 1.5) AO-AsymAV       0.256 Visibility   -0.592  
-    ##  6 xs      0.1 N(0, 0.1) AsymAV-SymAV    1.03  Visibility    0.0148 
-    ##  7 s       0.3 N(0, 0.3) AsymAV-SymAV    1.08  Visibility    0.0344 
-    ##  8 m       0.5 N(0, 0.5) AsymAV-SymAV    0.991 Visibility   -0.00400
-    ##  9 l       1   N(0, 1)   AsymAV-SymAV    0.652 Visibility   -0.186  
-    ## 10 xl      1.5 N(0, 1.5) AsymAV-SymAV    0.489 Visibility   -0.311  
-    ## 11 xs      0.1 N(0, 0.1) Round        1166.    Visibility    3.07   
-    ## 12 s       0.3 N(0, 0.3) Round         693.    Visibility    2.84   
-    ## 13 m       0.5 N(0, 0.5) Round        1008.    Visibility    3.00   
-    ## 14 l       1   N(0, 1)   Round         350.    Visibility    2.54   
-    ## 15 xl      1.5 N(0, 1.5) Round         566.    Visibility    2.75
 
 ``` r
 #### Plot BFs ####
-ggplot(df_bf, aes(x = prior, y = BF10, group = Effect)) +
+p_bf = ggplot(filter(df_results, Predictor != "Round"), 
+              aes(x = factor(sd), y = BF10, group = Effect)) +
   geom_hline(yintercept = 1, linetype="dashed") +
   geom_point(aes(color=Effect)) +
   geom_line(aes(color=Effect)) +
-  facet_wrap(vars(Predictor), scales="free_y") +
-  theme_bw(base_size = 12)+
-  theme(legend.position = "top")+
+  labs(x = "SD for the prior",
+       title = "D. Bayes factors for main effects") +
+  facet_wrap(vars(Predictor)) +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 13, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "right",
+        legend.text = element_text(size = 12),
+        strip.text = element_text(size = 14, face = 'bold'),
+        strip.background = element_blank(),
+        plot.title.position = "plot", # left align the title
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
   scale_y_log10("Bayes factor (BF10)",
-                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
-                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
-  xlab("prior")
+                # limits = c(0.03, 30000),
+                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100, 1e3, 1e4),
+                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100, 1e3, 1e4)) +
+  guides(color = guide_legend(ncol = 1))
+
+p_bf
 ```
 
 ![](figures_md/speakerB/gest_alignment/bf_iconic_rate-1.png)<!-- -->
 
 <br>
 
-#### Posterior predictive check
+### 5.2.8 Back-transformation
 
 ``` r
-model = zinb_iconic_rate_cond_round_c
-pp_check_sym = pp_check_each_condition(model, df_trial_info, "SymAV")
-pp_check_asym = pp_check_each_condition(model, df_trial_info, "AsymAV")
-pp_check_ao = pp_check_each_condition(model, df_trial_info, "AO")
-
-gridExtra::grid.arrange(pp_check_sym, pp_check_asym, pp_check_ao, ncol = 2)
+### obtain model predictions
+pred_cond = 
+  avg_predictions(model, by = "condition",
+                  type = "link", transform = exp,
+                  re_formula = NA) %>% 
+  as_tibble()
+pred_cond
 ```
 
-![](figures_md/speakerB/gest_alignment/ppd_m1-1.png)<!-- -->
+    ## # A tibble: 3 × 5
+    ##   condition estimate conf.low conf.high    df
+    ##   <fct>        <dbl>    <dbl>     <dbl> <dbl>
+    ## 1 SymAV         3.47     2.11      5.66   Inf
+    ## 2 AsymAV        2.56     1.62      4.02   Inf
+    ## 3 AO            2.43     1.47      3.96   Inf
 
 ``` r
-pp_check_r1 = pp_check_each_round(model, df_trial_info, "R1")
-pp_check_r2 = pp_check_each_round(model, df_trial_info, "R2")
-pp_check_r3 = pp_check_each_round(model, df_trial_info, "R3")
-pp_check_r4 = pp_check_each_round(model, df_trial_info, "R4")
-pp_check_r5 = pp_check_each_round(model, df_trial_info, "R5")
-pp_check_r6 = pp_check_each_round(model, df_trial_info, "R6")
-
-gridExtra::grid.arrange(pp_check_r1, pp_check_r2, pp_check_r3, pp_check_r4, pp_check_r5, pp_check_r6, ncol = 3)
+mean_round = mean(as.integer(df_trial_info$round))
+pred_int = 
+  avg_predictions(model, by = c("round_c","condition"),
+                  type = "link", transform = exp,
+                  re_formula = NA) %>%
+  as_tibble() %>% 
+  mutate(round = factor(as.integer(round_c + mean_round)))
+pred_int
 ```
 
-![](figures_md/speakerB/gest_alignment/ppd_m1-2.png)<!-- -->
+    ## # A tibble: 18 × 7
+    ##    round_c condition estimate conf.low conf.high    df round
+    ##      <dbl> <fct>        <dbl>    <dbl>     <dbl> <dbl> <fct>
+    ##  1  -2.50  SymAV         5.66    3.75       8.49   Inf 1    
+    ##  2  -2.50  AsymAV        3.59    2.41       5.32   Inf 1    
+    ##  3  -2.50  AO            3.23    2.11       4.86   Inf 1    
+    ##  4  -1.50  SymAV         4.65    3.03       7.11   Inf 2    
+    ##  5  -1.50  AsymAV        3.13    2.11       4.67   Inf 2    
+    ##  6  -1.50  AO            2.88    1.87       4.40   Inf 2    
+    ##  7  -0.501 SymAV         3.83    2.40       6.09   Inf 3    
+    ##  8  -0.501 AsymAV        2.74    1.78       4.20   Inf 3    
+    ##  9  -0.501 AO            2.57    1.61       4.08   Inf 3    
+    ## 10   0.499 SymAV         3.15    1.85       5.29   Inf 4    
+    ## 11   0.499 AsymAV        2.39    1.47       3.86   Inf 4    
+    ## 12   0.499 AO            2.30    1.35       3.86   Inf 4    
+    ## 13   1.50  SymAV         2.59    1.41       4.66   Inf 5    
+    ## 14   1.50  AsymAV        2.09    1.19       3.60   Inf 5    
+    ## 15   1.50  AO            2.06    1.11       3.70   Inf 5    
+    ## 16   2.50  SymAV         2.13    1.06       4.13   Inf 6    
+    ## 17   2.50  AsymAV        1.82    0.949      3.39   Inf 6    
+    ## 18   2.50  AO            1.84    0.907      3.57   Inf 6
 
 <br>
 
-#### Pair-wise Effect
+### 5.2.9 Visualize model predictions together with data
 
 ``` r
-emmeans(model, pairwise ~ condition)$contrasts
+bp_mean_iconic_rate_model = 
+  bp_mean_iconic_rate +
+  geom_ribbon(data = pred_cond,
+              aes(x = condition, y = estimate,
+                  ymin = conf.low, ymax = conf.high, group = 1),
+              fill = "black", alpha = 0.2) +
+  geom_line(data = pred_cond,
+            aes(x = condition, y = estimate, group = 1),
+            color = "black", size = 0.8)
+
+bp_mean_iconic_rate_model
 ```
 
-    ##  contrast       estimate lower.HPD upper.HPD
-    ##  SymAV - AsymAV    0.303    -0.279     0.901
-    ##  SymAV - AO        0.347    -0.325     1.041
-    ##  AsymAV - AO       0.044    -0.544     0.636
-    ## 
-    ## Point estimate displayed: median 
-    ## Results are given on the log (not the response) scale. 
-    ## HPD interval probability: 0.95
+![](figures_md/speakerB/gest_alignment/pred_plot-1.png)<!-- -->
 
 ``` r
-emmeans(model, pairwise ~ condition, level = 0.89)$contrasts
+ggsave("figures/speakerB/iconic/bp_mean_iconic_rate_model.svg", width=4, height=3.5)
+
+
+bp_mean_iconic_rate_cond_round_model = 
+  bp_mean_iconic_rate_cond_round +
+  geom_ribbon(data = pred_int,
+              aes(x = round, y = estimate,
+                  ymin = conf.low, ymax = conf.high, 
+                  group = condition, fill = condition),
+              alpha = 0.2) +
+  geom_line(data = pred_int,
+            aes(x = round, y = estimate, 
+                group = condition, color = condition),
+            size = 0.8) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_color_manual(values = c("#ED6B06", "#00786A", "darkgrey"))
+
+bp_mean_iconic_rate_cond_round_model
 ```
 
-    ##  contrast       estimate lower.HPD upper.HPD
-    ##  SymAV - AsymAV    0.303    -0.177     0.785
-    ##  SymAV - AO        0.347    -0.215     0.889
-    ##  AsymAV - AO       0.044    -0.427     0.534
-    ## 
-    ## Point estimate displayed: median 
-    ## Results are given on the log (not the response) scale. 
-    ## HPD interval probability: 0.89
+![](figures_md/speakerB/gest_alignment/pred_plot-2.png)<!-- -->
 
-<!-- <br> -->
-<!-- #### Visualize the model estimates -->
-<!-- ```{r} -->
-<!-- plot(conditional_effects(model), ask = FALSE) -->
-<!-- ``` -->
+``` r
+ggsave("figures/speakerB/iconic/bp_mean_iconic_rate_cond_round_model.svg", width=6, height=4)
+```
 
 <br>
 
@@ -1553,10 +1661,10 @@ adjustmentSets(dag_gest, exposure = "visibility", outcome = "gest_align", effect
     ## { n_gestures, n_words, role, round }
 
 ``` r
-print("Direct effect of lexical alignment rate on gestural alignment frequency")
+print("Direct effect of lexical alignment frequency on gestural alignment frequency")
 ```
 
-    ## [1] "Direct effect of lexical alignment rate on gestural alignment frequency"
+    ## [1] "Direct effect of lexical alignment frequency on gestural alignment frequency"
 
 ``` r
 adjustmentSets(dag_gest, exposure = "lex_align", outcome = "gest_align", effect = "direct")
@@ -1614,8 +1722,9 @@ $$
 ### bp: mean by condition
 
 ``` r
-bp_mean_gest_alignment_by_cond = ggplot(data=trial_info_pair, 
-                                        aes(x=condition, y=mean_num_gest_align, fill=condition)) +
+bp_mean_gest_alignment = 
+  ggplot(data=trial_info_pair, 
+         aes(x=condition, y=mean_num_gest_align, fill=condition)) +
   geom_jitter(aes(color = pair), 
               size = 1, alpha = 1, 
               width = 0.07, height = 0) +
@@ -1630,19 +1739,19 @@ bp_mean_gest_alignment_by_cond = ggplot(data=trial_info_pair,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "none",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_mean_gest_alignment_by_cond)
+ggplotly(bp_mean_gest_alignment)
 ```
 
-<div class="plotly html-widget html-fill-item" id="htmlwidget-bf04e163df8c0856f23d" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-bf04e163df8c0856f23d">{"x":{"data":[{"x":[1.0357400950184092],"y":[0.33333333333333331],"text":"condition: SymAV<br />mean_num_gest_align: 0.3333<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97174338405020533],"y":[0.16666666666666666],"text":"condition: SymAV<br />mean_num_gest_align: 0.1667<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97330258475616571],"y":[0.375],"text":"condition: SymAV<br />mean_num_gest_align: 0.3750<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96025245008990168],"y":[0.29166666666666669],"text":"condition: SymAV<br />mean_num_gest_align: 0.2917<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93993421037681402],"y":[0.38541666666666669],"text":"condition: SymAV<br />mean_num_gest_align: 0.3854<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9788838075706735],"y":[0.60416666666666663],"text":"condition: SymAV<br />mean_num_gest_align: 0.6042<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0628458268754184],"y":[0.052083333333333336],"text":"condition: SymAV<br />mean_num_gest_align: 0.0521<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0661099870316684],"y":[0.53125],"text":"condition: SymAV<br />mean_num_gest_align: 0.5312<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0477798025822267],"y":[0.020833333333333332],"text":"condition: SymAV<br />mean_num_gest_align: 0.0208<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94289234648924325],"y":[0.041666666666666664],"text":"condition: SymAV<br />mean_num_gest_align: 0.0417<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94150513424072413],"y":[0.30208333333333331],"text":"condition: SymAV<br />mean_num_gest_align: 0.3021<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94317877022083851],"y":[0.4375],"text":"condition: SymAV<br />mean_num_gest_align: 0.4375<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94933959709014748],"y":[0.09375],"text":"condition: SymAV<br />mean_num_gest_align: 0.0938<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0578417575592176],"y":[0],"text":"condition: SymAV<br />mean_num_gest_align: 0.0000<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95221028987318279],"y":[0.39583333333333331],"text":"condition: SymAV<br />mean_num_gest_align: 0.3958<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9513428913149982],"y":[0.020833333333333332],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0208<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9709564107423647],"y":[0.010416666666666666],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0104<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.941657492495142],"y":[0.40625],"text":"condition: AsymAV<br />mean_num_gest_align: 0.4062<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0455066098691894],"y":[0.28125],"text":"condition: AsymAV<br />mean_num_gest_align: 0.2812<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9646443433780223],"y":[0.041666666666666664],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0417<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9767895976640284],"y":[0.80208333333333337],"text":"condition: AsymAV<br />mean_num_gest_align: 0.8021<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9805138039961456],"y":[0.51041666666666663],"text":"condition: AsymAV<br />mean_num_gest_align: 0.5104<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9724187110550702],"y":[0.60416666666666663],"text":"condition: AsymAV<br />mean_num_gest_align: 0.6042<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9852021949971095],"y":[0.09375],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0938<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0211069564986972],"y":[0.63541666666666663],"text":"condition: AsymAV<br />mean_num_gest_align: 0.6354<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0468683453463017],"y":[0.19791666666666666],"text":"condition: AsymAV<br />mean_num_gest_align: 0.1979<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9456187418848276],"y":[0.25],"text":"condition: AsymAV<br />mean_num_gest_align: 0.2500<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0005831887992098],"y":[0.03125],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0312<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0575426248274744],"y":[0.020833333333333332],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0208<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0341625830857084],"y":[0],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0000<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9330146308615803],"y":[0.041666666666666664],"text":"condition: AO<br />mean_num_gest_align: 0.0417<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0614946461748334],"y":[0],"text":"condition: AO<br />mean_num_gest_align: 0.0000<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0228890588833019],"y":[0],"text":"condition: AO<br />mean_num_gest_align: 0.0000<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9911700363131239],"y":[0.26041666666666669],"text":"condition: AO<br />mean_num_gest_align: 0.2604<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.007051718714647],"y":[0.63541666666666663],"text":"condition: AO<br />mean_num_gest_align: 0.6354<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0003663303423673],"y":[0.083333333333333329],"text":"condition: AO<br />mean_num_gest_align: 0.0833<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9642810805747284],"y":[0.043010752688172046],"text":"condition: AO<br />mean_num_gest_align: 0.0430<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9414380219671874],"y":[0.031914893617021274],"text":"condition: AO<br />mean_num_gest_align: 0.0319<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9819841184001414],"y":[0.23958333333333334],"text":"condition: AO<br />mean_num_gest_align: 0.2396<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0438336134608837],"y":[0.041666666666666664],"text":"condition: AO<br />mean_num_gest_align: 0.0417<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0350546541996302],"y":[0.052083333333333336],"text":"condition: AO<br />mean_num_gest_align: 0.0521<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9636075334576888],"y":[0.010416666666666666],"text":"condition: AO<br />mean_num_gest_align: 0.0104<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0158297228394075],"y":[0.03125],"text":"condition: AO<br />mean_num_gest_align: 0.0312<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.051052386695519],"y":[0.64583333333333337],"text":"condition: AO<br />mean_num_gest_align: 0.6458<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9791255144728348],"y":[0.21875],"text":"condition: AO<br />mean_num_gest_align: 0.2188<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[0.33333333333333331,0.041666666666666664,0.60416666666666663,0.16666666666666666,0.30208333333333331,0.052083333333333336,0.375,0.4375,0.53125,0.29166666666666669,0.09375,0.020833333333333332,0.38541666666666669,0,0.39583333333333331],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.020833333333333332,0.63541666666666663,0.010416666666666666,0.19791666666666666,0.51041666666666663,0.40625,0.25,0.60416666666666663,0.28125,0.03125,0.09375,0.041666666666666664,0.020833333333333332,0.80208333333333337,0],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.041666666666666664,0,0.052083333333333336,0.043010752688172046,0,0.010416666666666666,0.031914893617021274,0.26041666666666669,0.03125,0.23958333333333334,0.63541666666666663,0.64583333333333337,0.041666666666666664,0.083333333333333329,0.21875],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1],"y":[0.26874999999999999],"text":"condition: SymAV<br />mean_num_gest_align: 0.269<br />condition: SymAV","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":7.559055118110237,"symbol":"x-thin-open","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2],"y":[0.26041666666666669],"text":"condition: AsymAV<br />mean_num_gest_align: 0.260<br />condition: AsymAV","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":7.559055118110237,"symbol":"x-thin-open","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3],"y":[0.15609756097560976],"text":"condition: AO<br />mean_num_gest_align: 0.156<br />condition: AO","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":7.559055118110237,"symbol":"x-thin-open","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"(AO,1)","legendgroup":"(AO,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.119999999999997,"r":21.119999999999997,"b":64.623528435035269,"l":73.921992528019928},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.04010416666666667,0.84218750000000009],"tickmode":"array","ticktext":["0.0","0.2","0.4","0.6","0.8"],"tickvals":[0,0.20000000000000004,0.40000000000000002,0.60000000000000009,0.80000000000000004],"categoryorder":"array","categoryarray":["0.0","0.2","0.4","0.6","0.8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132018,"tickwidth":0.90569455451149117,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0.90569455451149117,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean gestural alignment count <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":2.5769506084466713,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"21cc807591a":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"21cc1e5d72d4":{"x":{},"y":{},"fill":{}},"21cc77351fdf":{"x":{},"y":{},"fill":{}}},"cur_data":"21cc807591a","visdat":{"21cc807591a":["function (y) ","x"],"21cc1e5d72d4":["function (y) ","x"],"21cc77351fdf":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-a344870dba3bd128b299" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-a344870dba3bd128b299">{"x":{"data":[{"x":[0.9580793877365068],"y":[0.33333333333333331],"text":"condition: SymAV<br />mean_num_gest_align: 0.3333<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95297271077521151],"y":[0.16666666666666666],"text":"condition: SymAV<br />mean_num_gest_align: 0.1667<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98925992885138836],"y":[0.375],"text":"condition: SymAV<br />mean_num_gest_align: 0.3750<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.030211240556091],"y":[0.29166666666666669],"text":"condition: SymAV<br />mean_num_gest_align: 0.2917<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94638374799862501],"y":[0.38541666666666669],"text":"condition: SymAV<br />mean_num_gest_align: 0.3854<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0250868092104792],"y":[0.60416666666666663],"text":"condition: SymAV<br />mean_num_gest_align: 0.6042<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93497364084236323],"y":[0.052083333333333336],"text":"condition: SymAV<br />mean_num_gest_align: 0.0521<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99546703697647898],"y":[0.53125],"text":"condition: SymAV<br />mean_num_gest_align: 0.5312<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0057197135640308],"y":[0.020833333333333332],"text":"condition: SymAV<br />mean_num_gest_align: 0.0208<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96561061117798086],"y":[0.041666666666666664],"text":"condition: SymAV<br />mean_num_gest_align: 0.0417<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0043295087805018],"y":[0.30208333333333331],"text":"condition: SymAV<br />mean_num_gest_align: 0.3021<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94279926569666717],"y":[0.4375],"text":"condition: SymAV<br />mean_num_gest_align: 0.4375<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0678800043743104],"y":[0.09375],"text":"condition: SymAV<br />mean_num_gest_align: 0.0938<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0055982990982011],"y":[0],"text":"condition: SymAV<br />mean_num_gest_align: 0.0000<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0272134807519615],"y":[0.39583333333333331],"text":"condition: SymAV<br />mean_num_gest_align: 0.3958<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0590322200674565],"y":[0.020833333333333332],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0208<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9534779345290736],"y":[0.010416666666666666],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0104<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0618598644947634],"y":[0.40625],"text":"condition: AsymAV<br />mean_num_gest_align: 0.4062<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0526314805913715],"y":[0.28125],"text":"condition: AsymAV<br />mean_num_gest_align: 0.2812<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0573251900030298],"y":[0.041666666666666664],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0417<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0537996620684864],"y":[0.80208333333333337],"text":"condition: AsymAV<br />mean_num_gest_align: 0.8021<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9372896443167702],"y":[0.51041666666666663],"text":"condition: AsymAV<br />mean_num_gest_align: 0.5104<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0315476901782676],"y":[0.60416666666666663],"text":"condition: AsymAV<br />mean_num_gest_align: 0.6042<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0226666339905934],"y":[0.09375],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0938<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0599929974460975],"y":[0.63541666666666663],"text":"condition: AsymAV<br />mean_num_gest_align: 0.6354<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9336992330756038],"y":[0.19791666666666666],"text":"condition: AsymAV<br />mean_num_gest_align: 0.1979<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0211209576809779],"y":[0.25],"text":"condition: AsymAV<br />mean_num_gest_align: 0.2500<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0625862814253195],"y":[0.03125],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0312<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0424274785770105],"y":[0.020833333333333332],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0208<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0415157589409501],"y":[0],"text":"condition: AsymAV<br />mean_num_gest_align: 0.0000<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0161218412732707],"y":[0.041666666666666664],"text":"condition: AO<br />mean_num_gest_align: 0.0417<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0271992861432953],"y":[0],"text":"condition: AO<br />mean_num_gest_align: 0.0000<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0629040762176736],"y":[0],"text":"condition: AO<br />mean_num_gest_align: 0.0000<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.962600816497579],"y":[0.26041666666666669],"text":"condition: AO<br />mean_num_gest_align: 0.2604<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9828380298847335],"y":[0.63541666666666663],"text":"condition: AO<br />mean_num_gest_align: 0.6354<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9767702133348211],"y":[0.083333333333333329],"text":"condition: AO<br />mean_num_gest_align: 0.0833<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0564448815863581],"y":[0.043010752688172046],"text":"condition: AO<br />mean_num_gest_align: 0.0430<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9510902389697731],"y":[0.031914893617021274],"text":"condition: AO<br />mean_num_gest_align: 0.0319<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9389960916573181],"y":[0.23958333333333334],"text":"condition: AO<br />mean_num_gest_align: 0.2396<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9330332367587832],"y":[0.041666666666666664],"text":"condition: AO<br />mean_num_gest_align: 0.0417<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9959692513430491],"y":[0.052083333333333336],"text":"condition: AO<br />mean_num_gest_align: 0.0521<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.968116331677884],"y":[0.010416666666666666],"text":"condition: AO<br />mean_num_gest_align: 0.0104<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0108003163617103],"y":[0.03125],"text":"condition: AO<br />mean_num_gest_align: 0.0312<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0032610003044828],"y":[0.64583333333333337],"text":"condition: AO<br />mean_num_gest_align: 0.6458<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9976435309369118],"y":[0.21875],"text":"condition: AO<br />mean_num_gest_align: 0.2188<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[0.33333333333333331,0.041666666666666664,0.60416666666666663,0.16666666666666666,0.30208333333333331,0.052083333333333336,0.375,0.4375,0.53125,0.29166666666666669,0.09375,0.020833333333333332,0.38541666666666669,0,0.39583333333333331],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.020833333333333332,0.63541666666666663,0.010416666666666666,0.19791666666666666,0.51041666666666663,0.40625,0.25,0.60416666666666663,0.28125,0.03125,0.09375,0.041666666666666664,0.020833333333333332,0.80208333333333337,0],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.041666666666666664,0,0.052083333333333336,0.043010752688172046,0,0.010416666666666666,0.031914893617021274,0.26041666666666669,0.03125,0.23958333333333334,0.63541666666666663,0.64583333333333337,0.041666666666666664,0.083333333333333329,0.21875],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1],"y":[0.26874999999999999],"text":"condition: SymAV<br />mean_num_gest_align: 0.269<br />condition: SymAV","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":7.559055118110237,"symbol":"x-thin-open","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2],"y":[0.26041666666666669],"text":"condition: AsymAV<br />mean_num_gest_align: 0.260<br />condition: AsymAV","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":7.559055118110237,"symbol":"x-thin-open","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3],"y":[0.15609756097560976],"text":"condition: AO<br />mean_num_gest_align: 0.156<br />condition: AO","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":7.559055118110237,"symbol":"x-thin-open","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"(AO,1)","legendgroup":"(AO,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.120000000000005,"r":21.120000000000005,"b":61.966824408468248,"l":71.265288501452901},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.925280199252807},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.04010416666666667,0.84218750000000009],"tickmode":"array","ticktext":["0.0","0.2","0.4","0.6","0.8"],"tickvals":[0,0.20000000000000004,0.40000000000000002,0.60000000000000009,0.80000000000000004],"categoryorder":"array","categoryarray":["0.0","0.2","0.4","0.6","0.8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969286},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean gestural alignment count <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"148a4730ea35b":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"148a44606e660":{"x":{},"y":{},"fill":{}},"148a46efecc8a":{"x":{},"y":{},"fill":{}}},"cur_data":"148a4730ea35b","visdat":{"148a4730ea35b":["function (y) ","x"],"148a44606e660":["function (y) ","x"],"148a46efecc8a":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 <br>
 
@@ -1693,60 +1802,56 @@ priors_rslope_gest_align_zinb = c(
 
 <br>
 
-### 7.2.2 Model 2: \[ppB\] effect of lex align on gest align
-
-#### Prior predictive check
+### 7.2.2 Prior predictive check
 
 ``` r
-zinb_gest_align_prior = brm(num_gestural_align ~
-                              1 + lex_align_c * condition + round + n_iconic_c + role +
-                              (1+round|pair) + (1|target),
-                            family = zero_inflated_negbinomial(),
-                            prior = priors_rslope_gest_align_zinb,
-                            data = df_trial_info,
-                            sample_prior = "only",
-                            control = list(adapt_delta = 0.9, 
-                                           max_treedepth = 20),
-                            file = "models/speakerB/zinb_gest_align_prior")
+zinb_gest_align_prior = 
+  brm(num_gestural_align ~
+        1 + lex_align_c * condition + round + n_iconic_c + role +
+        (1+round|pair) + (1|target),
+      family = zero_inflated_negbinomial(),
+      prior = priors_rslope_gest_align_zinb,
+      data = df_trial_info,
+      sample_prior = "only",
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 20),
+      file = "models/speakerB/gest_alignment/zinb_gest_align_prior")
 
 pp_check(zinb_gest_align_prior, ndraws = 100, type = "bars") +
   coord_cartesian(xlim = c(0, 20),
                   ylim = c(0, 4000))
 ```
 
-![](figures_md/speakerB/gest_alignment/pp_check_m2-1.png)<!-- -->
+![](figures_md/speakerB/gest_alignment/pp_check_count-1.png)<!-- -->
 
-The prior predictive check shows that the model expects fewer amount of
-2, 3, and 4. This suggests that the zero-inflation prior may be too
-large or the mean for the intercept prior is too low. We will check the
-prior-posterior update plot and posterior predictive check to see if the
-model generates data that are similar to the observed data. If not, we
-will consider modifying the priors.
+The prior predictive check shows that the prior distributions predict
+data that are similar to the observed data.
 
 <br>
 
-#### Fit the model
+### 7.2.3 Fit the model
 
 ``` r
-zinb_align_cond_round = brm(num_gestural_align ~ 
-                              1 + lex_align_c * condition + round + n_iconic_c + role +
-                              (1+round|pair) + (1|target),
-                            family = zero_inflated_negbinomial(),
-                            prior = priors_rslope_gest_align_zinb,
-                            data = df_trial_info,
-                            sample_prior = T,
-                            save_pars = save_pars(all = TRUE),
-                            warmup = nwu, iter = niter,
-                            control = list(adapt_delta = 0.9, 
-                                           max_treedepth = 15),
-                            file = "models/speakerB/zinb_align_cond_round")
+zinb_align_cond_round = 
+  brm(num_gestural_align ~ 
+        1 + lex_align_c * condition + round + n_iconic_c + role +
+        (1+round|pair) + (1|target),
+      family = zero_inflated_negbinomial(),
+      prior = priors_rslope_gest_align_zinb,
+      data = df_trial_info,
+      sample_prior = T,
+      save_pars = save_pars(all = TRUE),
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/gest_alignment/zinb_align_cond_round")
 
 model = zinb_align_cond_round
 summary(model)
 ```
 
     ##  Family: zero_inflated_negbinomial 
-    ##   Links: mu = log; shape = identity; zi = identity 
+    ##   Links: mu = log 
     ## Formula: num_gestural_align ~ 1 + lex_align_c * condition + round + n_iconic_c + role + (1 + round | pair) + (1 | target) 
     ##    Data: df_trial_info (Number of observations: 4315) 
     ##   Draws: 4 chains, each with iter = 20000; warmup = 2000; thin = 1;
@@ -1843,56 +1948,71 @@ summary(model)
     ## scale reduction factor on split chains (at convergence, Rhat = 1).
 
 ``` r
-bayestestR::hdi(model)
+# bayestestR::hdi(model)
 ```
-
-    ## Highest Density Interval
-    ## 
-    ## Parameter                     |        95% HDI
-    ## ----------------------------------------------
-    ## (Intercept)                   | [-2.85, -2.14]
-    ## lex_align_c                   | [ 0.22,  0.36]
-    ## conditionAO_Asym              | [-0.27,  1.00]
-    ## conditionAsym_Sym             | [-0.44,  0.79]
-    ## roundR12                      | [ 0.64,  1.31]
-    ## roundR23                      | [-0.29,  0.20]
-    ## roundR34                      | [-0.60, -0.04]
-    ## roundR45                      | [-0.57, -0.03]
-    ## roundR56                      | [-0.55,  0.13]
-    ## n_iconic_c                    | [ 0.15,  0.23]
-    ## role1                         | [-1.20, -0.77]
-    ## lex_align_c:conditionAO_Asym  | [-0.11,  0.20]
-    ## lex_align_c:conditionAsym_Sym | [-0.15,  0.11]
 
 The coefficients show that the number of lexical alignment is a reliable
 predictor of the number of gestural alignment.
 
 <br>
 
-#### Hypothesis testing: Bayes factor
+### 7.2.4 Posterior predictive check
+
+``` r
+pp_check(zinb_align_cond_round, ndraws = 100, 
+         type = "bars_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 5))
+```
+
+![](figures_md/speakerB/gest_alignment/unnamed-chunk-22-1.png)<!-- -->
+
+``` r
+pp_check(zinb_align_cond_round, ndraws = 100,
+         type = "bars_grouped", group = "round") +
+  coord_cartesian(xlim = c(0, 5))
+```
+
+![](figures_md/speakerB/gest_alignment/unnamed-chunk-22-2.png)<!-- -->
+
+The posterior predictive check shows that the model generates data that
+are similar to the observed data, demonstrating good model fit.
+
+<br>
+
+### 7.2.5 Hypothesis testing: Bayes factor
 
 ``` r
 ### varying priors for sensitivity analysis
-prior_size = c("xs", "s", "l", "xl")
-prior_sd = c(0.05, 0.1, 0.3, 0.5)
-bfs_lex_align = c()
-bfs_ao_asym_lex = c()
-bfs_asym_sym_lex = c()
+prior_size = c("xs", "s", "m", "l", "xl")
+prior_sd = c(0.05, 0.1, 0.2, 0.3, 0.5)
+
+
+### list of hypotheses
+hps = c("lex_align_c = 0",
+        "lex_align_c:conditionAO_Asym = 0",
+        "lex_align_c:conditionAsym_Sym = 0",
+        "lex_align_c:conditionAO_Asym + lex_align_c:conditionAsym_Sym = 0")
+effects = c("N. lex align", "AO--AsymAV: N. lex align", 
+            "AsymAV--SymAV: N. lex align", "AO--SymAV: N. lex align")
 
 for (i in 1:length(prior_sd)){
   priors = c(
     prior(normal(-1.2, 0.5), class = Intercept),
     prior(normal(0, 0.5), class = b),
     prior(normal(0, 0.2), class = b, coef = "n_iconic_c"),
-    prior(normal(0, 0.2), class = b, coef = "lex_align_c"),
-    prior(normal(0, 0.2), class = b, coef = "lex_align_c:conditionAO_Asym"),
-    prior(normal(0, 0.2), class = b, coef = "lex_align_c:conditionAsym_Sym"),
+    set_prior(paste0("normal(0,", prior_sd[i], ")"), 
+              class = "b", coef = "lex_align_c"),
+    set_prior(paste0("normal(0,", prior_sd[i], ")"), 
+              class = "b", coef = "lex_align_c:conditionAO_Asym"),
+    set_prior(paste0("normal(0,", prior_sd[i], ")"), 
+              class = "b", coef = "lex_align_c:conditionAsym_Sym"),
     prior(normal(0, 0.5), class = sd),
     prior(lkj(2), class = cor),
     prior(normal(0, 0.5), class = zi),
     prior(normal(0, 50), class = shape))
   
-  fname = paste0("models/speakerB/zinb_align_cond_round_", prior_size[i])
+  fname = paste0("models/speakerB/gest_alignment/zinb_align_cond_round_", prior_size[i])
+  fname = gsub("_m", "", fname) # remove "_m" for the medium prior
   
   fit = brm(num_gestural_align ~ 
               1 + lex_align_c * condition + round + n_iconic_c + role +
@@ -1907,56 +2027,65 @@ for (i in 1:length(prior_sd)){
                            max_treedepth = 15),
             file = fname)
   
-  ### BF for N. lex alignment
-  h = hypothesis(fit, "lex_align_c = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_lex_align = c(bfs_lex_align, bf)
-  
-  ### BF for interaction
-  h = hypothesis(fit, "lex_align_c:conditionAO_Asym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_asym_lex = c(bfs_ao_asym_lex, bf)
-  
-  h = hypothesis(fit, "lex_align_c:conditionAsym_Sym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_asym_sym_lex = c(bfs_asym_sym_lex, bf)
+  ### compute BFs for all hypotheses and store them as dataframe
+  for (j in 1:length(hps)){
+    h = hypothesis(fit, hps[j])
+    # transform the result to dataframe
+    result = data_frame(h$hypothesis) %>%
+      mutate(size = prior_size[i],
+             sd = prior_sd[i],
+             Effect = effects[j])
+    # combine the result
+    if (i==1 & j==1){
+      df_results = result
+    } else {
+      df_results = rbind(df_results, result)}
+  }
 }
 
+df_bf_lex = df_results %>%
+  mutate(prior = paste0("N(0, ", sd, ")"),
+         BF10 = 1 / abs(Evid.Ratio),
+         Effect = factor(Effect,
+                         levels = effects),
+         Predictor = factor(ifelse(grepl(": N. lex align", Effect), "Interaction", "N. lex align"),
+                            levels = c("N. lex align", "Interaction")),
+         across(where(is.numeric), ~ round(., 3)),
+         Star = ifelse(BF10 >= 30 | BF10 <= 1/30, "***",
+                       ifelse(BF10 >= 10 | BF10 <= 1/10, "**",
+                              ifelse(BF10 >= 3 | BF10 <= 1/3, "*", ""))),
+         Star = ifelse(BF10 < 1, str_replace_all(Star, "[*]", "="), Star)) %>% 
+  dplyr::select(size, sd, prior, Effect, Predictor,
+                Estimate, Est.Error, `CI.Lower`, `CI.Upper`, BF10, Star) %>% 
+  arrange(Effect, sd)
 
-### add BF for the main/medium model
-prior_size[3:5] = c("m", prior_size[3:4])
-prior_sd[3:5] = c(0.2, prior_sd[3:4])
-
-### BF for N. lex alignment
-h = hypothesis(model, "lex_align_c = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_lex_align[3:5] = c(bf, bfs_lex_align[3:4])
-
-### BF for interaction
-h = hypothesis(model, "lex_align_c:conditionAO_Asym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_asym_lex[3:5] = c(bf, bfs_ao_asym_lex[3:4])
-
-h = hypothesis(model, "lex_align_c:conditionAsym_Sym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_asym_sym_lex[3:5] = c(bf, bfs_asym_sym_lex[3:4])
-
-
-### make a df for BFs
-df_bf_lex = data.frame(size = prior_size,
-                       sd = prior_sd,
-                       lex_align = bfs_lex_align,
-                       ao_asym_lex = bfs_ao_asym_lex,
-                       asym_sym_lex = bfs_asym_sym_lex) %>% 
-  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
-  pivot_longer(cols = c("lex_align", "ao_asym_lex", "asym_sym_lex"),
-               names_to = "Effect",
-               values_to = "BF10") %>% 
-  mutate(Effect = ifelse(Effect == "lex_align", "N. lex align",
-                         ifelse(Effect == "ao_asym_lex", "AO--AsymAV:Lex align",
-                                "AsymAV--SymAV: Lex align")),
-         Predictor = "N. lex align")
+df_bf_lex
 ```
+
+    ## # A tibble: 20 × 11
+    ##    size     sd prior      Effect  Predictor Estimate Est.Error CI.Lower CI.Upper
+    ##    <chr> <dbl> <chr>      <fct>   <fct>        <dbl>     <dbl>    <dbl>    <dbl>
+    ##  1 xs     0.05 N(0, 0.05) N. lex… N. lex a…    0.197     0.029    0.139    0.255
+    ##  2 s      0.1  N(0, 0.1)  N. lex… N. lex a…    0.265     0.035    0.197    0.334
+    ##  3 m      0.2  N(0, 0.2)  N. lex… N. lex a…    0.291     0.037    0.218    0.364
+    ##  4 l      0.3  N(0, 0.3)  N. lex… N. lex a…    0.296     0.038    0.223    0.371
+    ##  5 xl     0.5  N(0, 0.5)  N. lex… N. lex a…    0.299     0.038    0.225    0.375
+    ##  6 xs     0.05 N(0, 0.05) AO--As… Interact…    0.028     0.043   -0.055    0.112
+    ##  7 s      0.1  N(0, 0.1)  AO--As… Interact…    0.038     0.064   -0.088    0.164
+    ##  8 m      0.2  N(0, 0.2)  AO--As… Interact…    0.044     0.079   -0.111    0.201
+    ##  9 l      0.3  N(0, 0.3)  AO--As… Interact…    0.046     0.083   -0.116    0.21 
+    ## 10 xl     0.5  N(0, 0.5)  AO--As… Interact…    0.047     0.086   -0.12     0.216
+    ## 11 xs     0.05 N(0, 0.05) AsymAV… Interact…   -0.001     0.04    -0.078    0.077
+    ## 12 s      0.1  N(0, 0.1)  AsymAV… Interact…   -0.013     0.056   -0.123    0.097
+    ## 13 m      0.2  N(0, 0.2)  AsymAV… Interact…   -0.023     0.066   -0.152    0.108
+    ## 14 l      0.3  N(0, 0.3)  AsymAV… Interact…   -0.026     0.068   -0.16     0.109
+    ## 15 xl     0.5  N(0, 0.5)  AsymAV… Interact…   -0.027     0.07    -0.166    0.109
+    ## 16 xs     0.05 N(0, 0.05) AO--Sy… Interact…    0.028     0.054   -0.078    0.134
+    ## 17 s      0.1  N(0, 0.1)  AO--Sy… Interact…    0.025     0.073   -0.117    0.169
+    ## 18 m      0.2  N(0, 0.2)  AO--Sy… Interact…    0.021     0.083   -0.14     0.183
+    ## 19 l      0.3  N(0, 0.3)  AO--Sy… Interact…    0.02      0.084   -0.144    0.186
+    ## 20 xl     0.5  N(0, 0.5)  AO--Sy… Interact…    0.02      0.086   -0.149    0.191
+    ## # ℹ 2 more variables: BF10 <dbl>, Star <chr>
 
 ``` r
 #### Plot BFs ####
@@ -1969,11 +2098,11 @@ ggplot(filter(df_bf_lex, Effect != "N. lex align"),
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
-        legend.position = "top",
-        strip.text = element_text(size = 15, face = 'bold'),
+        legend.position = "right",
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
   scale_y_log10("Bayes factor (BF10)",
@@ -1984,11 +2113,234 @@ ggplot(filter(df_bf_lex, Effect != "N. lex align"),
 
 ![](figures_md/speakerB/gest_alignment/bf_freq-1.png)<!-- -->
 
+### 7.2.6 Plot effects of lex alignment on gestural alignment
+
+``` r
+plot_predictions(model,
+                 type = "response",
+                 condition = c("lex_align_c", "condition"))
+```
+
+![](figures_md/speakerB/gest_alignment/corr_lex_gest_align-1.png)<!-- -->
+
+``` r
+### generate model predictions
+df_pred = 
+  predictions(model,
+              by = c("lex_align_c", "condition"),
+              newdata = datagrid(condition = unique,
+                                 lex_align_c = seq(from = min(df_trial_info$lex_align_c),
+                                                   to = max(df_trial_info$lex_align_c)))) %>% 
+  mutate(num_lex_align = round(lex_align_c + mean(df_trial_info$num_lex_align), 0))
+
+### aggregate data for plotting
+mean_lex_gest_by_cond = df_trial_info %>% 
+  group_by(pair, condition, num_lex_align) %>% 
+  summarize(num_gestural_align = mean(num_gestural_align)) %>% 
+  ungroup()
+
+### plot data with model predictions
+lex_gest_cor = 
+  ggplot(data = mean_lex_gest_by_cond,
+         aes(x = num_lex_align, y = num_gestural_align, 
+             color = condition, fill = condition)) +
+  geom_jitter(size = 1, alpha = 0.7,
+              width = 0.1, height = 0.1) +
+  geom_ribbon(data = df_pred,
+              aes(y = estimate, 
+                  ymin = conf.low, ymax = conf.high),
+              alpha = 0.2, color = NA) +
+  geom_line(data = df_pred,
+            aes(y = estimate),
+            linewidth = 1) +
+  # scale_x_continuous(limits = c(0, 8)) +
+  # scale_y_continuous(limits = c(0, 5)) +
+  labs(x = "Mean N. lexical alignment per trial",
+       y = "Mean N. gestural alignment per trial") +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_color_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  theme_clean(base_size = 14) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 13, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        strip.text = element_text(size = 14, face = 'bold'),
+        legend.position = "top",
+        legend.title = element_text(size = 13),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1, 1.1), "lines"))
+
+lex_gest_cor
+```
+
+![](figures_md/speakerB/gest_alignment/corr_lex_gest_align-2.png)<!-- -->
+
+Although the data shows a clear positive correlation between lexical
+alignment and gestural alignment, the model predictions show that the
+effect is relatively small. This is likely due to the inclusion of other
+predictors in the model (e.g., n_iconic_gestures, role), which account
+for some of the variance in gestural alignment.
+
+<br>
+
+### 7.2.7 Calculate effect size of lexical alignment on gestural alignment
+
+To avoid confounding, we modeled the effect of lexical alignment on the
+**number** of gestural alignment. However, we will model the others
+effects on the **rate** of gestural alignment (i.e., number of gestural
+alignment per iconic gesture). To understand the effect size of lexical
+alignment on the rate scale so that we can compare it with the effects
+of other predictors, we will (1) calculate the effect size on the count
+scale (i.e., response scale), and (2) calculate the proportion of
+gestural alignment explained by lexical alignment.
+
+The effect size on count scale can be calculated by counterfactual
+comparisons: we first calculate the predicted number of gestural
+alignment when the number of lexical alignment is 0 (i.e., lex_0) and
+when the number of lexical alignment is at the mean (i.e., intercept),
+and then we calculate the effect size as the difference between
+intercept and lex_0. This is equivalent to checking how much the number
+of gestural alignment changes when the number of lexical alignment
+changes from 0 to the mean, while holding other predictors constant.
+
+The proportion of gestural alignment explained by lexical alignment can
+be calculated by dividing the effect size on the count scale by the
+predicted number of gestural alignment (i.e., intercept).
+
+``` r
+### draw posterior samples for the fixed effects
+post_sample = as_draws_df(model) %>% 
+  as_tibble() %>% 
+  dplyr::select(starts_with("b_"))
+
+
+### calculate the effect size of lexical alignment on the count scale
+lex_align_0_c = 0 - mean(df_trial_info$num_lex_align)
+
+intercept = exp(post_sample$b_Intercept) 
+lex_0 = exp(post_sample$b_Intercept + 
+              post_sample$b_lex_align_c * lex_align_0_c)
+
+lex_effect_size_count = intercept - lex_0
+
+# summary of the effect size on the count scale (mean, median, 95% credible interval)
+effect_size_count_summary = data_frame(
+  mean = mean(lex_effect_size_count),
+  median = median(lex_effect_size_count),
+  ci_lower = quantile(lex_effect_size_count, 0.025),
+  ci_upper = quantile(lex_effect_size_count, 0.975))
+effect_size_count_summary
+```
+
+    ## # A tibble: 1 × 4
+    ##     mean median ci_lower ci_upper
+    ##    <dbl>  <dbl>    <dbl>    <dbl>
+    ## 1 0.0136 0.0134  0.00869   0.0201
+
+``` r
+### calculate the proportion of gestural alignment explained by lexical alignment
+effect_size_prop = lex_effect_size_count / intercept
+effect_size_prop_summary = data_frame(
+  mean = mean(effect_size_prop),
+  median = median(effect_size_prop),
+  ci_lower = quantile(effect_size_prop, 0.025),
+  ci_upper = quantile(effect_size_prop, 0.975))
+effect_size_prop_summary
+```
+
+    ## # A tibble: 1 × 4
+    ##    mean median ci_lower ci_upper
+    ##   <dbl>  <dbl>    <dbl>    <dbl>
+    ## 1 0.163  0.163    0.125    0.199
+
+``` r
+### generate model predictions per condition
+df_pred = post_sample %>% 
+  mutate(SymAV = exp(b_Intercept + 1/3*b_conditionAO_Asym + 2/3*b_conditionAsym_Sym),
+         AsymAV = exp(b_Intercept + 1/3*b_conditionAO_Asym - 1/3*b_conditionAsym_Sym),
+         AO = exp(b_Intercept -2/3*b_conditionAO_Asym -1/3*b_conditionAsym_Sym)) %>% 
+  dplyr::select(SymAV, AsymAV, AO) %>%
+  pivot_longer(cols = everything(), 
+               names_to = "condition", values_to = "predicted") %>%
+  mutate(condition = factor(condition, 
+                            levels = c("SymAV", "AsymAV", "AO"))) %>% 
+  group_by(condition) %>%
+  summarize(mean = mean(predicted),
+            median = median(predicted),
+            ci_lower = quantile(predicted, 0.025),
+            ci_upper = quantile(predicted, 0.975))
+
+df_pred
+```
+
+    ## # A tibble: 3 × 5
+    ##   condition   mean median ci_lower ci_upper
+    ##   <fct>      <dbl>  <dbl>    <dbl>    <dbl>
+    ## 1 SymAV     0.108  0.105    0.0617    0.176
+    ## 2 AsymAV    0.0916 0.0890   0.0541    0.144
+    ## 3 AO        0.0630 0.0605   0.0352    0.105
+
+On average, 16.3% of gestural alignment can be explained by lexical
+alignment, with a 95% credible interval of \[12.5%, 19.9%\]. This
+suggests that lexical alignment is an important predictor of gestural
+alignment, but it is not the only factor that contributes to gestural
+alignment.
+
+<br>
+
+### 7.2.8 Visualize model predictions together with data
+
+``` r
+bp_mean_gest_alignment_model = 
+  bp_mean_gest_alignment +
+  geom_ribbon(data = df_pred,
+              aes(x = condition, y = mean, 
+                  ymin = ci_lower, ymax = ci_upper, group = 1),
+              fill = "black", alpha = 0.2) +
+  geom_line(data = df_pred,
+            aes(x = condition, y = mean, group = 1),
+            color = "black", size = 0.8)
+
+bp_mean_gest_alignment_model
+```
+
+![](figures_md/speakerB/gest_alignment/unnamed-chunk-26-1.png)<!-- -->
+
+The misalignment between the descriptive statistics (based on mean per
+pair) and the model predictions (based on mean per trial) arises because
+mixed-effects models regularizes the estimates for each pair and trial
+towards the overall mean, especially when the number of trials for a
+pair is small or when the participant shows extreme values (e.g., very
+high or low number of gestural alignment). This is actually a good
+property of mixed-effects models, as it prevents overfitting and
+provides more accurate estimates of the fixed effects.
+
+Despite the misalignment, our primary goal of this modeling was to
+estimate the effect of lexical alignment on gestural alignment while
+controlling for other predictors, so we will proceed with this model.
+
 <br>
 
 ------------------------------------------------------------------------
 
-# 8. Gestural alignment rate per iconic gestures (n_gest_alignment / n_iconic)
+# 8. Correlation btw lexical and gestural alignment
+
+``` r
+cor = pcor.test(df_trial_info$lex_align_c, 
+                df_trial_info$num_gestural_align,
+                df_trial_info$log_round_c)
+cor
+```
+
+    ##   estimate   p.value statistic    n gp  Method
+    ## 1    0.328 1.89e-108      22.8 4315  1 pearson
+
+<br>
+
+------------------------------------------------------------------------
+
+# 9. Gestural alignment rate per iconic gestures (n_gest_alignment / n_iconic)
 
 We can analyze the proportion of gestural alignment in two ways: (1)
 modeling the rate of gestural alignment per iconic gesture using a
@@ -2010,13 +2362,14 @@ number of gestures) as rates, we will use negative binomial regressions.
 
 <br>
 
-## 8.1 DataViz: proportion of gestural alignment
+## 9.1 DataViz: proportion of gestural alignment
 
 ### bp: mean by condition
 
 ``` r
-bp_mean_gest_alignment_prop_by_cond = ggplot(data=trial_info_pair, 
-                                             aes(x=condition, y=mean_gest_align_prop, fill=condition)) +
+bp_mean_gest_alignment_prop_by_cond = 
+  ggplot(data=trial_info_pair, 
+         aes(x=condition, y=mean_gest_align_prop, fill=condition)) +
   geom_jitter(aes(color = pair), 
               size = 1, alpha = 1, 
               width = 0.07, height = 0) +
@@ -2031,19 +2384,19 @@ bp_mean_gest_alignment_prop_by_cond = ggplot(data=trial_info_pair,
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "none",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
 ggplotly(bp_mean_gest_alignment_prop_by_cond)
 ```
 
-<div class="plotly html-widget html-fill-item" id="htmlwidget-34a3a07e28cc930e1be1" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-34a3a07e28cc930e1be1">{"x":{"data":[{"x":[0.96623270280193541],"y":[0.50952380952380949],"text":"condition: SymAV<br />mean_gest_align_prop: 0.5095<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96225472688674929],"y":[0.43560606060606061],"text":"condition: SymAV<br />mean_gest_align_prop: 0.4356<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0176770480861888],"y":[0.27671873097064914],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2767<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99632642649579795],"y":[0.38744339951236501],"text":"condition: SymAV<br />mean_gest_align_prop: 0.3874<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0420393007993698],"y":[0.39827380952380953],"text":"condition: SymAV<br />mean_gest_align_prop: 0.3983<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0474473710125312],"y":[0.50426774483378256],"text":"condition: SymAV<br />mean_gest_align_prop: 0.5043<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0440451283100993],"y":[0.22222222222222221],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2222<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98415784297976638],"y":[0.47541827541827542],"text":"condition: SymAV<br />mean_gest_align_prop: 0.4754<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96383563597220923],"y":[0.20000000000000001],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2000<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99851554069668058],"y":[0.097222222222222224],"text":"condition: SymAV<br />mean_gest_align_prop: 0.0972<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97962358255870641],"y":[0.56607142857142856],"text":"condition: SymAV<br />mean_gest_align_prop: 0.5661<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0385771841555833],"y":[0.40952380952380951],"text":"condition: SymAV<br />mean_gest_align_prop: 0.4095<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0467753229336814],"y":[0.2904761904761905],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2905<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0000873996177688],"y":[0],"text":"condition: SymAV<br />mean_gest_align_prop: 0.0000<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0128791048331187],"y":[0.39229797979797981],"text":"condition: SymAV<br />mean_gest_align_prop: 0.3923<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9557407663483173],"y":[0.10000000000000001],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.1000<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9735993485851213],"y":[0.015625],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.0156<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0027347400458528],"y":[0.48161094224924011],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.4816<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0168945676553993],"y":[0.34048821548821551],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3405<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0335854237526654],"y":[0.27777777777777779],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.2778<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9695315851457418],"y":[0.38297813297813299],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3830<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.946011027446948],"y":[0.50889586603872317],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.5089<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0656904745381324],"y":[0.38680533303174813],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3868<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9480026429751889],"y":[0.44047619047619047],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.4405<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.015822196160443],"y":[0.60568181818181821],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.6057<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9639807117264718],"y":[0.33921568627450982],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3392<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9674885010207073],"y":[0.2955069124423963],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.2955<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0611766110174359],"y":[0.5],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.5000<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0137102986266835],"y":[0.5],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.5000<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.937734718201682],"y":[0],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.0000<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9387500751996414],"y":[0.80000000000000004],"text":"condition: AO<br />mean_gest_align_prop: 0.8000<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0497336895018816],"y":[0],"text":"condition: AO<br />mean_gest_align_prop: 0.0000<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9920630897814409],"y":[0],"text":"condition: AO<br />mean_gest_align_prop: 0.0000<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0360900898929684],"y":[0.34738863287250382],"text":"condition: AO<br />mean_gest_align_prop: 0.3474<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9422797580529005],"y":[0.47035567313345089],"text":"condition: AO<br />mean_gest_align_prop: 0.4704<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0011607247823848],"y":[0.05568181818181818],"text":"condition: AO<br />mean_gest_align_prop: 0.0557<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9525765827624126],"y":[0.3888888888888889],"text":"condition: AO<br />mean_gest_align_prop: 0.3889<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9497758290683849],"y":[0.10000000000000001],"text":"condition: AO<br />mean_gest_align_prop: 0.1000<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9853503234917298],"y":[0.20863095238095239],"text":"condition: AO<br />mean_gest_align_prop: 0.2086<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.035124695901759],"y":[0.23529411764705882],"text":"condition: AO<br />mean_gest_align_prop: 0.2353<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0566675770934673],"y":[0.025157232704402514],"text":"condition: AO<br />mean_gest_align_prop: 0.0252<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0117510522902013],"y":[0.019607843137254902],"text":"condition: AO<br />mean_gest_align_prop: 0.0196<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9870570709137247],"y":[0.22222222222222221],"text":"condition: AO<br />mean_gest_align_prop: 0.2222<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9600475721061228],"y":[0.3753968253968254],"text":"condition: AO<br />mean_gest_align_prop: 0.3754<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0616842552088199],"y":[0.55681818181818177],"text":"condition: AO<br />mean_gest_align_prop: 0.5568<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[0.50952380952380949,0.097222222222222224,0.50426774483378256,0.43560606060606061,0.56607142857142856,0.22222222222222221,0.27671873097064914,0.40952380952380951,0.47541827541827542,0.38744339951236501,0.2904761904761905,0.20000000000000001,0.39827380952380953,0,0.39229797979797981],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.10000000000000001,0.60568181818181821,0.015625,0.33921568627450982,0.50889586603872317,0.48161094224924011,0.2955069124423963,0.38680533303174813,0.34048821548821551,0.5,0.44047619047619047,0.27777777777777779,0.5,0.38297813297813299,0],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.80000000000000004,0,0.025157232704402514,0.3888888888888889,0,0.019607843137254902,0.10000000000000001,0.34738863287250382,0.22222222222222221,0.20863095238095239,0.47035567313345089,0.3753968253968254,0.23529411764705882,0.05568181818181818,0.55681818181818177],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3],"y":[0.38574983398971191,0.38354941716799906,0.24471432569669346],"text":["condition: SymAV<br />mean_gest_align_prop: 0.386<br />condition: white","condition: AsymAV<br />mean_gest_align_prop: 0.384<br />condition: white","condition: AO<br />mean_gest_align_prop: 0.245<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.119999999999997,"r":21.119999999999997,"b":64.623528435035269,"l":73.921992528019928},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.040000000000000008,0.84000000000000008],"tickmode":"array","ticktext":["0.0","0.2","0.4","0.6","0.8"],"tickvals":[0,0.20000000000000001,0.40000000000000002,0.60000000000000009,0.80000000000000004],"categoryorder":"array","categoryarray":["0.0","0.2","0.4","0.6","0.8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132018,"tickwidth":0.90569455451149117,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0.90569455451149117,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean gest align rate <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":2.5769506084466713,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"21cc350b37a7":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"21ccd71ae6":{"x":{},"y":{},"fill":{}},"21cc6eff6ee5":{"x":{},"y":{},"fill":{}}},"cur_data":"21cc350b37a7","visdat":{"21cc350b37a7":["function (y) ","x"],"21ccd71ae6":["function (y) ","x"],"21cc6eff6ee5":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-0c3835bfda2ebb1bf0b1" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-0c3835bfda2ebb1bf0b1">{"x":{"data":[{"x":[0.96877232543192804],"y":[0.50952380952380949],"text":"condition: SymAV<br />mean_gest_align_prop: 0.5095<br />condition: SymAV<br />pair: 1","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97090836987365037],"y":[0.43560606060606061],"text":"condition: SymAV<br />mean_gest_align_prop: 0.4356<br />condition: SymAV<br />pair: 5","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96673739918041979],"y":[0.27671873097064914],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2767<br />condition: SymAV<br />pair: 8","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95071418508887295],"y":[0.38744339951236506],"text":"condition: SymAV<br />mean_gest_align_prop: 0.3874<br />condition: SymAV<br />pair: 11","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0071983361430465],"y":[0.39827380952380959],"text":"condition: SymAV<br />mean_gest_align_prop: 0.3983<br />condition: SymAV<br />pair: 15","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9869714583549648],"y":[0.50426774483378256],"text":"condition: SymAV<br />mean_gest_align_prop: 0.5043<br />condition: SymAV<br />pair: 18","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94652862560003992],"y":[0.22222222222222218],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2222<br />condition: SymAV<br />pair: 21","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97651426785159856],"y":[0.47541827541827542],"text":"condition: SymAV<br />mean_gest_align_prop: 0.4754<br />condition: SymAV<br />pair: 24","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98162238094024357],"y":[0.20000000000000004],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2000<br />condition: SymAV<br />pair: 27","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95437374619767068],"y":[0.097222222222222224],"text":"condition: SymAV<br />mean_gest_align_prop: 0.0972<br />condition: SymAV<br />pair: 30","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0177734006335959],"y":[0.56607142857142867],"text":"condition: SymAV<br />mean_gest_align_prop: 0.5661<br />condition: SymAV<br />pair: 33","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.057781826313585],"y":[0.40952380952380957],"text":"condition: SymAV<br />mean_gest_align_prop: 0.4095<br />condition: SymAV<br />pair: 36","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95996561939362435],"y":[0.2904761904761905],"text":"condition: SymAV<br />mean_gest_align_prop: 0.2905<br />condition: SymAV<br />pair: 39","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0015832061134278],"y":[0],"text":"condition: SymAV<br />mean_gest_align_prop: 0.0000<br />condition: SymAV<br />pair: 42","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0109369412343949],"y":[0.39229797979797981],"text":"condition: SymAV<br />mean_gest_align_prop: 0.3923<br />condition: SymAV<br />pair: 45","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9602911496115849],"y":[0.10000000000000001],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.1000<br />condition: AsymAV<br />pair: 2","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9422479552868754],"y":[0.015625],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.0156<br />condition: AsymAV<br />pair: 6","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0005004257429393],"y":[0.48161094224924017],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.4816<br />condition: AsymAV<br />pair: 9","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.050712771001272],"y":[0.34048821548821551],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3405<br />condition: AsymAV<br />pair: 12","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9952290913928301],"y":[0.27777777777777779],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.2778<br />condition: AsymAV<br />pair: 16","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9552844632370396],"y":[0.38297813297813293],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3830<br />condition: AsymAV<br />pair: 19","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.975494732921943],"y":[0.50889586603872317],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.5089<br />condition: AsymAV<br />pair: 22","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0145606047660114],"y":[0.38680533303174813],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3868<br />condition: AsymAV<br />pair: 25","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0260912987357007],"y":[0.44047619047619047],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.4405<br />condition: AsymAV<br />pair: 28","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0187630461668595],"y":[0.60568181818181821],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.6057<br />condition: AsymAV<br />pair: 31","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.9385010828636586],"y":[0.33921568627450976],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.3392<br />condition: AsymAV<br />pair: 34","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0139480894431472],"y":[0.2955069124423963],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.2955<br />condition: AsymAV<br />pair: 37","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0488326488016173],"y":[0.5],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.5000<br />condition: AsymAV<br />pair: 40","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0289685861719771],"y":[0.5],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.5000<br />condition: AsymAV<br />pair: 43","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.0668127309391275],"y":[0],"text":"condition: AsymAV<br />mean_gest_align_prop: 0.0000<br />condition: AsymAV<br />pair: 46","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0646385434269905],"y":[0.80000000000000004],"text":"condition: AO<br />mean_gest_align_prop: 0.8000<br />condition: AO<br />pair: 3","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9634645200381056],"y":[0],"text":"condition: AO<br />mean_gest_align_prop: 0.0000<br />condition: AO<br />pair: 7","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.067747727194801],"y":[0],"text":"condition: AO<br />mean_gest_align_prop: 0.0000<br />condition: AO<br />pair: 10","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.977360001252964],"y":[0.34738863287250388],"text":"condition: AO<br />mean_gest_align_prop: 0.3474<br />condition: AO<br />pair: 13","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9813256601383911],"y":[0.47035567313345089],"text":"condition: AO<br />mean_gest_align_prop: 0.4704<br />condition: AO<br />pair: 17","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9776404019398615],"y":[0.055681818181818186],"text":"condition: AO<br />mean_gest_align_prop: 0.0557<br />condition: AO<br />pair: 20","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9331514547020197],"y":[0.3888888888888889],"text":"condition: AO<br />mean_gest_align_prop: 0.3889<br />condition: AO<br />pair: 23","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9863733614142984],"y":[0.10000000000000001],"text":"condition: AO<br />mean_gest_align_prop: 0.1000<br />condition: AO<br />pair: 26","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0584048644034194],"y":[0.20863095238095236],"text":"condition: AO<br />mean_gest_align_prop: 0.2086<br />condition: AO<br />pair: 29","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0465981353027747],"y":[0.23529411764705882],"text":"condition: AO<br />mean_gest_align_prop: 0.2353<br />condition: AO<br />pair: 32","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9872802780522032],"y":[0.025157232704402517],"text":"condition: AO<br />mean_gest_align_prop: 0.0252<br />condition: AO<br />pair: 35","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9797670167312025],"y":[0.019607843137254905],"text":"condition: AO<br />mean_gest_align_prop: 0.0196<br />condition: AO<br />pair: 38","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9430781202437357],"y":[0.22222222222222221],"text":"condition: AO<br />mean_gest_align_prop: 0.2222<br />condition: AO<br />pair: 41","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.0592378226993606],"y":[0.3753968253968254],"text":"condition: AO<br />mean_gest_align_prop: 0.3754<br />condition: AO<br />pair: 44","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9635149228340016],"y":[0.55681818181818188],"text":"condition: AO<br />mean_gest_align_prop: 0.5568<br />condition: AO<br />pair: 47","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":1,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"y":[0.50952380952380949,0.097222222222222224,0.50426774483378256,0.43560606060606061,0.56607142857142867,0.22222222222222218,0.27671873097064914,0.40952380952380957,0.47541827541827542,0.38744339951236506,0.2904761904761905,0.20000000000000004,0.39827380952380959,0,0.39229797979797981],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"y":[0.10000000000000001,0.60568181818181821,0.015625,0.33921568627450976,0.50889586603872317,0.48161094224924017,0.2955069124423963,0.38680533303174813,0.34048821548821551,0.5,0.44047619047619047,0.27777777777777779,0.5,0.38297813297813293,0],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,1)","legendgroup":"(AsymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"y":[0.80000000000000004,0,0.025157232704402517,0.3888888888888889,0,0.019607843137254905,0.10000000000000001,0.34738863287250388,0.22222222222222221,0.20863095238095236,0.47035567313345089,0.3753968253968254,0.23529411764705882,0.055681818181818186,0.55681818181818188],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,1)","legendgroup":"(AO,1)","showlegend":true,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3],"y":[0.38574983398971197,0.38354941716799934,0.24471432569669355],"text":["condition: SymAV<br />mean_gest_align_prop: 0.386<br />condition: white","condition: AsymAV<br />mean_gest_align_prop: 0.384<br />condition: white","condition: AO<br />mean_gest_align_prop: 0.245<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.120000000000005,"r":21.120000000000005,"b":61.966824408468248,"l":71.265288501452901},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.925280199252807},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["SymAV","AsymAV","AO"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["SymAV","AsymAV","AO"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"<b> Visibility <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.040000000000000008,0.84000000000000008],"tickmode":"array","ticktext":["0.0","0.2","0.4","0.6","0.8"],"tickvals":[0,0.20000000000000001,0.40000000000000002,0.60000000000000009,0.80000000000000004],"categoryorder":"array","categoryarray":["0.0","0.2","0.4","0.6","0.8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969286},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Mean gest align rate <\/b>","font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"148a4eeabbd4":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"148a454d162f2":{"x":{},"y":{},"fill":{}},"148a47eb7295e":{"x":{},"y":{},"fill":{}}},"cur_data":"148a4eeabbd4","visdat":{"148a4eeabbd4":["function (y) ","x"],"148a454d162f2":["function (y) ","x"],"148a47eb7295e":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 <br>
 
@@ -2071,11 +2424,12 @@ bp_mean_gest_alignment_prop_by_round_cond =
   theme_clean(base_size = 15) +
   theme(axis.text.x = element_text(colour = "black", size = 14),
         axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title = element_text(size = 13, face = 'bold'),
         axis.title.x = element_text(vjust = -2),
         axis.title.y = element_text(vjust = 2),
         legend.position = "none",
-        strip.text = element_text(size = 15, face = 'bold'),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 14, face = 'bold'),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
   facet_grid(cols = vars(condition))
@@ -2083,12 +2437,12 @@ bp_mean_gest_alignment_prop_by_round_cond =
 ggplotly(bp_mean_gest_alignment_prop_by_round_cond)
 ```
 
-<div class="plotly html-widget html-fill-item" id="htmlwidget-f602ee96cb7b05c3b6b0" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-f602ee96cb7b05c3b6b0">{"x":{"data":[{"x":[0.97156125687528405,1.9384196138475089,3.0152674767002465,4.0564576103724539,4.9912947497516873,5.9493629137380051],"y":[0.125,0.63888888888888884,0.64814814814814814,0.625,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.12500<br />condition: SymAV<br />pair: 1","round_n: 2<br />mean_gest_align_prop: 0.63889<br />condition: SymAV<br />pair: 1","round_n: 3<br />mean_gest_align_prop: 0.64815<br />condition: SymAV<br />pair: 1","round_n: 4<br />mean_gest_align_prop: 0.62500<br />condition: SymAV<br />pair: 1","round_n: 5<br />mean_gest_align_prop: 1.04167<br />condition: SymAV<br />pair: 1","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 1"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98964774122461674,2.0576499047270045,3.0321582375979053,4.0041323824226858,5.0603976326016706,5.9669584328308698],"y":[0,0.625,0.625,0.5,0.58333333333333337,0.5],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 5","round_n: 2<br />mean_gest_align_prop: 0.62500<br />condition: SymAV<br />pair: 5","round_n: 3<br />mean_gest_align_prop: 0.62500<br />condition: SymAV<br />pair: 5","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: SymAV<br />pair: 5","round_n: 5<br />mean_gest_align_prop: 0.58333<br />condition: SymAV<br />pair: 5","round_n: 6<br />mean_gest_align_prop: 0.50000<br />condition: SymAV<br />pair: 5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0220526207052172,2.0063882861938329,3.0232119492907077,4.0071303144982089,4.9854238746734332,6.0365385536942631],"y":[0.096256684491978606,0.2503968253968254,0.17857142857142858,0.33333333333333331,0.25,0.60416666666666663],"text":["round_n: 1<br />mean_gest_align_prop: 0.09626<br />condition: SymAV<br />pair: 8","round_n: 2<br />mean_gest_align_prop: 0.25040<br />condition: SymAV<br />pair: 8","round_n: 3<br />mean_gest_align_prop: 0.17857<br />condition: SymAV<br />pair: 8","round_n: 4<br />mean_gest_align_prop: 0.33333<br />condition: SymAV<br />pair: 8","round_n: 5<br />mean_gest_align_prop: 0.25000<br />condition: SymAV<br />pair: 8","round_n: 6<br />mean_gest_align_prop: 0.60417<br />condition: SymAV<br />pair: 8"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0333245955407619,1.9687886591069401,2.9774848096445203,3.9816308137960732,5.0420464561739937,5.9637247457075864],"y":[0.27873563218390807,0.39166666666666666,0.56666666666666665,0.55555555555555558,null,0.41666666666666669],"text":["round_n: 1<br />mean_gest_align_prop: 0.27874<br />condition: SymAV<br />pair: 11","round_n: 2<br />mean_gest_align_prop: 0.39167<br />condition: SymAV<br />pair: 11","round_n: 3<br />mean_gest_align_prop: 0.56667<br />condition: SymAV<br />pair: 11","round_n: 4<br />mean_gest_align_prop: 0.55556<br />condition: SymAV<br />pair: 11","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 11","round_n: 6<br />mean_gest_align_prop: 0.41667<br />condition: SymAV<br />pair: 11"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0351254681078716,1.9350882016122342,3.0114857996534554,3.9920054778270422,4.972266080719419,6.0689830499887467],"y":[0.0089285714285714281,0.34999999999999998,0.7857142857142857,0.6333333333333333,0.53125,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.00893<br />condition: SymAV<br />pair: 15","round_n: 2<br />mean_gest_align_prop: 0.35000<br />condition: SymAV<br />pair: 15","round_n: 3<br />mean_gest_align_prop: 0.78571<br />condition: SymAV<br />pair: 15","round_n: 4<br />mean_gest_align_prop: 0.63333<br />condition: SymAV<br />pair: 15","round_n: 5<br />mean_gest_align_prop: 0.53125<br />condition: SymAV<br />pair: 15","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: SymAV<br />pair: 15"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93122842773329462,2.0260352499037979,3.0463829384744168,4.0165057933330539,4.937448618314229,6.0139855785993861],"y":[0.098015873015873015,0.33194444444444443,0.83333333333333337,0.82222222222222219,0.63888888888888884,0.61111111111111116],"text":["round_n: 1<br />mean_gest_align_prop: 0.09802<br />condition: SymAV<br />pair: 18","round_n: 2<br />mean_gest_align_prop: 0.33194<br />condition: SymAV<br />pair: 18","round_n: 3<br />mean_gest_align_prop: 0.83333<br />condition: SymAV<br />pair: 18","round_n: 4<br />mean_gest_align_prop: 0.82222<br />condition: SymAV<br />pair: 18","round_n: 5<br />mean_gest_align_prop: 0.63889<br />condition: SymAV<br />pair: 18","round_n: 6<br />mean_gest_align_prop: 0.61111<br />condition: SymAV<br />pair: 18"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0659810417797417,2.0294656789116563,2.9301714614732193,3.97679613546934,5.0194183046463881,6.0554566308809443],"y":[0,0.27777777777777779,0.75,0.5,0,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 21","round_n: 2<br />mean_gest_align_prop: 0.27778<br />condition: SymAV<br />pair: 21","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: SymAV<br />pair: 21","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: SymAV<br />pair: 21","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 21","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 21"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99701439923141155,1.9590519525203853,2.9923763646092265,4.0460546129290016,4.9470406566979364,6.0032985689956693],"y":[0.30769230769230771,0.28624338624338624,0.61952380952380948,0.75,0.79166666666666663,0.875],"text":["round_n: 1<br />mean_gest_align_prop: 0.30769<br />condition: SymAV<br />pair: 24","round_n: 2<br />mean_gest_align_prop: 0.28624<br />condition: SymAV<br />pair: 24","round_n: 3<br />mean_gest_align_prop: 0.61952<br />condition: SymAV<br />pair: 24","round_n: 4<br />mean_gest_align_prop: 0.75000<br />condition: SymAV<br />pair: 24","round_n: 5<br />mean_gest_align_prop: 0.79167<br />condition: SymAV<br />pair: 24","round_n: 6<br />mean_gest_align_prop: 0.87500<br />condition: SymAV<br />pair: 24"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94424369163811206,2.0093552237609402,2.975339351850562,3.9725367286941036,5.065129721178673,6.032849565437064],"y":[0,0,0,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 27","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 27","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 27","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 27","round_n: 5<br />mean_gest_align_prop: 2.00000<br />condition: SymAV<br />pair: 27","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 27"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0480076992511749,1.9639166228566318,2.9743285192828623,3.9835457383701578,4.9534041108749811,5.9309935835562646],"y":[0.076923076923076927,0,0.75,null,0,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.07692<br />condition: SymAV<br />pair: 30","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 30","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: SymAV<br />pair: 30","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 30","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 30","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 30"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9773007177934051,1.9909390784939751,2.9540721380710604,4.030570376473479,4.9580395966302602,5.9675836578710006],"y":[0.050000000000000003,0.90714285714285714,0.66666666666666663,0.90000000000000002,null,0.83333333333333337],"text":["round_n: 1<br />mean_gest_align_prop: 0.05000<br />condition: SymAV<br />pair: 33","round_n: 2<br />mean_gest_align_prop: 0.90714<br />condition: SymAV<br />pair: 33","round_n: 3<br />mean_gest_align_prop: 0.66667<br />condition: SymAV<br />pair: 33","round_n: 4<br />mean_gest_align_prop: 0.90000<br />condition: SymAV<br />pair: 33","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 33","round_n: 6<br />mean_gest_align_prop: 0.83333<br />condition: SymAV<br />pair: 33"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.9639712910400704,2.0397906392393632,2.9720690143387767,3.9675937332212925,4.9323719741404055,6.0332287375442686],"y":[0.33589743589743593,0.35185185185185186,0.66666666666666663,0.58333333333333337,0.20833333333333334,0.44444444444444442],"text":["round_n: 1<br />mean_gest_align_prop: 0.33590<br />condition: SymAV<br />pair: 36","round_n: 2<br />mean_gest_align_prop: 0.35185<br />condition: SymAV<br />pair: 36","round_n: 3<br />mean_gest_align_prop: 0.66667<br />condition: SymAV<br />pair: 36","round_n: 4<br />mean_gest_align_prop: 0.58333<br />condition: SymAV<br />pair: 36","round_n: 5<br />mean_gest_align_prop: 0.20833<br />condition: SymAV<br />pair: 36","round_n: 6<br />mean_gest_align_prop: 0.44444<br />condition: SymAV<br />pair: 36"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93827670515980577,1.969268757281825,2.9563015042245389,3.9315409732842816,5.0045983888301997,5.9831927867513146],"y":[0.22727272727272727,0.22857142857142856,1,0,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.22727<br />condition: SymAV<br />pair: 39","round_n: 2<br />mean_gest_align_prop: 0.22857<br />condition: SymAV<br />pair: 39","round_n: 3<br />mean_gest_align_prop: 1.00000<br />condition: SymAV<br />pair: 39","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 39","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 39","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 39"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.063562134783715,2.0222747217537833,2.9644772818498315,3.9475679132621737,5.0276683247229084,6.0117410157946871],"y":[0,0,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 42","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 42","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93057511720806363,1.9397606684779749,2.9933286012383178,3.9684215949894859,5.0233563406532626,6.0674325353465974],"y":[0.18162393162393162,0.37121212121212122,0.69666666666666666,0.77777777777777779,0.43333333333333335,0.125],"text":["round_n: 1<br />mean_gest_align_prop: 0.18162<br />condition: SymAV<br />pair: 45","round_n: 2<br />mean_gest_align_prop: 0.37121<br />condition: SymAV<br />pair: 45","round_n: 3<br />mean_gest_align_prop: 0.69667<br />condition: SymAV<br />pair: 45","round_n: 4<br />mean_gest_align_prop: 0.77778<br />condition: SymAV<br />pair: 45","round_n: 5<br />mean_gest_align_prop: 0.43333<br />condition: SymAV<br />pair: 45","round_n: 6<br />mean_gest_align_prop: 0.12500<br />condition: SymAV<br />pair: 45"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96529815441928801,2.0448658122122287,2.9570993516221642,4.0350148487184194,4.9903118831058961,5.9625862671108916],"y":[0.11666666666666667,0,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.11667<br />condition: AsymAV<br />pair: 2","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 2","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0125444562919439,2.0363136695744468,3.0296920359274373,3.9832640644069759,4.9955573479970914,5.9358970561902966],"y":[0,0,0,0.25,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 4<br />mean_gest_align_prop: 0.25000<br />condition: AsymAV<br />pair: 6","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.053471106654033,2.021161699197255,2.939432927351445,3.9417611295310779,4.938127332855947,5.9432653672201559],"y":[0.30357142857142855,0.49603174603174605,0.78333333333333333,0.35714285714285715,0.22222222222222221,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.30357<br />condition: AsymAV<br />pair: 9","round_n: 2<br />mean_gest_align_prop: 0.49603<br />condition: AsymAV<br />pair: 9","round_n: 3<br />mean_gest_align_prop: 0.78333<br />condition: AsymAV<br />pair: 9","round_n: 4<br />mean_gest_align_prop: 0.35714<br />condition: AsymAV<br />pair: 9","round_n: 5<br />mean_gest_align_prop: 0.22222<br />condition: AsymAV<br />pair: 9","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 9"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.026406409451738,1.9917943789390846,3.0293876057118179,3.952450324781239,4.9449862914858382,5.9657864561351017],"y":[0.19851851851851851,0.5892857142857143,0.6166666666666667,0,0.41666666666666663,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.19852<br />condition: AsymAV<br />pair: 12","round_n: 2<br />mean_gest_align_prop: 0.58929<br />condition: AsymAV<br />pair: 12","round_n: 3<br />mean_gest_align_prop: 0.61667<br />condition: AsymAV<br />pair: 12","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 12","round_n: 5<br />mean_gest_align_prop: 0.41667<br />condition: AsymAV<br />pair: 12","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 12"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0599890410713853,2.0007342448970302,3.0142869082558899,3.9448993847239762,5.0584474593447517,6.016088281176053],"y":[0,1,null,null,0.5,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 16","round_n: 2<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 16","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 16","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 16","round_n: 5<br />mean_gest_align_prop: 0.50000<br />condition: AsymAV<br />pair: 16","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 16"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0673503540363163,1.9406455634534359,3.0211005100281909,4.0288264942495156,4.942749815103598,5.9636298671318215],"y":[0.15329670329670328,0.52900432900432903,0.28667929292929295,0.63888888888888884,0.22857142857142856,0.4861111111111111],"text":["round_n: 1<br />mean_gest_align_prop: 0.15330<br />condition: AsymAV<br />pair: 19","round_n: 2<br />mean_gest_align_prop: 0.52900<br />condition: AsymAV<br />pair: 19","round_n: 3<br />mean_gest_align_prop: 0.28668<br />condition: AsymAV<br />pair: 19","round_n: 4<br />mean_gest_align_prop: 0.63889<br />condition: AsymAV<br />pair: 19","round_n: 5<br />mean_gest_align_prop: 0.22857<br />condition: AsymAV<br />pair: 19","round_n: 6<br />mean_gest_align_prop: 0.48611<br />condition: AsymAV<br />pair: 19"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0620981104206293,1.9370116805937141,3.032429302739911,3.9533006349299105,4.9883912820508707,5.9771714446553963],"y":[0.13585164835164834,0.55238095238095242,null,0.79166666666666663,0.75,0.45833333333333331],"text":["round_n: 1<br />mean_gest_align_prop: 0.13585<br />condition: AsymAV<br />pair: 22","round_n: 2<br />mean_gest_align_prop: 0.55238<br />condition: AsymAV<br />pair: 22","round_n: 3<br />mean_gest_align_prop: 1.04762<br />condition: AsymAV<br />pair: 22","round_n: 4<br />mean_gest_align_prop: 0.79167<br />condition: AsymAV<br />pair: 22","round_n: 5<br />mean_gest_align_prop: 0.75000<br />condition: AsymAV<br />pair: 22","round_n: 6<br />mean_gest_align_prop: 0.45833<br />condition: AsymAV<br />pair: 22"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97369661728385837,1.9968507224693894,2.9575981921423224,3.9755706520937384,4.9511097428947686,5.9387965103099125],"y":[0.22205128205128205,0.20032467532467532,0.4642857142857143,0.53703703703703698,0.84722222222222221,0.33333333333333331],"text":["round_n: 1<br />mean_gest_align_prop: 0.22205<br />condition: AsymAV<br />pair: 25","round_n: 2<br />mean_gest_align_prop: 0.20032<br />condition: AsymAV<br />pair: 25","round_n: 3<br />mean_gest_align_prop: 0.46429<br />condition: AsymAV<br />pair: 25","round_n: 4<br />mean_gest_align_prop: 0.53704<br />condition: AsymAV<br />pair: 25","round_n: 5<br />mean_gest_align_prop: 0.84722<br />condition: AsymAV<br />pair: 25","round_n: 6<br />mean_gest_align_prop: 0.33333<br />condition: AsymAV<br />pair: 25"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0485477915173396,1.9546070861862972,3.0536895073391497,3.9613349717436357,5.0340887964284047,6.0124360275687652],"y":[0,0.73333333333333328,0.75,0,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 28","round_n: 2<br />mean_gest_align_prop: 0.73333<br />condition: AsymAV<br />pair: 28","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: AsymAV<br />pair: 28","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 28","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 28","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 28"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0543212086101994,2.044568548942916,3.0642883805511518,3.9847997169988232,5.0102025782736019,6.0120650205062702],"y":[0.016666666666666666,0.63888888888888884,0.94444444444444442,0.77083333333333337,0.8214285714285714,0.72380952380952379],"text":["round_n: 1<br />mean_gest_align_prop: 0.01667<br />condition: AsymAV<br />pair: 31","round_n: 2<br />mean_gest_align_prop: 0.63889<br />condition: AsymAV<br />pair: 31","round_n: 3<br />mean_gest_align_prop: 0.94444<br />condition: AsymAV<br />pair: 31","round_n: 4<br />mean_gest_align_prop: 0.77083<br />condition: AsymAV<br />pair: 31","round_n: 5<br />mean_gest_align_prop: 0.82143<br />condition: AsymAV<br />pair: 31","round_n: 6<br />mean_gest_align_prop: 0.72381<br />condition: AsymAV<br />pair: 31"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94560550531372423,1.9956922706589102,3.0594948851596566,3.9950051552709192,5.0359257407346742,5.9782799654034902],"y":[0.11666666666666667,0.44,0.33333333333333331,0.19999999999999998,0.59999999999999998,0.72222222222222221],"text":["round_n: 1<br />mean_gest_align_prop: 0.11667<br />condition: AsymAV<br />pair: 34","round_n: 2<br />mean_gest_align_prop: 0.44000<br />condition: AsymAV<br />pair: 34","round_n: 3<br />mean_gest_align_prop: 0.33333<br />condition: AsymAV<br />pair: 34","round_n: 4<br />mean_gest_align_prop: 0.20000<br />condition: AsymAV<br />pair: 34","round_n: 5<br />mean_gest_align_prop: 0.60000<br />condition: AsymAV<br />pair: 34","round_n: 6<br />mean_gest_align_prop: 0.72222<br />condition: AsymAV<br />pair: 34"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0230925991805271,1.9953952739294618,2.9699839788535609,3.9714116613846273,5.0502627604408188,6.0065624343184751],"y":[0.010416666666666666,0.4263392857142857,0.43333333333333335,0.5,0.16666666666666666,0.375],"text":["round_n: 1<br />mean_gest_align_prop: 0.01042<br />condition: AsymAV<br />pair: 37","round_n: 2<br />mean_gest_align_prop: 0.42634<br />condition: AsymAV<br />pair: 37","round_n: 3<br />mean_gest_align_prop: 0.43333<br />condition: AsymAV<br />pair: 37","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: AsymAV<br />pair: 37","round_n: 5<br />mean_gest_align_prop: 0.16667<br />condition: AsymAV<br />pair: 37","round_n: 6<br />mean_gest_align_prop: 0.37500<br />condition: AsymAV<br />pair: 37"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0012836406985297,2.0014401139086111,3.0242933719605207,3.9308390849968418,5.0241572883492331,5.942397468178533],"y":[0,1,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 40","round_n: 2<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 40","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.99466403170488771,1.9585776046896353,2.9339989056345077,3.9474665096914396,5.0483233699714765,5.9774871862400323],"y":[0,1,0,null,1,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 43","round_n: 2<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 43","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 43","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 43","round_n: 5<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 43","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 43"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0546486739721148,2.0498366045951841,2.9877372321439908,4.0540619434881959,4.9607711153803393,6.0256482426589351],"y":[0,0,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 46","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 46","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.95527968589216472,2.021342476331629,2.9548384853918104,3.954799634264782,5.0488668289454655,5.9547777123143897],"y":[0.66666666666666663,null,null,1,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.66667<br />condition: AO<br />pair: 3","round_n: 2<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 3","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 3","round_n: 4<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 3","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 3","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 3"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0559543001186102,1.9438295672135428,3.0381053452612834,3.9969073811126874,4.9328031887672843,5.9577304549142722],"y":[0,0,0,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 7","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 7","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 7","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 7","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 7","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 7"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0575367979798467,1.9774307357240468,2.9554538499563932,4.0247527437191453,5.009164117025211,5.940252022380009],"y":[0,null,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 10","round_n: 2<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0208026726078243,2.0023461286723614,3.0175845306552946,3.9483560107508673,4.9447854306036607,5.9855100605357441],"y":[0.07575757575757576,0.50357142857142856,0.47499999999999998,0.66666666666666663,0.5,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.07576<br />condition: AO<br />pair: 13","round_n: 2<br />mean_gest_align_prop: 0.50357<br />condition: AO<br />pair: 13","round_n: 3<br />mean_gest_align_prop: 0.47500<br />condition: AO<br />pair: 13","round_n: 4<br />mean_gest_align_prop: 0.66667<br />condition: AO<br />pair: 13","round_n: 5<br />mean_gest_align_prop: 0.50000<br />condition: AO<br />pair: 13","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 13"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0637183434749022,2.0201277988543733,2.9310678280284628,4.0692992825387044,4.9564923873497175,5.9997724768193441],"y":[0.06709956709956709,0.47160493827160493,0.77272727272727271,0.59259259259259256,0.51041666666666663,0.41666666666666669],"text":["round_n: 1<br />mean_gest_align_prop: 0.06710<br />condition: AO<br />pair: 17","round_n: 2<br />mean_gest_align_prop: 0.47160<br />condition: AO<br />pair: 17","round_n: 3<br />mean_gest_align_prop: 0.77273<br />condition: AO<br />pair: 17","round_n: 4<br />mean_gest_align_prop: 0.59259<br />condition: AO<br />pair: 17","round_n: 5<br />mean_gest_align_prop: 0.51042<br />condition: AO<br />pair: 17","round_n: 6<br />mean_gest_align_prop: 0.41667<br />condition: AO<br />pair: 17"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98376033728476608,1.9987176451273263,2.9469964862149207,4.039326754100621,5.0503979205666107,6.0089474228862674],"y":[0.045454545454545456,0.016666666666666666,0.20714285714285713,0,0.055555555555555552,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.04545<br />condition: AO<br />pair: 20","round_n: 2<br />mean_gest_align_prop: 0.01667<br />condition: AO<br />pair: 20","round_n: 3<br />mean_gest_align_prop: 0.20714<br />condition: AO<br />pair: 20","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 20","round_n: 5<br />mean_gest_align_prop: 0.05556<br />condition: AO<br />pair: 20","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 20"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0199559802561999,2.030721240416169,3.0167479162290691,4.0061308431392533,4.9392263721581546,6.0680920528899875],"y":[0.125,0,0.75,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.12500<br />condition: AO<br />pair: 23","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 23","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: AO<br />pair: 23","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 23","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 23","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 23"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0039416750567034,2.0123883367190136,3.0138364797132091,4.0188500004867089,5.0325142015703026,6.0030697593698275],"y":[0,0.10000000000000001,0.25,0.33333333333333331,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 26","round_n: 2<br />mean_gest_align_prop: 0.10000<br />condition: AO<br />pair: 26","round_n: 3<br />mean_gest_align_prop: 0.25000<br />condition: AO<br />pair: 26","round_n: 4<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 26","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 26","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 26"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94666506001260131,2.0427717520529405,3.062869290597737,4.0379253188194708,5.0395313511369748,6.0448006343655285],"y":[0.066666666666666666,0.3439153439153439,0.2361111111111111,0.19444444444444445,0.33333333333333331,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.06667<br />condition: AO<br />pair: 29","round_n: 2<br />mean_gest_align_prop: 0.34392<br />condition: AO<br />pair: 29","round_n: 3<br />mean_gest_align_prop: 0.23611<br />condition: AO<br />pair: 29","round_n: 4<br />mean_gest_align_prop: 0.19444<br />condition: AO<br />pair: 29","round_n: 5<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 29","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 29"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97054946809541431,2.0287209868710487,3.0576195884821935,4.0562932462524621,5.0381966153625397,6.0267465764470396],"y":[0,0.33333333333333331,0,0.66666666666666663,0,0.33333333333333331],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 32","round_n: 2<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 32","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 32","round_n: 4<br />mean_gest_align_prop: 0.66667<br />condition: AO<br />pair: 32","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 32","round_n: 6<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 32"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96635815144982184,2.0482579654501749,2.9706883122213186,4.0649537418596449,4.9713940345169974,6.0598856800282377],"y":[0,0.092592592592592587,0,0.0625,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35","round_n: 2<br />mean_gest_align_prop: 0.09259<br />condition: AO<br />pair: 35","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35","round_n: 4<br />mean_gest_align_prop: 0.06250<br />condition: AO<br />pair: 35","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0048187307547778,1.9523004396725445,2.961477738930844,4.0679904286097734,4.9411181867774578,5.9505205952003601],"y":[0,0.083333333333333329,0,0,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 2<br />mean_gest_align_prop: 0.08333<br />condition: AO<br />pair: 38","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.94077740775421259,1.9876853226171807,2.984577979366295,3.992387435971759,4.9988201368274163,6.0283309112396095],"y":[0,0.5,0,0,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 41","round_n: 2<br />mean_gest_align_prop: 0.50000<br />condition: AO<br />pair: 41","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 41","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 41","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 41","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 41"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.96124807518441235,1.995743272965774,3.0684398248605431,3.9717572529567406,4.9518877799622718,5.9911228396231309],"y":[0.10909090909090909,0.50793650793650791,0.63833333333333331,0.58333333333333337,0.46250000000000002,0.037037037037037035],"text":["round_n: 1<br />mean_gest_align_prop: 0.10909<br />condition: AO<br />pair: 44","round_n: 2<br />mean_gest_align_prop: 0.50794<br />condition: AO<br />pair: 44","round_n: 3<br />mean_gest_align_prop: 0.63833<br />condition: AO<br />pair: 44","round_n: 4<br />mean_gest_align_prop: 0.58333<br />condition: AO<br />pair: 44","round_n: 5<br />mean_gest_align_prop: 0.46250<br />condition: AO<br />pair: 44","round_n: 6<br />mean_gest_align_prop: 0.03704<br />condition: AO<br />pair: 44"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0166722164303064,1.9596953428536654,2.9304512086696923,3.9862340615596623,4.9813663302361961,6.0621486422326418],"y":[0.083333333333333329,0.8214285714285714,null,0.5,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.08333<br />condition: AO<br />pair: 47","round_n: 2<br />mean_gest_align_prop: 0.82143<br />condition: AO<br />pair: 47","round_n: 3<br />mean_gest_align_prop: 1.11111<br />condition: AO<br />pair: 47","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: AO<br />pair: 47","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 47","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 47"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],"y":[0.125,0.27873563218390807,0.076923076923076927,0.22727272727272727,0,0,0.30769230769230771,0.050000000000000003,0.18162393162393162,0.33589743589743593,0.098015873015873015,0,0,0.0089285714285714281,0.096256684491978606,0.22857142857142856,0,0.63888888888888884,0,0.37121212121212122,0.35185185185185186,0.28624338624338624,0.90714285714285714,0,0.33194444444444443,0.27777777777777779,0.39166666666666666,0.34999999999999998,0.625,0.2503968253968254,0.66666666666666663,0.66666666666666663,0.75,0.7857142857142857,0.61952380952380948,0,0.83333333333333337,0.75,0.64814814814814814,0.56666666666666665,0.69666666666666666,null,0.625,1,0.17857142857142858,0.90000000000000002,null,null,0.5,0.55555555555555558,0,null,0.75,0.6333333333333333,0.58333333333333337,0.77777777777777779,0.625,0.82222222222222219,0.33333333333333331,0.5,0,null,0.58333333333333337,0.79166666666666663,null,null,0.43333333333333335,0.25,0,0.20833333333333334,null,null,0.53125,0.63888888888888884,null,null,null,0.125,0.5,0.83333333333333337,null,null,null,0.44444444444444442,null,0.41666666666666669,1,0.875,0.61111111111111116,0.60416666666666663],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],"y":[0.010416666666666666,0.13585164835164834,0,0.11666666666666667,0,0.016666666666666666,0,0.15329670329670328,0.11666666666666667,0,0.19851851851851851,0,0,0.22205128205128205,0.30357142857142855,0.4263392857142857,0.55238095238095242,0.44,1,0,0.73333333333333328,0.52900432900432903,1,0,0.63888888888888884,0.5892857142857143,1,0,0.20032467532467532,0.49603174603174605,null,0.94444444444444442,0.33333333333333331,0.43333333333333335,0.78333333333333333,0.75,0.4642857142857143,null,null,0.6166666666666667,null,0,0.28667929292929295,0,null,0.19999999999999998,0.25,0.77083333333333337,null,0.35714285714285715,0.5,null,null,0.53703703703703698,0.79166666666666663,null,0,null,0.63888888888888884,0,null,0.84722222222222221,1,0.59999999999999998,0.16666666666666666,0.22857142857142856,null,0,0.8214285714285714,0.75,null,0.22222222222222221,0.5,null,0.41666666666666663,null,0.33333333333333331,null,0,0.375,null,null,0.72380952380952379,0.45833333333333331,0.4861111111111111,0.72222222222222221,null,1,1,0],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":false,"xaxis":"x2","yaxis":"y","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],"y":[0,0,0,0,0,0.066666666666666666,0.07575757575757576,0.125,0,0,0.06709956709956709,0.10909090909090909,0.66666666666666663,0.083333333333333329,0.045454545454545456,0.083333333333333329,0.33333333333333331,0.092592592592592587,0,null,0.50357142857142856,0.3439153439153439,0.5,null,0.8214285714285714,0,0.10000000000000001,0.50793650793650791,0.47160493827160493,0.016666666666666666,0.63833333333333331,0,0,null,null,0.47499999999999998,0,0.25,0,null,0,0.2361111111111111,0.20714285714285713,0.75,0.77272727272727271,0,null,0.58333333333333337,null,1,0,0.5,0,0.66666666666666663,null,0.33333333333333331,0.0625,0.19444444444444445,0.66666666666666663,0.59259259259259256,null,0.46250000000000002,0,0,0.33333333333333331,0,null,0.51041666666666663,0,0.5,null,0.055555555555555552,null,null,null,1,0,0,null,0.33333333333333331,0,1,0.41666666666666669,0,0.037037037037037035,null,null,0,0,1],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,3)","legendgroup":"(AO,3)","showlegend":false,"xaxis":"x3","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6],"y":[0.13713469898752884,0.36385387488328663,0.63612351190476191,0.64391025641025645,0.55104166666666665,0.57870370370370372],"text":["round_n: 1<br />mean_gest_align_prop: 0.1371<br />condition: white","round_n: 2<br />mean_gest_align_prop: 0.3639<br />condition: white","round_n: 3<br />mean_gest_align_prop: 0.6361<br />condition: white","round_n: 4<br />mean_gest_align_prop: 0.6439<br />condition: white","round_n: 5<br />mean_gest_align_prop: 0.5510<br />condition: white","round_n: 6<br />mean_gest_align_prop: 0.5787<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6],"y":[0.12568430740072531,0.46368670089600322,0.54905723905723902,0.5083333333333333,0.51882613510520492,0.54120370370370374],"text":["round_n: 1<br />mean_gest_align_prop: 0.1257<br />condition: white","round_n: 2<br />mean_gest_align_prop: 0.4637<br />condition: white","round_n: 3<br />mean_gest_align_prop: 0.5491<br />condition: white","round_n: 4<br />mean_gest_align_prop: 0.5083<br />condition: white","round_n: 5<br />mean_gest_align_prop: 0.5188<br />condition: white","round_n: 6<br />mean_gest_align_prop: 0.5412<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6],"y":[0.064588744588744584,0.32353852109949671,0.39681372549019606,0.35062893081761004,0.24166666666666667,0.17982456140350878],"text":["round_n: 1<br />mean_gest_align_prop: 0.0646<br />condition: white","round_n: 2<br />mean_gest_align_prop: 0.3235<br />condition: white","round_n: 3<br />mean_gest_align_prop: 0.3968<br />condition: white","round_n: 4<br />mean_gest_align_prop: 0.3506<br />condition: white","round_n: 5<br />mean_gest_align_prop: 0.2417<br />condition: white","round_n: 6<br />mean_gest_align_prop: 0.1798<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":57.045280199252801,"r":41.045280199252801,"b":64.623528435035269,"l":83.220456621004573},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xaxis":{"domain":[0,0.32221431536500028],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,6.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6"],"tickvals":[1,2,3,3.9999999999999996,5,6],"categoryorder":"array","categoryarray":["1","2","3","4","5","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"annotations":[{"text":"<b> Round <\/b>","x":0.5,"y":0,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"top","annotationType":"axis","yshift":-32.54462432544625},{"text":"<b> Mean gest align rate <\/b>","x":0,"y":0.5,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xref":"paper","yref":"paper","textangle":-90,"xanchor":"right","yanchor":"center","annotationType":"axis","xshift":-51.141552511415533},{"text":"SymAV","x":0.16110715768250014,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"AsymAV","x":0.5,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"AO","x":0.83889284231749983,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.9252801992528},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.050000000000000003,1.05],"tickmode":"array","ticktext":["0.00","0.25","0.50","0.75","1.00"],"tickvals":[0,0.25,0.5,0.75,1],"categoryorder":"array","categoryarray":["0.00","0.25","0.50","0.75","1.00"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132018,"tickwidth":0.90569455451149117,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0.90569455451149117,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.32221431536500028,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(255,255,255,1)","line":{"color":"rgba(0,0,0,1)","width":0.90569455451149117,"linetype":"none"},"yref":"paper","xref":"paper","x0":0,"x1":0.32221431536500028,"y0":0,"y1":35.865504358655052,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.34445235130166635,"x1":0.6555476486983336,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(255,255,255,1)","line":{"color":"rgba(0,0,0,1)","width":0.90569455451149117,"linetype":"none"},"yref":"paper","xref":"paper","x0":0.34445235130166635,"x1":0.6555476486983336,"y0":0,"y1":35.865504358655052,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.67778568463499966,"x1":1,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(255,255,255,1)","line":{"color":"rgba(0,0,0,1)","width":0.90569455451149117,"linetype":"none"},"yref":"paper","xref":"paper","x0":0.67778568463499966,"x1":1,"y0":0,"y1":35.865504358655052,"yanchor":1,"ysizemode":"pixel"}],"xaxis2":{"type":"linear","autorange":false,"range":[0.40000000000000002,6.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6"],"tickvals":[1,2,3,3.9999999999999996,5,6],"categoryorder":"array","categoryarray":["1","2","3","4","5","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"domain":[0.34445235130166635,0.6555476486983336],"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis3":{"type":"linear","autorange":false,"range":[0.40000000000000002,6.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6"],"tickvals":[1,2,3,3.9999999999999996,5,6],"categoryorder":"array","categoryarray":["1","2","3","4","5","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":4.9813200498132,"tickwidth":0.90569455451149106,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"domain":[0.67778568463499966,1],"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":2.5769506084466713,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"21cc62544c26":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"21cc45004d9c":{"x":{},"y":{},"fill":{}},"21cc6c702b0c":{"x":{},"y":{},"fill":{}}},"cur_data":"21cc62544c26","visdat":{"21cc62544c26":["function (y) ","x"],"21cc45004d9c":["function (y) ","x"],"21cc6c702b0c":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-88145328496db5be6004" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-88145328496db5be6004">{"x":{"data":[{"x":[0.93601852222345772,2.0334058640245347,2.9348563936166467,4.0403388431575147,4.947298819641583,6.0140911738248546],"y":[0.125,0.63888888888888884,0.64814814814814814,0.625,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.12500<br />condition: SymAV<br />pair: 1","round_n: 2<br />mean_gest_align_prop: 0.63889<br />condition: SymAV<br />pair: 1","round_n: 3<br />mean_gest_align_prop: 0.64815<br />condition: SymAV<br />pair: 1","round_n: 4<br />mean_gest_align_prop: 0.62500<br />condition: SymAV<br />pair: 1","round_n: 5<br />mean_gest_align_prop: 1.04167<br />condition: SymAV<br />pair: 1","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 1"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0570015467191114,1.9880715575581416,3.0106406067637725,4.0692152089485898,5.0244693184876814,5.9658665899094192],"y":[0,0.625,0.625,0.5,0.58333333333333337,0.5],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 5","round_n: 2<br />mean_gest_align_prop: 0.62500<br />condition: SymAV<br />pair: 5","round_n: 3<br />mean_gest_align_prop: 0.62500<br />condition: SymAV<br />pair: 5","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: SymAV<br />pair: 5","round_n: 5<br />mean_gest_align_prop: 0.58333<br />condition: SymAV<br />pair: 5","round_n: 6<br />mean_gest_align_prop: 0.50000<br />condition: SymAV<br />pair: 5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(229,135,0,1)"}},"hoveron":"points","name":"(SymAV,5)","legendgroup":"(SymAV,5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0119757348671556,2.0238825035467745,2.9693983651837335,4.0208830611221495,4.9464783572638407,6.0447402007458733],"y":[0.09625668449197862,0.2503968253968254,0.17857142857142858,0.33333333333333331,0.25,0.60416666666666663],"text":["round_n: 1<br />mean_gest_align_prop: 0.09626<br />condition: SymAV<br />pair: 8","round_n: 2<br />mean_gest_align_prop: 0.25040<br />condition: SymAV<br />pair: 8","round_n: 3<br />mean_gest_align_prop: 0.17857<br />condition: SymAV<br />pair: 8","round_n: 4<br />mean_gest_align_prop: 0.33333<br />condition: SymAV<br />pair: 8","round_n: 5<br />mean_gest_align_prop: 0.25000<br />condition: SymAV<br />pair: 8","round_n: 6<br />mean_gest_align_prop: 0.60417<br />condition: SymAV<br />pair: 8"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(201,152,0,1)"}},"hoveron":"points","name":"(SymAV,8)","legendgroup":"(SymAV,8)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0460491576464848,1.9479705643467604,2.9598150622472166,3.954349683779292,4.9830114694638175,5.9970682669803503],"y":[0.27873563218390807,0.39166666666666672,0.56666666666666665,0.55555555555555558,null,0.41666666666666663],"text":["round_n: 1<br />mean_gest_align_prop: 0.27874<br />condition: SymAV<br />pair: 11","round_n: 2<br />mean_gest_align_prop: 0.39167<br />condition: SymAV<br />pair: 11","round_n: 3<br />mean_gest_align_prop: 0.56667<br />condition: SymAV<br />pair: 11","round_n: 4<br />mean_gest_align_prop: 0.55556<br />condition: SymAV<br />pair: 11","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 11","round_n: 6<br />mean_gest_align_prop: 0.41667<br />condition: SymAV<br />pair: 11"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(SymAV,11)","legendgroup":"(SymAV,11)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97411945459898563,2.0300518981553615,3.0245633229939268,4.0275046835234392,4.9991499485680837,5.9303405923442911],"y":[0.0089285714285714315,0.34999999999999998,0.7857142857142857,0.6333333333333333,0.53125,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.00893<br />condition: SymAV<br />pair: 15","round_n: 2<br />mean_gest_align_prop: 0.35000<br />condition: SymAV<br />pair: 15","round_n: 3<br />mean_gest_align_prop: 0.78571<br />condition: SymAV<br />pair: 15","round_n: 4<br />mean_gest_align_prop: 0.63333<br />condition: SymAV<br />pair: 15","round_n: 5<br />mean_gest_align_prop: 0.53125<br />condition: SymAV<br />pair: 15","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: SymAV<br />pair: 15"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(107,177,0,1)"}},"hoveron":"points","name":"(SymAV,15)","legendgroup":"(SymAV,15)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0289646738674492,2.0076998762879521,3.0125164517108352,3.9942008247319607,4.9612405505916106,5.9979785423399878],"y":[0.098015873015873028,0.33194444444444443,0.83333333333333337,0.82222222222222219,0.63888888888888884,0.61111111111111116],"text":["round_n: 1<br />mean_gest_align_prop: 0.09802<br />condition: SymAV<br />pair: 18","round_n: 2<br />mean_gest_align_prop: 0.33194<br />condition: SymAV<br />pair: 18","round_n: 3<br />mean_gest_align_prop: 0.83333<br />condition: SymAV<br />pair: 18","round_n: 4<br />mean_gest_align_prop: 0.82222<br />condition: SymAV<br />pair: 18","round_n: 5<br />mean_gest_align_prop: 0.63889<br />condition: SymAV<br />pair: 18","round_n: 6<br />mean_gest_align_prop: 0.61111<br />condition: SymAV<br />pair: 18"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"(SymAV,18)","legendgroup":"(SymAV,18)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0503563562221825,1.990666316128336,2.978022214313969,4.0476099433144554,5.0376437780447301,6.0485301834251732],"y":[0,0.27777777777777779,0.75,0.5,0,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 21","round_n: 2<br />mean_gest_align_prop: 0.27778<br />condition: SymAV<br />pair: 21","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: SymAV<br />pair: 21","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: SymAV<br />pair: 21","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 21","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 21"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(SymAV,21)","legendgroup":"(SymAV,21)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0075208811601624,1.960825455384329,3.0520338903926314,3.9910306221107019,4.997731331358664,6.0186786085413768],"y":[0.30769230769230771,0.28624338624338624,0.61952380952380959,0.75,0.79166666666666663,0.875],"text":["round_n: 1<br />mean_gest_align_prop: 0.30769<br />condition: SymAV<br />pair: 24","round_n: 2<br />mean_gest_align_prop: 0.28624<br />condition: SymAV<br />pair: 24","round_n: 3<br />mean_gest_align_prop: 0.61952<br />condition: SymAV<br />pair: 24","round_n: 4<br />mean_gest_align_prop: 0.75000<br />condition: SymAV<br />pair: 24","round_n: 5<br />mean_gest_align_prop: 0.79167<br />condition: SymAV<br />pair: 24","round_n: 6<br />mean_gest_align_prop: 0.87500<br />condition: SymAV<br />pair: 24"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,175,1)"}},"hoveron":"points","name":"(SymAV,24)","legendgroup":"(SymAV,24)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0136580417538061,1.9686294752219693,2.9631975142750888,4.0318873627856373,4.9552486959472297,6.0582223749533295],"y":[0,0,0,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 27","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 27","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 27","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 27","round_n: 5<br />mean_gest_align_prop: 2.00000<br />condition: SymAV<br />pair: 27","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 27"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,216,1)"}},"hoveron":"points","name":"(SymAV,27)","legendgroup":"(SymAV,27)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98200923100579529,2.0181479985034092,3.0533115089591591,4.008438834249973,5.0334676748700442,5.9785738947242502],"y":[0.076923076923076927,0,0.75,null,0,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.07692<br />condition: SymAV<br />pair: 30","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 30","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: SymAV<br />pair: 30","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 30","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 30","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 30"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(SymAV,30)","legendgroup":"(SymAV,30)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0283730585034936,2.0272538077738136,3.0102606567135082,4.026821445692331,5.0626927453745161,5.9993123066797853],"y":[0.05000000000000001,0.90714285714285714,0.66666666666666663,0.90000000000000002,null,0.83333333333333326],"text":["round_n: 1<br />mean_gest_align_prop: 0.05000<br />condition: SymAV<br />pair: 33","round_n: 2<br />mean_gest_align_prop: 0.90714<br />condition: SymAV<br />pair: 33","round_n: 3<br />mean_gest_align_prop: 0.66667<br />condition: SymAV<br />pair: 33","round_n: 4<br />mean_gest_align_prop: 0.90000<br />condition: SymAV<br />pair: 33","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 33","round_n: 6<br />mean_gest_align_prop: 0.83333<br />condition: SymAV<br />pair: 33"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"(SymAV,33)","legendgroup":"(SymAV,33)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97856374997645612,1.9953408515220508,3.0060664232214913,3.9442615073686467,4.9326353711029514,6.0298371486458926],"y":[0.33589743589743587,0.35185185185185186,0.66666666666666674,0.58333333333333337,0.20833333333333331,0.44444444444444442],"text":["round_n: 1<br />mean_gest_align_prop: 0.33590<br />condition: SymAV<br />pair: 36","round_n: 2<br />mean_gest_align_prop: 0.35185<br />condition: SymAV<br />pair: 36","round_n: 3<br />mean_gest_align_prop: 0.66667<br />condition: SymAV<br />pair: 36","round_n: 4<br />mean_gest_align_prop: 0.58333<br />condition: SymAV<br />pair: 36","round_n: 5<br />mean_gest_align_prop: 0.20833<br />condition: SymAV<br />pair: 36","round_n: 6<br />mean_gest_align_prop: 0.44444<br />condition: SymAV<br />pair: 36"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(185,131,255,1)"}},"hoveron":"points","name":"(SymAV,36)","legendgroup":"(SymAV,36)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0469388613570481,2.0241323988325894,2.9599475501943378,3.9858028075890615,4.9373286499176174,5.9552236260753126],"y":[0.22727272727272727,0.22857142857142854,1,0,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.22727<br />condition: SymAV<br />pair: 39","round_n: 2<br />mean_gest_align_prop: 0.22857<br />condition: SymAV<br />pair: 39","round_n: 3<br />mean_gest_align_prop: 1.00000<br />condition: SymAV<br />pair: 39","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 39","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 39","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 39"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(SymAV,39)","legendgroup":"(SymAV,39)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0660987958451733,2.0297036061435936,2.9656656637694687,4.017989009185694,4.9748664781218395,5.9715006209304553],"y":[0,0,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 42","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: SymAV<br />pair: 42","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: SymAV<br />pair: 42"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(253,97,209,1)"}},"hoveron":"points","name":"(SymAV,42)","legendgroup":"(SymAV,42)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93091273735743019,2.025647005075589,3.0508156478265303,3.980474184639752,5.0663108218042181,6.0525911922613158],"y":[0.18162393162393162,0.37121212121212122,0.69666666666666666,0.77777777777777779,0.43333333333333329,0.125],"text":["round_n: 1<br />mean_gest_align_prop: 0.18162<br />condition: SymAV<br />pair: 45","round_n: 2<br />mean_gest_align_prop: 0.37121<br />condition: SymAV<br />pair: 45","round_n: 3<br />mean_gest_align_prop: 0.69667<br />condition: SymAV<br />pair: 45","round_n: 4<br />mean_gest_align_prop: 0.77778<br />condition: SymAV<br />pair: 45","round_n: 5<br />mean_gest_align_prop: 0.43333<br />condition: SymAV<br />pair: 45","round_n: 6<br />mean_gest_align_prop: 0.12500<br />condition: SymAV<br />pair: 45"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(237,107,6,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,103,164,1)"}},"hoveron":"points","name":"(SymAV,45)","legendgroup":"(SymAV,45)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93601852222345772,2.0334058640245347,2.9348563936166467,4.0403388431575147,4.947298819641583,6.0140911738248546],"y":[0.11666666666666667,0,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.11667<br />condition: AsymAV<br />pair: 2","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 2","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 2"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(242,124,86,1)"}},"hoveron":"points","name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0570015467191114,1.9880715575581416,3.0106406067637725,4.0692152089485898,5.0244693184876814,5.9658665899094192],"y":[0,0,0,0.25,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 4<br />mean_gest_align_prop: 0.25000<br />condition: AsymAV<br />pair: 6","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 6"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(220,141,0,1)"}},"hoveron":"points","name":"(AsymAV,6)","legendgroup":"(AsymAV,6)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0119757348671556,2.0238825035467745,2.9693983651837335,4.0208830611221495,4.9464783572638407,6.0447402007458733],"y":[0.30357142857142855,0.49603174603174605,0.78333333333333344,0.3571428571428571,0.22222222222222221,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.30357<br />condition: AsymAV<br />pair: 9","round_n: 2<br />mean_gest_align_prop: 0.49603<br />condition: AsymAV<br />pair: 9","round_n: 3<br />mean_gest_align_prop: 0.78333<br />condition: AsymAV<br />pair: 9","round_n: 4<br />mean_gest_align_prop: 0.35714<br />condition: AsymAV<br />pair: 9","round_n: 5<br />mean_gest_align_prop: 0.22222<br />condition: AsymAV<br />pair: 9","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 9"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(189,156,0,1)"}},"hoveron":"points","name":"(AsymAV,9)","legendgroup":"(AsymAV,9)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0460491576464848,1.9479705643467604,2.9598150622472166,3.954349683779292,4.9830114694638175,5.9970682669803503],"y":[0.19851851851851851,0.5892857142857143,0.6166666666666667,0,0.41666666666666663,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.19852<br />condition: AsymAV<br />pair: 12","round_n: 2<br />mean_gest_align_prop: 0.58929<br />condition: AsymAV<br />pair: 12","round_n: 3<br />mean_gest_align_prop: 0.61667<br />condition: AsymAV<br />pair: 12","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 12","round_n: 5<br />mean_gest_align_prop: 0.41667<br />condition: AsymAV<br />pair: 12","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 12"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(147,170,0,1)"}},"hoveron":"points","name":"(AsymAV,12)","legendgroup":"(AsymAV,12)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97411945459898563,2.0300518981553615,3.0245633229939268,4.0275046835234392,4.9991499485680837,5.9303405923442911],"y":[0,1,null,null,0.5,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 16","round_n: 2<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 16","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 16","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 16","round_n: 5<br />mean_gest_align_prop: 0.50000<br />condition: AsymAV<br />pair: 16","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 16"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(78,180,0,1)"}},"hoveron":"points","name":"(AsymAV,16)","legendgroup":"(AsymAV,16)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0289646738674492,2.0076998762879521,3.0125164517108352,3.9942008247319607,4.9612405505916106,5.9979785423399878],"y":[0.15329670329670328,0.52900432900432903,0.28667929292929295,0.63888888888888884,0.22857142857142859,0.4861111111111111],"text":["round_n: 1<br />mean_gest_align_prop: 0.15330<br />condition: AsymAV<br />pair: 19","round_n: 2<br />mean_gest_align_prop: 0.52900<br />condition: AsymAV<br />pair: 19","round_n: 3<br />mean_gest_align_prop: 0.28668<br />condition: AsymAV<br />pair: 19","round_n: 4<br />mean_gest_align_prop: 0.63889<br />condition: AsymAV<br />pair: 19","round_n: 5<br />mean_gest_align_prop: 0.22857<br />condition: AsymAV<br />pair: 19","round_n: 6<br />mean_gest_align_prop: 0.48611<br />condition: AsymAV<br />pair: 19"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,188,84,1)"}},"hoveron":"points","name":"(AsymAV,19)","legendgroup":"(AsymAV,19)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0503563562221825,1.990666316128336,2.978022214313969,4.0476099433144554,5.0376437780447301,6.0485301834251732],"y":[0.13585164835164837,0.55238095238095242,null,0.79166666666666663,0.75,0.45833333333333337],"text":["round_n: 1<br />mean_gest_align_prop: 0.13585<br />condition: AsymAV<br />pair: 22","round_n: 2<br />mean_gest_align_prop: 0.55238<br />condition: AsymAV<br />pair: 22","round_n: 3<br />mean_gest_align_prop: 1.04762<br />condition: AsymAV<br />pair: 22","round_n: 4<br />mean_gest_align_prop: 0.79167<br />condition: AsymAV<br />pair: 22","round_n: 5<br />mean_gest_align_prop: 0.75000<br />condition: AsymAV<br />pair: 22","round_n: 6<br />mean_gest_align_prop: 0.45833<br />condition: AsymAV<br />pair: 22"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,143,1)"}},"hoveron":"points","name":"(AsymAV,22)","legendgroup":"(AsymAV,22)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0075208811601624,1.960825455384329,3.0520338903926314,3.9910306221107019,4.997731331358664,6.0186786085413768],"y":[0.22205128205128205,0.20032467532467532,0.4642857142857143,0.53703703703703698,0.84722222222222221,0.33333333333333331],"text":["round_n: 1<br />mean_gest_align_prop: 0.22205<br />condition: AsymAV<br />pair: 25","round_n: 2<br />mean_gest_align_prop: 0.20032<br />condition: AsymAV<br />pair: 25","round_n: 3<br />mean_gest_align_prop: 0.46429<br />condition: AsymAV<br />pair: 25","round_n: 4<br />mean_gest_align_prop: 0.53704<br />condition: AsymAV<br />pair: 25","round_n: 5<br />mean_gest_align_prop: 0.84722<br />condition: AsymAV<br />pair: 25","round_n: 6<br />mean_gest_align_prop: 0.33333<br />condition: AsymAV<br />pair: 25"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,189,1)"}},"hoveron":"points","name":"(AsymAV,25)","legendgroup":"(AsymAV,25)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0136580417538061,1.9686294752219693,2.9631975142750888,4.0318873627856373,4.9552486959472297,6.0582223749533295],"y":[0,0.73333333333333328,0.75,0,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 28","round_n: 2<br />mean_gest_align_prop: 0.73333<br />condition: AsymAV<br />pair: 28","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: AsymAV<br />pair: 28","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 28","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 28","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 28"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,185,227,1)"}},"hoveron":"points","name":"(AsymAV,28)","legendgroup":"(AsymAV,28)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98200923100579529,2.0181479985034092,3.0533115089591591,4.008438834249973,5.0334676748700442,5.9785738947242502],"y":[0.01666666666666667,0.63888888888888884,0.94444444444444442,0.77083333333333337,0.8214285714285714,0.72380952380952379],"text":["round_n: 1<br />mean_gest_align_prop: 0.01667<br />condition: AsymAV<br />pair: 31","round_n: 2<br />mean_gest_align_prop: 0.63889<br />condition: AsymAV<br />pair: 31","round_n: 3<br />mean_gest_align_prop: 0.94444<br />condition: AsymAV<br />pair: 31","round_n: 4<br />mean_gest_align_prop: 0.77083<br />condition: AsymAV<br />pair: 31","round_n: 5<br />mean_gest_align_prop: 0.82143<br />condition: AsymAV<br />pair: 31","round_n: 6<br />mean_gest_align_prop: 0.72381<br />condition: AsymAV<br />pair: 31"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,170,254,1)"}},"hoveron":"points","name":"(AsymAV,31)","legendgroup":"(AsymAV,31)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0283730585034936,2.0272538077738136,3.0102606567135082,4.026821445692331,5.0626927453745161,5.9993123066797853],"y":[0.11666666666666665,0.44,0.33333333333333337,0.19999999999999998,0.59999999999999998,0.72222222222222221],"text":["round_n: 1<br />mean_gest_align_prop: 0.11667<br />condition: AsymAV<br />pair: 34","round_n: 2<br />mean_gest_align_prop: 0.44000<br />condition: AsymAV<br />pair: 34","round_n: 3<br />mean_gest_align_prop: 0.33333<br />condition: AsymAV<br />pair: 34","round_n: 4<br />mean_gest_align_prop: 0.20000<br />condition: AsymAV<br />pair: 34","round_n: 5<br />mean_gest_align_prop: 0.60000<br />condition: AsymAV<br />pair: 34","round_n: 6<br />mean_gest_align_prop: 0.72222<br />condition: AsymAV<br />pair: 34"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(134,148,255,1)"}},"hoveron":"points","name":"(AsymAV,34)","legendgroup":"(AsymAV,34)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97856374997645612,1.9953408515220508,3.0060664232214913,3.9442615073686467,4.9326353711029514,6.0298371486458926],"y":[0.010416666666666666,0.4263392857142857,0.43333333333333329,0.5,0.16666666666666669,0.375],"text":["round_n: 1<br />mean_gest_align_prop: 0.01042<br />condition: AsymAV<br />pair: 37","round_n: 2<br />mean_gest_align_prop: 0.42634<br />condition: AsymAV<br />pair: 37","round_n: 3<br />mean_gest_align_prop: 0.43333<br />condition: AsymAV<br />pair: 37","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: AsymAV<br />pair: 37","round_n: 5<br />mean_gest_align_prop: 0.16667<br />condition: AsymAV<br />pair: 37","round_n: 6<br />mean_gest_align_prop: 0.37500<br />condition: AsymAV<br />pair: 37"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(203,122,255,1)"}},"hoveron":"points","name":"(AsymAV,37)","legendgroup":"(AsymAV,37)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0469388613570481,2.0241323988325894,2.9599475501943378,3.9858028075890615,4.9373286499176174,5.9552236260753126],"y":[0,1,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 40","round_n: 2<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 40","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 40"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(241,102,233,1)"}},"hoveron":"points","name":"(AsymAV,40)","legendgroup":"(AsymAV,40)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0660987958451733,2.0297036061435936,2.9656656637694687,4.017989009185694,4.9748664781218395,5.9715006209304553],"y":[0,1,0,null,1,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 43","round_n: 2<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 43","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 43","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 43","round_n: 5<br />mean_gest_align_prop: 1.00000<br />condition: AsymAV<br />pair: 43","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 43"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,97,195,1)"}},"hoveron":"points","name":"(AsymAV,43)","legendgroup":"(AsymAV,43)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93091273735743019,2.025647005075589,3.0508156478265303,3.980474184639752,5.0663108218042181,6.0525911922613158],"y":[0,0,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 46","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AsymAV<br />pair: 46","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AsymAV<br />pair: 46"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,120,106,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,107,147,1)"}},"hoveron":"points","name":"(AsymAV,46)","legendgroup":"(AsymAV,46)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93601852222345772,2.0334058640245347,2.9348563936166467,4.0403388431575147,4.947298819641583,6.0140911738248546],"y":[0.66666666666666674,null,null,1,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.66667<br />condition: AO<br />pair: 3","round_n: 2<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 3","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 3","round_n: 4<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 3","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 3","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 3"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(236,130,58,1)"}},"hoveron":"points","name":"(AO,3)","legendgroup":"(AO,3)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0570015467191114,1.9880715575581416,3.0106406067637725,4.0692152089485898,5.0244693184876814,5.9658665899094192],"y":[0,0,0,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 7","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 7","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 7","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 7","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 7","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 7"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(211,146,0,1)"}},"hoveron":"points","name":"(AO,7)","legendgroup":"(AO,7)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0119757348671556,2.0238825035467745,2.9693983651837335,4.0208830611221495,4.9464783572638407,6.0447402007458733],"y":[0,null,null,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 10","round_n: 2<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 3<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 10"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(177,161,0,1)"}},"hoveron":"points","name":"(AO,10)","legendgroup":"(AO,10)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0460491576464848,1.9479705643467604,2.9598150622472166,3.954349683779292,4.9830114694638175,5.9970682669803503],"y":[0.07575757575757576,0.50357142857142856,0.47499999999999998,0.66666666666666663,0.5,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.07576<br />condition: AO<br />pair: 13","round_n: 2<br />mean_gest_align_prop: 0.50357<br />condition: AO<br />pair: 13","round_n: 3<br />mean_gest_align_prop: 0.47500<br />condition: AO<br />pair: 13","round_n: 4<br />mean_gest_align_prop: 0.66667<br />condition: AO<br />pair: 13","round_n: 5<br />mean_gest_align_prop: 0.50000<br />condition: AO<br />pair: 13","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 13"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(129,173,0,1)"}},"hoveron":"points","name":"(AO,13)","legendgroup":"(AO,13)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97411945459898563,2.0300518981553615,3.0245633229939268,4.0275046835234392,4.9991499485680837,5.9303405923442911],"y":[0.06709956709956709,0.47160493827160493,0.77272727272727271,0.59259259259259256,0.51041666666666663,0.41666666666666663],"text":["round_n: 1<br />mean_gest_align_prop: 0.06710<br />condition: AO<br />pair: 17","round_n: 2<br />mean_gest_align_prop: 0.47160<br />condition: AO<br />pair: 17","round_n: 3<br />mean_gest_align_prop: 0.77273<br />condition: AO<br />pair: 17","round_n: 4<br />mean_gest_align_prop: 0.59259<br />condition: AO<br />pair: 17","round_n: 5<br />mean_gest_align_prop: 0.51042<br />condition: AO<br />pair: 17","round_n: 6<br />mean_gest_align_prop: 0.41667<br />condition: AO<br />pair: 17"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(21,183,0,1)"}},"hoveron":"points","name":"(AO,17)","legendgroup":"(AO,17)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0289646738674492,2.0076998762879521,3.0125164517108352,3.9942008247319607,4.9612405505916106,5.9979785423399878],"y":[0.045454545454545449,0.016666666666666666,0.20714285714285713,0,0.055555555555555559,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.04545<br />condition: AO<br />pair: 20","round_n: 2<br />mean_gest_align_prop: 0.01667<br />condition: AO<br />pair: 20","round_n: 3<br />mean_gest_align_prop: 0.20714<br />condition: AO<br />pair: 20","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 20","round_n: 5<br />mean_gest_align_prop: 0.05556<br />condition: AO<br />pair: 20","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 20"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,106,1)"}},"hoveron":"points","name":"(AO,20)","legendgroup":"(AO,20)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0503563562221825,1.990666316128336,2.978022214313969,4.0476099433144554,5.0376437780447301,6.0485301834251732],"y":[0.125,0,0.75,null,null,null],"text":["round_n: 1<br />mean_gest_align_prop: 0.12500<br />condition: AO<br />pair: 23","round_n: 2<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 23","round_n: 3<br />mean_gest_align_prop: 0.75000<br />condition: AO<br />pair: 23","round_n: 4<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 23","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 23","round_n: 6<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 23"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,193,159,1)"}},"hoveron":"points","name":"(AO,23)","legendgroup":"(AO,23)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0075208811601624,1.960825455384329,3.0520338903926314,3.9910306221107019,4.997731331358664,6.0186786085413768],"y":[0,0.10000000000000001,0.25,0.33333333333333337,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 26","round_n: 2<br />mean_gest_align_prop: 0.10000<br />condition: AO<br />pair: 26","round_n: 3<br />mean_gest_align_prop: 0.25000<br />condition: AO<br />pair: 26","round_n: 4<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 26","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 26","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 26"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,190,203,1)"}},"hoveron":"points","name":"(AO,26)","legendgroup":"(AO,26)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0136580417538061,1.9686294752219693,2.9631975142750888,4.0318873627856373,4.9552486959472297,6.0582223749533295],"y":[0.066666666666666666,0.3439153439153439,0.2361111111111111,0.19444444444444445,0.33333333333333337,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.06667<br />condition: AO<br />pair: 29","round_n: 2<br />mean_gest_align_prop: 0.34392<br />condition: AO<br />pair: 29","round_n: 3<br />mean_gest_align_prop: 0.23611<br />condition: AO<br />pair: 29","round_n: 4<br />mean_gest_align_prop: 0.19444<br />condition: AO<br />pair: 29","round_n: 5<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 29","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 29"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,181,238,1)"}},"hoveron":"points","name":"(AO,29)","legendgroup":"(AO,29)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.98200923100579529,2.0181479985034092,3.0533115089591591,4.008438834249973,5.0334676748700442,5.9785738947242502],"y":[0,0.33333333333333337,0,0.66666666666666674,0,0.33333333333333337],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 32","round_n: 2<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 32","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 32","round_n: 4<br />mean_gest_align_prop: 0.66667<br />condition: AO<br />pair: 32","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 32","round_n: 6<br />mean_gest_align_prop: 0.33333<br />condition: AO<br />pair: 32"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(24,163,255,1)"}},"hoveron":"points","name":"(AO,32)","legendgroup":"(AO,32)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0283730585034936,2.0272538077738136,3.0102606567135082,4.026821445692331,5.0626927453745161,5.9993123066797853],"y":[0,0.092592592592592587,0,0.0625,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35","round_n: 2<br />mean_gest_align_prop: 0.09259<br />condition: AO<br />pair: 35","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35","round_n: 4<br />mean_gest_align_prop: 0.06250<br />condition: AO<br />pair: 35","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 35"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(162,139,255,1)"}},"hoveron":"points","name":"(AO,35)","legendgroup":"(AO,35)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.97856374997645612,1.9953408515220508,3.0060664232214913,3.9442615073686467,4.9326353711029514,6.0298371486458926],"y":[0,0.083333333333333329,0,0,0,0],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 2<br />mean_gest_align_prop: 0.08333<br />condition: AO<br />pair: 38","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 5<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38","round_n: 6<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 38"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(219,114,251,1)"}},"hoveron":"points","name":"(AO,38)","legendgroup":"(AO,38)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0469388613570481,2.0241323988325894,2.9599475501943378,3.9858028075890615,4.9373286499176174,5.9552236260753126],"y":[0,0.5,0,0,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 41","round_n: 2<br />mean_gest_align_prop: 0.50000<br />condition: AO<br />pair: 41","round_n: 3<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 41","round_n: 4<br />mean_gest_align_prop: 0.00000<br />condition: AO<br />pair: 41","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 41","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 41"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,98,222,1)"}},"hoveron":"points","name":"(AO,41)","legendgroup":"(AO,41)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.0660987958451733,2.0297036061435936,2.9656656637694687,4.017989009185694,4.9748664781218395,5.9715006209304553],"y":[0.1090909090909091,0.50793650793650791,0.63833333333333331,0.58333333333333337,0.46250000000000002,0.037037037037037035],"text":["round_n: 1<br />mean_gest_align_prop: 0.10909<br />condition: AO<br />pair: 44","round_n: 2<br />mean_gest_align_prop: 0.50794<br />condition: AO<br />pair: 44","round_n: 3<br />mean_gest_align_prop: 0.63833<br />condition: AO<br />pair: 44","round_n: 4<br />mean_gest_align_prop: 0.58333<br />condition: AO<br />pair: 44","round_n: 5<br />mean_gest_align_prop: 0.46250<br />condition: AO<br />pair: 44","round_n: 6<br />mean_gest_align_prop: 0.03704<br />condition: AO<br />pair: 44"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,99,180,1)"}},"hoveron":"points","name":"(AO,44)","legendgroup":"(AO,44)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.93091273735743019,2.025647005075589,3.0508156478265303,3.980474184639752,5.0663108218042181,6.0525911922613158],"y":[0.083333333333333329,0.8214285714285714,null,0.5,null,1],"text":["round_n: 1<br />mean_gest_align_prop: 0.08333<br />condition: AO<br />pair: 47","round_n: 2<br />mean_gest_align_prop: 0.82143<br />condition: AO<br />pair: 47","round_n: 3<br />mean_gest_align_prop: 1.11111<br />condition: AO<br />pair: 47","round_n: 4<br />mean_gest_align_prop: 0.50000<br />condition: AO<br />pair: 47","round_n: 5<br />mean_gest_align_prop:     NaN<br />condition: AO<br />pair: 47","round_n: 6<br />mean_gest_align_prop: 1.00000<br />condition: AO<br />pair: 47"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(169,169,169,1)","opacity":0.69999999999999996,"size":1.8897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(252,113,129,1)"}},"hoveron":"points","name":"(AO,47)","legendgroup":"(AO,47)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],"y":[0.125,0.27873563218390807,0.076923076923076927,0.22727272727272727,0,0,0.30769230769230771,0.05000000000000001,0.18162393162393162,0.33589743589743587,0.098015873015873028,0,0,0.0089285714285714315,0.09625668449197862,0.22857142857142854,0,0.63888888888888884,0,0.37121212121212122,0.35185185185185186,0.28624338624338624,0.90714285714285714,0,0.33194444444444443,0.27777777777777779,0.39166666666666672,0.34999999999999998,0.625,0.2503968253968254,0.66666666666666663,0.66666666666666674,0.75,0.7857142857142857,0.61952380952380959,0,0.83333333333333337,0.75,0.64814814814814814,0.56666666666666665,0.69666666666666666,null,0.625,1,0.17857142857142858,0.90000000000000002,null,null,0.5,0.55555555555555558,0,null,0.75,0.6333333333333333,0.58333333333333337,0.77777777777777779,0.625,0.82222222222222219,0.33333333333333331,0.5,0,null,0.58333333333333337,0.79166666666666663,null,null,0.43333333333333329,0.25,0,0.20833333333333331,null,null,0.53125,0.63888888888888884,null,null,null,0.125,0.5,0.83333333333333326,null,null,null,0.44444444444444442,null,0.41666666666666663,1,0.875,0.61111111111111116,0.60416666666666663],"hoverinfo":"y","type":"box","fillcolor":"rgba(237,107,6,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(SymAV,1)","legendgroup":"(SymAV,1)","showlegend":false,"xaxis":"x","yaxis":"y","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],"y":[0.010416666666666666,0.13585164835164837,0,0.11666666666666665,0,0.01666666666666667,0,0.15329670329670328,0.11666666666666667,0,0.19851851851851851,0,0,0.22205128205128205,0.30357142857142855,0.4263392857142857,0.55238095238095242,0.44,1,0,0.73333333333333328,0.52900432900432903,1,0,0.63888888888888884,0.5892857142857143,1,0,0.20032467532467532,0.49603174603174605,null,0.94444444444444442,0.33333333333333337,0.43333333333333329,0.78333333333333344,0.75,0.4642857142857143,null,null,0.6166666666666667,null,0,0.28667929292929295,0,null,0.19999999999999998,0.25,0.77083333333333337,null,0.3571428571428571,0.5,null,null,0.53703703703703698,0.79166666666666663,null,0,null,0.63888888888888884,0,null,0.84722222222222221,1,0.59999999999999998,0.16666666666666669,0.22857142857142859,null,0,0.8214285714285714,0.75,null,0.22222222222222221,0.5,null,0.41666666666666663,null,0.33333333333333331,null,0,0.375,null,null,0.72380952380952379,0.45833333333333337,0.4861111111111111,0.72222222222222221,null,1,1,0],"hoverinfo":"y","type":"box","fillcolor":"rgba(0,120,106,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AsymAV,2)","legendgroup":"(AsymAV,2)","showlegend":false,"xaxis":"x2","yaxis":"y","frame":null},{"x":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],"y":[0,0,0,0,0,0.066666666666666666,0.07575757575757576,0.125,0,0,0.06709956709956709,0.1090909090909091,0.66666666666666674,0.083333333333333329,0.045454545454545449,0.083333333333333329,0.33333333333333337,0.092592592592592587,0,null,0.50357142857142856,0.3439153439153439,0.5,null,0.8214285714285714,0,0.10000000000000001,0.50793650793650791,0.47160493827160493,0.016666666666666666,0.63833333333333331,0,0,null,null,0.47499999999999998,0,0.25,0,null,0,0.2361111111111111,0.20714285714285713,0.75,0.77272727272727271,0,null,0.58333333333333337,null,1,0,0.5,0,0.66666666666666674,null,0.33333333333333337,0.0625,0.19444444444444445,0.66666666666666663,0.59259259259259256,null,0.46250000000000002,0,0,0.33333333333333337,0,null,0.51041666666666663,0,0.5,null,0.055555555555555559,null,null,null,1,0,0,null,0.33333333333333337,0,1,0.41666666666666663,0,0.037037037037037035,null,null,0,0,1],"hoverinfo":"y","type":"box","fillcolor":"rgba(169,169,169,0.7)","marker":{"opacity":null,"outliercolor":"rgba(0,0,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"},"size":5.6692913385826778},"line":{"color":"rgba(51,51,51,1)","width":1.8897637795275593},"name":"(AO,3)","legendgroup":"(AO,3)","showlegend":false,"xaxis":"x3","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6],"y":[0.13713469898752886,0.36385387488328663,0.63612351190476191,0.64391025641025634,0.55104166666666665,0.57870370370370372],"text":["round_n: 1<br />mean_gest_align_prop: 0.1371<br />condition: white","round_n: 2<br />mean_gest_align_prop: 0.3639<br />condition: white","round_n: 3<br />mean_gest_align_prop: 0.6361<br />condition: white","round_n: 4<br />mean_gest_align_prop: 0.6439<br />condition: white","round_n: 5<br />mean_gest_align_prop: 0.5510<br />condition: white","round_n: 6<br />mean_gest_align_prop: 0.5787<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6],"y":[0.12568430740072528,0.46368670089600317,0.54905723905723902,0.5083333333333333,0.51882613510520481,0.54120370370370374],"text":["round_n: 1<br />mean_gest_align_prop: 0.1257<br />condition: white","round_n: 2<br />mean_gest_align_prop: 0.4637<br />condition: white","round_n: 3<br />mean_gest_align_prop: 0.5491<br />condition: white","round_n: 4<br />mean_gest_align_prop: 0.5083<br />condition: white","round_n: 5<br />mean_gest_align_prop: 0.5188<br />condition: white","round_n: 6<br />mean_gest_align_prop: 0.5412<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6],"y":[0.064588744588744626,0.32353852109949671,0.39681372549019606,0.35062893081761004,0.24166666666666661,0.17982456140350878],"text":["round_n: 1<br />mean_gest_align_prop: 0.0646<br />condition: white","round_n: 2<br />mean_gest_align_prop: 0.3235<br />condition: white","round_n: 3<br />mean_gest_align_prop: 0.3968<br />condition: white","round_n: 4<br />mean_gest_align_prop: 0.3506<br />condition: white","round_n: 5<br />mean_gest_align_prop: 0.2417<br />condition: white","round_n: 6<br />mean_gest_align_prop: 0.1798<br />condition: white"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,255,255,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":55.71692818596928,"r":39.71692818596928,"b":61.966824408468248,"l":80.563752594437545},"font":{"color":"rgba(0,0,0,1)","family":"sans","size":19.925280199252807},"xaxis":{"domain":[0,0.31850797604222258],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,6.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6"],"tickvals":[1,2,3,3.9999999999999996,5,6],"categoryorder":"array","categoryarray":["1","2","3","4","5","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"annotations":[{"text":"<b> Round <\/b>","x":0.5,"y":0,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"top","annotationType":"axis","yshift":-32.54462432544625},{"text":"<b> Mean gest align rate <\/b>","x":0,"y":0.5,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":17.268576172685762},"xref":"paper","yref":"paper","textangle":-90,"xanchor":"right","yanchor":"center","annotationType":"axis","xshift":-51.141552511415533},{"text":"SymAV","x":0.15925398802111129,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"sans","size":18.596928185969279},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"AsymAV","x":0.5,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"sans","size":18.596928185969279},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"AO","x":0.84074601197888865,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"sans","size":18.596928185969279},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.050000000000000003,1.05],"tickmode":"array","ticktext":["0.00","0.25","0.50","0.75","1.00"],"tickvals":[0,0.25,0.5,0.75,1],"categoryorder":"array","categoryarray":["0.00","0.25","0.50","0.75","1.00"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969286},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":true,"gridcolor":"rgba(190,190,190,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":0.31850797604222258,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":0.31850797604222258,"y0":0,"y1":34.537152345371531,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0.34815869062444404,"x1":0.65184130937555596,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0.34815869062444404,"x1":0.65184130937555596,"y0":0,"y1":34.537152345371531,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0.6814920239577773,"x1":1,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0.6814920239577773,"x1":1,"y0":0,"y1":34.537152345371531,"yanchor":1,"ysizemode":"pixel"}],"xaxis2":{"type":"linear","autorange":false,"range":[0.40000000000000002,6.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6"],"tickvals":[1,2,3,3.9999999999999996,5,6],"categoryorder":"array","categoryarray":["1","2","3","4","5","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"domain":[0.34815869062444404,0.65184130937555596],"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis3":{"type":"linear","autorange":false,"range":[0.40000000000000002,6.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6"],"tickvals":[1,2,3,3.9999999999999996,5,6],"categoryorder":"array","categoryarray":["1","2","3","4","5","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":4.9813200498132018,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0,"showgrid":false,"domain":[0.6814920239577773,1],"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"rgba(0,0,0,1)","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"sans","size":18.596928185969279}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"148a478d5e3e7":{"x":{},"y":{},"fill":{},"colour":{},"type":"scatter"},"148a4226590ab":{"x":{},"y":{},"fill":{}},"148a439fcdc31":{"x":{},"y":{},"fill":{}}},"cur_data":"148a478d5e3e7","visdat":{"148a478d5e3e7":["function (y) ","x"],"148a4226590ab":["function (y) ","x"],"148a439fcdc31":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 <br>
 
-## 8.2 Prepare data
+## 9.2 Prepare data
 
 To model the proportion of gestural alignment, we need to remove trials
 where the number of iconic gestures is 0. This is because dividing any
@@ -2099,24 +2453,31 @@ running.
 df_gest_align_posreg_prop = df_trial_info %>%
   filter(num_iconic_gestures > 0)
 
-print(paste0("Number of rows before removing trials with no iconic gestures: ", nrow(df_trial_info)))
+print(paste0("Number of rows before removing trials with no iconic gestures: ", 
+             nrow(df_trial_info)))
 ```
 
     ## [1] "Number of rows before removing trials with no iconic gestures: 4315"
 
 ``` r
-print(paste0("Number of rows before after trials with no iconic gestures: ", nrow(df_gest_align_posreg_prop)))
+print(paste0("Number of rows after removing trials with no iconic gestures: ",
+             nrow(df_gest_align_posreg_prop)))
 ```
 
-    ## [1] "Number of rows before after trials with no iconic gestures: 1264"
+    ## [1] "Number of rows after removing trials with no iconic gestures: 1264"
 
 ``` r
-print(paste0("Number of removed trials: ", nrow(df_trial_info) - nrow(df_gest_align_posreg_prop)))
+print(paste0("Number of removed trials: ", 
+             nrow(df_trial_info) - nrow(df_gest_align_posreg_prop)))
 ```
 
     ## [1] "Number of removed trials: 3051"
 
-## 8.3 Prior specification
+<br>
+
+## 9.3 Negative binomial regression models
+
+### 9.3.1 Prior specification
 
 We will set priors based on Akamine et al. (2024). As mentioned in the
 previous analysis, they detected 4413 iconic gestures and 1086 instances
@@ -2155,11 +2516,9 @@ priors_rslope_gest_align_prop_zinb = c(
 
 <br>
 
-## 8.4 Negative binomial regression models
+### 9.3.2 Model comparison
 
-### 8.4.1 Model 3: \[ppB\] condition \* round + lex_align_c
-
-#### Model effect: round
+#### Round
 
 ``` r
 nb_align_rate_cond_round = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
@@ -2173,7 +2532,7 @@ nb_align_rate_cond_round = brm(num_gestural_align | rate(num_iconic_gestures) ~
                                warmup = nwu, iter = niter,
                                control = list(adapt_delta = 0.9, 
                                               max_treedepth = 15),
-                               file = "models/speakerB/nb_align_rate_cond_round")
+                               file = "models/speakerB/gest_alignment/nb_align_rate_cond_round")
 
 nb_align_rate_cond_round_c = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
                                    1 + condition * round_c + lex_align_c + role +
@@ -2186,7 +2545,7 @@ nb_align_rate_cond_round_c = brm(num_gestural_align | rate(num_iconic_gestures) 
                                  warmup = nwu, iter = niter,
                                  control = list(adapt_delta = 0.9, 
                                                 max_treedepth = 15),
-                                 file = "models/speakerB/nb_align_rate_cond_round_c")
+                                 file = "models/speakerB/gest_alignment/nb_align_rate_cond_round_c")
 
 nb_align_rate_cond_round_log = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
                                      1 + condition * log_round_c + lex_align_c + role +
@@ -2199,29 +2558,29 @@ nb_align_rate_cond_round_log = brm(num_gestural_align | rate(num_iconic_gestures
                                    warmup = nwu, iter = niter,
                                    control = list(adapt_delta = 0.9, 
                                                   max_treedepth = 15),
-                                   file = "models/speakerB/nb_align_rate_cond_round_log")
+                                   file = "models/speakerB/gest_alignment/nb_align_rate_cond_round_log")
 
 
 
 ### loo compare
-if (!file.exists("models/speakerB/loo_nb_align_rate_cond_round.rds")){
+if (!file.exists("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round.rds")){
   nb_cond_round_loo = loo(nb_align_rate_cond_round)
-  saveRDS(nb_cond_round_loo, file = "models/speakerB/loo_nb_align_rate_cond_round.rds")
+  saveRDS(nb_cond_round_loo, file = "models/speakerB/gest_alignment/loo_nb_align_rate_cond_round.rds")
 }
 
-if (!file.exists("models/speakerB/loo_nb_align_rate_cond_round_c.rds")){
+if (!file.exists("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round_c.rds")){
   nb_cond_round_c_loo = loo(nb_align_rate_cond_round_c)
-  saveRDS(nb_cond_round_c_loo, file = "models/speakerB/loo_nb_align_rate_cond_round_c.rds")
+  saveRDS(nb_cond_round_c_loo, file = "models/speakerB/gest_alignment/loo_nb_align_rate_cond_round_c.rds")
 }
 
-if (!file.exists("models/speakerB/loo_nb_align_rate_cond_round_log.rds")){
+if (!file.exists("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round_log.rds")){
   nb_cond_round_log_loo = loo(nb_align_rate_cond_round_log)
-  saveRDS(nb_cond_round_log_loo, file = "models/speakerB/loo_nb_align_rate_cond_round_log.rds")
+  saveRDS(nb_cond_round_log_loo, file = "models/speakerB/gest_alignment/loo_nb_align_rate_cond_round_log.rds")
 }
 
-nb_cond_round_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round.rds")
-nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round_c.rds")
-nb_cond_round_log_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round_log.rds")
+nb_cond_round_loo = readRDS("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round.rds")
+nb_cond_round_c_loo = readRDS("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round_c.rds")
+nb_cond_round_log_loo = readRDS("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round_log.rds")
 
 loo_compare(nb_cond_round_loo, nb_cond_round_c_loo, nb_cond_round_log_loo)
 ```
@@ -2239,7 +2598,7 @@ a predictor for further analyses.
 
 <br>
 
-#### Model effect: ZI or not
+#### ZI or not
 
 ``` r
 zinb_align_rate_cond_round = brm(num_gestural_align ~ 
@@ -2253,18 +2612,17 @@ zinb_align_rate_cond_round = brm(num_gestural_align ~
                                  warmup = nwu, iter = niter,
                                  control = list(adapt_delta = 0.9, 
                                                 max_treedepth = 15),
-                                 file = "models/speakerB/zinb_align_rate_cond_round")
-
+                                 file = "models/speakerB/gest_alignment/zinb_align_rate_cond_round")
 
 
 ### loo compare
-if (!file.exists("models/speakerB/loo_zinb_align_rate_cond_round.rds")){
+if (!file.exists("models/speakerB/gest_alignment/loo_zinb_align_rate_cond_round.rds")){
   zinb_cond_round_c_loo = loo(zinb_align_rate_cond_round)
-  saveRDS(zinb_cond_round_c_loo, file = "models/speakerB/loo_zinb_align_rate_cond_round.rds")
+  saveRDS(zinb_cond_round_c_loo, file = "models/speakerB/gest_alignment/loo_zinb_align_rate_cond_round.rds")
 }
 
-nb_cond_round_c_loo = readRDS("models/speakerB/loo_nb_align_rate_cond_round.rds")
-zinb_cond_round_c_loo = readRDS("models/speakerB/loo_zinb_align_rate_cond_round.rds")
+nb_cond_round_c_loo = readRDS("models/speakerB/gest_alignment/loo_nb_align_rate_cond_round.rds")
+zinb_cond_round_c_loo = readRDS("models/speakerB/gest_alignment/loo_zinb_align_rate_cond_round.rds")
 
 loo_compare(nb_cond_round_c_loo, zinb_cond_round_c_loo)
 ```
@@ -2279,7 +2637,7 @@ regression models for further analyses.
 
 <br>
 
-#### Prior predictive check
+### 9.3.3 Prior predictive check
 
 ``` r
 nb_gest_align_prop_prior = brm(num_gestural_align | rate(num_iconic_gestures) ~
@@ -2291,46 +2649,44 @@ nb_gest_align_prop_prior = brm(num_gestural_align | rate(num_iconic_gestures) ~
                                sample_prior = "only",
                                control = list(adapt_delta = 0.9, 
                                               max_treedepth = 20),
-                               file = "models/speakerB/nb_gest_align_prop_prior")
+                               file = "models/speakerB/gest_alignment/nb_gest_align_prop_prior")
 
-pp_check(nb_gest_align_prop_prior, ndraws = 100, type = "bars") +
-  coord_cartesian(xlim = c(0, 20),
-                  ylim = c(0, 3000))
+pp_check(nb_gest_align_prop_prior, ndraws = 100, 
+         type = "bars_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 10))
 ```
 
-![](figures_md/speakerB/gest_alignment/pp_check_m3-1.png)<!-- -->
+![](figures_md/speakerB/gest_alignment/pp_check_rate-1.png)<!-- -->
 
-The prior predictive check shows that the model expects fewer amount of
-2, 3, and 4. This suggests that the zero-inflation prior may be too
-large or the mean for the intercept prior is too low. We will check the
-prior-posterior update plot and posterior predictive check to see if the
-model generates data that are similar to the observed data. If not, we
-will consider modifying the priors.
+The prior predictive check shows that the model generates data that are
+somewhat similar to the observed data, demonstrating that the priors are
+reasonable.
 
 <br>
 
-#### Fit the model
+### 9.3.4 Fit the model
 
 ``` r
-nb_align_rate_cond_round = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
-                                 1 + condition * round + lex_align_c + role +
-                                 (1+round|pair) + (1|target),
-                               family = negbinomial(),
-                               prior = priors_rslope_gest_align_prop,
-                               data = df_gest_align_posreg_prop,
-                               sample_prior = T,
-                               save_pars = save_pars(all = TRUE),
-                               warmup = nwu, iter = niter,
-                               control = list(adapt_delta = 0.9, 
-                                              max_treedepth = 15),
-                               file = "models/speakerB/nb_align_rate_cond_round")
+nb_align_rate_cond_round = 
+  brm(num_gestural_align | rate(num_iconic_gestures) ~ 
+        1 + condition * round + lex_align_c + role +
+        (1+round|pair) + (1|target),
+      family = negbinomial(),
+      prior = priors_rslope_gest_align_prop,
+      data = df_gest_align_posreg_prop,
+      sample_prior = T,
+      save_pars = save_pars(all = TRUE),
+      warmup = nwu, iter = niter,
+      control = list(adapt_delta = 0.9, 
+                     max_treedepth = 15),
+      file = "models/speakerB/gest_alignment/nb_align_rate_cond_round")
 
 model = nb_align_rate_cond_round
 summary(model)
 ```
 
     ##  Family: negbinomial 
-    ##   Links: mu = log; shape = identity 
+    ##   Links: mu = log 
     ## Formula: num_gestural_align | rate(num_iconic_gestures) ~ 1 + condition * round + lex_align_c + role + (1 + round | pair) + (1 | target) 
     ##    Data: df_gest_align_posreg_prop (Number of observations: 1264) 
     ##   Draws: 4 chains, each with iter = 20000; warmup = 2000; thin = 1;
@@ -2440,35 +2796,7 @@ summary(model)
     ## scale reduction factor on split chains (at convergence, Rhat = 1).
 
 ``` r
-bayestestR::hdi(model)
-```
-
-    ## Highest Density Interval
-    ## 
-    ## Parameter                  |        95% HDI
-    ## -------------------------------------------
-    ## (Intercept)                | [-1.35, -0.87]
-    ## conditionAO_Asym           | [ 0.03,  0.99]
-    ## conditionAsym_Sym          | [-0.45,  0.47]
-    ## roundR12                   | [ 1.42,  1.97]
-    ## roundR23                   | [ 0.18,  0.55]
-    ## roundR34                   | [-0.22,  0.21]
-    ## roundR45                   | [-0.35,  0.17]
-    ## roundR56                   | [-0.46,  0.18]
-    ## lex_align_c                | [ 0.00,  0.11]
-    ## role1                      | [ 0.57,  0.95]
-    ## conditionAO_Asym:roundR12  | [-0.69,  0.45]
-    ## conditionAsym_Sym:roundR12 | [-0.65,  0.35]
-    ## conditionAO_Asym:roundR23  | [-0.43,  0.40]
-    ## conditionAsym_Sym:roundR23 | [-0.16,  0.59]
-    ## conditionAO_Asym:roundR34  | [-0.50,  0.42]
-    ## conditionAsym_Sym:roundR34 | [-0.35,  0.48]
-    ## conditionAO_Asym:roundR45  | [-0.39,  0.67]
-    ## conditionAsym_Sym:roundR45 | [-0.58,  0.38]
-    ## conditionAO_Asym:roundR56  | [-0.20,  1.06]
-    ## conditionAsym_Sym:roundR56 | [-0.48,  0.63]
-
-``` r
+# bayestestR::hdi(model)
 # bayestestR::hdi(model, ci = 0.89)
 ```
 
@@ -2479,30 +2807,148 @@ and R2–R3 and stabilized afterwards.
 
 <br>
 
-#### Hypothesis testing: Bayes factor
+### 9.3.5 Posterior predictive check
+
+``` r
+pp_check(model, ndraws = 100, 
+         type = "bars_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 5))
+```
+
+![](figures_md/speakerB/gest_alignment/ppd_rate-1.png)<!-- -->
+
+``` r
+pp_check(model, ndraws = 100, 
+         type = "bars_grouped", group = "round") +
+  coord_cartesian(xlim = c(0, 5))
+```
+
+![](figures_md/speakerB/gest_alignment/ppd_rate-2.png)<!-- -->
+
+Although the model prediction is not perfect, this model had a higher
+predictive power than the zero-inflated negative binomial model and
+generates data that are quite similar to the observations. As such, we
+will use this model.
+
+<br>
+
+### 9.3.6 Posterior distributions
+
+``` r
+df_post_beta_lex = posterior_beta(zinb_align_cond_round, 
+                                  round_int = FALSE, lex_int = TRUE) %>% 
+  dplyr::select(.chain, .draw, .variable, .value) %>%
+  filter(grepl("N. lex align", .variable)) %>% 
+  mutate(component = "N. lex align")
+
+df_post_beta = posterior_beta(model) %>% 
+  dplyr::select(-.iteration, -b_role1)
+
+# replace the lex_align_c coefficient with the one from the model on count data
+df_post_beta_new = df_post_beta %>% 
+  filter(!grepl("N. lex align", .variable)) %>%
+  rbind(., df_post_beta_lex)
+
+# summarize the posterior distribution
+post_beta_summary = df_post_beta_new %>%
+  group_by(.variable) %>%
+  summarize(mean = mean(.value),
+            est_error = sd(.value),
+            lci = quantile(.value, 0.025),
+            uci = quantile(.value, 0.975))
+post_beta_summary
+```
+
+    ## # A tibble: 28 × 5
+    ##    .variable              mean est_error      lci    uci
+    ##    <fct>                 <dbl>     <dbl>    <dbl>  <dbl>
+    ##  1 Intercept          -1.11       0.122  -1.36    -0.880
+    ##  2 AO--AsymAV          0.505      0.246   0.0169   0.981
+    ##  3 AsymAV--SymAV       0.0215     0.233  -0.435    0.486
+    ##  4 AO--SymAV           0.527      0.263   0.00403  1.04 
+    ##  5 R1--R2              1.70       0.141   1.42     1.97 
+    ##  6 R2--R3              0.363      0.0951  0.178    0.550
+    ##  7 R3--R4             -0.00450    0.108  -0.218    0.207
+    ##  8 R4--R5             -0.0989     0.132  -0.360    0.161
+    ##  9 R5--R6             -0.145      0.164  -0.467    0.178
+    ## 10 AO--AsymAV: R1--R2 -0.134      0.291  -0.706    0.440
+    ## # ℹ 18 more rows
+
+``` r
+# visualize the posterior distribution
+p_pd = plot_posterior(df_post_beta_new, interaction = F,
+                      title = "C. Posterior distributions for the effects on gestural alignment",
+                      xlim_cond = 1.5, xlim_round = 2, 
+                      xlim_lex = 0.4, ncol_wrap = 3)
+p_pd
+```
+
+![](figures_md/speakerB/gest_alignment/post_rate-1.png)<!-- -->
+
+<br>
+
+### 9.3.7 Prior-posterior update plot
+
+``` r
+post_sample_lex = as_draws_df(zinb_align_cond_round) %>% 
+  as_tibble() %>% 
+  dplyr::select(starts_with("b_lex_align_c") | "prior_b_lex_align_c") %>% 
+  mutate(ao_sym_lex = `b_lex_align_c:conditionAO_Asym` + `b_lex_align_c:conditionAsym_Sym`)
+
+post_sample = as_draws_df(model) %>% 
+  as_tibble() %>% 
+  dplyr::select(!starts_with(c("r_", "sd_", "cor_", "z_", "L_"))) %>% 
+  mutate(ao_sym = b_conditionAO_Asym + b_conditionAsym_Sym,
+         ao_sym_round12 = `b_conditionAO_Asym:roundR12` + `b_conditionAsym_Sym:roundR12`,
+         ao_sym_round23 = `b_conditionAO_Asym:roundR23` + `b_conditionAsym_Sym:roundR23`,
+         ao_sym_round34 = `b_conditionAO_Asym:roundR34` + `b_conditionAsym_Sym:roundR34`,
+         ao_sym_round45 = `b_conditionAO_Asym:roundR45` + `b_conditionAsym_Sym:roundR45`,
+         ao_sym_round56 = `b_conditionAO_Asym:roundR56` + `b_conditionAsym_Sym:roundR56`,
+         prior_lex_align = post_sample_lex$prior_b_lex_align_c,
+         lex_align = post_sample_lex$b_lex_align_c,
+         ao_asym_lex = post_sample_lex$`b_lex_align_c:conditionAO_Asym`, 
+         asym_sym_lex = post_sample_lex$`b_lex_align_c:conditionAsym_Sym`)
+
+pp_update_rate = pp_update_plot(post_sample, model_type="nb", fam_par=FALSE, ncol=5)
+pp_update_rate
+```
+
+![](figures_md/speakerB/gest_alignment/update_rate-1.png)<!-- -->
+
+<br>
+
+### 9.3.8 Hypothesis testing: Bayes factor
 
 ``` r
 ### varying priors for sensitivity analysis
-prior_size = c("xs", "s", "l", "xl")
-prior_sd = c(0.1, 0.3, 0.7, 1)
-bfs_cond_ao_asym = c()
-bfs_cond_asym_sym = c()
-bfs_round12 = c()
-bfs_round23 = c()
-bfs_round34 = c()
-bfs_round45 = c()
-bfs_round56 = c()
-bfs_lex_align = c()
-bfs_ao_asym_round12 = c()
-bfs_ao_asym_round23 = c()
-bfs_ao_asym_round34 = c()
-bfs_ao_asym_round45 = c()
-bfs_ao_asym_round56 = c()
-bfs_asym_sym_round12 = c()
-bfs_asym_sym_round23 = c()
-bfs_asym_sym_round34 = c()
-bfs_asym_sym_round45 = c()
-bfs_asym_sym_round56 = c()
+prior_size = c("xs", "s", "m", "l", "xl")
+prior_sd = c(0.1, 0.3, 0.5, 0.7, 1)
+
+
+### list of hypotheses
+hps = c("conditionAO_Asym = 0", "conditionAsym_Sym = 0",
+       "conditionAO_Asym + conditionAsym_Sym = 0",
+       "roundR12 = 0", "roundR23 = 0", "roundR34 = 0", 
+       "roundR45 = 0", "roundR56 = 0",
+       "conditionAO_Asym:roundR12 = 0", "conditionAO_Asym:roundR23 = 0",
+       "conditionAO_Asym:roundR34 = 0", "conditionAO_Asym:roundR45 = 0", 
+       "conditionAO_Asym:roundR56 = 0",
+       "conditionAsym_Sym:roundR12 = 0", "conditionAsym_Sym:roundR23 = 0",
+       "conditionAsym_Sym:roundR34 = 0", "conditionAsym_Sym:roundR45 = 0", 
+       "conditionAsym_Sym:roundR56 = 0",
+       "conditionAO_Asym:roundR12 + conditionAsym_Sym:roundR12 = 0",
+       "conditionAO_Asym:roundR23 + conditionAsym_Sym:roundR23 = 0",
+       "conditionAO_Asym:roundR34 + conditionAsym_Sym:roundR34 = 0",
+       "conditionAO_Asym:roundR45 + conditionAsym_Sym:roundR45 = 0",
+       "conditionAO_Asym:roundR56 + conditionAsym_Sym:roundR56 = 0")
+effects = c("AO--AsymAV", "AsymAV--SymAV", "AO--SymAV",
+            "R1--R2", "R2--R3", "R3--R4", "R4--R5", "R5--R6",
+            "AO--AsymAV: R1--R2", "AO--AsymAV: R2--R3", "AO--AsymAV: R3--R4",
+            "AO--AsymAV: R4--R5", "AO--AsymAV: R5--R6",
+            "AsymAV--SymAV: R1--R2", "AsymAV--SymAV: R2--R3", "AsymAV--SymAV: R3--R4",
+            "AsymAV--SymAV: R4--R5", "AsymAV--SymAV: R5--R6",
+            "AO--SymAV: R1--R2", "AO--SymAV: R2--R3", "AO--SymAV: R3--R4", 
+            "AO--SymAV: R4--R5", "AO--SymAV: R5--R6")
 
 for (i in 1:length(prior_sd)){
   priors = c(
@@ -2512,7 +2958,8 @@ for (i in 1:length(prior_sd)){
     prior(lkj(2), class = cor),
     prior(normal(0, 50), class = shape))
   
-  fname = paste0("models/speakerB/nb_align_rate_cond_round_", prior_size[i])
+  fname = paste0("models/speakerB/gest_alignment/nb_align_rate_cond_round_", prior_size[i])
+  fname = gsub("_m", "", fname) # remove "_m" for the medium prior
   
   fit = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
               1 + condition * round + lex_align_c + role +
@@ -2527,915 +2974,912 @@ for (i in 1:length(prior_sd)){
                            max_treedepth = 15),
             file = fname)
   
-  ### BF for visibility conditions
-  # ao - asym
-  h = hypothesis(fit, "conditionAO_Asym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_cond_ao_asym = c(bfs_cond_ao_asym, bf)
-  
-  # asym - sym
-  h = hypothesis(fit, "conditionAsym_Sym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_cond_asym_sym = c(bfs_cond_asym_sym, bf)
-  
-  ### BF for rounds
-  # R1 - R2
-  h = hypothesis(model, "roundR12 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_round12 = c(bfs_round12, bf)
-  
-  # R2 - R3
-  h = hypothesis(model, "roundR23 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_round23 = c(bfs_round23, bf)
-  
-  # R3 - R4
-  h = hypothesis(model, "roundR34 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_round34 = c(bfs_round34, bf)
-  
-  # R4 - R5
-  h = hypothesis(model, "roundR45 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_round45 = c(bfs_round45, bf)
-  
-  # R5 - R6
-  h = hypothesis(model, "roundR56 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_round56 = c(bfs_round56, bf)
-  
-  ### BF for N. lex alignment
-  h = hypothesis(fit, "lex_align_c = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_lex_align = c(bfs_lex_align, bf)
-  
-  ### BF for interaction
-  # ao - asym: R1 - R2
-  h = hypothesis(model, "conditionAO_Asym:roundR12 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_asym_round12 = c(bfs_ao_asym_round12, bf)
-  
-  # ao - asym: R2 - R3
-  h = hypothesis(model, "conditionAO_Asym:roundR23 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_asym_round23 = c(bfs_ao_asym_round23, bf)
-  
-  # ao - asym: R3 - R4
-  h = hypothesis(model, "conditionAO_Asym:roundR34 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_asym_round34 = c(bfs_ao_asym_round34, bf)
-  
-  # ao - asym: R4 - R5
-  h = hypothesis(model, "conditionAO_Asym:roundR45 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_asym_round45 = c(bfs_ao_asym_round45, bf)
-  
-  # ao - asym: R5 - R6
-  h = hypothesis(model, "conditionAO_Asym:roundR56 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_asym_round56 = c(bfs_ao_asym_round56, bf)
-  
-  # asym - sym: R1 - R2
-  h = hypothesis(model, "conditionAsym_Sym:roundR12 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_asym_sym_round12 = c(bfs_asym_sym_round12, bf)
-  
-  # asym - sym: R2 - R3
-  h = hypothesis(model, "conditionAsym_Sym:roundR23 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_asym_sym_round23 = c(bfs_asym_sym_round23, bf)
-  
-  # asym - sym: R3 - R4
-  h = hypothesis(model, "conditionAsym_Sym:roundR34 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_asym_sym_round34 = c(bfs_asym_sym_round34, bf)
-  
-  # asym - sym: R4 - R5
-  h = hypothesis(model, "conditionAsym_Sym:roundR45 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_asym_sym_round45 = c(bfs_asym_sym_round45, bf)
-  
-  # asym - sym: R5 - R6
-  h = hypothesis(model, "conditionAsym_Sym:roundR56 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_asym_sym_round56 = c(bfs_asym_sym_round56, bf)
+  ### compute BFs for all hypotheses and store them as dataframe
+  for (j in 1:length(hps)){
+    h = hypothesis(fit, hps[j])
+    # transform the result to dataframe
+    result = data_frame(h$hypothesis) %>%
+      mutate(size = prior_size[i],
+             sd = prior_sd[i],
+             Effect = effects[j])
+    # combine the result
+    if (i==1 & j==1){
+      df_results = result
+    } else {
+      df_results = rbind(df_results, result)}
+  }
 }
 
-
-### add BF for the main/medium model
-prior_size[3:5] = c("m", prior_size[3:4])
-prior_sd[3:5] = c(0.5, prior_sd[3:4])
-
-### BF for visibility
-# ao - asym
-h = hypothesis(model, "conditionAO_Asym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_cond_ao_asym[3:5] = c(bf, bfs_cond_ao_asym[3:4])
-
-# asym - sym
-h = hypothesis(model, "conditionAsym_Sym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_cond_asym_sym[3:5] = c(bf, bfs_cond_asym_sym[3:4])
-
-
-### BF for rounds
-# R1 - R2
-h = hypothesis(model, "roundR12 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_round12[3:5] = c(bf, bfs_round12[3:4])
-
-# R2 - R3
-h = hypothesis(model, "roundR23 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_round23[3:5] = c(bf, bfs_round23[3:4])
-
-# R3 - R4
-h = hypothesis(model, "roundR34 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_round34[3:5] = c(bf, bfs_round34[3:4])
-
-# R4 - R5
-h = hypothesis(model, "roundR45 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_round45[3:5] = c(bf, bfs_round45[3:4])
-
-# R5 - R6
-h = hypothesis(model, "roundR56 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_round56[3:5] = c(bf, bfs_round56[3:4])
+df_bf_rate = df_results %>%
+  mutate(prior = paste0("N(0, ", sd, ")"),
+         BF10 = 1 / abs(Evid.Ratio),
+         Effect = factor(Effect,
+                         levels = effects),
+         Predictor = factor(case_when(grepl(": R", Effect) ~ "Interaction",
+                                      grepl("R", Effect) ~ "Round",
+                                      .default = "Visibility"),
+                            levels = c("Visibility", "Round", "Interaction")),
+         across(where(is.numeric), ~ round(., 3)),
+         Star = ifelse(BF10 >= 30 | BF10 <= 1/30, "***",
+                       ifelse(BF10 >= 10 | BF10 <= 1/10, "**",
+                              ifelse(BF10 >= 3 | BF10 <= 1/3, "*", ""))),
+         Star = ifelse(BF10 < 1, str_replace_all(Star, "[*]", "="), Star)) %>% 
+  dplyr::select(size, sd, prior, Effect, Predictor,
+                Estimate, Est.Error, `CI.Lower`, `CI.Upper`, BF10, Star) %>% 
+  arrange(Effect, sd)
 
 
-### BF for N. lex alignment
-h = hypothesis(model, "lex_align_c = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_lex_align[3:5] = c(bf, bfs_lex_align[3:4])
-
-
-### BF for interaction
-# ao - asym: R1 - R2
-h = hypothesis(model, "conditionAO_Asym:roundR12 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_asym_round12[3:5] = c(bf, bfs_ao_asym_round12[3:4])
-
-# ao - asym: R2 - R3
-h = hypothesis(model, "conditionAO_Asym:roundR23 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_asym_round23[3:5] = c(bf, bfs_ao_asym_round23[3:4])
-
-# ao - asym: R3 - R4
-h = hypothesis(model, "conditionAO_Asym:roundR34 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_asym_round34[3:5] = c(bf, bfs_ao_asym_round34[3:4])
-
-# ao - asym: R4 - R5
-h = hypothesis(model, "conditionAO_Asym:roundR45 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_asym_round45[3:5] = c(bf, bfs_ao_asym_round45[3:4])
-
-# ao - asym: R5 - R6
-h = hypothesis(model, "conditionAO_Asym:roundR56 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_asym_round56[3:5] = c(bf, bfs_ao_asym_round56[3:4])
-
-# asym - sym: R1 - R2
-h = hypothesis(model, "conditionAsym_Sym:roundR12 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_asym_sym_round12[3:5] = c(bf, bfs_asym_sym_round12[3:4])
-
-# asym - sym: R2 - R3
-h = hypothesis(model, "conditionAsym_Sym:roundR23 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_asym_sym_round23[3:5] = c(bf, bfs_asym_sym_round23[3:4])
-
-# asym - sym: R3 - R4
-h = hypothesis(model, "conditionAsym_Sym:roundR34 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_asym_sym_round34[3:5] = c(bf, bfs_asym_sym_round34[3:4])
-
-# asym - sym: R4 - R5
-h = hypothesis(model, "conditionAsym_Sym:roundR45 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_asym_sym_round45[3:5] = c(bf, bfs_asym_sym_round45[3:4])
-
-# asym - sym: R5 - R6
-h = hypothesis(model, "conditionAsym_Sym:roundR56 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_asym_sym_round56[3:5] = c(bf, bfs_asym_sym_round56[3:4])
-
-
-### make a df for BFs
-df_bf = data.frame(size = prior_size,
-                   sd = prior_sd,
-                   ao_asym = bfs_cond_ao_asym,
-                   asym_sym = bfs_cond_asym_sym,
-                   round12 = bfs_round12,
-                   round23 = bfs_round23,
-                   round34 = bfs_round34,
-                   round45 = bfs_round45,
-                   round56 = bfs_round56,
-                   lex_align = bfs_lex_align,
-                   ao_asym_round12 = bfs_ao_asym_round12,
-                   ao_asym_round23 = bfs_ao_asym_round23,
-                   ao_asym_round34 = bfs_ao_asym_round34,
-                   ao_asym_round45 = bfs_ao_asym_round45,
-                   ao_asym_round56 = bfs_ao_asym_round56,
-                   asym_sym_round12 = bfs_asym_sym_round12,
-                   asym_sym_round23 = bfs_asym_sym_round23,
-                   asym_sym_round34 = bfs_asym_sym_round34,
-                   asym_sym_round45 = bfs_asym_sym_round45,
-                   asym_sym_round56 = bfs_asym_sym_round56) %>% 
-  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
-  pivot_longer(cols = c("ao_asym", "asym_sym", 
-                        "round12", "round23", "round34", "round45", "round56",
-                        "lex_align",
-                        "ao_asym_round12", "ao_asym_round23", "ao_asym_round34",
-                        "ao_asym_round45", "ao_asym_round56",
-                        "asym_sym_round12", "asym_sym_round23", "asym_sym_round34",
-                        "asym_sym_round45", "asym_sym_round56"),
-               names_to = "Effect",
-               values_to = "BF10") %>% 
-  mutate(Predictor = ifelse(grepl("_round", Effect), "Interaction",
-                            ifelse(grepl("round", Effect), "Round", 
-                                   ifelse(Effect == "lex_align", "N. lex align", 
-                                          "Visibility"))))
-
-df_bf$Effect = recode(df_bf$Effect,
-                      ao_asym = "AO--AsymAV",
-                      asym_sym = "AsymAV--SymAV",
-                      round12 = "R1--R2",
-                      round23 = "R2--R3",
-                      round34 = "R3--R4",
-                      round45 = "R4--R5",
-                      round56 = "R5--R6",
-                      lex_align = "N. lex align",
-                      ao_asym_round12 = "AO--AsymAV:R1--R2",
-                      ao_asym_round23 = "AO--AsymAV:R2--R3",
-                      ao_asym_round34 = "AO--AsymAV:R3--R4",
-                      ao_asym_round45 = "AO--AsymAV:R4--R5",
-                      ao_asym_round56 = "AO--AsymAV:R5--R6",
-                      asym_sym_round12 = "AsymAV--SymAV:R1--R2",
-                      asym_sym_round23 = "AsymAV--SymAV:R2--R3",
-                      asym_sym_round34 = "AsymAV--SymAV:R3--R4",
-                      asym_sym_round45 = "AsymAV--SymAV:R4--R5",
-                      asym_sym_round56 = "AsymAV--SymAV:R5--R6")
+# add the results for lexical alignment
+df_bf = rbind(df_bf_rate, df_bf_lex) %>% 
+   mutate(Predictor = factor(case_when(grepl("align", Effect) ~ "N. lex align",
+                                       grepl("R", Effect) ~ "Round",
+                                      .default = "Visibility"),
+                            levels = c("Visibility", "Round", "N. lex align")))
+df_bf
 ```
 
+    ## # A tibble: 135 × 11
+    ##    size     sd prior Effect Predictor Estimate Est.Error CI.Lower CI.Upper  BF10
+    ##    <chr> <dbl> <chr> <fct>  <fct>        <dbl>     <dbl>    <dbl>    <dbl> <dbl>
+    ##  1 xs      0.1 N(0,… AO--A… Visibili…    0.078     0.095   -0.107    0.263 1.36 
+    ##  2 s       0.3 N(0,… AO--A… Visibili…    0.355     0.203   -0.051    0.744 3.05 
+    ##  3 m       0.5 N(0,… AO--A… Visibili…    0.505     0.246    0.017    0.981 4.06 
+    ##  4 l       0.7 N(0,… AO--A… Visibili…    0.581     0.266    0.052    1.10  3.93 
+    ##  5 xl      1   N(0,… AO--A… Visibili…    0.636     0.28     0.083    1.19  3.68 
+    ##  6 xs      0.1 N(0,… AsymA… Visibili…    0.027     0.093   -0.155    0.209 0.987
+    ##  7 s       0.3 N(0,… AsymA… Visibili…    0.055     0.194   -0.325    0.436 0.672
+    ##  8 m       0.5 N(0,… AsymA… Visibili…    0.021     0.233   -0.435    0.486 0.459
+    ##  9 l       0.7 N(0,… AsymA… Visibili…   -0.004     0.253   -0.5      0.488 0.357
+    ## 10 xl      1   N(0,… AsymA… Visibili…   -0.026     0.266   -0.55     0.5   0.257
+    ## # ℹ 125 more rows
+    ## # ℹ 1 more variable: Star <chr>
+
 ``` r
-#### Plot BFs ####
-# ggplot(filter(df_bf, Effect!="R1--R2"), #exclude R1--R2 because BF is too huge
-#        aes(x = factor(sd), y = BF10, group = Effect)) +
-#   geom_hline(yintercept = 1, linetype="dashed") +
-#   geom_point(aes(color=Effect)) +
-#   geom_line(aes(color=Effect)) +
-#   facet_wrap(vars(Predictor)) +
-#   theme_clean(base_size = 15) +
-#   theme(axis.text.x = element_text(colour = "black", size = 14),
-#         axis.text.y = element_text(colour = "black", size = 14),
-#         axis.title = element_text(size = 15, face = 'bold'),
-#         axis.title.x = element_text(vjust = -2),
-#         axis.title.y = element_text(vjust = 2),
-#         legend.position = "top",
-#         strip.text = element_text(size = 15, face = 'bold'),
-#         plot.background = element_blank(),
-#         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
-#   scale_y_log10("Bayes factor (BF10)",
-#                 breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
-#                 labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
-#   xlab("SD for the prior")
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+col_vector = c("#00786A", "#ED6B06", col_vector)
+
+### Plot BFs ###
+p_bf_rate = 
+  ggplot(filter(df_bf, !Effect %in% c("R1--R2", "N. lex align")), 
+              aes(x = factor(sd), y = BF10, group = Effect)) +
+  geom_hline(yintercept = 1, linetype="dashed") +
+  geom_point(aes(color=Effect)) +
+  geom_line(aes(color=Effect)) +
+  labs(x = "SD for the prior",
+       title = "D. Bayes factors for the effects on gestural alignment") +
+  scale_color_manual(values = col_vector) +
+  facet_wrap(vars(Predictor), scale = "free_x") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 13, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "right",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 10.5),
+        strip.text = element_text(size = 14, face = 'bold'),
+        strip.background = element_blank(),
+        plot.title.position = "plot", # left align the title
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+  scale_y_log10("Bayes factor (BF10)",
+                # limits = c(0.03, 30000),
+                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100, 1e3, 1e4),
+                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100, 1e3, 1e4)) +
+  guides(color = guide_legend(ncol=2))
+
+p_bf_rate
+```
+
+![](figures_md/speakerB/gest_alignment/p_bf_rate-1.png)<!-- -->
+
+<br>
+
+### 9.3.9 Back-transformation
+
+We back-transform the posterior samples to the original scale to
+visualize the predicted proportion of gestural alignment across
+conditions and rounds.
+
+We defined the regression as follows (only including condition and round
+predictors for simplicity): \$\$ \$\$
+
+The values of the predictors ($x$) are determined by the contrast
+coding. The contrast matrix is as follows:
+
+**Condition** \| \| AO_Asym \| AsymAV_Sym \| \| SymAV \| 1/3 \| 2/3 \|
+\| AsymAV \| 1/3 \| -1/3 \| \| AO \| -2/3 \| -1/3 \|
+
+**Round** \| \| R12 \| R23 \| R34 \| R45 \| R56 \| \| R1 \| -5/6 \| -2/3
+\| -1/2 \| -1/3 \| -1/6 \| \| R2 \| 1/6 \| -2/3 \| -1/2 \| -1/3 \| -1/6
+\| \| R3 \| 1/6 \| 1/3 \| -1/2 \| -1/3 \| -1/6 \| \| R4 \| 1/6 \| 1/3 \|
+1/2 \| -1/3 \| -1/6 \| \| R5 \| 1/6 \| 1/3 \| 1/2 \| 2/3 \| -1/6 \| \|
+R6 \| 1/6 \| 1/3 \| 1/2 \| 2/3 \| 5/6 \|
+
+Given that 0 represents the ground mean in these coding, we can compute
+the estimated marginal mean for each condition like this:
+
+$SymAV = \beta_0 + \beta_{AO\_Asym} \times 1/3) + (\beta_{Asym\_Sym} \times 2/3)$
+
+Note that because (i) the marginal mean for each condition can be
+calculated by averaging over the conditional means of the 6 rounds in
+that condition, and (ii) 0 represents the ground mean in the contrast
+coding, the estimated marginal mean for each condition can be calculated
+by simply plugging in the contrast values for the condition predictors
+and setting the round predictors to 0. And because multiplying any
+number by 0 results in 0, we can remove all the terms involving round
+predictors and their interactions with condition predictors.
+
+``` r
+#### visibility effects ####
+alpha = post_sample$b_Intercept
+b_ao_asym = post_sample$b_conditionAO_Asym
+b_asym_sym = post_sample$b_conditionAsym_Sym
+b_round12 = post_sample$b_roundR12
+b_round23 = post_sample$b_roundR23
+b_round34 = post_sample$b_roundR34
+b_round45 = post_sample$b_roundR45
+b_round56 = post_sample$b_roundR56
+b_ao_asym_round12 = post_sample$`b_conditionAO_Asym:roundR12`
+b_ao_asym_round23 = post_sample$`b_conditionAO_Asym:roundR23`
+b_ao_asym_round34 = post_sample$`b_conditionAO_Asym:roundR34`
+b_ao_asym_round45 = post_sample$`b_conditionAO_Asym:roundR45`
+b_ao_asym_round56 = post_sample$`b_conditionAO_Asym:roundR56`
+b_asym_sym_round12 = post_sample$`b_conditionAsym_Sym:roundR12`
+b_asym_sym_round23 = post_sample$`b_conditionAsym_Sym:roundR23`
+b_asym_sym_round34 = post_sample$`b_conditionAsym_Sym:roundR34`
+b_asym_sym_round45 = post_sample$`b_conditionAsym_Sym:roundR45`
+b_asym_sym_round56 = post_sample$`b_conditionAsym_Sym:roundR56`
+
+
+### convert the samples to the original scale based on the contrast matrix
+cmax_cond = contrasts(df_gest_align_posreg_prop$condition)
+cmax_cond
+```
+
+    ##        AO_Asym Asym_Sym
+    ## SymAV   1/3     2/3    
+    ## AsymAV  1/3    -1/3    
+    ## AO     -2/3    -1/3
+
+``` r
+cmax_round = contrasts(df_gest_align_posreg_prop$round)
+cmax_round
+```
+
+    ##    R12  R23  R34  R45  R56 
+    ## R1 -5/6 -2/3 -1/2 -1/3 -1/6
+    ## R2  1/6 -2/3 -1/2 -1/3 -1/6
+    ## R3  1/6  1/3 -1/2 -1/3 -1/6
+    ## R4  1/6  1/3  1/2 -1/3 -1/6
+    ## R5  1/6  1/3  1/2  2/3 -1/6
+    ## R6  1/6  1/3  1/2  2/3  5/6
+
+``` r
+i = 1
+conds = c("SymAV", "AsymAV", "AO")
+df_pred = tibble()
+df_pred_int = tibble()
+
+for (i in 1:length(conds)){
+  condition = conds[i]
+  pred = exp(alpha + b_ao_asym * cmax_cond[i,1] + b_asym_sym * cmax_cond[i,2])
+  df_pred = rbind(df_pred, tibble(condition = factor(condition), 
+                                  mean = mean(pred),
+                                  lci = quantile(pred, 0.025),
+                                  uci = quantile(pred, 0.975)))
+  for (j in 1:6){
+    round = j
+    pred = exp(alpha + 
+                 # condition
+                 b_ao_asym * cmax_cond[i,1] + b_asym_sym * cmax_cond[i,2] +
+                 # round
+                 b_round12 * cmax_round[j,1] + b_round23 * cmax_round[j,2] + 
+                 b_round34 * cmax_round[j,3] + b_round45 * cmax_round[j,4] + 
+                 b_round56 * cmax_round[j,5] +
+                 # condition * round
+                 b_ao_asym_round12 * cmax_cond[i,1] * cmax_round[j,1] +
+                 b_ao_asym_round23 * cmax_cond[i,1] * cmax_round[j,2] +
+                 b_ao_asym_round34 * cmax_cond[i,1] * cmax_round[j,3] +
+                 b_ao_asym_round45 * cmax_cond[i,1] * cmax_round[j,4] +
+                 b_ao_asym_round56 * cmax_cond[i,1] * cmax_round[j,5] +
+                 b_asym_sym_round12 * cmax_cond[i,2] * cmax_round[j,1] +
+                 b_asym_sym_round23 * cmax_cond[i,2] * cmax_round[j,2] +
+                 b_asym_sym_round34 * cmax_cond[i,2] * cmax_round[j,3] +
+                 b_asym_sym_round45 * cmax_cond[i,2] * cmax_round[j,4] +
+                 b_asym_sym_round56 * cmax_cond[i,2] * cmax_round[j,5])
+    
+    df_pred_int = rbind(df_pred_int, tibble(condition = factor(condition),
+                                            round = factor(round),
+                                            mean = mean(pred),
+                                            lci = quantile(pred, 0.025),
+                                            uci = quantile(pred, 0.975)))}
+}
+
+df_pred
+```
+
+    ## # A tibble: 3 × 4
+    ##   condition  mean lci        uci       
+    ##   <fct>     <dbl> <fractins> <fractins>
+    ## 1 SymAV     0.401 0.273      0.560     
+    ## 2 AsymAV    0.392 0.268      0.546     
+    ## 3 AO        0.237 0.157      0.344
+
+``` r
+df_pred_int
+```
+
+    ## # A tibble: 18 × 5
+    ##    condition round   mean lci        uci       
+    ##    <fct>     <fct>  <dbl> <fractins> <fractins>
+    ##  1 SymAV     1     0.0816 0.0496     0.1243    
+    ##  2 SymAV     2     0.381  0.2476     0.5549    
+    ##  3 SymAV     3     0.630  0.4052     0.9226    
+    ##  4 SymAV     4     0.645  0.4080     0.9608    
+    ##  5 SymAV     5     0.575  0.3476     0.8834    
+    ##  6 SymAV     6     0.601  0.3403     0.9666    
+    ##  7 AsymAV    1     0.0818 0.0499     0.1242    
+    ##  8 AsymAV    2     0.446  0.2911     0.6449    
+    ##  9 AsymAV    3     0.593  0.3818     0.8728    
+    ## 10 AsymAV    4     0.571  0.3601     0.8493    
+    ## 11 AsymAV    5     0.562  0.3456     0.8480    
+    ## 12 AsymAV    6     0.549  0.3208     0.8615    
+    ## 13 AO        1     0.0485 0.0261     0.0806    
+    ## 14 AO        2     0.300  0.1847     0.4576    
+    ## 15 AO        3     0.407  0.2506     0.6194    
+    ## 16 AO        4     0.410  0.2449     0.6384    
+    ## 17 AO        5     0.352  0.1967     0.5747    
+    ## 18 AO        6     0.229  0.1131     0.4081
+
+<br>
+
+### 9.3.10 Calculate effect size
+
+``` r
+# calculate the difference between AsymAV and AO
+pred_asym = exp(alpha + b_ao_asym * cmax_cond[2,1] + b_asym_sym * cmax_cond[2,2])
+pred_ao = exp(alpha + b_ao_asym * cmax_cond[3,1] + b_asym_sym * cmax_cond[3,2])
+effect_size_rate = pred_asym - pred_ao
+
+# summary of the effect size (mean, median, 95% credible interval)
+effect_size_rate_summary = data_frame(
+  mean = mean(effect_size_rate),
+  median = median(effect_size_rate),
+  ci_lower = quantile(effect_size_rate, 0.025),
+  ci_upper = quantile(effect_size_rate, 0.975))
+effect_size_rate_summary
+```
+
+    ## # A tibble: 1 × 4
+    ##    mean median ci_lower   ci_upper  
+    ##   <dbl>  <dbl> <fractins> <fractins>
+    ## 1 0.155  0.152 0.00525    0.317
+
+``` r
+### calculate the proportion of gestural alignment explained by the visibility
+effect_size_prop = effect_size_rate / pred_asym
+effect_size_prop_summary = data_frame(
+  mean = mean(effect_size_prop),
+  median = median(effect_size_prop),
+  ci_lower = quantile(effect_size_prop, 0.025),
+  ci_upper = quantile(effect_size_prop, 0.975))
+effect_size_prop_summary
+```
+
+    ## # A tibble: 1 × 4
+    ##    mean median ci_lower   ci_upper  
+    ##   <dbl>  <dbl> <fractins> <fractins>
+    ## 1 0.378  0.398 0.0168     0.625
+
+On average, 37.8% of gestural alignment can be explained by lexical
+alignment, with a 95% credible interval of \[1.7%, 62.5%\]. This
+suggests that gesture-to-gesture priming is an important predictor of
+gestural alignment. However, the credible interval is quite wide,
+indicating a high level of uncertainty in this estimate.
+
+In the previous analysis, we found that on average, 16.3% \[12.5%,
+19.9%\] of gestural alignment can be explained by lexical alignment.
+This suggests that priming and lexical alignment can only account for
+54.1% (= 37.8% + 16.3%) of gestural alignment, leaving a large portion
+of gestural alignment unexplained by these two factors. This underscores
+the importance of investigating other potential predictors of gestural
+alignment and the need to move beyond dichotomous thinking about whether
+gestural alignment is due to priming or communicative functions.
+Instead, we should consider the possibility that gestural alignment is a
+complex phenomenon that can be influenced by multiple factors.
+
+<br>
+
+### 9.3.11 Visualize the model estimates
+
+``` r
+### visibility
+bp_mean_gest_alignment_prop_model = 
+  bp_mean_gest_alignment_prop_by_cond +
+  geom_ribbon(data = df_pred,
+              aes(x = condition, y = mean, 
+                  ymin = lci, ymax = uci, group = 1),
+              fill = "black", alpha = 0.2) +
+  geom_line(data = df_pred,
+            aes(x = condition, y = mean, group = 1),
+            color = "black", size = 0.8) +
+  labs(title = "A. Gest align rate across visibility") +
+  theme(plot.title.position = "plot")
+
+bp_mean_gest_alignment_prop_model
+```
+
+![](figures_md/speakerB/gest_alignment/unnamed-chunk-40-1.png)<!-- -->
+
+``` r
+ggsave("figures/speakerB/gest_alignment/bp_mean_prop_cond_model.svg", width=4, height=4)
+
+
+### visibility x round
+bp_mean_gest_alignment_prop_by_round_cond_model = 
+  bp_mean_gest_alignment_prop_by_round_cond +
+  geom_ribbon(data = df_pred_int,
+              aes(x = round, y = mean, 
+                  ymin = lci, ymax = uci, group = condition),
+              fill = "black", alpha = 0.2) +
+  geom_line(data = df_pred_int,
+            aes(x = round, y = mean, group = condition),
+            color = "black", size = 0.8) +
+  labs(title = "B. Gest align rate across visibility and round") +
+  theme(plot.title.position = "plot")
+
+bp_mean_gest_alignment_prop_by_round_cond_model
+```
+
+![](figures_md/speakerB/gest_alignment/unnamed-chunk-40-2.png)<!-- -->
+
+``` r
+ggsave("figures/speakerB/gest_alignment/bp_mean_prop_cond_round_model.svg", width=8, height=4)
 ```
 
 <br>
 
-<!-- #### Probability of direction -->
-<!-- ```{r} -->
-<!-- p_direction(model) -->
-<!-- ``` -->
-
-<br>
-
-#### Pair-wise effect
+# 10. Merge plots
 
 ``` r
-emmeans(model, pairwise ~ condition)$contrasts
+design = "AAAABBBBBB
+          CCCCCCCCCC
+          DDDDDDDDDD"
+
+free(bp_mean_gest_alignment_prop_model) + #A
+  bp_mean_gest_alignment_prop_by_round_cond_model + #B
+  free(p_pd) + #C
+  free(p_bf_rate) + #D
+  plot_layout(design = design,
+              heights = c(0.6,1,1))
 ```
 
-    ##  contrast       estimate lower.HPD upper.HPD
-    ##  SymAV - AsymAV    0.020    -0.446     0.473
-    ##  SymAV - AO        0.527     0.015     1.049
-    ##  AsymAV - AO       0.507     0.028     0.991
-    ## 
-    ## Results are averaged over the levels of: round, role 
-    ## Point estimate displayed: median 
-    ## Results are given on the log (not the response) scale. 
-    ## HPD interval probability: 0.95
+![](figures_md/speakerB/gest_alignment/merge_plots-1.png)<!-- -->
 
 ``` r
-emmeans(model, pairwise ~ condition, level = 0.89)$contrasts
+# save the plot
+ggsave("figures/speakerB/gest_alignment/gest_align_combined.svg", width=12, height=13)
 ```
-
-    ##  contrast       estimate lower.HPD upper.HPD
-    ##  SymAV - AsymAV    0.020    -0.352     0.393
-    ##  SymAV - AO        0.527     0.107     0.943
-    ##  AsymAV - AO       0.507     0.110     0.892
-    ## 
-    ## Results are averaged over the levels of: round, role 
-    ## Point estimate displayed: median 
-    ## Results are given on the log (not the response) scale. 
-    ## HPD interval probability: 0.89
-
-<br>
-
-#### Prior-posterior update plot
-
-``` r
-post_sample = as_draws_df(model)
-pp_update_plot(post_sample, model_type="nb")
-```
-
-![](figures_md/speakerB/gest_alignment/update_m3-1.png)<!-- -->
-
-<br>
-
-#### Posterior predictive check
-
-``` r
-pp_check_overall = pp_check(model, ndraws = 100, type = "bars") +
-  coord_cartesian(xlim = c(0, 20),
-                  ylim = c(0, 3000))
-pp_check_sym = pp_check_each_condition(model, df_gest_align_posreg_prop, "SymAV")
-pp_check_asym = pp_check_each_condition(model, df_gest_align_posreg_prop, "AsymAV")
-pp_check_ao = pp_check_each_condition(model, df_gest_align_posreg_prop, "AO")
-
-gridExtra::grid.arrange(pp_check_overall, pp_check_sym, 
-                        pp_check_asym, pp_check_ao, 
-                        ncol = 2)
-```
-
-![](figures_md/speakerB/gest_alignment/ppd_m3-1.png)<!-- -->
-
-Although the model prediction is not perfect, this model had a higher
-predictive power than the negative binomial model. As such, we will use
-this model.
-
-#### Back-transform the effects
-
-``` r
-### visibility effects
-# draw samples
-samples = as_draws_df(model)
-alpha = samples$b_Intercept
-beta_ao_asym = samples$b_conditionAO_Asym
-beta_asym_sym = samples$b_conditionAsym_Sym
-
-# convert the samples to the original scale
-alpha_orig = exp(alpha)
-ao_orig = exp(alpha - beta_ao_asym)
-sym_orig = exp(alpha + + beta_asym_sym)
-beta_ao_asym_orig = ao_orig - alpha_orig
-beta_asym_sym_orig = sym_orig - alpha_orig
-
-# summarize the mean and CI of the samples as dataframe
-tibble(estimates = c("intercept_asym", "ao", "sym", "beta_ao_asym", "beta_asym_sym"),
-       mean = c(mean(alpha_orig), mean(ao_orig), mean(sym_orig), 
-                mean(beta_ao_asym_orig), mean(beta_asym_sym_orig)),
-       ci_low = c(quantile(alpha_orig, 0.025), quantile(ao_orig, 0.025), 
-                  quantile(sym_orig, 0.025), quantile(beta_ao_asym_orig, 0.025), 
-                  quantile(beta_asym_sym_orig, 0.025)),
-       ci_high = c(quantile(alpha_orig, 0.975), quantile(ao_orig, 0.975), 
-                  quantile(sym_orig, 0.975), quantile(beta_ao_asym_orig, 0.975), 
-                  quantile(beta_asym_sym_orig, 0.975)))
-```
-
-    ## # A tibble: 5 × 4
-    ##   estimates         mean ci_low  ci_high
-    ##   <chr>            <dbl>  <dbl>    <dbl>
-    ## 1 intercept_asym  0.331   0.257  0.415  
-    ## 2 ao              0.206   0.114  0.343  
-    ## 3 sym             0.347   0.201  0.557  
-    ## 4 beta_ao_asym   -0.125  -0.218 -0.00554
-    ## 5 beta_asym_sym   0.0161 -0.119  0.206
-
-<!-- <br> -->
-<!-- #### Visualize the model estimates -->
-<!-- ```{r} -->
-<!-- plot(conditional_effects(model), ask=FALSE) -->
-<!-- ``` -->
-
-<br>
 
 ------------------------------------------------------------------------
 
-### 8.4.2 Model 4: \[ppB\] condition_sum \* round + lex_align_c
+# =====Extra: Understanding contrast coding=====
 
-Here, we will run another model to compare the rate of gestural
-alignment between the SymAV and AO conditions.
+Here, we will understand three-level contrast coding by simulating some
+data and fitting a linear regression.
 
-<br>
+## Linear regression with three conditions
 
-#### Prior predictive check
+### Simulate data
 
 ``` r
-nb_gest_align_prop_sum_prior = brm(num_gestural_align | rate(num_iconic_gestures) ~
-                                     1 + condition_sum + round + lex_align_c + role +
-                                     (1+round|pair) + (1|target),
-                                   family = negbinomial(),
-                                   prior = priors_rslope_gest_align_prop,
-                                   data = df_gest_align_posreg_prop,
-                                   sample_prior = "only",
-                                   control = list(adapt_delta = 0.9, 
-                                                  max_treedepth = 20),
-                                   file = "models/speakerB/nb_gest_align_prop_sum_prior")
+### defining parameters
+conditions = c("cond1", "cond2", "cond3")
+b12 = 200
+b23 = -300
+mean1 = 400
+mean2 = mean1 + b12
+mean3 = mean2 + b23
 
-pp_check(nb_gest_align_prop_sum_prior, ndraws = 100, type = "bars") +
-  coord_cartesian(xlim = c(0, 20),
-                  ylim = c(0, 3000))
+### simulating data
+n = 1000 # number of observations per condition
+sd = 50
+
+y1 = rnorm(n, mean1, sd)
+y2 = rnorm(n, mean2, sd)
+y3 = rnorm(n, mean3, sd)
+
+df = data.frame(y = c(y1, y2, y3),
+                condition = factor(rep(conditions, each=n)))
+
+# check if the data are simulated correctly
+df %>% 
+  group_by(condition) %>% 
+  summarise(mean = mean(y),
+            sd = sd(y))
 ```
 
-![](figures_md/speakerB/gest_alignment/pp_check_m4-1.png)<!-- -->
+    ## # A tibble: 3 × 3
+    ##   condition  mean    sd
+    ##   <fct>     <dbl> <dbl>
+    ## 1 cond1      401.  50.9
+    ## 2 cond2      601.  48.6
+    ## 3 cond3      297.  48.7
 
-The prior predictive check shows that the model expects fewer amount of
-2, 3, and 4. This suggests that the zero-inflation prior may be too
-large or the mean for the intercept prior is too low. We will check the
-prior-posterior update plot and posterior predictive check to see if the
-model generates data that are similar to the observed data. If not, we
-will consider modifying the priors.
+``` r
+# ground mean
+mean(df$y)
+```
+
+    ## [1] 433
 
 <br>
 
-#### Fit the model
+### Contrast coding
 
 ``` r
-nb_align_rate_cond_round_sum = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
-                                     1 + condition_sum * round + lex_align_c + role +
-                                     (1+round|pair) + (1|target),
-                                   family = negbinomial(),
-                                   prior = priors_rslope_gest_align_prop,
-                                   data = df_gest_align_posreg_prop,
-                                   sample_prior = T,
-                                   save_pars = save_pars(all = TRUE),
-                                   warmup = nwu, iter = niter,
-                                   control = list(adapt_delta = 0.9, 
-                                                  max_treedepth = 15),
-                                   file = "models/speakerB/nb_align_rate_cond_round_sum")
+h_cond = hypr(C12 = cond2 ~ cond1,
+              C23 = cond3 ~ cond2,
+              levels = levels(df$condition))
+h_cond
+```
 
-model = nb_align_rate_cond_round_sum
+    ## hypr object containing 2 null hypotheses:
+    ## H0.C12: 0 = cond2 - cond1
+    ## H0.C23: 0 = cond3 - cond2
+    ## 
+    ## Call:
+    ## hypr(C12 = ~cond2 - cond1, C23 = ~cond3 - cond2, levels = c("cond1", 
+    ## "cond2", "cond3"))
+    ## 
+    ## Hypothesis matrix (transposed):
+    ##       C12 C23
+    ## cond1 -1   0 
+    ## cond2  1  -1 
+    ## cond3  0   1 
+    ## 
+    ## Contrast matrix:
+    ##       C12  C23 
+    ## cond1 -2/3 -1/3
+    ## cond2  1/3 -1/3
+    ## cond3  1/3  2/3
+
+``` r
+contrasts(df$condition) = contr.hypothesis(h_cond)
+```
+
+### Fit the model
+
+``` r
+model = lm(y ~ condition, data = df)
 summary(model)
 ```
 
+    ## 
+    ## Call:
+    ## lm(formula = y ~ condition, data = df)
+    ## 
+    ## Residuals:
+    ##     Min      1Q  Median      3Q     Max 
+    ## -166.92  -33.48    0.28   33.43  177.80 
+    ## 
+    ## Coefficients:
+    ##              Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)   433.210      0.902   480.4   <2e-16 ***
+    ## conditionC12  199.971      2.209    90.5   <2e-16 ***
+    ## conditionC23 -304.292      2.209  -137.8   <2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 49.4 on 2997 degrees of freedom
+    ## Multiple R-squared:  0.867,  Adjusted R-squared:  0.867 
+    ## F-statistic: 9.8e+03 on 2 and 2997 DF,  p-value: <2e-16
+
+There are three things to note here:
+
+1.  The intercept (433) is the estimated **ground mean**, not the mean
+    of cond2 (400).
+2.  The slope for C12 (200) is the estimated difference between cond1
+    and cond2, and the slope for C23 (-300) is the estimated difference
+    between cond2 and cond3
+3.  None of the coefficients represent the mean of each condition.
+
+An advantage of this contrast coding is that we can estimate the
+marginal effects of each condition if we have other predictors in the
+model. This is because the contrast coding makes the intercept represent
+the ground mean, which is the average of the three conditions.
+
+A disadvantage of this contrast coding is that the coefficients are not
+directly interpretable as the mean of each condition. This means that
+calculating the predicted mean for each condition requires a bit complex
+calculation compared to treatment coding. However, this is not a big
+issue because we can easily calculate the predicted mean for each
+condition using the coefficients from the model and contrast matrix.
+
+<br>
+
+### Calculate the predicted mean for each condition
+
+``` r
+b_intercept = coef(model)[1]
+b_C12 = coef(model)[2]
+b_C23 = coef(model)[3]
+
+contrasts(df$condition)
+```
+
+    ##       C12  C23 
+    ## cond1 -2/3 -1/3
+    ## cond2  1/3 -1/3
+    ## cond3  1/3  2/3
+
+``` r
+pred_cond1 = b_intercept + (b_C12 * -2/3) + (b_C23 * -1/3)
+pred_cond2 = b_intercept + (b_C12 * 1/3) + (b_C23 * -1/3)
+pred_cond3 = b_intercept + (b_C12 * 1/3) + (b_C23 * 2/3)
+
+# show the predicted means for each condition
+tibble(condition = conditions,
+       predicted_mean = c(pred_cond1, pred_cond2, pred_cond3))
+```
+
+    ## # A tibble: 3 × 2
+    ##   condition predicted_mean
+    ##   <chr>              <dbl>
+    ## 1 cond1               401.
+    ## 2 cond2               601.
+    ## 3 cond3               297.
+
+As you can see, the predicted means for each condition can be calculated
+by multiplying the coefficients with the contrast matrix and adding them
+to the intercept.
+
+We can also use the `marginaleffects` package to calculate the predicted
+means for each condition, which is much easier than doing the
+calculation manually.
+
+``` r
+avg_predictions(model, by = "condition")
+```
+
+    ## 
+    ##  condition Estimate Std. Error   z Pr(>|z|)   S 2.5 % 97.5 %
+    ##      cond1      401       1.56 257   <0.001 Inf   398    404
+    ##      cond2      601       1.56 385   <0.001 Inf   598    604
+    ##      cond3      297       1.56 190   <0.001 Inf   294    300
+    ## 
+    ## Type: response
+
+<br>
+
+## Negbinomial regression with three conditions
+
+Next, we will model count data using a Negative binomial regression. The
+purpose of this is to understand the behavior of the `avg_predictions()`
+function. Also, we will add another predictor `round_c` to the model to
+see how the contrast coding allows us to estimate the marginal effects
+of each condition.
+
+### Simulate data
+
+``` r
+### defining parameters
+conditions = c("cond1", "cond2", "cond3")
+round = c(-2.5, -1.5, -0.5, 0.5, 1.5, 2.5) # centered round variable
+b12 = 20
+b23 = -10
+b_round = 5
+mean1 = 50
+
+### simulating data
+n = 1000 # number of observations per condition
+sample_cond = rep(conditions, each = n)
+sample_round = rep(round, times = n*3/length(round))
+time = rnorm(n*3, 10, 0.5)
+
+y = as.integer(mean1 + ifelse(sample_cond == "cond1", 0, 
+                              ifelse(sample_cond == "cond2", b12, b12 + b23)) + 
+                 (b_round * sample_round) + rnorm(n*3, 0, 5))
+
+df = data.frame(condition = factor(sample_cond),
+                round = sample_round,
+                time = time,
+                y = y)
+
+# check if the data are simulated correctly
+df %>% 
+  group_by(condition) %>% 
+  summarise(mean = mean(y),
+            sd = sd(y),
+            mean_rate = mean(y/time),
+            sd_rate = sd(y/time))
+```
+
+    ## # A tibble: 3 × 5
+    ##   condition  mean    sd mean_rate sd_rate
+    ##   <fct>     <dbl> <dbl>     <dbl>   <dbl>
+    ## 1 cond1      49.2  9.86      4.95    1.03
+    ## 2 cond2      69.3  9.80      6.94    1.04
+    ## 3 cond3      59.6  9.92      5.98    1.05
+
+``` r
+# ground mean
+mean(df$y)
+```
+
+    ## [1] 59.4
+
+``` r
+mean(df$y/df$time)
+```
+
+    ## [1] 5.95
+
+### Fit the model
+
+``` r
+### Poisson model without exposure variable
+model1 = brm(y ~ 1 + condition * round, 
+             prior = c(
+               prior(normal(4, 0.5), class = Intercept),
+               prior(normal(0, 0.5), class = b),
+               prior(normal(0, 50), class = shape)),
+             data = df, 
+             family = negbinomial(),
+             file = "models/speakerB/sim_model1")
+summary(model1)
+```
+
     ##  Family: negbinomial 
-    ##   Links: mu = log; shape = identity 
-    ## Formula: num_gestural_align | rate(num_iconic_gestures) ~ 1 + condition_sum * round + lex_align_c + role + (1 + round | pair) + (1 | target) 
-    ##    Data: df_gest_align_posreg_prop (Number of observations: 1264) 
-    ##   Draws: 4 chains, each with iter = 20000; warmup = 2000; thin = 1;
-    ##          total post-warmup draws = 72000
-    ## 
-    ## Multilevel Hyperparameters:
-    ## ~pair (Number of levels: 45) 
-    ##                         Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
-    ## sd(Intercept)               0.65      0.11     0.46     0.89 1.00    20133
-    ## sd(roundR12)                0.37      0.17     0.04     0.72 1.00    20020
-    ## sd(roundR23)                0.11      0.08     0.00     0.31 1.00    34135
-    ## sd(roundR34)                0.11      0.09     0.00     0.32 1.00    33498
-    ## sd(roundR45)                0.17      0.12     0.01     0.45 1.00    29102
-    ## sd(roundR56)                0.25      0.18     0.01     0.65 1.00    25173
-    ## cor(Intercept,roundR12)     0.11      0.29    -0.47     0.64 1.00    69482
-    ## cor(Intercept,roundR23)    -0.01      0.33    -0.64     0.62 1.00    93543
-    ## cor(roundR12,roundR23)     -0.06      0.33    -0.66     0.59 1.00    72794
-    ## cor(Intercept,roundR34)    -0.07      0.34    -0.69     0.59 1.00    93955
-    ## cor(roundR12,roundR34)     -0.05      0.33    -0.66     0.59 1.00    73807
-    ## cor(roundR23,roundR34)     -0.03      0.33    -0.66     0.61 1.00    65352
-    ## cor(Intercept,roundR45)     0.02      0.33    -0.61     0.63 1.00   100701
-    ## cor(roundR12,roundR45)      0.03      0.32    -0.60     0.64 1.00    69318
-    ## cor(roundR23,roundR45)      0.00      0.33    -0.62     0.63 1.00    55490
-    ## cor(roundR34,roundR45)     -0.03      0.33    -0.65     0.61 1.00    52700
-    ## cor(Intercept,roundR56)    -0.08      0.33    -0.68     0.56 1.00    85654
-    ## cor(roundR12,roundR56)     -0.01      0.32    -0.62     0.61 1.00    63761
-    ## cor(roundR23,roundR56)     -0.02      0.33    -0.64     0.62 1.00    54273
-    ## cor(roundR34,roundR56)     -0.01      0.33    -0.64     0.63 1.00    51739
-    ## cor(roundR45,roundR56)     -0.02      0.33    -0.64     0.61 1.00    51362
-    ##                         Tail_ESS
-    ## sd(Intercept)              34892
-    ## sd(roundR12)               19453
-    ## sd(roundR23)               34420
-    ## sd(roundR34)               33202
-    ## sd(roundR45)               32548
-    ## sd(roundR56)               30242
-    ## cor(Intercept,roundR12)    52311
-    ## cor(Intercept,roundR23)    55027
-    ## cor(roundR12,roundR23)     56339
-    ## cor(Intercept,roundR34)    51632
-    ## cor(roundR12,roundR34)     54064
-    ## cor(roundR23,roundR34)     57292
-    ## cor(Intercept,roundR45)    55336
-    ## cor(roundR12,roundR45)     54192
-    ## cor(roundR23,roundR45)     55671
-    ## cor(roundR34,roundR45)     56635
-    ## cor(Intercept,roundR56)    54051
-    ## cor(roundR12,roundR56)     55655
-    ## cor(roundR23,roundR56)     56716
-    ## cor(roundR34,roundR56)     59091
-    ## cor(roundR45,roundR56)     57312
-    ## 
-    ## ~target (Number of levels: 16) 
-    ##               Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    ## sd(Intercept)     0.07      0.05     0.00     0.17 1.00    25716    27728
+    ##   Links: mu = log 
+    ## Formula: y ~ 1 + condition * round 
+    ##    Data: df (Number of observations: 3000) 
+    ##   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+    ##          total post-warmup draws = 4000
     ## 
     ## Regression Coefficients:
-    ##                                Estimate Est.Error l-95% CI u-95% CI Rhat
-    ## Intercept                         -1.11      0.12    -1.36    -0.88 1.00
-    ## condition_sumAO_Sym                0.48      0.24    -0.01     0.95 1.00
-    ## condition_sumAsym_Sym             -0.10      0.23    -0.56     0.36 1.00
-    ## roundR12                           1.69      0.14     1.41     1.97 1.00
-    ## roundR23                           0.37      0.09     0.18     0.55 1.00
-    ## roundR34                          -0.00      0.11    -0.22     0.21 1.00
-    ## roundR45                          -0.10      0.13    -0.36     0.16 1.00
-    ## roundR56                          -0.15      0.17    -0.47     0.18 1.00
-    ## lex_align_c                        0.05      0.03    -0.00     0.11 1.00
-    ## role1                              0.76      0.10     0.57     0.95 1.00
-    ## condition_sumAO_Sym:roundR12      -0.21      0.29    -0.78     0.37 1.00
-    ## condition_sumAsym_Sym:roundR12    -0.11      0.26    -0.61     0.41 1.00
-    ## condition_sumAO_Sym:roundR23       0.15      0.21    -0.25     0.57 1.00
-    ## condition_sumAsym_Sym:roundR23     0.20      0.19    -0.18     0.57 1.00
-    ## condition_sumAO_Sym:roundR34       0.02      0.23    -0.43     0.46 1.00
-    ## condition_sumAsym_Sym:roundR34     0.08      0.21    -0.34     0.50 1.00
-    ## condition_sumAO_Sym:roundR45       0.08      0.27    -0.44     0.60 1.00
-    ## condition_sumAsym_Sym:roundR45    -0.09      0.24    -0.57     0.39 1.00
-    ## condition_sumAO_Sym:roundR56       0.41      0.33    -0.24     1.05 1.00
-    ## condition_sumAsym_Sym:roundR56    -0.06      0.28    -0.62     0.49 1.00
-    ##                                Bulk_ESS Tail_ESS
-    ## Intercept                         17891    33150
-    ## condition_sumAO_Sym               18128    31916
-    ## condition_sumAsym_Sym             15984    29275
-    ## roundR12                          60269    52721
-    ## roundR23                          68573    57116
-    ## roundR34                          64296    56352
-    ## roundR45                          63043    56515
-    ## roundR56                          62677    53499
-    ## lex_align_c                       81773    56619
-    ## role1                            102399    54135
-    ## condition_sumAO_Sym:roundR12      59957    53532
-    ## condition_sumAsym_Sym:roundR12    61536    54591
-    ## condition_sumAO_Sym:roundR23      65983    56053
-    ## condition_sumAsym_Sym:roundR23    65743    55998
-    ## condition_sumAO_Sym:roundR34      61413    55727
-    ## condition_sumAsym_Sym:roundR34    61294    56291
-    ## condition_sumAO_Sym:roundR45      63529    54058
-    ## condition_sumAsym_Sym:roundR45    64047    56071
-    ## condition_sumAO_Sym:roundR56      68951    56265
-    ## condition_sumAsym_Sym:roundR56    74675    54323
+    ##                      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+    ## Intercept                3.90      0.00     3.89     3.91 1.00     2584
+    ## conditioncond2           0.33      0.01     0.32     0.35 1.00     2624
+    ## conditioncond3           0.18      0.01     0.17     0.19 1.00     2527
+    ## round                    0.10      0.00     0.09     0.10 1.00     2447
+    ## conditioncond2:round    -0.03      0.00    -0.04    -0.02 1.00     2800
+    ## conditioncond3:round    -0.02      0.00    -0.02    -0.01 1.00     2568
+    ##                      Tail_ESS
+    ## Intercept                2335
+    ## conditioncond2           2243
+    ## conditioncond3           2057
+    ## round                    2467
+    ## conditioncond2:round     2911
+    ## conditioncond3:round     2325
     ## 
     ## Further Distributional Parameters:
     ##       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    ## shape    67.35     28.95    22.99   133.91 1.00   112593    50071
+    ## shape   498.13     28.46   443.69   555.82 1.00     2805     2604
     ## 
     ## Draws were sampled using sample(hmc). For each parameter, Bulk_ESS
     ## and Tail_ESS are effective sample size measures, and Rhat is the potential
     ## scale reduction factor on split chains (at convergence, Rhat = 1).
 
 ``` r
-bayestestR::hdi(model)
+### Poisson model with exposure variable
+model2 = brm(y | rate(time) ~ 1 + condition * round,
+             prior = c(
+               prior(normal(1.5, 0.5), class = Intercept),
+               prior(normal(0, 0.5), class = b),
+               prior(normal(0, 50), class = shape)),
+             data = df, 
+             family = negbinomial(),
+             file = "models/speakerB/sim_model2")
+summary(model2)
 ```
 
-    ## Highest Density Interval
+    ##  Family: negbinomial 
+    ##   Links: mu = log 
+    ## Formula: y | rate(time) ~ 1 + condition * round 
+    ##    Data: df (Number of observations: 3000) 
+    ##   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+    ##          total post-warmup draws = 4000
     ## 
-    ## Parameter                      |        95% HDI
-    ## -----------------------------------------------
-    ## (Intercept)                    | [-1.35, -0.87]
-    ## condition_sumAO_Sym            | [-0.01,  0.95]
-    ## condition_sumAsym_Sym          | [-0.56,  0.36]
-    ## roundR12                       | [ 1.41,  1.97]
-    ## roundR23                       | [ 0.18,  0.56]
-    ## roundR34                       | [-0.22,  0.20]
-    ## roundR45                       | [-0.37,  0.15]
-    ## roundR56                       | [-0.47,  0.18]
-    ## lex_align_c                    | [ 0.00,  0.11]
-    ## role1                          | [ 0.56,  0.95]
-    ## condition_sumAO_Sym:roundR12   | [-0.79,  0.36]
-    ## condition_sumAsym_Sym:roundR12 | [-0.60,  0.41]
-    ## condition_sumAO_Sym:roundR23   | [-0.25,  0.57]
-    ## condition_sumAsym_Sym:roundR23 | [-0.18,  0.57]
-    ## condition_sumAO_Sym:roundR34   | [-0.42,  0.47]
-    ## condition_sumAsym_Sym:roundR34 | [-0.34,  0.50]
-    ## condition_sumAO_Sym:roundR45   | [-0.44,  0.60]
-    ## condition_sumAsym_Sym:roundR45 | [-0.56,  0.39]
-    ## condition_sumAO_Sym:roundR56   | [-0.23,  1.05]
-    ## condition_sumAsym_Sym:roundR56 | [-0.62,  0.49]
-
-``` r
-# bayestestR::hdi(model, ci = 0.89)
-```
-
-The coefficients show that the proportion of gestural alignment was
-significantly higher in the SymAV condition than in the AO condition.
-Also, the rate of gestural alignment significantly increased from R1–R2
-and R2–R3 and stabilized afterwards.
-
-<br>
-
-#### Visualize posterior distributions
-
-``` r
-main_model = nb_align_rate_cond_round
-model1 = zinb_align_cond_round
-plot_posterior(main_model, model1, model)
-```
-
-![](figures_md/speakerB/gest_alignment/pd_m4-1.png)<!-- -->
-
-<br>
-
-#### Hypothesis testing: Bayes factor
-
-``` r
-### varying priors for sensitivity analysis
-prior_size = c("xs", "s", "l", "xl")
-prior_sd = c(0.1, 0.3, 0.7, 1)
-bfs_cond_ao_sym = c()
-bfs_ao_sym_round12 = c()
-bfs_ao_sym_round23 = c()
-bfs_ao_sym_round34 = c()
-bfs_ao_sym_round45 = c()
-bfs_ao_sym_round56 = c()
-
-
-for (i in 1:length(prior_sd)){
-  priors = c(
-    prior(normal(-1.39, 0.5), class = Intercept),
-    set_prior(paste0("normal(0,", prior_sd[i], ")"), class = "b"),
-    prior(normal(0, 0.5), class = sd),
-    prior(lkj(2), class = cor),
-    prior(normal(0, 50), class = shape))
-  
-  fname = paste0("models/speakerB/nb_align_rate_cond_round_sum_", prior_size[i])
-  
-  fit = brm(num_gestural_align | rate(num_iconic_gestures) ~ 
-              1 + condition_sum * round + lex_align_c + role +
-              (1+round|pair) + (1|target),
-            family = negbinomial(),
-            prior = priors,
-            data = df_gest_align_posreg_prop,
-            sample_prior = T,
-            save_pars = save_pars(all = TRUE),
-            warmup = nwu, iter = niter,
-            control = list(adapt_delta = 0.9, 
-                           max_treedepth = 15),
-            file = fname)
-  
-  ### BF for visibility conditions
-  # BF for ao - sym
-  h = hypothesis(fit, "condition_sumAO_Sym = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_cond_ao_sym = c(bfs_cond_ao_sym, bf)
-  
-  ### BF for interaction
-  # ao - sym: R1 - R2
-  h = hypothesis(model, "condition_sumAO_Sym:roundR12 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_sym_round12 = c(bfs_ao_sym_round12, bf)
-  
-  # ao - sym: R2 - R3
-  h = hypothesis(model, "condition_sumAO_Sym:roundR23 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_sym_round23 = c(bfs_ao_sym_round23, bf)
-  
-  # ao - sym: R3 - R4
-  h = hypothesis(model, "condition_sumAO_Sym:roundR34 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_sym_round34 = c(bfs_ao_sym_round34, bf)
-  
-  # ao - sym: R4 - R5
-  h = hypothesis(model, "condition_sumAO_Sym:roundR45 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_sym_round45 = c(bfs_ao_sym_round45, bf)
-  
-  # ao - sym: R5 - R6
-  h = hypothesis(model, "condition_sumAO_Sym:roundR56 = 0")
-  bf = 1 / abs(h$hypothesis$Evid.Ratio)
-  bfs_ao_sym_round56 = c(bfs_ao_sym_round56, bf)
-}
-
-### add BF for the main/medium model
-prior_size[3:5] = c("m", prior_size[3:4])
-prior_sd[3:5] = c(0.5, prior_sd[3:4])
-
-### BF for visibility conditions
-# ao - sym
-h = hypothesis(model, "condition_sumAO_Sym = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_cond_ao_sym[3:5] = c(bf, bfs_cond_ao_sym[3:4])
-
-### BF for interaction
-# ao - sym: R1 - R2
-h = hypothesis(model, "condition_sumAO_Sym:roundR12 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_sym_round12[3:5] = c(bf, bfs_ao_sym_round12[3:4])
-
-# ao - sym: R2 - R3
-h = hypothesis(model, "condition_sumAO_Sym:roundR23 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_sym_round23[3:5] = c(bf, bfs_ao_sym_round23[3:4])
-
-# ao - sym: R3 - R4
-h = hypothesis(model, "condition_sumAO_Sym:roundR34 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_sym_round34[3:5] = c(bf, bfs_ao_sym_round34[3:4])
-
-# ao - sym: R4 - R5
-h = hypothesis(model, "condition_sumAO_Sym:roundR45 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_sym_round45[3:5] = c(bf, bfs_ao_sym_round45[3:4])
-
-# ao - sym: R5 - R6
-h = hypothesis(model, "condition_sumAO_Sym:roundR56 = 0")
-bf = 1 / abs(h$hypothesis$Evid.Ratio)
-bfs_ao_sym_round56[3:5] = c(bf, bfs_ao_sym_round56[3:4])
-
-
-### make a df for BFs
-# df_bf_temp = data.frame(size = prior_size,
-#                         sd = prior_sd,
-#                         Effect = "AO--SymAV",
-#                         BF10 = bfs_cond_ao_sym) %>% 
-#   mutate(prior = paste0("N(0, ", sd, ")"),
-#          Predictor = "Visibility")
-
-df_bf_temp = data.frame(size = prior_size,
-                   sd = prior_sd,
-                   ao_sym = bfs_cond_ao_sym,
-                   ao_sym_round12 = bfs_ao_sym_round12,
-                   ao_sym_round23 = bfs_ao_sym_round23,
-                   ao_sym_round34 = bfs_ao_sym_round34,
-                   ao_sym_round45 = bfs_ao_sym_round45,
-                   ao_sym_round56 = bfs_ao_sym_round56) %>% 
-  mutate(prior = paste0("N(0, ", sd, ")")) %>% 
-  pivot_longer(cols = c("ao_sym", 
-                        "ao_sym_round12", "ao_sym_round23", "ao_sym_round34",
-                        "ao_sym_round45", "ao_sym_round56"),
-               names_to = "Effect",
-               values_to = "BF10") %>% 
-  mutate(Predictor = ifelse(grepl("_round", Effect), "Interaction", "Visibility"))
-
-df_bf_temp$Effect = recode(df_bf_temp$Effect,
-                      ao_sym = "AO--SymAV",
-                      ao_sym_round12 = "AO--SymAV:R1--R2",
-                      ao_sym_round23 = "AO--SymAV:R2--R3",
-                      ao_sym_round34 = "AO--SymAV:R3--R4",
-                      ao_sym_round45 = "AO--SymAV:R4--R5",
-                      ao_sym_round56 = "AO--SymAV:R5--R6")
-
-df_bf_new = df_bf %>% 
-  filter(Effect != "N. lex align") %>% 
-  rbind(df_bf_temp) %>% 
-  rbind(df_bf_lex) %>% 
-  filter(!(Predictor == "N. lex align" & Effect != "N. lex align")) %>% 
-  mutate(Effect = factor(Effect,
-                         levels = c("AO--SymAV", "AO--AsymAV", "AsymAV--SymAV", 
-                                    "R1--R2", "R2--R3", "R3--R4", "R4--R5", "R5--R6",
-                                    "N. lex align",
-                                    "AO--SymAV:R1--R2", "AO--SymAV:R2--R3", "AO--SymAV:R3--R4",
-                                    "AO--SymAV:R4--R5", "AO--SymAV:R5--R6",
-                                    "AO--AsymAV:R1--R2", "AO--AsymAV:R2--R3", "AO--AsymAV:R3--R4",
-                                    "AO--AsymAV:R4--R5", "AO--AsymAV:R5--R6",
-                                    "AsymAV--SymAV:R1--R2", "AsymAV--SymAV:R2--R3", "AsymAV--SymAV:R3--R4",
-                                    "AsymAV--SymAV:R4--R5", "AsymAV--SymAV:R5--R6")),
-         Predictor = factor(Predictor,
-                            levels = c("Visibility", "Round", "N. lex align", "Interaction")))
-
-df_bf_new %>% arrange(Effect, sd)
-```
-
-    ## # A tibble: 120 × 6
-    ##    size     sd prior     Effect      BF10 Predictor 
-    ##    <chr> <dbl> <chr>     <fct>      <dbl> <fct>     
-    ##  1 xs      0.1 N(0, 0.1) AO--SymAV   1.29 Visibility
-    ##  2 s       0.3 N(0, 0.3) AO--SymAV   2.92 Visibility
-    ##  3 m       0.5 N(0, 0.5) AO--SymAV   3.21 Visibility
-    ##  4 l       0.7 N(0, 0.7) AO--SymAV   2.98 Visibility
-    ##  5 xl      1   N(0, 1)   AO--SymAV   2.79 Visibility
-    ##  6 xs      0.1 N(0, 0.1) AO--AsymAV  1.36 Visibility
-    ##  7 s       0.3 N(0, 0.3) AO--AsymAV  3.05 Visibility
-    ##  8 m       0.5 N(0, 0.5) AO--AsymAV  4.06 Visibility
-    ##  9 l       0.7 N(0, 0.7) AO--AsymAV  3.93 Visibility
-    ## 10 xl      1   N(0, 1)   AO--AsymAV  3.68 Visibility
-    ## # ℹ 110 more rows
-
-``` r
-#### Plot BFs ####
-ggplot(
-  filter(df_bf_new, 
-         Effect != "R1--R2", Predictor != "N. lex align", #exclude effects/predictors where BF is too large
-         Predictor != "Interaction"), #exclude interactions
-  aes(x = factor(sd), y = BF10, group = Effect)) +
-  geom_hline(yintercept = 1, linetype="dashed") +
-  geom_point(aes(color=Effect)) +
-  geom_line(aes(color=Effect)) +
-  facet_wrap(vars(Predictor), scales = "free_x") +
-  theme_clean(base_size = 15) +
-  theme(axis.text.x = element_text(colour = "black", size = 14),
-        axis.text.y = element_text(colour = "black", size = 14),
-        axis.title = element_text(size = 15, face = 'bold'),
-        axis.title.x = element_text(vjust = -2),
-        axis.title.y = element_text(vjust = 2),
-        # legend.position = "top",
-        legend.title=element_text(size=14), 
-        legend.text=element_text(size=13),
-        strip.text = element_text(size = 15, face = 'bold'),
-        plot.background = element_blank(),
-        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
-  scale_y_log10("Bayes factor (BF10)",
-                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
-                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
-  xlab("SD for the prior")
-```
-
-![](figures_md/speakerB/gest_alignment/bf_align_rate-1.png)<!-- -->
-
-<br>
-
-#### Probability of direction
-
-``` r
-p_direction(model)
-```
-
-    ## Probability of Direction
+    ## Regression Coefficients:
+    ##                      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+    ## Intercept                1.60      0.00     1.59     1.60 1.00     2498
+    ## conditioncond2           0.33      0.01     0.32     0.34 1.00     2481
+    ## conditioncond3           0.17      0.01     0.16     0.19 1.00     2747
+    ## round                    0.10      0.00     0.09     0.10 1.00     2284
+    ## conditioncond2:round    -0.03      0.00    -0.03    -0.02 1.00     2737
+    ## conditioncond3:round    -0.01      0.00    -0.02    -0.01 1.00     2763
+    ##                      Tail_ESS
+    ## Intercept                2580
+    ## conditioncond2           2575
+    ## conditioncond3           2662
+    ## round                    2402
+    ## conditioncond2:round     2904
+    ## conditioncond3:round     2774
     ## 
-    ## Parameter                      |     pd
-    ## ---------------------------------------
-    ## (Intercept)                    |   100%
-    ## condition_sumAO_Sym            | 97.22%
-    ## condition_sumAsym_Sym          | 65.74%
-    ## roundR12                       |   100%
-    ## roundR23                       | 99.99%
-    ## roundR34                       | 51.22%
-    ## roundR45                       | 78.19%
-    ## roundR56                       | 81.48%
-    ## lex_align_c                    | 97.11%
-    ## role1                          |   100%
-    ## condition_sumAO_Sym:roundR12   | 76.88%
-    ## condition_sumAsym_Sym:roundR12 | 66.46%
-    ## condition_sumAO_Sym:roundR23   | 76.98%
-    ## condition_sumAsym_Sym:roundR23 | 84.79%
-    ## condition_sumAO_Sym:roundR34   | 52.70%
-    ## condition_sumAsym_Sym:roundR34 | 64.74%
-    ## condition_sumAO_Sym:roundR45   | 61.30%
-    ## condition_sumAsym_Sym:roundR45 | 64.53%
-    ## condition_sumAO_Sym:roundR56   | 89.47%
-    ## condition_sumAsym_Sym:roundR56 | 58.38%
-
-<br>
-
-#### Prior-posterior update plot
+    ## Further Distributional Parameters:
+    ##       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+    ## shape   213.41     28.91   159.98   273.94 1.00     2558     2288
+    ## 
+    ## Draws were sampled using sample(hmc). For each parameter, Bulk_ESS
+    ## and Tail_ESS are effective sample size measures, and Rhat is the potential
+    ## scale reduction factor on split chains (at convergence, Rhat = 1).
 
 ``` r
-post_sample = as_draws_df(model)
-pp_update_plot(post_sample, model_type="nb")
+### Negbin model with exposure variable
+model3 = brm(y ~ 1 + condition * round + offset(log(time)),
+             prior = c(
+               prior(normal(1.5, 0.5), class = Intercept),
+               prior(normal(0, 0.5), class = b),
+               prior(normal(0, 50), class = shape)),
+             data = df, 
+             family = negbinomial(),
+             file = "models/speakerB/sim_model3")
+summary(model3)
 ```
 
-![](figures_md/speakerB/gest_alignment/update_m4-1.png)<!-- -->
+    ##  Family: negbinomial 
+    ##   Links: mu = log 
+    ## Formula: y ~ 1 + condition * round + offset(log(time)) 
+    ##    Data: df (Number of observations: 3000) 
+    ##   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+    ##          total post-warmup draws = 4000
+    ## 
+    ## Regression Coefficients:
+    ##                      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+    ## Intercept                1.60      0.00     1.59     1.60 1.00     2608
+    ## conditioncond2           0.33      0.01     0.32     0.35 1.00     2638
+    ## conditioncond3           0.17      0.01     0.16     0.19 1.00     2544
+    ## round                    0.10      0.00     0.09     0.10 1.00     2636
+    ## conditioncond2:round    -0.03      0.00    -0.03    -0.02 1.00     2942
+    ## conditioncond3:round    -0.01      0.00    -0.02    -0.01 1.00     2870
+    ##                      Tail_ESS
+    ## Intercept                2806
+    ## conditioncond2           2618
+    ## conditioncond3           2606
+    ## round                    2633
+    ## conditioncond2:round     2991
+    ## conditioncond3:round     2792
+    ## 
+    ## Further Distributional Parameters:
+    ##       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+    ## shape   454.10     29.09   399.25   513.71 1.00     2385     2142
+    ## 
+    ## Draws were sampled using sample(hmc). For each parameter, Bulk_ESS
+    ## and Tail_ESS are effective sample size measures, and Rhat is the potential
+    ## scale reduction factor on split chains (at convergence, Rhat = 1).
 
-<br>
-
-#### Posterior predictive check
+It is important to note that the coefficients are identical regardless
+of whether the exposure variable is specified as `rate()` or `offset()`.
+Next, we will see that `offset()` actually causes issues when generating
+predictions using the `avg_predictions()` function.
 
 ``` r
-pp_check_overall = pp_check(model, ndraws = 100, type = "bars") +
-  coord_cartesian(xlim = c(0, 20),
-                  ylim = c(0, 3000))
-pp_check_sym = pp_check_each_condition(model, df_gest_align_posreg_prop, "SymAV")
-pp_check_asym = pp_check_each_condition(model, df_gest_align_posreg_prop, "AsymAV")
-pp_check_ao = pp_check_each_condition(model, df_gest_align_posreg_prop, "AO")
-
-gridExtra::grid.arrange(pp_check_overall, pp_check_sym, 
-                        pp_check_asym, pp_check_ao, 
-                        ncol = 2)
+### Negbin model without exposure variable
+avg_predictions(model1, by = "condition")
 ```
 
-![](figures_md/speakerB/gest_alignment/ppd_m4-1.png)<!-- -->
-
-Although the model prediction is not perfect, this model had a higher
-predictive power than the negative binomial model. As such, we will use
-this model.
-
-<!-- <br> -->
-<!-- #### Visualize the model estimates -->
-<!-- ```{r} -->
-<!-- plot(conditional_effects(model), ask=FALSE) -->
-<!-- ``` -->
-
-<br>
-
-------------------------------------------------------------------------
-
-# 9. Correlation btw lexical and gestural alignment
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     49.9  49.4   50.3
+    ##      cond2     69.2  68.7   69.8
+    ##      cond3     59.5  58.9   60.0
+    ## 
+    ## Type: response
 
 ``` r
-cor = pcor.test(df_trial_info$lex_align_c, df_trial_info$num_gestural_align, df_trial_info$log_round_c)
-cor
+avg_predictions(model1, by = "condition", type = "link")
 ```
 
-    ##   estimate   p.value statistic    n gp  Method
-    ## 1    0.328 1.89e-108      22.8 4315  1 pearson
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     3.90  3.89   3.90
+    ##      cond2     4.23  4.22   4.24
+    ##      cond3     4.08  4.07   4.08
+    ## 
+    ## Type: link
+
+``` r
+### Negbin model with rate()
+avg_predictions(model2, by = "condition")
+```
+
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     49.8  49.4   50.2
+    ##      cond2     69.4  68.9   69.9
+    ##      cond3     59.3  58.8   59.8
+    ## 
+    ## Type: response
+
+``` r
+avg_predictions(model2, by = "condition", type = "link")
+```
+
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     1.59  1.59   1.60
+    ##      cond2     1.93  1.92   1.94
+    ##      cond3     1.77  1.76   1.78
+    ## 
+    ## Type: link
+
+``` r
+avg_predictions(model2, by = "condition", type = "link", transform = exp)
+```
+
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     4.93  4.88   4.97
+    ##      cond2     6.88  6.83   6.93
+    ##      cond3     5.87  5.82   5.92
+    ## 
+    ## Type: link
+
+``` r
+### Negbin model with offset()
+avg_predictions(model3, by = "condition")
+```
+
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     49.8  49.4   50.3
+    ##      cond2     69.4  68.9   70.0
+    ##      cond3     59.3  58.8   59.8
+    ## 
+    ## Type: response
+
+``` r
+avg_predictions(model3, by = "condition", type = "link")
+```
+
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     3.89  3.88   3.90
+    ##      cond2     4.23  4.22   4.24
+    ##      cond3     4.07  4.06   4.08
+    ## 
+    ## Type: link
+
+``` r
+avg_predictions(model3, by = "condition", type = "link", transform = exp)
+```
+
+    ## 
+    ##  condition Estimate 2.5 % 97.5 %
+    ##      cond1     49.1  48.6   49.5
+    ##      cond2     68.8  68.3   69.4
+    ##      cond3     58.6  58.1   59.2
+    ## 
+    ## Type: link
+
+As you can see, the `avg_predictions()` function gives us the predicted
+mean for each condition on the response scale (i.e., count) by default.
+There are a few things to keep in mind:
+
+1.  When we using the `type = "response"` argument, we always get the
+    predicted mean on the response scale, regardless of whether we have
+    an exposure variable or not.
+2.  When we using the `type = "link"` argument, the output differs
+    depending on (i) whether we have an exposure variable or not,
+    and (ii) whether we specify it as `rate()` or `offset()`. If we
+    don’t have an exposure variable, we get the predicted mean on the
+    link scale (i.e., log count). If we have an exposure variable
+    specified as `rate()`, we get the predicted mean **rate** on the
+    link scale. If we have an exposure variable specified as `offset()`,
+    we get the same predicted mean on the link scale as the model
+    without exposure variable, although the model coefficients are
+    identical to model with rate(). This mismatch is suboptimal because
+    it can lead to incorrect interpretation of the model coefficients
+    and predicted values. Therefore, it is recommended to specify the
+    exposure variable using `rate()` rather than `offset()` whenever
+    possible, but some family (e.g., `zero_inflated_negbinomial()`) does
+    not allow the use of `rate()`, in which case we can specify the
+    exposure variable using `offset()` but we need to be careful when
+    interpreting the model coefficients and predicted values.
 
 <br>
 
@@ -3447,62 +3891,68 @@ cor
 sessionInfo()
 ```
 
-    ## R version 4.2.2 (2022-10-31 ucrt)
-    ## Platform: x86_64-w64-mingw32/x64 (64-bit)
-    ## Running under: Windows 10 x64 (build 26200)
+    ## R version 4.5.2 (2025-10-31)
+    ## Platform: aarch64-apple-darwin20
+    ## Running under: macOS Tahoe 26.2
     ## 
     ## Matrix products: default
+    ## BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
+    ## LAPACK: /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
     ## 
     ## locale:
-    ## [1] LC_COLLATE=English_United States.utf8 
-    ## [2] LC_CTYPE=English_United States.utf8   
-    ## [3] LC_MONETARY=English_United States.utf8
-    ## [4] LC_NUMERIC=C                          
-    ## [5] LC_TIME=English_United States.utf8    
+    ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+    ## 
+    ## time zone: Europe/Amsterdam
+    ## tzcode source: internal
     ## 
     ## attached base packages:
     ## [1] parallel  stats     graphics  grDevices utils     datasets  methods  
     ## [8] base     
     ## 
     ## other attached packages:
-    ##  [1] rstan_2.32.6       StanHeaders_2.32.7 svglite_2.2.2      ppcor_1.1         
-    ##  [5] MASS_7.3-58.1      doParallel_1.0.17  iterators_1.0.14   foreach_1.5.2     
-    ##  [9] emmeans_1.10.7     tidybayes_3.0.7    bayestestR_0.15.2  brms_2.22.0       
-    ## [13] Rcpp_1.0.12        plotly_4.10.4      rsvg_2.6.2         DiagrammeRsvg_0.1 
-    ## [17] DiagrammeR_1.0.11  dagitty_0.3-4      ggh4x_0.3.1        ggthemes_5.1.0    
-    ## [21] hypr_0.2.8         plotrix_3.8-4      lubridate_1.9.3    forcats_1.0.0     
-    ## [25] stringr_1.5.1      dplyr_1.1.4        purrr_1.0.2        readr_2.1.5       
-    ## [29] tidyr_1.3.1        tibble_3.2.1       ggplot2_3.5.2      tidyverse_2.0.0   
+    ##  [1] svglite_2.2.2          ppcor_1.1              MASS_7.3-65           
+    ##  [4] doParallel_1.0.17      iterators_1.0.14       foreach_1.5.2         
+    ##  [7] emmeans_2.0.1          marginaleffects_0.31.0 tidybayes_3.0.7       
+    ## [10] bayestestR_0.17.0      brms_2.23.0            Rcpp_1.1.1            
+    ## [13] rsvg_2.7.0             DiagrammeRsvg_0.1      patchwork_1.3.2       
+    ## [16] DiagrammeR_1.0.11      dagitty_0.3-4          ggh4x_0.3.1           
+    ## [19] RColorBrewer_1.1-3     ggthemes_5.2.0         hypr_0.2.8            
+    ## [22] plotrix_3.8-13         lubridate_1.9.4        forcats_1.0.1         
+    ## [25] stringr_1.6.0          dplyr_1.1.4            purrr_1.2.1           
+    ## [28] readr_2.1.6            tidyr_1.3.2            tibble_3.3.1          
+    ## [31] tidyverse_2.0.0        parallelly_1.46.1      plotly_4.11.0         
+    ## [34] ggplot2_4.0.1         
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] colorspace_2.1-0     estimability_1.5.1   QuickJSR_1.1.3      
-    ##  [4] rstudioapi_0.17.1    farver_2.1.1         svUnit_1.0.6        
-    ##  [7] bit64_4.0.5          mvtnorm_1.2-4        bridgesampling_1.1-2
-    ## [10] codetools_0.2-18     knitr_1.50           bayesplot_1.11.1    
-    ## [13] jsonlite_1.8.8       ggdist_3.3.2         compiler_4.2.2      
-    ## [16] httr_1.4.7           backports_1.4.1      Matrix_1.5-1        
-    ## [19] fastmap_1.1.1        lazyeval_0.2.2       cli_3.6.2           
-    ## [22] visNetwork_2.1.2     htmltools_0.5.8.1    tools_4.2.2         
-    ## [25] coda_0.19-4.1        gtable_0.3.6         glue_1.7.0          
-    ## [28] reshape2_1.4.4       posterior_1.6.1      V8_6.0.6            
-    ## [31] vctrs_0.6.5          nlme_3.1-160         crosstalk_1.2.1     
-    ## [34] insight_1.1.0        tensorA_0.36.2.1     xfun_0.53           
-    ## [37] ps_1.7.6             timechange_0.3.0     lifecycle_1.0.4     
-    ## [40] scales_1.3.0         vroom_1.6.5          ragg_1.3.0          
-    ## [43] hms_1.1.3            Brobdingnag_1.2-9    inline_0.3.21       
-    ## [46] RColorBrewer_1.1-3   yaml_2.3.8           curl_6.2.1          
-    ## [49] gridExtra_2.3        loo_2.8.0            stringi_1.8.3       
-    ## [52] checkmate_2.3.1      pkgbuild_1.4.6       boot_1.3-28         
-    ## [55] cmdstanr_0.8.1       rlang_1.1.3          pkgconfig_2.0.3     
-    ## [58] systemfonts_1.3.1    matrixStats_1.3.0    distributional_0.5.0
-    ## [61] pracma_2.4.4         evaluate_1.0.3       lattice_0.20-45     
-    ## [64] rstantools_2.4.0     htmlwidgets_1.6.4    labeling_0.4.3      
-    ## [67] processx_3.8.4       bit_4.0.5            tidyselect_1.2.1    
-    ## [70] plyr_1.8.9           magrittr_2.0.3       R6_2.6.1            
-    ## [73] generics_0.1.3       pillar_1.10.1        withr_3.0.2         
-    ## [76] datawizard_1.0.1     abind_1.4-8          crayon_1.5.3        
-    ## [79] arrayhelpers_1.1-0   utf8_1.2.4           tzdb_0.4.0          
-    ## [82] rmarkdown_2.29       grid_4.2.2           data.table_1.15.4   
-    ## [85] digest_0.6.35        webshot_0.5.5        xtable_1.8-4        
-    ## [88] textshaping_0.3.7    stats4_4.2.2         RcppParallel_5.1.7  
-    ## [91] munsell_0.5.1        viridisLite_0.4.2
+    ##  [1] gridExtra_2.3         inline_0.3.21         rlang_1.1.7          
+    ##  [4] magrittr_2.0.4        otel_0.2.0            matrixStats_1.5.0    
+    ##  [7] compiler_4.5.2        loo_2.9.0             reshape2_1.4.5       
+    ## [10] systemfonts_1.3.1     vctrs_0.6.5           crayon_1.5.3         
+    ## [13] pkgconfig_2.0.3       arrayhelpers_1.1-0    fastmap_1.2.0        
+    ## [16] backports_1.5.0       labeling_0.4.3        utf8_1.2.6           
+    ## [19] cmdstanr_0.9.0.9000   rmarkdown_2.30        tzdb_0.5.0           
+    ## [22] pracma_2.4.6          ps_1.9.1              ragg_1.5.0           
+    ## [25] bit_4.6.0             xfun_0.55             jsonlite_2.0.0       
+    ## [28] collapse_2.1.6        R6_2.6.1              StanHeaders_2.32.10  
+    ## [31] stringi_1.8.7         boot_1.3-32           estimability_1.5.1   
+    ## [34] rstan_2.32.7          knitr_1.51            pacman_0.5.1         
+    ## [37] bayesplot_1.15.0      Matrix_1.7-4          timechange_0.3.0     
+    ## [40] tidyselect_1.2.1      rstudioapi_0.17.1     abind_1.4-8          
+    ## [43] yaml_2.3.12           codetools_0.2-20      processx_3.8.6       
+    ## [46] curl_7.0.0            pkgbuild_1.4.8        plyr_1.8.9           
+    ## [49] lattice_0.22-7        withr_3.0.2           bridgesampling_1.2-1 
+    ## [52] S7_0.2.1              posterior_1.6.1       coda_0.19-4.1        
+    ## [55] evaluate_1.0.5        RcppParallel_5.1.11-1 ggdist_3.3.3         
+    ## [58] pillar_1.11.1         tensorA_0.36.2.1      stats4_4.5.2         
+    ## [61] checkmate_2.3.3       insight_1.4.4         distributional_0.5.0 
+    ## [64] generics_0.1.4        vroom_1.6.7           hms_1.1.4            
+    ## [67] rstantools_2.6.0      scales_1.4.0          xtable_1.8-4         
+    ## [70] glue_1.8.0            lazyeval_0.2.2        tools_4.5.2          
+    ## [73] data.table_1.18.0     visNetwork_2.1.4      mvtnorm_1.3-3        
+    ## [76] grid_4.5.2            QuickJSR_1.8.1        crosstalk_1.2.2      
+    ## [79] colorspace_2.1-2      nlme_3.1-168          cli_3.6.5            
+    ## [82] textshaping_1.0.4     svUnit_1.0.8          viridisLite_0.4.2    
+    ## [85] Brobdingnag_1.2-9     V8_8.0.1              gtable_0.3.6         
+    ## [88] digest_0.6.39         htmlwidgets_1.6.4     farver_2.1.2         
+    ## [91] htmltools_0.5.9       lifecycle_1.0.5       httr_1.4.7           
+    ## [94] bit64_4.6.0-1
