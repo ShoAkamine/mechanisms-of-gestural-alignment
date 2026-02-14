@@ -1433,7 +1433,7 @@ ggsave("figures/speakerB/gest_alignment/bp_mean_cpt_cond.svg", width=6, height=4
 
 <br>
 
-## 7.2 Negative binomial regression
+## 7.2 ZI Negative binomial regression
 ### 7.2.1 Prior specification
 We will set priors for the intercept based on the expected number of gestural alignment reported in Akamine et al. (2024). In the paper, the authors analyzed data from 19 dyads involving in the same task as the current study but in co-present interaction. The total number of gestural alignment reported was 1086, which was collected from 19 dyads, each performing 96 trials. This leads to the expected number of gestural alignment per speaker to be 1086 / (19 * 96) / 2 = 0.3 (log(0.3) = -1.2). As such, we will set the prior for the intercept to be normal with a mean of -1.2 and a standard deviation of 0.5.
 
