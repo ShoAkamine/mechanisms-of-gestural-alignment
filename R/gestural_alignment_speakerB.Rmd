@@ -2,6 +2,7 @@
 title: "gestural_alignment_rate"
 date: "Last updated: `r Sys.Date()`"
 output:
+  github_document:
   html_document:
     theme: cosmo
     highlight: pygments
@@ -10,7 +11,6 @@ output:
     df_print: paged
     code-tools: true
     code-fold: true
-  github_document:
 always_allow_html: true
 editor_options: 
   markdown: 
@@ -471,6 +471,12 @@ pp_update_plot <- function(post_sample, model_type="nb", interaction=TRUE,
   wrap_plots(p_list) + 
     plot_layout(guides = "collect", ncol = ncol) & theme(legend.position = "bottom")
 }
+
+
+### ggplotly-based function
+interactive_plot <- function(p){
+  if (knitr::is_html_output()) ggplotly(p) else p
+}
 ```
 
 
@@ -763,7 +769,7 @@ bp_iconic_by_cond = ggplot(data=trial_info_pair,
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_iconic_by_cond)
+interactive_plot(bp_iconic_by_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
@@ -800,7 +806,7 @@ bp_mean_iconic_by_cond = ggplot(data=trial_info_pair,
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_mean_iconic_by_cond)
+interactive_plot(bp_mean_iconic_by_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
@@ -875,7 +881,7 @@ bp_mean_iconic_rate =
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_mean_iconic_rate)
+interactive_plot(bp_mean_iconic_rate)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
@@ -1417,7 +1423,7 @@ bp_mean_gest_alignment =
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_mean_gest_alignment)
+interactive_plot(bp_mean_gest_alignment)
 ```
 
 
@@ -1829,7 +1835,7 @@ bp_mean_gest_alignment_prop_by_cond =
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
 
-ggplotly(bp_mean_gest_alignment_prop_by_cond)
+interactive_plot(bp_mean_gest_alignment_prop_by_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
@@ -1871,7 +1877,7 @@ bp_mean_gest_alignment_prop_by_round_cond =
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
   facet_grid(cols = vars(condition))
 
-ggplotly(bp_mean_gest_alignment_prop_by_round_cond)
+interactive_plot(bp_mean_gest_alignment_prop_by_round_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}

@@ -839,7 +839,7 @@ p_bf = ggplot(filter(df_results, Predictor != "Interaction"),
         plot.background = element_blank(),
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
   scale_y_log10("Bayes factor (BF10)",
-                limits = c(0.1, 3),
+                # limits = c(0.1, 3),
                 breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
                 labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
   guides(color = guide_legend(ncol = 1))
