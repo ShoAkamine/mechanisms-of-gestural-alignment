@@ -2,7 +2,6 @@
 title: "gestural_alignment_rate"
 date: "Last updated: `r Sys.Date()`"
 output:
-  github_document:
   html_document:
     theme: cosmo
     highlight: pygments
@@ -11,6 +10,7 @@ output:
     df_print: paged
     code-tools: true
     code-fold: true
+  github_document:
 always_allow_html: true
 editor_options: 
   markdown: 
