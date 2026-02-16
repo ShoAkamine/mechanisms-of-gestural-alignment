@@ -2,8 +2,6 @@
 title: "gestural_alignment_rate"
 date: "Last updated: `r Sys.Date()`"
 output:
-  github_document:
-    html_preview: false
   html_document:
     theme: cosmo
     highlight: pygments
@@ -12,6 +10,8 @@ output:
     df_print: paged
     code-tools: true
     code-fold: true
+  github_document:
+    html_preview: false
 always_allow_html: true
 editor_options: 
   markdown: 
@@ -1895,6 +1895,22 @@ To model the proportion of gestural alignment, we need to remove trials where th
 ```{r}
 df_gest_align_posreg_prop = df_trial_info %>%
   filter(num_iconic_gestures > 0)
+
+### N. rows before removing trails with no iconic gestures
+nrows_before = df_trial_info %>% 
+  group_by(condition) %>% 
+  summarize(n_trials_before = n()) %>% 
+  ungroup()
+
+nrows_after = df_gest_align_posreg_prop %>% 
+  group_by(condition) %>% 
+  summarize(n_trials_after = n()) %>% 
+  ungroup()
+
+nrows_removed = left_join(nrows_before, nrows_after) %>% 
+  mutate(n_trials_removed = n_trials_before - n_trials_after)
+
+nrows_removed
 
 print(paste0("Number of rows before removing trials with no iconic gestures: ", 
              nrow(df_trial_info)))

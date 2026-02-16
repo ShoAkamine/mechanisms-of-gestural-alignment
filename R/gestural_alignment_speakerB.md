@@ -2454,6 +2454,31 @@ running.
 df_gest_align_posreg_prop = df_trial_info %>%
   filter(num_iconic_gestures > 0)
 
+### N. rows before removing trails with no iconic gestures
+nrows_before = df_trial_info %>% 
+  group_by(condition) %>% 
+  summarize(n_trials_before = n()) %>% 
+  ungroup()
+
+nrows_after = df_gest_align_posreg_prop %>% 
+  group_by(condition) %>% 
+  summarize(n_trials_after = n()) %>% 
+  ungroup()
+
+nrows_removed = left_join(nrows_before, nrows_after) %>% 
+  mutate(n_trials_removed = n_trials_before - n_trials_after)
+
+nrows_removed
+```
+
+    ## # A tibble: 3 × 4
+    ##   condition n_trials_before n_trials_after n_trials_removed
+    ##   <fct>               <int>          <int>            <int>
+    ## 1 SymAV                1440            458              982
+    ## 2 AsymAV               1440            409             1031
+    ## 3 AO                   1435            397             1038
+
+``` r
 print(paste0("Number of rows before removing trials with no iconic gestures: ", 
              nrow(df_trial_info)))
 ```
@@ -3406,9 +3431,9 @@ df %>%
     ## # A tibble: 3 × 3
     ##   condition  mean    sd
     ##   <fct>     <dbl> <dbl>
-    ## 1 cond1      401.  49.6
-    ## 2 cond2      601.  49.4
-    ## 3 cond3      298.  49.8
+    ## 1 cond1      399.  49.8
+    ## 2 cond2      601.  50.4
+    ## 3 cond3      300.  49.4
 
 ``` r
 # ground mean
@@ -3465,19 +3490,19 @@ summary(model)
     ## 
     ## Residuals:
     ##     Min      1Q  Median      3Q     Max 
-    ## -172.85  -32.13    0.55   33.64  170.99 
+    ## -153.85  -32.85    0.74   33.30  199.99 
     ## 
     ## Coefficients:
     ##              Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)   433.281      0.905   478.7   <2e-16 ***
-    ## conditionC12  199.378      2.217    89.9   <2e-16 ***
-    ## conditionC23 -302.484      2.217  -136.4   <2e-16 ***
+    ## (Intercept)    433.47       0.91   476.4   <2e-16 ***
+    ## conditionC12   202.01       2.23    90.6   <2e-16 ***
+    ## conditionC23  -300.51       2.23  -134.8   <2e-16 ***
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
-    ## Residual standard error: 49.6 on 2997 degrees of freedom
-    ## Multiple R-squared:  0.865,  Adjusted R-squared:  0.865 
-    ## F-statistic: 9.62e+03 on 2 and 2997 DF,  p-value: <2e-16
+    ## Residual standard error: 49.8 on 2997 degrees of freedom
+    ## Multiple R-squared:  0.863,  Adjusted R-squared:  0.863 
+    ## F-statistic: 9.45e+03 on 2 and 2997 DF,  p-value: <2e-16
 
 There are three things to note here:
 
@@ -3530,9 +3555,9 @@ tibble(condition = conditions,
     ## # A tibble: 3 × 2
     ##   condition predicted_mean
     ##   <chr>              <dbl>
-    ## 1 cond1               401.
+    ## 1 cond1               399.
     ## 2 cond2               601.
-    ## 3 cond3               298.
+    ## 3 cond3               300.
 
 As you can see, the predicted means for each condition can be calculated
 by multiplying the coefficients with the contrast matrix and adding them
@@ -3548,9 +3573,9 @@ avg_predictions(model, by = "condition")
 
     ## 
     ##  condition Estimate Std. Error   z Pr(>|z|)   S 2.5 % 97.5 %
-    ##      cond1      401       1.57 256   <0.001 Inf   398    404
-    ##      cond2      601       1.57 383   <0.001 Inf   597    604
-    ##      cond3      298       1.57 190   <0.001 Inf   295    301
+    ##      cond1      399       1.58 253   <0.001 Inf   396    402
+    ##      cond2      601       1.58 381   <0.001 Inf   598    604
+    ##      cond3      300       1.58 191   <0.001 Inf   297    304
     ## 
     ## Type: response
 
@@ -3602,22 +3627,22 @@ df %>%
     ## # A tibble: 3 × 5
     ##   condition  mean    sd mean_rate sd_rate
     ##   <fct>     <dbl> <dbl>     <dbl>   <dbl>
-    ## 1 cond1      49.4  9.80      4.95    1.01
-    ## 2 cond2      69.3  9.80      6.95    1.07
-    ## 3 cond3      59.7  9.76      5.99    1.03
+    ## 1 cond1      49.6 10.2       4.97    1.04
+    ## 2 cond2      69.7  9.75      6.98    1.03
+    ## 3 cond3      59.7 10.1       6.00    1.08
 
 ``` r
 # ground mean
 mean(df$y)
 ```
 
-    ## [1] 59.5
+    ## [1] 59.7
 
 ``` r
 mean(df$y/df$time)
 ```
 
-    ## [1] 5.96
+    ## [1] 5.98
 
 ### Fit the model
 
@@ -3790,9 +3815,9 @@ avg_predictions(model2, by = "condition")
 
     ## 
     ##  condition Estimate 2.5 % 97.5 %
-    ##      cond1     50.0  49.6   50.5
+    ##      cond1     50.0  49.5   50.4
     ##      cond2     69.3  68.8   69.8
-    ##      cond3     59.2  58.7   59.7
+    ##      cond3     59.1  58.6   59.6
     ## 
     ## Type: response
 
@@ -3827,9 +3852,9 @@ avg_predictions(model3, by = "condition")
 
     ## 
     ##  condition Estimate 2.5 % 97.5 %
-    ##      cond1     50.0  49.6   50.5
-    ##      cond2     69.3  68.8   69.8
-    ##      cond3     59.2  58.7   59.8
+    ##      cond1     50.0  49.5   50.4
+    ##      cond2     69.4  68.8   69.9
+    ##      cond3     59.1  58.6   59.6
     ## 
     ## Type: response
 
@@ -3851,9 +3876,9 @@ avg_predictions(model3, by = "condition", type = "link", transform = exp)
 
     ## 
     ##  condition Estimate 2.5 % 97.5 %
-    ##      cond1     49.3  48.8   49.7
-    ##      cond2     68.7  68.2   69.3
-    ##      cond3     58.6  58.1   59.1
+    ##      cond1     49.2  48.8   49.7
+    ##      cond2     68.8  68.2   69.3
+    ##      cond3     58.5  58.0   59.0
     ## 
     ## Type: link
 
@@ -3892,16 +3917,19 @@ There are a few things to keep in mind:
 sessionInfo()
 ```
 
-    ## R version 4.5.2 (2025-10-31)
-    ## Platform: aarch64-apple-darwin20
-    ## Running under: macOS Tahoe 26.2
+    ## R version 4.5.1 (2025-06-13 ucrt)
+    ## Platform: x86_64-w64-mingw32/x64
+    ## Running under: Windows 11 x64 (build 26200)
     ## 
     ## Matrix products: default
-    ## BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
-    ## LAPACK: /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
+    ##   LAPACK version 3.12.1
     ## 
     ## locale:
-    ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+    ## [1] LC_COLLATE=English_United States.utf8 
+    ## [2] LC_CTYPE=English_United States.utf8   
+    ## [3] LC_MONETARY=English_United States.utf8
+    ## [4] LC_NUMERIC=C                          
+    ## [5] LC_TIME=English_United States.utf8    
     ## 
     ## time zone: Europe/Amsterdam
     ## tzcode source: internal
@@ -3914,45 +3942,45 @@ sessionInfo()
     ##  [1] svglite_2.2.2          ppcor_1.1              MASS_7.3-65           
     ##  [4] doParallel_1.0.17      iterators_1.0.14       foreach_1.5.2         
     ##  [7] emmeans_2.0.1          marginaleffects_0.31.0 tidybayes_3.0.7       
-    ## [10] bayestestR_0.17.0      brms_2.23.0            Rcpp_1.1.1            
+    ## [10] bayestestR_0.17.0      brms_2.23.0            Rcpp_1.1.0            
     ## [13] rsvg_2.7.0             DiagrammeRsvg_0.1      patchwork_1.3.2       
     ## [16] DiagrammeR_1.0.11      dagitty_0.3-4          ggh4x_0.3.1           
     ## [19] RColorBrewer_1.1-3     ggthemes_5.2.0         hypr_0.2.8            
-    ## [22] plotrix_3.8-13         lubridate_1.9.4        forcats_1.0.1         
+    ## [22] plotrix_3.8-13         lubridate_1.9.5        forcats_1.0.1         
     ## [25] stringr_1.6.0          dplyr_1.1.4            purrr_1.2.1           
-    ## [28] readr_2.1.6            tidyr_1.3.2            tibble_3.3.1          
-    ## [31] tidyverse_2.0.0        parallelly_1.46.1      plotly_4.11.0         
-    ## [34] ggplot2_4.0.1         
+    ## [28] readr_2.1.6            tidyr_1.3.2            tibble_3.3.0          
+    ## [31] tidyverse_2.0.0        parallelly_1.46.1      plotly_4.12.0         
+    ## [34] ggplot2_4.0.2         
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] gridExtra_2.3         inline_0.3.21         rlang_1.1.7          
-    ##  [4] magrittr_2.0.4        otel_0.2.0            matrixStats_1.5.0    
-    ##  [7] compiler_4.5.2        loo_2.9.0             reshape2_1.4.5       
-    ## [10] systemfonts_1.3.1     vctrs_0.6.5           crayon_1.5.3         
-    ## [13] pkgconfig_2.0.3       arrayhelpers_1.1-0    fastmap_1.2.0        
-    ## [16] backports_1.5.0       labeling_0.4.3        utf8_1.2.6           
-    ## [19] cmdstanr_0.9.0.9000   rmarkdown_2.30        tzdb_0.5.0           
-    ## [22] pracma_2.4.6          ps_1.9.1              ragg_1.5.0           
-    ## [25] bit_4.6.0             xfun_0.55             jsonlite_2.0.0       
-    ## [28] collapse_2.1.6        R6_2.6.1              StanHeaders_2.32.10  
-    ## [31] stringi_1.8.7         boot_1.3-32           estimability_1.5.1   
-    ## [34] rstan_2.32.7          knitr_1.51            pacman_0.5.1         
-    ## [37] bayesplot_1.15.0      Matrix_1.7-4          timechange_0.3.0     
-    ## [40] tidyselect_1.2.1      rstudioapi_0.17.1     abind_1.4-8          
-    ## [43] yaml_2.3.12           codetools_0.2-20      processx_3.8.6       
-    ## [46] curl_7.0.0            pkgbuild_1.4.8        plyr_1.8.9           
-    ## [49] lattice_0.22-7        withr_3.0.2           bridgesampling_1.2-1 
-    ## [52] S7_0.2.1              posterior_1.6.1       coda_0.19-4.1        
-    ## [55] evaluate_1.0.5        RcppParallel_5.1.11-1 ggdist_3.3.3         
-    ## [58] pillar_1.11.1         tensorA_0.36.2.1      stats4_4.5.2         
-    ## [61] checkmate_2.3.3       insight_1.4.4         distributional_0.5.0 
-    ## [64] generics_0.1.4        vroom_1.6.7           hms_1.1.4            
-    ## [67] rstantools_2.6.0      scales_1.4.0          xtable_1.8-4         
-    ## [70] glue_1.8.0            lazyeval_0.2.2        tools_4.5.2          
-    ## [73] data.table_1.18.0     visNetwork_2.1.4      mvtnorm_1.3-3        
-    ## [76] grid_4.5.2            QuickJSR_1.8.1        colorspace_2.1-2     
-    ## [79] nlme_3.1-168          cli_3.6.5             textshaping_1.0.4    
-    ## [82] svUnit_1.0.8          viridisLite_0.4.2     Brobdingnag_1.2-9    
-    ## [85] V8_8.0.1              gtable_0.3.6          digest_0.6.39        
-    ## [88] htmlwidgets_1.6.4     farver_2.1.2          htmltools_0.5.9      
-    ## [91] lifecycle_1.0.5       httr_1.4.7            bit64_4.6.0-1
+    ##  [1] gridExtra_2.3        inline_0.3.21        rlang_1.1.6         
+    ##  [4] magrittr_2.0.4       otel_0.2.0           matrixStats_1.5.0   
+    ##  [7] compiler_4.5.1       loo_2.9.0            reshape2_1.4.5      
+    ## [10] systemfonts_1.3.1    vctrs_0.6.5          crayon_1.5.3        
+    ## [13] pkgconfig_2.0.3      arrayhelpers_1.1-0   fastmap_1.2.0       
+    ## [16] backports_1.5.0      labeling_0.4.3       utf8_1.2.6          
+    ## [19] cmdstanr_0.9.0       rmarkdown_2.30       tzdb_0.5.0          
+    ## [22] pracma_2.4.6         ps_1.9.1             ragg_1.5.0          
+    ## [25] bit_4.6.0            xfun_0.52            jsonlite_2.0.0      
+    ## [28] collapse_2.1.6       R6_2.6.1             StanHeaders_2.32.10 
+    ## [31] stringi_1.8.7        boot_1.3-31          estimability_1.5.1  
+    ## [34] rstan_2.32.7         knitr_1.51           pacman_0.5.1        
+    ## [37] bayesplot_1.15.0     Matrix_1.7-3         timechange_0.4.0    
+    ## [40] tidyselect_1.2.1     rstudioapi_0.18.0    abind_1.4-8         
+    ## [43] yaml_2.3.12          codetools_0.2-20     processx_3.8.6      
+    ## [46] curl_7.0.0           pkgbuild_1.4.8       plyr_1.8.9          
+    ## [49] lattice_0.22-7       withr_3.0.2          bridgesampling_1.2-1
+    ## [52] S7_0.2.1             posterior_1.6.1      coda_0.19-4.1       
+    ## [55] evaluate_1.0.5       RcppParallel_5.1.10  ggdist_3.3.3        
+    ## [58] pillar_1.11.1        tensorA_0.36.2.1     stats4_4.5.1        
+    ## [61] checkmate_2.3.3      insight_1.4.6        distributional_0.6.0
+    ## [64] generics_0.1.4       vroom_1.7.0          hms_1.1.4           
+    ## [67] rstantools_2.6.0     scales_1.4.0         xtable_1.8-4        
+    ## [70] glue_1.8.0           lazyeval_0.2.2       tools_4.5.1         
+    ## [73] data.table_1.17.8    visNetwork_2.1.4     mvtnorm_1.3-3       
+    ## [76] grid_4.5.1           QuickJSR_1.9.0       nlme_3.1-168        
+    ## [79] cli_3.6.5            textshaping_1.0.4    svUnit_1.0.8        
+    ## [82] viridisLite_0.4.3    Brobdingnag_1.2-9    V8_8.0.1            
+    ## [85] gtable_0.3.6         digest_0.6.37        htmlwidgets_1.6.4   
+    ## [88] farver_2.1.2         htmltools_0.5.8.1    lifecycle_1.0.5     
+    ## [91] httr_1.4.7           bit64_4.6.0-1
