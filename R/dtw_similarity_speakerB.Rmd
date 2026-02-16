@@ -2,6 +2,8 @@
 title: "DTW distance"
 date: "Last updated: `r Sys.Date()`"
 output:
+  github_document:
+    html_preview: false
   html_document:
     theme: cosmo
     highlight: pygments
@@ -10,8 +12,6 @@ output:
     df_print: paged
     code-tools: true
     code-fold: true
-  github_document:
-    html_preview: false
 always_allow_html: true
 editor_options: 
   markdown: 
@@ -195,6 +195,13 @@ pp_update_plot <- function(post_sample, interaction=TRUE){
                             cond1_round, cond2_round, 
                             ncol=2)
   }
+}
+
+
+### ggplotly-based function
+interactive_plot <- function(p){
+  # use ggplotly only if the output format is not GitHub markdown
+  if (knitr::pandoc_to("gfm")) p else ggplotly(p)
 }
 ```
 
@@ -454,7 +461,7 @@ bp_distance_by_cond_round =
   facet_grid(rows = vars(speaker),
              cols = vars(condition))
 
-ggplotly(bp_distance_by_cond_round)
+interactive_plot(bp_distance_by_cond_round)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
@@ -578,7 +585,7 @@ bp_distance_by_cond_round =
         plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
   facet_grid(cols = vars(condition))
 
-ggplotly(bp_distance_by_cond_round)
+interactive_plot(bp_distance_by_cond_round)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
