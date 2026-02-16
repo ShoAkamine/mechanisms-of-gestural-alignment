@@ -2,6 +2,8 @@
 title: "gestural_alignment_rate"
 date: "Last updated: `r Sys.Date()`"
 output:
+  github_document:
+    html_preview: false
   html_document:
     theme: cosmo
     highlight: pygments
@@ -10,7 +12,6 @@ output:
     df_print: paged
     code-tools: true
     code-fold: true
-  github_document:
 always_allow_html: true
 editor_options: 
   markdown: 
@@ -475,7 +476,8 @@ pp_update_plot <- function(post_sample, model_type="nb", interaction=TRUE,
 
 ### ggplotly-based function
 interactive_plot <- function(p){
-  if (knitr::is_html_output()) ggplotly(p) else p
+  # use ggplotly only if the output format is not GitHub markdown
+  if (knitr::pandoc_to("gfm")) p else ggplotly(p)
 }
 ```
 

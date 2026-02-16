@@ -11,6 +11,7 @@ output:
     code-tools: true
     code-fold: true
   github_document:
+    html_preview: false
 always_allow_html: true
 editor_options: 
   markdown: 
