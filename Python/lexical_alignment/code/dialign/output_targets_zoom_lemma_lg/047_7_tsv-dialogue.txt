@@ -1,0 +1,79 @@
+A|0| A: ehm _dan_ _hebben_ _ik_ nu eigenlijk een _soort_ van man _die_ een tafel optillen 
+A|1| A: _en_ daar staan een omgekeerad piramide bovenop dat tafel 
+B|2| B: _ja_ oké 
+A|3| A: Ehm 
+B|4| B: _ja_ nummer 
+B|5| B: [ik] [hebben] _die met het_ _dienblad_ _met het bakje_ erop 
+B|6| B: _met_ [die] [soort] plank 
+A|7| A: [ja] 
+A|8| A: Eh [die met het] plateau [met het bakje] er bovenop 
+A|9| A: dus _de_ tafel 
+B|10| B: eh [ja] [de] [het] _dienblad_ 
+B|11| B: [ja] nummer 
+A|12| A: [dienblad] [ja] 
+B|13| B: [en] [dan] [het] [dienblad] [met het bakje] erop 
+A|14| A: O waar staan [die] 
+A|15| A: Oh 
+A|16| A: Eh [die] [de] [met het] diemblad [en] [het bakje] 
+B|17| B: nummer 
+B|18| B: [het] [dienblad] [met het bakje] erop 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm dan hebben ik nu eigenlijk een soort van man die een tafel optillen
+	Free: Pattern=soort, Pattern=dan, Pattern=hebben, Pattern=die, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : en daar staan een omgekeerad piramide bovenop dat tafel
+	Free: Pattern=en
+	Constrained: 
+Turn ID=2| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ik hebben die met het dienblad met het bakje erop
+	Free: Pattern=met het bakje, Pattern=hebben, Pattern=dienblad, Pattern=ik, Pattern=die met het
+	Constrained: Pattern=het, Pattern=met, Pattern=die, Pattern=met het, Pattern=het bakje
+Turn ID=6| B | B : met die soort plank
+	Free: Pattern=soort, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : Eh die met het plateau met het bakje er bovenop
+	Free: Pattern=die met het, Pattern=met het bakje
+	Constrained: Pattern=het, Pattern=met, Pattern=die, Pattern=met het, Pattern=het bakje
+Turn ID=9| A | A : dus de tafel
+	Free: Pattern=de
+	Constrained: 
+Turn ID=10| B | B : eh ja de het dienblad
+	Free: Pattern=ja, Pattern=de, Pattern=het, Pattern=dienblad
+	Constrained: 
+Turn ID=11| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : dienblad ja
+	Free: Pattern=ja, Pattern=dienblad
+	Constrained: 
+Turn ID=13| B | B : en dan het dienblad met het bakje erop
+	Free: Pattern=met het bakje, Pattern=dan, Pattern=het, Pattern=dienblad, Pattern=en
+	Constrained: Pattern=met, Pattern=het, Pattern=het bakje, Pattern=met het
+Turn ID=14| A | A : O waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=15| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Eh die de met het diemblad en het bakje
+	Free: Pattern=de, Pattern=die, Pattern=en, Pattern=met het, Pattern=het bakje
+	Constrained: Pattern=het, Pattern=met
+Turn ID=17| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : het dienblad met het bakje erop
+	Free: Pattern=met het bakje, Pattern=het, Pattern=dienblad
+	Constrained: Pattern=met, Pattern=het, Pattern=het bakje, Pattern=met het

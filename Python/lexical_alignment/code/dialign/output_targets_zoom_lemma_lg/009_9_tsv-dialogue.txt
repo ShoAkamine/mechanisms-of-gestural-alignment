@@ -1,0 +1,171 @@
+B|0| B: _ik hebben nu_ _ik_ _vinden_ _het_ _zeggen maar_ _lijken _op_ een soort_ _tandenborstelhouder_ 
+B|1| B: _met_ _een_ aan _de_ achterkant _een rond_ _waar die_ dan dus vast zitten 
+B|2| B: _en_ dan _een soort_ net zo'n kwastje of _een soort_ ding erboav uitsteken 
+A|3| A: even kijken horen 
+A|4| A: ah 
+B|5| B: _en hij_ _en hij_ _hebben_ dan _nog_ aan _de_ linkerkant _een_ steel zitten 
+A|6| A: [en hij] _staan_ als [het] zijn [op een] plateaut [zeggen maar] 
+B|7| B: _ja ja_ 
+A|8| A: [ja] oké [ik] weten wat je bedoelen 
+A|9| A: Oké 
+A|10| A: [ik hebben] ook [een soort] [ja] verfkwast 
+A|11| A: [en] [het] _staan_ [op een soort] statoo [met] links [een] armpje 
+B|12| B: _Oh ja_ _en een rond_ [ja] 
+A|13| A: [en] daarachter [een rond] 
+A|14| A: [ja] 
+B|15| B: [ik hebben] _de_ _de_ _tandenborstelhouder_ 
+B|16| B: [met] _dat_ _die_ _dat_ ding _die_ [op] iets [staan] [zeggen maar] 
+A|17| A: [Oh ja] 
+A|18| A: even kijken 
+A|19| A: _ja ja ja_ 
+B|20| B: Zoet 
+A|21| A: even zoeken [waar die] zijn [waar die] zijn [waar die] 
+A|22| A: eh top 
+A|23| A: [ja] oké 
+A|24| A: [en] [en een rond] hè zijn [het] 
+B|25| B: [ja ja ja] 
+A|26| A: ook [nog] 
+A|27| A: [ja] 
+A|28| A: [ik hebben nu] [de] kwast erin [en] 
+A|29| A: [Oh] wachten dit [vinden] jij [lijken op] [dat] [tandenborstelhouder] 
+B|30| B: [Oh [ja] ja] [met] [rond] 
+A|31| A: _met het rond_ 
+A|32| A: [ja ja] 
+B|33| B: [ja] 
+B|34| B: [ik hebben] [de] [tandenborstelhouder] 
+A|35| A: [Oh ja] even kijken horen 
+B|36| B: [met het rond] 
+A|37| A: Zit er daar één 
+A|38| A: [ja] 
+A|39| A: [Oh ja] 
+A|40| A: [ik hebben] [tandenborstelhouder] 
+B|41| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben nu ik vinden het zeggen maar lijken op een soort tandenborstelhouder
+	Free: Pattern=tandenborstelhouder, Pattern=vinden, Pattern=lijken op, Pattern=zeggen maar, Pattern=het, Pattern=op een soort, Pattern=ik, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=op, Pattern=een, Pattern=hebben, Pattern=op een, Pattern=ik, Pattern=een soort
+Turn ID=1| B | B : met een aan de achterkant een rond waar die dan dus vast zitten
+	Free: Pattern=de, Pattern=waar die, Pattern=een, Pattern=met, Pattern=een rond
+	Constrained: Pattern=rond, Pattern=een, Pattern=die
+Turn ID=2| B | B : en dan een soort net zo'n kwastje of een soort ding erboav uitsteken
+	Free: Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=3| A | A : even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : en hij en hij hebben dan nog aan de linkerkant een steel zitten
+	Free: Pattern=nog, Pattern=de, Pattern=een, Pattern=hebben, Pattern=en hij
+	Constrained: Pattern=en
+Turn ID=6| A | A : en hij staan als het zijn op een plateaut zeggen maar
+	Free: Pattern=staan, Pattern=zeggen maar, Pattern=het, Pattern=en hij, Pattern=op een
+	Constrained: Pattern=een, Pattern=en, Pattern=op
+Turn ID=7| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=8| A | A : ja oké ik weten wat je bedoelen
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : ik hebben ook een soort ja verfkwast
+	Free: Pattern=ik hebben, Pattern=een soort, Pattern=ja
+	Constrained: Pattern=ik, Pattern=een, Pattern=hebben
+Turn ID=11| A | A : en het staan op een soort statoo met links een armpje
+	Free: Pattern=het, Pattern=op een soort, Pattern=met, Pattern=en, Pattern=een, Pattern=staan
+	Constrained: Pattern=een soort, Pattern=op een, Pattern=een, Pattern=op
+Turn ID=12| B | B : Oh ja en een rond ja
+	Free: Pattern=en een rond, Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=een, Pattern=en, Pattern=een rond, Pattern=rond, Pattern=Oh
+Turn ID=13| A | A : en daarachter een rond
+	Free: Pattern=een rond, Pattern=en
+	Constrained: Pattern=rond, Pattern=een
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ik hebben de de tandenborstelhouder
+	Free: Pattern=ik hebben, Pattern=tandenborstelhouder, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=16| B | B : met dat die dat ding die op iets staan zeggen maar
+	Free: Pattern=dat, Pattern=op, Pattern=staan, Pattern=zeggen maar, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=17| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=18| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=20| B | B : Zoet
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : even zoeken waar die zijn waar die zijn waar die
+	Free: Pattern=waar die
+	Constrained: Pattern=die
+Turn ID=22| A | A : eh top
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : en en een rond hè zijn het
+	Free: Pattern=en een rond, Pattern=het, Pattern=en
+	Constrained: Pattern=een rond, Pattern=en, Pattern=rond, Pattern=een
+Turn ID=25| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=26| A | A : ook nog
+	Free: Pattern=nog
+	Constrained: 
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ik hebben nu de kwast erin en
+	Free: Pattern=ik hebben nu, Pattern=en, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=29| A | A : Oh wachten dit vinden jij lijken op dat tandenborstelhouder
+	Free: Pattern=dat, Pattern=tandenborstelhouder, Pattern=vinden, Pattern=lijken op, Pattern=Oh
+	Constrained: Pattern=op
+Turn ID=30| B | B : Oh ja ja met rond
+	Free: Pattern=ja ja, Pattern=Oh ja, Pattern=rond, Pattern=met
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=31| A | A : met het rond
+	Free: Pattern=met het rond
+	Constrained: Pattern=het, Pattern=rond, Pattern=met
+Turn ID=32| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : ik hebben de tandenborstelhouder
+	Free: Pattern=ik hebben, Pattern=tandenborstelhouder, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=35| A | A : Oh ja even kijken horen
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=36| B | B : met het rond
+	Free: Pattern=met het rond
+	Constrained: Pattern=het, Pattern=rond, Pattern=met
+Turn ID=37| A | A : Zit er daar één
+	Free: 
+	Constrained: 
+Turn ID=38| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=40| A | A : ik hebben tandenborstelhouder
+	Free: Pattern=ik hebben, Pattern=tandenborstelhouder
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

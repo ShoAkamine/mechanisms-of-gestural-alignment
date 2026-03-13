@@ -1,0 +1,143 @@
+A|0| A: _ehm_ _ja_ ik vinden hem zelf heel erg lijken op _een_ _eend_ 
+A|1| A: Eh _hij_ _hebben_ als het waar _soort van_ aan _de_ rechterkant _twee_ uitsteeksel 
+A|2| A: Eh _en_ dan aan _de_ linkerkant _hebben hij_ ook _twee_ uitsteeksel 
+A|3| A: maar één maar maar _die_ uitsteksel _zijn_ niet symmetrisch 
+A|4| A: _en_ hetzelfde vorm 
+A|5| A: _dus_ één zitten als het waar gewoon recht te gaan _de_ ander gaan als _een_ boog onderlangs 
+B|6| B: ah [ja] 
+A|7| A: _en_ dan bovenop zitten er [ja] _een_ driehoek _met_ _een_ punt afsnijden 
+B|8| B: [ja] 
+B|9| B: Oké _dat zijn_ [ja] 
+A|10| A: _trapeze_ 
+B|11| B: _dat zijn_ 
+B|12| B: [ehm] _deze_ [hebben] even kijken [twee] precies _dezelfde_ [ja] stuk rechts 
+B|13| B: [en] linksonder [hebben hij] zo'n lus 
+A|14| A: huh 
+B|15| B: [en] _daarboven_ [hebben hij] [een] [soort van] [trapeze] 
+A|16| A: [ja] [dat zijn] dan 
+A|17| A: Eh [deze] [ja] lijken _dus_ op [een] _eend_ 
+A|18| A: Heeft [twee] [dezelfde] balk aan _de_ rechterkant 
+A|19| A: [en] link [hebben hij] degeen _die_ [een] beetje onder gaan 
+A|20| A: [en] dan nog [daarboven] één 
+A|21| A: [en] dan [hebben hij] bovenop [hebben hij] [dat] [ja] volgens mij _trapezium_ noemen je [dat] maar 
+B|22| B: [ja] 
+B|23| B: dit [zijn] [de] [eend] 
+B|24| B: [dus] [met] [die] [trapezium] boven toch 
+A|25| A: Eh [ja] [ja] [dat zijn] 
+B|26| B: Yes 
+A|27| A: Eh [deze] lijken op [een] [eend] 
+A|28| A: [en] [hebben] [trapezium] bovenop 
+B|29| B: O [ja] 
+B|30| B: eh [de] [eend] 
+B|31| B: toch ? [dat zijn] toch [de] [eend] 
+B|32| B: [ja] [met] [trapezium] [ja] 
+A|33| A: [ja] trapeziumen 
+A|34| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm ja ik vinden hem zelf heel erg lijken op een eend
+	Free: Pattern=een, Pattern=eend, Pattern=ja, Pattern=ehm
+	Constrained: 
+Turn ID=1| A | A : Eh hij hebben als het waar soort van aan de rechterkant twee uitsteeksel
+	Free: Pattern=twee, Pattern=de, Pattern=hebben, Pattern=hij, Pattern=soort van
+	Constrained: 
+Turn ID=2| A | A : Eh en dan aan de linkerkant hebben hij ook twee uitsteeksel
+	Free: Pattern=hebben hij, Pattern=en, Pattern=twee, Pattern=de
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=3| A | A : maar één maar maar die uitsteksel zijn niet symmetrisch
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=4| A | A : en hetzelfde vorm
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| A | A : dus één zitten als het waar gewoon recht te gaan de ander gaan als een boog onderlangs
+	Free: Pattern=een, Pattern=de, Pattern=dus
+	Constrained: 
+Turn ID=6| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en dan bovenop zitten er ja een driehoek met een punt afsnijden
+	Free: Pattern=een, Pattern=en, Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oké dat zijn ja
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| A | A : trapeze
+	Free: Pattern=trapeze
+	Constrained: 
+Turn ID=11| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| B | B : ehm deze hebben even kijken twee precies dezelfde ja stuk rechts
+	Free: Pattern=ja, Pattern=hebben, Pattern=ehm, Pattern=deze, Pattern=twee, Pattern=dezelfde
+	Constrained: 
+Turn ID=13| B | B : en linksonder hebben hij zo'n lus
+	Free: Pattern=hebben hij, Pattern=en
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=14| A | A : huh
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : en daarboven hebben hij een soort van trapeze
+	Free: Pattern=hebben hij, Pattern=een, Pattern=en, Pattern=soort van, Pattern=trapeze, Pattern=daarboven
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=16| A | A : ja dat zijn dan
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : Eh deze ja lijken dus op een eend
+	Free: Pattern=eend, Pattern=een, Pattern=deze, Pattern=dus, Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Heeft twee dezelfde balk aan de rechterkant
+	Free: Pattern=dezelfde, Pattern=twee, Pattern=de
+	Constrained: 
+Turn ID=19| A | A : en link hebben hij degeen die een beetje onder gaan
+	Free: Pattern=hebben hij, Pattern=een, Pattern=en, Pattern=die
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=20| A | A : en dan nog daarboven één
+	Free: Pattern=en, Pattern=daarboven
+	Constrained: 
+Turn ID=21| A | A : en dan hebben hij bovenop hebben hij dat ja volgens mij trapezium noemen je dat maar
+	Free: Pattern=dat, Pattern=hebben hij, Pattern=ja, Pattern=trapezium, Pattern=en
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : dit zijn de eend
+	Free: Pattern=zijn, Pattern=de, Pattern=eend
+	Constrained: 
+Turn ID=24| B | B : dus met die trapezium boven toch
+	Free: Pattern=trapezium, Pattern=die, Pattern=dus, Pattern=met
+	Constrained: 
+Turn ID=25| A | A : Eh ja ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : Eh deze lijken op een eend
+	Free: Pattern=een, Pattern=eend, Pattern=deze
+	Constrained: 
+Turn ID=28| A | A : en hebben trapezium bovenop
+	Free: Pattern=trapezium, Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=29| B | B : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : eh de eend
+	Free: Pattern=de, Pattern=eend
+	Constrained: 
+Turn ID=31| B | B : toch ? dat zijn toch de eend
+	Free: Pattern=dat zijn, Pattern=de, Pattern=eend
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=32| B | B : ja met trapezium ja
+	Free: Pattern=trapezium, Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=33| A | A : ja trapeziumen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

@@ -1,0 +1,135 @@
+A|0| A: ehm deze _hebben_ _een soort_ _ja_ _vierkant aan de bovenkant_ 
+A|1| A: _maar_ _die_ _zijn_ _met_ één _van_ _de_ punt _van_ _de_ _vierkant_ _als_ _het_ _zijn_ in _het_ hoofd _zitten_ _die_ 
+A|2| A: _en dan_ _met_ twee stengel _die_ uit _dat_ vierkan komen 
+A|3| A: _en dan_ _hebben die_ _aan de onderkant_ _ook nog_ _een soort_ _van_ _ja_ half afgebogen balk 
+B|4| B: [ja] dus helemaal daaronder [als] [een soort] kraant zeggen [maar] 
+A|5| A: [ja] 
+B|6| B: wat daar onder hangen 
+B|7| B: [en dan] [aan de] [ja] zijkant of voorkant hoe je [het] bekijken [ook nog] wat ding [die] uitsteken toch 
+A|8| A: [ja] inderdaad 
+B|9| B: Oké [ja] [dan] weten _ik_ al welk _dat zijn_ 
+B|10| B: Eh _dat zijn_ 
+B|11| B: Ehm _ik hebben die_ [een] _met dat soort dubbel_ [vierkant aan de bovenkant] 
+B|12| B: [als] [een] _ruit_ 
+B|13| B: Ehm [en] [met] daaronder [dat] kraantje 
+B|14| B: [en dan] door [dat] door _die _dubbel_ ruit_ [zitten] [ook nog] [van] [die] stok 
+B|15| B: [van] [die] [vierkant] [die] _van klein naar groot_ _gaan_ 
+A|16| A: _ja dat zijn_ 
+A|17| A: eh _ik hebben die [met_ dat soort _dubbel] ruit aan de bovenkant_ 
+A|18| A: _met die_ twee [ja] [van klein naar groot] [vierkant] 
+A|19| A: _en het _kraan_ aan de onderkant_ 
+B|20| B: [ja dat zijn] 
+B|21| B: [ik hebben _die met] die [dubbel_ ruit aan de bovenkant] 
+B|22| B: [en] [dat] [kraan aan de onderkant] 
+A|23| A: [ja dat] 
+B|24| B: [en] [nog] [die] ander ding 
+A|25| A: [dat zijn] 
+A|26| A: [dan] [hebben] [ik] [die met die dubbel] rui 
+A|27| A: [en] [die] blok [die] er doorheen [gaan] beide kant 
+A|28| A: _en het [kraan_ aan de onderkant] 
+B|29| B: [ja dat zijn] 
+B|30| B: [ik hebben die met] [de] [dubbel ruit] 
+B|31| B: [en het kraan] eronder 
+A|32| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben een soort ja vierkant aan de bovenkant
+	Free: Pattern=vierkant aan de bovenkant, Pattern=een soort, Pattern=hebben, Pattern=ja
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de, Pattern=vierkant
+Turn ID=1| A | A : maar die zijn met één van de punt van de vierkant als het zijn in het hoofd zitten die
+	Free: Pattern=de, Pattern=het, Pattern=als, Pattern=met, Pattern=van, Pattern=vierkant, Pattern=die, Pattern=zitten, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=2| A | A : en dan met twee stengel die uit dat vierkan komen
+	Free: Pattern=en dan, Pattern=dat, Pattern=met, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=3| A | A : en dan hebben die aan de onderkant ook nog een soort van ja half afgebogen balk
+	Free: Pattern=ook nog, Pattern=ja, Pattern=en dan, Pattern=aan de onderkant, Pattern=een soort, Pattern=van, Pattern=hebben die
+	Constrained: Pattern=nog, Pattern=de, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=die, Pattern=en
+Turn ID=4| B | B : ja dus helemaal daaronder als een soort kraant zeggen maar
+	Free: Pattern=een soort, Pattern=maar, Pattern=ja, Pattern=als
+	Constrained: Pattern=een
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : wat daar onder hangen
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : en dan aan de ja zijkant of voorkant hoe je het bekijken ook nog wat ding die uitsteken toch
+	Free: Pattern=ook nog, Pattern=ja, Pattern=en dan, Pattern=aan de, Pattern=het, Pattern=die
+	Constrained: Pattern=dan, Pattern=de, Pattern=en, Pattern=nog
+Turn ID=8| A | A : ja inderdaad
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oké ja dan weten ik al welk dat zijn
+	Free: Pattern=dat zijn, Pattern=dan, Pattern=ik, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| B | B : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : Ehm ik hebben die een met dat soort dubbel vierkant aan de bovenkant
+	Free: Pattern=vierkant aan de bovenkant, Pattern=met dat soort dubbel, Pattern=ik hebben die, Pattern=een
+	Constrained: Pattern=dat, Pattern=de, Pattern=aan de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=vierkant, Pattern=hebben die
+Turn ID=12| B | B : als een ruit
+	Free: Pattern=een, Pattern=als, Pattern=ruit
+	Constrained: 
+Turn ID=13| B | B : Ehm en met daaronder dat kraantje
+	Free: Pattern=dat, Pattern=en, Pattern=met
+	Constrained: 
+Turn ID=14| B | B : en dan door dat door die dubbel ruit zitten ook nog van die stok
+	Free: Pattern=dat, Pattern=ook nog, Pattern=en dan, Pattern=die dubbel, Pattern=van, Pattern=dubbel ruit, Pattern=die, Pattern=zitten
+	Constrained: Pattern=ruit, Pattern=nog, Pattern=dan, Pattern=die, Pattern=en
+Turn ID=15| B | B : van die vierkant die van klein naar groot gaan
+	Free: Pattern=van klein naar groot, Pattern=die, Pattern=van, Pattern=gaan, Pattern=vierkant
+	Constrained: Pattern=van
+Turn ID=16| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=17| A | A : eh ik hebben die met dat soort dubbel ruit aan de bovenkant
+	Free: Pattern=dubbel ruit aan de bovenkant, Pattern=ik hebben die met, Pattern=met dat soort dubbel
+	Constrained: Pattern=dat, Pattern=ruit, Pattern=de, Pattern=aan de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben die, Pattern=ik, Pattern=hebben die, Pattern=dubbel ruit
+Turn ID=18| A | A : met die twee ja van klein naar groot vierkant
+	Free: Pattern=van klein naar groot, Pattern=met die, Pattern=vierkant, Pattern=ja
+	Constrained: Pattern=met, Pattern=die, Pattern=van
+Turn ID=19| A | A : en het kraan aan de onderkant
+	Free: Pattern=kraan aan de onderkant, Pattern=en het kraan
+	Constrained: Pattern=de, Pattern=aan de, Pattern=het, Pattern=aan de onderkant, Pattern=en
+Turn ID=20| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=21| B | B : ik hebben die met die dubbel ruit aan de bovenkant
+	Free: Pattern=dubbel ruit aan de bovenkant, Pattern=ik hebben die met, Pattern=die met die dubbel
+	Constrained: Pattern=met die, Pattern=ruit, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=aan de, Pattern=die dubbel, Pattern=ik hebben die, Pattern=ik, Pattern=hebben die, Pattern=dubbel ruit
+Turn ID=22| B | B : en dat kraan aan de onderkant
+	Free: Pattern=kraan aan de onderkant, Pattern=dat, Pattern=en
+	Constrained: Pattern=de, Pattern=aan de onderkant, Pattern=aan de
+Turn ID=23| A | A : ja dat
+	Free: Pattern=ja dat
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=24| B | B : en nog die ander ding
+	Free: Pattern=en, Pattern=nog, Pattern=die
+	Constrained: 
+Turn ID=25| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| A | A : dan hebben ik die met die dubbel rui
+	Free: Pattern=die met die dubbel, Pattern=dan, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=die dubbel, Pattern=met, Pattern=die, Pattern=met die
+Turn ID=27| A | A : en die blok die er doorheen gaan beide kant
+	Free: Pattern=en, Pattern=gaan, Pattern=die
+	Constrained: 
+Turn ID=28| A | A : en het kraan aan de onderkant
+	Free: Pattern=kraan aan de onderkant, Pattern=en het kraan
+	Constrained: Pattern=de, Pattern=aan de, Pattern=het, Pattern=aan de onderkant, Pattern=en
+Turn ID=29| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=30| B | B : ik hebben die met de dubbel ruit
+	Free: Pattern=ik hebben die met, Pattern=dubbel ruit, Pattern=de
+	Constrained: Pattern=ruit, Pattern=hebben, Pattern=met, Pattern=die, Pattern=hebben die, Pattern=ik hebben die, Pattern=ik
+Turn ID=31| B | B : en het kraan eronder
+	Free: Pattern=en het kraan
+	Constrained: Pattern=het, Pattern=en
+Turn ID=32| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

@@ -1,0 +1,163 @@
+B|0| B: Oké 
+A|1| A: Ehm _ik zien_ _een_ 
+A|2| A: _ja_ _het_ _het_ _er_ steken _aan _de_ zijkant_ _één_ stok uit 
+A|3| A: _op de bovenkant_ 
+A|4| A: _ja_ _het_ lijken _een_ beetje _op_ _een_ pluim 
+A|5| A: _en aan _de_ zijkant_ 
+A|6| A: Eh _dat_ steken _een_ stuk _aan de bovenkant_ uit _een_ _cirkel_ 
+A|7| A: _en die_ _zien_ _je_ _niet_ helemaal 
+A|8| A: _die_ _zitten een_ stuk daarachter 
+B|9| B: _Oh_ _een soort_ van alsof [die] _aan de achterkant_ plakken _zijn_ 
+A|10| A: _ja_ 
+A|11| A: _ja_ 
+B|12| B: [ja] [dat] [ja] [ik] snapen wat [je] bedoelen 
+B|13| B: [dat] _zijn_ 
+B|14| B: _eh_ even kijken oké _dit zijn die met_ [dat] klein _sprie op de bovenkant_ 
+B|15| B: [en] [de zijkant] link [zitten een] _rond_ uitsteksel 
+B|16| B: [en die] hebben [die] half [cirkel] achteraan erop geplakt 
+A|17| A: [eh] [zijn] 
+A|18| A: [eh] [dit zijn die met] [die] _dat platgeslagen_ vierkant [een] beetje [aan de achterkant] 
+A|19| A: [en] [een] _pluimp_ [op de] hoofd 
+A|20| A: _en aan de linkerkant [een_ soort] Pinocchio neus 
+B|21| B: ehm [ja] even kijken waar [die] staan 
+A|22| A: zo'n [rond] balk 
+B|23| B: _Oh_ [ik zien] hem even [niet] 
+B|24| B: oh [zijn] [dat] [het] [rond] [aan de achterkant] of 
+A|25| A: [ja] [en] dan [aan de] rechter bovenop [zitten] zo'n [soort] pluim 
+B|26| B: [ja] [ja] 
+B|27| B: oké [ja] [één] 
+B|28| B: ehm [dit zijn] [met] [aan de achterkant] [het] [rond] [met] [het] _sprie_ [en aan de linkerkant een] _uitsteeksel_ 
+B|29| B: [platgeslagen] [rond] [die] [je] half [aan de achterkant] [zien] 
+A|30| A: [Oh] [ja] [zijn] 
+A|31| A: [dit zijn die met] [die] [sprie op de bovenkant] 
+A|32| A: [en] _dat platgeslagen_ sorry _platgeslagen cirkel_ [aan de] linker [achterkant] 
+A|33| A: [en] [dat] [uitsteeksel] 
+B|34| B: [ja] [ik] hebben hem 
+B|35| B: ehm [dit zijn] [met] [dat [platgeslagen] cirkel] [die] [er] half achter uitsteken 
+B|36| B: [met] [dat] [pluimp] [aan de bovenkant] 
+B|37| B: [en] [de] [uitsteeksel] [aan de linkerkant] 
+A|38| A: [Oh] 
+B|39| B: [met] [dat] cirkelt hè 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Ehm ik zien een
+	Free: Pattern=ik zien, Pattern=een
+	Constrained: Pattern=ik, Pattern=zien
+Turn ID=2| A | A : ja het het er steken aan de zijkant één stok uit
+	Free: Pattern=ja, Pattern=aan de, Pattern=het, Pattern=één, Pattern=de zijkant, Pattern=er
+	Constrained: Pattern=de
+Turn ID=3| A | A : op de bovenkant
+	Free: Pattern=op de bovenkant
+	Constrained: Pattern=op de, Pattern=de, Pattern=op
+Turn ID=4| A | A : ja het lijken een beetje op een pluim
+	Free: Pattern=op, Pattern=het, Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en aan de zijkant
+	Free: Pattern=en aan de, Pattern=de zijkant
+	Constrained: Pattern=aan de, Pattern=de, Pattern=en
+Turn ID=6| A | A : Eh dat steken een stuk aan de bovenkant uit een cirkel
+	Free: Pattern=aan de bovenkant, Pattern=cirkel, Pattern=een, Pattern=dat
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=7| A | A : en die zien je niet helemaal
+	Free: Pattern=en die, Pattern=niet, Pattern=zien, Pattern=je
+	Constrained: Pattern=die, Pattern=en
+Turn ID=8| A | A : die zitten een stuk daarachter
+	Free: Pattern=zitten een, Pattern=die
+	Constrained: Pattern=zitten, Pattern=een
+Turn ID=9| B | B : Oh een soort van alsof die aan de achterkant plakken zijn
+	Free: Pattern=aan de achterkant, Pattern=die, Pattern=een soort, Pattern=Oh, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=achterkant
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja dat ja ik snapen wat je bedoelen
+	Free: Pattern=ik, Pattern=je, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=14| B | B : eh even kijken oké dit zijn die met dat klein sprie op de bovenkant
+	Free: Pattern=sprie op de bovenkant, Pattern=dit zijn die met, Pattern=dat, Pattern=eh
+	Constrained: Pattern=sprie, Pattern=de, Pattern=op, Pattern=met, Pattern=die, Pattern=op de bovenkant, Pattern=zijn, Pattern=dit zijn, Pattern=op de
+Turn ID=15| B | B : en de zijkant link zitten een rond uitsteksel
+	Free: Pattern=de zijkant, Pattern=zitten een, Pattern=rond, Pattern=en
+	Constrained: Pattern=zitten, Pattern=de, Pattern=een
+Turn ID=16| B | B : en die hebben die half cirkel achteraan erop geplakt
+	Free: Pattern=en die, Pattern=cirkel, Pattern=die
+	Constrained: Pattern=die, Pattern=en
+Turn ID=17| A | A : eh zijn
+	Free: Pattern=zijn, Pattern=eh
+	Constrained: 
+Turn ID=18| A | A : eh dit zijn die met die dat platgeslagen vierkant een beetje aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=dit zijn die met, Pattern=die, Pattern=eh, Pattern=een, Pattern=dat platgeslagen
+	Constrained: Pattern=dat, Pattern=de, Pattern=aan de, Pattern=met, Pattern=die, Pattern=platgeslagen, Pattern=zijn, Pattern=dit zijn, Pattern=achterkant
+Turn ID=19| A | A : en een pluimp op de hoofd
+	Free: Pattern=op de, Pattern=pluimp, Pattern=en, Pattern=een
+	Constrained: Pattern=op, Pattern=de
+Turn ID=20| A | A : en aan de linkerkant een soort Pinocchio neus
+	Free: Pattern=en aan de linkerkant een, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=en aan de, Pattern=aan de linkerkant
+Turn ID=21| B | B : ehm ja even kijken waar die staan
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : zo'n rond balk
+	Free: Pattern=rond
+	Constrained: 
+Turn ID=23| B | B : Oh ik zien hem even niet
+	Free: Pattern=ik zien, Pattern=niet, Pattern=Oh
+	Constrained: Pattern=ik, Pattern=zien
+Turn ID=24| B | B : oh zijn dat het rond aan de achterkant of
+	Free: Pattern=het, Pattern=rond, Pattern=zijn, Pattern=dat, Pattern=aan de achterkant
+	Constrained: Pattern=aan de, Pattern=de, Pattern=achterkant
+Turn ID=25| A | A : ja en dan aan de rechter bovenop zitten zo'n soort pluim
+	Free: Pattern=soort, Pattern=ja, Pattern=aan de, Pattern=zitten, Pattern=en
+	Constrained: Pattern=de
+Turn ID=26| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : oké ja één
+	Free: Pattern=één, Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ehm dit zijn met aan de achterkant het rond met het sprie en aan de linkerkant een uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=het, Pattern=met, Pattern=en aan de linkerkant een, Pattern=rond, Pattern=dit zijn, Pattern=aan de achterkant, Pattern=sprie
+	Constrained: Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=zijn, Pattern=en aan de, Pattern=aan de linkerkant, Pattern=achterkant
+Turn ID=29| B | B : platgeslagen rond die je half aan de achterkant zien
+	Free: Pattern=aan de achterkant, Pattern=platgeslagen, Pattern=rond, Pattern=je, Pattern=die, Pattern=zien
+	Constrained: Pattern=aan de, Pattern=de, Pattern=achterkant
+Turn ID=30| A | A : Oh ja zijn
+	Free: Pattern=zijn, Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : dit zijn die met die sprie op de bovenkant
+	Free: Pattern=sprie op de bovenkant, Pattern=dit zijn die met, Pattern=die
+	Constrained: Pattern=sprie, Pattern=de, Pattern=op, Pattern=met, Pattern=die, Pattern=op de bovenkant, Pattern=zijn, Pattern=dit zijn, Pattern=op de
+Turn ID=32| A | A : en dat platgeslagen sorry platgeslagen cirkel aan de linker achterkant
+	Free: Pattern=aan de, Pattern=dat platgeslagen, Pattern=platgeslagen cirkel, Pattern=en, Pattern=achterkant
+	Constrained: Pattern=cirkel, Pattern=de, Pattern=dat, Pattern=platgeslagen
+Turn ID=33| A | A : en dat uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=en, Pattern=dat
+	Constrained: 
+Turn ID=34| B | B : ja ik hebben hem
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : ehm dit zijn met dat platgeslagen cirkel die er half achter uitsteken
+	Free: Pattern=dat platgeslagen, Pattern=platgeslagen cirkel, Pattern=met, Pattern=die, Pattern=er, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=cirkel, Pattern=dat, Pattern=platgeslagen
+Turn ID=36| B | B : met dat pluimp aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=pluimp, Pattern=met, Pattern=dat
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=37| B | B : en de uitsteeksel aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=uitsteeksel, Pattern=de, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=38| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=39| B | B : met dat cirkelt hè
+	Free: Pattern=met, Pattern=dat
+	Constrained: 

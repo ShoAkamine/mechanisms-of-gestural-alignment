@@ -1,0 +1,91 @@
+B|0| B: Allright 
+A|1| A: ehm _ja ik_ zien een een zo'n ding _met_ _ja_ het lijken een beetje op een picknicktafel 
+A|2| A: _en_ op _die_ picknicktafel _zitten_ een omgekeerd _piramide_ 
+B|3| B: _Oh ja_ 
+B|4| B: _de_ enig [met] soort van _tafelpo_ 
+A|5| A: [ja] [ja] 
+B|6| B: [ja] _dan_ [ja] _dat_ _zijn_ 
+B|7| B: _dit zijn die met die_ _tafelpo _en_ die_ omdraaien [piramide] [die] er in [zitten] 
+A|8| A: [Oh ja] 
+A|9| A: [dit zijn die met die] tafelpot 
+A|10| A: [en die] [piramide] 
+B|11| B: eh [ja] 
+B|12| B: eh _de_ tafel 
+A|13| A: echt irritant [dat] ze veranderen zeggen maar want [dan] [zijn] _ik_ _hem_ kwijt _waar_ [die] [zijn] 
+B|14| B: [ja ik] ook 
+A|15| A: _Eh_ 
+A|16| A: [dit zijn die _met] de_ [tafelpo en] [de] [piramide] 
+B|17| B: eh w [waar] staan ie 
+B|18| B: [waar] staan hij 
+B|19| B: [ja] nee 
+B|20| B: [Oh] [ik] hebben [hem] 
+B|21| B: [Eh] [met de] tafel 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Allright
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : ehm ja ik zien een een zo'n ding met ja het lijken een beetje op een picknicktafel
+	Free: Pattern=ja ik, Pattern=ja, Pattern=met
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=2| A | A : en op die picknicktafel zitten een omgekeerd piramide
+	Free: Pattern=en, Pattern=die, Pattern=piramide, Pattern=zitten
+	Constrained: 
+Turn ID=3| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=4| B | B : de enig met soort van tafelpo
+	Free: Pattern=de, Pattern=met, Pattern=tafelpo
+	Constrained: 
+Turn ID=5| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja dan ja dat zijn
+	Free: Pattern=ja, Pattern=dat, Pattern=zijn, Pattern=dan
+	Constrained: 
+Turn ID=7| B | B : dit zijn die met die tafelpo en die omdraaien piramide die er in zitten
+	Free: Pattern=en die, Pattern=piramide, Pattern=tafelpo en, Pattern=dit zijn die met die, Pattern=die, Pattern=zitten
+	Constrained: Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=tafelpo, Pattern=en, Pattern=zijn
+Turn ID=8| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=9| A | A : dit zijn die met die tafelpot
+	Free: Pattern=dit zijn die met die
+	Constrained: Pattern=dit zijn die met, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=10| A | A : en die piramide
+	Free: Pattern=en die, Pattern=piramide
+	Constrained: Pattern=en, Pattern=die
+Turn ID=11| B | B : eh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : eh de tafel
+	Free: Pattern=de
+	Constrained: 
+Turn ID=13| A | A : echt irritant dat ze veranderen zeggen maar want dan zijn ik hem kwijt waar die zijn
+	Free: Pattern=dat, Pattern=waar, Pattern=dan, Pattern=die, Pattern=ik, Pattern=zijn, Pattern=hem
+	Constrained: 
+Turn ID=14| B | B : ja ik ook
+	Free: Pattern=ja ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=15| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=16| A | A : dit zijn die met de tafelpo en de piramide
+	Free: Pattern=piramide, Pattern=dit zijn die met, Pattern=tafelpo en, Pattern=de, Pattern=met de
+	Constrained: Pattern=de, Pattern=met, Pattern=die, Pattern=tafelpo, Pattern=en, Pattern=zijn
+Turn ID=17| B | B : eh w waar staan ie
+	Free: Pattern=waar
+	Constrained: 
+Turn ID=18| B | B : waar staan hij
+	Free: Pattern=waar
+	Constrained: 
+Turn ID=19| B | B : ja nee
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Oh ik hebben hem
+	Free: Pattern=ik, Pattern=hem, Pattern=Oh
+	Constrained: 
+Turn ID=21| B | B : Eh met de tafel
+	Free: Pattern=met de, Pattern=Eh
+	Constrained: Pattern=de, Pattern=met

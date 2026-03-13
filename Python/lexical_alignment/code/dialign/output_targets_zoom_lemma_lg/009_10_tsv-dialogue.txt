@@ -1,0 +1,155 @@
+A|0| A: _ik_ hopen _dat_ _ik_ _die_ nu niet nog _een_ keer hoeven te zeggen 
+A|1| A: _ik hebben_ nu _een soort_ van _een_ kop _die_ zeggen maar doorboord zijn 
+A|2| A: _met_ je zullen _ja _ik_ hebben_ _er_ twee _die_ zeggen maar waar _het_ _door_ lopen zeggen maar _door het_ kop heen 
+B|3| B: [ja] 
+A|4| A: en één lijken _een_ beetje op _een_ spijker 
+B|5| B: [ja] 
+A|6| A: en één zijn veel glad 
+B|7| B: [ja] [een soort] vierkant [er] _doorheen_ 
+A|8| A: Eh nee _het_ zijn wel echt [een] cilinder 
+A|9| A: [er] dwars [doorheen] 
+B|10| B: _Oh_ 
+A|11| A: [ja] 
+A|12| A: Zeggen maar je _hebben_ waarschijnlijk [een] kop _die_ op [een] plateaut staan op [een soort] _bord_ 
+B|13| B: [ja] 
+A|14| A: [ja] _die_ zijn _het_ niet 
+A|15| A: je _hebben_ [een] ander 
+B|16| B: _Oh ja_ [ja] [ja] 
+A|17| A: _die_ ook doorboord zijn 
+A|18| A: en daarachter zijn [een soort] _ik_ vinden _het_ [een soort] _zonnepaneel_ 
+B|19| B: [ja] [ja] [ja] [ja] [ja] 
+A|20| A: als je snpen wat _ik_ bedoelen 
+A|21| A: [ja] oké 
+B|22| B: _Oh_ [ik hebben] [die] [een] doorboron [met] [het] [zonnepaneel] erachter 
+A|23| A: [Oh ja] oké 
+A|24| A: [ik hebben] nu _dat_ [zonnepaneel] [met] [een soort] doorboren maar dan niet [met] [die] rui 
+B|25| B: [Oh ja] 
+B|26| B: [ja ik] zien hem 
+A|27| A: [ja] 
+B|28| B: [ik hebben] [het] [zonnepaneel] 
+B|29| B: [met] [dat] ding weer [door het] [bord] 
+A|30| A: even kijken [zonnepaneel] [zonnepaneel] 
+A|31| A: _eh ja_ 
+A|32| A: [ik hebben] de [zonnepaneel] 
+A|33| A: zo grappig [die] nemen 
+B|34| B: [eh ja] 
+B|35| B: [ja] 
+B|36| B: [ik hebben] [het] [zonnepaneel] 
+A|37| A: [Oh ja] even kijken 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hopen dat ik die nu niet nog een keer hoeven te zeggen
+	Free: Pattern=ik, Pattern=dat, Pattern=die, Pattern=een
+	Constrained: 
+Turn ID=1| A | A : ik hebben nu een soort van een kop die zeggen maar doorboord zijn
+	Free: Pattern=ik hebben, Pattern=een soort, Pattern=die, Pattern=een
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=een
+Turn ID=2| A | A : met je zullen ja ik hebben er twee die zeggen maar waar het door lopen zeggen maar door het kop heen
+	Free: Pattern=ik hebben, Pattern=door, Pattern=het, Pattern=met, Pattern=die, Pattern=door het, Pattern=ja ik, Pattern=er
+	Constrained: Pattern=ja, Pattern=door, Pattern=het, Pattern=hebben, Pattern=ik
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en één lijken een beetje op een spijker
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en één zijn veel glad
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ja een soort vierkant er doorheen
+	Free: Pattern=een soort, Pattern=doorheen, Pattern=er, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=8| A | A : Eh nee het zijn wel echt een cilinder
+	Free: Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=9| A | A : er dwars doorheen
+	Free: Pattern=doorheen, Pattern=er
+	Constrained: 
+Turn ID=10| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Zeggen maar je hebben waarschijnlijk een kop die op een plateaut staan op een soort bord
+	Free: Pattern=bord, Pattern=een, Pattern=hebben, Pattern=die, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja die zijn het niet
+	Free: Pattern=het, Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : je hebben een ander
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=16| B | B : Oh ja ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=17| A | A : die ook doorboord zijn
+	Free: Pattern=die
+	Constrained: 
+Turn ID=18| A | A : en daarachter zijn een soort ik vinden het een soort zonnepaneel
+	Free: Pattern=een soort, Pattern=ik, Pattern=zonnepaneel, Pattern=het
+	Constrained: Pattern=een
+Turn ID=19| B | B : ja ja ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : als je snpen wat ik bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=21| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Oh ik hebben die een doorboron met het zonnepaneel erachter
+	Free: Pattern=ik hebben, Pattern=een, Pattern=het, Pattern=met, Pattern=die, Pattern=Oh, Pattern=zonnepaneel
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=23| A | A : Oh ja oké
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=24| A | A : ik hebben nu dat zonnepaneel met een soort doorboren maar dan niet met die rui
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=met, Pattern=die, Pattern=een soort, Pattern=zonnepaneel
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=een
+Turn ID=25| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=26| B | B : ja ik zien hem
+	Free: Pattern=ja ik
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ik hebben het zonnepaneel
+	Free: Pattern=ik hebben, Pattern=zonnepaneel, Pattern=het
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=29| B | B : met dat ding weer door het bord
+	Free: Pattern=door het, Pattern=dat, Pattern=bord, Pattern=met
+	Constrained: Pattern=het, Pattern=door
+Turn ID=30| A | A : even kijken zonnepaneel zonnepaneel
+	Free: Pattern=zonnepaneel
+	Constrained: 
+Turn ID=31| A | A : eh ja
+	Free: Pattern=eh ja
+	Constrained: Pattern=ja
+Turn ID=32| A | A : ik hebben de zonnepaneel
+	Free: Pattern=ik hebben, Pattern=zonnepaneel
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=33| A | A : zo grappig die nemen
+	Free: Pattern=die
+	Constrained: 
+Turn ID=34| B | B : eh ja
+	Free: Pattern=eh ja
+	Constrained: Pattern=ja
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : ik hebben het zonnepaneel
+	Free: Pattern=ik hebben, Pattern=zonnepaneel, Pattern=het
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=37| A | A : Oh ja even kijken
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh

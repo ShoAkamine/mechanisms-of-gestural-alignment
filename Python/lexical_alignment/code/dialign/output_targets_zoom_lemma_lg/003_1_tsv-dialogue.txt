@@ -1,0 +1,63 @@
+A|0| A: Eh nu _hebben_ _ik_ _het_ leuk _vliegen_ _scherm met_ _een_ klein _antenne_ erop 
+B|1| B: [met] die _twee armp_ links 
+A|2| A: _ja_ 
+A|3| A: _ja_ precies 
+B|4| B: Oké [ja] _dat zijn_ 
+B|5| B: _ik hebben_ de robot [met] [het] schermpje [een] _antenne en twee armp_ 
+A|6| A: Oh leuk [het] _vliegen_ _scherm_ 
+A|7| A: [dat zijn] 
+A|8| A: [ik hebben] _vliegen_ _scherm met_ [antenne en twee armp] 
+B|9| B: eh [ik hebben] de [vliegen] schermantenne 
+A|10| A: [ja] 
+A|11| A: [dat zijn] waar [zijn] hij blijven 
+A|12| A: [ik hebben] [vliegen] _scherm met_ [twee _armp] en antenne_ 
+B|13| B: eh zweven [scherm met] [armp en antenne] 
+A|14| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh nu hebben ik het leuk vliegen scherm met een klein antenne erop
+	Free: Pattern=scherm met, Pattern=een, Pattern=het, Pattern=hebben, Pattern=vliegen, Pattern=antenne, Pattern=ik
+	Constrained: Pattern=scherm, Pattern=met
+Turn ID=1| B | B : met die twee armp links
+	Free: Pattern=twee armp, Pattern=met
+	Constrained: 
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Oké ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=5| B | B : ik hebben de robot met het schermpje een antenne en twee armp
+	Free: Pattern=ik hebben, Pattern=een, Pattern=het, Pattern=met, Pattern=antenne en twee armp
+	Constrained: Pattern=antenne, Pattern=twee armp, Pattern=ik, Pattern=hebben
+Turn ID=6| A | A : Oh leuk het vliegen scherm
+	Free: Pattern=het, Pattern=scherm, Pattern=vliegen
+	Constrained: 
+Turn ID=7| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=8| A | A : ik hebben vliegen scherm met antenne en twee armp
+	Free: Pattern=antenne en twee armp, Pattern=scherm met, Pattern=ik hebben, Pattern=vliegen
+	Constrained: Pattern=twee armp, Pattern=hebben, Pattern=met, Pattern=scherm, Pattern=antenne, Pattern=ik
+Turn ID=9| B | B : eh ik hebben de vliegen schermantenne
+	Free: Pattern=ik hebben, Pattern=vliegen
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : dat zijn waar zijn hij blijven
+	Free: Pattern=dat zijn, Pattern=zijn
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : ik hebben vliegen scherm met twee armp en antenne
+	Free: Pattern=ik hebben, Pattern=scherm met, Pattern=twee armp, Pattern=vliegen, Pattern=armp en antenne
+	Constrained: Pattern=hebben, Pattern=met, Pattern=scherm, Pattern=antenne, Pattern=ik
+Turn ID=13| B | B : eh zweven scherm met armp en antenne
+	Free: Pattern=armp en antenne, Pattern=scherm met
+	Constrained: Pattern=antenne, Pattern=met, Pattern=scherm
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

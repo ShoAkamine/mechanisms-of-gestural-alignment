@@ -1,0 +1,63 @@
+B|0| B: euh dit _zijn_ een vorm die best wel lijken op zo'n winnaarsbeker 
+B|1| B: _Euh_ dus het _hebben_ dan een soort driehoekig onderkant en dan 
+B|2| B: een soort draaien voe zeggen maar of been 
+B|3| B: en dan die basisvorm met aan _de_ bovenkant een vierkant en een uitsteeksel 
+A|4| A: _ja_ _ik_ denken dat dat [zijn] 
+B|5| B: en [ja] 
+A|6| A: [Euh] _ik hebben_ _de kampioensbeker_ _nu_ 
+B|7| B: [ja] nummer 
+B|8| B: [ik hebben] [nu] die [Euh] [kampioensbeker] 
+A|9| A: [ja] dat [zijn] 
+A|10| A: [Euh] [ik hebben] _de kampioensbeker_ 
+B|11| B: [Euh] [de kampioensbeker] 
+A|12| A: [Euh] 
+A|13| A: [ik hebben] [de kampioensbeker] 
+B|14| B: [Euh] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh dit zijn een vorm die best wel lijken op zo'n winnaarsbeker
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : Euh dus het hebben dan een soort driehoekig onderkant en dan
+	Free: Pattern=Euh, Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : een soort draaien voe zeggen maar of been
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en dan die basisvorm met aan de bovenkant een vierkant en een uitsteeksel
+	Free: Pattern=de
+	Constrained: 
+Turn ID=4| A | A : ja ik denken dat dat zijn
+	Free: Pattern=ja, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=5| B | B : en ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Euh ik hebben de kampioensbeker nu
+	Free: Pattern=de kampioensbeker, Pattern=ik hebben, Pattern=nu, Pattern=Euh
+	Constrained: Pattern=kampioensbeker, Pattern=ik, Pattern=hebben, Pattern=de
+Turn ID=7| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ik hebben nu die Euh kampioensbeker
+	Free: Pattern=ik hebben, Pattern=nu, Pattern=kampioensbeker, Pattern=Euh
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=9| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=10| A | A : Euh ik hebben de kampioensbeker
+	Free: Pattern=de kampioensbeker, Pattern=ik hebben, Pattern=Euh
+	Constrained: Pattern=kampioensbeker, Pattern=ik, Pattern=hebben, Pattern=de
+Turn ID=11| B | B : Euh de kampioensbeker
+	Free: Pattern=de kampioensbeker, Pattern=Euh
+	Constrained: Pattern=kampioensbeker, Pattern=de
+Turn ID=12| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=13| A | A : ik hebben de kampioensbeker
+	Free: Pattern=de kampioensbeker, Pattern=ik hebben
+	Constrained: Pattern=kampioensbeker, Pattern=ik, Pattern=hebben, Pattern=de
+Turn ID=14| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 

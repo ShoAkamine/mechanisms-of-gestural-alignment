@@ -1,0 +1,103 @@
+A|0| A: Yes 
+B|1| B: _Ehm ik hebben_ hier één _met_ _een_ hoop uitsteeksel _en_ boven _een_ beetje achteraan _zijn een ruit_ 
+B|2| B: _met twee_ _ja_ _soort_ volsprieten _die weer _van die_ vierkant_ op _die_ steeds _groot worden_ 
+B|3| B: _en_ vooraan _zijn een_ _soort_ neus 
+B|4| B: _en_ _aan de zijkant_ _hebben_ je _een_ _arm_ _die_ lijken alsof _die_ _een_ knuffel gaan geven 
+B|5| B: _en_ onderaan _hebben_ je ook _een_ _soort_ staart zeggen maar 
+A|6| A: Oh [ja] [ja] [de] [de] [en] 
+A|7| A: _dat_ _bovenop_ [zijn] [zijn een ruit] [met twee] [vierkant] [die] 
+B|8| B: [ja] 
+A|9| A: Oké [ja] [ik hebben] hem 
+B|10| B: precies 
+A|11| A: ehm dit [zijn] [die] [met] [die] [soort] [van] pinocchio-neus 
+A|12| A: [en] dan [een] voe eronder 
+A|13| A: [en] [een] _armpje_ [aan de zijkant] [met] daar _bovenop_ [een ruit] 
+A|14| A: [die weer van die] [ja] [van die vierkant] [hebben] [die] [groot worden] 
+B|15| B: [ja] 
+B|16| B: [ja] [dat] [zijn] 
+B|17| B: _eh ik hebben Pinocchio_ [met] het [armpje] [die] willen knuffelen [en] [bovenop] [de] [ruit] 
+A|18| A: Yes 
+A|19| A: [Ehm ik hebben] nu [die] [Pinocchio] [weer] [met] [die] voet [en] [die] [arm] [en] [dat] [ja] rui [bovenop] 
+B|20| B: [ja] 
+B|21| B: [ik hebben] degeen [de] [Pinocchio] [met] het [armpje] [en] [de] [ruit] 
+A|22| A: Yes 
+A|23| A: [eh ik hebben Pinocchio] 
+B|24| B: [ja] [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : Ehm ik hebben hier één met een hoop uitsteeksel en boven een beetje achteraan zijn een ruit
+	Free: Pattern=Ehm ik hebben, Pattern=een, Pattern=met, Pattern=en, Pattern=zijn een ruit
+	Constrained: Pattern=ik hebben, Pattern=ruit, Pattern=zijn een, Pattern=een, Pattern=hebben, Pattern=een ruit, Pattern=zijn
+Turn ID=2| B | B : met twee ja soort volsprieten die weer van die vierkant op die steeds groot worden
+	Free: Pattern=soort, Pattern=ja, Pattern=die weer van die, Pattern=met twee, Pattern=die, Pattern=van die vierkant, Pattern=groot worden
+	Constrained: Pattern=met, Pattern=die, Pattern=van, Pattern=vierkant, Pattern=weer
+Turn ID=3| B | B : en vooraan zijn een soort neus
+	Free: Pattern=zijn een, Pattern=en, Pattern=soort
+	Constrained: Pattern=een, Pattern=zijn
+Turn ID=4| B | B : en aan de zijkant hebben je een arm die lijken alsof die een knuffel gaan geven
+	Free: Pattern=hebben, Pattern=die, Pattern=een, Pattern=aan de zijkant, Pattern=arm, Pattern=en
+	Constrained: Pattern=de
+Turn ID=5| B | B : en onderaan hebben je ook een soort staart zeggen maar
+	Free: Pattern=en, Pattern=hebben, Pattern=soort, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : Oh ja ja de de en
+	Free: Pattern=en, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : dat bovenop zijn zijn een ruit met twee vierkant die
+	Free: Pattern=met twee, Pattern=die, Pattern=zijn, Pattern=vierkant, Pattern=zijn een ruit, Pattern=dat, Pattern=bovenop
+	Constrained: Pattern=ruit, Pattern=zijn een, Pattern=een, Pattern=een ruit, Pattern=met, Pattern=zijn
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké ja ik hebben hem
+	Free: Pattern=ik hebben, Pattern=ja
+	Constrained: Pattern=hebben
+Turn ID=10| B | B : precies
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ehm dit zijn die met die soort van pinocchio-neus
+	Free: Pattern=soort, Pattern=met, Pattern=die, Pattern=van, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : en dan een voe eronder
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=13| A | A : en een armpje aan de zijkant met daar bovenop een ruit
+	Free: Pattern=een ruit, Pattern=met, Pattern=en, Pattern=bovenop, Pattern=armpje, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=ruit, Pattern=een, Pattern=de
+Turn ID=14| A | A : die weer van die ja van die vierkant hebben die groot worden
+	Free: Pattern=ja, Pattern=die weer van die, Pattern=hebben, Pattern=die, Pattern=van die vierkant, Pattern=groot worden
+	Constrained: Pattern=die, Pattern=vierkant, Pattern=weer, Pattern=van
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja dat zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=17| B | B : eh ik hebben Pinocchio met het armpje die willen knuffelen en bovenop de ruit
+	Free: Pattern=ruit, Pattern=de, Pattern=met, Pattern=die, Pattern=en, Pattern=eh ik hebben Pinocchio, Pattern=bovenop, Pattern=armpje
+	Constrained: Pattern=Pinocchio, Pattern=ik hebben, Pattern=hebben
+Turn ID=18| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : Ehm ik hebben nu die Pinocchio weer met die voet en die arm en dat ja rui bovenop
+	Free: Pattern=Ehm ik hebben, Pattern=met, Pattern=die, Pattern=weer, Pattern=dat, Pattern=bovenop, Pattern=ja, Pattern=Pinocchio, Pattern=arm, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=hebben
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ik hebben degeen de Pinocchio met het armpje en de ruit
+	Free: Pattern=ik hebben, Pattern=armpje, Pattern=ruit, Pattern=met, Pattern=en, Pattern=de, Pattern=Pinocchio
+	Constrained: Pattern=hebben
+Turn ID=22| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : eh ik hebben Pinocchio
+	Free: Pattern=eh ik hebben Pinocchio
+	Constrained: Pattern=Pinocchio, Pattern=ik hebben, Pattern=hebben
+Turn ID=24| B | B : ja dat zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=zijn
+	Constrained: 

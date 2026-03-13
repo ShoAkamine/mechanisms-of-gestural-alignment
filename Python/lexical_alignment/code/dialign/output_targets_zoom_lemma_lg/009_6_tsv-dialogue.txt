@@ -1,0 +1,131 @@
+A|0| A: Oké _ik hebben_ nu 
+A|1| A: _ja_ _ik_ vinden _het_ één _het_ _hebben_ _een_ _soort_ appelsteel in _het_ kop 
+A|2| A: _een_ _soort_ klein steelt 
+A|3| A: _en_ _een rond_ _neus_ _met_ daardoorheen _een_ paal _of zo_ 
+B|4| B: _Oh ja_ 
+B|5| B: [ja] [en] _die_ zitten dan [soort] [met] [een rond] nog vast aan _de_ muur [of zo] 
+A|6| A: [ja] 
+A|7| A: [ja] zoiets 
+B|8| B: [ja] ok 
+A|9| A: [ja] 
+B|10| B: Eh 
+B|11| B: Ehm [ik hebben] dat _appelstokje_ 
+B|12| B: _met het rond en de_ ding ertegenaan 
+A|13| A: [Oh ja] 
+A|14| A: even kijken hoor [appelstokje] [appelstokje] 
+A|15| A: [Oh _ja] _ja_ _ja_ ja_ [met] [die] doorboorde _neus_ zeggen maar 
+B|16| B: [ja ja] kloppen 
+A|17| A: [ja] oké 
+A|18| A: Oké [ik hebben] nu [het] appelsteel [met] voorop [een] neusje [met] daardoorheen [een] paal 
+B|19| B: [ja] 
+A|20| A: wat [een] omschrijving [ja] 
+B|21| B: _ik hebben het_ [appelstokje] _er_ bovenuit 
+B|22| B: [en] dan [die] [neus] [die] doorboord zijn 
+A|23| A: [Oh ja] 
+A|24| A: [Oh ja] 
+A|25| A: [ik hebben het] appelsteel [met het rond en de] balk 
+A|26| A: [er] doorheen 
+B|27| B: [ja] 
+A|28| A: [ja] 
+B|29| B: [ik hebben het] [appelstokje] 
+B|30| B: [en] dan dat [rond] [die] doorboirden zijn 
+A|31| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben nu
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=1| A | A : ja ik vinden het één het hebben een soort appelsteel in het kop
+	Free: Pattern=soort, Pattern=ja, Pattern=een, Pattern=het, Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : een soort klein steelt
+	Free: Pattern=soort, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : en een rond neus met daardoorheen een paal of zo
+	Free: Pattern=of zo, Pattern=een, Pattern=neus, Pattern=met, Pattern=en, Pattern=een rond
+	Constrained: Pattern=rond, Pattern=een
+Turn ID=4| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=5| B | B : ja en die zitten dan soort met een rond nog vast aan de muur of zo
+	Free: Pattern=soort, Pattern=of zo, Pattern=met, Pattern=die, Pattern=en, Pattern=een rond, Pattern=de, Pattern=ja
+	Constrained: Pattern=rond, Pattern=een
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ja zoiets
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja ok
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : Ehm ik hebben dat appelstokje
+	Free: Pattern=ik hebben, Pattern=appelstokje
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=12| B | B : met het rond en de ding ertegenaan
+	Free: Pattern=met het rond en de
+	Constrained: Pattern=de, Pattern=het, Pattern=met, Pattern=en, Pattern=rond
+Turn ID=13| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=14| A | A : even kijken hoor appelstokje appelstokje
+	Free: Pattern=appelstokje
+	Constrained: 
+Turn ID=15| A | A : Oh ja ja ja ja met die doorboorde neus zeggen maar
+	Free: Pattern=ja ja, Pattern=Oh ja, Pattern=neus, Pattern=met, Pattern=die
+	Constrained: Pattern=ja
+Turn ID=16| B | B : ja ja kloppen
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=17| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Oké ik hebben nu het appelsteel met voorop een neusje met daardoorheen een paal
+	Free: Pattern=ik hebben, Pattern=het, Pattern=met, Pattern=een
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : wat een omschrijving ja
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=21| B | B : ik hebben het appelstokje er bovenuit
+	Free: Pattern=ik hebben het, Pattern=er, Pattern=appelstokje
+	Constrained: Pattern=het, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=22| B | B : en dan die neus die doorboord zijn
+	Free: Pattern=en, Pattern=die, Pattern=neus
+	Constrained: 
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=24| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=25| A | A : ik hebben het appelsteel met het rond en de balk
+	Free: Pattern=met het rond en de, Pattern=ik hebben het
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=en, Pattern=rond
+Turn ID=26| A | A : er doorheen
+	Free: Pattern=er
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ik hebben het appelstokje
+	Free: Pattern=ik hebben het, Pattern=appelstokje
+	Constrained: Pattern=het, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=30| B | B : en dan dat rond die doorboirden zijn
+	Free: Pattern=en, Pattern=rond, Pattern=die
+	Constrained: 
+Turn ID=31| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja

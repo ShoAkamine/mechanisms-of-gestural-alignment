@@ -1,0 +1,99 @@
+B|0| B: _Euh_ _oké_ _deze hebben_ best wel wat _dinget_ 
+B|1| B: het _hebben_ zeggen maar _een_ soort _plateau_ _euh_ door het midden _van_ _dat_ ding _lopen_ 
+B|2| B: dus niet eronder maar door het midden 
+B|3| B: _en_ dan _twee_ _klein_ streep erboav 
+B|4| B: _en_ _links_ _een_ soort _L_ _die_ _op zijn kant_ liggen 
+B|5| B: _en_ ervoor _ja_ _een_ soort rond balk 
+A|6| A: [ja] _dat zijn_ 
+A|7| A: _euh deze_ [zijn] _de_ enig [die] _zo'n_ horizon [euh] zontaal [plateau] halverwege [hebben] 
+A|8| A: _met_ [twee] [van] [die] [klein] [dinget] [die] eruit steken [en] _zo'n L_ [op zijn kant] 
+B|9| B: [ja] [euh] even zoeken _waar_ _waar_ [zijn] [die] 
+B|10| B: O [ja] [euh] [dat zijn] 
+B|11| B: _euh deze hebben_ nog [zo'n] soort _tafel_ _een_ beetje onder _lopen_ 
+B|12| B: [en] dan nog _aan de_ voorkant iets [en] daarop iets 
+B|13| B: [en] link [zo'n] L' 
+A|14| A: [Euh] [die] er doorheen [lopen] [die] [tafel] 
+B|15| B: [ja] maar dan _aan de_ onderkant redelijk 
+A|16| A: [ja] [oké] 
+A|17| A: [dat zijn] 
+A|18| A: [euh deze hebben] [een] [plateau] [die] halverwege zitten _met_ [een] [L] [aan de] zijkant 
+B|19| B: [Euh] at [zijn] 
+B|20| B: [Euh] [deze] [de] nee geen [tafel] [een] beetje [zo'n] [plateau] eronder midden [lopen] [met] [zo'n L] link 
+A|21| A: [dat zijn] 
+A|22| A: [euh] dit [zijn] [met] [plateau] halverwege [waar] [de] [L] uitsteekt [links] 
+B|23| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh oké deze hebben best wel wat dinget
+	Free: Pattern=deze hebben, Pattern=Euh, Pattern=oké, Pattern=dinget
+	Constrained: Pattern=hebben, Pattern=deze
+Turn ID=1| B | B : het hebben zeggen maar een soort plateau euh door het midden van dat ding lopen
+	Free: Pattern=dat, Pattern=lopen, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=plateau, Pattern=van
+	Constrained: 
+Turn ID=2| B | B : dus niet eronder maar door het midden
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en dan twee klein streep erboav
+	Free: Pattern=en, Pattern=klein, Pattern=twee
+	Constrained: 
+Turn ID=4| B | B : en links een soort L die op zijn kant liggen
+	Free: Pattern=L, Pattern=op zijn kant, Pattern=een, Pattern=links, Pattern=die, Pattern=en
+	Constrained: Pattern=zijn
+Turn ID=5| B | B : en ervoor ja een soort rond balk
+	Free: Pattern=en, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| A | A : euh deze zijn de enig die zo'n horizon euh zontaal plateau halverwege hebben
+	Free: Pattern=zo'n, Pattern=de, Pattern=hebben, Pattern=euh, Pattern=plateau, Pattern=euh deze, Pattern=die, Pattern=zijn
+	Constrained: Pattern=euh, Pattern=deze
+Turn ID=8| A | A : met twee van die klein dinget die eruit steken en zo'n L op zijn kant
+	Free: Pattern=twee, Pattern=zo'n L, Pattern=op zijn kant, Pattern=dinget, Pattern=met, Pattern=die, Pattern=klein, Pattern=van, Pattern=en
+	Constrained: Pattern=zijn, Pattern=L, Pattern=zo'n
+Turn ID=9| B | B : ja euh even zoeken waar waar zijn die
+	Free: Pattern=ja, Pattern=waar, Pattern=euh, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : O ja euh dat zijn
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : euh deze hebben nog zo'n soort tafel een beetje onder lopen
+	Free: Pattern=lopen, Pattern=zo'n, Pattern=euh deze hebben, Pattern=een, Pattern=tafel
+	Constrained: Pattern=hebben, Pattern=euh, Pattern=deze hebben, Pattern=euh deze, Pattern=deze
+Turn ID=12| B | B : en dan nog aan de voorkant iets en daarop iets
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=13| B | B : en link zo'n L'
+	Free: Pattern=en, Pattern=zo'n
+	Constrained: 
+Turn ID=14| A | A : Euh die er doorheen lopen die tafel
+	Free: Pattern=Euh, Pattern=tafel, Pattern=lopen, Pattern=die
+	Constrained: 
+Turn ID=15| B | B : ja maar dan aan de onderkant redelijk
+	Free: Pattern=aan de, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=16| A | A : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=18| A | A : euh deze hebben een plateau die halverwege zitten met een L aan de zijkant
+	Free: Pattern=L, Pattern=euh deze hebben, Pattern=aan de, Pattern=een, Pattern=plateau, Pattern=met, Pattern=die
+	Constrained: Pattern=de, Pattern=hebben, Pattern=euh, Pattern=deze hebben, Pattern=euh deze, Pattern=deze
+Turn ID=19| B | B : Euh at zijn
+	Free: Pattern=Euh, Pattern=zijn
+	Constrained: 
+Turn ID=20| B | B : Euh deze de nee geen tafel een beetje zo'n plateau eronder midden lopen met zo'n L link
+	Free: Pattern=lopen, Pattern=zo'n, Pattern=een, Pattern=Euh, Pattern=plateau, Pattern=met, Pattern=tafel, Pattern=deze, Pattern=de, Pattern=zo'n L
+	Constrained: Pattern=L, Pattern=zo'n
+Turn ID=21| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| A | A : euh dit zijn met plateau halverwege waar de L uitsteekt links
+	Free: Pattern=L, Pattern=de, Pattern=waar, Pattern=links, Pattern=euh, Pattern=plateau, Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=23| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

@@ -1,0 +1,83 @@
+B|0| B: Euh _ja_ _deze hebben_ rechts _een_ soort _rond_ erop _zitten_ midden rechts 
+B|1| B: _en dan twee_ uitsteeksel _aan de bovenkant_ _één_ rechter _en één_ _ja_ _een_ beetje _driehoekig_ of zo ruitig 
+B|2| B: _en dan_ links nog _een_ klein zwart uitstulpje 
+A|3| A: _dat zijn_ 
+A|4| A: _euh deze hebben_ _euh een_ _bolle_ voorop [zitten] _en een_ vierkant [en] [ja] driehoek ruitding bovenop eruit steken 
+B|5| B: _en dan_ links nog wat 
+A|6| A: [ja] 
+B|7| B: [dat zijn] 
+B|8| B: [euh deze hebben] rechts best wel [een] groot bollet voor opzitten 
+B|9| B: _en dan_ _aan de bovenkant_ zo'n plat iets [en een] geruite iets 
+B|10| B: _en dan_ links nog wat 
+A|11| A: [dat zijn] 
+A|12| A: [euh deze hebben] [een] bol [aan de] voorkant [en dan twee] ding [aan de bovenkant] [een] blok [en één] _met_ [een] ruit 
+B|13| B: [dat zijn] 
+B|14| B: [euh] dit [zijn] _die_ [een] [met] rechts voor [een] soort [bolle] [en dan] boven [twee] dinget 
+B|15| B: [euh een] plat [en een] geruite [en] link 
+A|16| A: nou [ja] 
+A|17| A: [dat zijn] 
+A|18| A: [euh deze] [met] [dat] [rond] [aan de] voorkant [en] [die] [driehoekig] [en] [euh] vierkant uitstulpsel [aan de bovenkant] 
+B|19| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh ja deze hebben rechts een soort rond erop zitten midden rechts
+	Free: Pattern=ja, Pattern=een, Pattern=deze hebben, Pattern=zitten, Pattern=rond
+	Constrained: 
+Turn ID=1| B | B : en dan twee uitsteeksel aan de bovenkant één rechter en één ja een beetje driehoekig of zo ruitig
+	Free: Pattern=ja, Pattern=een, Pattern=één, Pattern=driehoekig, Pattern=aan de bovenkant, Pattern=en dan twee, Pattern=en één
+	Constrained: Pattern=twee, Pattern=en dan, Pattern=aan de, Pattern=één, Pattern=en
+Turn ID=2| B | B : en dan links nog een klein zwart uitstulpje
+	Free: Pattern=en dan, Pattern=een
+	Constrained: Pattern=en
+Turn ID=3| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=4| A | A : euh deze hebben euh een bolle voorop zitten en een vierkant en ja driehoek ruitding bovenop eruit steken
+	Free: Pattern=ja, Pattern=euh deze hebben, Pattern=euh een, Pattern=bolle, Pattern=zitten, Pattern=en, Pattern=en een
+	Constrained: Pattern=een, Pattern=euh, Pattern=deze hebben, Pattern=euh deze, Pattern=en
+Turn ID=5| B | B : en dan links nog wat
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=8| B | B : euh deze hebben rechts best wel een groot bollet voor opzitten
+	Free: Pattern=euh deze hebben, Pattern=een
+	Constrained: Pattern=euh deze, Pattern=deze hebben, Pattern=euh
+Turn ID=9| B | B : en dan aan de bovenkant zo'n plat iets en een geruite iets
+	Free: Pattern=aan de bovenkant, Pattern=en dan, Pattern=en een
+	Constrained: Pattern=een, Pattern=en, Pattern=aan de
+Turn ID=10| B | B : en dan links nog wat
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=11| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| A | A : euh deze hebben een bol aan de voorkant en dan twee ding aan de bovenkant een blok en één met een ruit
+	Free: Pattern=euh deze hebben, Pattern=aan de, Pattern=een, Pattern=met, Pattern=aan de bovenkant, Pattern=en dan twee, Pattern=en één
+	Constrained: Pattern=twee, Pattern=en dan, Pattern=aan de, Pattern=deze hebben, Pattern=euh deze, Pattern=en, Pattern=euh, Pattern=één
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : euh dit zijn die een met rechts voor een soort bolle en dan boven twee dinget
+	Free: Pattern=twee, Pattern=en dan, Pattern=een, Pattern=euh, Pattern=die, Pattern=zijn, Pattern=bolle, Pattern=met
+	Constrained: Pattern=en
+Turn ID=15| B | B : euh een plat en een geruite en link
+	Free: Pattern=euh een, Pattern=en een, Pattern=en
+	Constrained: Pattern=euh, Pattern=en, Pattern=een
+Turn ID=16| A | A : nou ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=18| A | A : euh deze met dat rond aan de voorkant en die driehoekig en euh vierkant uitstulpsel aan de bovenkant
+	Free: Pattern=dat, Pattern=aan de, Pattern=euh, Pattern=die, Pattern=driehoekig, Pattern=rond, Pattern=euh deze, Pattern=met, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=euh
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

@@ -1,0 +1,51 @@
+B|0| B: eh _ja_ deze lijken op een _ja_ een een _trofee_ beker met een driehoek onderaan als standaard 
+A|1| A: _en_ zo'n draaien poo 
+B|2| B: [en] een soort 
+A|3| A: [ja] 
+B|4| B: jA 
+A|5| A: dat zijn 
+A|6| A: Eh [ja] ik hebben die [trofee] weer 
+B|7| B: [trofee] 
+A|8| A: dit zijn de [trofee] 
+B|9| B: [trofee] 
+A|10| A: Eh 
+A|11| A: de [trofee] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh ja deze lijken op een ja een een trofee beker met een driehoek onderaan als standaard
+	Free: Pattern=trofee, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : en zo'n draaien poo
+	Free: Pattern=en
+	Constrained: 
+Turn ID=2| B | B : en een soort
+	Free: Pattern=en
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : jA
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : Eh ja ik hebben die trofee weer
+	Free: Pattern=trofee, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : trofee
+	Free: Pattern=trofee
+	Constrained: 
+Turn ID=8| A | A : dit zijn de trofee
+	Free: Pattern=trofee
+	Constrained: 
+Turn ID=9| B | B : trofee
+	Free: Pattern=trofee
+	Constrained: 
+Turn ID=10| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : de trofee
+	Free: Pattern=trofee
+	Constrained: 

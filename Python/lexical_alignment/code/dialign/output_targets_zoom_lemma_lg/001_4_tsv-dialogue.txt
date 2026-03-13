@@ -1,0 +1,103 @@
+B|0| B: _Oh ja_ deze vinden _ik_ op een _vis_ lijken 
+B|1| B: _die_ _hebben_ _twee_ soort _ja_ _balk_ 
+B|2| B: _aan_ _de_ rechterkant erin 
+B|3| B: _dat_ vinden _ik_ dan _de_ lipap 
+B|4| B: _en_ dan boven een soort vinne 
+B|5| B: _en_ deze _hebben_ een staar achter 
+B|6| B: Ehm _en_ nog een armpje wat ook op een vinne lijken 
+A|7| A: ah [ja] _ik hebben_ hem 
+A|8| A: [ja] 
+A|9| A: [en] [die] [die] zeggen maar _zijn_ [twee] recht plat [balk] [die] er [aan] 
+B|10| B: [ja] 
+A|11| A: [ja] oké yes 
+A|12| A: Eh 
+A|13| A: _eh_ dit _zijn_ _de vis_ 
+B|14| B: [eh] nummer 
+A|15| A: [Oh ja] [die] _zijn_ makkelijk 
+B|16| B: _ik hebben de vis_ 
+A|17| A: [Oh ja] 
+B|18| B: [ja] 
+A|19| A: [eh] [ik hebben de vis] 
+B|20| B: _dat zijn_ 
+B|21| B: [de vis] 
+A|22| A: Yes [dat zijn] 
+A|23| A: [eh] [ik hebben de vis] 
+B|24| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ja deze vinden ik op een vis lijken
+	Free: Pattern=Oh ja, Pattern=vis, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=1| B | B : die hebben twee soort ja balk
+	Free: Pattern=twee, Pattern=ja, Pattern=hebben, Pattern=balk, Pattern=die
+	Constrained: 
+Turn ID=2| B | B : aan de rechterkant erin
+	Free: Pattern=aan, Pattern=de
+	Constrained: 
+Turn ID=3| B | B : dat vinden ik dan de lipap
+	Free: Pattern=dat, Pattern=de, Pattern=ik
+	Constrained: 
+Turn ID=4| B | B : en dan boven een soort vinne
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| B | B : en deze hebben een staar achter
+	Free: Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=6| B | B : Ehm en nog een armpje wat ook op een vinne lijken
+	Free: Pattern=en
+	Constrained: 
+Turn ID=7| A | A : ah ja ik hebben hem
+	Free: Pattern=ik hebben, Pattern=ja
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : en die die zeggen maar zijn twee recht plat balk die er aan
+	Free: Pattern=twee, Pattern=aan, Pattern=balk, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja oké yes
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : eh dit zijn de vis
+	Free: Pattern=de vis, Pattern=eh, Pattern=zijn
+	Constrained: Pattern=de, Pattern=vis
+Turn ID=14| B | B : eh nummer
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=15| A | A : Oh ja die zijn makkelijk
+	Free: Pattern=Oh ja, Pattern=zijn, Pattern=die
+	Constrained: Pattern=ja
+Turn ID=16| B | B : ik hebben de vis
+	Free: Pattern=ik hebben de vis
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de vis, Pattern=hebben, Pattern=vis, Pattern=ik
+Turn ID=17| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : eh ik hebben de vis
+	Free: Pattern=ik hebben de vis, Pattern=eh
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de vis, Pattern=hebben, Pattern=vis, Pattern=ik
+Turn ID=20| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=21| B | B : de vis
+	Free: Pattern=de vis
+	Constrained: Pattern=de, Pattern=vis
+Turn ID=22| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| A | A : eh ik hebben de vis
+	Free: Pattern=ik hebben de vis, Pattern=eh
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de vis, Pattern=hebben, Pattern=vis, Pattern=ik
+Turn ID=24| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

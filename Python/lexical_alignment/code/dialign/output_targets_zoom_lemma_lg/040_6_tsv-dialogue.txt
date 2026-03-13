@@ -1,0 +1,115 @@
+A|0| A: ehm _ja_ oké _ik_ _ik_ moeten _een_ beetje _aan_ _het_ _denken_ alsof hij _een_ ei op _zijn_ hoof 
+A|1| A: of nou _ja_ _een soort_ _neus_ _hebben_ hij 
+B|2| B: [ja] 
+A|3| A: of _een_ ei _aan de voorkant_ 
+A|4| A: _en_ _dan_ _zitten_ er _een soort_ kandelaar of staaf _doorheen_ 
+B|5| B: eh even kijken horen 
+B|6| B: Hebben _die_ bovenop _ook_ nog iets 
+A|7| A: [ja] _een soort_ klein [ja] klein mini dinget 
+B|8| B: dikkertje 
+A|9| A: [ja] 
+B|10| B: _Oké_ [dan] [denken] [ik] _dat_ [het] [zijn] 
+A|11| A: [Oké] 
+B|12| B: Ehm 
+B|13| B: _Oh_ we krijgen nu ding _die_ we _al_ _hebben hebben_ 
+A|14| A: [ja] volgens _mij_ [hebben hebben] jij [ook] [al] [die] _met_ [dat] vierkant 
+B|15| B: [ja] 
+B|16| B: eh _ja dit zijn_ [die] [een] _met die_ [neus] 
+B|17| B: waar [een soort] spijker [doorheen] [zitten] [aan de voorkant] 
+A|18| A: _Oh ja dat zijn_ [dan] voor _mij_ 
+B|19| B: [Oké] 
+A|20| A: Eh deze [hebben] zo'n [soort] staaf door [zijn] [neus] 
+B|21| B: [Oh ja dat zijn] bij [mij] 
+B|22| B: _dit zijn met_ [de] [neus] [en] [de] _schroef_ 
+A|23| A: [Oh ja dat zijn] 
+A|24| A: [ja [dit zijn] [met] die] [schroef] door [zijn] [neus] 
+B|25| B: nummer 
+B|26| B: [dit zijn met] [de] [neus] [en] [de] spijker 
+A|27| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm ja oké ik ik moeten een beetje aan het denken alsof hij een ei op zijn hoof
+	Free: Pattern=denken, Pattern=een, Pattern=het, Pattern=ik, Pattern=zijn, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : of nou ja een soort neus hebben hij
+	Free: Pattern=een soort, Pattern=hebben, Pattern=ja, Pattern=neus
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : of een ei aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=4| A | A : en dan zitten er een soort kandelaar of staaf doorheen
+	Free: Pattern=doorheen, Pattern=dan, Pattern=zitten, Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=5| B | B : eh even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Hebben die bovenop ook nog iets
+	Free: Pattern=die, Pattern=ook
+	Constrained: 
+Turn ID=7| A | A : ja een soort klein ja klein mini dinget
+	Free: Pattern=een soort, Pattern=ja
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=8| B | B : dikkertje
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké dan denken ik dat het zijn
+	Free: Pattern=dat, Pattern=denken, Pattern=dan, Pattern=het, Pattern=ik, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : Oh we krijgen nu ding die we al hebben hebben
+	Free: Pattern=hebben hebben, Pattern=al, Pattern=die, Pattern=Oh
+	Constrained: Pattern=hebben
+Turn ID=14| A | A : ja volgens mij hebben hebben jij ook al die met dat vierkant
+	Free: Pattern=dat, Pattern=ja, Pattern=ook, Pattern=al, Pattern=met, Pattern=die, Pattern=mij, Pattern=hebben hebben
+	Constrained: Pattern=hebben
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : eh ja dit zijn die een met die neus
+	Free: Pattern=met die, Pattern=een, Pattern=ja dit zijn, Pattern=neus, Pattern=die
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=ja
+Turn ID=17| B | B : waar een soort spijker doorheen zitten aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=een soort, Pattern=zitten, Pattern=doorheen
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=soort
+Turn ID=18| A | A : Oh ja dat zijn dan voor mij
+	Free: Pattern=Oh ja dat zijn, Pattern=dan, Pattern=mij
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=Oh, Pattern=ja
+Turn ID=19| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| A | A : Eh deze hebben zo'n soort staaf door zijn neus
+	Free: Pattern=soort, Pattern=hebben, Pattern=zijn, Pattern=neus
+	Constrained: 
+Turn ID=21| B | B : Oh ja dat zijn bij mij
+	Free: Pattern=Oh ja dat zijn, Pattern=mij
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=Oh, Pattern=ja
+Turn ID=22| B | B : dit zijn met de neus en de schroef
+	Free: Pattern=de, Pattern=dit zijn met, Pattern=neus, Pattern=schroef, Pattern=en
+	Constrained: Pattern=zijn, Pattern=met
+Turn ID=23| A | A : Oh ja dat zijn
+	Free: Pattern=Oh ja dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=Oh, Pattern=ja
+Turn ID=24| A | A : ja dit zijn met die schroef door zijn neus
+	Free: Pattern=met die, Pattern=dit zijn met, Pattern=ja dit zijn, Pattern=neus, Pattern=schroef, Pattern=zijn
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=ja
+Turn ID=25| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : dit zijn met de neus en de spijker
+	Free: Pattern=dit zijn met, Pattern=en, Pattern=de, Pattern=neus
+	Constrained: Pattern=zijn, Pattern=met
+Turn ID=27| A | A : Eh
+	Free: 
+	Constrained: 

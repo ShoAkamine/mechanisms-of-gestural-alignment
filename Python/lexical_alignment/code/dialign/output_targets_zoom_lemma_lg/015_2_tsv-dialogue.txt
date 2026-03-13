@@ -1,0 +1,139 @@
+A|0| A: _Oké_ _de_ volgen _zijn_ eigenlijk _een_ kom 
+A|1| A: _met_ _met een soort_ _vierkant_ _groot_ _neus_ 
+A|2| A: _met een_ piramide bovenop 
+B|3| B: _ja_ _en_ [met een soort] wiel of zo eronder denken ik 
+A|4| A: [ja] correct 
+B|5| B: [ja] helemaal goed 
+B|6| B: _dit zijn_ _die_ _met _de_ hanenkam_ _die_ puntig [zijn] 
+B|7| B: dus 
+A|8| A: [ja] 
+B|9| B: _die_ enig _die_ verticaal [zijn] [met] het wiel aan [de] onderkant 
+A|10| A: [ja] 
+B|11| B: [ja] 
+A|12| A: [ja] 
+A|13| A: [en] [die] zeggen maar [die] vierkanteachtig _neus_ naar _blok_ naar voren 
+B|14| B: [de] [blok] 
+B|15| B: Exact 
+B|16| B: [ja] 
+A|17| A: _dit zijn [de_ hanenkam] in [die] punt weer naar boven 
+A|18| A: [met de] _vierkant neus_ naar voren 
+B|19| B: [ja] 
+B|20| B: [dit zijn de] puntig hanekam 
+B|21| B: [met] het [groot] [blok] aan [de] voorkant 
+B|22| B: [en] het wiel aan [de] onderkant 
+A|23| A: [ja] 
+A|24| A: dat [zijn] 
+A|25| A: nou nu hebben we wel [de] piramide 
+A|26| A: [met de] _vierkant neus_ 
+B|27| B: [Oké] 
+B|28| B: [met] het [groot] [blok] aan [de] 
+A|29| A: [ja] 
+B|30| B: [ja] 
+B|31| B: [dit zijn] [die] [met de] puntig hanekam [en] [de] [groot] [vierkant neus] 
+A|32| A: [ja] 
+A|33| A: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké de volgen zijn eigenlijk een kom
+	Free: Pattern=zijn, Pattern=Oké, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=1| A | A : met met een soort vierkant groot neus
+	Free: Pattern=groot, Pattern=neus, Pattern=vierkant, Pattern=met een soort, Pattern=met
+	Constrained: Pattern=een, Pattern=met, Pattern=met een
+Turn ID=2| A | A : met een piramide bovenop
+	Free: Pattern=met een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=3| B | B : ja en met een soort wiel of zo eronder denken ik
+	Free: Pattern=met een soort, Pattern=ja, Pattern=en
+	Constrained: Pattern=een, Pattern=met, Pattern=met een
+Turn ID=4| A | A : ja correct
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja helemaal goed
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : dit zijn die met de hanenkam die puntig zijn
+	Free: Pattern=met de, Pattern=de hanenkam, Pattern=die, Pattern=zijn, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=de, Pattern=met
+Turn ID=7| B | B : dus
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : die enig die verticaal zijn met het wiel aan de onderkant
+	Free: Pattern=zijn, Pattern=de, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en die zeggen maar die vierkanteachtig neus naar blok naar voren
+	Free: Pattern=neus, Pattern=die, Pattern=en, Pattern=blok
+	Constrained: 
+Turn ID=14| B | B : de blok
+	Free: Pattern=de, Pattern=blok
+	Constrained: 
+Turn ID=15| B | B : Exact
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dit zijn de hanenkam in die punt weer naar boven
+	Free: Pattern=dit zijn de, Pattern=de hanenkam, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=de, Pattern=zijn
+Turn ID=18| A | A : met de vierkant neus naar voren
+	Free: Pattern=vierkant neus, Pattern=met de
+	Constrained: Pattern=vierkant, Pattern=neus, Pattern=de, Pattern=met
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : dit zijn de puntig hanekam
+	Free: Pattern=dit zijn de
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=de
+Turn ID=21| B | B : met het groot blok aan de voorkant
+	Free: Pattern=groot, Pattern=de, Pattern=met, Pattern=blok
+	Constrained: 
+Turn ID=22| B | B : en het wiel aan de onderkant
+	Free: Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=25| A | A : nou nu hebben we wel de piramide
+	Free: Pattern=de
+	Constrained: 
+Turn ID=26| A | A : met de vierkant neus
+	Free: Pattern=vierkant neus, Pattern=met de
+	Constrained: Pattern=vierkant, Pattern=neus, Pattern=de, Pattern=met
+Turn ID=27| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| B | B : met het groot blok aan de
+	Free: Pattern=groot, Pattern=de, Pattern=met, Pattern=blok
+	Constrained: 
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dit zijn die met de puntig hanekam en de groot vierkant neus
+	Free: Pattern=groot, Pattern=die, Pattern=vierkant neus, Pattern=en, Pattern=dit zijn, Pattern=de, Pattern=met de
+	Constrained: Pattern=de, Pattern=neus, Pattern=met, Pattern=zijn, Pattern=vierkant
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

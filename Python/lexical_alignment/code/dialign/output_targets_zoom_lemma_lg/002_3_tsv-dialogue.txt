@@ -1,0 +1,63 @@
+A|0| A: oh deze _zijn_ makkelijk _dit zijn_ _dat wijnglas_ 
+B|1| B: even kijken 
+A|2| A: _dat_ _zijn_ er maar één 
+B|3| B: Oh _ja_ _ja_ _ja_ 
+B|4| B: _ja_ _ja_ met zo'n uitsteeksel naar onder op zo'n 
+A|5| A: [ja] 
+B|6| B: [ja] [ja] [ja] oké 
+B|7| B: Eh 
+B|8| B: even kijken _dit zijn weer_ [dat wijnglas] 
+B|9| B: met die twee blok bovenop 
+A|10| A: H 
+A|11| A: [dit zijn] _het wijnglas_ 
+B|12| B: _dit zijn weer_ [dat wijnglas] 
+A|13| A: _dit zijn weer het wijnglas_ 
+B|14| B: [dit zijn weer het wijnglas] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oh deze zijn makkelijk dit zijn dat wijnglas
+	Free: Pattern=dat wijnglas, Pattern=dit zijn, Pattern=zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=1| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : dat zijn er maar één
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=3| B | B : Oh ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : ja ja met zo'n uitsteeksel naar onder op zo'n
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : even kijken dit zijn weer dat wijnglas
+	Free: Pattern=dit zijn weer, Pattern=dat wijnglas
+	Constrained: Pattern=dit zijn, Pattern=dat, Pattern=zijn
+Turn ID=9| B | B : met die twee blok bovenop
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : H
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : dit zijn het wijnglas
+	Free: Pattern=het wijnglas, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=12| B | B : dit zijn weer dat wijnglas
+	Free: Pattern=dit zijn weer, Pattern=dat wijnglas
+	Constrained: Pattern=dit zijn, Pattern=dat, Pattern=zijn
+Turn ID=13| A | A : dit zijn weer het wijnglas
+	Free: Pattern=dit zijn weer het wijnglas
+	Constrained: Pattern=dit zijn, Pattern=dit zijn weer, Pattern=zijn, Pattern=het wijnglas
+Turn ID=14| B | B : dit zijn weer het wijnglas
+	Free: Pattern=dit zijn weer het wijnglas
+	Constrained: Pattern=dit zijn, Pattern=dit zijn weer, Pattern=zijn, Pattern=het wijnglas

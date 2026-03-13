@@ -1,0 +1,159 @@
+B|0| B: _eh dit zijn_ zeggen maar _een_ komme _met een_ lepel erin 
+B|1| B: maar ook _met _een_ neus_ _met _een_ soort_ paal _er doorheen_ 
+A|2| A: Oké 
+A|3| A: _Oh_ _je_ _zien het als_ [neus] 
+A|4| A: _ja_ dan weten _ik_ _het_ _ja_ 
+B|5| B: [ja] 
+A|6| A: _en_ _dat_ Floepje staan [een] beetje naar achter toch 
+B|7| B: [ja] _soort van_ lepel 
+A|8| A: [ja] 
+A|9| A: [ja] dan [zijn] _het_ 
+A|10| A: ehm even kijken jij _zien het als [een_ neus] 
+A|11| A: _dat zijn_ dan _een soort van_ dieg 
+A|12| A: [met een] balk _door_ [zijn] [neus] 
+A|13| A: waar nog eens gewoon iets aan vastzit 
+B|14| B: [Oh] [ja] 
+B|15| B: [ja] [dat zijn] 
+B|16| B: _dit zijn_ [met] [dat] bolle [dat] spiesten worden [door] [een] paal 
+B|17| B: Weet [je] wel d 
+B|18| B: [met] [het] 
+B|19| B: [ja] [soort van] _met die_ 
+A|20| A: of de knuffel [zijn] [dat] dezelfde of _een ander_ 
+B|21| B: _nee_ _nee_ [een ander] 
+A|22| A: [Oh] [een ander] 
+B|23| B: _die_ hebben zeggen maar [een] bolle [met [een] soort van] paal [met een] schijf eraan _doorheen_ 
+B|24| B: Snap [je] 
+A|25| A: Eh [nee] 
+B|26| B: dus [ik] [zien het als [een] soort van] [neus] 
+B|27| B: [en] _die_ worden Ge spiesten 
+A|28| A: [Oh] [die] 
+A|29| A: [ja] [ja] [ja] [ik] weten hem 
+A|30| A: weer veranderen 
+A|31| A: _eh dit zijn die_ [met die] neuspiercing [die] balk [er doorheen] 
+B|32| B: [dat zijn] 
+B|33| B: [eh dit zijn die] spiesen [neus] zeggen maar 
+A|34| A: [ja] 
+A|35| A: ehm [ja] 
+A|36| A: [eh] de neuspiercing 
+B|37| B: mhm [dat zijn] 
+A|38| A: Balk 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh dit zijn zeggen maar een komme met een lepel erin
+	Free: Pattern=eh dit zijn, Pattern=met een, Pattern=een
+	Constrained: Pattern=een, Pattern=met, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=1| B | B : maar ook met een neus met een soort paal er doorheen
+	Free: Pattern=een soort, Pattern=een neus, Pattern=er doorheen, Pattern=met een
+	Constrained: Pattern=doorheen, Pattern=neus, Pattern=een, Pattern=met
+Turn ID=2| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : Oh je zien het als neus
+	Free: Pattern=zien het als, Pattern=je, Pattern=neus, Pattern=Oh
+	Constrained: Pattern=het
+Turn ID=4| A | A : ja dan weten ik het ja
+	Free: Pattern=ja, Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en dat Floepje staan een beetje naar achter toch
+	Free: Pattern=een, Pattern=dat, Pattern=en
+	Constrained: 
+Turn ID=7| B | B : ja soort van lepel
+	Free: Pattern=soort van, Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja dan zijn het
+	Free: Pattern=ja, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=10| A | A : ehm even kijken jij zien het als een neus
+	Free: Pattern=zien het als een, Pattern=een neus
+	Constrained: Pattern=zien het als, Pattern=neus, Pattern=een, Pattern=het
+Turn ID=11| A | A : dat zijn dan een soort van dieg
+	Free: Pattern=een soort van, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=een, Pattern=een soort, Pattern=soort van, Pattern=zijn
+Turn ID=12| A | A : met een balk door zijn neus
+	Free: Pattern=met een, Pattern=door, Pattern=neus, Pattern=zijn
+	Constrained: Pattern=een, Pattern=met
+Turn ID=13| A | A : waar nog eens gewoon iets aan vastzit
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=15| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=16| B | B : dit zijn met dat bolle dat spiesten worden door een paal
+	Free: Pattern=dat, Pattern=door, Pattern=een, Pattern=met, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=17| B | B : Weet je wel d
+	Free: Pattern=je
+	Constrained: 
+Turn ID=18| B | B : met het
+	Free: Pattern=met, Pattern=het
+	Constrained: 
+Turn ID=19| B | B : ja soort van met die
+	Free: Pattern=met die, Pattern=soort van, Pattern=ja
+	Constrained: Pattern=met, Pattern=die
+Turn ID=20| A | A : of de knuffel zijn dat dezelfde of een ander
+	Free: Pattern=een ander, Pattern=zijn, Pattern=dat
+	Constrained: Pattern=een
+Turn ID=21| B | B : nee nee een ander
+	Free: Pattern=een ander, Pattern=nee
+	Constrained: Pattern=een
+Turn ID=22| A | A : Oh een ander
+	Free: Pattern=een ander, Pattern=Oh
+	Constrained: Pattern=een
+Turn ID=23| B | B : die hebben zeggen maar een bolle met een soort van paal met een schijf eraan doorheen
+	Free: Pattern=doorheen, Pattern=een, Pattern=een soort van, Pattern=die, Pattern=met een
+	Constrained: Pattern=een soort, Pattern=een, Pattern=met, Pattern=soort van
+Turn ID=24| B | B : Snap je
+	Free: Pattern=je
+	Constrained: 
+Turn ID=25| A | A : Eh nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=26| B | B : dus ik zien het als een soort van neus
+	Free: Pattern=zien het als een, Pattern=een soort van, Pattern=neus, Pattern=ik
+	Constrained: Pattern=een, Pattern=het, Pattern=een soort, Pattern=zien het als, Pattern=soort van
+Turn ID=27| B | B : en die worden Ge spiesten
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=28| A | A : Oh die
+	Free: Pattern=die, Pattern=Oh
+	Constrained: 
+Turn ID=29| A | A : ja ja ja ik weten hem
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=30| A | A : weer veranderen
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : eh dit zijn die met die neuspiercing die balk er doorheen
+	Free: Pattern=eh dit zijn die, Pattern=er doorheen, Pattern=met die, Pattern=die
+	Constrained: Pattern=doorheen, Pattern=eh dit zijn, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=32| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=33| B | B : eh dit zijn die spiesen neus zeggen maar
+	Free: Pattern=eh dit zijn die, Pattern=neus
+	Constrained: Pattern=eh dit zijn, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : ehm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : eh de neuspiercing
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=37| B | B : mhm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=38| A | A : Balk
+	Free: 
+	Constrained: 

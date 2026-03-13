@@ -1,0 +1,135 @@
+B|0| B: _hoi_ 
+A|1| A: [hoi] 
+B|2| B: Hoor _je_ mij 
+A|3| A: _ja_ 
+B|4| B: _Oké_ _ik hebben_ _een_ rood blok om _een_ figuur heen staan _Euhm_ 
+B|5| B: _het _zijn_ het_ figuurt _met_ _aan de_ linkerkant _twee_ _soort_ uitstulping 
+B|6| B: _op de bovenkant_ _een soort_ ook _een soort_ uitstulping maar veel rond 
+B|7| B: _en_ _aan de_ voorkant _een_ _vierkant_ plateau 
+A|8| A: ah lijken [het] [op de bovenkant] lijken [het] [op] [een soort] klein paddenstoelt 
+B|9| B: eigenlijk 
+B|10| B: _ja ja_ 
+A|11| A: [Oké] dan [zijn het] J 
+A|12| A: ehm Moeten [ik] nu [op] _die_ knop drukken 
+B|13| B: [ja] volgens mij wel 
+B|14| B: [ja] 
+A|15| A: [Oké] 
+A|16| A: [ik hebben] nu _euh_ _die_ [een] [met] _dat_ klein paddenstotje bovenop [en] _het vierkant_ [aan de] zijkant 
+A|17| A: [en] dan nog _die_ [twee] blokkentoren 
+B|18| B: _Oh ja_ [euh] _dat zijn_ 
+B|19| B: Euh dit [zijn] _met het vierkant_ plateau [en] [de] voorkant [en] _de paddenstoel_ [en] [de bovenkant] 
+A|20| A: even kijken waar _die_ nu [zijn] want [het zijn] weer veranderen 
+A|21| A: [Oh ja] [ik] zien hem 
+A|22| A: [Euhm] 
+A|23| A: [ik hebben] nu _die_ [met] [de paddenstoel] bovenop [en] [het vierkant] [aan de] zijkant 
+B|24| B: Euh dit [zijn] [met] [die] [paddenstoel] [aan [de] bovenkant] 
+A|25| A: parasol 
+B|26| B: Euh [paddenstoel] [op de bovenkant] Euh 
+A|27| A: bedoelen [je] 
+A|28| A: [Oh] parasol 
+A|29| A: [Oh [ja] ja] 
+A|30| A: [dat zijn] 
+A|31| A: [ik hebben] [de paddenstoel] er bovenop [met het vierkant] 
+B|32| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : hoi
+	Free: Pattern=hoi
+	Constrained: 
+Turn ID=1| A | A : hoi
+	Free: Pattern=hoi
+	Constrained: 
+Turn ID=2| B | B : Hoor je mij
+	Free: Pattern=je
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Oké ik hebben een rood blok om een figuur heen staan Euhm
+	Free: Pattern=ik hebben, Pattern=een, Pattern=Euhm, Pattern=Oké
+	Constrained: Pattern=ik
+Turn ID=5| B | B : het zijn het figuurt met aan de linkerkant twee soort uitstulping
+	Free: Pattern=zijn het, Pattern=soort, Pattern=twee, Pattern=aan de, Pattern=met, Pattern=het zijn
+	Constrained: Pattern=zijn, Pattern=de, Pattern=het
+Turn ID=6| B | B : op de bovenkant een soort ook een soort uitstulping maar veel rond
+	Free: Pattern=op de bovenkant, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=een
+Turn ID=7| B | B : en aan de voorkant een vierkant plateau
+	Free: Pattern=aan de, Pattern=vierkant, Pattern=een, Pattern=en
+	Constrained: Pattern=de
+Turn ID=8| A | A : ah lijken het op de bovenkant lijken het op een soort klein paddenstoelt
+	Free: Pattern=op de bovenkant, Pattern=een soort, Pattern=het, Pattern=op
+	Constrained: Pattern=soort, Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=een
+Turn ID=9| B | B : eigenlijk
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : Oké dan zijn het J
+	Free: Pattern=zijn het, Pattern=Oké
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=12| A | A : ehm Moeten ik nu op die knop drukken
+	Free: Pattern=die, Pattern=ik, Pattern=op
+	Constrained: 
+Turn ID=13| B | B : ja volgens mij wel
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : ik hebben nu euh die een met dat klein paddenstotje bovenop en het vierkant aan de zijkant
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=aan de, Pattern=een, Pattern=euh, Pattern=die, Pattern=en, Pattern=het vierkant, Pattern=met
+	Constrained: Pattern=vierkant, Pattern=de, Pattern=het, Pattern=ik
+Turn ID=17| A | A : en dan nog die twee blokkentoren
+	Free: Pattern=die, Pattern=en, Pattern=twee
+	Constrained: 
+Turn ID=18| B | B : Oh ja euh dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn, Pattern=euh
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn, Pattern=Oh
+Turn ID=19| B | B : Euh dit zijn met het vierkant plateau en de voorkant en de paddenstoel en de bovenkant
+	Free: Pattern=met het vierkant, Pattern=de, Pattern=de bovenkant, Pattern=de paddenstoel, Pattern=en, Pattern=zijn
+	Constrained: Pattern=de, Pattern=paddenstoel, Pattern=het, Pattern=vierkant, Pattern=het vierkant, Pattern=met
+Turn ID=20| A | A : even kijken waar die nu zijn want het zijn weer veranderen
+	Free: Pattern=het zijn, Pattern=zijn, Pattern=die
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=21| A | A : Oh ja ik zien hem
+	Free: Pattern=Oh ja, Pattern=ik
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=22| A | A : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=23| A | A : ik hebben nu die met de paddenstoel bovenop en het vierkant aan de zijkant
+	Free: Pattern=ik hebben, Pattern=aan de, Pattern=de paddenstoel, Pattern=die, Pattern=en, Pattern=het vierkant, Pattern=met
+	Constrained: Pattern=de, Pattern=paddenstoel, Pattern=het, Pattern=ik, Pattern=vierkant
+Turn ID=24| B | B : Euh dit zijn met die paddenstoel aan de bovenkant
+	Free: Pattern=aan de, Pattern=de bovenkant, Pattern=paddenstoel, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=25| A | A : parasol
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : Euh paddenstoel op de bovenkant Euh
+	Free: Pattern=op de bovenkant, Pattern=paddenstoel
+	Constrained: Pattern=de bovenkant, Pattern=de, Pattern=op
+Turn ID=27| A | A : bedoelen je
+	Free: Pattern=je
+	Constrained: 
+Turn ID=28| A | A : Oh parasol
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=29| A | A : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=30| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| A | A : ik hebben de paddenstoel er bovenop met het vierkant
+	Free: Pattern=met het vierkant, Pattern=ik hebben, Pattern=de paddenstoel
+	Constrained: Pattern=de, Pattern=paddenstoel, Pattern=het, Pattern=ik, Pattern=vierkant, Pattern=het vierkant, Pattern=met
+Turn ID=32| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

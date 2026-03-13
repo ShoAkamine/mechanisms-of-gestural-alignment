@@ -1,0 +1,131 @@
+B|0| B: _deze hebben bovenop een soort kegel_ 
+B|1| B: _en_ aan de linkerkant _een soort kegel_ 
+B|2| B: _en_ _dan_ _rechts_ zitten er _ook_ wat in 
+B|3| B: _maar_ _dat zijn_ veel _een soort_ vierkant op elkaar 
+B|4| B: _en_ link zitten _nog_ _een_ klein _ander dinget_ 
+B|5| B: _ja_ 
+A|6| A: [ja] _links_ twee [dinget] toch 
+B|7| B: [ja] kloppen 
+A|8| A: [ja] 
+A|9| A: eh letter 
+A|10| A: eh [deze hebben] [rechts] weer _zo'n_ [soort] van toren van _blok_ 
+A|11| A: [maar] [dan] horizontaal 
+A|12| A: [bovenop een soort kegel] 
+A|13| A: [en] _links_ [ook] twee uitsteeksel 
+B|14| B: Oh [ja] 
+B|15| B: dus _zijn_ het 
+B|16| B: _deze hebben _bovenop een_ kegel_ _links een kegel_ [en] [dan] [rechts] die [blok] op elkaar 
+B|17| B: [en] [dan] [links] _nog_ [een soort] [ja] klein ovaal 
+A|18| A: _ja dat zijn_ 
+A|19| A: eh [deze hebben bovenop een soort kegel] 
+A|20| A: [en] [links [een] soort kegel] 
+A|21| A: Links [nog] _zo'n_ [ander dinget] 
+A|22| A: [en] _rechts zo'n_ blokkentoren 
+A|23| A: [soort] van 
+B|24| B: ehm [ja dat zijn] 
+B|25| B: _deze zijn met_ _een kegel_ _bovenop een kegel_ [links] [en] [dan] _rechts zo'n bloktoren_ 
+A|26| A: [ja] 
+A|27| A: O [ja dat zijn] 
+A|28| A: [deze zijn met] [bovenop een kegel] 
+A|29| A: [en] [links een kegel] 
+A|30| A: [en] [rechts zo'n bloktoren] [dinget] 
+B|31| B: Nja [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben bovenop een soort kegel
+	Free: Pattern=deze hebben bovenop een soort kegel
+	Constrained: Pattern=soort, Pattern=bovenop een soort kegel, Pattern=een, Pattern=deze hebben bovenop een, Pattern=deze hebben, Pattern=een soort, Pattern=een soort kegel
+Turn ID=1| B | B : en aan de linkerkant een soort kegel
+	Free: Pattern=een soort kegel, Pattern=en
+	Constrained: Pattern=een soort, Pattern=een, Pattern=soort
+Turn ID=2| B | B : en dan rechts zitten er ook wat in
+	Free: Pattern=ook, Pattern=dan, Pattern=rechts, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : maar dat zijn veel een soort vierkant op elkaar
+	Free: Pattern=een soort, Pattern=dat zijn, Pattern=maar
+	Constrained: Pattern=een, Pattern=zijn, Pattern=soort
+Turn ID=4| B | B : en link zitten nog een klein ander dinget
+	Free: Pattern=ander dinget, Pattern=een, Pattern=nog, Pattern=en
+	Constrained: Pattern=dinget
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja links twee dinget toch
+	Free: Pattern=links, Pattern=ja, Pattern=dinget
+	Constrained: 
+Turn ID=7| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : eh letter
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : eh deze hebben rechts weer zo'n soort van toren van blok
+	Free: Pattern=soort, Pattern=zo'n, Pattern=rechts, Pattern=deze hebben, Pattern=blok
+	Constrained: 
+Turn ID=11| A | A : maar dan horizontaal
+	Free: Pattern=maar, Pattern=dan
+	Constrained: 
+Turn ID=12| A | A : bovenop een soort kegel
+	Free: Pattern=bovenop een soort kegel
+	Constrained: Pattern=een soort, Pattern=een soort kegel, Pattern=een, Pattern=soort
+Turn ID=13| A | A : en links ook twee uitsteeksel
+	Free: Pattern=links, Pattern=ook, Pattern=en
+	Constrained: 
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : dus zijn het
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=16| B | B : deze hebben bovenop een kegel links een kegel en dan rechts die blok op elkaar
+	Free: Pattern=rechts, Pattern=dan, Pattern=links een kegel, Pattern=deze hebben bovenop een, Pattern=en, Pattern=blok, Pattern=bovenop een kegel
+	Constrained: Pattern=links een, Pattern=een, Pattern=links, Pattern=een kegel, Pattern=deze hebben
+Turn ID=17| B | B : en dan links nog een soort ja klein ovaal
+	Free: Pattern=nog, Pattern=ja, Pattern=dan, Pattern=links, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=18| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=19| A | A : eh deze hebben bovenop een soort kegel
+	Free: Pattern=deze hebben bovenop een soort kegel
+	Constrained: Pattern=soort, Pattern=bovenop een soort kegel, Pattern=een, Pattern=deze hebben bovenop een, Pattern=deze hebben, Pattern=een soort, Pattern=een soort kegel
+Turn ID=20| A | A : en links een soort kegel
+	Free: Pattern=een soort kegel, Pattern=links een, Pattern=en
+	Constrained: Pattern=een soort, Pattern=een, Pattern=links, Pattern=soort
+Turn ID=21| A | A : Links nog zo'n ander dinget
+	Free: Pattern=ander dinget, Pattern=zo'n, Pattern=nog
+	Constrained: Pattern=dinget
+Turn ID=22| A | A : en rechts zo'n blokkentoren
+	Free: Pattern=rechts zo'n, Pattern=en
+	Constrained: Pattern=zo'n, Pattern=rechts
+Turn ID=23| A | A : soort van
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=24| B | B : ehm ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=25| B | B : deze zijn met een kegel bovenop een kegel links en dan rechts zo'n bloktoren
+	Free: Pattern=deze zijn met, Pattern=dan, Pattern=links, Pattern=een kegel, Pattern=en, Pattern=rechts zo'n bloktoren, Pattern=bovenop een kegel
+	Constrained: Pattern=zo'n, Pattern=rechts, Pattern=een, Pattern=een kegel, Pattern=rechts zo'n, Pattern=zijn
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : O ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=28| A | A : deze zijn met bovenop een kegel
+	Free: Pattern=bovenop een kegel, Pattern=deze zijn met
+	Constrained: Pattern=een, Pattern=zijn, Pattern=een kegel
+Turn ID=29| A | A : en links een kegel
+	Free: Pattern=links een kegel, Pattern=en
+	Constrained: Pattern=een, Pattern=links, Pattern=links een, Pattern=een kegel
+Turn ID=30| A | A : en rechts zo'n bloktoren dinget
+	Free: Pattern=rechts zo'n bloktoren, Pattern=dinget, Pattern=en
+	Constrained: Pattern=rechts, Pattern=zo'n, Pattern=rechts zo'n
+Turn ID=31| B | B : Nja dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

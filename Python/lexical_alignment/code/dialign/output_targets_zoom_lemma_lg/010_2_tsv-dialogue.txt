@@ -1,0 +1,87 @@
+A|0| A: _Oké_ nu _hebben_ _ik_ er één _met_ een _driehoek_ _bovenop_ 
+A|1| A: _aan de voorkant_ _hebben_ hij eigenlijk best wel een groot lomp uitsteeksel 
+A|2| A: dat zijn een beetje _ja_ piramidevormig maar _de_ bovenkant zijn eraf zeggen maar 
+A|3| A: _aan de_ bovenkant _hebben_ er duidelijk een _driehoek_ 
+A|4| A: volgens mij zijn er maar één _met_ een duidelijk _driehoek_ 
+B|5| B: _eh_ [ja] [ik] 
+A|6| A: Links een klein uitsteekselt onderin een een _soort_ rond 
+B|7| B: [ja] 
+A|8| A: [ja] 
+B|9| B: [soort] [soort] containerwielt 
+A|10| A: [ja] 
+B|11| B: [Oké] 
+B|12| B: Eh deze [hebben] _de driehoek_ helemaal [bovenop] 
+B|13| B: _met de_ afbroken [driehoek] [aan de voorkant] 
+A|14| A: [ja] dat zijn 
+A|15| A: dit zijn die [met [de] driehoek] [bovenop] 
+B|16| B: _eh_ driehoekje [bovenop] 
+A|17| A: dat zijn 
+A|18| A: [eh] oké die [met [de] driehoek] [bovenop] 
+B|19| B: [driehoek] op top [bovenop] 
+A|20| A: [ja] dat zijn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké nu hebben ik er één met een driehoek bovenop
+	Free: Pattern=driehoek, Pattern=bovenop, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : aan de voorkant hebben hij eigenlijk best wel een groot lomp uitsteeksel
+	Free: Pattern=aan de voorkant, Pattern=hebben
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=2| A | A : dat zijn een beetje ja piramidevormig maar de bovenkant zijn eraf zeggen maar
+	Free: Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=3| A | A : aan de bovenkant hebben er duidelijk een driehoek
+	Free: Pattern=aan de, Pattern=hebben, Pattern=driehoek
+	Constrained: Pattern=de
+Turn ID=4| A | A : volgens mij zijn er maar één met een duidelijk driehoek
+	Free: Pattern=met, Pattern=driehoek
+	Constrained: 
+Turn ID=5| B | B : eh ja ik
+	Free: Pattern=ik, Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=6| A | A : Links een klein uitsteekselt onderin een een soort rond
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : soort soort containerwielt
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : Eh deze hebben de driehoek helemaal bovenop
+	Free: Pattern=de driehoek, Pattern=hebben, Pattern=bovenop
+	Constrained: Pattern=driehoek, Pattern=de
+Turn ID=13| B | B : met de afbroken driehoek aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=met de, Pattern=driehoek
+	Constrained: Pattern=de, Pattern=aan de, Pattern=met
+Turn ID=14| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : dit zijn die met de driehoek bovenop
+	Free: Pattern=de driehoek, Pattern=met de, Pattern=bovenop
+	Constrained: Pattern=met, Pattern=driehoek, Pattern=de
+Turn ID=16| B | B : eh driehoekje bovenop
+	Free: Pattern=bovenop, Pattern=eh
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : eh oké die met de driehoek bovenop
+	Free: Pattern=de driehoek, Pattern=met de, Pattern=bovenop, Pattern=eh
+	Constrained: Pattern=met, Pattern=driehoek, Pattern=de
+Turn ID=19| B | B : driehoek op top bovenop
+	Free: Pattern=bovenop, Pattern=driehoek
+	Constrained: 
+Turn ID=20| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 

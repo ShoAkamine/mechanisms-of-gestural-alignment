@@ -1,0 +1,99 @@
+A|0| A: _Oké_ nu _hebben_ _ik_ er _weer_ één 
+A|1| A: deze _hebben_ _de glijbaanneus_ _en_ _de_ twee klein staaf bovenop 
+B|2| B: _Glijbaanneus_ 
+A|3| A: _en_ _dat_ gek vierkant _dat_ hem doorsnijden 
+B|4| B: ah _ja_ 
+B|5| B: _met_ zo'n hendel aan [de] zijkant link 
+A|6| A: [ja] precies 
+B|7| B: [Oké] 
+B|8| B: _ik hebben_ [ja] [ik] vinden [dat] ook _een_ olifant _met_ zo'n armpje 
+B|9| B: [en] die _zijn_ zeggen maar 
+B|10| B: _een plaat_ gaan _door zijn_ lichaam _heen_ 
+A|11| A: [ja] [met] [zijn] _glijbaanneus_ 
+A|12| A: _dat zijn_ 
+B|13| B: [ja] 
+A|14| A: [ik hebben] _glijbaanneus_ [met] [een plaat] [door zijn] lijf 
+B|15| B: [ja] [dat zijn] 
+B|16| B: [ik hebben] [weer] [de glijbaanneus] 
+A|17| A: [Glijbaanneus] [met] [zijn] platform [door zijn] lijf [heen] 
+B|18| B: Yes 
+A|19| A: [dat zijn] 
+A|20| A: [ik hebben] [glijbaanneus] [met] hendeltje 
+B|21| B: [dat zijn] 
+B|22| B: eh [de glijbaanneus] 
+A|23| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké nu hebben ik er weer één
+	Free: Pattern=ik, Pattern=weer, Pattern=Oké, Pattern=hebben
+	Constrained: 
+Turn ID=1| A | A : deze hebben de glijbaanneus en de twee klein staaf bovenop
+	Free: Pattern=de glijbaanneus, Pattern=en, Pattern=de, Pattern=hebben
+	Constrained: Pattern=glijbaanneus, Pattern=de
+Turn ID=2| B | B : Glijbaanneus
+	Free: Pattern=Glijbaanneus
+	Constrained: 
+Turn ID=3| A | A : en dat gek vierkant dat hem doorsnijden
+	Free: Pattern=en, Pattern=dat
+	Constrained: 
+Turn ID=4| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : met zo'n hendel aan de zijkant link
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=6| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : ik hebben ja ik vinden dat ook een olifant met zo'n armpje
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=ja, Pattern=een, Pattern=met, Pattern=ik
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=9| B | B : en die zijn zeggen maar
+	Free: Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : een plaat gaan door zijn lichaam heen
+	Free: Pattern=een plaat, Pattern=door zijn, Pattern=heen
+	Constrained: Pattern=een, Pattern=zijn
+Turn ID=11| A | A : ja met zijn glijbaanneus
+	Free: Pattern=ja, Pattern=glijbaanneus, Pattern=zijn, Pattern=met
+	Constrained: 
+Turn ID=12| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ik hebben glijbaanneus met een plaat door zijn lijf
+	Free: Pattern=door zijn, Pattern=met, Pattern=glijbaanneus, Pattern=ik hebben, Pattern=een plaat
+	Constrained: Pattern=een, Pattern=zijn, Pattern=ik, Pattern=hebben
+Turn ID=15| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=16| B | B : ik hebben weer de glijbaanneus
+	Free: Pattern=de glijbaanneus, Pattern=ik hebben, Pattern=weer
+	Constrained: Pattern=ik, Pattern=glijbaanneus, Pattern=de, Pattern=hebben
+Turn ID=17| A | A : Glijbaanneus met zijn platform door zijn lijf heen
+	Free: Pattern=door zijn, Pattern=heen, Pattern=zijn, Pattern=Glijbaanneus, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=18| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| A | A : ik hebben glijbaanneus met hendeltje
+	Free: Pattern=ik hebben, Pattern=glijbaanneus, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| B | B : eh de glijbaanneus
+	Free: Pattern=de glijbaanneus
+	Constrained: Pattern=glijbaanneus, Pattern=de
+Turn ID=23| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

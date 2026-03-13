@@ -1,0 +1,147 @@
+A|0| A: _Euhm_ 
+A|1| A: hoe omschrijf _ik_ _dit_ 
+A|2| A: Oké _ik_ hebben nu 
+A|3| A: _Euhm_ 
+A|4| A: _ik_ _vinden_ het eigenlijk een beetje _op_ een stortbak van een _wc_ lijken 
+A|5| A: _aan _de_ bovenkant_ hebben je een _ruit_ _en_ daar zitten _die_ blokkendoos toren van beide kant ingepriken 
+A|6| A: _en_ _aan de onderkant_ zitten een soort van _ja_ Macaroni-achtig _haak_ 
+B|7| B: Oh [ja] _ja dat zijn_ 
+B|8| B: _Euh_ [dit] _zijn met _die_ ruit_ bovenop [en] _dat haak_ [aan de onderkant] 
+A|9| A: Euhhh 
+B|10| B: [Euhm] [de] [wc] 
+A|11| A: [ja] [die] _euh_ _ik_ _op de_ stortbak plaatsvinden lijken [ja] 
+B|12| B: [ja] 
+A|13| A: [dat zijn] 
+A|14| A: _ik_ hebben nu _euh_ weer [die] _op_ [die] stortbak lijken 
+B|15| B: Oh [ja] _even kijken_ 
+A|16| A: Yes [met] [dat haak] eronder 
+B|17| B: [ik] kunnen hem niet [vinden] 
+B|18| B: [zijn] [dat] _met die_ ? welk [zijn] [dat] ook alweer 
+A|19| A: [dat [zijn] met die] _euh_ [ruit] [die] erboav zweeft 
+A|20| A: waar soort van twee van [die] blokkentorens erin prikken 
+A|21| A: [en] dan eronder zitten een soort macaroni-achtig [haak] 
+A|22| A: [en] er lijken twee ding uit te uitsteken 
+B|23| B: Oh [ja] [met _die] ruit_ [op [de] bovenkant] 
+B|24| B: Oh [ja] 
+A|25| A: [ja] 
+B|26| B: [Euhm] [dit] [zijn] [die] bak [met _die] ruit_ [op [de] bovenkant] 
+A|27| A: [even kijken] waar [die] [zijn] 
+A|28| A: [dat zijn] 
+A|29| A: [ik] hebben nu weer [die ruit] [aan [de] bovenkant] 
+A|30| A: [dit] soort Stofpak 
+B|31| B: Oh [ja] [euh] 
+B|32| B: _Euh_ [dit] [zijn met] [de] bak [met] [de] [ruit] bovenop 
+A|33| A: [Euh] [even kijken] wat het [zijn] 
+B|34| B: [die] spoelbak 
+A|35| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=1| A | A : hoe omschrijf ik dit
+	Free: Pattern=dit, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : Oké ik hebben nu
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=3| A | A : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=4| A | A : ik vinden het eigenlijk een beetje op een stortbak van een wc lijken
+	Free: Pattern=op, Pattern=ik, Pattern=vinden, Pattern=wc
+	Constrained: 
+Turn ID=5| A | A : aan de bovenkant hebben je een ruit en daar zitten die blokkendoos toren van beide kant ingepriken
+	Free: Pattern=ruit, Pattern=aan de, Pattern=de bovenkant, Pattern=die, Pattern=en
+	Constrained: Pattern=de
+Turn ID=6| A | A : en aan de onderkant zitten een soort van ja Macaroni-achtig haak
+	Free: Pattern=aan de onderkant, Pattern=haak, Pattern=ja, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=7| B | B : Oh ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=8| B | B : Euh dit zijn met die ruit bovenop en dat haak aan de onderkant
+	Free: Pattern=dat haak, Pattern=aan de onderkant, Pattern=dit, Pattern=zijn met die, Pattern=en, Pattern=die ruit, Pattern=Euh
+	Constrained: Pattern=ruit, Pattern=de, Pattern=aan de, Pattern=met, Pattern=dat, Pattern=met die, Pattern=zijn met, Pattern=die, Pattern=haak, Pattern=zijn
+Turn ID=9| A | A : Euhhh
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Euhm de wc
+	Free: Pattern=de, Pattern=Euhm, Pattern=wc
+	Constrained: 
+Turn ID=11| A | A : ja die euh ik op de stortbak plaatsvinden lijken ja
+	Free: Pattern=ja, Pattern=euh, Pattern=die, Pattern=ik, Pattern=op de
+	Constrained: Pattern=de, Pattern=op
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| A | A : ik hebben nu euh weer die op die stortbak lijken
+	Free: Pattern=op, Pattern=ik, Pattern=die, Pattern=euh
+	Constrained: 
+Turn ID=15| B | B : Oh ja even kijken
+	Free: Pattern=even kijken, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : Yes met dat haak eronder
+	Free: Pattern=dat haak, Pattern=met
+	Constrained: Pattern=dat, Pattern=haak
+Turn ID=17| B | B : ik kunnen hem niet vinden
+	Free: Pattern=ik, Pattern=vinden
+	Constrained: 
+Turn ID=18| B | B : zijn dat met die ? welk zijn dat ook alweer
+	Free: Pattern=met die, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=die, Pattern=met
+Turn ID=19| A | A : dat zijn met die euh ruit die erboav zweeft
+	Free: Pattern=dat zijn, Pattern=ruit, Pattern=euh, Pattern=die, Pattern=zijn met die
+	Constrained: Pattern=met, Pattern=zijn, Pattern=dat, Pattern=met die, Pattern=zijn met, Pattern=die
+Turn ID=20| A | A : waar soort van twee van die blokkentorens erin prikken
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| A | A : en dan eronder zitten een soort macaroni-achtig haak
+	Free: Pattern=haak, Pattern=en
+	Constrained: 
+Turn ID=22| A | A : en er lijken twee ding uit te uitsteken
+	Free: Pattern=en
+	Constrained: 
+Turn ID=23| B | B : Oh ja met die ruit op de bovenkant
+	Free: Pattern=met die, Pattern=ja, Pattern=de bovenkant, Pattern=die ruit, Pattern=op de
+	Constrained: Pattern=ruit, Pattern=de, Pattern=op, Pattern=met, Pattern=die
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : Euhm dit zijn die bak met die ruit op de bovenkant
+	Free: Pattern=met die, Pattern=de bovenkant, Pattern=die ruit, Pattern=dit, Pattern=Euhm, Pattern=die, Pattern=zijn, Pattern=op de
+	Constrained: Pattern=ruit, Pattern=de, Pattern=op, Pattern=met, Pattern=die
+Turn ID=27| A | A : even kijken waar die zijn
+	Free: Pattern=even kijken, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=28| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=29| A | A : ik hebben nu weer die ruit aan de bovenkant
+	Free: Pattern=aan de, Pattern=de bovenkant, Pattern=die ruit, Pattern=ik
+	Constrained: Pattern=de, Pattern=ruit, Pattern=die
+Turn ID=30| A | A : dit soort Stofpak
+	Free: Pattern=dit
+	Constrained: 
+Turn ID=31| B | B : Oh ja euh
+	Free: Pattern=ja, Pattern=euh
+	Constrained: 
+Turn ID=32| B | B : Euh dit zijn met de bak met de ruit bovenop
+	Free: Pattern=ruit, Pattern=de, Pattern=Euh, Pattern=dit, Pattern=met, Pattern=zijn met
+	Constrained: Pattern=zijn, Pattern=met
+Turn ID=33| A | A : Euh even kijken wat het zijn
+	Free: Pattern=even kijken, Pattern=zijn, Pattern=Euh
+	Constrained: 
+Turn ID=34| B | B : die spoelbak
+	Free: Pattern=die
+	Constrained: 
+Turn ID=35| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja

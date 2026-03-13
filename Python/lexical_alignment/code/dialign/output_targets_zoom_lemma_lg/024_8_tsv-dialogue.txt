@@ -1,0 +1,171 @@
+A|0| A: _ja_ deze _vinden_ _ik_ best wel complex 
+A|1| A: boven zitten _twee ruit_ 
+A|2| A: _met_ _een_ soort _verrekijker_ naar rechts _en_ link 
+A|3| A: _en_ in _het_ midden zitten _een_ cilinder _die_ naar voren _steken_ 
+A|4| A: _en_ 
+A|5| A: _aan de_ rechterkant zitten _een_ _een_ soort boog 
+B|6| B: [en] [aan de] onderkant [een] 
+A|7| A: [en] onder ook 
+B|8| B: [ja] oké 
+B|9| B: dan _zijn_ [het] 
+A|10| A: [ja] 
+B|11| B: [ik] [vinden] [het] [een] beetje 
+A|12| A: [en] _die_ _die_ boog rechts [zijn] _hetzelfde_ als [de] boog onder 
+B|13| B: [ja] oké 
+B|14| B: _dat zijn_ 
+B|15| B: Oké 
+B|16| B: Oké _dit zijn_ degeen [die] [ik] _op een eekhoorn vinden lijken_ 
+B|17| B: [die] _hebben_ _jij_ moeten _jij_ net uitleggen 
+B|18| B: [zijn] [met] [twee ruit] _op_ [het] hoofd zeggen maar 
+B|19| B: _of_ _op_ [de] bovenkant 
+B|20| B: [en] dan [twee] 
+B|21| B: [ja] [verrekijker] zullen [ik] zullen we [het] maar noemen [aan de] zijkant 
+A|22| A: O [ja] 
+B|23| B: [en] dan 
+B|24| B: _met die_ [twee] buis er 
+B|25| B: [aan de] 
+B|26| B: onderkant [en] [aan de] zijkant [hetzelfde] 
+B|27| B: [en] dan nog [een] Een _die eruit steken_ 
+A|28| A: [het] [zijn] 
+A|29| A: deze [hebben] [twee ruit] boven 
+A|30| A: [met] soort [verrekijker] [of] gebouw [aan de] 
+B|31| B: [ja] 
+A|32| A: [ja] [die eruit steken] 
+B|33| B: _dat zijn_ 
+B|34| B: _dit zijn die_ _met die_ [twee ruit] 
+B|35| B: [en] [met] [twee] [verrekijker] 
+B|36| B: [die] [ik] _op een eekhoorn vinden lijken_ 
+A|37| A: nou [dat zijn] 
+A|38| A: [dit zijn die] [jij] [op een eekhoorn vinden lijken] 
+A|39| A: [met die] rui 
+B|40| B: [ja] [dat zijn] 
+B|41| B: Eekhoorn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja deze vinden ik best wel complex
+	Free: Pattern=ik, Pattern=vinden, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : boven zitten twee ruit
+	Free: Pattern=twee ruit
+	Constrained: Pattern=twee
+Turn ID=2| A | A : met een soort verrekijker naar rechts en link
+	Free: Pattern=verrekijker, Pattern=een, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : en in het midden zitten een cilinder die naar voren steken
+	Free: Pattern=een, Pattern=het, Pattern=die, Pattern=en, Pattern=steken
+	Constrained: 
+Turn ID=4| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| A | A : aan de rechterkant zitten een een soort boog
+	Free: Pattern=aan de, Pattern=een
+	Constrained: Pattern=de
+Turn ID=6| B | B : en aan de onderkant een
+	Free: Pattern=aan de, Pattern=een, Pattern=en
+	Constrained: Pattern=de
+Turn ID=7| A | A : en onder ook
+	Free: Pattern=en
+	Constrained: 
+Turn ID=8| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : dan zijn het
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ik vinden het een beetje
+	Free: Pattern=het, Pattern=ik, Pattern=vinden, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : en die die boog rechts zijn hetzelfde als de boog onder
+	Free: Pattern=de, Pattern=hetzelfde, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=13| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Oké dit zijn degeen die ik op een eekhoorn vinden lijken
+	Free: Pattern=op een eekhoorn vinden lijken, Pattern=dit zijn, Pattern=ik, Pattern=die
+	Constrained: Pattern=een, Pattern=zijn, Pattern=vinden, Pattern=op
+Turn ID=17| B | B : die hebben jij moeten jij net uitleggen
+	Free: Pattern=hebben, Pattern=jij, Pattern=die
+	Constrained: 
+Turn ID=18| B | B : zijn met twee ruit op het hoofd zeggen maar
+	Free: Pattern=twee ruit, Pattern=op, Pattern=het, Pattern=met, Pattern=zijn
+	Constrained: Pattern=twee
+Turn ID=19| B | B : of op de bovenkant
+	Free: Pattern=de, Pattern=op, Pattern=of
+	Constrained: 
+Turn ID=20| B | B : en dan twee
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=21| B | B : ja verrekijker zullen ik zullen we het maar noemen aan de zijkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=het, Pattern=ik, Pattern=verrekijker
+	Constrained: Pattern=de
+Turn ID=22| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=24| B | B : met die twee buis er
+	Free: Pattern=met die, Pattern=twee
+	Constrained: Pattern=die, Pattern=met
+Turn ID=25| B | B : aan de
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=26| B | B : onderkant en aan de zijkant hetzelfde
+	Free: Pattern=aan de, Pattern=hetzelfde, Pattern=en
+	Constrained: Pattern=de
+Turn ID=27| B | B : en dan nog een Een die eruit steken
+	Free: Pattern=die eruit steken, Pattern=een, Pattern=en
+	Constrained: Pattern=steken, Pattern=die
+Turn ID=28| A | A : het zijn
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=29| A | A : deze hebben twee ruit boven
+	Free: Pattern=twee ruit, Pattern=hebben
+	Constrained: Pattern=twee
+Turn ID=30| A | A : met soort verrekijker of gebouw aan de
+	Free: Pattern=aan de, Pattern=verrekijker, Pattern=of, Pattern=met
+	Constrained: Pattern=de
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ja die eruit steken
+	Free: Pattern=die eruit steken, Pattern=ja
+	Constrained: Pattern=steken, Pattern=die
+Turn ID=33| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=34| B | B : dit zijn die met die twee ruit
+	Free: Pattern=dit zijn die, Pattern=twee ruit, Pattern=met die
+	Constrained: Pattern=twee, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=35| B | B : en met twee verrekijker
+	Free: Pattern=verrekijker, Pattern=met, Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=36| B | B : die ik op een eekhoorn vinden lijken
+	Free: Pattern=op een eekhoorn vinden lijken, Pattern=ik, Pattern=die
+	Constrained: Pattern=een, Pattern=vinden, Pattern=op
+Turn ID=37| A | A : nou dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=38| A | A : dit zijn die jij op een eekhoorn vinden lijken
+	Free: Pattern=op een eekhoorn vinden lijken, Pattern=dit zijn die, Pattern=jij
+	Constrained: Pattern=vinden, Pattern=op, Pattern=een, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=39| A | A : met die rui
+	Free: Pattern=met die
+	Constrained: Pattern=die, Pattern=met
+Turn ID=40| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=41| B | B : Eekhoorn
+	Free: 
+	Constrained: 

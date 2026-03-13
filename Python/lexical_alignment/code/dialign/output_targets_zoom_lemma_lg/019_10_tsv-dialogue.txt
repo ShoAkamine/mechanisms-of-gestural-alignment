@@ -1,0 +1,207 @@
+B|0| B: _ehm_ _dan_ _hebben_ _ik_ nu _ja_ je _hebben_ je _hebben_ _dat_ kop 
+B|1| B: _en_ daar gaan _een_ soort _van_ _staaf achterlangs_ _doorheen_ 
+A|2| A: [ja] 
+B|3| B: _en dan_ zien je _achter_ _een_ soort _van_ vierkant _er_ schuin _tegenaan staan_ 
+A|4| A: Oh 
+B|5| B: _ehm_ _een_ soort _van_ hengsel eruit 
+A|6| A: Ehm 
+B|7| B: [ja] _het_ _zijn het_ _zijn_ hmmm 
+A|8| A: Wacht welk wat [hebben] _hij_ 
+A|9| A: [een] [staaf] [er] [doorheen] 
+B|10| B: [ja] [een] soort _van_ of erachterlangs _zo_ kunnen je _het_ ook net zien 
+A|11| A: Oh 
+A|12| A: Zeg maar alsof _de_ alsof [er] _een zonnepaneel_ [tegenaan staan] 
+A|13| A: [zo] _met_ zo'n 
+B|14| B: _ja ja_ _en_ [er] zitten nog wel 
+A|15| A: _aan de achterkant_ 
+B|16| B: precies 
+A|17| A: [en dan] [een] _staaf met_ _aan_ [het] uiteinde twee bollet [van] _die_ [staaf] 
+B|18| B: [ja] [en] [aan de] [een] kant steken [hij] iets ver uit [dan] [aan de] ander kant 
+A|19| A: [ja ja] 
+A|20| A: Oké [dan] [zijn het] 
+A|21| A: _ehm dit zijn_ _die_ _zonnepaneel_ 
+A|22| A: [en] _met_ _die_ [staaf achterlangs] 
+A|23| A: _met_ _die_ twee rond 
+B|24| B: [ehm] [ja] [de] zonnebril 
+A|25| A: _die_ [zo] 
+B|26| B: [ja [ja] ja] 
+A|27| A: [ja] 
+B|28| B: [ja] nummer 
+B|29| B: [ehm _dit zijn] de_ [staaf met] [een] soort [van] [zonnepaneel] 
+B|30| B: [die] eruit komen 
+B|31| B: uit [de] mok 
+A|32| A: Oh [die] [zo] [achter] 
+B|33| B: [ja] precies 
+A|34| A: even _zoeken_ 
+A|35| A: [ja] oké [ik] [hebben] _hem_ 
+A|36| A: even kijken [dit zijn] _een zonnepaneel_ 
+A|37| A: [en] [met] [die] [staaf] [zo] 
+B|38| B: [ja] 
+A|39| A: _aan de achterkant_ 
+B|40| B: [ja] waar [staan] [hij] 
+B|41| B: [ja] nummer nummer 
+A|42| A: Zoeken 
+B|43| B: [ehm _dit zijn] de_ [staaf met] [een zonnepaneel] [aan de achterkant] 
+A|44| A: [ja] [dat] [zijn] 
+A|45| A: eh [dit zijn de] [zonnepaneel] 
+B|46| B: Zonnepaneel 
+A|47| A: [en] [die] 
+A|48| A: [ja] 
+B|49| B: [ja [ja] ja] [ik] [zoeken] [hem] 
+B|50| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm dan hebben ik nu ja je hebben je hebben dat kop
+	Free: Pattern=dat, Pattern=ja, Pattern=dan, Pattern=hebben, Pattern=ehm, Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : en daar gaan een soort van staaf achterlangs doorheen
+	Free: Pattern=staaf achterlangs, Pattern=doorheen, Pattern=een, Pattern=van, Pattern=en
+	Constrained: Pattern=staaf
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : en dan zien je achter een soort van vierkant er schuin tegenaan staan
+	Free: Pattern=en dan, Pattern=een, Pattern=achter, Pattern=er, Pattern=van, Pattern=tegenaan staan
+	Constrained: Pattern=en, Pattern=dan, Pattern=staan
+Turn ID=4| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ehm een soort van hengsel eruit
+	Free: Pattern=van, Pattern=ehm, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ja het zijn het zijn hmmm
+	Free: Pattern=zijn het, Pattern=ja, Pattern=zijn, Pattern=het
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=8| A | A : Wacht welk wat hebben hij
+	Free: Pattern=hij, Pattern=hebben
+	Constrained: 
+Turn ID=9| A | A : een staaf er doorheen
+	Free: Pattern=doorheen, Pattern=er, Pattern=een, Pattern=staaf
+	Constrained: 
+Turn ID=10| B | B : ja een soort van of erachterlangs zo kunnen je het ook net zien
+	Free: Pattern=ja, Pattern=een, Pattern=het, Pattern=zo, Pattern=van
+	Constrained: 
+Turn ID=11| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : Zeg maar alsof de alsof er een zonnepaneel tegenaan staan
+	Free: Pattern=tegenaan staan, Pattern=een zonnepaneel, Pattern=de, Pattern=er
+	Constrained: Pattern=zonnepaneel, Pattern=staan, Pattern=een
+Turn ID=13| A | A : zo met zo'n
+	Free: Pattern=zo, Pattern=met
+	Constrained: 
+Turn ID=14| B | B : ja ja en er zitten nog wel
+	Free: Pattern=ja ja, Pattern=en, Pattern=er
+	Constrained: Pattern=ja
+Turn ID=15| A | A : aan de achterkant
+	Free: Pattern=aan de achterkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=16| B | B : precies
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : en dan een staaf met aan het uiteinde twee bollet van die staaf
+	Free: Pattern=aan, Pattern=een, Pattern=het, Pattern=die, Pattern=staaf met, Pattern=van, Pattern=staaf, Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan, Pattern=met, Pattern=staaf
+Turn ID=18| B | B : ja en aan de een kant steken hij iets ver uit dan aan de ander kant
+	Free: Pattern=ja, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=hij, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=19| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=20| A | A : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=21| A | A : ehm dit zijn die zonnepaneel
+	Free: Pattern=ehm dit zijn, Pattern=zonnepaneel, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=22| A | A : en met die staaf achterlangs
+	Free: Pattern=staaf achterlangs, Pattern=en, Pattern=die, Pattern=met
+	Constrained: Pattern=staaf
+Turn ID=23| A | A : met die twee rond
+	Free: Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=24| B | B : ehm ja de zonnebril
+	Free: Pattern=ja, Pattern=ehm, Pattern=de
+	Constrained: 
+Turn ID=25| A | A : die zo
+	Free: Pattern=die, Pattern=zo
+	Constrained: 
+Turn ID=26| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ehm dit zijn de staaf met een soort van zonnepaneel
+	Free: Pattern=een, Pattern=staaf met, Pattern=van, Pattern=ehm dit zijn, Pattern=dit zijn de, Pattern=zonnepaneel
+	Constrained: Pattern=de, Pattern=staaf, Pattern=zijn, Pattern=dit zijn, Pattern=ehm, Pattern=met
+Turn ID=30| B | B : die eruit komen
+	Free: Pattern=die
+	Constrained: 
+Turn ID=31| B | B : uit de mok
+	Free: Pattern=de
+	Constrained: 
+Turn ID=32| A | A : Oh die zo achter
+	Free: Pattern=die, Pattern=zo, Pattern=achter
+	Constrained: 
+Turn ID=33| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : even zoeken
+	Free: Pattern=zoeken
+	Constrained: 
+Turn ID=35| A | A : ja oké ik hebben hem
+	Free: Pattern=ja, Pattern=hem, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=36| A | A : even kijken dit zijn een zonnepaneel
+	Free: Pattern=een zonnepaneel, Pattern=dit zijn
+	Constrained: Pattern=zonnepaneel, Pattern=zijn, Pattern=een
+Turn ID=37| A | A : en met die staaf zo
+	Free: Pattern=staaf, Pattern=zo, Pattern=met, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=38| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : aan de achterkant
+	Free: Pattern=aan de achterkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=40| B | B : ja waar staan hij
+	Free: Pattern=ja, Pattern=hij, Pattern=staan
+	Constrained: 
+Turn ID=41| B | B : ja nummer nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : Zoeken
+	Free: 
+	Constrained: 
+Turn ID=43| B | B : ehm dit zijn de staaf met een zonnepaneel aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=een zonnepaneel, Pattern=staaf met, Pattern=ehm dit zijn, Pattern=dit zijn de
+	Constrained: Pattern=staaf, Pattern=aan de, Pattern=een, Pattern=zijn, Pattern=de, Pattern=aan, Pattern=ehm, Pattern=met, Pattern=dit zijn, Pattern=zonnepaneel
+Turn ID=44| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=45| A | A : eh dit zijn de zonnepaneel
+	Free: Pattern=dit zijn de, Pattern=zonnepaneel
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=de
+Turn ID=46| B | B : Zonnepaneel
+	Free: 
+	Constrained: 
+Turn ID=47| A | A : en die
+	Free: Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=48| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=49| B | B : ja ja ja ik zoeken hem
+	Free: Pattern=ja ja, Pattern=hem, Pattern=zoeken, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=50| B | B : nummer
+	Free: 
+	Constrained: 

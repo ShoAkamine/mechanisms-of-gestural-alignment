@@ -1,0 +1,115 @@
+B|0| B: _Oké_ _euh_ dit _zijn_ _een soort_ 
+B|1| B: alsof _er_ _een_ _glijbaan_ of zo _zijn_ _met_ _aan de_ _bovenkant_ _twee_ spriet zo 
+B|2| B: _en_ _dan_ _aan de zijkant_ _zitten_ zo'n dinge 
+B|3| B: _dat_ associeren _ik_ _een_ beetje _met_ _van_ zo'n Amerikaans brievenbus weten je wel 
+B|4| B: _wat_ _dan_ zo _aan de zijkant_ _en_ _dan_ omhoog steken 
+B|5| B: _en_ _er_ _zitten_ _een soort_ _vierkant_ _door_ _die_ _basisvorm heen_ _aan de_ onderkant 
+A|6| A: _Euh_ even kijken [en] [zijn] [die] _die twee_ [euh] ding [die] eruit komen [zijn] [dat] _zeggen maar_ lijn uit bolle [aan] mekaar 
+B|7| B: nee [die] spriet _zitten_ _aan de_ _bovenkant_ 
+B|8| B: dus [euh] je zullen _ook_ kunnen zien alsof [die] _wat_ _ik_ _dan_ _een_ _glijbaan_ noemen [zeggen maar] _een soort_ _neus_ zo _naar_ onder [zijn] 
+B|9| B: [en] [dat] [die twee] spriet _aan de_ _bovenkant_ _een soort_ oog [zijn] of zo 
+A|10| A: _Euh_ _ja_ [en] [zitten] [er] [aan de zijkant] [dan] [ook] [een] [een] hendel [die] [een soort] [van] kantelen _L_ [zijn] 
+B|11| B: [ja] 
+A|12| A: [Oké] [dan] [zijn] het denken [ik] letteren 
+A|13| A: _Euh_ _nu_ _hebben_ [ik] [die] [met] [de] omgekeerde _L_ [naar] links 
+A|14| A: _Euh_ [twee] klein uitsteeksel [naar] [bovenkant] [en] [een] plat [vierkant] vlak [wat] [door] [de] [basisvorm heen] gaan 
+A|15| A: _en _de_ glijbaan_ als [neus] 
+B|16| B: [ja] nummer 
+B|17| B: [Euh] _ik hebben nu_ [die] [L] [aan de zijkant] [en de] [twee] uitsteekselt [en] [die] [glijbaan] [en de] [vierkant] [er] doorheen 
+A|18| A: [ja] 
+A|19| A: [Euh] 
+A|20| A: Oh [ja] 
+A|21| A: [Euh] [ja] [ik hebben nu] [de] omgekeerde [L] [en de] [neus] als [glijbaan] 
+B|22| B: nummer 
+B|23| B: [ik hebben] [de glijbaan] [en de] omgekeerd uil 
+A|24| A: [Euh] 
+A|25| A: [ja] [dat] [zijn] 
+A|26| A: [ik hebben nu] [de] omgekeerde [L] [en [de] glijbaan] 
+B|27| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké euh dit zijn een soort
+	Free: Pattern=een soort, Pattern=zijn, Pattern=Oké, Pattern=euh
+	Constrained: Pattern=een
+Turn ID=1| B | B : alsof er een glijbaan of zo zijn met aan de bovenkant twee spriet zo
+	Free: Pattern=twee, Pattern=aan de, Pattern=een, Pattern=bovenkant, Pattern=met, Pattern=zijn, Pattern=glijbaan, Pattern=er
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=2| B | B : en dan aan de zijkant zitten zo'n dinge
+	Free: Pattern=aan de zijkant, Pattern=en, Pattern=dan, Pattern=zitten
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=3| B | B : dat associeren ik een beetje met van zo'n Amerikaans brievenbus weten je wel
+	Free: Pattern=dat, Pattern=een, Pattern=met, Pattern=ik, Pattern=van
+	Constrained: 
+Turn ID=4| B | B : wat dan zo aan de zijkant en dan omhoog steken
+	Free: Pattern=aan de zijkant, Pattern=en, Pattern=dan, Pattern=wat
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=5| B | B : en er zitten een soort vierkant door die basisvorm heen aan de onderkant
+	Free: Pattern=basisvorm heen, Pattern=aan de, Pattern=door, Pattern=er, Pattern=een soort, Pattern=en, Pattern=vierkant, Pattern=die, Pattern=zitten
+	Constrained: Pattern=aan, Pattern=een, Pattern=de
+Turn ID=6| A | A : Euh even kijken en zijn die die twee euh ding die eruit komen zijn dat zeggen maar lijn uit bolle aan mekaar
+	Free: Pattern=dat, Pattern=aan, Pattern=die twee, Pattern=euh, Pattern=die, Pattern=en, Pattern=zijn, Pattern=zeggen maar, Pattern=Euh
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=7| B | B : nee die spriet zitten aan de bovenkant
+	Free: Pattern=aan de, Pattern=bovenkant, Pattern=die, Pattern=zitten
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=8| B | B : dus euh je zullen ook kunnen zien alsof die wat ik dan een glijbaan noemen zeggen maar een soort neus zo naar onder zijn
+	Free: Pattern=ook, Pattern=dan, Pattern=een, Pattern=zeggen maar, Pattern=euh, Pattern=neus, Pattern=die, Pattern=zijn, Pattern=naar, Pattern=wat, Pattern=glijbaan, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=9| B | B : en dat die twee spriet aan de bovenkant een soort oog zijn of zo
+	Free: Pattern=dat, Pattern=aan de, Pattern=die twee, Pattern=bovenkant, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=een, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=10| A | A : Euh ja en zitten er aan de zijkant dan ook een een hendel die een soort van kantelen L zijn
+	Free: Pattern=L, Pattern=ja, Pattern=ook, Pattern=dan, Pattern=Euh, Pattern=er, Pattern=een soort, Pattern=zijn, Pattern=een, Pattern=aan de zijkant, Pattern=die, Pattern=zitten, Pattern=van, Pattern=en
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Oké dan zijn het denken ik letteren
+	Free: Pattern=dan, Pattern=zijn, Pattern=Oké, Pattern=ik
+	Constrained: 
+Turn ID=13| A | A : Euh nu hebben ik die met de omgekeerde L naar links
+	Free: Pattern=L, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=naar, Pattern=Euh, Pattern=nu
+	Constrained: 
+Turn ID=14| A | A : Euh twee klein uitsteeksel naar bovenkant en een plat vierkant vlak wat door de basisvorm heen gaan
+	Free: Pattern=basisvorm heen, Pattern=twee, Pattern=de, Pattern=door, Pattern=een, Pattern=Euh, Pattern=bovenkant, Pattern=wat, Pattern=en, Pattern=vierkant, Pattern=naar
+	Constrained: 
+Turn ID=15| A | A : en de glijbaan als neus
+	Free: Pattern=en de, Pattern=de glijbaan, Pattern=neus
+	Constrained: Pattern=en, Pattern=glijbaan, Pattern=de
+Turn ID=16| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : Euh ik hebben nu die L aan de zijkant en de twee uitsteekselt en die glijbaan en de vierkant er doorheen
+	Free: Pattern=L, Pattern=twee, Pattern=aan de zijkant, Pattern=die, Pattern=en, Pattern=Euh, Pattern=en de, Pattern=glijbaan, Pattern=er, Pattern=vierkant, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=aan de, Pattern=nu, Pattern=hebben, Pattern=ik, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=20| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : Euh ja ik hebben nu de omgekeerde L en de neus als glijbaan
+	Free: Pattern=L, Pattern=neus, Pattern=glijbaan, Pattern=ik hebben nu, Pattern=de, Pattern=ja, Pattern=Euh, Pattern=en de
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=nu, Pattern=hebben, Pattern=ik, Pattern=en
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : ik hebben de glijbaan en de omgekeerd uil
+	Free: Pattern=ik hebben, Pattern=en de, Pattern=de glijbaan
+	Constrained: Pattern=de, Pattern=hebben, Pattern=glijbaan, Pattern=ik, Pattern=en
+Turn ID=24| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=25| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : ik hebben nu de omgekeerde L en de glijbaan
+	Free: Pattern=L, Pattern=de, Pattern=en de, Pattern=de glijbaan, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=nu, Pattern=hebben, Pattern=glijbaan, Pattern=ik, Pattern=en
+Turn ID=27| B | B : nummer
+	Free: 
+	Constrained: 

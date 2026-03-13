@@ -1,0 +1,135 @@
+B|0| B: _Oké_ nu _hebben_ ik _er_ _één_ 
+B|1| B: ehm _ja_ _dit_ figuur _hebben_ _een soort van_ _aan_ _ja_ _aan_ _dat_ kop zeggen maar _dat_ _dat_ middel stuk wat telkens hetzelfde _zijn_ 
+B|2| B: _aan de_ _aan de_ romp om _het_ maar even te noemen _hebben_ hij drie _arm_ 
+A|3| A: hm 
+A|4| A: [ja] 
+B|5| B: zo 
+B|6| B: _één_ vierkant _één_ _een_ beetje uitgerekken _ovaal_ _en_ _één_ _een_ beetje gekke 
+B|7| B: _en_ hij _hebben_ _een soort_ [ja] _steel_ _op_ _zijn_ kop 
+A|8| A: _ja ja_ 
+A|9| A: [en] _die_ [steel] dezelfde vorm als [één] [van] _die_ [arm] 
+B|10| B: [ja] exact 
+A|11| A: [Oké] dan [zijn] [het] 
+A|12| A: Eh deze [hebben] _op de bovenkant_ [een soort van] langwerpig [ja] cilindervorm achtig iets 
+A|13| A: _op de bovenkant en_ _aan de zijkant_ ook 
+A|14| A: of [aan de] voorkant eigenlijk 
+B|15| B: mhm 
+A|16| A: [en] _aan de zijkant_ [aan] [één] kant komen [er] [een soort van] leiding _in_ 
+A|17| A: [en] [aan de] ander kant gaan [er] blok uit 
+B|18| B: _ja dat zijn_ nummer 
+B|19| B: ehm _dit zijn die_ [een] _met die_ drie [arm] 
+B|20| B: [en] _twee_ daarvan lijken [op] [een soort] handvat [een soort van] _cilindervormig_ 
+B|21| B: [en] [één] zitten [er] [van] bovenop [en] _één aan de zijkant_ 
+A|22| A: _eh_ _ja _ja_ ja_ [van] aria [zijn] [dat] 
+A|23| A: _eh dit zijn_ degeen [met] [twee] [van] [die] [cilindervormig] of uitsteeksel 
+A|24| A: _eentje_ [aan _de] bovenkant [één_ aan de zijkant] 
+B|25| B: Oh [ja _ja] dat zijn_ 
+B|26| B: _eh dit zijn die_ [een] _met die twee_ cilinder ding 
+B|27| B: [eentje] [op de bovenkant en] [één aan de zijkant] 
+A|28| A: [ja dat zijn] 
+A|29| A: [eh dit zijn die] [met die twee] uitsteeksel [die] allebei zo'n [ovaal] vormachtig iets [hebben] 
+B|30| B: [eentje] [in] [de bovenkant één] [in] [de zijkant] 
+B|31| B: [ja] nummer 
+A|32| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké nu hebben ik er één
+	Free: Pattern=één, Pattern=er, Pattern=Oké, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : ehm ja dit figuur hebben een soort van aan ja aan dat kop zeggen maar dat dat middel stuk wat telkens hetzelfde zijn
+	Free: Pattern=dat, Pattern=hebben, Pattern=dit, Pattern=een soort van, Pattern=zijn, Pattern=aan, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een, Pattern=van
+Turn ID=2| B | B : aan de aan de romp om het maar even te noemen hebben hij drie arm
+	Free: Pattern=aan de, Pattern=het, Pattern=hebben, Pattern=arm
+	Constrained: Pattern=aan
+Turn ID=3| A | A : hm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : zo
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : één vierkant één een beetje uitgerekken ovaal en één een beetje gekke
+	Free: Pattern=één, Pattern=en, Pattern=ovaal, Pattern=een
+	Constrained: 
+Turn ID=7| B | B : en hij hebben een soort ja steel op zijn kop
+	Free: Pattern=ja, Pattern=op, Pattern=hebben, Pattern=en, Pattern=zijn, Pattern=een soort, Pattern=steel
+	Constrained: Pattern=een
+Turn ID=8| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=9| A | A : en die steel dezelfde vorm als één van die arm
+	Free: Pattern=één, Pattern=die, Pattern=steel, Pattern=arm, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=10| B | B : ja exact
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké dan zijn het
+	Free: Pattern=zijn, Pattern=het, Pattern=Oké
+	Constrained: 
+Turn ID=12| A | A : Eh deze hebben op de bovenkant een soort van langwerpig ja cilindervorm achtig iets
+	Free: Pattern=een soort van, Pattern=op de bovenkant, Pattern=ja, Pattern=hebben
+	Constrained: Pattern=een soort, Pattern=een, Pattern=op, Pattern=van
+Turn ID=13| A | A : op de bovenkant en aan de zijkant ook
+	Free: Pattern=op de bovenkant en, Pattern=aan de zijkant
+	Constrained: Pattern=aan, Pattern=de zijkant, Pattern=op de bovenkant, Pattern=en, Pattern=op, Pattern=aan de
+Turn ID=14| A | A : of aan de voorkant eigenlijk
+	Free: Pattern=aan de
+	Constrained: Pattern=aan
+Turn ID=15| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : en aan de zijkant aan één kant komen er een soort van leiding in
+	Free: Pattern=aan, Pattern=aan de zijkant, Pattern=één, Pattern=er, Pattern=en, Pattern=in, Pattern=een soort van
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=een, Pattern=de zijkant, Pattern=een soort, Pattern=van
+Turn ID=17| A | A : en aan de ander kant gaan er blok uit
+	Free: Pattern=aan de, Pattern=er, Pattern=en
+	Constrained: Pattern=aan
+Turn ID=18| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=19| B | B : ehm dit zijn die een met die drie arm
+	Free: Pattern=dit zijn die, Pattern=met die, Pattern=een, Pattern=arm
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=20| B | B : en twee daarvan lijken op een soort handvat een soort van cilindervormig
+	Free: Pattern=twee, Pattern=op, Pattern=cilindervormig, Pattern=een soort van, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een soort, Pattern=een, Pattern=van
+Turn ID=21| B | B : en één zitten er van bovenop en één aan de zijkant
+	Free: Pattern=één, Pattern=er, Pattern=één aan de zijkant, Pattern=van, Pattern=en
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=één, Pattern=de zijkant
+Turn ID=22| A | A : eh ja ja ja van aria zijn dat
+	Free: Pattern=dat, Pattern=ja ja, Pattern=eh, Pattern=van, Pattern=zijn
+	Constrained: Pattern=ja
+Turn ID=23| A | A : eh dit zijn degeen met twee van die cilindervormig of uitsteeksel
+	Free: Pattern=twee, Pattern=cilindervormig, Pattern=eh dit zijn, Pattern=met, Pattern=die, Pattern=van
+	Constrained: Pattern=zijn, Pattern=eh, Pattern=dit
+Turn ID=24| A | A : eentje aan de bovenkant één aan de zijkant
+	Free: Pattern=één aan de zijkant, Pattern=de bovenkant één, Pattern=aan de, Pattern=eentje
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=één, Pattern=de zijkant
+Turn ID=25| B | B : Oh ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja ja
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=26| B | B : eh dit zijn die een met die twee cilinder ding
+	Free: Pattern=eh dit zijn die, Pattern=met die twee, Pattern=een
+	Constrained: Pattern=met die, Pattern=dit zijn die, Pattern=twee, Pattern=dit, Pattern=eh dit zijn, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=27| B | B : eentje op de bovenkant en één aan de zijkant
+	Free: Pattern=op de bovenkant en, Pattern=één aan de zijkant, Pattern=eentje
+	Constrained: Pattern=aan, Pattern=aan de zijkant, Pattern=één, Pattern=de zijkant, Pattern=op de bovenkant, Pattern=en, Pattern=op, Pattern=aan de
+Turn ID=28| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=29| A | A : eh dit zijn die met die twee uitsteeksel die allebei zo'n ovaal vormachtig iets hebben
+	Free: Pattern=eh dit zijn die, Pattern=met die twee, Pattern=hebben, Pattern=die, Pattern=ovaal
+	Constrained: Pattern=met die, Pattern=dit zijn die, Pattern=twee, Pattern=dit, Pattern=eh dit zijn, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=30| B | B : eentje in de bovenkant één in de zijkant
+	Free: Pattern=de bovenkant één, Pattern=de zijkant, Pattern=eentje, Pattern=in
+	Constrained: Pattern=één
+Turn ID=31| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

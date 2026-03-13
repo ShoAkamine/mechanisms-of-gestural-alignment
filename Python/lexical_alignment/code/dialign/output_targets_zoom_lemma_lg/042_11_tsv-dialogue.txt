@@ -1,0 +1,107 @@
+A|0| A: _ehm deze hebben_ _ook_ _een_ in mijn optiek _een rond neus_ 
+A|1| A: _Ehm_ _en dan_ steken er links steken er _een_ klein _balk_ uit 
+A|2| A: _en dan bovenin_ steken nog _twee_ ding uit 
+A|3| A: _waarvan één_ ding me _een_ beetje doen denken alsof er _een_ _lepel_ in _een_ kop zitten 
+A|4| A: _en de ander_ _zijn_ veel _een_ _staaf_ 
+B|5| B: _ja_ dat [hebben] ik [ook] zeggen _lepel en staaf_ 
+B|6| B: [Ehm] 
+B|7| B: [ehm deze hebben] [een rond neus] 
+B|8| B: [en dan bovenin] [twee] staf 
+B|9| B: [waarvan één] [dan] [een] soort [lepel] [zijn] [en de ander] gewoon [een] rechthoekig [balk] 
+A|10| A: [ja] 
+B|11| B: [en] link [dan] [een] soort oor 
+A|12| A: [ja] 
+A|13| A: [ehm] _dit zijn_ _met_ [een rond neus] [en] het [lepel] 
+A|14| A: _eh_ [rond neus] [lepel] [staaf] 
+B|15| B: [ja] nummer 
+B|16| B: _eh lepel_ erin 
+B|17| B: [en] rechthoekig [staaf] 
+B|18| B: [met] [de] [rond neus] 
+A|19| A: Eh 
+A|20| A: [eh [lepel] en staaf] 
+A|21| A: [en] [rond neus] 
+B|22| B: nummer 
+B|23| B: [dit zijn] [de] [lepel [en] de] rechthoekig [staaf] [bovenin] 
+B|24| B: [en de] [rond neus] 
+A|25| A: mhm 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben ook een in mijn optiek een rond neus
+	Free: Pattern=ehm deze hebben, Pattern=een rond neus, Pattern=ook, Pattern=een
+	Constrained: Pattern=hebben, Pattern=rond neus, Pattern=een, Pattern=ehm
+Turn ID=1| A | A : Ehm en dan steken er links steken er een klein balk uit
+	Free: Pattern=en dan, Pattern=een, Pattern=Ehm, Pattern=balk
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=2| A | A : en dan bovenin steken nog twee ding uit
+	Free: Pattern=en dan bovenin, Pattern=twee
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=bovenin, Pattern=en
+Turn ID=3| A | A : waarvan één ding me een beetje doen denken alsof er een lepel in een kop zitten
+	Free: Pattern=waarvan één, Pattern=een, Pattern=lepel
+	Constrained: 
+Turn ID=4| A | A : en de ander zijn veel een staaf
+	Free: Pattern=en de ander, Pattern=een, Pattern=zijn, Pattern=staaf
+	Constrained: Pattern=de, Pattern=en, Pattern=en de
+Turn ID=5| B | B : ja dat hebben ik ook zeggen lepel en staaf
+	Free: Pattern=lepel en staaf, Pattern=ja, Pattern=ook, Pattern=hebben
+	Constrained: Pattern=lepel, Pattern=staaf, Pattern=lepel en, Pattern=en
+Turn ID=6| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=7| B | B : ehm deze hebben een rond neus
+	Free: Pattern=ehm deze hebben, Pattern=een rond neus
+	Constrained: Pattern=hebben, Pattern=rond neus, Pattern=een, Pattern=ehm
+Turn ID=8| B | B : en dan bovenin twee staf
+	Free: Pattern=en dan bovenin, Pattern=twee
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=bovenin, Pattern=en
+Turn ID=9| B | B : waarvan één dan een soort lepel zijn en de ander gewoon een rechthoekig balk
+	Free: Pattern=lepel, Pattern=en de ander, Pattern=dan, Pattern=een, Pattern=balk, Pattern=waarvan één, Pattern=zijn
+	Constrained: Pattern=de, Pattern=en, Pattern=en de
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : en link dan een soort oor
+	Free: Pattern=een, Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ehm dit zijn met een rond neus en het lepel
+	Free: Pattern=lepel, Pattern=een rond neus, Pattern=en, Pattern=dit zijn, Pattern=ehm, Pattern=met
+	Constrained: Pattern=rond neus, Pattern=een, Pattern=zijn
+Turn ID=14| A | A : eh rond neus lepel staaf
+	Free: Pattern=rond neus, Pattern=eh, Pattern=lepel, Pattern=staaf
+	Constrained: 
+Turn ID=15| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : eh lepel erin
+	Free: Pattern=eh lepel
+	Constrained: Pattern=eh, Pattern=lepel
+Turn ID=17| B | B : en rechthoekig staaf
+	Free: Pattern=en, Pattern=staaf
+	Constrained: 
+Turn ID=18| B | B : met de rond neus
+	Free: Pattern=rond neus, Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=19| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : eh lepel en staaf
+	Free: Pattern=lepel en staaf, Pattern=eh lepel
+	Constrained: Pattern=lepel, Pattern=lepel en, Pattern=staaf, Pattern=eh, Pattern=en
+Turn ID=21| A | A : en rond neus
+	Free: Pattern=rond neus, Pattern=en
+	Constrained: 
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : dit zijn de lepel en de rechthoekig staaf bovenin
+	Free: Pattern=staaf, Pattern=en de, Pattern=bovenin, Pattern=dit zijn, Pattern=de, Pattern=lepel en
+	Constrained: Pattern=de, Pattern=en, Pattern=lepel, Pattern=zijn
+Turn ID=24| B | B : en de rond neus
+	Free: Pattern=en de, Pattern=rond neus
+	Constrained: Pattern=de, Pattern=en
+Turn ID=25| A | A : mhm
+	Free: 
+	Constrained: 

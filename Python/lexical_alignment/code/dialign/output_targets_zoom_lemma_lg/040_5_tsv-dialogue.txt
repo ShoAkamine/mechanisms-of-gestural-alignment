@@ -1,0 +1,127 @@
+A|0| A: _ja_ 
+B|1| B: _oké_ _deze hebben_ aan _de_ voorkant _een soort_ [ja] het lijken _een_ beetje op _een soort snavel_ 
+B|2| B: Ehm _en_ _bovenop_ _hebben_ hij _een_ rechthoekig vormp liggen op _de_ bovenkant 
+B|3| B: _en_ aan _de_ zijkant [ja] _dat_ lijken dus ook _een soort_ armp 
+B|4| B: maar _dan_ van _een soort_ lampenkap _die_ _dan_ door _de_ helft _zijn_ snijden 
+A|5| A: ehm [oké] wachten wat zeggen _je_ nou 
+A|6| A: [een soort snavel] 
+A|7| A: [en] [een] rechthoek er [bovenop] zitten 
+B|8| B: [ja] 
+A|9| A: [en] [dan] [die] lamp 
+B|10| B: [ja] 
+B|11| B: [en] _dat_ _zijn_ _de_ enig [die] 
+A|12| A: _Oh_ jawel _ik_ zien hem al 
+A|13| A: _bij mij_ [zijn] [dat] 
+B|14| B: Oké top 
+A|15| A: [ja] 
+B|16| B: Oké 
+A|17| A: ehm [deze hebben] [een soort] lang lang rechthoek [bovenop] 
+A|18| A: [en] [dan] [die] half _lampenkapp_ 
+B|19| B: _eh_ _even_ zoeken hoor 
+B|20| B: want [ik] weten welk [je] bedoelen 
+B|21| B: _Oh ja_ [ja] [dat] [zijn] [bij mij] 
+B|22| B: [deze] _zijn _met_ die_ lampenkapjes aan _de_ zijkant 
+A|23| A: [Oh ja] [even] kijken horen 
+A|24| A: nou 
+A|25| A: [Oh ja] één 
+A|26| A: [eh] dit [zijn met] [de] _lampenkapp_ 
+B|27| B: [deze] _met die lampenkapp_ 
+A|28| A: mmm [zijn] [dat] 
+A|29| A: [ja] [met die lampenkapp] 
+B|30| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| B | B : oké deze hebben aan de voorkant een soort ja het lijken een beetje op een soort snavel
+	Free: Pattern=oké, Pattern=een, Pattern=deze hebben, Pattern=een soort snavel, Pattern=een soort, Pattern=de, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een, Pattern=deze, Pattern=hebben
+Turn ID=2| B | B : Ehm en bovenop hebben hij een rechthoekig vormp liggen op de bovenkant
+	Free: Pattern=bovenop, Pattern=de, Pattern=een, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : en aan de zijkant ja dat lijken dus ook een soort armp
+	Free: Pattern=dat, Pattern=een soort, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=4| B | B : maar dan van een soort lampenkap die dan door de helft zijn snijden
+	Free: Pattern=de, Pattern=dan, Pattern=die, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=5| A | A : ehm oké wachten wat zeggen je nou
+	Free: Pattern=oké, Pattern=je
+	Constrained: 
+Turn ID=6| A | A : een soort snavel
+	Free: Pattern=een soort snavel
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=7| A | A : en een rechthoek er bovenop zitten
+	Free: Pattern=en, Pattern=bovenop, Pattern=een
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : en dan die lamp
+	Free: Pattern=en, Pattern=dan, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : en dat zijn de enig die
+	Free: Pattern=dat, Pattern=de, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : Oh jawel ik zien hem al
+	Free: Pattern=ik, Pattern=Oh
+	Constrained: 
+Turn ID=13| A | A : bij mij zijn dat
+	Free: Pattern=bij mij, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=14| B | B : Oké top
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : ehm deze hebben een soort lang lang rechthoek bovenop
+	Free: Pattern=deze hebben, Pattern=een soort, Pattern=bovenop
+	Constrained: Pattern=deze, Pattern=hebben, Pattern=een
+Turn ID=18| A | A : en dan die half lampenkapp
+	Free: Pattern=en, Pattern=dan, Pattern=die, Pattern=lampenkapp
+	Constrained: 
+Turn ID=19| B | B : eh even zoeken hoor
+	Free: Pattern=eh, Pattern=even
+	Constrained: 
+Turn ID=20| B | B : want ik weten welk je bedoelen
+	Free: Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=21| B | B : Oh ja ja dat zijn bij mij
+	Free: Pattern=dat, Pattern=ja, Pattern=Oh ja, Pattern=zijn, Pattern=bij mij
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=22| B | B : deze zijn met die lampenkapjes aan de zijkant
+	Free: Pattern=zijn met, Pattern=met die, Pattern=deze, Pattern=de
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=23| A | A : Oh ja even kijken horen
+	Free: Pattern=Oh ja, Pattern=even
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=24| A | A : nou
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : Oh ja één
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=26| A | A : eh dit zijn met de lampenkapp
+	Free: Pattern=zijn met, Pattern=eh, Pattern=de, Pattern=lampenkapp
+	Constrained: Pattern=zijn
+Turn ID=27| B | B : deze met die lampenkapp
+	Free: Pattern=met die lampenkapp, Pattern=deze
+	Constrained: Pattern=lampenkapp, Pattern=die, Pattern=met die
+Turn ID=28| A | A : mmm zijn dat
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=29| A | A : ja met die lampenkapp
+	Free: Pattern=met die lampenkapp, Pattern=ja
+	Constrained: Pattern=lampenkapp, Pattern=die, Pattern=met die
+Turn ID=30| B | B : nummer
+	Free: 
+	Constrained: 

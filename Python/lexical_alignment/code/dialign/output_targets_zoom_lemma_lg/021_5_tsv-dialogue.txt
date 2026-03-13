@@ -1,0 +1,207 @@
+A|0| A: oh dat _zijn_ geen _nummer_ 
+A|1| A: _ja_ dit zullen _ik denken ik_ _het_ goed kunnen omschrijven als Pinocchio _met een kuif_ 
+B|2| B: Wacht wat 
+B|3| B: [met een kuif] 
+A|4| A: _ja_ 
+A|5| A: hoe noemen je dat 
+A|6| A: [een] _een klein_ _hanenkam_ 
+B|7| B: [een klein] hanenkram 
+A|8| A: _en_ hij hebben 
+A|9| A: of hij 
+A|10| A: _het_ voorwerp hebben ook twee oor 
+A|11| A: _en_ [een] neus 
+A|12| A: maar _die_ neus _die_ 
+A|13| A: daar zitten ook 
+A|14| A: dit _zijn_ geen normaal neus 
+A|15| A: daar groeien ook iets omhoog 
+B|16| B: Oh dan weten [ik denken ik] wat [het] [zijn] 
+B|17| B: _ik zien _een_ plat rechthoek bovenop_ liggen 
+B|18| B: [en] _nog_ wat [klein] vormpjes _aan de zijkant_ 
+A|19| A: [een plat rechthoek bovenop] 
+A|20| A: [en] hoeveel _vormp_ zitten er [aan de zijkant] 
+B|21| B: [ik denken] _drie_ 
+A|22| A: mhm [en] [zijn] dat _drie verschillend_ vorm 
+B|23| B: [ja] volgens mij wel [ja] 
+A|24| A: Oké 
+A|25| A: zIjn één daarvan ook [een] rond staaf 
+B|26| B: [ja] kloppen 
+A|27| A: Oké 
+A|28| A: Letter 
+A|29| A: _ik zien een hanenkam bovenop_ 
+A|30| A: of [een] afgeplaten [rechthoek] 
+A|31| A: [met] [nog] _drie verschillend_ voorwerp 
+A|32| A: [aan de zijkant] 
+B|33| B: [ja] [nummer] 
+B|34| B: [ik zien een hanenkam] 
+B|35| B: [bovenop] [een plat rechthoek] 
+B|36| B: [en] [aan de zijkant] [drie verschillend] [vormp] 
+A|37| A: [ja] 
+A|38| A: Letter 
+A|39| A: [ik zien een] 
+A|40| A: afgeplaten [rechthoek] 
+A|41| A: op [de] bovenkant 
+B|42| B: waar staan [die] 
+B|43| B: [een] soort [hanenkam] 
+A|44| A: [ja] 
+B|45| B: [nummer] 
+B|46| B: [ik zien een hanenkam bovenop] 
+A|47| A: [en] [die] [hanenkam] [zijn] dat [een] [rechthoek] 
+B|48| B: [een] 
+B|49| B: [ja] kloppen 
+A|50| A: Oké Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oh dat zijn geen nummer
+	Free: Pattern=nummer, Pattern=zijn
+	Constrained: 
+Turn ID=1| A | A : ja dit zullen ik denken ik het goed kunnen omschrijven als Pinocchio met een kuif
+	Free: Pattern=met een kuif, Pattern=ik denken ik, Pattern=het, Pattern=ja
+	Constrained: Pattern=ik denken, Pattern=met, Pattern=een
+Turn ID=2| B | B : Wacht wat
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : met een kuif
+	Free: Pattern=met een kuif
+	Constrained: Pattern=met, Pattern=een
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : hoe noemen je dat
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : een een klein hanenkam
+	Free: Pattern=een klein, Pattern=hanenkam, Pattern=een
+	Constrained: Pattern=een, Pattern=klein
+Turn ID=7| B | B : een klein hanenkram
+	Free: Pattern=een klein
+	Constrained: Pattern=een, Pattern=klein
+Turn ID=8| A | A : en hij hebben
+	Free: Pattern=en
+	Constrained: 
+Turn ID=9| A | A : of hij
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : het voorwerp hebben ook twee oor
+	Free: Pattern=het
+	Constrained: 
+Turn ID=11| A | A : en een neus
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : maar die neus die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=13| A | A : daar zitten ook
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : dit zijn geen normaal neus
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=15| A | A : daar groeien ook iets omhoog
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Oh dan weten ik denken ik wat het zijn
+	Free: Pattern=ik denken ik, Pattern=het, Pattern=zijn
+	Constrained: Pattern=ik denken
+Turn ID=17| B | B : ik zien een plat rechthoek bovenop liggen
+	Free: Pattern=een plat rechthoek bovenop, Pattern=ik zien een
+	Constrained: Pattern=rechthoek, Pattern=een, Pattern=een plat rechthoek, Pattern=bovenop
+Turn ID=18| B | B : en nog wat klein vormpjes aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=nog, Pattern=en, Pattern=klein
+	Constrained: Pattern=de
+Turn ID=19| A | A : een plat rechthoek bovenop
+	Free: Pattern=een plat rechthoek bovenop
+	Constrained: Pattern=rechthoek, Pattern=een, Pattern=een plat rechthoek, Pattern=bovenop
+Turn ID=20| A | A : en hoeveel vormp zitten er aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=vormp, Pattern=en
+	Constrained: Pattern=de
+Turn ID=21| B | B : ik denken drie
+	Free: Pattern=ik denken, Pattern=drie
+	Constrained: 
+Turn ID=22| A | A : mhm en zijn dat drie verschillend vorm
+	Free: Pattern=drie verschillend, Pattern=zijn, Pattern=en
+	Constrained: Pattern=drie
+Turn ID=23| B | B : ja volgens mij wel ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : zIjn één daarvan ook een rond staaf
+	Free: Pattern=een
+	Constrained: 
+Turn ID=26| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=28| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : ik zien een hanenkam bovenop
+	Free: Pattern=ik zien een hanenkam bovenop
+	Constrained: Pattern=bovenop, Pattern=ik zien een hanenkam, Pattern=een, Pattern=hanenkam, Pattern=ik zien een
+Turn ID=30| A | A : of een afgeplaten rechthoek
+	Free: Pattern=rechthoek, Pattern=een
+	Constrained: 
+Turn ID=31| A | A : met nog drie verschillend voorwerp
+	Free: Pattern=drie verschillend, Pattern=met, Pattern=nog
+	Constrained: Pattern=drie
+Turn ID=32| A | A : aan de zijkant
+	Free: Pattern=aan de zijkant
+	Constrained: Pattern=de
+Turn ID=33| B | B : ja nummer
+	Free: Pattern=nummer, Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : ik zien een hanenkam
+	Free: Pattern=ik zien een hanenkam
+	Constrained: Pattern=een, Pattern=hanenkam, Pattern=ik zien een
+Turn ID=35| B | B : bovenop een plat rechthoek
+	Free: Pattern=een plat rechthoek, Pattern=bovenop
+	Constrained: Pattern=rechthoek, Pattern=een
+Turn ID=36| B | B : en aan de zijkant drie verschillend vormp
+	Free: Pattern=aan de zijkant, Pattern=drie verschillend, Pattern=vormp, Pattern=en
+	Constrained: Pattern=de, Pattern=drie
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een
+Turn ID=40| A | A : afgeplaten rechthoek
+	Free: Pattern=rechthoek
+	Constrained: 
+Turn ID=41| A | A : op de bovenkant
+	Free: Pattern=de
+	Constrained: 
+Turn ID=42| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=43| B | B : een soort hanenkam
+	Free: Pattern=hanenkam, Pattern=een
+	Constrained: 
+Turn ID=44| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=46| B | B : ik zien een hanenkam bovenop
+	Free: Pattern=ik zien een hanenkam bovenop
+	Constrained: Pattern=bovenop, Pattern=ik zien een hanenkam, Pattern=een, Pattern=hanenkam, Pattern=ik zien een
+Turn ID=47| A | A : en die hanenkam zijn dat een rechthoek
+	Free: Pattern=rechthoek, Pattern=een, Pattern=die, Pattern=zijn, Pattern=en, Pattern=hanenkam
+	Constrained: 
+Turn ID=48| B | B : een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=49| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : Oké Letter
+	Free: 
+	Constrained: 

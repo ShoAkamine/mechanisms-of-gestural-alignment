@@ -1,0 +1,359 @@
+B|0| B: hoi 
+A|1| A: Hi 
+B|2| B: _Eh_ 
+B|3| B: _ja_ 
+B|4| B: _zullen we_ _maar_ beginnen 
+B|5| B: denk _ik_ 
+A|6| A: Yes _kunnen je_ _mij_ verstaan 
+B|7| B: _ja_ _ja_ _ik_ [kunnen je] horen 
+A|8| A: _Oké_ top 
+A|9| A: _Oké_ [ik] hebehm 
+A|10| A: [ik] zien _nu_ _een_ rood vierkan 
+B|11| B: _ja_ 
+A|12| A: _en_ _de_ [je] zien _dat_ _de_ bovenkant [ja] sluiten _zijn_ _als_ _het_ _zijn_ 
+B|13| B: [ja] 
+A|14| A: _met een_ _een_ _vierkant_ 
+A|15| A: _aan de_ _aan de_ _aan _de_ voorkant_ [ja] 
+B|16| B: onderop 
+B|17| B: _van_ [de voorkant] 
+B|18| B: [ja] 
+A|19| A: _bovenop_ _zijn_ _een soort_ [van] nou [ik] [zullen] _het_ omschrijven _als_ _een soort_ [van] _schroef_ _erin_ 
+B|20| B: [ja] [ja] [ja] 
+B|21| B: [ik] _en dan_ nog kijken hij _naar_ links zeggen _maar_ 
+A|22| A: [en] 
+B|23| B: of [een soort] uitbuilen _ding_ _naar_ links 
+A|24| A: [ja] _volgens mij_ zien [je] hem in [een] ander in [een] ander sper perspectief 
+B|25| B: [Oké] 
+A|26| A: [maar] wat _ik nu_ zien _zijn_ vier [ding] 
+A|27| A: dus _dat_ vierkan _die_ [soort] [van] schroeven er _bovenop_ _en aan de zijkant_ _twee_ [ding] _die_ er [soort] [van] insteken _als_ _het_ _zijn_ 
+B|28| B: [ja] 
+B|29| B: [ja] 
+B|30| B: _ja naast mekaar_ 
+A|31| A: [ja naast mekaar] zelfde lengte zelfde zelfde grootte 
+B|32| B: [ja] [ja] [ja] 
+B|33| B: _dan_ denken [ik] [dat] [ik] [het] wel weten 
+A|34| A: [Oké] top 
+B|35| B: [zullen] [ik] _dan_ 
+B|36| B: [ja] _dan_ denken [ik] nummer 
+B|37| B: _dan_ hebben [ik nu] 
+B|38| B: _ehh_ 
+B|39| B: [volgens mij] [zijn] [dat] [die] [een] [die] hij [als] allereer hebben 
+B|40| B: [met een] [aan de] [een] kant [een soort] [vierkant] 
+B|41| B: [die] eraan [zijn] plken 
+A|42| A: Mhmm 
+B|43| B: [bovenop] [een soort] _spijker_ 
+B|44| B: [en aan de zijkant] nog [twee] dezelfde [schroef] 
+B|45| B: Spijkers [die] [erin] [zijn] boren 
+A|46| A: [ja] 
+A|47| A: [ja] [zullen we] [die] [twee] [ding] [een] naam geven 
+A|48| A: want [die] komen ook terug bij ander voorwerp 
+A|49| A: [en dan] [zijn] [het] makkelijk om [die] ander voorwerp te omschrijven 
+B|50| B: [ja] 
+B|51| B: Ehm 
+B|52| B: [dat] _lijken_ me inderdaad wel [een] goed idee 
+A|53| A: [het] [lijken] 
+B|54| B: _laugh_ 
+A|55| A: [laugh] 
+A|56| A: [het] [lijken] 
+A|57| A: Nah hmm 
+A|58| A: misschien [kunnen] [we] [het] _Eiffeltoren_ noemen 
+A|59| A: omdat [het] [van] groot [naar] klein gaan 
+B|60| B: [ja] 
+B|61| B: [zijn] goed 
+B|62| B: [de] _eiffeltoren_ 
+A|63| A: [Oké] [laugh] top 
+B|64| B: [ja] 
+A|65| A: ehm [het] [zijn] trouwens 
+B|66| B: Oh hij [zijn] weer veranderen 
+A|67| A: [ja] 
+A|68| A: [Eh] 
+A|69| A: _deze_ [met] [twee] [eiffeltoren] [aan de zijkant] 
+B|70| B: [ja] 
+B|71| B: _Eeh_ 
+B|72| B: [naast] elkaar toch 
+A|73| A: [ja] [en] [dat] vierkan daarvoor 
+B|74| B: [ja] 
+A|75| A: [aan [de] voorkant] 
+B|76| B: [Eh] 
+B|77| B: _Eeh_ 
+B|78| B: [deze] hebben weer [twee] [Eiffeltoren] [die] [naast] elkaar [naar] links steken [en] [een] _spijker_ [bovenop] 
+A|79| A: [ehh] 
+A|80| A: [ja] even zoeken 
+A|81| A: [ja] 
+A|82| A: [Eeh] 
+A|83| A: [twee] keer [de] [Eiffeltoren] link [met] [spijker] er [bovenop] 
+B|84| B: [ja] 
+B|85| B: [dat] [zijn] 
+B|86| B: [ehh] 
+B|87| B: [twee] Eiffeltorens [naar] links [en] [een] [spijker] op [de] kop [bovenop] 
+A|88| A: Yes 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : hoi
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Hi
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : zullen we maar beginnen
+	Free: Pattern=zullen we, Pattern=maar
+	Constrained: Pattern=zullen, Pattern=we
+Turn ID=5| B | B : denk ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=6| A | A : Yes kunnen je mij verstaan
+	Free: Pattern=kunnen je, Pattern=mij
+	Constrained: Pattern=je, Pattern=kunnen
+Turn ID=7| B | B : ja ja ik kunnen je horen
+	Free: Pattern=kunnen je, Pattern=ja, Pattern=ik
+	Constrained: Pattern=je, Pattern=kunnen
+Turn ID=8| A | A : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : Oké ik hebehm
+	Free: Pattern=Oké, Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : ik zien nu een rood vierkan
+	Free: Pattern=ik, Pattern=een, Pattern=nu
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : en de je zien dat de bovenkant ja sluiten zijn als het zijn
+	Free: Pattern=dat, Pattern=het, Pattern=als, Pattern=en, Pattern=zijn, Pattern=je, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : met een een vierkant
+	Free: Pattern=met een, Pattern=vierkant, Pattern=een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=15| A | A : aan de aan de aan de voorkant ja
+	Free: Pattern=aan de, Pattern=de voorkant, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=16| B | B : onderop
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : van de voorkant
+	Free: Pattern=de voorkant, Pattern=van
+	Constrained: Pattern=de
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : bovenop zijn een soort van nou ik zullen het omschrijven als een soort van schroef erin
+	Free: Pattern=bovenop, Pattern=zullen, Pattern=het, Pattern=als, Pattern=van, Pattern=erin, Pattern=zijn, Pattern=schroef, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=20| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ik en dan nog kijken hij naar links zeggen maar
+	Free: Pattern=en dan, Pattern=maar, Pattern=naar, Pattern=ik
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=22| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=23| B | B : of een soort uitbuilen ding naar links
+	Free: Pattern=een soort, Pattern=ding, Pattern=naar
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=24| A | A : ja volgens mij zien je hem in een ander in een ander sper perspectief
+	Free: Pattern=volgens mij, Pattern=je, Pattern=ja, Pattern=een
+	Constrained: Pattern=mij
+Turn ID=25| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=26| A | A : maar wat ik nu zien zijn vier ding
+	Free: Pattern=ik nu, Pattern=zijn, Pattern=maar, Pattern=ding
+	Constrained: Pattern=ik, Pattern=nu
+Turn ID=27| A | A : dus dat vierkan die soort van schroeven er bovenop en aan de zijkant twee ding die er soort van insteken als het zijn
+	Free: Pattern=soort, Pattern=twee, Pattern=ding, Pattern=het, Pattern=als, Pattern=die, Pattern=van, Pattern=zijn, Pattern=en aan de zijkant, Pattern=dat, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de zijkant, Pattern=aan de
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : ja naast mekaar
+	Free: Pattern=ja naast mekaar
+	Constrained: Pattern=ja, Pattern=naast
+Turn ID=31| A | A : ja naast mekaar zelfde lengte zelfde zelfde grootte
+	Free: Pattern=ja naast mekaar
+	Constrained: Pattern=ja, Pattern=naast
+Turn ID=32| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : dan denken ik dat ik het wel weten
+	Free: Pattern=dat, Pattern=dan, Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=34| A | A : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=35| B | B : zullen ik dan
+	Free: Pattern=dan, Pattern=zullen, Pattern=ik
+	Constrained: 
+Turn ID=36| B | B : ja dan denken ik nummer
+	Free: Pattern=dan, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=37| B | B : dan hebben ik nu
+	Free: Pattern=ik nu, Pattern=dan
+	Constrained: Pattern=ik, Pattern=nu
+Turn ID=38| B | B : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=39| B | B : volgens mij zijn dat die een die hij als allereer hebben
+	Free: Pattern=dat, Pattern=een, Pattern=als, Pattern=die, Pattern=volgens mij, Pattern=zijn
+	Constrained: Pattern=mij
+Turn ID=40| B | B : met een aan de een kant een soort vierkant
+	Free: Pattern=aan de, Pattern=een, Pattern=met een, Pattern=een soort, Pattern=vierkant
+	Constrained: Pattern=soort, Pattern=de, Pattern=een, Pattern=met
+Turn ID=41| B | B : die eraan zijn plken
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=42| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=43| B | B : bovenop een soort spijker
+	Free: Pattern=een soort, Pattern=bovenop, Pattern=spijker
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=44| B | B : en aan de zijkant nog twee dezelfde schroef
+	Free: Pattern=en aan de zijkant, Pattern=twee, Pattern=schroef
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de zijkant, Pattern=aan de
+Turn ID=45| B | B : Spijkers die erin zijn boren
+	Free: Pattern=zijn, Pattern=die, Pattern=erin
+	Constrained: 
+Turn ID=46| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| A | A : ja zullen we die twee ding een naam geven
+	Free: Pattern=twee, Pattern=ja, Pattern=ding, Pattern=een, Pattern=die, Pattern=zullen we
+	Constrained: Pattern=zullen, Pattern=we
+Turn ID=48| A | A : want die komen ook terug bij ander voorwerp
+	Free: Pattern=die
+	Constrained: 
+Turn ID=49| A | A : en dan zijn het makkelijk om die ander voorwerp te omschrijven
+	Free: Pattern=en dan, Pattern=zijn, Pattern=die, Pattern=het
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=50| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=51| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=52| B | B : dat lijken me inderdaad wel een goed idee
+	Free: Pattern=dat, Pattern=een, Pattern=lijken
+	Constrained: 
+Turn ID=53| A | A : het lijken
+	Free: Pattern=lijken, Pattern=het
+	Constrained: 
+Turn ID=54| B | B : laugh
+	Free: Pattern=laugh
+	Constrained: 
+Turn ID=55| A | A : laugh
+	Free: Pattern=laugh
+	Constrained: 
+Turn ID=56| A | A : het lijken
+	Free: Pattern=lijken, Pattern=het
+	Constrained: 
+Turn ID=57| A | A : Nah hmm
+	Free: 
+	Constrained: 
+Turn ID=58| A | A : misschien kunnen we het Eiffeltoren noemen
+	Free: Pattern=Eiffeltoren, Pattern=we, Pattern=het, Pattern=kunnen
+	Constrained: 
+Turn ID=59| A | A : omdat het van groot naar klein gaan
+	Free: Pattern=van, Pattern=naar, Pattern=het
+	Constrained: 
+Turn ID=60| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=61| B | B : zijn goed
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=62| B | B : de eiffeltoren
+	Free: Pattern=de, Pattern=eiffeltoren
+	Constrained: 
+Turn ID=63| A | A : Oké laugh top
+	Free: Pattern=Oké, Pattern=laugh
+	Constrained: 
+Turn ID=64| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=65| A | A : ehm het zijn trouwens
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=66| B | B : Oh hij zijn weer veranderen
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=67| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=68| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=69| A | A : deze met twee eiffeltoren aan de zijkant
+	Free: Pattern=twee, Pattern=aan de zijkant, Pattern=eiffeltoren, Pattern=met, Pattern=deze
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=70| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=71| B | B : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=72| B | B : naast elkaar toch
+	Free: Pattern=naast
+	Constrained: 
+Turn ID=73| A | A : ja en dat vierkan daarvoor
+	Free: Pattern=dat, Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=74| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=75| A | A : aan de voorkant
+	Free: Pattern=aan de, Pattern=de voorkant
+	Constrained: Pattern=de
+Turn ID=76| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=77| B | B : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=78| B | B : deze hebben weer twee Eiffeltoren die naast elkaar naar links steken en een spijker bovenop
+	Free: Pattern=bovenop, Pattern=twee, Pattern=een, Pattern=naast, Pattern=die, Pattern=en, Pattern=deze, Pattern=Eiffeltoren, Pattern=spijker, Pattern=naar
+	Constrained: 
+Turn ID=79| A | A : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=80| A | A : ja even zoeken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=81| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=82| A | A : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=83| A | A : twee keer de Eiffeltoren link met spijker er bovenop
+	Free: Pattern=bovenop, Pattern=twee, Pattern=de, Pattern=met, Pattern=Eiffeltoren, Pattern=spijker
+	Constrained: 
+Turn ID=84| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=85| B | B : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=86| B | B : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=87| B | B : twee Eiffeltorens naar links en een spijker op de kop bovenop
+	Free: Pattern=bovenop, Pattern=twee, Pattern=de, Pattern=een, Pattern=en, Pattern=spijker, Pattern=naar
+	Constrained: 
+Turn ID=88| A | A : Yes
+	Free: 
+	Constrained: 

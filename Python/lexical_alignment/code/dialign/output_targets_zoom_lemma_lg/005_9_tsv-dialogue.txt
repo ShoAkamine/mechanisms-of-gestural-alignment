@@ -1,0 +1,187 @@
+A|0| A: _Hallo_ 
+B|1| B: [Hallo] 
+A|2| A: Hé 
+B|3| B: _ehm_ _oké_ 
+A|4| A: jij _hebben een_ rood denken ik 
+B|5| B: _ehm_ _ja_ kloppen 
+B|6| B: _het_ lijken alsof _er_ _een soort_ lepel in _zitten_ 
+B|7| B: _er_ worden roeren 
+B|8| B: in [een] kop _zeggen maar_ 
+A|9| A: Oh [ja] [ja] 
+B|10| B: ver _zitten er_ links [een] klein balk 
+B|11| B: _er_ _zitten_ _aan de achterkant_ [een] _een cirkel_ [een] _plat cirkel_ 
+A|12| A: Oh [ja] 
+A|13| A: _en_ [zitten er] [aan de] onderkant nog iets 
+B|14| B: [ja] _een soort_ _niet_ _een rechthoek maar_ [hebben] wel bijna [een] kunnen _zijn_ 
+A|15| A: nee 
+A|16| A: [ja] [oké] nee dan dan weten ik hem denken ik 
+B|17| B: Oké 
+A|18| A: dan [zijn] [het] 
+A|19| A: [ehm] _deze_ [ja] dit [zijn] die die [niet] _op een_ heel 
+A|20| A: die _staan_ 
+A|21| A: die [hebben] onderaan nog 
+A|22| A: die _staan_ [niet] _op_ zo'n [rechthoek maar] wat veel 
+A|23| A: [ja] [niet] helemaal [een rechthoek maar] daar daar _staan_ ie [zeggen maar] nog _op_ 
+A|24| A: dan naar [achterkant] [hebben] [hebben] je [zitten] [een cirkel] vast 
+A|25| A: [aan de] linkerkant [hebben] hij [een] cilinder die uitsteken 
+A|26| A: [maar] [het] belangrijk gaan om wat jij ook beschrijven _dat_ hij hij _staan op een soort rechthoek_ nog 
+B|27| B: Oké _dat zijn_ _dat zijn_ 
+A|28| A: [aan de] onderkant 
+B|29| B: _deze [hebben_ een] _plat cirkel aan de achterkant_ 
+B|30| B: [en] [deze] [staan op een soort rechthoek] 
+B|31| B: [en] links steken [er] [een] 
+A|32| A: Eh 
+A|33| A: Oh [ja] 
+A|34| A: _ja dat zijn_ 
+A|35| A: Eh [deze hebben] [aan de achterkant] [de] [cirkel] die je nog net [de] bovenkant zien 
+A|36| A: met [aan de] onderkant bekendstaan hij [op] [op een soort rechthoek] 
+B|37| B: [ja dat zijn] 
+B|38| B: [deze] [staan op een soort] ronde [op] [dat] rond rechthoekig ding 
+A|39| A: Oh [ja] 
+A|40| A: [ja] 
+B|41| B: Oké [ja] 
+A|42| A: [dat zijn] 
+A|43| A: [deze] dit [zijn] degeen die [staan op] die [rechthoek] 
+A|44| A: [en] dan [de] [de] [cirkel] 
+A|45| A: [de] [plat cirkel aan de achterkant] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Hallo
+	Free: Pattern=Hallo
+	Constrained: 
+Turn ID=1| B | B : Hallo
+	Free: Pattern=Hallo
+	Constrained: 
+Turn ID=2| A | A : Hé
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ehm oké
+	Free: Pattern=ehm, Pattern=oké
+	Constrained: 
+Turn ID=4| A | A : jij hebben een rood denken ik
+	Free: Pattern=hebben een
+	Constrained: Pattern=een, Pattern=hebben
+Turn ID=5| B | B : ehm ja kloppen
+	Free: Pattern=ehm, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : het lijken alsof er een soort lepel in zitten
+	Free: Pattern=een soort, Pattern=zitten, Pattern=het, Pattern=er
+	Constrained: Pattern=een
+Turn ID=7| B | B : er worden roeren
+	Free: Pattern=er
+	Constrained: 
+Turn ID=8| B | B : in een kop zeggen maar
+	Free: Pattern=zeggen maar, Pattern=een
+	Constrained: Pattern=maar
+Turn ID=9| A | A : Oh ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ver zitten er links een klein balk
+	Free: Pattern=zitten er, Pattern=een
+	Constrained: Pattern=zitten, Pattern=er
+Turn ID=11| B | B : er zitten aan de achterkant een een cirkel een plat cirkel
+	Free: Pattern=aan de achterkant, Pattern=plat cirkel, Pattern=zitten, Pattern=er, Pattern=een, Pattern=een cirkel
+	Constrained: Pattern=cirkel, Pattern=de, Pattern=aan de, Pattern=een, Pattern=achterkant
+Turn ID=12| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en zitten er aan de onderkant nog iets
+	Free: Pattern=zitten er, Pattern=aan de, Pattern=en
+	Constrained: Pattern=zitten, Pattern=de, Pattern=er
+Turn ID=14| B | B : ja een soort niet een rechthoek maar hebben wel bijna een kunnen zijn
+	Free: Pattern=een rechthoek maar, Pattern=ja, Pattern=niet, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=rechthoek, Pattern=rechthoek maar, Pattern=een, Pattern=maar
+Turn ID=15| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ja oké nee dan dan weten ik hem denken ik
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : dan zijn het
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=19| A | A : ehm deze ja dit zijn die die niet op een heel
+	Free: Pattern=ja, Pattern=niet, Pattern=ehm, Pattern=zijn, Pattern=deze, Pattern=op een
+	Constrained: Pattern=een, Pattern=op
+Turn ID=20| A | A : die staan
+	Free: Pattern=staan
+	Constrained: 
+Turn ID=21| A | A : die hebben onderaan nog
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=22| A | A : die staan niet op zo'n rechthoek maar wat veel
+	Free: Pattern=rechthoek maar, Pattern=staan, Pattern=niet, Pattern=op
+	Constrained: Pattern=rechthoek, Pattern=maar
+Turn ID=23| A | A : ja niet helemaal een rechthoek maar daar daar staan ie zeggen maar nog op
+	Free: Pattern=een rechthoek maar, Pattern=ja, Pattern=op, Pattern=niet, Pattern=staan, Pattern=zeggen maar
+	Constrained: Pattern=rechthoek maar, Pattern=een, Pattern=rechthoek, Pattern=maar
+Turn ID=24| A | A : dan naar achterkant hebben hebben je zitten een cirkel vast
+	Free: Pattern=een cirkel, Pattern=zitten, Pattern=achterkant, Pattern=hebben
+	Constrained: Pattern=cirkel, Pattern=een
+Turn ID=25| A | A : aan de linkerkant hebben hij een cilinder die uitsteken
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben
+	Constrained: Pattern=de
+Turn ID=26| A | A : maar het belangrijk gaan om wat jij ook beschrijven dat hij hij staan op een soort rechthoek nog
+	Free: Pattern=staan op een soort rechthoek, Pattern=het, Pattern=dat, Pattern=maar
+	Constrained: Pattern=op, Pattern=op een soort rechthoek, Pattern=een soort, Pattern=staan op, Pattern=op een, Pattern=rechthoek, Pattern=staan op een soort, Pattern=een, Pattern=staan
+Turn ID=27| B | B : Oké dat zijn dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=28| A | A : aan de onderkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=29| B | B : deze hebben een plat cirkel aan de achterkant
+	Free: Pattern=plat cirkel aan de achterkant, Pattern=deze hebben, Pattern=hebben een
+	Constrained: Pattern=cirkel, Pattern=aan de achterkant, Pattern=de, Pattern=aan de, Pattern=een, Pattern=plat cirkel, Pattern=hebben, Pattern=deze, Pattern=achterkant
+Turn ID=30| B | B : en deze staan op een soort rechthoek
+	Free: Pattern=staan op een soort rechthoek, Pattern=deze, Pattern=en
+	Constrained: Pattern=op, Pattern=op een soort rechthoek, Pattern=een soort, Pattern=staan op, Pattern=op een, Pattern=rechthoek, Pattern=staan op een soort, Pattern=een, Pattern=staan
+Turn ID=31| B | B : en links steken er een
+	Free: Pattern=een, Pattern=er, Pattern=en
+	Constrained: 
+Turn ID=32| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=35| A | A : Eh deze hebben aan de achterkant de cirkel die je nog net de bovenkant zien
+	Free: Pattern=aan de achterkant, Pattern=deze hebben, Pattern=cirkel, Pattern=de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=hebben, Pattern=deze, Pattern=achterkant
+Turn ID=36| A | A : met aan de onderkant bekendstaan hij op op een soort rechthoek
+	Free: Pattern=op een soort rechthoek, Pattern=aan de, Pattern=op
+	Constrained: Pattern=rechthoek, Pattern=de, Pattern=op, Pattern=een, Pattern=een soort, Pattern=op een
+Turn ID=37| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=38| B | B : deze staan op een soort ronde op dat rond rechthoekig ding
+	Free: Pattern=staan op een soort, Pattern=deze, Pattern=dat, Pattern=op
+	Constrained: Pattern=op, Pattern=een soort, Pattern=staan op, Pattern=op een, Pattern=een, Pattern=staan
+Turn ID=39| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=43| A | A : deze dit zijn degeen die staan op die rechthoek
+	Free: Pattern=staan op, Pattern=deze, Pattern=zijn, Pattern=rechthoek
+	Constrained: Pattern=staan, Pattern=op
+Turn ID=44| A | A : en dan de de cirkel
+	Free: Pattern=cirkel, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=45| A | A : de plat cirkel aan de achterkant
+	Free: Pattern=plat cirkel aan de achterkant, Pattern=de
+	Constrained: Pattern=cirkel, Pattern=aan de achterkant, Pattern=de, Pattern=aan de, Pattern=plat cirkel, Pattern=achterkant

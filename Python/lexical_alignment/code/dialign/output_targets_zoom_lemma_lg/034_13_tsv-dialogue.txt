@@ -1,0 +1,71 @@
+B|0| B: _Oh_ euh _ja_ _deze _zijn_ de enig_ _met_ een _plateau_ _aan de_ onderkant een vierkant 
+A|1| A: [Oh] _ja _en dan_ met_ twee van _die_ uitstulping [aan de] linker _en_ [de] rechterkant 
+B|2| B: [en dan] [ja en dan] iets ervoor 
+A|3| A: [ja] oke 
+A|4| A: _dat zijn_ 
+A|5| A: Euh [deze] staat _zijn de enig die op zo'n_ horizontaal _plateau staan_ 
+B|6| B: [ja] [dat zijn] 
+B|7| B: euh _dit [zijn_ de enig] [met] [zo'n] [plateau] [aan de] onderkant 
+B|8| B: [en dan met] 
+A|9| A: _die_ twee raar ding [aan de] zijkant 
+B|10| B: [ja] [ja] 
+A|11| A: [dat zijn] 
+A|12| A: Euh [deze zijn] _die op_ het _plateau staan_ 
+B|13| B: [dat zijn] 
+B|14| B: euh _dit [zijn_ de enig die op zo'n] [plateau staan] 
+A|15| A: [dat zijn] 
+A|16| A: [dit zijn] [die] [met] [die] [plateau] waar [die op] staat 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh euh ja deze zijn de enig met een plateau aan de onderkant een vierkant
+	Free: Pattern=aan de, Pattern=met, Pattern=Oh, Pattern=ja, Pattern=deze zijn, Pattern=plateau, Pattern=zijn de enig
+	Constrained: Pattern=de, Pattern=deze
+Turn ID=1| A | A : Oh ja en dan met twee van die uitstulping aan de linker en de rechterkant
+	Free: Pattern=de, Pattern=aan de, Pattern=en dan met, Pattern=en, Pattern=Oh, Pattern=ja en dan, Pattern=die
+	Constrained: Pattern=en dan, Pattern=met, Pattern=en, Pattern=de, Pattern=ja
+Turn ID=2| B | B : en dan ja en dan iets ervoor
+	Free: Pattern=ja en dan, Pattern=en dan
+	Constrained: Pattern=en dan, Pattern=ja, Pattern=en
+Turn ID=3| A | A : ja oke
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=5| A | A : Euh deze staat zijn de enig die op zo'n horizontaal plateau staan
+	Free: Pattern=zijn de enig die op zo'n, Pattern=plateau staan, Pattern=deze
+	Constrained: Pattern=zo'n, Pattern=de, Pattern=die, Pattern=die op, Pattern=plateau, Pattern=zijn de enig
+Turn ID=6| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : euh dit zijn de enig met zo'n plateau aan de onderkant
+	Free: Pattern=zo'n, Pattern=aan de, Pattern=met, Pattern=dit zijn, Pattern=plateau, Pattern=zijn de enig
+	Constrained: Pattern=de
+Turn ID=8| B | B : en dan met
+	Free: Pattern=en dan met
+	Constrained: Pattern=en, Pattern=met, Pattern=en dan
+Turn ID=9| A | A : die twee raar ding aan de zijkant
+	Free: Pattern=aan de, Pattern=die
+	Constrained: Pattern=de
+Turn ID=10| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=12| A | A : Euh deze zijn die op het plateau staan
+	Free: Pattern=plateau staan, Pattern=die op, Pattern=deze zijn
+	Constrained: Pattern=plateau, Pattern=deze, Pattern=die
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=14| B | B : euh dit zijn de enig die op zo'n plateau staan
+	Free: Pattern=zijn de enig die op zo'n, Pattern=plateau staan, Pattern=dit zijn
+	Constrained: Pattern=zo'n, Pattern=de, Pattern=die, Pattern=die op, Pattern=plateau, Pattern=zijn de enig
+Turn ID=15| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=16| A | A : dit zijn die met die plateau waar die op staat
+	Free: Pattern=plateau, Pattern=met, Pattern=die, Pattern=die op, Pattern=dit zijn
+	Constrained: Pattern=die

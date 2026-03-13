@@ -1,0 +1,211 @@
+A|0| A: ah nice 
+B|1| B: _Oh_ _deze_ _hebben ik_ omschrijven _als een_ _soort_ _insect_ _met een_ _staart_ _en_ _een_ _heel_ dik buik _die_ _er_ onderuit hing 
+B|2| B: _maar_ _voor_ _hebben_ _hij_ _een_ _soort van_ _twee_ been poot 
+A|3| A: [Oh] oké dit [hebben ik] _niet_ zien _in_ mijn _ding_ _dus_ [ik] moeten [heel] _even kijken_ nog 
+A|4| A: _Euh_ _hij hebben_ _een staar_ 
+B|5| B: _ja_ _een klein staart_ _aan de_ achterkant _zeggen maar_ zo omhoog 
+A|6| A: _even kijken_ 
+A|7| A: ah _ja en_ _hij hebben_ [twee] _ding_ [die] [aan] [aan de] zegmaar _voorkant_ uitsteken _dan_ 
+B|8| B: [ja en] [dan] zo [een] _hoofd_ [in] _het_ midden _een beetje_ langwerpig 
+A|9| A: Wacht _euh_ oké [ik] snapen [het] nog _niet_ helemaal 
+B|10| B: [Euh] 
+A|11| A: want [voor] [voor] mij _zijn_ [het] _iets_ [met _een] hoed_ 
+A|12| A: _euh_ nee [die] ander 
+A|13| A: oké nee volgens mij [Euh] 
+A|14| A: [Oh] [er] staan [er] [twee] [die] best wel _op_ elkaar lijken 
+A|15| A: _euh_ nee _hij hebben_ _een hoed_ _euh_ _zijn_ [zeggen maar] 
+A|16| A: [het] lijken [een beetje] _op_ [een] _euh_ _een satelliet_ 
+A|17| A: wat [er] bovenop _zijn_ [hoofd] _zitten_ 
+A|18| A: Kun _je_ _dat_ zien 
+A|19| A: _of_ [een] boek waar _iets_ doorheen _zijn_ ge 
+B|20| B: [Euh] 
+B|21| B: nou [er] [zitten] [niet] echt [een satelliet] [op] 
+A|22| A: Oké 
+A|23| A: [Euh] oké [er] _zijn_ [er] [twee] [die] [beetje] [op] 
+A|24| A: Oké hoe zien zo'n _hoed_ eruit 
+B|25| B: [ja] [hij hebben] [niet] echt [een hoed] 
+B|26| B: [hij hebben] gewoon 
+B|27| B: [het] [zijn] eigenlijk [een] redelijk plat [iets] 
+B|28| B: [op] [het] eind [hebben] [je] [dus] [een staar] 
+B|29| B: [dat] [zijn] [aan de] linkerkant [dan] 
+A|30| A: [ja] link 
+B|31| B: [en] [aan de] [voor] 
+B|32| B: [het] [zijn] [een] _soort van_ 
+B|33| B: _tafel_ _door de beker heen_ [met] [aan de] [voorkant] [twee] poot [en] [op] [de] _tafel_ te hoogte ook _van de beker zitten_ [een] _soort_ [ja] trapeziumvormig [ding] 
+A|34| A: [Oh] ah oké [ik] zien [dat] [als] één waar [je] snack [op] kunnen inzetten [soort van] 
+A|35| A: Oké [ja] nee [dan] snap [ik] hem nu pas denken [ik] 
+A|36| A: [het] [soort van] [tafel] [dat] [door de beker heen] gaan [ja] 
+B|37| B: [ja] 
+A|38| A: Oké [dan] [zijn] [het] 
+A|39| A: [Oh] [ja] [ik] moeten [het] beschrijven 
+A|40| A: [Euh] [ja] dit _euh_ [deze] beschrijven jij [als een] [insect] 
+A|41| A: [hij hebben] [er] helemaal bovenin links [een klein staart] 
+A|42| A: [en] [ik] zien [het] veel [als een] [Euh] snacktafeltje wat [aan de] zijkant [van de beker zitten] vastmaken 
+B|43| B: [ja] 
+B|44| B: [dan] [hebben ik] _het insect_ [of] [de] snacktafel 
+A|45| A: [ja] [ja] [ja] 
+A|46| A: [Euh] [ik] [hebben] [het insect] 
+A|47| A: [het] serveertafel 
+B|48| B: [ja] [even kijken] 
+B|49| B: [dan] [hebben ik] [euh] [de] snacktafel 
+A|50| A: [Euh] [tafel] 
+B|51| B: [Oh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ah nice
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : Oh deze hebben ik omschrijven als een soort insect met een staart en een heel dik buik die er onderuit hing
+	Free: Pattern=hebben ik, Pattern=insect, Pattern=een, Pattern=staart, Pattern=als een, Pattern=die, Pattern=met een, Pattern=er, Pattern=en, Pattern=Oh, Pattern=deze, Pattern=heel, Pattern=soort
+	Constrained: Pattern=een, Pattern=hebben, Pattern=als, Pattern=met, Pattern=ik
+Turn ID=2| B | B : maar voor hebben hij een soort van twee been poot
+	Free: Pattern=twee, Pattern=een, Pattern=voor, Pattern=hebben, Pattern=hij, Pattern=soort van, Pattern=maar
+	Constrained: Pattern=soort
+Turn ID=3| A | A : Oh oké dit hebben ik niet zien in mijn ding dus ik moeten heel even kijken nog
+	Free: Pattern=heel, Pattern=dus, Pattern=hebben ik, Pattern=niet, Pattern=ding, Pattern=in, Pattern=even kijken, Pattern=ik, Pattern=Oh
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=4| A | A : Euh hij hebben een staar
+	Free: Pattern=hij hebben, Pattern=een staar, Pattern=Euh
+	Constrained: Pattern=een, Pattern=hij, Pattern=hebben
+Turn ID=5| B | B : ja een klein staart aan de achterkant zeggen maar zo omhoog
+	Free: Pattern=een klein staart, Pattern=aan de, Pattern=zeggen maar, Pattern=ja
+	Constrained: Pattern=een, Pattern=staart, Pattern=maar, Pattern=de, Pattern=aan
+Turn ID=6| A | A : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=7| A | A : ah ja en hij hebben twee ding die aan aan de zegmaar voorkant uitsteken dan
+	Free: Pattern=twee, Pattern=aan, Pattern=aan de, Pattern=dan, Pattern=hij hebben, Pattern=die, Pattern=ja en, Pattern=ding, Pattern=voorkant
+	Constrained: Pattern=hebben, Pattern=hij, Pattern=en, Pattern=de, Pattern=aan, Pattern=ja
+Turn ID=8| B | B : ja en dan zo een hoofd in het midden een beetje langwerpig
+	Free: Pattern=dan, Pattern=een, Pattern=het, Pattern=in, Pattern=een beetje, Pattern=hoofd, Pattern=ja en
+	Constrained: Pattern=en, Pattern=ja, Pattern=een, Pattern=beetje
+Turn ID=9| A | A : Wacht euh oké ik snapen het nog niet helemaal
+	Free: Pattern=niet, Pattern=het, Pattern=ik, Pattern=euh
+	Constrained: 
+Turn ID=10| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=11| A | A : want voor voor mij zijn het iets met een hoed
+	Free: Pattern=iets, Pattern=met een, Pattern=zijn, Pattern=een hoed, Pattern=het, Pattern=voor
+	Constrained: Pattern=een, Pattern=hoed, Pattern=met
+Turn ID=12| A | A : euh nee die ander
+	Free: Pattern=die, Pattern=euh
+	Constrained: 
+Turn ID=13| A | A : oké nee volgens mij Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=14| A | A : Oh er staan er twee die best wel op elkaar lijken
+	Free: Pattern=twee, Pattern=op, Pattern=die, Pattern=er, Pattern=Oh
+	Constrained: 
+Turn ID=15| A | A : euh nee hij hebben een hoed euh zijn zeggen maar
+	Free: Pattern=zeggen maar, Pattern=euh, Pattern=hij hebben, Pattern=zijn, Pattern=een hoed
+	Constrained: Pattern=hoed, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=maar
+Turn ID=16| A | A : het lijken een beetje op een euh een satelliet
+	Free: Pattern=op, Pattern=een, Pattern=het, Pattern=euh, Pattern=een beetje, Pattern=een satelliet
+	Constrained: Pattern=een, Pattern=beetje
+Turn ID=17| A | A : wat er bovenop zijn hoofd zitten
+	Free: Pattern=zijn, Pattern=zitten, Pattern=er, Pattern=hoofd
+	Constrained: 
+Turn ID=18| A | A : Kun je dat zien
+	Free: Pattern=dat, Pattern=je
+	Constrained: 
+Turn ID=19| A | A : of een boek waar iets doorheen zijn ge
+	Free: Pattern=zijn, Pattern=een, Pattern=of, Pattern=iets
+	Constrained: 
+Turn ID=20| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=21| B | B : nou er zitten niet echt een satelliet op
+	Free: Pattern=op, Pattern=niet, Pattern=zitten, Pattern=er, Pattern=een satelliet
+	Constrained: Pattern=een
+Turn ID=22| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : Euh oké er zijn er twee die beetje op
+	Free: Pattern=twee, Pattern=op, Pattern=beetje, Pattern=Euh, Pattern=die, Pattern=er, Pattern=zijn
+	Constrained: 
+Turn ID=24| A | A : Oké hoe zien zo'n hoed eruit
+	Free: Pattern=hoed
+	Constrained: 
+Turn ID=25| B | B : ja hij hebben niet echt een hoed
+	Free: Pattern=hij hebben, Pattern=een hoed, Pattern=ja, Pattern=niet
+	Constrained: Pattern=een, Pattern=hoed, Pattern=hij, Pattern=hebben
+Turn ID=26| B | B : hij hebben gewoon
+	Free: Pattern=hij hebben
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=27| B | B : het zijn eigenlijk een redelijk plat iets
+	Free: Pattern=zijn, Pattern=het, Pattern=een, Pattern=iets
+	Constrained: 
+Turn ID=28| B | B : op het eind hebben je dus een staar
+	Free: Pattern=dus, Pattern=op, Pattern=het, Pattern=hebben, Pattern=een staar, Pattern=je
+	Constrained: Pattern=een
+Turn ID=29| B | B : dat zijn aan de linkerkant dan
+	Free: Pattern=aan de, Pattern=dat, Pattern=dan, Pattern=zijn
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=30| A | A : ja link
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : en aan de voor
+	Free: Pattern=aan de, Pattern=en, Pattern=voor
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=32| B | B : het zijn een soort van
+	Free: Pattern=soort van, Pattern=zijn, Pattern=het, Pattern=een
+	Constrained: Pattern=soort
+Turn ID=33| B | B : tafel door de beker heen met aan de voorkant twee poot en op de tafel te hoogte ook van de beker zitten een soort ja trapeziumvormig ding
+	Free: Pattern=soort, Pattern=twee, Pattern=een, Pattern=van de beker zitten, Pattern=door de beker heen, Pattern=met, Pattern=tafel, Pattern=en, Pattern=de, Pattern=ja, Pattern=op, Pattern=aan de, Pattern=ding, Pattern=voorkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=zitten
+Turn ID=34| A | A : Oh ah oké ik zien dat als één waar je snack op kunnen inzetten soort van
+	Free: Pattern=dat, Pattern=op, Pattern=als, Pattern=ik, Pattern=Oh, Pattern=soort van, Pattern=je
+	Constrained: Pattern=soort
+Turn ID=35| A | A : Oké ja nee dan snap ik hem nu pas denken ik
+	Free: Pattern=ja, Pattern=dan, Pattern=ik
+	Constrained: 
+Turn ID=36| A | A : het soort van tafel dat door de beker heen gaan ja
+	Free: Pattern=dat, Pattern=ja, Pattern=het, Pattern=door de beker heen, Pattern=tafel, Pattern=soort van
+	Constrained: Pattern=de, Pattern=soort
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : Oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=39| A | A : Oh ja ik moeten het beschrijven
+	Free: Pattern=ja, Pattern=het, Pattern=ik, Pattern=Oh
+	Constrained: 
+Turn ID=40| A | A : Euh ja dit euh deze beschrijven jij als een insect
+	Free: Pattern=ja, Pattern=insect, Pattern=Euh, Pattern=euh, Pattern=als een, Pattern=deze
+	Constrained: Pattern=als, Pattern=een
+Turn ID=41| A | A : hij hebben er helemaal bovenin links een klein staart
+	Free: Pattern=een klein staart, Pattern=hij hebben, Pattern=er
+	Constrained: Pattern=hij, Pattern=een, Pattern=staart, Pattern=hebben
+Turn ID=42| A | A : en ik zien het veel als een Euh snacktafeltje wat aan de zijkant van de beker zitten vastmaken
+	Free: Pattern=aan de, Pattern=het, Pattern=als een, Pattern=ik, Pattern=en, Pattern=van de beker zitten, Pattern=Euh
+	Constrained: Pattern=een, Pattern=als, Pattern=zitten, Pattern=de, Pattern=aan
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : dan hebben ik het insect of de snacktafel
+	Free: Pattern=of, Pattern=de, Pattern=hebben ik, Pattern=dan, Pattern=het insect
+	Constrained: Pattern=insect, Pattern=het, Pattern=ik, Pattern=hebben
+Turn ID=45| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| A | A : Euh ik hebben het insect
+	Free: Pattern=het insect, Pattern=Euh, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=insect, Pattern=het
+Turn ID=47| A | A : het serveertafel
+	Free: Pattern=het
+	Constrained: 
+Turn ID=48| B | B : ja even kijken
+	Free: Pattern=even kijken, Pattern=ja
+	Constrained: 
+Turn ID=49| B | B : dan hebben ik euh de snacktafel
+	Free: Pattern=hebben ik, Pattern=dan, Pattern=euh, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=50| A | A : Euh tafel
+	Free: Pattern=Euh, Pattern=tafel
+	Constrained: 
+Turn ID=51| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 

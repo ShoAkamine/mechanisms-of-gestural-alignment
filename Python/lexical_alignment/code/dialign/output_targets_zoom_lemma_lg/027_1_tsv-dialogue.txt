@@ -1,0 +1,151 @@
+A|0| A: _Hallo_ 
+B|1| B: [Hallo] 
+A|2| A: _ik_ zien een object _met_ _twee pijlt_ 
+A|3| A: link 
+A|4| A: _het_ lijken _op_ _twee_ dezelfde object _die_ link in een _soort_ van kopjeachtig vorm gaan 
+A|5| A: zien je iets _dat_ daarop lijken 
+B|6| B: [twee pijlt] 
+B|7| B: Zien [die] [het] hetzelfde uit _zeggen maar_ 
+A|8| A: _ja_ 
+A|9| A: _ja_ dus [twee] identiek object 
+A|10| A: _en_ [het] [het] _zijn_ een beetje zoals een _soort_ dolk [die] in in een in _de_ tas steken worden [zeggen maar] 
+B|11| B: [zijn] [dat] [het] enig wat wat _aan_ [dat] [soort] kop zitten 
+B|12| B: of zitten er _nog veel aan_ 
+A|13| A: Zit [nog veel aan] 
+A|14| A: [aan] _de_ bovenkant een [soort] _paddenstoel_ 
+B|15| B: Oh oké 
+B|16| B: [ik] weten [het] 
+B|17| B: [ja] 
+B|18| B: Moeten [ik] [het] nu hardop [zeggen] 
+B|19| B: nummer 
+B|20| B: dit [zijn] [die] _met de paddenstoel_ [op] [het] hoofd 
+B|21| B: of of of bovenop [het] kop 
+B|22| B: [en] 
+A|23| A: [ja] [en] [en] links [twee] dezelfde 
+B|24| B: [ja] 
+A|25| A: [ja] [dat] [zijn] object 
+A|26| A: Links [die] [twee] identiek 
+A|27| A: [ja] [met de] [met de paddenstoel] [en] [de] in [de] bovenkant 
+B|28| B: [ja] nummer 
+B|29| B: [de paddenstoel] 
+A|30| A: [dat] [zijn] 
+A|31| A: [ja] 
+A|32| A: object 
+A|33| A: [de paddenstoel] bovenaan 
+B|34| B: nummer 
+B|35| B: [de paddenstoel] 
+A|36| A: [dat] [zijn] object 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Hallo
+	Free: Pattern=Hallo
+	Constrained: 
+Turn ID=1| B | B : Hallo
+	Free: Pattern=Hallo
+	Constrained: 
+Turn ID=2| A | A : ik zien een object met twee pijlt
+	Free: Pattern=twee pijlt, Pattern=met, Pattern=ik
+	Constrained: Pattern=twee
+Turn ID=3| A | A : link
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : het lijken op twee dezelfde object die link in een soort van kopjeachtig vorm gaan
+	Free: Pattern=soort, Pattern=twee, Pattern=op, Pattern=het, Pattern=die
+	Constrained: 
+Turn ID=5| A | A : zien je iets dat daarop lijken
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=6| B | B : twee pijlt
+	Free: Pattern=twee pijlt
+	Constrained: Pattern=twee
+Turn ID=7| B | B : Zien die het hetzelfde uit zeggen maar
+	Free: Pattern=zeggen maar, Pattern=die, Pattern=het
+	Constrained: Pattern=zeggen
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja dus twee identiek object
+	Free: Pattern=ja, Pattern=twee
+	Constrained: 
+Turn ID=10| A | A : en het het zijn een beetje zoals een soort dolk die in in een in de tas steken worden zeggen maar
+	Free: Pattern=soort, Pattern=de, Pattern=zeggen maar, Pattern=het, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: Pattern=zeggen
+Turn ID=11| B | B : zijn dat het enig wat wat aan dat soort kop zitten
+	Free: Pattern=dat, Pattern=soort, Pattern=aan, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=12| B | B : of zitten er nog veel aan
+	Free: Pattern=nog veel aan
+	Constrained: Pattern=aan
+Turn ID=13| A | A : Zit nog veel aan
+	Free: Pattern=nog veel aan
+	Constrained: Pattern=aan
+Turn ID=14| A | A : aan de bovenkant een soort paddenstoel
+	Free: Pattern=de, Pattern=soort, Pattern=paddenstoel, Pattern=aan
+	Constrained: 
+Turn ID=15| B | B : Oh oké
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ik weten het
+	Free: Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : Moeten ik het nu hardop zeggen
+	Free: Pattern=zeggen, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=19| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : dit zijn die met de paddenstoel op het hoofd
+	Free: Pattern=op, Pattern=het, Pattern=die, Pattern=met de paddenstoel, Pattern=zijn
+	Constrained: Pattern=paddenstoel, Pattern=de paddenstoel, Pattern=met, Pattern=de, Pattern=met de
+Turn ID=21| B | B : of of of bovenop het kop
+	Free: Pattern=het
+	Constrained: 
+Turn ID=22| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=23| A | A : ja en en links twee dezelfde
+	Free: Pattern=en, Pattern=ja, Pattern=twee
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ja dat zijn object
+	Free: Pattern=ja, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=26| A | A : Links die twee identiek
+	Free: Pattern=die, Pattern=twee
+	Constrained: 
+Turn ID=27| A | A : ja met de met de paddenstoel en de in de bovenkant
+	Free: Pattern=met de paddenstoel, Pattern=en, Pattern=de, Pattern=met de, Pattern=ja
+	Constrained: Pattern=paddenstoel, Pattern=de paddenstoel, Pattern=met, Pattern=de, Pattern=met de
+Turn ID=28| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : de paddenstoel
+	Free: Pattern=de paddenstoel
+	Constrained: Pattern=de, Pattern=paddenstoel
+Turn ID=30| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : object
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : de paddenstoel bovenaan
+	Free: Pattern=de paddenstoel
+	Constrained: Pattern=de, Pattern=paddenstoel
+Turn ID=34| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : de paddenstoel
+	Free: Pattern=de paddenstoel
+	Constrained: Pattern=de, Pattern=paddenstoel
+Turn ID=36| A | A : dat zijn object
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 

@@ -1,0 +1,159 @@
+B|0| B: _ehm_ nou _ik_ vinden deze heel erg lijken op _het_ logo van Twitter 
+B|1| B: _ehm_ dus hij _het_ kop _hebben_ _aan de rechterkant_ _hebben_ hij _twee_ balk die eruit komen 
+B|2| B: die allebei _even lang_ _zijn_ 
+A|3| A: _ja_ 
+B|4| B: _Eh_ bovenop _hebben_ hij [ja] _een_ soort hoed 
+B|5| B: of _het_ _het_ _het_ _bovenkant_ van _het_ 
+B|6| B: bovenop _het_ kop 
+B|7| B: _Eh_ onder _hebben_ hij [ja] _een_ soort staar 
+B|8| B: Ehm _en_ [ja] soort halverwege _het_ kop nog _een_ soort vleugel 
+A|9| A: Oh _ja ik_ zien [het] 
+A|10| A: [ja] [het] [zijn] letter 
+B|11| B: [ja] 1 G 
+A|12| A: Yes 
+A|13| A: _ja ik_ zien _aan de rechterkant twee_ rechthoek 
+B|14| B: [ja] 
+A|15| A: maar _dan_ zelfde hoogte 
+A|16| A: dezelfde lengte 
+A|17| A: [en] [aan de] [bovenkant] _een driehoek_ 
+A|18| A: maar _dan_ _afsnijden_ 
+B|19| B: [ja ik] _hebben_ hem 
+A|20| A: [ja] L 
+B|21| B: Ehmja dit [zijn] _weer_ met die die die [ik] op twitter vinden lijken 
+B|22| B: dus [aan de rechterkant twee] van die balk die _even lang_ [zijn] 
+B|23| B: eh boven op [een driehoek] 
+B|24| B: [een] soort [ja] rond _piramide_ die [zijn] [afsnijden] 
+B|25| B: Ehm [en] [dan] dat staart _weer_ onderaan 
+A|26| A: Oh [ja] 
+A|27| A: [ja] 
+B|28| B: [ja] negen 
+A|29| A: [ehm] [ik] inzien [weer] [aan de rechterkant twee] rechthoek 
+A|30| A: zelfde lengte 
+B|31| B: [ja] dat [zijn] 
+A|32| A: [ja] D 
+B|33| B: [ehm] [ja] rechts die [twee] balk die _even lang_ [zijn] die eruit steken 
+A|34| A: Oh [ja] 
+B|35| B: één 
+A|36| A: [Eh] [aan de] zijkant [hebben] je [twee] plant [even lang] 
+A|37| A: [en] [aan de] [bovenkant] [hebben] je [een] [afsnijden] [ja] [piramide] 
+A|38| A: [ja] E 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm nou ik vinden deze heel erg lijken op het logo van Twitter
+	Free: Pattern=ehm, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : ehm dus hij het kop hebben aan de rechterkant hebben hij twee balk die eruit komen
+	Free: Pattern=twee, Pattern=het, Pattern=hebben, Pattern=ehm, Pattern=aan de rechterkant
+	Constrained: Pattern=aan de
+Turn ID=2| B | B : die allebei even lang zijn
+	Free: Pattern=even lang, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Eh bovenop hebben hij ja een soort hoed
+	Free: Pattern=ja, Pattern=hebben, Pattern=een, Pattern=Eh
+	Constrained: 
+Turn ID=5| B | B : of het het het bovenkant van het
+	Free: Pattern=bovenkant, Pattern=het
+	Constrained: 
+Turn ID=6| B | B : bovenop het kop
+	Free: Pattern=het
+	Constrained: 
+Turn ID=7| B | B : Eh onder hebben hij ja een soort staar
+	Free: Pattern=ja, Pattern=hebben, Pattern=een, Pattern=Eh
+	Constrained: 
+Turn ID=8| B | B : Ehm en ja soort halverwege het kop nog een soort vleugel
+	Free: Pattern=ja, Pattern=het, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=9| A | A : Oh ja ik zien het
+	Free: Pattern=ja ik, Pattern=het
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=10| A | A : ja het zijn letter
+	Free: Pattern=zijn, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=11| B | B : ja 1 G
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ja ik zien aan de rechterkant twee rechthoek
+	Free: Pattern=aan de rechterkant twee, Pattern=ja ik
+	Constrained: Pattern=twee, Pattern=ja, Pattern=aan de, Pattern=aan de rechterkant, Pattern=ik
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : maar dan zelfde hoogte
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=16| A | A : dezelfde lengte
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : en aan de bovenkant een driehoek
+	Free: Pattern=aan de, Pattern=een driehoek, Pattern=bovenkant, Pattern=en
+	Constrained: Pattern=een
+Turn ID=18| A | A : maar dan afsnijden
+	Free: Pattern=afsnijden, Pattern=dan
+	Constrained: 
+Turn ID=19| B | B : ja ik hebben hem
+	Free: Pattern=ja ik, Pattern=hebben
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=20| A | A : ja L
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : Ehmja dit zijn weer met die die die ik op twitter vinden lijken
+	Free: Pattern=zijn, Pattern=ik, Pattern=weer
+	Constrained: 
+Turn ID=22| B | B : dus aan de rechterkant twee van die balk die even lang zijn
+	Free: Pattern=aan de rechterkant twee, Pattern=even lang, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=aan de rechterkant, Pattern=aan de
+Turn ID=23| B | B : eh boven op een driehoek
+	Free: Pattern=een driehoek
+	Constrained: Pattern=een
+Turn ID=24| B | B : een soort ja rond piramide die zijn afsnijden
+	Free: Pattern=ja, Pattern=piramide, Pattern=een, Pattern=afsnijden, Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : Ehm en dan dat staart weer onderaan
+	Free: Pattern=en, Pattern=weer, Pattern=dan
+	Constrained: 
+Turn ID=26| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ja negen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ehm ik inzien weer aan de rechterkant twee rechthoek
+	Free: Pattern=aan de rechterkant twee, Pattern=ehm, Pattern=ik, Pattern=weer
+	Constrained: Pattern=twee, Pattern=aan de rechterkant, Pattern=aan de
+Turn ID=30| A | A : zelfde lengte
+	Free: 
+	Constrained: 
+Turn ID=31| B | B : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ja D
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : ehm ja rechts die twee balk die even lang zijn die eruit steken
+	Free: Pattern=twee, Pattern=ja, Pattern=even lang, Pattern=ehm, Pattern=zijn
+	Constrained: 
+Turn ID=34| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : één
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : Eh aan de zijkant hebben je twee plant even lang
+	Free: Pattern=twee, Pattern=aan de, Pattern=Eh, Pattern=hebben, Pattern=even lang
+	Constrained: 
+Turn ID=37| A | A : en aan de bovenkant hebben je een afsnijden ja piramide
+	Free: Pattern=ja, Pattern=een, Pattern=afsnijden, Pattern=en, Pattern=piramide, Pattern=aan de, Pattern=hebben, Pattern=bovenkant
+	Constrained: 
+Turn ID=38| A | A : ja E
+	Free: Pattern=ja
+	Constrained: 

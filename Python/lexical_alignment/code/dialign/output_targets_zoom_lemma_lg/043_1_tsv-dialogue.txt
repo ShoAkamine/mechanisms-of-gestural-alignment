@@ -1,0 +1,147 @@
+A|0| A: ehm _deze hebben links twee_ uitsteekselding 
+A|1| A: Eh _en_ _rechts_ zitten _een_ _vierkant_ 
+A|2| A: gewoon vlak zeggen maar 
+B|3| B: Oh _ja_ oké 
+A|4| A: _en bovenop_ zitten _ook _nog een_ soort_ antenne 
+B|5| B: _ja_ dan _zijn_ nummer 
+B|6| B: [deze hebben links twee] ding erin 
+B|7| B: [en] dan _rechts [een_ soort] [vierkant] 
+B|8| B: _en bovenop ook nog een dinge_ 
+B|9| B: ik weten _het_ niet 
+A|10| A: eh even kijken 
+A|11| A: O [rechts] _dat vierkant_ inderdaad 
+B|12| B: _ja_ 
+A|13| A: [en] [links twee] van _die_ [soort] van _toren_ van 
+B|14| B: _ja_ 
+B|15| B: _ja_ _blok_ 
+A|16| A: [ja] 
+A|17| A: Eh _dat zijn_ 
+A|18| A: [deze hebben] [rechts een] [vierkant] 
+A|19| A: Links [twee] uitsteeksel _met_ van _die_ [blok] op elkaar 
+B|20| B: Oh [ja] 
+A|21| A: [en bovenop ook nog een dinge] 
+B|22| B: [dat zijn] 
+B|23| B: [deze hebben] [dat _vierkant] rechts_ 
+B|24| B: [en] dan [die] [twee] blokkentorens link 
+B|25| B: [en] dan [nog] iets [bovenop] 
+A|26| A: _ja dat zijn_ 
+A|27| A: [deze] _zijn met_ [het] [vierkant rechts] 
+A|28| A: [en] [links twee] van [die] bloktoar [dinge] 
+A|29| A: [en _bovenop] nog een_ uitsteeksel 
+B|30| B: [ja dat zijn] 
+B|31| B: dit [zijn met] [dat [vierkant] rechts] 
+B|32| B: [en] dan [links twee] keer zo'n [toren] 
+B|33| B: pok 
+B|34| B: [en] dan [bovenop [nog een] soort] ding 
+A|35| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben links twee uitsteekselding
+	Free: Pattern=deze hebben links twee
+	Constrained: Pattern=deze, Pattern=links twee, Pattern=twee, Pattern=deze hebben
+Turn ID=1| A | A : Eh en rechts zitten een vierkant
+	Free: Pattern=en, Pattern=een, Pattern=rechts, Pattern=vierkant
+	Constrained: 
+Turn ID=2| A | A : gewoon vlak zeggen maar
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : Oh ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en bovenop zitten ook nog een soort antenne
+	Free: Pattern=ook nog een, Pattern=nog een soort, Pattern=en bovenop
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=een soort, Pattern=en, Pattern=nog, Pattern=soort
+Turn ID=5| B | B : ja dan zijn nummer
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : deze hebben links twee ding erin
+	Free: Pattern=deze hebben links twee
+	Constrained: Pattern=deze, Pattern=links twee, Pattern=twee, Pattern=deze hebben
+Turn ID=7| B | B : en dan rechts een soort vierkant
+	Free: Pattern=een soort, Pattern=rechts een, Pattern=en, Pattern=vierkant
+	Constrained: Pattern=een, Pattern=rechts, Pattern=soort
+Turn ID=8| B | B : en bovenop ook nog een dinge
+	Free: Pattern=en bovenop ook nog een dinge
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=dinge, Pattern=en, Pattern=ook nog een, Pattern=en bovenop, Pattern=nog
+Turn ID=9| B | B : ik weten het niet
+	Free: Pattern=het
+	Constrained: 
+Turn ID=10| A | A : eh even kijken
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : O rechts dat vierkant inderdaad
+	Free: Pattern=dat vierkant, Pattern=rechts
+	Constrained: Pattern=vierkant
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en links twee van die soort van toren van
+	Free: Pattern=toren, Pattern=soort, Pattern=links twee, Pattern=die, Pattern=en
+	Constrained: Pattern=twee
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja blok
+	Free: Pattern=ja, Pattern=blok
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=18| A | A : deze hebben rechts een vierkant
+	Free: Pattern=rechts een, Pattern=deze hebben, Pattern=vierkant
+	Constrained: Pattern=een, Pattern=rechts, Pattern=deze
+Turn ID=19| A | A : Links twee uitsteeksel met van die blok op elkaar
+	Free: Pattern=twee, Pattern=die, Pattern=met, Pattern=blok
+	Constrained: 
+Turn ID=20| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : en bovenop ook nog een dinge
+	Free: Pattern=en bovenop ook nog een dinge
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=dinge, Pattern=en, Pattern=ook nog een, Pattern=en bovenop, Pattern=nog
+Turn ID=22| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=23| B | B : deze hebben dat vierkant rechts
+	Free: Pattern=dat vierkant, Pattern=vierkant rechts, Pattern=deze hebben
+	Constrained: Pattern=vierkant, Pattern=rechts, Pattern=deze
+Turn ID=24| B | B : en dan die twee blokkentorens link
+	Free: Pattern=en, Pattern=twee, Pattern=die
+	Constrained: 
+Turn ID=25| B | B : en dan nog iets bovenop
+	Free: Pattern=en, Pattern=bovenop, Pattern=nog
+	Constrained: 
+Turn ID=26| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=27| A | A : deze zijn met het vierkant rechts
+	Free: Pattern=vierkant rechts, Pattern=zijn met, Pattern=het, Pattern=deze
+	Constrained: Pattern=zijn, Pattern=met, Pattern=rechts, Pattern=vierkant
+Turn ID=28| A | A : en links twee van die bloktoar dinge
+	Free: Pattern=links twee, Pattern=en, Pattern=dinge, Pattern=die
+	Constrained: Pattern=twee
+Turn ID=29| A | A : en bovenop nog een uitsteeksel
+	Free: Pattern=bovenop nog een, Pattern=en bovenop
+	Constrained: Pattern=nog, Pattern=bovenop, Pattern=een, Pattern=en
+Turn ID=30| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=31| B | B : dit zijn met dat vierkant rechts
+	Free: Pattern=dat vierkant, Pattern=vierkant rechts, Pattern=zijn met
+	Constrained: Pattern=vierkant, Pattern=rechts, Pattern=zijn, Pattern=met
+Turn ID=32| B | B : en dan links twee keer zo'n toren
+	Free: Pattern=links twee, Pattern=en, Pattern=toren
+	Constrained: Pattern=twee
+Turn ID=33| B | B : pok
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : en dan bovenop nog een soort ding
+	Free: Pattern=nog een soort, Pattern=bovenop nog een, Pattern=en
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=een soort, Pattern=nog, Pattern=soort
+Turn ID=35| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja

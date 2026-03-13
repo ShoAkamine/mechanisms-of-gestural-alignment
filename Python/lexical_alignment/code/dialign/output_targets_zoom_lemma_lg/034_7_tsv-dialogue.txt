@@ -1,0 +1,71 @@
+B|0| B: _euh_ deze hebben _een_ soort _tafel_ midden boven er doorheen lopen 
+B|1| B: _met_ twee po _aan de_ onderkant van het _tafel_ 
+B|2| B: en dan staan soort van op _dat_ _tafel_ _een_ ja wat _zijn_ het 
+B|3| B: _een_ bakje denken ik 
+B|4| B: en dan _aan de_ achterkant steekt er nog _een_ heel mini ja Mini dinget uit 
+A|5| A: _dat zijn_ [een] 
+A|6| A: [euh] _dit zijn_ [de] [tafel] halverwege 
+B|7| B: O ja [euh] [dat zijn] 
+B|8| B: [euh] deze hebben [een] [tafel] zo'n beetje boven midden zitten 
+A|9| A: [dat zijn] 
+A|10| A: [euh] _dit zijn_ [met] [de] _tafel aan de_ _aan de voorkant_ 
+B|11| B: [euh] [tafel [aan de] voorkant] waar [zijn] die 
+B|12| B: [dat zijn] 
+B|13| B: [dit zijn] die [met] [dat] [tafel] [een] beetje boven 
+A|14| A: [dat zijn] 
+A|15| A: [euh] [dit zijn] [met] [de] [tafel] 
+B|16| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh deze hebben een soort tafel midden boven er doorheen lopen
+	Free: Pattern=euh, Pattern=een, Pattern=tafel
+	Constrained: 
+Turn ID=1| B | B : met twee po aan de onderkant van het tafel
+	Free: Pattern=aan de, Pattern=tafel, Pattern=met
+	Constrained: Pattern=de
+Turn ID=2| B | B : en dan staan soort van op dat tafel een ja wat zijn het
+	Free: Pattern=dat, Pattern=zijn, Pattern=een, Pattern=tafel
+	Constrained: 
+Turn ID=3| B | B : een bakje denken ik
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| B | B : en dan aan de achterkant steekt er nog een heel mini ja Mini dinget uit
+	Free: Pattern=aan de, Pattern=een
+	Constrained: Pattern=de
+Turn ID=5| A | A : dat zijn een
+	Free: Pattern=dat zijn, Pattern=een
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=6| A | A : euh dit zijn de tafel halverwege
+	Free: Pattern=dit zijn, Pattern=euh, Pattern=de, Pattern=tafel
+	Constrained: Pattern=zijn
+Turn ID=7| B | B : O ja euh dat zijn
+	Free: Pattern=dat zijn, Pattern=euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=8| B | B : euh deze hebben een tafel zo'n beetje boven midden zitten
+	Free: Pattern=euh, Pattern=een, Pattern=tafel
+	Constrained: 
+Turn ID=9| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| A | A : euh dit zijn met de tafel aan de aan de voorkant
+	Free: Pattern=de, Pattern=euh, Pattern=met, Pattern=aan de voorkant, Pattern=dit zijn, Pattern=tafel aan de
+	Constrained: Pattern=tafel, Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=11| B | B : euh tafel aan de voorkant waar zijn die
+	Free: Pattern=tafel aan de, Pattern=aan de voorkant, Pattern=euh, Pattern=zijn
+	Constrained: Pattern=tafel, Pattern=de, Pattern=aan de
+Turn ID=12| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| B | B : dit zijn die met dat tafel een beetje boven
+	Free: Pattern=dat, Pattern=een, Pattern=met, Pattern=tafel, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| A | A : euh dit zijn met de tafel
+	Free: Pattern=de, Pattern=euh, Pattern=met, Pattern=tafel, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=16| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

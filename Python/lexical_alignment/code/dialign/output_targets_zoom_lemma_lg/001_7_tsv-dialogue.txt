@@ -1,0 +1,135 @@
+A|0| A: _oké_ deze _drijven_ ook _weer_ 
+A|1| A: _ehm_ omdat hij dus _op de_ helft van _de_ ding _zitten_ _een_ _zitten_ _een soort_ van plank 
+A|2| A: Em _en_ aan _de_ onderkant steken er twee rechthoekig balk uit _die_ _een_ beetje schuin gaan 
+A|3| A: _en_ aan _de_ achterkant _hebben_ hij _een soort_ van uitlaat ook _weer_ iets 
+B|4| B: _ja_ 
+B|5| B: _ja oké_ 
+A|6| A: _en_ [ja oké] 
+B|7| B: [ja] [en] _voorop_ _nog_ [een soort] m _bakje_ 
+A|8| A: [ja] 
+B|9| B: _of_ [een soort] [ja] driehoek [op de] kop 
+A|10| A: Yes 
+B|11| B: _Oké_ _dat zijn_ 
+B|12| B: [ehm] dit _zijn_ degeen _die drijven_ 
+B|13| B: maar dan daarboven _met het bakje_ bovenop [en] [een soort] tafel naar beneden 
+A|14| A: [ehm] [zijn] [dat] [die] [met] [die] glijbaan [of] [die] [met] [dat] _bakje voorop_ 
+B|15| B: _met het bakje voorop_ 
+A|16| A: ah yes [dat zijn] 
+A|17| A: eh _ik hebben_ [de] nu [de] drijver [met het bakje voorop] 
+B|18| B: _ja dat zijn_ 
+B|19| B: [ik hebben] degeen [die] daarboven [drijven] maar heel veel onder water [zitten] 
+B|20| B: [met het bakje] erbovenop 
+A|21| A: [ja] [ja] [ja] 
+A|22| A: [die] moeten [ik] [nog] wel even vinden 
+A|23| A: Eh 
+A|24| A: [Oké] 
+A|25| A: _Oh ja_ [ik hebben] hem sorry 
+B|26| B: [Oh ja] _zijn weer veranderen_ 
+A|27| A: eh mijn scherm [zijn weer veranderen] 
+A|28| A: [ja] 
+A|29| A: [ehm] [ik hebben] [weer] [dat] _die drijven met_ [dat] [bakje voorop] 
+B|30| B: _ja dat zijn_ 
+B|31| B: [ik hebben] degeen [die drijven [met] het bakje voorop] 
+A|32| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze drijven ook weer
+	Free: Pattern=drijven, Pattern=oké, Pattern=weer
+	Constrained: 
+Turn ID=1| A | A : ehm omdat hij dus op de helft van de ding zitten een zitten een soort van plank
+	Free: Pattern=de, Pattern=een, Pattern=ehm, Pattern=zitten, Pattern=een soort, Pattern=op de
+	Constrained: Pattern=een, Pattern=de
+Turn ID=2| A | A : Em en aan de onderkant steken er twee rechthoekig balk uit die een beetje schuin gaan
+	Free: Pattern=een, Pattern=en, Pattern=de, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : en aan de achterkant hebben hij een soort van uitlaat ook weer iets
+	Free: Pattern=de, Pattern=hebben, Pattern=een soort, Pattern=en, Pattern=weer
+	Constrained: Pattern=een
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=6| A | A : en ja oké
+	Free: Pattern=ja oké, Pattern=en
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=7| B | B : ja en voorop nog een soort m bakje
+	Free: Pattern=nog, Pattern=bakje, Pattern=een soort, Pattern=en, Pattern=voorop, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : of een soort ja driehoek op de kop
+	Free: Pattern=op de, Pattern=een soort, Pattern=ja, Pattern=of
+	Constrained: Pattern=een, Pattern=de
+Turn ID=10| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| B | B : ehm dit zijn degeen die drijven
+	Free: Pattern=die drijven, Pattern=zijn, Pattern=ehm
+	Constrained: Pattern=drijven, Pattern=die
+Turn ID=13| B | B : maar dan daarboven met het bakje bovenop en een soort tafel naar beneden
+	Free: Pattern=met het bakje, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=met, Pattern=bakje
+Turn ID=14| A | A : ehm zijn dat die met die glijbaan of die met dat bakje voorop
+	Free: Pattern=dat, Pattern=of, Pattern=die, Pattern=zijn, Pattern=bakje voorop, Pattern=ehm, Pattern=met
+	Constrained: Pattern=voorop, Pattern=bakje
+Turn ID=15| B | B : met het bakje voorop
+	Free: Pattern=met het bakje voorop
+	Constrained: Pattern=voorop, Pattern=met het bakje, Pattern=bakje, Pattern=met, Pattern=bakje voorop
+Turn ID=16| A | A : ah yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : eh ik hebben de nu de drijver met het bakje voorop
+	Free: Pattern=met het bakje voorop, Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=voorop, Pattern=met het bakje, Pattern=bakje, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=bakje voorop
+Turn ID=18| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=19| B | B : ik hebben degeen die daarboven drijven maar heel veel onder water zitten
+	Free: Pattern=ik hebben, Pattern=drijven, Pattern=zitten, Pattern=die
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=20| B | B : met het bakje erbovenop
+	Free: Pattern=met het bakje
+	Constrained: Pattern=met, Pattern=bakje
+Turn ID=21| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : die moeten ik nog wel even vinden
+	Free: Pattern=ik, Pattern=nog, Pattern=die
+	Constrained: 
+Turn ID=23| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : Oh ja ik hebben hem sorry
+	Free: Pattern=Oh ja, Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=ja, Pattern=hebben
+Turn ID=26| B | B : Oh ja zijn weer veranderen
+	Free: Pattern=zijn weer veranderen, Pattern=Oh ja
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=weer
+Turn ID=27| A | A : eh mijn scherm zijn weer veranderen
+	Free: Pattern=zijn weer veranderen
+	Constrained: Pattern=zijn, Pattern=weer
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ehm ik hebben weer dat die drijven met dat bakje voorop
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=die drijven met, Pattern=ehm, Pattern=bakje voorop, Pattern=weer
+	Constrained: Pattern=voorop, Pattern=die drijven, Pattern=bakje, Pattern=hebben, Pattern=drijven, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=30| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=31| B | B : ik hebben degeen die drijven met het bakje voorop
+	Free: Pattern=met het bakje voorop, Pattern=die drijven met, Pattern=ik hebben
+	Constrained: Pattern=voorop, Pattern=met het bakje, Pattern=die drijven, Pattern=bakje, Pattern=hebben, Pattern=drijven, Pattern=met, Pattern=die, Pattern=ik, Pattern=bakje voorop
+Turn ID=32| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja

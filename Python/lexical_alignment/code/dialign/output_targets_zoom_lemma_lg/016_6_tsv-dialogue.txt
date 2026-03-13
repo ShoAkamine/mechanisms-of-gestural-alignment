@@ -1,0 +1,123 @@
+A|0| A: deze hebben een 
+A|1| A: _ja_ _ik_ vinden _het_ dus eigenlijk een soort van een rond een neus voorop 
+A|2| A: waar een staaf doorheen lopen _met_ een rond op _het_ einde 
+A|3| A: en dan hebben hij bovenop een _ja_ een soort van of een haarpluk 
+A|4| A: of een gewoon _ja_ een klein uitstekel zeggen maar 
+B|5| B: wat _zijn_ [het] begin ook alweer 
+B|6| B: [ik] _zijn_ [het] _even_ kwijt 
+A|7| A: er zitten zitten voorop zitten er een een groot rond bol soort van neus waar een staaf doorheen lopen 
+B|8| B: _Oh_ [ja] [ja] 
+A|9| A: en aan [het] einde van _die_ staaf zitten een ovaal 
+B|10| B: [ja] nummer 
+B|11| B: inderdaad _zijn_ _we_ nu _de_ twee ronde 
+A|12| A: [ja] 
+B|13| B: _dit zijn diegene _met_ die_ haagpluk [die] _jij_ omschrijven 
+A|14| A: [die] [we] net hebben hebben 
+A|15| A: [met die] staf door [de] neus heen 
+B|16| B: [ja] 
+B|17| B: [ja] 
+A|18| A: [ja] dat [zijn] 
+B|19| B: [ja] 
+A|20| A: [dit zijn diegene met] [de] neus waar [de] staaf doorheen zitten 
+A|21| A: en _de Haarpluk_ bovenop 
+B|22| B: nummer 
+B|23| B: [dit zijn] [die] [met] [het] _haarplukje_ 
+A|24| A: [ja] dat [zijn] 
+A|25| A: en [dit zijn] degeen [met] [de] neus waar [de] staaf doorheen lopen 
+A|26| A: [Oh] [het] [zijn] [haarplukje] noemen [jij] hem altijd 
+B|27| B: [dit zijn] [de Haarpluk] 
+A|28| A: [ja] [even] zoeken 
+A|29| A: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : deze hebben een
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : ja ik vinden het dus eigenlijk een soort van een rond een neus voorop
+	Free: Pattern=het, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : waar een staaf doorheen lopen met een rond op het einde
+	Free: Pattern=het, Pattern=met
+	Constrained: 
+Turn ID=3| A | A : en dan hebben hij bovenop een ja een soort van of een haarpluk
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : of een gewoon ja een klein uitstekel zeggen maar
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : wat zijn het begin ook alweer
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=6| B | B : ik zijn het even kwijt
+	Free: Pattern=het, Pattern=zijn, Pattern=even, Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : er zitten zitten voorop zitten er een een groot rond bol soort van neus waar een staaf doorheen lopen
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : Oh ja ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=9| A | A : en aan het einde van die staaf zitten een ovaal
+	Free: Pattern=het, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : inderdaad zijn we nu de twee ronde
+	Free: Pattern=zijn, Pattern=we, Pattern=de
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dit zijn diegene met die haagpluk die jij omschrijven
+	Free: Pattern=dit zijn diegene met, Pattern=met die, Pattern=die, Pattern=jij
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=14| A | A : die we net hebben hebben
+	Free: Pattern=die, Pattern=we
+	Constrained: 
+Turn ID=15| A | A : met die staf door de neus heen
+	Free: Pattern=met die, Pattern=de
+	Constrained: Pattern=die, Pattern=met
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : dit zijn diegene met de neus waar de staaf doorheen zitten
+	Free: Pattern=dit zijn diegene met, Pattern=de
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=met
+Turn ID=21| A | A : en de Haarpluk bovenop
+	Free: Pattern=de Haarpluk
+	Constrained: Pattern=de
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : dit zijn die met het haarplukje
+	Free: Pattern=het, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=haarplukje
+	Constrained: Pattern=zijn
+Turn ID=24| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=25| A | A : en dit zijn degeen met de neus waar de staaf doorheen lopen
+	Free: Pattern=dit zijn, Pattern=de, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=26| A | A : Oh het zijn haarplukje noemen jij hem altijd
+	Free: Pattern=het, Pattern=Oh, Pattern=zijn, Pattern=haarplukje, Pattern=jij
+	Constrained: 
+Turn ID=27| B | B : dit zijn de Haarpluk
+	Free: Pattern=de Haarpluk, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=de
+Turn ID=28| A | A : ja even zoeken
+	Free: Pattern=ja, Pattern=even
+	Constrained: 
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

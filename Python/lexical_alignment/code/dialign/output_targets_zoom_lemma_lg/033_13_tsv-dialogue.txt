@@ -1,0 +1,71 @@
+B|0| B: euh deze _hebben ik Pippi Langkous_ noemen 
+B|1| B: want die _hebben_ een soort van twee vlech naar de zijkant 
+B|2| B: _en_ een euh ronde schijf aan de voorkant 
+B|3| B: _en_ aan de achterkant zitten een soort _Euh_ krulle 
+B|4| B: _en_ aan de onderkant een vierkant waar die basisvorm op staat 
+A|5| A: ja heel goed 
+A|6| A: dat zijn 
+A|7| A: [Euh] _nu_ [hebben ik Pippi Langkous] 
+B|8| B: nummer 
+B|9| B: _ik hebben_ [nu] [Pippi Langkous] 
+A|10| A: dat zijn 
+A|11| A: [en] _ik hebben Pippi Langkous_ 
+B|12| B: nummer 
+B|13| B: [ik hebben Pippi Langkous] 
+A|14| A: dat zijn 
+A|15| A: [ik hebben Pippi Langkous] 
+B|16| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh deze hebben ik Pippi Langkous noemen
+	Free: Pattern=hebben ik Pippi Langkous
+	Constrained: Pattern=Pippi Langkous, Pattern=hebben
+Turn ID=1| B | B : want die hebben een soort van twee vlech naar de zijkant
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : en een euh ronde schijf aan de voorkant
+	Free: Pattern=en
+	Constrained: 
+Turn ID=3| B | B : en aan de achterkant zitten een soort Euh krulle
+	Free: Pattern=en, Pattern=Euh
+	Constrained: 
+Turn ID=4| B | B : en aan de onderkant een vierkant waar die basisvorm op staat
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| A | A : ja heel goed
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Euh nu hebben ik Pippi Langkous
+	Free: Pattern=hebben ik Pippi Langkous, Pattern=Euh, Pattern=nu
+	Constrained: Pattern=Pippi Langkous, Pattern=hebben
+Turn ID=8| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : ik hebben nu Pippi Langkous
+	Free: Pattern=ik hebben, Pattern=Pippi Langkous, Pattern=nu
+	Constrained: Pattern=hebben
+Turn ID=10| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : en ik hebben Pippi Langkous
+	Free: Pattern=ik hebben Pippi Langkous, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=Pippi Langkous, Pattern=hebben
+Turn ID=12| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ik hebben Pippi Langkous
+	Free: Pattern=ik hebben Pippi Langkous
+	Constrained: Pattern=ik hebben, Pattern=Pippi Langkous, Pattern=hebben
+Turn ID=14| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : ik hebben Pippi Langkous
+	Free: Pattern=ik hebben Pippi Langkous
+	Constrained: Pattern=ik hebben, Pattern=Pippi Langkous, Pattern=hebben
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 

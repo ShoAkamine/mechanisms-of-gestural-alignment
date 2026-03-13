@@ -1,0 +1,207 @@
+B|0| B: _Oké_ 
+B|1| B: _dat_ _ik zien_ 
+B|2| B: hoe _hebben_ _ik_ _die_ omschrijven 
+B|3| B: _ik_ _hebben_ _het_ _zijn_ _ook_ inderdaad weer _die kop_ _met een_ soort groot _neus_ 
+B|4| B: _aan de_ rechterkant ervan 
+B|5| B: _en_ _ik_ _hebben_ _het_ omschrijven _als_ _een_ soort _gereedschapskist_ 
+B|6| B: omdat _er_ _het lijken_ _aan de_ linkerkant _een_ soort schroevendraaier uit te uitsteken 
+B|7| B: _en_ daarnaast _hebben_ je dan nog _een_ soort meetlat 
+B|8| B: _en_ _aan de_ linkerkant van _het_ figuur _hebben_ je nog _iets_ uitsteken 
+B|9| B: _een_ klein 
+B|10| B: _ja_ hoe _zeggen_ je _dat_ 
+B|11| B: _een_ driehoekje wat eigenlijk 
+B|12| B: _waar_ eventueel _weten_ _ik_ veel water of zo uit zullen kunnen stromen 
+B|13| B: _maar_ 
+A|14| A: [een] driehoek 
+B|15| B: _ik weten_ niet of _dat_ [een] 
+A|16| A: Hebben _die hebben_ [die kop] [zeggen] [maar] [als] doorsnede [ook] [een] _plat_ [iets] 
+B|17| B: nee nee _dat_ niet 
+B|18| B: _het_ _zijn_ dus echt gewoon [een] één kom _met_ _aan de_ rechterkant [een] [een] bol 
+A|19| A: [Oké] 
+B|20| B: _en_ _dat_ zullen dan _de_ _neus_ kunnen _zijn_ 
+B|21| B: _en_ _er_ _steken_ dus eigenlijk _twee_ ding verticaal omhoog 
+B|22| B: _en_ _aan de_ linkerkant van _de_ kom [hebben] je dan [een] [een] horizontaal klein uitsteek 
+A|23| A: Oh [ja] [ik weten] hem 
+A|24| A: _dit zijn de_ mok [waar] [het lijken] alsof [er] [twee] penseel inzetten worden 
+A|25| A: [met een] _rond_ [neus] _aan de voorkant_ 
+A|26| A: [en] links [een] uitsteeksel 
+B|27| B: [ja] 
+B|28| B: [dit zijn] weer dezelfde [waar] [die] [twee] 
+B|29| B: [ik] noemen [het] [een] _gereedschapskist_ [de] één keer 
+B|30| B: _met de_ bol [aan de] zijkant 
+B|31| B: [die hebben] jij net nog omschrijven 
+B|32| B: [waar] dus [twee] dinget bovenin zitten 
+B|33| B: eentje [zijn] één [zijn] [een] [ja] [plat] balk 
+B|34| B: [en] [de] ander [zijn] [iets] 
+A|35| A: Oh [ja] 
+A|36| A: [ja] [ik zien] hem 
+A|37| A: [de] wc _borstel_ [zijn] [het] 
+B|38| B: WC [borstel] [ja] 
+A|39| A: nu [zijn] [het] [de] mok 
+A|40| A: [met de] [twee] zegmaar penseel [die] erin [steken] 
+A|41| A: _met de rond_ [neus] 
+B|42| B: [ja] 
+A|43| A: _aan de voorkant_ 
+B|44| B: [de] _gereedschapskist_ [die] 
+A|45| A: [ja] 
+B|46| B: [dit zijn de] _gereedschapskist_ [met de rond] knop [aan de voorkant] 
+A|47| A: [ja] 
+A|48| A: [dat] [zijn] 
+A|49| A: jouw [gereedschapskist] 
+B|50| B: Hm-hm 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : dat ik zien
+	Free: Pattern=ik zien, Pattern=dat
+	Constrained: Pattern=ik
+Turn ID=2| B | B : hoe hebben ik die omschrijven
+	Free: Pattern=hebben, Pattern=ik, Pattern=die
+	Constrained: 
+Turn ID=3| B | B : ik hebben het zijn ook inderdaad weer die kop met een soort groot neus
+	Free: Pattern=ook, Pattern=het, Pattern=hebben, Pattern=neus, Pattern=die kop, Pattern=met een, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=die, Pattern=met, Pattern=een
+Turn ID=4| B | B : aan de rechterkant ervan
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=5| B | B : en ik hebben het omschrijven als een soort gereedschapskist
+	Free: Pattern=een, Pattern=het, Pattern=hebben, Pattern=als, Pattern=ik, Pattern=en, Pattern=gereedschapskist
+	Constrained: 
+Turn ID=6| B | B : omdat er het lijken aan de linkerkant een soort schroevendraaier uit te uitsteken
+	Free: Pattern=aan de, Pattern=het lijken, Pattern=er, Pattern=een
+	Constrained: Pattern=de, Pattern=het
+Turn ID=7| B | B : en daarnaast hebben je dan nog een soort meetlat
+	Free: Pattern=hebben, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=8| B | B : en aan de linkerkant van het figuur hebben je nog iets uitsteken
+	Free: Pattern=iets, Pattern=aan de, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: Pattern=de
+Turn ID=9| B | B : een klein
+	Free: Pattern=een
+	Constrained: 
+Turn ID=10| B | B : ja hoe zeggen je dat
+	Free: Pattern=dat, Pattern=ja, Pattern=zeggen
+	Constrained: 
+Turn ID=11| B | B : een driehoekje wat eigenlijk
+	Free: Pattern=een
+	Constrained: 
+Turn ID=12| B | B : waar eventueel weten ik veel water of zo uit zullen kunnen stromen
+	Free: Pattern=ik, Pattern=waar, Pattern=weten
+	Constrained: 
+Turn ID=13| B | B : maar
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=14| A | A : een driehoek
+	Free: Pattern=een
+	Constrained: 
+Turn ID=15| B | B : ik weten niet of dat een
+	Free: Pattern=ik weten, Pattern=dat, Pattern=een
+	Constrained: Pattern=ik, Pattern=weten
+Turn ID=16| A | A : Hebben die hebben die kop zeggen maar als doorsnede ook een plat iets
+	Free: Pattern=iets, Pattern=ook, Pattern=een, Pattern=die hebben, Pattern=zeggen, Pattern=als, Pattern=die kop, Pattern=plat, Pattern=maar
+	Constrained: Pattern=hebben, Pattern=die
+Turn ID=17| B | B : nee nee dat niet
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=18| B | B : het zijn dus echt gewoon een één kom met aan de rechterkant een een bol
+	Free: Pattern=aan de, Pattern=een, Pattern=het, Pattern=met, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=19| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| B | B : en dat zullen dan de neus kunnen zijn
+	Free: Pattern=dat, Pattern=de, Pattern=neus, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=21| B | B : en er steken dus eigenlijk twee ding verticaal omhoog
+	Free: Pattern=twee, Pattern=steken, Pattern=en, Pattern=er
+	Constrained: 
+Turn ID=22| B | B : en aan de linkerkant van de kom hebben je dan een een horizontaal klein uitsteek
+	Free: Pattern=de, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=en
+	Constrained: Pattern=de
+Turn ID=23| A | A : Oh ja ik weten hem
+	Free: Pattern=ik weten, Pattern=ja
+	Constrained: Pattern=ik, Pattern=weten
+Turn ID=24| A | A : dit zijn de mok waar het lijken alsof er twee penseel inzetten worden
+	Free: Pattern=twee, Pattern=er, Pattern=dit zijn de, Pattern=het lijken, Pattern=waar
+	Constrained: Pattern=de, Pattern=zijn, Pattern=het, Pattern=dit zijn
+Turn ID=25| A | A : met een rond neus aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=met een, Pattern=rond, Pattern=neus
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de, Pattern=met
+Turn ID=26| A | A : en links een uitsteeksel
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : dit zijn weer dezelfde waar die twee
+	Free: Pattern=dit zijn, Pattern=twee, Pattern=waar, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=29| B | B : ik noemen het een gereedschapskist de één keer
+	Free: Pattern=de, Pattern=een, Pattern=het, Pattern=ik, Pattern=gereedschapskist
+	Constrained: 
+Turn ID=30| B | B : met de bol aan de zijkant
+	Free: Pattern=met de, Pattern=aan de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=31| B | B : die hebben jij net nog omschrijven
+	Free: Pattern=die hebben
+	Constrained: Pattern=hebben, Pattern=die
+Turn ID=32| B | B : waar dus twee dinget bovenin zitten
+	Free: Pattern=twee, Pattern=waar
+	Constrained: 
+Turn ID=33| B | B : eentje zijn één zijn een ja plat balk
+	Free: Pattern=zijn, Pattern=ja, Pattern=plat, Pattern=een
+	Constrained: 
+Turn ID=34| B | B : en de ander zijn iets
+	Free: Pattern=iets, Pattern=zijn, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=35| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : ja ik zien hem
+	Free: Pattern=ik zien, Pattern=ja
+	Constrained: Pattern=ik
+Turn ID=37| A | A : de wc borstel zijn het
+	Free: Pattern=zijn, Pattern=de, Pattern=borstel, Pattern=het
+	Constrained: 
+Turn ID=38| B | B : WC borstel ja
+	Free: Pattern=ja, Pattern=borstel
+	Constrained: 
+Turn ID=39| A | A : nu zijn het de mok
+	Free: Pattern=zijn, Pattern=de, Pattern=het
+	Constrained: 
+Turn ID=40| A | A : met de twee zegmaar penseel die erin steken
+	Free: Pattern=met de, Pattern=twee, Pattern=die, Pattern=steken
+	Constrained: Pattern=de, Pattern=met
+Turn ID=41| A | A : met de rond neus
+	Free: Pattern=met de rond, Pattern=neus
+	Constrained: Pattern=de, Pattern=met de, Pattern=met, Pattern=rond
+Turn ID=42| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| A | A : aan de voorkant
+	Free: Pattern=aan de voorkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=44| B | B : de gereedschapskist die
+	Free: Pattern=die, Pattern=de, Pattern=gereedschapskist
+	Constrained: 
+Turn ID=45| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : dit zijn de gereedschapskist met de rond knop aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=met de rond, Pattern=dit zijn de, Pattern=gereedschapskist
+	Constrained: Pattern=aan de, Pattern=met, Pattern=rond, Pattern=zijn, Pattern=dit zijn, Pattern=de, Pattern=met de
+Turn ID=47| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=49| A | A : jouw gereedschapskist
+	Free: Pattern=gereedschapskist
+	Constrained: 
+Turn ID=50| B | B : Hm-hm
+	Free: 
+	Constrained: 

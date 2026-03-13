@@ -1,0 +1,231 @@
+A|0| A: _deze_ _zijn_ moeilijk te omschrijven _vinden ik_ 
+A|1| A: _het_ _zijn_ _een_ _vrij_ compact _object_ 
+A|2| A: _ook weer een_ _kop_ _en_ _op_ _de_ bovenkant _liggen een_ balkachtig balkachtig vorm 
+A|3| A: _en links een soort_ 
+B|4| B: Neus 
+A|5| A: _ja ja ja_ 
+A|6| A: _dat zijn_ _het_ 
+B|7| B: Oké 
+B|8| B: [en] zitten _rechts_ [ook] nog iets 
+A|9| A: _ja_ _zo'n_ _soort_ buisje-achtig 
+B|10| B: dan weten [ik] [het] denken 
+B|11| B: _ja object_ 
+A|12| A: [ja] 
+B|13| B: dit [zijn] die 
+B|14| B: [deze] [vinden ik] [het] veel [op] [een] hoofd lijken 
+B|15| B: die hebben [ik] hebben _met de_ _balk_ [op] [het] hoofd 
+B|16| B: [en links een soort] bol _neus_ 
+B|17| B: [en] _rechts_ [ook weer [een] soort] buis 
+B|18| B: [zo'n] [zo'n] [een] vierkant blok bovenop [op] [op] [het] [kop] zeggen maar 
+B|19| B: [een] vierkant of _een balk_ 
+B|20| B: [en links een soort] [een] rond _neus_ 
+B|21| B: [een] afgetopte geen cilinder nee kegel 
+A|22| A: _dat_ zien [ik] niet meteen 
+A|23| A: kunnen je gewoon eens omschrijven 
+B|24| B: bovenop [het] [kop] [liggen een] [een] vierkant _balk_ 
+B|25| B: die [liggen] die [zijn] [vrij] laag maar wel [vrij] lang 
+B|26| B: [en] dan zitten linksonder [een soort] [een soort] kegel 
+B|27| B: Afgetopt 
+B|28| B: die [vinden ik] [een] beetje lijken [op] [een soort] _neus_ 
+B|29| B: die zitten [vrij] laag 
+B|30| B: [en] dan zitten er _rechts_ nog [een soort] driehoekig _balk_ waar [ook weer] wat uit komen 
+B|31| B: maar [het] belangrijk _zijn dat_ er bovenop _een balk_ [liggen] 
+B|32| B: [een] lang dun _balk_ 
+A|33| A: [zijn dat] diegene [met] 
+A|34| A: ah [ja] [dat] [dat] buisje daar [rechts] 
+B|35| B: [ja] 
+B|36| B: [ik] 
+A|37| A: [ja] oké 
+B|38| B: O [ja ja ja] 
+A|39| A: [ja] Sorry 
+A|40| A: inderdaad 
+A|41| A: [object] 
+A|42| A: [de] zeer compact [met _de] neus_ aan [de] linkerkant 
+A|43| A: [en] bovenaan [een balk] 
+B|44| B: nummer 
+B|45| B: [het] man [met] 
+B|46| B: of [ja] nou [een] man 
+B|47| B: [de neus] 
+B|48| B: [links] 
+B|49| B: [en] [met de] [balk] bovenop 
+A|50| A: [ja] 
+A|51| A: [object] 
+A|52| A: [het] compact [kop] [met [de] neus] _link_ 
+B|53| B: [dat zijn] nummer 
+B|54| B: Neus [link] 
+B|55| B: [en] [de] [balk] bovenop 
+A|56| A: [ja object] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : deze zijn moeilijk te omschrijven vinden ik
+	Free: Pattern=vinden ik, Pattern=deze, Pattern=zijn
+	Constrained: Pattern=ik
+Turn ID=1| A | A : het zijn een vrij compact object
+	Free: Pattern=object, Pattern=een, Pattern=het, Pattern=vrij, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : ook weer een kop en op de bovenkant liggen een balkachtig balkachtig vorm
+	Free: Pattern=de, Pattern=op, Pattern=liggen een, Pattern=kop, Pattern=en, Pattern=ook weer een
+	Constrained: Pattern=liggen, Pattern=een, Pattern=ook weer, Pattern=ook
+Turn ID=3| A | A : en links een soort
+	Free: Pattern=en links een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=links, Pattern=een soort, Pattern=en
+Turn ID=4| B | B : Neus
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=6| A | A : dat zijn het
+	Free: Pattern=dat zijn, Pattern=het
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : en zitten rechts ook nog iets
+	Free: Pattern=rechts, Pattern=ook, Pattern=en
+	Constrained: 
+Turn ID=9| A | A : ja zo'n soort buisje-achtig
+	Free: Pattern=soort, Pattern=ja, Pattern=zo'n
+	Constrained: 
+Turn ID=10| B | B : dan weten ik het denken
+	Free: Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=11| B | B : ja object
+	Free: Pattern=ja object
+	Constrained: Pattern=ja, Pattern=object
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dit zijn die
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=14| B | B : deze vinden ik het veel op een hoofd lijken
+	Free: Pattern=op, Pattern=het, Pattern=deze, Pattern=een, Pattern=vinden ik
+	Constrained: Pattern=ik
+Turn ID=15| B | B : die hebben ik hebben met de balk op het hoofd
+	Free: Pattern=met de, Pattern=op, Pattern=het, Pattern=balk, Pattern=ik
+	Constrained: Pattern=met, Pattern=de
+Turn ID=16| B | B : en links een soort bol neus
+	Free: Pattern=en links een soort, Pattern=neus
+	Constrained: Pattern=soort, Pattern=een, Pattern=links, Pattern=een soort, Pattern=en
+Turn ID=17| B | B : en rechts ook weer een soort buis
+	Free: Pattern=ook weer een, Pattern=een soort, Pattern=rechts, Pattern=en
+	Constrained: Pattern=een, Pattern=ook weer, Pattern=soort, Pattern=ook
+Turn ID=18| B | B : zo'n zo'n een vierkant blok bovenop op op het kop zeggen maar
+	Free: Pattern=zo'n, Pattern=op, Pattern=een, Pattern=het, Pattern=kop
+	Constrained: 
+Turn ID=19| B | B : een vierkant of een balk
+	Free: Pattern=een balk, Pattern=een
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=20| B | B : en links een soort een rond neus
+	Free: Pattern=en links een soort, Pattern=neus, Pattern=een
+	Constrained: Pattern=soort, Pattern=een, Pattern=links, Pattern=een soort, Pattern=en
+Turn ID=21| B | B : een afgetopte geen cilinder nee kegel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=22| A | A : dat zien ik niet meteen
+	Free: Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=23| A | A : kunnen je gewoon eens omschrijven
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : bovenop het kop liggen een een vierkant balk
+	Free: Pattern=een, Pattern=kop, Pattern=balk, Pattern=het, Pattern=liggen een
+	Constrained: Pattern=liggen, Pattern=een
+Turn ID=25| B | B : die liggen die zijn vrij laag maar wel vrij lang
+	Free: Pattern=liggen, Pattern=vrij, Pattern=zijn
+	Constrained: 
+Turn ID=26| B | B : en dan zitten linksonder een soort een soort kegel
+	Free: Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=27| B | B : Afgetopt
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : die vinden ik een beetje lijken op een soort neus
+	Free: Pattern=op, Pattern=neus, Pattern=een soort, Pattern=een, Pattern=vinden ik
+	Constrained: Pattern=soort, Pattern=ik, Pattern=een
+Turn ID=29| B | B : die zitten vrij laag
+	Free: Pattern=vrij
+	Constrained: 
+Turn ID=30| B | B : en dan zitten er rechts nog een soort driehoekig balk waar ook weer wat uit komen
+	Free: Pattern=rechts, Pattern=ook weer, Pattern=balk, Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=ook, Pattern=een
+Turn ID=31| B | B : maar het belangrijk zijn dat er bovenop een balk liggen
+	Free: Pattern=een balk, Pattern=zijn dat, Pattern=het, Pattern=liggen
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=balk, Pattern=een
+Turn ID=32| B | B : een lang dun balk
+	Free: Pattern=balk, Pattern=een
+	Constrained: 
+Turn ID=33| A | A : zijn dat diegene met
+	Free: Pattern=zijn dat, Pattern=met
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=34| A | A : ah ja dat dat buisje daar rechts
+	Free: Pattern=ja, Pattern=dat, Pattern=rechts
+	Constrained: 
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=37| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : O ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=39| A | A : ja Sorry
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : inderdaad
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=42| A | A : de zeer compact met de neus aan de linkerkant
+	Free: Pattern=met de, Pattern=de neus, Pattern=de
+	Constrained: Pattern=neus, Pattern=met, Pattern=de
+Turn ID=43| A | A : en bovenaan een balk
+	Free: Pattern=een balk, Pattern=en
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=44| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=45| B | B : het man met
+	Free: Pattern=met, Pattern=het
+	Constrained: 
+Turn ID=46| B | B : of ja nou een man
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=47| B | B : de neus
+	Free: Pattern=de neus
+	Constrained: Pattern=neus, Pattern=de
+Turn ID=48| B | B : links
+	Free: Pattern=links
+	Constrained: 
+Turn ID=49| B | B : en met de balk bovenop
+	Free: Pattern=met de, Pattern=balk, Pattern=en
+	Constrained: Pattern=met, Pattern=de
+Turn ID=50| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=51| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=52| A | A : het compact kop met de neus link
+	Free: Pattern=met de, Pattern=de neus, Pattern=het, Pattern=kop, Pattern=link
+	Constrained: Pattern=neus, Pattern=met, Pattern=de
+Turn ID=53| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=54| B | B : Neus link
+	Free: Pattern=link
+	Constrained: 
+Turn ID=55| B | B : en de balk bovenop
+	Free: Pattern=de, Pattern=balk, Pattern=en
+	Constrained: 
+Turn ID=56| A | A : ja object
+	Free: Pattern=ja object
+	Constrained: Pattern=ja, Pattern=object

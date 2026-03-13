@@ -1,0 +1,183 @@
+A|0| A: _Oké_ _ik hebben_ er _één_ _en _die_ hebben_ _zo'n_ wat _jij_ omschrijven als _zo'n uitpuilen oog_ _maar_ _dan_ _aan de rechterkant_ _en_ _maar_ _één_ 
+B|1| B: [Oké] 
+A|2| A: _en_ _hij_ _hebben_ een soortTwee niet staven _maar_ veel een _soort_ cilinder _die_ _soort_ van Afgebogen _zijn_ _aan de_ bovenkant _hebben hij_ een _aan de_ bovenkant _en_ _aan de_ linkerkant 
+B|3| B: _Euh_ oké 
+B|4| B: _ja_ oké [ik hebben] hem al 
+B|5| B: nummer 
+A|6| A: [Oké] nice 
+B|7| B: ehm _dit zijn euh_ 
+B|8| B: [Oké] [die hebben] [één] uitsteksel _op het hoofd_ [en] _ook_ [één] neus [en die] twee uitsteksel [zijn] zeggen [maar] _hetzelfde_ 
+B|9| B: [en] [dan] _euh_ [hebben hij] [aan de rechterkant] _euh_ [zo'n uitpuilen oog] zeggen [maar] 
+A|10| A: _ja ja_ yes 
+B|11| B: [Oké] 
+A|12| A: _Ehm_ 
+B|13| B: oke 
+A|14| A: [euh] [dit zijn euh] [één] [die] _dus één_ uitstulpsel [op] [zijn] [hoofd] [hebben] [en] [één] link [die] _hetzelfde zijn_ 
+A|15| A: [en] rechts [hebben] _je_ nog [zo'n] uitstulpen [oog] 
+A|16| A: [en] achter _zitten_ nog een _soort_ flubbel iets 
+B|17| B: [Ehm] 
+B|18| B: even denken 
+B|19| B: _Euh_ _ja en dat_ rechter oor [zijn] _dat_ [soort] [uitpuilen oog] 
+A|20| A: [ja] 
+B|21| B: [Oké] 
+B|22| B: [Oké] [dit zijn euh] weer met [euh] twee uitsteksel 
+B|23| B: eentje boven [en die] ander [zijn] weer [de] neus [die] [op] [die] twee [hetzelfde zijn] 
+A|24| A: _Oh [ja_ en dat] [uitpuilen oog] ding 
+B|25| B: [ja ja] 
+A|26| A: [Oké] [euh] 
+B|27| B: [Oké] 
+A|28| A: [dit zijn] [die] waarbij _je_ [zo'n] uitstipsel [op het hoofd] [hebben] [en] link [die] [dan] [hetzelfde zijn] [en dat] _je_ rechts nog [één] uitstulpen [oog] [hebben] 
+B|29| B: mhm 
+A|30| A: [en] daarachter nog [zo'n] 
+B|31| B: [Oké] [ja] [ik] weten welk [je] bedoelen 
+B|32| B: even zoeken 
+B|33| B: [Ehm] 
+B|34| B: _Euh_ 
+B|35| B: [Ehm] 
+B|36| B: [Oh ja] [jij] moeten 
+A|37| A: [Oh] [maar] [ik] inzien [ook] geen veer 
+B|38| B: [Oh] nee nee i-ik moeten [ik] moeten 
+A|39| A: [Euh] 
+B|40| B: [ik] [zijn] even in [de] war 
+B|41| B: [Oké] [jij] [hebben] weer [die] twee [die] twee uitsteeksel waar waar [die] weer [hetzelfde zijn] 
+B|42| B: [dus één] in [zijn] neus [en die] ander [zitten] bovenop [het hoofd] 
+A|43| A: [Oh ja] 
+B|44| B: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben er één en die hebben zo'n wat jij omschrijven als zo'n uitpuilen oog maar dan aan de rechterkant en maar één
+	Free: Pattern=zo'n, Pattern=die hebben, Pattern=één, Pattern=aan de rechterkant, Pattern=en, Pattern=maar, Pattern=Oké, Pattern=jij, Pattern=ik hebben, Pattern=en die, Pattern=zo'n uitpuilen oog, Pattern=dan
+	Constrained: Pattern=zo'n, Pattern=de, Pattern=aan de, Pattern=uitpuilen oog, Pattern=hebben, Pattern=die, Pattern=oog, Pattern=ik, Pattern=en
+Turn ID=1| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| A | A : en hij hebben een soortTwee niet staven maar veel een soort cilinder die soort van Afgebogen zijn aan de bovenkant hebben hij een aan de bovenkant en aan de linkerkant
+	Free: Pattern=hebben hij, Pattern=soort, Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=hij, Pattern=de, Pattern=hebben
+Turn ID=3| B | B : Euh oké
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=4| B | B : ja oké ik hebben hem al
+	Free: Pattern=ik hebben, Pattern=ja
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=5| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : Oké nice
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : ehm dit zijn euh
+	Free: Pattern=dit zijn euh
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=euh
+Turn ID=8| B | B : Oké die hebben één uitsteksel op het hoofd en ook één neus en die twee uitsteksel zijn zeggen maar hetzelfde
+	Free: Pattern=en die, Pattern=op het hoofd, Pattern=ook, Pattern=hetzelfde, Pattern=die hebben, Pattern=één, Pattern=en, Pattern=Oké, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=het hoofd, Pattern=op, Pattern=hebben, Pattern=die, Pattern=en, Pattern=hoofd
+Turn ID=9| B | B : en dan euh hebben hij aan de rechterkant euh zo'n uitpuilen oog zeggen maar
+	Free: Pattern=hebben hij, Pattern=euh, Pattern=aan de rechterkant, Pattern=en, Pattern=maar, Pattern=zo'n uitpuilen oog, Pattern=dan
+	Constrained: Pattern=zo'n, Pattern=de, Pattern=aan de, Pattern=uitpuilen oog, Pattern=hebben, Pattern=hij, Pattern=oog
+Turn ID=10| A | A : ja ja yes
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=13| B | B : oke
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : euh dit zijn euh één die dus één uitstulpsel op zijn hoofd hebben en één link die hetzelfde zijn
+	Free: Pattern=dit zijn euh, Pattern=op, Pattern=hetzelfde zijn, Pattern=hebben, Pattern=dus één, Pattern=die, Pattern=en, Pattern=zijn, Pattern=hoofd, Pattern=euh, Pattern=één
+	Constrained: Pattern=hetzelfde, Pattern=zijn, Pattern=dit zijn, Pattern=euh, Pattern=één
+Turn ID=15| A | A : en rechts hebben je nog zo'n uitstulpen oog
+	Free: Pattern=zo'n, Pattern=hebben, Pattern=oog, Pattern=en, Pattern=je
+	Constrained: 
+Turn ID=16| A | A : en achter zitten nog een soort flubbel iets
+	Free: Pattern=zitten, Pattern=soort, Pattern=en
+	Constrained: 
+Turn ID=17| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=18| B | B : even denken
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Euh ja en dat rechter oor zijn dat soort uitpuilen oog
+	Free: Pattern=dat, Pattern=soort, Pattern=uitpuilen oog, Pattern=Euh, Pattern=ja en dat, Pattern=zijn
+	Constrained: Pattern=dat, Pattern=ja, Pattern=oog, Pattern=en, Pattern=en dat
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=22| B | B : Oké dit zijn euh weer met euh twee uitsteksel
+	Free: Pattern=dit zijn euh, Pattern=Oké, Pattern=euh
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=euh
+Turn ID=23| B | B : eentje boven en die ander zijn weer de neus die op die twee hetzelfde zijn
+	Free: Pattern=en die, Pattern=de, Pattern=op, Pattern=hetzelfde zijn, Pattern=die, Pattern=zijn
+	Constrained: Pattern=zijn, Pattern=die, Pattern=hetzelfde, Pattern=en
+Turn ID=24| A | A : Oh ja en dat uitpuilen oog ding
+	Free: Pattern=ja en dat, Pattern=Oh ja, Pattern=uitpuilen oog
+	Constrained: Pattern=dat, Pattern=ja, Pattern=oog, Pattern=en, Pattern=Oh, Pattern=en dat
+Turn ID=25| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=26| A | A : Oké euh
+	Free: Pattern=Oké, Pattern=euh
+	Constrained: 
+Turn ID=27| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| A | A : dit zijn die waarbij je zo'n uitstipsel op het hoofd hebben en link die dan hetzelfde zijn en dat je rechts nog één uitstulpen oog hebben
+	Free: Pattern=op het hoofd, Pattern=zo'n, Pattern=dan, Pattern=hetzelfde zijn, Pattern=hebben, Pattern=één, Pattern=die, Pattern=oog, Pattern=en, Pattern=je, Pattern=dit zijn, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=het hoofd, Pattern=op, Pattern=hetzelfde, Pattern=en, Pattern=zijn, Pattern=hoofd
+Turn ID=29| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : en daarachter nog zo'n
+	Free: Pattern=zo'n, Pattern=en
+	Constrained: 
+Turn ID=31| B | B : Oké ja ik weten welk je bedoelen
+	Free: Pattern=ja, Pattern=Oké, Pattern=je, Pattern=ik
+	Constrained: 
+Turn ID=32| B | B : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=34| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=35| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=36| B | B : Oh ja jij moeten
+	Free: Pattern=Oh ja, Pattern=jij
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=37| A | A : Oh maar ik inzien ook geen veer
+	Free: Pattern=ook, Pattern=maar, Pattern=Oh, Pattern=ik
+	Constrained: 
+Turn ID=38| B | B : Oh nee nee i-ik moeten ik moeten
+	Free: Pattern=Oh, Pattern=ik
+	Constrained: 
+Turn ID=39| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=40| B | B : ik zijn even in de war
+	Free: Pattern=zijn, Pattern=de, Pattern=ik
+	Constrained: 
+Turn ID=41| B | B : Oké jij hebben weer die twee die twee uitsteeksel waar waar die weer hetzelfde zijn
+	Free: Pattern=hetzelfde zijn, Pattern=hebben, Pattern=die, Pattern=Oké, Pattern=jij
+	Constrained: Pattern=zijn, Pattern=hetzelfde
+Turn ID=42| B | B : dus één in zijn neus en die ander zitten bovenop het hoofd
+	Free: Pattern=en die, Pattern=het hoofd, Pattern=dus één, Pattern=zitten, Pattern=zijn
+	Constrained: Pattern=die, Pattern=één, Pattern=hoofd, Pattern=en
+Turn ID=43| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=44| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 

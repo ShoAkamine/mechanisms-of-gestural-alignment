@@ -1,0 +1,123 @@
+B|0| B: _ja_ _dan_ moeten 
+B|1| B: _ja_ 
+A|2| A: [ja] en nou _hebben ik_ _er_ weer één _Euhm_ 
+B|3| B: mhm 
+A|4| A: _ja _dat_ zijn_ een _euh_ _dat zijn_ een cup _euh_ _met_ een wc-ontstopper in een [ja] bol hand _zeggen maar_ 
+B|5| B: Eens even kijken 
+B|6| B: Euhmmm 
+B|7| B: [Euhm] ohja [ik] snapen wat je bedoelen 
+B|8| B: Hebben hij ook [zeggen maar] zo'n zo'n pluk op _de_ bovenkant 
+A|9| A: [ja] _ja _dat_ zijn_ hem 
+B|10| B: [ja] 
+B|11| B: Oké _dan_ [zijn] het 
+A|12| A: [ja] klik [maar] 
+B|13| B: Oké 
+B|14| B: Euhhh [ja] _dan hebben ik_ [euh] ook Euh 
+B|15| B: [ja] [ik] [hebben] _die_ Cup [met] [euh] _de_ rond _neus_ [met] [zeggen maar] _de_ ontstopper [er] doorheen 
+A|16| A: [ja] oké 
+A|17| A: en [dan] pak [ik] nu [Euhm] [de] volgen _dat zijn_ _die met de_ wc-ontstopper _door de neus_ 
+B|18| B: [ja] even kijken welk [dat] _voor mij_ [zijn] 
+A|19| A: _dat zijn voor mij_ 
+B|20| B: [dat zijn voor mij] 
+B|21| B: Euh _dan hebben ik_ [die met de] ontstoppel [door de neus] 
+A|22| A: [ja] _geweldig_ 
+B|23| B: [geweldig] 
+A|24| A: [dat zijn voor] mijOke 
+A|25| A: [dan hebben ik] [de] wc-ontstopper 
+B|26| B: [ja dat] even kijken waar [die] [voor mij] staan 
+B|27| B: [dat zijn] 
+B|28| B: Euh [dan hebben ik] [die met de] ontstoppel [door de neus] 
+A|29| A: mooi [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ja dan moeten
+	Free: Pattern=dan, Pattern=ja
+	Constrained: 
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : ja en nou hebben ik er weer één Euhm
+	Free: Pattern=hebben ik, Pattern=ja, Pattern=er, Pattern=Euhm
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=3| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : ja dat zijn een euh dat zijn een cup euh met een wc-ontstopper in een ja bol hand zeggen maar
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=zeggen maar, Pattern=euh, Pattern=met, Pattern=ja dat
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=maar, Pattern=dat
+Turn ID=5| B | B : Eens even kijken
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Euhmmm
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Euhm ohja ik snapen wat je bedoelen
+	Free: Pattern=ik, Pattern=Euhm
+	Constrained: 
+Turn ID=8| B | B : Hebben hij ook zeggen maar zo'n zo'n pluk op de bovenkant
+	Free: Pattern=zeggen maar, Pattern=de
+	Constrained: Pattern=maar
+Turn ID=9| A | A : ja ja dat zijn hem
+	Free: Pattern=dat zijn, Pattern=ja dat, Pattern=ja
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : ja klik maar
+	Free: Pattern=ja, Pattern=maar
+	Constrained: 
+Turn ID=13| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : Euhhh ja dan hebben ik euh ook Euh
+	Free: Pattern=dan hebben ik, Pattern=ja, Pattern=euh
+	Constrained: Pattern=hebben ik, Pattern=dan, Pattern=ik, Pattern=hebben
+Turn ID=15| B | B : ja ik hebben die Cup met euh de rond neus met zeggen maar de ontstopper er doorheen
+	Free: Pattern=zeggen maar, Pattern=hebben, Pattern=euh, Pattern=neus, Pattern=met, Pattern=die, Pattern=er, Pattern=ik, Pattern=de, Pattern=ja
+	Constrained: Pattern=maar
+Turn ID=16| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : en dan pak ik nu Euhm de volgen dat zijn die met de wc-ontstopper door de neus
+	Free: Pattern=dat zijn, Pattern=door de neus, Pattern=de, Pattern=Euhm, Pattern=ik, Pattern=die met de, Pattern=dan
+	Constrained: Pattern=dat, Pattern=de, Pattern=neus, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=18| B | B : ja even kijken welk dat voor mij zijn
+	Free: Pattern=voor mij, Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=19| A | A : dat zijn voor mij
+	Free: Pattern=dat zijn voor mij
+	Constrained: Pattern=voor mij, Pattern=dat zijn voor, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=20| B | B : dat zijn voor mij
+	Free: Pattern=dat zijn voor mij
+	Constrained: Pattern=voor mij, Pattern=dat zijn voor, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=21| B | B : Euh dan hebben ik die met de ontstoppel door de neus
+	Free: Pattern=die met de, Pattern=dan hebben ik, Pattern=door de neus
+	Constrained: Pattern=de, Pattern=hebben ik, Pattern=dan, Pattern=hebben, Pattern=neus, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=22| A | A : ja geweldig
+	Free: Pattern=ja, Pattern=geweldig
+	Constrained: 
+Turn ID=23| B | B : geweldig
+	Free: Pattern=geweldig
+	Constrained: 
+Turn ID=24| A | A : dat zijn voor mijOke
+	Free: Pattern=dat zijn voor
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn
+Turn ID=25| A | A : dan hebben ik de wc-ontstopper
+	Free: Pattern=dan hebben ik, Pattern=de
+	Constrained: Pattern=hebben ik, Pattern=dan, Pattern=ik, Pattern=hebben
+Turn ID=26| B | B : ja dat even kijken waar die voor mij staan
+	Free: Pattern=voor mij, Pattern=ja dat, Pattern=die
+	Constrained: Pattern=ja, Pattern=dat
+Turn ID=27| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=28| B | B : Euh dan hebben ik die met de ontstoppel door de neus
+	Free: Pattern=die met de, Pattern=dan hebben ik, Pattern=door de neus
+	Constrained: Pattern=de, Pattern=hebben ik, Pattern=dan, Pattern=hebben, Pattern=neus, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=29| A | A : mooi dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

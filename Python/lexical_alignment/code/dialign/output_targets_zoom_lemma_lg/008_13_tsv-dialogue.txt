@@ -1,0 +1,107 @@
+B|0| B: _deze_ _hebben_ _die _staan_ _op_ een_ plateau 
+B|1| B: _eh_ _ja_ _dat_ _dat_ _ja_ 
+B|2| B: _en_ hij _hebben_ heel gek ding aan _de_ zijkant 
+B|3| B: _een_ rond aan _de_ voorkant 
+A|4| A: [ja] 
+B|5| B: maar vooral _op_ _het_ plateau _daar_ herken je _het_ wel aan 
+A|6| A: [ja] dan _zijn_ [het] 
+A|7| A: _Eh_ [deze] _staat_ bovenop [de] plaat 
+A|8| A: [en] [hebben] [daar] [hebben] [een] cirkel vooraan zitten 
+A|9| A: [en] dan [die] raar uitsteeksel 
+B|10| B: [ja] _dat zijn_ 
+B|11| B: [Eh] met plateau aan [de] onderkant 
+B|12| B: waar [die] _op_ [staat] 
+A|13| A: Oké [dat zijn] 
+B|14| B: helemaal onder 
+A|15| A: [eh] dit [zijn] degeen [die] gewoon [op een] plaat [staan] 
+B|16| B: O nee 
+B|17| B: Heb ik [het] nou wel goed doen 
+B|18| B: [ja] volgens mij wel 
+B|19| B: ehm [deze] [zijn] _die _staan_ [op_ een] plateau 
+B|20| B: met [die] gek ding aan [de] beide kant 
+A|21| A: kijken dus _die staan er echt_ gewoon bovenop 
+B|22| B: [ja] [die] [ja] [die staan er echt] [op] 
+A|23| A: Oké [dat zijn] 
+A|24| A: [Eh] [deze] [staan op] [de] [op] [de] plaat 
+B|25| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben die staan op een plateau
+	Free: Pattern=hebben, Pattern=op een, Pattern=die staan, Pattern=staan op, Pattern=deze
+	Constrained: Pattern=staan, Pattern=op, Pattern=die, Pattern=een
+Turn ID=1| B | B : eh ja dat dat ja
+	Free: Pattern=ja, Pattern=eh, Pattern=dat
+	Constrained: 
+Turn ID=2| B | B : en hij hebben heel gek ding aan de zijkant
+	Free: Pattern=de, Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=3| B | B : een rond aan de voorkant
+	Free: Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : maar vooral op het plateau daar herken je het wel aan
+	Free: Pattern=het, Pattern=daar, Pattern=op
+	Constrained: 
+Turn ID=6| A | A : ja dan zijn het
+	Free: Pattern=het, Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : Eh deze staat bovenop de plaat
+	Free: Pattern=Eh, Pattern=deze, Pattern=de, Pattern=staat
+	Constrained: 
+Turn ID=8| A | A : en hebben daar hebben een cirkel vooraan zitten
+	Free: Pattern=daar, Pattern=en, Pattern=een, Pattern=hebben
+	Constrained: 
+Turn ID=9| A | A : en dan die raar uitsteeksel
+	Free: Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : Eh met plateau aan de onderkant
+	Free: Pattern=Eh, Pattern=de
+	Constrained: 
+Turn ID=12| B | B : waar die op staat
+	Free: Pattern=op, Pattern=die, Pattern=staat
+	Constrained: 
+Turn ID=13| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : helemaal onder
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : eh dit zijn degeen die gewoon op een plaat staan
+	Free: Pattern=staan, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=op een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=16| B | B : O nee
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : Heb ik het nou wel goed doen
+	Free: Pattern=het
+	Constrained: 
+Turn ID=18| B | B : ja volgens mij wel
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ehm deze zijn die staan op een plateau
+	Free: Pattern=zijn, Pattern=op een, Pattern=die staan, Pattern=staan op, Pattern=deze
+	Constrained: Pattern=staan, Pattern=op, Pattern=die, Pattern=een
+Turn ID=20| B | B : met die gek ding aan de beide kant
+	Free: Pattern=de, Pattern=die
+	Constrained: 
+Turn ID=21| A | A : kijken dus die staan er echt gewoon bovenop
+	Free: Pattern=die staan er echt
+	Constrained: Pattern=staan, Pattern=die staan, Pattern=die
+Turn ID=22| B | B : ja die ja die staan er echt op
+	Free: Pattern=die staan er echt, Pattern=ja, Pattern=op, Pattern=die
+	Constrained: Pattern=staan, Pattern=die staan, Pattern=die
+Turn ID=23| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=24| A | A : Eh deze staan op de op de plaat
+	Free: Pattern=de, Pattern=op, Pattern=Eh, Pattern=staan op, Pattern=deze
+	Constrained: Pattern=staan, Pattern=op
+Turn ID=25| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

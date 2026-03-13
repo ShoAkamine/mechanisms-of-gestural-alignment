@@ -1,0 +1,119 @@
+B|0| B: _dit_ kop _hebben_ aan _de_ voorkant niks zitten 
+B|1| B: een soort _twee_ gelijk _arm_ 
+B|2| B: Lijken _het_ wel 
+B|3| B: _de_ een _zijn_ _de linker zijn_ een stuk _kort dan de rechter_ 
+B|4| B: _en_ helemaal achter _zijn_ er nog een soort vierkant iets een vierkant iets te zien 
+B|5| B: _met_ weer een soort stok eraan 
+B|6| B: maar _het_ belangrijk _zijn_ _dat_ _de_ voorkant eigenlijk gewoon _dat je_ daar niks zien 
+B|7| B: _en_ _dat_ er aan _de_ zijkant zeggen maar zo _twee_ _arm_ _zijn_ 
+B|8| B: _met_ afgeron 
+A|9| A: _ja_ [en] _en _de_ linker zijn kort dan de rechter_ 
+B|10| B: [de linker zijn kort dan de rechter] [ja] 
+A|11| A: [ja] oké 
+A|12| A: [dat] [zijn] _object_ 
+A|13| A: [dit] [hebben] we net [hebben] 
+A|14| A: [twee] geleden 
+A|15| A: [met] die [twee] _armp_ [dat je] uitbeelden 
+A|16| A: [en] 
+B|17| B: [met] [dat] een _kort en de lang_ 
+A|18| A: [kort] [ja] 
+A|19| A: _links [kort_ dan] _rechts_ 
+B|20| B: Oké [object] 
+B|21| B: Korte [armp] [links] [en] _het_ _lang_ armpje [rechts] 
+A|22| A: [dat] [zijn] [object] 
+A|23| A: [met] [de] [arm] _links kort en_ _rechts lang_ 
+B|24| B: nummer 
+B|25| B: [armp] [links kort en] _het_ [armp] [rechts lang] 
+A|26| A: [object] 
+A|27| A: [het] [object] [met] [de] [kort en de lang] [arm] 
+B|28| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit kop hebben aan de voorkant niks zitten
+	Free: Pattern=de, Pattern=dit, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : een soort twee gelijk arm
+	Free: Pattern=twee, Pattern=arm
+	Constrained: 
+Turn ID=2| B | B : Lijken het wel
+	Free: Pattern=het
+	Constrained: 
+Turn ID=3| B | B : de een zijn de linker zijn een stuk kort dan de rechter
+	Free: Pattern=kort dan de rechter, Pattern=de linker zijn, Pattern=de, Pattern=zijn
+	Constrained: Pattern=de, Pattern=zijn, Pattern=kort dan, Pattern=kort
+Turn ID=4| B | B : en helemaal achter zijn er nog een soort vierkant iets een vierkant iets te zien
+	Free: Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=5| B | B : met weer een soort stok eraan
+	Free: Pattern=met
+	Constrained: 
+Turn ID=6| B | B : maar het belangrijk zijn dat de voorkant eigenlijk gewoon dat je daar niks zien
+	Free: Pattern=dat, Pattern=dat je, Pattern=de, Pattern=het, Pattern=zijn
+	Constrained: Pattern=dat
+Turn ID=7| B | B : en dat er aan de zijkant zeggen maar zo twee arm zijn
+	Free: Pattern=dat, Pattern=twee, Pattern=de, Pattern=zijn, Pattern=arm, Pattern=en
+	Constrained: 
+Turn ID=8| B | B : met afgeron
+	Free: Pattern=met
+	Constrained: 
+Turn ID=9| A | A : ja en en de linker zijn kort dan de rechter
+	Free: Pattern=de linker zijn kort dan de rechter, Pattern=en de, Pattern=ja, Pattern=en
+	Constrained: Pattern=de, Pattern=de linker zijn, Pattern=kort dan de rechter, Pattern=kort, Pattern=en, Pattern=kort dan, Pattern=zijn
+Turn ID=10| B | B : de linker zijn kort dan de rechter ja
+	Free: Pattern=de linker zijn kort dan de rechter, Pattern=ja
+	Constrained: Pattern=de, Pattern=de linker zijn, Pattern=kort dan de rechter, Pattern=kort, Pattern=kort dan, Pattern=zijn
+Turn ID=11| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : dat zijn object
+	Free: Pattern=dat, Pattern=object, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : dit hebben we net hebben
+	Free: Pattern=dit, Pattern=hebben
+	Constrained: 
+Turn ID=14| A | A : twee geleden
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=15| A | A : met die twee armp dat je uitbeelden
+	Free: Pattern=dat je, Pattern=twee, Pattern=met, Pattern=armp
+	Constrained: Pattern=dat
+Turn ID=16| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=17| B | B : met dat een kort en de lang
+	Free: Pattern=kort en de lang, Pattern=dat, Pattern=met
+	Constrained: Pattern=de, Pattern=en de, Pattern=kort, Pattern=lang, Pattern=en
+Turn ID=18| A | A : kort ja
+	Free: Pattern=ja, Pattern=kort
+	Constrained: 
+Turn ID=19| A | A : links kort dan rechts
+	Free: Pattern=links kort, Pattern=kort dan, Pattern=rechts
+	Constrained: Pattern=links, Pattern=kort
+Turn ID=20| B | B : Oké object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=21| B | B : Korte armp links en het lang armpje rechts
+	Free: Pattern=rechts, Pattern=het, Pattern=lang, Pattern=en, Pattern=links, Pattern=armp
+	Constrained: 
+Turn ID=22| A | A : dat zijn object
+	Free: Pattern=dat, Pattern=object, Pattern=zijn
+	Constrained: 
+Turn ID=23| A | A : met de arm links kort en rechts lang
+	Free: Pattern=met, Pattern=arm, Pattern=links kort en, Pattern=de, Pattern=rechts lang
+	Constrained: Pattern=links kort, Pattern=rechts, Pattern=links, Pattern=kort, Pattern=lang, Pattern=en
+Turn ID=24| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : armp links kort en het armp rechts lang
+	Free: Pattern=links kort en, Pattern=rechts lang, Pattern=het, Pattern=armp
+	Constrained: Pattern=links kort, Pattern=rechts, Pattern=links, Pattern=kort, Pattern=lang, Pattern=en
+Turn ID=26| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=27| A | A : het object met de kort en de lang arm
+	Free: Pattern=de, Pattern=object, Pattern=kort en de lang, Pattern=het, Pattern=met, Pattern=arm
+	Constrained: Pattern=de, Pattern=en de, Pattern=kort, Pattern=lang, Pattern=en
+Turn ID=28| B | B : nummer
+	Free: 
+	Constrained: 

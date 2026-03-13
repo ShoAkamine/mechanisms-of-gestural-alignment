@@ -1,0 +1,75 @@
+B|0| B: ehm deze hebben een tafel zonder poot halverwege 
+B|1| B: _en_ een soort glijbaanslurfje _aan de_ voorkant 
+B|2| B: _met_ een uitstekend zwaaien armpje 
+A|3| A: _ja_ 
+A|4| A: _ja_ dat zijn 
+A|5| A: _eh_ dit zijn _die_ [met] _die_ plaat middendoor [met] _die_ mooi _glijbaan_ _die_ _twee_ symmetrisch _stok_ bovenin [en] zo'n armp [aan de] zijkant 
+B|6| B: [ja] 
+B|7| B: [eh] tafeltje halverwege _de glijbaan_ [twee] [stok] _bovenop_ 
+A|8| A: [ja] dat zijn 
+A|9| A: dit zijn _die_ [met] [de glijbaan] 
+A|10| A: dus [met] [de] plaat erheen 
+A|11| A: [twee] staaf [bovenop] 
+A|12| A: Armpje link 
+B|13| B: [eh] [glijbaan] arm [die] omhoog staan 
+B|14| B: [en] tafel halverwege 
+A|15| A: [ja] dat zijn 
+A|16| A: [eh] dit zijn [die] [met] [de glijbaan] [met] [de] plaat er doorheen 
+A|17| A: [twee] staaf [bovenop] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben een tafel zonder poot halverwege
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : en een soort glijbaanslurfje aan de voorkant
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=2| B | B : met een uitstekend zwaaien armpje
+	Free: Pattern=met
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : eh dit zijn die met die plaat middendoor met die mooi glijbaan die twee symmetrisch stok bovenin en zo'n armp aan de zijkant
+	Free: Pattern=twee, Pattern=aan de, Pattern=met, Pattern=die, Pattern=eh, Pattern=glijbaan, Pattern=stok, Pattern=en
+	Constrained: Pattern=de
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : eh tafeltje halverwege de glijbaan twee stok bovenop
+	Free: Pattern=bovenop, Pattern=twee, Pattern=eh, Pattern=stok, Pattern=de glijbaan
+	Constrained: Pattern=de, Pattern=glijbaan
+Turn ID=8| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : dit zijn die met de glijbaan
+	Free: Pattern=de glijbaan, Pattern=die, Pattern=met
+	Constrained: Pattern=de, Pattern=glijbaan
+Turn ID=10| A | A : dus met de plaat erheen
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=11| A | A : twee staaf bovenop
+	Free: Pattern=twee, Pattern=bovenop
+	Constrained: 
+Turn ID=12| A | A : Armpje link
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : eh glijbaan arm die omhoog staan
+	Free: Pattern=eh, Pattern=glijbaan, Pattern=die
+	Constrained: 
+Turn ID=14| B | B : en tafel halverwege
+	Free: Pattern=en
+	Constrained: 
+Turn ID=15| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : eh dit zijn die met de glijbaan met de plaat er doorheen
+	Free: Pattern=de, Pattern=met, Pattern=die, Pattern=eh, Pattern=de glijbaan
+	Constrained: Pattern=de, Pattern=glijbaan
+Turn ID=17| A | A : twee staaf bovenop
+	Free: Pattern=twee, Pattern=bovenop
+	Constrained: 

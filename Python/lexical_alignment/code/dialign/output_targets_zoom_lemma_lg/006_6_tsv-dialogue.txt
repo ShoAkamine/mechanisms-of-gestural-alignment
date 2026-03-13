@@ -1,0 +1,87 @@
+A|0| A: _Oké_ _ik hebben_ nu _het_ rond of rood vierkan 
+A|1| A: deze _die_ _hebben_ ook _een soort_ van stengel uit _zijn_ _ja_ hoofd steken 
+A|2| A: _en_ _een neus_ waar _een_ stok doorheen gaan _met een_ cirkel aan _het_ einde van _die_ stok 
+B|3| B: Oh [ja] 
+B|4| B: [ja] 
+B|5| B: als [een soort] [ik] vinden [het] lijken zeggen maar op [een _neus] [met_ een] neuspiercing zeggen maar 
+A|6| A: [ja] precies 
+B|7| B: [Oké] 
+B|8| B: [ja] 
+B|9| B: [Oké] _dan_ [zijn] _dat_ 
+B|10| B: [ik hebben] _die met _de_ neus met de piercing_ erdoorheen 
+A|11| A: ah even kijken waar [die] staan hoor 
+A|12| A: _dat zijn_ 
+A|13| A: [dan] [hebben] [ik] [die [met de] piercing] 
+B|14| B: Oh _ja dat zijn_ [dan] 
+B|15| B: [ik hebben] [die met de] neuspiercing 
+A|16| A: Eh [dat zijn] 
+A|17| A: [ik hebben] [de neus met de piercing] 
+B|18| B: [en] [dat zijn] 
+B|19| B: [ik hebben] [die met de] neuspiercing 
+A|20| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben nu het rond of rood vierkan
+	Free: Pattern=ik hebben, Pattern=het, Pattern=Oké
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=1| A | A : deze die hebben ook een soort van stengel uit zijn ja hoofd steken
+	Free: Pattern=ja, Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=2| A | A : en een neus waar een stok doorheen gaan met een cirkel aan het einde van die stok
+	Free: Pattern=een neus, Pattern=een, Pattern=het, Pattern=die, Pattern=met een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=3| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : als een soort ik vinden het lijken zeggen maar op een neus met een neuspiercing zeggen maar
+	Free: Pattern=een neus, Pattern=het, Pattern=met een, Pattern=neus met, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=6| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oké dan zijn dat
+	Free: Pattern=dat, Pattern=dan, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=10| B | B : ik hebben die met de neus met de piercing erdoorheen
+	Free: Pattern=de neus met de piercing, Pattern=die met de, Pattern=ik hebben
+	Constrained: Pattern=met de piercing, Pattern=hebben, Pattern=die, Pattern=neus met, Pattern=ik
+Turn ID=11| A | A : ah even kijken waar die staan hoor
+	Free: Pattern=die
+	Constrained: 
+Turn ID=12| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| A | A : dan hebben ik die met de piercing
+	Free: Pattern=met de piercing, Pattern=hebben, Pattern=ik, Pattern=die met de, Pattern=dan
+	Constrained: Pattern=die
+Turn ID=14| B | B : Oh ja dat zijn dan
+	Free: Pattern=ja dat zijn, Pattern=dan
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=15| B | B : ik hebben die met de neuspiercing
+	Free: Pattern=die met de, Pattern=ik hebben
+	Constrained: Pattern=die, Pattern=ik, Pattern=hebben
+Turn ID=16| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : ik hebben de neus met de piercing
+	Free: Pattern=de neus met de piercing, Pattern=ik hebben
+	Constrained: Pattern=neus met, Pattern=met de piercing, Pattern=ik, Pattern=hebben
+Turn ID=18| B | B : en dat zijn
+	Free: Pattern=dat zijn, Pattern=en
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : ik hebben die met de neuspiercing
+	Free: Pattern=die met de, Pattern=ik hebben
+	Constrained: Pattern=die, Pattern=ik, Pattern=hebben
+Turn ID=20| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja

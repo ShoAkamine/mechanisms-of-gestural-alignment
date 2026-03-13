@@ -1,0 +1,147 @@
+B|0| B: ehm _deze hebben_ helemaal niks _aan de_ onderkant 
+B|1| B: _en_ beetje rechts _voor_ _hebben hij_ _een_ _bal_ 
+B|2| B: _en_ boven _hebben hij twee_ _uitsteeksel_ 
+B|3| B: _en_ één _zijn_ echt rechthoekig 
+B|4| B: die steken _ook_ recht uit 
+B|5| B: _en_ één _zijn soort_ van pion 
+A|6| A: _Eh_ 
+B|7| B: dus je moeten eigenlijk even kijken naar _iets_ _wat_ _een_ _bal_ _aan de_ voorkant _hebben_ 
+B|8| B: _en dan_ rechts _aan de_ voorkant _zitten_ _een_ beetje _aan de_ rechterkant _zitten_ echt gewoon _een ballet_ op _het_ voorwerp 
+B|9| B: _en dan_ _aan de_ bovenkant steken _er_ dus _twee ding_ uit 
+A|10| A: [en] [zitten] [er] _link_ _ook nog_ [iets] 
+B|11| B: _aan de_ 
+B|12| B: _ja_ [link] [zitten] [ook nog] _wat_ 
+B|13| B: _ja_ _een_ heel _klein_ [iets] 
+A|14| A: Oké [dan] [zijn] [het] 
+A|15| A: _Eh_ [deze hebben] [een ballet] [voor] 
+A|16| A: [dan] [hebben hij [twee] ding] bovenop 
+A|17| A: eentje [zijn soort] _balk_ [en] [de] _ander_ [ja] [wat] raarder vorm 
+B|18| B: [ja] 
+A|19| A: [aan de] linkerkant [hebben hij] [nog] eens [een] [klein] [uitsteeksel] 
+B|20| B: _dat zijn_ 
+B|21| B: ehm _met_ [er] [zitten] [een] balf [aan de] voorkant 
+B|22| B: [en] [twee] stok die [er] uit steken 
+B|23| B: maar [zijn] allebei [ander] 
+B|24| B: [en] [link] [zitten] [ook] [een] [soort] [klein] [balk] 
+A|25| A: ah 
+A|26| A: [dat zijn] 
+A|27| A: _eh_ dit [zijn] degeen [met] [de] [twee] verschillend vorm bovenop [en] [de] cirkel [voor] 
+A|28| A: [en dan] links [nog] [de] [klein] vorm 
+B|29| B: [Eh] 
+B|30| B: [deze hebben] _de bal_ vooraan 
+B|31| B: [en] [twee] [uitsteeksel] boven rechts [een] [soort] rechthoek vierkant [en] [link] zo'n gek [ding] 
+A|32| A: [ja] [dat zijn] 
+A|33| A: _eh_ dit [zijn] degeen [met] [de bal] [voor] [en] [de] [twee] vormpjes bovenop 
+A|34| A: [de] [twee] verschillend vormp 
+B|35| B: [eh] [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben helemaal niks aan de onderkant
+	Free: Pattern=deze hebben, Pattern=aan de
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=1| B | B : en beetje rechts voor hebben hij een bal
+	Free: Pattern=hebben hij, Pattern=bal, Pattern=een, Pattern=voor, Pattern=en
+	Constrained: Pattern=hebben
+Turn ID=2| B | B : en boven hebben hij twee uitsteeksel
+	Free: Pattern=hebben hij twee, Pattern=en, Pattern=uitsteeksel
+	Constrained: Pattern=twee, Pattern=hebben hij, Pattern=hebben
+Turn ID=3| B | B : en één zijn echt rechthoekig
+	Free: Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : die steken ook recht uit
+	Free: Pattern=ook
+	Constrained: 
+Turn ID=5| B | B : en één zijn soort van pion
+	Free: Pattern=zijn soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=zijn
+Turn ID=6| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=7| B | B : dus je moeten eigenlijk even kijken naar iets wat een bal aan de voorkant hebben
+	Free: Pattern=bal, Pattern=iets, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=wat
+	Constrained: Pattern=de
+Turn ID=8| B | B : en dan rechts aan de voorkant zitten een beetje aan de rechterkant zitten echt gewoon een ballet op het voorwerp
+	Free: Pattern=en dan, Pattern=aan de, Pattern=een, Pattern=het, Pattern=een ballet, Pattern=zitten
+	Constrained: Pattern=een, Pattern=de, Pattern=en, Pattern=dan
+Turn ID=9| B | B : en dan aan de bovenkant steken er dus twee ding uit
+	Free: Pattern=aan de, Pattern=twee ding, Pattern=en dan, Pattern=er
+	Constrained: Pattern=twee, Pattern=de, Pattern=dan, Pattern=ding, Pattern=en
+Turn ID=10| A | A : en zitten er link ook nog iets
+	Free: Pattern=ook nog, Pattern=iets, Pattern=zitten, Pattern=link, Pattern=er, Pattern=en
+	Constrained: Pattern=ook, Pattern=nog
+Turn ID=11| B | B : aan de
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=12| B | B : ja link zitten ook nog wat
+	Free: Pattern=ook nog, Pattern=ja, Pattern=zitten, Pattern=link, Pattern=wat
+	Constrained: Pattern=ook, Pattern=nog
+Turn ID=13| B | B : ja een heel klein iets
+	Free: Pattern=iets, Pattern=klein, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=14| A | A : Oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=15| A | A : Eh deze hebben een ballet voor
+	Free: Pattern=deze hebben, Pattern=een ballet, Pattern=voor, Pattern=Eh
+	Constrained: Pattern=hebben, Pattern=een
+Turn ID=16| A | A : dan hebben hij twee ding bovenop
+	Free: Pattern=hebben hij twee, Pattern=twee ding, Pattern=dan
+	Constrained: Pattern=twee, Pattern=hebben hij, Pattern=ding, Pattern=hebben
+Turn ID=17| A | A : eentje zijn soort balk en de ander ja wat raarder vorm
+	Free: Pattern=zijn soort, Pattern=balk, Pattern=wat, Pattern=ander, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=soort, Pattern=zijn
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : aan de linkerkant hebben hij nog eens een klein uitsteeksel
+	Free: Pattern=hebben hij, Pattern=nog, Pattern=aan de, Pattern=uitsteeksel, Pattern=een, Pattern=klein
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=20| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=21| B | B : ehm met er zitten een balf aan de voorkant
+	Free: Pattern=aan de, Pattern=een, Pattern=met, Pattern=zitten, Pattern=er
+	Constrained: Pattern=de
+Turn ID=22| B | B : en twee stok die er uit steken
+	Free: Pattern=en, Pattern=twee, Pattern=er
+	Constrained: 
+Turn ID=23| B | B : maar zijn allebei ander
+	Free: Pattern=ander, Pattern=zijn
+	Constrained: 
+Turn ID=24| B | B : en link zitten ook een soort klein balk
+	Free: Pattern=soort, Pattern=ook, Pattern=een, Pattern=balk, Pattern=zitten, Pattern=link, Pattern=klein, Pattern=en
+	Constrained: 
+Turn ID=25| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=27| A | A : eh dit zijn degeen met de twee verschillend vorm bovenop en de cirkel voor
+	Free: Pattern=twee, Pattern=de, Pattern=voor, Pattern=met, Pattern=eh, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=28| A | A : en dan links nog de klein vorm
+	Free: Pattern=en dan, Pattern=de, Pattern=klein, Pattern=nog
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=29| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=30| B | B : deze hebben de bal vooraan
+	Free: Pattern=deze hebben, Pattern=de bal
+	Constrained: Pattern=hebben, Pattern=de, Pattern=bal
+Turn ID=31| B | B : en twee uitsteeksel boven rechts een soort rechthoek vierkant en link zo'n gek ding
+	Free: Pattern=soort, Pattern=twee, Pattern=uitsteeksel, Pattern=ding, Pattern=een, Pattern=link, Pattern=en
+	Constrained: 
+Turn ID=32| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=33| A | A : eh dit zijn degeen met de bal voor en de twee vormpjes bovenop
+	Free: Pattern=twee, Pattern=de, Pattern=voor, Pattern=de bal, Pattern=met, Pattern=eh, Pattern=en, Pattern=zijn
+	Constrained: Pattern=de, Pattern=bal
+Turn ID=34| A | A : de twee verschillend vormp
+	Free: Pattern=twee, Pattern=de
+	Constrained: 
+Turn ID=35| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 

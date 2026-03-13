@@ -1,0 +1,223 @@
+B|0| B: ehm _dit zijn_ _een soort_ _ik_ vinden _het_ _een soort olifan_ 
+A|1| A: mhm 
+B|2| B: alleen _hij_ kijken _dan_ naar links _en_ _hij_ _hebben_ _een_ _bal_ _op zijn hoofd_ 
+B|3| B: _en_ er staan _een_ _een soort_ plank voor hem 
+A|4| A: Ohor 
+B|5| B: _een_ beetje rechtsvoor 
+B|6| B: dus _dat_ zitten los _van_ hem lijken wel 
+B|7| B: _maar_ misschien zitten _het_ er wel _aan_ vast 
+B|8| B: want alles zitten _aan_ elkaar vast hier _maar_ 
+A|9| A: oehlen [ik] _gaan_ iets veel [een soort olifan] 
+A|10| A: Hebben [hij] oor _of_ 
+B|11| B: _Oh_ nee _het_ [gaan] om _de_ neus _het_ _zijn_ [een soort] _het_ _zijn_ [een soort] staaf _die_ _die_ eigenlijk helemaal doorheen [gaan] 
+A|12| A: [Oh] _ja_ 
+A|13| A: mhm 
+B|14| B: _maar die_ _dan_ afbuigen naar ons toe 
+A|15| A: [Oh] _ja_ 
+A|16| A: _ja en_ _die hebben_ [die] twee gekke alsof [hij] [van] je weg zwemmen arm 
+B|17| B: ehm nee [ik] denken niet _dat_ _dat_ hem _zijn_ 
+A|18| A: Vond [ik] 
+A|19| A: [Oh] _met_ [die] [een] langwerpig 
+A|20| A: bijna slurfachtig [dat] [die] _als_ [een soort] liftschacht 
+B|21| B: ehm [ja] [als] [hij] [een] _bal_ _op_ _de_ bovenkant [hebben] 
+A|22| A: één [bal] [ja] 
+B|23| B: [ja] _dan zijn_ _het_ [die] misschien 
+A|24| A: [en] [zijn] uitsteeksel [zijn] _aan de_ linkerkant zeggen [maar] 
+A|25| A: zien [dat] [die] rond [zijn] 
+A|26| A: [en] buigen 
+B|27| B: eh [ja] 
+B|28| B: [ja en] [aan de] rechterkant [hebben] [hij] _ook_ nog [die] [dat] stuk [dat] eruit komen 
+A|29| A: [ja] 
+A|30| A: [dan zijn] 
+A|31| A: precies 
+B|32| B: Oké [ja] 
+A|33| A: [maar die] [zijn] afsnijden 
+A|34| A: _dat zijn_ 
+B|35| B: [ja] 
+A|36| A: L 
+B|37| B: Nice worden steeds goed in 
+A|38| A: [ja] precies 
+A|39| A: _ik hebben_ [die] [een] [die] jij [een] _olifant_ noemen 
+B|40| B: Ehm 
+A|41| A: [de] _met de_ slurf [en] [het] bolle bovenop 
+B|42| B: ah _die hebben we_ net niet 
+B|43| B: [of] oké 
+A|44| A: Jawel [ja] [die hebben we] [ook] al [hebben] 
+A|45| A: [maar] w [dit zijn] [de] twee keer [dat] [we] [die hebben] 
+B|46| B: oké nee [dan] [dan zijn] [dat] 
+B|47| B: [ik hebben] [het] [olifan] [met de] [bal] _op zijn hoofd_ 
+A|48| A: Eh _dat zijn_ 
+A|49| A: [ik hebben] _olifant met_ bolle [op zijn hoofd] 
+B|50| B: [ja] [dat zijn] 
+B|51| B: [ik hebben] [de] [olifant met] [bal] 
+A|52| A: [dat zijn] 
+A|53| A: [ik hebben] [olifant met] bolle 
+B|54| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm dit zijn een soort ik vinden het een soort olifan
+	Free: Pattern=dit zijn, Pattern=het, Pattern=een soort olifan, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een soort, Pattern=een, Pattern=zijn, Pattern=olifan
+Turn ID=1| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : alleen hij kijken dan naar links en hij hebben een bal op zijn hoofd
+	Free: Pattern=bal, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=en, Pattern=op zijn hoofd
+	Constrained: Pattern=op, Pattern=zijn
+Turn ID=3| B | B : en er staan een een soort plank voor hem
+	Free: Pattern=een soort, Pattern=en, Pattern=een
+	Constrained: Pattern=een
+Turn ID=4| A | A : Ohor
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : een beetje rechtsvoor
+	Free: Pattern=een
+	Constrained: 
+Turn ID=6| B | B : dus dat zitten los van hem lijken wel
+	Free: Pattern=dat, Pattern=van
+	Constrained: 
+Turn ID=7| B | B : maar misschien zitten het er wel aan vast
+	Free: Pattern=het, Pattern=aan, Pattern=maar
+	Constrained: 
+Turn ID=8| B | B : want alles zitten aan elkaar vast hier maar
+	Free: Pattern=aan, Pattern=maar
+	Constrained: 
+Turn ID=9| A | A : oehlen ik gaan iets veel een soort olifan
+	Free: Pattern=een soort olifan, Pattern=gaan, Pattern=ik
+	Constrained: Pattern=een soort, Pattern=een, Pattern=olifan
+Turn ID=10| A | A : Hebben hij oor of
+	Free: Pattern=hij, Pattern=of
+	Constrained: 
+Turn ID=11| B | B : Oh nee het gaan om de neus het zijn een soort het zijn een soort staaf die die eigenlijk helemaal doorheen gaan
+	Free: Pattern=de, Pattern=het, Pattern=die, Pattern=een soort, Pattern=Oh, Pattern=zijn, Pattern=gaan
+	Constrained: Pattern=een
+Turn ID=12| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : maar die dan afbuigen naar ons toe
+	Free: Pattern=maar die, Pattern=dan
+	Constrained: Pattern=die, Pattern=maar
+Turn ID=15| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja en die hebben die twee gekke alsof hij van je weg zwemmen arm
+	Free: Pattern=die hebben, Pattern=hij, Pattern=die, Pattern=van, Pattern=ja en
+	Constrained: Pattern=en, Pattern=die, Pattern=hebben, Pattern=ja
+Turn ID=17| B | B : ehm nee ik denken niet dat dat hem zijn
+	Free: Pattern=dat, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=18| A | A : Vond ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=19| A | A : Oh met die een langwerpig
+	Free: Pattern=die, Pattern=Oh, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=20| A | A : bijna slurfachtig dat die als een soort liftschacht
+	Free: Pattern=een soort, Pattern=als, Pattern=die, Pattern=dat
+	Constrained: Pattern=een
+Turn ID=21| B | B : ehm ja als hij een bal op de bovenkant hebben
+	Free: Pattern=bal, Pattern=op, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=als, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : één bal ja
+	Free: Pattern=bal, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja dan zijn het die misschien
+	Free: Pattern=dan zijn, Pattern=die, Pattern=het, Pattern=ja
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=24| A | A : en zijn uitsteeksel zijn aan de linkerkant zeggen maar
+	Free: Pattern=aan de, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=25| A | A : zien dat die rond zijn
+	Free: Pattern=die, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=26| A | A : en buigen
+	Free: Pattern=en
+	Constrained: 
+Turn ID=27| B | B : eh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ja en aan de rechterkant hebben hij ook nog die dat stuk dat eruit komen
+	Free: Pattern=dat, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=ja en, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=en, Pattern=de, Pattern=ja, Pattern=aan
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : dan zijn
+	Free: Pattern=dan zijn
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=31| A | A : precies
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : maar die zijn afsnijden
+	Free: Pattern=maar die, Pattern=zijn
+	Constrained: Pattern=die, Pattern=maar
+Turn ID=34| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : L
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : Nice worden steeds goed in
+	Free: 
+	Constrained: 
+Turn ID=38| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : ik hebben die een die jij een olifant noemen
+	Free: Pattern=ik hebben, Pattern=die, Pattern=olifant, Pattern=een
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=40| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : de met de slurf en het bolle bovenop
+	Free: Pattern=met de, Pattern=en, Pattern=de, Pattern=het
+	Constrained: Pattern=de, Pattern=met
+Turn ID=42| B | B : ah die hebben we net niet
+	Free: Pattern=die hebben we
+	Constrained: Pattern=die hebben, Pattern=die, Pattern=we, Pattern=hebben
+Turn ID=43| B | B : of oké
+	Free: Pattern=of
+	Constrained: 
+Turn ID=44| A | A : Jawel ja die hebben we ook al hebben
+	Free: Pattern=die hebben we, Pattern=hebben, Pattern=ook, Pattern=ja
+	Constrained: Pattern=die hebben, Pattern=die, Pattern=we, Pattern=hebben
+Turn ID=45| A | A : maar w dit zijn de twee keer dat we die hebben
+	Free: Pattern=dat, Pattern=de, Pattern=die hebben, Pattern=we, Pattern=maar, Pattern=dit zijn
+	Constrained: Pattern=die, Pattern=hebben, Pattern=zijn
+Turn ID=46| B | B : oké nee dan dan zijn dat
+	Free: Pattern=dan zijn, Pattern=dat, Pattern=dan
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=47| B | B : ik hebben het olifan met de bal op zijn hoofd
+	Free: Pattern=ik hebben, Pattern=bal, Pattern=met de, Pattern=op zijn hoofd, Pattern=het, Pattern=olifan
+	Constrained: Pattern=de, Pattern=op, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zijn
+Turn ID=48| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=49| A | A : ik hebben olifant met bolle op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=olifant met, Pattern=ik hebben
+	Constrained: Pattern=olifant, Pattern=op, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zijn
+Turn ID=50| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=51| B | B : ik hebben de olifant met bal
+	Free: Pattern=olifant met, Pattern=ik hebben, Pattern=de, Pattern=bal
+	Constrained: Pattern=hebben, Pattern=ik, Pattern=olifant, Pattern=met
+Turn ID=52| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=53| A | A : ik hebben olifant met bolle
+	Free: Pattern=olifant met, Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik, Pattern=olifant, Pattern=met
+Turn ID=54| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

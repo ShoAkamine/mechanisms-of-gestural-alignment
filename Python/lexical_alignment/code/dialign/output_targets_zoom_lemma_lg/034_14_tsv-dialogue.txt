@@ -1,0 +1,79 @@
+A|0| A: _euh deze hebben_ _een_ rond daar bovenop liggen _en_ _een groot_ rechthoekig _blok_ _aan de_ rechtervoorkant _naar_ beneden staan 
+A|1| A: _dus_ _die_ _steken_ _ook een_ stuk eronder uit zeggen _maar_ 
+A|2| A: _en dan_ zowel _links_ als _rechts_ _zijn_ _er_ _nog_ _een soort_ uitstulping 
+B|3| B: _dat zijn_ hè 
+B|4| B: [euh deze hebben] voor [een groot] [blok] [een soort] vierkant ja _blok wat_ [ook een] beetje [dus] [aan de] onderkant eruit komen 
+B|5| B: [en dan] [naar] boven [een] half bolle [en dan] [links] [en] [rechts] [nog] ja streep [die] eruit [steken] [die] [hebben] we [ook] best wel net [hebben] 
+B|6| B: _met_ [een soort] [euh] nou niet vierkant [maar] [een] beetje [een] _balk_ 
+A|7| A: ik [zijn] hem even kwijt 
+B|8| B: _wat_ echt [aan de] voorkant [er] gewoon op zitten 
+A|9| A: Oh _die er_ helemaal _onderuit steken_ 
+B|10| B: ja [die] 
+A|11| A: Oké 
+A|12| A: Euh _deze zijn_ [dat] _lang_ [blok wat] [er] _onderuit steken_ 
+B|13| B: _dat zijn_ 
+B|14| B: [deze _zijn] die_ [lang] _balk_ [aan de] voorkant [die] [aan de] onderkant [er] [een] beetje [onderuit steken] 
+A|15| A: [dat zijn] 
+A|16| A: [euh] _dit zijn die met_ het rond bovenop [en] [die] heel [groot] rechthoekig [balk] [die] eronderuit [steken] 
+B|17| B: [dat zijn] 
+B|18| B: [dit zijn die met] [die] [balk] [aan de] onderkant [die er] zo [onderuit] komen 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : euh deze hebben een rond daar bovenop liggen en een groot rechthoekig blok aan de rechtervoorkant naar beneden staan
+	Free: Pattern=een groot, Pattern=euh deze hebben, Pattern=aan de, Pattern=een, Pattern=en, Pattern=blok, Pattern=naar
+	Constrained: Pattern=groot, Pattern=een, Pattern=euh, Pattern=hebben
+Turn ID=1| A | A : dus die steken ook een stuk eronder uit zeggen maar
+	Free: Pattern=ook een, Pattern=dus, Pattern=die, Pattern=maar, Pattern=steken
+	Constrained: Pattern=een, Pattern=ook
+Turn ID=2| A | A : en dan zowel links als rechts zijn er nog een soort uitstulping
+	Free: Pattern=nog, Pattern=rechts, Pattern=en dan, Pattern=links, Pattern=er, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=en, Pattern=een
+Turn ID=3| B | B : dat zijn hè
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=4| B | B : euh deze hebben voor een groot blok een soort vierkant ja blok wat ook een beetje dus aan de onderkant eruit komen
+	Free: Pattern=een groot, Pattern=ook een, Pattern=dus, Pattern=euh deze hebben, Pattern=aan de, Pattern=een soort, Pattern=blok, Pattern=blok wat
+	Constrained: Pattern=ook, Pattern=een, Pattern=euh, Pattern=wat, Pattern=blok, Pattern=groot, Pattern=hebben
+Turn ID=5| B | B : en dan naar boven een half bolle en dan links en rechts nog ja streep die eruit steken die hebben we ook best wel net hebben
+	Free: Pattern=nog, Pattern=rechts, Pattern=en dan, Pattern=ook, Pattern=een, Pattern=links, Pattern=hebben, Pattern=die, Pattern=en, Pattern=steken, Pattern=naar
+	Constrained: Pattern=en
+Turn ID=6| B | B : met een soort euh nou niet vierkant maar een beetje een balk
+	Free: Pattern=een, Pattern=euh, Pattern=balk, Pattern=met, Pattern=een soort, Pattern=maar
+	Constrained: Pattern=een
+Turn ID=7| A | A : ik zijn hem even kwijt
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=8| B | B : wat echt aan de voorkant er gewoon op zitten
+	Free: Pattern=aan de, Pattern=wat, Pattern=er
+	Constrained: 
+Turn ID=9| A | A : Oh die er helemaal onderuit steken
+	Free: Pattern=onderuit steken, Pattern=die er
+	Constrained: Pattern=die, Pattern=steken, Pattern=onderuit, Pattern=er
+Turn ID=10| B | B : ja die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : Euh deze zijn dat lang blok wat er onderuit steken
+	Free: Pattern=dat, Pattern=deze zijn, Pattern=er, Pattern=lang, Pattern=blok wat, Pattern=onderuit steken
+	Constrained: Pattern=onderuit, Pattern=wat, Pattern=blok, Pattern=zijn, Pattern=steken
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : deze zijn die lang balk aan de voorkant die aan de onderkant er een beetje onderuit steken
+	Free: Pattern=deze zijn, Pattern=aan de, Pattern=een, Pattern=zijn die, Pattern=balk, Pattern=die, Pattern=er, Pattern=lang, Pattern=onderuit steken
+	Constrained: Pattern=zijn, Pattern=steken, Pattern=onderuit, Pattern=die
+Turn ID=15| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=16| A | A : euh dit zijn die met het rond bovenop en die heel groot rechthoekig balk die eronderuit steken
+	Free: Pattern=groot, Pattern=euh, Pattern=dit zijn die met, Pattern=balk, Pattern=die, Pattern=en, Pattern=steken
+	Constrained: Pattern=zijn die, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=17| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=18| B | B : dit zijn die met die balk aan de onderkant die er zo onderuit komen
+	Free: Pattern=die er, Pattern=aan de, Pattern=onderuit, Pattern=dit zijn die met, Pattern=balk, Pattern=die
+	Constrained: Pattern=zijn die, Pattern=met, Pattern=die, Pattern=er, Pattern=zijn

@@ -1,0 +1,239 @@
+A|0| A: _ja_ 
+A|1| A: _Oké_ _ik_ zien _nu_ 
+A|2| A: _een_ mok _op een_ soort van verhoging 
+A|3| A: links _hebben hij_ _een_ staaf 
+B|4| B: [ja] 
+A|5| A: _en_ _daarachter_ _hebben hij_ _een_ cilinder 
+B|6| B: _ja ja_ 
+A|7| A: nee niet _een_ cilinder _een_ _cirkel_ 
+A|8| A: _en dan_ rechts steekt er _dan_ _een_ soort van _knuppel_ eruit 
+B|9| B: [ja] 
+B|10| B: [Oké] [ja] 
+A|11| A: _de_ _rechtsboven_ 
+B|12| B: _dat zijn_ 
+A|13| A: [Oké] 
+B|14| B: Ehm _ik hebben nu_ _dat_ kop [op een] plateau 
+B|15| B: [en] _met_ die [cirkel] aan _de achterkant_ 
+A|16| A: _Oh ja_ 
+B|17| B: [op] zo'n 
+B|18| B: [ja] 
+B|19| B: Weet je welk [ik] bedoelen 
+A|20| A: [ja] 
+A|21| A: _en dan_ [de] [cirkel] [op] [de achterkant] 
+A|22| A: [ja] 
+B|23| B: [en dan] één _arm_ [en] één [knuppel] 
+A|24| A: [ja] 
+A|25| A: [ik hebben nu] links 
+A|26| A: [ja] we [hebben] wachten 
+A|27| A: Hebben we hier [een] naam voor 
+A|28| A: [ik] weten niet 
+A|29| A: het [zijn] [een] [een] beker [op een] verhoging 
+A|30| A: Links [een] staaf 
+B|31| B: [ja] 
+B|32| B: [Oh ja] 
+B|33| B: [en] die [cirkel] 
+A|34| A: [ja] het lijken [een] beetje [op een] 
+A|35| A: [ik] vinden [dat] _ook_ [een] beetje [op] _Pinocchio_ lijken 
+A|36| A: omdat _hij_ 
+B|37| B: maar [hebben hij] daar [rechtsboven] zo'n [knuppel] [ook] 
+A|38| A: [ja ja] 
+B|39| B: [Oh ja] 
+B|40| B: [ja] _oké_ 
+A|41| A: [dat] soort van hoofd 
+B|42| B: [ja] 
+B|43| B: [ja] die die 
+B|44| B: [ik hebben] hem 
+B|45| B: _dat zijn_ 
+B|46| B: [ik hebben] ehjouw [Pinocchio] 
+B|47| B: [op] [dat] plateau weer net zoals net 
+B|48| B: _met_ [daarachter] zo'n [cirkel] 
+A|49| A: [Oh] [oké] 
+A|50| A: [ja] 
+B|51| B: [Oké] 
+A|52| A: [ik hebben] [de] verhoging [met] [de] knuffel rechts [arm] links 
+A|53| A: dus soort van [ja] [ook] soort van _koffie_ of zo 
+B|54| B: [Oh ja] _dat zijn_ 
+B|55| B: [Oh ja] [ik hebben] 
+B|56| B: [koffie] [op] plateau 
+A|57| A: [Oh] [oké] 
+A|58| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : Oké ik zien nu
+	Free: Pattern=Oké, Pattern=ik, Pattern=nu
+	Constrained: 
+Turn ID=2| A | A : een mok op een soort van verhoging
+	Free: Pattern=op een, Pattern=een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=3| A | A : links hebben hij een staaf
+	Free: Pattern=hebben hij, Pattern=een
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en daarachter hebben hij een cilinder
+	Free: Pattern=hebben hij, Pattern=en, Pattern=daarachter, Pattern=een
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=6| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=7| A | A : nee niet een cilinder een cirkel
+	Free: Pattern=cirkel, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : en dan rechts steekt er dan een soort van knuppel eruit
+	Free: Pattern=en dan, Pattern=dan, Pattern=knuppel, Pattern=een
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : de rechtsboven
+	Free: Pattern=de, Pattern=rechtsboven
+	Constrained: 
+Turn ID=12| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=14| B | B : Ehm ik hebben nu dat kop op een plateau
+	Free: Pattern=ik hebben nu, Pattern=op een, Pattern=dat
+	Constrained: Pattern=ik hebben, Pattern=op, Pattern=een, Pattern=nu, Pattern=hebben, Pattern=ik
+Turn ID=15| B | B : en met die cirkel aan de achterkant
+	Free: Pattern=de achterkant, Pattern=en, Pattern=cirkel, Pattern=met
+	Constrained: Pattern=de
+Turn ID=16| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=17| B | B : op zo'n
+	Free: Pattern=op
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : Weet je welk ik bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : en dan de cirkel op de achterkant
+	Free: Pattern=cirkel, Pattern=de, Pattern=en dan, Pattern=op, Pattern=de achterkant
+	Constrained: Pattern=en, Pattern=dan, Pattern=de
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : en dan één arm en één knuppel
+	Free: Pattern=en dan, Pattern=en, Pattern=arm, Pattern=knuppel
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ik hebben nu links
+	Free: Pattern=ik hebben nu
+	Constrained: Pattern=nu, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=26| A | A : ja we hebben wachten
+	Free: Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=27| A | A : Hebben we hier een naam voor
+	Free: Pattern=een
+	Constrained: 
+Turn ID=28| A | A : ik weten niet
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=29| A | A : het zijn een een beker op een verhoging
+	Free: Pattern=op een, Pattern=zijn, Pattern=een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=30| A | A : Links een staaf
+	Free: Pattern=een
+	Constrained: 
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=33| B | B : en die cirkel
+	Free: Pattern=en, Pattern=cirkel
+	Constrained: 
+Turn ID=34| A | A : ja het lijken een beetje op een
+	Free: Pattern=op een, Pattern=ja, Pattern=een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=35| A | A : ik vinden dat ook een beetje op Pinocchio lijken
+	Free: Pattern=dat, Pattern=Pinocchio, Pattern=een, Pattern=ik, Pattern=op, Pattern=ook
+	Constrained: 
+Turn ID=36| A | A : omdat hij
+	Free: Pattern=hij
+	Constrained: 
+Turn ID=37| B | B : maar hebben hij daar rechtsboven zo'n knuppel ook
+	Free: Pattern=hebben hij, Pattern=knuppel, Pattern=ook, Pattern=rechtsboven
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=38| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=39| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=40| B | B : ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=41| A | A : dat soort van hoofd
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=42| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| B | B : ja die die
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : ik hebben hem
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=45| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=46| B | B : ik hebben ehjouw Pinocchio
+	Free: Pattern=ik hebben, Pattern=Pinocchio
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=47| B | B : op dat plateau weer net zoals net
+	Free: Pattern=dat, Pattern=op
+	Constrained: 
+Turn ID=48| B | B : met daarachter zo'n cirkel
+	Free: Pattern=daarachter, Pattern=cirkel, Pattern=met
+	Constrained: 
+Turn ID=49| A | A : Oh oké
+	Free: Pattern=Oh, Pattern=oké
+	Constrained: 
+Turn ID=50| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=51| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=52| A | A : ik hebben de verhoging met de knuffel rechts arm links
+	Free: Pattern=ik hebben, Pattern=arm, Pattern=de, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=53| A | A : dus soort van ja ook soort van koffie of zo
+	Free: Pattern=koffie, Pattern=ook, Pattern=ja
+	Constrained: 
+Turn ID=54| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=Oh, Pattern=ja
+Turn ID=55| B | B : Oh ja ik hebben
+	Free: Pattern=ik hebben, Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja, Pattern=ik, Pattern=hebben
+Turn ID=56| B | B : koffie op plateau
+	Free: Pattern=koffie, Pattern=op
+	Constrained: 
+Turn ID=57| A | A : Oh oké
+	Free: Pattern=Oh, Pattern=oké
+	Constrained: 
+Turn ID=58| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

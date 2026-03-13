@@ -1,0 +1,19 @@
+1. prepare dialogue files for dialing
+	1. open VS code
+	2. File --> Open Folder --> open the "lexical_alignment" folder
+	3. open the "prepare_annotate_dialogues_adapted.py" file under code/notebooks/utils/
+	4. run the script
+
+2. run dialing.jar
+	1. open a terminal in VS code
+	2. change the current directory to the dialing folder by running the following command (make sure the lexical_alignment folder is already open):
+		cd code/dialign
+	3. run the following command on the terminal in VS code:
+		java -jar dialign.jar -i targets_zoom_lemma_lg -o output_targets_zoom_lemma_lg
+
+3. extract shared expressions
+	1. open the "lexical_alignment_report_final_zoom.ipynb" file under code/notebooks/utils/
+	2. run the notebook up to the section "2.4 Linking shared constructions..."
+
+4. detect lexical alignment
+	1. open the "create_lexical_alignment_dataframe.ipynb" file under code/notebooks/

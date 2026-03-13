@@ -1,0 +1,215 @@
+B|0| B: _Oké_ 
+B|1| B: deze 
+B|2| B: Zeggen _maar_ _op_ _het_ _één_ gezicht _denken_ _ik_ _dat_ _het_ _eruit_ zien als iemand _die_ _zijn_ schouder ophalen _en_ _zijn_ arm _zo_ omhoog doen 
+B|3| B: _alsof die_ _in_ _de_ war _zijn_ 
+B|4| B: _want_ _één_ van _de_ armp _zijn_ _een_ buis 
+B|5| B: _dat_ _een_ beetje _zo_ schuin omhoog gaan 
+B|6| B: _en de_ _ander_ _zijn_ _zijn_ kubus _die steeds groot worden_ 
+B|7| B: _en_ _dan_ _hebben_ _je_ _een_ bowlingpin _op_ _het_ _hoofd_ 
+B|8| B: _en_ _een_ bowlingpin als neus 
+A|9| A: ah _ja_ 
+A|10| A: _ja_ _ja_ [ik] [denken] [dat] [ik] weten welk [je] bedoelen 
+A|11| A: [want] hij [hebben] [in] totaal vier uitstulpsels toch 
+A|12| A: _ja_ 
+B|13| B: [ja] 
+A|14| A: [ja] dus [één] [op] [zijn] [hoofd] 
+A|15| A: [zo] [één] aan [de] zijkant 
+A|16| A: nog [één] aan [de] zijkant 
+A|17| A: [en] [dat] ze [dan] [zo] [groot worden] 
+A|18| A: [een] vierkant [en] zo'n [ander] slurf 
+A|19| A: [ja] [ik] vinden [het] heel moeilijk om [die] [een] naam te geven 
+B|20| B: [ja] 
+A|21| A: [maar] 
+B|22| B: [ja] 
+A|23| A: [ja] 
+A|24| A: [ik] [zijn] uiteindelijk komen _met_ [een] plant [die] uit [een] _pot_ groeien _of zo_ 
+A|25| A: [zo] [zo] [zo] iets 
+A|26| A: [maar] goed 
+A|27| A: _dan zijn_ [het] _dan zijn_ [het] 
+A|28| A: [Oké] [ja] 
+A|29| A: _dit zijn_ [die] vinden [ik] ingewikkeld 
+A|30| A: [maar] [dat] [zijn] [die] _met_ [die] vier uitstulpsel 
+A|31| A: [die] [ik] zo'n plant [die] uit [een] _pot_ groeien noemen 
+A|32| A: [en] waarvan jij ook zeggen [dat] [dat] [zijn] [alsof die] [een] uitstulpsel [hebben] 
+A|33| A: _met_ zeggen [maar] zo'n vierkant [en] [die] [worden] [dan] [steeds groot] 
+B|34| B: [ja] 
+A|35| A: [ja] 
+B|36| B: ehm [dan zijn] [dat] nummer 
+B|37| B: _dit zijn de pot_ 
+B|38| B: _met de_ kubus _die steeds groot worden_ 
+B|39| B: _en de_ bowlingpionon 
+B|40| B: boven [en] als neus [of zo] 
+A|41| A: [ja] [ja] [ja] 
+A|42| A: Letter 
+A|43| A: [dit zijn] hier [die] [pot] [met] [die] twee bowlingbal uitsteeksel 
+A|44| A: [en] [die] vierkant [die steeds groot worden] 
+B|45| B: [ja] nummer 
+B|46| B: eh _dit zijn de_ bowlingpin 
+B|47| B: kubus [die steeds groot worden] 
+A|48| A: even kijken 
+A|49| A: [ja] letter 
+A|50| A: [dit zijn de pot] [met de] twee bowlingstaf [eruit] 
+A|51| A: [en de] vierkant [die steeds groot worden] 
+B|52| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : deze
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : Zeggen maar op het één gezicht denken ik dat het eruit zien als iemand die zijn schouder ophalen en zijn arm zo omhoog doen
+	Free: Pattern=dat, Pattern=denken, Pattern=op, Pattern=het, Pattern=eruit, Pattern=één, Pattern=zo, Pattern=die, Pattern=ik, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=3| B | B : alsof die in de war zijn
+	Free: Pattern=alsof die, Pattern=in, Pattern=de, Pattern=zijn
+	Constrained: Pattern=die
+Turn ID=4| B | B : want één van de armp zijn een buis
+	Free: Pattern=want, Pattern=de, Pattern=een, Pattern=één, Pattern=zijn
+	Constrained: 
+Turn ID=5| B | B : dat een beetje zo schuin omhoog gaan
+	Free: Pattern=zo, Pattern=dat, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : en de ander zijn zijn kubus die steeds groot worden
+	Free: Pattern=die steeds groot worden, Pattern=en de, Pattern=ander, Pattern=zijn
+	Constrained: Pattern=de, Pattern=worden, Pattern=en, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=7| B | B : en dan hebben je een bowlingpin op het hoofd
+	Free: Pattern=op, Pattern=dan, Pattern=een, Pattern=het, Pattern=hebben, Pattern=en, Pattern=je, Pattern=hoofd
+	Constrained: 
+Turn ID=8| B | B : en een bowlingpin als neus
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=9| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja ja ik denken dat ik weten welk je bedoelen
+	Free: Pattern=dat, Pattern=denken, Pattern=ja, Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=11| A | A : want hij hebben in totaal vier uitstulpsels toch
+	Free: Pattern=hebben, Pattern=in, Pattern=want
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja dus één op zijn hoofd
+	Free: Pattern=ja, Pattern=op, Pattern=één, Pattern=zijn, Pattern=hoofd
+	Constrained: 
+Turn ID=15| A | A : zo één aan de zijkant
+	Free: Pattern=de, Pattern=zo, Pattern=één
+	Constrained: 
+Turn ID=16| A | A : nog één aan de zijkant
+	Free: Pattern=de, Pattern=één
+	Constrained: 
+Turn ID=17| A | A : en dat ze dan zo groot worden
+	Free: Pattern=dat, Pattern=dan, Pattern=zo, Pattern=en, Pattern=groot worden
+	Constrained: Pattern=worden
+Turn ID=18| A | A : een vierkant en zo'n ander slurf
+	Free: Pattern=ander, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=19| A | A : ja ik vinden het heel moeilijk om die een naam te geven
+	Free: Pattern=ja, Pattern=een, Pattern=het, Pattern=die, Pattern=ik
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : maar
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ik zijn uiteindelijk komen met een plant die uit een pot groeien of zo
+	Free: Pattern=of zo, Pattern=een, Pattern=met, Pattern=die, Pattern=ik, Pattern=zijn, Pattern=pot
+	Constrained: Pattern=zo
+Turn ID=25| A | A : zo zo zo iets
+	Free: Pattern=zo
+	Constrained: 
+Turn ID=26| A | A : maar goed
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=27| A | A : dan zijn het dan zijn het
+	Free: Pattern=dan zijn, Pattern=het
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=28| A | A : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=29| A | A : dit zijn die vinden ik ingewikkeld
+	Free: Pattern=dit zijn, Pattern=die, Pattern=ik
+	Constrained: Pattern=zijn
+Turn ID=30| A | A : maar dat zijn die met die vier uitstulpsel
+	Free: Pattern=dat, Pattern=met, Pattern=die, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=31| A | A : die ik zo'n plant die uit een pot groeien noemen
+	Free: Pattern=pot, Pattern=die, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=32| A | A : en waarvan jij ook zeggen dat dat zijn alsof die een uitstulpsel hebben
+	Free: Pattern=dat, Pattern=een, Pattern=hebben, Pattern=alsof die, Pattern=en, Pattern=zijn
+	Constrained: Pattern=die
+Turn ID=33| A | A : met zeggen maar zo'n vierkant en die worden dan steeds groot
+	Free: Pattern=worden, Pattern=dan, Pattern=met, Pattern=en, Pattern=maar, Pattern=steeds groot, Pattern=die
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : ehm dan zijn dat nummer
+	Free: Pattern=dan zijn, Pattern=dat
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=37| B | B : dit zijn de pot
+	Free: Pattern=dit zijn de pot
+	Constrained: Pattern=de, Pattern=zijn, Pattern=dit zijn de, Pattern=pot, Pattern=dit zijn
+Turn ID=38| B | B : met de kubus die steeds groot worden
+	Free: Pattern=die steeds groot worden, Pattern=met de
+	Constrained: Pattern=de, Pattern=worden, Pattern=met, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=39| B | B : en de bowlingpionon
+	Free: Pattern=en de
+	Constrained: Pattern=de, Pattern=en
+Turn ID=40| B | B : boven en als neus of zo
+	Free: Pattern=of zo, Pattern=en
+	Constrained: Pattern=zo
+Turn ID=41| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : dit zijn hier die pot met die twee bowlingbal uitsteeksel
+	Free: Pattern=dit zijn, Pattern=pot, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=44| A | A : en die vierkant die steeds groot worden
+	Free: Pattern=die steeds groot worden, Pattern=die, Pattern=en
+	Constrained: Pattern=groot worden, Pattern=worden, Pattern=steeds groot, Pattern=die
+Turn ID=45| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : eh dit zijn de bowlingpin
+	Free: Pattern=dit zijn de
+	Constrained: Pattern=dit zijn, Pattern=de, Pattern=zijn
+Turn ID=47| B | B : kubus die steeds groot worden
+	Free: Pattern=die steeds groot worden
+	Constrained: Pattern=groot worden, Pattern=worden, Pattern=steeds groot, Pattern=die
+Turn ID=48| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=49| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : dit zijn de pot met de twee bowlingstaf eruit
+	Free: Pattern=dit zijn de pot, Pattern=met de, Pattern=eruit
+	Constrained: Pattern=de, Pattern=met, Pattern=zijn, Pattern=dit zijn de, Pattern=pot, Pattern=dit zijn
+Turn ID=51| A | A : en de vierkant die steeds groot worden
+	Free: Pattern=die steeds groot worden, Pattern=en de
+	Constrained: Pattern=de, Pattern=worden, Pattern=en, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=52| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

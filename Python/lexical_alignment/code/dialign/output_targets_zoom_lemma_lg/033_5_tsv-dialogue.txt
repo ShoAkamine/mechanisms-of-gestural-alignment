@@ -1,0 +1,83 @@
+B|0| B: euh dit _zijn_ _een_ _die_ best _symmetrisch_ _zijn_ maar _dan_ 
+B|1| B: _naar_ _de_ zijkant _draaien_ zeggen maar euh _met_ _dan_ _aan_ allebei _de_ zijkant vrij onderaan _die_ basisvorm en _ja_ hoe beschrijf _je_ _die_ vorm _soort_ rond trapezium zeggen maar _aan de bovenkant_ zitten _een_ lang rechthoek _als een soort_ mohawk en _dan_ _aan de_ voorkant zitten ook _een soort_ uitsteeksel 
+A|2| A: _Euh_ [ja] kunnen [als] [je] hem [naar] voren [draaien] kunnen [je] _het_ [dan] zien [als een soort] _gezicht_ 
+B|3| B: [ja] zullen _ik_ wel zeggen 
+A|4| A: [ja] 
+A|5| A: [ja] oké [dan] [zijn] _dat_ 
+A|6| A: _Euh_ _nu_ _hebben_ [ik] _het_ [symmetrisch] _gezicht_ 
+A|7| A: [met] [aan de bovenkant] gewoon [die] _Mohawk_ 
+B|8| B: [Mohawk] 
+B|9| B: [Euh] even kijken waar [die] staan 
+B|10| B: ah [ja] nummer 
+B|11| B: _ik hebben nu_ [die] [met] _de Mohawk_ [dat] [gezicht] 
+A|12| A: [Euh] 
+A|13| A: [dat] [zijn] 
+A|14| A: [ik hebben nu] _het gezicht met_ [die] [Mohawk] 
+B|15| B: [Euh] nummer 
+B|16| B: [Euh] [ik hebben] [het gezicht met] _de Mohawk_ 
+A|17| A: [dat] [zijn] 
+A|18| A: [ik hebben] [de Mohawk] 
+B|19| B: [Euh] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh dit zijn een die best symmetrisch zijn maar dan
+	Free: Pattern=dan, Pattern=een, Pattern=symmetrisch, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : naar de zijkant draaien zeggen maar euh met dan aan allebei de zijkant vrij onderaan die basisvorm en ja hoe beschrijf je die vorm soort rond trapezium zeggen maar aan de bovenkant zitten een lang rechthoek als een soort mohawk en dan aan de voorkant zitten ook een soort uitsteeksel
+	Free: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=met, Pattern=die, Pattern=een soort, Pattern=aan de bovenkant, Pattern=je, Pattern=naar, Pattern=als een soort, Pattern=de, Pattern=aan, Pattern=ja, Pattern=draaien, Pattern=dan
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=als, Pattern=een soort, Pattern=de, Pattern=aan
+Turn ID=2| A | A : Euh ja kunnen als je hem naar voren draaien kunnen je het dan zien als een soort gezicht
+	Free: Pattern=gezicht, Pattern=Euh, Pattern=het, Pattern=als, Pattern=je, Pattern=naar, Pattern=als een soort, Pattern=ja, Pattern=draaien, Pattern=dan
+	Constrained: Pattern=een soort, Pattern=als, Pattern=soort, Pattern=een
+Turn ID=3| B | B : ja zullen ik wel zeggen
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja oké dan zijn dat
+	Free: Pattern=ja, Pattern=dat, Pattern=zijn, Pattern=dan
+	Constrained: 
+Turn ID=6| A | A : Euh nu hebben ik het symmetrisch gezicht
+	Free: Pattern=gezicht, Pattern=het, Pattern=hebben, Pattern=symmetrisch, Pattern=ik, Pattern=Euh, Pattern=nu
+	Constrained: 
+Turn ID=7| A | A : met aan de bovenkant gewoon die Mohawk
+	Free: Pattern=aan de bovenkant, Pattern=die, Pattern=Mohawk, Pattern=met
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=8| B | B : Mohawk
+	Free: Pattern=Mohawk
+	Constrained: 
+Turn ID=9| B | B : Euh even kijken waar die staan
+	Free: Pattern=Euh, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : ah ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ik hebben nu die met de Mohawk dat gezicht
+	Free: Pattern=dat, Pattern=gezicht, Pattern=met, Pattern=die, Pattern=ik hebben nu, Pattern=de Mohawk
+	Constrained: Pattern=ik hebben, Pattern=Mohawk, Pattern=de, Pattern=nu, Pattern=hebben, Pattern=ik
+Turn ID=12| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=13| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=14| A | A : ik hebben nu het gezicht met die Mohawk
+	Free: Pattern=het gezicht met, Pattern=ik hebben nu, Pattern=die, Pattern=Mohawk
+	Constrained: Pattern=ik hebben, Pattern=gezicht, Pattern=nu, Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik
+Turn ID=15| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=16| B | B : Euh ik hebben het gezicht met de Mohawk
+	Free: Pattern=het gezicht met, Pattern=de Mohawk, Pattern=ik hebben, Pattern=Euh
+	Constrained: Pattern=Mohawk, Pattern=de, Pattern=gezicht, Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik
+Turn ID=17| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=18| A | A : ik hebben de Mohawk
+	Free: Pattern=de Mohawk, Pattern=ik hebben
+	Constrained: Pattern=de, Pattern=ik, Pattern=Mohawk, Pattern=hebben
+Turn ID=19| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 

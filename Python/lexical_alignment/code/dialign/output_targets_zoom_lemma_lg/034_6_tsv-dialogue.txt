@@ -1,0 +1,67 @@
+A|0| A: _euh_ _deze hebben_ _een_ _klein_ uitstulping er bovenuit _die _een_ beetje_ naar links wijzen 
+A|1| A: _en_ _in _de_ voorkant_ _zijn_ er _een_ bol _met_ er doorheen _een_ vierkant stok _met_ daar _dan_ weer _een_ _plat rond_ tegenaan 
+B|2| B: Oké _dat zijn_ 
+B|3| B: _Euh_ ja [deze hebben] bovenop [een beetje] linksafbuigen [een] heel [klein] dinget _zitten_ 
+B|4| B: [en] rechts [een] soort van streep [met] _een rond_ [in de] midden 
+B|5| B: [en] [dan] rechts wat eruit steken [een] ook [een] soort [rond] [een] platter [rond] 
+A|6| A: [dat zijn] 
+A|7| A: _euh_ [deze hebben] [een] bolle voorop waar [een] _balk_ doorheen lopen [en] _zo'n plat_ [Euh] rondje nog tegenaan [zitten] 
+B|8| B: _Euh dat zijn_ 
+B|9| B: [euh] dit [zijn] [die een] [met] _aan de voorkant zo'n_ [rond] [met] [zo'n] [balk] erdoorheen [en] [dan] _aan de_ ander zijkant [zo'n [plat] rond] 
+A|10| A: [dat zijn] 
+A|11| A: [euh] [deze hebben] [een rond] [aan de voorkant zo'n] [zo'n] bal [met] daardoorheen [een] [euh] [balk] [en] [dat] [plat rond] ding 
+B|12| B: ja 
+B|13| B: [dat zijn] 
+B|14| B: dit [zijn] [die] [met] [dat] [aan de voorkant zo'n] [balk] [met] [zo'n] [rond] door het midden [en] [aan] het eind 
+A|15| A: [Euh dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : euh deze hebben een klein uitstulping er bovenuit die een beetje naar links wijzen
+	Free: Pattern=een, Pattern=euh, Pattern=deze hebben, Pattern=die een, Pattern=klein, Pattern=een beetje
+	Constrained: Pattern=die, Pattern=een
+Turn ID=1| A | A : en in de voorkant zijn er een bol met er doorheen een vierkant stok met daar dan weer een plat rond tegenaan
+	Free: Pattern=dan, Pattern=een, Pattern=in de, Pattern=met, Pattern=de voorkant, Pattern=en, Pattern=plat rond, Pattern=zijn
+	Constrained: Pattern=rond
+Turn ID=2| B | B : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=3| B | B : Euh ja deze hebben bovenop een beetje linksafbuigen een heel klein dinget zitten
+	Free: Pattern=een, Pattern=Euh, Pattern=deze hebben, Pattern=zitten, Pattern=klein, Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=4| B | B : en rechts een soort van streep met een rond in de midden
+	Free: Pattern=een, Pattern=in de, Pattern=met, Pattern=en, Pattern=een rond
+	Constrained: Pattern=een, Pattern=rond
+Turn ID=5| B | B : en dan rechts wat eruit steken een ook een soort rond een platter rond
+	Free: Pattern=en, Pattern=dan, Pattern=een, Pattern=rond
+	Constrained: 
+Turn ID=6| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| A | A : euh deze hebben een bolle voorop waar een balk doorheen lopen en zo'n plat Euh rondje nog tegenaan zitten
+	Free: Pattern=een, Pattern=Euh, Pattern=euh, Pattern=deze hebben, Pattern=zo'n plat, Pattern=balk, Pattern=zitten, Pattern=en
+	Constrained: Pattern=zo'n
+Turn ID=8| B | B : Euh dat zijn
+	Free: Pattern=Euh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=Euh
+Turn ID=9| B | B : euh dit zijn die een met aan de voorkant zo'n rond met zo'n balk erdoorheen en dan aan de ander zijkant zo'n plat rond
+	Free: Pattern=aan de voorkant zo'n, Pattern=zo'n, Pattern=aan de, Pattern=dan, Pattern=euh, Pattern=zo'n plat, Pattern=balk, Pattern=met, Pattern=die een, Pattern=en, Pattern=zijn, Pattern=plat rond, Pattern=rond
+	Constrained: Pattern=zo'n, Pattern=aan, Pattern=aan de, Pattern=een, Pattern=rond, Pattern=de voorkant, Pattern=die
+Turn ID=10| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| A | A : euh deze hebben een rond aan de voorkant zo'n zo'n bal met daardoorheen een euh balk en dat plat rond ding
+	Free: Pattern=dat, Pattern=aan de voorkant zo'n, Pattern=zo'n, Pattern=een, Pattern=euh, Pattern=deze hebben, Pattern=balk, Pattern=met, Pattern=en, Pattern=een rond, Pattern=plat rond
+	Constrained: Pattern=zo'n, Pattern=aan, Pattern=aan de, Pattern=een, Pattern=de voorkant, Pattern=rond
+Turn ID=12| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : dit zijn die met dat aan de voorkant zo'n balk met zo'n rond door het midden en aan het eind
+	Free: Pattern=dat, Pattern=aan de voorkant zo'n, Pattern=zo'n, Pattern=aan, Pattern=balk, Pattern=met, Pattern=die, Pattern=en, Pattern=rond, Pattern=zijn
+	Constrained: Pattern=de voorkant, Pattern=zo'n, Pattern=aan de, Pattern=aan
+Turn ID=15| A | A : Euh dat zijn
+	Free: Pattern=Euh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=Euh

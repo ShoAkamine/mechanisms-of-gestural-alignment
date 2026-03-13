@@ -1,0 +1,231 @@
+B|0| B: _ehm_ oké _dan_ hebben ik hier dus _dat_ kop 
+B|1| B: _en_ _hij_ hebben _ja_ drie _uitsteeksel_ 
+B|2| B: _hij_ hebben rechts _een soort van_ _een_ plat driehoek 
+B|3| B: Eh _dan_ komen er link _uit_ _ja_ ik weten niet _zijn_ _ook_ _een soort van_ _staaf_ 
+B|4| B: _en_ daaruit komen _de_ drie _uitsteeksel_ 
+B|5| B: _zijn_ _ook_ _zijn_ _een soort van_ lang lang lang sliert _met_ _een_ vierkan aan _de_ bovenkant 
+A|6| A: [ja] 
+A|7| A: [zijn] [dat] [een soort van] _ober_ of zo 
+A|8| A: [dat] recht rond _zeggen maar_ _alsof hij_ _zo'n_ _dienblad_ vasthouden 
+B|9| B: [ja] [alsof hij] [een] [dienblad] vast hebben 
+B|10| B: _ja _en_ dan_ 
+A|11| A: [en dan] _die_ _ander_ _zeggen maar_ [ja] _zo'n_ heel _raar_ ding 
+B|12| B: eh _ja die_ 
+B|13| B: [ja] _dit_ komen er weer _uit_ [zeggen maar] [die] _de_ 
+A|14| A: [ja] gewoon [een] [staaf] [uit] [de] [staaf] of zo 
+B|15| B: _ja _ja_ ja_ 
+B|16| B: denk ik 
+B|17| B: precies 
+B|18| B: _ja _ja_ ja_ 
+A|19| A: Oké [dan] [zijn] het 
+A|20| A: _dit zijn_ [de] _die ober_ 
+A|21| A: [met] _zo'n_ [uitsteeksel] [en dan] _nog zo'n_ _zo'n_ _gek_ _gek_ vierkantstaaf of zo 
+B|22| B: _ja die_ [die] [die] drie [uitsteeksel] 
+A|23| A: [ook] [uit] [een] [uitsteeksel] 
+A|24| A: Precies [ja en] [die] [ja] 
+B|25| B: waar niet 
+B|26| B: [ja] 
+B|27| B: _nummer_ 
+B|28| B: eh _dit zijn die_ [met] [die] drie [uitsteeksel] 
+B|29| B: [een soort van] [ook] [dienblad] rechtsvoor 
+B|30| B: Eh [en dan] [ook] [nog zo'n] [soort van] [raar] vierkant [die] eruit gaan 
+A|31| A: [dienblad] 
+A|32| A: _die ober_ [soort van] 
+B|33| B: _ja [die_ ober] [ja] 
+A|34| A: [en dan] [dat] 
+B|35| B: [en] [met] twee [ander] [uitsteeksel] 
+B|36| B: Raar 
+A|37| A: [ja die] [uit] [de] 
+A|38| A: [ja ja] 
+A|39| A: Oké [nummer] 
+A|40| A: [dit zijn] _de ober_ 
+B|41| B: [de ober] 
+B|42| B: _ehm_ waar staan [die] 
+B|43| B: huh 
+B|44| B: ah [ja] [de ober] [en] [met] [die] twee [ander] [raar] [uitsteeksel] toch 
+A|45| A: [ja die] zo [uit] elkaar [zeggen maar] uitsteekt [ja] 
+B|46| B: [ja] 
+B|47| B: [ja] 
+B|48| B: Eh 
+B|49| B: _ehm dit zijn_ weer [de ober] [met] [die] twee [ander] [gek] [uitsteeksel] 
+A|50| A: even kijken 
+A|51| A: Ober 
+A|52| A: [ja] 
+A|53| A: Oké 
+A|54| A: [ehm [dit zijn] [die] ober] 
+A|55| A: [met] [dat] [uitsteeksel] [uit] het [uitsteeksel] 
+B|56| B: [ja] [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm oké dan hebben ik hier dus dat kop
+	Free: Pattern=dan, Pattern=ehm, Pattern=dat
+	Constrained: 
+Turn ID=1| B | B : en hij hebben ja drie uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=en, Pattern=ja, Pattern=hij
+	Constrained: 
+Turn ID=2| B | B : hij hebben rechts een soort van een plat driehoek
+	Free: Pattern=een soort van, Pattern=hij, Pattern=een
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=3| B | B : Eh dan komen er link uit ja ik weten niet zijn ook een soort van staaf
+	Free: Pattern=ja, Pattern=staaf, Pattern=dan, Pattern=een soort van, Pattern=zijn, Pattern=uit, Pattern=ook
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=4| B | B : en daaruit komen de drie uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=5| B | B : zijn ook zijn een soort van lang lang lang sliert met een vierkan aan de bovenkant
+	Free: Pattern=de, Pattern=ook, Pattern=een, Pattern=een soort van, Pattern=met, Pattern=zijn
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : zijn dat een soort van ober of zo
+	Free: Pattern=een soort van, Pattern=zijn, Pattern=ober, Pattern=dat
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=8| A | A : dat recht rond zeggen maar alsof hij zo'n dienblad vasthouden
+	Free: Pattern=zo'n, Pattern=zeggen maar, Pattern=dienblad, Pattern=dat, Pattern=alsof hij
+	Constrained: Pattern=hij
+Turn ID=9| B | B : ja alsof hij een dienblad vast hebben
+	Free: Pattern=alsof hij, Pattern=dienblad, Pattern=ja, Pattern=een
+	Constrained: Pattern=hij
+Turn ID=10| B | B : ja en dan
+	Free: Pattern=ja en, Pattern=en dan
+	Constrained: Pattern=dan, Pattern=en, Pattern=ja
+Turn ID=11| A | A : en dan die ander zeggen maar ja zo'n heel raar ding
+	Free: Pattern=zo'n, Pattern=ja, Pattern=en dan, Pattern=zeggen maar, Pattern=die, Pattern=ander, Pattern=raar
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=12| B | B : eh ja die
+	Free: Pattern=ja die
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=13| B | B : ja dit komen er weer uit zeggen maar die de
+	Free: Pattern=uit, Pattern=zeggen maar, Pattern=dit, Pattern=die, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja gewoon een staaf uit de staaf of zo
+	Free: Pattern=staaf, Pattern=uit, Pattern=een, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=16| B | B : denk ik
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : precies
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=19| A | A : Oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn
+	Constrained: 
+Turn ID=20| A | A : dit zijn de die ober
+	Free: Pattern=die ober, Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=die, Pattern=ober
+Turn ID=21| A | A : met zo'n uitsteeksel en dan nog zo'n zo'n gek gek vierkantstaaf of zo
+	Free: Pattern=zo'n, Pattern=en dan, Pattern=uitsteeksel, Pattern=met, Pattern=gek, Pattern=nog zo'n
+	Constrained: Pattern=dan, Pattern=en, Pattern=zo'n
+Turn ID=22| B | B : ja die die die drie uitsteeksel
+	Free: Pattern=ja die, Pattern=uitsteeksel, Pattern=die
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=23| A | A : ook uit een uitsteeksel
+	Free: Pattern=uit, Pattern=uitsteeksel, Pattern=een, Pattern=ook
+	Constrained: 
+Turn ID=24| A | A : Precies ja en die ja
+	Free: Pattern=ja en, Pattern=die, Pattern=ja
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=25| B | B : waar niet
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=28| B | B : eh dit zijn die met die drie uitsteeksel
+	Free: Pattern=dit zijn die, Pattern=uitsteeksel, Pattern=die, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=zijn, Pattern=die
+Turn ID=29| B | B : een soort van ook dienblad rechtsvoor
+	Free: Pattern=een soort van, Pattern=dienblad, Pattern=ook
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=30| B | B : Eh en dan ook nog zo'n soort van raar vierkant die eruit gaan
+	Free: Pattern=en dan, Pattern=ook, Pattern=die, Pattern=soort van, Pattern=nog zo'n, Pattern=raar
+	Constrained: Pattern=dan, Pattern=en, Pattern=zo'n
+Turn ID=31| A | A : dienblad
+	Free: Pattern=dienblad
+	Constrained: 
+Turn ID=32| A | A : die ober soort van
+	Free: Pattern=die ober, Pattern=soort van
+	Constrained: Pattern=die, Pattern=ober
+Turn ID=33| B | B : ja die ober ja
+	Free: Pattern=die ober, Pattern=ja die, Pattern=ja
+	Constrained: Pattern=die, Pattern=ja, Pattern=ober
+Turn ID=34| A | A : en dan dat
+	Free: Pattern=en dan, Pattern=dat
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=35| B | B : en met twee ander uitsteeksel
+	Free: Pattern=ander, Pattern=uitsteeksel, Pattern=en, Pattern=met
+	Constrained: 
+Turn ID=36| B | B : Raar
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : ja die uit de
+	Free: Pattern=ja die, Pattern=uit, Pattern=de
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=38| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=39| A | A : Oké nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=40| A | A : dit zijn de ober
+	Free: Pattern=dit zijn, Pattern=de ober
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=de, Pattern=ober
+Turn ID=41| B | B : de ober
+	Free: Pattern=de ober
+	Constrained: Pattern=de, Pattern=ober
+Turn ID=42| B | B : ehm waar staan die
+	Free: Pattern=ehm, Pattern=die
+	Constrained: 
+Turn ID=43| B | B : huh
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : ah ja de ober en met die twee ander raar uitsteeksel toch
+	Free: Pattern=ja, Pattern=uitsteeksel, Pattern=met, Pattern=die, Pattern=ander, Pattern=en, Pattern=de ober, Pattern=raar
+	Constrained: Pattern=de, Pattern=ober
+Turn ID=45| A | A : ja die zo uit elkaar zeggen maar uitsteekt ja
+	Free: Pattern=zeggen maar, Pattern=ja die, Pattern=uit, Pattern=ja
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=49| B | B : ehm dit zijn weer de ober met die twee ander gek uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=met, Pattern=die, Pattern=ander, Pattern=gek, Pattern=ehm dit zijn, Pattern=de ober
+	Constrained: Pattern=ober, Pattern=de, Pattern=dit, Pattern=ehm, Pattern=zijn, Pattern=dit zijn
+Turn ID=50| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=51| A | A : Ober
+	Free: 
+	Constrained: 
+Turn ID=52| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=54| A | A : ehm dit zijn die ober
+	Free: Pattern=ehm dit zijn, Pattern=dit zijn die, Pattern=die ober
+	Constrained: Pattern=ober, Pattern=dit, Pattern=ehm, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=55| A | A : met dat uitsteeksel uit het uitsteeksel
+	Free: Pattern=uit, Pattern=uitsteeksel, Pattern=met, Pattern=dat
+	Constrained: 
+Turn ID=56| B | B : ja nummer
+	Free: Pattern=ja, Pattern=nummer
+	Constrained: 

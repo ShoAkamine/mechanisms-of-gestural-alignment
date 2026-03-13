@@ -1,0 +1,107 @@
+B|0| B: _Eh _deze_ hebben_ _een _bol_ bovenop_ liggen 
+B|1| B: _en dan_ aan _de_ linkerrechterkant _een_ soort _uitsteeksel_ 
+B|2| B: _en_ er staan _een_ _balk_ voor 
+A|3| A: _ja_ letter 
+A|4| A: eh [deze hebben] [bovenop] [een bol] 
+A|5| A: link [en] rechts allebei [een] [uitsteeksel] 
+B|6| B: _Eh_ _dat zijn_ 
+A|7| A: [en] zo'n [balk] _ervoor_ 
+B|8| B: dit _zijn_ _die_ _met de bol_ er op 
+B|9| B: _en dan_ waar het blok voor staat 
+B|10| B: [en] _twee uitsteeksel_ aan beide kant 
+A|11| A: _ja_ [dat zijn] 
+A|12| A: [deze hebben] [de [bol] bovenop] 
+A|13| A: [en] [die] [balk] _ervoor_ 
+A|14| A: [en] nog [twee] dinget links [en] rechts 
+B|15| B: Oh [ja] 
+B|16| B: [dat zijn] 
+B|17| B: _deze zijn met_ het bolle er [bovenop] 
+B|18| B: _en dan_ het rechthoek [ervoor] 
+B|19| B: _en dan_ [die] _twee uitsteeksel_ 
+A|20| A: [dat zijn] 
+A|21| A: [Eh [deze] zijn [met] de [bol] bovenop] 
+A|22| A: [en] zo'n [balk] [ervoor] 
+A|23| A: [en dan] nog [twee uitsteeksel] 
+B|24| B: Oh [ja] 
+B|25| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh deze hebben een bol bovenop liggen
+	Free: Pattern=deze hebben, Pattern=Eh deze, Pattern=een bol, Pattern=bol bovenop
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=Eh
+Turn ID=1| B | B : en dan aan de linkerrechterkant een soort uitsteeksel
+	Free: Pattern=en dan, Pattern=uitsteeksel, Pattern=de, Pattern=een
+	Constrained: Pattern=en
+Turn ID=2| B | B : en er staan een balk voor
+	Free: Pattern=een, Pattern=balk, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : eh deze hebben bovenop een bol
+	Free: Pattern=deze hebben, Pattern=een bol, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=5| A | A : link en rechts allebei een uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=6| B | B : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=zijn
+Turn ID=7| A | A : en zo'n balk ervoor
+	Free: Pattern=ervoor, Pattern=balk, Pattern=en
+	Constrained: 
+Turn ID=8| B | B : dit zijn die met de bol er op
+	Free: Pattern=met de bol, Pattern=zijn, Pattern=die
+	Constrained: Pattern=de bol, Pattern=de
+Turn ID=9| B | B : en dan waar het blok voor staat
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=10| B | B : en twee uitsteeksel aan beide kant
+	Free: Pattern=twee uitsteeksel, Pattern=en
+	Constrained: Pattern=uitsteeksel, Pattern=twee
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : deze hebben de bol bovenop
+	Free: Pattern=de bol, Pattern=deze hebben, Pattern=bol bovenop
+	Constrained: Pattern=bovenop, Pattern=de
+Turn ID=13| A | A : en die balk ervoor
+	Free: Pattern=ervoor, Pattern=die, Pattern=balk, Pattern=en
+	Constrained: 
+Turn ID=14| A | A : en nog twee dinget links en rechts
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=15| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=17| B | B : deze zijn met het bolle er bovenop
+	Free: Pattern=deze zijn met, Pattern=bovenop
+	Constrained: Pattern=zijn
+Turn ID=18| B | B : en dan het rechthoek ervoor
+	Free: Pattern=en dan, Pattern=ervoor
+	Constrained: Pattern=en
+Turn ID=19| B | B : en dan die twee uitsteeksel
+	Free: Pattern=en dan, Pattern=twee uitsteeksel, Pattern=die
+	Constrained: Pattern=uitsteeksel, Pattern=twee, Pattern=en
+Turn ID=20| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=21| A | A : Eh deze zijn met de bol bovenop
+	Free: Pattern=deze zijn met, Pattern=met de bol, Pattern=Eh deze, Pattern=bol bovenop
+	Constrained: Pattern=bovenop, Pattern=de, Pattern=Eh, Pattern=de bol, Pattern=zijn
+Turn ID=22| A | A : en zo'n balk ervoor
+	Free: Pattern=ervoor, Pattern=balk, Pattern=en
+	Constrained: 
+Turn ID=23| A | A : en dan nog twee uitsteeksel
+	Free: Pattern=en dan, Pattern=twee uitsteeksel
+	Constrained: Pattern=uitsteeksel, Pattern=twee, Pattern=en
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

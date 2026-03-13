@@ -1,0 +1,63 @@
+A|0| A: dit _object_ hebben staan _op_ een _sokkel_ en _het_ _zijn_ _de_ lang van _de_ heel collectie 
+A|1| A: Lijken _op_ een _man_ _die_ lijken te _juichen_ ook 
+B|2| B: Oh _ja_ 
+B|3| B: [object] nummer 
+B|4| B: deze [zijn] [die] _op de sokkel_ [die] aan [het] [juichen] [zijn] 
+A|5| A: [ja] [object] 
+A|6| A: _het juichend man op de sokkel_ 
+B|7| B: nummer 
+B|8| B: [de sokkel] [juichen] [man] 
+A|9| A: [ja] 
+A|10| A: [object] 
+A|11| A: _het juichend man_ 
+B|12| B: nummer 
+B|13| B: [het juichend man op de sokkel] 
+A|14| A: [ja] [object] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit object hebben staan op een sokkel en het zijn de lang van de heel collectie
+	Free: Pattern=de, Pattern=het, Pattern=op, Pattern=object, Pattern=zijn, Pattern=sokkel
+	Constrained: 
+Turn ID=1| A | A : Lijken op een man die lijken te juichen ook
+	Free: Pattern=man, Pattern=juichen, Pattern=op, Pattern=die
+	Constrained: 
+Turn ID=2| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : object nummer
+	Free: Pattern=object
+	Constrained: 
+Turn ID=4| B | B : deze zijn die op de sokkel die aan het juichen zijn
+	Free: Pattern=het, Pattern=die, Pattern=zijn, Pattern=juichen, Pattern=op de sokkel
+	Constrained: Pattern=de sokkel, Pattern=sokkel, Pattern=de, Pattern=op
+Turn ID=5| A | A : ja object
+	Free: Pattern=object, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : het juichend man op de sokkel
+	Free: Pattern=het juichend man op de sokkel
+	Constrained: Pattern=het juichend man, Pattern=de, Pattern=de sokkel, Pattern=op, Pattern=het, Pattern=sokkel, Pattern=man, Pattern=op de sokkel
+Turn ID=7| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : de sokkel juichen man
+	Free: Pattern=de sokkel, Pattern=man, Pattern=juichen
+	Constrained: Pattern=sokkel, Pattern=de
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=11| A | A : het juichend man
+	Free: Pattern=het juichend man
+	Constrained: Pattern=het, Pattern=man
+Turn ID=12| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : het juichend man op de sokkel
+	Free: Pattern=het juichend man op de sokkel
+	Constrained: Pattern=het juichend man, Pattern=de, Pattern=de sokkel, Pattern=op, Pattern=het, Pattern=sokkel, Pattern=man, Pattern=op de sokkel
+Turn ID=14| A | A : ja object
+	Free: Pattern=object, Pattern=ja
+	Constrained: 

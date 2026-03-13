@@ -1,0 +1,107 @@
+B|0| B: _Oké_ daar gaan _ik_ weer 
+B|1| B: Euh nou _ja_ dit _voor mij_ zien _het_ eruit als _een_ soort van euh robotgezicht _zeggen maar_ 
+B|2| B: dus _het_ _zijn_ _een_ cup _en_ _dan_ _aan de_ kant _die_ naar jou toewijst _hebben_ hij gewoon _een_ plat vierkant 
+A|3| A: [ja] 
+B|4| B: _en_ _op_ _de_ bovenkant [ja] _de schroef_ [ja] je snpen welk _ik_ bedoelen 
+A|5| A: [en] nog [een] [schroef] 
+A|6| A: [ja] 
+A|7| A: [Oké] 
+A|8| A: [en] _ja ik hebben_ nu [zeggen maar] Euhm [die] _met de schroef en_ _die twee_ euhm arm [aan de] zijkant link 
+B|9| B: _kijken_ diegene [met de schroef _en] de_ [twee] 
+A|10| A: _ja [en_ de] plaat ervoor 
+B|11| B: ah [ja] wachten [ik] moeten hem _even_ zoeken _op_ mijn scherm 
+A|12| A: Yes 
+B|13| B: _ja [ja_ ik hebben] hem al _dat zijn_ 
+A|14| A: [dat zijn] 
+B|15| B: Euh [ja en] [ik hebben] _ja die_ robot dus [zeggen maar] [met] [dat] vierkant _aan de voorkant_ [de] spijker _op_ [de] bovenkant [en] _dan_ [die twee] steeds groot worden Euh staf van kubus 
+A|16| A: [ja] oké 
+A|17| A: _ja dat zijn voor mij_ 
+A|18| A: [even] [kijken] _dan hebben ik_ nu [die] Cup [met] [die] plaat _aan de voorkant [en_ [de] schroef] [op] [het] hoofd 
+B|19| B: [ja dat zijn voor mij] [zijn] [dat] 
+A|20| A: [dat zijn voor mij] 
+B|21| B: Euh [dan hebben ik] diegene [met] [ja dat] vierkan [aan de voorkant en] [dan] [de schroef] bovenop 
+A|22| A: [ja dat zijn voor mij] nummer 
+A|23| A: Oh [ja ja] 
+A|24| A: [ja [die] twee] [die] plaat [voor] [en [de] schroef] [op] [het] hoofd 
+B|25| B: [ja dat zijn voor mij] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké daar gaan ik weer
+	Free: Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : Euh nou ja dit voor mij zien het eruit als een soort van euh robotgezicht zeggen maar
+	Free: Pattern=ja, Pattern=een, Pattern=zeggen maar, Pattern=het, Pattern=voor mij
+	Constrained: Pattern=voor
+Turn ID=2| B | B : dus het zijn een cup en dan aan de kant die naar jou toewijst hebben hij gewoon een plat vierkant
+	Free: Pattern=aan de, Pattern=dan, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en op de bovenkant ja de schroef ja je snpen welk ik bedoelen
+	Free: Pattern=op, Pattern=de schroef, Pattern=ik, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=de, Pattern=schroef
+Turn ID=5| A | A : en nog een schroef
+	Free: Pattern=schroef, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : en ja ik hebben nu zeggen maar Euhm die met de schroef en die twee euhm arm aan de zijkant link
+	Free: Pattern=aan de, Pattern=met de schroef en, Pattern=zeggen maar, Pattern=die twee, Pattern=ja ik hebben, Pattern=die, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=hebben, Pattern=de schroef, Pattern=met, Pattern=die, Pattern=en, Pattern=de, Pattern=ja, Pattern=schroef, Pattern=ik
+Turn ID=9| B | B : kijken diegene met de schroef en de twee
+	Free: Pattern=met de schroef en, Pattern=en de, Pattern=twee, Pattern=kijken
+	Constrained: Pattern=de, Pattern=de schroef, Pattern=met, Pattern=schroef, Pattern=en
+Turn ID=10| A | A : ja en de plaat ervoor
+	Free: Pattern=en de, Pattern=ja en
+	Constrained: Pattern=de, Pattern=ja, Pattern=en
+Turn ID=11| B | B : ah ja wachten ik moeten hem even zoeken op mijn scherm
+	Free: Pattern=even, Pattern=op, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ja ja ik hebben hem al dat zijn
+	Free: Pattern=ja ik hebben, Pattern=dat zijn, Pattern=ja ja
+	Constrained: Pattern=ik hebben, Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=ik, Pattern=zijn
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| B | B : Euh ja en ik hebben ja die robot dus zeggen maar met dat vierkant aan de voorkant de spijker op de bovenkant en dan die twee steeds groot worden Euh staf van kubus
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=ja die, Pattern=de, Pattern=op, Pattern=dan, Pattern=zeggen maar, Pattern=die twee, Pattern=met, Pattern=en, Pattern=aan de voorkant, Pattern=ja en
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=en, Pattern=de, Pattern=ja
+Turn ID=16| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ja dat zijn voor mij
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat zijn voor mij, Pattern=ja, Pattern=voor, Pattern=voor mij, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=18| A | A : even kijken dan hebben ik nu die Cup met die plaat aan de voorkant en de schroef op het hoofd
+	Free: Pattern=aan de voorkant en, Pattern=kijken, Pattern=en de, Pattern=het, Pattern=de schroef, Pattern=met, Pattern=op, Pattern=even, Pattern=dan hebben ik, Pattern=die
+	Constrained: Pattern=de, Pattern=aan de, Pattern=dan, Pattern=hebben, Pattern=en, Pattern=aan de voorkant, Pattern=schroef, Pattern=ik
+Turn ID=19| B | B : ja dat zijn voor mij zijn dat
+	Free: Pattern=ja dat zijn voor mij, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=dat zijn voor mij, Pattern=ja, Pattern=voor, Pattern=voor mij, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=20| A | A : dat zijn voor mij
+	Free: Pattern=dat zijn voor mij
+	Constrained: Pattern=voor, Pattern=voor mij, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=21| B | B : Euh dan hebben ik diegene met ja dat vierkan aan de voorkant en dan de schroef bovenop
+	Free: Pattern=aan de voorkant en, Pattern=dan, Pattern=de schroef, Pattern=met, Pattern=dan hebben ik, Pattern=ja dat
+	Constrained: Pattern=dat, Pattern=aan de, Pattern=dan, Pattern=hebben, Pattern=en, Pattern=aan de voorkant, Pattern=de, Pattern=ja, Pattern=schroef, Pattern=ik
+Turn ID=22| A | A : ja dat zijn voor mij nummer
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat zijn voor mij, Pattern=ja, Pattern=voor, Pattern=voor mij, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=23| A | A : Oh ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=24| A | A : ja die twee die plaat voor en de schroef op het hoofd
+	Free: Pattern=ja die, Pattern=op, Pattern=en de, Pattern=de schroef, Pattern=die, Pattern=het, Pattern=voor, Pattern=die twee
+	Constrained: Pattern=twee, Pattern=die, Pattern=schroef, Pattern=en, Pattern=de, Pattern=ja
+Turn ID=25| B | B : ja dat zijn voor mij
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat zijn voor mij, Pattern=ja, Pattern=voor, Pattern=voor mij, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn

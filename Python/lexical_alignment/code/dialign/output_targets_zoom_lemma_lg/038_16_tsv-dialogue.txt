@@ -1,0 +1,99 @@
+B|0| B: Euhm _oké_ deze hebben Euhm _het_ lijken _een_ beetje op _een_ op _een_ _theepo_ misschien 
+B|1| B: _en_ _aan_ _de_ bovenkant _zitten_ _een_ heel groot 
+B|2| B: kegel _en_ _aan_ _de_ linkerkant _zijn_ precies diezelfde vorm kegel _en_ _aan_ _de_ rechterkant _een_ beetje raar hoekig sculptuur 
+A|3| A: _ja_ 
+A|4| A: _ja_ [de] _ja_ ik denken _dat_ ik [het] al weten 
+A|5| A: Euh 
+A|6| A: _dat zijn_ 
+A|7| A: Allright _dit zijn_ weer _dat_ soort _theepo met_ die twee druppel boven _en link_ 
+B|8| B: [ja] 
+B|9| B: [ja] [ja] [ja] 
+B|10| B: Oké [dat zijn] 
+A|11| A: [ja] alsof er [een] soort tuitje [aan] [zitten] 
+B|12| B: [ja] [dat zijn] 
+B|13| B: Euhm [dit zijn] [een] [theepo met] [de] kegel _bovenop_ [en link] 
+A|14| A: Euh even kijken 
+B|15| B: als [dat] genoeg omschrijven [zijn] 
+B|16| B: [en] [aan] [de] rechterkant [de] kubus 
+A|17| A: Oh [ja] 
+A|18| A: [ja] [oké] [dat zijn] 
+A|19| A: Euh hier [dat] soort [theepo met] die twee druppel [link] [en] [bovenop] 
+B|20| B: Yes [dat zijn] 
+B|21| B: euh [dit zijn] [de] theepot [met] [de] kegel 
+A|22| A: [ja] 
+A|23| A: eh [het] [zijn] [dat] [theepo met] die twee druppel 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm oké deze hebben Euhm het lijken een beetje op een op een theepo misschien
+	Free: Pattern=het, Pattern=theepo, Pattern=oké, Pattern=een
+	Constrained: 
+Turn ID=1| B | B : en aan de bovenkant zitten een heel groot
+	Free: Pattern=een, Pattern=zitten, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=2| B | B : kegel en aan de linkerkant zijn precies diezelfde vorm kegel en aan de rechterkant een beetje raar hoekig sculptuur
+	Free: Pattern=een, Pattern=en, Pattern=zijn, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : ja de ja ik denken dat ik het al weten
+	Free: Pattern=het, Pattern=ja, Pattern=de, Pattern=dat
+	Constrained: 
+Turn ID=5| A | A : Euh
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=7| A | A : Allright dit zijn weer dat soort theepo met die twee druppel boven en link
+	Free: Pattern=dit zijn, Pattern=en link, Pattern=theepo met, Pattern=dat
+	Constrained: Pattern=met, Pattern=link, Pattern=theepo, Pattern=en, Pattern=zijn
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=11| A | A : ja alsof er een soort tuitje aan zitten
+	Free: Pattern=aan, Pattern=ja, Pattern=zitten, Pattern=een
+	Constrained: 
+Turn ID=12| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=13| B | B : Euhm dit zijn een theepo met de kegel bovenop en link
+	Free: Pattern=bovenop, Pattern=de, Pattern=een, Pattern=en link, Pattern=dit zijn, Pattern=theepo met
+	Constrained: Pattern=met, Pattern=link, Pattern=theepo, Pattern=en, Pattern=zijn
+Turn ID=14| A | A : Euh even kijken
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : als dat genoeg omschrijven zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=16| B | B : en aan de rechterkant de kubus
+	Free: Pattern=aan, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=17| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=oké
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| A | A : Euh hier dat soort theepo met die twee druppel link en bovenop
+	Free: Pattern=link, Pattern=en, Pattern=theepo met, Pattern=dat, Pattern=bovenop
+	Constrained: Pattern=theepo, Pattern=met
+Turn ID=20| B | B : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| B | B : euh dit zijn de theepot met de kegel
+	Free: Pattern=dit zijn, Pattern=de, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : eh het zijn dat theepo met die twee druppel
+	Free: Pattern=theepo met, Pattern=het, Pattern=zijn, Pattern=dat
+	Constrained: Pattern=theepo, Pattern=met

@@ -1,0 +1,127 @@
+A|0| A: _euh_ _deze hebben_ _aan de bovenkant en_ _aan de_ linksvoor zeggen maar _hebben_ _die_ _een soort ovaal_ uitstulping 
+A|1| A: ik vinden het _een_ beetje op _een_ joystick lijken 
+A|2| A: _Euh_ _en_ _aan de_ rechterkant steekt er _een_ vierkant _blok_ uit 
+A|3| A: _die_ zo _een_ beetje _smal beginnen en_ in _een groot_ vierkant _blok_ _eindigen_ 
+B|4| B: _ja_ [euh] _dat zijn_ 
+B|5| B: [Euh] _ja_ [deze hebben] we net ook al [hebben] 
+B|6| B: [Euh] [aan de bovenkant en] linkerzijde [een soort ovaal] iets 
+B|7| B: _en dan_ _rechts_ [euh] ook _zo'n blok_ zegmaar wat klein [beginnen en] [een groot] [eindigen] 
+B|8| B: _en dan_ [aan de] achterkant _nog_ [een] klein dinget 
+A|9| A: [zijn] er [aan de bovenkant en] _aan de linkerkant_ [zo'n] ovalen _ding_ 
+B|10| B: _ja ja_ 
+A|11| A: [ja] 
+A|12| A: [Euh] 
+A|13| A: [euh] [deze hebben] [euh] twee ovalen eentje [aan de bovenkant en] één _aan de linkerkant_ 
+B|14| B: [ja] 
+A|15| A: _en zo'n_ vierkant [aan de] rechterkant 
+B|16| B: [ja] 
+B|17| B: _dat_ [en zo'n] [ding] _nog_ [aan de linkerkant] 
+A|18| A: [ja ja] 
+B|19| B: [ja] _dat zijn_ _dat zijn_ 
+B|20| B: [deze hebben] boven [en] link van [die] [ovaal] dinget 
+B|21| B: _en dan_ _rechts_ iets wat [smal] [smal beginnen en] breed [eindigen] 
+B|22| B: [en] links achter iets 
+A|23| A: [zijn] er 
+A|24| A: [Euh] 
+A|25| A: [euh] [deze hebben] twee [ovaal] [ding] eentje [aan de linkerkant] [en] één erbovenop 
+A|26| A: [en dan] [nog] [zo'n blok] [rechts] voor [die] toelopen 
+B|27| B: [ja] 
+B|28| B: _dat zijn_ 
+B|29| B: [euh] dit [zijn] [die] met boven [en] link [een] [ovaal] iets [en dan] [rechts] [en] achter [nog] iets 
+A|30| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : euh deze hebben aan de bovenkant en aan de linksvoor zeggen maar hebben die een soort ovaal uitstulping
+	Free: Pattern=aan de, Pattern=hebben, Pattern=euh, Pattern=deze hebben, Pattern=die, Pattern=aan de bovenkant en, Pattern=een soort ovaal
+	Constrained: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=ovaal, Pattern=en
+Turn ID=1| A | A : ik vinden het een beetje op een joystick lijken
+	Free: Pattern=een
+	Constrained: 
+Turn ID=2| A | A : Euh en aan de rechterkant steekt er een vierkant blok uit
+	Free: Pattern=aan de, Pattern=een, Pattern=Euh, Pattern=en, Pattern=blok
+	Constrained: 
+Turn ID=3| A | A : die zo een beetje smal beginnen en in een groot vierkant blok eindigen
+	Free: Pattern=een groot, Pattern=een, Pattern=eindigen, Pattern=die, Pattern=blok, Pattern=smal beginnen en
+	Constrained: Pattern=en, Pattern=smal, Pattern=een, Pattern=beginnen en
+Turn ID=4| B | B : ja euh dat zijn
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=5| B | B : Euh ja deze hebben we net ook al hebben
+	Free: Pattern=deze hebben, Pattern=hebben, Pattern=ja, Pattern=Euh
+	Constrained: Pattern=hebben
+Turn ID=6| B | B : Euh aan de bovenkant en linkerzijde een soort ovaal iets
+	Free: Pattern=aan de bovenkant en, Pattern=een soort ovaal, Pattern=Euh
+	Constrained: Pattern=een, Pattern=en, Pattern=ovaal, Pattern=aan de
+Turn ID=7| B | B : en dan rechts euh ook zo'n blok zegmaar wat klein beginnen en een groot eindigen
+	Free: Pattern=een groot, Pattern=rechts, Pattern=en dan, Pattern=zo'n blok, Pattern=eindigen, Pattern=euh, Pattern=beginnen en
+	Constrained: Pattern=een, Pattern=en, Pattern=blok, Pattern=zo'n
+Turn ID=8| B | B : en dan aan de achterkant nog een klein dinget
+	Free: Pattern=aan de, Pattern=en dan, Pattern=nog, Pattern=een
+	Constrained: Pattern=en
+Turn ID=9| A | A : zijn er aan de bovenkant en aan de linkerkant zo'n ovalen ding
+	Free: Pattern=zo'n, Pattern=ding, Pattern=aan de linkerkant, Pattern=zijn, Pattern=aan de bovenkant en
+	Constrained: Pattern=en, Pattern=aan de
+Turn ID=10| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=13| A | A : euh deze hebben euh twee ovalen eentje aan de bovenkant en één aan de linkerkant
+	Free: Pattern=aan de bovenkant en, Pattern=aan de linkerkant, Pattern=deze hebben, Pattern=euh
+	Constrained: Pattern=en, Pattern=aan de, Pattern=hebben
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : en zo'n vierkant aan de rechterkant
+	Free: Pattern=en zo'n, Pattern=aan de
+	Constrained: Pattern=en, Pattern=zo'n
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : dat en zo'n ding nog aan de linkerkant
+	Free: Pattern=nog, Pattern=ding, Pattern=aan de linkerkant, Pattern=dat, Pattern=en zo'n
+	Constrained: Pattern=zo'n, Pattern=en, Pattern=aan de
+Turn ID=18| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=19| B | B : ja dat zijn dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| B | B : deze hebben boven en link van die ovaal dinget
+	Free: Pattern=deze hebben, Pattern=die, Pattern=en, Pattern=ovaal
+	Constrained: Pattern=hebben
+Turn ID=21| B | B : en dan rechts iets wat smal smal beginnen en breed eindigen
+	Free: Pattern=rechts, Pattern=en dan, Pattern=smal, Pattern=eindigen, Pattern=smal beginnen en
+	Constrained: Pattern=beginnen en, Pattern=smal, Pattern=en
+Turn ID=22| B | B : en links achter iets
+	Free: Pattern=en
+	Constrained: 
+Turn ID=23| A | A : zijn er
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=24| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=25| A | A : euh deze hebben twee ovaal ding eentje aan de linkerkant en één erbovenop
+	Free: Pattern=ding, Pattern=euh, Pattern=deze hebben, Pattern=ovaal, Pattern=en, Pattern=aan de linkerkant
+	Constrained: Pattern=aan de, Pattern=hebben
+Turn ID=26| A | A : en dan nog zo'n blok rechts voor die toelopen
+	Free: Pattern=nog, Pattern=rechts, Pattern=en dan, Pattern=zo'n blok, Pattern=die
+	Constrained: Pattern=blok, Pattern=en, Pattern=zo'n
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=29| B | B : euh dit zijn die met boven en link een ovaal iets en dan rechts en achter nog iets
+	Free: Pattern=nog, Pattern=rechts, Pattern=en dan, Pattern=een, Pattern=euh, Pattern=die, Pattern=ovaal, Pattern=en, Pattern=zijn
+	Constrained: Pattern=en
+Turn ID=30| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

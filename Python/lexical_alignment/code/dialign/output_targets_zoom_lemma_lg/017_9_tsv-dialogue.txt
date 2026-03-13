@@ -1,0 +1,199 @@
+B|0| B: _Oh ja_ nu moeten _ik_ natuurlijk _weer_ 
+B|1| B: deze _hebben_ 
+B|2| B: _even kijken_ 
+B|3| B: wat _hebben ik_ net _zeggen_ 
+B|4| B: want daar _lijken_ hij _een_ beetje op 
+B|5| B: nou oké 
+B|6| B: Anyway 
+B|7| B: _Oké_ dus hij _hebben_ 
+B|8| B: aan _de_ achterkant zegmaar _hebben_ hij _een soort_ van _rond_ 
+A|9| A: [ja] 
+B|10| B: of [ja] _een_ half _rond_ eigenlijk 
+B|11| B: _de_ rest _zien_ _je_ niet _maar_ _het_ zitten er denken _ik_ wel 
+A|12| A: [ja] 
+B|13| B: _en_ link _hebben_ hij _ook_ _weer_ _een soort_ balk 
+B|14| B: wat wat donkerd _zijn_ van kleur _ook_ 
+A|15| A: [Oh ja] 
+B|16| B: _en_ aan _de_ onderkant _hebben_ hij _een soort_ van 
+B|17| B: alsof [ja] i-ik _vinden_ _het een_ beetje _lijken_ op _een_ _wc-pot_ 
+B|18| B: _maar_ _soort_ van hij _hebben_ _een soort_ van 
+A|19| A: [ja] 
+B|20| B: [ja] _zien_ _je_ _dat_ 
+A|21| A: [ja] [en] _dan_ [lijken] [het [een] _soort] lepel erin_ [zeggen] [maar] [ook] 
+B|22| B: [ja] [ja] precies 
+A|23| A: [Oké] 
+A|24| A: _dan_ weten [ik] hem 
+A|25| A: _dan_ _zijn dat_ 
+A|26| A: _dan_ [ja] _die_ [je] [een soort] [wc-pot] [vinden] [lijken] 
+B|27| B: [Oh ja] [ja] top 
+B|28| B: _dat zijn_ 
+B|29| B: [Oh ja] _dit zijn die_ [wc-pot] 
+B|30| B: [die] [dan] dus rechts _zo'n_ [soort lepel erin] _hebben_ 
+A|31| A: [Oh ja] 
+A|32| A: [ja] 
+A|33| A: [en] zo links [zo'n] [rond] 
+A|34| A: [en] [dat] h-halve [rond] [die] [je] [ook] [zien] 
+B|35| B: [ja] [ja] 
+A|36| A: [Oké] [dat zijn] 
+A|37| A: [dan] [hebben ik] [weer] [de] [wc-pot] 
+B|38| B: [Oké] top 
+B|39| B: [dat zijn] 
+B|40| B: _dit zijn die_ [wc-pot] 
+B|41| B: met rechts [die] [lepel] 
+A|42| A: [Oh ja] [even kijken] horen 
+A|43| A: [even] [zien] 
+A|44| A: [Oh ja] [dat zijn] [ja] 
+B|45| B: Weet [je] [het] nog 
+A|46| A: [dit zijn die] wc pot 
+B|47| B: [ja] 
+B|48| B: [zijn dat] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ja nu moeten ik natuurlijk weer
+	Free: Pattern=Oh ja, Pattern=ik, Pattern=weer
+	Constrained: Pattern=ja
+Turn ID=1| B | B : deze hebben
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : even kijken
+	Free: Pattern=even kijken
+	Constrained: Pattern=even
+Turn ID=3| B | B : wat hebben ik net zeggen
+	Free: Pattern=hebben ik, Pattern=zeggen
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=4| B | B : want daar lijken hij een beetje op
+	Free: Pattern=lijken, Pattern=een
+	Constrained: 
+Turn ID=5| B | B : nou oké
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Anyway
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Oké dus hij hebben
+	Free: Pattern=Oké, Pattern=hebben
+	Constrained: 
+Turn ID=8| B | B : aan de achterkant zegmaar hebben hij een soort van rond
+	Free: Pattern=een soort, Pattern=rond, Pattern=de, Pattern=hebben
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : of ja een half rond eigenlijk
+	Free: Pattern=rond, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=11| B | B : de rest zien je niet maar het zitten er denken ik wel
+	Free: Pattern=de, Pattern=het, Pattern=zien, Pattern=ik, Pattern=maar, Pattern=je
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en link hebben hij ook weer een soort balk
+	Free: Pattern=ook, Pattern=hebben, Pattern=een soort, Pattern=en, Pattern=weer
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=14| B | B : wat wat donkerd zijn van kleur ook
+	Free: Pattern=zijn, Pattern=ook
+	Constrained: 
+Turn ID=15| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=16| B | B : en aan de onderkant hebben hij een soort van
+	Free: Pattern=een soort, Pattern=en, Pattern=de, Pattern=hebben
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=17| B | B : alsof ja i-ik vinden het een beetje lijken op een wc-pot
+	Free: Pattern=het een, Pattern=lijken, Pattern=wc-pot, Pattern=een, Pattern=vinden, Pattern=ja
+	Constrained: Pattern=het, Pattern=een
+Turn ID=18| B | B : maar soort van hij hebben een soort van
+	Free: Pattern=een soort, Pattern=soort, Pattern=maar, Pattern=hebben
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ja zien je dat
+	Free: Pattern=dat, Pattern=je, Pattern=ja, Pattern=zien
+	Constrained: 
+Turn ID=21| A | A : ja en dan lijken het een soort lepel erin zeggen maar ook
+	Free: Pattern=het een, Pattern=ja, Pattern=ook, Pattern=soort lepel erin, Pattern=zeggen, Pattern=een soort, Pattern=en, Pattern=maar, Pattern=lijken, Pattern=dan
+	Constrained: Pattern=lepel, Pattern=soort, Pattern=het, Pattern=een
+Turn ID=22| B | B : ja ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=24| A | A : dan weten ik hem
+	Free: Pattern=dan, Pattern=ik
+	Constrained: 
+Turn ID=25| A | A : dan zijn dat
+	Free: Pattern=zijn dat, Pattern=dan
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| A | A : dan ja die je een soort wc-pot vinden lijken
+	Free: Pattern=wc-pot, Pattern=die, Pattern=een soort, Pattern=je, Pattern=vinden, Pattern=ja, Pattern=lijken, Pattern=dan
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=27| B | B : Oh ja ja top
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=28| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=29| B | B : Oh ja dit zijn die wc-pot
+	Free: Pattern=dit zijn die, Pattern=Oh ja, Pattern=wc-pot
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=die
+Turn ID=30| B | B : die dan dus rechts zo'n soort lepel erin hebben
+	Free: Pattern=zo'n, Pattern=dan, Pattern=soort lepel erin, Pattern=hebben, Pattern=die
+	Constrained: Pattern=soort, Pattern=lepel
+Turn ID=31| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : en zo links zo'n rond
+	Free: Pattern=en, Pattern=rond, Pattern=zo'n
+	Constrained: 
+Turn ID=34| A | A : en dat h-halve rond die je ook zien
+	Free: Pattern=dat, Pattern=ook, Pattern=en, Pattern=rond, Pattern=je, Pattern=die, Pattern=zien
+	Constrained: 
+Turn ID=35| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=37| A | A : dan hebben ik weer de wc-pot
+	Free: Pattern=de, Pattern=hebben ik, Pattern=dan, Pattern=wc-pot, Pattern=weer
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=38| B | B : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=39| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=40| B | B : dit zijn die wc-pot
+	Free: Pattern=dit zijn die, Pattern=wc-pot
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=41| B | B : met rechts die lepel
+	Free: Pattern=lepel, Pattern=die
+	Constrained: 
+Turn ID=42| A | A : Oh ja even kijken horen
+	Free: Pattern=Oh ja, Pattern=even kijken
+	Constrained: Pattern=even, Pattern=ja
+Turn ID=43| A | A : even zien
+	Free: Pattern=even, Pattern=zien
+	Constrained: 
+Turn ID=44| A | A : Oh ja dat zijn ja
+	Free: Pattern=Oh ja, Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=45| B | B : Weet je het nog
+	Free: Pattern=het, Pattern=je
+	Constrained: 
+Turn ID=46| A | A : dit zijn die wc pot
+	Free: Pattern=dit zijn die
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : zijn dat
+	Free: Pattern=zijn dat
+	Constrained: Pattern=dat, Pattern=zijn

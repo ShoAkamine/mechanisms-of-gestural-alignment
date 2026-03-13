@@ -1,0 +1,127 @@
+B|0| B: _oké deze_ _hebben_ _aan de onderkant_ _een soort_ _ja_ wat _zijn het_ 
+A|1| A: Afvoerputje 
+B|2| B: Uitstulpsel glijbaan 
+B|3| B: Ietsachtigs 
+B|4| B: Eh _en_ _een_ iets wat _van_ _de voorkant_ er maar uit steken 
+B|5| B: _en_ _hij_ _hebben_ _aan de_ rechterkant _een_ armpje 
+A|6| A: Krommen ding 
+B|7| B: _ja_ _en aan de_ bovenkant _op zijn hoofd_ om _het_ zo te _zeggen_ _hebben hij een soort_ boek 
+A|8| A: [ja] 
+B|9| B: of nou [ja] iets wat _waar_ _het_ doorheen gaan 
+A|10| A: [ja] dan weten ik [het] 
+B|11| B: nog iets 
+A|12| A: dus _dat_ [zijn] 
+A|13| A: [oké deze] _die_ [hebben] zo'n rechtopstaan vierkant [op zijn hoofd] [waar] twee blok uitkomen 
+A|14| A: [en [aan de] onderkant] [hebben hij een soort] [van] _afvoerpu_ 
+B|15| B: [ja] 
+A|16| A: [en aan de] zijkant ook 
+A|17| A: [en aan [de] voorkant] ook 
+B|18| B: [ja] 
+B|19| B: [ja] 
+B|20| B: nummer 
+B|21| B: _eh_ _dit _zijn_ die_ [een] _met_ [dat] [afvoerpu] 
+B|22| B: [en] [die] _situatie op zijn hoofd_ _met_ [waar] 
+A|23| A: [ja] [oké] [dat] [zijn] 
+A|24| A: [dit [zijn] het] Afweerputje [met] [de] [zeggen] je [dat] [situatie op zijn hoofd] 
+B|25| B: [ja] nummer 
+B|26| B: _eh_ [dit _zijn] die_ [met] _afvoerpu en de_ [situatie op zijn hoofd] 
+A|27| A: [eh] [waar] [zijn die] 
+A|28| A: [ja] 
+A|29| A: [dit [zijn] het] [afvoerpu en de] Hoofdsituatie 
+B|30| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze hebben aan de onderkant een soort ja wat zijn het
+	Free: Pattern=zijn het, Pattern=ja, Pattern=hebben, Pattern=aan de onderkant, Pattern=oké deze, Pattern=een soort
+	Constrained: Pattern=oké, Pattern=de, Pattern=aan de, Pattern=een, Pattern=het, Pattern=zijn
+Turn ID=1| A | A : Afvoerputje
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : Uitstulpsel glijbaan
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : Ietsachtigs
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : Eh en een iets wat van de voorkant er maar uit steken
+	Free: Pattern=de voorkant, Pattern=van, Pattern=een, Pattern=en
+	Constrained: Pattern=de
+Turn ID=5| B | B : en hij hebben aan de rechterkant een armpje
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=en
+	Constrained: Pattern=de
+Turn ID=6| A | A : Krommen ding
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ja en aan de bovenkant op zijn hoofd om het zo te zeggen hebben hij een soort boek
+	Free: Pattern=ja, Pattern=het, Pattern=zeggen, Pattern=op zijn hoofd, Pattern=en aan de, Pattern=hebben hij een soort
+	Constrained: Pattern=de, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=en, Pattern=zijn
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : of nou ja iets wat waar het doorheen gaan
+	Free: Pattern=ja, Pattern=waar, Pattern=het
+	Constrained: 
+Turn ID=10| A | A : ja dan weten ik het
+	Free: Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=11| B | B : nog iets
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : dus dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=13| A | A : oké deze die hebben zo'n rechtopstaan vierkant op zijn hoofd waar twee blok uitkomen
+	Free: Pattern=waar, Pattern=hebben, Pattern=oké deze, Pattern=die, Pattern=op zijn hoofd
+	Constrained: Pattern=oké, Pattern=zijn
+Turn ID=14| A | A : en aan de onderkant hebben hij een soort van afvoerpu
+	Free: Pattern=aan de onderkant, Pattern=afvoerpu, Pattern=van, Pattern=en aan de, Pattern=hebben hij een soort
+	Constrained: Pattern=de, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=en
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : en aan de zijkant ook
+	Free: Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=de, Pattern=en
+Turn ID=17| A | A : en aan de voorkant ook
+	Free: Pattern=en aan de, Pattern=de voorkant
+	Constrained: Pattern=aan de, Pattern=de, Pattern=en
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : eh dit zijn die een met dat afvoerpu
+	Free: Pattern=dat, Pattern=een, Pattern=zijn die, Pattern=met, Pattern=eh, Pattern=afvoerpu, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=22| B | B : en die situatie op zijn hoofd met waar
+	Free: Pattern=waar, Pattern=met, Pattern=die, Pattern=situatie op zijn hoofd, Pattern=en
+	Constrained: Pattern=op zijn hoofd, Pattern=zijn
+Turn ID=23| A | A : ja oké dat zijn
+	Free: Pattern=oké, Pattern=zijn, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=24| A | A : dit zijn het Afweerputje met de zeggen je dat situatie op zijn hoofd
+	Free: Pattern=dat, Pattern=zijn het, Pattern=de, Pattern=zeggen, Pattern=met, Pattern=situatie op zijn hoofd, Pattern=dit zijn
+	Constrained: Pattern=op zijn hoofd, Pattern=zijn, Pattern=het
+Turn ID=25| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : eh dit zijn die met afvoerpu en de situatie op zijn hoofd
+	Free: Pattern=zijn die, Pattern=situatie op zijn hoofd, Pattern=eh, Pattern=dit zijn, Pattern=afvoerpu en de, Pattern=met
+	Constrained: Pattern=de, Pattern=die, Pattern=afvoerpu, Pattern=en, Pattern=op zijn hoofd, Pattern=zijn
+Turn ID=27| A | A : eh waar zijn die
+	Free: Pattern=zijn die, Pattern=waar, Pattern=eh
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : dit zijn het afvoerpu en de Hoofdsituatie
+	Free: Pattern=afvoerpu en de, Pattern=zijn het, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=het, Pattern=afvoerpu, Pattern=en, Pattern=zijn
+Turn ID=30| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

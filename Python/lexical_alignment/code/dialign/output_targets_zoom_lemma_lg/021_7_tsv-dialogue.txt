@@ -1,0 +1,131 @@
+A|0| A: dit doen mij denken aan 
+A|1| A: Tenminste wat om _het_ voorwerp heen zitten 
+A|2| A: als je in bed liggen 
+A|3| A: _en_ je hebben _een_ _tafel_ waar je eten op kunnen voortzetten 
+B|4| B: ook [een] soort plateau _met_ twee klein poot dan dus 
+A|5| A: _ja_ _ja_ 
+B|6| B: _Oké_ 
+B|7| B: nummer 
+B|8| B: _ik zien een_ soort [tafel] _met_ twee poot 
+B|9| B: eronder 
+A|10| A: mhm 
+B|11| B: [en] 
+B|12| B: _bovenop_ [het] [tafel] bekendstaan ook nog iets 
+B|13| B: maar _ik_ weten niet zo goed hoe dat eruitzien 
+A|14| A: [Oké] 
+A|15| A: Letter 
+A|16| A: [ik zien] hier [een] [tafel] 
+A|17| A: aan de bovenkant van [het] voorwerp 
+A|18| A: [en] [bovenop] staan _een bakje_ 
+B|19| B: [ja] 
+B|20| B: cijfer nummer 
+B|21| B: _ik zien een_ plateauo _met_ twee 
+B|22| B: hoe heten [het] 
+B|23| B: Pootjes [en] [een bakje] [bovenop] 
+A|24| A: mhm 
+A|25| A: [ja] letter 
+A|26| A: [ik zien een] [tafel] 
+A|27| A: _met een bakje_ daar [bovenop] 
+B|28| B: nummer 
+B|29| B: [ik zien een] plateauo [met een bakje] [bovenop] 
+B|30| B: [en] twee poot 
+A|31| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit doen mij denken aan
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Tenminste wat om het voorwerp heen zitten
+	Free: Pattern=het
+	Constrained: 
+Turn ID=2| A | A : als je in bed liggen
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en je hebben een tafel waar je eten op kunnen voortzetten
+	Free: Pattern=een, Pattern=en, Pattern=tafel
+	Constrained: 
+Turn ID=4| B | B : ook een soort plateau met twee klein poot dan dus
+	Free: Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=5| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : ik zien een soort tafel met twee poot
+	Free: Pattern=ik zien een, Pattern=tafel, Pattern=met
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=9| B | B : eronder
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=12| B | B : bovenop het tafel bekendstaan ook nog iets
+	Free: Pattern=bovenop, Pattern=tafel, Pattern=het
+	Constrained: 
+Turn ID=13| B | B : maar ik weten niet zo goed hoe dat eruitzien
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=14| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ik zien hier een tafel
+	Free: Pattern=ik zien, Pattern=een, Pattern=tafel
+	Constrained: Pattern=ik
+Turn ID=17| A | A : aan de bovenkant van het voorwerp
+	Free: Pattern=het
+	Constrained: 
+Turn ID=18| A | A : en bovenop staan een bakje
+	Free: Pattern=een bakje, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : cijfer nummer
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : ik zien een plateauo met twee
+	Free: Pattern=ik zien een, Pattern=met
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=22| B | B : hoe heten het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=23| B | B : Pootjes en een bakje bovenop
+	Free: Pattern=een bakje, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=24| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : ik zien een tafel
+	Free: Pattern=ik zien een, Pattern=tafel
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=27| A | A : met een bakje daar bovenop
+	Free: Pattern=met een bakje, Pattern=bovenop
+	Constrained: Pattern=een bakje, Pattern=een, Pattern=met
+Turn ID=28| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : ik zien een plateauo met een bakje bovenop
+	Free: Pattern=ik zien een, Pattern=met een bakje, Pattern=bovenop
+	Constrained: Pattern=een bakje, Pattern=een, Pattern=ik zien, Pattern=met, Pattern=ik
+Turn ID=30| B | B : en twee poot
+	Free: Pattern=en
+	Constrained: 
+Turn ID=31| A | A : Letter
+	Free: 
+	Constrained: 

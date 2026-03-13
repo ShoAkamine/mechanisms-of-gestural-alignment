@@ -1,0 +1,75 @@
+A|0| A: _Oh_ oke _Euh_ nu _degeen_ waar _ik_ over _aan_ _het_ twijfelen _zijn_ bij _de_ vorig 
+A|1| A: in ieder geval deze _hebben_ _euh naar_ mijn mening _een_ satellie _op_ _zijn_ kop 
+A|2| A: _en aan de_ rechterkant steken er twee ding uit 
+A|3| A: _en aan de onderkant_ _zijn_ _een_ staar wat _een beetje_ _naar beneden_ gaan 
+B|4| B: [euh [naar] beneden] [en] dan [een beetje] zo [naar] voren 
+A|5| A: _ja_ precies _ja_ 
+B|6| B: [Oh] [ja] [ja] oké 
+A|7| A: [een beetje] [naar] _de_ camera toe 
+B|8| B: [Euh] even denken 
+B|9| B: oh volgens mij [zijn] dit [euh] [degeen] die jij als 
+B|10| B: _met_ [een beetje] [op] [de] bovenkant [een] soort satelliet [en aan de onderkant] [hebben] je zo'n [euh] 
+B|11| B: soort _staart_ richting [de] voorkant 
+A|12| A: Yes 
+A|13| A: [Oh] _ik hebben_ [de] satelliethoed [met] [staart] [aan de onderkant] 
+B|14| B: [Euh] [ik hebben] [het] satelliet [met] [de] [staart] onder 
+A|15| A: Yes [Euh] 
+A|16| A: [de] satelliethoed [met] staar 
+B|17| B: [Euh] [het] satelliet [aan de] bovenkant [en] [het] [staart] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh oke Euh nu degeen waar ik over aan het twijfelen zijn bij de vorig
+	Free: Pattern=Euh, Pattern=het, Pattern=ik, Pattern=Oh, Pattern=zijn, Pattern=degeen, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=1| A | A : in ieder geval deze hebben euh naar mijn mening een satellie op zijn kop
+	Free: Pattern=op, Pattern=een, Pattern=hebben, Pattern=euh naar, Pattern=zijn
+	Constrained: Pattern=euh, Pattern=naar
+Turn ID=2| A | A : en aan de rechterkant steken er twee ding uit
+	Free: Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=de, Pattern=en
+Turn ID=3| A | A : en aan de onderkant zijn een staar wat een beetje naar beneden gaan
+	Free: Pattern=een, Pattern=naar beneden, Pattern=zijn, Pattern=een beetje, Pattern=en aan de onderkant
+	Constrained: Pattern=aan de, Pattern=een, Pattern=aan de onderkant, Pattern=en, Pattern=en aan de, Pattern=naar, Pattern=de, Pattern=aan
+Turn ID=4| B | B : euh naar beneden en dan een beetje zo naar voren
+	Free: Pattern=euh naar, Pattern=naar beneden, Pattern=en, Pattern=een beetje, Pattern=naar
+	Constrained: Pattern=een, Pattern=naar, Pattern=euh
+Turn ID=5| A | A : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oh ja ja oké
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=7| A | A : een beetje naar de camera toe
+	Free: Pattern=een beetje, Pattern=naar, Pattern=de
+	Constrained: Pattern=een
+Turn ID=8| B | B : Euh even denken
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=9| B | B : oh volgens mij zijn dit euh degeen die jij als
+	Free: Pattern=euh, Pattern=zijn, Pattern=degeen
+	Constrained: 
+Turn ID=10| B | B : met een beetje op de bovenkant een soort satelliet en aan de onderkant hebben je zo'n euh
+	Free: Pattern=de, Pattern=op, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=met, Pattern=een beetje, Pattern=en aan de onderkant
+	Constrained: Pattern=aan de, Pattern=een, Pattern=aan de onderkant, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=11| B | B : soort staart richting de voorkant
+	Free: Pattern=de, Pattern=staart
+	Constrained: 
+Turn ID=12| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : Oh ik hebben de satelliethoed met staart aan de onderkant
+	Free: Pattern=ik hebben, Pattern=de, Pattern=staart, Pattern=aan de onderkant, Pattern=met, Pattern=Oh
+	Constrained: Pattern=aan de, Pattern=hebben, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=14| B | B : Euh ik hebben het satelliet met de staart onder
+	Free: Pattern=ik hebben, Pattern=de, Pattern=Euh, Pattern=met, Pattern=het, Pattern=staart
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=15| A | A : Yes Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=16| A | A : de satelliethoed met staar
+	Free: Pattern=met, Pattern=de
+	Constrained: 
+Turn ID=17| B | B : Euh het satelliet aan de bovenkant en het staart
+	Free: Pattern=aan de, Pattern=Euh, Pattern=en, Pattern=het, Pattern=staart
+	Constrained: Pattern=aan, Pattern=de

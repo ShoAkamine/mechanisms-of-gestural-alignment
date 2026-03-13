@@ -1,0 +1,51 @@
+B|0| B: _en_ dit _zijn_ basisvorm _met_ euh _aan de_ linkerkant lijken een soort van _verrekijker_ van zo'n blok _die_ steeds groot worden 
+B|1| B: _en_ dan euh _aan_ ons voorkant zitten een plat vierkan _en_ dan zitten er nog een soort _antenne_ bovenaan 
+A|2| A: dat [zijn] 
+A|3| A: _Euh ik hebben nu die_ [met] _de verrekijker en de antenne_ [aan de] bovenkant 
+B|4| B: [Euh] 
+B|5| B: [Euh ik hebben nu die] [verrekijker en de antenne] 
+A|6| A: ja [ik] dat [zijn] 
+A|7| A: [en] [nu] [hebben] [ik] _de verrekijker_ 
+B|8| B: [Euh] nummer 
+B|9| B: _ik hebben [de verrekijker_ en de antenne] 
+A|10| A: dat [zijn] 
+A|11| A: [ik hebben de verrekijker] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : en dit zijn basisvorm met euh aan de linkerkant lijken een soort van verrekijker van zo'n blok die steeds groot worden
+	Free: Pattern=aan de, Pattern=met, Pattern=die, Pattern=zijn, Pattern=verrekijker, Pattern=en
+	Constrained: Pattern=aan
+Turn ID=1| B | B : en dan euh aan ons voorkant zitten een plat vierkan en dan zitten er nog een soort antenne bovenaan
+	Free: Pattern=antenne, Pattern=aan, Pattern=en
+	Constrained: 
+Turn ID=2| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : Euh ik hebben nu die met de verrekijker en de antenne aan de bovenkant
+	Free: Pattern=de verrekijker en de antenne, Pattern=Euh ik hebben nu die, Pattern=aan de, Pattern=met
+	Constrained: Pattern=aan, Pattern=hebben, Pattern=die, Pattern=antenne, Pattern=ik, Pattern=de verrekijker, Pattern=Euh, Pattern=nu, Pattern=verrekijker en de antenne, Pattern=verrekijker, Pattern=en
+Turn ID=4| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=5| B | B : Euh ik hebben nu die verrekijker en de antenne
+	Free: Pattern=Euh ik hebben nu die, Pattern=verrekijker en de antenne
+	Constrained: Pattern=hebben, Pattern=die, Pattern=antenne, Pattern=ik, Pattern=Euh, Pattern=nu, Pattern=verrekijker, Pattern=en
+Turn ID=6| A | A : ja ik dat zijn
+	Free: Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : en nu hebben ik de verrekijker
+	Free: Pattern=nu, Pattern=hebben, Pattern=ik, Pattern=en, Pattern=de verrekijker
+	Constrained: Pattern=verrekijker
+Turn ID=8| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=9| B | B : ik hebben de verrekijker en de antenne
+	Free: Pattern=de verrekijker en de antenne, Pattern=ik hebben de verrekijker
+	Constrained: Pattern=verrekijker en de antenne, Pattern=hebben, Pattern=antenne, Pattern=ik, Pattern=de verrekijker, Pattern=verrekijker, Pattern=en
+Turn ID=10| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=11| A | A : ik hebben de verrekijker
+	Free: Pattern=ik hebben de verrekijker
+	Constrained: Pattern=de verrekijker, Pattern=verrekijker, Pattern=ik, Pattern=hebben

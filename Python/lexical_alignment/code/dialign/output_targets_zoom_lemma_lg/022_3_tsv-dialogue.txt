@@ -1,0 +1,107 @@
+A|0| A: _Oké_ _ik_ vinden _dit_ _een_ beetje lijken op _een_ soort danseres to be honest 
+A|1| A: ze staan _een_ beetje _zo_ op _een_ soort _van_ driehoekig klein _plateau_ 
+A|2| A: _en_ _hebben_ _een_ hoofd _en_ twee armp _en_ _dat_ staan _dan_ _zo_ ongeveer 
+B|3| B: [en] zegmaar wat het [plateau] [en] _de_ pot samen maken _dat zijn_ [een] staaf _die_ rond draaien 
+A|4| A: ja ja precies 
+B|5| B: [en] één [van] _de_ arm _zijn_ zo'n dun ding [en] _de_ ander _zijn_ [een] vierkant 
+A|6| A: ja 
+B|7| B: [en] [dan] [hebben] je nog [een] ander kubus in het midden 
+A|8| A: ja [dat] kloppen 
+B|9| B: [Oké] [dan] weten [ik] welk _dat zijn_ 
+B|10| B: [dit] _zijn_ _de ballerina_ met haar hand [zo] omhoog 
+B|11| B: [en] één hand _zijn_ [een] kubus [en] [dan] _zijn_ er nog [een] ander kubus in het midden 
+A|12| A: ja [dat zijn] letter 
+A|13| A: ah [de] exact dezelfde 
+A|14| A: weer [de ballerina] 
+B|15| B: Oh 
+B|16| B: eh even zoeken 
+B|17| B: eh nummer 
+B|18| B: [dit] [zijn] [de ballerina] met [de] hand omhoog 
+A|19| A: ja waar staan [die] 
+A|20| A: ja letter 
+A|21| A: [de] danseres 
+B|22| B: Eh 
+B|23| B: nummer 
+B|24| B: [de ballerina] 
+A|25| A: ja letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik vinden dit een beetje lijken op een soort danseres to be honest
+	Free: Pattern=dit, Pattern=Oké, Pattern=een, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : ze staan een beetje zo op een soort van driehoekig klein plateau
+	Free: Pattern=zo, Pattern=plateau, Pattern=van, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : en hebben een hoofd en twee armp en dat staan dan zo ongeveer
+	Free: Pattern=dat, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=zo, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : en zegmaar wat het plateau en de pot samen maken dat zijn een staaf die rond draaien
+	Free: Pattern=dat zijn, Pattern=de, Pattern=een, Pattern=plateau, Pattern=die, Pattern=en
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=4| A | A : ja ja precies
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : en één van de arm zijn zo'n dun ding en de ander zijn een vierkant
+	Free: Pattern=de, Pattern=een, Pattern=zijn, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : en dan hebben je nog een ander kubus in het midden
+	Free: Pattern=en, Pattern=dan, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : ja dat kloppen
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=9| B | B : Oké dan weten ik welk dat zijn
+	Free: Pattern=dat zijn, Pattern=dan, Pattern=Oké, Pattern=ik
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| B | B : dit zijn de ballerina met haar hand zo omhoog
+	Free: Pattern=de ballerina, Pattern=dit, Pattern=zijn, Pattern=zo
+	Constrained: Pattern=de
+Turn ID=11| B | B : en één hand zijn een kubus en dan zijn er nog een ander kubus in het midden
+	Free: Pattern=en, Pattern=dan, Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : ja dat zijn letter
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| A | A : ah de exact dezelfde
+	Free: Pattern=de
+	Constrained: 
+Turn ID=14| A | A : weer de ballerina
+	Free: Pattern=de ballerina
+	Constrained: Pattern=de
+Turn ID=15| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : eh even zoeken
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : eh nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : dit zijn de ballerina met de hand omhoog
+	Free: Pattern=de ballerina, Pattern=de, Pattern=dit, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=19| A | A : ja waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=20| A | A : ja letter
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : de danseres
+	Free: Pattern=de
+	Constrained: 
+Turn ID=22| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : de ballerina
+	Free: Pattern=de ballerina
+	Constrained: Pattern=de
+Turn ID=25| A | A : ja letter
+	Free: 
+	Constrained: 

@@ -1,0 +1,191 @@
+A|0| A: _ja_ kloppen 
+B|1| B: _Oké_ 
+A|2| A: _en_ jij _zijn_ toch 
+B|3| B: Aangenaam [ja] 
+A|4| A: [Oké] 
+A|5| A: aangenaam 
+A|6| A: goed om te weten 
+A|7| A: het _zijn_ _de_ één keer dat _ik_ _dit_ doen _met_ video 
+A|8| A: _dus_ helemaal niet awkward of wat dan _ook_ 
+B|9| B: [ja] voor mij [ook] voor mij [ook] 
+B|10| B: nee nee nee nee nee 
+A|11| A: Oh _we_ _zijn_ er 
+B|12| B: [ja] wel grappig 
+B|13| B: [Oké] 
+A|14| A: Wacht _ik_ zien _ik_ zien het plaat 
+A|15| A: Okéhet plaat dat _ik_ zien _zijn_ zeggen maar _een_ kop _met_ _aan de_ zijkant alsof je _twee_ tand _hebben_ 
+A|16| A: _en_ dan boven _een_ toeter _net_ als alsof je het _een_ tube _hebben_ 
+B|17| B: _en _een_ soort_ van staart _aan de linkerkant_ ervan denken [ik] 
+A|18| A: [ja] inderdaad 
+B|19| B: [Oké] [ja] 
+B|20| B: _dit zijn_ weer dezelfde _die_ [de] [twee] eigenlijk oort naar rechts [hebben] 
+B|21| B: [een] klein hanekam _en een_ staart _aan de linkerkant_ van [de] mok 
+A|22| A: [ja] [ik] [hebben] hem 
+A|23| A: God hoe deden _we_ deze 
+A|24| A: [Oké] [dit zijn] [die] komen 
+A|25| A: _met_ [die] [twee] tand _aan de rechterkant_ 
+A|26| A: [en] daar bovenop [een soort] ha-ha 
+B|27| B: [en] [de] _hanenkam_ [en] [de] staart links 
+A|28| A: [ja] [ja] 
+B|29| B: [ja] 
+A|30| A: [ja] 
+B|31| B: [dit zijn] weer [de] raar hanekam 
+B|32| B: [met] [de] [twee] _stuk [aan de_ rechterkant] van [de] mok 
+B|33| B: _en een_ staar [aan de] onderkant 
+A|34| A: [ja] 
+A|35| A: [ik] [hebben] hem 
+A|36| A: [dit zijn] [de] lastig 
+A|37| A: [dit zijn] degeen [die] [aan de] zijkant [die] [twee] tand [hebben] 
+A|38| A: [en] [die] [hanenkam] [aan de] bovenkant 
+B|39| B: Hm-hm 
+B|40| B: [ja] 
+A|41| A: [en een] [stuk [aan de] linkerkant] uitstekend 
+B|42| B: Yes 
+B|43| B: [die] [we] [net] [ook] [hebben] 
+B|44| B: [dus] [met] [de] [twee] uitsteeksel [aan de rechterkant] [met] [de] hanekam 
+A|45| A: [ja] 
+A|46| A: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| A | A : en jij zijn toch
+	Free: Pattern=zijn, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : Aangenaam ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| A | A : aangenaam
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : goed om te weten
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : het zijn de één keer dat ik dit doen met video
+	Free: Pattern=de, Pattern=dit, Pattern=met, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=8| A | A : dus helemaal niet awkward of wat dan ook
+	Free: Pattern=ook, Pattern=dus
+	Constrained: 
+Turn ID=9| B | B : ja voor mij ook voor mij ook
+	Free: Pattern=ook, Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : nee nee nee nee nee
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : Oh we zijn er
+	Free: Pattern=zijn, Pattern=we
+	Constrained: 
+Turn ID=12| B | B : ja wel grappig
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=14| A | A : Wacht ik zien ik zien het plaat
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=15| A | A : Okéhet plaat dat ik zien zijn zeggen maar een kop met aan de zijkant alsof je twee tand hebben
+	Free: Pattern=twee, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=16| A | A : en dan boven een toeter net als alsof je het een tube hebben
+	Free: Pattern=en, Pattern=hebben, Pattern=net, Pattern=een
+	Constrained: 
+Turn ID=17| B | B : en een soort van staart aan de linkerkant ervan denken ik
+	Free: Pattern=aan de linkerkant, Pattern=en een, Pattern=een soort, Pattern=ik
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de, Pattern=een
+Turn ID=18| A | A : ja inderdaad
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : dit zijn weer dezelfde die de twee eigenlijk oort naar rechts hebben
+	Free: Pattern=twee, Pattern=de, Pattern=hebben, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=21| B | B : een klein hanekam en een staart aan de linkerkant van de mok
+	Free: Pattern=aan de linkerkant, Pattern=en een, Pattern=de, Pattern=een
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de, Pattern=een
+Turn ID=22| A | A : ja ik hebben hem
+	Free: Pattern=ik, Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : God hoe deden we deze
+	Free: Pattern=we
+	Constrained: 
+Turn ID=24| A | A : Oké dit zijn die komen
+	Free: Pattern=dit zijn, Pattern=Oké, Pattern=die
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=25| A | A : met die twee tand aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=met, Pattern=die, Pattern=twee
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=26| A | A : en daar bovenop een soort ha-ha
+	Free: Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=27| B | B : en de hanenkam en de staart links
+	Free: Pattern=en, Pattern=de, Pattern=hanenkam
+	Constrained: 
+Turn ID=28| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dit zijn weer de raar hanekam
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=32| B | B : met de twee stuk aan de rechterkant van de mok
+	Free: Pattern=twee, Pattern=de, Pattern=stuk aan de, Pattern=met, Pattern=aan de rechterkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=33| B | B : en een staar aan de onderkant
+	Free: Pattern=en een, Pattern=aan de
+	Constrained: Pattern=en, Pattern=de, Pattern=een
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : ik hebben hem
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=36| A | A : dit zijn de lastig
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=37| A | A : dit zijn degeen die aan de zijkant die twee tand hebben
+	Free: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=de
+Turn ID=38| A | A : en die hanenkam aan de bovenkant
+	Free: Pattern=aan de, Pattern=en, Pattern=die, Pattern=hanenkam
+	Constrained: Pattern=de
+Turn ID=39| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : en een stuk aan de linkerkant uitstekend
+	Free: Pattern=aan de linkerkant, Pattern=stuk aan de, Pattern=en een
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de, Pattern=een
+Turn ID=42| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=43| B | B : die we net ook hebben
+	Free: Pattern=net, Pattern=ook, Pattern=hebben, Pattern=we, Pattern=die
+	Constrained: 
+Turn ID=44| B | B : dus met de twee uitsteeksel aan de rechterkant met de hanekam
+	Free: Pattern=twee, Pattern=met, Pattern=aan de rechterkant, Pattern=de, Pattern=dus
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=45| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

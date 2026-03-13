@@ -1,0 +1,67 @@
+A|0| A: Yes 
+A|1| A: Oh euh deze _hebben_ een _puntmuts_ 
+A|2| A: _Euh_ het zijn een _kabouter_ 
+B|3| B: ja 
+A|4| A: euh met wielt 
+A|5| A: Yes 
+B|6| B: nu [hebben] _ik_ _de_ [puntmuts] dus _de kabouter_ 
+A|7| A: _Euh_ yes even kijken waar die zijn 
+A|8| A: daar 
+A|9| A: _Euh_ oké [ik] [hebben] _de kabouter op_ beeld 
+B|10| B: ja 
+B|11| B: [Euh] dan [hebben] [ik] [de kabouter op] wiel 
+A|12| A: Yes even kijken waar die staan 
+A|13| A: ah daar 
+A|14| A: [de kabouter op] beeld 
+B|15| B: [de kabouter op] wiel 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Oh euh deze hebben een puntmuts
+	Free: Pattern=hebben, Pattern=puntmuts
+	Constrained: 
+Turn ID=2| A | A : Euh het zijn een kabouter
+	Free: Pattern=Euh, Pattern=kabouter
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : euh met wielt
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : nu hebben ik de puntmuts dus de kabouter
+	Free: Pattern=puntmuts, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=de kabouter
+	Constrained: Pattern=de, Pattern=kabouter
+Turn ID=7| A | A : Euh yes even kijken waar die zijn
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=8| A | A : daar
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Euh oké ik hebben de kabouter op beeld
+	Free: Pattern=de kabouter op, Pattern=Euh, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=kabouter, Pattern=de, Pattern=de kabouter
+Turn ID=10| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : Euh dan hebben ik de kabouter op wiel
+	Free: Pattern=de kabouter op, Pattern=Euh, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=kabouter, Pattern=de, Pattern=de kabouter
+Turn ID=12| A | A : Yes even kijken waar die staan
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ah daar
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : de kabouter op beeld
+	Free: Pattern=de kabouter op
+	Constrained: Pattern=kabouter, Pattern=de, Pattern=de kabouter
+Turn ID=15| B | B : de kabouter op wiel
+	Free: Pattern=de kabouter op
+	Constrained: Pattern=kabouter, Pattern=de, Pattern=de kabouter

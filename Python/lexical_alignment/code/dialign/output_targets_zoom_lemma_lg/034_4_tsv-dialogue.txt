@@ -1,0 +1,79 @@
+A|0| A: _Euh_ nou _deze hebben_ een soort van een _piramide_ bovenop maar dan _plat_ _aan de bovenkant_ 
+A|1| A: ik weten niet zo goed hoe je _dat_ uit moeten leggen 
+A|2| A: _Euh_ _en_ dan _twee vierkant_ uitstulping _aan de rechterkant_ 
+A|3| A: _en_ _aan de_ linkerkant komen _aan de_ onderkant iets uit 
+A|4| A: _en_ halverwege nog een soort streep 
+B|5| B: Oké _dat zijn_ 
+B|6| B: _euh deze hebben_ rechts [twee vierkant] zitten [en] zo'n [plat] [piramide] erop op [de bovenkant] 
+A|7| A: [euh] waar [zijn] [dat] ding blijven ? Oh daar 
+A|8| A: [euh deze hebben] een [euh] [piramide] _die_ [plat] staan _aan de bovenkant_ [en] _die_ [twee] balk _aan de rechterkant_ 
+B|9| B: _dat zijn_ 
+A|10| A: [en] nog [twee] frummeltjes ja 
+B|11| B: [Euh] eze [hebben] zo'n [plat] [piramide] [aan de bovenkant] 
+B|12| B: _met_ [twee] [euh] gelijk bloekjes [aan de rechterkant] 
+B|13| B: [en] link onder wat [en] links in het midden wat 
+A|14| A: [dat zijn] 
+A|15| A: [euh deze] [zijn] _de plat_ [Euh] [piramide] bovenop [met] _die_ [de] balk [aan de rechterkant] 
+B|16| B: [dat zijn] 
+B|17| B: [euh] dit [zijn] [die] [met] [de plat] [piramide] erop 
+A|18| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Euh nou deze hebben een soort van een piramide bovenop maar dan plat aan de bovenkant
+	Free: Pattern=piramide, Pattern=Euh, Pattern=deze hebben, Pattern=aan de bovenkant, Pattern=plat
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=hebben
+Turn ID=1| A | A : ik weten niet zo goed hoe je dat uit moeten leggen
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=2| A | A : Euh en dan twee vierkant uitstulping aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=twee vierkant, Pattern=Euh, Pattern=en
+	Constrained: Pattern=twee, Pattern=de, Pattern=aan de
+Turn ID=3| A | A : en aan de linkerkant komen aan de onderkant iets uit
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=4| A | A : en halverwege nog een soort streep
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| B | B : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=6| B | B : euh deze hebben rechts twee vierkant zitten en zo'n plat piramide erop op de bovenkant
+	Free: Pattern=euh deze hebben, Pattern=piramide, Pattern=de bovenkant, Pattern=en, Pattern=plat, Pattern=twee vierkant
+	Constrained: Pattern=twee, Pattern=de, Pattern=hebben, Pattern=euh, Pattern=deze hebben, Pattern=euh deze
+Turn ID=7| A | A : euh waar zijn dat ding blijven ? Oh daar
+	Free: Pattern=zijn, Pattern=euh, Pattern=dat
+	Constrained: 
+Turn ID=8| A | A : euh deze hebben een euh piramide die plat staan aan de bovenkant en die twee balk aan de rechterkant
+	Free: Pattern=twee, Pattern=euh deze hebben, Pattern=piramide, Pattern=euh, Pattern=plat, Pattern=aan de rechterkant, Pattern=die, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=hebben, Pattern=euh, Pattern=deze hebben, Pattern=euh deze
+Turn ID=9| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=10| A | A : en nog twee frummeltjes ja
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=11| B | B : Euh eze hebben zo'n plat piramide aan de bovenkant
+	Free: Pattern=piramide, Pattern=Euh, Pattern=hebben, Pattern=aan de bovenkant, Pattern=plat
+	Constrained: Pattern=de bovenkant, Pattern=aan de, Pattern=de
+Turn ID=12| B | B : met twee euh gelijk bloekjes aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=euh, Pattern=met, Pattern=twee
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=13| B | B : en link onder wat en links in het midden wat
+	Free: Pattern=en
+	Constrained: 
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=15| A | A : euh deze zijn de plat Euh piramide bovenop met die de balk aan de rechterkant
+	Free: Pattern=de, Pattern=piramide, Pattern=Euh, Pattern=de plat, Pattern=zijn, Pattern=euh deze, Pattern=met, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=de, Pattern=plat, Pattern=euh, Pattern=aan de
+Turn ID=16| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=17| B | B : euh dit zijn die met de plat piramide erop
+	Free: Pattern=piramide, Pattern=euh, Pattern=met, Pattern=die, Pattern=de plat, Pattern=zijn
+	Constrained: Pattern=de, Pattern=plat
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

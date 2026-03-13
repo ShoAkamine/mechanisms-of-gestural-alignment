@@ -1,0 +1,155 @@
+B|0| B: Oké 
+B|1| B: ehm _deze_ _hebben_ zitten _een_ _soort_ _ei op_ _het_ kop 
+B|2| B: _en_ hij _zijn_ arm doen _een_ beetje zo 
+B|3| B: _er_ zitten _twee_ _soort van_ haak armp die zo uitsteken 
+B|4| B: _aan_ _de_ voorkant zitten _er_ _een_ balk die echt zo recht naar beneden _gaan_ 
+A|5| A: Oh _ja_ _ik_ zien [het] al 
+A|6| A: _dat zijn dan_ 
+B|7| B: Oké 
+B|8| B: Oké 
+A|9| A: Eh [deze] staan [aan] [een] _paal_ 
+A|10| A: [en] [hebben] [een] klein bolle _op zijn hoofd_ 
+A|11| A: [en] [er] [gaan] [twee] paalt [soort van] door hem heen 
+B|12| B: Ehm 
+A|13| A: [een] rond bolletje _op zijn hoofd_ 
+A|14| A: [er] [zijn] [er] sowieso maar één volgens mij _ook_ 
+B|15| B: [ja] [dat zijn dan] denken [ik] nummer 
+B|16| B: _zijn dat_ [ook] weer _met_ die [paal] [aan] _de_ voorkant 
+A|17| A: [ja] 
+B|18| B: Oké [ja] [dat zijn] nummer 
+A|19| A: [de] ober 
+B|20| B: ehm _dit zijn_ die _met_ [dat] _ei op zijn hoofd_ 
+B|21| B: [en] die haak zo 
+B|22| B: [en] zo'n balk [aan] [de] voorkant die naar beneden [gaan] 
+A|23| A: ah [ja] 
+A|24| A: Ei [op zijn hoofd] 
+A|25| A: Zeggen genoeg 
+A|26| A: Eh 
+B|27| B: [ja] 
+A|28| A: [zijn dat] 
+A|29| A: [dit zijn] diegene [met] [met] [ei op zijn hoofd] 
+B|30| B: even kijken 
+A|31| A: Jezus 
+B|32| B: [ja] [dat zijn] 
+B|33| B: [dit zijn] die [met] [het] [ei op zijn hoofd] 
+A|34| A: Ei [op zijn hoofd] 
+A|35| A: Eh 
+A|36| A: [dit zijn] [de] [ei op zijn hoofd] 
+B|37| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ehm deze hebben zitten een soort ei op het kop
+	Free: Pattern=soort, Pattern=ei op, Pattern=een, Pattern=het, Pattern=hebben, Pattern=deze
+	Constrained: 
+Turn ID=2| B | B : en hij zijn arm doen een beetje zo
+	Free: Pattern=zijn, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : er zitten twee soort van haak armp die zo uitsteken
+	Free: Pattern=soort van, Pattern=twee, Pattern=er
+	Constrained: Pattern=soort
+Turn ID=4| B | B : aan de voorkant zitten er een balk die echt zo recht naar beneden gaan
+	Free: Pattern=een, Pattern=er, Pattern=gaan, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=5| A | A : Oh ja ik zien het al
+	Free: Pattern=ja, Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=6| A | A : dat zijn dan
+	Free: Pattern=dat zijn dan
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn
+Turn ID=7| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Eh deze staan aan een paal
+	Free: Pattern=paal, Pattern=aan, Pattern=deze, Pattern=een
+	Constrained: 
+Turn ID=10| A | A : en hebben een klein bolle op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=hebben, Pattern=en, Pattern=een
+	Constrained: Pattern=zijn
+Turn ID=11| A | A : en er gaan twee paalt soort van door hem heen
+	Free: Pattern=twee, Pattern=er, Pattern=en, Pattern=soort van, Pattern=gaan
+	Constrained: Pattern=soort
+Turn ID=12| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : een rond bolletje op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=een
+	Constrained: Pattern=zijn
+Turn ID=14| A | A : er zijn er sowieso maar één volgens mij ook
+	Free: Pattern=zijn, Pattern=ook, Pattern=er
+	Constrained: 
+Turn ID=15| B | B : ja dat zijn dan denken ik nummer
+	Free: Pattern=dat zijn dan, Pattern=ja, Pattern=ik
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn
+Turn ID=16| B | B : zijn dat ook weer met die paal aan de voorkant
+	Free: Pattern=ook, Pattern=met, Pattern=paal, Pattern=zijn dat, Pattern=de, Pattern=aan
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : Oké ja dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| A | A : de ober
+	Free: Pattern=de
+	Constrained: 
+Turn ID=20| B | B : ehm dit zijn die met dat ei op zijn hoofd
+	Free: Pattern=ei op zijn hoofd, Pattern=dit zijn, Pattern=dat, Pattern=met
+	Constrained: Pattern=op zijn hoofd, Pattern=ei op, Pattern=zijn
+Turn ID=21| B | B : en die haak zo
+	Free: Pattern=en
+	Constrained: 
+Turn ID=22| B | B : en zo'n balk aan de voorkant die naar beneden gaan
+	Free: Pattern=de, Pattern=gaan, Pattern=aan, Pattern=en
+	Constrained: 
+Turn ID=23| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Ei op zijn hoofd
+	Free: Pattern=op zijn hoofd
+	Constrained: Pattern=zijn
+Turn ID=25| A | A : Zeggen genoeg
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : zijn dat
+	Free: Pattern=zijn dat
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=29| A | A : dit zijn diegene met met ei op zijn hoofd
+	Free: Pattern=ei op zijn hoofd, Pattern=dit zijn, Pattern=met
+	Constrained: Pattern=op zijn hoofd, Pattern=ei op, Pattern=zijn
+Turn ID=30| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : Jezus
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=33| B | B : dit zijn die met het ei op zijn hoofd
+	Free: Pattern=ei op zijn hoofd, Pattern=dit zijn, Pattern=het, Pattern=met
+	Constrained: Pattern=op zijn hoofd, Pattern=ei op, Pattern=zijn
+Turn ID=34| A | A : Ei op zijn hoofd
+	Free: Pattern=op zijn hoofd
+	Constrained: Pattern=zijn
+Turn ID=35| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : dit zijn de ei op zijn hoofd
+	Free: Pattern=ei op zijn hoofd, Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=op zijn hoofd, Pattern=ei op, Pattern=zijn
+Turn ID=37| B | B : nummer
+	Free: 
+	Constrained: 

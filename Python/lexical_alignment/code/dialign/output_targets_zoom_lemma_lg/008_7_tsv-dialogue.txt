@@ -1,0 +1,143 @@
+B|0| B: ehm _deze_ _zitten_ _een soort_ _van_ niks echt op _de bovenkant_ 
+B|1| B: _maar_ je _hebben_ wel heel erg _hoog_ _hebben_ je _een soort_ _van_ plateau _die_ eigenlijk helemaal rond _gaan_ 
+B|2| B: _en_ _die_ _zitten_ best wel _hoog_ 
+B|3| B: _en dan hebben_ je daar _soort_ _twee_ po _onder_ 
+B|4| B: _en_ _daarop_ _zitten_ ook _een soort_ _van_ bakje 
+B|5| B: _en_ helemaal achter _zitten_ _een soort_ stengel eraan 
+A|6| A: [een soort] 
+A|7| A: _eh_ oké _dat zijn_ 
+A|8| A: Eh _deze hebben die_ [een] _ja_ _dat_ _dat_ vierkan _als_ _het_ _zijn_ waar _hij_ doorheen [gaan] 
+A|9| A: [en] _dat_ vierkan [hebben] [dan] [die] uitsteeksel _aan de_ onderkant [zitten] 
+A|10| A: Eh alsof _het_ [een soort] _ja_ tafeltje _zijn_ 
+A|11| A: [en dan hebben] _hij_ [daarop] _weer_ iets liggen 
+A|12| A: [en] _aan de_ achterkant [gaan] er nog [een soort] _ja_ ding _met_ [een] boog omhoog 
+B|13| B: [eh] wachten _even_ 
+B|14| B: ik [hebben] hem 
+B|15| B: [hij] wat [gaan] ook [weer] _door_ [het] midden 
+B|16| B: _een vierkant_ 
+A|17| A: _als_ [hij] [gaan] [door] [een vierkant] heen _als_ 
+B|18| B: wat zeggen je nou 
+A|19| A: net net zoals diegene _met_ [de] glijbaan _maar dan_ [deze] _zijn_ [hoog] 
+A|20| A: [en dan] uitzitten er [twee] _van die_ balk [onder] _dat_ [vierkant] 
+B|21| B: Oh [ja] [ja] 
+B|22| B: ik zien hem nu pas [ja] 
+B|23| B: [deze hebben] [een] plateau [maar dan] [een] beetje _aan de bovenkant_ [met] 2 [van die] stok eronder [als] [een soort] [van] _tafel_ 
+B|24| B: [een soort] [van] bijzettafel 
+A|25| A: [ja] [even] kijken waar [die] _zijn_ 
+A|26| A: O _dat zijn_ 
+A|27| A: [eh] dit _zijn_ degeen [die] [door] [de] plaat heen [gaan] [met] [de] 
+A|28| A: Eh [en] [de] plaat [hebben] [dan] _die twee_ uitsteeksel naar beneden 
+B|29| B: Yes 
+B|30| B: [deze hebben die] [die] [dat] plateau of [die] [die] _tafel_ helemaal bovenin 
+B|31| B: [met] [die twee] po eruit 
+A|32| A: [ja] _dat zijn_ 
+A|33| A: [eh] [ja] dit _zijn_ [de] [tafel] [die] er [die] [aan de bovenkant] [zitten] 
+B|34| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze zitten een soort van niks echt op de bovenkant
+	Free: Pattern=de bovenkant, Pattern=zitten, Pattern=een soort, Pattern=van, Pattern=deze
+	Constrained: Pattern=soort, Pattern=de, Pattern=een
+Turn ID=1| B | B : maar je hebben wel heel erg hoog hebben je een soort van plateau die eigenlijk helemaal rond gaan
+	Free: Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=van, Pattern=hoog, Pattern=gaan, Pattern=maar
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=2| B | B : en die zitten best wel hoog
+	Free: Pattern=hoog, Pattern=die, Pattern=zitten, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : en dan hebben je daar soort twee po onder
+	Free: Pattern=en dan hebben, Pattern=soort, Pattern=onder, Pattern=twee
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=en, Pattern=hebben
+Turn ID=4| B | B : en daarop zitten ook een soort van bakje
+	Free: Pattern=daarop, Pattern=zitten, Pattern=een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=5| B | B : en helemaal achter zitten een soort stengel eraan
+	Free: Pattern=een soort, Pattern=zitten, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=6| A | A : een soort
+	Free: Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=7| A | A : eh oké dat zijn
+	Free: Pattern=dat zijn, Pattern=eh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=8| A | A : Eh deze hebben die een ja dat dat vierkan als het zijn waar hij doorheen gaan
+	Free: Pattern=dat, Pattern=ja, Pattern=deze hebben die, Pattern=een, Pattern=het, Pattern=hij, Pattern=als, Pattern=zijn, Pattern=gaan
+	Constrained: Pattern=deze hebben, Pattern=hebben, Pattern=deze, Pattern=die
+Turn ID=9| A | A : en dat vierkan hebben dan die uitsteeksel aan de onderkant zitten
+	Free: Pattern=dat, Pattern=aan de, Pattern=dan, Pattern=hebben, Pattern=en, Pattern=die, Pattern=zitten
+	Constrained: Pattern=de
+Turn ID=10| A | A : Eh alsof het een soort ja tafeltje zijn
+	Free: Pattern=een soort, Pattern=ja, Pattern=zijn, Pattern=het
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=11| A | A : en dan hebben hij daarop weer iets liggen
+	Free: Pattern=en dan hebben, Pattern=hij, Pattern=daarop, Pattern=weer
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=en, Pattern=hebben
+Turn ID=12| A | A : en aan de achterkant gaan er nog een soort ja ding met een boog omhoog
+	Free: Pattern=ja, Pattern=aan de, Pattern=een, Pattern=met, Pattern=een soort, Pattern=en, Pattern=gaan
+	Constrained: Pattern=soort, Pattern=de, Pattern=een
+Turn ID=13| B | B : eh wachten even
+	Free: Pattern=eh, Pattern=even
+	Constrained: 
+Turn ID=14| B | B : ik hebben hem
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=15| B | B : hij wat gaan ook weer door het midden
+	Free: Pattern=door, Pattern=het, Pattern=hij, Pattern=gaan, Pattern=weer
+	Constrained: 
+Turn ID=16| B | B : een vierkant
+	Free: Pattern=een vierkant
+	Constrained: Pattern=vierkant, Pattern=een
+Turn ID=17| A | A : als hij gaan door een vierkant heen als
+	Free: Pattern=door, Pattern=hij, Pattern=als, Pattern=gaan, Pattern=een vierkant
+	Constrained: Pattern=vierkant, Pattern=een
+Turn ID=18| B | B : wat zeggen je nou
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : net net zoals diegene met de glijbaan maar dan deze zijn hoog
+	Free: Pattern=de, Pattern=met, Pattern=maar dan, Pattern=hoog, Pattern=zijn, Pattern=deze
+	Constrained: Pattern=dan, Pattern=maar
+Turn ID=20| A | A : en dan uitzitten er twee van die balk onder dat vierkant
+	Free: Pattern=dat, Pattern=twee, Pattern=en dan, Pattern=onder, Pattern=van die, Pattern=vierkant
+	Constrained: Pattern=dan, Pattern=van, Pattern=die, Pattern=en
+Turn ID=21| B | B : Oh ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ik zien hem nu pas ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : deze hebben een plateau maar dan een beetje aan de bovenkant met 2 van die stok eronder als een soort van tafel
+	Free: Pattern=een, Pattern=deze hebben, Pattern=als, Pattern=met, Pattern=tafel, Pattern=maar dan, Pattern=een soort, Pattern=van, Pattern=aan de bovenkant, Pattern=van die
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=dan, Pattern=de bovenkant, Pattern=een, Pattern=hebben, Pattern=die, Pattern=van, Pattern=maar, Pattern=deze
+Turn ID=24| B | B : een soort van bijzettafel
+	Free: Pattern=een soort, Pattern=van
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=25| A | A : ja even kijken waar die zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=even, Pattern=die
+	Constrained: 
+Turn ID=26| A | A : O dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : eh dit zijn degeen die door de plaat heen gaan met de
+	Free: Pattern=de, Pattern=door, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=gaan
+	Constrained: 
+Turn ID=28| A | A : Eh en de plaat hebben dan die twee uitsteeksel naar beneden
+	Free: Pattern=de, Pattern=dan, Pattern=die twee, Pattern=hebben, Pattern=en
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=29| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : deze hebben die die dat plateau of die die tafel helemaal bovenin
+	Free: Pattern=deze hebben die, Pattern=dat, Pattern=tafel, Pattern=die
+	Constrained: Pattern=deze hebben, Pattern=hebben, Pattern=deze, Pattern=die
+Turn ID=31| B | B : met die twee po eruit
+	Free: Pattern=die twee, Pattern=met
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=32| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=33| A | A : eh ja dit zijn de tafel die er die aan de bovenkant zitten
+	Free: Pattern=eh, Pattern=aan de bovenkant, Pattern=zijn, Pattern=de, Pattern=ja, Pattern=tafel, Pattern=die, Pattern=zitten
+	Constrained: Pattern=de bovenkant, Pattern=aan de, Pattern=de
+Turn ID=34| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

@@ -1,0 +1,63 @@
+A|0| A: _deze_ 
+A|1| A: _ik_ vinden _het_ eruit zien als _een soort van_ _tafel_ _die_ door _dat_ kop heen gaan _met_ zo'n _bakje erop_ 
+B|2| B: mhm 
+B|3| B: _ja_ _ja_ [ik] denken [dat] [ik] weten wat [het] _zijn_ 
+B|4| B: _deze zijn_ _de_ [een] _met die _tafel_ met_ [een soort van] [bakje erop] 
+A|5| A: [ja] even kijken waar staan hij 
+A|6| A: Ehm _dat zijn_ 
+A|7| A: [deze zijn] degeen [met die tafel] erdoorheen [met] [het] [bakje erop] 
+B|8| B: ah [ja] [dat zijn] 
+B|9| B: [deze zijn] [dat] mok [met] [een] [tafel] en [een] [bakje erop] 
+A|10| A: ehm oké [dat zijn] Even kijken [dat zijn] 
+A|11| A: [dat zijn] degeen _met de [tafel_ met] [het] [bakje erop] 
+B|12| B: ah [ja] [dat zijn] 
+B|13| B: [deze zijn] [de] [een] [met de tafel] en [een] [bakje erop] 
+A|14| A: Ehm [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : deze
+	Free: Pattern=deze
+	Constrained: 
+Turn ID=1| A | A : ik vinden het eruit zien als een soort van tafel die door dat kop heen gaan met zo'n bakje erop
+	Free: Pattern=dat, Pattern=bakje erop, Pattern=het, Pattern=een soort van, Pattern=met, Pattern=ik, Pattern=tafel, Pattern=die
+	Constrained: Pattern=een
+Turn ID=2| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ja ja ik denken dat ik weten wat het zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : deze zijn de een met die tafel met een soort van bakje erop
+	Free: Pattern=tafel met, Pattern=een, Pattern=bakje erop, Pattern=de, Pattern=deze zijn, Pattern=met die tafel, Pattern=een soort van
+	Constrained: Pattern=een, Pattern=met, Pattern=zijn, Pattern=deze, Pattern=tafel, Pattern=die
+Turn ID=5| A | A : ja even kijken waar staan hij
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=7| A | A : deze zijn degeen met die tafel erdoorheen met het bakje erop
+	Free: Pattern=deze zijn, Pattern=bakje erop, Pattern=het, Pattern=met die tafel, Pattern=met
+	Constrained: Pattern=met, Pattern=zijn, Pattern=deze, Pattern=tafel, Pattern=die
+Turn ID=8| B | B : ah ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=9| B | B : deze zijn dat mok met een tafel en een bakje erop
+	Free: Pattern=dat, Pattern=deze zijn, Pattern=een, Pattern=bakje erop, Pattern=met, Pattern=tafel
+	Constrained: Pattern=zijn, Pattern=deze
+Turn ID=10| A | A : ehm oké dat zijn Even kijken dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=11| A | A : dat zijn degeen met de tafel met het bakje erop
+	Free: Pattern=dat zijn, Pattern=tafel met, Pattern=met de tafel, Pattern=bakje erop, Pattern=het
+	Constrained: Pattern=dat, Pattern=de, Pattern=met, Pattern=tafel, Pattern=zijn
+Turn ID=12| B | B : ah ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=13| B | B : deze zijn de een met de tafel en een bakje erop
+	Free: Pattern=een, Pattern=bakje erop, Pattern=de, Pattern=met de tafel, Pattern=deze zijn
+	Constrained: Pattern=de, Pattern=met, Pattern=tafel, Pattern=zijn, Pattern=deze
+Turn ID=14| A | A : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

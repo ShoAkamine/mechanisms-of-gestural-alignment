@@ -1,0 +1,91 @@
+A|0| A: oeh _deze hebben een_ langwerpig _balk_ aan _de_ bovenkant 
+A|1| A: _en_ _een_ soort van neusachtig iets aan _de_ linkerzijkant 
+A|2| A: _en_ nog _een_ soort van tuitje aan _de_ rechterzijkant 
+B|3| B: kijken [en] [de] [balk] bovenop die liggen _euh_ _horizontaal_ 
+A|4| A: _ja_ 
+B|5| B: [ja] 
+B|6| B: Oké _dan_ _zijn het_ 
+B|7| B: [deze hebben een] _horizontaal_ _euh_ dun [balk] bovenop 
+B|8| B: _en dan_ _euh_ _link_ [een] beetje zo'n _neus_ wat jij straks zeggen 
+A|9| A: [ja] dat [zijn] [de] 
+A|10| A: [euh] _dit zijn het balk_ aan [de] bovenkant _met_ [de] [neus] aan [de] linkerzijkant 
+B|11| B: [ja] kijken 
+A|12| A: [en dan] nog [een] uitsteeksel aan [de] rechterzijkant 
+B|13| B: [ja] [euh] 
+B|14| B: [dit zijn] die [met] [het] [euh] plat [balk] bovenop [en] [het] neusje links 
+A|15| A: dat [zijn] 
+A|16| A: [euh] _dit zijn het_ [horizontaal] [balk] boven [met] [de] [neus] [link] 
+B|17| B: even kijken 
+B|18| B: Oh [ja] 
+B|19| B: [dit zijn het balk] bovenop [en] [het] neusje links 
+A|20| A: Yes ik weten welk je bedoelen 
+A|21| A: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oeh deze hebben een langwerpig balk aan de bovenkant
+	Free: Pattern=deze hebben een, Pattern=balk, Pattern=de
+	Constrained: Pattern=een
+Turn ID=1| A | A : en een soort van neusachtig iets aan de linkerzijkant
+	Free: Pattern=en, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : en nog een soort van tuitje aan de rechterzijkant
+	Free: Pattern=en, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : kijken en de balk bovenop die liggen euh horizontaal
+	Free: Pattern=de, Pattern=euh, Pattern=balk, Pattern=en, Pattern=horizontaal
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=7| B | B : deze hebben een horizontaal euh dun balk bovenop
+	Free: Pattern=deze hebben een, Pattern=balk, Pattern=euh, Pattern=horizontaal
+	Constrained: Pattern=een
+Turn ID=8| B | B : en dan euh link een beetje zo'n neus wat jij straks zeggen
+	Free: Pattern=en dan, Pattern=een, Pattern=euh, Pattern=neus, Pattern=link
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=9| A | A : ja dat zijn de
+	Free: Pattern=de, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : euh dit zijn het balk aan de bovenkant met de neus aan de linkerzijkant
+	Free: Pattern=de, Pattern=euh, Pattern=neus, Pattern=met, Pattern=dit zijn het balk
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=balk, Pattern=zijn, Pattern=dit zijn het, Pattern=dit zijn
+Turn ID=11| B | B : ja kijken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : en dan nog een uitsteeksel aan de rechterzijkant
+	Free: Pattern=en dan, Pattern=de, Pattern=een
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=13| B | B : ja euh
+	Free: Pattern=euh, Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : dit zijn die met het euh plat balk bovenop en het neusje links
+	Free: Pattern=het, Pattern=euh, Pattern=balk, Pattern=met, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=15| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : euh dit zijn het horizontaal balk boven met de neus link
+	Free: Pattern=de, Pattern=euh, Pattern=met, Pattern=link, Pattern=neus, Pattern=balk, Pattern=dit zijn het, Pattern=horizontaal
+	Constrained: Pattern=zijn het, Pattern=dit zijn, Pattern=zijn, Pattern=het
+Turn ID=17| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : dit zijn het balk bovenop en het neusje links
+	Free: Pattern=dit zijn het balk, Pattern=en, Pattern=het
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=balk, Pattern=zijn, Pattern=dit zijn het, Pattern=dit zijn
+Turn ID=20| A | A : Yes ik weten welk je bedoelen
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

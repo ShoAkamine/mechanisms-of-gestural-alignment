@@ -1,0 +1,99 @@
+B|0| B: _dan_ dit _zijn_ _ja_ _gewoon_ _het_ normaal _de_ normaal _bekervorm_ 
+B|1| B: _en_ _dan _hebben_ hij_ _aan_ allebei _de_ kant dus zowel links als rechts _hebben hij_ dezelfde soort arm 
+B|2| B: _gewoon_ _een_ soort cilinder _met_ _een bolle_ _erop_ 
+B|3| B: _en_ _daarachter_ _zijn_ er _nog een_ soort _schuin vierkant_ 
+B|4| B: waar _nog_ iets _aan_ afhangen ook 
+A|5| A: Hebben [hij] bij _die_ armp [hebben hij] daar [nog [een] bolle] [aan] zitten 
+B|6| B: _ja_ 
+A|7| A: Oké dat [zijn] 
+A|8| A: Eh [dan hebben] _ik_ nu [met] dat [schuin vierkant] erachter 
+A|9| A: [en] _met die twee_ uitsteeksel 
+A|10| A: _die_ voor [de] rest wel [gewoon] _die_ [bekervorm] [zijn] 
+B|11| B: even kijken 
+B|12| B: Oh _ja_ [met die] [bolle] op [de] arm 
+A|13| A: _ja ja_ 
+B|14| B: nummer 
+B|15| B: Ee [ik] [hebben] [die] [met die twee] arm _met bollet erop_ 
+A|16| A: Eh [met] [het] [schuin] vlak [daarachter] toch 
+B|17| B: [ja ja] 
+A|18| A: dat [zijn] 
+A|19| A: ehm [de] uitsteeksel [met bollet erop] 
+B|20| B: u u u nummer 
+B|21| B: [de] arm [met bollet erop] 
+A|22| A: ehm [de] uitsteeksel [met bollet] 
+B|23| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan dit zijn ja gewoon het normaal de normaal bekervorm
+	Free: Pattern=dan, Pattern=gewoon, Pattern=het, Pattern=bekervorm, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=1| B | B : en dan hebben hij aan allebei de kant dus zowel links als rechts hebben hij dezelfde soort arm
+	Free: Pattern=hebben hij, Pattern=dan hebben, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: Pattern=hebben, Pattern=dan, Pattern=hij
+Turn ID=2| B | B : gewoon een soort cilinder met een bolle erop
+	Free: Pattern=erop, Pattern=een, Pattern=gewoon, Pattern=een bolle, Pattern=met
+	Constrained: Pattern=een, Pattern=bolle
+Turn ID=3| B | B : en daarachter zijn er nog een soort schuin vierkant
+	Free: Pattern=daarachter, Pattern=nog een, Pattern=schuin vierkant, Pattern=en, Pattern=zijn
+	Constrained: Pattern=schuin, Pattern=een, Pattern=nog
+Turn ID=4| B | B : waar nog iets aan afhangen ook
+	Free: Pattern=aan, Pattern=nog
+	Constrained: 
+Turn ID=5| A | A : Hebben hij bij die armp hebben hij daar nog een bolle aan zitten
+	Free: Pattern=hebben hij, Pattern=nog een, Pattern=aan, Pattern=hij, Pattern=een bolle, Pattern=die
+	Constrained: Pattern=nog, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=bolle
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Oké dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=8| A | A : Eh dan hebben ik nu met dat schuin vierkant erachter
+	Free: Pattern=dan hebben, Pattern=schuin vierkant, Pattern=ik, Pattern=met
+	Constrained: Pattern=schuin, Pattern=hebben, Pattern=dan
+Turn ID=9| A | A : en met die twee uitsteeksel
+	Free: Pattern=met die twee, Pattern=en
+	Constrained: Pattern=met, Pattern=die, Pattern=met die
+Turn ID=10| A | A : die voor de rest wel gewoon die bekervorm zijn
+	Free: Pattern=de, Pattern=gewoon, Pattern=bekervorm, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=11| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : Oh ja met die bolle op de arm
+	Free: Pattern=met die, Pattern=de, Pattern=ja, Pattern=bolle
+	Constrained: Pattern=die, Pattern=met
+Turn ID=13| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=14| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : Ee ik hebben die met die twee arm met bollet erop
+	Free: Pattern=met die twee, Pattern=met bollet erop, Pattern=hebben, Pattern=die, Pattern=ik
+	Constrained: Pattern=met die, Pattern=erop, Pattern=met, Pattern=die, Pattern=met bollet
+Turn ID=16| A | A : Eh met het schuin vlak daarachter toch
+	Free: Pattern=schuin, Pattern=het, Pattern=daarachter, Pattern=met
+	Constrained: 
+Turn ID=17| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=19| A | A : ehm de uitsteeksel met bollet erop
+	Free: Pattern=met bollet erop, Pattern=de
+	Constrained: Pattern=erop, Pattern=met, Pattern=met bollet
+Turn ID=20| B | B : u u u nummer
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : de arm met bollet erop
+	Free: Pattern=met bollet erop, Pattern=de
+	Constrained: Pattern=erop, Pattern=met, Pattern=met bollet
+Turn ID=22| A | A : ehm de uitsteeksel met bollet
+	Free: Pattern=met bollet, Pattern=de
+	Constrained: Pattern=met
+Turn ID=23| B | B : nummer
+	Free: 
+	Constrained: 

@@ -1,0 +1,95 @@
+B|0| B: Euhm 
+B|1| B: _ik hebben nu_ _ja_ _een_ soort 
+B|2| B: _het_ _zijn_ de langwerpigste _vinden_ _ik_ met bovenop _een_ vierkant 
+B|3| B: twee vierkant eigenlijk 
+A|4| A: Uhuh 
+B|5| B: en onderkant _een_ soort 
+B|6| B: _ja_ 
+B|7| B: _een_ soort _waar_ hij _op_ balanceren lijken zeggen maar 
+A|8| A: [ja] [ik] [vinden] [het] [een] beetje [een] juichen _poppe_ [op] één been 
+B|9| B: en [een] driehoek helemaal onderop 
+B|10| B: [ja] 
+A|11| A: Oké dan _zijn het_ 
+B|12| B: [ja] 
+A|13| A: [ik hebben nu] [het] [het] juichend man [op] één been 
+B|14| B: Oh _ja dat zijn_ 
+B|15| B: _Euh_ dit [zijn] _dat_ dansen [poppe] 
+A|16| A: [Euh] [ja dat zijn] 
+A|17| A: even zoeken [waar] die staan 
+A|18| A: [ik hebben nu] [dat] _euh_ man [op] één been 
+B|19| B: [euh] dit [zijn het] dansen [poppe] 
+A|20| A: [Euh] [dat zijn] 
+A|21| A: [ik hebben nu] weer [dat] juichen man 
+B|22| B: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ik hebben nu ja een soort
+	Free: Pattern=ik hebben nu, Pattern=ja, Pattern=een
+	Constrained: Pattern=ik
+Turn ID=2| B | B : het zijn de langwerpigste vinden ik met bovenop een vierkant
+	Free: Pattern=vinden, Pattern=een, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=3| B | B : twee vierkant eigenlijk
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : Uhuh
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : en onderkant een soort
+	Free: Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : een soort waar hij op balanceren lijken zeggen maar
+	Free: Pattern=waar, Pattern=op, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : ja ik vinden het een beetje een juichen poppe op één been
+	Free: Pattern=op, Pattern=een, Pattern=het, Pattern=poppe, Pattern=ik, Pattern=vinden, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : en een driehoek helemaal onderop
+	Free: Pattern=een
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké dan zijn het
+	Free: Pattern=zijn het
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ik hebben nu het het juichend man op één been
+	Free: Pattern=ik hebben nu, Pattern=het, Pattern=op
+	Constrained: Pattern=ik
+Turn ID=14| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=15| B | B : Euh dit zijn dat dansen poppe
+	Free: Pattern=Euh, Pattern=zijn, Pattern=poppe, Pattern=dat
+	Constrained: 
+Turn ID=16| A | A : Euh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Euh
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=17| A | A : even zoeken waar die staan
+	Free: Pattern=waar
+	Constrained: 
+Turn ID=18| A | A : ik hebben nu dat euh man op één been
+	Free: Pattern=ik hebben nu, Pattern=euh, Pattern=op, Pattern=dat
+	Constrained: Pattern=ik
+Turn ID=19| B | B : euh dit zijn het dansen poppe
+	Free: Pattern=zijn het, Pattern=euh, Pattern=poppe
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=20| A | A : Euh dat zijn
+	Free: Pattern=dat zijn, Pattern=Euh
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| A | A : ik hebben nu weer dat juichen man
+	Free: Pattern=ik hebben nu, Pattern=dat
+	Constrained: Pattern=ik
+Turn ID=22| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 

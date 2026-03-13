@@ -1,0 +1,159 @@
+A|0| A: _Oké_ 
+A|1| A: _ehm_ _ik_ zien _dit_ _als een soort van kom_ 
+A|2| A: waar _dan_ in zeggen _maar_ rechtop _een_ _een_ lepel of _een spatel_ of zo in staat 
+A|3| A: _en_ hij _hebben_ _drie_ verschillend handvat zeggen _maar_ 
+A|4| A: _dus_ _één_ _zijn_ weer zo'n blokkig handvat 
+A|5| A: Ehm of _ja_ wat _jij_ net _die_ oog zeggen _maar_ noemen _aan de zijkant_ 
+B|6| B: [Oké] 
+A|7| A: eentje _zijn gewoon_ zo'n ovaal _ding_ 
+A|8| A: _en_ _aan de_ achterkant lijken _een soort van_ Buis te _zitten_ 
+A|9| A: _ehm_ _maar_ _ja_ _er_ _zitten dus gewoon_ echt precies in _het_ midden _bovenop_ lijken _er_ echt _gewoon_ recht _op_ _een soort van_ _spatel_ of zo in te bijstaan 
+B|10| B: Oh _dat_ vinden [ik] best [een] leuk omschrijving 
+B|11| B: [ik] weten wel welk je bedoelen 
+A|12| A: [Oké] top 
+B|13| B: [het] [zijn gewoon] [één] 
+B|14| B: [ja] [ik] moeten wel even zoeken 
+B|15| B: [maar] [zitten dus gewoon] [één] [ding] [bovenop] 
+B|16| B: [en] ver [zitten] [er] [drie] [ding] [aan de zijkant] [op] 
+A|17| A: [ja] 
+B|18| B: [Oké] oké _dat zijn_ nummer 
+B|19| B: [ehm] [ja] _dit zijn_ [dus] [die] [een] [ik] geloven _dat_ [jij] [het] omschrijven [als een soort van _kom] met_ [een spatel] _erin_ 
+B|20| B: [en] [dan] [hebben] je [drie] [soort van] [ding] eraan vastzitten 
+A|21| A: _ja dat zijn_ 
+A|22| A: _eh dit zijn de kom_ 
+A|23| A: _met de_ lepel [erin] 
+A|24| A: _en de drie_ verschillend handvat 
+B|25| B: [eh] [ja dat zijn] nummer 
+B|26| B: [eh dit zijn de kom] 
+B|27| B: [met _de] spatel_ 
+B|28| B: [en de drie] [ding] [aan de zijkant] 
+A|29| A: [eh] waar [zijn] hij 
+A|30| A: Eh [dat zijn] 
+A|31| A: [dit zijn de [kom] [met] [de] drie] hendel [en [de] spatel] 
+B|32| B: [eh] [ja] 
+B|33| B: komen [met [de] spatel] 
+B|34| B: Oh nummer 
+B|35| B: [dit zijn de kom] 
+B|36| B: [met [de] spatel] 
+B|37| B: [en de drie] [ding] [aan de zijkant] 
+A|38| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ehm ik zien dit als een soort van kom
+	Free: Pattern=als een soort van kom, Pattern=dit, Pattern=ik, Pattern=ehm
+	Constrained: Pattern=een soort van, Pattern=soort van, Pattern=een
+Turn ID=2| A | A : waar dan in zeggen maar rechtop een een lepel of een spatel of zo in staat
+	Free: Pattern=een spatel, Pattern=dan, Pattern=maar, Pattern=een
+	Constrained: Pattern=spatel, Pattern=een
+Turn ID=3| A | A : en hij hebben drie verschillend handvat zeggen maar
+	Free: Pattern=hebben, Pattern=drie, Pattern=maar, Pattern=en
+	Constrained: 
+Turn ID=4| A | A : dus één zijn weer zo'n blokkig handvat
+	Free: Pattern=zijn, Pattern=één, Pattern=dus
+	Constrained: 
+Turn ID=5| A | A : Ehm of ja wat jij net die oog zeggen maar noemen aan de zijkant
+	Free: Pattern=ja, Pattern=aan de zijkant, Pattern=die, Pattern=maar, Pattern=jij
+	Constrained: Pattern=aan de
+Turn ID=6| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| A | A : eentje zijn gewoon zo'n ovaal ding
+	Free: Pattern=zijn gewoon, Pattern=ding
+	Constrained: Pattern=gewoon, Pattern=zijn
+Turn ID=8| A | A : en aan de achterkant lijken een soort van Buis te zitten
+	Free: Pattern=een soort van, Pattern=aan de, Pattern=zitten, Pattern=en
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=9| A | A : ehm maar ja er zitten dus gewoon echt precies in het midden bovenop lijken er echt gewoon recht op een soort van spatel of zo in te bijstaan
+	Free: Pattern=bovenop, Pattern=ja, Pattern=op, Pattern=spatel, Pattern=gewoon, Pattern=het, Pattern=een soort van, Pattern=ehm, Pattern=maar, Pattern=zitten dus gewoon, Pattern=er
+	Constrained: Pattern=dus, Pattern=een, Pattern=gewoon, Pattern=zitten, Pattern=soort van
+Turn ID=10| B | B : Oh dat vinden ik best een leuk omschrijving
+	Free: Pattern=dat, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=11| B | B : ik weten wel welk je bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : het zijn gewoon één
+	Free: Pattern=zijn gewoon, Pattern=één, Pattern=het
+	Constrained: Pattern=gewoon, Pattern=zijn
+Turn ID=14| B | B : ja ik moeten wel even zoeken
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=15| B | B : maar zitten dus gewoon één ding bovenop
+	Free: Pattern=bovenop, Pattern=ding, Pattern=één, Pattern=zitten dus gewoon, Pattern=maar
+	Constrained: Pattern=zitten, Pattern=gewoon, Pattern=dus
+Turn ID=16| B | B : en ver zitten er drie ding aan de zijkant op
+	Free: Pattern=op, Pattern=ding, Pattern=aan de zijkant, Pattern=drie, Pattern=zitten, Pattern=er, Pattern=en
+	Constrained: Pattern=aan de
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : Oké oké dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : ehm ja dit zijn dus die een ik geloven dat jij het omschrijven als een soort van kom met een spatel erin
+	Free: Pattern=dat, Pattern=een, Pattern=het, Pattern=als een soort van kom, Pattern=ehm, Pattern=die, Pattern=een spatel, Pattern=ik, Pattern=erin, Pattern=jij, Pattern=dus, Pattern=ja, Pattern=dit zijn, Pattern=kom met
+	Constrained: Pattern=spatel, Pattern=een, Pattern=dit, Pattern=een soort van, Pattern=soort van, Pattern=zijn
+Turn ID=20| B | B : en dan hebben je drie soort van ding eraan vastzitten
+	Free: Pattern=dan, Pattern=ding, Pattern=drie, Pattern=hebben, Pattern=en, Pattern=soort van
+	Constrained: 
+Turn ID=21| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=22| A | A : eh dit zijn de kom
+	Free: Pattern=eh dit zijn de kom
+	Constrained: Pattern=dit zijn de kom, Pattern=dit, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=23| A | A : met de lepel erin
+	Free: Pattern=met de, Pattern=erin
+	Constrained: 
+Turn ID=24| A | A : en de drie verschillend handvat
+	Free: Pattern=en de drie
+	Constrained: Pattern=de drie, Pattern=drie, Pattern=en, Pattern=en de
+Turn ID=25| B | B : eh ja dat zijn nummer
+	Free: Pattern=ja dat zijn, Pattern=eh
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=26| B | B : eh dit zijn de kom
+	Free: Pattern=eh dit zijn de kom
+	Constrained: Pattern=dit zijn de kom, Pattern=dit, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=27| B | B : met de spatel
+	Free: Pattern=de spatel, Pattern=met de
+	Constrained: Pattern=spatel
+Turn ID=28| B | B : en de drie ding aan de zijkant
+	Free: Pattern=en de drie, Pattern=aan de zijkant, Pattern=ding
+	Constrained: Pattern=aan de, Pattern=en de, Pattern=drie, Pattern=de drie, Pattern=en
+Turn ID=29| A | A : eh waar zijn hij
+	Free: Pattern=eh, Pattern=zijn
+	Constrained: 
+Turn ID=30| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| A | A : dit zijn de kom met de drie hendel en de spatel
+	Free: Pattern=dit zijn de kom, Pattern=met de, Pattern=en de, Pattern=de spatel, Pattern=de drie, Pattern=kom met
+	Constrained: Pattern=spatel, Pattern=drie, Pattern=dit, Pattern=en, Pattern=zijn, Pattern=dit zijn
+Turn ID=32| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : komen met de spatel
+	Free: Pattern=de spatel, Pattern=met de
+	Constrained: Pattern=spatel
+Turn ID=34| B | B : Oh nummer
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : dit zijn de kom
+	Free: Pattern=dit zijn de kom
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=zijn
+Turn ID=36| B | B : met de spatel
+	Free: Pattern=de spatel, Pattern=met de
+	Constrained: Pattern=spatel
+Turn ID=37| B | B : en de drie ding aan de zijkant
+	Free: Pattern=en de drie, Pattern=aan de zijkant, Pattern=ding
+	Constrained: Pattern=aan de, Pattern=en de, Pattern=drie, Pattern=de drie, Pattern=en
+Turn ID=38| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

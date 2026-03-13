@@ -1,0 +1,139 @@
+B|0| B: _Oké_ ik moeten beginnen denken ik 
+B|1| B: _even kijken_ 
+B|2| B: _ehm_ _hij_ _hebben_ rechts _twee_ soort van staf _die_ eruit steken 
+B|3| B: Vierkante rechthoekig staf 
+B|4| B: _en_ bovenin _hij_ _hebben_ een soort _hoed_ op 
+B|5| B: _ehm_ een soort piramide _waar_ _dan_ _de_ _punt_ vanaf _zijn_ gehakt 
+B|6| B: _dus_ _hij_ beginnen _puntig_ _en dan_ worden _hij_ plat bovenin 
+A|7| A: _ja_ 
+B|8| B: Ehm _en_ _dat_ _hebben_ volgens mij er ook maar één 
+B|9| B: _dus_ hopelijk _zijn_ _dat_ al duidelijk 
+A|10| A: _ja_ [en dan] [hebben] [hij] nog 
+A|11| A: naar [de] ander kant [dan] [waar] [die] [twee] rechthoek staan 
+A|12| A: Hebben [hij] nog [twee] ding uitsteken aan [de] ander kant toch 
+B|13| B: [ja] één in _het_ midden [en] één onderin 
+B|14| B: [en] [die] onderin _zijn_ een beetje krom 
+A|15| A: [Oké] 
+A|16| A: [ja] oké 
+A|17| A: _Eh_ 
+A|18| A: [ehm] _dit zijn de_ allereer [die] je doen 
+A|19| A: [dus] met [het] [hoed] [dat] _niet_ [puntig] [zijn] 
+A|20| A: met met met [de] [twee] uitstekend staaf 
+B|21| B: [ehm] [ja] 
+B|22| B: [ja] ik weten welk [het] [zijn] 
+B|23| B: ik zien hem gewoon [niet] 
+B|24| B: Wacht 
+B|25| B: Oh daar nummer 
+B|26| B: [dit zijn de] niet-puntige piramide als [hoed] 
+A|27| A: [even kijken] [waar] [die] staan 
+A|28| A: [ja] 
+A|29| A: _eh_ [de] muts _zonder punt_ 
+B|30| B: nummer 
+B|31| B: [eh] [dit zijn de] piramide [zonder punt] bovenin 
+A|32| A: [dit zijn] muts [zonder punt] 
+B|33| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik moeten beginnen denken ik
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=2| B | B : ehm hij hebben rechts twee soort van staf die eruit steken
+	Free: Pattern=twee, Pattern=hebben, Pattern=hij, Pattern=ehm, Pattern=die
+	Constrained: 
+Turn ID=3| B | B : Vierkante rechthoekig staf
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : en bovenin hij hebben een soort hoed op
+	Free: Pattern=en, Pattern=hebben, Pattern=hij, Pattern=hoed
+	Constrained: 
+Turn ID=5| B | B : ehm een soort piramide waar dan de punt vanaf zijn gehakt
+	Free: Pattern=punt, Pattern=de, Pattern=waar, Pattern=dan, Pattern=ehm, Pattern=zijn
+	Constrained: 
+Turn ID=6| B | B : dus hij beginnen puntig en dan worden hij plat bovenin
+	Free: Pattern=en dan, Pattern=hij, Pattern=dus, Pattern=puntig
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Ehm en dat hebben volgens mij er ook maar één
+	Free: Pattern=en, Pattern=dat, Pattern=hebben
+	Constrained: 
+Turn ID=9| B | B : dus hopelijk zijn dat al duidelijk
+	Free: Pattern=dat, Pattern=zijn, Pattern=dus
+	Constrained: 
+Turn ID=10| A | A : ja en dan hebben hij nog
+	Free: Pattern=en dan, Pattern=hebben, Pattern=ja, Pattern=hij
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=11| A | A : naar de ander kant dan waar die twee rechthoek staan
+	Free: Pattern=twee, Pattern=de, Pattern=waar, Pattern=dan, Pattern=die
+	Constrained: 
+Turn ID=12| A | A : Hebben hij nog twee ding uitsteken aan de ander kant toch
+	Free: Pattern=twee, Pattern=de, Pattern=hij
+	Constrained: 
+Turn ID=13| B | B : ja één in het midden en één onderin
+	Free: Pattern=en, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=14| B | B : en die onderin zijn een beetje krom
+	Free: Pattern=en, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=15| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=18| A | A : ehm dit zijn de allereer die je doen
+	Free: Pattern=dit zijn de, Pattern=ehm, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=de
+Turn ID=19| A | A : dus met het hoed dat niet puntig zijn
+	Free: Pattern=dat, Pattern=niet, Pattern=puntig, Pattern=het, Pattern=zijn, Pattern=hoed, Pattern=dus
+	Constrained: 
+Turn ID=20| A | A : met met met de twee uitstekend staaf
+	Free: Pattern=twee, Pattern=de
+	Constrained: 
+Turn ID=21| B | B : ehm ja
+	Free: Pattern=ehm, Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja ik weten welk het zijn
+	Free: Pattern=zijn, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=23| B | B : ik zien hem gewoon niet
+	Free: Pattern=niet
+	Constrained: 
+Turn ID=24| B | B : Wacht
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : Oh daar nummer
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : dit zijn de niet-puntige piramide als hoed
+	Free: Pattern=dit zijn de, Pattern=hoed
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=de
+Turn ID=27| A | A : even kijken waar die staan
+	Free: Pattern=even kijken, Pattern=waar, Pattern=die
+	Constrained: 
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : eh de muts zonder punt
+	Free: Pattern=zonder punt, Pattern=eh, Pattern=de
+	Constrained: Pattern=punt
+Turn ID=30| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=31| B | B : eh dit zijn de piramide zonder punt bovenin
+	Free: Pattern=dit zijn de, Pattern=zonder punt, Pattern=eh
+	Constrained: Pattern=dit zijn, Pattern=de, Pattern=zijn, Pattern=punt
+Turn ID=32| A | A : dit zijn muts zonder punt
+	Free: Pattern=dit zijn, Pattern=zonder punt
+	Constrained: Pattern=zijn, Pattern=punt
+Turn ID=33| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

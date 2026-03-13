@@ -1,0 +1,87 @@
+A|0| A: _Eh_ nou _zijn_ ik natuurlijk 
+A|1| A: _Eh_ nu hebben hij nu hebben hij een plat plat cirkel vooraan 
+A|2| A: en hij _staan_ _op_ een heel groot vierkant 
+A|3| A: _Eh_ en hij hebben twee twee hengsel 
+B|4| B: _Oh_ _ja_ 
+B|5| B: _ja_ nummer 
+B|6| B: _ehm_ dit [zijn] _die_ _met die_ raar uitsteeksel van _drie_ bolle 
+B|7| B: _die op_ _de_ plank [staan] 
+A|8| A: [Oh] 
+A|9| A: [ehm] _die op het_ _op het_ vierkant [staan] 
+A|10| A: _met die drie bollet aan de zijkant_ 
+B|11| B: _ja_ nummer 
+B|12| B: _Eh die_ [met die] [die op] [de] plank [staan] 
+B|13| B: [met die drie bollet aan de zijkant] 
+A|14| A: [ja] 
+A|15| A: [zijn] 
+A|16| A: [Eh _die] op het plateau staan_ 
+A|17| A: [met die] hengsel 
+B|18| B: [ja] nummer 
+B|19| B: dit [zijn] [die] [met] [de] [drie bollet] als als oort soort van 
+B|20| B: [die op het plateau staan] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh nou zijn ik natuurlijk
+	Free: Pattern=zijn, Pattern=Eh
+	Constrained: 
+Turn ID=1| A | A : Eh nu hebben hij nu hebben hij een plat plat cirkel vooraan
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=2| A | A : en hij staan op een heel groot vierkant
+	Free: Pattern=op, Pattern=staan
+	Constrained: 
+Turn ID=3| A | A : Eh en hij hebben twee twee hengsel
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=4| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ehm dit zijn die met die raar uitsteeksel van drie bolle
+	Free: Pattern=met die, Pattern=drie, Pattern=ehm, Pattern=die, Pattern=zijn
+	Constrained: Pattern=die, Pattern=met
+Turn ID=7| B | B : die op de plank staan
+	Free: Pattern=die op, Pattern=de, Pattern=staan
+	Constrained: Pattern=die, Pattern=op
+Turn ID=8| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=9| A | A : ehm die op het op het vierkant staan
+	Free: Pattern=die op het, Pattern=op het, Pattern=ehm, Pattern=staan
+	Constrained: Pattern=die op, Pattern=die, Pattern=op het, Pattern=op
+Turn ID=10| A | A : met die drie bollet aan de zijkant
+	Free: Pattern=met die drie bollet aan de zijkant
+	Constrained: Pattern=met die, Pattern=de, Pattern=drie, Pattern=met, Pattern=die, Pattern=drie bollet
+Turn ID=11| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Eh die met die die op de plank staan
+	Free: Pattern=met die, Pattern=de, Pattern=staan, Pattern=die op, Pattern=Eh die
+	Constrained: Pattern=die, Pattern=op, Pattern=met, Pattern=Eh
+Turn ID=13| B | B : met die drie bollet aan de zijkant
+	Free: Pattern=met die drie bollet aan de zijkant
+	Constrained: Pattern=met die, Pattern=de, Pattern=drie, Pattern=met, Pattern=die, Pattern=drie bollet
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : Eh die op het plateau staan
+	Free: Pattern=die op het plateau staan, Pattern=Eh die
+	Constrained: Pattern=op, Pattern=staan, Pattern=Eh, Pattern=die, Pattern=op het, Pattern=die op het, Pattern=die op
+Turn ID=17| A | A : met die hengsel
+	Free: Pattern=met die
+	Constrained: Pattern=die, Pattern=met
+Turn ID=18| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : dit zijn die met de drie bollet als als oort soort van
+	Free: Pattern=de, Pattern=met, Pattern=die, Pattern=drie bollet, Pattern=zijn
+	Constrained: Pattern=drie
+Turn ID=20| B | B : die op het plateau staan
+	Free: Pattern=die op het plateau staan
+	Constrained: Pattern=op, Pattern=staan, Pattern=die, Pattern=op het, Pattern=die op het, Pattern=die op

@@ -1,0 +1,127 @@
+A|0| A: _Oké_ 
+A|1| A: _ja_ deze vinden _ik_ een beetje gekkig 
+A|2| A: het _zijn_ een soort van een vierkant _hula hopen_ 
+A|3| A: het _zijn_ een soort van een _zweven_ plateau 
+A|4| A: wat 
+A|5| A: zo 
+B|6| B: _Oh_ 
+A|7| A: _met_ een 
+A|8| A: eh link een hoekig staaf 
+B|9| B: [ja] 
+A|10| A: dus zitten een staaf zitten een hoek in 
+A|11| A: en twee van die ding op _zijn_ hoofd 
+B|12| B: [ja] 
+B|13| B: [ja] 
+B|14| B: [Oké] dan _hebben_ [ik] hem 
+A|15| A: Cylindertjes 
+B|16| B: Yes 
+B|17| B: _dat zijn_ 
+A|18| A: oké 
+B|19| B: _Oh_ _ik hebben_ _de_ [zweven] [hula hopen] 
+A|20| A: [Oh] oké 
+B|21| B: [met] 
+A|22| A: [ja] even kijken 
+A|23| A: [dat zijn] 
+A|24| A: [ik hebben] nu [de] Hula Hoop 
+B|25| B: Eh 
+A|26| A: dif 
+B|27| B: [dat zijn] 
+B|28| B: Ehm [ik hebben] _de [hula_ hopen] 
+A|29| A: eh [de hula] hooper 
+B|30| B: [ik hebben] [de [hula] hopen] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ja deze vinden ik een beetje gekkig
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : het zijn een soort van een vierkant hula hopen
+	Free: Pattern=hula hopen, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : het zijn een soort van een zweven plateau
+	Free: Pattern=zweven, Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : wat
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : zo
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=7| A | A : met een
+	Free: Pattern=met
+	Constrained: 
+Turn ID=8| A | A : eh link een hoekig staaf
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : dus zitten een staaf zitten een hoek in
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : en twee van die ding op zijn hoofd
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Oké dan hebben ik hem
+	Free: Pattern=Oké, Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=15| A | A : Cylindertjes
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=18| A | A : oké
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Oh ik hebben de zweven hula hopen
+	Free: Pattern=ik hebben, Pattern=de, Pattern=hula hopen, Pattern=zweven, Pattern=Oh
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=20| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=21| B | B : met
+	Free: Pattern=met
+	Constrained: 
+Turn ID=22| A | A : ja even kijken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=24| A | A : ik hebben nu de Hula Hoop
+	Free: Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=25| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : dif
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=28| B | B : Ehm ik hebben de hula hopen
+	Free: Pattern=de hula, Pattern=ik hebben, Pattern=hula hopen
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=29| A | A : eh de hula hooper
+	Free: Pattern=de hula
+	Constrained: Pattern=de
+Turn ID=30| B | B : ik hebben de hula hopen
+	Free: Pattern=de hula, Pattern=ik hebben, Pattern=hula hopen
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben

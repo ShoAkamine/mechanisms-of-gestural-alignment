@@ -1,0 +1,127 @@
+B|0| B: ehm _ja_ dit dit _vinden_ _ik_ dus veel _een soort van_ _op een_ graafmachine lijken 
+B|1| B: _ik_ _weten_ _ook_ niet waarom 
+B|2| B: maar deze _hebben_ in ieder geval _een_ _aan de_ onderkant _een_ iets wat uitsteken 
+B|3| B: Ehm _en aan de_ bovenkant isstaat er _een_ vierkant _die_ staan als _een_ 
+B|4| B: hoe noemen _je_ dat _ook_ alweer 
+A|5| A: [een] ruit 
+B|6| B: _ja_ 
+B|7| B: _en_ _hebben die_ _twee ding die_ eruit steken _ook_ 
+A|8| A: [ik] [vinden] [die] [een] beetje [op een] _ninja_ 
+A|9| A: want [een soort van] [een] _been_ zitten zo [en aan de] ander kant zitten [ook] nog zo 
+B|10| B: _Oh ja_ _ja_ kloppen 
+A|11| A: toch 
+A|12| A: Oké 
+A|13| A: eh _ik hebben die ninja_ [weten] [je] wel 
+A|14| A: _met_ het [een] _been_ zo [en] het ander _been_ [aan de] zijkant 
+A|15| A: [en] [twee ding die] uit [de] ruit komen 
+B|16| B: _Oh ja_ 
+B|17| B: _ja_ 
+B|18| B: dat zijn 
+B|19| B: _ja_ dat zijn 
+B|20| B: [ik hebben die ninja] 
+A|21| A: _even_ denken 
+A|22| A: [Oh ja] [die] _met die_ _been_ 
+B|23| B: [met die] [twee] [been] 
+B|24| B: [ja] 
+A|25| A: Oké 
+A|26| A: _ik hebben de ninja_ [met] [de] 
+B|27| B: [even] kijken 
+B|28| B: [Oh ja] 
+B|29| B: [ik hebben de ninja] 
+A|30| A: [ik hebben de ninja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm ja dit dit vinden ik dus veel een soort van op een graafmachine lijken
+	Free: Pattern=een soort van, Pattern=ik, Pattern=op een, Pattern=vinden, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=1| B | B : ik weten ook niet waarom
+	Free: Pattern=ik, Pattern=weten, Pattern=ook
+	Constrained: 
+Turn ID=2| B | B : maar deze hebben in ieder geval een aan de onderkant een iets wat uitsteken
+	Free: Pattern=aan de, Pattern=hebben, Pattern=een
+	Constrained: Pattern=de
+Turn ID=3| B | B : Ehm en aan de bovenkant isstaat er een vierkant die staan als een
+	Free: Pattern=en aan de, Pattern=die, Pattern=een
+	Constrained: Pattern=aan de, Pattern=en, Pattern=de
+Turn ID=4| B | B : hoe noemen je dat ook alweer
+	Free: Pattern=je, Pattern=ook
+	Constrained: 
+Turn ID=5| A | A : een ruit
+	Free: Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : en hebben die twee ding die eruit steken ook
+	Free: Pattern=twee ding die, Pattern=hebben die, Pattern=en, Pattern=ook
+	Constrained: Pattern=die, Pattern=hebben, Pattern=twee
+Turn ID=8| A | A : ik vinden die een beetje op een ninja
+	Free: Pattern=vinden, Pattern=een, Pattern=ninja, Pattern=die, Pattern=ik, Pattern=op een
+	Constrained: Pattern=een
+Turn ID=9| A | A : want een soort van een been zitten zo en aan de ander kant zitten ook nog zo
+	Free: Pattern=ook, Pattern=een, Pattern=een soort van, Pattern=been, Pattern=en aan de
+	Constrained: Pattern=een, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=10| B | B : Oh ja ja kloppen
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : toch
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : eh ik hebben die ninja weten je wel
+	Free: Pattern=ik hebben die ninja, Pattern=je, Pattern=weten
+	Constrained: Pattern=hebben, Pattern=ninja, Pattern=die, Pattern=ik, Pattern=hebben die
+Turn ID=14| A | A : met het een been zo en het ander been aan de zijkant
+	Free: Pattern=aan de, Pattern=een, Pattern=met, Pattern=en, Pattern=been
+	Constrained: Pattern=de
+Turn ID=15| A | A : en twee ding die uit de ruit komen
+	Free: Pattern=twee ding die, Pattern=en, Pattern=de
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=16| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ik hebben die ninja
+	Free: Pattern=ik hebben die ninja
+	Constrained: Pattern=hebben, Pattern=ninja, Pattern=die, Pattern=ik, Pattern=hebben die
+Turn ID=21| A | A : even denken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=22| A | A : Oh ja die met die been
+	Free: Pattern=met die, Pattern=Oh ja, Pattern=die, Pattern=been
+	Constrained: Pattern=ja, Pattern=die, Pattern=met
+Turn ID=23| B | B : met die twee been
+	Free: Pattern=met die, Pattern=been, Pattern=twee
+	Constrained: Pattern=die, Pattern=met
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : ik hebben de ninja met de
+	Free: Pattern=ik hebben de ninja, Pattern=met, Pattern=de
+	Constrained: Pattern=de, Pattern=ninja, Pattern=ik, Pattern=hebben
+Turn ID=27| B | B : even kijken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=28| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=29| B | B : ik hebben de ninja
+	Free: Pattern=ik hebben de ninja
+	Constrained: Pattern=de, Pattern=ninja, Pattern=ik, Pattern=hebben
+Turn ID=30| A | A : ik hebben de ninja
+	Free: Pattern=ik hebben de ninja
+	Constrained: Pattern=de, Pattern=ninja, Pattern=ik, Pattern=hebben

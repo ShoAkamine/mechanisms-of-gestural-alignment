@@ -1,0 +1,171 @@
+A|0| A: _ehm_ _deze hebben_ niks erbovenop _zitten_ zelf 
+A|1| A: _maar_ _er_ steken _wel_ _een_ _vierkan schuin_ _een_ beetje erboav 
+A|2| A: _en_ _hij hebben_ _een soort_ _twee_ houvaste 
+A|3| A: alleen _zijn_ _de_ linker klein _en_ _volgens mij_ iets dikk _en_ _de_ rechter iets lang 
+A|4| A: _en_ onder _dat_ _schuin_ stuk steken nog iets naar beneden 
+B|5| B: mmm 
+B|6| B: _Oké_ wachten 
+B|7| B: _eh_ _ja_ 
+B|8| B: dus [hij hebben] [hij] [een soort] van 
+B|9| B: _aan de_ bovenkant wat _niet echt_ [de] bovenkant [zijn] [hebben] [hij] [twee] van _die_ ding toch 
+B|10| B: _die_ hetzelfde [zijn] 
+B|11| B: _eh_ _ja_ oké 
+B|12| B: ik denken [wel] [dat] ik _het_ weten 
+B|13| B: ik denken [dat] _het zijn_ 
+B|14| B: [ehm] hier 
+B|15| B: _ja_ [volgens mij] [zijn] _het_ wat jij zeggen _met_ [dat] boek 
+B|16| B: [dat] [er] _zo'n_ [soort] van 
+B|17| B: door [de] _het_ _het_ voorwerp heen _gaan_ [een soort] van _stok_ 
+B|18| B: Best [wel] dik 
+B|19| B: _en dan_ [zitten] _aan de_ achterkant _zo'n_ [vierkan schuin] 
+B|20| B: [volgens mij] zeggen jij [dat] [dat] [een] boek [zijn] 
+A|21| A: [eh] _zitten er een soort_ _cirkel_ op [de] [stok] als [het zijn] [aan de] uiteinde 
+B|22| B: [maar] in ieder geval [zitten er een soort] van [stok] door [het] voorwerp heen 
+B|23| B: _ja_ _ja_ [aan] [het] eind _ja_ 
+A|24| A: [Oké] _dat zijn_ 
+A|25| A: [eh] _dit zijn degeen_ [die] [een] [stok] [er] dwars _doorheen_ [hebben] [gaan] 
+A|26| A: _en die_ [aan] allebei [de] uiteind [een soort] [ja] schijf [ja] [niet echt] schijf veel [zo'n] ballet [hebben] 
+B|27| B: Yes 
+B|28| B: [ja] 
+A|29| A: [en] 
+B|30| B: [en] [deze hebben] [de] rond _balk_ [een soort] van [doorheen] 
+B|31| B: _met_ [de] achterkant [het] boek 
+B|32| B: _met_ [die] [twee] [cirkel] 
+A|33| A: O [ja] 
+A|34| A: [ja] _dat zijn_ 
+A|35| A: Eh [deze hebben] _die balk_ [die] [er] dwars [doorheen] [gaan] [met] [aan de] beide kant [de] [ja] [een soort] [cirkel] 
+A|36| A: [en dan] 
+B|37| B: Yes 
+B|38| B: [dat zijn] 
+B|39| B: [dit zijn degeen] [met] [die balk] [er een soort] van gek [balk] erdoorheen [en die] boek erachter 
+B|40| B: [dat] boek erachter 
+A|41| A: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben niks erbovenop zitten zelf
+	Free: Pattern=deze hebben, Pattern=ehm, Pattern=zitten
+	Constrained: Pattern=hebben
+Turn ID=1| A | A : maar er steken wel een vierkan schuin een beetje erboav
+	Free: Pattern=er, Pattern=een, Pattern=wel, Pattern=vierkan schuin, Pattern=maar
+	Constrained: Pattern=schuin
+Turn ID=2| A | A : en hij hebben een soort twee houvaste
+	Free: Pattern=hij hebben, Pattern=een soort, Pattern=en, Pattern=twee
+	Constrained: Pattern=soort, Pattern=hebben, Pattern=een, Pattern=hij
+Turn ID=3| A | A : alleen zijn de linker klein en volgens mij iets dikk en de rechter iets lang
+	Free: Pattern=volgens mij, Pattern=en, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=4| A | A : en onder dat schuin stuk steken nog iets naar beneden
+	Free: Pattern=en, Pattern=schuin, Pattern=dat
+	Constrained: 
+Turn ID=5| B | B : mmm
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Oké wachten
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : dus hij hebben hij een soort van
+	Free: Pattern=hij hebben, Pattern=een soort, Pattern=hij
+	Constrained: Pattern=soort, Pattern=hebben, Pattern=een, Pattern=hij
+Turn ID=9| B | B : aan de bovenkant wat niet echt de bovenkant zijn hebben hij twee van die ding toch
+	Free: Pattern=twee, Pattern=de, Pattern=aan de, Pattern=niet echt, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=zijn
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=10| B | B : die hetzelfde zijn
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=11| B | B : eh ja oké
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ik denken wel dat ik het weten
+	Free: Pattern=wel, Pattern=dat, Pattern=het
+	Constrained: 
+Turn ID=13| B | B : ik denken dat het zijn
+	Free: Pattern=het zijn, Pattern=dat
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=14| B | B : ehm hier
+	Free: Pattern=ehm
+	Constrained: 
+Turn ID=15| B | B : ja volgens mij zijn het wat jij zeggen met dat boek
+	Free: Pattern=dat, Pattern=ja, Pattern=het, Pattern=met, Pattern=volgens mij, Pattern=zijn
+	Constrained: 
+Turn ID=16| B | B : dat er zo'n soort van
+	Free: Pattern=soort, Pattern=dat, Pattern=zo'n, Pattern=er
+	Constrained: 
+Turn ID=17| B | B : door de het het voorwerp heen gaan een soort van stok
+	Free: Pattern=de, Pattern=het, Pattern=gaan, Pattern=een soort, Pattern=stok
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=18| B | B : Best wel dik
+	Free: Pattern=wel
+	Constrained: 
+Turn ID=19| B | B : en dan zitten aan de achterkant zo'n vierkan schuin
+	Free: Pattern=zo'n, Pattern=en dan, Pattern=aan de, Pattern=zitten, Pattern=vierkan schuin
+	Constrained: Pattern=schuin, Pattern=aan, Pattern=de, Pattern=en
+Turn ID=20| B | B : volgens mij zeggen jij dat dat een boek zijn
+	Free: Pattern=volgens mij, Pattern=dat, Pattern=een, Pattern=zijn
+	Constrained: 
+Turn ID=21| A | A : eh zitten er een soort cirkel op de stok als het zijn aan de uiteinde
+	Free: Pattern=cirkel, Pattern=de, Pattern=aan de, Pattern=het zijn, Pattern=stok, Pattern=zitten er een soort, Pattern=eh
+	Constrained: Pattern=soort, Pattern=een, Pattern=het, Pattern=zitten, Pattern=er, Pattern=een soort, Pattern=zijn, Pattern=er een soort, Pattern=de, Pattern=aan
+Turn ID=22| B | B : maar in ieder geval zitten er een soort van stok door het voorwerp heen
+	Free: Pattern=zitten er een soort, Pattern=het, Pattern=maar, Pattern=stok
+	Constrained: Pattern=soort, Pattern=een, Pattern=zitten, Pattern=er, Pattern=een soort, Pattern=er een soort
+Turn ID=23| B | B : ja ja aan het eind ja
+	Free: Pattern=het, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| A | A : eh dit zijn degeen die een stok er dwars doorheen hebben gaan
+	Free: Pattern=doorheen, Pattern=een, Pattern=hebben, Pattern=die, Pattern=dit zijn degeen, Pattern=eh, Pattern=er, Pattern=stok, Pattern=gaan
+	Constrained: Pattern=zijn
+Turn ID=26| A | A : en die aan allebei de uiteind een soort ja schijf ja niet echt schijf veel zo'n ballet hebben
+	Free: Pattern=en die, Pattern=zo'n, Pattern=niet echt, Pattern=hebben, Pattern=een soort, Pattern=de, Pattern=aan, Pattern=ja
+	Constrained: Pattern=een, Pattern=die, Pattern=soort, Pattern=en
+Turn ID=27| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=30| B | B : en deze hebben de rond balk een soort van doorheen
+	Free: Pattern=deze hebben, Pattern=balk, Pattern=een soort, Pattern=en, Pattern=de, Pattern=doorheen
+	Constrained: Pattern=soort, Pattern=hebben, Pattern=een
+Turn ID=31| B | B : met de achterkant het boek
+	Free: Pattern=het, Pattern=met, Pattern=de
+	Constrained: 
+Turn ID=32| B | B : met die twee cirkel
+	Free: Pattern=twee, Pattern=cirkel, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=33| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=35| A | A : Eh deze hebben die balk die er dwars doorheen gaan met aan de beide kant de ja een soort cirkel
+	Free: Pattern=cirkel, Pattern=die balk, Pattern=aan de, Pattern=deze hebben, Pattern=met, Pattern=die, Pattern=er, Pattern=een soort, Pattern=gaan, Pattern=de, Pattern=ja, Pattern=doorheen
+	Constrained: Pattern=soort, Pattern=een, Pattern=hebben, Pattern=balk, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=36| A | A : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=37| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=39| B | B : dit zijn degeen met die balk er een soort van gek balk erdoorheen en die boek erachter
+	Free: Pattern=en die, Pattern=die balk, Pattern=balk, Pattern=met, Pattern=dit zijn degeen, Pattern=er een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=balk, Pattern=die, Pattern=er, Pattern=een soort, Pattern=en, Pattern=zijn
+Turn ID=40| B | B : dat boek erachter
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=41| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

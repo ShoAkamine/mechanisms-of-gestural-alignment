@@ -1,0 +1,115 @@
+A|0| A: _oké_ deze _hebben_ _een rok aan_ 
+A|1| A: en _een_ soort uitstekend slurf en _die geven een high five_ 
+A|2| A: _die_ staan zo 
+A|3| A: _maar_ dan andersom 
+B|4| B: Oké wachten 
+B|5| B: Hebben [een rok aan] 
+A|6| A: _dit zijn_ zo duidelijk 
+B|7| B: hè [die geven een high five] 
+A|8| A: [die] _hebben_ gewoon _zo'n_ 
+A|9| A: _ja_ [die] _zeggen maar_ de linkerarm steken uit en zo omhoog 
+A|10| A: en dan _hebben_ hij [een] soort tutu zo 
+B|11| B: _Oh_ 
+B|12| B: _Oh_ ik denken Wacht [zijn] dat met [die] glijbaan [zeggen maar] 
+B|13| B: ik denken dat het [een] glijbaan [hebben] ik 
+A|14| A: _ja_ 
+B|15| B: of [ja] [zo'n] 
+B|16| B: met [die] twee cilinder bovenop 
+A|17| A: _ja _ja_ _ja_ ja_ 
+B|18| B: [ja ja] [oké] 
+B|19| B: even kijken [dit zijn] met [die] _Oh ja_ diegene [die] jij vinden _zwaaien_ 
+B|20| B: met [die] twee cilinder bovenop [die] klein 
+A|21| A: [Oh ja] 
+A|22| A: _dit zijn weer die_ zo [zwaaien] 
+B|23| B: even kijken [dit zijn] [die] gast _weer die zwaaien_ 
+B|24| B: [ja] met het plat vierkant 
+A|25| A: _dit zijn [weer die_ zwaaien] 
+B|26| B: kijken 
+B|27| B: [dit zijn weer die] gast [die zwaaien] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze hebben een rok aan
+	Free: Pattern=een rok aan, Pattern=oké, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=1| A | A : en een soort uitstekend slurf en die geven een high five
+	Free: Pattern=die geven een high five, Pattern=een
+	Constrained: Pattern=een, Pattern=die
+Turn ID=2| A | A : die staan zo
+	Free: Pattern=die
+	Constrained: 
+Turn ID=3| A | A : maar dan andersom
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=4| B | B : Oké wachten
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Hebben een rok aan
+	Free: Pattern=een rok aan
+	Constrained: Pattern=een
+Turn ID=6| A | A : dit zijn zo duidelijk
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=7| B | B : hè die geven een high five
+	Free: Pattern=die geven een high five
+	Constrained: Pattern=een, Pattern=die
+Turn ID=8| A | A : die hebben gewoon zo'n
+	Free: Pattern=hebben, Pattern=die, Pattern=zo'n
+	Constrained: 
+Turn ID=9| A | A : ja die zeggen maar de linkerarm steken uit en zo omhoog
+	Free: Pattern=zeggen maar, Pattern=die, Pattern=ja
+	Constrained: Pattern=maar
+Turn ID=10| A | A : en dan hebben hij een soort tutu zo
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=11| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| B | B : Oh ik denken Wacht zijn dat met die glijbaan zeggen maar
+	Free: Pattern=zeggen maar, Pattern=die, Pattern=zijn, Pattern=Oh
+	Constrained: Pattern=maar
+Turn ID=13| B | B : ik denken dat het een glijbaan hebben ik
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : of ja zo'n
+	Free: Pattern=ja, Pattern=zo'n
+	Constrained: 
+Turn ID=16| B | B : met die twee cilinder bovenop
+	Free: Pattern=die
+	Constrained: 
+Turn ID=17| A | A : ja ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=18| B | B : ja ja oké
+	Free: Pattern=ja ja, Pattern=oké
+	Constrained: Pattern=ja
+Turn ID=19| B | B : even kijken dit zijn met die Oh ja diegene die jij vinden zwaaien
+	Free: Pattern=Oh ja, Pattern=dit zijn, Pattern=zwaaien, Pattern=die
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=Oh
+Turn ID=20| B | B : met die twee cilinder bovenop die klein
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=22| A | A : dit zijn weer die zo zwaaien
+	Free: Pattern=dit zijn weer die, Pattern=zwaaien
+	Constrained: Pattern=zijn, Pattern=die, Pattern=dit zijn
+Turn ID=23| B | B : even kijken dit zijn die gast weer die zwaaien
+	Free: Pattern=weer die zwaaien, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=die zwaaien, Pattern=zijn, Pattern=die, Pattern=zwaaien
+Turn ID=24| B | B : ja met het plat vierkant
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : dit zijn weer die zwaaien
+	Free: Pattern=dit zijn weer die, Pattern=weer die zwaaien
+	Constrained: Pattern=die zwaaien, Pattern=zwaaien, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=26| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : dit zijn weer die gast die zwaaien
+	Free: Pattern=dit zijn weer die, Pattern=die zwaaien
+	Constrained: Pattern=zijn, Pattern=die, Pattern=zwaaien, Pattern=dit zijn

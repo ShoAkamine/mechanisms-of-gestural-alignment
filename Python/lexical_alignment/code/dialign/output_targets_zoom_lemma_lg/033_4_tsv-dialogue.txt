@@ -1,0 +1,87 @@
+A|0| A: Oké euh _nu_ _hebben_ _ik_ er één 
+A|1| A: _Euh_ je _hebben_ weer diezelfde basisvorm alleen _aan de_ linkerkant zitten een soort _streep_ 
+A|2| A: en het doen mij heel erg _denken_ _aan_ een hendel waarmee je zo een _wc_ doortrekken 
+A|3| A: _Euh_ _aan de_ zijkant zitten gewoon _twee_ recht heel dun balkjes _aan de rechterkant_ 
+A|4| A: en _die_ steken ook naar _de rechterkant_ uit 
+A|5| A: _Euh_ _aan de_ onderkant zitten ook weer zo'n soort glijbaan naar _de_ linkerkant naar _de_ zijkant 
+A|6| A: en daarbovenop staan een _trapezium_ 
+B|7| B: _ja_ _ik hebben_ hem [denken] [ik] 
+B|8| B: _ja_ nummer 
+B|9| B: goed uitleggen 
+B|10| B: [Euh] _ik hebben nu de_ _trapezium aan de bovenkant_ [twee] plat [streep] [aan de rechterkant] [die] [wc] doorhaal 
+A|11| A: [ja] dat zijn 
+A|12| A: [ik hebben nu _de] wc_ doortrekker met het [trapezium aan de bovenkant] 
+B|13| B: Yes 
+B|14| B: nummer 
+B|15| B: [ik hebben] [de wc] doortrekk 
+A|16| A: [Euh] [ja] dat zijn 
+A|17| A: [ik hebben nu _de] wcdoortrekker_ 
+B|18| B: [Euh] nummer 
+B|19| B: [ik hebben] [de wcdoortrekker] 
+A|20| A: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké euh nu hebben ik er één
+	Free: Pattern=ik, Pattern=hebben, Pattern=nu
+	Constrained: 
+Turn ID=1| A | A : Euh je hebben weer diezelfde basisvorm alleen aan de linkerkant zitten een soort streep
+	Free: Pattern=aan de, Pattern=Euh, Pattern=hebben, Pattern=streep
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=2| A | A : en het doen mij heel erg denken aan een hendel waarmee je zo een wc doortrekken
+	Free: Pattern=denken, Pattern=wc, Pattern=aan
+	Constrained: 
+Turn ID=3| A | A : Euh aan de zijkant zitten gewoon twee recht heel dun balkjes aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=aan de, Pattern=twee, Pattern=Euh
+	Constrained: Pattern=aan, Pattern=de rechterkant, Pattern=de, Pattern=aan de
+Turn ID=4| A | A : en die steken ook naar de rechterkant uit
+	Free: Pattern=de rechterkant, Pattern=die
+	Constrained: Pattern=de
+Turn ID=5| A | A : Euh aan de onderkant zitten ook weer zo'n soort glijbaan naar de linkerkant naar de zijkant
+	Free: Pattern=aan de, Pattern=Euh, Pattern=de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=6| A | A : en daarbovenop staan een trapezium
+	Free: Pattern=trapezium
+	Constrained: 
+Turn ID=7| B | B : ja ik hebben hem denken ik
+	Free: Pattern=ik hebben, Pattern=denken, Pattern=ja, Pattern=ik
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=8| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : goed uitleggen
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Euh ik hebben nu de trapezium aan de bovenkant twee plat streep aan de rechterkant die wc doorhaal
+	Free: Pattern=wc, Pattern=twee, Pattern=Euh, Pattern=ik hebben nu de, Pattern=trapezium aan de bovenkant, Pattern=streep, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=de rechterkant, Pattern=aan de, Pattern=nu, Pattern=hebben, Pattern=trapezium, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ik hebben nu de wc doortrekker met het trapezium aan de bovenkant
+	Free: Pattern=ik hebben nu de, Pattern=trapezium aan de bovenkant, Pattern=de wc
+	Constrained: Pattern=ik hebben, Pattern=wc, Pattern=aan de, Pattern=nu, Pattern=hebben, Pattern=trapezium, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=13| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : ik hebben de wc doortrekk
+	Free: Pattern=de wc, Pattern=ik hebben
+	Constrained: Pattern=wc, Pattern=ik, Pattern=hebben, Pattern=de
+Turn ID=16| A | A : Euh ja dat zijn
+	Free: Pattern=ja, Pattern=Euh
+	Constrained: 
+Turn ID=17| A | A : ik hebben nu de wcdoortrekker
+	Free: Pattern=ik hebben nu de, Pattern=de wcdoortrekker
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=nu, Pattern=hebben, Pattern=ik
+Turn ID=18| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=19| B | B : ik hebben de wcdoortrekker
+	Free: Pattern=ik hebben, Pattern=de wcdoortrekker
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=de
+Turn ID=20| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 

@@ -1,0 +1,159 @@
+A|0| A: gaan we toch lekker snel 
+B|1| B: _ja_ best wel hè 
+B|2| B: ehm deze _hebben zo'n_ steel _aan de_ achterkant 
+B|3| B: daardoor lijken _een_ beetje op _een_ Peer 
+B|4| B: _en_ _hij hebben_ _een_ _een_ groot neus met _een_ soort paal er doorheen gejast 
+A|5| A: [ja] [ja] [ja] _dat zijn_ 
+A|6| A: [de] van aria 
+A|7| A: _dit zijn_ _het_ kop _wat_ _vastzit_ _aan de muur_ 
+A|8| A: dus _hij hebben zo'n lepel_ komen eruit 
+A|9| A: [en] [een] bolle _die aan de muur vastzit_ 
+B|10| B: _die aan de muur vast_ _zitten_ 
+A|11| A: [ja] _in_ mijn verbeelding [zitten] [die aan de muur vast] dus 
+B|12| B: [ja] ik ik proberen even [in] te leven 
+A|13| A: [en] _het_ kop [hebben zo'n] bolle [aan de] voorkant 
+A|14| A: [en] door _dat_ bolle gaan [zo'n] vierkan 
+B|15| B: [ja] 
+B|16| B: Oh oké 
+B|17| B: _eh_ even zoeken 
+A|18| A: [en] 
+B|19| B: dan weten ik denken ik welk je bedoelen 
+B|20| B: _eh_ waar [zijn] [die] nou 
+B|21| B: [en] [hij hebben] [hij hebben zo'n lepel] naar achterkant hè 
+A|22| A: [ja] precies 
+B|23| B: Oh zo [aan de muur] 
+B|24| B: [ja] ik snapen [wat] je bedoelen 
+A|25| A: [ja] precies 
+B|26| B: [dat zijn] [dat zijn] nummer 
+B|27| B: _eh_ [dit zijn] [die] [een] [die aan de muur vast] [zitten] 
+A|28| A: _het_ kop 
+B|29| B: [ja] 
+A|30| A: Eh 
+A|31| A: [dit zijn] _het_ kop [aan de muur] 
+B|32| B: Oké 
+B|33| B: ehm [ja] 
+B|34| B: _eh_ [dit zijn] [die aan de muur vastzit] 
+B|35| B: [en] met [het] [lepel] 
+A|36| A: [eh] [ja] van aria 
+A|37| A: [dit zijn] [het] kop [aan de muur] 
+B|38| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : gaan we toch lekker snel
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ja best wel hè
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : ehm deze hebben zo'n steel aan de achterkant
+	Free: Pattern=hebben zo'n, Pattern=aan de
+	Constrained: Pattern=de, Pattern=zo'n
+Turn ID=3| B | B : daardoor lijken een beetje op een Peer
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| B | B : en hij hebben een een groot neus met een soort paal er doorheen gejast
+	Free: Pattern=hij hebben, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=5| A | A : ja ja ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=6| A | A : de van aria
+	Free: Pattern=de
+	Constrained: 
+Turn ID=7| A | A : dit zijn het kop wat vastzit aan de muur
+	Free: Pattern=het, Pattern=wat, Pattern=dit zijn, Pattern=vastzit, Pattern=aan de muur
+	Constrained: Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=8| A | A : dus hij hebben zo'n lepel komen eruit
+	Free: Pattern=hij hebben zo'n lepel
+	Constrained: Pattern=lepel, Pattern=zo'n, Pattern=hebben zo'n, Pattern=hij hebben
+Turn ID=9| A | A : en een bolle die aan de muur vastzit
+	Free: Pattern=die aan de muur vastzit, Pattern=en, Pattern=een
+	Constrained: Pattern=de, Pattern=aan de, Pattern=die, Pattern=vastzit, Pattern=aan de muur
+Turn ID=10| B | B : die aan de muur vast zitten
+	Free: Pattern=die aan de muur vast, Pattern=zitten
+	Constrained: Pattern=de, Pattern=die, Pattern=aan de, Pattern=aan de muur
+Turn ID=11| A | A : ja in mijn verbeelding zitten die aan de muur vast dus
+	Free: Pattern=die aan de muur vast, Pattern=in, Pattern=ja, Pattern=zitten
+	Constrained: Pattern=de, Pattern=die, Pattern=aan de, Pattern=aan de muur
+Turn ID=12| B | B : ja ik ik proberen even in te leven
+	Free: Pattern=in, Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en het kop hebben zo'n bolle aan de voorkant
+	Free: Pattern=hebben zo'n, Pattern=aan de, Pattern=het, Pattern=en
+	Constrained: Pattern=de, Pattern=zo'n
+Turn ID=14| A | A : en door dat bolle gaan zo'n vierkan
+	Free: Pattern=en, Pattern=dat, Pattern=zo'n
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Oh oké
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : eh even zoeken
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=18| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=19| B | B : dan weten ik denken ik welk je bedoelen
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : eh waar zijn die nou
+	Free: Pattern=die, Pattern=eh, Pattern=zijn
+	Constrained: 
+Turn ID=21| B | B : en hij hebben hij hebben zo'n lepel naar achterkant hè
+	Free: Pattern=hij hebben zo'n lepel, Pattern=hij hebben, Pattern=en
+	Constrained: Pattern=lepel, Pattern=zo'n, Pattern=hebben zo'n, Pattern=hij hebben
+Turn ID=22| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : Oh zo aan de muur
+	Free: Pattern=aan de muur
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=24| B | B : ja ik snapen wat je bedoelen
+	Free: Pattern=ja, Pattern=wat
+	Constrained: 
+Turn ID=25| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : dat zijn dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| B | B : eh dit zijn die een die aan de muur vast zitten
+	Free: Pattern=een, Pattern=eh, Pattern=die aan de muur vast, Pattern=dit zijn, Pattern=die, Pattern=zitten
+	Constrained: Pattern=de, Pattern=aan de, Pattern=die, Pattern=aan de muur, Pattern=zijn
+Turn ID=28| A | A : het kop
+	Free: Pattern=het
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : dit zijn het kop aan de muur
+	Free: Pattern=aan de muur, Pattern=dit zijn, Pattern=het
+	Constrained: Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=32| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : ehm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : eh dit zijn die aan de muur vastzit
+	Free: Pattern=die aan de muur vastzit, Pattern=dit zijn, Pattern=eh
+	Constrained: Pattern=de, Pattern=aan de, Pattern=die, Pattern=zijn, Pattern=vastzit, Pattern=aan de muur
+Turn ID=35| B | B : en met het lepel
+	Free: Pattern=het, Pattern=en, Pattern=lepel
+	Constrained: 
+Turn ID=36| A | A : eh ja van aria
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=37| A | A : dit zijn het kop aan de muur
+	Free: Pattern=aan de muur, Pattern=dit zijn, Pattern=het
+	Constrained: Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=38| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

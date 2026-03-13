@@ -1,0 +1,91 @@
+B|0| B: _ik hebben_ nog weer _een_ schoorsteen _soort_ van _het_ lijken wel _een_ beetje op _een_ vuurpijlen 
+B|1| B: _die_ komen uit _zijn_ linkerarm 
+A|2| A: O [die] [soort] hoekig _spijker_ 
+B|3| B: eh _ja_ 
+A|4| A: vierkante _spijker_ vinden [ik] [het] 
+B|5| B: _ja_ en rechts staan nog zo'n plateau [die] rond _zijn_ 
+A|6| A: [ja] precies 
+A|7| A: _dat zijn_ 
+A|8| A: _ik hebben _de_ spijker_ 
+A|9| A: _met_ [een] platformp 
+B|10| B: [ja] [met] [die] rond plateau rechts toch 
+A|11| A: [ja] precies 
+B|12| B: [ik hebben de] schoorsteen [spijker] [met] rond plateau 
+B|13| B: rechts 
+A|14| A: _dat_ yes 
+A|15| A: _dat zijn_ 
+A|16| A: [ik hebben de] spijkerplatform 
+B|17| B: Eh 
+B|18| B: eh [de spijker] [met] plateau 
+A|19| A: _dat zijn_ 
+A|20| A: [ik hebben] spijkerplatform 
+B|21| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben nog weer een schoorsteen soort van het lijken wel een beetje op een vuurpijlen
+	Free: Pattern=ik hebben, Pattern=een, Pattern=soort, Pattern=het
+	Constrained: Pattern=ik
+Turn ID=1| B | B : die komen uit zijn linkerarm
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : O die soort hoekig spijker
+	Free: Pattern=soort, Pattern=die, Pattern=spijker
+	Constrained: 
+Turn ID=3| B | B : eh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : vierkante spijker vinden ik het
+	Free: Pattern=ik, Pattern=het, Pattern=spijker
+	Constrained: 
+Turn ID=5| B | B : ja en rechts staan nog zo'n plateau die rond zijn
+	Free: Pattern=ja, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=6| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=8| A | A : ik hebben de spijker
+	Free: Pattern=ik hebben de, Pattern=de spijker
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=spijker
+Turn ID=9| A | A : met een platformp
+	Free: Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=10| B | B : ja met die rond plateau rechts toch
+	Free: Pattern=ja, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=11| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ik hebben de schoorsteen spijker met rond plateau
+	Free: Pattern=ik hebben de, Pattern=spijker, Pattern=met
+	Constrained: Pattern=ik hebben, Pattern=ik
+Turn ID=13| B | B : rechts
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : dat yes
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=15| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=16| A | A : ik hebben de spijkerplatform
+	Free: Pattern=ik hebben de
+	Constrained: Pattern=ik hebben, Pattern=ik
+Turn ID=17| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : eh de spijker met plateau
+	Free: Pattern=de spijker, Pattern=met
+	Constrained: Pattern=spijker
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| A | A : ik hebben spijkerplatform
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

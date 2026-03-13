@@ -1,0 +1,75 @@
+B|0| B: _euh_ dit _zijn_ weer zo'n basisvorm _met_ zo'n soort _clownsneus_ maar die _clownsneus_ zitten dan wat veel omhoog 
+B|1| B: _aan de bovenkant_ zitten twee _uitsteeksel_ 
+B|2| B: eentje _zijn_ vierkant _en_ _aan _de_ linkerkant_ zitten er _een_ soort van _euh_ bowlingkekel-achtig op _de_ kop 
+B|3| B: _en_ dan links steekt nog _een_ driehoek-achtig iets uit volgens mij 
+A|4| A: _ja_ dat [zijn] 
+A|5| A: _Euh_ _ja_ _nu_ _hebben_ _ik_ [euh] [met] [een] driehoekje naar [de linkerkant] [een] _hoog clownsneus en de bowlingkegel_ [en] [een] _ander_ [uitsteeksel] [aan de] rechterkant 
+A|6| A: gewoon [een] balk 
+B|7| B: [ja] nummer 
+B|8| B: _ik hebben nu_ die [ander] [clownsneus] die boven zitten [en de bowlingkegel] 
+A|9| A: [ja] 
+A|10| A: _Euh_ 
+A|11| A: oh dat [zijn] 
+A|12| A: _Euh_ [ik hebben nu] _de hoog clownsneus_ [met] [de] bowlingpin [en] [een] balk [aan de bovenkant] 
+B|13| B: nummer 
+B|14| B: _ik hebben de [hoog clownsneus_ en de bowlingkegel] 
+A|15| A: _Euh_ dat [zijn] 
+A|16| A: _Euh_ [ik hebben de hoog clownsneus] [met] [de bowlingkegel] 
+B|17| B: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh dit zijn weer zo'n basisvorm met zo'n soort clownsneus maar die clownsneus zitten dan wat veel omhoog
+	Free: Pattern=zijn, Pattern=clownsneus, Pattern=euh, Pattern=met
+	Constrained: 
+Turn ID=1| B | B : aan de bovenkant zitten twee uitsteeksel
+	Free: Pattern=aan de bovenkant, Pattern=uitsteeksel
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=2| B | B : eentje zijn vierkant en aan de linkerkant zitten er een soort van euh bowlingkekel-achtig op de kop
+	Free: Pattern=de, Pattern=aan de, Pattern=een, Pattern=de linkerkant, Pattern=euh, Pattern=en, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=3| B | B : en dan links steekt nog een driehoek-achtig iets uit volgens mij
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : Euh ja nu hebben ik euh met een driehoekje naar de linkerkant een hoog clownsneus en de bowlingkegel en een ander uitsteeksel aan de rechterkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=uitsteeksel, Pattern=hoog clownsneus en de bowlingkegel, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=met, Pattern=en, Pattern=de linkerkant, Pattern=Euh, Pattern=nu, Pattern=ik, Pattern=ander
+	Constrained: Pattern=de, Pattern=clownsneus, Pattern=de bowlingkegel, Pattern=en, Pattern=en de bowlingkegel
+Turn ID=6| A | A : gewoon een balk
+	Free: Pattern=een
+	Constrained: 
+Turn ID=7| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ik hebben nu die ander clownsneus die boven zitten en de bowlingkegel
+	Free: Pattern=en de bowlingkegel, Pattern=ik hebben nu, Pattern=clownsneus, Pattern=ander
+	Constrained: Pattern=de, Pattern=nu, Pattern=de bowlingkegel, Pattern=hebben, Pattern=ik, Pattern=en
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=11| A | A : oh dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : Euh ik hebben nu de hoog clownsneus met de bowlingpin en een balk aan de bovenkant
+	Free: Pattern=de, Pattern=een, Pattern=Euh, Pattern=met, Pattern=de hoog clownsneus, Pattern=ik hebben nu, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=de, Pattern=aan de, Pattern=clownsneus, Pattern=nu, Pattern=hebben, Pattern=ik
+Turn ID=13| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : ik hebben de hoog clownsneus en de bowlingkegel
+	Free: Pattern=ik hebben de hoog clownsneus, Pattern=hoog clownsneus en de bowlingkegel
+	Constrained: Pattern=de, Pattern=clownsneus, Pattern=de bowlingkegel, Pattern=hebben, Pattern=ik, Pattern=en, Pattern=de hoog clownsneus, Pattern=en de bowlingkegel
+Turn ID=15| A | A : Euh dat zijn
+	Free: Pattern=zijn, Pattern=Euh
+	Constrained: 
+Turn ID=16| A | A : Euh ik hebben de hoog clownsneus met de bowlingkegel
+	Free: Pattern=ik hebben de hoog clownsneus, Pattern=de bowlingkegel, Pattern=Euh, Pattern=met
+	Constrained: Pattern=de, Pattern=clownsneus, Pattern=hebben, Pattern=ik, Pattern=de hoog clownsneus
+Turn ID=17| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 

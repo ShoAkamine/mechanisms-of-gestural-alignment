@@ -1,0 +1,87 @@
+B|0| B: ehm _ja_ _deze hebben_ ook _een_ plateau _maar_ _dan_ _een beetje aan de onderkant_ 
+B|1| B: _Eh_ _hij_ _staan_ er _niet op_ _maar_ _hij_ _gaan_ er eigenlijk het midden _doorheen_ 
+B|2| B: _en_ _hebben_ _een_ soort van _glijbaan_ _aan de_ voorkant 
+B|3| B: Lijken het _op_ zo'n rond zo'n cilinder 
+B|4| B: _en_ twee stok erop 
+B|5| B: _en_ ook links nog _een_ soort van pijp 
+B|6| B: Lijken het _op_ 
+A|7| A: _ja dat zijn_ 
+A|8| A: [Eh] [deze] _zijn_ degeen _die_ [niet op] [de] plaat [staan] 
+A|9| A: [maar] [doorheen] [gaan] [en] [de] plaat zitten [een beetje aan de onderkant] 
+A|10| A: [en] [dan] [hebben] [hij] _die_ [glijbaan] 
+B|11| B: [ja dat zijn] 
+B|12| B: [Eh] met _glijbaan zijn_ [deze] 
+B|13| B: met [die] twee stok boven 
+A|14| A: O [ja dat zijn] 
+A|15| A: [Eh] [deze hebben] _de glijbaan_ 
+B|16| B: Yes [dat zijn] 
+B|17| B: dit [zijn] [de] met [de glijbaan] 
+A|18| A: [de [glijbaan] zijn] 
+A|19| A: Glijbaan 
+B|20| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm ja deze hebben ook een plateau maar dan een beetje aan de onderkant
+	Free: Pattern=ja, Pattern=dan, Pattern=een, Pattern=deze hebben, Pattern=een beetje aan de onderkant, Pattern=maar
+	Constrained: Pattern=de, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=deze
+Turn ID=1| B | B : Eh hij staan er niet op maar hij gaan er eigenlijk het midden doorheen
+	Free: Pattern=doorheen, Pattern=staan, Pattern=Eh, Pattern=hij, Pattern=niet op, Pattern=gaan, Pattern=maar
+	Constrained: Pattern=op
+Turn ID=2| B | B : en hebben een soort van glijbaan aan de voorkant
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=glijbaan, Pattern=en
+	Constrained: Pattern=de
+Turn ID=3| B | B : Lijken het op zo'n rond zo'n cilinder
+	Free: Pattern=op
+	Constrained: 
+Turn ID=4| B | B : en twee stok erop
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| B | B : en ook links nog een soort van pijp
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=6| B | B : Lijken het op
+	Free: Pattern=op
+	Constrained: 
+Turn ID=7| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=8| A | A : Eh deze zijn degeen die niet op de plaat staan
+	Free: Pattern=de, Pattern=staan, Pattern=Eh, Pattern=die, Pattern=zijn, Pattern=deze, Pattern=niet op
+	Constrained: Pattern=op
+Turn ID=9| A | A : maar doorheen gaan en de plaat zitten een beetje aan de onderkant
+	Free: Pattern=de, Pattern=doorheen, Pattern=een beetje aan de onderkant, Pattern=en, Pattern=gaan, Pattern=maar
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=10| A | A : en dan hebben hij die glijbaan
+	Free: Pattern=dan, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=glijbaan, Pattern=en
+	Constrained: 
+Turn ID=11| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=12| B | B : Eh met glijbaan zijn deze
+	Free: Pattern=glijbaan zijn, Pattern=deze, Pattern=Eh
+	Constrained: Pattern=zijn, Pattern=glijbaan
+Turn ID=13| B | B : met die twee stok boven
+	Free: Pattern=die
+	Constrained: 
+Turn ID=14| A | A : O ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=15| A | A : Eh deze hebben de glijbaan
+	Free: Pattern=deze hebben, Pattern=de glijbaan, Pattern=Eh
+	Constrained: Pattern=deze, Pattern=de, Pattern=hebben, Pattern=glijbaan
+Turn ID=16| B | B : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=17| B | B : dit zijn de met de glijbaan
+	Free: Pattern=de glijbaan, Pattern=zijn, Pattern=de
+	Constrained: Pattern=de, Pattern=glijbaan
+Turn ID=18| A | A : de glijbaan zijn
+	Free: Pattern=glijbaan zijn, Pattern=de glijbaan
+	Constrained: Pattern=zijn, Pattern=de, Pattern=glijbaan
+Turn ID=19| A | A : Glijbaan
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

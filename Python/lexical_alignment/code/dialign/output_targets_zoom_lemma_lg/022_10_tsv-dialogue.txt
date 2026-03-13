@@ -1,0 +1,135 @@
+B|0| B: oké deze vinden _ik_ heel moeilijk 
+B|1| B: Zeggen _maar_ je _hebben_ _dan_ _de pot_ 
+B|2| B: en je _hebben_ _een_ staaf achterin _die_ rond _zijn_ 
+B|3| B: en _dan_ _zitten_ daar _aan_ beide _kant_ _knop_ _aan_ 
+B|4| B: en _dan_ _zijn_ er zo'n vag rechthoek 
+B|5| B: en _het_ zien eruit als _een zonnepaneel_ 
+B|6| B: zegmaar zo'n 
+A|7| A: _ja_ _ja_ 
+B|8| B: [ja] 
+A|9| A: [ja] 
+A|10| A: [ja] zeggen [maar] [die] [die] [die] [knop] 
+A|11| A: [het] [zijn] [een] beetje alsof hij _in een_ soort _spagaat_ of split [zitten] of zo 
+B|12| B: [ja] 
+A|13| A: [ja] 
+A|14| A: [ja] [dan] denken [ik] dat [ik] dat [ik] [het] weten 
+A|15| A: [ja] dat [zijn] 
+A|16| A: [ja] _dit zijn_ dat kop dat [aan] twee [kant] [die] uitsteeksel [hebben] 
+A|17| A: [een] soort van _in een spagaat_ _met_ [een zonnepaneel] van achter 
+B|18| B: even zoeken 
+B|19| B: [dit zijn] waar ze zonne paneel 
+B|20| B: ah [ja] nummer 
+B|21| B: eh _dit zijn _de pot_ in een spagaat_ 
+B|22| B: _met zonnepaneel_ op _de_ achterkant 
+A|23| A: [ja] dat [zijn] letter 
+A|24| A: [dit zijn de pot] [die] [in een spagaat] staan [met] [een zonnepaneel] van achter 
+B|25| B: [ja] nummer 
+B|26| B: [dit zijn de] [spagaat] en [de] [zonnepaneel] 
+A|27| A: [ja] 
+A|28| A: Ah letter 
+A|29| A: [de pot in een spagaat] [met zonnepaneel] van achter 
+B|30| B: [ja] 
+B|31| B: eh even zoeken 
+B|32| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze vinden ik heel moeilijk
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : Zeggen maar je hebben dan de pot
+	Free: Pattern=de pot, Pattern=maar, Pattern=hebben, Pattern=dan
+	Constrained: Pattern=de
+Turn ID=2| B | B : en je hebben een staaf achterin die rond zijn
+	Free: Pattern=hebben, Pattern=zijn, Pattern=die, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : en dan zitten daar aan beide kant knop aan
+	Free: Pattern=kant, Pattern=aan, Pattern=dan, Pattern=zitten, Pattern=knop
+	Constrained: 
+Turn ID=4| B | B : en dan zijn er zo'n vag rechthoek
+	Free: Pattern=zijn, Pattern=dan
+	Constrained: 
+Turn ID=5| B | B : en het zien eruit als een zonnepaneel
+	Free: Pattern=een zonnepaneel, Pattern=het
+	Constrained: Pattern=zonnepaneel, Pattern=een
+Turn ID=6| B | B : zegmaar zo'n
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja zeggen maar die die die knop
+	Free: Pattern=maar, Pattern=die, Pattern=knop, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : het zijn een beetje alsof hij in een soort spagaat of split zitten of zo
+	Free: Pattern=een, Pattern=zitten, Pattern=spagaat, Pattern=zijn, Pattern=in een, Pattern=het
+	Constrained: Pattern=een
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja dan denken ik dat ik dat ik het weten
+	Free: Pattern=dan, Pattern=ik, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=15| A | A : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja dit zijn dat kop dat aan twee kant die uitsteeksel hebben
+	Free: Pattern=kant, Pattern=hebben, Pattern=die, Pattern=dit zijn, Pattern=aan, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=17| A | A : een soort van in een spagaat met een zonnepaneel van achter
+	Free: Pattern=in een spagaat, Pattern=een zonnepaneel, Pattern=met, Pattern=een
+	Constrained: Pattern=zonnepaneel, Pattern=spagaat, Pattern=een, Pattern=in een
+Turn ID=18| B | B : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : dit zijn waar ze zonne paneel
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : ah ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : eh dit zijn de pot in een spagaat
+	Free: Pattern=de pot in een spagaat, Pattern=dit zijn de pot
+	Constrained: Pattern=de, Pattern=een, Pattern=in een, Pattern=de pot, Pattern=in een spagaat, Pattern=spagaat, Pattern=dit zijn, Pattern=zijn, Pattern=dit zijn de
+Turn ID=22| B | B : met zonnepaneel op de achterkant
+	Free: Pattern=met zonnepaneel, Pattern=de
+	Constrained: Pattern=zonnepaneel, Pattern=met
+Turn ID=23| A | A : ja dat zijn letter
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : dit zijn de pot die in een spagaat staan met een zonnepaneel van achter
+	Free: Pattern=een zonnepaneel, Pattern=dit zijn de pot, Pattern=met, Pattern=in een spagaat, Pattern=die
+	Constrained: Pattern=de, Pattern=een, Pattern=in een, Pattern=de pot, Pattern=spagaat, Pattern=zijn, Pattern=dit zijn de, Pattern=dit zijn, Pattern=zonnepaneel
+Turn ID=25| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : dit zijn de spagaat en de zonnepaneel
+	Free: Pattern=dit zijn de, Pattern=de, Pattern=zonnepaneel, Pattern=spagaat
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=de
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : Ah letter
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : de pot in een spagaat met zonnepaneel van achter
+	Free: Pattern=de pot in een spagaat, Pattern=met zonnepaneel
+	Constrained: Pattern=de, Pattern=een, Pattern=in een, Pattern=de pot, Pattern=met, Pattern=in een spagaat, Pattern=spagaat, Pattern=zonnepaneel
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : eh even zoeken
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : nummer
+	Free: 
+	Constrained: 

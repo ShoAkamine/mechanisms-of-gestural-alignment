@@ -1,0 +1,83 @@
+B|0| B: ehm _die_ van mij _hebben nu_ _aan beide kant_ van _het_ hoofd _twee_ 
+B|1| B: hoe kunnen _ik_ _dat_ uitleggen 
+B|2| B: _twee_ _soort_ 
+B|3| B: Uitsteksels _en_ ze _zijn_ allebei hetzelfde 
+B|4| B: ze _hebben_ allebei _drie_ van zo'n rui achter elkaar 
+A|5| A: _ja_ oké _ja_ 
+B|6| B: _het_ _lijken_ _een beetje_ _op_ vlecht 
+A|7| A: _ja_ _ik weten_ welk [het] [zijn] 
+A|8| A: eh _ik hebben nu_ één [en] [die] _hebben aan beide kant_ [twee] dezelfde [soort] uitsteeksel wat [een beetje] [lijken] [op] kralenachtig 
+B|9| B: Oh [ik weten] [het] al [ja] 
+A|10| A: [ja] 
+B|11| B: _Ehm [ik hebben_ nu] [die] _met die_ _krael aan_ de zijkant van [het] hoofd 
+A|12| A: [ja] [dat] [zijn] 
+A|13| A: eh [ik hebben] [met die] [drie] [krael [aan] beide kant] 
+A|14| A: [die] 
+B|15| B: [ja] 
+B|16| B: [ik hebben nu] [die] [met die] [die] [die] [soort] van _kra aan_ de zijkant van [het] hoofd [hebben aan beide kant] 
+A|17| A: [ja] 
+A|18| A: [Ehm ik hebben] [die] [kra [aan] beide kant] 
+B|19| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm die van mij hebben nu aan beide kant van het hoofd twee
+	Free: Pattern=twee, Pattern=aan beide kant, Pattern=het, Pattern=hebben nu, Pattern=die
+	Constrained: Pattern=hebben
+Turn ID=1| B | B : hoe kunnen ik dat uitleggen
+	Free: Pattern=ik, Pattern=dat
+	Constrained: 
+Turn ID=2| B | B : twee soort
+	Free: Pattern=soort, Pattern=twee
+	Constrained: 
+Turn ID=3| B | B : Uitsteksels en ze zijn allebei hetzelfde
+	Free: Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : ze hebben allebei drie van zo'n rui achter elkaar
+	Free: Pattern=drie, Pattern=hebben
+	Constrained: 
+Turn ID=5| A | A : ja oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : het lijken een beetje op vlecht
+	Free: Pattern=een beetje, Pattern=het, Pattern=lijken, Pattern=op
+	Constrained: 
+Turn ID=7| A | A : ja ik weten welk het zijn
+	Free: Pattern=ik weten, Pattern=ja, Pattern=zijn, Pattern=het
+	Constrained: Pattern=ik
+Turn ID=8| A | A : eh ik hebben nu één en die hebben aan beide kant twee dezelfde soort uitsteeksel wat een beetje lijken op kralenachtig
+	Free: Pattern=soort, Pattern=twee, Pattern=lijken, Pattern=die, Pattern=en, Pattern=hebben aan beide kant, Pattern=op, Pattern=ik hebben nu, Pattern=een beetje
+	Constrained: Pattern=ik hebben, Pattern=aan beide kant, Pattern=hebben, Pattern=hebben nu, Pattern=ik
+Turn ID=9| B | B : Oh ik weten het al ja
+	Free: Pattern=ik weten, Pattern=ja, Pattern=het
+	Constrained: Pattern=ik
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Ehm ik hebben nu die met die krael aan de zijkant van het hoofd
+	Free: Pattern=met die, Pattern=Ehm ik hebben, Pattern=het, Pattern=krael aan, Pattern=die, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=hebben nu, Pattern=die, Pattern=ik
+Turn ID=12| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : eh ik hebben met die drie krael aan beide kant
+	Free: Pattern=ik hebben, Pattern=met die, Pattern=aan beide kant, Pattern=drie, Pattern=krael aan
+	Constrained: Pattern=die, Pattern=ik, Pattern=hebben
+Turn ID=14| A | A : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ik hebben nu die met die die die soort van kra aan de zijkant van het hoofd hebben aan beide kant
+	Free: Pattern=met die, Pattern=soort, Pattern=hebben aan beide kant, Pattern=die, Pattern=ik hebben nu, Pattern=kra aan, Pattern=het
+	Constrained: Pattern=ik hebben, Pattern=aan beide kant, Pattern=hebben, Pattern=hebben nu, Pattern=die, Pattern=ik
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Ehm ik hebben die kra aan beide kant
+	Free: Pattern=aan beide kant, Pattern=Ehm ik hebben, Pattern=kra aan, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

@@ -1,0 +1,119 @@
+B|0| B: ehm hij _hebben _aan beide_ kant een soort van_ rond _staaf_ 
+B|1| B: _die_ _aan_ _het_ einde _nog_ _een_ knop _hebben_ 
+B|2| B: of knop _een soort_ bult 
+B|3| B: ik vinden ik vinden _het_ lijken op _een_ straatpaal 
+B|4| B: maar _dan_ dus _plat_ 
+B|5| B: ehm _aan beide kant_ _en dan_ 
+B|6| B: _en dan_ link achterin _nog_ _een soort van_ _vierkant_ schuin boekachtig vorm 
+B|7| B: hmm 
+B|8| B: _zijn_ _dat_ al 
+B|9| B: hij _zijn_ redelijk symmetrisch 
+A|10| A: Zit [dan] zitten [dan] links zeggen je [dat] er [een soort van] [plat] [een soort van] [plat] [vierkant] zeggen je [dat] 
+B|11| B: denk ik 
+B|12| B: _ja_ _ja_ [soort van] 
+B|13| B: _het_ _zijn_ niet helemaal maar 
+A|14| A: [en dan] 
+A|15| A: [en dan] steken daaronder [nog] iets uit 
+B|16| B: _ja_ _ja_ alsof _het_ [een soort] houder _zijn_ 
+B|17| B: [een soort] _fotolijst_ of zo 
+B|18| B: met [een] 
+A|19| A: [ja] oké 
+A|20| A: deze [hebben aan beide] zijd [een] [aan beide kant een soort van] [staaf] [die] [dan] [een] bolle erop [hebben] 
+A|21| A: [en dan] [aan] de achterkant [een soort van] _dat fotolijst_ wat we zeiden 
+B|22| B: [ja] nummer 
+B|23| B: eh _dit zijn_ [dat fotolijst] 
+A|24| A: mmm 
+A|25| A: _dit zijn het fotolijst_ 
+B|26| B: nummer 
+B|27| B: [dit zijn het fotolijst] 
+A|28| A: [dit zijn het fotolijst] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm hij hebben aan beide kant een soort van rond staaf
+	Free: Pattern=aan beide kant een soort van, Pattern=hebben aan beide, Pattern=staaf
+	Constrained: Pattern=aan, Pattern=aan beide kant, Pattern=een, Pattern=hebben, Pattern=een soort van, Pattern=een soort, Pattern=soort van
+Turn ID=1| B | B : die aan het einde nog een knop hebben
+	Free: Pattern=nog, Pattern=aan, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die
+	Constrained: 
+Turn ID=2| B | B : of knop een soort bult
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=3| B | B : ik vinden ik vinden het lijken op een straatpaal
+	Free: Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : maar dan dus plat
+	Free: Pattern=dan, Pattern=plat
+	Constrained: 
+Turn ID=5| B | B : ehm aan beide kant en dan
+	Free: Pattern=aan beide kant, Pattern=en dan
+	Constrained: Pattern=aan, Pattern=dan
+Turn ID=6| B | B : en dan link achterin nog een soort van vierkant schuin boekachtig vorm
+	Free: Pattern=een soort van, Pattern=en dan, Pattern=vierkant, Pattern=nog
+	Constrained: Pattern=een soort, Pattern=dan, Pattern=een, Pattern=soort van
+Turn ID=7| B | B : hmm
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : zijn dat al
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=9| B | B : hij zijn redelijk symmetrisch
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=10| A | A : Zit dan zitten dan links zeggen je dat er een soort van plat een soort van plat vierkant zeggen je dat
+	Free: Pattern=dat, Pattern=dan, Pattern=een soort van, Pattern=plat, Pattern=vierkant
+	Constrained: Pattern=een soort, Pattern=een, Pattern=soort van
+Turn ID=11| B | B : denk ik
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : ja ja soort van
+	Free: Pattern=soort van, Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : het zijn niet helemaal maar
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=14| A | A : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=dan
+Turn ID=15| A | A : en dan steken daaronder nog iets uit
+	Free: Pattern=en dan, Pattern=nog
+	Constrained: Pattern=dan
+Turn ID=16| B | B : ja ja alsof het een soort houder zijn
+	Free: Pattern=een soort, Pattern=het, Pattern=zijn, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=17| B | B : een soort fotolijst of zo
+	Free: Pattern=een soort, Pattern=fotolijst
+	Constrained: Pattern=een
+Turn ID=18| B | B : met een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=19| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : deze hebben aan beide zijd een aan beide kant een soort van staaf die dan een bolle erop hebben
+	Free: Pattern=staaf, Pattern=hebben aan beide, Pattern=dan, Pattern=een, Pattern=aan beide kant een soort van, Pattern=hebben, Pattern=die
+	Constrained: Pattern=aan, Pattern=aan beide kant, Pattern=een, Pattern=hebben, Pattern=een soort van, Pattern=een soort, Pattern=soort van
+Turn ID=21| A | A : en dan aan de achterkant een soort van dat fotolijst wat we zeiden
+	Free: Pattern=een soort van, Pattern=dat fotolijst, Pattern=en dan, Pattern=aan
+	Constrained: Pattern=dat, Pattern=dan, Pattern=een, Pattern=een soort, Pattern=soort van, Pattern=fotolijst
+Turn ID=22| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : eh dit zijn dat fotolijst
+	Free: Pattern=dit zijn, Pattern=dat fotolijst
+	Constrained: Pattern=zijn, Pattern=fotolijst, Pattern=dat
+Turn ID=24| A | A : mmm
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : dit zijn het fotolijst
+	Free: Pattern=dit zijn het fotolijst
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=het, Pattern=fotolijst
+Turn ID=26| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : dit zijn het fotolijst
+	Free: Pattern=dit zijn het fotolijst
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=het, Pattern=fotolijst
+Turn ID=28| A | A : dit zijn het fotolijst
+	Free: Pattern=dit zijn het fotolijst
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=het, Pattern=fotolijst

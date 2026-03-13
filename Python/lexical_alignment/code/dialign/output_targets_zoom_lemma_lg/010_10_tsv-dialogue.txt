@@ -1,0 +1,103 @@
+A|0| A: ehm _deze hebben_ _rechts een_ heel _groot_ uipstulpsel _en_ links _een_ _iets_ klein 
+A|1| A: _en_ bovenop _hebben_ hij eigenlijk schuin _een_ soort _vierkant_ of rechthoek _vierkant_ sorry _plaat_ eruit steken naar _achter_ linksachter 
+A|2| A: _met_ daaronder _een poo_ 
+B|3| B: _Eh_ _ja_ ik [hebben] hem 
+B|4| B: _Eh_ [deze hebben] _die_ stuurhandvatt 
+B|5| B: [met] het [vierkant] ding aan _de_ achterkant op [een poo] 
+A|6| A: [Eh] 
+B|7| B: Links _en [rechts_ een] [groot] uitstekend handvatachtig [iets] 
+A|8| A: Oh [ja] [en rechts] zijn hij [groot] dan link 
+B|9| B: [ja] 
+A|10| A: Oké [ja] dat zijn 
+A|11| A: _eh_ dit zijn [die] [een] [met] [die] twee gek handvat 
+A|12| A: waarbij [die] [rechts] lang zijn dan links 
+A|13| A: [en] bovenuit opsteken dan [die] _plaat_ 
+B|14| B: [eh] het _stuur_ 
+B|15| B: [met] [vierkant] [plaat] [achter] 
+A|16| A: [de] [stuur] je bedoelen [die] twee handvat 
+A|17| A: dat [rechts] lang zijn dan links 
+B|18| B: [ja] [ja] kloppen 
+A|19| A: [ja] dat zijn 
+A|20| A: [eh] dit zijn [die] [met] [die] twee handvat waarbij [die] rechter lang zijn dan [die] linker 
+B|21| B: [eh] [de] handvatt 
+A|22| A: Ehm dat zijn 
+B|23| B: weer [groot] 
+A|24| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben rechts een heel groot uipstulpsel en links een iets klein
+	Free: Pattern=iets, Pattern=een, Pattern=groot, Pattern=rechts een, Pattern=deze hebben, Pattern=en
+	Constrained: Pattern=hebben, Pattern=rechts, Pattern=een
+Turn ID=1| A | A : en bovenop hebben hij eigenlijk schuin een soort vierkant of rechthoek vierkant sorry plaat eruit steken naar achter linksachter
+	Free: Pattern=een, Pattern=hebben, Pattern=achter, Pattern=en, Pattern=vierkant, Pattern=plaat
+	Constrained: 
+Turn ID=2| A | A : met daaronder een poo
+	Free: Pattern=een poo, Pattern=met
+	Constrained: Pattern=een
+Turn ID=3| B | B : Eh ja ik hebben hem
+	Free: Pattern=hebben, Pattern=Eh, Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Eh deze hebben die stuurhandvatt
+	Free: Pattern=deze hebben, Pattern=Eh, Pattern=die
+	Constrained: Pattern=hebben
+Turn ID=5| B | B : met het vierkant ding aan de achterkant op een poo
+	Free: Pattern=een poo, Pattern=vierkant, Pattern=de, Pattern=met
+	Constrained: Pattern=een
+Turn ID=6| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=7| B | B : Links en rechts een groot uitstekend handvatachtig iets
+	Free: Pattern=rechts een, Pattern=en rechts, Pattern=iets, Pattern=groot
+	Constrained: Pattern=rechts, Pattern=een, Pattern=en
+Turn ID=8| A | A : Oh ja en rechts zijn hij groot dan link
+	Free: Pattern=en rechts, Pattern=ja, Pattern=groot
+	Constrained: Pattern=rechts, Pattern=en
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Oké ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : eh dit zijn die een met die twee gek handvat
+	Free: Pattern=een, Pattern=eh, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=12| A | A : waarbij die rechts lang zijn dan links
+	Free: Pattern=rechts, Pattern=die
+	Constrained: 
+Turn ID=13| A | A : en bovenuit opsteken dan die plaat
+	Free: Pattern=en, Pattern=plaat, Pattern=die
+	Constrained: 
+Turn ID=14| B | B : eh het stuur
+	Free: Pattern=eh, Pattern=stuur
+	Constrained: 
+Turn ID=15| B | B : met vierkant plaat achter
+	Free: Pattern=vierkant, Pattern=plaat, Pattern=achter, Pattern=met
+	Constrained: 
+Turn ID=16| A | A : de stuur je bedoelen die twee handvat
+	Free: Pattern=de, Pattern=die, Pattern=stuur
+	Constrained: 
+Turn ID=17| A | A : dat rechts lang zijn dan links
+	Free: Pattern=rechts
+	Constrained: 
+Turn ID=18| B | B : ja ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : eh dit zijn die met die twee handvat waarbij die rechter lang zijn dan die linker
+	Free: Pattern=eh, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=21| B | B : eh de handvatt
+	Free: Pattern=eh, Pattern=de
+	Constrained: 
+Turn ID=22| A | A : Ehm dat zijn
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : weer groot
+	Free: Pattern=groot
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

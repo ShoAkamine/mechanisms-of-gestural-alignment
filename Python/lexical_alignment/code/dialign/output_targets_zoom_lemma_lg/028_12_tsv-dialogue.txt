@@ -1,0 +1,111 @@
+A|0| A: _dat zijn_ makkelijk 
+B|1| B: _ja euh_ _ja_ _deze hebben_ _aan de rechterkant_ _een_ _soort_ _plat cirkel_ 
+B|2| B: _en_ _aan de_ linkerkant zien _ik_ _ja_ _een_ beetje _een_ gek _uitsteeksel_ 
+B|3| B: wat bred _met_ daarop _een_ _soort_ spits bijna toeterachtig iets 
+A|4| A: ah [en] _het euh_ [de] [cirkel] _zijn_ [soort] van horizontaal 
+B|5| B: _ja_ _een_ [soort] _tafel_ bijna 
+A|6| A: juist _dan_ weten [ik] _dat_ _het_ _het_ _zijn_ 
+A|7| A: _dan_ _zijn het_ 
+A|8| A: [deze hebben] [een] [euh] horizontaal [plat cirkel] [aan de rechterkant] 
+A|9| A: [en] _links_ [een] groot _uitsteeksel met_ daaraan nog [een] ander [uitsteeksel] 
+B|10| B: _ja_ veel [de] toetervormig 
+A|11| A: _de toeter_ _dat zijn_ hem 
+B|12| B: _ja_ oké 
+B|13| B: [zijn het] 
+B|14| B: _ja_ [deze] [zijn] [met] [dat] [euh] [plat] _tafel_ [aan de rechterkant] [en] [dan] [het] [uitsteeksel met] [de toeter] [links] 
+A|15| A: [ja] [het] rond [tafel] 
+A|16| A: ah [ja euh] 
+B|17| B: [ja] 
+A|18| A: [euh] _dit zijn_ [de toeter] _met het_ [plat cirkel] [aan de rechterkant] 
+B|19| B: [ja] 
+B|20| B: [dit zijn] die [met het] [tafel] [en] [de toeter] 
+A|21| A: Yes 
+A|22| A: ah nee _dat zijn_ hem niet 
+B|23| B: [het euh] 
+A|24| A: [de] [zijn] [dit] 
+A|25| A: [dit zijn] [de toeter] [met het] [plat] cirkeltje 
+B|26| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dat zijn makkelijk
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=1| B | B : ja euh ja deze hebben aan de rechterkant een soort plat cirkel
+	Free: Pattern=soort, Pattern=ja, Pattern=een, Pattern=plat cirkel, Pattern=deze hebben, Pattern=aan de rechterkant, Pattern=ja euh
+	Constrained: Pattern=cirkel, Pattern=aan de, Pattern=euh, Pattern=plat, Pattern=deze, Pattern=de, Pattern=ja
+Turn ID=2| B | B : en aan de linkerkant zien ik ja een beetje een gek uitsteeksel
+	Free: Pattern=ja, Pattern=aan de, Pattern=uitsteeksel, Pattern=een, Pattern=ik, Pattern=en
+	Constrained: Pattern=de
+Turn ID=3| B | B : wat bred met daarop een soort spits bijna toeterachtig iets
+	Free: Pattern=soort, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : ah en het euh de cirkel zijn soort van horizontaal
+	Free: Pattern=cirkel, Pattern=het euh, Pattern=soort, Pattern=de, Pattern=en, Pattern=zijn
+	Constrained: Pattern=euh, Pattern=het
+Turn ID=5| B | B : ja een soort tafel bijna
+	Free: Pattern=soort, Pattern=tafel, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : juist dan weten ik dat het het zijn
+	Free: Pattern=dat, Pattern=dan, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=8| A | A : deze hebben een euh horizontaal plat cirkel aan de rechterkant
+	Free: Pattern=een, Pattern=plat cirkel, Pattern=euh, Pattern=deze hebben, Pattern=aan de rechterkant
+	Constrained: Pattern=cirkel, Pattern=de, Pattern=aan de, Pattern=plat, Pattern=deze
+Turn ID=9| A | A : en links een groot uitsteeksel met daaraan nog een ander uitsteeksel
+	Free: Pattern=een, Pattern=links, Pattern=en, Pattern=uitsteeksel met, Pattern=uitsteeksel
+	Constrained: Pattern=uitsteeksel, Pattern=met
+Turn ID=10| B | B : ja veel de toetervormig
+	Free: Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : de toeter dat zijn hem
+	Free: Pattern=de toeter, Pattern=dat zijn
+	Constrained: Pattern=de, Pattern=dat, Pattern=zijn
+Turn ID=12| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : zijn het
+	Free: Pattern=zijn het
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=14| B | B : ja deze zijn met dat euh plat tafel aan de rechterkant en dan het uitsteeksel met de toeter links
+	Free: Pattern=dat, Pattern=ja, Pattern=links, Pattern=het, Pattern=euh, Pattern=met, Pattern=de toeter, Pattern=en, Pattern=plat, Pattern=zijn, Pattern=deze, Pattern=uitsteeksel met, Pattern=dan, Pattern=tafel, Pattern=aan de rechterkant
+	Constrained: Pattern=de, Pattern=met, Pattern=uitsteeksel, Pattern=aan de
+Turn ID=15| A | A : ja het rond tafel
+	Free: Pattern=het, Pattern=tafel, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ah ja euh
+	Free: Pattern=ja euh
+	Constrained: Pattern=euh, Pattern=ja
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : euh dit zijn de toeter met het plat cirkel aan de rechterkant
+	Free: Pattern=plat cirkel, Pattern=euh, Pattern=aan de rechterkant, Pattern=de toeter, Pattern=met het, Pattern=dit zijn
+	Constrained: Pattern=cirkel, Pattern=de, Pattern=aan de, Pattern=het, Pattern=dit, Pattern=met, Pattern=plat, Pattern=zijn
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : dit zijn die met het tafel en de toeter
+	Free: Pattern=tafel, Pattern=de toeter, Pattern=en, Pattern=met het, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=het, Pattern=dit, Pattern=met, Pattern=zijn
+Turn ID=21| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ah nee dat zijn hem niet
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| B | B : het euh
+	Free: Pattern=het euh
+	Constrained: Pattern=euh, Pattern=het
+Turn ID=24| A | A : de zijn dit
+	Free: Pattern=dit, Pattern=de, Pattern=zijn
+	Constrained: 
+Turn ID=25| A | A : dit zijn de toeter met het plat cirkeltje
+	Free: Pattern=met het, Pattern=dit zijn, Pattern=de toeter, Pattern=plat
+	Constrained: Pattern=de, Pattern=het, Pattern=dit, Pattern=met, Pattern=zijn
+Turn ID=26| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

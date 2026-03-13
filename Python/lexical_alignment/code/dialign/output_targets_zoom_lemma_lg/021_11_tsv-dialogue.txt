@@ -1,0 +1,215 @@
+A|0| A: even vergeten 
+A|1| A: dit doen mij denken _aan_ _een_ dik _neus_ 
+A|2| A: dat voorwerp 
+A|3| A: dat zitten _aan de zijkant_ 
+A|4| A: die dik _neus_ 
+A|5| A: _en_ dan hebben je _aan de_ 
+B|6| B: [aan de] 
+B|7| B: [aan de] [aan de] rechterkant veel 
+A|8| A: hm 
+A|9| A: _ja_ 
+B|10| B: _Oké_ 
+A|11| A: _en_ dan hebben je [aan de] bovenkant hebben je _nog_ _twee_ voorwerp 
+A|12| A: _en aan de zijkant nog een_ driehoek 
+B|13| B: [ja] 
+B|14| B: nummer 
+B|15| B: _kijken_ 
+B|16| B: [ja] _ik zien een_ heel groot [neus] 
+A|17| A: mhm 
+B|18| B: zo _zien_ _ik_ het [een] beetje 
+B|19| B: [en] _bovenop_ _een soort_ [ja] [een] diamantachtig iets 
+B|20| B: [en] één [en] [een] [een] rechthoek 
+B|21| B: wat er uitsteken 
+A|22| A: mhm 
+B|23| B: [en aan de zijkant nog een] klein vierkan als _ik_ het goed _zien_ 
+A|24| A: je zeggen [een] diamant hè 
+B|25| B: [ja] daar lijken het [een] beetje _op_ 
+A|26| A: even [kijken] 
+A|27| A: [en] zijn [de] [neus] 
+A|28| A: zijn die rond 
+B|29| B: [ja] 
+A|30| A: [Oké] 
+A|31| A: Letter 
+A|32| A: [ik zien een] dik [neus] 
+A|33| A: [een] dik rond [neus] 
+A|34| A: _met_ [bovenop] _twee_ voorwerp 
+A|35| A: [en aan de zijkant] [een soort] langwerpig driehoek 
+B|36| B: [ja] 
+B|37| B: nummer 
+B|38| B: [ik zien [een] soort] 
+B|39| B: Kop _met een_ groot [neus] voorop [aan de] rechterkant 
+B|40| B: [aan de] linkerkant [een] vierkan 
+B|41| B: _en twee_ [ja] [soort] van _lepelt_ bovenaan 
+A|42| A: mhm [en] die [lepelt] h-hebben _verschillend_ vorm 
+B|43| B: Klopt 
+A|44| A: Letter 
+A|45| A: [ik zien een] 
+A|46| A: kop [met een] dik [neus] 
+A|47| A: [en twee] [lepelt] daarin boven [op] 
+B|48| B: nummer 
+B|49| B: [ik zien een] groot [neus] [aan de zijkant] 
+B|50| B: [en twee] [verschillend] [soort] lepel bovenin 
+A|51| A: [ja] 
+A|52| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : even vergeten
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : dit doen mij denken aan een dik neus
+	Free: Pattern=neus, Pattern=aan, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : dat voorwerp
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : dat zitten aan de zijkant
+	Free: Pattern=aan de zijkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| A | A : die dik neus
+	Free: Pattern=neus
+	Constrained: 
+Turn ID=5| A | A : en dan hebben je aan de
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=6| B | B : aan de
+	Free: Pattern=aan de
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=7| B | B : aan de aan de rechterkant veel
+	Free: Pattern=aan de
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=8| A | A : hm
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=11| A | A : en dan hebben je aan de bovenkant hebben je nog twee voorwerp
+	Free: Pattern=aan de, Pattern=nog, Pattern=en, Pattern=twee
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=12| A | A : en aan de zijkant nog een driehoek
+	Free: Pattern=en aan de zijkant nog een
+	Constrained: Pattern=nog, Pattern=aan de, Pattern=en, Pattern=en aan de zijkant, Pattern=de, Pattern=aan, Pattern=een, Pattern=aan de zijkant
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : kijken
+	Free: Pattern=kijken
+	Constrained: 
+Turn ID=16| B | B : ja ik zien een heel groot neus
+	Free: Pattern=ik zien een, Pattern=neus, Pattern=ja
+	Constrained: Pattern=zien, Pattern=ik, Pattern=een
+Turn ID=17| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : zo zien ik het een beetje
+	Free: Pattern=zien, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=19| B | B : en bovenop een soort ja een diamantachtig iets
+	Free: Pattern=bovenop, Pattern=ja, Pattern=een, Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=20| B | B : en één en een een rechthoek
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=21| B | B : wat er uitsteken
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : en aan de zijkant nog een klein vierkan als ik het goed zien
+	Free: Pattern=en aan de zijkant nog een, Pattern=zien, Pattern=ik
+	Constrained: Pattern=nog, Pattern=aan de, Pattern=en, Pattern=en aan de zijkant, Pattern=de, Pattern=aan, Pattern=een, Pattern=aan de zijkant
+Turn ID=24| A | A : je zeggen een diamant hè
+	Free: Pattern=een
+	Constrained: 
+Turn ID=25| B | B : ja daar lijken het een beetje op
+	Free: Pattern=op, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=26| A | A : even kijken
+	Free: Pattern=kijken
+	Constrained: 
+Turn ID=27| A | A : en zijn de neus
+	Free: Pattern=neus, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=28| A | A : zijn die rond
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=31| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : ik zien een dik neus
+	Free: Pattern=ik zien een, Pattern=neus
+	Constrained: Pattern=zien, Pattern=ik, Pattern=een
+Turn ID=33| A | A : een dik rond neus
+	Free: Pattern=neus, Pattern=een
+	Constrained: 
+Turn ID=34| A | A : met bovenop twee voorwerp
+	Free: Pattern=bovenop, Pattern=met, Pattern=twee
+	Constrained: 
+Turn ID=35| A | A : en aan de zijkant een soort langwerpig driehoek
+	Free: Pattern=en aan de zijkant, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=en, Pattern=de, Pattern=aan, Pattern=een, Pattern=aan de zijkant
+Turn ID=36| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : ik zien een soort
+	Free: Pattern=ik zien een, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort, Pattern=ik, Pattern=zien
+Turn ID=39| B | B : Kop met een groot neus voorop aan de rechterkant
+	Free: Pattern=aan de, Pattern=met een, Pattern=neus
+	Constrained: Pattern=met, Pattern=de, Pattern=aan, Pattern=een
+Turn ID=40| B | B : aan de linkerkant een vierkan
+	Free: Pattern=aan de, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=41| B | B : en twee ja soort van lepelt bovenaan
+	Free: Pattern=en twee, Pattern=soort, Pattern=ja, Pattern=lepelt
+	Constrained: Pattern=en, Pattern=twee
+Turn ID=42| A | A : mhm en die lepelt h-hebben verschillend vorm
+	Free: Pattern=verschillend, Pattern=lepelt, Pattern=en
+	Constrained: 
+Turn ID=43| B | B : Klopt
+	Free: 
+	Constrained: 
+Turn ID=44| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=45| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=zien, Pattern=ik, Pattern=een
+Turn ID=46| A | A : kop met een dik neus
+	Free: Pattern=met een, Pattern=neus
+	Constrained: Pattern=met, Pattern=een
+Turn ID=47| A | A : en twee lepelt daarin boven op
+	Free: Pattern=en twee, Pattern=op, Pattern=lepelt
+	Constrained: Pattern=en, Pattern=twee
+Turn ID=48| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=49| B | B : ik zien een groot neus aan de zijkant
+	Free: Pattern=ik zien een, Pattern=aan de zijkant, Pattern=neus
+	Constrained: Pattern=aan de, Pattern=een, Pattern=zien, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=50| B | B : en twee verschillend soort lepel bovenin
+	Free: Pattern=en twee, Pattern=soort, Pattern=verschillend
+	Constrained: Pattern=en, Pattern=twee
+Turn ID=51| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=52| A | A : Letter
+	Free: 
+	Constrained: 

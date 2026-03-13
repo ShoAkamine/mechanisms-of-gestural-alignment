@@ -1,0 +1,67 @@
+B|0| B: _Euh_ _ja_ dit _zijn_ alsof er door _die_ basisvorm of er omheen zo'n soort 
+B|1| B: Ligbankje wat je op _het_ strand gebruiken euh _hebben_ 
+B|2| B: dus _dat zijn_ een soort rechthoek _met_ twee euh poot _en_ daar zitten dan ook een omgekeerd _trapezium_ op aan de rechterkant van _die_ basisvorm _en_ aan de linkerkant van _die_ basisvorm zitten een krul _Euh_ _en_ _dat_ zitten allemaal best wel bovenaan _die_ basisvorm 
+A|3| A: [ja] oké [dat zijn] 
+A|4| A: Oh _nu_ [hebben] _ik_ [die] [met] [het] [Euh] lichtbedje [en] [het] omgekeerad [trapezium] erop 
+B|5| B: [ja] euh 
+B|6| B: _ik hebben_ [nu] [dat] _ligbed_ 
+A|7| A: [Euh] 
+A|8| A: even zoeken 
+A|9| A: Oh [ja] [dat zijn] 
+A|10| A: _ik hebben het ligbed_ 
+B|11| B: nummer 
+B|12| B: [ik hebben het ligbed] 
+A|13| A: [dat zijn] [dat zijn] letter 
+A|14| A: [ik hebben het ligbed] 
+B|15| B: [Euh] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh ja dit zijn alsof er door die basisvorm of er omheen zo'n soort
+	Free: Pattern=ja, Pattern=zijn, Pattern=die, Pattern=Euh
+	Constrained: 
+Turn ID=1| B | B : Ligbankje wat je op het strand gebruiken euh hebben
+	Free: Pattern=het, Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : dus dat zijn een soort rechthoek met twee euh poot en daar zitten dan ook een omgekeerd trapezium op aan de rechterkant van die basisvorm en aan de linkerkant van die basisvorm zitten een krul Euh en dat zitten allemaal best wel bovenaan die basisvorm
+	Free: Pattern=Euh, Pattern=trapezium, Pattern=met, Pattern=die, Pattern=en, Pattern=dat, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=3| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=4| A | A : Oh nu hebben ik die met het Euh lichtbedje en het omgekeerad trapezium erop
+	Free: Pattern=het, Pattern=hebben, Pattern=trapezium, Pattern=met, Pattern=die, Pattern=ik, Pattern=en, Pattern=Euh, Pattern=nu
+	Constrained: 
+Turn ID=5| B | B : ja euh
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ik hebben nu dat ligbed
+	Free: Pattern=ik hebben, Pattern=nu, Pattern=dat, Pattern=ligbed
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=7| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=8| A | A : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=10| A | A : ik hebben het ligbed
+	Free: Pattern=ik hebben het ligbed
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=ligbed
+Turn ID=11| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : ik hebben het ligbed
+	Free: Pattern=ik hebben het ligbed
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=ligbed
+Turn ID=13| A | A : dat zijn dat zijn letter
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=14| A | A : ik hebben het ligbed
+	Free: Pattern=ik hebben het ligbed
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=ligbed
+Turn ID=15| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 

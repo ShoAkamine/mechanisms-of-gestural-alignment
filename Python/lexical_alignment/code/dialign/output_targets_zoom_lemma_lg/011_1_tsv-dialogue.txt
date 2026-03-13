@@ -1,0 +1,171 @@
+A|0| A: _zijn het_ 
+B|1| B: _Oké_ top 
+A|2| A: oh _deze_ lijken op _een_ robot 
+A|3| A: _het_ lijken _een_ beetje op _zo'n_ tankwag _met twee van die_ uitsteeksel _met_ blok 
+A|4| A: vierkante blok _en die_ lopen _van_ klein naar groot 
+A|5| A: _en dan_ _hebben_ je één soort _van_ _spijker_ rechtop _met_ _een vierkant plaat_ 
+A|6| A: _aan de voorkant_ 
+B|7| B: [een vierkant _plaat] aan de_ _ja_ 
+B|8| B: _ja ja_ _ik hebben_ hem _ik_ denken dat _ik_ hem al weten 
+B|9| B: want [die] [spijker] [die] [hebben] [twee] [die] [hebben] _een rand_ ook hè 
+A|10| A: [Oké] 
+A|11| A: [twee] [een rand] _zo'n_ ribbelrand 
+B|12| B: _ja_ 
+B|13| B: _ja_ oké 
+B|14| B: [dan] [zijn het] 
+B|15| B: Ehm _ik hebben_ [die] [met] dat 
+B|16| B: _Oh_ hoe deden we dat nou 
+B|17| B: hoe [hebben] we dat ook weer zeggen 
+B|18| B: in ieder geval [met] dat plat [vierkant] [aan de] zijkant 
+B|19| B: [en] [zo'n] do of zo-zo'n _spijker bovenop_ 
+B|20| B: [met twee van die] lagen 
+A|21| A: _Oh ja_ [de] [spijker] inderdaad 
+A|22| A: [die] wij ergens [aan] [het] begin [hebben] [met] [het] dienblad 
+B|23| B: [ja] 
+A|24| A: [Oké] 
+A|25| A: [de] robot [met] [het] [vierkant] voor [het] tuu boven _en dan_ [twee van die] soort [van] 
+A|26| A: [ja] rond [bovenop] [spijker bovenop] _maar_ [dan] 
+B|27| B: [Oh ja] [met] [die] dubbel laag 
+A|28| A: [ja] [die] [ja] 
+B|29| B: [ja] dat [zijn] 
+B|30| B: _ik_ vergeeten steeds hoe we [deze] noemen 
+B|31| B: [maar] dit [zijn] [die] [met] dat plat [vierkant] [en dan] [die] [spijker] [met] [die] dubbel laag 
+A|32| A: [Oh [ja] ja] 
+A|33| A: even [aan] [het] zoeken 
+A|34| A: [Oh ja] [die] tankwag [een] beetje 
+B|35| B: [ja] 
+A|36| A: _ik hebben de_ robot tank [met] [de] _plaat aan de voorkant_ 
+B|37| B: [ik hebben de] 
+B|38| B: nou [ik] vergeeten [deze] steeds 
+B|39| B: [maar] in ieder geval [met] [die] [plaat aan de voorkant] [en dan] [die] [spijker] [met] [die] dubbel ding [en die] [twee] telescop 
+A|40| A: Wacht 
+A|41| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : zijn het
+	Free: Pattern=zijn het
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=1| B | B : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| A | A : oh deze lijken op een robot
+	Free: Pattern=een, Pattern=deze
+	Constrained: 
+Turn ID=3| A | A : het lijken een beetje op zo'n tankwag met twee van die uitsteeksel met blok
+	Free: Pattern=zo'n, Pattern=een, Pattern=het, Pattern=met, Pattern=met twee van die
+	Constrained: Pattern=twee van die, Pattern=twee, Pattern=met, Pattern=die, Pattern=van
+Turn ID=4| A | A : vierkante blok en die lopen van klein naar groot
+	Free: Pattern=en die, Pattern=van
+	Constrained: Pattern=die, Pattern=en
+Turn ID=5| A | A : en dan hebben je één soort van spijker rechtop met een vierkant plaat
+	Free: Pattern=een vierkant plaat, Pattern=en dan, Pattern=hebben, Pattern=met, Pattern=van, Pattern=spijker
+	Constrained: Pattern=vierkant, Pattern=dan, Pattern=een, Pattern=en
+Turn ID=6| A | A : aan de voorkant
+	Free: Pattern=aan de voorkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=7| B | B : een vierkant plaat aan de ja
+	Free: Pattern=een vierkant plaat, Pattern=plaat aan de, Pattern=ja
+	Constrained: Pattern=aan de, Pattern=een, Pattern=vierkant, Pattern=de, Pattern=aan
+Turn ID=8| B | B : ja ja ik hebben hem ik denken dat ik hem al weten
+	Free: Pattern=ik hebben, Pattern=ja ja, Pattern=ik
+	Constrained: Pattern=hebben, Pattern=ja, Pattern=ik
+Turn ID=9| B | B : want die spijker die hebben twee die hebben een rand ook hè
+	Free: Pattern=twee, Pattern=hebben, Pattern=die, Pattern=een rand, Pattern=spijker
+	Constrained: Pattern=een
+Turn ID=10| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=11| A | A : twee een rand zo'n ribbelrand
+	Free: Pattern=een rand, Pattern=twee, Pattern=zo'n
+	Constrained: Pattern=een
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=15| B | B : Ehm ik hebben die met dat
+	Free: Pattern=ik hebben, Pattern=die, Pattern=met
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=16| B | B : Oh hoe deden we dat nou
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=17| B | B : hoe hebben we dat ook weer zeggen
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=18| B | B : in ieder geval met dat plat vierkant aan de zijkant
+	Free: Pattern=aan de, Pattern=vierkant, Pattern=met
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=19| B | B : en zo'n do of zo-zo'n spijker bovenop
+	Free: Pattern=spijker bovenop, Pattern=zo'n, Pattern=en
+	Constrained: Pattern=spijker, Pattern=bovenop
+Turn ID=20| B | B : met twee van die lagen
+	Free: Pattern=met twee van die
+	Constrained: Pattern=twee van die, Pattern=twee, Pattern=met, Pattern=die, Pattern=van
+Turn ID=21| A | A : Oh ja de spijker inderdaad
+	Free: Pattern=Oh ja, Pattern=de, Pattern=spijker
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=22| A | A : die wij ergens aan het begin hebben met het dienblad
+	Free: Pattern=aan, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : de robot met het vierkant voor het tuu boven en dan twee van die soort van
+	Free: Pattern=twee van die, Pattern=de, Pattern=en dan, Pattern=het, Pattern=met, Pattern=van, Pattern=vierkant
+	Constrained: Pattern=twee, Pattern=dan, Pattern=die, Pattern=van, Pattern=en
+Turn ID=26| A | A : ja rond bovenop spijker bovenop maar dan
+	Free: Pattern=bovenop, Pattern=ja, Pattern=dan, Pattern=spijker bovenop, Pattern=maar
+	Constrained: Pattern=spijker, Pattern=bovenop
+Turn ID=27| B | B : Oh ja met die dubbel laag
+	Free: Pattern=Oh ja, Pattern=die, Pattern=met
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=28| A | A : ja die ja
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : ik vergeeten steeds hoe we deze noemen
+	Free: Pattern=ik, Pattern=deze
+	Constrained: 
+Turn ID=31| B | B : maar dit zijn die met dat plat vierkant en dan die spijker met die dubbel laag
+	Free: Pattern=en dan, Pattern=met, Pattern=die, Pattern=vierkant, Pattern=spijker, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=32| A | A : Oh ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=33| A | A : even aan het zoeken
+	Free: Pattern=het, Pattern=aan
+	Constrained: 
+Turn ID=34| A | A : Oh ja die tankwag een beetje
+	Free: Pattern=Oh ja, Pattern=die, Pattern=een
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : ik hebben de robot tank met de plaat aan de voorkant
+	Free: Pattern=plaat aan de voorkant, Pattern=ik hebben de, Pattern=de, Pattern=met
+	Constrained: Pattern=ik hebben, Pattern=aan de, Pattern=hebben, Pattern=ik, Pattern=aan de voorkant, Pattern=de, Pattern=plaat aan de, Pattern=aan
+Turn ID=37| B | B : ik hebben de
+	Free: Pattern=ik hebben de
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=38| B | B : nou ik vergeeten deze steeds
+	Free: Pattern=ik, Pattern=deze
+	Constrained: 
+Turn ID=39| B | B : maar in ieder geval met die plaat aan de voorkant en dan die spijker met die dubbel ding en die twee telescop
+	Free: Pattern=en die, Pattern=twee, Pattern=en dan, Pattern=plaat aan de voorkant, Pattern=met, Pattern=die, Pattern=maar, Pattern=spijker
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=die, Pattern=en, Pattern=aan de voorkant, Pattern=de, Pattern=plaat aan de, Pattern=aan
+Turn ID=40| A | A : Wacht
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja

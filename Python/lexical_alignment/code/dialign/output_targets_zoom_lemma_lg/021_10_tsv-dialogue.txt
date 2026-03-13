@@ -1,0 +1,175 @@
+B|0| B: _ik_ hebben 
+B|1| B: _een_ voorwerp _met twee_ uitstulpsel _aan de_ zijkant 
+A|2| A: mhm 
+B|3| B: _en_ _twee bolle_ _aan_ _die_ _uiteind_ 
+B|4| B: _aan_ ieder kant één _bolle_ zo moeten _ik_ _het_ zeggen 
+B|5| B: _en_ _een soort_ _ja_ dakje _schuin_ _bovenop_ 
+A|6| A: [ja] dan weten [ik] welk je bedoelen 
+A|7| A: [ja] 
+A|8| A: _ik zien_ hier [een soort] _plank_ 
+A|9| A: [aan de] achterkant 
+A|10| A: [die] _worden ondersteunen_ door [een] ander _plank_ 
+A|11| A: [en] dan _zien_ [ik] [twee] 
+A|12| A: dezelfde vorm 
+A|13| A: [met] [aan de] beide [uiteind] [een] rond 
+B|14| B: [ja] 
+B|15| B: _het_ [plank] staan [een] beetje _schuin_ 
+A|16| A: [ja] 
+B|17| B: Oké nummer 
+B|18| B: _ik zien [een_ soort] _plateauotje_ _wat_ _schuin_ naar beneden lopen 
+B|19| B: [en] [twee] 
+B|20| B: [ja] [soort] armp _met twee_ bollet 
+B|21| B: of _met een_ _bolle_ [aan] _het_ uiteinde 
+A|22| A: [ja] 
+A|23| A: [ja] 
+A|24| A: Letter 
+A|25| A: [ik zien een] 
+A|26| A: [een] [schuin] [plateauotje] 
+A|27| A: _dat_ _ondersteunen_ _worden_ door [een] ander plateauo 
+A|28| A: [met twee] 
+A|29| A: [ja] 
+A|30| A: [wat] zijn [het] 
+A|31| A: [twee] uitsteeksel 
+A|32| A: [met een] rond daar [bovenop] 
+B|33| B: [ja] nummer 
+B|34| B: [ik zien een] plateau [dat] [schuin] naar beneden lopen 
+B|35| B: [en] [worden ondersteunen] 
+B|36| B: [en] [twee] armp [met] bollet eraan 
+A|37| A: [ja] 
+A|38| A: Letter 
+A|39| A: [ik zien een] aflopend plateauo 
+A|40| A: [met twee] uitsteeksel 
+A|41| A: [met] [aan de] buitenkant [twee bolle] erop 
+B|42| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : een voorwerp met twee uitstulpsel aan de zijkant
+	Free: Pattern=aan de, Pattern=met twee, Pattern=een
+	Constrained: Pattern=twee, Pattern=aan, Pattern=met
+Turn ID=2| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en twee bolle aan die uiteind
+	Free: Pattern=aan, Pattern=twee bolle, Pattern=die, Pattern=en, Pattern=uiteind
+	Constrained: Pattern=twee, Pattern=bolle
+Turn ID=4| B | B : aan ieder kant één bolle zo moeten ik het zeggen
+	Free: Pattern=het, Pattern=aan, Pattern=ik, Pattern=bolle
+	Constrained: 
+Turn ID=5| B | B : en een soort ja dakje schuin bovenop
+	Free: Pattern=bovenop, Pattern=ja, Pattern=en, Pattern=schuin, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=6| A | A : ja dan weten ik welk je bedoelen
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ik zien hier een soort plank
+	Free: Pattern=ik zien, Pattern=een soort, Pattern=plank
+	Constrained: Pattern=soort, Pattern=zien, Pattern=een, Pattern=ik
+Turn ID=9| A | A : aan de achterkant
+	Free: Pattern=aan de
+	Constrained: Pattern=aan
+Turn ID=10| A | A : die worden ondersteunen door een ander plank
+	Free: Pattern=worden ondersteunen, Pattern=die, Pattern=plank, Pattern=een
+	Constrained: Pattern=ondersteunen, Pattern=worden
+Turn ID=11| A | A : en dan zien ik twee
+	Free: Pattern=en, Pattern=twee, Pattern=zien, Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : dezelfde vorm
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : met aan de beide uiteind een rond
+	Free: Pattern=aan de, Pattern=uiteind, Pattern=een, Pattern=met
+	Constrained: Pattern=aan
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : het plank staan een beetje schuin
+	Free: Pattern=schuin, Pattern=het, Pattern=plank, Pattern=een
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : Oké nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ik zien een soort plateauotje wat schuin naar beneden lopen
+	Free: Pattern=plateauotje, Pattern=wat, Pattern=ik zien een, Pattern=schuin, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=ik zien, Pattern=zien, Pattern=ik
+Turn ID=19| B | B : en twee
+	Free: Pattern=en, Pattern=twee
+	Constrained: 
+Turn ID=20| B | B : ja soort armp met twee bollet
+	Free: Pattern=met twee, Pattern=soort, Pattern=ja
+	Constrained: Pattern=twee, Pattern=met
+Turn ID=21| B | B : of met een bolle aan het uiteinde
+	Free: Pattern=met een, Pattern=het, Pattern=aan, Pattern=bolle
+	Constrained: Pattern=een, Pattern=met
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik, Pattern=zien
+Turn ID=26| A | A : een schuin plateauotje
+	Free: Pattern=schuin, Pattern=een, Pattern=plateauotje
+	Constrained: 
+Turn ID=27| A | A : dat ondersteunen worden door een ander plateauo
+	Free: Pattern=dat, Pattern=ondersteunen, Pattern=worden, Pattern=een
+	Constrained: 
+Turn ID=28| A | A : met twee
+	Free: Pattern=met twee
+	Constrained: Pattern=twee, Pattern=met
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : wat zijn het
+	Free: Pattern=het, Pattern=wat
+	Constrained: 
+Turn ID=31| A | A : twee uitsteeksel
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=32| A | A : met een rond daar bovenop
+	Free: Pattern=met een, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=met
+Turn ID=33| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : ik zien een plateau dat schuin naar beneden lopen
+	Free: Pattern=ik zien een, Pattern=schuin, Pattern=dat
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik, Pattern=zien
+Turn ID=35| B | B : en worden ondersteunen
+	Free: Pattern=worden ondersteunen, Pattern=en
+	Constrained: Pattern=ondersteunen, Pattern=worden
+Turn ID=36| B | B : en twee armp met bollet eraan
+	Free: Pattern=en, Pattern=twee, Pattern=met
+	Constrained: 
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : ik zien een aflopend plateauo
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik, Pattern=zien
+Turn ID=40| A | A : met twee uitsteeksel
+	Free: Pattern=met twee
+	Constrained: Pattern=twee, Pattern=met
+Turn ID=41| A | A : met aan de buitenkant twee bolle erop
+	Free: Pattern=aan de, Pattern=twee bolle, Pattern=met
+	Constrained: Pattern=twee, Pattern=aan, Pattern=bolle
+Turn ID=42| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

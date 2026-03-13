@@ -1,0 +1,151 @@
+A|0| A: _ja_ 
+A|1| A: _Oké_ 
+A|2| A: _ehm_ deze lijken _een_ beetje op _Ernie_ 
+A|3| A: dus hij _hebben_ _een soort_ van neusje _en_ _aan de_ zijkant zitten _een_ _ja_ zitten _een_ _een_ _een_ _een_ hand waarmee 
+A|4| A: _ja_ of _een_ arm _en_ in _die_ arm lijken _het_ alsof _er_ _een_ _het_ gevouw _een_ _papier_ _zijn_ _met_ twee zijde omhoog 
+A|5| A: _en_ daarbovenop zitten twee uitsteeksel waarvan _één_ heel erg lijken op _de_ puntenverzameling van _het_ spel Zelda 
+A|6| A: _en_ _de_ ander _zijn een_ plat uitsteeksel 
+A|7| A: _die_ _ja_ gewoon _de_ lucht in wijzen eigenlijk 
+B|8| B: [Oké] [die] [hebben] _ik_ nog niet helemaal 
+A|9| A: Eh 
+A|10| A: oké _de_ _de_ voorkant _zijn_ zeggen maar _een_ bolvormig 
+A|11| A: eh _ja_ _de_ _de_ voorkant [hebben] _een_ bolvormig uitsteeksel 
+B|12| B: [ja] 
+A|13| A: _en_ _dat_ _dat_ lijken _een_ beetje op _een_ neusje 
+B|14| B: mhm 
+A|15| A: _en dan aan de_ zijkant zitten _een_ uitsteeksel _en_ daar lijken _het_ alsof _er_ zeggen maar _een_ _papier_ gevouwen _zijn_ 
+B|16| B: Oh [ja] [ja] 
+A|17| A: _en_ [ja] [die] steken _er_ _aan de_ linkerkant uit 
+A|18| A: _en dan_ [hebben] je bovenop [hebben] je ook twee uitsteeksel waarvan _één_ _zijn_ zeggen maar _een_ _rui_ _met_ _een_ ander _rui_ eraan _en_ [die] zitten _er_ _dan_ bovenop 
+B|19| B: [ja] 
+A|20| A: Heb je hem 
+B|21| B: [ja] [en dan] [zijn] [er] nog [één] daarnaast naast [dat] [rui] _dat [zijn_ [een] soort] langwerpig balk toch 
+A|22| A: [ja] zeker 
+A|23| A: Yes [dat zijn] hem 
+B|24| B: [Oké] [dan] [zijn] [het] nummer 
+B|25| B: [ehm] dit [zijn] degeen [met] [het] [de] [Ernie] 
+B|26| B: Neusje voorop [en dan aan de] rechterkant [het] omgevouwen [papier] 
+A|27| A: Yes [dat zijn] 
+A|28| A: eh _ik hebben Ernie_ 
+B|29| B: [ehm] [ja] [dat zijn] 
+B|30| B: [ehm] dit [zijn] [Ernie] 
+A|31| A: eh yes [dat zijn] 
+A|32| A: eh _ik hebben Ernie_ 
+B|33| B: waar staan [die] 
+B|34| B: [ja] 
+B|35| B: Ehm [ik hebben Ernie] 
+A|36| A: Yes [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| A | A : ehm deze lijken een beetje op Ernie
+	Free: Pattern=Ernie, Pattern=een, Pattern=ehm
+	Constrained: 
+Turn ID=3| A | A : dus hij hebben een soort van neusje en aan de zijkant zitten een ja zitten een een een een hand waarmee
+	Free: Pattern=ja, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=de
+Turn ID=4| A | A : ja of een arm en in die arm lijken het alsof er een het gevouw een papier zijn met twee zijde omhoog
+	Free: Pattern=papier, Pattern=ja, Pattern=een, Pattern=het, Pattern=met, Pattern=die, Pattern=er, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : en daarbovenop zitten twee uitsteeksel waarvan één heel erg lijken op de puntenverzameling van het spel Zelda
+	Free: Pattern=één, Pattern=het, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=6| A | A : en de ander zijn een plat uitsteeksel
+	Free: Pattern=zijn een, Pattern=en, Pattern=de
+	Constrained: Pattern=zijn, Pattern=een
+Turn ID=7| A | A : die ja gewoon de lucht in wijzen eigenlijk
+	Free: Pattern=ja, Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=8| B | B : Oké die hebben ik nog niet helemaal
+	Free: Pattern=Oké, Pattern=hebben, Pattern=ik, Pattern=die
+	Constrained: 
+Turn ID=9| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : oké de de voorkant zijn zeggen maar een bolvormig
+	Free: Pattern=zijn, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=11| A | A : eh ja de de voorkant hebben een bolvormig uitsteeksel
+	Free: Pattern=hebben, Pattern=ja, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en dat dat lijken een beetje op een neusje
+	Free: Pattern=dat, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=14| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : en dan aan de zijkant zitten een uitsteeksel en daar lijken het alsof er zeggen maar een papier gevouwen zijn
+	Free: Pattern=papier, Pattern=een, Pattern=het, Pattern=en dan aan de, Pattern=er, Pattern=en, Pattern=zijn
+	Constrained: Pattern=de, Pattern=en dan, Pattern=aan de, Pattern=dan, Pattern=en
+Turn ID=16| B | B : Oh ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : en ja die steken er aan de linkerkant uit
+	Free: Pattern=ja, Pattern=aan de, Pattern=die, Pattern=er, Pattern=en
+	Constrained: Pattern=de
+Turn ID=18| A | A : en dan hebben je bovenop hebben je ook twee uitsteeksel waarvan één zijn zeggen maar een rui met een ander rui eraan en die zitten er dan bovenop
+	Free: Pattern=rui, Pattern=en dan, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=één, Pattern=met, Pattern=die, Pattern=er, Pattern=en, Pattern=zijn
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Heb je hem
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : ja en dan zijn er nog één daarnaast naast dat rui dat zijn een soort langwerpig balk toch
+	Free: Pattern=ja, Pattern=en dan, Pattern=zijn een, Pattern=één, Pattern=er, Pattern=een soort, Pattern=zijn, Pattern=dat, Pattern=rui, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=dan, Pattern=een, Pattern=en, Pattern=zijn
+Turn ID=22| A | A : ja zeker
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : Yes dat zijn hem
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=24| B | B : Oké dan zijn het nummer
+	Free: Pattern=Oké, Pattern=dan, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=25| B | B : ehm dit zijn degeen met het de Ernie
+	Free: Pattern=de, Pattern=Ernie, Pattern=het, Pattern=zijn, Pattern=ehm, Pattern=met
+	Constrained: 
+Turn ID=26| B | B : Neusje voorop en dan aan de rechterkant het omgevouwen papier
+	Free: Pattern=en dan aan de, Pattern=het, Pattern=papier
+	Constrained: Pattern=de, Pattern=en dan, Pattern=aan de, Pattern=dan, Pattern=en
+Turn ID=27| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=28| A | A : eh ik hebben Ernie
+	Free: Pattern=ik hebben Ernie
+	Constrained: Pattern=Ernie, Pattern=hebben, Pattern=ik
+Turn ID=29| B | B : ehm ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=ehm
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=30| B | B : ehm dit zijn Ernie
+	Free: Pattern=Ernie, Pattern=zijn, Pattern=ehm
+	Constrained: 
+Turn ID=31| A | A : eh yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=32| A | A : eh ik hebben Ernie
+	Free: Pattern=ik hebben Ernie
+	Constrained: Pattern=Ernie, Pattern=hebben, Pattern=ik
+Turn ID=33| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : Ehm ik hebben Ernie
+	Free: Pattern=ik hebben Ernie
+	Constrained: Pattern=Ernie, Pattern=hebben, Pattern=ik
+Turn ID=36| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

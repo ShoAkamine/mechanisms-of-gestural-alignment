@@ -1,0 +1,99 @@
+A|0| A: oké _deze hebben_ aan _de_ bovenkant _een soort_ rond kegel _die_ naar boven opsteken 
+A|1| A: aan _de_ rechterkant _hebben_ hij _een_ heel _groot_ _uitsteeksel_ 
+A|2| A: _met_ _een soort_ telescoopvorm _met_ allemaal _van_ _die blok_ zeggen maar 
+B|3| B: mhm 
+A|4| A: _en_ aan _de_ linkerkant _hebben_ hij _ook nog twee_ verschillend _uitsteeksel_ 
+B|5| B: _ja_ 
+B|6| B: _ehm _deze hebben_ rechts_ [die] [soort] [van] telescoopachtig _arm_ [met] [die blok] 
+B|7| B: [en] dan daarboven [een soort] [van] druppelachtig vorm 
+B|8| B: [en] link dan [ook nog twee] [uitsteeksel] 
+A|9| A: [ja] 
+A|10| A: _dat zijn_ 
+A|11| A: [ehm deze hebben] aan _de_ rechterkant zo'n heel _groot telescooparm_ 
+A|12| A: [en] aan _de_ bovenkant [een soort] _druppel_ 
+A|13| A: [en] aan _de_ linkerkant [ook] 
+B|14| B: [ehm] _ja dat zijn_ 
+B|15| B: dit [zijn] [de] [met] [de] [groot telescooparm] _rechts_ 
+B|16| B: [en] dan [die] [ja] [die] [druppel] op [zijn] hoofd 
+B|17| B: _en links_ [ook] [twee] [uitsteeksel] 
+A|18| A: [ja dat zijn] 
+A|19| A: [en] [deze hebben rechts] [een] heel [groot] telescoop 
+A|20| A: [en links] [hebben] hij [twee] verschillend [arm] 
+B|21| B: [dat zijn] 
+B|22| B: Eh [met] [die] [groot telescooparm] [rechts] 
+A|23| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze hebben aan de bovenkant een soort rond kegel die naar boven opsteken
+	Free: Pattern=deze hebben, Pattern=een soort, Pattern=de, Pattern=die
+	Constrained: Pattern=een, Pattern=soort, Pattern=hebben
+Turn ID=1| A | A : aan de rechterkant hebben hij een heel groot uitsteeksel
+	Free: Pattern=de, Pattern=uitsteeksel, Pattern=een, Pattern=groot, Pattern=hebben
+	Constrained: 
+Turn ID=2| A | A : met een soort telescoopvorm met allemaal van die blok zeggen maar
+	Free: Pattern=die blok, Pattern=een soort, Pattern=van, Pattern=met
+	Constrained: Pattern=een, Pattern=die, Pattern=soort
+Turn ID=3| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : en aan de linkerkant hebben hij ook nog twee verschillend uitsteeksel
+	Free: Pattern=de, Pattern=uitsteeksel, Pattern=hebben, Pattern=en, Pattern=ook nog twee
+	Constrained: Pattern=ook, Pattern=twee
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ehm deze hebben rechts die soort van telescoopachtig arm met die blok
+	Free: Pattern=soort, Pattern=die blok, Pattern=ehm deze hebben, Pattern=deze hebben rechts, Pattern=met, Pattern=die, Pattern=arm, Pattern=van
+	Constrained: Pattern=rechts, Pattern=hebben, Pattern=deze hebben, Pattern=ehm, Pattern=die
+Turn ID=7| B | B : en dan daarboven een soort van druppelachtig vorm
+	Free: Pattern=een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=8| B | B : en link dan ook nog twee uitsteeksel
+	Free: Pattern=ook nog twee, Pattern=uitsteeksel, Pattern=en
+	Constrained: Pattern=ook, Pattern=twee
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=11| A | A : ehm deze hebben aan de rechterkant zo'n heel groot telescooparm
+	Free: Pattern=ehm deze hebben, Pattern=groot telescooparm, Pattern=de
+	Constrained: Pattern=deze hebben, Pattern=groot, Pattern=ehm, Pattern=hebben
+Turn ID=12| A | A : en aan de bovenkant een soort druppel
+	Free: Pattern=een soort, Pattern=druppel, Pattern=de, Pattern=en
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=13| A | A : en aan de linkerkant ook
+	Free: Pattern=ook, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=14| B | B : ehm ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ehm
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=15| B | B : dit zijn de met de groot telescooparm rechts
+	Free: Pattern=met, Pattern=groot telescooparm, Pattern=zijn, Pattern=de, Pattern=rechts
+	Constrained: Pattern=groot
+Turn ID=16| B | B : en dan die ja die druppel op zijn hoofd
+	Free: Pattern=ja, Pattern=druppel, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=17| B | B : en links ook twee uitsteeksel
+	Free: Pattern=en links, Pattern=ook, Pattern=uitsteeksel, Pattern=twee
+	Constrained: Pattern=en
+Turn ID=18| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=19| A | A : en deze hebben rechts een heel groot telescoop
+	Free: Pattern=deze hebben rechts, Pattern=groot, Pattern=een, Pattern=en
+	Constrained: Pattern=deze hebben, Pattern=rechts, Pattern=hebben
+Turn ID=20| A | A : en links hebben hij twee verschillend arm
+	Free: Pattern=en links, Pattern=arm, Pattern=twee, Pattern=hebben
+	Constrained: Pattern=en
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=22| B | B : Eh met die groot telescooparm rechts
+	Free: Pattern=groot telescooparm, Pattern=rechts, Pattern=die, Pattern=met
+	Constrained: Pattern=groot
+Turn ID=23| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

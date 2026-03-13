@@ -1,0 +1,187 @@
+B|0| B: Hallo 
+A|1| A: _Oh_ _oké_ 
+B|2| B: _ja_ 
+A|3| A: Oké _ik_ _denken ik_ _kunnen_ _het_ gewoon gaan uitbeelden maar blijkbaar _kunnen_ _dat_ _niet_ 
+B|4| B: [Oh] [dat] [kunnen] [niet] 
+A|5| A: nee [ja] we mogen elkaar [niet] _zien_ 
+B|6| B: _Oh ja_ _ik zien_ jou _wel_ 
+A|7| A: of [zien] jij mij [wel] 
+A|8| A: [Oh] dus [ik] [kunnen] _het_ [wel] uitbeelden 
+B|9| B: [ja] 
+A|10| A: Oké top 
+A|11| A: nou 
+A|12| A: _de_ één lijken op 
+A|13| A: [ja] maar nou gaan [ik] gewoon hetzelfde zeggen als [dat] [ik] net typen hebben 
+A|14| A: _het_ kop thee _met_ _een_ half citroenschijfje zeggen maar erbovenop _en_ _dan_ _een uitstekend_ lepel 
+A|15| A: _en_ _dan_ als _het_ _soort_ oort _zijn_ gewoon _een_ streep 
+A|16| A: dus je _moeten_ _hem_ eigenlijk gewoon zo vasthouden 
+B|17| B: even kijken 
+B|18| B: [een uitstekend] _citroen_ 
+A|19| A: [ja] alsof je zeggen maar [een] citroenschijfje zo door _de_ helft snijden 
+A|20| A: _en_ [dat] _er_ zo op op _de_ rand van _het_ glas leggen 
+B|21| B: [Oh] [en] aan zitten aan [de] linkerkant zo'n [soort] uitsteeksel 
+A|22| A: [ja] 
+A|23| A: [ja] 
+B|24| B: ah [ja] [oké] 
+B|25| B: even kijken [en] aan [de] onderkant zitten [er] ook nog iets 
+A|26| A: [ja] [een] beetje zoiets wat zo gewoon zo lopen 
+B|27| B: [ja] [ja] [oké] [dan] weten [ik] [hem] [denken ik] [wel] 
+A|28| A: Oké 
+B|29| B: even kijken [dan] [moeten] [ik] [het] nummer roepen [denken ik] hè 
+A|30| A: [ja] [en] [dan] op [de] knop duwen 
+B|31| B: [ja] [oké] 
+B|32| B: even kijken deze 
+B|33| B: even kijken die _met het citroen_ 
+A|34| A: [Oh ja] 
+B|35| B: [en] [met] die 
+A|36| A: [oké] wachten 
+A|37| A: [ja] 
+A|38| A: [ik] _zijn_ daar 
+A|39| A: [ik zien] [hem] gewoon [niet] staan 
+A|40| A: _dit zijn weer_ [dat] [met] [dat] [citroen] 
+B|41| B: even kijken 
+B|42| B: _dit zijn weer met het citroen_ 
+A|43| A: [dit zijn weer met het citroen] 
+B|44| B: even kijken 
+B|45| B: [dit zijn weer met het citroen] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Hallo
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Oh oké
+	Free: Pattern=Oh, Pattern=oké
+	Constrained: 
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : Oké ik denken ik kunnen het gewoon gaan uitbeelden maar blijkbaar kunnen dat niet
+	Free: Pattern=dat, Pattern=kunnen, Pattern=niet, Pattern=denken ik, Pattern=het, Pattern=ik
+	Constrained: Pattern=ik
+Turn ID=4| B | B : Oh dat kunnen niet
+	Free: Pattern=niet, Pattern=dat, Pattern=Oh, Pattern=kunnen
+	Constrained: 
+Turn ID=5| A | A : nee ja we mogen elkaar niet zien
+	Free: Pattern=niet, Pattern=ja, Pattern=zien
+	Constrained: 
+Turn ID=6| B | B : Oh ja ik zien jou wel
+	Free: Pattern=Oh ja, Pattern=ik zien, Pattern=wel
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=ik, Pattern=zien
+Turn ID=7| A | A : of zien jij mij wel
+	Free: Pattern=wel, Pattern=zien
+	Constrained: 
+Turn ID=8| A | A : Oh dus ik kunnen het wel uitbeelden
+	Free: Pattern=kunnen, Pattern=wel, Pattern=het, Pattern=ik, Pattern=Oh
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Oké top
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : nou
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : de één lijken op
+	Free: Pattern=de
+	Constrained: 
+Turn ID=13| A | A : ja maar nou gaan ik gewoon hetzelfde zeggen als dat ik net typen hebben
+	Free: Pattern=dat, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=14| A | A : het kop thee met een half citroenschijfje zeggen maar erbovenop en dan een uitstekend lepel
+	Free: Pattern=dan, Pattern=een, Pattern=het, Pattern=met, Pattern=en, Pattern=een uitstekend
+	Constrained: Pattern=een
+Turn ID=15| A | A : en dan als het soort oort zijn gewoon een streep
+	Free: Pattern=soort, Pattern=dan, Pattern=een, Pattern=het, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : dus je moeten hem eigenlijk gewoon zo vasthouden
+	Free: Pattern=moeten, Pattern=hem
+	Constrained: 
+Turn ID=17| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : een uitstekend citroen
+	Free: Pattern=een uitstekend, Pattern=citroen
+	Constrained: Pattern=een
+Turn ID=19| A | A : ja alsof je zeggen maar een citroenschijfje zo door de helft snijden
+	Free: Pattern=ja, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=20| A | A : en dat er zo op op de rand van het glas leggen
+	Free: Pattern=dat, Pattern=de, Pattern=het, Pattern=er, Pattern=en
+	Constrained: 
+Turn ID=21| B | B : Oh en aan zitten aan de linkerkant zo'n soort uitsteeksel
+	Free: Pattern=en, Pattern=soort, Pattern=Oh, Pattern=de
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ah ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=25| B | B : even kijken en aan de onderkant zitten er ook nog iets
+	Free: Pattern=er, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=26| A | A : ja een beetje zoiets wat zo gewoon zo lopen
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=27| B | B : ja ja oké dan weten ik hem denken ik wel
+	Free: Pattern=oké, Pattern=ja, Pattern=dan, Pattern=ik, Pattern=hem, Pattern=wel, Pattern=denken ik
+	Constrained: Pattern=ik
+Turn ID=28| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : even kijken dan moeten ik het nummer roepen denken ik hè
+	Free: Pattern=dan, Pattern=denken ik, Pattern=ik, Pattern=moeten, Pattern=het
+	Constrained: Pattern=ik
+Turn ID=30| A | A : ja en dan op de knop duwen
+	Free: Pattern=en, Pattern=dan, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=31| B | B : ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=32| B | B : even kijken deze
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : even kijken die met het citroen
+	Free: Pattern=met het citroen
+	Constrained: Pattern=het, Pattern=met, Pattern=citroen
+Turn ID=34| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=35| B | B : en met die
+	Free: Pattern=en, Pattern=met
+	Constrained: 
+Turn ID=36| A | A : oké wachten
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : ik zijn daar
+	Free: Pattern=zijn, Pattern=ik
+	Constrained: 
+Turn ID=39| A | A : ik zien hem gewoon niet staan
+	Free: Pattern=ik zien, Pattern=niet, Pattern=hem
+	Constrained: Pattern=ik, Pattern=zien
+Turn ID=40| A | A : dit zijn weer dat met dat citroen
+	Free: Pattern=dit zijn weer, Pattern=dat, Pattern=met, Pattern=citroen
+	Constrained: Pattern=zijn
+Turn ID=41| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=42| B | B : dit zijn weer met het citroen
+	Free: Pattern=dit zijn weer met het citroen
+	Constrained: Pattern=met, Pattern=citroen, Pattern=zijn, Pattern=dit zijn weer, Pattern=het, Pattern=met het citroen
+Turn ID=43| A | A : dit zijn weer met het citroen
+	Free: Pattern=dit zijn weer met het citroen
+	Constrained: Pattern=met, Pattern=citroen, Pattern=zijn, Pattern=dit zijn weer, Pattern=het, Pattern=met het citroen
+Turn ID=44| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=45| B | B : dit zijn weer met het citroen
+	Free: Pattern=dit zijn weer met het citroen
+	Constrained: Pattern=met, Pattern=citroen, Pattern=zijn, Pattern=dit zijn weer, Pattern=het, Pattern=met het citroen

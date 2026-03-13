@@ -1,0 +1,207 @@
+B|0| B: _dan_ _hebben_ _we_ _weer_ _een_ theekopje 
+B|1| B: _die_ _hebben_ _aan de_ linkerkant _een_ rond balk 
+B|2| B: _aan de achterkant_ zitten _een_ schijf 
+B|3| B: _een_ beetje _aan de_ rechterkant _ja_ er wel in zeggen _maar_ er bovenin zitten _een_ _ja_ _een_ soort lepel 
+B|4| B: _en aan de onderkant_ zitten 
+B|5| B: _ja_ er zitten iets _aan de onderkant_ _een_ soort _onderzetter_ 
+B|6| B: _noemen_ ik _het_ _maar_ _even_ waardoor _een_ _kop_ kunnen blijven _staan_ 
+A|7| A: [even] kijken 
+A|8| A: willen _je_ [het] _nog_ één keer herhalen 
+B|9| B: _aan de_ linkerkant zitten _een_ ronde _ja_ _een_ rond staaf 
+B|10| B: _net_ _aan_ links 
+B|11| B: _aan de_ _een_ soort _achterkant_ zitten _een_ schijf _die_ zien [je] _maar_ voor _de_ helft 
+B|12| B: _de_ ander helft zitten achter _het kop_ 
+B|13| B: _en dan_ zitten er _dus_ [nog] komen er [nog] _een_ _half_ cirkel komen [nog] boven _het kop_ uit 
+A|14| A: [ja] 
+B|15| B: _dan_ rechtsbovenin zitten _een_ [ja] zitten _een_ soort lepel 
+A|16| A: Oh [ja] [weer] _zo'n_ pion [maar] [dan] zonder [het kop] 
+B|17| B: zullen ik [het] _noemen_ 
+A|18| A: Zeggen [maar] _zo'n_ bowlingbal _ding_ [die] [we] [net] ook over [hebben] 
+A|19| A: toch [maar] [dan] op [de] [kop] 
+B|20| B: [ja] zo _een_ [zo'n] [ding] [ja] 
+A|21| A: _ja ja_ 
+B|22| B: [ja] 
+A|23| A: [en aan de onderkant] [zo'n] 
+A|24| A: _dit zijn_ niet [een] plat [onderzetter] [het] staat hoog toch 
+B|25| B: [ja ja] 
+A|26| A: [ja] verhoging 
+A|27| A: [ja] oké [dan] _zijn_ [het] 
+B|28| B: Oké 
+A|29| A: _dit zijn_ degeen [die] 
+A|30| A: jij [noemen] [het] [een] [onderzetter] 
+A|31| A: [maar] [zo'n] verhoginkje [hebben] eronder 
+A|32| A: [en dan] [zo'n] bowlingbal 
+A|33| A: [dus] [een] bowlingpion zegmaar op [de] [kop] erin steken 
+B|34| B: [ja] nummer 
+B|35| B: [dit zijn] [die] 
+B|36| B: er zitten [een] rond schijf [die] erachter zitten voor [de] helft 
+B|37| B: [en] links [een] staaf 
+B|38| B: [en aan de] rechterkant [een] omgedraaien bowlingkegel 
+A|39| A: [ja] dat [zijn] 
+A|40| A: [dit zijn] degeen [die] [we] [net] ook [hebben] 
+A|41| A: _met_ [het] [half] ovaal [aan de achterkant] 
+A|42| A: [en] [de] kegel op [zijn] [kop] erin op [de] bovenkant 
+B|43| B: nummer 
+B|44| B: [dit zijn] [met] [die] schijf achterin 
+B|45| B: [ja] links [zo'n] staaf 
+B|46| B: [en] rechts [de] omgedraaien bowlingkegel 
+A|47| A: [ja] 
+A|48| A: [dit zijn] degeen [met] [de] omgekeerad bowlingbal erin 
+A|49| A: [en] [het] ovaal daarachter geplakt [die] wat verhogen [staan] 
+B|50| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan hebben we weer een theekopje
+	Free: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=we, Pattern=weer
+	Constrained: 
+Turn ID=1| B | B : die hebben aan de linkerkant een rond balk
+	Free: Pattern=aan de, Pattern=die, Pattern=hebben, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=2| B | B : aan de achterkant zitten een schijf
+	Free: Pattern=aan de achterkant, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=achterkant
+Turn ID=3| B | B : een beetje aan de rechterkant ja er wel in zeggen maar er bovenin zitten een ja een soort lepel
+	Free: Pattern=aan de, Pattern=ja, Pattern=een, Pattern=maar
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=4| B | B : en aan de onderkant zitten
+	Free: Pattern=en aan de onderkant
+	Constrained: Pattern=aan de, Pattern=aan de onderkant, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=5| B | B : ja er zitten iets aan de onderkant een soort onderzetter
+	Free: Pattern=aan de onderkant, Pattern=onderzetter, Pattern=ja, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=6| B | B : noemen ik het maar even waardoor een kop kunnen blijven staan
+	Free: Pattern=even, Pattern=het, Pattern=kop, Pattern=maar, Pattern=noemen, Pattern=een, Pattern=staan
+	Constrained: 
+Turn ID=7| A | A : even kijken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=8| A | A : willen je het nog één keer herhalen
+	Free: Pattern=je, Pattern=nog, Pattern=het
+	Constrained: 
+Turn ID=9| B | B : aan de linkerkant zitten een ronde ja een rond staaf
+	Free: Pattern=aan de, Pattern=ja, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=10| B | B : net aan links
+	Free: Pattern=net, Pattern=aan
+	Constrained: 
+Turn ID=11| B | B : aan de een soort achterkant zitten een schijf die zien je maar voor de helft
+	Free: Pattern=de, Pattern=aan de, Pattern=een, Pattern=die, Pattern=maar, Pattern=je, Pattern=achterkant
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=12| B | B : de ander helft zitten achter het kop
+	Free: Pattern=het kop, Pattern=de
+	Constrained: Pattern=kop, Pattern=het
+Turn ID=13| B | B : en dan zitten er dus nog komen er nog een half cirkel komen nog boven het kop uit
+	Free: Pattern=nog, Pattern=dus, Pattern=en dan, Pattern=het kop, Pattern=een, Pattern=half
+	Constrained: Pattern=en, Pattern=dan, Pattern=kop, Pattern=het
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : dan rechtsbovenin zitten een ja zitten een soort lepel
+	Free: Pattern=dan, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=16| A | A : Oh ja weer zo'n pion maar dan zonder het kop
+	Free: Pattern=zo'n, Pattern=ja, Pattern=dan, Pattern=het kop, Pattern=maar, Pattern=weer
+	Constrained: Pattern=kop, Pattern=het
+Turn ID=17| B | B : zullen ik het noemen
+	Free: Pattern=noemen, Pattern=het
+	Constrained: 
+Turn ID=18| A | A : Zeggen maar zo'n bowlingbal ding die we net ook over hebben
+	Free: Pattern=ding, Pattern=hebben, Pattern=maar, Pattern=net, Pattern=zo'n, Pattern=we, Pattern=die
+	Constrained: 
+Turn ID=19| A | A : toch maar dan op de kop
+	Free: Pattern=dan, Pattern=kop, Pattern=de, Pattern=maar
+	Constrained: 
+Turn ID=20| B | B : ja zo een zo'n ding ja
+	Free: Pattern=zo'n, Pattern=ding, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=21| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : en aan de onderkant zo'n
+	Free: Pattern=en aan de onderkant, Pattern=zo'n
+	Constrained: Pattern=aan de, Pattern=aan de onderkant, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=24| A | A : dit zijn niet een plat onderzetter het staat hoog toch
+	Free: Pattern=dit zijn, Pattern=onderzetter, Pattern=het, Pattern=een
+	Constrained: Pattern=zijn
+Turn ID=25| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=26| A | A : ja verhoging
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : ja oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=28| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : dit zijn degeen die
+	Free: Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=30| A | A : jij noemen het een onderzetter
+	Free: Pattern=onderzetter, Pattern=noemen, Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=31| A | A : maar zo'n verhoginkje hebben eronder
+	Free: Pattern=hebben, Pattern=zo'n, Pattern=maar
+	Constrained: 
+Turn ID=32| A | A : en dan zo'n bowlingbal
+	Free: Pattern=en dan, Pattern=zo'n
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=33| A | A : dus een bowlingpion zegmaar op de kop erin steken
+	Free: Pattern=kop, Pattern=dus, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=34| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : dit zijn die
+	Free: Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=36| B | B : er zitten een rond schijf die erachter zitten voor de helft
+	Free: Pattern=die, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=37| B | B : en links een staaf
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=38| B | B : en aan de rechterkant een omgedraaien bowlingkegel
+	Free: Pattern=en aan de, Pattern=een
+	Constrained: Pattern=aan de, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=39| A | A : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : dit zijn degeen die we net ook hebben
+	Free: Pattern=net, Pattern=hebben, Pattern=dit zijn, Pattern=we, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=41| A | A : met het half ovaal aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=half, Pattern=met, Pattern=het
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=achterkant
+Turn ID=42| A | A : en de kegel op zijn kop erin op de bovenkant
+	Free: Pattern=en, Pattern=kop, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=43| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : dit zijn met die schijf achterin
+	Free: Pattern=dit zijn, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=45| B | B : ja links zo'n staaf
+	Free: Pattern=zo'n, Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : en rechts de omgedraaien bowlingkegel
+	Free: Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=47| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| A | A : dit zijn degeen met de omgekeerad bowlingbal erin
+	Free: Pattern=dit zijn, Pattern=de, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=49| A | A : en het ovaal daarachter geplakt die wat verhogen staan
+	Free: Pattern=en, Pattern=die, Pattern=staan, Pattern=het
+	Constrained: 
+Turn ID=50| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

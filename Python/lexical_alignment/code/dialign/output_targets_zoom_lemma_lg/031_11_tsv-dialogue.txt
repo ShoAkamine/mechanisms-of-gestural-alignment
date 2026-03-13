@@ -1,0 +1,139 @@
+B|0| B: Oké _ik_ zien _hem_ _weer_ 
+B|1| B: Ehm 
+B|2| B: even goed _oké_ 
+B|3| B: er _zijn_ zeggen _maar_ _twee_ uitstekel _op_ het _hoofd_ _met_ allebei _een ander vorm_ 
+B|4| B: _de_ _een_ _hebben_ _een_ _rechthoek_ _en_ _de_ _ander_ _hebben_ _een soort_ _ander_ _die_ _een_ beetje naar _links_ uitwijken 
+A|5| A: _ja_ 
+B|6| B: Ehm 
+A|7| A: Hebben hij [een soort] bolneusachtig iets 
+B|8| B: [ja] _aan de_ voorkant _zo'n_ _neus en_ _aan de_ linkerkant _weer_ [een] _oor_ 
+A|9| A: [ja] 
+A|10| A: [ja] _ja oké_ dan [hebben] [ik] [hem] 
+B|11| B: [ja oké] 
+A|12| A: Jee 
+A|13| A: _euh_ _dit zijn_ ook _weer met_ [zo'n] rond [neus] 
+A|14| A: [en] dan [hebben] hij [een soort] [een] hij [hebben] [twee] ding [aan de] bovenkant 
+B|15| B: mhm 
+A|16| A: Eén [zijn] [een soort] gewoon staaf 
+A|17| A: [en] _één_ [zijn] [een soort] kegelachtig [vorm] 
+A|18| A: [en] [links] [hebben] je ook nog [zo'n] [soort] [oor] wat uitsteken 
+B|19| B: Oh 
+B|20| B: Oké 
+B|21| B: Oké _dit zijn euh_ [euh] [weer _met] die_ _twee uitsteksel_ bovenop het _hoofd_ waarbij [één] rechthoekig [zijn] [en] [de] _ander_ _ander_ 
+A|22| A: [ja] [ja] 
+A|23| A: Euh 
+B|24| B: Oké 
+A|25| A: [euh] [dit zijn euh] [met die] bol [neus en] [twee] uitsteeksel [op] [zijn] [hoofd] waarvan [één] [de] [rechthoek] [zijn] [één] [die] [ander] 
+A|26| A: [en] [een] linkeroor 
+B|27| B: Ehm 
+B|28| B: Oké [dit zijn] [twee] uitzichtjes [op] het [hoofd] waarbij [de] [één] rechthoekig [zijn] [en] [de] [ander] [zijn] [weer] anders 
+A|29| A: [ja] 
+A|30| A: Euh [euh] 
+B|31| B: Top 
+A|32| A: [euh] [dit zijn] [met] dat bolle als [neus en] ook [twee uitsteksel] [op] [zijn] [hoofd] [maar] [één] [zijn] [de] [rechthoek] [één] [zijn] [een ander vorm] 
+B|33| B: Oké 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik zien hem weer
+	Free: Pattern=weer, Pattern=ik, Pattern=hem
+	Constrained: 
+Turn ID=1| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : even goed oké
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=3| B | B : er zijn zeggen maar twee uitstekel op het hoofd met allebei een ander vorm
+	Free: Pattern=twee, Pattern=op, Pattern=met, Pattern=een ander vorm, Pattern=hoofd, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=ander, Pattern=een, Pattern=vorm
+Turn ID=4| B | B : de een hebben een rechthoek en de ander hebben een soort ander die een beetje naar links uitwijken
+	Free: Pattern=rechthoek, Pattern=de, Pattern=een, Pattern=links, Pattern=hebben, Pattern=die, Pattern=en, Pattern=een soort, Pattern=ander
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Hebben hij een soort bolneusachtig iets
+	Free: Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=8| B | B : ja aan de voorkant zo'n neus en aan de linkerkant weer een oor
+	Free: Pattern=zo'n, Pattern=aan de, Pattern=een, Pattern=neus en, Pattern=weer, Pattern=oor, Pattern=ja
+	Constrained: Pattern=en, Pattern=neus, Pattern=de
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja ja oké dan hebben ik hem
+	Free: Pattern=ja, Pattern=hebben, Pattern=ik, Pattern=ja oké, Pattern=hem
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=11| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=12| A | A : Jee
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : euh dit zijn ook weer met zo'n rond neus
+	Free: Pattern=zo'n, Pattern=neus, Pattern=dit zijn, Pattern=weer met, Pattern=euh
+	Constrained: Pattern=weer, Pattern=zijn, Pattern=met
+Turn ID=14| A | A : en dan hebben hij een soort een hij hebben twee ding aan de bovenkant
+	Free: Pattern=twee, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=een, Pattern=de
+Turn ID=15| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Eén zijn een soort gewoon staaf
+	Free: Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=17| A | A : en één zijn een soort kegelachtig vorm
+	Free: Pattern=vorm, Pattern=één, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=18| A | A : en links hebben je ook nog zo'n soort oor wat uitsteken
+	Free: Pattern=soort, Pattern=zo'n, Pattern=oor, Pattern=links, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=19| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : Oké dit zijn euh euh weer met die twee uitsteksel bovenop het hoofd waarbij één rechthoekig zijn en de ander ander
+	Free: Pattern=met die, Pattern=twee uitsteksel, Pattern=ander, Pattern=en, Pattern=zijn, Pattern=hoofd, Pattern=de, Pattern=dit zijn euh, Pattern=weer met, Pattern=euh, Pattern=één
+	Constrained: Pattern=twee, Pattern=euh, Pattern=met, Pattern=die, Pattern=zijn, Pattern=weer, Pattern=dit zijn
+Turn ID=22| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : Euh
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : euh dit zijn euh met die bol neus en twee uitsteeksel op zijn hoofd waarvan één de rechthoek zijn één die ander
+	Free: Pattern=met die, Pattern=op, Pattern=neus en, Pattern=die, Pattern=ander, Pattern=zijn, Pattern=hoofd, Pattern=rechthoek, Pattern=twee, Pattern=de, Pattern=dit zijn euh, Pattern=euh, Pattern=één
+	Constrained: Pattern=euh, Pattern=neus, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=dit zijn
+Turn ID=26| A | A : en een linkeroor
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=27| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : Oké dit zijn twee uitzichtjes op het hoofd waarbij de één rechthoekig zijn en de ander zijn weer anders
+	Free: Pattern=twee, Pattern=de, Pattern=op, Pattern=één, Pattern=ander, Pattern=en, Pattern=zijn, Pattern=weer, Pattern=hoofd, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : Euh euh
+	Free: Pattern=euh
+	Constrained: 
+Turn ID=31| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : euh dit zijn met dat bolle als neus en ook twee uitsteksel op zijn hoofd maar één zijn de rechthoek één zijn een ander vorm
+	Free: Pattern=twee uitsteksel, Pattern=rechthoek, Pattern=de, Pattern=op, Pattern=een ander vorm, Pattern=hoofd, Pattern=dit zijn, Pattern=euh, Pattern=één, Pattern=neus en, Pattern=met, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=vorm, Pattern=twee, Pattern=een, Pattern=neus, Pattern=ander, Pattern=en, Pattern=zijn
+Turn ID=33| B | B : Oké
+	Free: 
+	Constrained: 

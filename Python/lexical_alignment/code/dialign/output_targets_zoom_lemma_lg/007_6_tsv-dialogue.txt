@@ -1,0 +1,291 @@
+A|0| A: _Oké_ _ik_ _zullen_ _dit_ omschrijven als _een_ _ontstopper_ 
+A|1| A: _het lijken_ _het zijn_ _dus_ _een_ ronde komen 
+A|2| A: _het lijken_ alsof _hij_ _een soort_ _hand_ _aan de_ zijkant _hebben_ 
+A|3| A: _met een_ _ontstopper_ erin 
+A|4| A: _dus_ _dat zijn_ _een balk met _een_ rond_ vlak _erop_ 
+B|5| B: [een balk] 
+A|6| A: _en_ 
+B|7| B: [een balk] 
+A|8| A: _in de kom_ _zitten ook een soort lepel_ 
+B|9| B: [Oké] 
+B|10| B: [ik] gaan nog één keer kijken horen 
+B|11| B: [dus] kunnen je hem nog [een] keer kunnen je hem nog [een] keer vertellen 
+A|12| A: [ik] _zullen_ _het_ omschrijven als _een soort_ _ontstopper_ 
+A|13| A: [dus] _aan de rechterkant_ van _het_ _plaat_ _zitten_ _een soort_ [balk] 
+A|14| A: _met een hand_ 
+B|15| B: [een balk [met een] hand] [en] [een rond] vorm [erop] 
+B|16| B: [aan de rechterkant] zeggen je hè 
+A|17| A: _ja_ 
+B|18| B: [het zijn] moeilijk dan [ik] denken 
+B|19| B: [ja] 
+B|20| B: Hebben [hij] dan [ook] 
+B|21| B: _een lang_ pin link 
+B|22| B: _of_ [zijn] [het] alleen rechts [dat] _er_ wat _staan_ 
+A|23| A: [ja] _er zitten_ _een soort _lepel_ in de kom_ 
+B|24| B: [in de kom] 
+B|25| B: [Oké] dan gaan [ik] daar eens even kijken 
+B|26| B: [een] [lepel in de kom] 
+B|27| B: [Oké] [en] [hebben] [hij] dan [ook] [aan de] achterkant link 
+B|28| B: [een] [ja] [het] [het lijken] [een] beetje op [een] slurfachtig iets 
+A|29| A: _nee_ ver _zitten_ [er] niks [in] 
+A|30| A: [dus] [het zijn] [een] [kom] net zoals al komem 
+B|31| B: [ja] 
+A|32| A: [en] [aan de rechterkant] _zitten_ _een soort_ _ontstopper_ 
+A|33| A: [dus] _een lang balk met twee rond_ 
+B|34| B: [een lang balk met twee rond] 
+B|35| B: [aan de rechterkant] [een lang balk] 
+B|36| B: nou wat erg 
+B|37| B: [en] [er [zitten] ook een soort lepel] zeggen je 
+A|38| A: _ja die_ [zitten] [er] [in] 
+B|39| B: dan [zullen] [ik] 
+B|40| B: gaan 
+B|41| B: [en] je zeggen [ook] iets [met _een] plank_ _of_ _niet_ 
+B|42| B: _of_ _niet_ 
+A|43| A: _ik vinden_ [het] [niet] per se [een plank] 
+A|44| A: [het zijn] [een] _een cirkel_ 
+B|45| B: Oh 
+B|46| B: [een cirkel] 
+B|47| B: dan [zullen] [ik] gaan voor 
+B|48| B: [ik vinden] [dit] [plaat] [lijken] op [een] 
+B|49| B: [dat] [er] [een rond] neus op [zitten] 
+B|50| B: [met een] _neuspiercing_ erdoorheen 
+A|51| A: _zijn dat_ _die_ _ontstopper_ 
+B|52| B: oh [zijn dat] [de] [ontstopper] 
+B|53| B: [ja die] [ja] 
+A|54| A: [met] [die] [lepel] erin 
+B|55| B: [ja] 
+B|56| B: [ja] _dat zijn nummer_ 
+B|57| B: oh [nee] [dat] moeten [ik] [niet] zeggen _jij_ moeten [het] zeggen 
+A|58| A: [dat zijn nummer] bij mij 
+B|59| B: sorry 
+A|60| A: _dit zijn_ [die] _wc-ontstopper_ 
+A|61| A: [die] [jij] beschrijven als [neuspiercing] 
+B|62| B: [ja] 
+B|63| B: [ja] 
+B|64| B: even kijken 
+B|65| B: [nummer] 
+B|66| B: _dit zijn de_ [wc-ontstopper] 
+A|67| A: [nummer] 
+A|68| A: [dit zijn de] toiletontstopper [of] [de] [neuspiercing] 
+B|69| B: Yes even kijken waar _staan_ [het] 
+B|70| B: [de] [wc-ontstopper] slash [neuspiercing] 
+A|71| A: [die] [staan] bij 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik zullen dit omschrijven als een ontstopper
+	Free: Pattern=zullen, Pattern=een, Pattern=ontstopper, Pattern=dit, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : het lijken het zijn dus een ronde komen
+	Free: Pattern=het lijken, Pattern=het zijn, Pattern=dus, Pattern=een
+	Constrained: Pattern=lijken, Pattern=het, Pattern=zijn
+Turn ID=2| A | A : het lijken alsof hij een soort hand aan de zijkant hebben
+	Free: Pattern=het lijken, Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=hand, Pattern=een soort
+	Constrained: Pattern=lijken, Pattern=een, Pattern=de, Pattern=het
+Turn ID=3| A | A : met een ontstopper erin
+	Free: Pattern=met een, Pattern=ontstopper
+	Constrained: Pattern=met, Pattern=een
+Turn ID=4| A | A : dus dat zijn een balk met een rond vlak erop
+	Free: Pattern=dat zijn, Pattern=dus, Pattern=erop, Pattern=een balk met een, Pattern=een rond
+	Constrained: Pattern=dat, Pattern=een, Pattern=balk, Pattern=met, Pattern=met een, Pattern=zijn, Pattern=een balk
+Turn ID=5| B | B : een balk
+	Free: Pattern=een balk
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=6| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=7| B | B : een balk
+	Free: Pattern=een balk
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=8| A | A : in de kom zitten ook een soort lepel
+	Free: Pattern=zitten ook een soort lepel, Pattern=in de kom
+	Constrained: Pattern=lepel, Pattern=de, Pattern=ook, Pattern=een, Pattern=in, Pattern=kom, Pattern=zitten, Pattern=een soort, Pattern=een soort lepel
+Turn ID=9| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| B | B : ik gaan nog één keer kijken horen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=11| B | B : dus kunnen je hem nog een keer kunnen je hem nog een keer vertellen
+	Free: Pattern=dus, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : ik zullen het omschrijven als een soort ontstopper
+	Free: Pattern=zullen, Pattern=het, Pattern=ontstopper, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=13| A | A : dus aan de rechterkant van het plaat zitten een soort balk
+	Free: Pattern=dus, Pattern=het, Pattern=balk, Pattern=een soort, Pattern=plaat, Pattern=aan de rechterkant, Pattern=zitten
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=14| A | A : met een hand
+	Free: Pattern=met een hand
+	Constrained: Pattern=hand, Pattern=een, Pattern=met, Pattern=met een
+Turn ID=15| B | B : een balk met een hand en een rond vorm erop
+	Free: Pattern=met een hand, Pattern=erop, Pattern=een balk met een, Pattern=en, Pattern=een rond
+	Constrained: Pattern=een, Pattern=balk, Pattern=met, Pattern=hand, Pattern=met een, Pattern=een balk
+Turn ID=16| B | B : aan de rechterkant zeggen je hè
+	Free: Pattern=aan de rechterkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : het zijn moeilijk dan ik denken
+	Free: Pattern=het zijn, Pattern=ik
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Hebben hij dan ook
+	Free: Pattern=ook, Pattern=hij
+	Constrained: 
+Turn ID=21| B | B : een lang pin link
+	Free: Pattern=een lang
+	Constrained: Pattern=een
+Turn ID=22| B | B : of zijn het alleen rechts dat er wat staan
+	Free: Pattern=dat, Pattern=of, Pattern=staan, Pattern=het, Pattern=er, Pattern=zijn
+	Constrained: 
+Turn ID=23| A | A : ja er zitten een soort lepel in de kom
+	Free: Pattern=lepel in de kom, Pattern=een soort lepel, Pattern=er zitten, Pattern=ja
+	Constrained: Pattern=lepel, Pattern=in de kom, Pattern=de, Pattern=een, Pattern=in, Pattern=kom, Pattern=zitten, Pattern=er, Pattern=een soort
+Turn ID=24| B | B : in de kom
+	Free: Pattern=in de kom
+	Constrained: Pattern=kom, Pattern=de, Pattern=in
+Turn ID=25| B | B : Oké dan gaan ik daar eens even kijken
+	Free: Pattern=Oké, Pattern=ik
+	Constrained: 
+Turn ID=26| B | B : een lepel in de kom
+	Free: Pattern=lepel in de kom, Pattern=een
+	Constrained: Pattern=lepel, Pattern=in de kom, Pattern=de, Pattern=in, Pattern=kom
+Turn ID=27| B | B : Oké en hebben hij dan ook aan de achterkant link
+	Free: Pattern=hebben, Pattern=hij, Pattern=en, Pattern=Oké, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=de
+Turn ID=28| B | B : een ja het het lijken een beetje op een slurfachtig iets
+	Free: Pattern=het lijken, Pattern=het, Pattern=ja, Pattern=een
+	Constrained: Pattern=lijken, Pattern=het
+Turn ID=29| A | A : nee ver zitten er niks in
+	Free: Pattern=zitten, Pattern=in, Pattern=nee, Pattern=er
+	Constrained: 
+Turn ID=30| A | A : dus het zijn een kom net zoals al komem
+	Free: Pattern=het zijn, Pattern=kom, Pattern=dus, Pattern=een
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : en aan de rechterkant zitten een soort ontstopper
+	Free: Pattern=ontstopper, Pattern=een soort, Pattern=en, Pattern=aan de rechterkant, Pattern=zitten
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=33| A | A : dus een lang balk met twee rond
+	Free: Pattern=een lang balk met twee rond, Pattern=dus
+	Constrained: Pattern=een, Pattern=balk, Pattern=met, Pattern=een lang balk, Pattern=een lang
+Turn ID=34| B | B : een lang balk met twee rond
+	Free: Pattern=een lang balk met twee rond
+	Constrained: Pattern=een, Pattern=balk, Pattern=met, Pattern=een lang balk, Pattern=een lang
+Turn ID=35| B | B : aan de rechterkant een lang balk
+	Free: Pattern=aan de rechterkant, Pattern=een lang balk
+	Constrained: Pattern=de, Pattern=aan de, Pattern=een lang, Pattern=een, Pattern=balk
+Turn ID=36| B | B : nou wat erg
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : en er zitten ook een soort lepel zeggen je
+	Free: Pattern=zitten ook een soort lepel, Pattern=er zitten, Pattern=en
+	Constrained: Pattern=lepel, Pattern=ook, Pattern=een, Pattern=zitten, Pattern=er, Pattern=een soort, Pattern=een soort lepel
+Turn ID=38| A | A : ja die zitten er in
+	Free: Pattern=ja die, Pattern=zitten, Pattern=in, Pattern=er
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=39| B | B : dan zullen ik
+	Free: Pattern=zullen, Pattern=ik
+	Constrained: 
+Turn ID=40| B | B : gaan
+	Free: 
+	Constrained: 
+Turn ID=41| B | B : en je zeggen ook iets met een plank of niet
+	Free: Pattern=of, Pattern=ook, Pattern=niet, Pattern=een plank, Pattern=met een, Pattern=en
+	Constrained: Pattern=met, Pattern=een
+Turn ID=42| B | B : of niet
+	Free: Pattern=of, Pattern=niet
+	Constrained: 
+Turn ID=43| A | A : ik vinden het niet per se een plank
+	Free: Pattern=een plank, Pattern=ik vinden, Pattern=het, Pattern=niet
+	Constrained: Pattern=ik, Pattern=een
+Turn ID=44| A | A : het zijn een een cirkel
+	Free: Pattern=een cirkel, Pattern=het zijn, Pattern=een
+	Constrained: Pattern=het, Pattern=zijn, Pattern=een
+Turn ID=45| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=46| B | B : een cirkel
+	Free: Pattern=een cirkel
+	Constrained: Pattern=een
+Turn ID=47| B | B : dan zullen ik gaan voor
+	Free: Pattern=zullen, Pattern=ik
+	Constrained: 
+Turn ID=48| B | B : ik vinden dit plaat lijken op een
+	Free: Pattern=ik vinden, Pattern=lijken, Pattern=een, Pattern=dit, Pattern=plaat
+	Constrained: Pattern=ik
+Turn ID=49| B | B : dat er een rond neus op zitten
+	Free: Pattern=een rond, Pattern=dat, Pattern=zitten, Pattern=er
+	Constrained: Pattern=een
+Turn ID=50| B | B : met een neuspiercing erdoorheen
+	Free: Pattern=met een, Pattern=neuspiercing
+	Constrained: Pattern=met, Pattern=een
+Turn ID=51| A | A : zijn dat die ontstopper
+	Free: Pattern=zijn dat, Pattern=die, Pattern=ontstopper
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=52| B | B : oh zijn dat de ontstopper
+	Free: Pattern=zijn dat, Pattern=de, Pattern=ontstopper
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=53| B | B : ja die ja
+	Free: Pattern=ja die, Pattern=ja
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=54| A | A : met die lepel erin
+	Free: Pattern=met, Pattern=lepel, Pattern=die
+	Constrained: 
+Turn ID=55| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=56| B | B : ja dat zijn nummer
+	Free: Pattern=dat zijn nummer, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=nummer, Pattern=dat zijn
+Turn ID=57| B | B : oh nee dat moeten ik niet zeggen jij moeten het zeggen
+	Free: Pattern=dat, Pattern=niet, Pattern=nee, Pattern=het, Pattern=ik, Pattern=jij
+	Constrained: 
+Turn ID=58| A | A : dat zijn nummer bij mij
+	Free: Pattern=dat zijn nummer
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=nummer, Pattern=dat zijn
+Turn ID=59| B | B : sorry
+	Free: 
+	Constrained: 
+Turn ID=60| A | A : dit zijn die wc-ontstopper
+	Free: Pattern=dit zijn, Pattern=die, Pattern=wc-ontstopper
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=61| A | A : die jij beschrijven als neuspiercing
+	Free: Pattern=neuspiercing, Pattern=die, Pattern=jij
+	Constrained: 
+Turn ID=62| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=64| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=65| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=66| B | B : dit zijn de wc-ontstopper
+	Free: Pattern=dit zijn de, Pattern=wc-ontstopper
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=de, Pattern=zijn
+Turn ID=67| A | A : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=68| A | A : dit zijn de toiletontstopper of de neuspiercing
+	Free: Pattern=dit zijn de, Pattern=of, Pattern=de, Pattern=neuspiercing
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=de, Pattern=zijn
+Turn ID=69| B | B : Yes even kijken waar staan het
+	Free: Pattern=staan, Pattern=het
+	Constrained: 
+Turn ID=70| B | B : de wc-ontstopper slash neuspiercing
+	Free: Pattern=de, Pattern=neuspiercing, Pattern=wc-ontstopper
+	Constrained: 
+Turn ID=71| A | A : die staan bij
+	Free: Pattern=die, Pattern=staan
+	Constrained: 

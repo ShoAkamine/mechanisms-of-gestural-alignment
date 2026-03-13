@@ -1,0 +1,135 @@
+B|0| B: _Eh_ _die_ _van_ _mij_ _hebben_ _een soort_ _een_ lang rechthoek _op_ _zijn_ hoofd 
+B|1| B: _een soort_ _van_ _hanenkam_ zullen _je_ _het_ kunnen _zien_ 
+B|2| B: _en_ dan _hebben_ _hij_ _aan_ _de_ zijkant _aan_ _de_ linkerkant _een_ ook _een soort_ _van_ afgezaagd _driehoek_ 
+B|3| B: _en_ dan _hebben_ _hij_ ook nog _een soort_ _van_ _neus wat_ _een_ ondersteboven _wat_ zeggen _maar_ _een_ _driehoek_ ondersteboven _zijn_ 
+B|4| B: _en_ _bovenop_ _die_ _neus_ _zitten_ ook nog _een soort_ _van_ klein cilinder 
+A|5| A: [Eh] _ja_ _ik_ denken dat _ik_ 
+A|6| A: daar [bovenop] [zitten] [een soort] [soort] balk-achtig iets 
+B|7| B: [ja] [ja] [een] _balk_ [een] _balk_ 
+A|8| A: _ja oké_ 
+A|9| A: eh bij [mij] [zitten] _er_ _nu_ [een soort] [balk] liggen _er_ [op] [het] hoofdonderdeel 
+A|10| A: _Ehm_ [en] link komen _er [een_ soort] [driehoek] uit 
+A|11| A: [het] lichaam 
+A|12| A: [Eh] [maar] [je] [zien] [maar] [de] helft [van] [die] [driehoek] 
+A|13| A: [en] [ja] [het] lijken [een soort] [neus wat] [hij] [hebben] 
+A|14| A: in [een] [ja] in [een soort] L-vorm 
+A|15| A: [maar] [wat] opvallen nou [ja] [wat] erop liggen [zijn] [die] [balk] [die] _niet_ heel groot [zijn] [maar] lijken [een soort] _hanekam_ 
+B|16| B: Hebben [hij] _zo'n_ klein stok nog naar _boven_ naar _boven_ wijzen [op] [die] [neus] 
+A|17| A: [ja] kloppen 
+B|18| B: [ja oké] 
+B|19| B: [zijn] [het] 
+B|20| B: [Ehm] _ik hebben_ [nu] _die met_ [die] [soort] [van] _hanenkam en die twee_ afgezaagd [driehoek] _aan_ [de] zijkant 
+B|21| B: of [ja] _één_ [die] _we_ duidelijk [zien] [en] _één_ [die] [er een] beetje [zijn] 
+A|22| A: [ja] [met] [zo'n] raar [neus] 
+B|23| B: [ja] [ja] [ja] 
+A|24| A: [ja] 
+A|25| A: eh [ik hebben] [die met] [zo'n] [soort] [hanenkam] [boven] [en] [zo'n] raar [neus] [en] [aan] beide kant half _driehoek waarvan we_ [de] [één] nauwelijks [zien] 
+B|26| B: [ja] 
+B|27| B: [ik hebben] [nu] [die met] [die] [hanekam] _en die twee driehoek waarvan we_ [er] [één] bijna _niet zien_ 
+A|28| A: [ja] 
+A|29| A: eh [ik hebben] [die] [ja] [hanenkam [en die twee] driehoek waarvan we] [de] [één] [niet zien] 
+B|30| B: [ja] 
+A|31| A: [Eh] nauwelijks [ja] 
+B|32| B: Euh 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh die van mij hebben een soort een lang rechthoek op zijn hoofd
+	Free: Pattern=op, Pattern=een, Pattern=die, Pattern=van, Pattern=zijn, Pattern=Eh, Pattern=hebben, Pattern=mij, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=1| B | B : een soort van hanenkam zullen je het kunnen zien
+	Free: Pattern=het, Pattern=zien, Pattern=een soort, Pattern=je, Pattern=van, Pattern=hanenkam
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=2| B | B : en dan hebben hij aan de zijkant aan de linkerkant een ook een soort van afgezaagd driehoek
+	Free: Pattern=driehoek, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=de, Pattern=aan, Pattern=van, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=3| B | B : en dan hebben hij ook nog een soort van neus wat een ondersteboven wat zeggen maar een driehoek ondersteboven zijn
+	Free: Pattern=driehoek, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=neus wat, Pattern=wat, Pattern=een soort, Pattern=van, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=neus, Pattern=soort, Pattern=wat, Pattern=een
+Turn ID=4| B | B : en bovenop die neus zitten ook nog een soort van klein cilinder
+	Free: Pattern=bovenop, Pattern=neus, Pattern=een soort, Pattern=die, Pattern=zitten, Pattern=van, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=5| A | A : Eh ja ik denken dat ik
+	Free: Pattern=ik, Pattern=ja, Pattern=Eh
+	Constrained: 
+Turn ID=6| A | A : daar bovenop zitten een soort soort balk-achtig iets
+	Free: Pattern=een soort, Pattern=bovenop, Pattern=soort, Pattern=zitten
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=7| B | B : ja ja een balk een balk
+	Free: Pattern=ja, Pattern=balk, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja
+Turn ID=9| A | A : eh bij mij zitten er nu een soort balk liggen er op het hoofdonderdeel
+	Free: Pattern=op, Pattern=nu, Pattern=het, Pattern=balk, Pattern=zitten, Pattern=er, Pattern=mij, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=10| A | A : Ehm en link komen er een soort driehoek uit
+	Free: Pattern=driehoek, Pattern=Ehm, Pattern=er een, Pattern=een soort, Pattern=en
+	Constrained: Pattern=er, Pattern=soort, Pattern=een
+Turn ID=11| A | A : het lichaam
+	Free: Pattern=het
+	Constrained: 
+Turn ID=12| A | A : Eh maar je zien maar de helft van die driehoek
+	Free: Pattern=driehoek, Pattern=de, Pattern=Eh, Pattern=van, Pattern=maar, Pattern=je, Pattern=die, Pattern=zien
+	Constrained: 
+Turn ID=13| A | A : en ja het lijken een soort neus wat hij hebben
+	Free: Pattern=ja, Pattern=het, Pattern=hebben, Pattern=hij, Pattern=neus wat, Pattern=een soort, Pattern=en
+	Constrained: Pattern=neus, Pattern=soort, Pattern=wat, Pattern=een
+Turn ID=14| A | A : in een ja in een soort L-vorm
+	Free: Pattern=een soort, Pattern=ja, Pattern=een
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=15| A | A : maar wat opvallen nou ja wat erop liggen zijn die balk die niet heel groot zijn maar lijken een soort hanekam
+	Free: Pattern=ja, Pattern=niet, Pattern=balk, Pattern=die, Pattern=wat, Pattern=hanekam, Pattern=een soort, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=16| B | B : Hebben hij zo'n klein stok nog naar boven naar boven wijzen op die neus
+	Free: Pattern=zo'n, Pattern=op, Pattern=boven, Pattern=hij, Pattern=neus, Pattern=die
+	Constrained: 
+Turn ID=17| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja
+Turn ID=19| B | B : zijn het
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=20| B | B : Ehm ik hebben nu die met die soort van hanenkam en die twee afgezaagd driehoek aan de zijkant
+	Free: Pattern=soort, Pattern=nu, Pattern=hanenkam en die twee, Pattern=die met, Pattern=die, Pattern=van, Pattern=ik hebben, Pattern=driehoek, Pattern=Ehm, Pattern=de, Pattern=aan
+	Constrained: Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=en, Pattern=hanenkam
+Turn ID=21| B | B : of ja één die we duidelijk zien en één die er een beetje zijn
+	Free: Pattern=ja, Pattern=één, Pattern=er een, Pattern=en, Pattern=zijn, Pattern=we, Pattern=die, Pattern=zien
+	Constrained: Pattern=er, Pattern=een
+Turn ID=22| A | A : ja met zo'n raar neus
+	Free: Pattern=neus, Pattern=ja, Pattern=zo'n, Pattern=met
+	Constrained: 
+Turn ID=23| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : eh ik hebben die met zo'n soort hanenkam boven en zo'n raar neus en aan beide kant half driehoek waarvan we de één nauwelijks zien
+	Free: Pattern=ik hebben, Pattern=soort, Pattern=zo'n, Pattern=boven, Pattern=één, Pattern=die met, Pattern=neus, Pattern=zien, Pattern=driehoek waarvan we, Pattern=de, Pattern=aan, Pattern=en, Pattern=hanenkam
+	Constrained: Pattern=driehoek, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=we, Pattern=die
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ik hebben nu die met die hanekam en die twee driehoek waarvan we er één bijna niet zien
+	Free: Pattern=ik hebben, Pattern=en die twee driehoek waarvan we, Pattern=nu, Pattern=één, Pattern=die met, Pattern=die, Pattern=er, Pattern=hanekam, Pattern=niet zien
+	Constrained: Pattern=driehoek, Pattern=niet, Pattern=hebben, Pattern=met, Pattern=driehoek waarvan we, Pattern=ik, Pattern=en, Pattern=we, Pattern=die, Pattern=zien
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : eh ik hebben die ja hanenkam en die twee driehoek waarvan we de één niet zien
+	Free: Pattern=ik hebben, Pattern=en die twee driehoek waarvan we, Pattern=hanenkam en die twee, Pattern=één, Pattern=die, Pattern=niet zien, Pattern=de, Pattern=ja
+	Constrained: Pattern=driehoek, Pattern=niet, Pattern=hebben, Pattern=driehoek waarvan we, Pattern=ik, Pattern=we, Pattern=die, Pattern=zien, Pattern=en, Pattern=hanenkam
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : Eh nauwelijks ja
+	Free: Pattern=ja, Pattern=Eh
+	Constrained: 
+Turn ID=32| B | B : Euh
+	Free: 
+	Constrained: 

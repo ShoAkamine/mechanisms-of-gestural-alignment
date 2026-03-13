@@ -1,0 +1,67 @@
+B|0| B: _euh_ deze _zijn_ best wel lang 
+B|1| B: en hij hebben aan _de_ _onderkant_ een soort schroef eruit steken _met_ een _ja_ driehoekplateau eronder 
+B|2| B: klein driehoek 
+B|3| B: en dan midden erop een soort heel klein vierkan en dan links _ja_ ik vinden _dit_ een beetje op een poppe lijken Links een soort arm en dan rechts boven ook een vierkant erop 
+A|4| A: _ja dat zijn_ 
+A|5| A: _euh _dit zijn_ die_ _met die _draaien_ onderkant_ 
+B|6| B: Das 
+B|7| B: [euh dit zijn] [met die draaien] schuin [onderkant] 
+A|8| A: _dat zijn_ 
+A|9| A: _dit zijn die_ [met die] [euh] _draaien onderkant_ 
+A|10| A: waar [die] _dat_ ding uitsteken 
+B|11| B: [ja dat zijn] 
+B|12| B: [dit zijn die] een [met die] geschroefde [draaien onderkant] 
+A|13| A: [dat zijn] 
+A|14| A: [euh [dit zijn] die] [met] [de] [draaien onderkant] 
+B|15| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh deze zijn best wel lang
+	Free: Pattern=euh, Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : en hij hebben aan de onderkant een soort schroef eruit steken met een ja driehoekplateau eronder
+	Free: Pattern=onderkant, Pattern=ja, Pattern=met, Pattern=de
+	Constrained: 
+Turn ID=2| B | B : klein driehoek
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en dan midden erop een soort heel klein vierkan en dan links ja ik vinden dit een beetje op een poppe lijken Links een soort arm en dan rechts boven ook een vierkant erop
+	Free: Pattern=ja, Pattern=dit
+	Constrained: 
+Turn ID=4| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=5| A | A : euh dit zijn die met die draaien onderkant
+	Free: Pattern=dit zijn die, Pattern=euh dit zijn, Pattern=met die draaien, Pattern=draaien onderkant
+	Constrained: Pattern=met die, Pattern=euh, Pattern=dit, Pattern=met, Pattern=die, Pattern=onderkant, Pattern=zijn
+Turn ID=6| B | B : Das
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : euh dit zijn met die draaien schuin onderkant
+	Free: Pattern=euh dit zijn, Pattern=met die draaien, Pattern=onderkant
+	Constrained: Pattern=met die, Pattern=euh, Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=8| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=9| A | A : dit zijn die met die euh draaien onderkant
+	Free: Pattern=dit zijn die, Pattern=met die, Pattern=draaien onderkant, Pattern=euh
+	Constrained: Pattern=dit, Pattern=met, Pattern=die, Pattern=onderkant, Pattern=zijn
+Turn ID=10| A | A : waar die dat ding uitsteken
+	Free: Pattern=die, Pattern=dat
+	Constrained: 
+Turn ID=11| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=12| B | B : dit zijn die een met die geschroefde draaien onderkant
+	Free: Pattern=dit zijn die, Pattern=met die, Pattern=draaien onderkant
+	Constrained: Pattern=dit, Pattern=met, Pattern=die, Pattern=onderkant, Pattern=zijn
+Turn ID=13| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| A | A : euh dit zijn die met de draaien onderkant
+	Free: Pattern=dit zijn die, Pattern=de, Pattern=met, Pattern=euh dit zijn, Pattern=draaien onderkant
+	Constrained: Pattern=euh, Pattern=dit, Pattern=die, Pattern=onderkant, Pattern=zijn
+Turn ID=15| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

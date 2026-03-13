@@ -1,0 +1,299 @@
+B|0| B: Oké 
+B|1| B: deze hebben op _de_ bovenkant _een balk_ 
+B|2| B: _en_ dan _aan de_ zijkant 
+B|3| B: volgens mij _aan_ beide zijkant maar één zijkant _kunnen_ _je niet zo goed_ _zien_ 
+B|4| B: Zit _een soort_ 
+B|5| B: _ja_ zeggen maar 
+B|6| B: Halve 
+B|7| B: _ja_ ik weten _niet zo goed_ hoe _dat_ heten 
+B|8| B: _een soort_ 
+B|9| B: Oké ik doen wel gewoon wat er _aan de_ voorkant zitten 
+B|10| B: _je_ hebben dan wat er nog uitsteken _aan_ 
+B|11| B: Zeggen maar _de_ voorkant zitten _een soort_ driehoekig _balk_ 
+B|12| B: _en_ daarboven nog _een_ smal _cilinder die_ daarop staan 
+B|13| B: _het_ lijken _een_ beetje op _een_ vogelhuisje vinden ik 
+B|14| B: _een_ beetje 
+A|15| A: O [ja] _zijn_ _zijn het_ [een soort] kap [aan de] linkerkant 
+B|16| B: _ja ja_ 
+B|17| B: _en_ _aan de rechterkant_ volgens mij _ook_ maar _dat_ _kunnen_ _je niet zo goed_ _zien_ 
+A|18| A: [ja ja] 
+B|19| B: door _dat_ 
+B|20| B: [ja] 
+B|21| B: Oké 
+A|22| A: _dit_ [zien] we [dat] [soort] kap [aan de] linkerkant 
+A|23| A: [een] 
+A|24| A: rechthoek boven 
+A|25| A: [en] [een] _driehoek_ [die] doortrekken _zijn_ [aan de rechterkant] 
+A|26| A: _met een [cilinder_ die] naar boven wijzen _erop_ 
+B|27| B: _even kijken_ 
+B|28| B: _dat zijn_ [met] [de] _balk_ erbovenop hè 
+B|29| B: [een soort] 
+A|30| A: [ja] 
+A|31| A: [ja] 
+B|32| B: [ja] 
+B|33| B: oké _dat zijn_ 
+B|34| B: _dit zijn die_ _dit zijn die_ raar 
+B|35| B: _balk_ [erop] [en] één 
+B|36| B: zeggen maar [een soort] [driehoek] [dat] eruit steken 
+B|37| B: [met een cilinder] [erop] 
+B|38| B: [en] [aan de] zijkant nog twee 
+B|39| B: dak zullen ik maar zeggen 
+B|40| B: Zeggen maar 
+B|41| B: Be-bekendste [zijn] gewoon [dat] hij [een] langwerpig 
+B|42| B: langwerpig dak op [zijn] 
+B|43| B: _of een_ langwerpig _balk_ op op [de] bovenkant hebben 
+B|44| B: [en] dan [een] paar ding [die] eruit steken 
+A|45| A: [even kijken] 
+A|46| A: Langwerpig [balk] 
+A|47| A: O [ja] 
+A|48| A: [met] [dat] kap [aan de] linkerkant 
+B|49| B: [ja] 
+A|50| A: [dat zijn] 
+A|51| A: [dit zijn die] [met] [dat] kap [aan de] linkerkant 
+A|52| A: [een] _V_ 
+A|53| A: [of een] [driehoek] 
+A|54| A: [die] ondersteboven 
+A|55| A: onder 
+A|56| A: naar rechts gaan 
+A|57| A: [met een cilinder] naar boven 
+B|58| B: [en] [de] [balk] 
+B|59| B: [ja] [dat zijn] 
+A|60| A: [ja] 
+A|61| A: [en] [een balk] 
+B|62| B: [dit zijn] weer [die] [een] [die] ik elk keer _niet_ _kunnen_ uitleggen 
+B|63| B: [met] [die] [balk] bovenop 
+B|64| B: [die] twee [ja] wat [zijn het] nou dak 
+B|65| B: [en] dan zeggen maar [die] _V met een_ 
+B|66| B: [of] [ja] 
+B|67| B: [driehoek] [met een cilinder] [erop] 
+A|68| A: O [ja] 
+A|69| A: [dat zijn] 
+A|70| A: [dit zijn die] [met] [dat] kapje link 
+A|71| A: [en] [ook] n rechts [die] [je niet zo goed] [kunnen] [zien] 
+A|72| A: [en] [een] [V [met een] [cilinder] die] naar boven gaan 
+B|73| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : deze hebben op de bovenkant een balk
+	Free: Pattern=een balk, Pattern=de
+	Constrained: Pattern=een, Pattern=balk
+Turn ID=2| B | B : en dan aan de zijkant
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=3| B | B : volgens mij aan beide zijkant maar één zijkant kunnen je niet zo goed zien
+	Free: Pattern=je niet zo goed, Pattern=aan, Pattern=kunnen, Pattern=zien
+	Constrained: Pattern=niet zo goed, Pattern=je, Pattern=niet
+Turn ID=4| B | B : Zit een soort
+	Free: Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=5| B | B : ja zeggen maar
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Halve
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ja ik weten niet zo goed hoe dat heten
+	Free: Pattern=niet zo goed, Pattern=dat, Pattern=ja
+	Constrained: Pattern=niet
+Turn ID=8| B | B : een soort
+	Free: Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=9| B | B : Oké ik doen wel gewoon wat er aan de voorkant zitten
+	Free: Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=10| B | B : je hebben dan wat er nog uitsteken aan
+	Free: Pattern=aan, Pattern=je
+	Constrained: 
+Turn ID=11| B | B : Zeggen maar de voorkant zitten een soort driehoekig balk
+	Free: Pattern=een soort, Pattern=balk, Pattern=de
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=12| B | B : en daarboven nog een smal cilinder die daarop staan
+	Free: Pattern=cilinder die, Pattern=een, Pattern=en
+	Constrained: Pattern=die
+Turn ID=13| B | B : het lijken een beetje op een vogelhuisje vinden ik
+	Free: Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : een beetje
+	Free: Pattern=een
+	Constrained: 
+Turn ID=15| A | A : O ja zijn zijn het een soort kap aan de linkerkant
+	Free: Pattern=zijn het, Pattern=ja, Pattern=aan de, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=een, Pattern=het, Pattern=zijn, Pattern=de, Pattern=aan
+Turn ID=16| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=17| B | B : en aan de rechterkant volgens mij ook maar dat kunnen je niet zo goed zien
+	Free: Pattern=dat, Pattern=kunnen, Pattern=en, Pattern=ook, Pattern=je niet zo goed, Pattern=aan de rechterkant, Pattern=zien
+	Constrained: Pattern=aan de, Pattern=niet, Pattern=je, Pattern=de, Pattern=aan, Pattern=niet zo goed
+Turn ID=18| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=19| B | B : door dat
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : dit zien we dat soort kap aan de linkerkant
+	Free: Pattern=dat, Pattern=soort, Pattern=aan de, Pattern=dit, Pattern=zien
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=23| A | A : een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=24| A | A : rechthoek boven
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : en een driehoek die doortrekken zijn aan de rechterkant
+	Free: Pattern=driehoek, Pattern=een, Pattern=en, Pattern=zijn, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=26| A | A : met een cilinder die naar boven wijzen erop
+	Free: Pattern=met een cilinder, Pattern=cilinder die, Pattern=erop
+	Constrained: Pattern=een, Pattern=die, Pattern=met
+Turn ID=27| B | B : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=28| B | B : dat zijn met de balk erbovenop hè
+	Free: Pattern=dat zijn, Pattern=balk, Pattern=de, Pattern=met
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=29| B | B : een soort
+	Free: Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=34| B | B : dit zijn die dit zijn die raar
+	Free: Pattern=dit zijn die
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=zijn, Pattern=die
+Turn ID=35| B | B : balk erop en één
+	Free: Pattern=erop, Pattern=balk, Pattern=en
+	Constrained: 
+Turn ID=36| B | B : zeggen maar een soort driehoek dat eruit steken
+	Free: Pattern=een soort, Pattern=driehoek, Pattern=dat
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=37| B | B : met een cilinder erop
+	Free: Pattern=met een cilinder, Pattern=erop
+	Constrained: Pattern=een, Pattern=met
+Turn ID=38| B | B : en aan de zijkant nog twee
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=39| B | B : dak zullen ik maar zeggen
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : Zeggen maar
+	Free: 
+	Constrained: 
+Turn ID=41| B | B : Be-bekendste zijn gewoon dat hij een langwerpig
+	Free: Pattern=zijn, Pattern=een, Pattern=dat
+	Constrained: 
+Turn ID=42| B | B : langwerpig dak op zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=43| B | B : of een langwerpig balk op op de bovenkant hebben
+	Free: Pattern=of een, Pattern=balk, Pattern=de
+	Constrained: Pattern=een, Pattern=of
+Turn ID=44| B | B : en dan een paar ding die eruit steken
+	Free: Pattern=een, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=45| A | A : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=46| A | A : Langwerpig balk
+	Free: Pattern=balk
+	Constrained: 
+Turn ID=47| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| A | A : met dat kap aan de linkerkant
+	Free: Pattern=aan de, Pattern=dat, Pattern=met
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=49| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=51| A | A : dit zijn die met dat kap aan de linkerkant
+	Free: Pattern=dit zijn die, Pattern=aan de, Pattern=dat, Pattern=met
+	Constrained: Pattern=dit, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=de, Pattern=aan
+Turn ID=52| A | A : een V
+	Free: Pattern=een, Pattern=V
+	Constrained: 
+Turn ID=53| A | A : of een driehoek
+	Free: Pattern=of een, Pattern=driehoek
+	Constrained: Pattern=een, Pattern=of
+Turn ID=54| A | A : die ondersteboven
+	Free: Pattern=die
+	Constrained: 
+Turn ID=55| A | A : onder
+	Free: 
+	Constrained: 
+Turn ID=56| A | A : naar rechts gaan
+	Free: 
+	Constrained: 
+Turn ID=57| A | A : met een cilinder naar boven
+	Free: Pattern=met een cilinder
+	Constrained: Pattern=een, Pattern=met
+Turn ID=58| B | B : en de balk
+	Free: Pattern=balk, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=59| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=60| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=61| A | A : en een balk
+	Free: Pattern=een balk, Pattern=en
+	Constrained: Pattern=een, Pattern=balk
+Turn ID=62| B | B : dit zijn weer die een die ik elk keer niet kunnen uitleggen
+	Free: Pattern=kunnen, Pattern=niet, Pattern=een, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=63| B | B : met die balk bovenop
+	Free: Pattern=balk, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=64| B | B : die twee ja wat zijn het nou dak
+	Free: Pattern=zijn het, Pattern=die, Pattern=ja
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=65| B | B : en dan zeggen maar die V met een
+	Free: Pattern=V met een, Pattern=die, Pattern=en
+	Constrained: Pattern=een, Pattern=met, Pattern=V
+Turn ID=66| B | B : of ja
+	Free: Pattern=ja, Pattern=of
+	Constrained: 
+Turn ID=67| B | B : driehoek met een cilinder erop
+	Free: Pattern=met een cilinder, Pattern=erop, Pattern=driehoek
+	Constrained: Pattern=een, Pattern=met
+Turn ID=68| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=69| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=70| A | A : dit zijn die met dat kapje link
+	Free: Pattern=dit zijn die, Pattern=dat, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=zijn, Pattern=die
+Turn ID=71| A | A : en ook n rechts die je niet zo goed kunnen zien
+	Free: Pattern=kunnen, Pattern=en, Pattern=ook, Pattern=je niet zo goed, Pattern=die, Pattern=zien
+	Constrained: Pattern=niet zo goed, Pattern=je, Pattern=niet
+Turn ID=72| A | A : en een V met een cilinder die naar boven gaan
+	Free: Pattern=een, Pattern=cilinder die, Pattern=V met een, Pattern=en, Pattern=met een cilinder
+	Constrained: Pattern=een, Pattern=met, Pattern=die, Pattern=V
+Turn ID=73| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat

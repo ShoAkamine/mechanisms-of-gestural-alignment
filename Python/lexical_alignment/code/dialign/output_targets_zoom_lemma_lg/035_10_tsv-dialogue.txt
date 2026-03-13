@@ -1,0 +1,99 @@
+A|0| A: Ehm 
+A|1| A: _ik_ zien nu één _en die_ 
+A|2| A: _ja_ _lijken_ _een beetje _op_ een_ gieterachtig 
+A|3| A: rechts _zijn_ _dan_ _het_ uitsteeksel waar _dan_ _het_ water uit zullen komen 
+A|4| A: Ehm _en_ dat _zijn_ _een_ soort 
+A|5| A: Eh 
+A|6| A: _ja_ cilinderig vormig uitsteksel met _dan_ nog _een_ bolle _aan de_ uit _aan_ _het_ einde zeggen maar 
+A|7| A: _en_ _zo'n_ zelfde soort uitsteksel zien je ook _aan_ links maar _dan_ _zijn_ hij iets _kort_ 
+B|8| B: Oh _ik weten_ al welk [het] [zijn] 
+B|9| B: [zijn] [het] 
+B|10| B: _euh_ dit [zijn] [die] _die [een_ beetje _op] zo'n gieter lijken_ 
+B|11| B: waarbij _euh_ [het] [aan] _euh_ [de] linkerkant [een] [een] [kort] cilinder lopen [dan] [aan de] rechterkant 
+B|12| B: [en die] _hebben_ allebei [zo'n] plat gedrukt cirkel tegen [het] uiteinde 
+A|13| A: _ja_ [ik weten] [het] 
+A|14| A: Ehm dat [zijn] 
+A|15| A: eh _ik hebben_ nu [die een] [die] _weer _die_ [op_ zo'n gieter lijken] met links [kort] [dan] rechts 
+B|16| B: [ja] 
+B|17| B: [ik hebben] [weer die] [die [op] een] [gieter lijken] 
+A|18| A: [euh] waar [zijn] 
+A|19| A: [ja] 
+A|20| A: Ehm _ik hebben die_ [gieter] 
+B|21| B: [ja] 
+B|22| B: [ik hebben die] [euh] [gieter] 
+A|23| A: Euh [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : ik zien nu één en die
+	Free: Pattern=en die, Pattern=ik
+	Constrained: Pattern=die, Pattern=en
+Turn ID=2| A | A : ja lijken een beetje op een gieterachtig
+	Free: Pattern=een beetje op, Pattern=op een, Pattern=ja, Pattern=lijken
+	Constrained: Pattern=een
+Turn ID=3| A | A : rechts zijn dan het uitsteeksel waar dan het water uit zullen komen
+	Free: Pattern=zijn, Pattern=het, Pattern=dan
+	Constrained: 
+Turn ID=4| A | A : Ehm en dat zijn een soort
+	Free: Pattern=zijn, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=5| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : ja cilinderig vormig uitsteksel met dan nog een bolle aan de uit aan het einde zeggen maar
+	Free: Pattern=aan de, Pattern=dan, Pattern=een, Pattern=het, Pattern=aan, Pattern=ja
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=7| A | A : en zo'n zelfde soort uitsteksel zien je ook aan links maar dan zijn hij iets kort
+	Free: Pattern=zo'n, Pattern=aan, Pattern=dan, Pattern=kort, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=8| B | B : Oh ik weten al welk het zijn
+	Free: Pattern=ik weten, Pattern=zijn, Pattern=het
+	Constrained: Pattern=ik
+Turn ID=9| B | B : zijn het
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=10| B | B : euh dit zijn die die een beetje op zo'n gieter lijken
+	Free: Pattern=euh, Pattern=die, Pattern=die een, Pattern=op zo'n gieter lijken, Pattern=een beetje op, Pattern=zijn
+	Constrained: Pattern=zo'n, Pattern=lijken, Pattern=gieter, Pattern=een, Pattern=die, Pattern=gieter lijken
+Turn ID=11| B | B : waarbij euh het aan euh de linkerkant een een kort cilinder lopen dan aan de rechterkant
+	Free: Pattern=aan de, Pattern=dan, Pattern=een, Pattern=het, Pattern=euh, Pattern=kort, Pattern=de, Pattern=aan
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=12| B | B : en die hebben allebei zo'n plat gedrukt cirkel tegen het uiteinde
+	Free: Pattern=en die, Pattern=het, Pattern=hebben, Pattern=zo'n
+	Constrained: Pattern=die, Pattern=en
+Turn ID=13| A | A : ja ik weten het
+	Free: Pattern=ik weten, Pattern=ja, Pattern=het
+	Constrained: Pattern=ik
+Turn ID=14| A | A : Ehm dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=15| A | A : eh ik hebben nu die een die weer die op zo'n gieter lijken met links kort dan rechts
+	Free: Pattern=ik hebben, Pattern=dan, Pattern=weer die, Pattern=die, Pattern=die een, Pattern=kort, Pattern=die op, Pattern=op zo'n gieter lijken
+	Constrained: Pattern=zo'n, Pattern=lijken, Pattern=gieter, Pattern=een, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=gieter lijken
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ik hebben weer die die op een gieter lijken
+	Free: Pattern=ik hebben, Pattern=weer die, Pattern=die op, Pattern=op een, Pattern=gieter lijken
+	Constrained: Pattern=lijken, Pattern=gieter, Pattern=een, Pattern=hebben, Pattern=die, Pattern=ik
+Turn ID=18| A | A : euh waar zijn
+	Free: Pattern=zijn, Pattern=euh
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Ehm ik hebben die gieter
+	Free: Pattern=ik hebben die, Pattern=gieter
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ik hebben die euh gieter
+	Free: Pattern=ik hebben die, Pattern=gieter, Pattern=euh
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=23| A | A : Euh ja
+	Free: Pattern=ja
+	Constrained: 

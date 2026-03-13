@@ -1,0 +1,199 @@
+A|0| A: _Oh_ 
+A|1| A: _Oké_ _we_ _zijn_ _er_ nog niet 
+A|2| A: ehm deze _zijn_ eigenlijk _die_ normaal bak 
+A|3| A: _die we_ dus steeds _hebben_ 
+B|4| B: mhm 
+A|5| A: en dan _zitten_ _er_ weer _een_ vierkant doorheen 
+A|6| A: en dan 
+A|7| A: _Eh_ 
+A|8| A: _er_ komen eigenlijk twee ronde 
+A|9| A: nee niet ronde 
+A|10| A: soort van twee van _die_ buis uit _aan de_ bovenkant 
+A|11| A: Best wel klein buis 
+A|12| A: en link _hebben_ _hij_ nog 
+A|13| A: _een_ soort van _de_ _letter L_ _maar_ dan 
+B|14| B: _Oh ja_ 
+A|15| A: _maar_ dan één slag draaien 
+B|16| B: dit [zijn] [die] tank waar _ik_ _het_ over [hebben] 
+A|17| A: [Oh] 
+B|18| B: dit [zijn] dit [zijn] nummer 
+B|19| B: [Oké] 
+B|20| B: _ik hebben_ nu [de] OGtank _zeggen maar_ 
+B|21| B: _met_ [die] _met_ [die] [letter L] [die] [er] in [zitten] 
+B|22| B: [hij] [zitten] _ook_ [een] beetje in [een] platform 
+A|23| A: [Oh ja] 
+A|24| A: Yes 
+A|25| A: Letter 
+A|26| A: [ik hebben] [de] [letter _L] aan de linkerkant_ 
+A|27| A: [die] [zeggen maar] 
+B|28| B: [Eh] 
+B|29| B: [Oh] [die] tank 
+B|30| B: [ja] 
+B|31| B: nummer 
+A|32| A: [ja] 
+B|33| B: [ik hebben] [die] _met_ [die] [L aan de linkerkant] 
+A|34| A: [Oh ja] 
+A|35| A: eh [letter] 
+A|36| A: [ik hebben] [letter [L] aan de linkerkant] 
+A|37| A: Diegene [met] [letter] 
+B|38| B: [Oké] dat [zijn] 
+B|39| B: nummer 
+B|40| B: [Oké] 
+B|41| B: dit [zijn] d-ronde 5 _denken_ [ik] 
+A|42| A: [ja] [denken] [het] [ook] onderhand 
+B|43| B: [die we] nu beginnen 
+B|44| B: [Oké] 
+B|45| B: [Eh] [met] [de] [L aan de linkerkant] 
+A|46| A: [Oh ja] 
+A|47| A: even zoeken 
+A|48| A: [Oh ja] [letter] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : Oké we zijn er nog niet
+	Free: Pattern=er, Pattern=zijn, Pattern=Oké, Pattern=we
+	Constrained: 
+Turn ID=2| A | A : ehm deze zijn eigenlijk die normaal bak
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : die we dus steeds hebben
+	Free: Pattern=die we, Pattern=hebben
+	Constrained: Pattern=die, Pattern=we
+Turn ID=4| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : en dan zitten er weer een vierkant doorheen
+	Free: Pattern=er, Pattern=een, Pattern=zitten
+	Constrained: 
+Turn ID=6| A | A : en dan
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=8| A | A : er komen eigenlijk twee ronde
+	Free: Pattern=er
+	Constrained: 
+Turn ID=9| A | A : nee niet ronde
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : soort van twee van die buis uit aan de bovenkant
+	Free: Pattern=aan de, Pattern=die
+	Constrained: Pattern=de
+Turn ID=11| A | A : Best wel klein buis
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : en link hebben hij nog
+	Free: Pattern=hij, Pattern=hebben
+	Constrained: 
+Turn ID=13| A | A : een soort van de letter L maar dan
+	Free: Pattern=letter L, Pattern=de, Pattern=maar, Pattern=een
+	Constrained: Pattern=letter
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=15| A | A : maar dan één slag draaien
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=16| B | B : dit zijn die tank waar ik het over hebben
+	Free: Pattern=het, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=18| B | B : dit zijn dit zijn nummer
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| B | B : ik hebben nu de OGtank zeggen maar
+	Free: Pattern=ik hebben, Pattern=zeggen maar, Pattern=de
+	Constrained: Pattern=hebben, Pattern=maar, Pattern=ik
+Turn ID=21| B | B : met die met die letter L die er in zitten
+	Free: Pattern=met, Pattern=er, Pattern=letter L, Pattern=die, Pattern=zitten
+	Constrained: Pattern=letter
+Turn ID=22| B | B : hij zitten ook een beetje in een platform
+	Free: Pattern=ook, Pattern=hij, Pattern=een, Pattern=zitten
+	Constrained: 
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=24| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : ik hebben de letter L aan de linkerkant
+	Free: Pattern=L aan de linkerkant, Pattern=letter L, Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=letter, Pattern=hebben, Pattern=ik
+Turn ID=27| A | A : die zeggen maar
+	Free: Pattern=zeggen maar, Pattern=die
+	Constrained: Pattern=maar
+Turn ID=28| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=29| B | B : Oh die tank
+	Free: Pattern=die, Pattern=Oh
+	Constrained: 
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : ik hebben die met die L aan de linkerkant
+	Free: Pattern=L aan de linkerkant, Pattern=ik hebben, Pattern=die, Pattern=met
+	Constrained: Pattern=de, Pattern=aan de, Pattern=ik, Pattern=hebben
+Turn ID=34| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=35| A | A : eh letter
+	Free: Pattern=letter
+	Constrained: 
+Turn ID=36| A | A : ik hebben letter L aan de linkerkant
+	Free: Pattern=L aan de linkerkant, Pattern=letter L, Pattern=ik hebben
+	Constrained: Pattern=de, Pattern=aan de, Pattern=letter, Pattern=hebben, Pattern=ik
+Turn ID=37| A | A : Diegene met letter
+	Free: Pattern=letter, Pattern=met
+	Constrained: 
+Turn ID=38| B | B : Oké dat zijn
+	Free: Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=39| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=41| B | B : dit zijn d-ronde 5 denken ik
+	Free: Pattern=zijn, Pattern=ik, Pattern=denken
+	Constrained: 
+Turn ID=42| A | A : ja denken het ook onderhand
+	Free: Pattern=ook, Pattern=het, Pattern=ja, Pattern=denken
+	Constrained: 
+Turn ID=43| B | B : die we nu beginnen
+	Free: Pattern=die we
+	Constrained: Pattern=die, Pattern=we
+Turn ID=44| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=45| B | B : Eh met de L aan de linkerkant
+	Free: Pattern=L aan de linkerkant, Pattern=Eh, Pattern=de, Pattern=met
+	Constrained: Pattern=de, Pattern=aan de
+Turn ID=46| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=47| A | A : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=48| A | A : Oh ja letter
+	Free: Pattern=Oh ja, Pattern=letter
+	Constrained: Pattern=ja, Pattern=Oh

@@ -1,0 +1,243 @@
+A|0| A: _Oké_ 
+A|1| A: oké deze _zijn_ redelijk ingewikkeld 
+A|2| A: _het zijn_ _in_ elk geval gewoon weer _zo'n_ _pot_ 
+A|3| A: _het_ _hebben_ _twee_ uitsteeksel 
+A|4| A: _het zijn_ _een_ soort _van_ _ja_ _een_ soort _van_ staaf 
+A|5| A: Weet _je_ wel _van_ _die_ kralen ketting 
+A|6| A: _maar_ _dan_ _zijn_ _het_ gewoon drie achter elkaar _aan beide kant_ 
+B|7| B: _Oh ja_ 
+B|8| B: _ik_ [hebben] ze diamant noemen 
+A|9| A: [ja] 
+B|10| B: _en_ _dan hebben_ [je] [zo'n] cirkel op _de voorkant_ 
+B|11| B: _en zo'n_ vaag [twee] 
+A|12| A: [ja] 
+B|13| B: [ja] half cirkel staven achtig toch 
+B|14| B: _ik_ weten niet _wat_ [het zijn] 
+A|15| A: [ja] nou [het] ding [wat] hij eigenlijk _aan de voorkant_ [hebben] 
+A|16| A: [ik] zien _dat_ _als_ _een_ soort _van_ 
+A|17| A: [zo'n] _vraagwolk_ 
+A|18| A: Weet [je] wel 
+A|19| A: alleen [dan hebben] [het] 
+A|20| A: [dan] [zijn] [het] _een_ _omgekeerd vraagwolk_ 
+B|21| B: Eh 
+B|22| B: Zit _er_ _een platform onder_ 
+A|23| A: [ja] [er] zitten [een platform onder] 
+B|24| B: [Oké] 
+A|25| A: [ja] 
+A|26| A: [en] _en [het_ zijn] _en [het_ zijn] alsof hij [een] soort staart [hebben] 
+A|27| A: helemaal _aan _de_ achterkant_ 
+A|28| A: [een] heel klein _rond_ dinge 
+B|29| B: [ja] 
+B|30| B: _Oh_ [ik] [ik] _denken_ [dat] zeggen [maar] [dat] staar [dat] [dat] [aan beide kant] [zijn] 
+B|31| B: [maar] _aan de ander_ [kant] [zijn] [dat] _inderdaad_ daarom [dat] [je] [dat] zeggen [van] [de] [omgekeerd vraagwolk] 
+B|32| B: [ik] _denken_ [dat] [dat] [van] [de achterkant] [zijn] 
+A|33| A: [Oh ja] [dat] zullen natuurlijk ook kunnen 
+A|34| A: [ja] [dat] liggen [denken] [ik] ook [inderdaad] [aan] [het] perspectief 
+B|35| B: daarom [zijn] [ik] zo [in] [de] war 
+B|36| B: [maar] [ik] weten welk [het zijn] gelukkig 
+B|37| B: Ehm 
+B|38| B: _dit zijn die_ _met_ [de] _kraalt_ [als] oor 
+A|39| A: ah [ja] 
+B|40| B: [en] [dan] [zo'n] [rond] cirkel [aan de voorkant] 
+B|41| B: [het] bobbel 
+A|42| A: [ja] 
+A|43| A: [dat] [zijn] letter 
+A|44| A: [Oké] [dit zijn die] _pot met_ [die] [kraalt] 
+A|45| A: [aan de] zijkant 
+B|46| B: [ja] 
+A|47| A: [en] [dat] [omgekeerd vraagwolk] 
+B|48| B: [ja] 
+A|49| A: [en zo'n] [ja] 
+B|50| B: nummer 
+B|51| B: [dit zijn] [de] [de] [kraalt] [met] [het] [omgekeerd vraagwolk] 
+A|52| A: Letter 
+A|53| A: [Oké] [dit zijn die] _pot met_ [die] _kraalt [aan_ de] buitenkant 
+A|54| A: dus [die] drie _kraalt [aan_ de] [een] drie [aan de ander] 
+A|55| A: [en] [dat] [omgekeerd vraagwolk] 
+B|56| B: [ja] nummer 
+B|57| B: eh [de] [pot met] [de] [kraalt [aan] beide kant] 
+B|58| B: [en het] [omgekeerd vraagwolk] 
+A|59| A: [ja] letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : oké deze zijn redelijk ingewikkeld
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : het zijn in elk geval gewoon weer zo'n pot
+	Free: Pattern=het zijn, Pattern=zo'n, Pattern=in, Pattern=pot
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=3| A | A : het hebben twee uitsteeksel
+	Free: Pattern=het, Pattern=twee, Pattern=hebben
+	Constrained: 
+Turn ID=4| A | A : het zijn een soort van ja een soort van staaf
+	Free: Pattern=het zijn, Pattern=van, Pattern=een, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=5| A | A : Weet je wel van die kralen ketting
+	Free: Pattern=die, Pattern=je, Pattern=van
+	Constrained: 
+Turn ID=6| A | A : maar dan zijn het gewoon drie achter elkaar aan beide kant
+	Free: Pattern=aan beide kant, Pattern=dan, Pattern=het, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=aan, Pattern=kant
+Turn ID=7| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=8| B | B : ik hebben ze diamant noemen
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : en dan hebben je zo'n cirkel op de voorkant
+	Free: Pattern=zo'n, Pattern=dan hebben, Pattern=de voorkant, Pattern=en, Pattern=je
+	Constrained: Pattern=dan, Pattern=de, Pattern=hebben
+Turn ID=11| B | B : en zo'n vaag twee
+	Free: Pattern=en zo'n, Pattern=twee
+	Constrained: Pattern=zo'n, Pattern=en
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja half cirkel staven achtig toch
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ik weten niet wat het zijn
+	Free: Pattern=het zijn, Pattern=wat, Pattern=ik
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=15| A | A : ja nou het ding wat hij eigenlijk aan de voorkant hebben
+	Free: Pattern=ja, Pattern=het, Pattern=hebben, Pattern=wat, Pattern=aan de voorkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=de voorkant, Pattern=aan de
+Turn ID=16| A | A : ik zien dat als een soort van
+	Free: Pattern=dat, Pattern=een, Pattern=als, Pattern=ik, Pattern=van
+	Constrained: 
+Turn ID=17| A | A : zo'n vraagwolk
+	Free: Pattern=zo'n, Pattern=vraagwolk
+	Constrained: 
+Turn ID=18| A | A : Weet je wel
+	Free: Pattern=je
+	Constrained: 
+Turn ID=19| A | A : alleen dan hebben het
+	Free: Pattern=dan hebben, Pattern=het
+	Constrained: Pattern=dan, Pattern=hebben
+Turn ID=20| A | A : dan zijn het een omgekeerd vraagwolk
+	Free: Pattern=dan, Pattern=omgekeerd vraagwolk, Pattern=een, Pattern=het, Pattern=zijn
+	Constrained: Pattern=vraagwolk
+Turn ID=21| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : Zit er een platform onder
+	Free: Pattern=een platform onder, Pattern=er
+	Constrained: Pattern=een
+Turn ID=23| A | A : ja er zitten een platform onder
+	Free: Pattern=een platform onder, Pattern=ja, Pattern=er
+	Constrained: Pattern=een
+Turn ID=24| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : en en het zijn en het zijn alsof hij een soort staart hebben
+	Free: Pattern=en het, Pattern=een, Pattern=hebben, Pattern=het zijn, Pattern=en
+	Constrained: Pattern=zijn, Pattern=het, Pattern=en
+Turn ID=27| A | A : helemaal aan de achterkant
+	Free: Pattern=de achterkant, Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=28| A | A : een heel klein rond dinge
+	Free: Pattern=rond, Pattern=een
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : Oh ik ik denken dat zeggen maar dat staar dat dat aan beide kant zijn
+	Free: Pattern=dat, Pattern=denken, Pattern=aan beide kant, Pattern=ik, Pattern=Oh, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=aan, Pattern=kant
+Turn ID=31| B | B : maar aan de ander kant zijn dat inderdaad daarom dat je dat zeggen van de omgekeerd vraagwolk
+	Free: Pattern=de, Pattern=omgekeerd vraagwolk, Pattern=aan de ander, Pattern=van, Pattern=dat, Pattern=kant, Pattern=zijn, Pattern=maar, Pattern=je, Pattern=inderdaad
+	Constrained: Pattern=vraagwolk, Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=32| B | B : ik denken dat dat van de achterkant zijn
+	Free: Pattern=dat, Pattern=denken, Pattern=ik, Pattern=van, Pattern=zijn, Pattern=de achterkant
+	Constrained: Pattern=de
+Turn ID=33| A | A : Oh ja dat zullen natuurlijk ook kunnen
+	Free: Pattern=Oh ja, Pattern=dat
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=34| A | A : ja dat liggen denken ik ook inderdaad aan het perspectief
+	Free: Pattern=dat, Pattern=denken, Pattern=het, Pattern=ik, Pattern=inderdaad, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : daarom zijn ik zo in de war
+	Free: Pattern=zijn, Pattern=in, Pattern=ik, Pattern=de
+	Constrained: 
+Turn ID=36| B | B : maar ik weten welk het zijn gelukkig
+	Free: Pattern=het zijn, Pattern=ik, Pattern=maar
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=37| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : dit zijn die met de kraalt als oor
+	Free: Pattern=dit zijn die, Pattern=de, Pattern=als, Pattern=met, Pattern=kraalt
+	Constrained: Pattern=dit zijn, Pattern=die, Pattern=zijn
+Turn ID=39| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : en dan zo'n rond cirkel aan de voorkant
+	Free: Pattern=zo'n, Pattern=dan, Pattern=en, Pattern=rond, Pattern=aan de voorkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=de voorkant, Pattern=aan de
+Turn ID=41| B | B : het bobbel
+	Free: Pattern=het
+	Constrained: 
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| A | A : dat zijn letter
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=44| A | A : Oké dit zijn die pot met die kraalt
+	Free: Pattern=dit zijn die, Pattern=die, Pattern=kraalt, Pattern=pot met, Pattern=Oké
+	Constrained: Pattern=met, Pattern=die, Pattern=zijn, Pattern=pot, Pattern=dit zijn
+Turn ID=45| A | A : aan de zijkant
+	Free: Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| A | A : en dat omgekeerd vraagwolk
+	Free: Pattern=omgekeerd vraagwolk, Pattern=dat, Pattern=en
+	Constrained: Pattern=vraagwolk
+Turn ID=48| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=49| A | A : en zo'n ja
+	Free: Pattern=en zo'n, Pattern=ja
+	Constrained: Pattern=zo'n, Pattern=en
+Turn ID=50| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=51| B | B : dit zijn de de kraalt met het omgekeerd vraagwolk
+	Free: Pattern=de, Pattern=omgekeerd vraagwolk, Pattern=het, Pattern=met, Pattern=kraalt, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=vraagwolk
+Turn ID=52| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=53| A | A : Oké dit zijn die pot met die kraalt aan de buitenkant
+	Free: Pattern=kraalt aan, Pattern=dit zijn die, Pattern=aan de, Pattern=die, Pattern=pot met, Pattern=Oké
+	Constrained: Pattern=met, Pattern=die, Pattern=zijn, Pattern=kraalt, Pattern=de, Pattern=aan, Pattern=pot, Pattern=dit zijn
+Turn ID=54| A | A : dus die drie kraalt aan de een drie aan de ander
+	Free: Pattern=kraalt aan, Pattern=aan de, Pattern=die, Pattern=een, Pattern=aan de ander
+	Constrained: Pattern=aan, Pattern=de, Pattern=kraalt, Pattern=aan de
+Turn ID=55| A | A : en dat omgekeerd vraagwolk
+	Free: Pattern=omgekeerd vraagwolk, Pattern=dat, Pattern=en
+	Constrained: Pattern=vraagwolk
+Turn ID=56| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=57| B | B : eh de pot met de kraalt aan beide kant
+	Free: Pattern=aan beide kant, Pattern=pot met, Pattern=kraalt aan, Pattern=de
+	Constrained: Pattern=kant, Pattern=aan, Pattern=met, Pattern=kraalt, Pattern=pot
+Turn ID=58| B | B : en het omgekeerd vraagwolk
+	Free: Pattern=omgekeerd vraagwolk, Pattern=en het
+	Constrained: Pattern=het, Pattern=vraagwolk, Pattern=en
+Turn ID=59| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 

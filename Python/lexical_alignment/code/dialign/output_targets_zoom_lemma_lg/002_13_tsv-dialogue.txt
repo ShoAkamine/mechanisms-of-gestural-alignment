@@ -1,0 +1,75 @@
+A|0| A: _oké_ deze staat op _het_ onderzetter 
+A|1| A: gewoon een groot vierkant zeggen maar staan _die_ op 
+A|2| A: _en_ dan _hebben_ _die_ twee uitstekend dinget _en_ een _cirkel_ voorin 
+B|3| B: even kijken [hebben] hij 
+A|4| A: _het_ _zijn_ echt _de_ veel uitbundig van ze allemaal eigenlijk 
+B|5| B: _ja_ _ja_ _met die_ wat [zijn] [het] _diamant_ 
+A|6| A: [ja] 
+B|7| B: aan [de] zijkant 
+B|8| B: [ja] [oké] 
+B|9| B: even kijken _dit zijn weer_ [die] symmetrisch _met die diamant_ links [en] rechts 
+B|10| B: _en die_ [cirkel] voor 
+A|11| A: _dit zijn weer met die_ onderzetter zeggen maar daaronder dat vlak vierkant [met die diamant] 
+B|12| B: Oh [ja] 
+B|13| B: [dit zijn weer] [die] symmetrisch [met die diamant] 
+A|14| A: [dit zijn] [met die diamant] 
+A|15| A: [en die] onderzetter 
+B|16| B: kijken 
+B|17| B: [dit zijn weer [met die] diamant] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze staat op het onderzetter
+	Free: Pattern=oké, Pattern=het
+	Constrained: 
+Turn ID=1| A | A : gewoon een groot vierkant zeggen maar staan die op
+	Free: Pattern=die
+	Constrained: 
+Turn ID=2| A | A : en dan hebben die twee uitstekend dinget en een cirkel voorin
+	Free: Pattern=en, Pattern=cirkel, Pattern=die, Pattern=hebben
+	Constrained: 
+Turn ID=3| B | B : even kijken hebben hij
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=4| A | A : het zijn echt de veel uitbundig van ze allemaal eigenlijk
+	Free: Pattern=het, Pattern=de, Pattern=zijn
+	Constrained: 
+Turn ID=5| B | B : ja ja met die wat zijn het diamant
+	Free: Pattern=met die, Pattern=ja, Pattern=het, Pattern=diamant, Pattern=zijn
+	Constrained: Pattern=die
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : aan de zijkant
+	Free: Pattern=de
+	Constrained: 
+Turn ID=8| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : even kijken dit zijn weer die symmetrisch met die diamant links en rechts
+	Free: Pattern=dit zijn weer, Pattern=met die diamant, Pattern=en, Pattern=die
+	Constrained: Pattern=met die, Pattern=diamant, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=10| B | B : en die cirkel voor
+	Free: Pattern=en die, Pattern=cirkel
+	Constrained: Pattern=en, Pattern=die
+Turn ID=11| A | A : dit zijn weer met die onderzetter zeggen maar daaronder dat vlak vierkant met die diamant
+	Free: Pattern=dit zijn weer met die, Pattern=met die diamant
+	Constrained: Pattern=met die, Pattern=diamant, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=dit zijn weer
+Turn ID=12| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dit zijn weer die symmetrisch met die diamant
+	Free: Pattern=dit zijn weer, Pattern=met die diamant, Pattern=die
+	Constrained: Pattern=met die, Pattern=diamant, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=14| A | A : dit zijn met die diamant
+	Free: Pattern=met die diamant, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=die, Pattern=diamant, Pattern=met die
+Turn ID=15| A | A : en die onderzetter
+	Free: Pattern=en die
+	Constrained: Pattern=en, Pattern=die
+Turn ID=16| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : dit zijn weer met die diamant
+	Free: Pattern=dit zijn weer met die, Pattern=met die diamant
+	Constrained: Pattern=met die, Pattern=diamant, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=dit zijn weer

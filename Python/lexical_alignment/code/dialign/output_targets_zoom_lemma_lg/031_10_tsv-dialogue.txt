@@ -1,0 +1,187 @@
+B|0| B: eh _ja_ wie _zijn_ jij 
+A|1| A: _Oh _ja_ oké_ nu [zijn] ik _weer_ 
+A|2| A: _Oké_ _het_ ik vinden _het_ _een_ beetje lijken alsof hij _een_ _soort van_ _twee arm_ _aan_ _de_ zijkant _hebben_ 
+A|3| A: _en_ _dan_ _hebben_ hij _een_ _soort_ bolle als hand 
+A|4| A: _en_ _je hebben_ ook _nog_ vaag _aan_ _de_ boven-slash-achterkant _een_ _soort_ 
+A|5| A: _een_ _soort_ vierkantschans _met_ _nog_ _iets_ aanhangen 
+B|6| B: [Oké] [nog] _één_ keer wa-wat waar _zitten_ _die_ bol 
+A|7| A: [Oké] 
+A|8| A: _je hebben_ _zeggen maar_ _soort van_ _twee soort_ dikkere hoekig staf [die] _aan_ allebei _de_ kant eruit steken _maar_ _de_ [één] [zijn] _lang dan de ander_ 
+B|9| B: [Oh _ja] ja_ 
+A|10| A: _en_ daaraan [zitten] _soort van_ _twee_ bollet 
+A|11| A: [ja] 
+B|12| B: _Euh_ [ja] [en] [aan] _dat_ _kort_ stuk _dat_ _kort_ [lang] stuk [zitten] [weer] [iets] [aan] toch 
+A|13| A: [ja] 
+B|14| B: [Oké] 
+B|15| B: Ehm 
+A|16| A: [Oké] 
+B|17| B: [Oké] _dit zijn_ Euhm 
+B|18| B: Ehm 
+B|19| B: wat jij [zeggen] [ja] 
+B|20| B: [maar] [oké] 
+B|21| B: ehm [je hebben] [het] [zeggen maar] over [twee [soort] van] euh 
+B|22| B: A-armen _dat_ er [één] _lang zijn dan de ander met_ zo'n rond erop 
+A|23| A: [ja [ja] ja] 
+B|24| B: [en] [die] vierkant [die] er [dan] [weer] zo bovenop komen 
+A|25| A: [ja [ja] ja] 
+A|26| A: _ja oké_ 
+B|27| B: [Oké] 
+A|28| A: oh [dit zijn] degeen [met] [die] [soort] [twee] staf slash _arm_ [aan] [de] zijkant waarvan _de een_ _arm [lang_ zijn dan de ander] 
+A|29| A: [met] _die twee_ bollet 
+A|30| A: [en] [dat] [aan] [die] [die] [kort] _arm_ [nog] [iets] erboven staan 
+B|31| B: [ja oké] 
+B|32| B: Ehm 
+B|33| B: euh [dit zijn] euh _zijn die twee_ [zeggen maar] [arm] _de een [lang_ dan de ander] [en] [weer] [met] [dat] rond 
+A|34| A: [Oh ja] yes 
+B|35| B: [Oké] 
+A|36| A: [Euh] 
+A|37| A: [dit [zijn] _die twee] arm_ waarvan [de een [lang] zijn dan de ander met] [die] bollet [en] [dat] ding op [die] [kort] [arm] 
+B|38| B: [Oké] 
+B|39| B: [Euh] 
+B|40| B: euh [dit zijn] euh [die twee arm] [weer] [met] [dat] rond er omheen 
+A|41| A: [Oh ja] 
+B|42| B: [één] [arm lang] 
+A|43| A: Yes 
+B|44| B: [Oké] 
+A|45| A: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh ja wie zijn jij
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : Oh ja oké nu zijn ik weer
+	Free: Pattern=ja oké, Pattern=Oh ja, Pattern=zijn, Pattern=weer
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=2| A | A : Oké het ik vinden het een beetje lijken alsof hij een soort van twee arm aan de zijkant hebben
+	Free: Pattern=een, Pattern=het, Pattern=hebben, Pattern=twee arm, Pattern=soort van, Pattern=Oké, Pattern=de, Pattern=aan
+	Constrained: Pattern=arm, Pattern=twee, Pattern=soort
+Turn ID=3| A | A : en dan hebben hij een soort bolle als hand
+	Free: Pattern=soort, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=4| A | A : en je hebben ook nog vaag aan de boven-slash-achterkant een soort
+	Free: Pattern=een, Pattern=je hebben, Pattern=en, Pattern=nog, Pattern=soort, Pattern=de, Pattern=aan
+	Constrained: Pattern=hebben
+Turn ID=5| A | A : een soort vierkantschans met nog iets aanhangen
+	Free: Pattern=iets, Pattern=een, Pattern=met, Pattern=nog, Pattern=soort
+	Constrained: 
+Turn ID=6| B | B : Oké nog één keer wa-wat waar zitten die bol
+	Free: Pattern=nog, Pattern=één, Pattern=Oké, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=7| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : je hebben zeggen maar soort van twee soort dikkere hoekig staf die aan allebei de kant eruit steken maar de één zijn lang dan de ander
+	Free: Pattern=twee soort, Pattern=lang dan de ander, Pattern=één, Pattern=die, Pattern=de, Pattern=aan, Pattern=je hebben, Pattern=zeggen maar, Pattern=soort van, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=soort, Pattern=twee, Pattern=de, Pattern=dan, Pattern=hebben, Pattern=zeggen, Pattern=lang, Pattern=maar
+Turn ID=9| B | B : Oh ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=10| A | A : en daaraan zitten soort van twee bollet
+	Free: Pattern=soort van, Pattern=twee, Pattern=zitten, Pattern=en
+	Constrained: Pattern=soort
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Euh ja en aan dat kort stuk dat kort lang stuk zitten weer iets aan toch
+	Free: Pattern=dat, Pattern=Euh, Pattern=zitten, Pattern=kort, Pattern=lang, Pattern=en, Pattern=weer, Pattern=aan, Pattern=iets, Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=17| B | B : Oké dit zijn Euhm
+	Free: Pattern=dit zijn, Pattern=Oké
+	Constrained: Pattern=zijn
+Turn ID=18| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : wat jij zeggen ja
+	Free: Pattern=zeggen, Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : maar oké
+	Free: Pattern=oké, Pattern=maar
+	Constrained: 
+Turn ID=21| B | B : ehm je hebben het zeggen maar over twee soort van euh
+	Free: Pattern=twee soort, Pattern=het, Pattern=soort van, Pattern=je hebben, Pattern=zeggen maar
+	Constrained: Pattern=soort, Pattern=twee, Pattern=hebben, Pattern=zeggen, Pattern=maar
+Turn ID=22| B | B : A-armen dat er één lang zijn dan de ander met zo'n rond erop
+	Free: Pattern=lang zijn dan de ander met, Pattern=één, Pattern=dat
+	Constrained: Pattern=lang zijn dan de ander, Pattern=de, Pattern=dan, Pattern=met, Pattern=lang, Pattern=zijn
+Turn ID=23| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=24| B | B : en die vierkant die er dan weer zo bovenop komen
+	Free: Pattern=weer, Pattern=die, Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=25| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=26| A | A : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=27| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| A | A : oh dit zijn degeen met die soort twee staf slash arm aan de zijkant waarvan de een arm lang zijn dan de ander
+	Free: Pattern=twee, Pattern=arm, Pattern=dit zijn, Pattern=soort, Pattern=lang zijn dan de ander, Pattern=de, Pattern=aan, Pattern=de een, Pattern=met, Pattern=die, Pattern=arm lang
+	Constrained: Pattern=de, Pattern=dan, Pattern=een, Pattern=lang, Pattern=arm, Pattern=zijn
+Turn ID=29| A | A : met die twee bollet
+	Free: Pattern=die twee, Pattern=met
+	Constrained: Pattern=twee, Pattern=die
+Turn ID=30| A | A : en dat aan die die kort arm nog iets erboven staan
+	Free: Pattern=dat, Pattern=nog, Pattern=die, Pattern=kort, Pattern=aan, Pattern=iets, Pattern=arm, Pattern=en
+	Constrained: 
+Turn ID=31| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=32| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : euh dit zijn euh zijn die twee zeggen maar arm de een lang dan de ander en weer met dat rond
+	Free: Pattern=dat, Pattern=de een lang, Pattern=lang dan de ander, Pattern=zijn die twee, Pattern=zeggen maar, Pattern=met, Pattern=weer, Pattern=dit zijn, Pattern=arm, Pattern=en
+	Constrained: Pattern=twee, Pattern=de, Pattern=dan, Pattern=een, Pattern=die twee, Pattern=zeggen, Pattern=de een, Pattern=die, Pattern=lang, Pattern=zijn, Pattern=maar
+Turn ID=34| A | A : Oh ja yes
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=35| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=36| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=37| A | A : dit zijn die twee arm waarvan de een lang zijn dan de ander met die bollet en dat ding op die kort arm
+	Free: Pattern=dat, Pattern=de een lang, Pattern=zijn die twee, Pattern=lang zijn dan de ander met, Pattern=die, Pattern=kort, Pattern=dit zijn, Pattern=die twee arm, Pattern=arm, Pattern=en
+	Constrained: Pattern=lang zijn dan de ander, Pattern=twee, Pattern=de, Pattern=dan, Pattern=een, Pattern=die twee, Pattern=twee arm, Pattern=die, Pattern=lang, Pattern=arm, Pattern=zijn, Pattern=de een, Pattern=met
+Turn ID=38| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=39| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=40| B | B : euh dit zijn euh die twee arm weer met dat rond er omheen
+	Free: Pattern=dat, Pattern=met, Pattern=weer, Pattern=dit zijn, Pattern=die twee arm
+	Constrained: Pattern=twee, Pattern=die twee, Pattern=twee arm, Pattern=die, Pattern=arm, Pattern=zijn
+Turn ID=41| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=42| B | B : één arm lang
+	Free: Pattern=arm lang, Pattern=één
+	Constrained: Pattern=arm, Pattern=lang
+Turn ID=43| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=45| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 

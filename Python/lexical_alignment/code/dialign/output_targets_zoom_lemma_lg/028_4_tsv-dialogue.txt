@@ -1,0 +1,99 @@
+A|0| A: oke 
+B|1| B: ja _deze_ vinden _ik_ zelf een beetje _op_ _Pinocchio_ lijken bijna 
+B|2| B: hij hebben links een soort spits neus en dan bovenop een soort bakje _op_ _de_ kop als een _hoed_ 
+B|3| B: en dan rechts twee _euh_ ja boven elkaar uitsteeksel 
+A|4| A: ah dat _zijn_ 
+A|5| A: [euh] [deze] _zijn_ [de] [Pinocchio] 
+B|6| B: ja _even_ kijken waar die 
+B|7| B: 5 
+A|8| A: _het_ zitten snel 
+B|9| B: ja ja _dit zijn_ dan weer [euh] ja mijn [Pinocchio] zeggen maar 
+B|10| B: _met het euh_ spits neusje 
+A|11| A: Yes 
+A|12| A: [ik] [zijn] hem heel [even] kwijt 
+B|13| B: ja je moeten echt zoeken soms 
+A|14| A: Oh dat [zijn] [met het euh] [hoed] erbovenop 
+B|15| B: ja 
+A|16| A: dat [zijn] 
+A|17| A: _dit zijn Pinocchio_ [met het] [hoed] 
+B|18| B: ja 
+B|19| B: en [dit zijn Pinocchio] 
+A|20| A: Yes [ik] [zijn] naar hem [op] zoek 
+A|21| A: ah dat [zijn] 
+A|22| A: ah [dit zijn Pinocchio] 
+B|23| B: Euh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oke
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ja deze vinden ik zelf een beetje op Pinocchio lijken bijna
+	Free: Pattern=deze, Pattern=ik, Pattern=Pinocchio, Pattern=op
+	Constrained: 
+Turn ID=2| B | B : hij hebben links een soort spits neus en dan bovenop een soort bakje op de kop als een hoed
+	Free: Pattern=op, Pattern=hoed, Pattern=de
+	Constrained: 
+Turn ID=3| B | B : en dan rechts twee euh ja boven elkaar uitsteeksel
+	Free: Pattern=euh
+	Constrained: 
+Turn ID=4| A | A : ah dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : euh deze zijn de Pinocchio
+	Free: Pattern=euh, Pattern=zijn, Pattern=deze, Pattern=de, Pattern=Pinocchio
+	Constrained: 
+Turn ID=6| B | B : ja even kijken waar die
+	Free: Pattern=even
+	Constrained: 
+Turn ID=7| B | B : 5
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : het zitten snel
+	Free: Pattern=het
+	Constrained: 
+Turn ID=9| B | B : ja ja dit zijn dan weer euh ja mijn Pinocchio zeggen maar
+	Free: Pattern=dit zijn, Pattern=euh, Pattern=Pinocchio
+	Constrained: Pattern=zijn
+Turn ID=10| B | B : met het euh spits neusje
+	Free: Pattern=met het euh
+	Constrained: Pattern=met het, Pattern=euh, Pattern=het
+Turn ID=11| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : ik zijn hem heel even kwijt
+	Free: Pattern=even, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=13| B | B : ja je moeten echt zoeken soms
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : Oh dat zijn met het euh hoed erbovenop
+	Free: Pattern=met het euh, Pattern=zijn, Pattern=hoed
+	Constrained: Pattern=met het, Pattern=euh, Pattern=het
+Turn ID=15| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : dit zijn Pinocchio met het hoed
+	Free: Pattern=dit zijn Pinocchio, Pattern=met het, Pattern=hoed
+	Constrained: Pattern=dit zijn, Pattern=Pinocchio, Pattern=het, Pattern=zijn
+Turn ID=18| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : en dit zijn Pinocchio
+	Free: Pattern=dit zijn Pinocchio
+	Constrained: Pattern=dit zijn, Pattern=Pinocchio, Pattern=zijn
+Turn ID=20| A | A : Yes ik zijn naar hem op zoek
+	Free: Pattern=ik, Pattern=op, Pattern=zijn
+	Constrained: 
+Turn ID=21| A | A : ah dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=22| A | A : ah dit zijn Pinocchio
+	Free: Pattern=dit zijn Pinocchio
+	Constrained: Pattern=dit zijn, Pattern=Pinocchio, Pattern=zijn
+Turn ID=23| B | B : Euh
+	Free: 
+	Constrained: 

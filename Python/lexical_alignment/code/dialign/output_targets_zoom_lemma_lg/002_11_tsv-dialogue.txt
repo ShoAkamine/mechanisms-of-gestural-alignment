@@ -1,0 +1,75 @@
+A|0| A: _Oh_ ik _zijn_ 
+A|1| A: ehm _deze_ hebben een ei aan de schuin rechts zeggen maar 
+A|2| A: _en_ dan boven hebben _die_ twee uitstekend dinget _en_ links hebben _die_ ook een uitstekend dinget 
+A|3| A: maar er _zijn_ echt maar een paar _met_ een ei 
+A|4| A: maar het _zijn gewoon_ 
+B|5| B: _Oh ja_ _ja_ oké 
+B|6| B: _en één zijn één_ of ander _fancy lepel en_ [die] ander [zijn gewoon] 
+A|7| A: [ja] [één zijn één] [fancy lepel [en] één zijn één] basic [lepel] 
+B|8| B: [ja] [ja] oké 
+B|9| B: even kijken [deze] _dit zijn_ diegene _met die fancy lepel en_ [die] [gewoon] [lepel] 
+A|10| A: [Oh ja] 
+A|11| A: ik ik [ja] 
+A|12| A: _dit zijn weer [met die fancy lepel_ en] dat ei 
+B|13| B: [dit zijn weer met die fancy lepel] 
+B|14| B: [en] [die] ander 
+A|15| A: _dit zijn met die fancy lepel_ 
+B|16| B: Eh 
+B|17| B: [dit zijn met die fancy lepel] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh ik zijn
+	Free: Pattern=Oh, Pattern=zijn
+	Constrained: 
+Turn ID=1| A | A : ehm deze hebben een ei aan de schuin rechts zeggen maar
+	Free: Pattern=deze
+	Constrained: 
+Turn ID=2| A | A : en dan boven hebben die twee uitstekend dinget en links hebben die ook een uitstekend dinget
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : maar er zijn echt maar een paar met een ei
+	Free: Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : maar het zijn gewoon
+	Free: Pattern=zijn gewoon
+	Constrained: Pattern=gewoon, Pattern=zijn
+Turn ID=5| B | B : Oh ja ja oké
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=6| B | B : en één zijn één of ander fancy lepel en die ander zijn gewoon
+	Free: Pattern=en één zijn één, Pattern=fancy lepel en, Pattern=zijn gewoon, Pattern=die
+	Constrained: Pattern=lepel, Pattern=gewoon, Pattern=en, Pattern=één zijn één, Pattern=zijn
+Turn ID=7| A | A : ja één zijn één fancy lepel en één zijn één basic lepel
+	Free: Pattern=lepel, Pattern=ja, Pattern=fancy lepel en, Pattern=en één zijn één, Pattern=één zijn één
+	Constrained: Pattern=lepel, Pattern=zijn, Pattern=één zijn één, Pattern=en
+Turn ID=8| B | B : ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : even kijken deze dit zijn diegene met die fancy lepel en die gewoon lepel
+	Free: Pattern=lepel, Pattern=die, Pattern=deze, Pattern=dit zijn, Pattern=met die fancy lepel en, Pattern=gewoon
+	Constrained: Pattern=lepel, Pattern=fancy lepel en, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn
+Turn ID=10| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=11| A | A : ik ik ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : dit zijn weer met die fancy lepel en dat ei
+	Free: Pattern=dit zijn weer met die fancy lepel, Pattern=met die fancy lepel en
+	Constrained: Pattern=lepel, Pattern=fancy lepel en, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=dit zijn
+Turn ID=13| B | B : dit zijn weer met die fancy lepel
+	Free: Pattern=dit zijn weer met die fancy lepel
+	Constrained: Pattern=lepel, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=14| B | B : en die ander
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=15| A | A : dit zijn met die fancy lepel
+	Free: Pattern=dit zijn met die fancy lepel
+	Constrained: Pattern=lepel, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=16| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : dit zijn met die fancy lepel
+	Free: Pattern=dit zijn met die fancy lepel
+	Constrained: Pattern=lepel, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn

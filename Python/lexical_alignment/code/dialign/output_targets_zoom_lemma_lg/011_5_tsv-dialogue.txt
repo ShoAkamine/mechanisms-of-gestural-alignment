@@ -1,0 +1,255 @@
+A|0| A: _ik_ vinden deze _op_ _een_ baby _pinguin_ lijken 
+A|1| A: hij _hebben_ twee van _die_ ding _aan de zijkant_ 
+A|2| A: _en dan_ _zo'n_ V _zo'n_ _soort_ van snavel 
+A|3| A: _en_ _zo'n_ _balk_ _op_ _zijn_ hoofd 
+B|4| B: _Oh_ [en] [zijn] _het_ _zo_ _dat_ _je_ [die] [een] vin _niet_ goed zien 
+A|5| A: _ja_ net [niet] 
+A|6| A: [die] _zitten_ achter _de_ snavel [die] [zo] _zitten_ _met_ [een] stok erin 
+B|7| B: [ja] 
+B|8| B: [ja] 
+B|9| B: [ja] nee oké [dan] weten [ik] _het_ 
+B|10| B: ehm dit [hebben] [een] liggen 
+B|11| B: _rechthoekig blok_ _bovenop_ [zitten] 
+B|12| B: _Liggen_ 
+B|13| B: Snap _je_ wat [ik] bedoelen 
+A|14| A: [Liggen] 
+B|15| B: _het_ [zijn] gewoon [een] recht _rechthoekig blok_ wat erop liggen 
+B|16| B: [en dan] [hebben] _je_ [aan de zijkant] [aan de] link [hebben] _je_ ook [een] [soort] 
+B|17| B: [ja] _iets_ waar water uit zullen kunnen komen of [zo] 
+A|18| A: _Wacht_ 
+A|19| A: [een] [rechthoekig blok] 
+A|20| A: _even_ 
+A|21| A: [ik] [zijn] _echt_ [aan] [het] zoeken want _mijn plaat zijn_ _versprong_ 
+B|22| B: _Oh_ 
+A|23| A: _Wacht_ welk 
+A|24| A: wil [je] _hem_ _nog_ 
+B|25| B: [ja] [het] [zijn] [het] [zijn] gewoon [echt] [een] [een] [zo'n] [blok] _zeggen_ _maar_ [zo] 
+B|26| B: [zo] liggen [het] gewoon 
+B|27| B: [op] [de] v-bovenkant 
+B|28| B: [en dan] [hebben] [je] links [hebben] [je] [een] [soort] _iets_ waar water uit kunnen komen 
+B|29| B: [en] rechts [hebben] [je] ook [nog] _iets_ 
+B|30| B: _maar_ [ik] zien [het] [niet] [zo] goed door [de] schaduw 
+A|31| A: [Oh] 
+A|32| A: hm 
+B|33| B: [het] [zijn] _zeggen_ _maar_ [een] paal [die] liggen 
+A|34| A: [bovenop] 
+B|35| B: [ja] 
+B|36| B: _dat_ weten [ik] [niet] veel 
+A|37| A: _zijn dat_ [die] eend [die] [ik] toen [zeggen] 
+A|38| A: _met_ [die] zijvleugel [en] [een] deel 
+B|39| B: nee [die] [pinguin] 
+B|40| B: [het] [zijn] [niet] [die] [pinguin] 
+A|41| A: [maar] er [zitten] [een] _balk bovenop_ 
+B|42| B: [Oh] wachten 
+B|43| B: [zijn] [het] wel [die] [pinguin] 
+B|44| B: [Wacht] [mijn plaat zijn] ook [versprong] 
+A|45| A: er [zitten] [een] 
+A|46| A: er [zitten] [een] _balk_ boven [op] [aan de zijkant] [iets] [zo'n] V _met_ [een] ding er in 
+B|47| B: [ja] 
+B|48| B: _ja _ja ja_ ja_ [dan] [zijn dat] [hem] 
+B|49| B: [ja] [dat] [zijn] _de pinguin_ 
+A|50| A: o-oke 
+B|51| B: [Oh] [dan] [zijn] we dus nu bij [de] nieuw ronde 
+A|52| A: [ja] okee 
+A|53| A: _ik hebben_ [het] [de] [de pinguin] 
+A|54| A: _met de balk_ [op] [zijn] hoofd 
+B|55| B: _Oh ja_ [even] kijken 
+B|56| B: [dat] [zijn] 
+B|57| B: _ik hebben de_ pinguïn 
+B|58| B: _met de balk bovenop_ 
+A|59| A: [Oh [ja] ja ja] 
+A|60| A: _ik hebben de pinguin_ [met de balk bovenop] 
+B|61| B: [Oh ja] 
+B|62| B: [ik hebben de pinguin] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik vinden deze op een baby pinguin lijken
+	Free: Pattern=pinguin, Pattern=op, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=1| A | A : hij hebben twee van die ding aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=die, Pattern=hebben
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=2| A | A : en dan zo'n V zo'n soort van snavel
+	Free: Pattern=en dan, Pattern=zo'n, Pattern=soort
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=3| A | A : en zo'n balk op zijn hoofd
+	Free: Pattern=zo'n, Pattern=op, Pattern=balk, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : Oh en zijn het zo dat je die een vin niet goed zien
+	Free: Pattern=dat, Pattern=niet, Pattern=een, Pattern=het, Pattern=zo, Pattern=die, Pattern=en, Pattern=Oh, Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=5| A | A : ja net niet
+	Free: Pattern=niet, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : die zitten achter de snavel die zo zitten met een stok erin
+	Free: Pattern=de, Pattern=een, Pattern=zo, Pattern=met, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja nee oké dan weten ik het
+	Free: Pattern=dan, Pattern=ja, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=10| B | B : ehm dit hebben een liggen
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=11| B | B : rechthoekig blok bovenop zitten
+	Free: Pattern=rechthoekig blok, Pattern=zitten, Pattern=bovenop
+	Constrained: Pattern=blok
+Turn ID=12| B | B : Liggen
+	Free: Pattern=Liggen
+	Constrained: 
+Turn ID=13| B | B : Snap je wat ik bedoelen
+	Free: Pattern=je, Pattern=ik
+	Constrained: 
+Turn ID=14| A | A : Liggen
+	Free: Pattern=Liggen
+	Constrained: 
+Turn ID=15| B | B : het zijn gewoon een recht rechthoekig blok wat erop liggen
+	Free: Pattern=rechthoekig blok, Pattern=zijn, Pattern=het, Pattern=een
+	Constrained: Pattern=blok
+Turn ID=16| B | B : en dan hebben je aan de zijkant aan de link hebben je ook een soort
+	Free: Pattern=soort, Pattern=en dan, Pattern=aan de, Pattern=hebben, Pattern=je, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=17| B | B : ja iets waar water uit zullen kunnen komen of zo
+	Free: Pattern=iets, Pattern=ja, Pattern=zo
+	Constrained: 
+Turn ID=18| A | A : Wacht
+	Free: Pattern=Wacht
+	Constrained: 
+Turn ID=19| A | A : een rechthoekig blok
+	Free: Pattern=rechthoekig blok, Pattern=een
+	Constrained: Pattern=blok
+Turn ID=20| A | A : even
+	Free: Pattern=even
+	Constrained: 
+Turn ID=21| A | A : ik zijn echt aan het zoeken want mijn plaat zijn versprong
+	Free: Pattern=aan, Pattern=het, Pattern=ik, Pattern=zijn, Pattern=mijn plaat zijn, Pattern=versprong, Pattern=echt
+	Constrained: Pattern=zijn
+Turn ID=22| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=23| A | A : Wacht welk
+	Free: Pattern=Wacht
+	Constrained: 
+Turn ID=24| A | A : wil je hem nog
+	Free: Pattern=je, Pattern=nog, Pattern=hem
+	Constrained: 
+Turn ID=25| B | B : ja het zijn het zijn gewoon echt een een zo'n blok zeggen maar zo
+	Free: Pattern=zo'n, Pattern=ja, Pattern=een, Pattern=het, Pattern=echt, Pattern=blok, Pattern=zeggen, Pattern=zo, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=26| B | B : zo liggen het gewoon
+	Free: Pattern=het, Pattern=zo
+	Constrained: 
+Turn ID=27| B | B : op de v-bovenkant
+	Free: Pattern=op, Pattern=de
+	Constrained: 
+Turn ID=28| B | B : en dan hebben je links hebben je een soort iets waar water uit kunnen komen
+	Free: Pattern=soort, Pattern=iets, Pattern=en dan, Pattern=een, Pattern=hebben, Pattern=je
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=29| B | B : en rechts hebben je ook nog iets
+	Free: Pattern=nog, Pattern=iets, Pattern=hebben, Pattern=en, Pattern=je
+	Constrained: 
+Turn ID=30| B | B : maar ik zien het niet zo goed door de schaduw
+	Free: Pattern=de, Pattern=niet, Pattern=het, Pattern=zo, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=31| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=32| A | A : hm
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : het zijn zeggen maar een paal die liggen
+	Free: Pattern=een, Pattern=het, Pattern=zeggen, Pattern=die, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=34| A | A : bovenop
+	Free: Pattern=bovenop
+	Constrained: 
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : dat weten ik niet veel
+	Free: Pattern=niet, Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=37| A | A : zijn dat die eend die ik toen zeggen
+	Free: Pattern=zijn dat, Pattern=die, Pattern=zeggen, Pattern=ik
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=38| A | A : met die zijvleugel en een deel
+	Free: Pattern=met, Pattern=die, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=39| B | B : nee die pinguin
+	Free: Pattern=pinguin, Pattern=die
+	Constrained: 
+Turn ID=40| B | B : het zijn niet die pinguin
+	Free: Pattern=niet, Pattern=pinguin, Pattern=het, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=41| A | A : maar er zitten een balk bovenop
+	Free: Pattern=balk bovenop, Pattern=maar, Pattern=zitten, Pattern=een
+	Constrained: Pattern=bovenop, Pattern=balk
+Turn ID=42| B | B : Oh wachten
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=43| B | B : zijn het wel die pinguin
+	Free: Pattern=pinguin, Pattern=zijn, Pattern=die, Pattern=het
+	Constrained: 
+Turn ID=44| B | B : Wacht mijn plaat zijn ook versprong
+	Free: Pattern=mijn plaat zijn, Pattern=Wacht, Pattern=versprong
+	Constrained: Pattern=zijn
+Turn ID=45| A | A : er zitten een
+	Free: Pattern=zitten, Pattern=een
+	Constrained: 
+Turn ID=46| A | A : er zitten een balk boven op aan de zijkant iets zo'n V met een ding er in
+	Free: Pattern=zo'n, Pattern=iets, Pattern=op, Pattern=balk, Pattern=met, Pattern=zitten, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : ja ja ja ja dan zijn dat hem
+	Free: Pattern=ja ja ja, Pattern=zijn dat, Pattern=dan, Pattern=hem
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=49| B | B : ja dat zijn de pinguin
+	Free: Pattern=de pinguin, Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: Pattern=pinguin, Pattern=de
+Turn ID=50| A | A : o-oke
+	Free: 
+	Constrained: 
+Turn ID=51| B | B : Oh dan zijn we dus nu bij de nieuw ronde
+	Free: Pattern=dan, Pattern=zijn, Pattern=de, Pattern=Oh
+	Constrained: 
+Turn ID=52| A | A : ja okee
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : ik hebben het de de pinguin
+	Free: Pattern=ik hebben, Pattern=de pinguin, Pattern=het, Pattern=de
+	Constrained: Pattern=pinguin, Pattern=hebben, Pattern=de, Pattern=ik
+Turn ID=54| A | A : met de balk op zijn hoofd
+	Free: Pattern=met de balk, Pattern=zijn, Pattern=op
+	Constrained: Pattern=met, Pattern=de, Pattern=balk
+Turn ID=55| B | B : Oh ja even kijken
+	Free: Pattern=Oh ja, Pattern=even
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=56| B | B : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=57| B | B : ik hebben de pinguïn
+	Free: Pattern=ik hebben de
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=58| B | B : met de balk bovenop
+	Free: Pattern=met de balk bovenop
+	Constrained: Pattern=bovenop, Pattern=de, Pattern=met de balk, Pattern=balk bovenop, Pattern=balk, Pattern=met
+Turn ID=59| A | A : Oh ja ja ja
+	Free: Pattern=ja ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=60| A | A : ik hebben de pinguin met de balk bovenop
+	Free: Pattern=ik hebben de pinguin, Pattern=met de balk bovenop
+	Constrained: Pattern=bovenop, Pattern=de, Pattern=met de balk, Pattern=ik hebben de, Pattern=pinguin, Pattern=hebben, Pattern=balk bovenop, Pattern=balk, Pattern=met, Pattern=ik, Pattern=ik hebben, Pattern=de pinguin
+Turn ID=61| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=62| B | B : ik hebben de pinguin
+	Free: Pattern=ik hebben de pinguin
+	Constrained: Pattern=de, Pattern=ik hebben de, Pattern=pinguin, Pattern=hebben, Pattern=ik, Pattern=ik hebben, Pattern=de pinguin

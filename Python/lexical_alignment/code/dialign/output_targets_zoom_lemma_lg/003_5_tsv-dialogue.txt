@@ -1,0 +1,195 @@
+A|0| A: _ehm_ _ik hebben_ één waarvan _ik vinden_ _dat_ _die_ _een_ langwerpig rechthoekig _hanekam_ _hebben_ 
+A|1| A: _hij_ _hebben_ _een_ langwerpig rechthoek _op_ _zijn_ hoofd 
+A|2| A: en _hij_ _het lijken_ alsof _hij_ _een_ soort stok _op_ _zijn_ _neus balanceren_ 
+B|3| B: [ehm] [hebben] [hij] 
+B|4| B: even kijken 
+B|5| B: Hebben [hij] twee uitsteeksel _aan de_ rechterkant 
+A|6| A: nee 
+B|7| B: eh _Oh_ [die] 
+A|8| A: volgens mij 
+B|9| B: [die] bedoelen _jij_ 
+A|10| A: _ja_ _met_ [die] _een_ _het_ gek Vleugelarmpje [aan de] linkerkant 
+B|11| B: [ja] 
+B|12| B: [ja] 
+A|13| A: en dus [de] langwerpig _hanekam_ 
+B|14| B: _Oh_ zo [ja] oké 
+A|15| A: Vond _ik_ hem [hebben] 
+B|16| B: van voor naar achter zeggen _maar_ 
+B|17| B: [ehm] [ja] oké 
+A|18| A: [ja] 
+A|19| A: en _dat_ gek stok _op_ _zijn_ _neus_ _dat_ dun 
+B|20| B: [ja] 
+A|21| A: [ja] 
+B|22| B: [ja] snap [ik] 
+B|23| B: _ja [ik_ vinden] [het lijken] [op] [een] _spaceship_ 
+B|24| B: [een] beetje zo'n groot ding 
+B|25| B: _raket_ _maar_ [ik] snapen [dat] je [het] anders [vinden] 
+A|26| A: [Oh] [ja] nee inderdaad [ik] zien [de] [raket] ook erin 
+B|27| B: Oké 
+B|28| B: eh [ik hebben] [de] _spaceship_ 
+B|29| B: of _jij _noemen_ het_ anders k 
+A|30| A: [ja] 
+A|31| A: [ja ik] [noemen het] 
+B|32| B: [een] staaf [op] [de] [neus balanceren] 
+A|33| A: [ja] _precies_ e [de] rechthoekig hanenkam 
+B|34| B: [ja] 
+B|35| B: [precies] 
+A|36| A: _dat zijn_ 
+A|37| A: [ik hebben] rechthoekig hanenkam [maar] [jij noemen] hem Spaceship 
+B|38| B: ah 
+B|39| B: [die] [zijn] kwijt even kijken 
+B|40| B: ah [dat zijn] 
+B|41| B: [ik hebben] [de] _spaceship_ 
+B|42| B: [met] [hanekam] 
+A|43| A: Yes [dat zijn] 
+A|44| A: [ik hebben] [het] [spaceship] [met] [de] hanenkam 
+B|45| B: [dat zijn] 
+B|46| B: [ik hebben] [de] [spaceship] 
+A|47| A: [dat zijn] toe Toetoe Toetoe 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm ik hebben één waarvan ik vinden dat die een langwerpig rechthoekig hanekam hebben
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=ik vinden, Pattern=een, Pattern=hebben, Pattern=ehm, Pattern=die, Pattern=hanekam
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=vinden
+Turn ID=1| A | A : hij hebben een langwerpig rechthoek op zijn hoofd
+	Free: Pattern=op, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : en hij het lijken alsof hij een soort stok op zijn neus balanceren
+	Free: Pattern=het lijken, Pattern=op, Pattern=neus balanceren, Pattern=een, Pattern=hij, Pattern=zijn
+	Constrained: Pattern=het, Pattern=neus
+Turn ID=3| B | B : ehm hebben hij
+	Free: Pattern=hij, Pattern=hebben, Pattern=ehm
+	Constrained: 
+Turn ID=4| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Hebben hij twee uitsteeksel aan de rechterkant
+	Free: Pattern=aan de, Pattern=hij
+	Constrained: Pattern=de
+Turn ID=6| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : eh Oh die
+	Free: Pattern=die, Pattern=Oh
+	Constrained: 
+Turn ID=8| A | A : volgens mij
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : die bedoelen jij
+	Free: Pattern=die, Pattern=jij
+	Constrained: 
+Turn ID=10| A | A : ja met die een het gek Vleugelarmpje aan de linkerkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=een, Pattern=het, Pattern=met, Pattern=die
+	Constrained: Pattern=de
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en dus de langwerpig hanekam
+	Free: Pattern=de, Pattern=hanekam
+	Constrained: 
+Turn ID=14| B | B : Oh zo ja oké
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=15| A | A : Vond ik hem hebben
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=16| B | B : van voor naar achter zeggen maar
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=17| B | B : ehm ja oké
+	Free: Pattern=ja, Pattern=ehm
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : en dat gek stok op zijn neus dat dun
+	Free: Pattern=neus, Pattern=dat, Pattern=zijn, Pattern=op
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja snap ik
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja ik vinden het lijken op een spaceship
+	Free: Pattern=op, Pattern=een, Pattern=spaceship, Pattern=ja ik, Pattern=het lijken, Pattern=ik vinden
+	Constrained: Pattern=het, Pattern=ja, Pattern=ik, Pattern=vinden
+Turn ID=24| B | B : een beetje zo'n groot ding
+	Free: Pattern=een
+	Constrained: 
+Turn ID=25| B | B : raket maar ik snapen dat je het anders vinden
+	Free: Pattern=dat, Pattern=vinden, Pattern=raket, Pattern=het, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=26| A | A : Oh ja nee inderdaad ik zien de raket ook erin
+	Free: Pattern=raket, Pattern=ik, Pattern=Oh, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : eh ik hebben de spaceship
+	Free: Pattern=ik hebben, Pattern=de, Pattern=spaceship
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=29| B | B : of jij noemen het anders k
+	Free: Pattern=jij noemen, Pattern=noemen het
+	Constrained: Pattern=het, Pattern=jij
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja ik noemen het
+	Free: Pattern=ja ik, Pattern=noemen het
+	Constrained: Pattern=het, Pattern=ik, Pattern=ja
+Turn ID=32| B | B : een staaf op de neus balanceren
+	Free: Pattern=neus balanceren, Pattern=de, Pattern=een, Pattern=op
+	Constrained: Pattern=neus
+Turn ID=33| A | A : ja precies e de rechthoekig hanenkam
+	Free: Pattern=ja, Pattern=de, Pattern=precies
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : precies
+	Free: Pattern=precies
+	Constrained: 
+Turn ID=36| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=37| A | A : ik hebben rechthoekig hanenkam maar jij noemen hem Spaceship
+	Free: Pattern=jij noemen, Pattern=ik hebben, Pattern=maar
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=jij
+Turn ID=38| B | B : ah
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : die zijn kwijt even kijken
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=40| B | B : ah dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=41| B | B : ik hebben de spaceship
+	Free: Pattern=ik hebben, Pattern=de, Pattern=spaceship
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=42| B | B : met hanekam
+	Free: Pattern=met, Pattern=hanekam
+	Constrained: 
+Turn ID=43| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=44| A | A : ik hebben het spaceship met de hanenkam
+	Free: Pattern=ik hebben, Pattern=de, Pattern=het, Pattern=spaceship, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=45| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=46| B | B : ik hebben de spaceship
+	Free: Pattern=ik hebben, Pattern=de, Pattern=spaceship
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=47| A | A : dat zijn toe Toetoe Toetoe
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

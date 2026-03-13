@@ -1,0 +1,115 @@
+B|0| B: Euhm _oké_ _euh_ hoe gaan ik _dit_ doen 
+B|1| B: ehm _ja_ je kunnen _het_ _een_ beetje zien _euh_ als _een_ gezicht maar dan _met_ _de_ _neus_ _aan de linkerkant_ 
+B|2| B: nou eigenlijk _zijn_ _het_ enig wat je zien _een_ _neus_ 
+B|3| B: maar er _zitten_ _zo'n_ _lang_ cilinder dus _aan de linkerkant_ van _dat_ zeggen maar hoofd 
+A|4| A: [ja] [ja] [ja] 
+B|5| B: _en_ _een_ _euh_ _soort_ rond _aan de achterkant_ _die_ je niet helemaal zien 
+A|6| A: [ja] [ja] [ja] 
+A|7| A: [en] [zo'n] [soort] blobje nog 
+B|8| B: Soeplepel 
+A|9| A: [ja] precies precies _ja oké_ [oké] [oké] 
+B|10| B: [ja oké] 
+A|11| A: oh _dit zijn_ [de] 
+A|12| A: [aan de linkerkant] [zitten] [die] [lang] [neus] 
+A|13| A: [die] [en] _met _die_ soeplepel en_ [zo'n] _schijf aan de achterkant_ 
+B|14| B: Eh 
+B|15| B: ehm [dit zijn] [met] laten we zeggen één _oor aan de linkerkant_ [en] _die soeplepel en dat_ rond [schijf] daarachter 
+A|16| A: Oh [ja] 
+A|17| A: [euh] 
+A|18| A: [euh] [dit zijn] _weer_ _met die_ [een] langwerpig [oor aan de linkerkant] [die soeplepel en dat] [schijf] 
+B|19| B: ehm even zoeken 
+B|20| B: Ehm 
+B|21| B: [ja] 
+B|22| B: Oké [dit zijn] [euh] [weer] [die soeplepel] [met die] [schijf aan de achterkant] [en] [een] linker [oké] 
+A|23| A: [ja] 
+A|24| A: _Euh_ 
+A|25| A: [dit zijn] [de] [soeplepel] [het] [schijf] [en] [de] linkeroor 
+B|26| B: mhm 
+B|27| B: [Euh] even zoeken 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm oké euh hoe gaan ik dit doen
+	Free: Pattern=dit, Pattern=oké, Pattern=euh
+	Constrained: 
+Turn ID=1| B | B : ehm ja je kunnen het een beetje zien euh als een gezicht maar dan met de neus aan de linkerkant
+	Free: Pattern=een, Pattern=het, Pattern=euh, Pattern=neus, Pattern=met, Pattern=aan de linkerkant, Pattern=de, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=2| B | B : nou eigenlijk zijn het enig wat je zien een neus
+	Free: Pattern=zijn, Pattern=het, Pattern=een, Pattern=neus
+	Constrained: 
+Turn ID=3| B | B : maar er zitten zo'n lang cilinder dus aan de linkerkant van dat zeggen maar hoofd
+	Free: Pattern=dat, Pattern=zo'n, Pattern=zitten, Pattern=lang, Pattern=aan de linkerkant
+	Constrained: Pattern=de
+Turn ID=4| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : en een euh soort rond aan de achterkant die je niet helemaal zien
+	Free: Pattern=aan de achterkant, Pattern=soort, Pattern=een, Pattern=euh, Pattern=die, Pattern=en
+	Constrained: Pattern=de
+Turn ID=6| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en zo'n soort blobje nog
+	Free: Pattern=soort, Pattern=zo'n, Pattern=en
+	Constrained: 
+Turn ID=8| B | B : Soeplepel
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : ja precies precies ja oké oké oké
+	Free: Pattern=ja oké, Pattern=ja, Pattern=oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=10| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=11| A | A : oh dit zijn de
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=12| A | A : aan de linkerkant zitten die lang neus
+	Free: Pattern=neus, Pattern=lang, Pattern=aan de linkerkant, Pattern=die, Pattern=zitten
+	Constrained: Pattern=de
+Turn ID=13| A | A : die en met die soeplepel en zo'n schijf aan de achterkant
+	Free: Pattern=met die, Pattern=zo'n, Pattern=die, Pattern=en, Pattern=die soeplepel en, Pattern=schijf aan de achterkant
+	Constrained: Pattern=aan de achterkant, Pattern=de, Pattern=soeplepel, Pattern=met, Pattern=die, Pattern=en, Pattern=die soeplepel, Pattern=schijf
+Turn ID=14| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : ehm dit zijn met laten we zeggen één oor aan de linkerkant en die soeplepel en dat rond schijf daarachter
+	Free: Pattern=die soeplepel en dat, Pattern=schijf, Pattern=met, Pattern=en, Pattern=oor aan de linkerkant, Pattern=dit zijn
+	Constrained: Pattern=dat, Pattern=de, Pattern=die soeplepel, Pattern=dit, Pattern=soeplepel, Pattern=die, Pattern=en, Pattern=aan de linkerkant, Pattern=die soeplepel en, Pattern=zijn
+Turn ID=16| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : euh
+	Free: Pattern=euh
+	Constrained: 
+Turn ID=18| A | A : euh dit zijn weer met die een langwerpig oor aan de linkerkant die soeplepel en dat schijf
+	Free: Pattern=met die, Pattern=die soeplepel en dat, Pattern=een, Pattern=schijf, Pattern=euh, Pattern=oor aan de linkerkant, Pattern=weer, Pattern=dit zijn
+	Constrained: Pattern=dat, Pattern=de, Pattern=die soeplepel, Pattern=dit, Pattern=soeplepel, Pattern=met, Pattern=die, Pattern=en, Pattern=aan de linkerkant, Pattern=die soeplepel en, Pattern=zijn
+Turn ID=19| B | B : ehm even zoeken
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Oké dit zijn euh weer die soeplepel met die schijf aan de achterkant en een linker oké
+	Free: Pattern=oké, Pattern=met die, Pattern=een, Pattern=die soeplepel, Pattern=euh, Pattern=en, Pattern=weer, Pattern=schijf aan de achterkant, Pattern=dit zijn
+	Constrained: Pattern=aan de achterkant, Pattern=de, Pattern=schijf, Pattern=dit, Pattern=soeplepel, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=25| A | A : dit zijn de soeplepel het schijf en de linkeroor
+	Free: Pattern=de, Pattern=het, Pattern=schijf, Pattern=soeplepel, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=26| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : Euh even zoeken
+	Free: Pattern=Euh
+	Constrained: 

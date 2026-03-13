@@ -1,0 +1,131 @@
+B|0| B: _ja_ dit vinden _ik_ _ik_ vinden _het_ op _twee_ regendruppel lijken eigenlijk 
+B|1| B: _en de_ _een_ gaan recht naar v-boven _en de_ ander _die_ gaan naar _de zijkant_ 
+A|2| A: hm 
+B|3| B: dat zijn _die_ dat zijn _twee_ precies dezelfde _ding_ 
+A|4| A: _Oh_ _met_ [de] teel _met_ _een soort_ van telescoop eraan 
+B|5| B: _ja_ 
+A|6| A: rechts 
+A|7| A: dus je _hebben_ zeggen maar hier hier [en] achter _een soort_ van staart 
+B|8| B: _ja_ 
+B|9| B: _ja_ 
+B|10| B: _ja_ [een soort] _kraan_ of zo _ja_ _ik_ weten niet wat dat zijn 
+B|11| B: _ja_ 
+A|12| A: Oké 
+A|13| A: _ik hebben die_ _met_ heel veel uitsteeksel 
+A|14| A: Zeggen maar [een] _druppel_ _boven_ _druppel_ link telescoop [en] [een soort] van staart _aan de_ achterkant 
+B|15| B: _Oh ja_ [ik] zien hem _ja_ 
+B|16| B: _twee druppel_ 
+B|17| B: _ja_ 
+B|18| B: dat zijn 
+B|19| B: _ja_ [ik hebben] nu dat ander koffiekopje [met] [die] _twee druppel_ 
+B|20| B: eentje [boven] [en] één _aan de zijkant_ 
+A|21| A: [Oh ja] 
+A|22| A: [met] [de] telescoop 
+B|23| B: [ja] [en] dat _kraan_ 
+A|24| A: Oké 
+A|25| A: _ik hebben die_ [met] [de] telescoop [twee druppel] [en] kraantje 
+B|26| B: even kijken [twee druppel] 
+B|27| B: [Oh ja] dat zijn 
+B|28| B: [ik hebben die] [twee] regendruppel in _het_ koffiekopje 
+B|29| B: [boven] _en _de_ zijkant_ 
+A|30| A: ah [ja] telescoop 
+A|31| A: [ik hebben] [de] koffiekop [met] [de] [twee] [ding] [aan de zijkant] [en] [het] [kraan] [en de] telescoop 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ja dit vinden ik ik vinden het op twee regendruppel lijken eigenlijk
+	Free: Pattern=ik, Pattern=het, Pattern=ja, Pattern=twee
+	Constrained: 
+Turn ID=1| B | B : en de een gaan recht naar v-boven en de ander die gaan naar de zijkant
+	Free: Pattern=en de, Pattern=de zijkant, Pattern=die, Pattern=een
+	Constrained: Pattern=en, Pattern=de
+Turn ID=2| A | A : hm
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : dat zijn die dat zijn twee precies dezelfde ding
+	Free: Pattern=die, Pattern=twee, Pattern=ding
+	Constrained: 
+Turn ID=4| A | A : Oh met de teel met een soort van telescoop eraan
+	Free: Pattern=een soort, Pattern=de, Pattern=Oh, Pattern=met
+	Constrained: Pattern=een
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : rechts
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : dus je hebben zeggen maar hier hier en achter een soort van staart
+	Free: Pattern=een soort, Pattern=en, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja een soort kraan of zo ja ik weten niet wat dat zijn
+	Free: Pattern=een soort, Pattern=ik, Pattern=kraan, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ik hebben die met heel veel uitsteeksel
+	Free: Pattern=ik hebben die, Pattern=met
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=14| A | A : Zeggen maar een druppel boven druppel link telescoop en een soort van staart aan de achterkant
+	Free: Pattern=aan de, Pattern=boven, Pattern=een, Pattern=druppel, Pattern=een soort, Pattern=en
+	Constrained: Pattern=de, Pattern=een
+Turn ID=15| B | B : Oh ja ik zien hem ja
+	Free: Pattern=Oh ja, Pattern=ik, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=16| B | B : twee druppel
+	Free: Pattern=twee druppel
+	Constrained: Pattern=twee, Pattern=druppel
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : ja ik hebben nu dat ander koffiekopje met die twee druppel
+	Free: Pattern=ik hebben, Pattern=ja, Pattern=met, Pattern=die, Pattern=twee druppel
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=twee, Pattern=druppel
+Turn ID=20| B | B : eentje boven en één aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=en, Pattern=boven
+	Constrained: Pattern=de zijkant, Pattern=aan de, Pattern=de
+Turn ID=21| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=22| A | A : met de telescoop
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=23| B | B : ja en dat kraan
+	Free: Pattern=en, Pattern=kraan, Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : ik hebben die met de telescoop twee druppel en kraantje
+	Free: Pattern=de, Pattern=met, Pattern=twee druppel, Pattern=ik hebben die, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=druppel, Pattern=hebben, Pattern=die, Pattern=ik
+Turn ID=26| B | B : even kijken twee druppel
+	Free: Pattern=twee druppel
+	Constrained: Pattern=twee, Pattern=druppel
+Turn ID=27| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=28| B | B : ik hebben die twee regendruppel in het koffiekopje
+	Free: Pattern=ik hebben die, Pattern=het, Pattern=twee
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=29| B | B : boven en de zijkant
+	Free: Pattern=en de, Pattern=de zijkant, Pattern=boven
+	Constrained: Pattern=en, Pattern=de
+Turn ID=30| A | A : ah ja telescoop
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ik hebben de koffiekop met de twee ding aan de zijkant en het kraan en de telescoop
+	Free: Pattern=ik hebben, Pattern=twee, Pattern=de, Pattern=ding, Pattern=aan de zijkant, Pattern=en de, Pattern=het, Pattern=met, Pattern=en, Pattern=kraan
+	Constrained: Pattern=de, Pattern=aan de, Pattern=hebben, Pattern=de zijkant, Pattern=ik, Pattern=en

@@ -1,0 +1,143 @@
+A|0| A: Jezus 
+A|1| A: _Oh ja_ nou _zijn_ _ik_ weer 
+A|2| A: _deze hebben_ _aan de_ voorkant _een soort_ _van_ _vierkant_ schild 
+A|3| A: _en_ _twee_ blokkenarmp 
+B|4| B: [Oh ja] 
+A|5| A: _en_ _een soort_ _van_ antenne 
+B|6| B: _ja ik_ weten het 
+B|7| B: _dat zijn_ 
+B|8| B: ehm [deze hebben] _zo'n_ _vierkant ervoor_ 
+B|9| B: [en] _hij_ [hebben] [een soort] _paddenstoel op zijn hoofd_ 
+A|10| A: [een] [vierkant ervoor] 
+B|11| B: [ja] _zo'n_ echt _zo'n_ plaat 
+B|12| B: _eh_ vrij dunn _die_ 
+A|13| A: [Oh ja] [hij] staan heel ergens ander 
+B|14| B: [ja] 
+A|15| A: [en] _twee van die_ armp 
+B|16| B: [ja] [en] nog [twee van die] blokkenarmen [die] daar [aan de] linkerkant uitkomen 
+A|17| A: [ja] 
+A|18| A: [dat zijn] 
+A|19| A: [en] _dit zijn_ degeen _met_ [zijn] [paddenstoel op zijn hoofd] 
+A|20| A: [en] [zo'n] schild [aan de] voorkant 
+B|21| B: [Oh ja] 
+B|22| B: _eh_ even kijken hoor waar zitten [die] 
+B|23| B: [Oh] nummer 
+B|24| B: _eh dit zijn_ [die] [met] [die] [paddenstoel] 
+B|25| B: [en] [dat] vlak recht [ervoor] 
+B|26| B: [en] [de] [twee] blokkenarme [aan de] linkerkant 
+A|27| A: ah [ja] [ja ik] zien hem 
+A|28| A: Eh 
+A|29| A: [eh dit zijn] _de [paddenstoel_ op zijn hoofd] 
+B|30| B: [eh] nummer 
+B|31| B: [dit zijn] [die] [met] [de paddenstoel] 
+B|32| B: [en] [de] blokar 
+A|33| A: Paddenstoel 
+A|34| A: [ja ik] zien hem 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Jezus
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Oh ja nou zijn ik weer
+	Free: Pattern=Oh ja, Pattern=zijn, Pattern=ik
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=2| A | A : deze hebben aan de voorkant een soort van vierkant schild
+	Free: Pattern=aan de, Pattern=deze hebben, Pattern=een soort, Pattern=van, Pattern=vierkant
+	Constrained: Pattern=hebben, Pattern=de, Pattern=een
+Turn ID=3| A | A : en twee blokkenarmp
+	Free: Pattern=en, Pattern=twee
+	Constrained: 
+Turn ID=4| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=5| A | A : en een soort van antenne
+	Free: Pattern=een soort, Pattern=en, Pattern=van
+	Constrained: Pattern=een
+Turn ID=6| B | B : ja ik weten het
+	Free: Pattern=ja ik
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=7| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=8| B | B : ehm deze hebben zo'n vierkant ervoor
+	Free: Pattern=vierkant ervoor, Pattern=deze hebben, Pattern=zo'n
+	Constrained: Pattern=hebben, Pattern=ervoor, Pattern=vierkant
+Turn ID=9| B | B : en hij hebben een soort paddenstoel op zijn hoofd
+	Free: Pattern=hebben, Pattern=hij, Pattern=paddenstoel op zijn hoofd, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=paddenstoel, Pattern=zijn
+Turn ID=10| A | A : een vierkant ervoor
+	Free: Pattern=vierkant ervoor, Pattern=een
+	Constrained: Pattern=ervoor, Pattern=vierkant
+Turn ID=11| B | B : ja zo'n echt zo'n plaat
+	Free: Pattern=zo'n, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : eh vrij dunn die
+	Free: Pattern=die, Pattern=eh
+	Constrained: 
+Turn ID=13| A | A : Oh ja hij staan heel ergens ander
+	Free: Pattern=Oh ja, Pattern=hij
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : en twee van die armp
+	Free: Pattern=twee van die, Pattern=en
+	Constrained: Pattern=die, Pattern=van, Pattern=twee
+Turn ID=16| B | B : ja en nog twee van die blokkenarmen die daar aan de linkerkant uitkomen
+	Free: Pattern=twee van die, Pattern=ja, Pattern=aan de, Pattern=die, Pattern=en
+	Constrained: Pattern=twee, Pattern=de, Pattern=die, Pattern=van
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| A | A : en dit zijn degeen met zijn paddenstoel op zijn hoofd
+	Free: Pattern=met, Pattern=paddenstoel op zijn hoofd, Pattern=en, Pattern=zijn, Pattern=dit zijn
+	Constrained: Pattern=paddenstoel, Pattern=zijn
+Turn ID=20| A | A : en zo'n schild aan de voorkant
+	Free: Pattern=aan de, Pattern=zo'n, Pattern=en
+	Constrained: Pattern=de
+Turn ID=21| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=22| B | B : eh even kijken hoor waar zitten die
+	Free: Pattern=die, Pattern=eh
+	Constrained: 
+Turn ID=23| B | B : Oh nummer
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=24| B | B : eh dit zijn die met die paddenstoel
+	Free: Pattern=eh dit zijn, Pattern=die, Pattern=paddenstoel, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=eh
+Turn ID=25| B | B : en dat vlak recht ervoor
+	Free: Pattern=ervoor, Pattern=en, Pattern=dat
+	Constrained: 
+Turn ID=26| B | B : en de twee blokkenarme aan de linkerkant
+	Free: Pattern=aan de, Pattern=de, Pattern=en, Pattern=twee
+	Constrained: Pattern=de
+Turn ID=27| A | A : ah ja ja ik zien hem
+	Free: Pattern=ja ik, Pattern=ja
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=28| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : eh dit zijn de paddenstoel op zijn hoofd
+	Free: Pattern=paddenstoel op zijn hoofd, Pattern=eh dit zijn, Pattern=de paddenstoel
+	Constrained: Pattern=de, Pattern=paddenstoel, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=30| B | B : eh nummer
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=31| B | B : dit zijn die met de paddenstoel
+	Free: Pattern=de paddenstoel, Pattern=dit zijn, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn, Pattern=de, Pattern=paddenstoel
+Turn ID=32| B | B : en de blokar
+	Free: Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=33| A | A : Paddenstoel
+	Free: 
+	Constrained: 
+Turn ID=34| A | A : ja ik zien hem
+	Free: Pattern=ja ik
+	Constrained: Pattern=ik, Pattern=ja

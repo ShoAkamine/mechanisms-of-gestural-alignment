@@ -1,0 +1,111 @@
+B|0| B: oh deze vinden _ik_ beetje 
+B|1| B: ehm hebben _aan_ twee kant _de_ een kant een plat _rond_ 
+B|2| B: _en_ _aan de_ ander kant een uitsteeksel _met_ daarin een soort van _spijker_ 
+B|3| B: Vind _ik het_ 
+A|4| A: _Oh ja_ dan weten [ik] wel denken [ik] je bedoelen 
+A|5| A: _ja_ 
+A|6| A: _ja_ dan weten [ik het] al wel 
+B|7| B: [ja] 
+A|8| A: [ja] _die spijker_ _die_ steken omhoog toch 
+B|9| B: [ja] naar achteren 
+A|10| A: [ja] 
+A|11| A: eh _dit zijn_ _die_ _met die_ balk _met die spijker_ er doorheen 
+B|12| B: [Oh _ja] dat zijn_ 
+A|13| A: [en] zo'n [rond] [aan de] zijkant 
+B|14| B: [zijn] _dat_ 
+B|15| B: Ehn _dit zijn [met_ die spijker] 
+B|16| B: [en] [aan] beide kant uitsteeksel 
+A|17| A: _mhm_ 
+A|18| A: _Eh_ 
+A|19| A: eh [dit zijn] [die] [met] [spijker] 
+B|20| B: [mhm] 
+B|21| B: _dit zijn [met_ die spijker] erin 
+A|22| A: [mhm] 
+A|23| A: eh [ja dat zijn] 
+A|24| A: [dit zijn met] [spijker] 
+B|25| B: [mhm] 
+B|26| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oh deze vinden ik beetje
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : ehm hebben aan twee kant de een kant een plat rond
+	Free: Pattern=de, Pattern=aan, Pattern=rond
+	Constrained: 
+Turn ID=2| B | B : en aan de ander kant een uitsteeksel met daarin een soort van spijker
+	Free: Pattern=aan de, Pattern=en, Pattern=met, Pattern=spijker
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=3| B | B : Vind ik het
+	Free: Pattern=ik het
+	Constrained: Pattern=ik
+Turn ID=4| A | A : Oh ja dan weten ik wel denken ik je bedoelen
+	Free: Pattern=Oh ja, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja dan weten ik het al wel
+	Free: Pattern=ik het, Pattern=ja
+	Constrained: Pattern=ik
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja die spijker die steken omhoog toch
+	Free: Pattern=die spijker, Pattern=die, Pattern=ja
+	Constrained: Pattern=die, Pattern=spijker
+Turn ID=9| B | B : ja naar achteren
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : eh dit zijn die met die balk met die spijker er doorheen
+	Free: Pattern=met die spijker, Pattern=met die, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=met die, Pattern=die spijker, Pattern=met, Pattern=die, Pattern=zijn, Pattern=spijker
+Turn ID=12| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Oh ja
+	Constrained: Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=13| A | A : en zo'n rond aan de zijkant
+	Free: Pattern=aan de, Pattern=en, Pattern=rond
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=14| B | B : zijn dat
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=15| B | B : Ehn dit zijn met die spijker
+	Free: Pattern=dit zijn met, Pattern=met die spijker
+	Constrained: Pattern=met die, Pattern=die spijker, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=spijker
+Turn ID=16| B | B : en aan beide kant uitsteeksel
+	Free: Pattern=en, Pattern=aan
+	Constrained: 
+Turn ID=17| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=18| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=19| A | A : eh dit zijn die met spijker
+	Free: Pattern=dit zijn, Pattern=die, Pattern=met, Pattern=spijker
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=21| B | B : dit zijn met die spijker erin
+	Free: Pattern=dit zijn met, Pattern=met die spijker
+	Constrained: Pattern=met die, Pattern=die spijker, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=spijker
+Turn ID=22| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=23| A | A : eh ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=24| A | A : dit zijn met spijker
+	Free: Pattern=dit zijn met, Pattern=spijker
+	Constrained: Pattern=dit zijn, Pattern=met, Pattern=zijn
+Turn ID=25| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=26| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

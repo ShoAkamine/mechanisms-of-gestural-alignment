@@ -1,0 +1,83 @@
+B|0| B: _ik hebben_ _er_ hier _nu één_ waarbij _het_ hoofdstuk _aan de_ rechterkant van _een soort_ van ovaal cirkel _hebben_ 
+B|1| B: _het_ lijken _een_ beetje op _een_ neus 
+B|2| B: ehm _dan_ _hebben_ hij bovenop zijn hoofd _ook_ _een_ rechtopstaan _balk _en_ daar_ _aan de_ linkerkant _ook_ _een soort_ veerachtig ding alleen zijn deze _veer_ _wat_ _puntig_ _en_ _hebben_ hij _een bolle aan de_ onderkant 
+A|3| A: _ja ik weten het_ 
+A|4| A: _Eh_ 
+A|5| A: eh _ik _hebben nu_ één_ _met zo'n_ _veer die_ [er] link bovenuit komen _met_ [wat] puntiger [veer] 
+A|6| A: _Eh_ [en] [een bolle aan de] voorkant 
+A|7| A: [en daar] komen [er] boven _ook nog [een_ soort] [balk] uit 
+B|8| B: [ja ik weten het] maar 
+B|9| B: [Eh] [die] van mij [hebben nu één] [zo'n] echt heel _puntig veer_ bovenop [die] naar links uitsteekt 
+B|10| B: [en] langs [die] [veer] zitten [ook nog een] [balk] 
+B|11| B: [en] [ook] _hebben die_ [zo'n] [bolle aan de] rechtervoorzijde van [het] hoofd 
+A|12| A: [ja] 
+A|13| A: eh _ik hebben nu die_ [puntig veer] _met_ [ook] [die] [balk] [die] [er] bovenuit komen [en] [zo'n] rond [aan de] voorkant 
+B|14| B: [ja] 
+B|15| B: [ik hebben nu _die] [met_ zo'n] [bolle aan de] rechter voorzijde 
+B|16| B: _en dan_ [hebben] hij op [het] hoofd [één] [zo'n] _balk en_ [aan de] linkerkant [zo'n] [soort] van [veer die] [wat] [puntig] zijn 
+A|17| A: [ja] 
+A|18| A: eh [ik [hebben] [die] met] dat bollet [aan] rechts [en dan] [die] [balk en] [die] [puntig veer] [aan de] bovenkant 
+B|19| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben er hier nu één waarbij het hoofdstuk aan de rechterkant van een soort van ovaal cirkel hebben
+	Free: Pattern=ik hebben, Pattern=nu één, Pattern=aan de, Pattern=het, Pattern=hebben, Pattern=er, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=aan, Pattern=een, Pattern=hebben, Pattern=één
+Turn ID=1| B | B : het lijken een beetje op een neus
+	Free: Pattern=een, Pattern=het
+	Constrained: 
+Turn ID=2| B | B : ehm dan hebben hij bovenop zijn hoofd ook een rechtopstaan balk en daar aan de linkerkant ook een soort veerachtig ding alleen zijn deze veer wat puntig en hebben hij een bolle aan de onderkant
+	Free: Pattern=veer, Pattern=en daar, Pattern=dan, Pattern=puntig, Pattern=een, Pattern=hebben, Pattern=een bolle aan de, Pattern=wat, Pattern=een soort, Pattern=en, Pattern=balk en, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=soort, Pattern=aan, Pattern=aan de, Pattern=een, Pattern=balk, Pattern=en, Pattern=bolle aan de
+Turn ID=3| A | A : ja ik weten het
+	Free: Pattern=ja ik weten het
+	Constrained: Pattern=het, Pattern=ja
+Turn ID=4| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=5| A | A : eh ik hebben nu één met zo'n veer die er link bovenuit komen met wat puntiger veer
+	Free: Pattern=veer, Pattern=hebben nu één, Pattern=met, Pattern=ik hebben nu, Pattern=met zo'n, Pattern=veer die, Pattern=wat, Pattern=er
+	Constrained: Pattern=zo'n, Pattern=nu één, Pattern=hebben, Pattern=één, Pattern=met, Pattern=die, Pattern=ik hebben, Pattern=veer
+Turn ID=6| A | A : Eh en een bolle aan de voorkant
+	Free: Pattern=een bolle aan de, Pattern=Eh, Pattern=en
+	Constrained: Pattern=aan, Pattern=een, Pattern=bolle aan de, Pattern=aan de
+Turn ID=7| A | A : en daar komen er boven ook nog een soort balk uit
+	Free: Pattern=en daar, Pattern=balk, Pattern=er, Pattern=een soort, Pattern=ook nog een
+	Constrained: Pattern=een, Pattern=soort, Pattern=en, Pattern=ook
+Turn ID=8| B | B : ja ik weten het maar
+	Free: Pattern=ja ik weten het
+	Constrained: Pattern=het, Pattern=ja
+Turn ID=9| B | B : Eh die van mij hebben nu één zo'n echt heel puntig veer bovenop die naar links uitsteekt
+	Free: Pattern=zo'n, Pattern=Eh, Pattern=hebben nu één, Pattern=die, Pattern=puntig veer
+	Constrained: Pattern=veer, Pattern=nu één, Pattern=puntig, Pattern=hebben, Pattern=één
+Turn ID=10| B | B : en langs die veer zitten ook nog een balk
+	Free: Pattern=veer, Pattern=balk, Pattern=die, Pattern=en, Pattern=ook nog een
+	Constrained: Pattern=een, Pattern=ook
+Turn ID=11| B | B : en ook hebben die zo'n bolle aan de rechtervoorzijde van het hoofd
+	Free: Pattern=zo'n, Pattern=ook, Pattern=het, Pattern=en, Pattern=hebben die, Pattern=bolle aan de
+	Constrained: Pattern=aan, Pattern=die, Pattern=aan de, Pattern=hebben
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : eh ik hebben nu die puntig veer met ook die balk die er bovenuit komen en zo'n rond aan de voorkant
+	Free: Pattern=zo'n, Pattern=ik hebben nu die, Pattern=balk, Pattern=met, Pattern=die, Pattern=er, Pattern=en, Pattern=puntig veer, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=aan, Pattern=puntig, Pattern=hebben, Pattern=die, Pattern=ik hebben nu, Pattern=ik hebben, Pattern=veer
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ik hebben nu die met zo'n bolle aan de rechter voorzijde
+	Free: Pattern=ik hebben nu die, Pattern=bolle aan de, Pattern=die met, Pattern=met zo'n
+	Constrained: Pattern=ik hebben, Pattern=zo'n, Pattern=aan, Pattern=aan de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben nu
+Turn ID=16| B | B : en dan hebben hij op het hoofd één zo'n balk en aan de linkerkant zo'n soort van veer die wat puntig zijn
+	Free: Pattern=soort, Pattern=zo'n, Pattern=en dan, Pattern=aan de, Pattern=puntig, Pattern=het, Pattern=hebben, Pattern=één, Pattern=wat, Pattern=balk en, Pattern=veer die
+	Constrained: Pattern=veer, Pattern=aan, Pattern=dan, Pattern=balk, Pattern=die, Pattern=en
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : eh ik hebben die met dat bollet aan rechts en dan die balk en die puntig veer aan de bovenkant
+	Free: Pattern=ik hebben, Pattern=aan, Pattern=en dan, Pattern=aan de, Pattern=die met, Pattern=die, Pattern=hebben die, Pattern=puntig veer, Pattern=balk en
+	Constrained: Pattern=veer, Pattern=aan, Pattern=dan, Pattern=puntig, Pattern=hebben, Pattern=balk, Pattern=met, Pattern=die, Pattern=en
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

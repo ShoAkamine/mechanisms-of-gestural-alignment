@@ -1,0 +1,183 @@
+A|0| A: _Oh ja_ _ik hebben_ _een_ _kop_ _die_ lijken _een_ _beetje_ op _de_ vorig _die_ jij omschrijven 
+A|1| A: dus _er_ _zijn_ _een_ _soort_ van _kwast_ in _zeggen maar_ 
+B|2| B: Uh 
+A|3| A: _en_ _het_ _het_ _hebben_ _een_ _staart_ 
+A|4| A: misschien moeten _ik_ _het_ zo zien 
+A|5| A: _een_ _heel_ lang _ja_ gewoon _een_ _staart_ 
+A|6| A: _en_ aan _de_ achterkant _een_ _beetje_ _waar_ bij _een_ dier _ook_ _een_ _staart_ zullen _zitten_ op _die_ plek 
+A|7| A: _en twee armp_ 
+B|8| B: _eh_ [zijn] [de] [zijn] _de een arm_ [heel] raar 
+A|9| A: dus _zeggen_ 
+A|10| A: _ja_ 
+A|11| A: [de een _arm] zijn_ [een] _soort_ vierkant 
+B|12| B: [ja] met [soort] klein vierkantje nog [zeggen maar] [beetje] 
+A|13| A: [ja] 
+B|14| B: _ja _ja_ ja_ 
+A|15| A: _en_ _die ander_ [zijn] gewoon [een] [soort] van babyarm _of_ zo 
+B|16| B: [ja] [die ander] [arm zijn] dan hetzelfde als wat bovenop staan [of] niet 
+A|17| A: [ja] één [ja] wel [een] [beetje] [ja] 
+B|18| B: ok 
+B|19| B: Ehm [ik hebben] [het] [kop] met [de] [soort] verf kwastje midden erbovenop 
+B|20| B: [en] dan nog met drie uitsteeksel 
+B|21| B: E n [staart] [en twee armp] [zeggen maar] 
+A|22| A: [ja] [ik] zien [het] [ja] 
+A|23| A: [ik hebben] [een] [staart] 
+A|24| A: [en] [een] _verfkwast_ 
+A|25| A: [en] [een] gek [arm] [en] [een] normaal [arm] 
+B|26| B: [Oh ja] 
+B|27| B: [ja] 
+B|28| B: Eh 
+B|29| B: [ik hebben] [de] [kwast] erin [en] dan drie uitsteeksel 
+A|30| A: _even kijken_ [kwast] 
+B|31| B: met _de staart_ [zeggen maar] 
+A|32| A: [Oh ja] [de staart] 
+A|33| A: [eh] [ik] vinden ze allemaal zo op elkaar lijken 
+A|34| A: _even kijken waar_ [zijn] [die] nou 
+B|35| B: [ja] 
+A|36| A: [Oh [ja] ja] 
+A|37| A: [ik hebben] [een] [staart] 
+A|38| A: [en] [een] [kwast] 
+B|39| B: [Oh ja] [even kijken waar] [die] [zitten] 
+B|40| B: [ja] 
+B|41| B: [ik hebben] [de] [verfkwast] [er] bovenin 
+B|42| B: [en] dan [de] drie [de staart] [ook] nog 
+A|43| A: [Oh ja] [de staart] 
+A|44| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh ja ik hebben een kop die lijken een beetje op de vorig die jij omschrijven
+	Free: Pattern=ik hebben, Pattern=de, Pattern=beetje, Pattern=kop, Pattern=die, Pattern=een, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=hebben, Pattern=ik
+Turn ID=1| A | A : dus er zijn een soort van kwast in zeggen maar
+	Free: Pattern=soort, Pattern=een, Pattern=zeggen maar, Pattern=kwast, Pattern=er, Pattern=zijn
+	Constrained: Pattern=zeggen
+Turn ID=2| B | B : Uh
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en het het hebben een staart
+	Free: Pattern=een, Pattern=hebben, Pattern=en, Pattern=het, Pattern=staart
+	Constrained: 
+Turn ID=4| A | A : misschien moeten ik het zo zien
+	Free: Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=5| A | A : een heel lang ja gewoon een staart
+	Free: Pattern=staart, Pattern=ja, Pattern=heel, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : en aan de achterkant een beetje waar bij een dier ook een staart zullen zitten op die plek
+	Free: Pattern=de, Pattern=waar, Pattern=ook, Pattern=beetje, Pattern=een, Pattern=staart, Pattern=en, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=7| A | A : en twee armp
+	Free: Pattern=en twee armp
+	Constrained: Pattern=en
+Turn ID=8| B | B : eh zijn de zijn de een arm heel raar
+	Free: Pattern=heel, Pattern=de, Pattern=de een arm, Pattern=eh, Pattern=zijn
+	Constrained: Pattern=de, Pattern=arm, Pattern=een
+Turn ID=9| A | A : dus zeggen
+	Free: Pattern=zeggen
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : de een arm zijn een soort vierkant
+	Free: Pattern=de een arm, Pattern=arm zijn, Pattern=soort, Pattern=een
+	Constrained: Pattern=een, Pattern=de, Pattern=zijn, Pattern=arm
+Turn ID=12| B | B : ja met soort klein vierkantje nog zeggen maar beetje
+	Free: Pattern=zeggen maar, Pattern=soort, Pattern=beetje, Pattern=ja
+	Constrained: Pattern=zeggen
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=15| A | A : en die ander zijn gewoon een soort van babyarm of zo
+	Free: Pattern=of, Pattern=soort, Pattern=die ander, Pattern=een, Pattern=en, Pattern=zijn
+	Constrained: Pattern=die
+Turn ID=16| B | B : ja die ander arm zijn dan hetzelfde als wat bovenop staan of niet
+	Free: Pattern=arm zijn, Pattern=die ander, Pattern=ja, Pattern=of
+	Constrained: Pattern=zijn, Pattern=die, Pattern=arm
+Turn ID=17| A | A : ja één ja wel een beetje ja
+	Free: Pattern=beetje, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=18| B | B : ok
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Ehm ik hebben het kop met de soort verf kwastje midden erbovenop
+	Free: Pattern=ik hebben, Pattern=soort, Pattern=de, Pattern=het, Pattern=kop
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=20| B | B : en dan nog met drie uitsteeksel
+	Free: Pattern=en
+	Constrained: 
+Turn ID=21| B | B : E n staart en twee armp zeggen maar
+	Free: Pattern=en twee armp, Pattern=zeggen maar, Pattern=staart
+	Constrained: Pattern=zeggen, Pattern=en
+Turn ID=22| A | A : ja ik zien het ja
+	Free: Pattern=ja, Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=23| A | A : ik hebben een staart
+	Free: Pattern=ik hebben, Pattern=staart, Pattern=een
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=24| A | A : en een verfkwast
+	Free: Pattern=een, Pattern=en, Pattern=verfkwast
+	Constrained: 
+Turn ID=25| A | A : en een gek arm en een normaal arm
+	Free: Pattern=arm, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=26| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : ik hebben de kwast erin en dan drie uitsteeksel
+	Free: Pattern=ik hebben, Pattern=kwast, Pattern=de, Pattern=en
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=30| A | A : even kijken kwast
+	Free: Pattern=even kijken, Pattern=kwast
+	Constrained: 
+Turn ID=31| B | B : met de staart zeggen maar
+	Free: Pattern=zeggen maar, Pattern=de staart
+	Constrained: Pattern=staart, Pattern=zeggen, Pattern=de
+Turn ID=32| A | A : Oh ja de staart
+	Free: Pattern=de staart, Pattern=Oh ja
+	Constrained: Pattern=staart, Pattern=de, Pattern=ja
+Turn ID=33| A | A : eh ik vinden ze allemaal zo op elkaar lijken
+	Free: Pattern=ik, Pattern=eh
+	Constrained: 
+Turn ID=34| A | A : even kijken waar zijn die nou
+	Free: Pattern=even kijken waar, Pattern=zijn, Pattern=die
+	Constrained: Pattern=even kijken, Pattern=waar
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : Oh ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=37| A | A : ik hebben een staart
+	Free: Pattern=ik hebben, Pattern=staart, Pattern=een
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=38| A | A : en een kwast
+	Free: Pattern=kwast, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=39| B | B : Oh ja even kijken waar die zitten
+	Free: Pattern=even kijken waar, Pattern=Oh ja, Pattern=die, Pattern=zitten
+	Constrained: Pattern=even kijken, Pattern=waar, Pattern=ja
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : ik hebben de verfkwast er bovenin
+	Free: Pattern=ik hebben, Pattern=de, Pattern=er, Pattern=verfkwast
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=42| B | B : en dan de drie de staart ook nog
+	Free: Pattern=de staart, Pattern=ook, Pattern=de, Pattern=en
+	Constrained: Pattern=staart, Pattern=de
+Turn ID=43| A | A : Oh ja de staart
+	Free: Pattern=de staart, Pattern=Oh ja
+	Constrained: Pattern=staart, Pattern=de, Pattern=ja
+Turn ID=44| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja

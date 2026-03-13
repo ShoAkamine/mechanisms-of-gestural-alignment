@@ -1,0 +1,247 @@
+A|0| A: Hoor _je_ _mij_ 
+B|1| B: _ja_ _ik_ horen jou 
+A|2| A: _Oké top_ 
+A|3| A: _dus_ [ik] _gaan_ nu _het_ plaat omschrijven _die_ _ik voor_ me zien 
+B|4| B: _ja_ 
+A|5| A: _het_ _één_ wat opvallen _zijn_ eigenlijk _dat_ hij _aan de_ rechterkant als _je_ daarnaar _kijken_ _twee_ _uitsteeksel_ _hebben_ 
+A|6| A: _die_ _zijn_ _hetzelfde_ _ook_ 
+B|7| B: [Oké] 
+A|8| A: [ja] _die_ _hebben_ 
+A|9| A: [ja] 
+B|10| B: Hebben [die] _dan_ daar zegmaar [aan de] bovenkant [ook] _een_ soort _van_ bijna _een_ _piramide_ _maar_ niet helemaal afmaken 
+A|11| A: _ja ja_ 
+B|12| B: [Oké top] 
+B|13| B: _dan_ denken [ik] wel [dat] [ik] weten welk [het] [zijn] 
+A|14| A: [Oké] nou wat snel 
+B|15| B: [ja] toch 
+B|16| B: _want_ [ja] 
+B|17| B: [die] [twee] 
+A|18| A: [ja] 
+B|19| B: volgens [mij] [zijn] _er_ _maar_ [één] _met_ [twee] uitsteksel [die] [hetzelfde] [zijn] 
+A|20| A: [dat] kloppen inderdaad [ja] 
+B|21| B: [Oké] 
+B|22| B: Wacht even [kijken] 
+B|23| B: _Oh ja_ _dan_ moeten [ik] gewoon [het] nummer _zeggen_ _en_ _dan_ [de] knop drukken _oké_ 
+A|24| A: [ja] 
+B|25| B: [Oké] [dus] _dan_ [gaan] [ik voor] 
+A|26| A: [maar] [want] _dat zijn_ zo [ja] _met die_ lepel erin [ook] [zeggen] [maar] hè 
+B|27| B: _Oh_ 
+B|28| B: [ja] s-sorry [ik] [hebben] al kliken 
+A|29| A: _ja ja_ [oké] [ja] 
+B|30| B: [ja] [maar] [ja] goed 
+A|31| A: [ja] 
+B|32| B: [oké] deze [hebben] [dus] [aan de] rechterzijde [twee] dezelfde [uitsteeksel] 
+B|33| B: _van_ [die] dun _balk_ 
+A|34| A: hm 
+B|35| B: _een_ beetje lichtblauw 
+B|36| B: _en_ _bovenop_ zo'n driehoek [die] net niet afmaken [zijn] 
+A|37| A: [Oh ja] 
+A|38| A: [oké] _dat zijn_ 
+A|39| A: [dan] [hebben] [ik] [er] [een] 
+A|40| A: [met] _rechts_ _weer_ [twee] [van] diezelfde symmetrisch [balk] [zeggen] [maar] 
+B|41| B: [ja] 
+B|42| B: _ja en_ [dan] links [twee] dinget [ook] 
+B|43| B: onder _en_ boven allebei 
+A|44| A: [Oh [ja] en] [die] half [piramide] 
+B|45| B: [Oh] of 
+B|46| B: [ja ja] 
+A|47| A: Zeggen [maar] zo [ja] 
+B|48| B: [Oké top] 
+B|49| B: _ja dat zijn_ 
+B|50| B: _dit zijn_ [weer] _die een_ [dat] [je] [de] _bovenop_ [een] [piramide] [hebben] [die] niet helemaal of afmaken [zijn] 
+A|51| A: [Oh ja] 
+B|52| B: [en] [dan] [rechts] [die] [twee] [balk] onder ander 
+A|53| A: [ja dat zijn] 
+A|54| A: [dit zijn] [die een] [met] [bovenop] [die] half _afgemaken piramide_ 
+A|55| A: [en] [twee] uitstekel zo [rechts] 
+B|56| B: [Oké] 
+B|57| B: [ja dat zijn] 
+B|58| B: [dit zijn] [met die] niet [afgemaken piramide] 
+B|59| B: [en] [rechts] [die] [twee] dezelfde 
+A|60| A: [Oh [ja] dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Hoor je mij
+	Free: Pattern=mij, Pattern=je
+	Constrained: 
+Turn ID=1| B | B : ja ik horen jou
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : Oké top
+	Free: Pattern=Oké top
+	Constrained: Pattern=Oké
+Turn ID=3| A | A : dus ik gaan nu het plaat omschrijven die ik voor me zien
+	Free: Pattern=dus, Pattern=het, Pattern=die, Pattern=ik voor, Pattern=ik, Pattern=gaan
+	Constrained: Pattern=ik
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : het één wat opvallen zijn eigenlijk dat hij aan de rechterkant als je daarnaar kijken twee uitsteeksel hebben
+	Free: Pattern=dat, Pattern=twee, Pattern=aan de, Pattern=uitsteeksel, Pattern=kijken, Pattern=het, Pattern=hebben, Pattern=één, Pattern=zijn, Pattern=je
+	Constrained: Pattern=de
+Turn ID=6| A | A : die zijn hetzelfde ook
+	Free: Pattern=zijn, Pattern=ook, Pattern=die, Pattern=hetzelfde
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : ja die hebben
+	Free: Pattern=die, Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Hebben die dan daar zegmaar aan de bovenkant ook een soort van bijna een piramide maar niet helemaal afmaken
+	Free: Pattern=dan, Pattern=een, Pattern=die, Pattern=van, Pattern=maar, Pattern=piramide, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=de
+Turn ID=11| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=12| B | B : Oké top
+	Free: Pattern=Oké top
+	Constrained: Pattern=Oké
+Turn ID=13| B | B : dan denken ik wel dat ik weten welk het zijn
+	Free: Pattern=dat, Pattern=dan, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=14| A | A : Oké nou wat snel
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : ja toch
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : want ja
+	Free: Pattern=want, Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : die twee
+	Free: Pattern=die, Pattern=twee
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : volgens mij zijn er maar één met twee uitsteksel die hetzelfde zijn
+	Free: Pattern=twee, Pattern=hetzelfde, Pattern=één, Pattern=met, Pattern=die, Pattern=er, Pattern=mij, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=20| A | A : dat kloppen inderdaad ja
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=22| B | B : Wacht even kijken
+	Free: Pattern=kijken
+	Constrained: 
+Turn ID=23| B | B : Oh ja dan moeten ik gewoon het nummer zeggen en dan de knop drukken oké
+	Free: Pattern=oké, Pattern=de, Pattern=dan, Pattern=Oh ja, Pattern=het, Pattern=zeggen, Pattern=ik, Pattern=en
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : Oké dus dan gaan ik voor
+	Free: Pattern=dus, Pattern=dan, Pattern=ik voor, Pattern=gaan, Pattern=Oké
+	Constrained: Pattern=ik
+Turn ID=26| A | A : maar want dat zijn zo ja met die lepel erin ook zeggen maar hè
+	Free: Pattern=want, Pattern=ja, Pattern=ook, Pattern=zeggen, Pattern=maar, Pattern=dat zijn, Pattern=met die
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=die, Pattern=met
+Turn ID=27| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=28| B | B : ja s-sorry ik hebben al kliken
+	Free: Pattern=hebben, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ja ja oké ja
+	Free: Pattern=ja ja, Pattern=oké, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=30| B | B : ja maar ja goed
+	Free: Pattern=maar, Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : oké deze hebben dus aan de rechterzijde twee dezelfde uitsteeksel
+	Free: Pattern=oké, Pattern=twee, Pattern=dus, Pattern=aan de, Pattern=uitsteeksel, Pattern=hebben
+	Constrained: Pattern=de
+Turn ID=33| B | B : van die dun balk
+	Free: Pattern=die, Pattern=van, Pattern=balk
+	Constrained: 
+Turn ID=34| A | A : hm
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : een beetje lichtblauw
+	Free: Pattern=een
+	Constrained: 
+Turn ID=36| B | B : en bovenop zo'n driehoek die net niet afmaken zijn
+	Free: Pattern=en, Pattern=bovenop, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=37| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=38| A | A : oké dat zijn
+	Free: Pattern=dat zijn, Pattern=oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=39| A | A : dan hebben ik er een
+	Free: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=er, Pattern=ik
+	Constrained: 
+Turn ID=40| A | A : met rechts weer twee van diezelfde symmetrisch balk zeggen maar
+	Free: Pattern=twee, Pattern=rechts, Pattern=zeggen, Pattern=balk, Pattern=met, Pattern=van, Pattern=maar, Pattern=weer
+	Constrained: 
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| B | B : ja en dan links twee dinget ook
+	Free: Pattern=ja en, Pattern=dan, Pattern=ook, Pattern=twee
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=43| B | B : onder en boven allebei
+	Free: Pattern=en
+	Constrained: 
+Turn ID=44| A | A : Oh ja en die half piramide
+	Free: Pattern=ja en, Pattern=Oh ja, Pattern=die, Pattern=piramide
+	Constrained: Pattern=en, Pattern=Oh, Pattern=ja
+Turn ID=45| B | B : Oh of
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=46| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=47| A | A : Zeggen maar zo ja
+	Free: Pattern=maar, Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : Oké top
+	Free: Pattern=Oké top
+	Constrained: Pattern=Oké
+Turn ID=49| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=50| B | B : dit zijn weer die een dat je de bovenop een piramide hebben die niet helemaal of afmaken zijn
+	Free: Pattern=de, Pattern=piramide, Pattern=een, Pattern=hebben, Pattern=die, Pattern=die een, Pattern=zijn, Pattern=dit zijn, Pattern=dat, Pattern=bovenop, Pattern=weer, Pattern=je
+	Constrained: Pattern=zijn, Pattern=die, Pattern=een
+Turn ID=51| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=52| B | B : en dan rechts die twee balk onder ander
+	Free: Pattern=twee, Pattern=rechts, Pattern=dan, Pattern=balk, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=53| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=54| A | A : dit zijn die een met bovenop die half afgemaken piramide
+	Free: Pattern=bovenop, Pattern=afgemaken piramide, Pattern=met, Pattern=die, Pattern=die een, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=die, Pattern=piramide, Pattern=een
+Turn ID=55| A | A : en twee uitstekel zo rechts
+	Free: Pattern=en, Pattern=rechts, Pattern=twee
+	Constrained: 
+Turn ID=56| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=57| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=58| B | B : dit zijn met die niet afgemaken piramide
+	Free: Pattern=afgemaken piramide, Pattern=met die, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=die, Pattern=piramide, Pattern=met
+Turn ID=59| B | B : en rechts die twee dezelfde
+	Free: Pattern=en, Pattern=rechts, Pattern=die, Pattern=twee
+	Constrained: 
+Turn ID=60| A | A : Oh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=zijn, Pattern=dat, Pattern=dat zijn

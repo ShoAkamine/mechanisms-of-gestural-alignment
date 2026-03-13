@@ -1,0 +1,183 @@
+B|0| B: _ik_ _weten_ nog steeds niet _of_ _ik_ _dat_ goed doen trouwens 
+B|1| B: _met_ 
+B|2| B: _de_ nummert 
+B|3| B: _maar_ _ik_ hopen _van_ wel 
+B|4| B: anders _dan_ _komen_ iemand _vast_ naar binnen opstormen 
+A|5| A: _ja_ 
+A|6| A: _ja_ 
+A|7| A: _ja_ zij vragen volgens mij tegen mij [dat] _in_ _het_ Nederlands zeggen gewoon [dat] _het_ _allemaal_ gewoon prima _zijn_ 
+A|8| A: dus [dat] [komen] _ze_ gewoon _uit_ _ja_ 
+B|9| B: _ah ja_ 
+B|10| B: _dat zijn_ top 
+A|11| A: [ja] 
+B|12| B: deze [zijn] heel vaag 
+B|13| B: [ze] [zijn] [ze] [zijn] [allemaal] vaag 
+B|14| B: _maar_ _je_ _hebben_ _de pot_ 
+B|15| B: _en_ [het] _hebben_ _een oor_ 
+B|16| B: _die_ heel lang naar _de_ zijkant gaan 
+B|17| B: _en_ daar [komen] _zo'n_ trompet spuiten [uit] 
+B|18| B: _en_ _aan de ander kant_ _hebben_ hij _een_ _dienblad vast_ 
+A|19| A: [ah ja] 
+B|20| B: _een_ rond _dienblad_ 
+A|21| A: _ja _ja_ ja_ 
+A|22| A: [ja] [en] zeggen [maar] zeggen [maar] [uit] [dat] [een oor] [dan] _zijn het_ alsof er [een] soort [van] _doorn_ _in_ zitten [of] zo 
+B|23| B: [ja ja] 
+A|24| A: [ja] 
+A|25| A: oké [dan] [dan] [weten] [ik] welk [je] bedoelen 
+A|26| A: [dat zijn] 
+A|27| A: Oké 
+A|28| A: _dit zijn_ diegene [die] één [dienblad vast] [hebben] zoals jij [dat] noemen 
+A|29| A: [en] [dan] [aan] [zijn] [ander] [aan de ander kant] [die] _neus_ er zitten [zo'n] _doorn_ _in_ 
+B|30| B: [ja] nummer 
+B|31| B: _dit zijn de pot met_ _de neus_ [of] [oor] 
+B|32| B: _met_ [een] trompet [dat] eruit [komen] 
+B|33| B: [en] [het] rond [dienblad] _in de ander_ hand 
+A|34| A: Oh [ja ja] [dat zijn] letter 
+A|35| A: [dit zijn de pot _met] het_ [dienblad] [en] [in [de ander] kant] [zo'n] _doorn_ 
+B|36| B: [ja] nummer 
+B|37| B: [dit [zijn] het] 
+B|38| B: [het] kop [met het] rond dienbland [dienblad] [aan de] [een] [kant] 
+B|39| B: [en] [aan de ander kant] [een oor] [met] _een doorn_ erin 
+A|40| A: [ja] [dat zijn] letter 
+A|41| A: [de pot [met] het] [dienblad] [en] [in] [het] [oor] [een] [neus] 
+A|42| A: [in [de] neus] [een doorn] 
+B|43| B: [ja] 
+B|44| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik weten nog steeds niet of ik dat goed doen trouwens
+	Free: Pattern=ik, Pattern=weten, Pattern=of, Pattern=dat
+	Constrained: 
+Turn ID=1| B | B : met
+	Free: Pattern=met
+	Constrained: 
+Turn ID=2| B | B : de nummert
+	Free: Pattern=de
+	Constrained: 
+Turn ID=3| B | B : maar ik hopen van wel
+	Free: Pattern=ik, Pattern=van, Pattern=maar
+	Constrained: 
+Turn ID=4| B | B : anders dan komen iemand vast naar binnen opstormen
+	Free: Pattern=komen, Pattern=vast, Pattern=dan
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ja zij vragen volgens mij tegen mij dat in het Nederlands zeggen gewoon dat het allemaal gewoon prima zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=allemaal, Pattern=het, Pattern=in, Pattern=zijn
+	Constrained: 
+Turn ID=8| A | A : dus dat komen ze gewoon uit ja
+	Free: Pattern=dat, Pattern=ja, Pattern=uit, Pattern=komen, Pattern=ze
+	Constrained: 
+Turn ID=9| B | B : ah ja
+	Free: Pattern=ah ja
+	Constrained: Pattern=ja
+Turn ID=10| B | B : dat zijn top
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : deze zijn heel vaag
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=13| B | B : ze zijn ze zijn allemaal vaag
+	Free: Pattern=ze, Pattern=allemaal, Pattern=zijn
+	Constrained: 
+Turn ID=14| B | B : maar je hebben de pot
+	Free: Pattern=de pot, Pattern=hebben, Pattern=je, Pattern=maar
+	Constrained: Pattern=de
+Turn ID=15| B | B : en het hebben een oor
+	Free: Pattern=een oor, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: Pattern=een, Pattern=oor
+Turn ID=16| B | B : die heel lang naar de zijkant gaan
+	Free: Pattern=de, Pattern=die
+	Constrained: 
+Turn ID=17| B | B : en daar komen zo'n trompet spuiten uit
+	Free: Pattern=uit, Pattern=komen, Pattern=zo'n, Pattern=en
+	Constrained: 
+Turn ID=18| B | B : en aan de ander kant hebben hij een dienblad vast
+	Free: Pattern=hebben, Pattern=dienblad vast, Pattern=en, Pattern=een, Pattern=aan de ander kant
+	Constrained: Pattern=kant, Pattern=aan de, Pattern=vast, Pattern=ander, Pattern=de, Pattern=aan, Pattern=de ander kant, Pattern=dienblad
+Turn ID=19| A | A : ah ja
+	Free: Pattern=ah ja
+	Constrained: Pattern=ja
+Turn ID=20| B | B : een rond dienblad
+	Free: Pattern=een, Pattern=dienblad
+	Constrained: 
+Turn ID=21| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=22| A | A : ja en zeggen maar zeggen maar uit dat een oor dan zijn het alsof er een soort van doorn in zitten of zo
+	Free: Pattern=dat, Pattern=ja, Pattern=uit, Pattern=dan, Pattern=een, Pattern=in, Pattern=een oor, Pattern=maar, Pattern=zijn het, Pattern=of, Pattern=doorn, Pattern=van, Pattern=en
+	Constrained: Pattern=het, Pattern=een, Pattern=zijn, Pattern=oor
+Turn ID=23| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : oké dan dan weten ik welk je bedoelen
+	Free: Pattern=ik, Pattern=weten, Pattern=je, Pattern=dan
+	Constrained: 
+Turn ID=26| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=28| A | A : dit zijn diegene die één dienblad vast hebben zoals jij dat noemen
+	Free: Pattern=dat, Pattern=hebben, Pattern=dienblad vast, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=vast, Pattern=zijn, Pattern=dienblad
+Turn ID=29| A | A : en dan aan zijn ander aan de ander kant die neus er zitten zo'n doorn in
+	Free: Pattern=doorn, Pattern=zo'n, Pattern=aan, Pattern=dan, Pattern=aan de ander kant, Pattern=in, Pattern=neus, Pattern=die, Pattern=ander, Pattern=en, Pattern=zijn
+	Constrained: Pattern=kant, Pattern=aan de, Pattern=de ander kant, Pattern=ander, Pattern=de, Pattern=aan
+Turn ID=30| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dit zijn de pot met de neus of oor
+	Free: Pattern=dit zijn de pot met, Pattern=de neus, Pattern=of, Pattern=oor
+	Constrained: Pattern=de pot met, Pattern=de, Pattern=de pot, Pattern=neus, Pattern=met, Pattern=zijn, Pattern=dit zijn
+Turn ID=32| B | B : met een trompet dat eruit komen
+	Free: Pattern=komen, Pattern=een, Pattern=met, Pattern=dat
+	Constrained: 
+Turn ID=33| B | B : en het rond dienblad in de ander hand
+	Free: Pattern=in de ander, Pattern=het, Pattern=dienblad, Pattern=en
+	Constrained: Pattern=ander, Pattern=in, Pattern=in de, Pattern=de
+Turn ID=34| A | A : Oh ja ja dat zijn letter
+	Free: Pattern=ja ja, Pattern=dat zijn
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=35| A | A : dit zijn de pot met het dienblad en in de ander kant zo'n doorn
+	Free: Pattern=dit zijn de pot met, Pattern=doorn, Pattern=zo'n, Pattern=en, Pattern=met het, Pattern=in de ander, Pattern=de ander kant, Pattern=dienblad
+	Constrained: Pattern=kant, Pattern=de pot met, Pattern=de, Pattern=het, Pattern=de pot, Pattern=in, Pattern=in de, Pattern=met, Pattern=ander, Pattern=zijn, Pattern=dit zijn
+Turn ID=36| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| B | B : dit zijn het
+	Free: Pattern=zijn het, Pattern=dit zijn
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=38| B | B : het kop met het rond dienbland dienblad aan de een kant
+	Free: Pattern=kant, Pattern=aan de, Pattern=een, Pattern=het, Pattern=dienblad, Pattern=met het
+	Constrained: Pattern=de, Pattern=het, Pattern=aan, Pattern=met
+Turn ID=39| B | B : en aan de ander kant een oor met een doorn erin
+	Free: Pattern=een doorn, Pattern=aan de ander kant, Pattern=met, Pattern=een oor, Pattern=en
+	Constrained: Pattern=kant, Pattern=doorn, Pattern=aan de, Pattern=een, Pattern=de ander kant, Pattern=ander, Pattern=de, Pattern=oor, Pattern=aan
+Turn ID=40| A | A : ja dat zijn letter
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=41| A | A : de pot met het dienblad en in het oor een neus
+	Free: Pattern=de pot met, Pattern=oor, Pattern=een, Pattern=het, Pattern=in, Pattern=neus, Pattern=dienblad, Pattern=en, Pattern=met het
+	Constrained: Pattern=de pot, Pattern=de, Pattern=met, Pattern=het
+Turn ID=42| A | A : in de neus een doorn
+	Free: Pattern=in de, Pattern=een doorn, Pattern=de neus
+	Constrained: Pattern=doorn, Pattern=de, Pattern=een, Pattern=in, Pattern=neus
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : nummer
+	Free: 
+	Constrained: 

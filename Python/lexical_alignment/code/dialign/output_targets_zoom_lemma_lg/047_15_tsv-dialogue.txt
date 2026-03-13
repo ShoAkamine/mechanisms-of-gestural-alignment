@@ -1,0 +1,67 @@
+A|0| A: Eh deze _hebben_ _een soort_ slang aan _de_ voorkant 
+A|1| A: _met_ twee voelspriet bovenop 
+A|2| A: en hij _hebben_ _een_ vierkant om zijn middel 
+A|3| A: _een_ plat vierkant 
+B|4| B: Oh _ja_ _die_ hem [een soort] van _doorsnijden_ 
+A|5| A: [ja] 
+B|6| B: Oké nummer 
+B|7| B: Ehm ik [hebben] _die_ _met de_ plank _die_ _dat_ ding doormidden snijden 
+A|8| A: ehm [de] het vierkant [die] zijn middel [doorsnijden] 
+B|9| B: nummer 
+B|10| B: [die] waar [de] plank hem [doorsnijden] 
+A|11| A: Eh [met de] doorgesneden vierkant 
+B|12| B: nummer 
+B|13| B: dan [die] doormidden worden snijden door [de] plank 
+A|14| A: hmm 
+A|15| A: zijn [dat] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh deze hebben een soort slang aan de voorkant
+	Free: Pattern=een soort, Pattern=hebben, Pattern=de
+	Constrained: Pattern=een
+Turn ID=1| A | A : met twee voelspriet bovenop
+	Free: Pattern=met
+	Constrained: 
+Turn ID=2| A | A : en hij hebben een vierkant om zijn middel
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : een plat vierkant
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| B | B : Oh ja die hem een soort van doorsnijden
+	Free: Pattern=een soort, Pattern=doorsnijden, Pattern=die, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oké nummer
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Ehm ik hebben die met de plank die dat ding doormidden snijden
+	Free: Pattern=met de, Pattern=hebben, Pattern=dat, Pattern=die
+	Constrained: Pattern=met, Pattern=de
+Turn ID=8| A | A : ehm de het vierkant die zijn middel doorsnijden
+	Free: Pattern=doorsnijden, Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=9| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : die waar de plank hem doorsnijden
+	Free: Pattern=doorsnijden, Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=11| A | A : Eh met de doorgesneden vierkant
+	Free: Pattern=met de
+	Constrained: Pattern=met, Pattern=de
+Turn ID=12| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : dan die doormidden worden snijden door de plank
+	Free: Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=14| A | A : hmm
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : zijn dat
+	Free: Pattern=dat
+	Constrained: 

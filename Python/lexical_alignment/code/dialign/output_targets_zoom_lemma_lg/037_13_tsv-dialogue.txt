@@ -1,0 +1,115 @@
+A|0| A: A oké _deze_ doen me _denken_ _aan_ _een olifant_ 
+A|1| A: want ze _hebben_ _zo'n_ plat rond _op_ _de_ voorkant 
+A|2| A: _met_ _een_ soort van heel klein slurf _aan de_ rechterkant 
+A|3| A: _en_ _twee_ van _die_ 
+A|4| A: _een_ soort van krael _uhm_ stengel _die_ _aan_ beide kant uitsteken 
+A|5| A: _zo_ drie van _die_ rond 
+B|6| B: mhm 
+A|7| A: _en_ _hij_ _staan_ _op een_ tafel 
+A|8| A: _of_ zeggen maar _een_ plat _een plateau_ 
+B|9| B: _ja_ [en] link [hebben] [die] [zo'n] link [op] _dat_ [plateau] [hebben] [hij] [zo'n] kraan [of] [zo] 
+B|10| B: _ja_ [een] boog 
+A|11| A: [ja] [ja] 
+B|12| B: Oké [ja] _ik_ [denken] _dat_ _ik_ het weten 
+B|13| B: [deze] [hebben] je ook eerder beschrijven 
+B|14| B: [uhm] [deze] _vinden_ je [op [een] olifant] lijken 
+B|15| B: [met] _dat_ [en] [die] [twee] ding [aan de] zijkant [die] kraalt beschrijven jij 
+A|16| A: Oh [ja] 
+A|17| A: kralen 
+B|18| B: [en] _dat_ [die] [op [een] plateau] [staan] 
+A|19| A: [ja] 
+A|20| A: [ja] [dat] _zijn_ dan 
+A|21| A: [ja] _dit zijn_ [die] [een] [die] [ik] [een olifant] [vinden] [met] [de] kralen uitsteeksel 
+B|22| B: ah [ja] 
+B|23| B: _dit zijn de olifant_ 
+A|24| A: even kijken [dat] [zijn] 
+A|25| A: [dit zijn de olifant] 
+B|26| B: [dit zijn de olifant] 
+A|27| A: top [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : A oké deze doen me denken aan een olifant
+	Free: Pattern=een olifant, Pattern=aan, Pattern=denken, Pattern=deze
+	Constrained: Pattern=een
+Turn ID=1| A | A : want ze hebben zo'n plat rond op de voorkant
+	Free: Pattern=zo'n, Pattern=de, Pattern=hebben, Pattern=op
+	Constrained: 
+Turn ID=2| A | A : met een soort van heel klein slurf aan de rechterkant
+	Free: Pattern=aan de, Pattern=een, Pattern=met
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=3| A | A : en twee van die
+	Free: Pattern=en, Pattern=die, Pattern=twee
+	Constrained: 
+Turn ID=4| A | A : een soort van krael uhm stengel die aan beide kant uitsteken
+	Free: Pattern=een, Pattern=uhm, Pattern=aan, Pattern=die
+	Constrained: 
+Turn ID=5| A | A : zo drie van die rond
+	Free: Pattern=die, Pattern=zo
+	Constrained: 
+Turn ID=6| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : en hij staan op een tafel
+	Free: Pattern=op een, Pattern=staan, Pattern=en, Pattern=hij
+	Constrained: Pattern=een, Pattern=op
+Turn ID=8| A | A : of zeggen maar een plat een plateau
+	Free: Pattern=een plateau, Pattern=een, Pattern=of
+	Constrained: Pattern=een, Pattern=plateau
+Turn ID=9| B | B : ja en link hebben die zo'n link op dat plateau hebben hij zo'n kraan of zo
+	Free: Pattern=dat, Pattern=of, Pattern=zo'n, Pattern=ja, Pattern=op, Pattern=hebben, Pattern=die, Pattern=en, Pattern=plateau, Pattern=hij, Pattern=zo
+	Constrained: 
+Turn ID=10| B | B : ja een boog
+	Free: Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Oké ja ik denken dat ik het weten
+	Free: Pattern=dat, Pattern=ja, Pattern=denken, Pattern=ik
+	Constrained: 
+Turn ID=13| B | B : deze hebben je ook eerder beschrijven
+	Free: Pattern=hebben, Pattern=deze
+	Constrained: 
+Turn ID=14| B | B : uhm deze vinden je op een olifant lijken
+	Free: Pattern=vinden, Pattern=uhm, Pattern=deze, Pattern=op een, Pattern=een olifant
+	Constrained: Pattern=een, Pattern=op
+Turn ID=15| B | B : met dat en die twee ding aan de zijkant die kraalt beschrijven jij
+	Free: Pattern=dat, Pattern=twee, Pattern=aan de, Pattern=met, Pattern=die, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=16| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : kralen
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : en dat die op een plateau staan
+	Free: Pattern=dat, Pattern=die, Pattern=en, Pattern=op een, Pattern=staan, Pattern=een plateau
+	Constrained: Pattern=een, Pattern=plateau, Pattern=op
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja dat zijn dan
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ja dit zijn die een die ik een olifant vinden met de kralen uitsteeksel
+	Free: Pattern=een, Pattern=met, Pattern=die, Pattern=ik, Pattern=dit zijn, Pattern=een olifant, Pattern=de, Pattern=vinden, Pattern=ja
+	Constrained: Pattern=een, Pattern=zijn
+Turn ID=22| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : dit zijn de olifant
+	Free: Pattern=dit zijn de olifant
+	Constrained: Pattern=dit zijn, Pattern=de, Pattern=zijn
+Turn ID=24| A | A : even kijken dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=25| A | A : dit zijn de olifant
+	Free: Pattern=dit zijn de olifant
+	Constrained: Pattern=dit zijn, Pattern=de, Pattern=zijn
+Turn ID=26| B | B : dit zijn de olifant
+	Free: Pattern=dit zijn de olifant
+	Constrained: Pattern=dit zijn, Pattern=de, Pattern=zijn
+Turn ID=27| A | A : top dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 

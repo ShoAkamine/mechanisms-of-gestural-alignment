@@ -1,0 +1,223 @@
+B|0| B: Ké 
+B|1| B: _ik hebben_ _één_ 
+A|2| A: _zien_ _je_ [één] 
+A|3| A: _Oh_ sorry 
+B|4| B: _ja_ _ik_ 
+A|5| A: _Oké_ _het_ _vierkant_ 
+B|6| B: _ik hebben_ _een_ rood [vierkant] 
+A|7| A: _zijn_ goed 
+A|8| A: Zullen _je kunnen_ omschrijven _wat_ _je_ _zien_ 
+B|9| B: Eh _ja_ _ik hebben_ deze _de_ honkbalknuppel noemen _met de_ 
+B|10| B: me-he-he _met de_ bekerhouder 
+B|11| B: _de_ _ja_ _de_ emmer _zeggen maar_ _de_ vast vorm _hebben_ _een_ arm waar _een_ honkbalknuppel _aan_ zitten 
+B|12| B: _met een_ beetje _een vierkant_ bovenkant 
+B|13| B: _en aan de_ ander kant _hebben_ hij _een_ _ja_ [wat] _ik_ [kunnen] [zien] als _een_ bijzettafel of bekerhouder 
+A|14| A: _Oh_ 
+A|15| A: Wacht misschien 
+A|16| A: Weet [ik] 
+A|17| A: want [zeggen maar] _het_ _zijn_ _dan_ _die_ [de] bak inderdaad 
+A|18| A: [en] _dan_ [hebben] _je_ link daarvan [een] uitsteeksel 
+A|19| A: [en] daaraan nog [een] uitsteeksel omhoog [met [een] vierkant] erop 
+B|20| B: _ja_ 
+A|21| A: [en] _dan_ rechts _zijn_ _het_ [een] soort van _dienblad_ achtig iets 
+B|22| B: _ja_ 
+B|23| B: _ja_ precies 
+B|24| B: [je kunnen] ook als [een] ober [zien] 
+A|25| A: _Oké_ 
+B|26| B: _ja_ 
+A|27| A: [ja] oké 
+B|28| B: Cool 
+A|29| A: _Oké_ 
+A|30| A: _dan_ moeten [ik] toch [de] letter _op_ hardop [zeggen] 
+B|31| B: [dan] 
+B|32| B: [ja] 
+B|33| B: [en] daarna [op] [de] rood knop 
+A|34| A: _Oké_ 
+A|35| A: Letter 
+A|36| A: [ik hebben] 
+A|37| A: _Oh ja_ degeen [met] _het dienblad_ 
+A|38| A: [en aan de] linkerkant [een] uistaaf [met] daar [een] 
+A|39| A: [aan de] linkerkant komen er zo'n 
+B|40| B: [Oh ja] [ja] 
+B|41| B: [met] [die] [met] [die] honkbalknuppel [zeggen maar] 
+A|42| A: [ja] 
+A|43| A: [ja] 
+B|44| B: [ja] dat [zijn] nummer 
+B|45| B: _ik hebben de_ honkbalknuppel [en] [het dienblad] 
+A|46| A: _Oké_ 
+A|47| A: even zoeken 
+A|48| A: Letter 
+A|49| A: [ik hebben de] honkbakknuppel [en] [dienblad] 
+B|50| B: [Oké] nummer 
+B|51| B: [ik hebben] [die] [een] _met de_ honkbalknuppel [en] [het dienblad] 
+A|52| A: Yes letter 
+A|53| A: [ik hebben] degeen [met de] Honkbakknuppel 
+B|54| B: [Oké] dat [zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ik hebben één
+	Free: Pattern=ik hebben, Pattern=één
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=2| A | A : zien je één
+	Free: Pattern=één, Pattern=je, Pattern=zien
+	Constrained: 
+Turn ID=3| A | A : Oh sorry
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=4| B | B : ja ik
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : Oké het vierkant
+	Free: Pattern=vierkant, Pattern=Oké, Pattern=het
+	Constrained: 
+Turn ID=6| B | B : ik hebben een rood vierkant
+	Free: Pattern=ik hebben, Pattern=een, Pattern=vierkant
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=7| A | A : zijn goed
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=8| A | A : Zullen je kunnen omschrijven wat je zien
+	Free: Pattern=je kunnen, Pattern=wat, Pattern=je, Pattern=zien
+	Constrained: Pattern=je, Pattern=kunnen
+Turn ID=9| B | B : Eh ja ik hebben deze de honkbalknuppel noemen met de
+	Free: Pattern=ik hebben, Pattern=met de, Pattern=de, Pattern=ja
+	Constrained: Pattern=ik, Pattern=de, Pattern=hebben, Pattern=met
+Turn ID=10| B | B : me-he-he met de bekerhouder
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=11| B | B : de ja de emmer zeggen maar de vast vorm hebben een arm waar een honkbalknuppel aan zitten
+	Free: Pattern=een, Pattern=zeggen maar, Pattern=hebben, Pattern=de, Pattern=aan, Pattern=ja
+	Constrained: Pattern=zeggen
+Turn ID=12| B | B : met een beetje een vierkant bovenkant
+	Free: Pattern=een vierkant, Pattern=met een
+	Constrained: Pattern=een, Pattern=vierkant, Pattern=met
+Turn ID=13| B | B : en aan de ander kant hebben hij een ja wat ik kunnen zien als een bijzettafel of bekerhouder
+	Free: Pattern=kunnen, Pattern=ja, Pattern=een, Pattern=hebben, Pattern=zien, Pattern=wat, Pattern=ik, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=en, Pattern=de
+Turn ID=14| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=15| A | A : Wacht misschien
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Weet ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=17| A | A : want zeggen maar het zijn dan die de bak inderdaad
+	Free: Pattern=de, Pattern=dan, Pattern=zeggen maar, Pattern=het, Pattern=die, Pattern=zijn
+	Constrained: Pattern=zeggen
+Turn ID=18| A | A : en dan hebben je link daarvan een uitsteeksel
+	Free: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=en, Pattern=je
+	Constrained: 
+Turn ID=19| A | A : en daaraan nog een uitsteeksel omhoog met een vierkant erop
+	Free: Pattern=een vierkant, Pattern=met een, Pattern=een, Pattern=en
+	Constrained: Pattern=een, Pattern=vierkant, Pattern=met
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : en dan rechts zijn het een soort van dienblad achtig iets
+	Free: Pattern=dan, Pattern=een, Pattern=het, Pattern=dienblad, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : je kunnen ook als een ober zien
+	Free: Pattern=je kunnen, Pattern=een, Pattern=zien
+	Constrained: Pattern=je, Pattern=kunnen
+Turn ID=25| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Cool
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=30| A | A : dan moeten ik toch de letter op hardop zeggen
+	Free: Pattern=de, Pattern=op, Pattern=dan, Pattern=zeggen, Pattern=ik
+	Constrained: 
+Turn ID=31| B | B : dan
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : en daarna op de rood knop
+	Free: Pattern=en, Pattern=de, Pattern=op
+	Constrained: 
+Turn ID=34| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=35| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : ik hebben
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=37| A | A : Oh ja degeen met het dienblad
+	Free: Pattern=Oh ja, Pattern=het dienblad, Pattern=met
+	Constrained: Pattern=het, Pattern=dienblad, Pattern=ja, Pattern=Oh
+Turn ID=38| A | A : en aan de linkerkant een uistaaf met daar een
+	Free: Pattern=en aan de, Pattern=een, Pattern=met
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=en, Pattern=de
+Turn ID=39| A | A : aan de linkerkant komen er zo'n
+	Free: Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=40| B | B : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=41| B | B : met die met die honkbalknuppel zeggen maar
+	Free: Pattern=zeggen maar, Pattern=met, Pattern=die
+	Constrained: Pattern=zeggen
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : ja dat zijn nummer
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=45| B | B : ik hebben de honkbalknuppel en het dienblad
+	Free: Pattern=ik hebben de, Pattern=het dienblad, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=het, Pattern=hebben, Pattern=dienblad, Pattern=ik
+Turn ID=46| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=47| A | A : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=48| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=49| A | A : ik hebben de honkbakknuppel en dienblad
+	Free: Pattern=ik hebben de, Pattern=en, Pattern=dienblad
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=50| B | B : Oké nummer
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=51| B | B : ik hebben die een met de honkbalknuppel en het dienblad
+	Free: Pattern=ik hebben, Pattern=het dienblad, Pattern=met de, Pattern=een, Pattern=die, Pattern=en
+	Constrained: Pattern=de, Pattern=het, Pattern=hebben, Pattern=met, Pattern=dienblad, Pattern=ik
+Turn ID=52| A | A : Yes letter
+	Free: 
+	Constrained: 
+Turn ID=53| A | A : ik hebben degeen met de Honkbakknuppel
+	Free: Pattern=ik hebben, Pattern=met de
+	Constrained: Pattern=ik, Pattern=de, Pattern=hebben, Pattern=met
+Turn ID=54| B | B : Oké dat zijn nummer
+	Free: Pattern=zijn, Pattern=Oké
+	Constrained: 

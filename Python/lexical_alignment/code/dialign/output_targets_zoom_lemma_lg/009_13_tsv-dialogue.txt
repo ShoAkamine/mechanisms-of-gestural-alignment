@@ -1,0 +1,99 @@
+B|0| B: Oh _ik hebben nu_ _die_ _een_ ander doorbooren met _die_ heel gek steel er doorheen 
+A|1| A: _op het vierkant_ 
+B|2| B: [op het vierkant] _ja_ 
+A|3| A: [ja] oké 
+A|4| A: Oké [ik hebben nu] weer doorboren 
+A|5| A: _maar_ dan wel als [een] spijker [op] [een] bord 
+B|6| B: _eh_ [ja] met _die_ gek driehoek _aan_ of ruit _aan elkaar_ zeggen [maar] 
+A|7| A: [eh] rui [aan elkaar] 
+B|8| B: [ja] _dat_ staaf 
+B|9| B: _die_ doorboording 
+A|10| A: [ja] [ja] [ja] [ja] [ja] [ja] 
+B|11| B: [ja] 
+A|12| A: Klopt 
+B|13| B: [ik hebben] _die_ [een] doorboron [op] _dat_ plateau 
+A|14| A: ah 
+A|15| A: Oké [ik hebben] [dat] _die [op het_ vierkant] _staan_ 
+B|16| B: Oh [ja] 
+A|17| A: doorboord [ja] 
+B|18| B: [ja] 
+B|19| B: [ik hebben] degeen [die] doorboirden zijn [die op het] plateaut [staan] 
+A|20| A: ah 
+B|21| B: [het] vierkan 
+A|22| A: [ik hebben] [het] [op het vierkant] 
+B|23| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ik hebben nu die een ander doorbooren met die heel gek steel er doorheen
+	Free: Pattern=ik hebben nu, Pattern=een, Pattern=die
+	Constrained: Pattern=ik hebben
+Turn ID=1| A | A : op het vierkant
+	Free: Pattern=op het vierkant
+	Constrained: Pattern=het, Pattern=op
+Turn ID=2| B | B : op het vierkant ja
+	Free: Pattern=op het vierkant, Pattern=ja
+	Constrained: Pattern=het, Pattern=op
+Turn ID=3| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : Oké ik hebben nu weer doorboren
+	Free: Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben
+Turn ID=5| A | A : maar dan wel als een spijker op een bord
+	Free: Pattern=een, Pattern=op, Pattern=maar
+	Constrained: 
+Turn ID=6| B | B : eh ja met die gek driehoek aan of ruit aan elkaar zeggen maar
+	Free: Pattern=eh, Pattern=maar, Pattern=aan, Pattern=ja, Pattern=aan elkaar, Pattern=die
+	Constrained: Pattern=aan
+Turn ID=7| A | A : eh rui aan elkaar
+	Free: Pattern=aan elkaar, Pattern=eh
+	Constrained: Pattern=aan
+Turn ID=8| B | B : ja dat staaf
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : die doorboording
+	Free: Pattern=die
+	Constrained: 
+Turn ID=10| A | A : ja ja ja ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Klopt
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ik hebben die een doorboron op dat plateau
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=op, Pattern=een, Pattern=die
+	Constrained: 
+Turn ID=14| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : Oké ik hebben dat die op het vierkant staan
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=staan, Pattern=op het vierkant, Pattern=die op het
+	Constrained: Pattern=die, Pattern=het, Pattern=op
+Turn ID=16| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : doorboord ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ik hebben degeen die doorboirden zijn die op het plateaut staan
+	Free: Pattern=die op het, Pattern=ik hebben, Pattern=die, Pattern=staan
+	Constrained: Pattern=die, Pattern=het, Pattern=op
+Turn ID=20| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : het vierkan
+	Free: Pattern=het
+	Constrained: 
+Turn ID=22| A | A : ik hebben het op het vierkant
+	Free: Pattern=op het vierkant, Pattern=ik hebben, Pattern=het
+	Constrained: Pattern=het, Pattern=op
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

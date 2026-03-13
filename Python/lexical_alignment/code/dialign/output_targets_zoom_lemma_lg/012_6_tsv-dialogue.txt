@@ -1,0 +1,127 @@
+B|0| B: _Oh ja_ deze _hebben_ _ik_ omschrijven als _een paal door zijn neus_ 
+A|1| A: [Oh] sorry wat 
+B|2| B: _een paal door zijn neus_ 
+A|3| A: Paal [door zijn neus] 
+A|4| A: [Oh] oké 
+B|5| B: echt zo'n [neus] _met_ zo'n _paal_ erdoor _en_ dan zo'n rond schijf er nog achter 
+A|6| A: [Oh] 
+A|7| A: [ja] 
+A|8| A: [ja] [ik] snapen wat je bedoelen 
+B|9| B: _en_ _een_ zo'n klein fliemel _van_ 
+A|10| A: op _de_ hoofd 
+B|11| B: [ja] 
+A|12| A: [ja] 
+A|13| A: [een] soort [van] _piercing_ of zo 
+B|14| B: [ja] zoiets 
+A|15| A: _eh_ [zijn] het 
+A|16| A: _ik hebben_ nu gezicht [van] [een] man [met] [een] snor [en] het lijken alsof [een paal door zijn neus] gaan 
+B|17| B: [Oh] die [piercing] 
+A|18| A: [ja] _de piercing_ 
+B|19| B: oh _dat_ _dat zijn_ 
+B|20| B: _ik hebben [de_ piercing] 
+A|21| A: [piercing] [ja] even kijken 
+A|22| A: [Oh ja] 
+A|23| A: even kijken 
+A|24| A: [dat zijn] 
+A|25| A: [ik hebben de] man [met] [de] [paal] [met] [de piercing] 
+B|26| B: [Oh ja] 
+B|27| B: [eh] w-w-w-w-wa 
+B|28| B: [ik hebben [de] piercing] 
+A|29| A: [piercing] 
+B|30| B: Eh l-l-l-l-luh ? [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ja deze hebben ik omschrijven als een paal door zijn neus
+	Free: Pattern=een paal door zijn neus, Pattern=Oh ja, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=een, Pattern=neus, Pattern=paal, Pattern=Oh, Pattern=zijn, Pattern=door zijn neus, Pattern=ja
+Turn ID=1| A | A : Oh sorry wat
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=2| B | B : een paal door zijn neus
+	Free: Pattern=een paal door zijn neus
+	Constrained: Pattern=door zijn neus, Pattern=een, Pattern=neus, Pattern=paal, Pattern=zijn
+Turn ID=3| A | A : Paal door zijn neus
+	Free: Pattern=door zijn neus
+	Constrained: Pattern=neus, Pattern=zijn
+Turn ID=4| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : echt zo'n neus met zo'n paal erdoor en dan zo'n rond schijf er nog achter
+	Free: Pattern=en, Pattern=neus, Pattern=paal, Pattern=met
+	Constrained: 
+Turn ID=6| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja ik snapen wat je bedoelen
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=9| B | B : en een zo'n klein fliemel van
+	Free: Pattern=en, Pattern=van, Pattern=een
+	Constrained: 
+Turn ID=10| A | A : op de hoofd
+	Free: Pattern=de
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : een soort van piercing of zo
+	Free: Pattern=piercing, Pattern=van, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : ja zoiets
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : eh zijn het
+	Free: Pattern=eh, Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : ik hebben nu gezicht van een man met een snor en het lijken alsof een paal door zijn neus gaan
+	Free: Pattern=ik hebben, Pattern=een paal door zijn neus, Pattern=een, Pattern=met, Pattern=van, Pattern=en
+	Constrained: Pattern=door zijn neus, Pattern=een, Pattern=hebben, Pattern=neus, Pattern=ik, Pattern=paal, Pattern=zijn
+Turn ID=17| B | B : Oh die piercing
+	Free: Pattern=piercing, Pattern=Oh
+	Constrained: 
+Turn ID=18| A | A : ja de piercing
+	Free: Pattern=de piercing, Pattern=ja
+	Constrained: Pattern=piercing, Pattern=de
+Turn ID=19| B | B : oh dat dat zijn
+	Free: Pattern=dat zijn, Pattern=dat
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| B | B : ik hebben de piercing
+	Free: Pattern=ik hebben de, Pattern=de piercing
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=piercing
+Turn ID=21| A | A : piercing ja even kijken
+	Free: Pattern=piercing, Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=23| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| A | A : ik hebben de man met de paal met de piercing
+	Free: Pattern=de, Pattern=ik hebben de, Pattern=met, Pattern=paal, Pattern=de piercing
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=piercing
+Turn ID=26| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=27| B | B : eh w-w-w-w-wa
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=28| B | B : ik hebben de piercing
+	Free: Pattern=ik hebben de, Pattern=de piercing
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=piercing
+Turn ID=29| A | A : piercing
+	Free: Pattern=piercing
+	Constrained: 
+Turn ID=30| B | B : Eh l-l-l-l-luh ? zijn
+	Free: Pattern=zijn
+	Constrained: 

@@ -1,0 +1,279 @@
+B|0| B: _Oh ik hebben_ nu waarvan _ik denken dat_ _het een kruiwagen_ _zijn_ 
+B|1| B: _met_ _die_ _twee_ _wielt_ _zo_ 
+B|2| B: _en dan_ één lang _en_ één kort 
+B|3| B: _en_ _nog een soort_ _vierkan_ _schuin_ links erachter 
+A|4| A: _Oh ja_ 
+A|5| A: [en dan] aan _dat vierkan_ zitten [nog een soort] aanhaaksel 
+B|6| B: [ja] [nog een soort] dinge 
+B|7| B: [ja] 
+A|8| A: [ja] oké _dat zijn bij mij_ 
+B|9| B: _Oké_ 
+A|10| A: [ik hebben] [ja] [een soort] _gieter_ 
+A|11| A: maar _jij_ noemen [het] _volgens mij_ [kruiwagen] [met] [twee] armp 
+A|12| A: _die zijn_ [dan] bol aan de zijkant 
+A|13| A: [en dan] [zijn] er dus _zo'n_ 
+B|14| B: [Oh] 
+A|15| A: [ja] _met dat_ vierkant [dat] er [zo] bovenaan insteekt [ja] 
+B|16| B: [ja] 
+B|17| B: [ja] 
+B|18| B: mhm 
+B|19| B: _Oké dat zijn bij mij_ 
+A|20| A: [Oké] 
+B|21| B: [ik hebben] nu _die kruiwag_ [die] _ik vinden_ [met] [die] _wielt_ [zo] 
+B|22| B: één kort [en] één lang 
+B|23| B: _en het_ _het vierkan_ 
+A|24| A: _Oh ja_ 
+A|25| A: [ja] waar [dan] ook iets uitsteken 
+B|26| B: [ja] 
+A|27| A: [Oké dat zijn bij mij] 
+A|28| A: [Oh ik hebben] 
+A|29| A: [ik vinden] [het een] beetje grieter 
+A|30| A: maar _jij_ de [kruiwag] 
+A|31| A: [en dan] [met] _zo'n_ [schuin] ding 
+A|32| A: link 
+A|33| A: vierkant 
+A|34| A: [en] _zo'n_ uitsteksel eraan 
+A|35| A: _volgens mij_ _vinden jij [het_ een kruiwagen] 
+B|36| B: [Oh] [met] [die] _wielt_ [ja] 
+A|37| A: [ja] 
+B|38| B: wat [vinden jij het] 
+A|39| A: [een soort] _gieter_ _of_ [zo] 
+B|40| B: [een] [gieter] 
+A|41| A: [ja] maar 
+B|42| B: [Oké] 
+A|43| A: [ja] 
+B|44| B: [Oh ja] [dat zijn bij mij] 
+B|45| B: [ik hebben] nu [die] [jij] [volgens mij] [een] _kruiwag vinden_ 
+B|46| B: [ik] [zo'n] zijwielt 
+A|47| A: [Oké] 
+A|48| A: [Oh _ja] ja_ 
+B|49| B: [of] [ja] _weten_ _je_ 
+B|50| B: [met [dat] _vierkan] en dan_ [dat] aanhangsel 
+A|51| A: [ja] 
+A|52| A: [Oh [ik] denken dat] [jij] [die [kruiwag] vinden] 
+B|53| B: [Oh] [vinden] [ik] [die kruiwag] 
+B|54| B: [Oh _ik] weten_ [het] niet veel 
+A|55| A: [en] [ik] gieteren maar [ik weten] welk [je] bedoelen 
+B|56| B: [Oh] [gieter] 
+B|57| B: [ja [ja] ja] 
+B|58| B: [die zijn] [het] 
+A|59| A: [Oké] oké 
+A|60| A: [ik hebben] 
+A|61| A: oké [ja] de moeilijk [gieter] slashen [kruiwag] [met] de [wielt] 
+A|62| A: [en [het] [vierkan] en dan] 
+B|63| B: [Oh ja] 
+B|64| B: [ja] 
+A|65| A: [Oké] [ja] 
+B|66| B: [dat] 
+B|67| B: [ja] [dat zijn] 
+A|68| A: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ik hebben nu waarvan ik denken dat het een kruiwagen zijn
+	Free: Pattern=ik denken dat, Pattern=het een kruiwagen, Pattern=Oh ik hebben, Pattern=zijn
+	Constrained: Pattern=dat, Pattern=kruiwagen, Pattern=een, Pattern=het, Pattern=ik, Pattern=Oh ik, Pattern=Oh, Pattern=ik hebben, Pattern=het een
+Turn ID=1| B | B : met die twee wielt zo
+	Free: Pattern=twee, Pattern=zo, Pattern=met, Pattern=die, Pattern=wielt
+	Constrained: 
+Turn ID=2| B | B : en dan één lang en één kort
+	Free: Pattern=en dan, Pattern=en
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=3| B | B : en nog een soort vierkan schuin links erachter
+	Free: Pattern=nog een soort, Pattern=en, Pattern=schuin, Pattern=vierkan
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=4| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=5| A | A : en dan aan dat vierkan zitten nog een soort aanhaaksel
+	Free: Pattern=nog een soort, Pattern=dat vierkan, Pattern=en dan
+	Constrained: Pattern=dat, Pattern=dan, Pattern=een, Pattern=een soort, Pattern=en, Pattern=vierkan
+Turn ID=6| B | B : ja nog een soort dinge
+	Free: Pattern=nog een soort, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja oké dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn
+Turn ID=9| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| A | A : ik hebben ja een soort gieter
+	Free: Pattern=een soort, Pattern=ik hebben, Pattern=gieter, Pattern=ja
+	Constrained: Pattern=een, Pattern=ik
+Turn ID=11| A | A : maar jij noemen het volgens mij kruiwagen met twee armp
+	Free: Pattern=twee, Pattern=kruiwagen, Pattern=het, Pattern=met, Pattern=volgens mij, Pattern=jij
+	Constrained: 
+Turn ID=12| A | A : die zijn dan bol aan de zijkant
+	Free: Pattern=die zijn, Pattern=dan
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=13| A | A : en dan zijn er dus zo'n
+	Free: Pattern=en dan, Pattern=zo'n, Pattern=zijn
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=14| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=15| A | A : ja met dat vierkant dat er zo bovenaan insteekt ja
+	Free: Pattern=met dat, Pattern=zo, Pattern=dat, Pattern=ja
+	Constrained: Pattern=met, Pattern=dat
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Oké dat zijn bij mij
+	Free: Pattern=Oké dat zijn bij mij
+	Constrained: Pattern=dat zijn bij mij, Pattern=zijn, Pattern=Oké, Pattern=dat, Pattern=dat zijn
+Turn ID=20| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=21| B | B : ik hebben nu die kruiwag die ik vinden met die wielt zo
+	Free: Pattern=ik hebben, Pattern=ik vinden, Pattern=zo, Pattern=die kruiwag, Pattern=met, Pattern=die, Pattern=wielt
+	Constrained: Pattern=kruiwag, Pattern=die, Pattern=ik, Pattern=vinden
+Turn ID=22| B | B : één kort en één lang
+	Free: Pattern=en
+	Constrained: 
+Turn ID=23| B | B : en het het vierkan
+	Free: Pattern=het vierkan, Pattern=en het
+	Constrained: Pattern=en, Pattern=het, Pattern=vierkan
+Turn ID=24| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=25| A | A : ja waar dan ook iets uitsteken
+	Free: Pattern=ja, Pattern=dan
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : Oké dat zijn bij mij
+	Free: Pattern=Oké dat zijn bij mij
+	Constrained: Pattern=dat zijn bij mij, Pattern=zijn, Pattern=Oké, Pattern=dat, Pattern=dat zijn
+Turn ID=28| A | A : Oh ik hebben
+	Free: Pattern=Oh ik hebben
+	Constrained: Pattern=Oh, Pattern=ik hebben, Pattern=Oh ik, Pattern=ik
+Turn ID=29| A | A : ik vinden het een beetje grieter
+	Free: Pattern=het een, Pattern=ik vinden
+	Constrained: Pattern=het, Pattern=vinden, Pattern=een, Pattern=ik
+Turn ID=30| A | A : maar jij de kruiwag
+	Free: Pattern=jij, Pattern=kruiwag
+	Constrained: 
+Turn ID=31| A | A : en dan met zo'n schuin ding
+	Free: Pattern=en dan, Pattern=zo'n, Pattern=met, Pattern=schuin
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=32| A | A : link
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : vierkant
+	Free: 
+	Constrained: 
+Turn ID=34| A | A : en zo'n uitsteksel eraan
+	Free: Pattern=zo'n, Pattern=en
+	Constrained: 
+Turn ID=35| A | A : volgens mij vinden jij het een kruiwagen
+	Free: Pattern=het een kruiwagen, Pattern=vinden jij het, Pattern=volgens mij
+	Constrained: Pattern=het een, Pattern=vinden, Pattern=kruiwagen, Pattern=een, Pattern=het, Pattern=jij
+Turn ID=36| B | B : Oh met die wielt ja
+	Free: Pattern=ja, Pattern=met, Pattern=die, Pattern=Oh, Pattern=wielt
+	Constrained: 
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : wat vinden jij het
+	Free: Pattern=vinden jij het
+	Constrained: Pattern=jij, Pattern=het, Pattern=vinden
+Turn ID=39| A | A : een soort gieter of zo
+	Free: Pattern=een soort, Pattern=zo, Pattern=of, Pattern=gieter
+	Constrained: Pattern=een
+Turn ID=40| B | B : een gieter
+	Free: Pattern=gieter, Pattern=een
+	Constrained: 
+Turn ID=41| A | A : ja maar
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=43| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : Oh ja dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=45| B | B : ik hebben nu die jij volgens mij een kruiwag vinden
+	Free: Pattern=ik hebben, Pattern=een, Pattern=die, Pattern=jij, Pattern=kruiwag vinden, Pattern=volgens mij
+	Constrained: Pattern=kruiwag, Pattern=ik, Pattern=vinden
+Turn ID=46| B | B : ik zo'n zijwielt
+	Free: Pattern=zo'n, Pattern=ik
+	Constrained: 
+Turn ID=47| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=48| A | A : Oh ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=49| B | B : of ja weten je
+	Free: Pattern=weten, Pattern=of, Pattern=je, Pattern=ja
+	Constrained: 
+Turn ID=50| B | B : met dat vierkan en dan dat aanhangsel
+	Free: Pattern=vierkan en dan, Pattern=dat vierkan, Pattern=met dat, Pattern=dat
+	Constrained: Pattern=dat, Pattern=en dan, Pattern=dan, Pattern=met, Pattern=en, Pattern=vierkan
+Turn ID=51| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=52| A | A : Oh ik denken dat jij die kruiwag vinden
+	Free: Pattern=ik denken dat, Pattern=die kruiwag, Pattern=kruiwag vinden, Pattern=Oh ik, Pattern=jij
+	Constrained: Pattern=dat, Pattern=vinden, Pattern=die, Pattern=Oh, Pattern=kruiwag, Pattern=ik
+Turn ID=53| B | B : Oh vinden ik die kruiwag
+	Free: Pattern=die kruiwag, Pattern=vinden, Pattern=Oh, Pattern=ik
+	Constrained: Pattern=die, Pattern=kruiwag
+Turn ID=54| B | B : Oh ik weten het niet veel
+	Free: Pattern=Oh ik, Pattern=ik weten, Pattern=het
+	Constrained: Pattern=weten, Pattern=Oh, Pattern=ik
+Turn ID=55| A | A : en ik gieteren maar ik weten welk je bedoelen
+	Free: Pattern=ik weten, Pattern=je, Pattern=en, Pattern=ik
+	Constrained: Pattern=weten, Pattern=ik
+Turn ID=56| B | B : Oh gieter
+	Free: Pattern=gieter, Pattern=Oh
+	Constrained: 
+Turn ID=57| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=58| B | B : die zijn het
+	Free: Pattern=die zijn, Pattern=het
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=59| A | A : Oké oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=60| A | A : ik hebben
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik
+Turn ID=61| A | A : oké ja de moeilijk gieter slashen kruiwag met de wielt
+	Free: Pattern=ja, Pattern=gieter, Pattern=met, Pattern=kruiwag, Pattern=wielt
+	Constrained: 
+Turn ID=62| A | A : en het vierkan en dan
+	Free: Pattern=vierkan en dan, Pattern=het vierkan, Pattern=en het
+	Constrained: Pattern=en dan, Pattern=dan, Pattern=het, Pattern=en, Pattern=vierkan
+Turn ID=63| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=64| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=65| A | A : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=66| B | B : dat
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=67| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=68| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 

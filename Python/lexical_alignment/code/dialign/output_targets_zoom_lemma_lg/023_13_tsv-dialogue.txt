@@ -1,0 +1,255 @@
+B|0| B: _Oké_ _ja_ 
+A|1| A: [ja] nu _hebben_ _ik_ _een_ rood vierkant 
+A|2| A: _nou_ _aan de voorkant_ zien je _dan_ _een cirkel_ 
+B|3| B: [ja] 
+A|4| A: _Eh_ _met_ zo'n buis _aan de_ rechterkant 
+B|5| B: [ja] 
+A|6| A: _en_ _dan_ _hebben_ je _aan de_ rechterkant _en_ _aan de_ linkerkant _drie_ van _die_ driehoek lijken het net 
+B|7| B: _ja ik_ [ik] [hebben] hem [ja] 
+A|8| A: [Oké] 
+B|9| B: [nou] 
+A|10| A: [ja] 
+A|11| A: bij mij _zijn_ het _A_ 
+B|12| B: [A] 
+B|13| B: [nou] top [dan] klik [ik] hem _weer_ door 
+A|14| A: [ja] 
+B|15| B: [ja] dit [zijn] [die] echt _op een_ blad staan 
+B|16| B: [met] _die drie_ dinget link 
+B|17| B: [en] [drie] dinget _rechts_ 
+A|18| A: [ja ik] _weten_ het al 
+A|19| A: Letter 
+B|20| B: [ja] 
+A|21| A: _eh_ _letter_ 
+B|22| B: [ja] 
+B|23| B: [ik] _denken_ dat [die] cijfer niet nodig [zijn] 
+B|24| B: dat ze dat wel [weten] 
+B|25| B: dat [de] [letter] _alleen_ prima [zijn] dus 
+A|26| A: _Oh_ [ja] gewoon 
+B|27| B: [eh] [ja] 
+B|28| B: NouE 
+A|29| A: ehm [nou] _aan de voorkant_ [hebben] je _een cirkel_ 
+A|30| A: [en] _aan de_ zijkant [rechts] [en] links [hebben] je van [die] driehoek 
+B|31| B: [aan de voorkant] [een cirkel] 
+B|32| B: [Eh] 
+A|33| A: [en] [aan de] [aan] linkerkant [hebben] je [dan] van [die drie] van [die] [ja] driehoek [denken] [ik] 
+A|34| A: [ja] [zijn] het [ja] 
+B|35| B: Ehm 
+A|36| A: Vierkantjes laten maar zeggen we [dan] 
+B|37| B: even kijken 
+B|38| B: boven _op_ ook _of_ 
+A|39| A: nee nee [alleen] [de] zijkant 
+B|40| B: hm 
+A|41| A: het lijken gewoon misschien [op een] armband [of] zo 
+A|42| A: steentje 
+B|43| B: even kijken 
+A|44| A: _Links en rechts_ 
+B|45| B: [Oh] [met] [die] [met] [die drie] 
+A|46| A: _ja ja_ 
+B|47| B: [ja ja] 
+A|48| A: [ja] H 
+B|49| B: [ja] 
+B|50| B: [eh] dit [zijn] [met] [die drie] [ja] _kraalt_ 
+B|51| B: [Links en rechts] [drie] 
+A|52| A: [ja] 
+B|53| B: Negen 
+B|54| B: [Oh] 
+A|55| A: [Oké] 
+A|56| A: ehm [ik] zien [ja] [weer] [die] [kraalt] [aan de] linkerkant [en] [de] rechterkant 
+B|57| B: [ja] 
+A|58| A: Yes 
+A|59| A: Klik [ik] [weer] 
+B|60| B: [eh] [ja] [drie] link [drie] [kraalt] [en rechts] ook [drie] 
+A|61| A: [Eh] 
+B|62| B: vijf 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : ja nu hebben ik een rood vierkant
+	Free: Pattern=een, Pattern=ja, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=2| A | A : nou aan de voorkant zien je dan een cirkel
+	Free: Pattern=aan de voorkant, Pattern=een cirkel, Pattern=dan, Pattern=nou
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : Eh met zo'n buis aan de rechterkant
+	Free: Pattern=aan de, Pattern=Eh, Pattern=met
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en dan hebben je aan de rechterkant en aan de linkerkant drie van die driehoek lijken het net
+	Free: Pattern=aan de, Pattern=dan, Pattern=drie, Pattern=hebben, Pattern=die, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=7| B | B : ja ik ik hebben hem ja
+	Free: Pattern=ja ik, Pattern=ja, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=8| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| B | B : nou
+	Free: Pattern=nou
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : bij mij zijn het A
+	Free: Pattern=zijn, Pattern=A
+	Constrained: 
+Turn ID=12| B | B : A
+	Free: Pattern=A
+	Constrained: 
+Turn ID=13| B | B : nou top dan klik ik hem weer door
+	Free: Pattern=weer, Pattern=dan, Pattern=ik, Pattern=nou
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja dit zijn die echt op een blad staan
+	Free: Pattern=op een, Pattern=zijn, Pattern=die, Pattern=ja
+	Constrained: Pattern=een, Pattern=op
+Turn ID=16| B | B : met die drie dinget link
+	Free: Pattern=die drie, Pattern=met
+	Constrained: Pattern=die, Pattern=drie
+Turn ID=17| B | B : en drie dinget rechts
+	Free: Pattern=en, Pattern=rechts, Pattern=drie
+	Constrained: 
+Turn ID=18| A | A : ja ik weten het al
+	Free: Pattern=ja ik, Pattern=weten
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=19| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : eh letter
+	Free: Pattern=letter, Pattern=eh
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ik denken dat die cijfer niet nodig zijn
+	Free: Pattern=zijn, Pattern=denken, Pattern=die, Pattern=ik
+	Constrained: 
+Turn ID=24| B | B : dat ze dat wel weten
+	Free: Pattern=weten
+	Constrained: 
+Turn ID=25| B | B : dat de letter alleen prima zijn dus
+	Free: Pattern=letter, Pattern=zijn, Pattern=alleen, Pattern=de
+	Constrained: 
+Turn ID=26| A | A : Oh ja gewoon
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=27| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : NouE
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : ehm nou aan de voorkant hebben je een cirkel
+	Free: Pattern=aan de voorkant, Pattern=een cirkel, Pattern=nou, Pattern=hebben
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=30| A | A : en aan de zijkant rechts en links hebben je van die driehoek
+	Free: Pattern=rechts, Pattern=aan de, Pattern=hebben, Pattern=die, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=31| B | B : aan de voorkant een cirkel
+	Free: Pattern=aan de voorkant, Pattern=een cirkel
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=32| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=33| A | A : en aan de aan linkerkant hebben je dan van die drie van die ja driehoek denken ik
+	Free: Pattern=denken, Pattern=aan de, Pattern=dan, Pattern=die drie, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=en, Pattern=aan, Pattern=ja
+	Constrained: Pattern=die, Pattern=drie, Pattern=aan, Pattern=de
+Turn ID=34| A | A : ja zijn het ja
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : Vierkantjes laten maar zeggen we dan
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=37| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : boven op ook of
+	Free: Pattern=of, Pattern=op
+	Constrained: 
+Turn ID=39| A | A : nee nee alleen de zijkant
+	Free: Pattern=alleen, Pattern=de
+	Constrained: 
+Turn ID=40| B | B : hm
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : het lijken gewoon misschien op een armband of zo
+	Free: Pattern=op een, Pattern=of
+	Constrained: Pattern=een, Pattern=op
+Turn ID=42| A | A : steentje
+	Free: 
+	Constrained: 
+Turn ID=43| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=44| A | A : Links en rechts
+	Free: Pattern=Links en rechts
+	Constrained: Pattern=en rechts, Pattern=en, Pattern=rechts
+Turn ID=45| B | B : Oh met die met die drie
+	Free: Pattern=die drie, Pattern=die, Pattern=Oh, Pattern=met
+	Constrained: Pattern=die, Pattern=drie
+Turn ID=46| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=47| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=48| A | A : ja H
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=49| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| B | B : eh dit zijn met die drie ja kraalt
+	Free: Pattern=ja, Pattern=die drie, Pattern=met, Pattern=eh, Pattern=zijn, Pattern=kraalt
+	Constrained: Pattern=die, Pattern=drie
+Turn ID=51| B | B : Links en rechts drie
+	Free: Pattern=Links en rechts, Pattern=drie
+	Constrained: Pattern=en rechts, Pattern=en, Pattern=rechts
+Turn ID=52| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| B | B : Negen
+	Free: 
+	Constrained: 
+Turn ID=54| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=55| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=56| A | A : ehm ik zien ja weer die kraalt aan de linkerkant en de rechterkant
+	Free: Pattern=aan de, Pattern=die, Pattern=ik, Pattern=en, Pattern=de, Pattern=ja, Pattern=weer, Pattern=kraalt
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=57| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=58| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=59| A | A : Klik ik weer
+	Free: Pattern=weer, Pattern=ik
+	Constrained: 
+Turn ID=60| B | B : eh ja drie link drie kraalt en rechts ook drie
+	Free: Pattern=en rechts, Pattern=ja, Pattern=drie, Pattern=eh, Pattern=kraalt
+	Constrained: Pattern=en, Pattern=rechts
+Turn ID=61| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=62| B | B : vijf
+	Free: 
+	Constrained: 

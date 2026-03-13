@@ -1,0 +1,155 @@
+B|0| B: sorry duren _wat_ lang 
+A|1| A: _ja_ nee maken niet uit 
+B|2| B: _Oké_ 
+A|3| A: [Oké] 
+A|4| A: _ja_ 
+A|5| A: dit _lijken_ _op een kop koffie_ vinden _ik_ 
+A|6| A: en _het_ _hebben_ _een_ soort van 
+A|7| A: _het_ _zijn_ geen perfect _bal_ maar _het_ zitten _een bal erop_ 
+A|8| A: _aan de rechterkant_ 
+B|9| B: [een _kop koffie] met [een bal_ erop] 
+A|10| A: _ja_ want _het_ _hebben_ twee _staaf_ boven _die_ er _zo_ uit gaan 
+A|11| A: eentje _één_ _staaf_ _zijn_ vierkant en _de_ ander _staaf_ _zijn_ niet vierkant 
+A|12| A: Eh en dan en dan _hebben_ hij nog [een] linkerarm 
+A|13| A: en _aan de rechterkant_ _hebben_ hij [een bal] 
+B|14| B: _Oh_ 
+B|15| B: _Oh ja_ 
+A|16| A: [ja] 
+B|17| B: [ja] _dat zijn_ [één] [zo] gek vorm daar [de] linker [staaf] 
+A|18| A: _ja ja_ [een] soort van driehoek [wat] er uitsteken 
+B|19| B: [ja] oké 
+B|20| B: _dat zijn_ 
+A|21| A: [ja] 
+B|22| B: _ik hebben_ [die] [een] [die] jij [op een kop koffie] plaatsvinden [lijken] _met_ [die] 
+A|23| A: [Oh] 
+B|24| B: _met_ [die] bol [aan de rechterkant] 
+A|25| A: [Oh ja] en dan twee [staaf] eruit naar boven 
+B|26| B: [ja ja] 
+A|27| A: eh _ik hebben nu_ [de] [kop koffie] weer _met de bal_ [aan de rechterkant] 
+B|28| B: [Oh ja] _dat zijn_ 
+B|29| B: [ik hebben nu] [het] _kop koffie [met_ de _bal] rechts_ 
+A|30| A: [Oké] [dat zijn] 
+A|31| A: eh [ik hebben nu] [de] [kop koffie _met een bal] rechts_ 
+B|32| B: [dat zijn] 
+A|33| A: [ja] 
+B|34| B: Ehm [ik hebben] [dat] [kop] [met een bal rechts] 
+A|35| A: [Oh ja] 
+B|36| B: [dat] [kop koffie] 
+A|37| A: [Oké] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : sorry duren wat lang
+	Free: Pattern=wat
+	Constrained: 
+Turn ID=1| A | A : ja nee maken niet uit
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : dit lijken op een kop koffie vinden ik
+	Free: Pattern=op een kop koffie, Pattern=lijken, Pattern=ik
+	Constrained: Pattern=een kop koffie, Pattern=een, Pattern=kop koffie, Pattern=kop
+Turn ID=6| A | A : en het hebben een soort van
+	Free: Pattern=het, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=7| A | A : het zijn geen perfect bal maar het zitten een bal erop
+	Free: Pattern=een bal erop, Pattern=zijn, Pattern=bal, Pattern=het
+	Constrained: Pattern=een bal, Pattern=een, Pattern=bal
+Turn ID=8| A | A : aan de rechterkant
+	Free: Pattern=aan de rechterkant
+	Constrained: Pattern=de
+Turn ID=9| B | B : een kop koffie met een bal erop
+	Free: Pattern=kop koffie met een bal, Pattern=een bal erop, Pattern=een kop koffie
+	Constrained: Pattern=bal, Pattern=een, Pattern=kop, Pattern=een bal, Pattern=kop koffie met, Pattern=met, Pattern=kop koffie
+Turn ID=10| A | A : ja want het hebben twee staaf boven die er zo uit gaan
+	Free: Pattern=ja, Pattern=staaf, Pattern=het, Pattern=hebben, Pattern=zo, Pattern=die
+	Constrained: 
+Turn ID=11| A | A : eentje één staaf zijn vierkant en de ander staaf zijn niet vierkant
+	Free: Pattern=staaf, Pattern=zijn, Pattern=één, Pattern=de
+	Constrained: 
+Turn ID=12| A | A : Eh en dan en dan hebben hij nog een linkerarm
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=13| A | A : en aan de rechterkant hebben hij een bal
+	Free: Pattern=aan de rechterkant, Pattern=een bal, Pattern=hebben
+	Constrained: Pattern=bal, Pattern=een, Pattern=de
+Turn ID=14| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=15| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ja dat zijn één zo gek vorm daar de linker staaf
+	Free: Pattern=dat zijn, Pattern=staaf, Pattern=één, Pattern=zo, Pattern=de, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=18| A | A : ja ja een soort van driehoek wat er uitsteken
+	Free: Pattern=ja ja, Pattern=wat, Pattern=een
+	Constrained: Pattern=ja
+Turn ID=19| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ik hebben die een die jij op een kop koffie plaatsvinden lijken met die
+	Free: Pattern=ik hebben, Pattern=lijken, Pattern=een, Pattern=die, Pattern=op een kop koffie, Pattern=met
+	Constrained: Pattern=een, Pattern=hebben, Pattern=kop, Pattern=ik, Pattern=een kop koffie, Pattern=kop koffie
+Turn ID=23| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=24| B | B : met die bol aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=die, Pattern=met
+	Constrained: Pattern=de
+Turn ID=25| A | A : Oh ja en dan twee staaf eruit naar boven
+	Free: Pattern=Oh ja, Pattern=staaf
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=26| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=27| A | A : eh ik hebben nu de kop koffie weer met de bal aan de rechterkant
+	Free: Pattern=de, Pattern=aan de rechterkant, Pattern=met de bal, Pattern=ik hebben nu, Pattern=kop koffie
+	Constrained: Pattern=ik hebben, Pattern=bal, Pattern=de, Pattern=hebben, Pattern=kop, Pattern=met, Pattern=ik
+Turn ID=28| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=Oh, Pattern=ja, Pattern=dat
+Turn ID=29| B | B : ik hebben nu het kop koffie met de bal rechts
+	Free: Pattern=het, Pattern=kop koffie met, Pattern=bal rechts, Pattern=met de bal, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=bal, Pattern=de, Pattern=hebben, Pattern=kop, Pattern=met, Pattern=ik, Pattern=kop koffie
+Turn ID=30| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=31| A | A : eh ik hebben nu de kop koffie met een bal rechts
+	Free: Pattern=kop koffie met een bal, Pattern=met een bal rechts, Pattern=ik hebben nu, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=bal, Pattern=een, Pattern=hebben, Pattern=kop, Pattern=een bal, Pattern=kop koffie met, Pattern=ik, Pattern=kop koffie, Pattern=bal rechts, Pattern=met
+Turn ID=32| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : Ehm ik hebben dat kop met een bal rechts
+	Free: Pattern=met een bal rechts, Pattern=ik hebben, Pattern=kop, Pattern=dat
+	Constrained: Pattern=bal, Pattern=een, Pattern=hebben, Pattern=een bal, Pattern=ik, Pattern=bal rechts, Pattern=met
+Turn ID=35| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=36| B | B : dat kop koffie
+	Free: Pattern=kop koffie, Pattern=dat
+	Constrained: Pattern=kop
+Turn ID=37| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=zijn, Pattern=dat

@@ -1,0 +1,115 @@
+B|0| B: ehm deze staat _op een_ 
+B|1| B: _ja_ kennen je kano koek 
+A|2| A: nee 
+B|3| B: Oh 
+B|4| B: Zeggen maar _een_ _een_ uitgerekt rond _een_ beetje als standaard _aan de_ onderkant 
+B|5| B: _met_ _aan de zijkant_ _een_ rond staaf 
+B|6| B: _aan de_ achterkant _zitten_ _een_ rond schotel 
+B|7| B: _en_ bovenop _zijn_ alsof er _een soort_ splash uit _het_ kop komen 
+A|8| A: _eh_ ik [zijn] hem even [aan] [het] zoeken horen 
+B|9| B: van _ja_ er [zijn] niet heel veel kop _op een_ standaard 
+A|10| A: nee ik [zitten] even te kijken die 
+A|11| A: oh [zijn] [het] [zijn] [het] die [een] [met] [de] citroenschijf 
+B|12| B: Zullen je er in kunnen zien _ja_ 
+A|13| A: [ja] oké 
+A|14| A: dan [zijn] [het] [ja] dan hebben hij [aan de zijkant] echt zo'n 
+A|15| A: [het] [zijn] echt [een soort] glas [met] [een] citroen erin [en] [een] roerstaf 
+A|16| A: [met] [op een] statiefje 
+B|17| B: [ja] 
+A|18| A: [ja] 
+B|19| B: [ja] 
+A|20| A: [het] [zijn] 
+A|21| A: _eh_ [ja] dit [zijn] die [met] [de] citroenschijf weer 
+B|22| B: [eh] citroenschijfje 
+A|23| A: Ehm dat [zijn] 
+A|24| A: [eh] dit [zijn] die [met] [de] citroenschijf 
+B|25| B: [eh] citroenschijfje 
+A|26| A: Eh dat [zijn] 
+A|27| A: [eh] dit [zijn] [het] citroenschijf 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze staat op een
+	Free: Pattern=op een
+	Constrained: Pattern=een
+Turn ID=1| B | B : ja kennen je kano koek
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : Zeggen maar een een uitgerekt rond een beetje als standaard aan de onderkant
+	Free: Pattern=aan de, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=5| B | B : met aan de zijkant een rond staaf
+	Free: Pattern=aan de zijkant, Pattern=een, Pattern=met
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=6| B | B : aan de achterkant zitten een rond schotel
+	Free: Pattern=aan de, Pattern=een, Pattern=zitten
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=7| B | B : en bovenop zijn alsof er een soort splash uit het kop komen
+	Free: Pattern=een soort, Pattern=en, Pattern=het, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=8| A | A : eh ik zijn hem even aan het zoeken horen
+	Free: Pattern=eh, Pattern=aan, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=9| B | B : van ja er zijn niet heel veel kop op een standaard
+	Free: Pattern=op een, Pattern=ja, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=10| A | A : nee ik zitten even te kijken die
+	Free: Pattern=zitten
+	Constrained: 
+Turn ID=11| A | A : oh zijn het zijn het die een met de citroenschijf
+	Free: Pattern=de, Pattern=een, Pattern=het, Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=12| B | B : Zullen je er in kunnen zien ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : dan zijn het ja dan hebben hij aan de zijkant echt zo'n
+	Free: Pattern=aan de zijkant, Pattern=ja, Pattern=het, Pattern=zijn
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=15| A | A : het zijn echt een soort glas met een citroen erin en een roerstaf
+	Free: Pattern=een, Pattern=het, Pattern=met, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=16| A | A : met op een statiefje
+	Free: Pattern=op een, Pattern=met
+	Constrained: Pattern=een
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : het zijn
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=21| A | A : eh ja dit zijn die met de citroenschijf weer
+	Free: Pattern=met, Pattern=eh, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : eh citroenschijfje
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=23| A | A : Ehm dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=24| A | A : eh dit zijn die met de citroenschijf
+	Free: Pattern=de, Pattern=eh, Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : eh citroenschijfje
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=26| A | A : Eh dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=27| A | A : eh dit zijn het citroenschijf
+	Free: Pattern=eh, Pattern=het, Pattern=zijn
+	Constrained: 

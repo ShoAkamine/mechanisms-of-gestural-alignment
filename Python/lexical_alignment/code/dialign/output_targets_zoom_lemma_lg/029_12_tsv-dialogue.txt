@@ -1,0 +1,263 @@
+B|0| B: _Ehm_ 
+B|1| B: Oké 
+B|2| B: ik hebben 
+B|3| B: ehh 
+B|4| B: hij hebben _een_ best wel 
+B|5| B: _dikke_ armachtig iets wat uitstikt _aan de zijkant_ 
+A|6| A: Mhmm 
+B|7| B: _en_ dan in _die_ _arm_ 
+B|8| B: _dat zijn_ _maar_ _aan_ één kant 
+B|9| B: _en_ in _die_ _arm_ zitten ook 
+B|10| B: _ja_ komen ook _weer_ _een soort van_ zitten _een soort_ _spijker_ in 
+A|11| A: Mhmm 
+B|12| B: Best wel _een_ lang hoog _spijker_ 
+B|13| B: groot 
+A|14| A: _schuin_ 
+B|15| B: _ja_ [schuin] 
+A|16| A: [ja] oké 
+B|17| B: _en_ dan 
+B|18| B: eh hebben hij ook nog _een soort_ platbord _aan de_ _weer_ _een_ _de_ ander kant 
+A|19| A: _ja dat zijn_ 
+B|20| B: _Top_ 
+A|21| A: [Ehm] 
+A|22| A: [Ehm] 
+A|23| A: [een soort van] plat bord [en] [aan de zijkant] [een] heel dik [arm] _met een_ [schuin] [spijker] 
+B|24| B: ehm even kijken platbord 
+B|25| B: [ja] ik weten ik hebben hem voorbij zien komen 
+B|26| B: ik [zijn] hem nu even kwijt 
+B|27| B: huh 
+A|28| A: _met een_ 
+B|29| B: _ja ja_ [met een] [spijker] in [zijn] [arm] toch 
+A|30| A: _ja _ja ja_ ja_ 
+B|31| B: [ja ja [ja] dat zijn] [dat zijn] 
+B|32| B: [Ehm] 
+B|33| B: dit [zijn] _met die_ [arm] [en] _die_ lang [spijker] in [de] [arm] [en] _op_ het platbord 
+A|34| A: Eehhh 
+A|35| A: unintelligible 
+A|36| A: [ja dat zijn] 
+A|37| A: [de] volgen 
+B|38| B: Yes 
+A|39| A: Eehm 
+A|40| A: [ja] [weer] [met die] 
+A|41| A: [die] schaal [aan de] voorkant 
+A|42| A: _en een_ heel dik [arm] [met een] schroef erdoorheen 
+A|43| A: [een] [schuin] schroef 
+B|44| B: [Ehm] 
+A|45| A: Zeg [maar] [dat] [dat] plat bord [aan de] voorkant 
+B|46| B: even denken 
+B|47| B: [ja] 
+B|48| B: Oh [ja] [die] 
+B|49| B: Eh 
+B|50| B: waar staan [die] ? waar staan [die] 
+A|51| A: laugh 
+B|52| B: Oh [ja] 
+B|53| B: [ja ja [ja] dat zijn] 
+B|54| B: ehh 
+A|55| A: [Top] 
+B|56| B: dit [zijn] [met die] [arm] [en] [die] lang spijk in [de] [arm] [en een] platbord 
+A|57| A: [dat zijn] 
+A|58| A: [Ehm] 
+A|59| A: plat bord 
+A|60| A: [en] [schuin] [spijker] [op] [een] [arm] 
+A|61| A: [dikke] [arm] 
+B|62| B: [ja] 
+B|63| B: ehh 
+B|64| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=1| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : ik hebben
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : hij hebben een best wel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| B | B : dikke armachtig iets wat uitstikt aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=dikke
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=6| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : en dan in die arm
+	Free: Pattern=arm, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=8| B | B : dat zijn maar aan één kant
+	Free: Pattern=dat zijn, Pattern=aan, Pattern=maar
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=9| B | B : en in die arm zitten ook
+	Free: Pattern=arm, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : ja komen ook weer een soort van zitten een soort spijker in
+	Free: Pattern=ja, Pattern=een soort van, Pattern=een soort, Pattern=weer, Pattern=spijker
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=11| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : Best wel een lang hoog spijker
+	Free: Pattern=spijker, Pattern=een
+	Constrained: 
+Turn ID=13| B | B : groot
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : schuin
+	Free: Pattern=schuin
+	Constrained: 
+Turn ID=15| B | B : ja schuin
+	Free: Pattern=schuin, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=18| B | B : eh hebben hij ook nog een soort platbord aan de weer een de ander kant
+	Free: Pattern=de, Pattern=aan de, Pattern=een, Pattern=een soort, Pattern=weer
+	Constrained: Pattern=aan, Pattern=de, Pattern=een
+Turn ID=19| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=20| B | B : Top
+	Free: Pattern=Top
+	Constrained: 
+Turn ID=21| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=22| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=23| A | A : een soort van plat bord en aan de zijkant een heel dik arm met een schuin spijker
+	Free: Pattern=een soort van, Pattern=met een, Pattern=schuin, Pattern=spijker, Pattern=een, Pattern=aan de zijkant, Pattern=arm, Pattern=en
+	Constrained: Pattern=aan de, Pattern=een, Pattern=een soort, Pattern=de, Pattern=aan
+Turn ID=24| B | B : ehm even kijken platbord
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : ja ik weten ik hebben hem voorbij zien komen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ik zijn hem nu even kwijt
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=27| B | B : huh
+	Free: 
+	Constrained: 
+Turn ID=28| A | A : met een
+	Free: Pattern=met een
+	Constrained: Pattern=een
+Turn ID=29| B | B : ja ja met een spijker in zijn arm toch
+	Free: Pattern=ja ja, Pattern=met een, Pattern=arm, Pattern=zijn, Pattern=spijker
+	Constrained: Pattern=ja, Pattern=een
+Turn ID=30| A | A : ja ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=31| B | B : ja ja ja dat zijn dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja ja ja, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=dat zijn, Pattern=ja, Pattern=ja ja
+Turn ID=32| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=33| B | B : dit zijn met die arm en die lang spijker in de arm en op het platbord
+	Free: Pattern=met die, Pattern=de, Pattern=op, Pattern=die, Pattern=zijn, Pattern=spijker, Pattern=arm, Pattern=en
+	Constrained: Pattern=die
+Turn ID=34| A | A : Eehhh
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : unintelligible
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=37| A | A : de volgen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=38| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : Eehm
+	Free: 
+	Constrained: 
+Turn ID=40| A | A : ja weer met die
+	Free: Pattern=met die, Pattern=ja, Pattern=weer
+	Constrained: Pattern=die
+Turn ID=41| A | A : die schaal aan de voorkant
+	Free: Pattern=aan de, Pattern=die
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=42| A | A : en een heel dik arm met een schroef erdoorheen
+	Free: Pattern=met een, Pattern=en een, Pattern=arm
+	Constrained: Pattern=en, Pattern=een
+Turn ID=43| A | A : een schuin schroef
+	Free: Pattern=schuin, Pattern=een
+	Constrained: 
+Turn ID=44| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=45| A | A : Zeg maar dat dat plat bord aan de voorkant
+	Free: Pattern=aan de, Pattern=dat, Pattern=maar
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=46| B | B : even denken
+	Free: 
+	Constrained: 
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : Oh ja die
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=49| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=50| B | B : waar staan die ? waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=51| A | A : laugh
+	Free: 
+	Constrained: 
+Turn ID=52| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| B | B : ja ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja ja ja
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=dat zijn, Pattern=ja, Pattern=ja ja
+Turn ID=54| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=55| A | A : Top
+	Free: Pattern=Top
+	Constrained: 
+Turn ID=56| B | B : dit zijn met die arm en die lang spijk in de arm en een platbord
+	Free: Pattern=met die, Pattern=de, Pattern=die, Pattern=arm, Pattern=en, Pattern=en een, Pattern=zijn
+	Constrained: Pattern=en, Pattern=die, Pattern=een
+Turn ID=57| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=58| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=59| A | A : plat bord
+	Free: 
+	Constrained: 
+Turn ID=60| A | A : en schuin spijker op een arm
+	Free: Pattern=op, Pattern=een, Pattern=schuin, Pattern=spijker, Pattern=arm, Pattern=en
+	Constrained: 
+Turn ID=61| A | A : dikke arm
+	Free: Pattern=arm, Pattern=dikke
+	Constrained: 
+Turn ID=62| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=64| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

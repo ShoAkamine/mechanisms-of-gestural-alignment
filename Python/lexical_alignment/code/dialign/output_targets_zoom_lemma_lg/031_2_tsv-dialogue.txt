@@ -1,0 +1,119 @@
+A|0| A: _Oké_ hier hebben je een soort 
+A|1| A: ehm _oké_ helemaal _aan de linkerkant_ hebben je een soort heel klein _kogel_ _die_ _de_ zijkant raken 
+A|2| A: _bovenop_ hebben je een soort _piramide_ 
+A|3| A: _en_ een beetje rechts rechtsvoor hebben je een soort rechthoek _die_ er een beetje _op_ staan 
+A|4| A: _en_ _aan de_ onderkant hebben je nog een klein soort rond half 
+B|5| B: _ja_ [oké] 
+A|6| A: _Oké_ 
+B|7| B: Euhm [oké] _dit zijn_ weer Euhm _ja_ [die] _piramide op het hoofd_ 
+B|8| B: [en] 
+A|9| A: [die] soort _kogel aan de_ zijkant [en] [die] blokneus 
+B|10| B: _ja_ 
+A|11| A: _Oké ja_ 
+B|12| B: [ja] 
+A|13| A: _euh_ [dit zijn] diegene met [die] soort [piramide op] [zijn] [hoofd] 
+A|14| A: [en] links hebben je [die] soort _kogel_ [die] hem raken [en] [die] heel groot blok nog ervoor als _neus_ 
+B|15| B: mhm 
+B|16| B: [Oké ja] 
+B|17| B: nou [dit zijn] [euh] _de piramide_ [bovenop] _het hoofd_ 
+B|18| B: [die] gek [neus] [aan de] rechterkant 
+A|19| A: [ja] 
+B|20| B: [Oké] 
+A|21| A: [dit zijn] [de [piramide] op het hoofd] met [die] raar blok als [neus] [en] [die] soort _kogel aan de_ zijkant 
+B|22| B: [ja] 
+B|23| B: [Oké] [dit zijn] [euh] [de piramide] [bovenop] [het hoofd] 
+B|24| B: Euh 
+B|25| B: weer [die] [kogel [aan de] linkerkant] 
+A|26| A: O [ja] 
+A|27| A: [ja] 
+B|28| B: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké hier hebben je een soort
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ehm oké helemaal aan de linkerkant hebben je een soort heel klein kogel die de zijkant raken
+	Free: Pattern=oké, Pattern=de, Pattern=die, Pattern=kogel, Pattern=aan de linkerkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=2| A | A : bovenop hebben je een soort piramide
+	Free: Pattern=bovenop, Pattern=piramide
+	Constrained: 
+Turn ID=3| A | A : en een beetje rechts rechtsvoor hebben je een soort rechthoek die er een beetje op staan
+	Free: Pattern=en, Pattern=die, Pattern=op
+	Constrained: 
+Turn ID=4| A | A : en aan de onderkant hebben je nog een klein soort rond half
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=5| B | B : ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=6| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : Euhm oké dit zijn weer Euhm ja die piramide op het hoofd
+	Free: Pattern=oké, Pattern=ja, Pattern=die, Pattern=piramide op het hoofd, Pattern=dit zijn
+	Constrained: Pattern=het hoofd, Pattern=piramide op, Pattern=zijn, Pattern=hoofd, Pattern=piramide, Pattern=op
+Turn ID=8| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=9| A | A : die soort kogel aan de zijkant en die blokneus
+	Free: Pattern=kogel aan de, Pattern=en, Pattern=die
+	Constrained: Pattern=aan de, Pattern=de, Pattern=kogel
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké ja
+	Free: Pattern=Oké ja
+	Constrained: Pattern=ja, Pattern=Oké
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : euh dit zijn diegene met die soort piramide op zijn hoofd
+	Free: Pattern=euh, Pattern=die, Pattern=piramide op, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn
+	Constrained: Pattern=piramide, Pattern=zijn, Pattern=op
+Turn ID=14| A | A : en links hebben je die soort kogel die hem raken en die heel groot blok nog ervoor als neus
+	Free: Pattern=en, Pattern=neus, Pattern=die, Pattern=kogel
+	Constrained: 
+Turn ID=15| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Oké ja
+	Free: Pattern=Oké ja
+	Constrained: Pattern=ja, Pattern=Oké
+Turn ID=17| B | B : nou dit zijn euh de piramide bovenop het hoofd
+	Free: Pattern=het hoofd, Pattern=euh, Pattern=dit zijn, Pattern=de piramide, Pattern=bovenop
+	Constrained: Pattern=hoofd, Pattern=piramide, Pattern=zijn, Pattern=de
+Turn ID=18| B | B : die gek neus aan de rechterkant
+	Free: Pattern=aan de, Pattern=neus, Pattern=die
+	Constrained: Pattern=de
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=21| A | A : dit zijn de piramide op het hoofd met die raar blok als neus en die soort kogel aan de zijkant
+	Free: Pattern=de piramide, Pattern=neus, Pattern=piramide op het hoofd, Pattern=en, Pattern=dit zijn, Pattern=kogel aan de, Pattern=die
+	Constrained: Pattern=het hoofd, Pattern=de, Pattern=kogel, Pattern=piramide op, Pattern=zijn, Pattern=hoofd, Pattern=piramide, Pattern=op, Pattern=aan de
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : Oké dit zijn euh de piramide bovenop het hoofd
+	Free: Pattern=het hoofd, Pattern=euh, Pattern=de piramide, Pattern=bovenop, Pattern=dit zijn, Pattern=Oké
+	Constrained: Pattern=hoofd, Pattern=piramide, Pattern=zijn, Pattern=de
+Turn ID=24| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : weer die kogel aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=kogel aan de, Pattern=die
+	Constrained: Pattern=de, Pattern=aan de, Pattern=kogel
+Turn ID=26| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 

@@ -1,0 +1,151 @@
+A|0| A: _eh_ _dit_ _dit zijn_ weinig echt uitsteksel 
+A|1| A: er zitten _een_ bovenop _zijn_ _een_ zitten _een_ balk 
+A|2| A: gewoon echt _een_ recht balk 
+A|3| A: aan _de_ rechterkant zitten 
+A|4| A: _ja_ wat _ja_ kunnen niet eens echt iets noemen 
+A|5| A: _het_ _zijn_ _veel_ _een soort_ friemel 
+A|6| A: _en_ aan _de_ linkerkant zitten _een soort_ _ja_ _klein_ _afzuigkap_ 
+B|7| B: Ehm 
+A|8| A: _dat_ steken _eigenlijk_ _heel_ weinig echt uit zeggen maar 
+A|9| A: _het_ zitten allemaal _heel compact_ bij elkaar 
+B|10| B: _Oh ja_ [een soort] van neergelegde rechthoek _met_ [een] [ja] 
+A|11| A: [ja] _op de bovenkant_ 
+B|12| B: [ja] [ja] 
+A|13| A: [ja] 
+B|14| B: Oké [de] [veel] [klein] [dat] [zijn] 
+B|15| B: _Eh_ _die met_ [het] platgeslagen rechthoekoe [en] [de] _Afzuigkap_ 
+A|16| A: [Eh] 
+B|17| B: _die [heel_ compact] _zijn die_ [eigenlijk] bijna geen uitsteeksel hebben 
+A|18| A: even kijken waar [die] _nu_ [zijn] 
+A|19| A: [Oh ja] [met] [die] balk _op de bovenkant_ 
+B|20| B: [ja] 
+A|21| A: [Eh] 
+A|22| A: _dit zijn [die_ met] [die heel] weinig uitstekel 
+A|23| A: [met] [die] balk _op de bovenkant_ 
+B|24| B: [Oh ja] 
+A|25| A: [en] dus [een soort] mini Afzichtkap aan [de] linkerkant 
+B|26| B: _ehm_ [die] staan [nu] daar 
+B|27| B: [dat] [zijn] 
+B|28| B: Oké [dit zijn die] [compact] 
+B|29| B: [met] [een] rechthoek _op de bovenkant en_ [een] [afzuigkap] 
+A|30| A: [ehm] [zijn] 
+A|31| A: [dit zijn [die] met] [die met] [die] balk recht [op de bovenkant en] [die] [Afzuigkap] aan [de] linkerkant 
+B|32| B: [Oh ja] 
+B|33| B: [eh] [de] [klein] [compact] [met] [de] [Afzuigkap] 
+B|34| B: [en] [de] rechthoek boven 
+A|35| A: [Oh] 
+A|36| A: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh dit dit zijn weinig echt uitsteksel
+	Free: Pattern=dit zijn, Pattern=dit, Pattern=eh
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=1| A | A : er zitten een bovenop zijn een zitten een balk
+	Free: Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : gewoon echt een recht balk
+	Free: Pattern=een
+	Constrained: 
+Turn ID=3| A | A : aan de rechterkant zitten
+	Free: Pattern=de
+	Constrained: 
+Turn ID=4| A | A : ja wat ja kunnen niet eens echt iets noemen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : het zijn veel een soort friemel
+	Free: Pattern=een soort, Pattern=veel, Pattern=zijn, Pattern=het
+	Constrained: Pattern=een
+Turn ID=6| A | A : en aan de linkerkant zitten een soort ja klein afzuigkap
+	Free: Pattern=en, Pattern=afzuigkap, Pattern=de, Pattern=ja, Pattern=klein, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=7| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : dat steken eigenlijk heel weinig echt uit zeggen maar
+	Free: Pattern=dat, Pattern=heel, Pattern=eigenlijk
+	Constrained: 
+Turn ID=9| A | A : het zitten allemaal heel compact bij elkaar
+	Free: Pattern=heel compact, Pattern=het
+	Constrained: Pattern=heel, Pattern=compact
+Turn ID=10| B | B : Oh ja een soort van neergelegde rechthoek met een ja
+	Free: Pattern=ja, Pattern=met, Pattern=een soort, Pattern=een, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=een
+Turn ID=11| A | A : ja op de bovenkant
+	Free: Pattern=op de bovenkant, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=12| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Oké de veel klein dat zijn
+	Free: Pattern=dat, Pattern=de, Pattern=veel, Pattern=klein, Pattern=zijn
+	Constrained: 
+Turn ID=15| B | B : Eh die met het platgeslagen rechthoekoe en de Afzuigkap
+	Free: Pattern=Afzuigkap, Pattern=de, Pattern=het, Pattern=Eh, Pattern=die met, Pattern=en
+	Constrained: Pattern=die, Pattern=met
+Turn ID=16| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=17| B | B : die heel compact zijn die eigenlijk bijna geen uitsteeksel hebben
+	Free: Pattern=zijn die, Pattern=heel compact, Pattern=die heel, Pattern=eigenlijk
+	Constrained: Pattern=zijn, Pattern=heel, Pattern=die, Pattern=compact
+Turn ID=18| A | A : even kijken waar die nu zijn
+	Free: Pattern=zijn, Pattern=die, Pattern=nu
+	Constrained: 
+Turn ID=19| A | A : Oh ja met die balk op de bovenkant
+	Free: Pattern=op de bovenkant, Pattern=Oh ja, Pattern=die, Pattern=met
+	Constrained: Pattern=de, Pattern=Oh, Pattern=ja
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=22| A | A : dit zijn die met die heel weinig uitstekel
+	Free: Pattern=dit zijn die, Pattern=die met, Pattern=die heel
+	Constrained: Pattern=heel, Pattern=zijn die, Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=23| A | A : met die balk op de bovenkant
+	Free: Pattern=op de bovenkant, Pattern=die, Pattern=met
+	Constrained: Pattern=de
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=25| A | A : en dus een soort mini Afzichtkap aan de linkerkant
+	Free: Pattern=een soort, Pattern=de, Pattern=en
+	Constrained: Pattern=een
+Turn ID=26| B | B : ehm die staan nu daar
+	Free: Pattern=die, Pattern=nu, Pattern=ehm
+	Constrained: 
+Turn ID=27| B | B : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=28| B | B : Oké dit zijn die compact
+	Free: Pattern=dit zijn die, Pattern=compact
+	Constrained: Pattern=zijn die, Pattern=dit, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=29| B | B : met een rechthoek op de bovenkant en een afzuigkap
+	Free: Pattern=op de bovenkant en, Pattern=afzuigkap, Pattern=met, Pattern=een
+	Constrained: Pattern=op de bovenkant, Pattern=de, Pattern=en
+Turn ID=30| A | A : ehm zijn
+	Free: Pattern=zijn, Pattern=ehm
+	Constrained: 
+Turn ID=31| A | A : dit zijn die met die met die balk recht op de bovenkant en die Afzuigkap aan de linkerkant
+	Free: Pattern=Afzuigkap, Pattern=dit zijn die, Pattern=de, Pattern=die met, Pattern=die, Pattern=op de bovenkant en
+	Constrained: Pattern=de, Pattern=zijn die, Pattern=dit, Pattern=met, Pattern=die, Pattern=op de bovenkant, Pattern=en, Pattern=zijn, Pattern=dit zijn
+Turn ID=32| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=33| B | B : eh de klein compact met de Afzuigkap
+	Free: Pattern=Afzuigkap, Pattern=de, Pattern=compact, Pattern=met, Pattern=eh, Pattern=klein
+	Constrained: 
+Turn ID=34| B | B : en de rechthoek boven
+	Free: Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=35| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=36| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 

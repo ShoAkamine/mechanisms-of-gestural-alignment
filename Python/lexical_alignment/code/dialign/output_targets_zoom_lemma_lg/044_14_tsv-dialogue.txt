@@ -1,0 +1,95 @@
+B|0| B: Eh deze hebben _een_ lang vierkant staaf aan _de_ voorkant 
+B|1| B: _en_ _dan_ _bovenop_ _een_ bolle 
+B|2| B: _en_ _dan_ aan _de_ linker _en_ _de_ rechterkant _een_ _ja_ _wat_ _zijn_ _dat_ twee buisjes 
+B|3| B: _die_ er _zeggen_ maar _soort van_ _een_ _knuffel_ willen _geven_ aan _de_ staaf ervoor 
+B|4| B: ik vinden _het_ ook _een_ beetje lijken _op_ _een_ grijpmachine 
+A|5| A: _Oh ja ja_ met [dan] zo'n bol [op] [de] bovenkant 
+B|6| B: maar [ja] [de] 
+B|7| B: [ja] precies [ja] 
+A|8| A: _ja _ja_ dat zijn_ 
+A|9| A: _eh _dit zijn_ _die_ een_ [die] [wat] jij [zeggen] [een] [soort van] _knuffel geven_ 
+A|10| A: met [dan] [die] [die] rechthoek in [het] midden 
+B|11| B: [Oh ja ja] 
+A|12| A: [en] [dat] bollet [bovenop] 
+B|13| B: [ja] even zoeken hoor 
+B|14| B: [eh] oké [ja] nummer 
+B|15| B: [dit zijn _die] de knuffel_ willen [geven] aan [de] 
+A|16| A: [ja _ja] dat zijn_ [van] mij 
+A|17| A: _eh [dit zijn_ _die] een_ [die de _knuffel] geven_ 
+B|18| B: [ja dat zijn] nummer 
+B|19| B: [eh dit zijn] weer degeen [die een] [knuffel geven] 
+A|20| A: [Oh [ja] dat zijn] bij mij 
+A|21| A: [dit zijn [die] een] [die de [knuffel] geven] 
+B|22| B: [ja dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh deze hebben een lang vierkant staaf aan de voorkant
+	Free: Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=1| B | B : en dan bovenop een bolle
+	Free: Pattern=bovenop, Pattern=dan, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=2| B | B : en dan aan de linker en de rechterkant een ja wat zijn dat twee buisjes
+	Free: Pattern=dat, Pattern=dan, Pattern=een, Pattern=wat, Pattern=en, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : die er zeggen maar soort van een knuffel willen geven aan de staaf ervoor
+	Free: Pattern=knuffel, Pattern=de, Pattern=een, Pattern=zeggen, Pattern=die, Pattern=geven, Pattern=soort van
+	Constrained: Pattern=van
+Turn ID=4| B | B : ik vinden het ook een beetje lijken op een grijpmachine
+	Free: Pattern=het, Pattern=op, Pattern=een
+	Constrained: 
+Turn ID=5| A | A : Oh ja ja met dan zo'n bol op de bovenkant
+	Free: Pattern=Oh ja ja, Pattern=de, Pattern=dan, Pattern=op
+	Constrained: Pattern=Oh ja, Pattern=ja ja, Pattern=ja
+Turn ID=6| B | B : maar ja de
+	Free: Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja ja
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=9| A | A : eh dit zijn die een die wat jij zeggen een soort van knuffel geven
+	Free: Pattern=dit zijn die, Pattern=knuffel geven, Pattern=een, Pattern=zeggen, Pattern=eh dit zijn, Pattern=die, Pattern=die een, Pattern=wat, Pattern=soort van
+	Constrained: Pattern=knuffel, Pattern=een, Pattern=die, Pattern=eh, Pattern=geven, Pattern=van, Pattern=zijn
+Turn ID=10| A | A : met dan die die rechthoek in het midden
+	Free: Pattern=dan, Pattern=die, Pattern=het
+	Constrained: 
+Turn ID=11| B | B : Oh ja ja
+	Free: Pattern=Oh ja ja
+	Constrained: Pattern=Oh ja, Pattern=ja ja, Pattern=ja
+Turn ID=12| A | A : en dat bollet bovenop
+	Free: Pattern=bovenop, Pattern=dat, Pattern=en
+	Constrained: 
+Turn ID=13| B | B : ja even zoeken hoor
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : eh oké ja nummer
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : dit zijn die de knuffel willen geven aan de
+	Free: Pattern=die de knuffel, Pattern=dit zijn die, Pattern=de, Pattern=geven
+	Constrained: Pattern=zijn, Pattern=die, Pattern=knuffel, Pattern=de
+Turn ID=16| A | A : ja ja dat zijn van mij
+	Free: Pattern=ja dat zijn, Pattern=ja ja, Pattern=van
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : eh dit zijn die een die de knuffel geven
+	Free: Pattern=dit zijn die, Pattern=knuffel geven, Pattern=eh dit zijn, Pattern=die de knuffel, Pattern=die een
+	Constrained: Pattern=knuffel, Pattern=de, Pattern=een, Pattern=die, Pattern=eh, Pattern=geven, Pattern=zijn
+Turn ID=18| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : eh dit zijn weer degeen die een knuffel geven
+	Free: Pattern=eh dit zijn, Pattern=die een, Pattern=knuffel geven
+	Constrained: Pattern=knuffel, Pattern=een, Pattern=die, Pattern=eh, Pattern=geven, Pattern=zijn
+Turn ID=20| A | A : Oh ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=21| A | A : dit zijn die een die de knuffel geven
+	Free: Pattern=die de knuffel, Pattern=dit zijn die, Pattern=die een, Pattern=knuffel geven
+	Constrained: Pattern=knuffel, Pattern=de, Pattern=een, Pattern=die, Pattern=geven, Pattern=zijn
+Turn ID=22| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn

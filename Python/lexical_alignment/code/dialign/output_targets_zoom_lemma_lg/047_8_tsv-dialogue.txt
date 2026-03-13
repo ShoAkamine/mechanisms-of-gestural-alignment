@@ -1,0 +1,75 @@
+B|0| B: _dan_ _ja_ dit vinden _ik_ heel erg lijken op _een_ soort _wasbak_ 
+B|1| B: Eh maar _dan_ _de kraan_ _zijn_ _een_ soort boek 
+B|2| B: maar hij _hebben_ daaronder _hebben_ hij _een_ soort staar _zitten_ 
+B|3| B: _dat_ lijken op _de_ afvoer van _een_ _wasbak_ of zo 
+A|4| A: Oh [ja] [zitten] er [een] nog [een] rui in het midden daar bovenop 
+B|5| B: [ja] 
+A|6| A: Oké [dat] [zijn] 
+A|7| A: ehm [dan] [hebben] [ik] nu [de kraan] 
+B|8| B: [de] even kijken _de wasbak_ 
+A|9| A: dus [de] [de wasbak] [de wasbak] met het ruit 
+B|10| B: nummer 
+B|11| B: [de wasbak] 
+A|12| A: _eh_ [de wasbak] 
+B|13| B: [eh] nummer [zijn] [dat] voor mij 
+B|14| B: [de wasbak] 
+A|15| A: Wasbak [wasbak] 
+A|16| A: [eh] [wasbak] 
+B|17| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan ja dit vinden ik heel erg lijken op een soort wasbak
+	Free: Pattern=ja, Pattern=dan, Pattern=een, Pattern=ik, Pattern=wasbak
+	Constrained: 
+Turn ID=1| B | B : Eh maar dan de kraan zijn een soort boek
+	Free: Pattern=de kraan, Pattern=een, Pattern=dan, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=2| B | B : maar hij hebben daaronder hebben hij een soort staar zitten
+	Free: Pattern=hebben, Pattern=een, Pattern=zitten
+	Constrained: 
+Turn ID=3| B | B : dat lijken op de afvoer van een wasbak of zo
+	Free: Pattern=een, Pattern=wasbak, Pattern=dat, Pattern=de
+	Constrained: 
+Turn ID=4| A | A : Oh ja zitten er een nog een rui in het midden daar bovenop
+	Free: Pattern=een, Pattern=ja, Pattern=zitten
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Oké dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : ehm dan hebben ik nu de kraan
+	Free: Pattern=de kraan, Pattern=hebben, Pattern=ik, Pattern=dan
+	Constrained: Pattern=de
+Turn ID=8| B | B : de even kijken de wasbak
+	Free: Pattern=de wasbak, Pattern=de
+	Constrained: Pattern=wasbak, Pattern=de
+Turn ID=9| A | A : dus de de wasbak de wasbak met het ruit
+	Free: Pattern=de wasbak, Pattern=de
+	Constrained: Pattern=wasbak, Pattern=de
+Turn ID=10| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : de wasbak
+	Free: Pattern=de wasbak
+	Constrained: Pattern=wasbak, Pattern=de
+Turn ID=12| A | A : eh de wasbak
+	Free: Pattern=de wasbak, Pattern=eh
+	Constrained: Pattern=wasbak, Pattern=de
+Turn ID=13| B | B : eh nummer zijn dat voor mij
+	Free: Pattern=eh, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=14| B | B : de wasbak
+	Free: Pattern=de wasbak
+	Constrained: Pattern=wasbak, Pattern=de
+Turn ID=15| A | A : Wasbak wasbak
+	Free: Pattern=wasbak
+	Constrained: 
+Turn ID=16| A | A : eh wasbak
+	Free: Pattern=eh, Pattern=wasbak
+	Constrained: 
+Turn ID=17| B | B : nummer
+	Free: 
+	Constrained: 

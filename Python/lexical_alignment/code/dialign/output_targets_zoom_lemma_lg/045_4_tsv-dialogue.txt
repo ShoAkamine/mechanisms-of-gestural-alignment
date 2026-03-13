@@ -1,0 +1,139 @@
+B|0| B: ehm _deze hebben een soort_ _ja_ _een soort_ kegel _op zijn hoofd_ 
+B|1| B: alleen _zijn die_ kegel _niet helemaal_ vol _maar_ _dan_ afgetoppen 
+A|2| A: _Oh ja_ geen top 
+B|3| B: _en_ er [ja] er komen _aan de_ rechterkant _twee_ heel recht stuk uit 
+A|4| A: [ja] 
+A|5| A: Oké _dat zijn_ 
+A|6| A: _Oh_ [dan] 
+A|7| A: [deze hebben een _soort] van_ cilindervormig ding [op zijn hoofd] [maar] zonder top 
+A|8| A: [en] [twee] rechthoekig armp [aan de] zijkant 
+A|9| A: [en] [een _soort] van_ afvoertje 
+B|10| B: ehm [ja] [en] zo'n [soort van] [twee] richting pijl [op] [de] voorkant 
+A|11| A: [ja] zo zullen je _dat_ kunnen noemen 
+B|12| B: [ja] [ja] [ja] [ja] oké 
+B|13| B: [dat zijn] nummer 
+B|14| B: eh _dit _zijn_ die_ _met_ _die_ kegel 
+B|15| B: [en] _die_ [twee] heel recht 
+A|16| A: ding [aan de] zijkant 
+B|17| B: [ja] [ja] 
+A|18| A: [ja] 
+A|19| A: [dat zijn] 
+A|20| A: [dit zijn] [met] [de] cilinder [op zijn hoofd] [maar] geen punt 
+A|21| A: [en] [twee] blok zijkant 
+B|22| B: Mhmhm 
+B|23| B: eh _waar zijn die_ nou 
+A|24| A: Blokkenarmjes 
+B|25| B: [Oh ja] nummer 
+B|26| B: eh [dit _zijn] die_ [met] _die_ kegel [op zijn hoofd] 
+B|27| B: [en] [de] 
+A|28| A: [ja] [waar zijn die] 
+B|29| B: [ja] 
+A|30| A: hier 
+A|31| A: [dit zijn] [de] cilinder 
+A|32| A: [die] [niet helemaal] [een] punt [hebben] [op zijn hoofd] 
+B|33| B: [Oh ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben een soort ja een soort kegel op zijn hoofd
+	Free: Pattern=deze hebben een soort, Pattern=op zijn hoofd, Pattern=een soort, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=hebben, Pattern=op, Pattern=een
+Turn ID=1| B | B : alleen zijn die kegel niet helemaal vol maar dan afgetoppen
+	Free: Pattern=niet helemaal, Pattern=zijn die, Pattern=maar, Pattern=dan
+	Constrained: Pattern=die
+Turn ID=2| A | A : Oh ja geen top
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=3| B | B : en er ja er komen aan de rechterkant twee heel recht stuk uit
+	Free: Pattern=aan de, Pattern=twee, Pattern=en, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=6| A | A : Oh dan
+	Free: Pattern=Oh, Pattern=dan
+	Constrained: 
+Turn ID=7| A | A : deze hebben een soort van cilindervormig ding op zijn hoofd maar zonder top
+	Free: Pattern=deze hebben een soort, Pattern=op zijn hoofd, Pattern=soort van, Pattern=maar
+	Constrained: Pattern=een soort, Pattern=hebben, Pattern=op, Pattern=een
+Turn ID=8| A | A : en twee rechthoekig armp aan de zijkant
+	Free: Pattern=aan de, Pattern=twee, Pattern=en
+	Constrained: Pattern=de
+Turn ID=9| A | A : en een soort van afvoertje
+	Free: Pattern=soort van, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=10| B | B : ehm ja en zo'n soort van twee richting pijl op de voorkant
+	Free: Pattern=twee, Pattern=op, Pattern=en, Pattern=soort van, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja zo zullen je dat kunnen noemen
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja ja ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=14| B | B : eh dit zijn die met die kegel
+	Free: Pattern=zijn die, Pattern=dit zijn, Pattern=die, Pattern=met
+	Constrained: Pattern=die
+Turn ID=15| B | B : en die twee heel recht
+	Free: Pattern=twee, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=16| A | A : ding aan de zijkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=17| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=20| A | A : dit zijn met de cilinder op zijn hoofd maar geen punt
+	Free: Pattern=de, Pattern=met, Pattern=op zijn hoofd, Pattern=maar, Pattern=dit zijn
+	Constrained: Pattern=op
+Turn ID=21| A | A : en twee blok zijkant
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=22| B | B : Mhmhm
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : eh waar zijn die nou
+	Free: Pattern=waar zijn die
+	Constrained: Pattern=zijn die, Pattern=die
+Turn ID=24| A | A : Blokkenarmjes
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : Oh ja nummer
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=26| B | B : eh dit zijn die met die kegel op zijn hoofd
+	Free: Pattern=zijn die, Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=dit zijn
+	Constrained: Pattern=die, Pattern=op
+Turn ID=27| B | B : en de
+	Free: Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=28| A | A : ja waar zijn die
+	Free: Pattern=waar zijn die, Pattern=ja
+	Constrained: Pattern=zijn die, Pattern=die
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : hier
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : dit zijn de cilinder
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: 
+Turn ID=32| A | A : die niet helemaal een punt hebben op zijn hoofd
+	Free: Pattern=niet helemaal, Pattern=een, Pattern=hebben, Pattern=die, Pattern=op zijn hoofd
+	Constrained: Pattern=op
+Turn ID=33| B | B : Oh ja nummer
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja

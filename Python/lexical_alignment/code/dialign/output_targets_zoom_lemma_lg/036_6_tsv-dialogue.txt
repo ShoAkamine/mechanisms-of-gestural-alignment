@@ -1,0 +1,107 @@
+B|0| B: _oké deze_ voor mij _zijn_ echt _een_ raar description maar het hebben _een soort_ van _een_ ei neus _met_ _een_ stok erdoor 
+A|1| A: euheu 
+A|2| A: Oh _ja_ [een soort] _neuspiercing_ toch 
+B|3| B: [ja] 
+B|4| B: [ja] om het zo te zeggen [ja] 
+B|5| B: _en_ dan [een] klein klein haart om het zo te zeggen 
+A|6| A: [ja] 
+A|7| A: [ja] 
+B|8| B: [ja] 
+A|9| A: _Oké_ _dat zijn_ 
+A|10| A: [oké _deze] zijn_ degeen _met de neuspiercing_ eigenlijk 
+B|11| B: [ja] 
+B|12| B: [ja] 
+A|13| A: [en] _die_ pluim _op zijn hoofd_ 
+B|14| B: [Oké] _even kijken_ 
+B|15| B: ah yes 
+B|16| B: [deze zijn] [de] [een] _met de neuspiercing en_ één haar [op zijn hoofd] 
+A|17| A: [Oké] _dat zijn_ 
+A|18| A: ehm dit [zijn] [met de neuspiercing en] [de] pluim aan [de] bovenkant 
+B|19| B: [ja] _even kijken_ 
+B|20| B: [ja] [dat zijn] 
+B|21| B: [deze zijn] [die] [met] [die] [neuspiercing] 
+A|22| A: [Oké] 
+A|23| A: [even kijken] [dat zijn] 
+A|24| A: dit [zijn] degeen [met de neuspiercing] 
+B|25| B: Eh [dat zijn] O [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze voor mij zijn echt een raar description maar het hebben een soort van een ei neus met een stok erdoor
+	Free: Pattern=een, Pattern=oké deze, Pattern=met, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=1| A | A : euheu
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Oh ja een soort neuspiercing toch
+	Free: Pattern=een soort, Pattern=neuspiercing, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : ja om het zo te zeggen ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : en dan een klein klein haart om het zo te zeggen
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=zijn
+Turn ID=10| A | A : oké deze zijn degeen met de neuspiercing eigenlijk
+	Free: Pattern=met de neuspiercing, Pattern=deze zijn, Pattern=oké deze
+	Constrained: Pattern=neuspiercing, Pattern=de, Pattern=zijn, Pattern=met
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en die pluim op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=en, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=14| B | B : Oké even kijken
+	Free: Pattern=even kijken, Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : ah yes
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : deze zijn de een met de neuspiercing en één haar op zijn hoofd
+	Free: Pattern=een, Pattern=op zijn hoofd, Pattern=met de neuspiercing en, Pattern=de, Pattern=deze zijn
+	Constrained: Pattern=de, Pattern=en, Pattern=zijn, Pattern=neuspiercing, Pattern=met de neuspiercing, Pattern=met
+Turn ID=17| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=zijn
+Turn ID=18| A | A : ehm dit zijn met de neuspiercing en de pluim aan de bovenkant
+	Free: Pattern=met de neuspiercing en, Pattern=de, Pattern=zijn
+	Constrained: Pattern=de, Pattern=en, Pattern=neuspiercing, Pattern=met de neuspiercing, Pattern=met
+Turn ID=19| B | B : ja even kijken
+	Free: Pattern=even kijken, Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=21| B | B : deze zijn die met die neuspiercing
+	Free: Pattern=deze zijn, Pattern=met, Pattern=die, Pattern=neuspiercing
+	Constrained: Pattern=zijn
+Turn ID=22| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=23| A | A : even kijken dat zijn
+	Free: Pattern=dat zijn, Pattern=even kijken
+	Constrained: Pattern=zijn
+Turn ID=24| A | A : dit zijn degeen met de neuspiercing
+	Free: Pattern=met de neuspiercing, Pattern=zijn
+	Constrained: Pattern=met, Pattern=de, Pattern=neuspiercing
+Turn ID=25| B | B : Eh dat zijn O ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn

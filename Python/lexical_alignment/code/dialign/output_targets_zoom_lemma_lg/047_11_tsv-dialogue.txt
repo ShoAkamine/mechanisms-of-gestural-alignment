@@ -1,0 +1,95 @@
+A|0| A: ehm dit vinden _ik_ _een_ beetje op _een_ gezicht lijken 
+A|1| A: want _hij_ _hebben_ _een_ beetje _een_ rond _neus_ 
+B|2| B: mhm 
+A|3| A: en dan _hebben_ _hij_ aan _de_ linkerkant _een_ uitsteeksel 
+A|4| A: en aan _de_ bovenkant twee uitsteeksel 
+B|5| B: Oké 
+A|6| A: eentje _zijn_ rechthoekig en _de_ ander _zijn_ 
+B|7| B: _soort druppel_ _ook_ weer 
+A|8| A: ja [ook] _een [soort_ druppel] inderdaad 
+B|9| B: [een soort] dubbel dubbel [druppel] 
+A|10| A: ja ja 
+B|11| B: Oké dat [zijn] nummer 
+B|12| B: [ik] [hebben] die met [de] bol [neus] 
+B|13| B: waar die _zonder neuspiercing_ 
+A|14| A: ehm [de] [zonder neuspiercing] 
+B|15| B: ah even zoeken 
+B|16| B: eh waar [zijn] [hij] 
+B|17| B: nummer 
+B|18| B: die met [de] normaal [neus] 
+B|19| B: [zonder neuspiercing] 
+A|20| A: ehm degeen [zonder] piercing 
+B|21| B: nummer 
+B|22| B: [de] die [zonder neuspiercing] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm dit vinden ik een beetje op een gezicht lijken
+	Free: Pattern=een, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : want hij hebben een beetje een rond neus
+	Free: Pattern=hebben, Pattern=een, Pattern=neus, Pattern=hij
+	Constrained: 
+Turn ID=2| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en dan hebben hij aan de linkerkant een uitsteeksel
+	Free: Pattern=hebben, Pattern=een, Pattern=de, Pattern=hij
+	Constrained: 
+Turn ID=4| A | A : en aan de bovenkant twee uitsteeksel
+	Free: Pattern=de
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : eentje zijn rechthoekig en de ander zijn
+	Free: Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=7| B | B : soort druppel ook weer
+	Free: Pattern=soort druppel, Pattern=ook
+	Constrained: Pattern=druppel
+Turn ID=8| A | A : ja ook een soort druppel inderdaad
+	Free: Pattern=soort druppel, Pattern=een soort, Pattern=ook
+	Constrained: Pattern=druppel, Pattern=een
+Turn ID=9| B | B : een soort dubbel dubbel druppel
+	Free: Pattern=een soort, Pattern=druppel
+	Constrained: Pattern=een
+Turn ID=10| A | A : ja ja
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : Oké dat zijn nummer
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=12| B | B : ik hebben die met de bol neus
+	Free: Pattern=hebben, Pattern=neus, Pattern=ik, Pattern=de
+	Constrained: 
+Turn ID=13| B | B : waar die zonder neuspiercing
+	Free: Pattern=zonder neuspiercing
+	Constrained: Pattern=zonder
+Turn ID=14| A | A : ehm de zonder neuspiercing
+	Free: Pattern=zonder neuspiercing, Pattern=de
+	Constrained: Pattern=zonder
+Turn ID=15| B | B : ah even zoeken
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : eh waar zijn hij
+	Free: Pattern=zijn, Pattern=hij
+	Constrained: 
+Turn ID=17| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : die met de normaal neus
+	Free: Pattern=neus, Pattern=de
+	Constrained: 
+Turn ID=19| B | B : zonder neuspiercing
+	Free: Pattern=zonder neuspiercing
+	Constrained: Pattern=zonder
+Turn ID=20| A | A : ehm degeen zonder piercing
+	Free: Pattern=zonder
+	Constrained: 
+Turn ID=21| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : de die zonder neuspiercing
+	Free: Pattern=zonder neuspiercing, Pattern=de
+	Constrained: Pattern=zonder

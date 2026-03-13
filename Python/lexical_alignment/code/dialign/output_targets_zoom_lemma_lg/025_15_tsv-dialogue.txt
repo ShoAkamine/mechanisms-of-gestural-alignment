@@ -1,0 +1,179 @@
+B|0| B: Hi 
+A|1| A: hoi 
+B|2| B: Kun kunnen _je_ mij horen 
+A|3| A: _ja_ 
+B|4| B: _Oké_ nice 
+B|5| B: Ehm _ik_ _hebben_ _een_ _vierkant_ 
+B|6| B: _ik_ zullen omschrijven _wat_ _ik_ inzien goed 
+A|7| A: _ja_ doen _maar_ 
+B|8| B: _Oké_ _ik_ zien _een_ _in_ mijn hoofd _zijn_ _het_ wel _een_ beetje _een_ poppe 
+B|9| B: _het_ _hebben_ _een soort van_ _rok om_ 
+B|10| B: _en_ _het_ _hebben_ _een_ beetje _twee van die_ oog zoals _een_ _krab_ _hebben_ 
+B|11| B: Zeggen [maar] aan _de_ bovenkant zitten _twee_ oog 
+B|12| B: _en_ _het_ _hebben_ één arm 
+B|13| B: waarbij _de_ hand omhoog staan 
+B|14| B: _en_ _het_ _hebben_ _een soort van_ super _lang neus_ 
+A|15| A: [Oké] even kijken 
+A|16| A: _eh_ [een] [rok om] 
+B|17| B: [ja] 
+A|18| A: _Oh _ja_ ik_ denken _dat_ [ik] weten welk [het] [zijn] 
+A|19| A: hij [hebben] _echt_ precies [in] [het] midden zo [twee van die] klein [vierkant] of [ja] rechthoek erbovenop 
+B|20| B: [ja] 
+B|21| B: [ja] 
+A|22| A: [en] dan [die] 
+B|23| B: [ja] boven op [zijn] hoofd _zeggen maar_ 
+A|24| A: [ja] [en] [zijn] [zijn] [neus] [zijn] [een soort van] slang [zeggen maar] 
+B|25| B: [ja] 
+B|26| B: [ja] [ja] _dat zijn_ hem 
+A|27| A: [Oké] oké 
+B|28| B: [ja] 
+A|29| A: _Eh_ dan denken [ik] [dat] [het] [zijn] 
+A|30| A: _eh dit zijn_ [wat] [je] [zeggen] _met_ [die] krabog [en] [die] [lang neus] 
+B|31| B: [Oh ja] [ja] 
+A|32| A: [en] [die] [ja] _tutu_ of zo 
+B|33| B: [ja] [ja ik] inzien [echt] wel _een tutu_ 
+B|34| B: _Eh dat zijn_ nummer 
+B|35| B: [eh _dit zijn] _de krab met_ de tutu_ 
+A|36| A: [Eh dat zijn] 
+A|37| A: [dit zijn de krab met] [een tutu] 
+B|38| B: [dat zijn] nummer 
+B|39| B: [dit zijn _de krab met] de tutu_ 
+A|40| A: [Eh dat zijn] 
+A|41| A: [eh] [de krab met de tutu] 
+B|42| B: [dat zijn] wel [echt] mijn favoriet moeten [ik] [zeggen] 
+B|43| B: [Eh dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Hi
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : hoi
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : Kun kunnen je mij horen
+	Free: Pattern=je
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Oké nice
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : Ehm ik hebben een vierkant
+	Free: Pattern=hebben, Pattern=ik, Pattern=vierkant, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ik zullen omschrijven wat ik inzien goed
+	Free: Pattern=wat, Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : ja doen maar
+	Free: Pattern=maar, Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Oké ik zien een in mijn hoofd zijn het wel een beetje een poppe
+	Free: Pattern=een, Pattern=het, Pattern=in, Pattern=ik, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=9| B | B : het hebben een soort van rok om
+	Free: Pattern=een soort van, Pattern=rok om, Pattern=hebben, Pattern=het
+	Constrained: Pattern=een
+Turn ID=10| B | B : en het hebben een beetje twee van die oog zoals een krab hebben
+	Free: Pattern=twee van die, Pattern=krab, Pattern=een, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: Pattern=twee, Pattern=die
+Turn ID=11| B | B : Zeggen maar aan de bovenkant zitten twee oog
+	Free: Pattern=twee, Pattern=maar, Pattern=de
+	Constrained: 
+Turn ID=12| B | B : en het hebben één arm
+	Free: Pattern=hebben, Pattern=het, Pattern=en
+	Constrained: 
+Turn ID=13| B | B : waarbij de hand omhoog staan
+	Free: Pattern=de
+	Constrained: 
+Turn ID=14| B | B : en het hebben een soort van super lang neus
+	Free: Pattern=het, Pattern=hebben, Pattern=een soort van, Pattern=lang neus, Pattern=en
+	Constrained: Pattern=neus, Pattern=een
+Turn ID=15| A | A : Oké even kijken
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : eh een rok om
+	Free: Pattern=rok om, Pattern=eh, Pattern=een
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Oh ja ik denken dat ik weten welk het zijn
+	Free: Pattern=dat, Pattern=Oh ja, Pattern=het, Pattern=ja ik, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=19| A | A : hij hebben echt precies in het midden zo twee van die klein vierkant of ja rechthoek erbovenop
+	Free: Pattern=twee van die, Pattern=ja, Pattern=het, Pattern=hebben, Pattern=in, Pattern=echt, Pattern=vierkant
+	Constrained: Pattern=twee, Pattern=die
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : en dan die
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=23| B | B : ja boven op zijn hoofd zeggen maar
+	Free: Pattern=zeggen maar, Pattern=ja, Pattern=zijn
+	Constrained: Pattern=zeggen, Pattern=maar
+Turn ID=24| A | A : ja en zijn zijn neus zijn een soort van slang zeggen maar
+	Free: Pattern=ja, Pattern=zeggen maar, Pattern=een soort van, Pattern=neus, Pattern=en, Pattern=zijn
+	Constrained: Pattern=zeggen, Pattern=een, Pattern=maar
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ja ja dat zijn hem
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=27| A | A : Oké oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : Eh dan denken ik dat het zijn
+	Free: Pattern=dat, Pattern=het, Pattern=Eh, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=30| A | A : eh dit zijn wat je zeggen met die krabog en die lang neus
+	Free: Pattern=zeggen, Pattern=eh dit zijn, Pattern=met, Pattern=die, Pattern=en, Pattern=je, Pattern=wat, Pattern=lang neus
+	Constrained: Pattern=eh, Pattern=zijn, Pattern=neus
+Turn ID=31| B | B : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=32| A | A : en die ja tutu of zo
+	Free: Pattern=tutu, Pattern=die, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=33| B | B : ja ja ik inzien echt wel een tutu
+	Free: Pattern=een tutu, Pattern=ja ik, Pattern=ja, Pattern=echt
+	Constrained: Pattern=tutu, Pattern=ja, Pattern=ik, Pattern=een
+Turn ID=34| B | B : Eh dat zijn nummer
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=Eh, Pattern=dat
+Turn ID=35| B | B : eh dit zijn de krab met de tutu
+	Free: Pattern=de krab met de tutu, Pattern=dit zijn de krab met, Pattern=eh dit zijn
+	Constrained: Pattern=de, Pattern=tutu, Pattern=krab, Pattern=met, Pattern=eh, Pattern=zijn
+Turn ID=36| A | A : Eh dat zijn
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=Eh, Pattern=dat
+Turn ID=37| A | A : dit zijn de krab met een tutu
+	Free: Pattern=dit zijn de krab met, Pattern=een tutu
+	Constrained: Pattern=de, Pattern=tutu, Pattern=krab, Pattern=een, Pattern=met, Pattern=zijn
+Turn ID=38| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=39| B | B : dit zijn de krab met de tutu
+	Free: Pattern=de krab met de tutu, Pattern=dit zijn de krab met
+	Constrained: Pattern=de, Pattern=tutu, Pattern=krab, Pattern=met, Pattern=zijn
+Turn ID=40| A | A : Eh dat zijn
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=Eh, Pattern=dat
+Turn ID=41| A | A : eh de krab met de tutu
+	Free: Pattern=de krab met de tutu, Pattern=eh
+	Constrained: Pattern=de, Pattern=krab, Pattern=met, Pattern=tutu
+Turn ID=42| B | B : dat zijn wel echt mijn favoriet moeten ik zeggen
+	Free: Pattern=dat zijn, Pattern=zeggen, Pattern=ik, Pattern=echt
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=43| B | B : Eh dat zijn nummer
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=Eh, Pattern=dat

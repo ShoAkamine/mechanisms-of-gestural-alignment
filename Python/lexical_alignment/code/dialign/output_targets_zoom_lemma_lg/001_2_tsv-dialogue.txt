@@ -1,0 +1,83 @@
+B|0| B: deze _hebben_ een _ja_ _ijshoorn op de kop_ _op de_ bovenkant 
+B|1| B: en _die_ _lijken_ half open 
+B|2| B: en je _hebben_ dan nog aan _de_ rechterkant een soort uitsteeksel _die_ _met_ een pinne erin _lijken_ te zitten 
+A|3| A: [ja] 
+B|4| B: en aan _de_ voorkant nog een groot blok 
+A|5| A: _het_ [lijken] alsof hij rijden 
+A|6| A: [die] wielt [hebben] 
+B|7| B: Oh [ja] precies [ja] 
+A|8| A: [ja] oké 
+A|9| A: ehm dit _zijn_ weer [die] rijder [de] [met] [die] [ijshoorn op de kop] 
+B|10| B: [ja] _dat zijn_ 
+B|11| B: _ik hebben_ degeen _met het_ omgevallen [ijshoorn op de kop] 
+A|12| A: Yes [dat zijn] 
+A|13| A: Ehm [ik hebben] [die] weer [met] [die] [ijshoorn op de kop] 
+A|14| A: [die] zo rijden 
+B|15| B: [ja] [dat zijn] 
+B|16| B: [ik hebben] _met het [ijshoorn_ op de kop] 
+A|17| A: Yes [dat zijn] 
+A|18| A: Ehm [ik hebben] hetgene [met het ijshoorn] bovenop 
+B|19| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben een ja ijshoorn op de kop op de bovenkant
+	Free: Pattern=ijshoorn op de kop, Pattern=op de, Pattern=ja, Pattern=hebben
+	Constrained: Pattern=op de, Pattern=de
+Turn ID=1| B | B : en die lijken half open
+	Free: Pattern=lijken, Pattern=die
+	Constrained: 
+Turn ID=2| B | B : en je hebben dan nog aan de rechterkant een soort uitsteeksel die met een pinne erin lijken te zitten
+	Free: Pattern=de, Pattern=lijken, Pattern=hebben, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en aan de voorkant nog een groot blok
+	Free: Pattern=de
+	Constrained: 
+Turn ID=5| A | A : het lijken alsof hij rijden
+	Free: Pattern=lijken, Pattern=het
+	Constrained: 
+Turn ID=6| A | A : die wielt hebben
+	Free: Pattern=die, Pattern=hebben
+	Constrained: 
+Turn ID=7| B | B : Oh ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ehm dit zijn weer die rijder de met die ijshoorn op de kop
+	Free: Pattern=de, Pattern=ijshoorn op de kop, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: Pattern=op de, Pattern=de
+Turn ID=10| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=11| B | B : ik hebben degeen met het omgevallen ijshoorn op de kop
+	Free: Pattern=ijshoorn op de kop, Pattern=ik hebben, Pattern=met het
+	Constrained: Pattern=de, Pattern=het, Pattern=hebben, Pattern=met, Pattern=op de
+Turn ID=12| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=13| A | A : Ehm ik hebben die weer met die ijshoorn op de kop
+	Free: Pattern=ijshoorn op de kop, Pattern=ik hebben, Pattern=die, Pattern=met
+	Constrained: Pattern=op de, Pattern=de, Pattern=hebben
+Turn ID=14| A | A : die zo rijden
+	Free: Pattern=die
+	Constrained: 
+Turn ID=15| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=16| B | B : ik hebben met het ijshoorn op de kop
+	Free: Pattern=ijshoorn op de kop, Pattern=met het ijshoorn, Pattern=ik hebben
+	Constrained: Pattern=de, Pattern=het, Pattern=hebben, Pattern=met, Pattern=met het, Pattern=op de
+Turn ID=17| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=18| A | A : Ehm ik hebben hetgene met het ijshoorn bovenop
+	Free: Pattern=met het ijshoorn, Pattern=ik hebben
+	Constrained: Pattern=met, Pattern=het, Pattern=met het, Pattern=hebben
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

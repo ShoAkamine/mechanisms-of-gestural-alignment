@@ -1,0 +1,79 @@
+A|0| A: ehm _deze_ _hebben_ _ook_ een _soort van_ plateau maar vrij hoog 
+A|1| A: en daar steken _dan_ twee staf uit 
+A|2| A: _dus_ _ik_ vinden _het_ een beetje lijken op een _tafel_ 
+A|3| A: _die_ zeggen maar niet _met de_ _poot_ tot aan _de_ grond komen 
+A|4| A: Eh en _dan_ daar bovenop vaststaan nog een klein _soort van_ vierkanttrechterachtig iets 
+A|5| A: Eh en links steekt nog een klein dinget uit bovenin 
+B|6| B: _ja_ [ik] [hebben] [het] [ook] omschrijven als [poot] 
+B|7| B: [dus] [dan] weten [ik] [het] wel 
+B|8| B: welk [het] zijn 
+B|9| B: [deze] zijn _ja_ [die] [tafel] [met] [poot] 
+B|10| B: _of_ [die] balk [die] er [soort van] doorheen doorgaan in [het] midden 
+A|11| A: [ja] 
+A|12| A: eh [tafel] zonder [poot] 
+A|13| A: [of] [ja] [met] [die] half [die] half [poot] [ja] 
+B|14| B: [met] _kort poot_ 
+B|15| B: [ja] 
+B|16| B: dit zijn [de] [tafel] [met] _kort poot_ 
+A|17| A: [tafel] [kort poot] 
+B|18| B: dit zijn [de] [tafel] [met de] [kort poot] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben ook een soort van plateau maar vrij hoog
+	Free: Pattern=soort van, Pattern=hebben, Pattern=deze, Pattern=ook
+	Constrained: 
+Turn ID=1| A | A : en daar steken dan twee staf uit
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=2| A | A : dus ik vinden het een beetje lijken op een tafel
+	Free: Pattern=ik, Pattern=tafel, Pattern=het, Pattern=dus
+	Constrained: 
+Turn ID=3| A | A : die zeggen maar niet met de poot tot aan de grond komen
+	Free: Pattern=met de, Pattern=die, Pattern=poot, Pattern=de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=4| A | A : Eh en dan daar bovenop vaststaan nog een klein soort van vierkanttrechterachtig iets
+	Free: Pattern=soort van, Pattern=dan
+	Constrained: 
+Turn ID=5| A | A : Eh en links steekt nog een klein dinget uit bovenin
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : ja ik hebben het ook omschrijven als poot
+	Free: Pattern=ja, Pattern=ook, Pattern=poot, Pattern=het, Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=7| B | B : dus dan weten ik het wel
+	Free: Pattern=ik, Pattern=dan, Pattern=het, Pattern=dus
+	Constrained: 
+Turn ID=8| B | B : welk het zijn
+	Free: Pattern=het
+	Constrained: 
+Turn ID=9| B | B : deze zijn ja die tafel met poot
+	Free: Pattern=ja, Pattern=poot, Pattern=met, Pattern=deze, Pattern=tafel, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : of die balk die er soort van doorheen doorgaan in het midden
+	Free: Pattern=soort van, Pattern=of, Pattern=die, Pattern=het
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : eh tafel zonder poot
+	Free: Pattern=tafel, Pattern=poot
+	Constrained: 
+Turn ID=13| A | A : of ja met die half die half poot ja
+	Free: Pattern=of, Pattern=ja, Pattern=poot, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=14| B | B : met kort poot
+	Free: Pattern=kort poot, Pattern=met
+	Constrained: Pattern=poot
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : dit zijn de tafel met kort poot
+	Free: Pattern=kort poot, Pattern=tafel, Pattern=de, Pattern=met
+	Constrained: Pattern=poot
+Turn ID=17| A | A : tafel kort poot
+	Free: Pattern=kort poot, Pattern=tafel
+	Constrained: Pattern=poot
+Turn ID=18| B | B : dit zijn de tafel met de kort poot
+	Free: Pattern=kort poot, Pattern=met de, Pattern=tafel, Pattern=de
+	Constrained: Pattern=poot, Pattern=de, Pattern=met

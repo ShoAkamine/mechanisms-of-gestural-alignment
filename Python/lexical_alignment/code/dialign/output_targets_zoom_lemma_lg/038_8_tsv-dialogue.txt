@@ -1,0 +1,159 @@
+B|0| B: Euhm 
+B|1| B: ts _deze_ vinden _ik_ echt heel moeilijk om te omschrijven 
+B|2| B: je _hebben_ _aan de_ bovenkant _twee_ _ruit_ _die _soort_ van_ parallel staan _aan_ _elkaar_ 
+B|3| B: _en_ daar _doorheen_ _zitten_ _een_ _ja_ _ook_ _een soort_ schroef 
+B|4| B: _en_ _aan de onderkant_ _van_ _het_ kommet _zijn_ _een_ 
+A|5| A: [ja] 
+B|6| B: [ja] _een_ beetje zo'n zo'n Afvoerbuis of zo 
+A|7| A: [ja] 
+B|8| B: zo'n ventilatiebuis 
+B|9| B: [ja] 
+A|10| A: [en] [die] _wijzen naar rechts_ 
+B|11| B: hij [wijzen naar rechts] [ja] 
+A|12| A: [ja] [ik] denken _dat_ [ik] [het] wel weten 
+A|13| A: [die] [ruit] [hebben] [ik] _dat_ [ook] beschrijven 
+A|14| A: als [een [soort] van] vierkant Oreo 
+A|15| A: vierkante oreo 
+B|16| B: _ja _ja_ ja_ 
+A|17| A: [ja] _Oké_ dan [zijn] _dit_ [van] Nico 
+B|18| B: [ja] 
+A|19| A: even kijken 
+A|20| A: [deze] _dat zijn_ _die _twee_ rui bovenop_ [die] tegen [elkaar] [aan] [zitten] 
+A|21| A: _met_ [een soort] _euh_ [ja] vierkant _er doorheen_ 
+B|22| B: _Oh_ _ja _ja_ ja_ 
+A|23| A: [en] [die soort] _uitlaatklep_ [aan de onderkant] 
+B|24| B: [de] [uitlaatklep] [ja] 
+A|25| A: [ja ja] 
+B|26| B: [Oké] [euh] [dat zijn] 
+B|27| B: Euhm oké _dit zijn_ weer [die] [een] [met] [de] Afvoerbuis [en] [de] [twee rui bovenop] _met [die_ [soort] van] [die twee] parallel [rui] _met die_ staaf [er doorheen] 
+A|28| A: [ja] 
+B|29| B: Ehm [en] [aan de onderkant] dus [een] [ja] gewoon zo'n _ventilatieschacht_ 
+A|30| A: [Oh] ze nu ze [hebben] [het] veranderen 
+B|31| B: Euh 
+A|32| A: [ja] dan dan [zijn] [dit] 
+A|33| A: [zijn] [deze] 
+A|34| A: euhmm [dit zijn] [die] _met die ventilatieschacht_ [en] [die [twee] rui bovenop] 
+B|35| B: Yes [dat zijn] 
+B|36| B: Euhm weer [die] [rui] [met die ventilatieschacht] [er doorheen] 
+A|37| A: [ja] [euh] 
+A|38| A: [euh] [dit zijn] [die] [met [die] [twee] rui bovenop] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ts deze vinden ik echt heel moeilijk om te omschrijven
+	Free: Pattern=deze, Pattern=ik
+	Constrained: 
+Turn ID=2| B | B : je hebben aan de bovenkant twee ruit die soort van parallel staan aan elkaar
+	Free: Pattern=ruit, Pattern=twee, Pattern=aan, Pattern=aan de, Pattern=elkaar, Pattern=hebben, Pattern=die soort, Pattern=soort van
+	Constrained: Pattern=aan, Pattern=de, Pattern=die, Pattern=van
+Turn ID=3| B | B : en daar doorheen zitten een ja ook een soort schroef
+	Free: Pattern=ook, Pattern=een, Pattern=zitten, Pattern=een soort, Pattern=en, Pattern=ja, Pattern=doorheen
+	Constrained: Pattern=een
+Turn ID=4| B | B : en aan de onderkant van het kommet zijn een
+	Free: Pattern=een, Pattern=het, Pattern=aan de onderkant, Pattern=zijn, Pattern=van, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja een beetje zo'n zo'n Afvoerbuis of zo
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : zo'n ventilatiebuis
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : en die wijzen naar rechts
+	Free: Pattern=wijzen naar rechts, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=11| B | B : hij wijzen naar rechts ja
+	Free: Pattern=wijzen naar rechts, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja ik denken dat ik het wel weten
+	Free: Pattern=dat, Pattern=ja, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=13| A | A : die ruit hebben ik dat ook beschrijven
+	Free: Pattern=dat, Pattern=ruit, Pattern=ook, Pattern=hebben, Pattern=die, Pattern=ik
+	Constrained: 
+Turn ID=14| A | A : als een soort van vierkant Oreo
+	Free: Pattern=soort van, Pattern=een soort
+	Constrained: Pattern=van, Pattern=een
+Turn ID=15| A | A : vierkante oreo
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=17| A | A : ja Oké dan zijn dit van Nico
+	Free: Pattern=ja, Pattern=dit, Pattern=van, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : deze dat zijn die twee rui bovenop die tegen elkaar aan zitten
+	Free: Pattern=dat zijn, Pattern=aan, Pattern=twee rui bovenop, Pattern=deze, Pattern=die twee, Pattern=elkaar, Pattern=die, Pattern=zitten
+	Constrained: Pattern=twee, Pattern=die, Pattern=zijn, Pattern=dat, Pattern=rui
+Turn ID=21| A | A : met een soort euh ja vierkant er doorheen
+	Free: Pattern=ja, Pattern=euh, Pattern=er doorheen, Pattern=met, Pattern=een soort
+	Constrained: Pattern=doorheen, Pattern=een
+Turn ID=22| B | B : Oh ja ja ja
+	Free: Pattern=ja ja, Pattern=Oh
+	Constrained: Pattern=ja
+Turn ID=23| A | A : en die soort uitlaatklep aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=die soort, Pattern=uitlaatklep, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=die
+Turn ID=24| B | B : de uitlaatklep ja
+	Free: Pattern=ja, Pattern=uitlaatklep, Pattern=de
+	Constrained: 
+Turn ID=25| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=26| B | B : Oké euh dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké, Pattern=euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| B | B : Euhm oké dit zijn weer die een met de Afvoerbuis en de twee rui bovenop met die soort van die twee parallel rui met die staaf er doorheen
+	Free: Pattern=de, Pattern=een, Pattern=die twee, Pattern=twee rui bovenop, Pattern=er doorheen, Pattern=met, Pattern=die, Pattern=die soort, Pattern=en, Pattern=soort van, Pattern=dit zijn, Pattern=rui, Pattern=met die
+	Constrained: Pattern=rui, Pattern=twee, Pattern=doorheen, Pattern=dit, Pattern=met, Pattern=die, Pattern=van, Pattern=zijn
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : Ehm en aan de onderkant dus een ja gewoon zo'n ventilatieschacht
+	Free: Pattern=ja, Pattern=een, Pattern=aan de onderkant, Pattern=ventilatieschacht, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=30| A | A : Oh ze nu ze hebben het veranderen
+	Free: Pattern=het, Pattern=Oh, Pattern=hebben
+	Constrained: 
+Turn ID=31| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : ja dan dan zijn dit
+	Free: Pattern=dit, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : zijn deze
+	Free: Pattern=zijn, Pattern=deze
+	Constrained: 
+Turn ID=34| A | A : euhmm dit zijn die met die ventilatieschacht en die twee rui bovenop
+	Free: Pattern=die twee, Pattern=twee rui bovenop, Pattern=met die ventilatieschacht, Pattern=die, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=twee, Pattern=dit, Pattern=ventilatieschacht, Pattern=met, Pattern=die, Pattern=zijn, Pattern=rui, Pattern=met die
+Turn ID=35| B | B : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| B | B : Euhm weer die rui met die ventilatieschacht er doorheen
+	Free: Pattern=met die ventilatieschacht, Pattern=er doorheen, Pattern=rui, Pattern=die
+	Constrained: Pattern=met die, Pattern=doorheen, Pattern=ventilatieschacht, Pattern=met, Pattern=die
+Turn ID=37| A | A : ja euh
+	Free: Pattern=ja, Pattern=euh
+	Constrained: 
+Turn ID=38| A | A : euh dit zijn die met die twee rui bovenop
+	Free: Pattern=met die, Pattern=die twee, Pattern=die, Pattern=dit zijn, Pattern=euh, Pattern=twee rui bovenop
+	Constrained: Pattern=rui, Pattern=twee, Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn

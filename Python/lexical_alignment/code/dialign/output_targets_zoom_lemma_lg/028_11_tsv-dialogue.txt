@@ -1,0 +1,123 @@
+A|0| A: _euh_ 
+A|1| A: nu het _soort_ vergelijkbaar ballet aan de rechtervoorkant 
+A|2| A: _met_ _een_ klein _uitsteeksel_ aan de linkerkant 
+A|3| A: aan de bovenkant _een_ Euh rechthoekje _en_ _een_ ander schuin _uitsteeksel_ 
+B|4| B: _ja_ [en] link [een] [soort] _kegel_ _dan_ veel denken ik 
+A|5| A: [ja] kloppen 
+A|6| A: [ja] 
+B|7| B: [ja] 
+B|8| B: [ja] _dan_ denken ik _dat_ ik ook al wel weten [euh] 
+A|9| A: giggle 
+B|10| B: _deze_ _zijn_ die [met] [euh] _vier_ verschillend [euh] [uitsteeksel] 
+B|11| B: waarvan _rechts_ _een bolle_ 
+B|12| B: _en dan_ links [een] driehoekig staaf 
+B|13| B: Linksboven _nog _een_ kegel_ 
+A|14| A: Yes 
+B|15| B: [en] _rechts_ _een balk_ weer _boven_ 
+A|16| A: Klopt oké _dat zijn_ 
+A|17| A: [euh] [deze] hebben [een bolle] [rechts] [en] [een kegel] [en] het rechthoek aan de bovenkant 
+A|18| A: [en dan] [nog [een] balk] aan de linkerzijkant 
+B|19| B: _ja dat zijn_ [euh] 
+B|20| B: [en] _dit zijn_ die [met] die _vier_ verschillend [uitsteeksel] 
+B|21| B: Bolletje [rechts] terugdriehoekigstaafjelen link kegeltje linksboven 
+A|22| A: [ja dat zijn] de 
+A|23| A: [dit zijn] het [met] de [vier] [uitsteeksel] 
+A|24| A: Bollet [rechts] het [kegel] schuin [boven] 
+B|25| B: [ja] 
+B|26| B: [ja] 
+B|27| B: [dit zijn] die [met] die [vier] verschillend [uitsteeksel] 
+B|28| B: Bolletje [rechts] [kegel] linksboven 
+A|29| A: Yes [dat zijn] de 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : euh
+	Free: Pattern=euh
+	Constrained: 
+Turn ID=1| A | A : nu het soort vergelijkbaar ballet aan de rechtervoorkant
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=2| A | A : met een klein uitsteeksel aan de linkerkant
+	Free: Pattern=met, Pattern=uitsteeksel, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : aan de bovenkant een Euh rechthoekje en een ander schuin uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=4| B | B : ja en link een soort kegel dan veel denken ik
+	Free: Pattern=kegel, Pattern=soort, Pattern=ja, Pattern=dan, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=5| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja dan denken ik dat ik ook al wel weten euh
+	Free: Pattern=euh, Pattern=ja, Pattern=dat, Pattern=dan
+	Constrained: 
+Turn ID=9| A | A : giggle
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : deze zijn die met euh vier verschillend euh uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=euh, Pattern=met, Pattern=zijn, Pattern=deze, Pattern=vier
+	Constrained: 
+Turn ID=11| B | B : waarvan rechts een bolle
+	Free: Pattern=een bolle, Pattern=rechts
+	Constrained: Pattern=een
+Turn ID=12| B | B : en dan links een driehoekig staaf
+	Free: Pattern=en dan, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=13| B | B : Linksboven nog een kegel
+	Free: Pattern=nog een, Pattern=een kegel
+	Constrained: Pattern=kegel, Pattern=een
+Turn ID=14| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : en rechts een balk weer boven
+	Free: Pattern=een balk, Pattern=boven, Pattern=rechts, Pattern=en
+	Constrained: Pattern=een
+Turn ID=16| A | A : Klopt oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=17| A | A : euh deze hebben een bolle rechts en een kegel en het rechthoek aan de bovenkant
+	Free: Pattern=rechts, Pattern=een kegel, Pattern=euh, Pattern=een bolle, Pattern=en, Pattern=deze
+	Constrained: Pattern=kegel, Pattern=een
+Turn ID=18| A | A : en dan nog een balk aan de linkerzijkant
+	Free: Pattern=nog een, Pattern=een balk, Pattern=en dan
+	Constrained: Pattern=dan, Pattern=een, Pattern=en
+Turn ID=19| B | B : ja dat zijn euh
+	Free: Pattern=ja dat zijn, Pattern=euh
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=20| B | B : en dit zijn die met die vier verschillend uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=met, Pattern=en, Pattern=vier, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=21| B | B : Bolletje rechts terugdriehoekigstaafjelen link kegeltje linksboven
+	Free: Pattern=rechts
+	Constrained: 
+Turn ID=22| A | A : ja dat zijn de
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=23| A | A : dit zijn het met de vier uitsteeksel
+	Free: Pattern=dit zijn, Pattern=met, Pattern=vier, Pattern=uitsteeksel
+	Constrained: Pattern=zijn
+Turn ID=24| A | A : Bollet rechts het kegel schuin boven
+	Free: Pattern=boven, Pattern=kegel, Pattern=rechts
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : dit zijn die met die vier verschillend uitsteeksel
+	Free: Pattern=dit zijn, Pattern=met, Pattern=vier, Pattern=uitsteeksel
+	Constrained: Pattern=zijn
+Turn ID=28| B | B : Bolletje rechts kegel linksboven
+	Free: Pattern=kegel, Pattern=rechts
+	Constrained: 
+Turn ID=29| A | A : Yes dat zijn de
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

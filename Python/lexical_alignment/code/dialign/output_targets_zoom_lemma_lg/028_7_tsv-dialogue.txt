@@ -1,0 +1,115 @@
+A|0| A: ah _en_ nu _zijn_ _er_ bovenin _een soort_ _plateau_ _met_ twee voet eronder 
+A|1| A: Euh _en_ _een_ omgekeerd trapeze _staan_ _op dat plateau_ 
+A|2| A: Euhm _ja het_ _plateau_ doorboorten eigenlijk _het_ figuur 
+A|3| A: _het_ _zijn_ helemaal omringen _aan de bovenkant_ 
+A|4| A: _boven_ helft van _het_ figuur 
+B|5| B: Oké [en] [er] bekendstaan ook iets [op dat plateau] nog 
+A|6| A: _ja een soort_ omgekeerd trapeze 
+A|7| A: Euh trapezoïde _zijn het_ maar 
+B|8| B: [ja een soort] [ja het] lijken [een] beetje alsof [een soort] _schap_ [aan] [dat] _euh_ [ja] 
+A|9| A: [ja] 
+B|10| B: Oké dan _zijn het euh_ 
+A|11| A: _oke_ 
+B|12| B: Oh deze [zijn] _euh_ _met _het_ euh_ 
+B|13| B: [dat] [het] vierkant doorkruisten of _euh_ [aan de bovenkant] 
+B|14| B: [dat] lijken wat _ik_ straks zeggen alsof [het] alsof je [een soort] _schap_ erop _hebben_ [en] [er] [staan] [een soort] bakje [op] 
+A|15| A: [ja] [ik] [hebben] hem vinden 
+B|16| B: _rechts_ 
+A|17| A: Euh [dat] [zijn] [de] 
+B|18| B: [oke] 
+A|19| A: _dit [zijn_ het euh] [plateau] _met het schap_ [er] [rechts] bovenop 
+A|20| A: [en] [de] twee poot [aan de] onderkant van [het] [plateau] [dat] doorboort 
+B|21| B: [ja] dan [zijn] [dat] 
+B|22| B: deze [zijn] die [met] [dat] [euh] [schap] half doorbooren of [dat] vierkant half [boven] 
+A|23| A: Yes [dat] [zijn] 
+A|24| A: oeh _dit [zijn_ het] Euh [schap] [met het] [plateau] [dat] [boven] doorboord [zijn] 
+B|25| B: [ja] 
+B|26| B: [en] [dit zijn] die [met het schap] [aan de bovenkant] [euh] waar [het] bakje [op] staat 
+A|27| A: juist [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ah en nu zijn er bovenin een soort plateau met twee voet eronder
+	Free: Pattern=plateau, Pattern=met, Pattern=er, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=1| A | A : Euh en een omgekeerd trapeze staan op dat plateau
+	Free: Pattern=op dat plateau, Pattern=een, Pattern=staan, Pattern=en
+	Constrained: Pattern=dat, Pattern=op, Pattern=plateau
+Turn ID=2| A | A : Euhm ja het plateau doorboorten eigenlijk het figuur
+	Free: Pattern=ja het, Pattern=plateau, Pattern=het
+	Constrained: Pattern=het, Pattern=ja
+Turn ID=3| A | A : het zijn helemaal omringen aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=zijn, Pattern=het
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| A | A : boven helft van het figuur
+	Free: Pattern=het, Pattern=boven
+	Constrained: 
+Turn ID=5| B | B : Oké en er bekendstaan ook iets op dat plateau nog
+	Free: Pattern=op dat plateau, Pattern=er, Pattern=en
+	Constrained: Pattern=dat, Pattern=op, Pattern=plateau
+Turn ID=6| A | A : ja een soort omgekeerd trapeze
+	Free: Pattern=ja een soort
+	Constrained: Pattern=een soort, Pattern=een, Pattern=ja
+Turn ID=7| A | A : Euh trapezoïde zijn het maar
+	Free: Pattern=zijn het
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=8| B | B : ja een soort ja het lijken een beetje alsof een soort schap aan dat euh ja
+	Free: Pattern=dat, Pattern=ja het, Pattern=een, Pattern=euh, Pattern=schap, Pattern=een soort, Pattern=ja een soort, Pattern=aan, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een, Pattern=het, Pattern=ja
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké dan zijn het euh
+	Free: Pattern=zijn het euh
+	Constrained: Pattern=het euh, Pattern=zijn het, Pattern=het, Pattern=euh, Pattern=zijn
+Turn ID=11| A | A : oke
+	Free: Pattern=oke
+	Constrained: 
+Turn ID=12| B | B : Oh deze zijn euh met het euh
+	Free: Pattern=met het, Pattern=het euh, Pattern=zijn, Pattern=euh
+	Constrained: Pattern=met, Pattern=het, Pattern=euh
+Turn ID=13| B | B : dat het vierkant doorkruisten of euh aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=dat, Pattern=het, Pattern=euh
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=14| B | B : dat lijken wat ik straks zeggen alsof het alsof je een soort schap erop hebben en er staan een soort bakje op
+	Free: Pattern=dat, Pattern=op, Pattern=staan, Pattern=het, Pattern=hebben, Pattern=schap, Pattern=er, Pattern=en, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=15| A | A : ja ik hebben hem vinden
+	Free: Pattern=hebben, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : rechts
+	Free: Pattern=rechts
+	Constrained: 
+Turn ID=17| A | A : Euh dat zijn de
+	Free: Pattern=dat, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=18| B | B : oke
+	Free: Pattern=oke
+	Constrained: 
+Turn ID=19| A | A : dit zijn het euh plateau met het schap er rechts bovenop
+	Free: Pattern=rechts, Pattern=met het schap, Pattern=er, Pattern=dit zijn, Pattern=plateau, Pattern=zijn het euh
+	Constrained: Pattern=het euh, Pattern=zijn het, Pattern=het, Pattern=euh, Pattern=met het, Pattern=zijn, Pattern=schap, Pattern=met
+Turn ID=20| A | A : en de twee poot aan de onderkant van het plateau dat doorboort
+	Free: Pattern=dat, Pattern=de, Pattern=aan de, Pattern=het, Pattern=plateau, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=21| B | B : ja dan zijn dat
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : deze zijn die met dat euh schap half doorbooren of dat vierkant half boven
+	Free: Pattern=dat, Pattern=boven, Pattern=euh, Pattern=zijn, Pattern=schap, Pattern=met
+	Constrained: 
+Turn ID=23| A | A : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=24| A | A : oeh dit zijn het Euh schap met het plateau dat boven doorboord zijn
+	Free: Pattern=dat, Pattern=zijn het, Pattern=boven, Pattern=plateau, Pattern=schap, Pattern=met het, Pattern=zijn, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=met, Pattern=het
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : en dit zijn die met het schap aan de bovenkant euh waar het bakje op staat
+	Free: Pattern=op, Pattern=het, Pattern=euh, Pattern=met het schap, Pattern=dit zijn, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=het, Pattern=met het, Pattern=zijn, Pattern=de, Pattern=aan, Pattern=schap, Pattern=met
+Turn ID=27| A | A : juist dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 

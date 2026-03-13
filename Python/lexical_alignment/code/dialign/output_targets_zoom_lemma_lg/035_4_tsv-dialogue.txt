@@ -1,0 +1,71 @@
+A|0| A: Ehm _ik hebben_ nu één _en_ _aan de rechterkant_ _steken_ _twee_ _ja_ soort klein plank uit 
+A|1| A: Ehm 
+A|2| A: _en_ bovenop lijken een soort _afgezaagd driehoek_ 
+A|3| A: _ehm_ oké 
+B|4| B: Oh [ik] weten het al 
+B|5| B: _zijn_ het 
+B|6| B: [ehm] deze [hebben] ook weer zo'n [afgezaagd driehoek] op het hoofd 
+B|7| B: [en] dan [hebben] hij [aan de rechterkant] [twee] balk erin [steken] _die_ _zijn_ even lang 
+A|8| A: _ja_ dat [zijn] 
+A|9| A: eh _ik hebben die_ een _met_ rechts [twee] soort plank _van_ dezelfde lengte [en] een [afgezaagd driehoek] erbovenop 
+B|10| B: [ja] 
+B|11| B: [ik hebben] weer [die] [met] _die twee_ balk [aan de rechterkant] [en] [die] zo [van] [afgezaagd] piramide op [de] op [de] bovenkant 
+A|12| A: [ja] 
+A|13| A: eh _ik hebben _die_ twee gelijk_ plank [die] er rechts uit komen [en] [de] [afgezaagd driehoek] bovenop 
+B|14| B: [ja] 
+B|15| B: [ik hebben die] [met] [die twee gelijk] balkjes [aan de rechterkant] [en] dan zo'n [afgezaagd driehoek] op [de] bovenkant 
+A|16| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Ehm ik hebben nu één en aan de rechterkant steken twee ja soort klein plank uit
+	Free: Pattern=ik hebben, Pattern=twee, Pattern=ja, Pattern=aan de rechterkant, Pattern=en, Pattern=steken
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=1| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : en bovenop lijken een soort afgezaagd driehoek
+	Free: Pattern=afgezaagd driehoek, Pattern=en
+	Constrained: Pattern=afgezaagd
+Turn ID=3| A | A : ehm oké
+	Free: Pattern=ehm
+	Constrained: 
+Turn ID=4| B | B : Oh ik weten het al
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=5| B | B : zijn het
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=6| B | B : ehm deze hebben ook weer zo'n afgezaagd driehoek op het hoofd
+	Free: Pattern=afgezaagd driehoek, Pattern=ehm, Pattern=hebben
+	Constrained: Pattern=afgezaagd
+Turn ID=7| B | B : en dan hebben hij aan de rechterkant twee balk erin steken die zijn even lang
+	Free: Pattern=twee, Pattern=hebben, Pattern=en, Pattern=zijn, Pattern=steken, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=de
+Turn ID=8| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=9| A | A : eh ik hebben die een met rechts twee soort plank van dezelfde lengte en een afgezaagd driehoek erbovenop
+	Free: Pattern=twee, Pattern=afgezaagd driehoek, Pattern=met, Pattern=ik hebben die, Pattern=van, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=afgezaagd, Pattern=hebben, Pattern=die, Pattern=ik
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ik hebben weer die met die twee balk aan de rechterkant en die zo van afgezaagd piramide op de op de bovenkant
+	Free: Pattern=ik hebben, Pattern=die twee, Pattern=met, Pattern=de, Pattern=afgezaagd, Pattern=aan de rechterkant, Pattern=die, Pattern=van, Pattern=en
+	Constrained: Pattern=twee, Pattern=de, Pattern=hebben, Pattern=die, Pattern=ik
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : eh ik hebben die twee gelijk plank die er rechts uit komen en de afgezaagd driehoek bovenop
+	Free: Pattern=de, Pattern=afgezaagd driehoek, Pattern=die, Pattern=die twee gelijk, Pattern=ik hebben die, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=afgezaagd, Pattern=die twee, Pattern=hebben, Pattern=die, Pattern=ik
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ik hebben die met die twee gelijk balkjes aan de rechterkant en dan zo'n afgezaagd driehoek op de bovenkant
+	Free: Pattern=de, Pattern=afgezaagd driehoek, Pattern=met, Pattern=aan de rechterkant, Pattern=die twee gelijk, Pattern=ik hebben die, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=die twee, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=de, Pattern=afgezaagd
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

@@ -1,0 +1,159 @@
+A|0| A: Oké 
+B|1| B: _oké_ deze _van_ _mij_ _zijn_ _ja_ wat _zijn_ _dat zijn_ _een soort van_ _ik_ vinden _het_ _een soort van_ _cape_ _aan de achterkant_ 
+B|2| B: _als_ je hem zeggen maar diagonaal zullen bekijken 
+B|3| B: _en dan_ _hebben_ hij _een soort van_ buis door zich heen 
+B|4| B: wat _aan de_ linkerkant iets kort _zijn_ _als_ _aan de_ rechterkant 
+B|5| B: ehm _ja_ voor _de_ rest _zijn_ _er_ niet zoveel spectaculair _ding_ 
+B|6| B: _aan de_ voorkant _zijn_ niks te zien 
+B|7| B: _dus_ echt _aan de achterkant_ _en dan_ _een_ beetje _naar de_ linkerkant toe _zijn_ _een _soort van_ ja_ wat _zijn_ _het_ _een_ _cape-achtig_ _dat_ omhoog _staan_ 
+B|8| B: _en_ 
+B|9| B: _ja_ 
+A|10| A: _Oh ja met_ [dan] _zo'n_ [soort van] vierkan _die_ [er] nog achter [staan] 
+B|11| B: [ja] 
+A|12| A: _met_ [dan] twee buisjes _met_ [van] _die_ bollet eraan 
+B|13| B: [ja] precies [ja] _dus_ [dan] [ja] 
+A|14| A: [ja] [oké] [dat zijn] bij [mij] [ja] 
+A|15| A: _eh dit zijn_ _die met_ _die_ [soort van ja] [ik] [hebben] [het] omschrijven [als] [een soort van] split 
+A|16| A: [dus] twee [van] _die_ staaf _met_ bollet _die_ [dan] [naar de] zijkant gaan 
+A|17| A: [en dan] nog _met_ _zo'n_ [cape-achtig] vierkant [ding] [aan de achterkant] 
+B|18| B: [Oh] 
+B|19| B: [ja] precies _ja dat zijn_ nummer 
+B|20| B: [eh dit zijn] weer [die met] [de] [cape-achtig] 
+B|21| B: [en dan] [aan de] linkerkant [met] [een] bolle _erop_ 
+B|22| B: [en] [de] rechterkant [met] [een] bolle op 
+A|23| A: [ja] [ja dat zijn] bij [mij] 
+B|24| B: [en dan] iets klein [en] groot 
+B|25| B: [ja] 
+B|26| B: [dat] zweven [ja] 
+A|27| A: [eh] [ik] [hebben] [die] [een] [met] [die] twee [met] [die] split [met] [die] bollet [erop] [en] [dat] Capeje 
+B|28| B: [Oh ja met] [het] capeje 
+A|29| A: [ja] 
+B|30| B: Eh [dat zijn] nummer 
+B|31| B: [eh dit zijn] weer [die met] [een soort van] _cape_ 
+B|32| B: [en dan] [de] [aan] allebei [de] kant [zo'n] kegel [met] rond uiteinde 
+A|33| A: [ja dat zijn] bij [mij] 
+A|34| A: [en] [dit zijn] [die] [een] [met] [die] staaf [naar] links [en] rechts 
+A|35| A: [en] [met] [die] [cape] 
+B|36| B: [Oh ja] 
+B|37| B: Ehm 
+B|38| B: Eh [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : oké deze van mij zijn ja wat zijn dat zijn een soort van ik vinden het een soort van cape aan de achterkant
+	Free: Pattern=oké, Pattern=ja, Pattern=het, Pattern=een soort van, Pattern=van, Pattern=zijn, Pattern=cape, Pattern=dat zijn, Pattern=aan de achterkant, Pattern=mij, Pattern=ik
+	Constrained: Pattern=dat, Pattern=aan de, Pattern=een, Pattern=van, Pattern=de, Pattern=aan, Pattern=soort van, Pattern=zijn
+Turn ID=2| B | B : als je hem zeggen maar diagonaal zullen bekijken
+	Free: Pattern=als
+	Constrained: 
+Turn ID=3| B | B : en dan hebben hij een soort van buis door zich heen
+	Free: Pattern=een soort van, Pattern=en dan, Pattern=hebben
+	Constrained: Pattern=dan, Pattern=een, Pattern=soort van, Pattern=van, Pattern=en
+Turn ID=4| B | B : wat aan de linkerkant iets kort zijn als aan de rechterkant
+	Free: Pattern=aan de, Pattern=zijn, Pattern=als
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=5| B | B : ehm ja voor de rest zijn er niet zoveel spectaculair ding
+	Free: Pattern=ding, Pattern=er, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : aan de voorkant zijn niks te zien
+	Free: Pattern=aan de, Pattern=zijn
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=7| B | B : dus echt aan de achterkant en dan een beetje naar de linkerkant toe zijn een soort van ja wat zijn het een cape-achtig dat omhoog staan
+	Free: Pattern=soort van ja, Pattern=dus, Pattern=en dan, Pattern=naar de, Pattern=het, Pattern=cape-achtig, Pattern=een soort van, Pattern=zijn, Pattern=dat, Pattern=aan de achterkant, Pattern=een, Pattern=staan
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=een, Pattern=soort van, Pattern=naar, Pattern=de, Pattern=aan, Pattern=ja, Pattern=van, Pattern=en
+Turn ID=8| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Oh ja met dan zo'n soort van vierkan die er nog achter staan
+	Free: Pattern=zo'n, Pattern=dan, Pattern=staan, Pattern=die, Pattern=er, Pattern=soort van, Pattern=Oh ja met
+	Constrained: Pattern=ja, Pattern=Oh ja, Pattern=met, Pattern=van, Pattern=Oh
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : met dan twee buisjes met van die bollet eraan
+	Free: Pattern=dan, Pattern=die, Pattern=van, Pattern=met
+	Constrained: 
+Turn ID=13| B | B : ja precies ja dus dan ja
+	Free: Pattern=dan, Pattern=ja, Pattern=dus
+	Constrained: 
+Turn ID=14| A | A : ja oké dat zijn bij mij ja
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=mij, Pattern=oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| A | A : eh dit zijn die met die soort van ja ik hebben het omschrijven als een soort van split
+	Free: Pattern=soort van ja, Pattern=het, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=die met, Pattern=een soort van, Pattern=eh dit zijn, Pattern=als
+	Constrained: Pattern=ja, Pattern=een, Pattern=met, Pattern=die, Pattern=eh, Pattern=van, Pattern=dit zijn, Pattern=soort van, Pattern=zijn
+Turn ID=16| A | A : dus twee van die staaf met bollet die dan naar de zijkant gaan
+	Free: Pattern=dus, Pattern=dan, Pattern=naar de, Pattern=met, Pattern=die, Pattern=van
+	Constrained: Pattern=de, Pattern=naar
+Turn ID=17| A | A : en dan nog met zo'n cape-achtig vierkant ding aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=zo'n, Pattern=en dan, Pattern=ding, Pattern=cape-achtig, Pattern=met
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=18| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=19| B | B : ja precies ja dat zijn nummer
+	Free: Pattern=ja dat zijn, Pattern=ja
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=20| B | B : eh dit zijn weer die met de cape-achtig
+	Free: Pattern=eh dit zijn, Pattern=die met, Pattern=de, Pattern=cape-achtig
+	Constrained: Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=21| B | B : en dan aan de linkerkant met een bolle erop
+	Free: Pattern=aan de, Pattern=een, Pattern=met, Pattern=en dan, Pattern=erop
+	Constrained: Pattern=aan, Pattern=dan, Pattern=de, Pattern=en
+Turn ID=22| B | B : en de rechterkant met een bolle op
+	Free: Pattern=de, Pattern=met, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=23| A | A : ja ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=ja, Pattern=mij
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=24| B | B : en dan iets klein en groot
+	Free: Pattern=en dan, Pattern=en
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : dat zweven ja
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : eh ik hebben die een met die twee met die split met die bollet erop en dat Capeje
+	Free: Pattern=dat, Pattern=erop, Pattern=een, Pattern=hebben, Pattern=met, Pattern=die, Pattern=eh, Pattern=ik, Pattern=en
+	Constrained: 
+Turn ID=28| B | B : Oh ja met het capeje
+	Free: Pattern=Oh ja met, Pattern=het
+	Constrained: Pattern=Oh ja, Pattern=met, Pattern=Oh, Pattern=ja
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : Eh dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| B | B : eh dit zijn weer die met een soort van cape
+	Free: Pattern=eh dit zijn, Pattern=een soort van, Pattern=die met, Pattern=cape
+	Constrained: Pattern=een, Pattern=met, Pattern=die, Pattern=eh, Pattern=van, Pattern=dit zijn, Pattern=soort van, Pattern=zijn
+Turn ID=32| B | B : en dan de aan allebei de kant zo'n kegel met rond uiteinde
+	Free: Pattern=zo'n, Pattern=en dan, Pattern=met, Pattern=de, Pattern=aan
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=33| A | A : ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=mij
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=34| A | A : en dit zijn die een met die staaf naar links en rechts
+	Free: Pattern=een, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn, Pattern=naar
+	Constrained: Pattern=zijn
+Turn ID=35| A | A : en met die cape
+	Free: Pattern=die, Pattern=cape, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=36| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=37| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : Eh dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

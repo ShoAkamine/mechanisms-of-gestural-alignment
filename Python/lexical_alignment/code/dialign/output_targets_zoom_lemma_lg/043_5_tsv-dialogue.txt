@@ -1,0 +1,195 @@
+A|0| A: _ehm deze hebben_ _even kijken_ _ja_ hij _hebben een_ horizontaal _balk_ _op_ _de_ bovenkant 
+A|1| A: _Eh_ _en_ aan _de_ zijkant _zitten_ wel ook dinget 
+A|2| A: _maar_ _niet_ heel _langwerpig_ uitsteeksel _of zo_ 
+A|3| A: Ehm 
+B|4| B: _hmm_ 
+B|5| B: [een] [balk] 
+A|6| A: _ja_ _op_ _de_ _bovenop_ _zitten_ [een] _soort_ [balk] Rechthoekachtig _iets_ 
+B|7| B: als in 
+A|8| A: horizontaal 
+B|9| B: echt helemaal erover [op] [of] 
+A|10| A: eh _ja_ gewoon [op] _de_ bovenkant 
+A|11| A: alsof hij _erop_ liggen zeggen _maar_ 
+B|12| B: Oh [even kijken] 
+B|13| B: Oh [ja] 
+B|14| B: dus _het_ _zijn_ [soort] 
+B|15| B: _ja ja_ rechthoekig 
+B|16| B: [niet] plat [of zo] 
+A|17| A: [ja] daar _bovenop_ 
+B|18| B: _ja en_ [zitten] er links nog _soort van_ [een] driehoekachtig [iets] 
+A|19| A: [of] [ja [ja] en] aan _de_ z 
+B|20| B: [niet] helemaal driehoek [maar] 
+A|21| A: [ja] [soort van] _vleugelt_ _vinden_ ik [het] [op] lijken 
+B|22| B: [ja] oké dan _zijn_ [het] nummer 
+B|23| B: [ehm deze [hebben] een] bal [bovenop] 
+B|24| B: [en] dan _twee_ [van] _die_ [soort] [vleugelt] 
+A|25| A: [hmm] [ja] [die] horizontaal [balk] denken ik 
+B|26| B: [ja ja] kloppen 
+A|27| A: _ja dat zijn_ letter 
+A|28| A: _dit zijn die met_ [het] rechthoekje erbovenop zeggen [maar] 
+A|29| A: Ehm [en] [die] [twee] vleugeltjesachtig aan _de_ zijkant 
+B|30| B: [ja] 
+B|31| B: [ja] [even kijken] 
+B|32| B: Oh [ja dat zijn] 
+B|33| B: [dit _zijn die met] dat_ [langwerpig] blok [erop] 
+B|34| B: [en] dan [die] [soort] [vleugelt] 
+A|35| A: [ja dat zijn] 
+A|36| A: _Eh_ _deze [zijn_ die met dat] rechthoek [bovenop] 
+A|37| A: [en] [die] [vleugelt] aan _de_ zijkant 
+B|38| B: Oh [ja dat zijn] 
+B|39| B: [kijken] waar [die] [zijn] 
+B|40| B: [Eh] 
+B|41| B: [even kijken] horen 
+B|42| B: kunnen hem [niet] [vinden] 
+B|43| B: Oh [ja] 
+B|44| B: [deze zijn] [met] [die] bal [bovenop] 
+B|45| B: [en] dan [de] [vleugelt] 
+A|46| A: [dat zijn] 
+A|47| A: Ho 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben even kijken ja hij hebben een horizontaal balk op de bovenkant
+	Free: Pattern=hebben een, Pattern=op, Pattern=ehm deze hebben, Pattern=balk, Pattern=even kijken, Pattern=de, Pattern=ja
+	Constrained: Pattern=een, Pattern=kijken
+Turn ID=1| A | A : Eh en aan de zijkant zitten wel ook dinget
+	Free: Pattern=Eh, Pattern=zitten, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=2| A | A : maar niet heel langwerpig uitsteeksel of zo
+	Free: Pattern=of zo, Pattern=langwerpig, Pattern=maar, Pattern=niet
+	Constrained: Pattern=of
+Turn ID=3| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : hmm
+	Free: Pattern=hmm
+	Constrained: 
+Turn ID=5| B | B : een balk
+	Free: Pattern=een, Pattern=balk
+	Constrained: 
+Turn ID=6| A | A : ja op de bovenop zitten een soort balk Rechthoekachtig iets
+	Free: Pattern=bovenop, Pattern=soort, Pattern=op, Pattern=een, Pattern=balk, Pattern=zitten, Pattern=de, Pattern=iets, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : als in
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : horizontaal
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : echt helemaal erover op of
+	Free: Pattern=op, Pattern=of
+	Constrained: 
+Turn ID=10| A | A : eh ja gewoon op de bovenkant
+	Free: Pattern=op, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=11| A | A : alsof hij erop liggen zeggen maar
+	Free: Pattern=erop, Pattern=maar
+	Constrained: 
+Turn ID=12| B | B : Oh even kijken
+	Free: Pattern=even kijken
+	Constrained: Pattern=kijken
+Turn ID=13| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : dus het zijn soort
+	Free: Pattern=zijn, Pattern=het, Pattern=soort
+	Constrained: 
+Turn ID=15| B | B : ja ja rechthoekig
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=16| B | B : niet plat of zo
+	Free: Pattern=of zo, Pattern=niet
+	Constrained: Pattern=of
+Turn ID=17| A | A : ja daar bovenop
+	Free: Pattern=bovenop, Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja en zitten er links nog soort van een driehoekachtig iets
+	Free: Pattern=iets, Pattern=een, Pattern=zitten, Pattern=soort van, Pattern=ja en
+	Constrained: Pattern=van, Pattern=ja, Pattern=soort, Pattern=en
+Turn ID=19| A | A : of ja ja en aan de z
+	Free: Pattern=ja en, Pattern=ja ja, Pattern=of, Pattern=de
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=20| B | B : niet helemaal driehoek maar
+	Free: Pattern=maar, Pattern=niet
+	Constrained: 
+Turn ID=21| A | A : ja soort van vleugelt vinden ik het op lijken
+	Free: Pattern=op, Pattern=het, Pattern=vleugelt, Pattern=soort van, Pattern=vinden, Pattern=ja
+	Constrained: Pattern=van, Pattern=soort
+Turn ID=22| B | B : ja oké dan zijn het nummer
+	Free: Pattern=zijn, Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ehm deze hebben een bal bovenop
+	Free: Pattern=ehm deze hebben, Pattern=hebben een, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=24| B | B : en dan twee van die soort vleugelt
+	Free: Pattern=soort, Pattern=twee, Pattern=die, Pattern=vleugelt, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=25| A | A : hmm ja die horizontaal balk denken ik
+	Free: Pattern=balk, Pattern=ja, Pattern=die, Pattern=hmm
+	Constrained: 
+Turn ID=26| B | B : ja ja kloppen
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=27| A | A : ja dat zijn letter
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=28| A | A : dit zijn die met het rechthoekje erbovenop zeggen maar
+	Free: Pattern=dit zijn die met, Pattern=het, Pattern=maar
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=29| A | A : Ehm en die twee vleugeltjesachtig aan de zijkant
+	Free: Pattern=twee, Pattern=die, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : ja even kijken
+	Free: Pattern=even kijken, Pattern=ja
+	Constrained: Pattern=kijken
+Turn ID=32| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=33| B | B : dit zijn die met dat langwerpig blok erop
+	Free: Pattern=zijn die met dat, Pattern=dit zijn die met, Pattern=langwerpig, Pattern=erop
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=34| B | B : en dan die soort vleugelt
+	Free: Pattern=vleugelt, Pattern=die, Pattern=soort, Pattern=en
+	Constrained: 
+Turn ID=35| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=36| A | A : Eh deze zijn die met dat rechthoek bovenop
+	Free: Pattern=zijn die met dat, Pattern=deze zijn, Pattern=bovenop, Pattern=Eh
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=37| A | A : en die vleugelt aan de zijkant
+	Free: Pattern=vleugelt, Pattern=die, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=38| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=39| B | B : kijken waar die zijn
+	Free: Pattern=zijn, Pattern=kijken, Pattern=die
+	Constrained: 
+Turn ID=40| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=41| B | B : even kijken horen
+	Free: Pattern=even kijken
+	Constrained: Pattern=kijken
+Turn ID=42| B | B : kunnen hem niet vinden
+	Free: Pattern=vinden, Pattern=niet
+	Constrained: 
+Turn ID=43| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : deze zijn met die bal bovenop
+	Free: Pattern=deze zijn, Pattern=bovenop, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=45| B | B : en dan de vleugelt
+	Free: Pattern=vleugelt, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=46| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=47| A | A : Ho
+	Free: 
+	Constrained: 

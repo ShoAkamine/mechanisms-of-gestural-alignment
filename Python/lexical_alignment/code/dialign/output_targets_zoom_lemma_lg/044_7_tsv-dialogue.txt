@@ -1,0 +1,119 @@
+A|0| A: _Eh_ deze vinden _ik_ op _een soort van_ bijzettafeltje lijken 
+A|1| A: waar _dan nog_ _een_ _bakje_ op staat 
+A|2| A: _dus_ _dat_ tafel _zitten_ als _het_ _zijn_ _dan_ vast _aan_ _dat_ _ding_ 
+A|3| A: _met_ _dan_ _twee poot_ die eruit steken 
+B|4| B: [Eh] 
+A|5| A: _en dan_ staan er _dus_ _nog_ _een soort van_ klein _bakje_ op _dat_ tafel 
+B|6| B: _Oh ja_ _ja_ _ja_ 
+B|7| B: [en dan] daarachter [zitten] [dan nog] iets 
+A|8| A: [ja] [nog] zo'n heel klein staart zeggen maar 
+B|9| B: Zit daar 
+B|10| B: [ja] precies 
+A|11| A: [ja] 
+B|12| B: Oké [ja] 
+B|13| B: [dan] [zijn] [dat] voor _mij_ nummer 
+B|14| B: eh _dit zijn_ hoe noemen je [dat] 
+B|15| B: _ehm_ _ik hebben_ [een soort van] _picknicktafel_ [dat] [aan] [het] zweven [zijn] 
+B|16| B: [dus] [twee poot] [en dan] [een] plat [ding] 
+A|17| A: [Oh ja] _met_ zo'n _bakje_ 
+B|18| B: [ja] precies [ja] 
+A|19| A: _ja dat zijn_ bij [mij] 
+A|20| A: [dit zijn] die _met_ [dat] [soort van] tafel waar [dan nog] [een] _bakje_ op staat 
+B|21| B: [ja dat zijn] nummer 
+B|22| B: eh _ik hebben_ weer de _picknicktafel met het bakje erop_ 
+A|23| A: [ehm] [ja dat zijn] bij [mij] 
+A|24| A: [ik hebben] [dat] [picknicktafel met het bakje erop] 
+B|25| B: mhm 
+B|26| B: [Eh] [dat zijn] nummer 
+B|27| B: [dit zijn] de zweven [picknicktafel met het bakje erop] 
+A|28| A: O [ja dat zijn] bij [mij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh deze vinden ik op een soort van bijzettafeltje lijken
+	Free: Pattern=een soort van, Pattern=ik, Pattern=Eh
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=1| A | A : waar dan nog een bakje op staat
+	Free: Pattern=dan nog, Pattern=bakje, Pattern=een
+	Constrained: Pattern=dan, Pattern=nog
+Turn ID=2| A | A : dus dat tafel zitten als het zijn dan vast aan dat ding
+	Free: Pattern=dat, Pattern=dan, Pattern=ding, Pattern=het, Pattern=zitten, Pattern=zijn, Pattern=aan, Pattern=dus
+	Constrained: 
+Turn ID=3| A | A : met dan twee poot die eruit steken
+	Free: Pattern=twee poot, Pattern=dan, Pattern=met
+	Constrained: 
+Turn ID=4| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=5| A | A : en dan staan er dus nog een soort van klein bakje op dat tafel
+	Free: Pattern=dat, Pattern=nog, Pattern=dus, Pattern=en dan, Pattern=bakje, Pattern=een soort van
+	Constrained: Pattern=soort van, Pattern=dan, Pattern=een
+Turn ID=6| B | B : Oh ja ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=7| B | B : en dan daarachter zitten dan nog iets
+	Free: Pattern=dan nog, Pattern=en dan, Pattern=zitten
+	Constrained: Pattern=dan, Pattern=nog
+Turn ID=8| A | A : ja nog zo'n heel klein staart zeggen maar
+	Free: Pattern=ja, Pattern=nog
+	Constrained: 
+Turn ID=9| B | B : Zit daar
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dan zijn dat voor mij nummer
+	Free: Pattern=dat, Pattern=dan, Pattern=zijn, Pattern=mij
+	Constrained: 
+Turn ID=14| B | B : eh dit zijn hoe noemen je dat
+	Free: Pattern=dit zijn, Pattern=dat
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : ehm ik hebben een soort van picknicktafel dat aan het zweven zijn
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=aan, Pattern=het, Pattern=picknicktafel, Pattern=een soort van, Pattern=ehm, Pattern=zijn
+	Constrained: Pattern=een, Pattern=soort van, Pattern=ik
+Turn ID=16| B | B : dus twee poot en dan een plat ding
+	Free: Pattern=dus, Pattern=en dan, Pattern=ding, Pattern=een, Pattern=twee poot
+	Constrained: Pattern=dan
+Turn ID=17| A | A : Oh ja met zo'n bakje
+	Free: Pattern=Oh ja, Pattern=bakje, Pattern=met
+	Constrained: Pattern=ja
+Turn ID=18| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=mij
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=20| A | A : dit zijn die met dat soort van tafel waar dan nog een bakje op staat
+	Free: Pattern=dat, Pattern=een, Pattern=bakje, Pattern=met, Pattern=dan nog, Pattern=soort van, Pattern=dit zijn
+	Constrained: Pattern=dan, Pattern=zijn, Pattern=nog
+Turn ID=21| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=22| B | B : eh ik hebben weer de picknicktafel met het bakje erop
+	Free: Pattern=picknicktafel met het bakje erop, Pattern=ik hebben
+	Constrained: Pattern=bakje, Pattern=het, Pattern=picknicktafel, Pattern=met, Pattern=ik
+Turn ID=23| A | A : ehm ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=ehm, Pattern=mij
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=24| A | A : ik hebben dat picknicktafel met het bakje erop
+	Free: Pattern=picknicktafel met het bakje erop, Pattern=ik hebben, Pattern=dat
+	Constrained: Pattern=bakje, Pattern=het, Pattern=picknicktafel, Pattern=met, Pattern=ik
+Turn ID=25| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : Eh dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| B | B : dit zijn de zweven picknicktafel met het bakje erop
+	Free: Pattern=picknicktafel met het bakje erop, Pattern=dit zijn
+	Constrained: Pattern=bakje, Pattern=het, Pattern=picknicktafel, Pattern=met, Pattern=zijn
+Turn ID=28| A | A : O ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=mij
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn

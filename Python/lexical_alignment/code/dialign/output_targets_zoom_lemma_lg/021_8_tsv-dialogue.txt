@@ -1,0 +1,235 @@
+B|0| B: _Oké_ hier hebben _ik_ _echt_ geen idee hoe _ik_ deze moeten omschrijven 
+B|1| B: _ja_ 
+B|2| B: _helemaal_ _bovenop_ _zien_ _ik_ _een soort_ _boek_ 
+B|3| B: _met_ _aan de zijkant_ _een soort_ _twee_ handvat 
+B|4| B: zo kunnen _ik_ _het_ _het_ best omschrijven _denken_ _ik_ 
+A|5| A: [ik] weten al welk je bedoelen 
+B|6| B: _en_ _helemaal_ onderaan _een_ _één_ _ja_ 
+B|7| B: uitstulpsel 
+B|8| B: _en _aan de_ zijkant_ _twee_ 
+A|9| A: [een soort] 
+A|10| A: [ja] [ja] 
+A|11| A: [Oké] 
+A|12| A: _nummer_ 
+A|13| A: _ik zien_ 
+A|14| A: [een] voorwerp [met] [twee] haak 
+A|15| A: _eentje aan de onderkant_ 
+A|16| A: _en één aan de rechterkant_ 
+A|17| A: [aan de] voorkant zitten 
+A|18| A: _ook nog [een_ soort] haak 
+A|19| A: maar dat zijn niet [echt] [een] haak 
+A|20| A: dat zijn [een] recht uitsteeksel 
+A|21| A: [en aan de] achterkant [zien] je [één] 
+A|22| A: [ja] [soort] 
+A|23| A: [het] doen me [een] beetje [denken] [aan] [een] paardenstaart 
+A|24| A: maar niet [helemaal] 
+A|25| A: [met] [twee] vierkant uitsteeksel 
+B|26| B: [ja] 
+B|27| B: [nummer] 
+B|28| B: _ik zien [een_ soort] 
+B|29| B: _twee hak_ _aan de zijkant_ 
+B|30| B: [eentje aan de onderkant] [en één aan de rechterkant] 
+A|31| A: mhm 
+B|32| B: [en] [ook nog _een] cilinder_ [aan de rechterkant] 
+B|33| B: _en bovenop_ [een soort] van 
+B|34| B: [twee] [ja] handvat 
+B|35| B: [met] [een soort] _boek_ ertussen 
+A|36| A: [Oké] 
+A|37| A: Letter 
+A|38| A: [ik zien] 
+A|39| A: [twee hak] 
+A|40| A: [eentje aan de onderkant] _één aan de zijkant_ 
+A|41| A: [aan de rechterkant] zijn er [een cilinder] 
+A|42| A: [een] langwerpig [cilinder] 
+A|43| A: [en aan de] bovenkant 
+A|44| A: zijn er [twee] 
+A|45| A: object die _een boek_ vast houden 
+B|46| B: [nummer] 
+B|47| B: _ik zien twee hak_ 
+B|48| B: _één aan de onderkant_ [en [één aan de] zijkant] 
+B|49| B: _en bovenop_ [een soort] handvat wat 
+B|50| B: [met] [een boek] ertussenin 
+A|51| A: Letter 
+A|52| A: [ik zien een] 
+A|53| A: [ik zien twee hak] 
+A|54| A: [eentje [aan de] zijkant] [één aan de onderkant] 
+A|55| A: [en bovenop] worden [een boek] vastgeklemen door [twee] 
+A|56| A: voorwerp 
+B|57| B: [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké hier hebben ik echt geen idee hoe ik deze moeten omschrijven
+	Free: Pattern=Oké, Pattern=ik, Pattern=echt
+	Constrained: 
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : helemaal bovenop zien ik een soort boek
+	Free: Pattern=bovenop, Pattern=helemaal, Pattern=boek, Pattern=zien, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=3| B | B : met aan de zijkant een soort twee handvat
+	Free: Pattern=aan de zijkant, Pattern=een soort, Pattern=met, Pattern=twee
+	Constrained: Pattern=aan, Pattern=een, Pattern=soort, Pattern=aan de
+Turn ID=4| B | B : zo kunnen ik het het best omschrijven denken ik
+	Free: Pattern=het, Pattern=ik, Pattern=denken
+	Constrained: 
+Turn ID=5| A | A : ik weten al welk je bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=6| B | B : en helemaal onderaan een één ja
+	Free: Pattern=ja, Pattern=helemaal, Pattern=een, Pattern=één, Pattern=en
+	Constrained: 
+Turn ID=7| B | B : uitstulpsel
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : en aan de zijkant twee
+	Free: Pattern=en aan de, Pattern=aan de zijkant, Pattern=twee
+	Constrained: Pattern=aan, Pattern=en, Pattern=aan de
+Turn ID=9| A | A : een soort
+	Free: Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=10| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| A | A : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=13| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: Pattern=zien, Pattern=ik
+Turn ID=14| A | A : een voorwerp met twee haak
+	Free: Pattern=een, Pattern=met, Pattern=twee
+	Constrained: 
+Turn ID=15| A | A : eentje aan de onderkant
+	Free: Pattern=eentje aan de onderkant
+	Constrained: Pattern=eentje aan de, Pattern=aan, Pattern=aan de
+Turn ID=16| A | A : en één aan de rechterkant
+	Free: Pattern=en één aan de rechterkant
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=één, Pattern=aan de rechterkant, Pattern=en, Pattern=en één aan de
+Turn ID=17| A | A : aan de voorkant zitten
+	Free: Pattern=aan de
+	Constrained: Pattern=aan
+Turn ID=18| A | A : ook nog een soort haak
+	Free: Pattern=ook nog een, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=19| A | A : maar dat zijn niet echt een haak
+	Free: Pattern=een, Pattern=echt
+	Constrained: 
+Turn ID=20| A | A : dat zijn een recht uitsteeksel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=21| A | A : en aan de achterkant zien je één
+	Free: Pattern=en aan de, Pattern=één, Pattern=zien
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=en
+Turn ID=22| A | A : ja soort
+	Free: Pattern=ja, Pattern=soort
+	Constrained: 
+Turn ID=23| A | A : het doen me een beetje denken aan een paardenstaart
+	Free: Pattern=het, Pattern=een, Pattern=aan, Pattern=denken
+	Constrained: 
+Turn ID=24| A | A : maar niet helemaal
+	Free: Pattern=helemaal
+	Constrained: 
+Turn ID=25| A | A : met twee vierkant uitsteeksel
+	Free: Pattern=met, Pattern=twee
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=28| B | B : ik zien een soort
+	Free: Pattern=ik zien een, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=ik zien, Pattern=zien, Pattern=ik
+Turn ID=29| B | B : twee hak aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=twee hak
+	Constrained: Pattern=twee, Pattern=aan, Pattern=aan de
+Turn ID=30| B | B : eentje aan de onderkant en één aan de rechterkant
+	Free: Pattern=en één aan de rechterkant, Pattern=eentje aan de onderkant
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=één, Pattern=eentje aan de, Pattern=aan de rechterkant, Pattern=en, Pattern=en één aan de
+Turn ID=31| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : en ook nog een cilinder aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=ook nog een, Pattern=een cilinder, Pattern=en
+	Constrained: Pattern=aan, Pattern=een, Pattern=cilinder, Pattern=aan de
+Turn ID=33| B | B : en bovenop een soort van
+	Free: Pattern=en bovenop, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort, Pattern=bovenop, Pattern=en
+Turn ID=34| B | B : twee ja handvat
+	Free: Pattern=ja, Pattern=twee
+	Constrained: 
+Turn ID=35| B | B : met een soort boek ertussen
+	Free: Pattern=een soort, Pattern=met, Pattern=boek
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=36| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=37| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=38| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: Pattern=zien, Pattern=ik
+Turn ID=39| A | A : twee hak
+	Free: Pattern=twee hak
+	Constrained: Pattern=twee
+Turn ID=40| A | A : eentje aan de onderkant één aan de zijkant
+	Free: Pattern=eentje aan de onderkant, Pattern=één aan de zijkant
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=één, Pattern=eentje aan de
+Turn ID=41| A | A : aan de rechterkant zijn er een cilinder
+	Free: Pattern=aan de rechterkant, Pattern=een cilinder
+	Constrained: Pattern=aan, Pattern=een, Pattern=cilinder, Pattern=aan de
+Turn ID=42| A | A : een langwerpig cilinder
+	Free: Pattern=een, Pattern=cilinder
+	Constrained: 
+Turn ID=43| A | A : en aan de bovenkant
+	Free: Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=en
+Turn ID=44| A | A : zijn er twee
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=45| A | A : object die een boek vast houden
+	Free: Pattern=een boek
+	Constrained: Pattern=een, Pattern=boek
+Turn ID=46| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=47| B | B : ik zien twee hak
+	Free: Pattern=ik zien twee hak
+	Constrained: Pattern=twee, Pattern=ik zien, Pattern=zien, Pattern=ik, Pattern=twee hak
+Turn ID=48| B | B : één aan de onderkant en één aan de zijkant
+	Free: Pattern=en één aan de, Pattern=één aan de onderkant, Pattern=één aan de zijkant
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=één, Pattern=en
+Turn ID=49| B | B : en bovenop een soort handvat wat
+	Free: Pattern=en bovenop, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort, Pattern=bovenop, Pattern=en
+Turn ID=50| B | B : met een boek ertussenin
+	Free: Pattern=een boek, Pattern=met
+	Constrained: Pattern=een, Pattern=boek
+Turn ID=51| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=52| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik, Pattern=zien
+Turn ID=53| A | A : ik zien twee hak
+	Free: Pattern=ik zien twee hak
+	Constrained: Pattern=twee, Pattern=ik zien, Pattern=zien, Pattern=ik, Pattern=twee hak
+Turn ID=54| A | A : eentje aan de zijkant één aan de onderkant
+	Free: Pattern=één aan de onderkant, Pattern=aan de zijkant, Pattern=eentje aan de
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=één
+Turn ID=55| A | A : en bovenop worden een boek vastgeklemen door twee
+	Free: Pattern=en bovenop, Pattern=een boek, Pattern=twee
+	Constrained: Pattern=een, Pattern=bovenop, Pattern=boek, Pattern=en
+Turn ID=56| A | A : voorwerp
+	Free: 
+	Constrained: 
+Turn ID=57| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 

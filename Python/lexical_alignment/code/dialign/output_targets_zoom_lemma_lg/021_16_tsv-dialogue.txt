@@ -1,0 +1,171 @@
+B|0| B: _ik_ vinden het _een_ beetje _lijken_ _op een_ videocamera 
+B|1| B: net als bij _die_ _verrekijker_ _zo'n_ vierkant blok vooraan 
+B|2| B: _en dan_ _bovenaan_ _een_ _ja_ 
+B|3| B: _iets_ wat eruit steken 
+B|4| B: _en _aan de_ zijkant_ _ook twee_ ding 
+A|5| A: mhm 
+A|6| A: er [bovenaan] [ook] [iets] zeggen je hè 
+B|7| B: _ja_ 
+A|8| A: [en] [lijken] [die] uitsteeksel [op een] [op] [zo'n] _kegel_ waarmee je Bowlt 
+B|9| B: _ja_ _ja_ 
+A|10| A: Oké 
+A|11| A: Letter 
+A|12| A: _ik zien_ 
+A|13| A: [twee] 
+A|14| A: _kegel_ 
+A|15| A: [en dan] [een] [verrekijker] [aan de zijkant] 
+A|16| A: [en _aan de] achterkant_ 
+A|17| A: zitten [ook] _een soort_ uitsteeksel 
+A|18| A: [en] [die] [twee] 
+B|19| B: _ja_ 
+A|20| A: _kegel_ zitten [aan de zijkant] [en _aan de] bovenkant_ 
+B|21| B: _ja_ 
+B|22| B: nummer 
+B|23| B: dit [lijken] [een] beetje [op een] videocamera 
+B|24| B: net als met [die] [verrekijker] maar [dan] _één_ 
+B|25| B: [en dan] [aan de bovenkant] [een soort] [kegel] 
+B|26| B: [aan de zijkant] [een] [kegel] 
+B|27| B: [en] [iets] [aan de achterkant] slash [zijkant] [ook] nog [iets] 
+A|28| A: [ja] 
+A|29| A: Letter 
+A|30| A: _ik zien_ 
+A|31| A: [ook twee] [kegel] 
+A|32| A: eentje bovenop [en] [één] [aan de zijkant] 
+A|33| A: [aan de] rechtervoorkant zitten [een soort] filmcamera 
+A|34| A: [en aan de] achterzijde zitten [een] 
+A|35| A: niet helemaal recht 
+A|36| A: voorwerp 
+B|37| B: [ja] nummer 
+B|38| B: _ik zien een_ videocamera 
+A|39| A: Letter 
+A|40| A: [ik zien een] filmcamera 
+B|41| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik vinden het een beetje lijken op een videocamera
+	Free: Pattern=op een, Pattern=ik, Pattern=lijken, Pattern=een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=1| B | B : net als bij die verrekijker zo'n vierkant blok vooraan
+	Free: Pattern=die, Pattern=verrekijker, Pattern=zo'n
+	Constrained: 
+Turn ID=2| B | B : en dan bovenaan een ja
+	Free: Pattern=en dan, Pattern=ja, Pattern=een, Pattern=bovenaan
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=3| B | B : iets wat eruit steken
+	Free: Pattern=iets
+	Constrained: 
+Turn ID=4| B | B : en aan de zijkant ook twee ding
+	Free: Pattern=aan de zijkant, Pattern=en aan de, Pattern=ook twee
+	Constrained: Pattern=twee, Pattern=zijkant, Pattern=en, Pattern=aan de, Pattern=ook
+Turn ID=5| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : er bovenaan ook iets zeggen je hè
+	Free: Pattern=ook, Pattern=iets, Pattern=bovenaan
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : en lijken die uitsteeksel op een op zo'n kegel waarmee je Bowlt
+	Free: Pattern=kegel, Pattern=zo'n, Pattern=op, Pattern=lijken, Pattern=die, Pattern=en, Pattern=op een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=9| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: Pattern=ik
+Turn ID=13| A | A : twee
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=14| A | A : kegel
+	Free: Pattern=kegel
+	Constrained: 
+Turn ID=15| A | A : en dan een verrekijker aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=en dan, Pattern=verrekijker, Pattern=een
+	Constrained: Pattern=zijkant, Pattern=en, Pattern=aan de, Pattern=dan
+Turn ID=16| A | A : en aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=en
+Turn ID=17| A | A : zitten ook een soort uitsteeksel
+	Free: Pattern=een soort, Pattern=ook
+	Constrained: Pattern=een
+Turn ID=18| A | A : en die twee
+	Free: Pattern=die, Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : kegel zitten aan de zijkant en aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=aan de zijkant, Pattern=en aan de, Pattern=kegel
+	Constrained: Pattern=zijkant, Pattern=en, Pattern=aan de
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : dit lijken een beetje op een videocamera
+	Free: Pattern=op een, Pattern=lijken, Pattern=een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=24| B | B : net als met die verrekijker maar dan één
+	Free: Pattern=dan, Pattern=die, Pattern=één, Pattern=verrekijker
+	Constrained: 
+Turn ID=25| B | B : en dan aan de bovenkant een soort kegel
+	Free: Pattern=aan de bovenkant, Pattern=en dan, Pattern=een soort, Pattern=kegel
+	Constrained: Pattern=dan, Pattern=een, Pattern=en, Pattern=aan de
+Turn ID=26| B | B : aan de zijkant een kegel
+	Free: Pattern=aan de zijkant, Pattern=kegel, Pattern=een
+	Constrained: Pattern=aan de, Pattern=zijkant
+Turn ID=27| B | B : en iets aan de achterkant slash zijkant ook nog iets
+	Free: Pattern=aan de achterkant, Pattern=iets, Pattern=ook, Pattern=zijkant, Pattern=en
+	Constrained: Pattern=aan de
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: Pattern=ik
+Turn ID=31| A | A : ook twee kegel
+	Free: Pattern=ook twee, Pattern=kegel
+	Constrained: Pattern=ook, Pattern=twee
+Turn ID=32| A | A : eentje bovenop en één aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=één, Pattern=en
+	Constrained: Pattern=aan de, Pattern=zijkant
+Turn ID=33| A | A : aan de rechtervoorkant zitten een soort filmcamera
+	Free: Pattern=aan de, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=34| A | A : en aan de achterzijde zitten een
+	Free: Pattern=en aan de, Pattern=een
+	Constrained: Pattern=aan de, Pattern=en
+Turn ID=35| A | A : niet helemaal recht
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : voorwerp
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : ik zien een videocamera
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=39| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=40| A | A : ik zien een filmcamera
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=41| B | B : nummer
+	Free: 
+	Constrained: 

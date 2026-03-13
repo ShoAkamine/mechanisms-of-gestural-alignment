@@ -1,0 +1,191 @@
+B|0| B: _Oké_ 
+B|1| B: _Ehm_ 
+B|2| B: _ja oké_ 
+B|3| B: denk _even_ aan _een_ _hoofd_ 
+B|4| B: _en_ bovenop _dat_ _hoofd_ _zitten_ _een_ _zitten_ _een_ _rechthoek_ 
+B|5| B: _en_ j-je _zien_ _ook_ _een neus en een_ _oor_ 
+B|6| B: _maar_ leten vooral _op_ _dat_ _euh_ _rechthoek_ bovenop _het_ _hoofd_ 
+B|7| B: _die rechthoek_ bovenop _het_ _hoofd_ 
+A|8| A: [Ehm] 
+A|9| A: [Oké] 
+A|10| A: Hebben [het] soort van [oor] 
+B|11| B: _Euh_ _ja_ _maar_ _je_ _zien_ alleen _één_ [oor] heel goed de ander iets weinig 
+A|12| A: _ja ja ja_ 
+B|13| B: [het] _hebben_ _ook_ _een neus_ zeggen _maar_ 
+A|14| A: [die] [ja] [en] [zitten] er [een] soort dun _staaf_ [die] _op die_ [neus] [zitten] ? wat [een] deel van [die] [neus] _zijn_ 
+B|15| B: [ja ja ja] 
+A|16| A: [Oké] [dat] weten _ik_ _hem_ dan weten _ik_ _hem_ 
+B|17| B: _ja oké_ 
+A|18| A: [Oké] 
+A|19| A: [Euh] [oké] _dit zijn_ [het] _man _met_ die_ [die _rechthoek] op_ _zijn_ [hoofd] 
+A|20| A: [en] [ook] _met_ [een neus en een] soort twee [oor] waarvan [je] [één] eigenlijk [maar] echt [zien] 
+B|21| B: mhm [oké] [ik] _hebben_ [hem] 
+B|22| B: _euh dit zijn_ _met die rechthoek_ bovenop [het] [hoofd] [en] euhdie vreemd _neus met_ zo'n lang ding eraan 
+B|23| B: [en] [je] [zien] [ook] de [oor] 
+B|24| B: [maar] leten vooral [op [die] rechthoek] bovenop [het] [hoofd] 
+A|25| A: waar [zijn] [die] 
+A|26| A: Oh [ja oké] 
+A|27| A: [Euh] 
+A|28| A: [euh dit zijn] _weer_ [het] _man [met_ die _rechthoek] op_ [zijn] [hoofd] [die] [ook] soort van _die oor_ [hebben] _en die_ [neus] 
+B|29| B: ehm [man met] de [rechthoek] 
+B|30| B: _even zoeken_ horen 
+B|31| B: [Ehm] 
+B|32| B: eh [ja] 
+B|33| B: [Oké] [dit zijn] [euh] [weer] [met] de [rechthoek op] [het] [hoofd] [en die] gek [neus] aan de voorkant [met die] _dat staaf_ [en [die] oor] aan de linkerkant 
+A|34| A: [even zoeken] [even zoeken] 
+B|35| B: [maar] [het] gaan [weer] om [die rechthoek] 
+A|36| A: Oh [ja] 
+A|37| A: [ja] 
+B|38| B: [ja oké] 
+A|39| A: [Euh] 
+A|40| A: [euh dit zijn] [weer] [een] [man met] [zijn] [rechthoek op] [zijn] [hoofd] 
+A|41| A: [en] [ook] [die oor] [en die] [neus met] [dat staaf] 
+B|42| B: [Euh] 
+B|43| B: [ja] 
+B|44| B: [euh] de [rechthoek op] [het] [hoofd] hè 
+A|45| A: [ja] 
+B|46| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=2| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=3| B | B : denk even aan een hoofd
+	Free: Pattern=even, Pattern=hoofd, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : en bovenop dat hoofd zitten een zitten een rechthoek
+	Free: Pattern=dat, Pattern=rechthoek, Pattern=een, Pattern=zitten, Pattern=en, Pattern=hoofd
+	Constrained: 
+Turn ID=5| B | B : en j-je zien ook een neus en een oor
+	Free: Pattern=oor, Pattern=ook, Pattern=een neus en een, Pattern=zien, Pattern=en
+	Constrained: Pattern=neus, Pattern=een, Pattern=een neus, Pattern=en
+Turn ID=6| B | B : maar leten vooral op dat euh rechthoek bovenop het hoofd
+	Free: Pattern=dat, Pattern=rechthoek, Pattern=op, Pattern=het, Pattern=euh, Pattern=maar, Pattern=hoofd
+	Constrained: 
+Turn ID=7| B | B : die rechthoek bovenop het hoofd
+	Free: Pattern=die rechthoek, Pattern=het, Pattern=hoofd
+	Constrained: Pattern=rechthoek, Pattern=die
+Turn ID=8| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=9| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| A | A : Hebben het soort van oor
+	Free: Pattern=het, Pattern=oor
+	Constrained: 
+Turn ID=11| B | B : Euh ja maar je zien alleen één oor heel goed de ander iets weinig
+	Free: Pattern=Euh, Pattern=één, Pattern=zien, Pattern=maar, Pattern=je, Pattern=oor, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=13| B | B : het hebben ook een neus zeggen maar
+	Free: Pattern=een neus, Pattern=ook, Pattern=het, Pattern=hebben, Pattern=maar
+	Constrained: Pattern=neus, Pattern=een
+Turn ID=14| A | A : die ja en zitten er een soort dun staaf die op die neus zitten ? wat een deel van die neus zijn
+	Free: Pattern=ja, Pattern=staaf, Pattern=een, Pattern=neus, Pattern=op die, Pattern=en, Pattern=zijn, Pattern=die, Pattern=zitten
+	Constrained: Pattern=op, Pattern=die
+Turn ID=15| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=16| A | A : Oké dat weten ik hem dan weten ik hem
+	Free: Pattern=Oké, Pattern=ik, Pattern=dat, Pattern=hem
+	Constrained: 
+Turn ID=17| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=18| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=19| A | A : Euh oké dit zijn het man met die die rechthoek op zijn hoofd
+	Free: Pattern=oké, Pattern=met die, Pattern=Euh, Pattern=het, Pattern=rechthoek op, Pattern=die rechthoek, Pattern=man met, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn
+	Constrained: Pattern=rechthoek, Pattern=op, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=20| A | A : en ook met een neus en een soort twee oor waarvan je één eigenlijk maar echt zien
+	Free: Pattern=oor, Pattern=ook, Pattern=een neus en een, Pattern=één, Pattern=met, Pattern=zien, Pattern=en, Pattern=maar, Pattern=je
+	Constrained: Pattern=neus, Pattern=een, Pattern=een neus, Pattern=en
+Turn ID=21| B | B : mhm oké ik hebben hem
+	Free: Pattern=hebben, Pattern=ik, Pattern=oké, Pattern=hem
+	Constrained: 
+Turn ID=22| B | B : euh dit zijn met die rechthoek bovenop het hoofd en euhdie vreemd neus met zo'n lang ding eraan
+	Free: Pattern=met die rechthoek, Pattern=het, Pattern=neus met, Pattern=en, Pattern=hoofd, Pattern=euh dit zijn
+	Constrained: Pattern=met die, Pattern=rechthoek, Pattern=euh, Pattern=neus, Pattern=met, Pattern=die, Pattern=die rechthoek, Pattern=zijn, Pattern=dit zijn
+Turn ID=23| B | B : en je zien ook de oor
+	Free: Pattern=oor, Pattern=ook, Pattern=zien, Pattern=en, Pattern=je
+	Constrained: 
+Turn ID=24| B | B : maar leten vooral op die rechthoek bovenop het hoofd
+	Free: Pattern=het, Pattern=op die, Pattern=die rechthoek, Pattern=maar, Pattern=hoofd
+	Constrained: Pattern=rechthoek, Pattern=op, Pattern=die
+Turn ID=25| A | A : waar zijn die
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=26| A | A : Oh ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=27| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=28| A | A : euh dit zijn weer het man met die rechthoek op zijn hoofd die ook soort van die oor hebben en die neus
+	Free: Pattern=en die, Pattern=met die rechthoek, Pattern=ook, Pattern=het, Pattern=hebben, Pattern=die oor, Pattern=rechthoek op, Pattern=neus, Pattern=die, Pattern=man met, Pattern=zijn, Pattern=weer, Pattern=hoofd, Pattern=euh dit zijn
+	Constrained: Pattern=met die, Pattern=rechthoek, Pattern=oor, Pattern=op, Pattern=euh, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=en, Pattern=die rechthoek
+Turn ID=29| B | B : ehm man met de rechthoek
+	Free: Pattern=man met, Pattern=rechthoek
+	Constrained: Pattern=met
+Turn ID=30| B | B : even zoeken horen
+	Free: Pattern=even zoeken
+	Constrained: Pattern=even
+Turn ID=31| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=32| B | B : eh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : Oké dit zijn euh weer met de rechthoek op het hoofd en die gek neus aan de voorkant met die dat staaf en die oor aan de linkerkant
+	Free: Pattern=en die, Pattern=met die, Pattern=het, Pattern=euh, Pattern=die oor, Pattern=rechthoek op, Pattern=neus, Pattern=met, Pattern=dat staaf, Pattern=weer, Pattern=hoofd, Pattern=dit zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=rechthoek, Pattern=oor, Pattern=staaf, Pattern=op, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn
+Turn ID=34| A | A : even zoeken even zoeken
+	Free: Pattern=even zoeken
+	Constrained: Pattern=even
+Turn ID=35| B | B : maar het gaan weer om die rechthoek
+	Free: Pattern=die rechthoek, Pattern=het, Pattern=maar, Pattern=weer
+	Constrained: Pattern=rechthoek, Pattern=die
+Turn ID=36| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=39| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=40| A | A : euh dit zijn weer een man met zijn rechthoek op zijn hoofd
+	Free: Pattern=een, Pattern=rechthoek op, Pattern=man met, Pattern=zijn, Pattern=weer, Pattern=hoofd, Pattern=euh dit zijn
+	Constrained: Pattern=rechthoek, Pattern=op, Pattern=euh, Pattern=met, Pattern=zijn, Pattern=dit zijn
+Turn ID=41| A | A : en ook die oor en die neus met dat staaf
+	Free: Pattern=en die, Pattern=ook, Pattern=die oor, Pattern=neus met, Pattern=en, Pattern=dat staaf
+	Constrained: Pattern=dat, Pattern=oor, Pattern=staaf, Pattern=neus, Pattern=met, Pattern=die, Pattern=en
+Turn ID=42| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : euh de rechthoek op het hoofd hè
+	Free: Pattern=rechthoek op, Pattern=het, Pattern=hoofd, Pattern=euh
+	Constrained: Pattern=rechthoek, Pattern=op
+Turn ID=45| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

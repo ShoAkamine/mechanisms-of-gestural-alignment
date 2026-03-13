@@ -1,0 +1,127 @@
+A|0| A: Oké _ik_ zien _nu_ _een_ plaat _met_ _een_ vierkant eromheen 
+B|1| B: mhm 
+A|2| A: Ehm 
+A|3| A: _en_ boven _op_ _een soort_ 
+A|4| A: af _ja_ boven _op_ _dat_ hoofdonderdeel _van_ elk plaat _staan_ _een_ driehoek 
+B|5| B: [ja] 
+A|6| A: Ehm _en_ _die_ _staan_ _een beetje_ link oriënteren 
+A|7| A: _en_ helemaal links _van_ _dat_ hoofdonderdeel _zijn_ _een soort_ uitsteeksel 
+A|8| A: ehm _op_ rechts komen er _een soort_ kubusachtig _vorm_ [ja] _ons_ kant _op_ 
+B|9| B: Hebben _hij_ [een soort] [van] _wielt_ eronder 
+B|10| B: _zo'n_ cirkel 
+A|11| A: _Eh_ [ja] lijken er wel _op_ [ja] 
+B|12| B: Oh dan weten [ik] al 
+B|13| B: het [zijn] volgens mij het [zijn] 
+B|14| B: [Eh] deze _hebben_ [een soort] [van] _feesthoed_ [op] [zijn] hoofd in [die] _zeggen maar_ [vorm] 
+B|15| B: [en] dan _hebben_ _hij_ ook nog twee cirkel onderaan het hoofdvormpje _zeggen maar_ 
+B|16| B: [en] aan de rechterkant naar [ons] [een beetje] wijzen _hebben_ _hij_ ook [een soort] [van] _afgezaagd_ piramide 
+B|17| B: [en] aan de linkerkant steken ook nog iets _uit_ 
+A|18| A: [ja] euh 
+A|19| A: Ehm _ik hebben_ hem _nu_ _met_ [zo'n] [ja] [feesthoed] erop 
+A|20| A: [en] rechts komen er [een soort] [ja] [afgezaagd] kubusachtig [uit] [en] [hij] _staan_ [op] [een soort] wiel 
+B|21| B: [ja] [ja] [ja] 
+B|22| B: worden het 
+B|23| B: [ik hebben] weer [die] [met] _dat feesthoed_ 
+B|24| B: [en] dan [met] [die] [afgezaagd] piramide aan de rechtervoorzijde 
+B|25| B: [die] [een beetje] [op] wieliet [staan] 
+A|26| A: [ja] 
+A|27| A: eh [ik hebben] [dat feesthoed] [met] [op] [wielt] [zeggen maar] 
+B|28| B: [ja] 
+B|29| B: [ik hebben] [nu] [die] [met] [dat feesthoed] [op] wiele 
+A|30| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik zien nu een plaat met een vierkant eromheen
+	Free: Pattern=een, Pattern=nu, Pattern=ik, Pattern=met
+	Constrained: 
+Turn ID=1| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en boven op een soort
+	Free: Pattern=een soort, Pattern=en, Pattern=op
+	Constrained: Pattern=een
+Turn ID=4| A | A : af ja boven op dat hoofdonderdeel van elk plaat staan een driehoek
+	Free: Pattern=dat, Pattern=ja, Pattern=op, Pattern=van, Pattern=een, Pattern=staan
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Ehm en die staan een beetje link oriënteren
+	Free: Pattern=een beetje, Pattern=die, Pattern=staan, Pattern=en
+	Constrained: Pattern=een
+Turn ID=7| A | A : en helemaal links van dat hoofdonderdeel zijn een soort uitsteeksel
+	Free: Pattern=dat, Pattern=een soort, Pattern=zijn, Pattern=van, Pattern=en
+	Constrained: Pattern=een
+Turn ID=8| A | A : ehm op rechts komen er een soort kubusachtig vorm ja ons kant op
+	Free: Pattern=vorm, Pattern=ja, Pattern=op, Pattern=een soort, Pattern=ons
+	Constrained: Pattern=een
+Turn ID=9| B | B : Hebben hij een soort van wielt eronder
+	Free: Pattern=een soort, Pattern=hij, Pattern=van, Pattern=wielt
+	Constrained: Pattern=een
+Turn ID=10| B | B : zo'n cirkel
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=11| A | A : Eh ja lijken er wel op ja
+	Free: Pattern=Eh, Pattern=ja, Pattern=op
+	Constrained: 
+Turn ID=12| B | B : Oh dan weten ik al
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=13| B | B : het zijn volgens mij het zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=14| B | B : Eh deze hebben een soort van feesthoed op zijn hoofd in die zeggen maar vorm
+	Free: Pattern=vorm, Pattern=op, Pattern=zeggen maar, Pattern=die, Pattern=een soort, Pattern=van, Pattern=feesthoed, Pattern=zijn, Pattern=Eh, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=15| B | B : en dan hebben hij ook nog twee cirkel onderaan het hoofdvormpje zeggen maar
+	Free: Pattern=zeggen maar, Pattern=en, Pattern=hij, Pattern=hebben
+	Constrained: 
+Turn ID=16| B | B : en aan de rechterkant naar ons een beetje wijzen hebben hij ook een soort van afgezaagd piramide
+	Free: Pattern=afgezaagd, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=van, Pattern=en, Pattern=ons, Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=17| B | B : en aan de linkerkant steken ook nog iets uit
+	Free: Pattern=en, Pattern=uit
+	Constrained: 
+Turn ID=18| A | A : ja euh
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Ehm ik hebben hem nu met zo'n ja feesthoed erop
+	Free: Pattern=ik hebben, Pattern=zo'n, Pattern=ja, Pattern=nu, Pattern=met, Pattern=feesthoed
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=20| A | A : en rechts komen er een soort ja afgezaagd kubusachtig uit en hij staan op een soort wiel
+	Free: Pattern=staan, Pattern=hij, Pattern=een soort, Pattern=en, Pattern=afgezaagd, Pattern=ja, Pattern=op, Pattern=uit
+	Constrained: Pattern=een
+Turn ID=21| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : worden het
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : ik hebben weer die met dat feesthoed
+	Free: Pattern=ik hebben, Pattern=dat feesthoed, Pattern=die, Pattern=met
+	Constrained: Pattern=dat, Pattern=hebben, Pattern=ik, Pattern=feesthoed
+Turn ID=24| B | B : en dan met die afgezaagd piramide aan de rechtervoorzijde
+	Free: Pattern=die, Pattern=en, Pattern=met, Pattern=afgezaagd
+	Constrained: 
+Turn ID=25| B | B : die een beetje op wieliet staan
+	Free: Pattern=een beetje, Pattern=die, Pattern=staan, Pattern=op
+	Constrained: Pattern=een
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : eh ik hebben dat feesthoed met op wielt zeggen maar
+	Free: Pattern=ik hebben, Pattern=dat feesthoed, Pattern=op, Pattern=zeggen maar, Pattern=met, Pattern=wielt
+	Constrained: Pattern=feesthoed, Pattern=dat, Pattern=ik, Pattern=hebben
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ik hebben nu die met dat feesthoed op wiele
+	Free: Pattern=ik hebben, Pattern=dat feesthoed, Pattern=op, Pattern=nu, Pattern=met, Pattern=die
+	Constrained: Pattern=dat, Pattern=hebben, Pattern=ik, Pattern=feesthoed
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

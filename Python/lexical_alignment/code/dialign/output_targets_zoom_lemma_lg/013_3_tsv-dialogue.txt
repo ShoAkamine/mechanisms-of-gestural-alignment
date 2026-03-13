@@ -1,0 +1,167 @@
+A|0| A: _Oké_ 
+A|1| A: _ik vinden_ dit _de gieter_ _op een_ _standaard_ 
+A|2| A: misschien _dat_ _je_ _het_ ook 
+A|3| A: Zeggen _maar_ _het_ _zijn_ _die_ bak 
+A|4| A: en daaronder komen _een_ _een_ spiraalvormig iets 
+B|5| B: mhm 
+A|6| A: wat _op een_ driehoek staan 
+B|7| B: _Oh_ 
+A|8| A: aan _de_ 
+B|9| B: [zijn] [vinden] [je] [dat] [een] [gieter] 
+B|10| B: [Oké] 
+A|11| A: _ja_ en dan 
+B|12| B: [ja] [ik vinden] [dat] [een] mens [die] hoera _zeggen_ 
+A|13| A: [Oh] [ja] 
+A|14| A: [ja] [dat] zien [ik] ook wel 
+B|15| B: Ké 
+A|16| A: _met_ één dik arm 
+B|17| B: _Letter_ 
+A|18| A: en één klein arm 
+B|19| B: [ja] 
+A|20| A: [ja] 
+B|21| B: _Letter_ 
+B|22| B: [Oké] _ik hebben_ [die] [een] [die] _jij zeggen_ [dat] [een] [gieter] [zijn] [maar] [ik vinden] [een] _juichen persoon_ 
+B|23| B: [op een] driehoekig [standaard] 
+A|24| A: [Oh] [ja] 
+A|25| A: _even kijken_ waar 
+A|26| A: [ik] weten ook niet wat [ik] bedoelen als [ik] hem zien 
+A|27| A: [Letter] 
+A|28| A: eh [ik hebben] weer _de gieter_ [op een] 
+A|29| A: en [jij zeggen] [je] [juichen persoon] [ik] [zeggen] [gieter] 
+B|30| B: [Oké] 
+B|31| B: [dat] [zijn] nummer 
+B|32| B: [ik hebben] _het juichen persoon_ 
+B|33| B: [met] [de] [met] [de gieter] 
+A|34| A: [ja] 
+A|35| A: [Letter] 
+A|36| A: _ik hebben [de_ gieter] en [het juichen persoon] 
+B|37| B: [Oké] [dat] [zijn] 
+B|38| B: [even kijken] nummer 
+B|39| B: [ik hebben de] [juichen persoon] slash [gieter] 
+A|40| A: [Letter] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ik vinden dit de gieter op een standaard
+	Free: Pattern=de gieter, Pattern=ik vinden, Pattern=op een, Pattern=standaard
+	Constrained: Pattern=gieter, Pattern=een, Pattern=ik, Pattern=de, Pattern=vinden
+Turn ID=2| A | A : misschien dat je het ook
+	Free: Pattern=je, Pattern=het, Pattern=dat
+	Constrained: 
+Turn ID=3| A | A : Zeggen maar het zijn die bak
+	Free: Pattern=zijn, Pattern=die, Pattern=maar, Pattern=het
+	Constrained: 
+Turn ID=4| A | A : en daaronder komen een een spiraalvormig iets
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : wat op een driehoek staan
+	Free: Pattern=op een
+	Constrained: Pattern=een
+Turn ID=7| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=8| A | A : aan de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=9| B | B : zijn vinden je dat een gieter
+	Free: Pattern=dat, Pattern=vinden, Pattern=gieter, Pattern=een, Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=10| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=11| A | A : ja en dan
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja ik vinden dat een mens die hoera zeggen
+	Free: Pattern=dat, Pattern=ja, Pattern=ik vinden, Pattern=een, Pattern=zeggen, Pattern=die
+	Constrained: Pattern=ik, Pattern=vinden
+Turn ID=13| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja dat zien ik ook wel
+	Free: Pattern=ik, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=15| B | B : Ké
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : met één dik arm
+	Free: Pattern=met
+	Constrained: 
+Turn ID=17| B | B : Letter
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=18| A | A : en één klein arm
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : Letter
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=22| B | B : Oké ik hebben die een die jij zeggen dat een gieter zijn maar ik vinden een juichen persoon
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=gieter, Pattern=een, Pattern=die, Pattern=juichen persoon, Pattern=Oké, Pattern=jij zeggen, Pattern=ik vinden, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=zeggen, Pattern=ik, Pattern=vinden
+Turn ID=23| B | B : op een driehoekig standaard
+	Free: Pattern=op een, Pattern=standaard
+	Constrained: Pattern=een
+Turn ID=24| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : even kijken waar
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=26| A | A : ik weten ook niet wat ik bedoelen als ik hem zien
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=27| A | A : Letter
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=28| A | A : eh ik hebben weer de gieter op een
+	Free: Pattern=ik hebben, Pattern=de gieter, Pattern=op een
+	Constrained: Pattern=gieter, Pattern=een, Pattern=de, Pattern=ik
+Turn ID=29| A | A : en jij zeggen je juichen persoon ik zeggen gieter
+	Free: Pattern=jij zeggen, Pattern=gieter, Pattern=zeggen, Pattern=ik, Pattern=juichen persoon, Pattern=je
+	Constrained: Pattern=zeggen
+Turn ID=30| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=31| B | B : dat zijn nummer
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=32| B | B : ik hebben het juichen persoon
+	Free: Pattern=het juichen persoon, Pattern=ik hebben
+	Constrained: Pattern=juichen persoon, Pattern=het, Pattern=ik
+Turn ID=33| B | B : met de met de gieter
+	Free: Pattern=de gieter, Pattern=de, Pattern=met
+	Constrained: Pattern=de, Pattern=gieter
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : Letter
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=36| A | A : ik hebben de gieter en het juichen persoon
+	Free: Pattern=het juichen persoon, Pattern=ik hebben de, Pattern=de gieter
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=gieter, Pattern=het, Pattern=ik, Pattern=juichen persoon
+Turn ID=37| B | B : Oké dat zijn
+	Free: Pattern=zijn, Pattern=Oké, Pattern=dat
+	Constrained: 
+Turn ID=38| B | B : even kijken nummer
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=39| B | B : ik hebben de juichen persoon slash gieter
+	Free: Pattern=ik hebben de, Pattern=juichen persoon, Pattern=gieter
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik
+Turn ID=40| A | A : Letter
+	Free: Pattern=Letter
+	Constrained: 

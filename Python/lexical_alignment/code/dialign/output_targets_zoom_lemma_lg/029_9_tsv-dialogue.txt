@@ -1,0 +1,199 @@
+A|0| A: _aan de zijkant_ st _steekt_ _iets uit_ 
+A|1| A: _en_ euh _bovenop_ _zijn_ _er_ _een_ 
+A|2| A: nee wachten laten ik _het_ anders doen 
+A|3| A: dus _aan de zijkant_ _steekt_ _er_ _iets uit_ 
+A|4| A: _en _aan de_ achterkant_ zien je _een_ _cirkel_ 
+A|5| A: _maar_ _die_ zien je niet helemaal 
+A|6| A: je zien alleen _de bovenkant_ van _dat_ _rond_ 
+B|7| B: _ja_ 
+A|8| A: _en_ euh onder _die_ beker _zijn _een_ soort_ van vierkant 
+A|9| A: _die_ je _ook_ niet helemaal zien 
+A|10| A: dus je zien alleen _nog_ _de onderkant_ 
+A|11| A: _en _aan de_ bovenkant_ steken _er_ _iets_ klein _uit_ 
+A|12| A: _een heel_ klein _kegel_ 
+B|13| B: _ja_ _ja_ _ja_ _dat zijn_ 
+B|14| B: Ehm 
+B|15| B: _deze hebben_ [aan de] [een] kant in mijn geval [de achterkant] [een] [een] half [cirkel] komen [er] [nog] bovenuit zeggen [maar] 
+B|16| B: waarschijnlijk [zijn [een] heel] [rond] eraan plakken [maar] [er] komen [maar] [een] _helft_ [er] bovenuit 
+A|17| A: [ja] 
+B|18| B: [en] [bovenop] [een soort] [kegel] 
+B|19| B: [een] bowlingkegel 
+B|20| B: [die] erin zitten 
+B|21| B: [en [aan de] zijkant] [nog] _één_ [ja] wat [zijn] [het] [een] ronde _arm_ 
+A|22| A: [ja] 
+A|23| A: [ja] 
+B|24| B: [en _aan de] onderkant_ [steekt] hij [ook] [nog] [iets uit] zeggen [maar] waardoor hij wat hoog staan 
+A|25| A: [ja] volgens mij [hebben] we wel [de] ding 
+A|26| A: volgens mij bekijken we wel [de] ding vanuit vanuit dezelfde hoek 
+B|27| B: op [de] 
+B|28| B: [ja] oké 
+A|29| A: _Eh_ 
+A|30| A: dus [dat zijn] 
+A|31| A: _Eh_ 
+A|32| A: [deze hebben] [een] [rond] _aan de achterkant_ [die] je voor [de] [helft] zien 
+A|33| A: [iets] [aan de onderkant] 
+B|34| B: [ja] [dat zijn] ehh 
+B|35| B: [ja] 
+B|36| B: [dat zijn] 
+B|37| B: zo 
+B|38| B: Ehm 
+B|39| B: _dit zijn met_ [die] half [cirkel] [aan de achterkant] _en één_ of [een] bowlingkegel [bovenop] [nog] [en] [een] _arm_ 
+A|40| A: [ja] 
+A|41| A: [dat zijn] 
+A|42| A: Eeh 
+A|43| A: [dit zijn met] [dat] [met] [de] [cirkel] erachter [en één] [arm] 
+A|44| A: [en] kegelje [de] [bovenop] 
+B|45| B: [ja] 
+B|46| B: [Eh] 
+B|47| B: [dit zijn met] [die] half [cirkel] [aan de achterkant] [en] [een] [kegel] [aan de bovenkant] [met] [nog] [een] [arm] 
+A|48| A: Yes 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : aan de zijkant st steekt iets uit
+	Free: Pattern=aan de zijkant, Pattern=iets uit, Pattern=steekt
+	Constrained: Pattern=iets, Pattern=de, Pattern=aan de, Pattern=uit
+Turn ID=1| A | A : en euh bovenop zijn er een
+	Free: Pattern=bovenop, Pattern=een, Pattern=er, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : nee wachten laten ik het anders doen
+	Free: Pattern=het
+	Constrained: 
+Turn ID=3| A | A : dus aan de zijkant steekt er iets uit
+	Free: Pattern=aan de zijkant, Pattern=iets uit, Pattern=er, Pattern=steekt
+	Constrained: Pattern=iets, Pattern=de, Pattern=aan de, Pattern=uit
+Turn ID=4| A | A : en aan de achterkant zien je een cirkel
+	Free: Pattern=en aan de, Pattern=aan de achterkant, Pattern=cirkel, Pattern=een
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de achterkant, Pattern=en
+Turn ID=5| A | A : maar die zien je niet helemaal
+	Free: Pattern=die, Pattern=maar
+	Constrained: 
+Turn ID=6| A | A : je zien alleen de bovenkant van dat rond
+	Free: Pattern=de bovenkant, Pattern=dat, Pattern=rond
+	Constrained: Pattern=de
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : en euh onder die beker zijn een soort van vierkant
+	Free: Pattern=een soort, Pattern=zijn een, Pattern=die, Pattern=en
+	Constrained: Pattern=zijn, Pattern=een
+Turn ID=9| A | A : die je ook niet helemaal zien
+	Free: Pattern=ook, Pattern=die
+	Constrained: 
+Turn ID=10| A | A : dus je zien alleen nog de onderkant
+	Free: Pattern=de onderkant, Pattern=nog
+	Constrained: Pattern=de
+Turn ID=11| A | A : en aan de bovenkant steken er iets klein uit
+	Free: Pattern=iets, Pattern=uit, Pattern=er, Pattern=aan de bovenkant, Pattern=en aan de
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de, Pattern=de bovenkant
+Turn ID=12| A | A : een heel klein kegel
+	Free: Pattern=een heel, Pattern=kegel
+	Constrained: Pattern=een
+Turn ID=13| B | B : ja ja ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : deze hebben aan de een kant in mijn geval de achterkant een een half cirkel komen er nog bovenuit zeggen maar
+	Free: Pattern=cirkel, Pattern=nog, Pattern=aan de, Pattern=een, Pattern=deze hebben, Pattern=er, Pattern=maar, Pattern=de achterkant
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=16| B | B : waarschijnlijk zijn een heel rond eraan plakken maar er komen maar een helft er bovenuit
+	Free: Pattern=een heel, Pattern=zijn een, Pattern=een, Pattern=er, Pattern=rond, Pattern=maar, Pattern=helft
+	Constrained: Pattern=zijn, Pattern=een
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : en bovenop een soort kegel
+	Free: Pattern=een soort, Pattern=kegel, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=19| B | B : een bowlingkegel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=20| B | B : die erin zitten
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| B | B : en aan de zijkant nog één ja wat zijn het een ronde arm
+	Free: Pattern=nog, Pattern=ja, Pattern=het, Pattern=één, Pattern=arm, Pattern=zijn, Pattern=en aan de, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : en aan de onderkant steekt hij ook nog iets uit zeggen maar waardoor hij wat hoog staan
+	Free: Pattern=nog, Pattern=ook, Pattern=steekt, Pattern=aan de onderkant, Pattern=maar, Pattern=en aan de, Pattern=iets uit
+	Constrained: Pattern=de onderkant, Pattern=en, Pattern=de, Pattern=iets, Pattern=uit, Pattern=aan de
+Turn ID=25| A | A : ja volgens mij hebben we wel de ding
+	Free: Pattern=hebben, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=26| A | A : volgens mij bekijken we wel de ding vanuit vanuit dezelfde hoek
+	Free: Pattern=de
+	Constrained: 
+Turn ID=27| B | B : op de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=28| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=30| A | A : dus dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=32| A | A : deze hebben een rond aan de achterkant die je voor de helft zien
+	Free: Pattern=aan de achterkant, Pattern=de, Pattern=een, Pattern=deze hebben, Pattern=die, Pattern=rond, Pattern=helft
+	Constrained: Pattern=de, Pattern=de achterkant, Pattern=aan de, Pattern=hebben
+Turn ID=33| A | A : iets aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=iets
+	Constrained: Pattern=aan de, Pattern=de onderkant, Pattern=de
+Turn ID=34| B | B : ja dat zijn ehh
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=37| B | B : zo
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : dit zijn met die half cirkel aan de achterkant en één of een bowlingkegel bovenop nog en een arm
+	Free: Pattern=cirkel, Pattern=nog, Pattern=die, Pattern=en één, Pattern=aan de achterkant, Pattern=bovenop, Pattern=een, Pattern=dit zijn met, Pattern=arm, Pattern=en
+	Constrained: Pattern=de, Pattern=aan de, Pattern=één, Pattern=met, Pattern=en, Pattern=zijn, Pattern=de achterkant
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=42| A | A : Eeh
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : dit zijn met dat met de cirkel erachter en één arm
+	Free: Pattern=cirkel, Pattern=dat, Pattern=de, Pattern=dit zijn met, Pattern=met, Pattern=arm, Pattern=en één
+	Constrained: Pattern=zijn, Pattern=met, Pattern=en, Pattern=één
+Turn ID=44| A | A : en kegelje de bovenop
+	Free: Pattern=en, Pattern=de, Pattern=bovenop
+	Constrained: 
+Turn ID=45| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=47| B | B : dit zijn met die half cirkel aan de achterkant en een kegel aan de bovenkant met nog een arm
+	Free: Pattern=aan de achterkant, Pattern=nog, Pattern=met, Pattern=die, Pattern=kegel, Pattern=cirkel, Pattern=een, Pattern=dit zijn met, Pattern=arm, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=met, Pattern=zijn, Pattern=de achterkant
+Turn ID=48| A | A : Yes
+	Free: 
+	Constrained: 

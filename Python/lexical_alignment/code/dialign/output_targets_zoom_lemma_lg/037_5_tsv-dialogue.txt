@@ -1,0 +1,111 @@
+A|0| A: uhm 
+A|1| A: even kijken 
+A|2| A: deze _zijn_ _een_ beetje compact 
+A|3| A: hij _hebben_ het _hebben_ _op zijn hoofd_ _een_ klein _staaf_ _liggen_ als het _zijn_ 
+A|4| A: uhm vierkant 
+A|5| A: _en_ _aan de_ linkerkant zitten _een_ soort van _neus_ misschien 
+A|6| A: zoals je het kunnen zien 
+A|7| A: _en_ hij _hebben_ _aan de rechterkant_ maar _dat_ _zijn_ niet helemaal 
+A|8| A: het _zijn_ niet zeggen maar _en_ profiel 
+A|9| A: maar het _zijn_ iets meerAntroqua als je het zo kunnen zeggen 
+B|10| B: mhm 
+A|11| A: Hebben hij ook _een_ soort figuur 
+A|12| A: maar _ik_ kunnen het net niet helemaal goed zienWant het _zijn_ _een_ soort van ook _een_ plateauotjeMet daarop _een_ spinne _of_ _zoiets_ 
+B|13| B: _ja_ _ja_ [ik] [hebben] hem 
+A|14| A: Oké 
+B|15| B: _Uh _dit zijn die met_ die balk op zijn hoofd_ _die_ gewoon _plat_ [liggen] [en] dan links zo'n _ja_ [neus] [of] [een] armpje [en] _rechts_ [zoiets] waar zo'n [staaf] uit komen 
+A|16| A: [ja] _dat_ [zijn] 
+A|17| A: Uhm [dit zijn die met die balk op zijn hoofd] 
+A|18| A: [en] [die] [neus] _aan de_ linkerkant [en] _die staaf_ [die] [rechts] [een] beetje _ergens uitkomen_ 
+B|19| B: [ja] 
+B|20| B: _Uh [dit zijn die met_ [die] staaf] _op zijn hoofd _en_ dat_ [neus] [of] armpje _en dat staaf_ [aan de rechterkant] [dat] [ergens uitkomen] 
+A|21| A: [ja] [dat] [zijn] 
+A|22| A: [Uh dit zijn die met] [de] [plat] _balk op zijn hoofd en_ [die] _neus [en dat_ staaf] [rechts] 
+B|23| B: [dit zijn die met] [een] [balk op zijn hoofd [en] dat] [neus en dat] dinget [met] [dat] 
+A|24| A: [ja] 
+A|25| A: [de] [balk op zijn hoofd] 
+A|26| A: [zijn] [dat] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : uhm
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : deze zijn een beetje compact
+	Free: Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : hij hebben het hebben op zijn hoofd een klein staaf liggen als het zijn
+	Free: Pattern=staaf, Pattern=een, Pattern=hebben, Pattern=zijn, Pattern=op zijn hoofd, Pattern=liggen
+	Constrained: Pattern=zijn
+Turn ID=4| A | A : uhm vierkant
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : en aan de linkerkant zitten een soort van neus misschien
+	Free: Pattern=aan de, Pattern=een, Pattern=en, Pattern=neus
+	Constrained: Pattern=de
+Turn ID=6| A | A : zoals je het kunnen zien
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : en hij hebben aan de rechterkant maar dat zijn niet helemaal
+	Free: Pattern=dat, Pattern=hebben, Pattern=aan de rechterkant, Pattern=en, Pattern=zijn
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=8| A | A : het zijn niet zeggen maar en profiel
+	Free: Pattern=zijn, Pattern=en
+	Constrained: 
+Turn ID=9| A | A : maar het zijn iets meerAntroqua als je het zo kunnen zeggen
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : Hebben hij ook een soort figuur
+	Free: Pattern=een
+	Constrained: 
+Turn ID=12| A | A : maar ik kunnen het net niet helemaal goed zienWant het zijn een soort van ook een plateauotjeMet daarop een spinne of zoiets
+	Free: Pattern=een, Pattern=ik, Pattern=zijn, Pattern=zoiets, Pattern=of
+	Constrained: 
+Turn ID=13| B | B : ja ja ik hebben hem
+	Free: Pattern=ja, Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=14| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : Uh dit zijn die met die balk op zijn hoofd die gewoon plat liggen en dan links zo'n ja neus of een armpje en rechts zoiets waar zo'n staaf uit komen
+	Free: Pattern=staaf, Pattern=een, Pattern=dit zijn die met die balk op zijn hoofd, Pattern=neus, Pattern=die, Pattern=en, Pattern=Uh dit zijn die met, Pattern=zoiets, Pattern=of, Pattern=rechts, Pattern=ja, Pattern=liggen, Pattern=plat
+	Constrained: Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=zijn, Pattern=dit zijn die met die, Pattern=balk op zijn hoofd, Pattern=dit zijn die met
+Turn ID=16| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=17| A | A : Uhm dit zijn die met die balk op zijn hoofd
+	Free: Pattern=dit zijn die met die balk op zijn hoofd
+	Constrained: Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=zijn, Pattern=dit zijn die met die, Pattern=balk op zijn hoofd, Pattern=dit zijn die met
+Turn ID=18| A | A : en die neus aan de linkerkant en die staaf die rechts een beetje ergens uitkomen
+	Free: Pattern=rechts, Pattern=aan de, Pattern=een, Pattern=ergens uitkomen, Pattern=neus, Pattern=en, Pattern=die staaf, Pattern=die
+	Constrained: Pattern=die, Pattern=de, Pattern=staaf
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Uh dit zijn die met die staaf op zijn hoofd en dat neus of armpje en dat staaf aan de rechterkant dat ergens uitkomen
+	Free: Pattern=dat, Pattern=of, Pattern=en dat staaf, Pattern=ergens uitkomen, Pattern=neus, Pattern=op zijn hoofd en, Pattern=Uh dit zijn die met, Pattern=die staaf, Pattern=aan de rechterkant, Pattern=en dat, Pattern=dit zijn die met die
+	Constrained: Pattern=dat, Pattern=de, Pattern=staaf, Pattern=aan de, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=en, Pattern=op zijn hoofd, Pattern=zijn, Pattern=en dat
+Turn ID=21| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=22| A | A : Uh dit zijn die met de plat balk op zijn hoofd en die neus en dat staaf rechts
+	Free: Pattern=en dat staaf, Pattern=die, Pattern=plat, Pattern=balk op zijn hoofd en, Pattern=neus en dat, Pattern=Uh dit zijn die met, Pattern=de, Pattern=rechts
+	Constrained: Pattern=dat, Pattern=staaf, Pattern=neus, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=en dat, Pattern=balk op zijn hoofd, Pattern=dit zijn die met, Pattern=op zijn hoofd, Pattern=op zijn hoofd en
+Turn ID=23| B | B : dit zijn die met een balk op zijn hoofd en dat neus en dat dinget met dat
+	Free: Pattern=dat, Pattern=een, Pattern=dit zijn die met, Pattern=met, Pattern=balk op zijn hoofd en, Pattern=neus en dat, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=balk op zijn hoofd, Pattern=neus, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=en dat, Pattern=op zijn hoofd, Pattern=op zijn hoofd en
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : de balk op zijn hoofd
+	Free: Pattern=balk op zijn hoofd, Pattern=de
+	Constrained: Pattern=op zijn hoofd, Pattern=zijn
+Turn ID=26| A | A : zijn dat
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 

@@ -1,0 +1,123 @@
+A|0| A: ehm _deze hebben_ _rechts_ _een soort_ _bol_ erop zitten 
+A|1| A: _eh_ link _een uitsteeksel_ 
+A|2| A: _en_ _bovenop_ _ook_ _twee_ _uitsteeksel_ 
+A|3| A: eentje _zijn_ echt _een rechthoek_ _en de ander_ _zijn_ veel _een soort_ kegelachtig 
+B|4| B: Oh _ja_ 
+B|5| B: [eh] _ja_ 
+B|6| B: _deze hebben een_ [bol] voorop 
+B|7| B: [en] dan _bovenop twee_ _ding_ 
+B|8| B: _waarvan één [een_ soort] _kegel [en_ de ander] [een rechthoek] 
+B|9| B: [en] dan _links ook nog een uitsteeksel_ 
+A|10| A: _ja dat zijn_ 
+A|11| A: Eh [deze hebben [een] soort] bolle aan [de] _rechts_ kant 
+A|12| A: [bovenop twee] dinget [een] rechthoekje [en] [een] kegelachtig [ding] 
+A|13| A: [en] [links ook nog een uitsteeksel] iets 
+B|14| B: [ja dat zijn] 
+B|15| B: [deze hebben een] [bol] [rechts] 
+B|16| B: [en] dan [bovenop twee] [ding] 
+B|17| B: _waarvan één_ die [soort] _kegel_ [zijn] 
+B|18| B: [en de ander] [een soort] [rechthoek] 
+B|19| B: [en] dan _links [nog een_ uitsteeksel] 
+A|20| A: [ja dat zijn] 
+A|21| A: _deze zijn_ _met_ [rechts] [een soort] van [bol] 
+A|22| A: [bovenop twee] [uitsteeksel] 
+A|23| A: [waarvan één een] [kegel en] [één [een] rechthoek] 
+B|24| B: ah [ja dat zijn] 
+A|25| A: [en] [links nog een] dinge 
+B|26| B: [deze zijn] [ook] [met] [een] [bol] [rechts] 
+B|27| B: [en] dan [twee] [ding] erbovenop 
+B|28| B: [en] dan [links [nog een] uitsteeksel] 
+A|29| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben rechts een soort bol erop zitten
+	Free: Pattern=een soort, Pattern=deze hebben, Pattern=bol, Pattern=rechts
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=1| A | A : eh link een uitsteeksel
+	Free: Pattern=een uitsteeksel, Pattern=eh
+	Constrained: Pattern=uitsteeksel, Pattern=een
+Turn ID=2| A | A : en bovenop ook twee uitsteeksel
+	Free: Pattern=bovenop, Pattern=twee, Pattern=ook, Pattern=uitsteeksel, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : eentje zijn echt een rechthoek en de ander zijn veel een soort kegelachtig
+	Free: Pattern=en de ander, Pattern=een soort, Pattern=een rechthoek, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=rechthoek, Pattern=de, Pattern=een, Pattern=en
+Turn ID=4| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : eh ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=6| B | B : deze hebben een bol voorop
+	Free: Pattern=deze hebben een, Pattern=bol
+	Constrained: Pattern=deze hebben, Pattern=een
+Turn ID=7| B | B : en dan bovenop twee ding
+	Free: Pattern=bovenop twee, Pattern=en, Pattern=ding
+	Constrained: Pattern=twee, Pattern=bovenop
+Turn ID=8| B | B : waarvan één een soort kegel en de ander een rechthoek
+	Free: Pattern=een rechthoek, Pattern=en de ander, Pattern=kegel en, Pattern=een soort, Pattern=waarvan één een
+	Constrained: Pattern=kegel, Pattern=soort, Pattern=rechthoek, Pattern=de, Pattern=een, Pattern=waarvan één, Pattern=en, Pattern=één een
+Turn ID=9| B | B : en dan links ook nog een uitsteeksel
+	Free: Pattern=links ook nog een uitsteeksel, Pattern=en
+	Constrained: Pattern=ook, Pattern=uitsteeksel, Pattern=een, Pattern=nog een uitsteeksel, Pattern=een uitsteeksel
+Turn ID=10| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn
+Turn ID=11| A | A : Eh deze hebben een soort bolle aan de rechts kant
+	Free: Pattern=deze hebben een, Pattern=een soort, Pattern=de, Pattern=rechts
+	Constrained: Pattern=deze hebben, Pattern=een, Pattern=soort
+Turn ID=12| A | A : bovenop twee dinget een rechthoekje en een kegelachtig ding
+	Free: Pattern=bovenop twee, Pattern=en, Pattern=ding, Pattern=een
+	Constrained: Pattern=twee, Pattern=bovenop
+Turn ID=13| A | A : en links ook nog een uitsteeksel iets
+	Free: Pattern=links ook nog een uitsteeksel, Pattern=en
+	Constrained: Pattern=ook, Pattern=uitsteeksel, Pattern=een, Pattern=nog een uitsteeksel, Pattern=een uitsteeksel
+Turn ID=14| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn
+Turn ID=15| B | B : deze hebben een bol rechts
+	Free: Pattern=deze hebben een, Pattern=bol, Pattern=rechts
+	Constrained: Pattern=deze hebben, Pattern=een
+Turn ID=16| B | B : en dan bovenop twee ding
+	Free: Pattern=bovenop twee, Pattern=en, Pattern=ding
+	Constrained: Pattern=twee, Pattern=bovenop
+Turn ID=17| B | B : waarvan één die soort kegel zijn
+	Free: Pattern=waarvan één, Pattern=zijn, Pattern=kegel, Pattern=soort
+	Constrained: 
+Turn ID=18| B | B : en de ander een soort rechthoek
+	Free: Pattern=en de ander, Pattern=een soort, Pattern=rechthoek
+	Constrained: Pattern=een, Pattern=de, Pattern=soort, Pattern=en
+Turn ID=19| B | B : en dan links nog een uitsteeksel
+	Free: Pattern=links nog een, Pattern=nog een uitsteeksel, Pattern=en
+	Constrained: Pattern=een uitsteeksel, Pattern=een, Pattern=uitsteeksel
+Turn ID=20| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn
+Turn ID=21| A | A : deze zijn met rechts een soort van bol
+	Free: Pattern=bol, Pattern=met, Pattern=een soort, Pattern=rechts, Pattern=deze zijn
+	Constrained: Pattern=zijn, Pattern=een, Pattern=soort
+Turn ID=22| A | A : bovenop twee uitsteeksel
+	Free: Pattern=bovenop twee, Pattern=uitsteeksel
+	Constrained: Pattern=twee, Pattern=bovenop
+Turn ID=23| A | A : waarvan één een kegel en één een rechthoek
+	Free: Pattern=waarvan één een, Pattern=een rechthoek, Pattern=één een, Pattern=kegel en
+	Constrained: Pattern=kegel, Pattern=rechthoek, Pattern=een, Pattern=waarvan één, Pattern=en, Pattern=één een
+Turn ID=24| B | B : ah ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn
+Turn ID=25| A | A : en links nog een dinge
+	Free: Pattern=links nog een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=26| B | B : deze zijn ook met een bol rechts
+	Free: Pattern=een, Pattern=met, Pattern=rechts, Pattern=deze zijn, Pattern=bol, Pattern=ook
+	Constrained: Pattern=zijn
+Turn ID=27| B | B : en dan twee ding erbovenop
+	Free: Pattern=en, Pattern=ding, Pattern=twee
+	Constrained: 
+Turn ID=28| B | B : en dan links nog een uitsteeksel
+	Free: Pattern=links nog een, Pattern=nog een uitsteeksel, Pattern=en
+	Constrained: Pattern=een uitsteeksel, Pattern=een, Pattern=uitsteeksel
+Turn ID=29| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn

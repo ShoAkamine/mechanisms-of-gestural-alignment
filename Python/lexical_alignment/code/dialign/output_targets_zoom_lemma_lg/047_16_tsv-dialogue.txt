@@ -1,0 +1,127 @@
+B|0| B: _Oké_ dit _zijn_ _een soort_ propellor 
+B|1| B: Weet _je_ _wat een_ propellor _zijn_ 
+A|2| A: _ja_ _ik weten_ [wat een] propello [zijn] 
+B|3| B: [ik weten] 
+B|4| B: _Oké_ 
+B|5| B: _Eh_ als _je_ hem _voor_ _je_ zien _dan _hebben_ hij_ normaal drie _van_ _die_ wiek 
+A|6| A: mhm 
+B|7| B: deze _hebben_ twee _van_ _die_ wiek 
+B|8| B: eentje aan _de_ bovenkant _en_ één aan _de_ linkerkant 
+B|9| B: _en_ _dan zijn_ aan aan _de_ rechterkant [zijn] _en_ _soort_ _een soort_ _blok_ of zo 
+A|10| A: [Oké] [en] [hebben hij] ook nog [een soort] [van] staart 
+B|11| B: [ja] 
+B|12| B: [ja] 
+A|13| A: [Oké] [dan zijn] _dat_ [voor] mij 
+B|14| B: [Oké] 
+B|15| B: [een soort] butler 
+B|16| B: [ja] 
+A|17| A: ehm [dan hebben] [ik] [de] [soort] molen [wat] [je] zeggen 
+A|18| A: [Eh] met _dat_ staart erachter [en] _dat_ [blok] rechts 
+B|19| B: [ja] nummer 
+B|20| B: [de] propellor 
+B|21| B: [de] propellor 
+A|22| A: O _waar_ staan [die] 
+A|23| A: [Eh] 
+A|24| A: eh [de] propeller 
+B|25| B: [dat] [zijn] nummer 
+B|26| B: [waar] [zijn] [hij] [waar] [zijn] [hij] [waar] [zijn] [hij] 
+B|27| B: Oh nummer 
+B|28| B: [de] propellor 
+A|29| A: eh [de] propeller 
+B|30| B: [dat] [zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké dit zijn een soort propellor
+	Free: Pattern=een soort, Pattern=zijn, Pattern=Oké
+	Constrained: Pattern=soort
+Turn ID=1| B | B : Weet je wat een propellor zijn
+	Free: Pattern=wat een, Pattern=je, Pattern=zijn
+	Constrained: Pattern=wat
+Turn ID=2| A | A : ja ik weten wat een propello zijn
+	Free: Pattern=ik weten, Pattern=wat een, Pattern=ja, Pattern=zijn
+	Constrained: Pattern=ik, Pattern=wat
+Turn ID=3| B | B : ik weten
+	Free: Pattern=ik weten
+	Constrained: Pattern=ik
+Turn ID=4| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : Eh als je hem voor je zien dan hebben hij normaal drie van die wiek
+	Free: Pattern=hebben hij, Pattern=voor, Pattern=Eh, Pattern=dan hebben, Pattern=die, Pattern=van, Pattern=je
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=6| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : deze hebben twee van die wiek
+	Free: Pattern=hebben, Pattern=van, Pattern=die
+	Constrained: 
+Turn ID=8| B | B : eentje aan de bovenkant en één aan de linkerkant
+	Free: Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=9| B | B : en dan zijn aan aan de rechterkant zijn en soort een soort blok of zo
+	Free: Pattern=soort, Pattern=de, Pattern=dan zijn, Pattern=een soort, Pattern=en, Pattern=blok, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=zijn
+Turn ID=10| A | A : Oké en hebben hij ook nog een soort van staart
+	Free: Pattern=hebben hij, Pattern=een soort, Pattern=Oké, Pattern=van, Pattern=en
+	Constrained: Pattern=hebben, Pattern=soort, Pattern=hij
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : Oké dan zijn dat voor mij
+	Free: Pattern=dan zijn, Pattern=voor, Pattern=dat, Pattern=Oké
+	Constrained: Pattern=zijn
+Turn ID=14| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : een soort butler
+	Free: Pattern=een soort
+	Constrained: Pattern=soort
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ehm dan hebben ik de soort molen wat je zeggen
+	Free: Pattern=soort, Pattern=de, Pattern=dan hebben, Pattern=wat, Pattern=ik, Pattern=je
+	Constrained: Pattern=hebben
+Turn ID=18| A | A : Eh met dat staart erachter en dat blok rechts
+	Free: Pattern=Eh, Pattern=en, Pattern=dat, Pattern=blok
+	Constrained: 
+Turn ID=19| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : de propellor
+	Free: Pattern=de
+	Constrained: 
+Turn ID=21| B | B : de propellor
+	Free: Pattern=de
+	Constrained: 
+Turn ID=22| A | A : O waar staan die
+	Free: Pattern=waar, Pattern=die
+	Constrained: 
+Turn ID=23| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=24| A | A : eh de propeller
+	Free: Pattern=de
+	Constrained: 
+Turn ID=25| B | B : dat zijn nummer
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=26| B | B : waar zijn hij waar zijn hij waar zijn hij
+	Free: Pattern=waar, Pattern=zijn, Pattern=hij
+	Constrained: 
+Turn ID=27| B | B : Oh nummer
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : de propellor
+	Free: Pattern=de
+	Constrained: 
+Turn ID=29| A | A : eh de propeller
+	Free: Pattern=de
+	Constrained: 
+Turn ID=30| B | B : dat zijn nummer
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 

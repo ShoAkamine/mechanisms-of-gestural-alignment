@@ -1,0 +1,67 @@
+A|0| A: _Oh_ _euh_ _ik_ beschrijven deze _als_ mushri cannibaal maar het zijn _euh_ een bol neusje en er lijken een stok doorheen te uitzitten 
+A|1| A: en hij _hebben_ ook een klein Euh veertje op zijn hoofd 
+A|2| A: Ofzo 
+B|3| B: _ja ja_ 
+B|4| B: die [hebben] [ik] volgens mij [als] piercing door iemands neus 
+A|5| A: ah [ja ja] 
+B|6| B: dus [euh] 
+B|7| B: [Oh] dan [hebben] [ik] [euh] _de neuspiercing_ 
+A|8| A: Yes 
+A|9| A: Euh 
+A|10| A: [Oh] [ik] [hebben] [de neuspiercing] 
+B|11| B: [ja] 
+B|12| B: [de neuspiercing] 
+A|13| A: Euh [ja] 
+A|14| A: [de neuspiercing] 
+B|15| B: [euh] [de] piercing 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh euh ik beschrijven deze als mushri cannibaal maar het zijn euh een bol neusje en er lijken een stok doorheen te uitzitten
+	Free: Pattern=euh, Pattern=als, Pattern=ik, Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : en hij hebben ook een klein Euh veertje op zijn hoofd
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=2| A | A : Ofzo
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=4| B | B : die hebben ik volgens mij als piercing door iemands neus
+	Free: Pattern=hebben, Pattern=als, Pattern=ik
+	Constrained: 
+Turn ID=5| A | A : ah ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=6| B | B : dus euh
+	Free: Pattern=euh
+	Constrained: 
+Turn ID=7| B | B : Oh dan hebben ik euh de neuspiercing
+	Free: Pattern=hebben, Pattern=euh, Pattern=ik, Pattern=Oh, Pattern=de neuspiercing
+	Constrained: Pattern=de
+Turn ID=8| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Euh
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : Oh ik hebben de neuspiercing
+	Free: Pattern=de neuspiercing, Pattern=hebben, Pattern=ik, Pattern=Oh
+	Constrained: Pattern=de
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : de neuspiercing
+	Free: Pattern=de neuspiercing
+	Constrained: Pattern=de
+Turn ID=13| A | A : Euh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : de neuspiercing
+	Free: Pattern=de neuspiercing
+	Constrained: Pattern=de
+Turn ID=15| B | B : euh de piercing
+	Free: Pattern=euh, Pattern=de
+	Constrained: 

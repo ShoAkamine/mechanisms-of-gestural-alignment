@@ -1,0 +1,71 @@
+B|0| B: _ehm_ _dit_ vinden ik één die wel veel lijken op een gezicht 
+B|1| B: _met_ een rond _neus_ in het midden 
+B|2| B: en dan een soort of soort van niet soort van een _staaf door_ die _neus_ 
+B|3| B: ik vinden het lijken als zo'n ring die stier _door_ hun _neus_ hebben 
+B|4| B: ook al _zijn_ het geen ring maar een _staaf_ 
+A|5| A: _ja_ 
+B|6| B: en dan rechts van die _staaf_ nog een disk eraan 
+A|7| A: Yes 
+A|8| A: [ehm] deze [zijn] [met] _de staaf door de neus_ 
+B|9| B: [ja] dat [zijn] maar één 
+B|10| B: _dit zijn staaf door de neus_ 
+B|11| B: [door de] rond [neus] 
+A|12| A: Eh 
+A|13| A: [staaf door] [neus] 
+B|14| B: [de staaf door de neus] 
+A|15| A: hmm 
+A|16| A: [dit zijn staaf door de neus] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm dit vinden ik één die wel veel lijken op een gezicht
+	Free: Pattern=dit, Pattern=ehm
+	Constrained: 
+Turn ID=1| B | B : met een rond neus in het midden
+	Free: Pattern=met, Pattern=neus
+	Constrained: 
+Turn ID=2| B | B : en dan een soort of soort van niet soort van een staaf door die neus
+	Free: Pattern=staaf door, Pattern=neus
+	Constrained: Pattern=door, Pattern=staaf
+Turn ID=3| B | B : ik vinden het lijken als zo'n ring die stier door hun neus hebben
+	Free: Pattern=door, Pattern=neus
+	Constrained: 
+Turn ID=4| B | B : ook al zijn het geen ring maar een staaf
+	Free: Pattern=staaf, Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : en dan rechts van die staaf nog een disk eraan
+	Free: Pattern=staaf
+	Constrained: 
+Turn ID=7| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : ehm deze zijn met de staaf door de neus
+	Free: Pattern=de staaf door de neus, Pattern=ehm, Pattern=met, Pattern=zijn
+	Constrained: Pattern=staaf, Pattern=door, Pattern=neus, Pattern=staaf door, Pattern=door de
+Turn ID=9| B | B : ja dat zijn maar één
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : dit zijn staaf door de neus
+	Free: Pattern=dit zijn staaf door de neus
+	Constrained: Pattern=staaf, Pattern=door, Pattern=dit, Pattern=neus, Pattern=staaf door, Pattern=zijn, Pattern=door de
+Turn ID=11| B | B : door de rond neus
+	Free: Pattern=door de, Pattern=neus
+	Constrained: Pattern=door
+Turn ID=12| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : staaf door neus
+	Free: Pattern=staaf door, Pattern=neus
+	Constrained: Pattern=door, Pattern=staaf
+Turn ID=14| B | B : de staaf door de neus
+	Free: Pattern=de staaf door de neus
+	Constrained: Pattern=staaf, Pattern=door, Pattern=neus, Pattern=staaf door, Pattern=door de
+Turn ID=15| A | A : hmm
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : dit zijn staaf door de neus
+	Free: Pattern=dit zijn staaf door de neus
+	Constrained: Pattern=staaf, Pattern=door, Pattern=dit, Pattern=neus, Pattern=staaf door, Pattern=zijn, Pattern=door de

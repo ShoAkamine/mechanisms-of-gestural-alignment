@@ -1,0 +1,119 @@
+B|0| B: Oké 
+B|1| B: oké _ja_ 
+B|2| B: _ik_ hebben _hier een_ plaat 
+B|3| B: _en_ _het_ doen mij _een_ beetje _denken_ _aan_ _een _een_ _een_ neuspiercing_ 
+A|4| A: [ja] _dan_ weten [ik] al [denken] [ik] wat je bedoelen 
+A|5| A: _ik zien_ [hier een] voorwerp _met een_ één 
+A|6| A: [ik] [denken] dat [het] [een] kop zijn 
+A|7| A: _met een_ lepel daarin 
+A|8| A: [aan] _de_ bovenkant 
+A|9| A: [en] [aan] _de_ voorkant zitten [een] dik _neus_ 
+A|10| A: _met een_ _punaise_ erdoor 
+B|11| B: [en] 
+B|12| B: dus [met] zo'n _bolle_ ook [aan] [het] eind van [de] [punaise] [dan] 
+B|13| B: [ja] 
+A|14| A: [ja] één [ja] [een een] plat [bolle] 
+B|15| B: [ja] oké 
+B|16| B: nummer 
+B|17| B: _ik zien een_ [neus] [met een] [ja] [punaise] _erdoorheen_ 
+A|18| A: mhm [ja] 
+B|19| B: [en] bovenop [een] klein uitsteeksel 
+A|20| A: Letter 
+A|21| A: [ik zien een] 
+A|22| A: [een] dik [neus] 
+A|23| A: _met een piercing erdoorheen_ 
+B|24| B: nummer 
+B|25| B: [ik zien een] [neus] [met een piercing erdoorheen] 
+A|26| A: Letter 
+A|27| A: [ik zien [een] neuspiercing] 
+B|28| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : ik hebben hier een plaat
+	Free: Pattern=hier een, Pattern=ik
+	Constrained: Pattern=een
+Turn ID=3| B | B : en het doen mij een beetje denken aan een een een neuspiercing
+	Free: Pattern=denken, Pattern=aan, Pattern=een neuspiercing, Pattern=een, Pattern=het, Pattern=een een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=4| A | A : ja dan weten ik al denken ik wat je bedoelen
+	Free: Pattern=dan, Pattern=denken, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=5| A | A : ik zien hier een voorwerp met een één
+	Free: Pattern=ik zien, Pattern=met een, Pattern=hier een
+	Constrained: Pattern=een, Pattern=met, Pattern=ik
+Turn ID=6| A | A : ik denken dat het een kop zijn
+	Free: Pattern=een, Pattern=denken, Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=7| A | A : met een lepel daarin
+	Free: Pattern=met een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=8| A | A : aan de bovenkant
+	Free: Pattern=aan, Pattern=de
+	Constrained: 
+Turn ID=9| A | A : en aan de voorkant zitten een dik neus
+	Free: Pattern=een, Pattern=neus, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=10| A | A : met een punaise erdoor
+	Free: Pattern=met een, Pattern=punaise
+	Constrained: Pattern=een, Pattern=met
+Turn ID=11| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=12| B | B : dus met zo'n bolle ook aan het eind van de punaise dan
+	Free: Pattern=dan, Pattern=het, Pattern=punaise, Pattern=de, Pattern=aan, Pattern=bolle, Pattern=met
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja één ja een een plat bolle
+	Free: Pattern=een een, Pattern=ja, Pattern=bolle
+	Constrained: Pattern=een
+Turn ID=15| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : ik zien een neus met een ja punaise erdoorheen
+	Free: Pattern=ja, Pattern=erdoorheen, Pattern=neus, Pattern=ik zien een, Pattern=met een, Pattern=punaise
+	Constrained: Pattern=een, Pattern=met, Pattern=ik zien, Pattern=ik
+Turn ID=18| A | A : mhm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : en bovenop een klein uitsteeksel
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=20| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=22| A | A : een dik neus
+	Free: Pattern=een, Pattern=neus
+	Constrained: 
+Turn ID=23| A | A : met een piercing erdoorheen
+	Free: Pattern=met een piercing erdoorheen
+	Constrained: Pattern=erdoorheen, Pattern=een, Pattern=met, Pattern=met een
+Turn ID=24| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : ik zien een neus met een piercing erdoorheen
+	Free: Pattern=met een piercing erdoorheen, Pattern=ik zien een, Pattern=neus
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=erdoorheen, Pattern=met, Pattern=met een, Pattern=ik
+Turn ID=26| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : ik zien een neuspiercing
+	Free: Pattern=ik zien een, Pattern=een neuspiercing
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=28| B | B : nummer
+	Free: 
+	Constrained: 

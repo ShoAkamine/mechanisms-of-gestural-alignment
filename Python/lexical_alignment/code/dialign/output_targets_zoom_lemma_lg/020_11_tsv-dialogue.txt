@@ -1,0 +1,171 @@
+A|0| A: Oké 
+A|1| A: ehm _ik_ zien iets _met_ _een soort_ _ja_ _een soort_ _neus_ 
+A|2| A: _en_ _het_ _hebben_ _twee_ uitsteker op _de bovenkant_ 
+A|3| A: Eén _zijn_ _een_ lang hoek _en_ _één_ _zijn_ _een soort_ _ja_ speerachtig spitsstoren 
+A|4| A: _en_ dan _zitten_ _er_ _aan _de_ ander_ kant _steken_ _er_ ook nog iets _uit_ _een soort_ V 
+A|5| A: Plankachtig _ding_ 
+B|6| B: _Oh_ [ik] [ik] denken _dat_ je weten welk [ik] bedoelen 
+B|7| B: Uitsteeksel [soort] van [ja] [soort] van _handvat_ [de] [één] [en] [de ander] _zijn gewoon een_ rechthoek 
+A|8| A: [ja] [ja] 
+B|9| B: [ja] oké 
+B|10| B: voor mij [zijn] _dat_ 
+B|11| B: eh oké _dit zijn die met die bol_ [aan de] voorkant 
+B|12| B: [het] [zijn] zelfs [een soort] van [neus] 
+A|13| A: sorry 
+B|14| B: hij [hebben] [een soort] van [neus] [aan de] voorkant [zitten] 
+B|15| B: _gewoon een_ heel groot dik rond [neus] 
+B|16| B: [en] bovenaan steek je [er] [twee] [uit] 
+B|17| B: eén [zijn] rechtvormig [en] [de ander] [een soort] van rond _handvat_ [ding] 
+A|18| A: [Oh] [ja] [en] dan links opstiken [er] nog [één] [uit] 
+B|19| B: [ja] 
+A|20| A: Oké [dat] [zijn] 
+A|21| A: [dit zijn die met die bol] [neus] 
+A|22| A: [die] Aardappelneus 
+A|23| A: [en] dan [twee] _spriet_ _aan de bovenkant_ 
+B|24| B: hm 
+A|25| A: eentje lijken op [een] [handvat] 
+A|26| A: eentje [zijn gewoon een] langhoek 
+A|27| A: [en] link [zitten] [er] ook nog [een] uitsteksel [met] [een] V-vorm 
+B|28| B: [ja] 
+B|29| B: [dit zijn die met die] aardappelneus [aan de] voorkant 
+B|30| B: [en] [twee] ongelijk [spriet] [die] eruit zet [steken] [aan de bovenkant] 
+B|31| B: [dat] je [één] [aan de] [handvat] [en] [de ander] [zijn] echt [een] rechthoek 
+A|32| A: O [ja] 
+A|33| A: [dit zijn die _met] de_ Aardappelneus 
+A|34| A: _en die_ [twee] verschillend uitsteksel op [de bovenkant] 
+A|35| A: [en] [één] uitsteksel _aan de linkerkant_ 
+B|36| B: [ja] 
+B|37| B: [met de] [neus] 
+B|38| B: [en] [de] [twee] ongelijk [ding] [die] eruit [steken] [aan de bovenkant] 
+B|39| B: [en die] vormig uitsteeksel [aan de linkerkant] 
+A|40| A: [Oh] [ja] 
+A|41| A: Ehm 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : ehm ik zien iets met een soort ja een soort neus
+	Free: Pattern=ja, Pattern=neus, Pattern=met, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=2| A | A : en het hebben twee uitsteker op de bovenkant
+	Free: Pattern=twee, Pattern=de bovenkant, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: Pattern=de
+Turn ID=3| A | A : Eén zijn een lang hoek en één zijn een soort ja speerachtig spitsstoren
+	Free: Pattern=ja, Pattern=een, Pattern=één, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=4| A | A : en dan zitten er aan de ander kant steken er ook nog iets uit een soort V
+	Free: Pattern=zitten, Pattern=er, Pattern=een soort, Pattern=en, Pattern=de ander, Pattern=steken, Pattern=uit, Pattern=aan de
+	Constrained: Pattern=een, Pattern=soort, Pattern=de
+Turn ID=5| A | A : Plankachtig ding
+	Free: Pattern=ding
+	Constrained: 
+Turn ID=6| B | B : Oh ik ik denken dat je weten welk ik bedoelen
+	Free: Pattern=ik, Pattern=dat, Pattern=Oh
+	Constrained: 
+Turn ID=7| B | B : Uitsteeksel soort van ja soort van handvat de één en de ander zijn gewoon een rechthoek
+	Free: Pattern=soort, Pattern=zijn gewoon een, Pattern=één, Pattern=handvat, Pattern=en, Pattern=de ander, Pattern=de, Pattern=ja
+	Constrained: Pattern=een, Pattern=de, Pattern=zijn, Pattern=gewoon een
+Turn ID=8| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : voor mij zijn dat
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=11| B | B : eh oké dit zijn die met die bol aan de voorkant
+	Free: Pattern=dit zijn die met die bol, Pattern=aan de
+	Constrained: Pattern=de, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn die met die
+Turn ID=12| B | B : het zijn zelfs een soort van neus
+	Free: Pattern=een soort, Pattern=zijn, Pattern=het, Pattern=neus
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=13| A | A : sorry
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : hij hebben een soort van neus aan de voorkant zitten
+	Free: Pattern=aan de, Pattern=hebben, Pattern=neus, Pattern=zitten, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort, Pattern=de
+Turn ID=15| B | B : gewoon een heel groot dik rond neus
+	Free: Pattern=gewoon een, Pattern=neus
+	Constrained: Pattern=een
+Turn ID=16| B | B : en bovenaan steek je er twee uit
+	Free: Pattern=uit, Pattern=twee, Pattern=en, Pattern=er
+	Constrained: 
+Turn ID=17| B | B : eén zijn rechtvormig en de ander een soort van rond handvat ding
+	Free: Pattern=ding, Pattern=handvat, Pattern=een soort, Pattern=en, Pattern=zijn, Pattern=de ander
+	Constrained: Pattern=een, Pattern=soort, Pattern=de
+Turn ID=18| A | A : Oh ja en dan links opstiken er nog één uit
+	Free: Pattern=ja, Pattern=uit, Pattern=één, Pattern=er, Pattern=en, Pattern=Oh
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Oké dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=21| A | A : dit zijn die met die bol neus
+	Free: Pattern=dit zijn die met die bol, Pattern=neus
+	Constrained: Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn die met die
+Turn ID=22| A | A : die Aardappelneus
+	Free: Pattern=die
+	Constrained: 
+Turn ID=23| A | A : en dan twee spriet aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=twee, Pattern=spriet, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de bovenkant, Pattern=de
+Turn ID=24| B | B : hm
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : eentje lijken op een handvat
+	Free: Pattern=handvat, Pattern=een
+	Constrained: 
+Turn ID=26| A | A : eentje zijn gewoon een langhoek
+	Free: Pattern=zijn gewoon een
+	Constrained: Pattern=gewoon een, Pattern=zijn, Pattern=een
+Turn ID=27| A | A : en link zitten er ook nog een uitsteksel met een V-vorm
+	Free: Pattern=een, Pattern=met, Pattern=zitten, Pattern=er, Pattern=en
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : dit zijn die met die aardappelneus aan de voorkant
+	Free: Pattern=dit zijn die met die, Pattern=aan de
+	Constrained: Pattern=de, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=30| B | B : en twee ongelijk spriet die eruit zet steken aan de bovenkant
+	Free: Pattern=twee, Pattern=spriet, Pattern=die, Pattern=steken, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de bovenkant, Pattern=de
+Turn ID=31| B | B : dat je één aan de handvat en de ander zijn echt een rechthoek
+	Free: Pattern=dat, Pattern=aan de, Pattern=een, Pattern=één, Pattern=handvat, Pattern=en, Pattern=zijn, Pattern=de ander
+	Constrained: Pattern=de
+Turn ID=32| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : dit zijn die met de Aardappelneus
+	Free: Pattern=dit zijn die met, Pattern=met de
+	Constrained: Pattern=de, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=34| A | A : en die twee verschillend uitsteksel op de bovenkant
+	Free: Pattern=de bovenkant, Pattern=en die, Pattern=twee
+	Constrained: Pattern=die, Pattern=en, Pattern=de
+Turn ID=35| A | A : en één uitsteksel aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=één, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=36| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| B | B : met de neus
+	Free: Pattern=met de, Pattern=neus
+	Constrained: Pattern=met, Pattern=de
+Turn ID=38| B | B : en de twee ongelijk ding die eruit steken aan de bovenkant
+	Free: Pattern=twee, Pattern=de, Pattern=ding, Pattern=die, Pattern=steken, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de bovenkant, Pattern=de
+Turn ID=39| B | B : en die vormig uitsteeksel aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=en die
+	Constrained: Pattern=de, Pattern=die, Pattern=en, Pattern=aan de
+Turn ID=40| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=41| A | A : Ehm
+	Free: 
+	Constrained: 

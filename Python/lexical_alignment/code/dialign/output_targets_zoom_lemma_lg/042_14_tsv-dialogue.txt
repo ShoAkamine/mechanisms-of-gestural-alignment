@@ -1,0 +1,87 @@
+B|0| B: ehm _deze_ zijn niet compact 
+B|1| B: _deze_ hebben ook als één _van_ de weinig _een_ _staaf_ _die_ zoals ik _het_ zien er _los_ _van_ zijn 
+B|2| B: dus _die_ ervoor _staan_ 
+B|3| B: _en_ er _die_ er niet aan vast zitten 
+B|4| B: _en_ dan hebben hij nog _bovenop een_ rond _bal_ 
+B|5| B: _die_ _bal_ zijn niet helemaal rond want hij verdwijnen deels in de groot vorm 
+B|6| B: _dat_ zijn volgens mij de enig _die_ _bovenop een_ rond _bal_ hebben 
+A|7| A: _ja_ 
+B|8| B: _en_ twee staf aan de zijkant 
+A|9| A: _ja_ 
+A|10| A: Ehm [van] [deze] zeggen jij [dat] [een] soort [van] [die] fors balk _los staan_ [van] [het] object 
+A|11| A: met [bovenop _een] bol_ [een] [bal] 
+B|12| B: [ja] nummer 
+B|13| B: _eh_ dit zijn [die] _staaf_ [die] [los staan] 
+B|14| B: _en_ [een bol] bovenin 
+A|15| A: Losstaande [staaf] [en] [bal] 
+B|16| B: nummer 
+B|17| B: _eh_ de _losse staaf_ 
+B|18| B: [en] de [bol] bovenin 
+A|19| A: Hmmm 
+A|20| A: [eh] [losse staaf] [en] [bal] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze zijn niet compact
+	Free: Pattern=deze
+	Constrained: 
+Turn ID=1| B | B : deze hebben ook als één van de weinig een staaf die zoals ik het zien er los van zijn
+	Free: Pattern=staaf, Pattern=een, Pattern=het, Pattern=die, Pattern=van, Pattern=deze, Pattern=los
+	Constrained: 
+Turn ID=2| B | B : dus die ervoor staan
+	Free: Pattern=staan, Pattern=die
+	Constrained: 
+Turn ID=3| B | B : en er die er niet aan vast zitten
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=4| B | B : en dan hebben hij nog bovenop een rond bal
+	Free: Pattern=bovenop een, Pattern=bal, Pattern=en
+	Constrained: Pattern=een
+Turn ID=5| B | B : die bal zijn niet helemaal rond want hij verdwijnen deels in de groot vorm
+	Free: Pattern=die, Pattern=bal
+	Constrained: 
+Turn ID=6| B | B : dat zijn volgens mij de enig die bovenop een rond bal hebben
+	Free: Pattern=bovenop een, Pattern=die, Pattern=dat, Pattern=bal
+	Constrained: Pattern=een
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : en twee staf aan de zijkant
+	Free: Pattern=en
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Ehm van deze zeggen jij dat een soort van die fors balk los staan van het object
+	Free: Pattern=dat, Pattern=een, Pattern=het, Pattern=die, Pattern=deze, Pattern=los staan, Pattern=van
+	Constrained: Pattern=staan, Pattern=los
+Turn ID=11| A | A : met bovenop een bol een bal
+	Free: Pattern=bovenop een, Pattern=een bol, Pattern=een, Pattern=bal
+	Constrained: Pattern=een, Pattern=bol
+Turn ID=12| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : eh dit zijn die staaf die los staan
+	Free: Pattern=los staan, Pattern=eh, Pattern=die, Pattern=staaf
+	Constrained: Pattern=staan, Pattern=los
+Turn ID=14| B | B : en een bol bovenin
+	Free: Pattern=een bol, Pattern=en
+	Constrained: Pattern=een, Pattern=bol
+Turn ID=15| A | A : Losstaande staaf en bal
+	Free: Pattern=bal, Pattern=en, Pattern=staaf
+	Constrained: 
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : eh de losse staaf
+	Free: Pattern=losse staaf, Pattern=eh
+	Constrained: Pattern=staaf
+Turn ID=18| B | B : en de bol bovenin
+	Free: Pattern=bol, Pattern=en
+	Constrained: 
+Turn ID=19| A | A : Hmmm
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : eh losse staaf en bal
+	Free: Pattern=losse staaf, Pattern=eh, Pattern=bal, Pattern=en
+	Constrained: Pattern=staaf

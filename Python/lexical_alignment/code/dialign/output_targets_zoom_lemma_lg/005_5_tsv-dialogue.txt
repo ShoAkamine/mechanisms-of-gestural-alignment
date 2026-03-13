@@ -1,0 +1,203 @@
+B|0| B: _deze hebben_ _een_ _balk_ _aan de_ bovenkant 
+B|1| B: _die_ er _gewoon op_ _liggen_ 
+A|2| A: _mhm_ 
+B|3| B: _die_ _niet_ _die_ _niet_ heel erg uitsteken 
+B|4| B: Links _een soort_ kap 
+A|5| A: _ja_ 
+B|6| B: _en_ rechts _een_ staaf _met _een_ soort_ schuin vierkant 
+A|7| A: Nja 
+B|8| B: klein 
+A|9| A: Best wel _compact_ 
+A|10| A: [en] dan helemaal zeggen maar 
+B|11| B: [ja] 
+A|12| A: [ja] 
+B|13| B: [compact] 
+A|14| A: [ja] _dat zijn_ 
+A|15| A: _ehm_ _deze zijn_ [die] wat [compact] 
+A|16| A: [die] [hebben] bovenop dan [een soort] _balk liggen_ [die] [gewoon op] _zijn_ zij 
+A|17| A: dus hij steken [niet] omhoog 
+A|18| A: maar hij [liggen] hij [liggen] _vlak_ erbovenop 
+A|19| A: [en] [aan de] linkerkant [hebben] hij [een soort] _lampenkap_ 
+A|20| A: [en] _misschien_ nog zoiets [aan de] rechterkant 
+A|21| A: [en] dan vooraan [hebben] hij 
+A|22| A: [ja] wat _zijn_ _dat_ 
+A|23| A: nog [een soort] [balk] 
+A|24| A: [met een] uitsteeksel _naar_ je toe zeggen maar 
+B|25| B: [dat zijn] 
+B|26| B: _deze hebben_ [een] [die] [vlak] [balk] [aan de] bovenkant [liggen] 
+A|27| A: _Oh_ [ja] 
+B|28| B: [met] [die] [lampenkap] 
+A|29| A: [en] dan 
+A|30| A: [ja] [dat zijn] 
+A|31| A: Eh [deze hebben] [de] [lampenkap] [aan de] [en] [de] rechterkant [en] dan [de] [balk] [die] bovenop [liggen] 
+A|32| A: [en] dan [aan de] voorkant nog _iets_ 
+B|33| B: [ja] 
+B|34| B: [dat zijn] 
+B|35| B: [deze zijn] [compact] [en] [hebben] [aan de] bovenkant [vlak] [die] [balk liggen] 
+A|36| A: [ja] [ja] 
+A|37| A: Eh [dat zijn] 
+B|38| B: [misschien] [hebben] kijken we [naar] [iets] ander 
+A|39| A: Oké 
+B|40| B: [ehm] [ja] jij [zijn] 
+A|41| A: oh dit 
+A|42| A: dit [zijn] [de] [met] [de] lampenkapp _aan de linker en_ rechterkant 
+B|43| B: [aan de linker en] recht 
+A|44| A: [en] bovenop [liggen] [een] plat [balk] zeggen maar 
+A|45| A: [die] [compact] 
+B|46| B: [ja] 
+B|47| B: [mhm] 
+B|48| B: ik [hebben] het even 
+B|49| B: [Oh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben een balk aan de bovenkant
+	Free: Pattern=deze hebben, Pattern=aan de, Pattern=een, Pattern=balk
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=1| B | B : die er gewoon op liggen
+	Free: Pattern=gewoon op, Pattern=die, Pattern=liggen
+	Constrained: 
+Turn ID=2| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=3| B | B : die niet die niet heel erg uitsteken
+	Free: Pattern=niet, Pattern=die
+	Constrained: 
+Turn ID=4| B | B : Links een soort kap
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : en rechts een staaf met een soort schuin vierkant
+	Free: Pattern=met een, Pattern=een soort, Pattern=en, Pattern=een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=7| A | A : Nja
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : klein
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Best wel compact
+	Free: Pattern=compact
+	Constrained: 
+Turn ID=10| A | A : en dan helemaal zeggen maar
+	Free: Pattern=en
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : compact
+	Free: Pattern=compact
+	Constrained: 
+Turn ID=14| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| A | A : ehm deze zijn die wat compact
+	Free: Pattern=deze zijn, Pattern=compact, Pattern=die, Pattern=ehm
+	Constrained: Pattern=zijn
+Turn ID=16| A | A : die hebben bovenop dan een soort balk liggen die gewoon op zijn zij
+	Free: Pattern=hebben, Pattern=die, Pattern=gewoon op, Pattern=een soort, Pattern=zijn, Pattern=balk liggen
+	Constrained: Pattern=een, Pattern=liggen, Pattern=balk
+Turn ID=17| A | A : dus hij steken niet omhoog
+	Free: Pattern=niet
+	Constrained: 
+Turn ID=18| A | A : maar hij liggen hij liggen vlak erbovenop
+	Free: Pattern=vlak, Pattern=liggen
+	Constrained: 
+Turn ID=19| A | A : en aan de linkerkant hebben hij een soort lampenkap
+	Free: Pattern=lampenkap, Pattern=aan de, Pattern=hebben, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=de
+Turn ID=20| A | A : en misschien nog zoiets aan de rechterkant
+	Free: Pattern=aan de, Pattern=en, Pattern=misschien
+	Constrained: Pattern=de
+Turn ID=21| A | A : en dan vooraan hebben hij
+	Free: Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=22| A | A : ja wat zijn dat
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : nog een soort balk
+	Free: Pattern=een soort, Pattern=balk
+	Constrained: Pattern=een
+Turn ID=24| A | A : met een uitsteeksel naar je toe zeggen maar
+	Free: Pattern=met een, Pattern=naar
+	Constrained: Pattern=een, Pattern=met
+Turn ID=25| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| B | B : deze hebben een die vlak balk aan de bovenkant liggen
+	Free: Pattern=aan de, Pattern=een, Pattern=deze hebben, Pattern=balk, Pattern=die, Pattern=vlak, Pattern=liggen
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=27| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : met die lampenkap
+	Free: Pattern=lampenkap, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=29| A | A : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=30| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| A | A : Eh deze hebben de lampenkap aan de en de rechterkant en dan de balk die bovenop liggen
+	Free: Pattern=aan de, Pattern=deze hebben, Pattern=balk, Pattern=die, Pattern=en, Pattern=liggen, Pattern=de, Pattern=lampenkap
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=32| A | A : en dan aan de voorkant nog iets
+	Free: Pattern=aan de, Pattern=en, Pattern=iets
+	Constrained: Pattern=de
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=35| B | B : deze zijn compact en hebben aan de bovenkant vlak die balk liggen
+	Free: Pattern=deze zijn, Pattern=aan de, Pattern=compact, Pattern=hebben, Pattern=die, Pattern=vlak, Pattern=en, Pattern=balk liggen
+	Constrained: Pattern=de, Pattern=zijn, Pattern=liggen, Pattern=balk
+Turn ID=36| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=38| B | B : misschien hebben kijken we naar iets ander
+	Free: Pattern=naar, Pattern=hebben, Pattern=misschien, Pattern=iets
+	Constrained: 
+Turn ID=39| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : ehm ja jij zijn
+	Free: Pattern=zijn, Pattern=ja, Pattern=ehm
+	Constrained: 
+Turn ID=41| A | A : oh dit
+	Free: 
+	Constrained: 
+Turn ID=42| A | A : dit zijn de met de lampenkapp aan de linker en rechterkant
+	Free: Pattern=aan de linker en, Pattern=zijn, Pattern=de, Pattern=met
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=43| B | B : aan de linker en recht
+	Free: Pattern=aan de linker en
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=44| A | A : en bovenop liggen een plat balk zeggen maar
+	Free: Pattern=en, Pattern=een, Pattern=liggen, Pattern=balk
+	Constrained: 
+Turn ID=45| A | A : die compact
+	Free: Pattern=compact, Pattern=die
+	Constrained: 
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=48| B | B : ik hebben het even
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=49| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 

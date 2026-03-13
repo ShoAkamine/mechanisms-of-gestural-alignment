@@ -1,0 +1,75 @@
+A|0| A: _Oké_ euh dit _zijn_ _er één_ die _hebben_ gewoon _vier_ groot _handvat_ _en_ die zitten letterlijk _aan_ elk kant die we kunnen zien eigenlijk 
+A|1| A: _en_ _twee_ van _de_ _handvat_ _zijn_ euh _dezelfde_ vorm 
+A|2| A: dat _zijn_ _een_ soort van paddenstoel 
+A|3| A: eentje _zijn_ kubusvormig _en_ _de_ ander _zijn_ 
+A|4| A: kunnen je niet zo heel goed zien die gaan naar achteren 
+B|5| B: [Oké] [en] dan uitzitten [er één] bovenin [en] drie [aan] [de] zijkant 
+A|6| A: ja precies 
+B|7| B: [Oké] 
+B|8| B: _Euh_ dan [hebben] _ik_ [de] beker _met vier_ uitsteeksel _waarvan_ _twee hetzelfde_ [zijn] 
+B|9| B: [een] vierhoekig verrekijker 
+A|10| A: Yes 
+A|11| A: [Oké] 
+A|12| A: Oh [ik] [hebben] degeen [met _vier] handvat_ [waarvan] [er] _twee dezelfde_ [zijn] 
+B|13| B: _Euh_ dan [hebben] [ik] [de] [vier handvat] 
+A|14| A: Yes 
+A|15| A: [Euh] [vier handvat] [twee hetzelfde] 
+B|16| B: [Euh] [de] [vier handvat] 
+B|17| B: [met] [twee dezelfde] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké euh dit zijn er één die hebben gewoon vier groot handvat en die zitten letterlijk aan elk kant die we kunnen zien eigenlijk
+	Free: Pattern=aan, Pattern=hebben, Pattern=handvat, Pattern=en, Pattern=zijn, Pattern=vier, Pattern=Oké, Pattern=er één
+	Constrained: Pattern=er
+Turn ID=1| A | A : en twee van de handvat zijn euh dezelfde vorm
+	Free: Pattern=de, Pattern=handvat, Pattern=en, Pattern=zijn, Pattern=twee, Pattern=dezelfde
+	Constrained: 
+Turn ID=2| A | A : dat zijn een soort van paddenstoel
+	Free: Pattern=een, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : eentje zijn kubusvormig en de ander zijn
+	Free: Pattern=en, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=4| A | A : kunnen je niet zo heel goed zien die gaan naar achteren
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Oké en dan uitzitten er één bovenin en drie aan de zijkant
+	Free: Pattern=en, Pattern=Oké, Pattern=er één, Pattern=de, Pattern=aan
+	Constrained: Pattern=er
+Turn ID=6| A | A : ja precies
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : Euh dan hebben ik de beker met vier uitsteeksel waarvan twee hetzelfde zijn
+	Free: Pattern=de, Pattern=waarvan, Pattern=Euh, Pattern=hebben, Pattern=zijn, Pattern=met vier, Pattern=ik, Pattern=twee hetzelfde
+	Constrained: Pattern=twee, Pattern=vier, Pattern=met
+Turn ID=9| B | B : een vierhoekig verrekijker
+	Free: Pattern=een
+	Constrained: 
+Turn ID=10| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| A | A : Oh ik hebben degeen met vier handvat waarvan er twee dezelfde zijn
+	Free: Pattern=waarvan, Pattern=hebben, Pattern=zijn, Pattern=met vier, Pattern=vier handvat, Pattern=er, Pattern=twee dezelfde, Pattern=ik
+	Constrained: Pattern=handvat, Pattern=met, Pattern=vier, Pattern=twee, Pattern=dezelfde
+Turn ID=13| B | B : Euh dan hebben ik de vier handvat
+	Free: Pattern=de, Pattern=Euh, Pattern=hebben, Pattern=vier handvat, Pattern=ik
+	Constrained: Pattern=vier, Pattern=handvat
+Turn ID=14| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : Euh vier handvat twee hetzelfde
+	Free: Pattern=vier handvat, Pattern=twee hetzelfde, Pattern=Euh
+	Constrained: Pattern=twee, Pattern=vier, Pattern=handvat
+Turn ID=16| B | B : Euh de vier handvat
+	Free: Pattern=vier handvat, Pattern=de, Pattern=Euh
+	Constrained: Pattern=vier, Pattern=handvat
+Turn ID=17| B | B : met twee dezelfde
+	Free: Pattern=twee dezelfde, Pattern=met
+	Constrained: Pattern=dezelfde, Pattern=twee

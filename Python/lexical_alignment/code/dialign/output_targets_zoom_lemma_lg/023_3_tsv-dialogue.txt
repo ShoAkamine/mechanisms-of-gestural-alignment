@@ -1,0 +1,207 @@
+A|0| A: _ehm_ yes _ik_ inzien _weer_ zo'n _kop_ 
+A|1| A: _met een_ 
+A|2| A: _het_ _zijn_ _het_ lijken net _dansen kop_ eigenlijk 
+B|3| B: _een [dansen_ kop] 
+A|4| A: _ja ik_ zien dat eigenlijk 
+A|5| A: _het_ _hebben_ [een] _ja_ rechthoekig vorm _op_ _de_ bovenkant 
+A|6| A: en _aan de rechterkant_ _hebben_ _je_ _een vierkant_ 
+B|7| B: [aan de rechterkant] [een vierkant] [ja] 
+A|8| A: [ja] _boven_ _op_ dat [ja] _op_ dat [kop] laten _maar_ _zeggen_ 
+A|9| A: en [aan de] linkerkant _hebben_ _je_ _een soort_ van _driehoek_ 
+B|10| B: mhm 
+B|11| B: _die_ _een beetje_ _beetje schuin_ naar [boven] _gaan_ 
+A|12| A: en [aan] 
+A|13| A: [ja] precies 
+A|14| A: [een [beetje] schuin] omhoog [gaan] 
+B|15| B: [ja] 
+A|16| A: en dan [aan de] onderkant [een] _driehoek_ 
+A|17| A: dan _staan_ hij _op_ [een] _driehoek_ 
+B|18| B: [ja] [met] [met [een] soort] spiraal _die_ 
+B|19| B: [ja] 
+A|20| A: [ja] precies 
+B|21| B: [ja ik] [ik] snapen wel wat [je] bedoelen [met] [dansen] [ja] 
+A|22| A: _het_ 
+A|23| A: [ja] 
+B|24| B: [ehm] _nou_ 
+A|25| A: [ja] bij _mij_ _zijn_ _het_ letter _K_ 
+B|26| B: [K] _nou_ mooi 
+A|27| A: Yes 
+B|28| B: Ho 
+B|29| B: volgens [mij] [hebben] we nu allebei kliken 
+B|30| B: [maar] we [gaan] wel gewoon door 
+A|31| A: [ja] 
+B|32| B: [ehm] ze [zijn] in ieder geval [weer] [weer] allemaal omdraailen [ja] 
+A|33| A: Oh [ja ik] moeten _het_ [weer] denken [ik] of niet 
+B|34| B: [ja] jij [hebben] [het] [vierkant] toch 
+A|35| A: Oh [ja] kloppen 
+A|36| A: [nou] _dansen poppe_ 
+B|37| B: [ehm] [ja] 
+A|38| A: [ja] M 
+B|39| B: dit _zijn die_ [dansen] [weer] 
+A|40| A: _eh_ even 
+B|41| B: _die_ [op] _die_ [driehoek] [staan] 
+A|42| A: [ja] 
+B|43| B: Vijftien 
+B|44| B: [ehm] [ja] 
+A|45| A: even kijken [ik] zien [een _dansen] poppe_ 
+B|46| B: Ehm 
+A|47| A: F 
+B|48| B: [eh] [ja] [de] [dansen poppe] [zeggen] [maar] 
+A|49| A: [eh] even kijken waar [zijn die] 
+B|50| B: [ja] tien 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm yes ik inzien weer zo'n kop
+	Free: Pattern=kop, Pattern=ehm, Pattern=ik, Pattern=weer
+	Constrained: 
+Turn ID=1| A | A : met een
+	Free: Pattern=met een
+	Constrained: Pattern=met, Pattern=een
+Turn ID=2| A | A : het zijn het lijken net dansen kop eigenlijk
+	Free: Pattern=dansen kop, Pattern=zijn, Pattern=het
+	Constrained: Pattern=kop, Pattern=dansen
+Turn ID=3| B | B : een dansen kop
+	Free: Pattern=een dansen, Pattern=dansen kop
+	Constrained: Pattern=kop, Pattern=dansen, Pattern=een
+Turn ID=4| A | A : ja ik zien dat eigenlijk
+	Free: Pattern=ja ik
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=5| A | A : het hebben een ja rechthoekig vorm op de bovenkant
+	Free: Pattern=op, Pattern=een, Pattern=het, Pattern=hebben, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en aan de rechterkant hebben je een vierkant
+	Free: Pattern=aan de rechterkant, Pattern=een vierkant, Pattern=je, Pattern=hebben
+	Constrained: Pattern=aan de, Pattern=een, Pattern=vierkant, Pattern=de, Pattern=aan
+Turn ID=7| B | B : aan de rechterkant een vierkant ja
+	Free: Pattern=aan de rechterkant, Pattern=een vierkant, Pattern=ja
+	Constrained: Pattern=aan de, Pattern=een, Pattern=vierkant, Pattern=de, Pattern=aan
+Turn ID=8| A | A : ja boven op dat ja op dat kop laten maar zeggen
+	Free: Pattern=ja, Pattern=op, Pattern=boven, Pattern=maar, Pattern=kop, Pattern=zeggen
+	Constrained: 
+Turn ID=9| A | A : en aan de linkerkant hebben je een soort van driehoek
+	Free: Pattern=driehoek, Pattern=aan de, Pattern=hebben, Pattern=een soort, Pattern=je
+	Constrained: Pattern=de, Pattern=aan, Pattern=een
+Turn ID=10| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : die een beetje beetje schuin naar boven gaan
+	Free: Pattern=boven, Pattern=beetje schuin, Pattern=die, Pattern=gaan, Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=12| A | A : en aan
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=13| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : een beetje schuin omhoog gaan
+	Free: Pattern=beetje schuin, Pattern=een beetje, Pattern=gaan
+	Constrained: Pattern=een
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : en dan aan de onderkant een driehoek
+	Free: Pattern=aan de, Pattern=driehoek, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=17| A | A : dan staan hij op een driehoek
+	Free: Pattern=staan, Pattern=driehoek, Pattern=op, Pattern=een
+	Constrained: 
+Turn ID=18| B | B : ja met met een soort spiraal die
+	Free: Pattern=ja, Pattern=met, Pattern=die, Pattern=met een, Pattern=een soort
+	Constrained: Pattern=met, Pattern=een
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ja ik ik snapen wel wat je bedoelen met dansen ja
+	Free: Pattern=ja, Pattern=met, Pattern=dansen, Pattern=ja ik, Pattern=ik, Pattern=je
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=22| A | A : het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ehm nou
+	Free: Pattern=ehm, Pattern=nou
+	Constrained: 
+Turn ID=25| A | A : ja bij mij zijn het letter K
+	Free: Pattern=ja, Pattern=het, Pattern=mij, Pattern=zijn, Pattern=K
+	Constrained: 
+Turn ID=26| B | B : K nou mooi
+	Free: Pattern=K, Pattern=nou
+	Constrained: 
+Turn ID=27| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : Ho
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : volgens mij hebben we nu allebei kliken
+	Free: Pattern=mij, Pattern=hebben
+	Constrained: 
+Turn ID=30| B | B : maar we gaan wel gewoon door
+	Free: Pattern=gaan, Pattern=maar
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : ehm ze zijn in ieder geval weer weer allemaal omdraailen ja
+	Free: Pattern=zijn, Pattern=ehm, Pattern=weer, Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : Oh ja ik moeten het weer denken ik of niet
+	Free: Pattern=ja ik, Pattern=ik, Pattern=het, Pattern=weer
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=34| B | B : ja jij hebben het vierkant toch
+	Free: Pattern=vierkant, Pattern=het, Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : Oh ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : nou dansen poppe
+	Free: Pattern=dansen poppe, Pattern=nou
+	Constrained: Pattern=dansen
+Turn ID=37| B | B : ehm ja
+	Free: Pattern=ehm, Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : ja M
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : dit zijn die dansen weer
+	Free: Pattern=zijn die, Pattern=dansen, Pattern=weer
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=40| A | A : eh even
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=41| B | B : die op die driehoek staan
+	Free: Pattern=staan, Pattern=die, Pattern=driehoek, Pattern=op
+	Constrained: 
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| B | B : Vijftien
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : ehm ja
+	Free: Pattern=ehm, Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : even kijken ik zien een dansen poppe
+	Free: Pattern=dansen poppe, Pattern=een dansen, Pattern=ik
+	Constrained: Pattern=dansen, Pattern=een
+Turn ID=46| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=47| A | A : F
+	Free: 
+	Constrained: 
+Turn ID=48| B | B : eh ja de dansen poppe zeggen maar
+	Free: Pattern=dansen poppe, Pattern=zeggen, Pattern=eh, Pattern=maar, Pattern=de, Pattern=ja
+	Constrained: Pattern=dansen
+Turn ID=49| A | A : eh even kijken waar zijn die
+	Free: Pattern=zijn die, Pattern=eh
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=50| B | B : ja tien
+	Free: Pattern=ja
+	Constrained: 

@@ -1,0 +1,91 @@
+B|0| B: deze omschrijven _ik_ als _een_ soort van cocktail of _wijnglas_ met _een_ verdraaid voetstuk 
+B|1| B: dus _het_ _zijn_ _eigenlijk_ 
+A|2| A: _ja_ [ik] weten welk 
+B|3| B: [ja] 
+B|4| B: Oké 
+A|5| A: sorry 
+A|6| A: [eigenlijk] [zijn] _dit_ weer [het] draaien [wijnglas] 
+A|7| A: [ik] noemen [het] [een] draaien tulp 
+B|8| B: ah [ja] [ja] 
+B|9| B: precies 
+A|10| A: [ja] 
+B|11| B: [ja] 
+B|12| B: _dit zijn_ [het] cocktailglas 
+B|13| B: of [het] verdraaien voetstuk 
+A|14| A: [ja] 
+A|15| A: [ik] hebben hem 
+A|16| A: [dit zijn] _de_ draaien [wijnglas] 
+B|17| B: Hm-hm 
+B|18| B: [de] cocktail met [het] verdraaien glas 
+A|19| A: [ja] 
+A|20| A: [het] draaien [wijnglas] 
+B|21| B: Hm-hm 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze omschrijven ik als een soort van cocktail of wijnglas met een verdraaid voetstuk
+	Free: Pattern=wijnglas, Pattern=een, Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : dus het zijn eigenlijk
+	Free: Pattern=eigenlijk, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : ja ik weten welk
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : sorry
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : eigenlijk zijn dit weer het draaien wijnglas
+	Free: Pattern=wijnglas, Pattern=het, Pattern=zijn, Pattern=dit, Pattern=eigenlijk
+	Constrained: 
+Turn ID=7| A | A : ik noemen het een draaien tulp
+	Free: Pattern=een, Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=8| B | B : ah ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : precies
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : dit zijn het cocktailglas
+	Free: Pattern=dit zijn, Pattern=het
+	Constrained: Pattern=zijn, Pattern=dit
+Turn ID=13| B | B : of het verdraaien voetstuk
+	Free: Pattern=het
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : ik hebben hem
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=16| A | A : dit zijn de draaien wijnglas
+	Free: Pattern=dit zijn, Pattern=wijnglas, Pattern=de
+	Constrained: Pattern=zijn, Pattern=dit
+Turn ID=17| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : de cocktail met het verdraaien glas
+	Free: Pattern=het, Pattern=de
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : het draaien wijnglas
+	Free: Pattern=wijnglas, Pattern=het
+	Constrained: 
+Turn ID=21| B | B : Hm-hm
+	Free: 
+	Constrained: 

@@ -1,0 +1,171 @@
+A|0| A: _ik hebben_ alsof er iets _op een dienblad staan_ 
+A|1| A: _en dan_ _hebben_ _het_ _twee_ uitsteeksel boven _aan_ 
+A|2| A: _en_ _die zien_ er _precies hetzelfde_ uit 
+A|3| A: alsof _het_ _bollet of driehoek_ _zijn_ _die_ er _aan_ 
+B|4| B: _ja_ 
+B|5| B: _ja_ 
+A|6| A: [ja] [ja] 
+B|7| B: [ja] [die zien] [ik] 
+B|8| B: _dat zijn bij mij_ 
+A|9| A: _Oké_ 
+B|10| B: [ik hebben] [die] jij net _op het_ laat [hebben] volgens _mij_ _met_ [die] bolle [aan] _de_ zijkant 
+A|11| A: mhm 
+B|12| B: [aan] [twee] kant [precies hetzelfde] 
+A|13| A: _Oh_ [ja] 
+A|14| A: _op het dienblad_ 
+B|15| B: [en] [op een] vierkant 
+B|16| B: [op het dienblad] [ja] 
+A|17| A: [ja] 
+A|18| A: _Oké_ [ja] 
+A|19| A: [dat zijn bij mij] 
+B|20| B: [Oké] 
+B|21| B: [Oké] 
+A|22| A: _ik hebben nu_ [dienblad] 
+A|23| A: [met] antenne 
+B|24| B: [Oh] [met] _de_ [met] _de_ bolle 
+A|25| A: [ja] 
+B|26| B: [ja] [dat zijn] 
+B|27| B: [ik hebben nu] [die] [op een dienblad staan] 
+B|28| B: [en dan] [met] [die] bolle zo [aan] _de_ zijkant 
+A|29| A: [Oh] [ja] 
+B|30| B: [aan] [twee] kant 
+A|31| A: [dat zijn] 
+A|32| A: [bij mij] 
+A|33| A: [ik hebben nu] [dienblad] [en] zeggen maar _driehoek_ 
+B|34| B: [Oh] zo'n 
+A|35| A: dus [dat] [die] 
+B|36| B: Bolletjes [aan] _de_ zijkant 
+A|37| A: [ja] [ja] _de bollet_ 
+B|38| B: nee [ja] oké 
+B|39| B: [dat zijn bij mij] 
+B|40| B: [ik hebben nu] [op het dienblad] [met] [de [bollet] of driehoek] [aan] [de] zijkant 
+A|41| A: [Oh] [dat zijn bij mij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hebben alsof er iets op een dienblad staan
+	Free: Pattern=op een dienblad staan, Pattern=ik hebben
+	Constrained: Pattern=dienblad, Pattern=op een, Pattern=ik, Pattern=hebben
+Turn ID=1| A | A : en dan hebben het twee uitsteeksel boven aan
+	Free: Pattern=twee, Pattern=aan, Pattern=en dan, Pattern=het, Pattern=hebben
+	Constrained: Pattern=en
+Turn ID=2| A | A : en die zien er precies hetzelfde uit
+	Free: Pattern=die zien, Pattern=precies hetzelfde, Pattern=en
+	Constrained: Pattern=die
+Turn ID=3| A | A : alsof het bollet of driehoek zijn die er aan
+	Free: Pattern=aan, Pattern=bollet of driehoek, Pattern=het, Pattern=die, Pattern=zijn
+	Constrained: Pattern=driehoek
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja die zien ik
+	Free: Pattern=die zien, Pattern=ja, Pattern=ik
+	Constrained: Pattern=die
+Turn ID=8| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=9| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| B | B : ik hebben die jij net op het laat hebben volgens mij met die bolle aan de zijkant
+	Free: Pattern=ik hebben, Pattern=hebben, Pattern=met, Pattern=die, Pattern=mij, Pattern=op het, Pattern=de, Pattern=aan
+	Constrained: Pattern=ik, Pattern=het, Pattern=hebben
+Turn ID=11| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : aan twee kant precies hetzelfde
+	Free: Pattern=precies hetzelfde, Pattern=twee, Pattern=aan
+	Constrained: 
+Turn ID=13| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=14| A | A : op het dienblad
+	Free: Pattern=op het dienblad
+	Constrained: Pattern=dienblad, Pattern=het, Pattern=op het
+Turn ID=15| B | B : en op een vierkant
+	Free: Pattern=op een, Pattern=en
+	Constrained: 
+Turn ID=16| B | B : op het dienblad ja
+	Free: Pattern=op het dienblad, Pattern=ja
+	Constrained: Pattern=dienblad, Pattern=het, Pattern=op het
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=19| A | A : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=20| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=21| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=22| A | A : ik hebben nu dienblad
+	Free: Pattern=ik hebben nu, Pattern=dienblad
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=23| A | A : met antenne
+	Free: Pattern=met
+	Constrained: 
+Turn ID=24| B | B : Oh met de met de bolle
+	Free: Pattern=Oh, Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| B | B : ik hebben nu die op een dienblad staan
+	Free: Pattern=op een dienblad staan, Pattern=ik hebben nu, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=dienblad, Pattern=ik, Pattern=op een
+Turn ID=28| B | B : en dan met die bolle zo aan de zijkant
+	Free: Pattern=en dan, Pattern=met, Pattern=die, Pattern=de, Pattern=aan
+	Constrained: Pattern=en
+Turn ID=29| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=30| B | B : aan twee kant
+	Free: Pattern=twee, Pattern=aan
+	Constrained: 
+Turn ID=31| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=32| A | A : bij mij
+	Free: Pattern=bij mij
+	Constrained: Pattern=mij
+Turn ID=33| A | A : ik hebben nu dienblad en zeggen maar driehoek
+	Free: Pattern=ik hebben nu, Pattern=dienblad, Pattern=driehoek, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=34| B | B : Oh zo'n
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=35| A | A : dus dat die
+	Free: Pattern=dat, Pattern=die
+	Constrained: 
+Turn ID=36| B | B : Bolletjes aan de zijkant
+	Free: Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=37| A | A : ja ja de bollet
+	Free: Pattern=de bollet, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=38| B | B : nee ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=40| B | B : ik hebben nu op het dienblad met de bollet of driehoek aan de zijkant
+	Free: Pattern=bollet of driehoek, Pattern=met, Pattern=ik hebben nu, Pattern=de bollet, Pattern=de, Pattern=aan, Pattern=op het dienblad
+	Constrained: Pattern=de, Pattern=het, Pattern=hebben, Pattern=dienblad, Pattern=ik, Pattern=op het, Pattern=ik hebben, Pattern=driehoek
+Turn ID=41| A | A : Oh dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=Oh
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn

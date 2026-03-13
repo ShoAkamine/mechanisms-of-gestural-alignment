@@ -1,0 +1,127 @@
+B|0| B: _dan_ _hebben_ _ik_ nu één _die_ _met die twee_ uitsteeksel 
+B|1| B: Lijken _een beetje_ _op_ _een_ _stopcontact_ 
+B|2| B: _alsof hij_ in _een_ _stopcontact_ kunnen springen als _hij_ _dat_ zullen willen 
+B|3| B: ehm _een_ hoed 
+A|4| A: _ja_ [met] [dat] gek _wat_ _zijn het_ ? niet _driehoek_ afgebroken driehoekhoed 
+B|5| B: _precies_ 
+B|6| B: _en_ _een_ horizontaal neus 
+A|7| A: botte _driehoek_ 
+A|8| A: _ja_ [precies] [met die twee] rechthoek [en] [dan] lijken _het_ [een beetje] [alsof hij] vliegen 
+A|9| A: vinden [ik] 
+B|10| B: hm [ja] snapen [ik] wel 
+A|11| A: [met] [een] vleugel [en] [dat] dinge [ja] 
+A|12| A: nou [ja] 
+B|13| B: Eh link staan ook nog [wat] _op_ de grond 
+A|14| A: _dat zijn_ 
+B|15| B: [dat] _hebben_ je ook 
+A|16| A: [ja] inderdaad [ja] 
+B|17| B: [ja] oké 
+A|18| A: _dat zijn_ 
+A|19| A: _ik hebben stopcontact_ vogel [met] sned _driehoek_ [op] _zijn_ hoofd 
+B|20| B: [ja] 
+B|21| B: [dat zijn] 
+B|22| B: [ik hebben stopcontact] 
+B|23| B: [met] [driehoek] 
+A|24| A: [ja] 
+A|25| A: [dat zijn] 
+A|26| A: [ik hebben stopcontact] vogel [met] afgesneden [driehoek] 
+B|27| B: [ja] 
+B|28| B: Eh nu [zijn het] [stopcontact] 
+A|29| A: [dat zijn] 
+A|30| A: [ik hebben] stopcontactvogel 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan hebben ik nu één die met die twee uitsteeksel
+	Free: Pattern=dan, Pattern=met die twee, Pattern=hebben, Pattern=die, Pattern=ik
+	Constrained: Pattern=met, Pattern=die
+Turn ID=1| B | B : Lijken een beetje op een stopcontact
+	Free: Pattern=een beetje, Pattern=stopcontact, Pattern=op, Pattern=een
+	Constrained: Pattern=een
+Turn ID=2| B | B : alsof hij in een stopcontact kunnen springen als hij dat zullen willen
+	Free: Pattern=een, Pattern=stopcontact, Pattern=hij, Pattern=dat, Pattern=alsof hij
+	Constrained: Pattern=hij
+Turn ID=3| B | B : ehm een hoed
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| A | A : ja met dat gek wat zijn het ? niet driehoek afgebroken driehoekhoed
+	Free: Pattern=driehoek, Pattern=dat, Pattern=zijn het, Pattern=ja, Pattern=met, Pattern=wat
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=5| B | B : precies
+	Free: Pattern=precies
+	Constrained: 
+Turn ID=6| B | B : en een horizontaal neus
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=7| A | A : botte driehoek
+	Free: Pattern=driehoek
+	Constrained: 
+Turn ID=8| A | A : ja precies met die twee rechthoek en dan lijken het een beetje alsof hij vliegen
+	Free: Pattern=alsof hij, Pattern=dan, Pattern=met die twee, Pattern=het, Pattern=en, Pattern=een beetje, Pattern=precies, Pattern=ja
+	Constrained: Pattern=hij, Pattern=een, Pattern=met, Pattern=die
+Turn ID=9| A | A : vinden ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=10| B | B : hm ja snapen ik wel
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=11| A | A : met een vleugel en dat dinge ja
+	Free: Pattern=dat, Pattern=ja, Pattern=een, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=12| A | A : nou ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : Eh link staan ook nog wat op de grond
+	Free: Pattern=op, Pattern=wat
+	Constrained: 
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| B | B : dat hebben je ook
+	Free: Pattern=dat, Pattern=hebben
+	Constrained: 
+Turn ID=16| A | A : ja inderdaad ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| A | A : ik hebben stopcontact vogel met sned driehoek op zijn hoofd
+	Free: Pattern=driehoek, Pattern=ik hebben stopcontact, Pattern=op, Pattern=met, Pattern=zijn
+	Constrained: Pattern=stopcontact, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| B | B : ik hebben stopcontact
+	Free: Pattern=ik hebben stopcontact
+	Constrained: Pattern=stopcontact, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=23| B | B : met driehoek
+	Free: Pattern=met, Pattern=driehoek
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| A | A : ik hebben stopcontact vogel met afgesneden driehoek
+	Free: Pattern=ik hebben stopcontact, Pattern=met, Pattern=driehoek
+	Constrained: Pattern=stopcontact, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Eh nu zijn het stopcontact
+	Free: Pattern=zijn het, Pattern=stopcontact
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=30| A | A : ik hebben stopcontactvogel
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik

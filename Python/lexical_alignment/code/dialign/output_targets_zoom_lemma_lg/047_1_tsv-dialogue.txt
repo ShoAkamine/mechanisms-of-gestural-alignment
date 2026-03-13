@@ -1,0 +1,79 @@
+A|0| A: ehm _dan_ hebben ik nu aan de voorkant _een_ _vierkant_ 
+A|1| A: _Eh en_ aan de _een plat vierkant_ _en_ aan de zijkant _twee_ _ja_ blok 
+B|2| B: [een plat vierkant] 
+B|3| B: Oké 
+A|4| A: _die_ in steeds klein blok naar _het_ figuur toe gaan 
+B|5| B: [ja] 
+A|6| A: _en dan_ nog _een soort_ van [ja] [een] paddenstoel _bovenop_ 
+B|7| B: [en dan] [een soort] paddenstoeletje [bovenop] 
+B|8| B: Oké nummer 
+B|9| B: [Eh [en] dan] [die] _met_ [het] raar paddenstoeletje [bovenop] _zijn_ hoofd 
+B|10| B: _met_ [die] [twee] 
+B|11| B: [ja] 
+A|12| A: [ja] dat [zijn] 
+A|13| A: [dan] hebben ik [met] de paddenstoel 
+B|14| B: nummer 
+B|15| B: Paddenstoeltje [bovenop] 
+A|16| A: ehm [met] _paddenstoelt_ 
+B|17| B: nummer 
+B|18| B: [het] [paddenstoelt] [bovenop] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm dan hebben ik nu aan de voorkant een vierkant
+	Free: Pattern=een, Pattern=vierkant, Pattern=dan
+	Constrained: 
+Turn ID=1| A | A : Eh en aan de een plat vierkant en aan de zijkant twee ja blok
+	Free: Pattern=twee, Pattern=ja, Pattern=Eh en, Pattern=en, Pattern=een plat vierkant
+	Constrained: Pattern=een, Pattern=vierkant, Pattern=en
+Turn ID=2| B | B : een plat vierkant
+	Free: Pattern=een plat vierkant
+	Constrained: Pattern=een, Pattern=vierkant
+Turn ID=3| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : die in steeds klein blok naar het figuur toe gaan
+	Free: Pattern=het, Pattern=die
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en dan nog een soort van ja een paddenstoel bovenop
+	Free: Pattern=bovenop, Pattern=ja, Pattern=en dan, Pattern=een, Pattern=een soort
+	Constrained: Pattern=een, Pattern=en, Pattern=dan
+Turn ID=7| B | B : en dan een soort paddenstoeletje bovenop
+	Free: Pattern=en dan, Pattern=een soort, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=en, Pattern=dan
+Turn ID=8| B | B : Oké nummer
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : Eh en dan die met het raar paddenstoeletje bovenop zijn hoofd
+	Free: Pattern=bovenop, Pattern=en dan, Pattern=het, Pattern=Eh en, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=10| B | B : met die twee
+	Free: Pattern=die, Pattern=met, Pattern=twee
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : dan hebben ik met de paddenstoel
+	Free: Pattern=dan, Pattern=met
+	Constrained: 
+Turn ID=14| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : Paddenstoeltje bovenop
+	Free: Pattern=bovenop
+	Constrained: 
+Turn ID=16| A | A : ehm met paddenstoelt
+	Free: Pattern=paddenstoelt, Pattern=met
+	Constrained: 
+Turn ID=17| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : het paddenstoelt bovenop
+	Free: Pattern=paddenstoelt, Pattern=het, Pattern=bovenop
+	Constrained: 

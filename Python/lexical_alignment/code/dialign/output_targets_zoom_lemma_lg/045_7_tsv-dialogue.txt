@@ -1,0 +1,159 @@
+A|0| A: _oké_ deze hebben _een_ _soort van_ 
+A|1| A: _het_ _lijken_ wel _een_ _soort van_ beker _die_ in _een bekerhouder_ hangen 
+A|2| A: Eh _en_ _de bekerhouder_ hebben _twee_ _van_ _die_ klein uitsteeksel 
+A|3| A: Snap _je_ _wat_ _ik_ _bedoelen_ 
+B|4| B: _ja_ [ik] zitten [een] beetje te twijfelen tussen [twee] ding 
+B|5| B: _zijn_ [het] [soort van] één vlak [wat] helemaal zo _er doorheen_ [lijken] te _snijden_ 
+B|6| B: of _ja_ hoe moeten [ik] _dit_ vraag 
+B|7| B: _eh_ [een bekerhouder] 
+A|8| A: [ja] [het] [zijn] alsof _die_ [er doorheen] [snijden] 
+A|9| A: _en_ _aan de_ achterkant [van] _de_ mok komen [er] _zo'n_ heel klein [soort van] Mini Antennetje uit 
+B|10| B: [ja] 
+A|11| A: [ja] [ja] [ja] 
+B|12| B: [en] [er] zitten [er] zitten [er] bij [die] beekhouder [aan de] voorkant ook nog _zo'n soort_ blok [wat] erboven liggen 
+A|13| A: [ja] [zo'n soort] bakje inderdaad 
+B|14| B: [ja] [oké] 
+B|15| B: [ja] dan [zijn] [het] 
+A|16| A: [ja] ze staan allemaal anders 
+B|17| B: ehm _ja dit zijn_ 
+B|18| B: [ja] precies [je] moeten [het] even zoeken hè weer 
+B|19| B: _eh dit _zijn_ die_ [een] met [die] [bekerhouder] 
+A|20| A: [eh] _de bekerhouder_ 
+B|21| B: [en] dat bak 
+A|22| A: [ja] [ja] [ja] [ja] 
+A|23| A: Eh 
+A|24| A: [ja _dit zijn] _de_ bekerhouder_ 
+B|25| B: [oké] dat [zijn] nummer 
+B|26| B: _eh dit zijn de_ [de] koffie [de bekerhouder] [bedoelen] [ik] 
+A|27| A: [bekerhouder] 
+A|28| A: waar [zijn die] blijven 
+A|29| A: Eh 
+A|30| A: Oh daar wow 
+A|31| A: Eh 
+A|32| A: [eh dit zijn de] kop in [de] houder 
+B|33| B: ehm [ja] nummer 
+B|34| B: [dit zijn] [er] [bekerhouder] 
+A|35| A: [bekerhouder] 
+A|36| A: Hé waar [zijn die] blijven 
+A|37| A: huh 
+A|38| A: Oh daar 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze hebben een soort van
+	Free: Pattern=soort van, Pattern=oké, Pattern=een
+	Constrained: Pattern=van
+Turn ID=1| A | A : het lijken wel een soort van beker die in een bekerhouder hangen
+	Free: Pattern=lijken, Pattern=een bekerhouder, Pattern=een, Pattern=het, Pattern=die, Pattern=soort van
+	Constrained: Pattern=van, Pattern=bekerhouder, Pattern=een
+Turn ID=2| A | A : Eh en de bekerhouder hebben twee van die klein uitsteeksel
+	Free: Pattern=twee, Pattern=de bekerhouder, Pattern=die, Pattern=van, Pattern=en
+	Constrained: Pattern=de, Pattern=bekerhouder
+Turn ID=3| A | A : Snap je wat ik bedoelen
+	Free: Pattern=je, Pattern=ik, Pattern=wat, Pattern=bedoelen
+	Constrained: 
+Turn ID=4| B | B : ja ik zitten een beetje te twijfelen tussen twee ding
+	Free: Pattern=twee, Pattern=ja, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=5| B | B : zijn het soort van één vlak wat helemaal zo er doorheen lijken te snijden
+	Free: Pattern=lijken, Pattern=het, Pattern=er doorheen, Pattern=wat, Pattern=soort van, Pattern=snijden, Pattern=zijn
+	Constrained: Pattern=van, Pattern=er
+Turn ID=6| B | B : of ja hoe moeten ik dit vraag
+	Free: Pattern=dit, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=7| B | B : eh een bekerhouder
+	Free: Pattern=een bekerhouder, Pattern=eh
+	Constrained: Pattern=bekerhouder, Pattern=een
+Turn ID=8| A | A : ja het zijn alsof die er doorheen snijden
+	Free: Pattern=ja, Pattern=het, Pattern=er doorheen, Pattern=die, Pattern=snijden, Pattern=zijn
+	Constrained: Pattern=er
+Turn ID=9| A | A : en aan de achterkant van de mok komen er zo'n heel klein soort van Mini Antennetje uit
+	Free: Pattern=zo'n, Pattern=de, Pattern=aan de, Pattern=er, Pattern=soort van, Pattern=van, Pattern=en
+	Constrained: Pattern=van, Pattern=de
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : en er zitten er zitten er bij die beekhouder aan de voorkant ook nog zo'n soort blok wat erboven liggen
+	Free: Pattern=aan de, Pattern=die, Pattern=en, Pattern=zo'n soort, Pattern=wat, Pattern=er
+	Constrained: Pattern=zo'n, Pattern=de
+Turn ID=13| A | A : ja zo'n soort bakje inderdaad
+	Free: Pattern=zo'n soort, Pattern=ja
+	Constrained: Pattern=zo'n
+Turn ID=14| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja dan zijn het
+	Free: Pattern=ja, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : ja ze staan allemaal anders
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ehm ja dit zijn
+	Free: Pattern=ja dit zijn
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=ja, Pattern=zijn
+Turn ID=18| B | B : ja precies je moeten het even zoeken hè weer
+	Free: Pattern=je, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=19| B | B : eh dit zijn die een met die bekerhouder
+	Free: Pattern=een, Pattern=zijn die, Pattern=eh dit zijn, Pattern=die, Pattern=bekerhouder
+	Constrained: Pattern=dit, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=20| A | A : eh de bekerhouder
+	Free: Pattern=de bekerhouder, Pattern=eh
+	Constrained: Pattern=de, Pattern=bekerhouder
+Turn ID=21| B | B : en dat bak
+	Free: Pattern=en
+	Constrained: 
+Turn ID=22| A | A : ja ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : ja dit zijn de bekerhouder
+	Free: Pattern=dit zijn de, Pattern=ja dit zijn, Pattern=de bekerhouder
+	Constrained: Pattern=dit, Pattern=bekerhouder, Pattern=zijn, Pattern=dit zijn, Pattern=de, Pattern=ja
+Turn ID=25| B | B : oké dat zijn nummer
+	Free: Pattern=oké, Pattern=zijn
+	Constrained: 
+Turn ID=26| B | B : eh dit zijn de de koffie de bekerhouder bedoelen ik
+	Free: Pattern=de, Pattern=de bekerhouder, Pattern=bedoelen, Pattern=eh dit zijn de, Pattern=ik
+	Constrained: Pattern=de, Pattern=dit, Pattern=eh dit zijn, Pattern=bekerhouder, Pattern=eh, Pattern=dit zijn, Pattern=zijn, Pattern=dit zijn de
+Turn ID=27| A | A : bekerhouder
+	Free: Pattern=bekerhouder
+	Constrained: 
+Turn ID=28| A | A : waar zijn die blijven
+	Free: Pattern=zijn die
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=29| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : Oh daar wow
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : eh dit zijn de kop in de houder
+	Free: Pattern=eh dit zijn de, Pattern=de
+	Constrained: Pattern=de, Pattern=dit, Pattern=eh dit zijn, Pattern=eh, Pattern=dit zijn, Pattern=zijn, Pattern=dit zijn de
+Turn ID=33| B | B : ehm ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : dit zijn er bekerhouder
+	Free: Pattern=dit zijn, Pattern=bekerhouder, Pattern=er
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=35| A | A : bekerhouder
+	Free: Pattern=bekerhouder
+	Constrained: 
+Turn ID=36| A | A : Hé waar zijn die blijven
+	Free: Pattern=zijn die
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=37| A | A : huh
+	Free: 
+	Constrained: 
+Turn ID=38| A | A : Oh daar
+	Free: 
+	Constrained: 

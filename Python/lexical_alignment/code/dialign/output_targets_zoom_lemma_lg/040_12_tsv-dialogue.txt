@@ -1,0 +1,163 @@
+A|0| A: _ehm_ _ja_ _deze hebben_ _een soort_ _ja_ _rond_ schijf _die_ 
+A|1| A: _ehm_ _ik_ weten _niet_ _jij kunnen_ toch _mij_ _zien_ of _niet_ 
+B|2| B: [ja] [ik] [kunnen] jou [zien] [ja] 
+A|3| A: [ja] _die_ zo _zeggen maar_ zo zitten 
+B|4| B: [ja] 
+A|5| A: en _dat zijn_ _dan_ _een rond_ schijf 
+A|6| A: en _dan_ _aan de_ linkerkant [ja] _een soort_ uitsteeksel 
+A|7| A: en _dan_ daarop zitten _nog iets_ 
+B|8| B: [ja] 
+B|9| B: [ik] 
+B|10| B: [ja] 
+B|11| B: Eh _dat zijn bij mij_ 
+A|12| A: _Oké_ 
+B|13| B: [ehm] [deze hebben] [dat] tafel _waar_ [jij] het [hebben] 
+B|14| B: [een rond] [aan de] zijkant [zeggen maar] 
+B|15| B: met [aan de] ander kant [een soort] Pac-Mang-achtig vormp 
+B|16| B: _waar_ [dan] [nog iets] bovenop _staan_ 
+A|17| A: Wacht _wat_ 
+B|18| B: [die] [die] beellen [jij] net uit 
+B|19| B: [ja] [jij kunnen] [mij] [niet] [zien] dus 
+A|20| A: _Oh_ [ja] 
+A|21| A: [ehm] _even_ denken [waar] [zien] [ik] [die] 
+A|22| A: _Oh_ [ja] [dat zijn bij mij] 
+A|23| A: [ja] 
+B|24| B: [Oké] 
+A|25| A: _eh_ _dit zijn_ [die] [een] [die] [ik] _hebben uitbeelden_ 
+B|26| B: [eh] [ja] [even] zoeken 
+B|27| B: [Oh] 
+A|28| A: [ja] 
+B|29| B: [dat zijn] 
+B|30| B: [dit zijn] [wat] [jij] [hebben uitbeelden] 
+A|31| A: [ehm] [even] denken 
+A|32| A: [waar] [staan] [die] nou 
+A|33| A: [Oh] [ja] 
+A|34| A: [ehm] [ja] [die] [ik] [hebben uitbeelden] 
+B|35| B: mmmh [even] zoeken horen 
+B|36| B: nummer 
+B|37| B: [dit zijn] [wat] je [hebben uitbeelden] 
+A|38| A: [ehm] [even] zoe 
+A|39| A: oh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm ja deze hebben een soort ja rond schijf die
+	Free: Pattern=ja, Pattern=deze hebben, Pattern=ehm, Pattern=die, Pattern=een soort, Pattern=rond
+	Constrained: Pattern=hebben, Pattern=een
+Turn ID=1| A | A : ehm ik weten niet jij kunnen toch mij zien of niet
+	Free: Pattern=jij kunnen, Pattern=niet, Pattern=ehm, Pattern=zien, Pattern=mij, Pattern=ik
+	Constrained: Pattern=jij, Pattern=kunnen
+Turn ID=2| B | B : ja ik kunnen jou zien ja
+	Free: Pattern=zien, Pattern=ik, Pattern=ja, Pattern=kunnen
+	Constrained: 
+Turn ID=3| A | A : ja die zo zeggen maar zo zitten
+	Free: Pattern=zeggen maar, Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en dat zijn dan een rond schijf
+	Free: Pattern=een rond, Pattern=dat zijn, Pattern=dan
+	Constrained: Pattern=dat, Pattern=rond, Pattern=een
+Turn ID=6| A | A : en dan aan de linkerkant ja een soort uitsteeksel
+	Free: Pattern=een soort, Pattern=aan de, Pattern=dan, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=7| A | A : en dan daarop zitten nog iets
+	Free: Pattern=nog iets, Pattern=dan
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Eh dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=dat zijn, Pattern=mij
+Turn ID=12| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : ehm deze hebben dat tafel waar jij het hebben
+	Free: Pattern=dat, Pattern=waar, Pattern=hebben, Pattern=deze hebben, Pattern=ehm, Pattern=jij
+	Constrained: Pattern=hebben
+Turn ID=14| B | B : een rond aan de zijkant zeggen maar
+	Free: Pattern=een rond, Pattern=zeggen maar, Pattern=aan de
+	Constrained: Pattern=rond, Pattern=een
+Turn ID=15| B | B : met aan de ander kant een soort Pac-Mang-achtig vormp
+	Free: Pattern=een soort, Pattern=aan de
+	Constrained: Pattern=een
+Turn ID=16| B | B : waar dan nog iets bovenop staan
+	Free: Pattern=nog iets, Pattern=dan, Pattern=waar, Pattern=staan
+	Constrained: 
+Turn ID=17| A | A : Wacht wat
+	Free: Pattern=wat
+	Constrained: 
+Turn ID=18| B | B : die die beellen jij net uit
+	Free: Pattern=jij, Pattern=die
+	Constrained: 
+Turn ID=19| B | B : ja jij kunnen mij niet zien dus
+	Free: Pattern=niet, Pattern=zien, Pattern=mij, Pattern=ja, Pattern=jij kunnen
+	Constrained: Pattern=jij, Pattern=kunnen
+Turn ID=20| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ehm even denken waar zien ik die
+	Free: Pattern=waar, Pattern=even, Pattern=ehm, Pattern=ik, Pattern=die, Pattern=zien
+	Constrained: 
+Turn ID=22| A | A : Oh ja dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=Oh, Pattern=ja
+	Constrained: Pattern=dat, Pattern=dat zijn, Pattern=mij
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : eh dit zijn die een die ik hebben uitbeelden
+	Free: Pattern=een, Pattern=hebben uitbeelden, Pattern=die, Pattern=eh, Pattern=ik, Pattern=dit zijn
+	Constrained: Pattern=hebben
+Turn ID=26| B | B : eh ja even zoeken
+	Free: Pattern=eh, Pattern=even, Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=30| B | B : dit zijn wat jij hebben uitbeelden
+	Free: Pattern=dit zijn, Pattern=hebben uitbeelden, Pattern=jij, Pattern=wat
+	Constrained: Pattern=hebben
+Turn ID=31| A | A : ehm even denken
+	Free: Pattern=ehm, Pattern=even
+	Constrained: 
+Turn ID=32| A | A : waar staan die nou
+	Free: Pattern=waar, Pattern=staan, Pattern=die
+	Constrained: 
+Turn ID=33| A | A : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : ehm ja die ik hebben uitbeelden
+	Free: Pattern=ja, Pattern=hebben uitbeelden, Pattern=ehm, Pattern=die, Pattern=ik
+	Constrained: Pattern=hebben
+Turn ID=35| B | B : mmmh even zoeken horen
+	Free: Pattern=even
+	Constrained: 
+Turn ID=36| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : dit zijn wat je hebben uitbeelden
+	Free: Pattern=dit zijn, Pattern=hebben uitbeelden, Pattern=wat
+	Constrained: Pattern=hebben
+Turn ID=38| A | A : ehm even zoe
+	Free: Pattern=ehm, Pattern=even
+	Constrained: 
+Turn ID=39| A | A : oh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

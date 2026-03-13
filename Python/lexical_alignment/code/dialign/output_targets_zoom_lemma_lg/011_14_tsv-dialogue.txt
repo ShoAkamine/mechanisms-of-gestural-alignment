@@ -1,0 +1,103 @@
+B|0| B: _Oké_ 
+B|1| B: _ja_ dit zijn gewoon _het_ enig plaat _met_ echt _een_ rond bovenop 
+B|2| B: en dan _hebben_ _hij_ _ja_ aan _de_ zijkant aan links _van_ _de_ zijkant _een soort_ gieter 
+B|3| B: en er bekendstaan ook nog _een_ _een_ rechthoekig blok bij 
+A|4| A: _Oh_ [een soort] [van] _paal_ 
+B|5| B: _ja_ 
+A|6| A: Lijken [een] beetje alsof [hij] _die_ _paal_ willen _knuffelen_ [met] _die_ twee 
+B|7| B: _ja_ _ja_ 
+A|8| A: [Oké] [ja] 
+A|9| A: O _ik hebben de knuffelen paal_ 
+A|10| A: Zeggen maar [het] poppe _dat_ [de] _paal_ knuffelt 
+B|11| B: [Oh] [ja] 
+B|12| B: even kijken 
+B|13| B: [Oh] [ja] 
+B|14| B: [met] [de] bol er op hè 
+A|15| A: [ja] 
+B|16| B: [ja] [dat] zijn 
+B|17| B: [Oh] [ik hebben] [die] nu weer 
+A|18| A: [ja] [hij] ze versprongen net 
+B|19| B: [Oh] [ja] oké 
+B|20| B: nou [ja] dan [hebben] [ik] dus weer [de] [de] knuffelpaal [met] [de] bol 
+A|21| A: _ik hebben de knuffelen_ balk 
+B|22| B: [dat] zijn 
+B|23| B: [ik hebben de knuffelen paal] 
+A|24| A: [ik hebben de knuffelen paal] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : ja dit zijn gewoon het enig plaat met echt een rond bovenop
+	Free: Pattern=een, Pattern=ja, Pattern=het, Pattern=met
+	Constrained: 
+Turn ID=2| B | B : en dan hebben hij ja aan de zijkant aan links van de zijkant een soort gieter
+	Free: Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=van, Pattern=de, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=3| B | B : en er bekendstaan ook nog een een rechthoekig blok bij
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| A | A : Oh een soort van paal
+	Free: Pattern=een soort, Pattern=van, Pattern=paal, Pattern=Oh
+	Constrained: Pattern=een
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Lijken een beetje alsof hij die paal willen knuffelen met die twee
+	Free: Pattern=een, Pattern=hij, Pattern=met, Pattern=die, Pattern=paal, Pattern=knuffelen
+	Constrained: 
+Turn ID=7| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : O ik hebben de knuffelen paal
+	Free: Pattern=ik hebben de knuffelen paal
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=paal, Pattern=knuffelen, Pattern=ik hebben de knuffelen, Pattern=ik
+Turn ID=10| A | A : Zeggen maar het poppe dat de paal knuffelt
+	Free: Pattern=het, Pattern=dat, Pattern=de, Pattern=paal
+	Constrained: 
+Turn ID=11| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=12| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=14| B | B : met de bol er op hè
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja dat zijn
+	Free: Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=17| B | B : Oh ik hebben die nu weer
+	Free: Pattern=ik hebben, Pattern=die, Pattern=Oh
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=18| A | A : ja hij ze versprongen net
+	Free: Pattern=ja, Pattern=hij
+	Constrained: 
+Turn ID=19| B | B : Oh ja oké
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=20| B | B : nou ja dan hebben ik dus weer de de knuffelpaal met de bol
+	Free: Pattern=hebben, Pattern=met, Pattern=ik, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ik hebben de knuffelen balk
+	Free: Pattern=ik hebben de knuffelen
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=knuffelen
+Turn ID=22| B | B : dat zijn
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=23| B | B : ik hebben de knuffelen paal
+	Free: Pattern=ik hebben de knuffelen paal
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=paal, Pattern=knuffelen, Pattern=ik hebben de knuffelen, Pattern=ik
+Turn ID=24| A | A : ik hebben de knuffelen paal
+	Free: Pattern=ik hebben de knuffelen paal
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=paal, Pattern=knuffelen, Pattern=ik hebben de knuffelen, Pattern=ik

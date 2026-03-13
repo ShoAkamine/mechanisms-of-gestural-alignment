@@ -1,0 +1,175 @@
+A|0| A: Hebben jij weer _het_ 
+B|1| B: _Oh ja_ _ja_ 
+A|2| A: _Oké_ 
+B|3| B: tuurlijk 
+B|4| B: stom 
+B|5| B: Eh _die_ bak _hebben_ nou _een_ _driehoek bovenop_ 
+B|6| B: _en_ dan _hebben_ hij _een_ soort van Schroevendraaier _aan de linkerkant_ erin 
+A|7| A: [Oh] 
+B|8| B: _en_ dan _een_ balletje onderin _en_ _een_ _blok_ _aan de rechterkant_ 
+A|9| A: [ja] 
+B|10| B: _een_ _blok_ _aan de rechterkant_ 
+A|11| A: [ja] oké 
+A|12| A: Letter 
+B|13| B: Got em 
+A|14| A: _ik hebben_ degeen _met_ _het_ hoed 
+A|15| A: dus _met_ _de driehoek bovenop_ 
+A|16| A: [aan de rechterkant] 
+B|17| B: [het] _blok_ links [de] _schroevendraaier_ _en_ staan op _een_ wiel 
+A|18| A: [ja] 
+B|19| B: Ké 
+B|20| B: dat zijn nummer 
+B|21| B: [ik hebben] _die_ _een_ [met] _die_ [driehoek] erop _en_ [het] wiel eronder 
+B|22| B: Schroefdraaier _link_ Blok rechts 
+A|23| A: [Oh ja] 
+A|24| A: Letter 
+A|25| A: [ik hebben] degeen [met] _de driehoek bovenop_ 
+A|26| A: [en] _linksonder_ nog [een] rond [die] er [een] beetje uitkomen 
+B|27| B: [ja] 
+A|28| A: [ja] 
+B|29| B: I Got em 
+B|30| B: nummer 
+B|31| B: [Oké] [ik hebben] [de driehoek bovenop] 
+B|32| B: Bollet [linksonder] 
+B|33| B: Schroefdraaier _link_ _blok_ 
+A|34| A: [Oh ja] 
+A|35| A: Letter 
+A|36| A: [ik hebben] degeen [met] [het] [driehoek bovenop] 
+A|37| A: [aan de linkerkant] [een] [schroevendraaier] iets 
+A|38| A: midden [link] [een] [schroevendraaier] iets [en] [linksonder] [het] wiele 
+A|39| A: [en] [aan de rechterkant] ook nog [een] raar [blok] 
+B|40| B: [ja] 
+B|41| B: [ja] 
+B|42| B: dat zijn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Hebben jij weer het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=1| B | B : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=2| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| B | B : tuurlijk
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : stom
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Eh die bak hebben nou een driehoek bovenop
+	Free: Pattern=driehoek bovenop, Pattern=die, Pattern=hebben, Pattern=een
+	Constrained: Pattern=driehoek
+Turn ID=6| B | B : en dan hebben hij een soort van Schroevendraaier aan de linkerkant erin
+	Free: Pattern=aan de linkerkant, Pattern=hebben, Pattern=en, Pattern=een
+	Constrained: Pattern=de
+Turn ID=7| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=8| B | B : en dan een balletje onderin en een blok aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=blok, Pattern=en, Pattern=een
+	Constrained: Pattern=de
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : een blok aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=blok, Pattern=een
+	Constrained: Pattern=de
+Turn ID=11| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : Got em
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : ik hebben degeen met het hoed
+	Free: Pattern=ik hebben, Pattern=het, Pattern=met
+	Constrained: Pattern=hebben
+Turn ID=15| A | A : dus met de driehoek bovenop
+	Free: Pattern=de driehoek bovenop, Pattern=met
+	Constrained: Pattern=driehoek bovenop, Pattern=de, Pattern=driehoek
+Turn ID=16| A | A : aan de rechterkant
+	Free: Pattern=aan de rechterkant
+	Constrained: Pattern=de
+Turn ID=17| B | B : het blok links de schroevendraaier en staan op een wiel
+	Free: Pattern=de, Pattern=een, Pattern=het, Pattern=en, Pattern=blok, Pattern=schroevendraaier
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : Ké
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : dat zijn nummer
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : ik hebben die een met die driehoek erop en het wiel eronder
+	Free: Pattern=een, Pattern=het, Pattern=met, Pattern=die, Pattern=en, Pattern=ik hebben, Pattern=driehoek
+	Constrained: Pattern=hebben
+Turn ID=22| B | B : Schroefdraaier link Blok rechts
+	Free: Pattern=link
+	Constrained: 
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=24| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : ik hebben degeen met de driehoek bovenop
+	Free: Pattern=de driehoek bovenop, Pattern=ik hebben, Pattern=met
+	Constrained: Pattern=de, Pattern=driehoek, Pattern=driehoek bovenop, Pattern=hebben
+Turn ID=26| A | A : en linksonder nog een rond die er een beetje uitkomen
+	Free: Pattern=die, Pattern=linksonder, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : I Got em
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=31| B | B : Oké ik hebben de driehoek bovenop
+	Free: Pattern=de driehoek bovenop, Pattern=ik hebben, Pattern=Oké
+	Constrained: Pattern=de, Pattern=driehoek, Pattern=driehoek bovenop, Pattern=hebben
+Turn ID=32| B | B : Bollet linksonder
+	Free: Pattern=linksonder
+	Constrained: 
+Turn ID=33| B | B : Schroefdraaier link blok
+	Free: Pattern=blok, Pattern=link
+	Constrained: 
+Turn ID=34| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=35| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : ik hebben degeen met het driehoek bovenop
+	Free: Pattern=driehoek bovenop, Pattern=ik hebben, Pattern=het, Pattern=met
+	Constrained: Pattern=driehoek, Pattern=hebben
+Turn ID=37| A | A : aan de linkerkant een schroevendraaier iets
+	Free: Pattern=aan de linkerkant, Pattern=schroevendraaier, Pattern=een
+	Constrained: Pattern=de
+Turn ID=38| A | A : midden link een schroevendraaier iets en linksonder het wiele
+	Free: Pattern=een, Pattern=het, Pattern=link, Pattern=en, Pattern=linksonder, Pattern=schroevendraaier
+	Constrained: 
+Turn ID=39| A | A : en aan de rechterkant ook nog een raar blok
+	Free: Pattern=aan de rechterkant, Pattern=blok, Pattern=en, Pattern=een
+	Constrained: Pattern=de
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| B | B : dat zijn
+	Free: 
+	Constrained: 

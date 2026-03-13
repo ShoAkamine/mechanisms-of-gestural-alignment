@@ -1,0 +1,111 @@
+B|0| B: Uhm deze _hebben_ a _een_ beetje rechts _aan_ _de_ voorkant ook _een_ staaf 
+B|1| B: en links en rechts _soort van_ armp 
+B|2| B: uhm _dat zijn_ cilinder 
+B|3| B: en _die aan_ _de_ linkerkant _hebben_ _een_ boog waardoor _die_ naar jou wijzen zeggen maar 
+B|4| B: naar jou toe als je naar _het_ scherm _kijken_ 
+B|5| B: en _op zijn hoofd_ _hebben_ hij _een_ bolle 
+B|6| B: _een ballet_ 
+A|7| A: _ja_ 
+A|8| A: _Oh_ wachten even [kijken] horen 
+A|9| A: Hangt [die] [soort van] _aan een paal_ 
+B|10| B: [ja] zo zullen je _het_ ook kunnen zien 
+B|11| B: _dat_ [die] [ja] 
+A|12| A: [ja] _met [een_ _ballet] op zijn_ hoofdJa 
+B|13| B: [die] [paal] [zijn] iets laag _dan_ _dat_ ding zelf 
+A|14| A: [dat zijn] [zijn hoofd] 
+A|15| A: [ja] 
+A|16| A: Oké [dan] [hebben] ik hemDat [zijn] 
+A|17| A: _Oh_ _dit zijn die_ [een] waar we [het] net over [hebben] _die aan een paal_ hing 
+A|18| A: _met [een_ _ballet] op zijn hoofd_ 
+B|19| B: [Oh] [ja] oké nou [dat zijn] 
+B|20| B: _dit zijn die aan een_ balk _hangen_ 
+B|21| B: Uhm zoals jij [het] noemen [met] [dat] [ballet op zijn hoofd] 
+A|22| A: [ja] [dat zijn] 
+A|23| A: Uh [dit zijn die] [een] _die aan een paal hangen met_ _bal op zijn hoofd_ 
+B|24| B: Uhm _dit zijn [die aan een paal_ hangen [met] een] [bal op zijn hoofd] 
+A|25| A: [ja] [dat zijn] 
+A|26| A: [dit zijn die aan een paal] [met] [de] [bal op zijn hoofd] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Uhm deze hebben a een beetje rechts aan de voorkant ook een staaf
+	Free: Pattern=aan, Pattern=hebben, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=1| B | B : en links en rechts soort van armp
+	Free: Pattern=soort van
+	Constrained: 
+Turn ID=2| B | B : uhm dat zijn cilinder
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=3| B | B : en die aan de linkerkant hebben een boog waardoor die naar jou wijzen zeggen maar
+	Free: Pattern=de, Pattern=hebben, Pattern=die, Pattern=een, Pattern=die aan
+	Constrained: Pattern=aan, Pattern=die
+Turn ID=4| B | B : naar jou toe als je naar het scherm kijken
+	Free: Pattern=het, Pattern=kijken
+	Constrained: 
+Turn ID=5| B | B : en op zijn hoofd hebben hij een bolle
+	Free: Pattern=op zijn hoofd, Pattern=hebben, Pattern=een
+	Constrained: Pattern=zijn hoofd, Pattern=zijn
+Turn ID=6| B | B : een ballet
+	Free: Pattern=een ballet
+	Constrained: Pattern=een
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : Oh wachten even kijken horen
+	Free: Pattern=Oh, Pattern=kijken
+	Constrained: 
+Turn ID=9| A | A : Hangt die soort van aan een paal
+	Free: Pattern=aan een paal, Pattern=soort van, Pattern=die
+	Constrained: Pattern=een, Pattern=paal, Pattern=aan
+Turn ID=10| B | B : ja zo zullen je het ook kunnen zien
+	Free: Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : dat die ja
+	Free: Pattern=dat, Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja met een ballet op zijn hoofdJa
+	Free: Pattern=ballet op zijn, Pattern=een ballet, Pattern=met een, Pattern=ja
+	Constrained: Pattern=een, Pattern=zijn, Pattern=met
+Turn ID=13| B | B : die paal zijn iets laag dan dat ding zelf
+	Free: Pattern=dat, Pattern=dan, Pattern=die, Pattern=paal, Pattern=zijn
+	Constrained: 
+Turn ID=14| A | A : dat zijn zijn hoofd
+	Free: Pattern=zijn hoofd, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : Oké dan hebben ik hemDat zijn
+	Free: Pattern=dan, Pattern=zijn, Pattern=hebben
+	Constrained: 
+Turn ID=17| A | A : Oh dit zijn die een waar we het net over hebben die aan een paal hing
+	Free: Pattern=die aan een paal, Pattern=dit zijn die, Pattern=een, Pattern=het, Pattern=hebben, Pattern=Oh
+	Constrained: Pattern=aan, Pattern=aan een paal, Pattern=die, Pattern=paal, Pattern=zijn, Pattern=een, Pattern=die aan
+Turn ID=18| A | A : met een ballet op zijn hoofd
+	Free: Pattern=ballet op zijn hoofd, Pattern=een ballet, Pattern=met een
+	Constrained: Pattern=zijn hoofd, Pattern=ballet op zijn, Pattern=een, Pattern=met, Pattern=op zijn hoofd, Pattern=zijn
+Turn ID=19| B | B : Oh ja oké nou dat zijn
+	Free: Pattern=dat zijn, Pattern=Oh, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| B | B : dit zijn die aan een balk hangen
+	Free: Pattern=dit zijn die aan een, Pattern=hangen
+	Constrained: Pattern=dit zijn die, Pattern=aan, Pattern=die, Pattern=zijn, Pattern=een, Pattern=die aan
+Turn ID=21| B | B : Uhm zoals jij het noemen met dat ballet op zijn hoofd
+	Free: Pattern=ballet op zijn hoofd, Pattern=dat, Pattern=met, Pattern=het
+	Constrained: Pattern=op zijn hoofd, Pattern=ballet op zijn, Pattern=zijn, Pattern=zijn hoofd
+Turn ID=22| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| A | A : Uh dit zijn die een die aan een paal hangen met bal op zijn hoofd
+	Free: Pattern=die aan een paal hangen met, Pattern=bal op zijn hoofd, Pattern=dit zijn die, Pattern=een
+	Constrained: Pattern=die aan een paal, Pattern=zijn hoofd, Pattern=aan, Pattern=met, Pattern=die, Pattern=paal, Pattern=op zijn hoofd, Pattern=zijn, Pattern=een, Pattern=die aan, Pattern=aan een paal, Pattern=hangen
+Turn ID=24| B | B : Uhm dit zijn die aan een paal hangen met een bal op zijn hoofd
+	Free: Pattern=die aan een paal hangen met, Pattern=dit zijn die aan een paal, Pattern=bal op zijn hoofd, Pattern=met een
+	Constrained: Pattern=die aan een paal, Pattern=dit zijn die aan een, Pattern=aan, Pattern=met, Pattern=die, Pattern=paal, Pattern=op zijn hoofd, Pattern=zijn, Pattern=dit zijn die, Pattern=zijn hoofd, Pattern=een, Pattern=die aan, Pattern=aan een paal, Pattern=hangen
+Turn ID=25| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| A | A : dit zijn die aan een paal met de bal op zijn hoofd
+	Free: Pattern=dit zijn die aan een paal, Pattern=bal op zijn hoofd, Pattern=met, Pattern=de
+	Constrained: Pattern=die aan een paal, Pattern=dit zijn die aan een, Pattern=aan, Pattern=aan een paal, Pattern=die, Pattern=paal, Pattern=op zijn hoofd, Pattern=zijn, Pattern=dit zijn die, Pattern=zijn hoofd, Pattern=een, Pattern=die aan

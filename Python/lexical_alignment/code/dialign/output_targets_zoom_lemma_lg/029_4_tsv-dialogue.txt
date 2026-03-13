@@ -1,0 +1,331 @@
+B|0| B: _Ehm_ 
+B|1| B: Oké 
+B|2| B: deze _hebben_ 
+B|3| B: _aan de_ bovenkant _steken_ 
+B|4| B: eh _een_ kegel uit 
+B|5| B: alleen dan _zijn_ _die_ kegel afgehakt 
+B|6| B: dus dus hij worden niet helemaal _puntig_ maar halverwege _zijn_ _die_ _ja_ afhakken zeggen maar 
+A|7| A: Mhmm 
+B|8| B: _en_ dan _hebben_ hij _aan de_ onderkant 
+B|9| B: Steken 
+B|10| B: _een_ heel klein 
+B|11| B: _ja_ 
+B|12| B: _soort_ _haak_ uit 
+B|13| B: _een_ beetje _een_ half of _een_ kwart rond _steken_ _eruit_ _aan de_ onderkant 
+A|14| A: Mhmm 
+B|15| B: _en_ dan _hebben_ _die_ 
+B|16| B: _aan_ één _zijkant_ lijken _het_ vanaf mij _ja_ gewoon _een_ heel 
+B|17| B: klein 
+B|18| B: dun 
+B|19| B: _armp_ 
+B|20| B: wat niet echt uitsteekt maar veel er tegenaan _zitten_ 
+A|21| A: [een] [puntig] 
+B|22| B: _ja_ 
+A|23| A: [armp] [ja] 
+B|24| B: _en_ dan _aan de_ 
+B|25| B: [ja] ook weer _aan_ [een] ander _kant_ _zitten_ _twee_ 
+B|26| B: [ja] vierkanten _die_ boven elkaar _zitten_ _en_ _die eruit steken_ 
+A|27| A: [zijn] [het] [een] [soort] van _piramide_ _bovenop_ 
+B|28| B: [ja] maar dan 
+B|29| B: zonder _de_ punt 
+B|30| B: Zeggen maar _de_ punt [zijn] afgehakt 
+B|31| B: [het] [zijn] niet 
+B|32| B: Uhh 
+B|33| B: nee nee nee 
+A|34| A: Ooh 
+B|35| B: [het] [zijn] 
+A|36| A: _Oh ja_ ik [zitten] naar [de] verkeerd te kijken 
+B|37| B: _Eh_ 
+A|38| A: [ja] oké 
+A|39| A: [zijn] 
+A|40| A: Vormt [die] [twee] _ding_ [die] uitsteken [aan] [aan de] [een] [kant] [een] [soort] is-teken 
+B|41| B: [ja] [ja] [ja] 
+B|42| B: gewoon _twee dezelfde_ [ding] boven elkaar 
+A|43| A: [ja] oké 
+B|44| B: [ja] 
+A|45| A: _dat zijn_ 
+A|46| A: Ehmm 
+A|47| A: [twee dezelfde] 
+A|48| A: lengte [ding] [die eruit steken] 
+A|49| A: ik [hebben] 
+A|50| A: ik [hebben] omschrijven als [een] is-teken 
+B|51| B: [Oh ja] [dat zijn] 
+B|52| B: [zijn] [dat] weer hetzelfde plaat daarvan 
+B|53| B: [ja] [dat] lijken me wel 
+A|54| A: [Eh] 
+A|55| A: [ja] 
+A|56| A: _met_ onder _een haak_ [en] [aan de] [zijkant] nog iets 
+B|57| B: [ja] 
+B|58| B: [ja] [dat zijn] 
+B|59| B: ehh 
+B|60| B: deze [hebben] 
+B|61| B: dit [zijn] [met] [die] [piramide] [die] niet af [zijn] maken [bovenop] 
+A|62| A: ah [ja] 
+B|63| B: [en] [een haak] [aan de] onderkant 
+A|64| A: [dat zijn] 
+A|65| A: [Ehm] 
+A|66| A: [dat] is-teken [met] [een] afgezwaken [piramide] [bovenop] 
+B|67| B: [ja] 
+B|68| B: ehh 
+B|69| B: waar staan [die] 
+B|70| B: [ja] [dat zijn] 
+B|71| B: dit [zijn] [met] [het] is-tekentje [en] [die] 
+B|72| B: [Eh] 
+A|73| A: [ja] 
+B|74| B: [die] half pyramide 
+A|75| A: T 
+B|76| B: Oké 
+A|77| A: [Ehm] 
+A|78| A: Is-teken [en] niet-afgemaakte [piramide] 
+B|79| B: [ja] 
+B|80| B: ehh 
+B|81| B: Pfoe moeten je weer zoeken zoeken zoeken 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=1| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : deze hebben
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=3| B | B : aan de bovenkant steken
+	Free: Pattern=aan de, Pattern=steken
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=4| B | B : eh een kegel uit
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| B | B : alleen dan zijn die kegel afgehakt
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=6| B | B : dus dus hij worden niet helemaal puntig maar halverwege zijn die ja afhakken zeggen maar
+	Free: Pattern=zijn, Pattern=ja, Pattern=puntig, Pattern=die
+	Constrained: 
+Turn ID=7| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : en dan hebben hij aan de onderkant
+	Free: Pattern=aan de, Pattern=hebben, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=9| B | B : Steken
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : een heel klein
+	Free: Pattern=een
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : soort haak uit
+	Free: Pattern=soort, Pattern=haak
+	Constrained: 
+Turn ID=13| B | B : een beetje een half of een kwart rond steken eruit aan de onderkant
+	Free: Pattern=aan de, Pattern=steken, Pattern=eruit, Pattern=een
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=14| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : en dan hebben die
+	Free: Pattern=hebben, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=16| B | B : aan één zijkant lijken het vanaf mij ja gewoon een heel
+	Free: Pattern=een, Pattern=het, Pattern=zijkant, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : klein
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : dun
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : armp
+	Free: Pattern=armp
+	Constrained: 
+Turn ID=20| B | B : wat niet echt uitsteekt maar veel er tegenaan zitten
+	Free: Pattern=zitten
+	Constrained: 
+Turn ID=21| A | A : een puntig
+	Free: Pattern=puntig, Pattern=een
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : armp ja
+	Free: Pattern=ja, Pattern=armp
+	Constrained: 
+Turn ID=24| B | B : en dan aan de
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=25| B | B : ja ook weer aan een ander kant zitten twee
+	Free: Pattern=kant, Pattern=twee, Pattern=een, Pattern=zitten, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ja vierkanten die boven elkaar zitten en die eruit steken
+	Free: Pattern=ja, Pattern=en, Pattern=die eruit steken, Pattern=die, Pattern=zitten
+	Constrained: Pattern=steken, Pattern=eruit, Pattern=die
+Turn ID=27| A | A : zijn het een soort van piramide bovenop
+	Free: Pattern=bovenop, Pattern=soort, Pattern=piramide, Pattern=een, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=28| B | B : ja maar dan
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : zonder de punt
+	Free: Pattern=de
+	Constrained: 
+Turn ID=30| B | B : Zeggen maar de punt zijn afgehakt
+	Free: Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=31| B | B : het zijn niet
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=32| B | B : Uhh
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : nee nee nee
+	Free: 
+	Constrained: 
+Turn ID=34| A | A : Ooh
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : het zijn
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=36| A | A : Oh ja ik zitten naar de verkeerd te kijken
+	Free: Pattern=Oh ja, Pattern=de, Pattern=zitten
+	Constrained: Pattern=ja
+Turn ID=37| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=38| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=40| A | A : Vormt die twee ding die uitsteken aan aan de een kant een soort is-teken
+	Free: Pattern=kant, Pattern=soort, Pattern=twee, Pattern=aan, Pattern=aan de, Pattern=ding, Pattern=een, Pattern=die
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=41| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| B | B : gewoon twee dezelfde ding boven elkaar
+	Free: Pattern=twee dezelfde, Pattern=ding
+	Constrained: Pattern=twee
+Turn ID=43| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=46| A | A : Ehmm
+	Free: 
+	Constrained: 
+Turn ID=47| A | A : twee dezelfde
+	Free: Pattern=twee dezelfde
+	Constrained: Pattern=twee
+Turn ID=48| A | A : lengte ding die eruit steken
+	Free: Pattern=die eruit steken, Pattern=ding
+	Constrained: Pattern=steken, Pattern=eruit, Pattern=die
+Turn ID=49| A | A : ik hebben
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=50| A | A : ik hebben omschrijven als een is-teken
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=51| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=52| B | B : zijn dat weer hetzelfde plaat daarvan
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=53| B | B : ja dat lijken me wel
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=54| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=55| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=56| A | A : met onder een haak en aan de zijkant nog iets
+	Free: Pattern=een haak, Pattern=aan de, Pattern=met, Pattern=zijkant, Pattern=en
+	Constrained: Pattern=haak, Pattern=aan, Pattern=de, Pattern=een
+Turn ID=57| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=58| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=59| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=60| B | B : deze hebben
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=61| B | B : dit zijn met die piramide die niet af zijn maken bovenop
+	Free: Pattern=bovenop, Pattern=piramide, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=62| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : en een haak aan de onderkant
+	Free: Pattern=aan de, Pattern=een haak, Pattern=en
+	Constrained: Pattern=haak, Pattern=aan, Pattern=de, Pattern=een
+Turn ID=64| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=65| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=66| A | A : dat is-teken met een afgezwaken piramide bovenop
+	Free: Pattern=piramide, Pattern=een, Pattern=met, Pattern=dat, Pattern=bovenop
+	Constrained: 
+Turn ID=67| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=68| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=69| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=70| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=71| B | B : dit zijn met het is-tekentje en die
+	Free: Pattern=het, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=72| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=73| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=74| B | B : die half pyramide
+	Free: Pattern=die
+	Constrained: 
+Turn ID=75| A | A : T
+	Free: 
+	Constrained: 
+Turn ID=76| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=77| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=78| A | A : Is-teken en niet-afgemaakte piramide
+	Free: Pattern=en, Pattern=piramide
+	Constrained: 
+Turn ID=79| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=80| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=81| B | B : Pfoe moeten je weer zoeken zoeken zoeken
+	Free: 
+	Constrained: 

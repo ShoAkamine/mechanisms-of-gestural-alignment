@@ -1,0 +1,87 @@
+A|0| A: deze hebben _aan de rechterkant_ twee soortgelijk uitwerpsel 
+B|1| B: Oh _ja_ 
+A|2| A: _en_ _en_ boven _op een_ trapezium 
+B|3| B: _ja_ 
+B|4| B: _ja_ [en] dan [aan de] linkerkant zitten dan ook nog iets 
+B|5| B: maar je kunnen eigenlijk niet zien wat voor vorm _het_ _zijn_ 
+B|6| B: _het_ _zijn_ eigenlijk gewoon [een] dun staafje of iets 
+A|7| A: [ja] 
+B|8| B: ik vinden _het_ zelf [op een] _is-teken_ lijken 
+A|9| A: [ja] kloppen 
+B|10| B: _Oké_ dan _zijn het_ bij mij _nummer_ 
+B|11| B: _dit zijn het_ plaat met _het is-teken_ [aan de rechterkant] 
+A|12| A: [Oké] dat [zijn] [nummer] 
+A|13| A: [dit zijn [het] is-teken] 
+B|14| B: [nummer] 
+B|15| B: [dit zijn het] plaat met [het is-teken] [aan de rechterkant] 
+A|16| A: [Oké] dat [zijn] [nummer] 
+A|17| A: [dit zijn [het] is-teken] 
+B|18| B: [ja] [nummer] 
+B|19| B: [het is-teken] [aan de rechterkant] 
+A|20| A: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : deze hebben aan de rechterkant twee soortgelijk uitwerpsel
+	Free: Pattern=aan de rechterkant
+	Constrained: Pattern=aan de
+Turn ID=1| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : en en boven op een trapezium
+	Free: Pattern=op een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : ja en dan aan de linkerkant zitten dan ook nog iets
+	Free: Pattern=aan de, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=5| B | B : maar je kunnen eigenlijk niet zien wat voor vorm het zijn
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=6| B | B : het zijn eigenlijk gewoon een dun staafje of iets
+	Free: Pattern=zijn, Pattern=een, Pattern=het
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ik vinden het zelf op een is-teken lijken
+	Free: Pattern=op een, Pattern=is-teken, Pattern=het
+	Constrained: Pattern=een
+Turn ID=9| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké dan zijn het bij mij nummer
+	Free: Pattern=zijn het, Pattern=Oké, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=11| B | B : dit zijn het plaat met het is-teken aan de rechterkant
+	Free: Pattern=dit zijn het, Pattern=aan de rechterkant, Pattern=het is-teken
+	Constrained: Pattern=zijn het, Pattern=aan de, Pattern=het, Pattern=zijn, Pattern=is-teken
+Turn ID=12| A | A : Oké dat zijn nummer
+	Free: Pattern=zijn, Pattern=Oké, Pattern=nummer
+	Constrained: 
+Turn ID=13| A | A : dit zijn het is-teken
+	Free: Pattern=dit zijn het, Pattern=het is-teken
+	Constrained: Pattern=zijn het, Pattern=is-teken, Pattern=zijn, Pattern=het
+Turn ID=14| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=15| B | B : dit zijn het plaat met het is-teken aan de rechterkant
+	Free: Pattern=dit zijn het, Pattern=aan de rechterkant, Pattern=het is-teken
+	Constrained: Pattern=zijn het, Pattern=aan de, Pattern=het, Pattern=zijn, Pattern=is-teken
+Turn ID=16| A | A : Oké dat zijn nummer
+	Free: Pattern=zijn, Pattern=Oké, Pattern=nummer
+	Constrained: 
+Turn ID=17| A | A : dit zijn het is-teken
+	Free: Pattern=dit zijn het, Pattern=het is-teken
+	Constrained: Pattern=zijn het, Pattern=is-teken, Pattern=zijn, Pattern=het
+Turn ID=18| B | B : ja nummer
+	Free: Pattern=ja, Pattern=nummer
+	Constrained: 
+Turn ID=19| B | B : het is-teken aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=het is-teken
+	Constrained: Pattern=is-teken, Pattern=het, Pattern=aan de
+Turn ID=20| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

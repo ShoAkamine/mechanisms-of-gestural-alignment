@@ -1,0 +1,63 @@
+B|0| B: Euh 
+B|1| B: ik zullen deze denken ik omschrijven als _de_ _veel lang_ in _de_ hoogte 
+B|2| B: en ik weten niet zo 
+A|3| A: [de] kurkentrekker-achtig 
+A|4| A: _het_ draaien aan [de] onderkant zeggen maar 
+B|5| B: ja ja [het] hebben zo'n draaiding 
+B|6| B: ja ja 
+A|7| A: Yes oké 
+A|8| A: _euh de kurkentrekker_ 
+A|9| A: degene die [het] [veel lang] zijn 
+B|10| B: ja 
+B|11| B: [euh de kurkentrekker] 
+A|12| A: [de kurkentrekker] 
+B|13| B: dan [de kurkentrekker] 
+A|14| A: [kurkentrekker] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ik zullen deze denken ik omschrijven als de veel lang in de hoogte
+	Free: Pattern=veel lang, Pattern=de
+	Constrained: 
+Turn ID=2| B | B : en ik weten niet zo
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : de kurkentrekker-achtig
+	Free: Pattern=de
+	Constrained: 
+Turn ID=4| A | A : het draaien aan de onderkant zeggen maar
+	Free: Pattern=de, Pattern=het
+	Constrained: 
+Turn ID=5| B | B : ja ja het hebben zo'n draaiding
+	Free: Pattern=het
+	Constrained: 
+Turn ID=6| B | B : ja ja
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Yes oké
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : euh de kurkentrekker
+	Free: Pattern=euh de kurkentrekker
+	Constrained: Pattern=de kurkentrekker, Pattern=kurkentrekker, Pattern=de
+Turn ID=9| A | A : degene die het veel lang zijn
+	Free: Pattern=veel lang, Pattern=het
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : euh de kurkentrekker
+	Free: Pattern=euh de kurkentrekker
+	Constrained: Pattern=de kurkentrekker, Pattern=kurkentrekker, Pattern=de
+Turn ID=12| A | A : de kurkentrekker
+	Free: Pattern=de kurkentrekker
+	Constrained: Pattern=kurkentrekker, Pattern=de
+Turn ID=13| B | B : dan de kurkentrekker
+	Free: Pattern=de kurkentrekker
+	Constrained: Pattern=kurkentrekker, Pattern=de
+Turn ID=14| A | A : kurkentrekker
+	Free: Pattern=kurkentrekker
+	Constrained: 

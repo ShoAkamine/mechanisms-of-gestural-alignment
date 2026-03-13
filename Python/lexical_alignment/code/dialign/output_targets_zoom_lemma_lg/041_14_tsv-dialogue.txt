@@ -1,0 +1,111 @@
+A|0| A: _oké_ deze doen mij denken aan _een_ basketbalding 
+A|1| A: ehm hij staan op _een_ paal 
+A|2| A: _en_ aan _de_ bovenkant lijken het alsof er _een bal_ in worden gooien _of_ _zo_ 
+B|3| B: [zo] 
+A|4| A: _en_ 
+A|5| A: _maar_ _ja_ _dat zijn_ _misschien_ mijn mijn persoonlijk kijk 
+A|6| A: Oké wachten _ik_ gaan het iets objectiev doen 
+A|7| A: hij staan dus op _een_ soort paal 
+B|8| B: Oh [ik] weten [misschien] wel welk je bedoelen 
+B|9| B: mhm 
+A|10| A: _ja_ _en_ aan _de_ bovenkant zitten dus _een_ _een_ balvormig iets 
+B|11| B: [een bal] 
+A|12| A: _ja_ _en_ hij hebben ook _twee_ arm 
+B|13| B: mhm [en] [twee] 
+B|14| B: [ja] [ja] [oké] 
+A|15| A: [ja] 
+B|16| B: tien [zijn] _basketbal_ 
+B|17| B: [of] [ja] tien weten jij niet [maar] _de basketbal_ 
+A|18| A: ah [ja] 
+A|19| A: _dat zijn_ _dat zijn_ 
+A|20| A: dit [zijn] [de basketbal] 
+B|21| B: [ja] 
+B|22| B: eh [de] basket ding 
+A|23| A: _Eh_ 
+A|24| A: [en] dit [zijn] [de basketbal] 
+B|25| B: [Eh] [dat zijn] 
+B|26| B: [de basketbal] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze doen mij denken aan een basketbalding
+	Free: Pattern=een, Pattern=oké
+	Constrained: 
+Turn ID=1| A | A : ehm hij staan op een paal
+	Free: Pattern=een
+	Constrained: 
+Turn ID=2| A | A : en aan de bovenkant lijken het alsof er een bal in worden gooien of zo
+	Free: Pattern=of, Pattern=de, Pattern=zo, Pattern=een bal, Pattern=en
+	Constrained: Pattern=een
+Turn ID=3| B | B : zo
+	Free: Pattern=zo
+	Constrained: 
+Turn ID=4| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| A | A : maar ja dat zijn misschien mijn mijn persoonlijk kijk
+	Free: Pattern=dat zijn, Pattern=misschien, Pattern=ja, Pattern=maar
+	Constrained: Pattern=zijn
+Turn ID=6| A | A : Oké wachten ik gaan het iets objectiev doen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : hij staan dus op een soort paal
+	Free: Pattern=een
+	Constrained: 
+Turn ID=8| B | B : Oh ik weten misschien wel welk je bedoelen
+	Free: Pattern=misschien, Pattern=ik
+	Constrained: 
+Turn ID=9| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : ja en aan de bovenkant zitten dus een een balvormig iets
+	Free: Pattern=een, Pattern=ja, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=11| B | B : een bal
+	Free: Pattern=een bal
+	Constrained: Pattern=een
+Turn ID=12| A | A : ja en hij hebben ook twee arm
+	Free: Pattern=twee, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=13| B | B : mhm en twee
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=14| B | B : ja ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : tien zijn basketbal
+	Free: Pattern=basketbal, Pattern=zijn
+	Constrained: 
+Turn ID=17| B | B : of ja tien weten jij niet maar de basketbal
+	Free: Pattern=de basketbal, Pattern=ja, Pattern=of, Pattern=maar
+	Constrained: Pattern=basketbal, Pattern=de
+Turn ID=18| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dat zijn dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=20| A | A : dit zijn de basketbal
+	Free: Pattern=de basketbal, Pattern=zijn
+	Constrained: Pattern=basketbal, Pattern=de
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : eh de basket ding
+	Free: Pattern=de
+	Constrained: 
+Turn ID=23| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=24| A | A : en dit zijn de basketbal
+	Free: Pattern=de basketbal, Pattern=en, Pattern=zijn
+	Constrained: Pattern=basketbal, Pattern=de
+Turn ID=25| B | B : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=zijn
+Turn ID=26| B | B : de basketbal
+	Free: Pattern=de basketbal
+	Constrained: Pattern=basketbal, Pattern=de

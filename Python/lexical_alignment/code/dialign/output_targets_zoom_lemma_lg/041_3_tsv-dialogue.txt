@@ -1,0 +1,67 @@
+B|0| B: ehm _deze_ vinden ik _een_ beetje lijken alsof _die_ balanceren _op_ _één been_ 
+B|1| B: _met_ _een_ soort van driehoekig voet 
+A|2| A: Oh _ja_ _dat zijn_ 
+B|3| B: _en_ dan twee soort van arm 
+B|4| B: [ja] 
+A|5| A: _dit zijn die een die _op die_ _driehoek_ staan_ _met één been_ 
+B|6| B: [ja] 
+B|7| B: eh [dit zijn die een die op] [één been] _staan [op_ die driehoek] 
+A|8| A: Eh _dat zijn_ 
+A|9| A: [deze] [staan op] _dat_ [driehoek] 
+B|10| B: [dat zijn] 
+B|11| B: ah [dit zijn die een die op [die] een] [driehoek staan] 
+B|12| B: [met één been] 
+A|13| A: [en] [dat zijn] 
+A|14| A: [deze] [staan op] [dat] [driehoek] 
+B|15| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze vinden ik een beetje lijken alsof die balanceren op één been
+	Free: Pattern=op, Pattern=een, Pattern=die, Pattern=één been, Pattern=deze
+	Constrained: 
+Turn ID=1| B | B : met een soort van driehoekig voet
+	Free: Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=2| A | A : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=3| B | B : en dan twee soort van arm
+	Free: Pattern=en
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : dit zijn die een die op die driehoek staan met één been
+	Free: Pattern=dit zijn die een die op die, Pattern=met één been, Pattern=op die driehoek, Pattern=driehoek staan
+	Constrained: Pattern=driehoek, Pattern=op, Pattern=een, Pattern=met, Pattern=die, Pattern=die een, Pattern=één been, Pattern=dit zijn die een die op
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : eh dit zijn die een die op één been staan op die driehoek
+	Free: Pattern=dit zijn die een die op, Pattern=op die driehoek, Pattern=staan op, Pattern=één been
+	Constrained: Pattern=driehoek, Pattern=op, Pattern=een, Pattern=die, Pattern=die een
+Turn ID=8| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=9| A | A : deze staan op dat driehoek
+	Free: Pattern=staan op, Pattern=dat, Pattern=driehoek, Pattern=deze
+	Constrained: Pattern=op
+Turn ID=10| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=11| B | B : ah dit zijn die een die op die een driehoek staan
+	Free: Pattern=dit zijn die een die op die, Pattern=die een, Pattern=driehoek staan
+	Constrained: Pattern=driehoek, Pattern=op, Pattern=een, Pattern=die, Pattern=die een, Pattern=dit zijn die een die op
+Turn ID=12| B | B : met één been
+	Free: Pattern=met één been
+	Constrained: Pattern=één been, Pattern=met
+Turn ID=13| A | A : en dat zijn
+	Free: Pattern=dat zijn, Pattern=en
+	Constrained: Pattern=dat
+Turn ID=14| A | A : deze staan op dat driehoek
+	Free: Pattern=staan op, Pattern=dat, Pattern=driehoek, Pattern=deze
+	Constrained: Pattern=op
+Turn ID=15| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

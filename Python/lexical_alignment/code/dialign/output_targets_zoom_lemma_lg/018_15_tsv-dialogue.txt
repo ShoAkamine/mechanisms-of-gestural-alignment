@@ -1,0 +1,231 @@
+A|0| A: _Oh_ _ik hebben_ _die_ _een_ waarvan je _net_ denken _dat_ _het_ _een_ pinocchio neus _hebben_ 
+A|1| A: _maar_ _ja_ bovenaan zitten van _die_ oort 
+B|2| B: [Oh] 
+A|3| A: Zeggen _maar_ _ja_ van _die_ spalkjes _er_ in 
+A|4| A: _en_ dan _hebben_ _het_ _een_ soort _slurf_ _die_ eruit steken 
+A|5| A: _en_ _een_ _vierkant_ _dat_ _er_ middenin _dwars_ 
+B|6| B: [Oh] [die] 
+B|7| B: _ja ja ja_ 
+A|8| A: [ja] 
+B|9| B: [Oh] _ja dat zijn bij mij_ 
+A|10| A: Oké 
+B|11| B: _ik hebben nu_ _met_ [die] 
+B|12| B: jij [hebben] hem [net] 
+B|13| B: [ik] vinden [het] echt _een glijbaan_ [maar] jij _zeggen_ iets ander 
+A|14| A: mhm 
+B|15| B: _met_ _zo'n_ [vierkant] [er] echt [dwars] doorheen 
+A|16| A: [Oh] 
+A|17| A: [Oh] 
+A|18| A: [Oh] 
+B|19| B: [en] _twee_ schoorsteen bovenop 
+A|20| A: [ja] [en] waarvan [ik] [zeggen] [dat] [het] [zo'n] _slurf_ [hebben] 
+A|21| A: [ja] oké 
+B|22| B: [Oh] [een] [slurf] 
+B|23| B: _ja ja ja_ 
+A|24| A: [ja] 
+A|25| A: [ja] [het] [zijn] ook wel [een glijbaan] in [een] zwembad 
+B|26| B: [ja] 
+B|27| B: [ja] [een] [slurf] [ja] 
+A|28| A: [ja ja ja] 
+A|29| A: Oké 
+B|30| B: [ja] [die] 
+A|31| A: [ja dat zijn bij mij] 
+A|32| A: [ik hebben nu] degeen [met] _de glijbaan of de slurf_ [en] dan [twee] van [die] oort boven 
+B|33| B: [Oh] [ja] 
+A|34| A: [en] [het] dienblad [dat] halverwege zitten 
+B|35| B: [ja] 
+A|36| A: Oké 
+B|37| B: [ja] 
+B|38| B: [dat zijn bij mij] 
+A|39| A: Oké 
+A|40| A: Oké 
+B|41| B: [ik hebben nu] [de glijbaan of de slurf] 
+A|42| A: Oké 
+A|43| A: [dat zijn] 
+A|44| A: [bij mij] 
+A|45| A: [met] [de] [twee] oort 
+B|46| B: [ja] 
+A|47| A: Oké [ja] 
+A|48| A: [ik hebben nu] [glijbaan of] [slurf] 
+B|49| B: [Oh] [ja] 
+A|50| A: dus [en] [met] [de] oort 
+A|51| A: Oké 
+B|52| B: [ja] 
+A|53| A: Oké 
+B|54| B: [de glijbaan of de slurf] 
+A|55| A: Oké [dat zijn] 
+A|56| A: waar staan [die] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh ik hebben die een waarvan je net denken dat het een pinocchio neus hebben
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=net, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=Oh
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=1| A | A : maar ja bovenaan zitten van die oort
+	Free: Pattern=die, Pattern=maar, Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=3| A | A : Zeggen maar ja van die spalkjes er in
+	Free: Pattern=die, Pattern=maar, Pattern=ja, Pattern=er
+	Constrained: 
+Turn ID=4| A | A : en dan hebben het een soort slurf die eruit steken
+	Free: Pattern=slurf, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=5| A | A : en een vierkant dat er middenin dwars
+	Free: Pattern=dat, Pattern=een, Pattern=dwars, Pattern=er, Pattern=en, Pattern=vierkant
+	Constrained: 
+Turn ID=6| B | B : Oh die
+	Free: Pattern=die, Pattern=Oh
+	Constrained: 
+Turn ID=7| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oh ja dat zijn bij mij
+	Free: Pattern=ja dat zijn bij mij, Pattern=Oh
+	Constrained: Pattern=ja, Pattern=dat zijn bij mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=10| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : ik hebben nu met die
+	Free: Pattern=ik hebben nu, Pattern=die, Pattern=met
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=12| B | B : jij hebben hem net
+	Free: Pattern=net, Pattern=hebben
+	Constrained: 
+Turn ID=13| B | B : ik vinden het echt een glijbaan maar jij zeggen iets ander
+	Free: Pattern=zeggen, Pattern=ik, Pattern=maar, Pattern=het, Pattern=een glijbaan
+	Constrained: Pattern=een
+Turn ID=14| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : met zo'n vierkant er echt dwars doorheen
+	Free: Pattern=zo'n, Pattern=met, Pattern=dwars, Pattern=er, Pattern=vierkant
+	Constrained: 
+Turn ID=16| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=17| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=18| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=19| B | B : en twee schoorsteen bovenop
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=20| A | A : ja en waarvan ik zeggen dat het zo'n slurf hebben
+	Free: Pattern=dat, Pattern=zo'n, Pattern=ja, Pattern=slurf, Pattern=het, Pattern=hebben, Pattern=zeggen, Pattern=ik, Pattern=en
+	Constrained: 
+Turn ID=21| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Oh een slurf
+	Free: Pattern=Oh, Pattern=een, Pattern=slurf
+	Constrained: 
+Turn ID=23| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ja het zijn ook wel een glijbaan in een zwembad
+	Free: Pattern=ja, Pattern=een, Pattern=zijn, Pattern=het, Pattern=een glijbaan
+	Constrained: Pattern=een
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ja een slurf ja
+	Free: Pattern=een, Pattern=slurf, Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=29| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : ja die
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja dat zijn bij mij
+	Free: Pattern=ja dat zijn bij mij
+	Constrained: Pattern=ja, Pattern=dat zijn bij mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=32| A | A : ik hebben nu degeen met de glijbaan of de slurf en dan twee van die oort boven
+	Free: Pattern=de glijbaan of de slurf, Pattern=twee, Pattern=met, Pattern=die, Pattern=en, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=slurf, Pattern=hebben, Pattern=ik, Pattern=glijbaan of
+Turn ID=33| B | B : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : en het dienblad dat halverwege zitten
+	Free: Pattern=dat, Pattern=het, Pattern=en
+	Constrained: 
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=zijn, Pattern=dat zijn
+Turn ID=39| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=40| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=41| B | B : ik hebben nu de glijbaan of de slurf
+	Free: Pattern=de glijbaan of de slurf, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=slurf, Pattern=hebben, Pattern=ik, Pattern=glijbaan of
+Turn ID=42| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=44| A | A : bij mij
+	Free: Pattern=bij mij
+	Constrained: 
+Turn ID=45| A | A : met de twee oort
+	Free: Pattern=de, Pattern=twee, Pattern=met
+	Constrained: 
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| A | A : ik hebben nu glijbaan of slurf
+	Free: Pattern=ik hebben nu, Pattern=glijbaan of, Pattern=slurf
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=49| B | B : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : dus en met de oort
+	Free: Pattern=de, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=51| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=52| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=54| B | B : de glijbaan of de slurf
+	Free: Pattern=de glijbaan of de slurf
+	Constrained: Pattern=slurf, Pattern=glijbaan of, Pattern=de
+Turn ID=55| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=56| A | A : waar staan die
+	Free: Pattern=die
+	Constrained: 

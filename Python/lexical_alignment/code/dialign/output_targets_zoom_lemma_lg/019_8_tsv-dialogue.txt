@@ -1,0 +1,303 @@
+B|0| B: _Oké_ _dit_ vinden ik _een soort van_ op _een bakfiets_ lijken 
+A|1| A: [een bakfiets] 
+B|2| B: je zien bo 
+B|3| B: _ja_ 
+A|4| A: [Oké] 
+B|5| B: je zien bovenop _hebben_ je _een soort van_ [een] [een] [een] ruit _er_ uitsteken 
+B|6| B: _met_ _twee van die_ weten je wel _gebouw_ eruit steken 
+A|7| A: Ehm 
+B|8| B: wat vinden ik _een soort van_ op [een] stuur vinden lijken 
+B|9| B: _met_ daarvoor _dus_ _die_ mok als _een soort van_ _de_ bak 
+B|10| B: Eh _en_ daaruit steken [een] langwerpig ding 
+A|11| A: Oh 
+B|12| B: _en_ _hij_ _hebben_ _dus_ _ook_ nog _twee_ ander uithengsel 
+B|13| B: eentje steken echt onderuit _en één_ echt _de_ rechtsuit 
+A|14| A: [dus] _dat_ [ja] 
+A|15| A: [dus] achter [hebben] [hij] [een soort van] plat _vierkant_ _waar twee van die gebouw_ _tegenaan_ _staan_ 
+B|16| B: _ja _ja_ _ja_ precies_ 
+A|17| A: _en dan_ [een] _neus_ eigenlijk [en] [twee van die] gek uitsteksel 
+B|18| B: [ja] 
+A|19| A: [Oké] 
+B|20| B: [ja] [twee] arm 
+B|21| B: [ja] [soort van] [ja] 
+A|22| A: [ja] 
+A|23| A: _dat_ _zijn_ het 
+A|24| A: _ehm dit zijn_ 
+A|25| A: Diegene [met] 
+A|26| A: Zeggen maar [een] plat _vierkant_ 
+A|27| A: [twee] _gebouw er tegenaan_ _aan de_ achterkant 
+A|28| A: _tegen_ _dat_ _vierkant_ 
+B|29| B: _eh_ [ja] 
+A|30| A: _en dan_ _zo'n_ _neus_ [en] [twee] uitsteksel 
+A|31| A: [één] naar _rechts en één_ naar beneden 
+B|32| B: ah _ja ja_ wat ik op _de bakfiets_ vinden lijken 
+A|33| A: [ja] [die] [ja] 
+B|34| B: [ja] top 
+A|35| A: [de bakfiets] 
+A|36| A: _dat_ _zijn_ hem [ja] 
+B|37| B: nummer 
+B|38| B: [ehm dit zijn] weer [ja] [de bakfiets] 
+B|39| B: [de] [twee] [de] [twee] [vierkant] [met] [de] [gebouw] [aan de] zijkant eruit 
+A|40| A: [bakfiets] 
+A|41| A: even kijken 
+A|42| A: [ja] even zoeken 
+B|43| B: [en] [de] [neus] [aan de] voorkant 
+A|44| A: _waar staan_ [hij] [ook] alweer 
+A|45| A: Wacht even kijken horen 
+B|46| B: Yes 
+A|47| A: hoe _gaan_ [hij] [ook] alweer 
+A|48| A: [die] 
+B|49| B: [ehm] [hij] [hebben] [die] mok 
+B|50| B: [en] [hij] [hebben] [aan de] bovenkant [hebben] je [een soort van] _zo'n vierkant_ [tegen] elkaar [aan] 
+B|51| B: [waar twee van die gebouw] [aan] beide kant ingaan 
+B|52| B: [en dan] [twee van die] arm [één] [rechts en één] onderlang 
+B|53| B: [en] [aan de] voorkant [een soort van] langwerpig _uitsteeksel_ [dat] eruit [gaan] 
+A|54| A: [ja ja] 
+A|55| A: [ja] [dus] [zo'n vierkant] achter [twee van die gebouw] [en dan] [rechts en] onder [een] [uitsteeksel] [en] voor [een] [neus] 
+B|56| B: _ja precies_ 
+A|57| A: [Oké] [dat] [zijn] 
+A|58| A: _eh dit zijn_ jou [bakfiets] volgens mij 
+A|59| A: [dat] het volgens mij 
+B|60| B: mijn [bakfiets] 
+A|61| A: [ja] 
+A|62| A: volgens [dat] [zijn] toch [die] [dat] vier 
+B|63| B: [ja] [met] [die] [vierkant] [met] [die [gebouw] er tegenaan] 
+A|64| A: [ja precies] ha [de bakfiets] 
+B|65| B: [ja] top 
+A|66| A: [ja] 
+B|67| B: [eh] nummer 
+B|68| B: [eh dit zijn] [de bakfiets] 
+A|69| A: [bakfiets] 
+A|70| A: [ja] 
+A|71| A: [eh dit zijn] [die] [bakfiets] 
+B|72| B: [bakfiets] 
+B|73| B: [eh] [waar staan] 
+B|74| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké dit vinden ik een soort van op een bakfiets lijken
+	Free: Pattern=een soort van, Pattern=een bakfiets, Pattern=dit, Pattern=Oké
+	Constrained: Pattern=soort van, Pattern=een, Pattern=bakfiets
+Turn ID=1| A | A : een bakfiets
+	Free: Pattern=een bakfiets
+	Constrained: Pattern=een, Pattern=bakfiets
+Turn ID=2| B | B : je zien bo
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : je zien bovenop hebben je een soort van een een een ruit er uitsteken
+	Free: Pattern=een soort van, Pattern=een, Pattern=hebben, Pattern=er
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=6| B | B : met twee van die weten je wel gebouw eruit steken
+	Free: Pattern=twee van die, Pattern=met, Pattern=gebouw
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=7| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : wat vinden ik een soort van op een stuur vinden lijken
+	Free: Pattern=een soort van, Pattern=een
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=9| B | B : met daarvoor dus die mok als een soort van de bak
+	Free: Pattern=een soort van, Pattern=met, Pattern=die, Pattern=de, Pattern=dus
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=10| B | B : Eh en daaruit steken een langwerpig ding
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=11| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : en hij hebben dus ook nog twee ander uithengsel
+	Free: Pattern=twee, Pattern=dus, Pattern=ook, Pattern=hebben, Pattern=hij, Pattern=en
+	Constrained: 
+Turn ID=13| B | B : eentje steken echt onderuit en één echt de rechtsuit
+	Free: Pattern=en één, Pattern=de
+	Constrained: Pattern=één, Pattern=en
+Turn ID=14| A | A : dus dat ja
+	Free: Pattern=dus, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=15| A | A : dus achter hebben hij een soort van plat vierkant waar twee van die gebouw tegenaan staan
+	Free: Pattern=dus, Pattern=waar twee van die gebouw, Pattern=staan, Pattern=hebben, Pattern=hij, Pattern=een soort van, Pattern=vierkant, Pattern=tegenaan
+	Constrained: Pattern=twee van die, Pattern=twee van die gebouw, Pattern=twee, Pattern=gebouw, Pattern=een, Pattern=soort van, Pattern=die gebouw, Pattern=die
+Turn ID=16| B | B : ja ja ja precies
+	Free: Pattern=ja precies, Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=17| A | A : en dan een neus eigenlijk en twee van die gek uitsteksel
+	Free: Pattern=twee van die, Pattern=en dan, Pattern=een, Pattern=neus, Pattern=en
+	Constrained: Pattern=twee, Pattern=die, Pattern=en
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| B | B : ja twee arm
+	Free: Pattern=ja, Pattern=twee
+	Constrained: 
+Turn ID=21| B | B : ja soort van ja
+	Free: Pattern=soort van, Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : dat zijn het
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=24| A | A : ehm dit zijn
+	Free: Pattern=ehm dit zijn
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=ehm
+Turn ID=25| A | A : Diegene met
+	Free: Pattern=met
+	Constrained: 
+Turn ID=26| A | A : Zeggen maar een plat vierkant
+	Free: Pattern=een, Pattern=vierkant
+	Constrained: 
+Turn ID=27| A | A : twee gebouw er tegenaan aan de achterkant
+	Free: Pattern=gebouw er tegenaan, Pattern=aan de, Pattern=twee
+	Constrained: Pattern=gebouw, Pattern=er, Pattern=tegenaan, Pattern=de, Pattern=aan
+Turn ID=28| A | A : tegen dat vierkant
+	Free: Pattern=vierkant, Pattern=dat, Pattern=tegen
+	Constrained: 
+Turn ID=29| B | B : eh ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=30| A | A : en dan zo'n neus en twee uitsteksel
+	Free: Pattern=en dan, Pattern=neus, Pattern=en, Pattern=zo'n, Pattern=twee
+	Constrained: Pattern=en
+Turn ID=31| A | A : één naar rechts en één naar beneden
+	Free: Pattern=rechts en één, Pattern=één
+	Constrained: Pattern=rechts en, Pattern=en één, Pattern=één, Pattern=en
+Turn ID=32| B | B : ah ja ja wat ik op de bakfiets vinden lijken
+	Free: Pattern=de bakfiets, Pattern=ja ja
+	Constrained: Pattern=ja, Pattern=bakfiets, Pattern=de
+Turn ID=33| A | A : ja die ja
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : de bakfiets
+	Free: Pattern=de bakfiets
+	Constrained: Pattern=bakfiets, Pattern=de
+Turn ID=36| A | A : dat zijn hem ja
+	Free: Pattern=zijn, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=37| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : ehm dit zijn weer ja de bakfiets
+	Free: Pattern=ehm dit zijn, Pattern=de bakfiets, Pattern=ja
+	Constrained: Pattern=de, Pattern=bakfiets, Pattern=dit, Pattern=ehm, Pattern=zijn
+Turn ID=39| B | B : de twee de twee vierkant met de gebouw aan de zijkant eruit
+	Free: Pattern=twee, Pattern=de, Pattern=aan de, Pattern=gebouw, Pattern=met, Pattern=vierkant
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=40| A | A : bakfiets
+	Free: Pattern=bakfiets
+	Constrained: 
+Turn ID=41| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=42| A | A : ja even zoeken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| B | B : en de neus aan de voorkant
+	Free: Pattern=aan de, Pattern=de, Pattern=en, Pattern=neus
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=44| A | A : waar staan hij ook alweer
+	Free: Pattern=waar staan, Pattern=ook, Pattern=hij
+	Constrained: Pattern=staan
+Turn ID=45| A | A : Wacht even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=46| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=47| A | A : hoe gaan hij ook alweer
+	Free: Pattern=ook, Pattern=hij, Pattern=gaan
+	Constrained: 
+Turn ID=48| A | A : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=49| B | B : ehm hij hebben die mok
+	Free: Pattern=hij, Pattern=die, Pattern=ehm, Pattern=hebben
+	Constrained: 
+Turn ID=50| B | B : en hij hebben aan de bovenkant hebben je een soort van zo'n vierkant tegen elkaar aan
+	Free: Pattern=aan, Pattern=aan de, Pattern=zo'n vierkant, Pattern=hebben, Pattern=hij, Pattern=een soort van, Pattern=en, Pattern=tegen
+	Constrained: Pattern=zo'n, Pattern=een, Pattern=soort van, Pattern=vierkant, Pattern=de, Pattern=aan
+Turn ID=51| B | B : waar twee van die gebouw aan beide kant ingaan
+	Free: Pattern=waar twee van die gebouw, Pattern=aan
+	Constrained: Pattern=twee van die, Pattern=twee van die gebouw, Pattern=twee, Pattern=gebouw, Pattern=die gebouw, Pattern=die
+Turn ID=52| B | B : en dan twee van die arm één rechts en één onderlang
+	Free: Pattern=rechts en één, Pattern=twee van die, Pattern=en dan, Pattern=één
+	Constrained: Pattern=rechts en, Pattern=twee, Pattern=één, Pattern=die, Pattern=en, Pattern=en één
+Turn ID=53| B | B : en aan de voorkant een soort van langwerpig uitsteeksel dat eruit gaan
+	Free: Pattern=dat, Pattern=aan de, Pattern=uitsteeksel, Pattern=een soort van, Pattern=en, Pattern=gaan
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=soort van
+Turn ID=54| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=55| A | A : ja dus zo'n vierkant achter twee van die gebouw en dan rechts en onder een uitsteeksel en voor een neus
+	Free: Pattern=rechts en, Pattern=twee van die gebouw, Pattern=en dan, Pattern=een, Pattern=neus, Pattern=en, Pattern=dus, Pattern=ja, Pattern=uitsteeksel, Pattern=zo'n vierkant
+	Constrained: Pattern=twee van die, Pattern=gebouw, Pattern=en, Pattern=vierkant, Pattern=zo'n, Pattern=twee, Pattern=die gebouw, Pattern=die
+Turn ID=56| B | B : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=57| A | A : Oké dat zijn
+	Free: Pattern=zijn, Pattern=Oké, Pattern=dat
+	Constrained: 
+Turn ID=58| A | A : eh dit zijn jou bakfiets volgens mij
+	Free: Pattern=eh dit zijn, Pattern=bakfiets
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=eh
+Turn ID=59| A | A : dat het volgens mij
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=60| B | B : mijn bakfiets
+	Free: Pattern=bakfiets
+	Constrained: 
+Turn ID=61| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=62| A | A : volgens dat zijn toch die dat vier
+	Free: Pattern=zijn, Pattern=die, Pattern=dat
+	Constrained: 
+Turn ID=63| B | B : ja met die vierkant met die gebouw er tegenaan
+	Free: Pattern=ja, Pattern=gebouw er tegenaan, Pattern=met, Pattern=vierkant, Pattern=die gebouw, Pattern=die
+	Constrained: Pattern=gebouw, Pattern=die, Pattern=tegenaan, Pattern=er
+Turn ID=64| A | A : ja precies ha de bakfiets
+	Free: Pattern=ja precies, Pattern=de bakfiets
+	Constrained: Pattern=ja, Pattern=bakfiets, Pattern=de
+Turn ID=65| B | B : ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=66| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=67| B | B : eh nummer
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=68| B | B : eh dit zijn de bakfiets
+	Free: Pattern=eh dit zijn, Pattern=de bakfiets
+	Constrained: Pattern=de, Pattern=bakfiets, Pattern=dit, Pattern=eh, Pattern=zijn
+Turn ID=69| A | A : bakfiets
+	Free: Pattern=bakfiets
+	Constrained: 
+Turn ID=70| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=71| A | A : eh dit zijn die bakfiets
+	Free: Pattern=eh dit zijn, Pattern=die, Pattern=bakfiets
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=eh
+Turn ID=72| B | B : bakfiets
+	Free: Pattern=bakfiets
+	Constrained: 
+Turn ID=73| B | B : eh waar staan
+	Free: Pattern=waar staan, Pattern=eh
+	Constrained: Pattern=staan
+Turn ID=74| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

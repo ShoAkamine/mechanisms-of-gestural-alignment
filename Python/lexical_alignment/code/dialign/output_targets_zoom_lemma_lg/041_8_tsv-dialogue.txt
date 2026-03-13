@@ -1,0 +1,107 @@
+A|0| A: oké deze _die_ _hebben_ _aan_ _de_ bovenkant _hebben_ hij _een_ plat vierkant als het _zijn_ uit _de_ bovenkant steken 
+A|1| A: _en_ _dat_ vierkant _zijn_ _een_ soort doorboren 
+A|2| A: of in ieder geval _aan_ _de_ linker _en_ _aan_ _de_ rechterkant daarvan zitten _een_ soort telescoopachtig _uitsteeksel_ 
+B|3| B: mhm 
+A|4| A: _en_ dan _hebben_ hij _aan_ _de_ onderkant _hebben_ hij _een_ soort gekromd standaard waar _die op_ staat 
+B|5| B: _ja_ _ja_ _ja_ 
+A|6| A: _en_ _aan_ _de_ rechterkant nog _ding_ 
+B|7| B: twee [uitsteeksel] _ja_ 
+A|8| A: [ja] 
+B|9| B: _ehm_ dit [zijn] [die] [een] [die op] zo'n klein krom _dinget staan_ 
+B|10| B: [en] zeggen maar [aan] bij [zijn] hoofd twee van _die telescoopding aan_ allebei [de] kant [hebben] 
+A|11| A: [ja] _dat zijn_ 
+A|12| A: [ehm] deze [hebben] we net ook [hebben] _met die_ _die op dat_ kromen [dinget staan] 
+A|13| A: [en] dan [die telescoopding aan] [de] bovenkant 
+A|14| A: zowel [aan] [de] linker als [de] rechterkant 
+B|15| B: _eh ja_ 
+B|16| B: [ehm] dit [zijn] [die op dat] kromminkje [staan] 
+B|17| B: [en] [met die] twee [ding] door [die] twee telescop door [aan] allebei [de] kant van [zijn] hoofd 
+A|18| A: [eh ja] _dat zijn_ 
+A|19| A: [ehm] deze staat [op] [die] kromming 
+A|20| A: [met die] telescoop [aan] [de] bovenkant links [en] rechts 
+B|21| B: [dat zijn] 
+B|22| B: [eh] dit [zijn] [die] [een] [die op dat] kromme [staan] 
+B|23| B: [en] [die] [ja] [die] twee [telescoopding] bij [zijn] hoofd [hebben] 
+A|24| A: [ja] 
+A|25| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze die hebben aan de bovenkant hebben hij een plat vierkant als het zijn uit de bovenkant steken
+	Free: Pattern=een, Pattern=hebben, Pattern=die, Pattern=zijn, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=1| A | A : en dat vierkant zijn een soort doorboren
+	Free: Pattern=dat, Pattern=zijn, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=2| A | A : of in ieder geval aan de linker en aan de rechterkant daarvan zitten een soort telescoopachtig uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=3| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : en dan hebben hij aan de onderkant hebben hij een soort gekromd standaard waar die op staat
+	Free: Pattern=een, Pattern=hebben, Pattern=die op, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: Pattern=die, Pattern=op
+Turn ID=5| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en aan de rechterkant nog ding
+	Free: Pattern=aan, Pattern=ding, Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=7| B | B : twee uitsteeksel ja
+	Free: Pattern=uitsteeksel, Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ehm dit zijn die een die op zo'n klein krom dinget staan
+	Free: Pattern=een, Pattern=ehm, Pattern=die, Pattern=dinget staan, Pattern=die op, Pattern=zijn
+	Constrained: Pattern=die, Pattern=op, Pattern=staan
+Turn ID=10| B | B : en zeggen maar aan bij zijn hoofd twee van die telescoopding aan allebei de kant hebben
+	Free: Pattern=hebben, Pattern=en, Pattern=die telescoopding aan, Pattern=zijn, Pattern=de, Pattern=aan
+	Constrained: Pattern=aan, Pattern=die, Pattern=telescoopding
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| A | A : ehm deze hebben we net ook hebben met die die op dat kromen dinget staan
+	Free: Pattern=met die, Pattern=hebben, Pattern=die op dat, Pattern=ehm, Pattern=dinget staan
+	Constrained: Pattern=dat, Pattern=op, Pattern=staan, Pattern=die, Pattern=die op
+Turn ID=13| A | A : en dan die telescoopding aan de bovenkant
+	Free: Pattern=die telescoopding aan, Pattern=de, Pattern=en
+	Constrained: Pattern=aan, Pattern=die, Pattern=telescoopding
+Turn ID=14| A | A : zowel aan de linker als de rechterkant
+	Free: Pattern=aan, Pattern=de
+	Constrained: 
+Turn ID=15| B | B : eh ja
+	Free: Pattern=eh ja
+	Constrained: Pattern=eh, Pattern=ja
+Turn ID=16| B | B : ehm dit zijn die op dat kromminkje staan
+	Free: Pattern=die op dat, Pattern=zijn, Pattern=ehm, Pattern=staan
+	Constrained: Pattern=die op, Pattern=die, Pattern=op, Pattern=dat
+Turn ID=17| B | B : en met die twee ding door die twee telescop door aan allebei de kant van zijn hoofd
+	Free: Pattern=met die, Pattern=ding, Pattern=die, Pattern=en, Pattern=zijn, Pattern=de, Pattern=aan
+	Constrained: Pattern=die
+Turn ID=18| A | A : eh ja dat zijn
+	Free: Pattern=eh ja, Pattern=dat zijn
+	Constrained: Pattern=eh, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=19| A | A : ehm deze staat op die kromming
+	Free: Pattern=die, Pattern=op, Pattern=ehm
+	Constrained: 
+Turn ID=20| A | A : met die telescoop aan de bovenkant links en rechts
+	Free: Pattern=met die, Pattern=aan, Pattern=de, Pattern=en
+	Constrained: Pattern=die
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| B | B : eh dit zijn die een die op dat kromme staan
+	Free: Pattern=die op dat, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=een, Pattern=staan
+	Constrained: Pattern=die op, Pattern=die, Pattern=op, Pattern=dat
+Turn ID=23| B | B : en die ja die twee telescoopding bij zijn hoofd hebben
+	Free: Pattern=ja, Pattern=hebben, Pattern=die, Pattern=telescoopding, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

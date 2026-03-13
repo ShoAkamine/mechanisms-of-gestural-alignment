@@ -1,0 +1,167 @@
+B|0| B: _Oké_ _ik hebben_ _ja_ diezelfde 
+B|1| B: dit _zijn_ met _een_ _is-teken_ _zeggen maar_ 
+B|2| B: _een_ is-gelijk-aan 
+B|3| B: wiskundig teken 
+A|4| A: [Oké] 
+B|5| B: _en dan_ hangen _er_ zo linksonder _een_ slurf 
+A|6| A: _Oh_ 
+B|7| B: I don't know 
+B|8| B: deze _vinden_ _ik_ heel vaag om te omschrijven 
+A|9| A: [ja] 
+A|10| A: _hij_ lijken op op [een] _vogel_ [vinden] 
+B|11| B: [hij] _hebben_ [een] 
+A|12| A: omdat _die_ twee insteker op _de_ snavel lijken 
+A|13| A: [maar] [ik] weten niet wat _het_ 
+B|14| B: _Oh ja_ 
+A|15| A: [ja] toch 
+B|16| B: [ja] 
+B|17| B: [ja] [ik] zien [het] wel 
+B|18| B: soort van Flappy Bird idee 
+A|19| A: [ja] 
+A|20| A: [ja] [en dan] zitten [er] ook nog zo'n vierkan zo'n raar _hoed_ bovenop 
+B|21| B: [hij] [ja] [hij] _hebben_ [een] [hoed] inderdaad 
+B|22| B: [ja] 
+A|23| A: [Oké] 
+A|24| A: [ja] 
+B|25| B: Cool 
+A|26| A: Letter 
+A|27| A: [ik hebben] weer _die_ _vogel_ 
+A|28| A: _dat zijn_ [zeggen maar] _dat_ [is-teken] 
+B|29| B: _Oh ja_ 
+B|30| B: [dat zijn] nummer 
+B|31| B: [Oké] _ik hebben de vogel_ 
+A|32| A: [Oké] 
+A|33| A: Letter 
+A|34| A: [ik hebben de vogel] 
+B|35| B: [Oké] [dat zijn] _even_ kijken welk ? [hebben] [die] 
+B|36| B: [ik hebben] [het] [vogel] 
+A|37| A: [even] zoeken 
+A|38| A: [Oh ja] letter 
+A|39| A: [ik hebben de vogel] 
+B|40| B: oké [zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik hebben ja diezelfde
+	Free: Pattern=ik hebben, Pattern=ja, Pattern=Oké
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=1| B | B : dit zijn met een is-teken zeggen maar
+	Free: Pattern=zeggen maar, Pattern=zijn, Pattern=een, Pattern=is-teken
+	Constrained: Pattern=maar
+Turn ID=2| B | B : een is-gelijk-aan
+	Free: Pattern=een
+	Constrained: 
+Turn ID=3| B | B : wiskundig teken
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : en dan hangen er zo linksonder een slurf
+	Free: Pattern=en dan, Pattern=er, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=7| B | B : I don't know
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : deze vinden ik heel vaag om te omschrijven
+	Free: Pattern=vinden, Pattern=ik
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : hij lijken op op een vogel vinden
+	Free: Pattern=hij, Pattern=vinden, Pattern=vogel, Pattern=een
+	Constrained: 
+Turn ID=11| B | B : hij hebben een
+	Free: Pattern=hebben, Pattern=hij, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : omdat die twee insteker op de snavel lijken
+	Free: Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=13| A | A : maar ik weten niet wat het
+	Free: Pattern=het, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=15| A | A : ja toch
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ja ik zien het wel
+	Free: Pattern=ja, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=18| B | B : soort van Flappy Bird idee
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja en dan zitten er ook nog zo'n vierkan zo'n raar hoed bovenop
+	Free: Pattern=en dan, Pattern=er, Pattern=ja, Pattern=hoed
+	Constrained: 
+Turn ID=21| B | B : hij ja hij hebben een hoed inderdaad
+	Free: Pattern=een, Pattern=hebben, Pattern=hij, Pattern=hoed, Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : Cool
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : ik hebben weer die vogel
+	Free: Pattern=ik hebben, Pattern=vogel, Pattern=die
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=28| A | A : dat zijn zeggen maar dat is-teken
+	Free: Pattern=dat zijn, Pattern=zeggen maar, Pattern=dat, Pattern=is-teken
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=maar
+Turn ID=29| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=30| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| B | B : Oké ik hebben de vogel
+	Free: Pattern=ik hebben de vogel, Pattern=Oké
+	Constrained: Pattern=ik hebben, Pattern=vogel, Pattern=de, Pattern=hebben, Pattern=ik
+Turn ID=32| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=33| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=34| A | A : ik hebben de vogel
+	Free: Pattern=ik hebben de vogel
+	Constrained: Pattern=ik hebben, Pattern=vogel, Pattern=de, Pattern=hebben, Pattern=ik
+Turn ID=35| B | B : Oké dat zijn even kijken welk ? hebben die
+	Free: Pattern=dat zijn, Pattern=even, Pattern=hebben, Pattern=die, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| B | B : ik hebben het vogel
+	Free: Pattern=ik hebben, Pattern=het, Pattern=vogel
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=37| A | A : even zoeken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=38| A | A : Oh ja letter
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=39| A | A : ik hebben de vogel
+	Free: Pattern=ik hebben de vogel
+	Constrained: Pattern=ik hebben, Pattern=vogel, Pattern=de, Pattern=hebben, Pattern=ik
+Turn ID=40| B | B : oké zijn nummer
+	Free: Pattern=zijn
+	Constrained: 

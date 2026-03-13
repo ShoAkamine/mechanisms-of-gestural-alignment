@@ -1,0 +1,131 @@
+B|0| B: dit _lijken_ iemand 
+B|1| B: _het_ _lijken_ _een_ beetje _op een_ poppe _die een_ soort van dans _doen_ 
+B|2| B: _een_ soort _pirouette maken_ 
+B|3| B: Vind _ik het_ _op_ _lijken_ 
+B|4| B: _op_ _het_ hoofd staan _een_ _een_ soort _ruit_ 
+B|5| B: waar _ook_ weer iets doorheen zitten 
+B|6| B: iets doorheen steken 
+A|7| A: _ja_ [ik] denken _dat_ [ik het] weten _ja_ 
+B|8| B: [ja] 
+A|9| A: _en_ [het] _zijn_ [ook] [op een] sokkel hè één 
+B|10| B: _ja ja ja_ 
+A|11| A: [ja ja] oké 
+A|12| A: object 
+A|13| A: _dat zijn_ diegene [die een] [pirouette] [lijken] te [doen] 
+A|14| A: zoals jij [het] omschrijven 
+A|15| A: _en_ bovenaan _een doorboord ruit_ 
+B|16| B: [ja] [dat zijn] nummer 
+B|17| B: dansende poppe [lijken] [het] 
+B|18| B: _met_ [een doorboord ruit] bovenop 
+B|19| B: [en] [een] [ja] [een] [ruit] waar 
+A|20| A: [ja [ja ja] ja] oké [ja] 
+B|21| B: [ja] 
+A|22| A: object 
+A|23| A: _de pirouette_ 
+A|24| A: _met de doorboord ruit_ 
+B|25| B: ah [ja] 
+B|26| B: nummer 
+B|27| B: [de pirouette] [met de doorboord ruit] 
+A|28| A: [ja] object 
+A|29| A: [de] [het] man [dat] [een] [pirouette maken] 
+A|30| A: [met de doorboord ruit] 
+B|31| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit lijken iemand
+	Free: Pattern=lijken
+	Constrained: 
+Turn ID=1| B | B : het lijken een beetje op een poppe die een soort van dans doen
+	Free: Pattern=doen, Pattern=lijken, Pattern=een, Pattern=het, Pattern=die een, Pattern=op een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=2| B | B : een soort pirouette maken
+	Free: Pattern=pirouette maken, Pattern=een
+	Constrained: Pattern=pirouette
+Turn ID=3| B | B : Vind ik het op lijken
+	Free: Pattern=ik het, Pattern=op, Pattern=lijken
+	Constrained: Pattern=ik, Pattern=het
+Turn ID=4| B | B : op het hoofd staan een een soort ruit
+	Free: Pattern=op, Pattern=een, Pattern=ruit, Pattern=het
+	Constrained: 
+Turn ID=5| B | B : waar ook weer iets doorheen zitten
+	Free: Pattern=ook
+	Constrained: 
+Turn ID=6| B | B : iets doorheen steken
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : ja ik denken dat ik het weten ja
+	Free: Pattern=ik het, Pattern=dat, Pattern=ja, Pattern=ik
+	Constrained: Pattern=ik, Pattern=het
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : en het zijn ook op een sokkel hè één
+	Free: Pattern=ook, Pattern=het, Pattern=en, Pattern=zijn, Pattern=op een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=10| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=11| A | A : ja ja oké
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=12| A | A : object
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : dat zijn diegene die een pirouette lijken te doen
+	Free: Pattern=dat zijn, Pattern=doen, Pattern=lijken, Pattern=die een, Pattern=pirouette
+	Constrained: Pattern=dat, Pattern=een, Pattern=zijn
+Turn ID=14| A | A : zoals jij het omschrijven
+	Free: Pattern=het
+	Constrained: 
+Turn ID=15| A | A : en bovenaan een doorboord ruit
+	Free: Pattern=een doorboord ruit, Pattern=en
+	Constrained: Pattern=een, Pattern=ruit
+Turn ID=16| B | B : ja dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| B | B : dansende poppe lijken het
+	Free: Pattern=lijken, Pattern=het
+	Constrained: 
+Turn ID=18| B | B : met een doorboord ruit bovenop
+	Free: Pattern=een doorboord ruit, Pattern=met
+	Constrained: Pattern=een, Pattern=ruit
+Turn ID=19| B | B : en een ja een ruit waar
+	Free: Pattern=ja, Pattern=en, Pattern=een, Pattern=ruit
+	Constrained: 
+Turn ID=20| A | A : ja ja ja ja oké ja
+	Free: Pattern=ja ja ja, Pattern=ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : object
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : de pirouette
+	Free: Pattern=de pirouette
+	Constrained: Pattern=pirouette, Pattern=de
+Turn ID=24| A | A : met de doorboord ruit
+	Free: Pattern=met de doorboord ruit
+	Constrained: Pattern=ruit, Pattern=de, Pattern=met
+Turn ID=25| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : de pirouette met de doorboord ruit
+	Free: Pattern=met de doorboord ruit, Pattern=de pirouette
+	Constrained: Pattern=ruit, Pattern=de, Pattern=met, Pattern=pirouette
+Turn ID=28| A | A : ja object
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : de het man dat een pirouette maken
+	Free: Pattern=dat, Pattern=de, Pattern=pirouette maken, Pattern=een, Pattern=het
+	Constrained: Pattern=pirouette
+Turn ID=30| A | A : met de doorboord ruit
+	Free: Pattern=met de doorboord ruit
+	Constrained: Pattern=ruit, Pattern=de, Pattern=met
+Turn ID=31| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

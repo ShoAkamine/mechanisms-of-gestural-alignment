@@ -1,0 +1,99 @@
+A|0| A: _Ehm ik hebben er nu één_ _en_ daar _zitten_ _rechts_ _een soort_ _bord_ _aan_ vast 
+A|1| A: Eh _en_ _link_ staan _er_ _een soort_ _heel puntig_ iets _op_ _het_ handvat 
+A|2| A: maar _in_ _dat_ daar _in_ _dat_ handvat _zitten_ ook _nog_ _een soort_ _gleuf_ _in_ 
+A|3| A: waar dus _dat _heel puntig_ ding_ _in_ 
+B|4| B: _ja_ [ik] weten [het] al 
+A|5| A: Oké 
+B|6| B: worden [het] 
+B|7| B: [Ehm ik hebben er nu één] _die_ _aan de rechterkant_ [een] klein _bord vasthouden_ 
+B|8| B: [en] dan _hebben die_ _aan de_ linkerkant [een soort] van balk met _zo'n_ [gleuf] erin 
+B|9| B: [het] [hebben] [een] beetje [een] _de_ vorm van twee van _zo'n_ cirkelt [op] elkaar 
+B|10| B: [en] dan steken [er] [nog] _zo'n heel puntig ding_ uit _die_ balk 
+A|11| A: [ja] _dat_ zijn 
+A|12| A: [ik [hebben] die] [een] [die] [ja] _zo'n soort_ [bord vasthouden] [aan de rechterkant] [en] [zo'n heel puntig ding] 
+B|13| B: [ja] 
+B|14| B: met [die] zo van met [die] [gleuf] erin 
+A|15| A: [ja] kloppen 
+B|16| B: [ja] 
+B|17| B: [ik hebben] [nu] weer [die] [die] [aan de rechterkant] [zo'n soort] van [bord vasthouden] 
+B|18| B: [en] [aan de] linkerkant [hebben] je [dat heel puntig] uitsteeksel [dat] [in] [die] [gleuf] zo [zitten] 
+A|19| A: [ja] 
+A|20| A: [ik [hebben] die] [een] [die] [dat] _die rechts [zo'n_ soort] _bord vasthouden en_ _link dat [heel puntig_ ding] 
+B|21| B: [ja] 
+B|22| B: [ik hebben] [nu] [die] met [die rechts zo'n] [bord vasthouden en] zes [link dat heel puntig] aanhangsel met [die] [gleuf] 
+A|23| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Ehm ik hebben er nu één en daar zitten rechts een soort bord aan vast
+	Free: Pattern=zitten, Pattern=Ehm ik hebben er nu één, Pattern=een soort, Pattern=en, Pattern=bord, Pattern=rechts, Pattern=aan
+	Constrained: Pattern=ik hebben, Pattern=een, Pattern=nu, Pattern=hebben, Pattern=er, Pattern=ik
+Turn ID=1| A | A : Eh en link staan er een soort heel puntig iets op het handvat
+	Free: Pattern=heel puntig, Pattern=op, Pattern=het, Pattern=link, Pattern=er, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=2| A | A : maar in dat daar in dat handvat zitten ook nog een soort gleuf in
+	Free: Pattern=dat, Pattern=nog, Pattern=in, Pattern=zitten, Pattern=een soort, Pattern=gleuf
+	Constrained: Pattern=een
+Turn ID=3| A | A : waar dus dat heel puntig ding in
+	Free: Pattern=heel puntig ding, Pattern=dat heel puntig, Pattern=in
+	Constrained: Pattern=heel puntig, Pattern=dat
+Turn ID=4| B | B : ja ik weten het al
+	Free: Pattern=ja, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=5| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : worden het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=7| B | B : Ehm ik hebben er nu één die aan de rechterkant een klein bord vasthouden
+	Free: Pattern=een, Pattern=Ehm ik hebben er nu één, Pattern=bord vasthouden, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=aan de, Pattern=nu, Pattern=hebben, Pattern=er, Pattern=ik, Pattern=aan, Pattern=de, Pattern=bord
+Turn ID=8| B | B : en dan hebben die aan de linkerkant een soort van balk met zo'n gleuf erin
+	Free: Pattern=zo'n, Pattern=aan de, Pattern=een soort, Pattern=hebben die, Pattern=en, Pattern=gleuf
+	Constrained: Pattern=een, Pattern=hebben, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=9| B | B : het hebben een beetje een de vorm van twee van zo'n cirkelt op elkaar
+	Free: Pattern=zo'n, Pattern=de, Pattern=op, Pattern=een, Pattern=het, Pattern=hebben
+	Constrained: 
+Turn ID=10| B | B : en dan steken er nog zo'n heel puntig ding uit die balk
+	Free: Pattern=nog, Pattern=die, Pattern=er, Pattern=zo'n heel puntig ding, Pattern=en
+	Constrained: Pattern=heel puntig, Pattern=zo'n, Pattern=heel puntig ding
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=12| A | A : ik hebben die een die ja zo'n soort bord vasthouden aan de rechterkant en zo'n heel puntig ding
+	Free: Pattern=ik hebben, Pattern=ja, Pattern=een, Pattern=zo'n heel puntig ding, Pattern=en, Pattern=zo'n soort, Pattern=hebben die, Pattern=bord vasthouden, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=zo'n, Pattern=heel puntig, Pattern=aan de, Pattern=heel puntig ding, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=aan, Pattern=de, Pattern=bord
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : met die zo van met die gleuf erin
+	Free: Pattern=die, Pattern=gleuf
+	Constrained: 
+Turn ID=15| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ik hebben nu weer die die aan de rechterkant zo'n soort van bord vasthouden
+	Free: Pattern=ik hebben, Pattern=nu, Pattern=zo'n soort, Pattern=bord vasthouden, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=zo'n, Pattern=aan de, Pattern=hebben, Pattern=ik, Pattern=aan, Pattern=de, Pattern=bord
+Turn ID=18| B | B : en aan de linkerkant hebben je dat heel puntig uitsteeksel dat in die gleuf zo zitten
+	Free: Pattern=dat, Pattern=aan de, Pattern=hebben, Pattern=in, Pattern=dat heel puntig, Pattern=die, Pattern=zitten, Pattern=en, Pattern=gleuf
+	Constrained: Pattern=dat, Pattern=de, Pattern=aan, Pattern=heel puntig
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ik hebben die een die dat die rechts zo'n soort bord vasthouden en link dat heel puntig ding
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=bord vasthouden en, Pattern=die rechts zo'n, Pattern=link dat heel puntig, Pattern=die, Pattern=zo'n soort, Pattern=hebben die, Pattern=een, Pattern=heel puntig ding
+	Constrained: Pattern=dat, Pattern=zo'n, Pattern=heel puntig, Pattern=hebben, Pattern=dat heel puntig, Pattern=die, Pattern=link, Pattern=ik, Pattern=en, Pattern=bord vasthouden, Pattern=bord, Pattern=rechts
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ik hebben nu die met die rechts zo'n bord vasthouden en zes link dat heel puntig aanhangsel met die gleuf
+	Free: Pattern=ik hebben, Pattern=bord vasthouden en, Pattern=die rechts zo'n, Pattern=nu, Pattern=link dat heel puntig, Pattern=die, Pattern=gleuf
+	Constrained: Pattern=dat, Pattern=zo'n, Pattern=heel puntig, Pattern=hebben, Pattern=dat heel puntig, Pattern=die, Pattern=link, Pattern=ik, Pattern=en, Pattern=bord vasthouden, Pattern=bord, Pattern=rechts
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

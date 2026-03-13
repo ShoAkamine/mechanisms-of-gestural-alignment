@@ -1,0 +1,67 @@
+A|0| A: ik _hebben_ nu één en die _hebben_ _een soort van_ piramide dr _bovenop_ staan 
+A|1| A: _dat zijn_ eigenlijk het duidelijk kenmerk heel puntig 
+A|2| A: en daaronder zitten _een_ rond dinget aan _de_ rechterkant _een_ 
+B|3| B: Oh _ja_ [een] blok nog [een soort van] 
+A|4| A: [ja] 
+A|5| A: [ja] 
+B|6| B: [dat zijn] 
+B|7| B: _euh_ deze [hebben] [de] _driehoek_ [bovenop] 
+A|8| A: ah [ja] [dat zijn] 
+A|9| A: ik [hebben] nu die _met de_ piramide er [bovenop] 
+B|10| B: Euh [ja] 
+B|11| B: Euh dit [zijn] [met de] _driehoek_ [bovenop] 
+A|12| A: Oké [dat zijn] 
+A|13| A: ik [hebben] nu die [euh] [met] die [driehoek] erop 
+B|14| B: Euh dit [zijn] [met de] [driehoek] [bovenop] 
+A|15| A: Hmhm [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hebben nu één en die hebben een soort van piramide dr bovenop staan
+	Free: Pattern=een soort van, Pattern=hebben, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=1| A | A : dat zijn eigenlijk het duidelijk kenmerk heel puntig
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=2| A | A : en daaronder zitten een rond dinget aan de rechterkant een
+	Free: Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=3| B | B : Oh ja een blok nog een soort van
+	Free: Pattern=een soort van, Pattern=een, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=7| B | B : euh deze hebben de driehoek bovenop
+	Free: Pattern=driehoek, Pattern=bovenop, Pattern=de, Pattern=hebben, Pattern=euh
+	Constrained: 
+Turn ID=8| A | A : ah ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=9| A | A : ik hebben nu die met de piramide er bovenop
+	Free: Pattern=met de, Pattern=hebben, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=met
+Turn ID=10| B | B : Euh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Euh dit zijn met de driehoek bovenop
+	Free: Pattern=met de, Pattern=driehoek, Pattern=zijn, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=met
+Turn ID=12| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=13| A | A : ik hebben nu die euh met die driehoek erop
+	Free: Pattern=hebben, Pattern=euh, Pattern=driehoek, Pattern=met
+	Constrained: 
+Turn ID=14| B | B : Euh dit zijn met de driehoek bovenop
+	Free: Pattern=met de, Pattern=driehoek, Pattern=zijn, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=met
+Turn ID=15| A | A : Hmhm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

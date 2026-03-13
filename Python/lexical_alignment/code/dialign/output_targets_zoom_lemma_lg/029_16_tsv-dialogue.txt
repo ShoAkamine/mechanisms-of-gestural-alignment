@@ -1,0 +1,243 @@
+A|0| A: Top 
+B|1| B: Ehm 
+B|2| B: _ja_ 
+B|3| B: _deze hebben_ 
+B|4| B: Eehh 
+B|5| B: _ja_ _ding_ _die_ 
+B|6| B: _Eh_ 
+B|7| B: _één_ _één_ _ding_ _een soort_ 
+B|8| B: net _niet_ afgemaaken bowlingbal _kegel_ _die_ 
+B|9| B: _aan de bovenkant_ uitsteekt 
+A|10| A: Mhmm 
+B|11| B: _en_ dan _hebben_ hij _aan de_ niks _aan de_ onderkant _maar_ _aan de zijkant_ _aan_ drie richting _hebben_ hij ook drie verschillend 
+B|12| B: _ja_ arm 
+B|13| B: ook weer zo'n bowlingkegel _die_ precies _hetzelfde_ _aan_ _zijn_ als _de bovenkant_ 
+B|14| B: _steken_ _er_ ergens _aan de zijkant_ uit 
+A|15| A: Mhmm 
+B|16| B: _en_ dan 
+B|17| B: _ja_ _aan_ allebei _de_ ander kant _steken_ ook _een_ heel dik 
+B|18| B: _ja_ _wat_ _zijn_ _het_ 
+B|19| B: _een_ kronkel armp 
+B|20| B: _en_ _aan de_ ander kant _een_ heel dik _ja_ vierkant 
+B|21| B: S _soort_ dik spijker _die_ _erin_ zitten 
+A|22| A: _en dat_ laat [wat] je _zeggen_ 
+A|23| A: [zijn] _dat_ [hetzelfde] [die] _we_ [de] [één] keer [hebben] 
+B|24| B: [die] 
+A|25| A: dus _met_ [die] _twee_ [ding] 
+A|26| A: [en] nu [zijn] [er] [maar] [één] _van_ 
+B|27| B: Ehm 
+A|28| A: [zijn] _dat_ [het] of [niet] 
+B|29| B: _even_ kijken _even_ kijken [wat] [we] ook weer als [één] [hebben] 
+B|30| B: Oh _ja_ _ja_ _ja_ _ja_ _ja_ _ja_ 
+A|31| A: Oké [ja] 
+B|32| B: [ja] 
+A|33| A: [Eh] 
+A|34| A: [deze hebben] [één] _Eiffeltoren_ [erin] [steken] 
+A|35| A: [en] _twee_ [kegel] [één] [aan de bovenkant] [één] [aan de zijkant] 
+A|36| A: [en] [er] _zijn nog_ iets [aan de zijkant] [een soort] _van_ schurfachtig 
+B|37| B: Oh [ja] 
+B|38| B: [ja] [ja] [ja] 
+B|39| B: ehh 
+B|40| B: _dit zijn_ weer [met] [één] eiffeltoren [die] eruit [steken] [twee] bowlingkegel [en] [nog] [een] kronkel [aan de] achterkant 
+B|41| B: [ja] [het] [steken] al kant uit [zeggen] [maar] 
+A|42| A: Eeh 
+A|43| A: [ja] 
+A|44| A: Eehm 
+A|45| A: [één] _Eiffeltoren_ [twee] [kegel] [één] slurf 
+B|46| B: [ja] 
+B|47| B: [Eh] 
+B|48| B: zo _dat [zijn_ nog] [het] moeilijk 
+B|49| B: Oh 
+B|50| B: ehh 
+B|51| B: _dit zijn_ weer [met] f [een] [Eiffeltoren] eruit [twee] [van] [die] [kegel] eruit [en dat] kronkelarm eruit 
+A|52| A: Eeh 
+A|53| A: [even] zoeken 
+A|54| A: [ja] [dat zijn] 
+A|55| A: [Eh] 
+A|56| A: [dit zijn] [één] keer [de] [Eiffeltoren] [twee] [kegel] [en] [één] slurf 
+B|57| B: [ja] 
+B|58| B: Ehm 
+B|59| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Top
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : deze hebben
+	Free: Pattern=deze hebben
+	Constrained: Pattern=hebben
+Turn ID=4| B | B : Eehh
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ja ding die
+	Free: Pattern=ja, Pattern=ding, Pattern=die
+	Constrained: 
+Turn ID=6| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=7| B | B : één één ding een soort
+	Free: Pattern=een soort, Pattern=ding, Pattern=één
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=8| B | B : net niet afgemaaken bowlingbal kegel die
+	Free: Pattern=kegel, Pattern=niet, Pattern=die
+	Constrained: 
+Turn ID=9| B | B : aan de bovenkant uitsteekt
+	Free: Pattern=aan de bovenkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=de bovenkant
+Turn ID=10| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : en dan hebben hij aan de niks aan de onderkant maar aan de zijkant aan drie richting hebben hij ook drie verschillend
+	Free: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=hebben, Pattern=en, Pattern=maar
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=12| B | B : ja arm
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ook weer zo'n bowlingkegel die precies hetzelfde aan zijn als de bovenkant
+	Free: Pattern=aan, Pattern=de bovenkant, Pattern=hetzelfde, Pattern=die, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=14| B | B : steken er ergens aan de zijkant uit
+	Free: Pattern=aan de zijkant, Pattern=er, Pattern=steken
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=15| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=17| B | B : ja aan allebei de ander kant steken ook een heel dik
+	Free: Pattern=een, Pattern=steken, Pattern=de, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja wat zijn het
+	Free: Pattern=ja, Pattern=zijn, Pattern=wat, Pattern=het
+	Constrained: 
+Turn ID=19| B | B : een kronkel armp
+	Free: Pattern=een
+	Constrained: 
+Turn ID=20| B | B : en aan de ander kant een heel dik ja vierkant
+	Free: Pattern=aan de, Pattern=en, Pattern=ja, Pattern=een
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=21| B | B : S soort dik spijker die erin zitten
+	Free: Pattern=erin, Pattern=soort, Pattern=die
+	Constrained: 
+Turn ID=22| A | A : en dat laat wat je zeggen
+	Free: Pattern=en dat, Pattern=zeggen, Pattern=wat
+	Constrained: Pattern=en, Pattern=dat
+Turn ID=23| A | A : zijn dat hetzelfde die we de één keer hebben
+	Free: Pattern=dat, Pattern=de, Pattern=hetzelfde, Pattern=hebben, Pattern=één, Pattern=zijn, Pattern=we, Pattern=die
+	Constrained: 
+Turn ID=24| B | B : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=25| A | A : dus met die twee ding
+	Free: Pattern=twee, Pattern=met, Pattern=ding, Pattern=die
+	Constrained: 
+Turn ID=26| A | A : en nu zijn er maar één van
+	Free: Pattern=één, Pattern=er, Pattern=van, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=27| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=28| A | A : zijn dat het of niet
+	Free: Pattern=niet, Pattern=dat, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=29| B | B : even kijken even kijken wat we ook weer als één hebben
+	Free: Pattern=even, Pattern=hebben, Pattern=één, Pattern=we, Pattern=wat
+	Constrained: 
+Turn ID=30| B | B : Oh ja ja ja ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=34| A | A : deze hebben één Eiffeltoren erin steken
+	Free: Pattern=één, Pattern=deze hebben, Pattern=erin, Pattern=Eiffeltoren, Pattern=steken
+	Constrained: Pattern=hebben
+Turn ID=35| A | A : en twee kegel één aan de bovenkant één aan de zijkant
+	Free: Pattern=kegel, Pattern=twee, Pattern=aan de zijkant, Pattern=één, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=de bovenkant
+Turn ID=36| A | A : en er zijn nog iets aan de zijkant een soort van schurfachtig
+	Free: Pattern=zijn nog, Pattern=aan de zijkant, Pattern=er, Pattern=een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=aan de, Pattern=een, Pattern=zijn, Pattern=nog, Pattern=soort, Pattern=de, Pattern=aan
+Turn ID=37| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : dit zijn weer met één eiffeltoren die eruit steken twee bowlingkegel en nog een kronkel aan de achterkant
+	Free: Pattern=nog, Pattern=twee, Pattern=aan de, Pattern=een, Pattern=één, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn, Pattern=steken
+	Constrained: Pattern=zijn, Pattern=aan, Pattern=de
+Turn ID=41| B | B : ja het steken al kant uit zeggen maar
+	Free: Pattern=ja, Pattern=het, Pattern=zeggen, Pattern=maar, Pattern=steken
+	Constrained: 
+Turn ID=42| A | A : Eeh
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| A | A : Eehm
+	Free: 
+	Constrained: 
+Turn ID=45| A | A : één Eiffeltoren twee kegel één slurf
+	Free: Pattern=kegel, Pattern=Eiffeltoren, Pattern=twee, Pattern=één
+	Constrained: 
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=48| B | B : zo dat zijn nog het moeilijk
+	Free: Pattern=zijn nog, Pattern=dat zijn, Pattern=het
+	Constrained: Pattern=nog, Pattern=dat, Pattern=zijn
+Turn ID=49| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=50| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=51| B | B : dit zijn weer met f een Eiffeltoren eruit twee van die kegel eruit en dat kronkelarm eruit
+	Free: Pattern=kegel, Pattern=twee, Pattern=een, Pattern=met, Pattern=die, Pattern=van, Pattern=en dat, Pattern=Eiffeltoren, Pattern=dit zijn
+	Constrained: Pattern=en, Pattern=dat, Pattern=zijn
+Turn ID=52| A | A : Eeh
+	Free: 
+	Constrained: 
+Turn ID=53| A | A : even zoeken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=54| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=55| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=56| A | A : dit zijn één keer de Eiffeltoren twee kegel en één slurf
+	Free: Pattern=kegel, Pattern=twee, Pattern=de, Pattern=één, Pattern=en, Pattern=Eiffeltoren, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=57| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=58| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=59| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

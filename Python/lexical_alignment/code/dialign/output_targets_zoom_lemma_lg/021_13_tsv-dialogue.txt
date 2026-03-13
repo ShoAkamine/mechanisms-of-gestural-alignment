@@ -1,0 +1,123 @@
+A|0| A: _Oké_ 
+A|1| A: _ik_ hebben hier weer _een plateau_ 
+A|2| A: maar deze keer zijn het _helemaal op de grond_ 
+B|3| B: [Oké] 
+B|4| B: dan _en_ _met_ van die klein bolle dan 
+A|5| A: _ja_ 
+B|6| B: [Oké] 
+B|7| B: even kijken 
+B|8| B: _ik zien een plateau_ [helemaal op de grond] 
+A|9| A: mhm 
+B|10| B: _en aan de zijkant_ _aan_ beide _kant_ _drie_ uitstekend bolle 
+A|11| A: _ja_ 
+A|12| A: Letter 
+A|13| A: [ik zien] 
+A|14| A: [aan de] voorkant [een] [een] rond 
+A|15| A: [en aan de zijkant] zitten 
+A|16| A: [drie] _bollet_ 
+A|17| A: [en aan de] ander [kant] ook 
+B|18| B: Oh [ja] 
+B|19| B: [en] [een] plateauo 
+A|20| A: [ja] 
+B|21| B: [ja] nummer 
+B|22| B: _ik zien een_ plateauo _met_ [drie] bolle [aan] ieder [kant] 
+A|23| A: [ja] letter 
+A|24| A: [ik zien een plateau] 
+A|25| A: [helemaal op de grond] 
+A|26| A: _met zes bollet_ 
+B|27| B: nummer 
+B|28| B: [ik zien een] plateauo [met zes bollet] [aan de zijkant] 
+A|29| A: [ja] letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ik hebben hier weer een plateau
+	Free: Pattern=een plateau, Pattern=ik
+	Constrained: Pattern=een
+Turn ID=2| A | A : maar deze keer zijn het helemaal op de grond
+	Free: Pattern=helemaal op de grond
+	Constrained: 
+Turn ID=3| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| B | B : dan en met van die klein bolle dan
+	Free: Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : ik zien een plateau helemaal op de grond
+	Free: Pattern=ik zien een plateau, Pattern=helemaal op de grond
+	Constrained: Pattern=ik zien, Pattern=ik, Pattern=ik zien een, Pattern=een, Pattern=een plateau
+Turn ID=9| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : en aan de zijkant aan beide kant drie uitstekend bolle
+	Free: Pattern=en aan de zijkant, Pattern=drie, Pattern=aan, Pattern=kant
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=en, Pattern=en aan de
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: Pattern=ik
+Turn ID=14| A | A : aan de voorkant een een rond
+	Free: Pattern=aan de, Pattern=een
+	Constrained: Pattern=aan
+Turn ID=15| A | A : en aan de zijkant zitten
+	Free: Pattern=en aan de zijkant
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de zijkant, Pattern=en, Pattern=en aan de
+Turn ID=16| A | A : drie bollet
+	Free: Pattern=bollet, Pattern=drie
+	Constrained: 
+Turn ID=17| A | A : en aan de ander kant ook
+	Free: Pattern=en aan de, Pattern=kant
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=en
+Turn ID=18| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : en een plateauo
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ik zien een plateauo met drie bolle aan ieder kant
+	Free: Pattern=kant, Pattern=aan, Pattern=drie, Pattern=met, Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=23| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ik zien een plateau
+	Free: Pattern=ik zien een plateau
+	Constrained: Pattern=ik zien, Pattern=ik, Pattern=ik zien een, Pattern=een, Pattern=een plateau
+Turn ID=25| A | A : helemaal op de grond
+	Free: Pattern=helemaal op de grond
+	Constrained: 
+Turn ID=26| A | A : met zes bollet
+	Free: Pattern=met zes bollet
+	Constrained: Pattern=met, Pattern=bollet
+Turn ID=27| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : ik zien een plateauo met zes bollet aan de zijkant
+	Free: Pattern=ik zien een, Pattern=aan de zijkant, Pattern=met zes bollet
+	Constrained: Pattern=bollet, Pattern=aan, Pattern=aan de, Pattern=een, Pattern=ik zien, Pattern=met, Pattern=ik
+Turn ID=29| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 

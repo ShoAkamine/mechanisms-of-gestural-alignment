@@ -1,0 +1,199 @@
+A|0| A: hoi 
+B|1| B: _Oké_ _ik hebben_ er één _met_ _een_ rood vierkant 
+A|2| A: mhm 
+B|3| B: _en_ _ik_ vinden hem erg lijken _op_ _een_ pinguïn 
+B|4| B: Eh _met_ _een soort van_ vierkanterig _snavel_ 
+A|5| A: [Oké] 
+B|6| B: _en_ _hij_ kijken naar rechts 
+B|7| B: _en dan_ _hebben hij_ _een soort van_ hoed _op_ 
+A|8| A: [en] [hebben hij] zeggen maar [een soort van] twee [snavel] _die_ zo boven elkaar staan 
+B|9| B: _ja_ _dus_ _ja_ precies _ja_ 
+A|10| A: [ja] [dan] [dan] _zijn_ _dat_ bij mij letter als het goed _zijn_ 
+B|11| B: _oké_ [en] _moeten ik_ [dan] _op_ 
+A|12| A: [dus] _die hebben_ ook zo'n staar _aan de_ onderkant toch 
+B|13| B: [ja] precies [ja] 
+A|14| A: [ja] [oké] 
+B|15| B: _en een_ vierkant [ja] 
+A|16| A: [ja] [oké] [dan] [moeten ik] volgens mij [op] _de_ knop drukken nu 
+B|17| B: [oké] 
+B|18| B: [ja] 
+A|19| A: [ja] 
+A|20| A: _eh dit zijn_ _die_ [een] [met] _die_ [snavel] 
+A|21| A: [en dan] _dat_ _dat_ kuifjé 
+A|22| A: _en dat staart_ 
+B|23| B: Nja nummer 
+A|24| A: [ja] 
+B|25| B: [eh _dit zijn] weer die_ pinguïn bek _aan de rechterkant_ 
+B|26| B: [met] _aan de bovenkant_ [dat] hoedje-achtig 
+B|27| B: [en dan] [ja] 
+A|28| A: [ja] 
+A|29| A: [een] vleugel [en een] staar 
+B|30| B: [ja] precies [ja] 
+A|31| A: _ja _dat_ zijn_ bij mij 
+A|32| A: [ik hebben] [weer die] [een] [met] [die] [met] [die] [snavel] [aan de rechterkant] [die] twee blok 
+A|33| A: [en dan] [met] [die] kegel [aan de bovenkant] [en] zo 
+B|34| B: [ja] 
+B|35| B: Oh [die hebben] je net niet 
+B|36| B: Oh 
+B|37| B: hmm 
+B|38| B: Eh [dat zijn] nummer 
+B|39| B: _dit zijn weer_ [de] pinguïnbek [aan de rechterkant] 
+B|40| B: [met] [een soort] hoed [aan de bovenkant] 
+A|41| A: _ja [dat_ zijn] bij mij 
+B|42| B: [en dat staart] 
+B|43| B: [ja] 
+A|44| A: ehm [dit zijn weer die] [een] [met] [die] [snavel] [aan de rechterkant] 
+B|45| B: [ja dat] 
+A|46| A: [en dan] [dat] kuifje [aan de bovenkant] 
+B|47| B: [ja] precies 
+B|48| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : hoi
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : Oké ik hebben er één met een rood vierkant
+	Free: Pattern=ik hebben, Pattern=een, Pattern=Oké, Pattern=met
+	Constrained: Pattern=ik
+Turn ID=2| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en ik vinden hem erg lijken op een pinguïn
+	Free: Pattern=op, Pattern=ik, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : Eh met een soort van vierkanterig snavel
+	Free: Pattern=een soort van, Pattern=met, Pattern=snavel
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=5| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| B | B : en hij kijken naar rechts
+	Free: Pattern=en, Pattern=hij
+	Constrained: 
+Turn ID=7| B | B : en dan hebben hij een soort van hoed op
+	Free: Pattern=een soort van, Pattern=en dan, Pattern=hebben hij, Pattern=op
+	Constrained: Pattern=dan, Pattern=een, Pattern=hij, Pattern=een soort, Pattern=en
+Turn ID=8| A | A : en hebben hij zeggen maar een soort van twee snavel die zo boven elkaar staan
+	Free: Pattern=hebben hij, Pattern=een soort van, Pattern=snavel, Pattern=die, Pattern=en
+	Constrained: Pattern=een soort, Pattern=hij, Pattern=een
+Turn ID=9| B | B : ja dus ja precies ja
+	Free: Pattern=dus, Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja dan dan zijn dat bij mij letter als het goed zijn
+	Free: Pattern=zijn, Pattern=dan, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : oké en moeten ik dan op
+	Free: Pattern=oké, Pattern=op, Pattern=en, Pattern=moeten ik, Pattern=dan
+	Constrained: Pattern=ik
+Turn ID=12| A | A : dus die hebben ook zo'n staar aan de onderkant toch
+	Free: Pattern=die hebben, Pattern=aan de, Pattern=dus
+	Constrained: Pattern=de, Pattern=die
+Turn ID=13| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : en een vierkant ja
+	Free: Pattern=en een, Pattern=ja
+	Constrained: Pattern=en, Pattern=een
+Turn ID=16| A | A : ja oké dan moeten ik volgens mij op de knop drukken nu
+	Free: Pattern=oké, Pattern=op, Pattern=de, Pattern=ja, Pattern=moeten ik, Pattern=dan
+	Constrained: Pattern=ik
+Turn ID=17| B | B : oké
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : eh dit zijn die een met die snavel
+	Free: Pattern=een, Pattern=met, Pattern=die, Pattern=eh dit zijn, Pattern=snavel
+	Constrained: Pattern=zijn
+Turn ID=21| A | A : en dan dat dat kuifjé
+	Free: Pattern=en dan, Pattern=dat
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=22| A | A : en dat staart
+	Free: Pattern=en dat staart
+	Constrained: Pattern=en, Pattern=dat
+Turn ID=23| B | B : Nja nummer
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : eh dit zijn weer die pinguïn bek aan de rechterkant
+	Free: Pattern=dit zijn weer die, Pattern=eh dit zijn, Pattern=aan de rechterkant
+	Constrained: Pattern=de, Pattern=aan de, Pattern=weer die, Pattern=die, Pattern=zijn, Pattern=dit zijn weer
+Turn ID=26| B | B : met aan de bovenkant dat hoedje-achtig
+	Free: Pattern=aan de bovenkant, Pattern=dat, Pattern=met
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=27| B | B : en dan ja
+	Free: Pattern=en dan, Pattern=ja
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : een vleugel en een staar
+	Free: Pattern=en een, Pattern=een
+	Constrained: Pattern=en, Pattern=een
+Turn ID=30| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja dat zijn bij mij
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=32| A | A : ik hebben weer die een met die met die snavel aan de rechterkant die twee blok
+	Free: Pattern=ik hebben, Pattern=een, Pattern=weer die, Pattern=snavel, Pattern=met, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=de, Pattern=die, Pattern=aan de, Pattern=ik
+Turn ID=33| A | A : en dan met die kegel aan de bovenkant en zo
+	Free: Pattern=en dan, Pattern=met, Pattern=die, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=dan, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : Oh die hebben je net niet
+	Free: Pattern=die hebben
+	Constrained: Pattern=die
+Turn ID=36| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : hmm
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : Eh dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=39| B | B : dit zijn weer de pinguïnbek aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=dit zijn weer, Pattern=de
+	Constrained: Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=40| B | B : met een soort hoed aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=een soort, Pattern=met
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=41| A | A : ja dat zijn bij mij
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=42| B | B : en dat staart
+	Free: Pattern=en dat staart
+	Constrained: Pattern=en, Pattern=dat
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| A | A : ehm dit zijn weer die een met die snavel aan de rechterkant
+	Free: Pattern=dit zijn weer die, Pattern=een, Pattern=snavel, Pattern=met, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=de, Pattern=aan de, Pattern=weer die, Pattern=die, Pattern=zijn, Pattern=dit zijn weer
+Turn ID=45| B | B : ja dat
+	Free: Pattern=ja dat
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=46| A | A : en dan dat kuifje aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=en dan, Pattern=dat
+	Constrained: Pattern=dan, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=47| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

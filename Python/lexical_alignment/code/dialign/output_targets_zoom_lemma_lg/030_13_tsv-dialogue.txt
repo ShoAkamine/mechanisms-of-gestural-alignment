@@ -1,0 +1,35 @@
+B|0| B: _Euh_ _ja_ dit zijn eigenlijk gewoon _een_ _beker_ op _een_ _euh_ dienblad _met_ _aan de zijkant_ _van_ die drie bollet _aan beide kant_ 
+A|1| A: Oh [ja] 
+A|2| A: Oké [Euh] _ik_ _hebben_ nu _de beker_ _met de kraalt_ [aan de zijkant] en [een] vlak [aan de] onderkant 
+B|3| B: [ja] 
+B|4| B: dan [hebben] [ik] [de beker] op het platform [met de kraalt] 
+A|5| A: Oh degeen [met de] ondervlak en [de kraalt] [aan beide kant] [van] [de beker] 
+B|6| B: [Euh] [de beker] op het platform [met] krael 
+A|7| A: [euh] [kraalt] en [de] vlak 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh ja dit zijn eigenlijk gewoon een beker op een euh dienblad met aan de zijkant van die drie bollet aan beide kant
+	Free: Pattern=beker, Pattern=ja, Pattern=aan beide kant, Pattern=Euh, Pattern=euh, Pattern=met, Pattern=van, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=de, Pattern=aan de
+Turn ID=1| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : Oké Euh ik hebben nu de beker met de kraalt aan de zijkant en een vlak aan de onderkant
+	Free: Pattern=de beker, Pattern=aan de, Pattern=Euh, Pattern=hebben, Pattern=ik, Pattern=met de kraalt, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=beker, Pattern=aan de, Pattern=met, Pattern=de kraalt, Pattern=kraalt, Pattern=de, Pattern=met de
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : dan hebben ik de beker op het platform met de kraalt
+	Free: Pattern=met de kraalt, Pattern=de beker, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=beker, Pattern=met, Pattern=de kraalt, Pattern=kraalt, Pattern=de, Pattern=met de
+Turn ID=5| A | A : Oh degeen met de ondervlak en de kraalt aan beide kant van de beker
+	Free: Pattern=de beker, Pattern=met de, Pattern=aan beide kant, Pattern=de kraalt, Pattern=van
+	Constrained: Pattern=de, Pattern=met, Pattern=kraalt, Pattern=beker
+Turn ID=6| B | B : Euh de beker op het platform met krael
+	Free: Pattern=de beker, Pattern=met, Pattern=Euh
+	Constrained: Pattern=beker, Pattern=de
+Turn ID=7| A | A : euh kraalt en de vlak
+	Free: Pattern=euh, Pattern=kraalt, Pattern=de
+	Constrained: 

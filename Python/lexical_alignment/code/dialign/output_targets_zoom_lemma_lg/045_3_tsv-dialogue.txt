@@ -1,0 +1,211 @@
+B|0| B: _volgens mij_ _zijn het_ geluid _aan_ _of_ _niet_ 
+A|1| A: _ja _ik_ weten_ [niet] [of] we al [zijn] beginnen 
+B|2| B: [ja ik] zien geen rood vierkant 
+B|3| B: [ik weten] [of] jij _een_ rood vierkant zien 
+A|4| A: _Oh_ _dan_ [ja] nee _dan [zijn_ het] bij [mij] 
+B|5| B: [Oh] [ja] oké 
+B|6| B: wat vinden je 
+A|7| A: nee [ik] denken 
+A|8| A: oh deze [ja] 
+B|9| B: wat vinden je _een_ handig manier om [het] _aan_ te aanpakken 
+A|10| A: [ik] zullen [het] _één_ omschrijven 
+A|11| A: en als _dat_ [niet] lukken _dan_ kunnen we nog [een] beetje ding uitbeelden 
+B|12| B: mhm 
+B|13| B: [ja] [zijn] goed 
+A|14| A: sommig vorm 
+B|15| B: mhm 
+B|16| B: [zijn] goed 
+A|17| A: _ehm_ _dan_ kijken we wel hoe [het] gaan 
+B|18| B: [ja] [zijn] goed 
+A|19| A: _dit zijn_ zo'n zo'n blauw kop 
+A|20| A: en hij hebben zo'n _soort_ van blok [aan] _één_ kant 
+A|21| A: en [een] arm [aan] _de_ ander kant 
+A|22| A: en hij staan _op_ _een soort_ van _schuin onderzetter_ [of] iets zoiets 
+A|23| A: _waar_ standbeeld ook _op_ staan 
+B|24| B: [een] [schuin onderzetter] 
+A|25| A: [ja] zo'n [ja] _een soort voetstuk_ 
+B|26| B: [een soort] [een soort voetstuk] 
+A|27| A: en _er_ zitten [een soort] van draai _in_ 
+B|28| B: _zijn er_ [één] _zijn er_ [een] _spiraal_ [in] 
+B|29| B: _Oké_ 
+A|30| A: [ja] precies 
+B|31| B: [ja] [dan] [weten] [ik] welk [het] [zijn] 
+A|32| A: _dat_ ka 
+A|33| A: _dat [zijn_ er] maar [één] [volgens mij] 
+B|34| B: [dan] 
+B|35| B: [ja] [dan zijn] [een] nummer 
+A|36| A: [Oké] [dan] 
+B|37| B: O [ja] [dan] moeten [ik] [op] [de] knop drukken 
+B|38| B: [ehm] [dit zijn] die [een] _met_ die _spiraal naar beneden_ 
+B|39| B: _met_ [dat] [waar] die [op] staat 
+A|40| A: [ja] [ja] [ja] 
+A|41| A: _dat zijn_ 
+A|42| A: en [dit zijn] weer [het] standbeeld 
+A|43| A: [met] zo'n [dat] [spiraal naar beneden] 
+B|44| B: [Oh] [ja] [dat zijn] nummer nummer 
+A|45| A: [het] [voetstuk] 
+B|46| B: [dit zijn] die [met] _de spiraal_ 
+A|47| A: [spiraal] [dat zijn] 
+A|48| A: _eh dit zijn_ [de spiraal] [aan] [de] onderkant 
+B|49| B: nummer 
+B|50| B: [eh dit zijn] die [met] [spiraal] 
+A|51| A: [spiraal] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : volgens mij zijn het geluid aan of niet
+	Free: Pattern=aan, Pattern=niet, Pattern=volgens mij, Pattern=zijn het, Pattern=of
+	Constrained: Pattern=mij, Pattern=het, Pattern=zijn
+Turn ID=1| A | A : ja ik weten niet of we al zijn beginnen
+	Free: Pattern=of, Pattern=niet, Pattern=ik weten, Pattern=ja ik, Pattern=zijn
+	Constrained: Pattern=weten, Pattern=ja, Pattern=ik
+Turn ID=2| B | B : ja ik zien geen rood vierkant
+	Free: Pattern=ja ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=3| B | B : ik weten of jij een rood vierkant zien
+	Free: Pattern=ik weten, Pattern=of, Pattern=een
+	Constrained: Pattern=weten, Pattern=ik
+Turn ID=4| A | A : Oh dan ja nee dan zijn het bij mij
+	Free: Pattern=zijn het, Pattern=ja, Pattern=dan, Pattern=dan zijn, Pattern=mij, Pattern=Oh
+	Constrained: Pattern=dan, Pattern=het, Pattern=zijn
+Turn ID=5| B | B : Oh ja oké
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : wat vinden je
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : nee ik denken
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=8| A | A : oh deze ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : wat vinden je een handig manier om het aan te aanpakken
+	Free: Pattern=het, Pattern=aan, Pattern=een
+	Constrained: 
+Turn ID=10| A | A : ik zullen het één omschrijven
+	Free: Pattern=één, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=11| A | A : en als dat niet lukken dan kunnen we nog een beetje ding uitbeelden
+	Free: Pattern=niet, Pattern=dat, Pattern=dan, Pattern=een
+	Constrained: 
+Turn ID=12| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ja zijn goed
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : sommig vorm
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : zijn goed
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : ehm dan kijken we wel hoe het gaan
+	Free: Pattern=dan, Pattern=het, Pattern=ehm
+	Constrained: 
+Turn ID=18| B | B : ja zijn goed
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dit zijn zo'n zo'n blauw kop
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=20| A | A : en hij hebben zo'n soort van blok aan één kant
+	Free: Pattern=soort, Pattern=één, Pattern=aan
+	Constrained: 
+Turn ID=21| A | A : en een arm aan de ander kant
+	Free: Pattern=aan, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=22| A | A : en hij staan op een soort van schuin onderzetter of iets zoiets
+	Free: Pattern=een soort, Pattern=schuin onderzetter, Pattern=of, Pattern=op
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=23| A | A : waar standbeeld ook op staan
+	Free: Pattern=waar, Pattern=op
+	Constrained: 
+Turn ID=24| B | B : een schuin onderzetter
+	Free: Pattern=schuin onderzetter, Pattern=een
+	Constrained: 
+Turn ID=25| A | A : ja zo'n ja een soort voetstuk
+	Free: Pattern=een soort voetstuk, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=voetstuk, Pattern=een, Pattern=soort
+Turn ID=26| B | B : een soort een soort voetstuk
+	Free: Pattern=een soort voetstuk, Pattern=een soort
+	Constrained: Pattern=een soort, Pattern=voetstuk, Pattern=een, Pattern=soort
+Turn ID=27| A | A : en er zitten een soort van draai in
+	Free: Pattern=een soort, Pattern=in, Pattern=er
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=28| B | B : zijn er één zijn er een spiraal in
+	Free: Pattern=een, Pattern=zijn er, Pattern=één, Pattern=in, Pattern=spiraal
+	Constrained: Pattern=er, Pattern=zijn
+Turn ID=29| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=30| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : ja dan weten ik welk het zijn
+	Free: Pattern=ja, Pattern=dan, Pattern=weten, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=32| A | A : dat ka
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=33| A | A : dat zijn er maar één volgens mij
+	Free: Pattern=zijn er, Pattern=volgens mij, Pattern=dat zijn, Pattern=één
+	Constrained: Pattern=mij, Pattern=dat, Pattern=er, Pattern=zijn
+Turn ID=34| B | B : dan
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=35| B | B : ja dan zijn een nummer
+	Free: Pattern=dan zijn, Pattern=ja, Pattern=een
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=36| A | A : Oké dan
+	Free: Pattern=dan, Pattern=Oké
+	Constrained: 
+Turn ID=37| B | B : O ja dan moeten ik op de knop drukken
+	Free: Pattern=op, Pattern=dan, Pattern=ik, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : ehm dit zijn die een met die spiraal naar beneden
+	Free: Pattern=spiraal naar beneden, Pattern=een, Pattern=dit zijn, Pattern=ehm, Pattern=met
+	Constrained: Pattern=spiraal, Pattern=zijn
+Turn ID=39| B | B : met dat waar die op staat
+	Free: Pattern=dat, Pattern=waar, Pattern=op, Pattern=met
+	Constrained: 
+Turn ID=40| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=42| A | A : en dit zijn weer het standbeeld
+	Free: Pattern=dit zijn, Pattern=het
+	Constrained: Pattern=zijn
+Turn ID=43| A | A : met zo'n dat spiraal naar beneden
+	Free: Pattern=spiraal naar beneden, Pattern=dat, Pattern=met
+	Constrained: Pattern=spiraal
+Turn ID=44| B | B : Oh ja dat zijn nummer nummer
+	Free: Pattern=dat zijn, Pattern=Oh, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=45| A | A : het voetstuk
+	Free: Pattern=voetstuk, Pattern=het
+	Constrained: 
+Turn ID=46| B | B : dit zijn die met de spiraal
+	Free: Pattern=de spiraal, Pattern=dit zijn, Pattern=met
+	Constrained: Pattern=spiraal, Pattern=zijn, Pattern=de
+Turn ID=47| A | A : spiraal dat zijn
+	Free: Pattern=dat zijn, Pattern=spiraal
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=48| A | A : eh dit zijn de spiraal aan de onderkant
+	Free: Pattern=eh dit zijn, Pattern=de spiraal, Pattern=aan, Pattern=de
+	Constrained: Pattern=dit zijn, Pattern=spiraal, Pattern=zijn, Pattern=de
+Turn ID=49| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=50| B | B : eh dit zijn die met spiraal
+	Free: Pattern=eh dit zijn, Pattern=spiraal, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=zijn
+Turn ID=51| A | A : spiraal dat zijn
+	Free: Pattern=dat zijn, Pattern=spiraal
+	Constrained: Pattern=dat, Pattern=zijn

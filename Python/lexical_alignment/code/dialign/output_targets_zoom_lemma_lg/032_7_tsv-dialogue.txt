@@ -1,0 +1,63 @@
+B|0| B: Euhm _ik hebben nu_ _met_ _een_ vierkant euh plateau in _de_ bovenkant waar twee boo nog aan zitten _een soort van_ en _een soort_ bakje _op_ vaststaan ook nog 
+A|1| A: ah _ja_ [een soort van] _zweven bank_ vinden [ik] _dat_ 
+B|2| B: [ja] 
+A|3| A: [ja] oké dan _zijn_ het 
+A|4| A: [ik hebben nu] _dat zweven_ plank _met die bak_ dr [op] 
+B|5| B: Euh 
+B|6| B: Euh deze [hebben] _dat zweven bankje met die bak_ erop 
+A|7| A: Yes _dat zijn_ 
+A|8| A: [ik hebben nu] [dat _zweven] bank_ _met de_ [bak] dr [op] 
+B|9| B: [dat zijn] 
+B|10| B: Euh dit [zijn] [met de] [zweven bank] 
+B|11| B: [met die bak] erop 
+A|12| A: Oké [dat zijn] 
+A|13| A: [ik hebben nu] weer [dat zweven bankje met die bak] 
+B|14| B: Euh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm ik hebben nu met een vierkant euh plateau in de bovenkant waar twee boo nog aan zitten een soort van en een soort bakje op vaststaan ook nog
+	Free: Pattern=de, Pattern=op, Pattern=een, Pattern=een soort van, Pattern=met, Pattern=een soort, Pattern=ik hebben nu
+	Constrained: Pattern=een soort, Pattern=een, Pattern=ik, Pattern=hebben
+Turn ID=1| A | A : ah ja een soort van zweven bank vinden ik dat
+	Free: Pattern=dat, Pattern=ja, Pattern=een soort van, Pattern=zweven bank, Pattern=ik
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : ja oké dan zijn het
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : ik hebben nu dat zweven plank met die bak dr op
+	Free: Pattern=ik hebben nu, Pattern=met die bak, Pattern=dat zweven, Pattern=op
+	Constrained: Pattern=dat, Pattern=bak, Pattern=hebben, Pattern=met, Pattern=ik
+Turn ID=5| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Euh deze hebben dat zweven bankje met die bak erop
+	Free: Pattern=dat zweven bankje met die bak, Pattern=hebben
+	Constrained: Pattern=dat, Pattern=dat zweven, Pattern=bak, Pattern=met, Pattern=met die bak
+Turn ID=7| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=8| A | A : ik hebben nu dat zweven bank met de bak dr op
+	Free: Pattern=met de, Pattern=op, Pattern=dat zweven, Pattern=bak, Pattern=zweven bank, Pattern=ik hebben nu
+	Constrained: Pattern=dat, Pattern=de, Pattern=hebben, Pattern=met, Pattern=ik
+Turn ID=9| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=10| B | B : Euh dit zijn met de zweven bank
+	Free: Pattern=zweven bank, Pattern=met de, Pattern=zijn
+	Constrained: Pattern=met, Pattern=de
+Turn ID=11| B | B : met die bak erop
+	Free: Pattern=met die bak
+	Constrained: Pattern=bak, Pattern=met
+Turn ID=12| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=13| A | A : ik hebben nu weer dat zweven bankje met die bak
+	Free: Pattern=dat zweven bankje met die bak, Pattern=ik hebben nu
+	Constrained: Pattern=dat, Pattern=dat zweven, Pattern=bak, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=met die bak
+Turn ID=14| B | B : Euh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

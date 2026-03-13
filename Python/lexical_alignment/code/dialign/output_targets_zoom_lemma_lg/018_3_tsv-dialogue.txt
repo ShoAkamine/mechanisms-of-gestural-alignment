@@ -1,0 +1,163 @@
+A|0| A: _ja_ _het_ helpen vooral om _naar_ _de_ onderkant te kijken 
+A|1| A: _dan_ _zien_ je _dat_ hij op _een_ _driehoek_ staan 
+A|2| A: _en dat_ hij _zo_ _een_ beetje draaien _zijn_ 
+B|3| B: _Oh_ _met_ zo'n wokkel 
+B|4| B: [ja] _ik_ [zien] hem al 
+B|5| B: zo'n soort trofee of [zo] 
+A|6| A: _ja ja_ 
+B|7| B: [ja] 
+A|8| A: [ja] als [ja] _en_ _een_ _blok_ _dat_ _er_ op liggen _dat_ _er bijna_ _maar_ net niet af vallen [ja] 
+B|9| B: [ja] 
+B|10| B: [ja [ja] ja] 
+B|11| B: _dat zijn bij mij_ 
+B|12| B: _Oh ik hebben nu_ één _die_ we al _hebben_ _hebben_ 
+B|13| B: [maar] _nu_ [zijn] [het] van [de] achterkant 
+A|14| A: Hm-hm 
+A|15| A: Hm-hm 
+B|16| B: dit [zijn] _met_ _die_ driehoekje onder _aan_ _en dan_ zo'n spiraal [naar] boven 
+A|17| A: Hm-hm 
+A|18| A: _Oh ja_ 
+B|19| B: _en dan_ zo'n [blok] wat _er bijna afvallen_ 
+A|20| A: _Oh _ja_ [dat zijn_ bij mij] 
+A|21| A: [Oh ik hebben] degeen [met] [de] _driehoek_ 
+A|22| A: [en dan] waar [die] [er] [zo] draaien op staat 
+A|23| A: [en] [het] [blok] [dat] [er bijna afvallen] 
+B|24| B: [Oh ja] 
+A|25| A: Oké 
+B|26| B: [ja dat zijn] 
+B|27| B: [ik hebben] [die] [met] [die] wokkel onderaan 
+B|28| B: [en dat] [driehoek] 
+A|29| A: Oké [dat zijn bij mij] 
+A|30| A: [Oh ik hebben nu] [driehoek] 
+A|31| A: [en dan] draaien [aan] [de] onderkant 
+B|32| B: [ja ja] 
+A|33| A: [met] [het] 
+A|34| A: Oké [ja] 
+B|35| B: [dat zijn] 
+B|36| B: [ik hebben nu] [het] [driehoek] [met] [een] wokkel 
+B|37| B: [er] onderaan 
+A|38| A: Oké 
+A|39| A: Oké [dat zijn bij mij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja het helpen vooral om naar de onderkant te kijken
+	Free: Pattern=de, Pattern=ja, Pattern=naar, Pattern=het
+	Constrained: 
+Turn ID=1| A | A : dan zien je dat hij op een driehoek staan
+	Free: Pattern=driehoek, Pattern=dat, Pattern=dan, Pattern=een, Pattern=zien
+	Constrained: 
+Turn ID=2| A | A : en dat hij zo een beetje draaien zijn
+	Free: Pattern=en dat, Pattern=zijn, Pattern=een, Pattern=zo
+	Constrained: Pattern=dat, Pattern=en
+Turn ID=3| B | B : Oh met zo'n wokkel
+	Free: Pattern=met, Pattern=Oh
+	Constrained: 
+Turn ID=4| B | B : ja ik zien hem al
+	Free: Pattern=ik, Pattern=ja, Pattern=zien
+	Constrained: 
+Turn ID=5| B | B : zo'n soort trofee of zo
+	Free: Pattern=zo
+	Constrained: 
+Turn ID=6| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja als ja en een blok dat er op liggen dat er bijna maar net niet af vallen ja
+	Free: Pattern=dat, Pattern=ja, Pattern=er bijna, Pattern=een, Pattern=er, Pattern=en, Pattern=blok, Pattern=maar
+	Constrained: Pattern=er
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn
+Turn ID=12| B | B : Oh ik hebben nu één die we al hebben hebben
+	Free: Pattern=Oh ik hebben nu, Pattern=die, Pattern=hebben
+	Constrained: Pattern=ik hebben, Pattern=Oh ik hebben, Pattern=nu, Pattern=hebben, Pattern=ik, Pattern=Oh, Pattern=ik hebben nu
+Turn ID=13| B | B : maar nu zijn het van de achterkant
+	Free: Pattern=de, Pattern=nu, Pattern=het, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=14| A | A : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : dit zijn met die driehoekje onder aan en dan zo'n spiraal naar boven
+	Free: Pattern=aan, Pattern=en dan, Pattern=met, Pattern=die, Pattern=zijn, Pattern=naar
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=17| A | A : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=19| B | B : en dan zo'n blok wat er bijna afvallen
+	Free: Pattern=er bijna afvallen, Pattern=en dan, Pattern=blok
+	Constrained: Pattern=dan, Pattern=er bijna, Pattern=en, Pattern=er
+Turn ID=20| A | A : Oh ja dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=ja dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=21| A | A : Oh ik hebben degeen met de driehoek
+	Free: Pattern=Oh ik hebben, Pattern=de, Pattern=driehoek, Pattern=met
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=Oh, Pattern=hebben
+Turn ID=22| A | A : en dan waar die er zo draaien op staat
+	Free: Pattern=en dan, Pattern=die, Pattern=zo, Pattern=er
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=23| A | A : en het blok dat er bijna afvallen
+	Free: Pattern=dat, Pattern=het, Pattern=er bijna afvallen, Pattern=en, Pattern=blok
+	Constrained: Pattern=er bijna, Pattern=er
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=25| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=27| B | B : ik hebben die met die wokkel onderaan
+	Free: Pattern=ik hebben, Pattern=die, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=28| B | B : en dat driehoek
+	Free: Pattern=en dat, Pattern=driehoek
+	Constrained: Pattern=dat, Pattern=en
+Turn ID=29| A | A : Oké dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn
+Turn ID=30| A | A : Oh ik hebben nu driehoek
+	Free: Pattern=Oh ik hebben nu, Pattern=driehoek
+	Constrained: Pattern=ik hebben, Pattern=Oh ik hebben, Pattern=nu, Pattern=hebben, Pattern=ik, Pattern=Oh, Pattern=ik hebben nu
+Turn ID=31| A | A : en dan draaien aan de onderkant
+	Free: Pattern=en dan, Pattern=de, Pattern=aan
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=32| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=33| A | A : met het
+	Free: Pattern=met, Pattern=het
+	Constrained: 
+Turn ID=34| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| B | B : ik hebben nu het driehoek met een wokkel
+	Free: Pattern=driehoek, Pattern=een, Pattern=het, Pattern=met, Pattern=ik hebben nu
+	Constrained: Pattern=nu, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=37| B | B : er onderaan
+	Free: Pattern=er
+	Constrained: 
+Turn ID=38| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : Oké dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=dat zijn

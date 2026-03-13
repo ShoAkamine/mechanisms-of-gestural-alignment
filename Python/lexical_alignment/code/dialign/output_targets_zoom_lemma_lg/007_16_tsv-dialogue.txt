@@ -1,0 +1,259 @@
+A|0| A: _dit_ plaat _hebben aan_ _al_ _drie_ _de_ _zijkant_ _een_ _een_ uitsteeksel 
+A|1| A: _het_ _zijn_ _al_ _drie verschillend_ uitsteeksel 
+A|2| A: _en aan de bovenkant_ _zitten_ _er_ _ook_ _een_ uitsteeksel 
+A|3| A: _alsof er een_ _soort_ _lepel in_ _de kom_ _zitten_ 
+B|4| B: Oké 
+B|5| B: [en] _je_ _zeggen_ [aan] [drie] _kant_ 
+B|6| B: welk _kant_ bedoelen _je_ dan 
+A|7| A: _al_ [drie] _de_ [kant] _van_ [zeggen] maar _de kom_ 
+A|8| A: _dus_ _link_ _voor_ _en aan de rechterkant_ 
+B|9| B: Oké 
+B|10| B: Links [voor] 
+A|11| A: _dus_ niet _eronder_ 
+B|12| B: [aan de] 
+B|13| B: Oké 
+B|14| B: niks [eronder] 
+B|15| B: even kijken 
+B|16| B: [en aan de bovenkant] lijken [het] weer [alsof er een] [lepel in] [zitten] [zeggen] _je_ hè 
+A|17| A: _ja_ 
+B|18| B: even kijken 
+B|19| B: _zijn die_ [aan de bovenkant] [en aan de] linkerkant lijken _die_ op elkaar 
+A|20| A: Vind _ik_ niet heel erg 
+B|21| B: Oké 
+A|22| A: _ja_ _ja_ _aan de voorkant_ [en aan de bovenkant] 
+A|23| A: [die] [zijn] hetzelfde 
+A|24| A: _en aan de rechterkant zitten_ [een] _soort_ vierkant Uitwerpsel 
+B|25| B: Oké 
+B|26| B: _ja dat_ lijken dan op [een] blok 
+B|27| B: [en] daarnaast _nog een_ blok 
+B|28| B: [en] dan _nog een_ blok 
+B|29| B: _dat_ [van] groot [van] [van] [link] naar rechts [van] klein naar groot 
+A|30| A: [ja] 
+A|31| A: [ja] 
+B|32| B: Oké _dat zijn_ _bij mij_ _nummer_ 
+B|33| B: [ik] vinden deze op 
+B|34| B: [alsof] _je_ [een] _joystick_ [hebben] 
+B|35| B: bovenop [de kom] 
+B|36| B: [en] _die joystick_ [zitten] eigenlijk [ook] [aan de] linkerkant 
+B|37| B: [en aan de rechterkant zitten] weer zo'n _toren_ _met_ allemaal blok 
+A|38| A: [en _aan de] voorkant_ [zitten] [ook] [nog een] uitsteeksel 
+B|39| B: [ja] precies 
+B|40| B: [en] _dat_ 
+B|41| B: [dus] _je [hebben_ [aan] de rechterkant] [die] 
+A|42| A: [je hebben] [drie] [drie] uitsteeksel 
+A|43| A: [en] [in] [de kom] [zitten] [ook] [een] uitsteeksel 
+B|44| B: [ja] precies 
+A|45| A: [die joystick] 
+B|46| B: [en] [die joystick] 
+A|47| A: [ja] 
+B|48| B: [en] [die joystick] lijken [ook] [aan de voorkant] te [zitten] 
+A|49| A: [dat zijn] [nummer] [bij mij] 
+B|50| B: achterkant [soort] 
+B|51| B: Yes 
+A|52| A: _dit _zijn_ het_ plaat [met] [de] [lepel] erin 
+A|53| A: [en aan de] [drie] _zijkant_ _verschillend_ [toren] 
+B|54| B: Yes [die] [ik] omschrijven als [een] [joystick] 
+A|55| A: [ja] [die] [ja] 
+B|56| B: Top dan [zijn het] [nummer] 
+B|57| B: [dit zijn] [de] [joystick] bovenop 
+B|58| B: [met] [die] [drie verschillend] [zijkant] 
+A|59| A: [ja] [nummer] 
+A|60| A: [dit [zijn] [die] joystick] 
+B|61| B: [dit zijn] [de] [joystick] 
+B|62| B: [met] [al] [die] ander 
+A|63| A: ah [ja [dat] zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit plaat hebben aan al drie de zijkant een een uitsteeksel
+	Free: Pattern=de, Pattern=al, Pattern=een, Pattern=drie, Pattern=zijkant, Pattern=hebben aan, Pattern=dit
+	Constrained: Pattern=aan, Pattern=hebben
+Turn ID=1| A | A : het zijn al drie verschillend uitsteeksel
+	Free: Pattern=drie verschillend, Pattern=zijn, Pattern=al, Pattern=het
+	Constrained: Pattern=verschillend, Pattern=drie
+Turn ID=2| A | A : en aan de bovenkant zitten er ook een uitsteeksel
+	Free: Pattern=ook, Pattern=een, Pattern=zitten, Pattern=er, Pattern=en aan de bovenkant
+	Constrained: Pattern=aan de, Pattern=en aan de, Pattern=de, Pattern=aan, Pattern=aan de bovenkant, Pattern=en
+Turn ID=3| A | A : alsof er een soort lepel in de kom zitten
+	Free: Pattern=soort, Pattern=alsof er een, Pattern=zitten, Pattern=de kom, Pattern=lepel in
+	Constrained: Pattern=lepel, Pattern=de, Pattern=een, Pattern=in, Pattern=alsof, Pattern=er
+Turn ID=4| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : en je zeggen aan drie kant
+	Free: Pattern=kant, Pattern=aan, Pattern=drie, Pattern=zeggen, Pattern=en, Pattern=je
+	Constrained: 
+Turn ID=6| B | B : welk kant bedoelen je dan
+	Free: Pattern=je, Pattern=kant
+	Constrained: 
+Turn ID=7| A | A : al drie de kant van zeggen maar de kom
+	Free: Pattern=kant, Pattern=de, Pattern=al, Pattern=drie, Pattern=zeggen, Pattern=van, Pattern=de kom
+	Constrained: Pattern=de
+Turn ID=8| A | A : dus link voor en aan de rechterkant
+	Free: Pattern=en aan de rechterkant, Pattern=voor, Pattern=dus, Pattern=link
+	Constrained: Pattern=aan de, Pattern=aan de rechterkant, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=9| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Links voor
+	Free: Pattern=voor
+	Constrained: 
+Turn ID=11| A | A : dus niet eronder
+	Free: Pattern=eronder, Pattern=dus
+	Constrained: 
+Turn ID=12| B | B : aan de
+	Free: Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=13| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : niks eronder
+	Free: Pattern=eronder
+	Constrained: 
+Turn ID=15| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : en aan de bovenkant lijken het weer alsof er een lepel in zitten zeggen je hè
+	Free: Pattern=het, Pattern=zeggen, Pattern=alsof er een, Pattern=zitten, Pattern=en aan de bovenkant, Pattern=je, Pattern=lepel in
+	Constrained: Pattern=lepel, Pattern=aan de, Pattern=een, Pattern=in, Pattern=alsof, Pattern=er, Pattern=en aan de, Pattern=de, Pattern=aan, Pattern=aan de bovenkant, Pattern=en
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : zijn die aan de bovenkant en aan de linkerkant lijken die op elkaar
+	Free: Pattern=aan de bovenkant, Pattern=en aan de, Pattern=zijn die, Pattern=die
+	Constrained: Pattern=aan de, Pattern=die, Pattern=en, Pattern=zijn, Pattern=de, Pattern=aan
+Turn ID=20| A | A : Vind ik niet heel erg
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=21| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ja ja aan de voorkant en aan de bovenkant
+	Free: Pattern=en aan de bovenkant, Pattern=aan de voorkant, Pattern=ja
+	Constrained: Pattern=aan de, Pattern=en aan de, Pattern=de, Pattern=aan, Pattern=aan de bovenkant, Pattern=en
+Turn ID=23| A | A : die zijn hetzelfde
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=24| A | A : en aan de rechterkant zitten een soort vierkant Uitwerpsel
+	Free: Pattern=en aan de rechterkant zitten, Pattern=soort, Pattern=een
+	Constrained: Pattern=aan de, Pattern=en aan de rechterkant, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan, Pattern=aan de rechterkant, Pattern=zitten
+Turn ID=25| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ja dat lijken dan op een blok
+	Free: Pattern=ja dat, Pattern=een
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=27| B | B : en daarnaast nog een blok
+	Free: Pattern=nog een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=28| B | B : en dan nog een blok
+	Free: Pattern=nog een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=29| B | B : dat van groot van van link naar rechts van klein naar groot
+	Free: Pattern=van, Pattern=dat, Pattern=link
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : Oké dat zijn bij mij nummer
+	Free: Pattern=bij mij, Pattern=dat zijn, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=33| B | B : ik vinden deze op
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=34| B | B : alsof je een joystick hebben
+	Free: Pattern=een, Pattern=hebben, Pattern=joystick, Pattern=alsof, Pattern=je
+	Constrained: 
+Turn ID=35| B | B : bovenop de kom
+	Free: Pattern=de kom
+	Constrained: Pattern=de
+Turn ID=36| B | B : en die joystick zitten eigenlijk ook aan de linkerkant
+	Free: Pattern=zitten, Pattern=en, Pattern=die joystick, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=joystick, Pattern=aan, Pattern=die, Pattern=de
+Turn ID=37| B | B : en aan de rechterkant zitten weer zo'n toren met allemaal blok
+	Free: Pattern=en aan de rechterkant zitten, Pattern=toren, Pattern=met
+	Constrained: Pattern=aan de, Pattern=en aan de rechterkant, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan, Pattern=aan de rechterkant, Pattern=zitten
+Turn ID=38| A | A : en aan de voorkant zitten ook nog een uitsteeksel
+	Free: Pattern=nog een, Pattern=ook, Pattern=zitten, Pattern=aan de voorkant, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=39| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : en dat
+	Free: Pattern=dat, Pattern=en
+	Constrained: 
+Turn ID=41| B | B : dus je hebben aan de rechterkant die
+	Free: Pattern=dus, Pattern=je hebben, Pattern=hebben aan, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=aan de, Pattern=hebben, Pattern=je, Pattern=de, Pattern=aan
+Turn ID=42| A | A : je hebben drie drie uitsteeksel
+	Free: Pattern=je hebben, Pattern=drie
+	Constrained: Pattern=je, Pattern=hebben
+Turn ID=43| A | A : en in de kom zitten ook een uitsteeksel
+	Free: Pattern=ook, Pattern=een, Pattern=in, Pattern=zitten, Pattern=en, Pattern=de kom
+	Constrained: Pattern=de
+Turn ID=44| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : die joystick
+	Free: Pattern=die joystick
+	Constrained: Pattern=joystick, Pattern=die
+Turn ID=46| B | B : en die joystick
+	Free: Pattern=die joystick, Pattern=en
+	Constrained: Pattern=joystick, Pattern=die
+Turn ID=47| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : en die joystick lijken ook aan de voorkant te zitten
+	Free: Pattern=zitten, Pattern=en, Pattern=aan de voorkant, Pattern=die joystick, Pattern=ook
+	Constrained: Pattern=aan de, Pattern=die, Pattern=joystick, Pattern=de, Pattern=aan
+Turn ID=49| A | A : dat zijn nummer bij mij
+	Free: Pattern=bij mij, Pattern=dat zijn, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=50| B | B : achterkant soort
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=51| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=52| A | A : dit zijn het plaat met de lepel erin
+	Free: Pattern=de, Pattern=met, Pattern=dit zijn, Pattern=zijn het, Pattern=lepel
+	Constrained: Pattern=zijn, Pattern=dit, Pattern=het
+Turn ID=53| A | A : en aan de drie zijkant verschillend toren
+	Free: Pattern=toren, Pattern=verschillend, Pattern=drie, Pattern=zijkant, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=aan, Pattern=de, Pattern=en
+Turn ID=54| B | B : Yes die ik omschrijven als een joystick
+	Free: Pattern=joystick, Pattern=ik, Pattern=die, Pattern=een
+	Constrained: 
+Turn ID=55| A | A : ja die ja
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=56| B | B : Top dan zijn het nummer
+	Free: Pattern=zijn het, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=57| B | B : dit zijn de joystick bovenop
+	Free: Pattern=dit zijn, Pattern=joystick, Pattern=de
+	Constrained: Pattern=zijn, Pattern=dit
+Turn ID=58| B | B : met die drie verschillend zijkant
+	Free: Pattern=drie verschillend, Pattern=die, Pattern=met, Pattern=zijkant
+	Constrained: Pattern=verschillend, Pattern=drie
+Turn ID=59| A | A : ja nummer
+	Free: Pattern=nummer, Pattern=ja
+	Constrained: 
+Turn ID=60| A | A : dit zijn die joystick
+	Free: Pattern=die joystick, Pattern=zijn die, Pattern=dit zijn
+	Constrained: Pattern=joystick, Pattern=zijn, Pattern=die, Pattern=dit
+Turn ID=61| B | B : dit zijn de joystick
+	Free: Pattern=dit zijn, Pattern=joystick, Pattern=de
+	Constrained: Pattern=zijn, Pattern=dit
+Turn ID=62| B | B : met al die ander
+	Free: Pattern=die, Pattern=met, Pattern=al
+	Constrained: 
+Turn ID=63| A | A : ah ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=ja

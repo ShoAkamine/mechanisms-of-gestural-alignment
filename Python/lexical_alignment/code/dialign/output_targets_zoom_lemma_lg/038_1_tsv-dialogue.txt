@@ -1,0 +1,139 @@
+A|0| A: Oké _euh_ hier _zitten_ rechts voorin _een soort_ vierkan 
+A|1| A: Ehm _en_ links _twee_ _van_ _die_ 
+A|2| A: _ja_ blokstructuor 
+A|3| A: _Euhm_ waarbij het één _van_ links _naar_ rechts het blok steeds _klein_ worden 
+B|4| B: [ja] 
+A|5| A: _en_ dan _zitten_ er _bovenop_ nog _een_ 
+A|6| A: [ja] er _zitten een_ [ja] _een hendel_ 
+B|7| B: [een hendel] 
+A|8| A: _ja dat_ doen me _een beetje_ _aan_ [een] boot denken 
+B|9| B: [ja] 
+B|10| B: Oh [ja] oké 
+A|11| A: [ja] 
+B|12| B: [Euhm] 
+B|13| B: _dat zijn_ 
+B|14| B: Euh 
+B|15| B: deze _zijn_ deze hebben [een] ruitvormig _donker_ vlak vooraan [en] _aan de_ linkerkant [zitten] _die twee_ 
+B|16| B: [Euhm] 
+B|17| B: [ja] _handvatt_ moeten ik maar zeggen [die] [van] groot [naar] [klein] gaan [een beetje] hoekig 
+B|18| B: [en] [bovenop] [zitten [een] soort] _versnellingspook_ 
+A|19| A: _ja _ja_ dat zijn_ 
+A|20| A: [Euhm] 
+A|21| A: _dit zijn_ [die] _met_ [die twee] [ja] [soort] [handvatt] [aan de] zijkant [en] dan [dat] [donker] vierkant [aan de] voorkant 
+A|22| A: [en] [die] [versnellingspook] [ja] er [bovenop] [ja] 
+B|23| B: [met] [de] [versnellingspook] 
+B|24| B: [ja] oké 
+B|25| B: [ja dat zijn] 
+B|26| B: [euh] [dit zijn] [de] [versnellingspook] [met] [dat] rui vooraan 
+A|27| A: kijken [met] [die twee] ding [aan de] zijkant 
+B|28| B: [ja ja] 
+A|29| A: [ja dat zijn] 
+A|30| A: ehm even kijken [die] [versnellingspook] [dat] vierkan voorop 
+B|31| B: Yes [dat zijn] 
+B|32| B: [euh] [dit zijn] [de] [versnellingspook] 
+A|33| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké euh hier zitten rechts voorin een soort vierkan
+	Free: Pattern=een soort, Pattern=zitten, Pattern=euh
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=1| A | A : Ehm en links twee van die
+	Free: Pattern=en, Pattern=twee, Pattern=die, Pattern=van
+	Constrained: 
+Turn ID=2| A | A : ja blokstructuor
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : Euhm waarbij het één van links naar rechts het blok steeds klein worden
+	Free: Pattern=klein, Pattern=naar, Pattern=van, Pattern=Euhm
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en dan zitten er bovenop nog een
+	Free: Pattern=en, Pattern=bovenop, Pattern=een, Pattern=zitten
+	Constrained: 
+Turn ID=6| A | A : ja er zitten een ja een hendel
+	Free: Pattern=zitten een, Pattern=een hendel, Pattern=ja
+	Constrained: Pattern=een, Pattern=zitten
+Turn ID=7| B | B : een hendel
+	Free: Pattern=een hendel
+	Constrained: Pattern=een
+Turn ID=8| A | A : ja dat doen me een beetje aan een boot denken
+	Free: Pattern=een beetje, Pattern=ja dat, Pattern=een, Pattern=aan
+	Constrained: Pattern=dat, Pattern=ja, Pattern=een
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oh ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : deze zijn deze hebben een ruitvormig donker vlak vooraan en aan de linkerkant zitten die twee
+	Free: Pattern=aan de, Pattern=een, Pattern=die twee, Pattern=zitten, Pattern=zijn, Pattern=en, Pattern=donker
+	Constrained: Pattern=twee, Pattern=die, Pattern=aan, Pattern=de
+Turn ID=16| B | B : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=17| B | B : ja handvatt moeten ik maar zeggen die van groot naar klein gaan een beetje hoekig
+	Free: Pattern=ja, Pattern=die, Pattern=van, Pattern=een beetje, Pattern=naar, Pattern=handvatt, Pattern=klein
+	Constrained: Pattern=een
+Turn ID=18| B | B : en bovenop zitten een soort versnellingspook
+	Free: Pattern=versnellingspook, Pattern=bovenop, Pattern=en, Pattern=zitten een, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=zitten
+Turn ID=19| A | A : ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja ja
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=20| A | A : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=21| A | A : dit zijn die met die twee ja soort handvatt aan de zijkant en dan dat donker vierkant aan de voorkant
+	Free: Pattern=dat, Pattern=soort, Pattern=ja, Pattern=aan de, Pattern=die twee, Pattern=met, Pattern=die, Pattern=handvatt, Pattern=dit zijn, Pattern=en, Pattern=donker
+	Constrained: Pattern=twee, Pattern=die, Pattern=zijn, Pattern=de, Pattern=aan
+Turn ID=22| A | A : en die versnellingspook ja er bovenop ja
+	Free: Pattern=versnellingspook, Pattern=bovenop, Pattern=ja, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=23| B | B : met de versnellingspook
+	Free: Pattern=versnellingspook, Pattern=met, Pattern=de
+	Constrained: 
+Turn ID=24| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=26| B | B : euh dit zijn de versnellingspook met dat rui vooraan
+	Free: Pattern=versnellingspook, Pattern=dat, Pattern=de, Pattern=euh, Pattern=met, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=27| A | A : kijken met die twee ding aan de zijkant
+	Free: Pattern=aan de, Pattern=die twee, Pattern=met
+	Constrained: Pattern=twee, Pattern=die, Pattern=aan, Pattern=de
+Turn ID=28| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=29| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=30| A | A : ehm even kijken die versnellingspook dat vierkan voorop
+	Free: Pattern=dat, Pattern=die, Pattern=versnellingspook
+	Constrained: 
+Turn ID=31| B | B : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=32| B | B : euh dit zijn de versnellingspook
+	Free: Pattern=dit zijn, Pattern=versnellingspook, Pattern=euh, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=33| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn

@@ -1,0 +1,171 @@
+B|0| B: Ah _oké_ 
+B|1| B: _Euhm_ 
+B|2| B: hoi 
+A|3| A: Hi 
+B|4| B: hoi 
+B|5| B: _Euhm_ _oké_ laten _we_ beginnen 
+A|6| A: Yes _ja ja_ 
+B|7| B: _Euh_ [ja] _ik_ _ik_ zien het vierkan dus dus _ik_ _ik_ moeten denken _ik_ _gaan_ beschrijven 
+B|8| B: _Euhm_ dus _Euhm_ _de_ manier waarop _ik_ het zullen beschrijven dus _een euh_ pot _die_ _voor_ _een_ klein gedeelte onder _een_ oppervlakte _zijn_ zakken 
+A|9| A: [Euh] _dat zijn_ _dan_ waarschijnlijk I 
+B|10| B: _en_ 
+B|11| B: _ja dat_ weten _ik_ niet want _ik_ ander _ik_ zien cijfer dus 
+A|12| A: Oh _even_ euhm _kijken_ 
+A|13| A: [ja] _hebben_ hij toevallig _ook [een_ euh] lang _slurf_ 
+B|14| B: [ja ja] 
+A|15| A: [en] _twee_ van _die euh_ dinget _op_ [euh] 
+B|16| B: [die] streepjes _op de bovenkant_ 
+A|17| A: [ja] [oké] _dan hebben_ [we] hem hè 
+B|18| B: [ja ja] 
+B|19| B: [ja] 
+A|20| A: [op de] knop drukken 
+A|21| A: [ja] [oké] Got it 
+A|22| A: _dan hebben ik_ [Euhm] [ja] [de] Cup [die] in [een] houdert [zijn] plaatsen _met_ zo'n soort _slurf_ glijbaanneus 
+B|23| B: [ja ja] 
+B|24| B: [dat zijn] 
+A|25| A: _twee staaf_ bovenop [ja] 
+B|26| B: [Euh] [ja] [ik] [hebben] diegene [die euh] [ook een] beetje door [dat] oppervlakte zakken _met die_ [slurf] _en die _twee staaf_ op de bovenkant_ 
+A|27| A: Slurven [twee staaf op de bovenkant] 
+A|28| A: [Euhm] [ja] slurven [twee staaf] 
+A|29| A: Oh [ja [dat] zijn] 
+A|30| A: Yes 
+A|31| A: _dan_ [gaan] [ik] naar [die] Cup [met die] slurfneu [en die twee staaf] aan [de bovenkant] 
+B|32| B: [ja] [euh] _dat zijn voor mij_ 
+A|33| A: [dat zijn voor mij] 
+A|34| A: [ja] 
+B|35| B: [Euh] [dan hebben ik] diegene [die] zeggen maar [een] beetje door [dat] oppervlakte heen zakt 
+B|36| B: [met die] [slurf] [en die [twee staaf] op de bovenkant] 
+A|37| A: [ja dat] [hebben ik] [ook] nu [en] [dat zijn] 
+A|38| A: [dan hebben] [Euhm] [ik] [de] olifantenneus 
+B|39| B: [ja] [even] [kijken] 
+B|40| B: [dat zijn voor mij] waar staan [dat] ding 
+A|41| A: [twee staaf] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ah oké
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=1| B | B : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=2| B | B : hoi
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : Hi
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : hoi
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Euhm oké laten we beginnen
+	Free: Pattern=oké, Pattern=we, Pattern=Euhm
+	Constrained: 
+Turn ID=6| A | A : Yes ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=7| B | B : Euh ja ik ik zien het vierkan dus dus ik ik moeten denken ik gaan beschrijven
+	Free: Pattern=ja, Pattern=ik, Pattern=Euh, Pattern=gaan
+	Constrained: 
+Turn ID=8| B | B : Euhm dus Euhm de manier waarop ik het zullen beschrijven dus een euh pot die voor een klein gedeelte onder een oppervlakte zijn zakken
+	Free: Pattern=de, Pattern=een euh, Pattern=een, Pattern=voor, Pattern=Euhm, Pattern=die, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=een, Pattern=euh
+Turn ID=9| A | A : Euh dat zijn dan waarschijnlijk I
+	Free: Pattern=dat zijn, Pattern=dan, Pattern=Euh
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=10| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=11| B | B : ja dat weten ik niet want ik ander ik zien cijfer dus
+	Free: Pattern=ja dat, Pattern=ik
+	Constrained: Pattern=ja, Pattern=dat
+Turn ID=12| A | A : Oh even euhm kijken
+	Free: Pattern=even, Pattern=kijken
+	Constrained: 
+Turn ID=13| A | A : ja hebben hij toevallig ook een euh lang slurf
+	Free: Pattern=ook een, Pattern=ja, Pattern=een euh, Pattern=slurf, Pattern=hebben
+	Constrained: Pattern=een, Pattern=ook, Pattern=euh
+Turn ID=14| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=15| A | A : en twee van die euh dinget op euh
+	Free: Pattern=twee, Pattern=op, Pattern=euh, Pattern=en, Pattern=die euh
+	Constrained: Pattern=die, Pattern=euh
+Turn ID=16| B | B : die streepjes op de bovenkant
+	Free: Pattern=op de bovenkant, Pattern=die
+	Constrained: Pattern=op de, Pattern=de, Pattern=de bovenkant, Pattern=op
+Turn ID=17| A | A : ja oké dan hebben we hem hè
+	Free: Pattern=dan hebben, Pattern=oké, Pattern=ja, Pattern=we
+	Constrained: Pattern=dan, Pattern=hebben
+Turn ID=18| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : op de knop drukken
+	Free: Pattern=op de
+	Constrained: Pattern=op, Pattern=de
+Turn ID=21| A | A : ja oké Got it
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : dan hebben ik Euhm ja de Cup die in een houdert zijn plaatsen met zo'n soort slurf glijbaanneus
+	Free: Pattern=slurf, Pattern=een, Pattern=Euhm, Pattern=met, Pattern=zijn, Pattern=de, Pattern=ja, Pattern=dan hebben ik, Pattern=die
+	Constrained: Pattern=hebben ik, Pattern=dan, Pattern=hebben, Pattern=dan hebben, Pattern=ik
+Turn ID=23| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=24| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=25| A | A : twee staaf bovenop ja
+	Free: Pattern=twee staaf, Pattern=ja
+	Constrained: Pattern=twee
+Turn ID=26| B | B : Euh ja ik hebben diegene die euh ook een beetje door dat oppervlakte zakken met die slurf en die twee staaf op de bovenkant
+	Free: Pattern=en die twee staaf, Pattern=ook een, Pattern=ja, Pattern=slurf, Pattern=Euh, Pattern=hebben, Pattern=twee staaf op de bovenkant, Pattern=ik, Pattern=die euh, Pattern=dat, Pattern=met die
+	Constrained: Pattern=twee, Pattern=de, Pattern=de bovenkant, Pattern=een, Pattern=euh, Pattern=met, Pattern=die, Pattern=twee staaf, Pattern=op de bovenkant, Pattern=en, Pattern=op de, Pattern=op, Pattern=ook
+Turn ID=27| A | A : Slurven twee staaf op de bovenkant
+	Free: Pattern=twee staaf op de bovenkant
+	Constrained: Pattern=twee, Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=twee staaf, Pattern=op de bovenkant, Pattern=op de
+Turn ID=28| A | A : Euhm ja slurven twee staaf
+	Free: Pattern=twee staaf, Pattern=ja, Pattern=Euhm
+	Constrained: Pattern=twee
+Turn ID=29| A | A : Oh ja dat zijn
+	Free: Pattern=ja dat, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=30| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : dan gaan ik naar die Cup met die slurfneu en die twee staaf aan de bovenkant
+	Free: Pattern=met die, Pattern=en die twee staaf, Pattern=dan, Pattern=de bovenkant, Pattern=die, Pattern=ik, Pattern=gaan
+	Constrained: Pattern=twee, Pattern=de, Pattern=met, Pattern=die, Pattern=twee staaf, Pattern=en
+Turn ID=32| B | B : ja euh dat zijn voor mij
+	Free: Pattern=dat zijn voor mij, Pattern=ja, Pattern=euh
+	Constrained: Pattern=voor, Pattern=zijn, Pattern=dat zijn, Pattern=dat
+Turn ID=33| A | A : dat zijn voor mij
+	Free: Pattern=dat zijn voor mij
+	Constrained: Pattern=voor, Pattern=zijn, Pattern=dat zijn, Pattern=dat
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : Euh dan hebben ik diegene die zeggen maar een beetje door dat oppervlakte heen zakt
+	Free: Pattern=dat, Pattern=een, Pattern=Euh, Pattern=dan hebben ik, Pattern=die
+	Constrained: Pattern=hebben ik, Pattern=dan, Pattern=hebben, Pattern=dan hebben, Pattern=ik
+Turn ID=36| B | B : met die slurf en die twee staaf op de bovenkant
+	Free: Pattern=twee staaf op de bovenkant, Pattern=en die twee staaf, Pattern=met die, Pattern=slurf
+	Constrained: Pattern=twee, Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=met, Pattern=die, Pattern=twee staaf, Pattern=op de bovenkant, Pattern=en, Pattern=op de
+Turn ID=37| A | A : ja dat hebben ik ook nu en dat zijn
+	Free: Pattern=dat zijn, Pattern=en, Pattern=ja dat, Pattern=hebben ik, Pattern=ook
+	Constrained: Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=ik, Pattern=zijn
+Turn ID=38| A | A : dan hebben Euhm ik de olifantenneus
+	Free: Pattern=dan hebben, Pattern=de, Pattern=ik, Pattern=Euhm
+	Constrained: Pattern=dan, Pattern=hebben
+Turn ID=39| B | B : ja even kijken
+	Free: Pattern=even, Pattern=ja, Pattern=kijken
+	Constrained: 
+Turn ID=40| B | B : dat zijn voor mij waar staan dat ding
+	Free: Pattern=dat zijn voor mij, Pattern=dat
+	Constrained: Pattern=voor, Pattern=zijn, Pattern=dat zijn, Pattern=dat
+Turn ID=41| A | A : twee staaf
+	Free: Pattern=twee staaf
+	Constrained: Pattern=twee

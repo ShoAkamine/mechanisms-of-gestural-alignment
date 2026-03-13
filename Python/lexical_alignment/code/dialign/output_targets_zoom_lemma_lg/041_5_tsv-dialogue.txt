@@ -1,0 +1,231 @@
+B|0| B: _ehm ja_ _deze hebben_ _een_ beetje _een rechthoekig blok_ _een_ _lang_ _rechthoekig blok_ _als_ _soort_ van _hoofd_ dus _aan de bovenkant_ 
+B|1| B: _en_ linksonder _ja_ _een_ beetje _een_ driehoekachtig _maar_ _dan_ _niet_ helemaal afmaken 
+B|2| B: _en_ rechts _een_ steel 
+B|3| B: _met_ daaronder _nog_ één _ja_ lijken _een_ beetje _op_ _een_ schep misschien _of_ _zo_ 
+A|4| A: Wacht _wat_ 
+B|5| B: Oké _dat_ _hoofd_ vallen eigenlijk _het_ veel _op_ 
+B|6| B: _het_ _zijn_ _een rechthoekig blok_ 
+A|7| A: [een rechthoekig blok] [aan de bovenkant] omhoog wijzen 
+B|8| B: _ehm ja_ _ja_ [aan de bovenkant] 
+A|9| A: [met] [nog] [een] [soort] kegel ernaast ook _of niet_ 
+B|10| B: _ehm_ _nee_ _nee_ _dat_ [niet] 
+B|11| B: _hij_ _zijn_ licht _zeggen maar_ _het_ [blok] 
+B|12| B: plat 
+B|13| B: _en_ _dan_ _ja_ ver 
+B|14| B: ah eigenlijk _dat_ [blok] _zijn_ _wel_ _duidelijk_ zeker 
+A|15| A: nou man _ik_ [hebben] echt geen _idee_ welk _je_ bedoelen 
+B|16| B: _Eh_ oeh oké 
+B|17| B: _dan_ gaan [ik] even [nog] [wat] ander bedenken 
+B|18| B: _ehm ja_ _het_ _zijn_ _zeggen maar_ _je zien_ _dat_ _je zien_ _hem_ eigenlijk gewoon van voren _als_ _het_ _zijn_ 
+A|19| A: [ja] 
+B|20| B: _en_ _dan_ zitten er _het_ [hebben] [aan de] onderkant niks 
+B|21| B: alleen één _uitsteeksel_ link _en_ één _uitsteeksel_ rechts 
+B|22| B: _en_ _die_ rechts [hebben] [een] dun steelt 
+B|23| B: _en_ _dan_ daaronder [nog] iets 
+B|24| B: [een] dun steelt van boven naar beneden 
+B|25| B: eigenlijk lijken _het_ _wel_ [een] beetje _op_ [een] arm 
+B|26| B: _en_ _dan_ zitten daaronder [nog] iets [aan] vast 
+B|27| B: _en_ link [hebben] _het_ [een] beetje [een] [ja] driehoekvormig iets dus 
+B|28| B: _maar_ _wel_ rond 
+B|29| B: _en_ [aan de bovenkant] [een rechthoekig blok] _dat_ _liggen_ 
+B|30| B: Hebben [je] al [een] [idee] [of niet] 
+A|31| A: [nee] 
+A|32| A: _Oh_ wachten 
+A|33| A: [ik] denken [wel] [dat] [ik] weten [wat] [je] bedoelen 
+A|34| A: [maar] [ik] [zien] daar heel [duidelijk] [een] gezicht in denken [ik] 
+A|35| A: Zullen [dat] _kunnen_ 
+A|36| A: [dat] [hij] [een] [soort] [ik] [zien] [het] [als] [een] [soort] _hanenkam_ [op] [zijn] [hoofd] [zeggen maar] 
+B|37| B: Ehm _en_ 
+B|38| B: [Oh] [ja] [dat] zullen [wel] goed [kunnen] 
+A|39| A: [zo] _dat zijn_ [hem] toch 
+B|40| B: [ja] [ja] [ja] 
+A|41| A: [ja] [dan] [dan] [zijn] [het] 
+B|42| B: Oké 
+A|43| A: [ehm ja] hier doen [ik] heel [lang] over 
+A|44| A: [deze hebben] [die] balk [aan de bovenkant] [liggen] 
+A|45| A: [en] links [zien] [je] zo'n [uitsteeksel] 
+A|46| A: [en] [je zien] [aan de] rechterkant [een] [soort] neus 
+B|47| B: [Oh] [ja] 
+B|48| B: _de hanenkam_ 
+A|49| A: [ja] [die] 
+B|50| B: [ehm] [hanenkam] 
+A|51| A: [Eh] _dat zijn_ 
+A|52| A: dit [zijn] [met] [de hanenkam] 
+B|53| B: [dat zijn] 
+B|54| B: eh [de hanenkam] 
+A|55| A: [dat zijn] 
+A|56| A: [de] Hanenkan 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm ja deze hebben een beetje een rechthoekig blok een lang rechthoekig blok als soort van hoofd dus aan de bovenkant
+	Free: Pattern=soort, Pattern=een, Pattern=deze hebben, Pattern=als, Pattern=lang, Pattern=aan de bovenkant, Pattern=een rechthoekig blok, Pattern=rechthoekig blok, Pattern=hoofd, Pattern=ehm ja
+	Constrained: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=ehm, Pattern=blok, Pattern=rechthoekig blok, Pattern=de, Pattern=aan, Pattern=ja
+Turn ID=1| B | B : en linksonder ja een beetje een driehoekachtig maar dan niet helemaal afmaken
+	Free: Pattern=ja, Pattern=een, Pattern=en, Pattern=maar, Pattern=niet, Pattern=dan
+	Constrained: 
+Turn ID=2| B | B : en rechts een steel
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : met daaronder nog één ja lijken een beetje op een schep misschien of zo
+	Free: Pattern=of, Pattern=nog, Pattern=ja, Pattern=op, Pattern=een, Pattern=zo, Pattern=met
+	Constrained: 
+Turn ID=4| A | A : Wacht wat
+	Free: Pattern=wat
+	Constrained: 
+Turn ID=5| B | B : Oké dat hoofd vallen eigenlijk het veel op
+	Free: Pattern=dat, Pattern=het, Pattern=op, Pattern=hoofd
+	Constrained: 
+Turn ID=6| B | B : het zijn een rechthoekig blok
+	Free: Pattern=een rechthoekig blok, Pattern=zijn, Pattern=het
+	Constrained: Pattern=rechthoekig blok, Pattern=een, Pattern=blok
+Turn ID=7| A | A : een rechthoekig blok aan de bovenkant omhoog wijzen
+	Free: Pattern=aan de bovenkant, Pattern=een rechthoekig blok
+	Constrained: Pattern=aan de, Pattern=een, Pattern=blok, Pattern=rechthoekig blok, Pattern=de, Pattern=aan
+Turn ID=8| B | B : ehm ja ja aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=ehm ja, Pattern=ja
+	Constrained: Pattern=aan de, Pattern=ehm, Pattern=de, Pattern=aan, Pattern=ja
+Turn ID=9| A | A : met nog een soort kegel ernaast ook of niet
+	Free: Pattern=een, Pattern=met, Pattern=of niet, Pattern=nog, Pattern=soort
+	Constrained: Pattern=niet, Pattern=of
+Turn ID=10| B | B : ehm nee nee dat niet
+	Free: Pattern=niet, Pattern=dat, Pattern=nee, Pattern=ehm
+	Constrained: 
+Turn ID=11| B | B : hij zijn licht zeggen maar het blok
+	Free: Pattern=zeggen maar, Pattern=het, Pattern=hij, Pattern=blok, Pattern=zijn
+	Constrained: Pattern=maar
+Turn ID=12| B | B : plat
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : en dan ja ver
+	Free: Pattern=en, Pattern=dan, Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ah eigenlijk dat blok zijn wel duidelijk zeker
+	Free: Pattern=wel, Pattern=blok, Pattern=zijn, Pattern=dat, Pattern=duidelijk
+	Constrained: 
+Turn ID=15| A | A : nou man ik hebben echt geen idee welk je bedoelen
+	Free: Pattern=idee, Pattern=hebben, Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=16| B | B : Eh oeh oké
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=17| B | B : dan gaan ik even nog wat ander bedenken
+	Free: Pattern=nog, Pattern=dan, Pattern=ik, Pattern=wat
+	Constrained: 
+Turn ID=18| B | B : ehm ja het zijn zeggen maar je zien dat je zien hem eigenlijk gewoon van voren als het zijn
+	Free: Pattern=dat, Pattern=je zien, Pattern=zeggen maar, Pattern=het, Pattern=als, Pattern=zijn, Pattern=ehm ja, Pattern=hem
+	Constrained: Pattern=ja, Pattern=ehm, Pattern=zien, Pattern=maar, Pattern=je
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : en dan zitten er het hebben aan de onderkant niks
+	Free: Pattern=aan de, Pattern=dan, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=21| B | B : alleen één uitsteeksel link en één uitsteeksel rechts
+	Free: Pattern=en, Pattern=uitsteeksel
+	Constrained: 
+Turn ID=22| B | B : en die rechts hebben een dun steelt
+	Free: Pattern=een, Pattern=hebben, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=23| B | B : en dan daaronder nog iets
+	Free: Pattern=nog, Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=24| B | B : een dun steelt van boven naar beneden
+	Free: Pattern=een
+	Constrained: 
+Turn ID=25| B | B : eigenlijk lijken het wel een beetje op een arm
+	Free: Pattern=een, Pattern=wel, Pattern=het, Pattern=op
+	Constrained: 
+Turn ID=26| B | B : en dan zitten daaronder nog iets aan vast
+	Free: Pattern=nog, Pattern=en, Pattern=aan, Pattern=dan
+	Constrained: 
+Turn ID=27| B | B : en link hebben het een beetje een ja driehoekvormig iets dus
+	Free: Pattern=ja, Pattern=een, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=28| B | B : maar wel rond
+	Free: Pattern=wel, Pattern=maar
+	Constrained: 
+Turn ID=29| B | B : en aan de bovenkant een rechthoekig blok dat liggen
+	Free: Pattern=dat, Pattern=liggen, Pattern=een rechthoekig blok, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=een, Pattern=blok, Pattern=rechthoekig blok, Pattern=de, Pattern=aan
+Turn ID=30| B | B : Hebben je al een idee of niet
+	Free: Pattern=of niet, Pattern=een, Pattern=idee, Pattern=je
+	Constrained: Pattern=niet, Pattern=of
+Turn ID=31| A | A : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=32| A | A : Oh wachten
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=33| A | A : ik denken wel dat ik weten wat je bedoelen
+	Free: Pattern=dat, Pattern=wel, Pattern=wat, Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=34| A | A : maar ik zien daar heel duidelijk een gezicht in denken ik
+	Free: Pattern=duidelijk, Pattern=een, Pattern=zien, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=35| A | A : Zullen dat kunnen
+	Free: Pattern=dat, Pattern=kunnen
+	Constrained: 
+Turn ID=36| A | A : dat hij een soort ik zien het als een soort hanenkam op zijn hoofd zeggen maar
+	Free: Pattern=dat, Pattern=soort, Pattern=op, Pattern=een, Pattern=zeggen maar, Pattern=het, Pattern=hij, Pattern=als, Pattern=zien, Pattern=ik, Pattern=hanenkam, Pattern=zijn, Pattern=hoofd
+	Constrained: Pattern=maar
+Turn ID=37| B | B : Ehm en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=38| B | B : Oh ja dat zullen wel goed kunnen
+	Free: Pattern=dat, Pattern=kunnen, Pattern=ja, Pattern=wel, Pattern=Oh
+	Constrained: 
+Turn ID=39| A | A : zo dat zijn hem toch
+	Free: Pattern=dat zijn, Pattern=zo, Pattern=hem
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=40| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : ja dan dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=42| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : ehm ja hier doen ik heel lang over
+	Free: Pattern=ehm ja, Pattern=ik, Pattern=lang
+	Constrained: Pattern=ja, Pattern=ehm
+Turn ID=44| A | A : deze hebben die balk aan de bovenkant liggen
+	Free: Pattern=aan de bovenkant, Pattern=deze hebben, Pattern=liggen, Pattern=die
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=hebben
+Turn ID=45| A | A : en links zien je zo'n uitsteeksel
+	Free: Pattern=en, Pattern=uitsteeksel, Pattern=zien, Pattern=je
+	Constrained: 
+Turn ID=46| A | A : en je zien aan de rechterkant een soort neus
+	Free: Pattern=soort, Pattern=aan de, Pattern=en, Pattern=een, Pattern=je zien
+	Constrained: Pattern=aan, Pattern=de, Pattern=zien, Pattern=je
+Turn ID=47| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=48| B | B : de hanenkam
+	Free: Pattern=de hanenkam
+	Constrained: Pattern=hanenkam, Pattern=de
+Turn ID=49| A | A : ja die
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=50| B | B : ehm hanenkam
+	Free: Pattern=hanenkam, Pattern=ehm
+	Constrained: 
+Turn ID=51| A | A : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=52| A | A : dit zijn met de hanenkam
+	Free: Pattern=de hanenkam, Pattern=zijn, Pattern=met
+	Constrained: Pattern=hanenkam, Pattern=de
+Turn ID=53| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=54| B | B : eh de hanenkam
+	Free: Pattern=de hanenkam
+	Constrained: Pattern=hanenkam, Pattern=de
+Turn ID=55| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=56| A | A : de Hanenkan
+	Free: Pattern=de
+	Constrained: 

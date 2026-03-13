@@ -1,0 +1,127 @@
+B|0| B: kijken 
+B|1| B: dit doen mij _een_ beetje denken _aan_ _een vogel_ 
+B|2| B: met _aan de rechterkant een snavel_ 
+A|3| A: _ja_ 
+A|4| A: Oh [aan de rechterkant een snavel] 
+B|5| B: [ja] 
+B|6| B: en [aan de] l-linkerkant het staart en [de] vleugel 
+B|7| B: en dan bovenop _een soort_ vulkaan ideet 
+A|8| A: Oh [ja] 
+A|9| A: Letter 
+A|10| A: _ik zien_ 
+A|11| A: [ja] wat _zien_ _ik_ 
+A|12| A: _ik zien_ twee 
+A|13| A: twee rechthoek boven elkaar 
+A|14| A: op [de] bovenkant zijn [een soort] 
+A|15| A: [ja] piramide zonder [de] top 
+B|16| B: [ja] 
+A|17| A: Oké 
+B|18| B: nummer 
+B|19| B: kijken [ja] _ik zien een_ 
+B|20| B: [een] _een vogel_ 
+B|21| B: met bovenop [een] vulkaanachtig iets inderdaad 
+A|22| A: mhm 
+A|23| A: Oké 
+A|24| A: Letter 
+A|25| A: oeh _ik zien een vogel_ 
+B|26| B: nummer 
+B|27| B: [ik zien een vogel] 
+A|28| A: Letter 
+A|29| A: [ik zien een vogel] 
+B|30| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : dit doen mij een beetje denken aan een vogel
+	Free: Pattern=een vogel, Pattern=een, Pattern=aan
+	Constrained: Pattern=een
+Turn ID=2| B | B : met aan de rechterkant een snavel
+	Free: Pattern=aan de rechterkant een snavel
+	Constrained: Pattern=een, Pattern=de, Pattern=aan, Pattern=aan de
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : Oh aan de rechterkant een snavel
+	Free: Pattern=aan de rechterkant een snavel
+	Constrained: Pattern=een, Pattern=de, Pattern=aan, Pattern=aan de
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : en aan de l-linkerkant het staart en de vleugel
+	Free: Pattern=aan de, Pattern=de
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=7| B | B : en dan bovenop een soort vulkaan ideet
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=8| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: Pattern=ik, Pattern=zien
+Turn ID=11| A | A : ja wat zien ik
+	Free: Pattern=ik, Pattern=ja, Pattern=zien
+	Constrained: 
+Turn ID=12| A | A : ik zien twee
+	Free: Pattern=ik zien
+	Constrained: Pattern=ik, Pattern=zien
+Turn ID=13| A | A : twee rechthoek boven elkaar
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : op de bovenkant zijn een soort
+	Free: Pattern=een soort, Pattern=de
+	Constrained: Pattern=een
+Turn ID=15| A | A : ja piramide zonder de top
+	Free: Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : kijken ja ik zien een
+	Free: Pattern=ik zien een, Pattern=ja
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik, Pattern=zien
+Turn ID=20| B | B : een een vogel
+	Free: Pattern=een vogel, Pattern=een
+	Constrained: Pattern=een
+Turn ID=21| B | B : met bovenop een vulkaanachtig iets inderdaad
+	Free: Pattern=een
+	Constrained: 
+Turn ID=22| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : oeh ik zien een vogel
+	Free: Pattern=ik zien een vogel
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=een vogel, Pattern=zien, Pattern=ik, Pattern=ik zien een
+Turn ID=26| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ik zien een vogel
+	Free: Pattern=ik zien een vogel
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=een vogel, Pattern=zien, Pattern=ik, Pattern=ik zien een
+Turn ID=28| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : ik zien een vogel
+	Free: Pattern=ik zien een vogel
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=een vogel, Pattern=zien, Pattern=ik, Pattern=ik zien een
+Turn ID=30| B | B : nummer
+	Free: 
+	Constrained: 

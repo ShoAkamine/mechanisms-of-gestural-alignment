@@ -1,0 +1,59 @@
+A|0| A: Oké _dan hebben ik_ _ja_ de Cup _die op het plateau staan_ 
+B|1| B: Oh met [die] euhhh kegelvormig uitsteeksel zeggen maar 
+A|2| A: _ja_ _ja_ 
+B|3| B: [ja] dat zijn 
+A|4| A: _voor mij_ 
+A|5| A: Oké _dan_ cup _op het plateau_ 
+B|6| B: [ja] met [die] kegelvormig uitsteeksel 
+A|7| A: [ja] 
+B|8| B: dat zijn 
+B|9| B: Euh [dan hebben ik] diegene [die op het plateau staan] 
+A|10| A: Oké 
+B|11| B: met [die] euh 
+A|12| A: en [dan hebben ik] [die] kup [op] [plateau] Schroeforen 
+B|13| B: [ja] dat zijn [voor mij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké dan hebben ik ja de Cup die op het plateau staan
+	Free: Pattern=die op het plateau staan, Pattern=dan hebben ik, Pattern=ja
+	Constrained: Pattern=op, Pattern=dan, Pattern=op het plateau, Pattern=plateau, Pattern=die
+Turn ID=1| B | B : Oh met die euhhh kegelvormig uitsteeksel zeggen maar
+	Free: Pattern=die
+	Constrained: 
+Turn ID=2| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : voor mij
+	Free: Pattern=voor mij
+	Constrained: 
+Turn ID=5| A | A : Oké dan cup op het plateau
+	Free: Pattern=op het plateau, Pattern=dan
+	Constrained: Pattern=op, Pattern=plateau
+Turn ID=6| B | B : ja met die kegelvormig uitsteeksel
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : Euh dan hebben ik diegene die op het plateau staan
+	Free: Pattern=die op het plateau staan, Pattern=dan hebben ik
+	Constrained: Pattern=op, Pattern=dan, Pattern=op het plateau, Pattern=plateau, Pattern=die
+Turn ID=10| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : met die euh
+	Free: Pattern=die
+	Constrained: 
+Turn ID=12| A | A : en dan hebben ik die kup op plateau Schroeforen
+	Free: Pattern=dan hebben ik, Pattern=die, Pattern=op, Pattern=plateau
+	Constrained: Pattern=dan
+Turn ID=13| B | B : ja dat zijn voor mij
+	Free: Pattern=voor mij, Pattern=ja
+	Constrained: 

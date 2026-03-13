@@ -1,0 +1,183 @@
+B|0| B: _dit zijn_ er één _die_ lijken een soort van ballerinarok te _hebben_ 
+B|1| B: dus weer een kom 
+B|2| B: maar dan _met_ een lang _slurf_ 
+B|3| B: en twee oort bovenop 
+B|4| B: en dan aan _de_ voor ons perspectief aan _de_ linkerkant ook nog een soort uitsteekel 
+B|5| B: klein gewei of zo 
+B|6| B: _het_ _zijn_ _met_ naam dus een kom _met_ een _met_ een groot _slurf_ aan _de_ voorkant 
+B|7| B: en eigenlijk twee klein oort erbovenop 
+B|8| B: _dat zijn_ eigenlijk _het_ _het_ belangrijk denken _ik_ als _je_ _die hebben_ 
+A|9| A: Oh _de tutu_ 
+B|10| B: [de tutu] 
+A|11| A: [hebben] [je] [het] over 
+B|12| B: Exact 
+A|13| A: _ja ja_ 
+B|14| B: [ja [ja] ja] 
+A|15| A: [ik] [hebben] hem 
+A|16| A: deze kop [die hebben] [het] [hebben] [de tutu] 
+A|17| A: [de] vierkant door [de] dwarssnede 
+B|18| B: [de tutu] 
+B|19| B: [ja] 
+B|20| B: _met de slurf_ 
+A|21| A: [met de slurf] [ja] 
+B|22| B: _dit zijn_ [die] [met] [het] 
+B|23| B: hoe noemen [je] _dat_ 
+B|24| B: [het] [het] [het] rok 
+B|25| B: tupe 
+B|26| B: nee niet tupe 
+A|27| A: [de tutu] 
+A|28| A: [ja] [ik] [hebben] hem 
+B|29| B: [tutu] [tutu] 
+A|30| A: [met de] [met de] neus 
+B|31| B: Exact 
+B|32| B: [ja ja] 
+A|33| A: [dit zijn] [de tutu] 
+B|34| B: Hm-hm 
+A|35| A: [met de] neus 
+A|36| A: [ja] 
+B|37| B: [dit zijn] [met [de] tutu] weer 
+A|38| A: [ja] 
+B|39| B: [de] 
+A|40| A: [dat zijn] 
+A|41| A: waar liggen jij 
+A|42| A: [de tutu] 
+B|43| B: Yes 
+B|44| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit zijn er één die lijken een soort van ballerinarok te hebben
+	Free: Pattern=dit zijn, Pattern=hebben, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=1| B | B : dus weer een kom
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : maar dan met een lang slurf
+	Free: Pattern=slurf, Pattern=met
+	Constrained: 
+Turn ID=3| B | B : en twee oort bovenop
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : en dan aan de voor ons perspectief aan de linkerkant ook nog een soort uitsteekel
+	Free: Pattern=de
+	Constrained: 
+Turn ID=5| B | B : klein gewei of zo
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : het zijn met naam dus een kom met een met een groot slurf aan de voorkant
+	Free: Pattern=de, Pattern=slurf, Pattern=het, Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=7| B | B : en eigenlijk twee klein oort erbovenop
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : dat zijn eigenlijk het het belangrijk denken ik als je die hebben
+	Free: Pattern=dat zijn, Pattern=die hebben, Pattern=het, Pattern=ik, Pattern=je
+	Constrained: Pattern=hebben, Pattern=zijn, Pattern=die, Pattern=dat
+Turn ID=9| A | A : Oh de tutu
+	Free: Pattern=de tutu
+	Constrained: Pattern=tutu, Pattern=de
+Turn ID=10| B | B : de tutu
+	Free: Pattern=de tutu
+	Constrained: Pattern=tutu, Pattern=de
+Turn ID=11| A | A : hebben je het over
+	Free: Pattern=hebben, Pattern=je, Pattern=het
+	Constrained: 
+Turn ID=12| B | B : Exact
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=14| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=15| A | A : ik hebben hem
+	Free: Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=16| A | A : deze kop die hebben het hebben de tutu
+	Free: Pattern=de tutu, Pattern=die hebben, Pattern=hebben, Pattern=het
+	Constrained: Pattern=hebben, Pattern=die, Pattern=tutu, Pattern=de
+Turn ID=17| A | A : de vierkant door de dwarssnede
+	Free: Pattern=de
+	Constrained: 
+Turn ID=18| B | B : de tutu
+	Free: Pattern=de tutu
+	Constrained: Pattern=tutu, Pattern=de
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : met de slurf
+	Free: Pattern=met de slurf
+	Constrained: Pattern=slurf, Pattern=de, Pattern=met, Pattern=met de
+Turn ID=21| A | A : met de slurf ja
+	Free: Pattern=met de slurf, Pattern=ja
+	Constrained: Pattern=slurf, Pattern=de, Pattern=met, Pattern=met de
+Turn ID=22| B | B : dit zijn die met het
+	Free: Pattern=dit zijn, Pattern=die, Pattern=het, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=23| B | B : hoe noemen je dat
+	Free: Pattern=je, Pattern=dat
+	Constrained: 
+Turn ID=24| B | B : het het het rok
+	Free: Pattern=het
+	Constrained: 
+Turn ID=25| B | B : tupe
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : nee niet tupe
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : de tutu
+	Free: Pattern=de tutu
+	Constrained: Pattern=tutu, Pattern=de
+Turn ID=28| A | A : ja ik hebben hem
+	Free: Pattern=hebben, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=29| B | B : tutu tutu
+	Free: Pattern=tutu
+	Constrained: 
+Turn ID=30| A | A : met de met de neus
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=31| B | B : Exact
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=33| A | A : dit zijn de tutu
+	Free: Pattern=de tutu, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=tutu, Pattern=de
+Turn ID=34| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : met de neus
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=36| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| B | B : dit zijn met de tutu weer
+	Free: Pattern=de tutu, Pattern=met de, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=tutu, Pattern=de, Pattern=met
+Turn ID=38| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=40| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=41| A | A : waar liggen jij
+	Free: 
+	Constrained: 
+Turn ID=42| A | A : de tutu
+	Free: Pattern=de tutu
+	Constrained: Pattern=tutu, Pattern=de
+Turn ID=43| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

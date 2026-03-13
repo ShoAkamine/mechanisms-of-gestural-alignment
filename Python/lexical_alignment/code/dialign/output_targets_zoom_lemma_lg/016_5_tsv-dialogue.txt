@@ -1,0 +1,147 @@
+B|0| B: deze vinden _ik_ heel _compact_ 
+B|1| B: _er_ _liggen_ namelijk 
+B|2| B: alleen op _de_ bovenkant _zitten_ _er_ één _liggen_ _er_ _een balk_ op 
+B|3| B: _die_ _liggen_ _er_ _horizontaal_ op 
+B|4| B: _aan de linkerkant_ onderin _zitten_ 
+B|5| B: _ja_ _even_ denken 
+B|6| B: moeilijk te _omschrijven_ 
+B|7| B: _aan de rechterkant_ _zitten_ _een_ heel smal buisje 
+B|8| B: _die_ staan verticaal 
+B|9| B: _met_ daaronder één 
+B|10| B: _het_ _zijn_ _een_ beetje donker dus _ik_ kunnen _het_ _niet_ zo _goed_ zien 
+B|11| B: _met_ daaronder 
+A|12| A: maar ook [een balk] soort van 
+A|13| A: maar [het] lijken ook alsof [er] iets uitsteken [aan de rechterkant] 
+B|14| B: _ja_ 
+B|15| B: _ja en_ op [de] bovenkant _liggen_ alleen dus één verticaal [balk] 
+A|16| A: [en] 
+A|17| A: [ja] kloppen 
+A|18| A: Oké _dat_ [zijn] _nummer_ 
+A|19| A: _dit zijn_ degeen [met] _dat balk_ wat _bovenop_ [liggen] 
+A|20| A: [en] waarvan je [niet] [goed] weten hoe je moeten [omschrijven] wat [aan de linkerkant] [zitten] 
+B|21| B: Oh [ja] _even_ denken _waar_ _die_ [zijn] 
+B|22| B: [dat _balk] er bovenop_ 
+B|23| B: Oh [ja] [nummer] 
+B|24| B: _dit zijn die compact met_ _die_ [balk] [bovenop] 
+A|25| A: [ja] [ik] [zijn] hem [even] [aan] [het] zoeken 
+A|26| A: [ja en] [de] trapezium link 
+A|27| A: [dat] [zijn] 
+B|28| B: [ja] 
+A|29| A: [dit zijn die compact met] [het] [balk er bovenop] 
+A|30| A: [en] [de] trapezium link 
+B|31| B: [ja] [nummer] 
+B|32| B: [die compact met] [de] [balk] [bovenop] 
+A|33| A: [ja] [dat] [zijn] 
+A|34| A: [dit zijn die compact] [waar] [het] [balk er bovenop] [liggen] [horizontaal] 
+B|35| B: [ja] [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze vinden ik heel compact
+	Free: Pattern=ik, Pattern=compact
+	Constrained: 
+Turn ID=1| B | B : er liggen namelijk
+	Free: Pattern=liggen, Pattern=er
+	Constrained: 
+Turn ID=2| B | B : alleen op de bovenkant zitten er één liggen er een balk op
+	Free: Pattern=de, Pattern=zitten, Pattern=er, Pattern=liggen, Pattern=een balk
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=3| B | B : die liggen er horizontaal op
+	Free: Pattern=horizontaal, Pattern=liggen, Pattern=die, Pattern=er
+	Constrained: 
+Turn ID=4| B | B : aan de linkerkant onderin zitten
+	Free: Pattern=aan de linkerkant, Pattern=zitten
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=5| B | B : ja even denken
+	Free: Pattern=even, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : moeilijk te omschrijven
+	Free: Pattern=omschrijven
+	Constrained: 
+Turn ID=7| B | B : aan de rechterkant zitten een heel smal buisje
+	Free: Pattern=aan de rechterkant, Pattern=zitten, Pattern=een
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=8| B | B : die staan verticaal
+	Free: Pattern=die
+	Constrained: 
+Turn ID=9| B | B : met daaronder één
+	Free: Pattern=met
+	Constrained: 
+Turn ID=10| B | B : het zijn een beetje donker dus ik kunnen het niet zo goed zien
+	Free: Pattern=goed, Pattern=niet, Pattern=een, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=11| B | B : met daaronder
+	Free: Pattern=met
+	Constrained: 
+Turn ID=12| A | A : maar ook een balk soort van
+	Free: Pattern=een balk
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=13| A | A : maar het lijken ook alsof er iets uitsteken aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=het, Pattern=er
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja en op de bovenkant liggen alleen dus één verticaal balk
+	Free: Pattern=ja en, Pattern=balk, Pattern=de, Pattern=liggen
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=16| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=17| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Oké dat zijn nummer
+	Free: Pattern=dat, Pattern=zijn, Pattern=nummer
+	Constrained: 
+Turn ID=19| A | A : dit zijn degeen met dat balk wat bovenop liggen
+	Free: Pattern=bovenop, Pattern=met, Pattern=dat balk, Pattern=liggen, Pattern=dit zijn
+	Constrained: Pattern=dat, Pattern=balk, Pattern=zijn
+Turn ID=20| A | A : en waarvan je niet goed weten hoe je moeten omschrijven wat aan de linkerkant zitten
+	Free: Pattern=goed, Pattern=niet, Pattern=omschrijven, Pattern=zitten, Pattern=en, Pattern=aan de linkerkant
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=21| B | B : Oh ja even denken waar die zijn
+	Free: Pattern=ja, Pattern=waar, Pattern=even, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=22| B | B : dat balk er bovenop
+	Free: Pattern=balk er bovenop, Pattern=dat balk
+	Constrained: Pattern=balk, Pattern=bovenop, Pattern=dat, Pattern=er
+Turn ID=23| B | B : Oh ja nummer
+	Free: Pattern=nummer, Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : dit zijn die compact met die balk bovenop
+	Free: Pattern=dit zijn die compact met, Pattern=balk, Pattern=bovenop, Pattern=die
+	Constrained: Pattern=die compact met, Pattern=compact, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=zijn, Pattern=dit zijn die compact
+Turn ID=25| A | A : ja ik zijn hem even aan het zoeken
+	Free: Pattern=even, Pattern=het, Pattern=ik, Pattern=zijn, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : ja en de trapezium link
+	Free: Pattern=ja en, Pattern=de
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=27| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : dit zijn die compact met het balk er bovenop
+	Free: Pattern=dit zijn die compact met, Pattern=balk er bovenop, Pattern=het
+	Constrained: Pattern=bovenop, Pattern=die compact met, Pattern=compact, Pattern=balk, Pattern=met, Pattern=die, Pattern=er, Pattern=dit zijn, Pattern=zijn, Pattern=dit zijn die compact
+Turn ID=30| A | A : en de trapezium link
+	Free: Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=31| B | B : ja nummer
+	Free: Pattern=nummer, Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : die compact met de balk bovenop
+	Free: Pattern=die compact met, Pattern=balk, Pattern=de, Pattern=bovenop
+	Constrained: Pattern=met, Pattern=die, Pattern=compact
+Turn ID=33| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : dit zijn die compact waar het balk er bovenop liggen horizontaal
+	Free: Pattern=waar, Pattern=het, Pattern=balk er bovenop, Pattern=liggen, Pattern=dit zijn die compact, Pattern=horizontaal
+	Constrained: Pattern=bovenop, Pattern=compact, Pattern=balk, Pattern=die, Pattern=er, Pattern=zijn, Pattern=dit zijn
+Turn ID=35| B | B : ja nummer
+	Free: Pattern=nummer, Pattern=ja
+	Constrained: 

@@ -1,0 +1,135 @@
+A|0| A: _ja ik_ vinden _het_ een beetje op een Packman-achtig iets lijken aan _de_ zijkant link 
+A|1| A: _en_ daar zitten _dan_ 
+A|2| A: een een balk _dat_ _steeds_ bred _worden_ 
+A|3| A: Gaan _gaan_ naar boven 
+A|4| A: _en_ aan _de_ rechterkant zitten een 
+A|5| A: een cilinder 
+B|6| B: [ja] oké 
+A|7| A: of 
+B|8| B: _dat zijn_ 
+A|9| A: [ja] 
+B|10| B: [ja] 
+A|11| A: ok 
+B|12| B: _dit_ _zijn _die_ met_ _die_ 
+B|13| B: _met_ _Pac-Man_ 
+B|14| B: [en] [dan] [de] 
+B|15| B: [het] vierkan _die_ [steeds] _groot worden_ 
+A|16| A: O [ja] 
+A|17| A: [dat zijn] 
+A|18| A: [dit] [die] [die met] [dat] [Pac-Man] figuur 
+A|19| A: [met] [dat] vierkant [die] naar boven [groot worden] 
+B|20| B: [ja ik] [gaan] hem _even zoeken_ 
+B|21| B: [ja] [dat zijn] 
+B|22| B: Oh [dit] _zijn [die_ met] 
+B|23| B: [Pac-Man] [en] [de] 
+B|24| B: [ja] 
+B|25| B: [ik] weten niet veel waarom [Pac-Man] 
+A|26| A: [even zoeken] 
+A|27| A: O [dat zijn] 
+A|28| A: O [dat [zijn] die] 
+A|29| A: [Pac-Man] figuur 
+B|30| B: [dat zijn] 
+B|31| B: [dit] [zijn] [Pac-Man] 
+A|32| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja ik vinden het een beetje op een Packman-achtig iets lijken aan de zijkant link
+	Free: Pattern=ja ik, Pattern=het, Pattern=de
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=1| A | A : en daar zitten dan
+	Free: Pattern=dan, Pattern=en
+	Constrained: 
+Turn ID=2| A | A : een een balk dat steeds bred worden
+	Free: Pattern=dat, Pattern=steeds, Pattern=worden
+	Constrained: 
+Turn ID=3| A | A : Gaan gaan naar boven
+	Free: Pattern=gaan
+	Constrained: 
+Turn ID=4| A | A : en aan de rechterkant zitten een
+	Free: Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=5| A | A : een cilinder
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : of
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ok
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : dit zijn die met die
+	Free: Pattern=die met, Pattern=zijn die, Pattern=dit, Pattern=die
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=13| B | B : met Pac-Man
+	Free: Pattern=met, Pattern=Pac-Man
+	Constrained: 
+Turn ID=14| B | B : en dan de
+	Free: Pattern=dan, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=15| B | B : het vierkan die steeds groot worden
+	Free: Pattern=groot worden, Pattern=het, Pattern=die, Pattern=steeds
+	Constrained: Pattern=worden
+Turn ID=16| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=18| A | A : dit die die met dat Pac-Man figuur
+	Free: Pattern=dat, Pattern=dit, Pattern=die met, Pattern=die, Pattern=Pac-Man
+	Constrained: Pattern=met, Pattern=die
+Turn ID=19| A | A : met dat vierkant die naar boven groot worden
+	Free: Pattern=groot worden, Pattern=dat, Pattern=met, Pattern=die
+	Constrained: Pattern=worden
+Turn ID=20| B | B : ja ik gaan hem even zoeken
+	Free: Pattern=ja ik, Pattern=even zoeken, Pattern=gaan
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=21| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| B | B : Oh dit zijn die met
+	Free: Pattern=die met, Pattern=zijn die, Pattern=dit
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=23| B | B : Pac-Man en de
+	Free: Pattern=en, Pattern=de, Pattern=Pac-Man
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ik weten niet veel waarom Pac-Man
+	Free: Pattern=ik, Pattern=Pac-Man
+	Constrained: 
+Turn ID=26| A | A : even zoeken
+	Free: Pattern=even zoeken
+	Constrained: 
+Turn ID=27| A | A : O dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=28| A | A : O dat zijn die
+	Free: Pattern=zijn die, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=die
+Turn ID=29| A | A : Pac-Man figuur
+	Free: Pattern=Pac-Man
+	Constrained: 
+Turn ID=30| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| B | B : dit zijn Pac-Man
+	Free: Pattern=dit, Pattern=zijn, Pattern=Pac-Man
+	Constrained: 
+Turn ID=32| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

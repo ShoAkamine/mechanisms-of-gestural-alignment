@@ -1,0 +1,243 @@
+A|0| A: _Oh_ _ja_ 
+A|1| A: nu _hebben ik_ één 
+A|2| A: dit _vinden_ _ik_ 
+A|3| A: _die_ _hebben_ eigenlijk gewoon _die_ normaal vorm 
+A|4| A: _en _dan_ hebben_ _hij_ _een bolle_ _aan de_ zijkant 
+A|5| A: _en_ _je_ _hebben twee_ 
+B|6| B: M-ké 
+A|7| A: _ja_ _en dan_ 
+A|8| A: daaruit komen _twee_ 
+A|9| A: _twee_ voorwerp 
+A|10| A: het-ik zien _het_ eigenlijk als _een_ soort van soepkom _met twee ding_ _die_ eruit komen 
+A|11| A: _en dan_ 
+A|12| A: _ja_ _een_ beetje 
+B|13| B: [die] _erin_ _zitten_ zeggen maar 
+B|14| B: [die] _erin_ zetten _zijn_ 
+A|15| A: _ja_ precies 
+A|16| A: _en dan_ _aan de linkerkant_ komen _er_ _nog een_ drie _een_ driehoek achtig iets uit 
+B|17| B: [ja] 
+A|18| A: [ja] 
+B|19| B: [er] _zitten_ 
+B|20| B: [er] _zitten_ _een schroevendraaier_ in _en een rechthoek_ 
+A|21| A: [ja] 
+B|22| B: Aight 
+A|23| A: [ja] 
+B|24| B: dat _zijn_ nummer 
+B|25| B: Oké [dan [hebben] ik] _die een _met_ de_ dik _neus _en_ het_ 
+B|26| B: [hij] [hebben twee] spriet [aan de] bovenkant 
+B|27| B: eentje _zijn_ _een schroevendraaier_ [de] ander _zijn_ _een rechthoek_ 
+A|28| A: _Oh_ [ja] 
+A|29| A: [ja] 
+B|30| B: [en dan] [nog] dat driehoekig [ding] [aan de linkerkant] 
+A|31| A: Letter 
+B|32| B: [ja] 
+A|33| A: _Oh_ 
+A|34| A: _Oh_ [ja] dit [zijn] [die een met] [een schroevendraaier] [erin] [en een rechthoek] [erin] [en een] [neus] erop 
+A|35| A: [aan de] rechterkant [een] [neus en] [aan de linkerkant] [een] driehoek eruit 
+B|36| B: [Oh] 
+B|37| B: [ja] 
+B|38| B: nummer 
+B|39| B: _ik hebben_ [die een [met] twee ding] bovenop Schroefdraaier [en] blok 
+B|40| B: Neus rechts links [nog een] driehoeker 
+A|41| A: [Oh] [ja] 
+A|42| A: Letter 
+A|43| A: [ik hebben] degeen [met de] Schroevendraaier [en het] [rechthoek] eruit [en het] [neus] 
+A|44| A: [aan de] rechterkant 
+A|45| A: [met de] b-bolletje sorry bolletje [aan de] rechterkant [nog] 
+B|46| B: Eh 
+A|47| A: [en dan] [zitten] [er] [een schroevendraaier] uit [en een rechthoek] 
+B|48| B: [Oh] 
+B|49| B: [ja] 
+A|50| A: [en] 
+B|51| B: [ja] [ik] kunnen hem niet [vinden] 
+B|52| B: [ik] weten wel welk [je] bedoelen kunnen hem niet [vinden] 
+A|53| A: [Oh] [ja] 
+B|54| B: zIjn nummer 
+B|55| B: eh [ik hebben] [die een met] [die] [twee ding] in [zijn] hoofd 
+B|56| B: [met] [schroevendraaier] [en het] blok 
+B|57| B: rechts [nog [een] bolle] links [nog een] driehoeker dinget 
+A|58| A: Yes 
+A|59| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : nu hebben ik één
+	Free: Pattern=hebben ik
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=2| A | A : dit vinden ik
+	Free: Pattern=vinden, Pattern=ik
+	Constrained: 
+Turn ID=3| A | A : die hebben eigenlijk gewoon die normaal vorm
+	Free: Pattern=die, Pattern=hebben
+	Constrained: 
+Turn ID=4| A | A : en dan hebben hij een bolle aan de zijkant
+	Free: Pattern=en dan, Pattern=aan de, Pattern=een bolle, Pattern=dan hebben, Pattern=hij
+	Constrained: Pattern=een, Pattern=de, Pattern=en, Pattern=hebben
+Turn ID=5| A | A : en je hebben twee
+	Free: Pattern=hebben twee, Pattern=en, Pattern=je
+	Constrained: Pattern=twee, Pattern=hebben
+Turn ID=6| B | B : M-ké
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : ja en dan
+	Free: Pattern=en dan, Pattern=ja
+	Constrained: Pattern=en
+Turn ID=8| A | A : daaruit komen twee
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=9| A | A : twee voorwerp
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=10| A | A : het-ik zien het eigenlijk als een soort van soepkom met twee ding die eruit komen
+	Free: Pattern=met twee ding, Pattern=die, Pattern=het, Pattern=een
+	Constrained: Pattern=twee ding, Pattern=twee, Pattern=met, Pattern=ding
+Turn ID=11| A | A : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=12| A | A : ja een beetje
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=13| B | B : die erin zitten zeggen maar
+	Free: Pattern=die, Pattern=zitten, Pattern=erin
+	Constrained: 
+Turn ID=14| B | B : die erin zetten zijn
+	Free: Pattern=die, Pattern=zijn, Pattern=erin
+	Constrained: 
+Turn ID=15| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : en dan aan de linkerkant komen er nog een drie een driehoek achtig iets uit
+	Free: Pattern=nog een, Pattern=en dan, Pattern=een, Pattern=er, Pattern=aan de linkerkant
+	Constrained: Pattern=nog, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : er zitten
+	Free: Pattern=er, Pattern=zitten
+	Constrained: 
+Turn ID=20| B | B : er zitten een schroevendraaier in en een rechthoek
+	Free: Pattern=en een rechthoek, Pattern=een schroevendraaier, Pattern=er, Pattern=zitten
+	Constrained: Pattern=een rechthoek, Pattern=rechthoek, Pattern=een, Pattern=en, Pattern=en een, Pattern=schroevendraaier
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Aight
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : dat zijn nummer
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : Oké dan hebben ik die een met de dik neus en het
+	Free: Pattern=dan hebben, Pattern=neus en, Pattern=die een met, Pattern=met de, Pattern=hebben ik, Pattern=en het
+	Constrained: Pattern=de, Pattern=een, Pattern=het, Pattern=hebben, Pattern=neus, Pattern=met, Pattern=die, Pattern=ik, Pattern=en
+Turn ID=26| B | B : hij hebben twee spriet aan de bovenkant
+	Free: Pattern=hebben twee, Pattern=aan de, Pattern=hij
+	Constrained: Pattern=twee, Pattern=hebben, Pattern=de
+Turn ID=27| B | B : eentje zijn een schroevendraaier de ander zijn een rechthoek
+	Free: Pattern=een schroevendraaier, Pattern=een rechthoek, Pattern=zijn, Pattern=de
+	Constrained: Pattern=rechthoek, Pattern=schroevendraaier, Pattern=een
+Turn ID=28| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : en dan nog dat driehoekig ding aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=en dan, Pattern=nog, Pattern=ding
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=31| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=34| A | A : Oh ja dit zijn die een met een schroevendraaier erin en een rechthoek erin en een neus erop
+	Free: Pattern=neus, Pattern=die een met, Pattern=ja, Pattern=Oh, Pattern=erin, Pattern=en een, Pattern=zijn, Pattern=een schroevendraaier, Pattern=en een rechthoek
+	Constrained: Pattern=een rechthoek, Pattern=rechthoek, Pattern=een, Pattern=met, Pattern=die, Pattern=en, Pattern=en een, Pattern=schroevendraaier
+Turn ID=35| A | A : aan de rechterkant een neus en aan de linkerkant een driehoek eruit
+	Free: Pattern=aan de linkerkant, Pattern=neus en, Pattern=aan de, Pattern=een
+	Constrained: Pattern=neus, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=36| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : ik hebben die een met twee ding bovenop Schroefdraaier en blok
+	Free: Pattern=die een met, Pattern=met twee ding, Pattern=ik hebben, Pattern=en
+	Constrained: Pattern=twee, Pattern=ding, Pattern=een, Pattern=hebben, Pattern=twee ding, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=40| B | B : Neus rechts links nog een driehoeker
+	Free: Pattern=nog een
+	Constrained: Pattern=nog, Pattern=een
+Turn ID=41| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=42| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : ik hebben degeen met de Schroevendraaier en het rechthoek eruit en het neus
+	Free: Pattern=ik hebben, Pattern=rechthoek, Pattern=met de, Pattern=en het, Pattern=neus
+	Constrained: Pattern=de, Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=en
+Turn ID=44| A | A : aan de rechterkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=45| A | A : met de b-bolletje sorry bolletje aan de rechterkant nog
+	Free: Pattern=met de, Pattern=aan de, Pattern=nog
+	Constrained: Pattern=met, Pattern=de
+Turn ID=46| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=47| A | A : en dan zitten er een schroevendraaier uit en een rechthoek
+	Free: Pattern=en dan, Pattern=zitten, Pattern=er, Pattern=een schroevendraaier, Pattern=en een rechthoek
+	Constrained: Pattern=een rechthoek, Pattern=rechthoek, Pattern=een, Pattern=en, Pattern=en een, Pattern=schroevendraaier
+Turn ID=48| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=49| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=51| B | B : ja ik kunnen hem niet vinden
+	Free: Pattern=ja, Pattern=vinden, Pattern=ik
+	Constrained: 
+Turn ID=52| B | B : ik weten wel welk je bedoelen kunnen hem niet vinden
+	Free: Pattern=vinden, Pattern=je, Pattern=ik
+	Constrained: 
+Turn ID=53| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=54| B | B : zIjn nummer
+	Free: 
+	Constrained: 
+Turn ID=55| B | B : eh ik hebben die een met die twee ding in zijn hoofd
+	Free: Pattern=ik hebben, Pattern=die een met, Pattern=twee ding, Pattern=die, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=ding, Pattern=een, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=56| B | B : met schroevendraaier en het blok
+	Free: Pattern=en het, Pattern=met, Pattern=schroevendraaier
+	Constrained: Pattern=en, Pattern=het
+Turn ID=57| B | B : rechts nog een bolle links nog een driehoeker dinget
+	Free: Pattern=nog een, Pattern=een bolle
+	Constrained: Pattern=nog, Pattern=een
+Turn ID=58| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=59| A | A : Letter
+	Free: 
+	Constrained: 

@@ -1,0 +1,119 @@
+A|0| A: Ehm _ik hebben nu_ één _en daar_ bovenop staan _een soort_ _ja_ platgedrukt vierkant _op_ _de zijkant_ zeggen maar _en_ er gaan nog _iets doorheen_ 
+A|1| A: Ehm _en_ _aan de_ onderzijde komen _een soort_ _ja_ slurf uit 
+A|2| A: _en_ _die_ komen _een beetje_ naar ons toe 
+A|3| A: _en_ link _hebben_ hij ook nog uitsteksel 
+A|4| A: Eh in _een soort_ 
+A|5| A: _ja_ _een soort_ hoekvormig _en_ ook hij _hebben_ ook nog _een soort_ nog neus in _de_ vorm _van_ _een_ cilinder 
+A|6| A: maar daarbovenop zeggen maar _het zijn_ kenmerken _aan_ _wat_ er bovenop _zitten_ _dat_ _zijn_ _een soort_ 
+A|7| A: _het_ lijken alsof er _een soort_ _boek_ _op zijn_ _op zijn_ kant staan 
+A|8| A: _en dan_ gaan er nog _iets doorheen_ _een_ staaf _doorheen_ 
+B|9| B: Oh [ja] _ja ik_ weten welk [het zijn] 
+B|10| B: _ehm_ dit [zijn] [die] _met dat boek_ [wat] [op zijn] rug tegen [het] hoofdgedeelte [aan] [zitten] 
+B|11| B: [en _daar] zitten_ [dan] [een soort] [van] balk _ding_ [doorheen] 
+A|12| A: [ja] [dat] [zijn] 
+B|13| B: [en dan] 
+A|14| A: [daar zitten] nog _iets onder_ toch of 
+B|15| B: [ja] [iets onder] [en] rechts [aan [de] zijkant] 
+A|16| A: [ja] 
+A|17| A: [ja] 
+A|18| A: [ehm] [ja _ik] hebben_ _weer die_ [een] [met dat] [dat boek] [op] [de] kaft [met] zo'n [ding] erdoorheen 
+B|19| B: [ja] [zijn] [het] 
+B|20| B: [ik hebben nu] [weer die] _met dat boek_ [wat] [de] rug [daar] zo tegen [het] hoofd [aan] [zitten] 
+B|21| B: [met dat] L-vormig uitstiksel [aan de] rechterkant [en] [een beetje] [dat] J-vormig uitstiksel [aan de] onderkant 
+A|22| A: [ja] 
+A|23| A: [ik hebben] [die] [een] [met dat boek] waar er _iets doorheen_ gaan 
+B|24| B: [ja] 
+B|25| B: [ik hebben nu] [weer die] [met dat boek] [aan de] 
+B|26| B: [met] [daar] [iets doorheen] [wat] [met] [de] rug tegen [het] hoofd [aan] liggen 
+A|27| A: [ja] 
+A|28| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Ehm ik hebben nu één en daar bovenop staan een soort ja platgedrukt vierkant op de zijkant zeggen maar en er gaan nog iets doorheen
+	Free: Pattern=en daar, Pattern=op, Pattern=de zijkant, Pattern=een soort, Pattern=en, Pattern=ik hebben nu, Pattern=iets doorheen, Pattern=ja
+	Constrained: Pattern=ik hebben, Pattern=een, Pattern=hebben, Pattern=en, Pattern=daar, Pattern=de, Pattern=doorheen
+Turn ID=1| A | A : Ehm en aan de onderzijde komen een soort ja slurf uit
+	Free: Pattern=een soort, Pattern=aan de, Pattern=en, Pattern=ja
+	Constrained: Pattern=aan, Pattern=de, Pattern=een
+Turn ID=2| A | A : en die komen een beetje naar ons toe
+	Free: Pattern=een beetje, Pattern=en, Pattern=die
+	Constrained: Pattern=een
+Turn ID=3| A | A : en link hebben hij ook nog uitsteksel
+	Free: Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=4| A | A : Eh in een soort
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=5| A | A : ja een soort hoekvormig en ook hij hebben ook nog een soort nog neus in de vorm van een cilinder
+	Free: Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=de, Pattern=ja, Pattern=van, Pattern=en
+	Constrained: Pattern=een
+Turn ID=6| A | A : maar daarbovenop zeggen maar het zijn kenmerken aan wat er bovenop zitten dat zijn een soort
+	Free: Pattern=dat, Pattern=aan, Pattern=wat, Pattern=een soort, Pattern=zijn, Pattern=het zijn, Pattern=zitten
+	Constrained: Pattern=zijn, Pattern=het, Pattern=een
+Turn ID=7| A | A : het lijken alsof er een soort boek op zijn op zijn kant staan
+	Free: Pattern=een soort, Pattern=op zijn, Pattern=boek, Pattern=het
+	Constrained: Pattern=zijn, Pattern=op, Pattern=een
+Turn ID=8| A | A : en dan gaan er nog iets doorheen een staaf doorheen
+	Free: Pattern=iets doorheen, Pattern=en dan, Pattern=doorheen, Pattern=een
+	Constrained: Pattern=en, Pattern=doorheen, Pattern=dan
+Turn ID=9| B | B : Oh ja ja ik weten welk het zijn
+	Free: Pattern=ja ik, Pattern=het zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=het, Pattern=ja
+Turn ID=10| B | B : ehm dit zijn die met dat boek wat op zijn rug tegen het hoofdgedeelte aan zitten
+	Free: Pattern=aan, Pattern=het, Pattern=wat, Pattern=op zijn, Pattern=zijn, Pattern=ehm, Pattern=met dat boek, Pattern=die, Pattern=zitten
+	Constrained: Pattern=dat, Pattern=op, Pattern=dat boek, Pattern=met, Pattern=zijn, Pattern=boek, Pattern=met dat
+Turn ID=11| B | B : en daar zitten dan een soort van balk ding doorheen
+	Free: Pattern=en daar, Pattern=doorheen, Pattern=dan, Pattern=ding, Pattern=daar zitten, Pattern=een soort, Pattern=van
+	Constrained: Pattern=daar, Pattern=een, Pattern=zitten, Pattern=en
+Turn ID=12| A | A : ja dat zijn
+	Free: Pattern=zijn, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=14| A | A : daar zitten nog iets onder toch of
+	Free: Pattern=daar zitten, Pattern=iets onder
+	Constrained: Pattern=daar, Pattern=zitten
+Turn ID=15| B | B : ja iets onder en rechts aan de zijkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=de zijkant, Pattern=en, Pattern=iets onder
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ehm ja ik hebben weer die een met dat dat boek op de kaft met zo'n ding erdoorheen
+	Free: Pattern=ik hebben, Pattern=de, Pattern=op, Pattern=een, Pattern=weer die, Pattern=met dat, Pattern=ja ik, Pattern=ding, Pattern=dat boek, Pattern=ehm, Pattern=met
+	Constrained: Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=boek, Pattern=met, Pattern=die
+Turn ID=19| B | B : ja zijn het
+	Free: Pattern=zijn, Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ik hebben nu weer die met dat boek wat de rug daar zo tegen het hoofd aan zitten
+	Free: Pattern=het, Pattern=weer die, Pattern=met dat boek, Pattern=zitten, Pattern=wat, Pattern=de, Pattern=aan, Pattern=ik hebben nu, Pattern=daar
+	Constrained: Pattern=ik hebben, Pattern=dat, Pattern=dat boek, Pattern=hebben, Pattern=met, Pattern=die, Pattern=boek, Pattern=met dat
+Turn ID=21| B | B : met dat L-vormig uitstiksel aan de rechterkant en een beetje dat J-vormig uitstiksel aan de onderkant
+	Free: Pattern=dat, Pattern=aan de, Pattern=met dat, Pattern=en, Pattern=een beetje
+	Constrained: Pattern=dat, Pattern=een, Pattern=met, Pattern=de, Pattern=aan
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ik hebben die een met dat boek waar er iets doorheen gaan
+	Free: Pattern=ik hebben, Pattern=iets doorheen, Pattern=een, Pattern=met dat boek, Pattern=die
+	Constrained: Pattern=dat, Pattern=doorheen, Pattern=dat boek, Pattern=hebben, Pattern=met, Pattern=boek, Pattern=met dat
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ik hebben nu weer die met dat boek aan de
+	Free: Pattern=ik hebben nu, Pattern=met dat boek, Pattern=weer die, Pattern=aan de
+	Constrained: Pattern=ik hebben, Pattern=dat, Pattern=dat boek, Pattern=hebben, Pattern=met, Pattern=die, Pattern=de, Pattern=aan, Pattern=boek, Pattern=met dat
+Turn ID=26| B | B : met daar iets doorheen wat met de rug tegen het hoofd aan liggen
+	Free: Pattern=het, Pattern=met, Pattern=wat, Pattern=daar, Pattern=de, Pattern=iets doorheen, Pattern=aan
+	Constrained: Pattern=doorheen
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : Eh
+	Free: 
+	Constrained: 

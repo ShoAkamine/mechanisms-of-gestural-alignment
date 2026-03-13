@@ -1,0 +1,179 @@
+B|0| B: _deze_ lijken _een_ beetje _op_ _een soort_ hond _die_ drinken 
+A|1| A: hm 
+B|2| B: _dus_ _er zitten_ links _een soort_ staartachtig haak 
+B|3| B: Linksboven 
+B|4| B: _Eh_ _en dan_ zien je rechtsboven _een soort_ half _piramide_ 
+B|5| B: _die_ ook nog omgedraaid _zijn_ 
+B|6| B: _en dan_ zien je _dus_ om _het_ ding heen _een soort plaat_ _met_ nog _twee uitsteeksel_ 
+B|7| B: _ehm_ _aan de_ onderkant _zitten_ niks 
+A|8| A: Oh _ja_ 
+A|9| A: [dus] [die] [plaat] [zitten] wat hoog 
+B|10| B: [ja] 
+A|11| A: [en] [er zitten] [soort] driehoek [op] 
+B|12| B: [en] daar 
+B|13| B: [ja] 
+A|14| A: [ja] oké _dat zijn_ 
+A|15| A: [ehm] _deze hebben_ wat ver 
+A|16| A: wat _aan de bovenkant_ _hebben_ hij [een soort plaat] 
+A|17| A: [met] [aan] al beide kant [een soort] [uitsteeksel] 
+A|18| A: waar [die] [op] zullen kunnen staan 
+A|19| A: [en] [op] [die] [plaat] liggen [dan] [een] driehoek 
+A|20| A: [een] [piramide] zeggen _maar_ 
+B|21| B: [ja] 
+B|22| B: Ehm [dat zijn] 
+B|23| B: [deze hebben] [een soort plaat] [er] omheen 
+B|24| B: [maar] [dan] [aan de bovenkant] 
+A|25| A: mhm 
+B|26| B: _en dan_ _twee_ balk [die] eruit steken links [en] rechts 
+B|27| B: _en dan_ nog [een soort] haak linksboven 
+B|28| B: [en] [een soort] vierkant [ja] [soort] Cubus 
+B|29| B: half 
+B|30| B: rechtsboven 
+A|31| A: [ja] 
+A|32| A: _Eh dat zijn_ 
+A|33| A: [Eh] [deze hebben] [de] [plaat] [die] wat _boven het midden_ [zitten] 
+A|34| A: [met] [de] [twee uitsteeksel] [aan de] hoek van [de] [plaat] 
+A|35| A: [en] [de] omgekeerde [die] [piramide] bovenop 
+A|36| A: [op] [de] [plaat] 
+B|37| B: [Eh dat zijn] 
+B|38| B: [deze hebben] [een] vierkant [plaat] eromheen 
+B|39| B: [boven het midden] 
+B|40| B: [dan] [die] [twee] hak [aan] [het] [aan de] 
+A|41| A: [ja] [dat zijn] 
+A|42| A: [deze hebben] [de] [plaat] [boven het midden] 
+A|43| A: [met] [de] [twee uitsteeksel] in [de] hoek [en dan] [de] omgekeerad [piramide] bovenop 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze lijken een beetje op een soort hond die drinken
+	Free: Pattern=op, Pattern=een, Pattern=die, Pattern=een soort, Pattern=deze
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=1| A | A : hm
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : dus er zitten links een soort staartachtig haak
+	Free: Pattern=een soort, Pattern=er zitten, Pattern=dus
+	Constrained: Pattern=soort, Pattern=er, Pattern=zitten, Pattern=een
+Turn ID=3| B | B : Linksboven
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : Eh en dan zien je rechtsboven een soort half piramide
+	Free: Pattern=een soort, Pattern=en dan, Pattern=piramide, Pattern=Eh
+	Constrained: Pattern=en, Pattern=soort, Pattern=dan, Pattern=een
+Turn ID=5| B | B : die ook nog omgedraaid zijn
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=6| B | B : en dan zien je dus om het ding heen een soort plaat met nog twee uitsteeksel
+	Free: Pattern=dus, Pattern=en dan, Pattern=het, Pattern=met, Pattern=een soort plaat, Pattern=twee uitsteeksel
+	Constrained: Pattern=soort, Pattern=twee, Pattern=een, Pattern=een soort, Pattern=en, Pattern=plaat, Pattern=uitsteeksel, Pattern=dan
+Turn ID=7| B | B : ehm aan de onderkant zitten niks
+	Free: Pattern=aan de, Pattern=zitten, Pattern=ehm
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=8| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : dus die plaat zitten wat hoog
+	Free: Pattern=plaat, Pattern=die, Pattern=dus, Pattern=zitten
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : en er zitten soort driehoek op
+	Free: Pattern=er zitten, Pattern=en, Pattern=soort, Pattern=op
+	Constrained: Pattern=er, Pattern=zitten
+Turn ID=12| B | B : en daar
+	Free: Pattern=en
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=15| A | A : ehm deze hebben wat ver
+	Free: Pattern=deze hebben, Pattern=ehm
+	Constrained: Pattern=deze, Pattern=hebben
+Turn ID=16| A | A : wat aan de bovenkant hebben hij een soort plaat
+	Free: Pattern=aan de bovenkant, Pattern=een soort plaat, Pattern=hebben
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=een soort, Pattern=plaat, Pattern=de, Pattern=aan
+Turn ID=17| A | A : met aan al beide kant een soort uitsteeksel
+	Free: Pattern=een soort, Pattern=uitsteeksel, Pattern=met, Pattern=aan
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=18| A | A : waar die op zullen kunnen staan
+	Free: Pattern=die, Pattern=op
+	Constrained: 
+Turn ID=19| A | A : en op die plaat liggen dan een driehoek
+	Free: Pattern=op, Pattern=dan, Pattern=een, Pattern=die, Pattern=en, Pattern=plaat
+	Constrained: 
+Turn ID=20| A | A : een piramide zeggen maar
+	Free: Pattern=maar, Pattern=piramide, Pattern=een
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=23| B | B : deze hebben een soort plaat er omheen
+	Free: Pattern=een soort plaat, Pattern=deze hebben, Pattern=er
+	Constrained: Pattern=soort, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=deze, Pattern=plaat
+Turn ID=24| B | B : maar dan aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=dan, Pattern=maar
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=25| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : en dan twee balk die eruit steken links en rechts
+	Free: Pattern=en dan, Pattern=en, Pattern=die, Pattern=twee
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=27| B | B : en dan nog een soort haak linksboven
+	Free: Pattern=een soort, Pattern=en dan
+	Constrained: Pattern=en, Pattern=soort, Pattern=dan, Pattern=een
+Turn ID=28| B | B : en een soort vierkant ja soort Cubus
+	Free: Pattern=een soort, Pattern=en, Pattern=soort, Pattern=ja
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=29| B | B : half
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : rechtsboven
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : Eh dat zijn
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=Eh
+Turn ID=33| A | A : Eh deze hebben de plaat die wat boven het midden zitten
+	Free: Pattern=de, Pattern=Eh, Pattern=deze hebben, Pattern=boven het midden, Pattern=plaat, Pattern=die, Pattern=zitten
+	Constrained: Pattern=deze, Pattern=het, Pattern=hebben
+Turn ID=34| A | A : met de twee uitsteeksel aan de hoek van de plaat
+	Free: Pattern=de, Pattern=aan de, Pattern=met, Pattern=twee uitsteeksel, Pattern=plaat
+	Constrained: Pattern=uitsteeksel, Pattern=twee, Pattern=aan, Pattern=de
+Turn ID=35| A | A : en de omgekeerde die piramide bovenop
+	Free: Pattern=en, Pattern=die, Pattern=piramide, Pattern=de
+	Constrained: 
+Turn ID=36| A | A : op de plaat
+	Free: Pattern=plaat, Pattern=op, Pattern=de
+	Constrained: 
+Turn ID=37| B | B : Eh dat zijn
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=Eh
+Turn ID=38| B | B : deze hebben een vierkant plaat eromheen
+	Free: Pattern=deze hebben, Pattern=plaat, Pattern=een
+	Constrained: Pattern=deze, Pattern=hebben
+Turn ID=39| B | B : boven het midden
+	Free: Pattern=boven het midden
+	Constrained: Pattern=het
+Turn ID=40| B | B : dan die twee hak aan het aan de
+	Free: Pattern=twee, Pattern=aan, Pattern=aan de, Pattern=dan, Pattern=het, Pattern=die
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=41| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=42| A | A : deze hebben de plaat boven het midden
+	Free: Pattern=boven het midden, Pattern=deze hebben, Pattern=plaat, Pattern=de
+	Constrained: Pattern=deze, Pattern=het, Pattern=hebben
+Turn ID=43| A | A : met de twee uitsteeksel in de hoek en dan de omgekeerad piramide bovenop
+	Free: Pattern=de, Pattern=en dan, Pattern=piramide, Pattern=met, Pattern=twee uitsteeksel
+	Constrained: Pattern=en, Pattern=dan, Pattern=uitsteeksel, Pattern=twee

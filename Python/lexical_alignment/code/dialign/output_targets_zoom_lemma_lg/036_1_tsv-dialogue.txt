@@ -1,0 +1,91 @@
+A|0| A: dit lijken een beetje op alsof het een soort 
+A|1| A: _ja_ _robot_ of poppe _zijn _die_ naar links kijken_ 
+A|2| A: _die_ van _die_ blok als uitpennen _oog_ 
+A|3| A: _en_ een v _en_ een _vierkant_ aan _de_ zijkant _en_ bovenop nog een soort _antenne_ _met_ een rond eraan 
+B|4| B: ah 
+B|5| B: _Oké_ 
+B|6| B: [ja] _dat zijn_ 
+B|7| B: [en] deze [zijn] [de] [robot] _met die_ [vierkant] [oog] [en] [die] [antenne] 
+A|8| A: O [ja] even _kijken_ 
+A|9| A: [met] [dat] [vierkant] ook nog he 
+B|10| B: [ja] kloppen 
+A|11| A: [Oké] [dat zijn] 
+A|12| A: dit [zijn] een soort [robot] _die naar links kijken_ [met] het [vierkant] aan [de] voorkant [die] blok als [oog] 
+B|13| B: [ja] 
+B|14| B: [ja] [dat zijn] 
+B|15| B: [en] [dat [zijn] die] [robot] _met die_ [vierkant] [oog] [die naar links kijken] 
+A|16| A: Ehm [dat zijn] 
+A|17| A: dit [zijn] het robo [die naar links kijken] [met die] geblokt [oog] 
+B|18| B: [ja] [dat zijn] 
+B|19| B: deze [zijn die] [robot] [met die] [oog] 
+B|20| B: [met die] [oog] 
+A|21| A: Ehm [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit lijken een beetje op alsof het een soort
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : ja robot of poppe zijn die naar links kijken
+	Free: Pattern=die naar links kijken, Pattern=zijn die, Pattern=robot, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=die, Pattern=kijken
+Turn ID=2| A | A : die van die blok als uitpennen oog
+	Free: Pattern=oog, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : en een v en een vierkant aan de zijkant en bovenop nog een soort antenne met een rond eraan
+	Free: Pattern=de, Pattern=met, Pattern=antenne, Pattern=en, Pattern=vierkant
+	Constrained: 
+Turn ID=4| B | B : ah
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| B | B : en deze zijn de robot met die vierkant oog en die antenne
+	Free: Pattern=met die, Pattern=de, Pattern=die, Pattern=antenne, Pattern=oog, Pattern=en, Pattern=vierkant, Pattern=zijn, Pattern=robot
+	Constrained: Pattern=die, Pattern=met
+Turn ID=8| A | A : O ja even kijken
+	Free: Pattern=kijken, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : met dat vierkant ook nog he
+	Free: Pattern=dat, Pattern=met, Pattern=vierkant
+	Constrained: 
+Turn ID=10| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| A | A : dit zijn een soort robot die naar links kijken met het vierkant aan de voorkant die blok als oog
+	Free: Pattern=de, Pattern=met, Pattern=die, Pattern=vierkant, Pattern=die naar links kijken, Pattern=oog, Pattern=zijn, Pattern=robot
+	Constrained: Pattern=kijken, Pattern=die
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| B | B : en dat zijn die robot met die vierkant oog die naar links kijken
+	Free: Pattern=zijn die, Pattern=en, Pattern=robot, Pattern=vierkant, Pattern=dat zijn, Pattern=met die, Pattern=die naar links kijken, Pattern=oog
+	Constrained: Pattern=dat, Pattern=kijken, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=16| A | A : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : dit zijn het robo die naar links kijken met die geblokt oog
+	Free: Pattern=die naar links kijken, Pattern=met die, Pattern=oog, Pattern=zijn
+	Constrained: Pattern=met, Pattern=die, Pattern=kijken
+Turn ID=18| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : deze zijn die robot met die oog
+	Free: Pattern=zijn die, Pattern=met die, Pattern=oog, Pattern=robot
+	Constrained: Pattern=die, Pattern=zijn, Pattern=met
+Turn ID=20| B | B : met die oog
+	Free: Pattern=met die, Pattern=oog
+	Constrained: Pattern=die, Pattern=met
+Turn ID=21| A | A : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

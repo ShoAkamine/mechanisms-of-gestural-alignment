@@ -1,0 +1,87 @@
+A|0| A: en _dit zijn_ _een soort_ _varkensneus_ 
+A|1| A: het staan op _een_ groot plateau 
+A|2| A: en al twee van _die_ gek ding aan de zijkant 
+B|3| B: ah _ja ja_ 
+A|4| A: _met_ vlechtjesachtig 
+B|5| B: _dat zijn_ 
+B|6| B: _dit zijn met die varkensneus_ [een soort] rendierachtig [met] oort [met] bollet 
+A|7| A: Eh [ja] ik zoeken hem alleen even 
+B|8| B: _met die_ varkensplatt neus 
+A|9| A: waar staan hij 
+A|10| A: Oh daar 
+A|11| A: [ja [ja] ja] 
+A|12| A: ik zien het 
+A|13| A: [dit zijn met die varkensneus] en [die] vlecht 
+B|14| B: [ja] _dat zijn_ 
+B|15| B: _eh dit zijn_ _dat_ varken slash rendier-achtig [met] oor 
+A|16| A: [ja] 
+A|17| A: [eh dit zijn] de [varkensneus] 
+B|18| B: mhm 
+B|19| B: [eh dit zijn] _dat_ [met die varkensneus] 
+A|20| A: Uh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : en dit zijn een soort varkensneus
+	Free: Pattern=dit zijn, Pattern=een soort, Pattern=varkensneus
+	Constrained: Pattern=een
+Turn ID=1| A | A : het staan op een groot plateau
+	Free: Pattern=een
+	Constrained: 
+Turn ID=2| A | A : en al twee van die gek ding aan de zijkant
+	Free: Pattern=die
+	Constrained: 
+Turn ID=3| B | B : ah ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=4| A | A : met vlechtjesachtig
+	Free: Pattern=met
+	Constrained: 
+Turn ID=5| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=6| B | B : dit zijn met die varkensneus een soort rendierachtig met oort met bollet
+	Free: Pattern=dit zijn met die varkensneus, Pattern=een soort, Pattern=met
+	Constrained: Pattern=met die, Pattern=varkensneus, Pattern=een, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=met die varkensneus
+Turn ID=7| A | A : Eh ja ik zoeken hem alleen even
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : met die varkensplatt neus
+	Free: Pattern=met die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=9| A | A : waar staan hij
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : Oh daar
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=12| A | A : ik zien het
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : dit zijn met die varkensneus en die vlecht
+	Free: Pattern=dit zijn met die varkensneus, Pattern=die
+	Constrained: Pattern=met die, Pattern=varkensneus, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=met die varkensneus
+Turn ID=14| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=15| B | B : eh dit zijn dat varken slash rendier-achtig met oor
+	Free: Pattern=eh dit zijn, Pattern=met, Pattern=dat
+	Constrained: Pattern=dit zijn
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : eh dit zijn de varkensneus
+	Free: Pattern=eh dit zijn, Pattern=varkensneus
+	Constrained: Pattern=dit zijn
+Turn ID=18| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : eh dit zijn dat met die varkensneus
+	Free: Pattern=eh dit zijn, Pattern=met die varkensneus, Pattern=dat
+	Constrained: Pattern=met die, Pattern=varkensneus, Pattern=met, Pattern=die, Pattern=dit zijn
+Turn ID=20| A | A : Uh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

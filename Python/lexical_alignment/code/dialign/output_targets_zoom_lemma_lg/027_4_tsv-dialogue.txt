@@ -1,0 +1,103 @@
+B|0| B: dit lijken 
+B|1| B: dit _zijn_ _een_ kop waar _rechts_ _twee_ precies dezelfde rechthoekig bord uitsteken 
+B|2| B: bovenop staan _een_ soort _afgetopte_ piramide 
+A|3| A: ja ja ik zien hem al 
+B|4| B: Oké 
+A|5| A: _dat zijn_ object 
+A|6| A: Hebben _twee identiek_ rechthoek 
+A|7| A: [rechts] 
+A|8| A: _en_ [een] afgetoppen kegel _bovenaan_ 
+B|9| B: [dat zijn] nummer 
+B|10| B: _de afgetopte_ piramide 
+B|11| B: [en] [rechts] [twee] wegwijsbordjes lijken het wel 
+B|12| B: [en] links ook nog [een] soort pijl 
+B|13| B: [en] nog [een] voorwerp linksonder op _de_ grond 
+A|14| A: ja 
+A|15| A: ja 
+A|16| A: object 
+A|17| A: [rechts] _de twee identiek_ stok 
+A|18| A: [en] dan [de afgetopte] kegel 
+B|19| B: [dat zijn] nummer 
+B|20| B: [de twee identiek] balk [rechts] 
+B|21| B: _en de afgetopte_ piramide [bovenaan] 
+A|22| A: ja object 
+A|23| A: [rechts] [de] [identiek] stok [en de afgetopte] kegel [bovenaan] 
+B|24| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit lijken
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : dit zijn een kop waar rechts twee precies dezelfde rechthoekig bord uitsteken
+	Free: Pattern=zijn, Pattern=twee, Pattern=rechts, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : bovenop staan een soort afgetopte piramide
+	Free: Pattern=afgetopte, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : ja ja ik zien hem al
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : dat zijn object
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=6| A | A : Hebben twee identiek rechthoek
+	Free: Pattern=twee identiek
+	Constrained: Pattern=identiek, Pattern=twee
+Turn ID=7| A | A : rechts
+	Free: Pattern=rechts
+	Constrained: 
+Turn ID=8| A | A : en een afgetoppen kegel bovenaan
+	Free: Pattern=en, Pattern=een, Pattern=bovenaan
+	Constrained: 
+Turn ID=9| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=10| B | B : de afgetopte piramide
+	Free: Pattern=de afgetopte
+	Constrained: Pattern=afgetopte, Pattern=de
+Turn ID=11| B | B : en rechts twee wegwijsbordjes lijken het wel
+	Free: Pattern=en, Pattern=twee, Pattern=rechts
+	Constrained: 
+Turn ID=12| B | B : en links ook nog een soort pijl
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=13| B | B : en nog een voorwerp linksonder op de grond
+	Free: Pattern=en, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : object
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : rechts de twee identiek stok
+	Free: Pattern=de twee identiek, Pattern=rechts
+	Constrained: Pattern=twee identiek, Pattern=identiek, Pattern=twee, Pattern=de
+Turn ID=18| A | A : en dan de afgetopte kegel
+	Free: Pattern=de afgetopte, Pattern=en
+	Constrained: Pattern=afgetopte, Pattern=de
+Turn ID=19| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : de twee identiek balk rechts
+	Free: Pattern=de twee identiek, Pattern=rechts
+	Constrained: Pattern=twee identiek, Pattern=identiek, Pattern=twee, Pattern=de
+Turn ID=21| B | B : en de afgetopte piramide bovenaan
+	Free: Pattern=en de afgetopte, Pattern=bovenaan
+	Constrained: Pattern=de afgetopte, Pattern=en, Pattern=afgetopte, Pattern=de
+Turn ID=22| A | A : ja object
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : rechts de identiek stok en de afgetopte kegel bovenaan
+	Free: Pattern=en de afgetopte, Pattern=de, Pattern=rechts, Pattern=bovenaan, Pattern=identiek
+	Constrained: Pattern=de afgetopte, Pattern=en, Pattern=afgetopte, Pattern=de
+Turn ID=24| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

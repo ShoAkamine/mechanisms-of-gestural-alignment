@@ -1,0 +1,199 @@
+A|0| A: _Oké_ 
+A|1| A: _nu_ _hebben_ _ik_ 
+A|2| A: het _zijn_ _een_ soort _van_ _een_ _tafel_ wat _niet_ _op de grond_ staan _maar_ _een_ beetje zweeft 
+B|3| B: _Oh ja_ 
+B|4| B: _ja_ 
+A|5| A: en _dan_ nog _een_ soort _van_ bakje erop vierkant bakje 
+B|6| B: _ja_ E-en daarachter _zo'n_ gek flimmel 
+B|7| B: _hoe_ doen _je dat_ 
+A|8| A: [ja] _een_ beetje 
+B|9| B: _zo'n_ 
+A|10| A: [ja] _ik_ _weten_ _niet_ gewoon 
+B|11| B: _zo'n_ 
+A|12| A: [ja] _ik_ _weten_ _niet_ [hoe] [je dat] moeten noemen _maar_ 
+A|13| A: _een_ 
+B|14| B: dus [niet] _die_ [tafel] [op de grond] [maar] _die_ zeven ligbed achtig iets 
+A|15| A: luchtbed 
+B|16| B: [tafel] 
+B|17| B: nee _zo'n_ ligbed [weten] [je] wel 
+B|18| B: voor in [de] zon 
+B|19| B: [niet] 
+A|20| A: [Oh] _ik_ zullen het [niet] zozeer _een_ _een_ [zo'n] hangbed noemen 
+B|21| B: of wel 
+B|22| B: nee [niet] [zo'n] hangmet [maar] [zo'n] 
+A|23| A: [ja] 
+B|24| B: of twee [van] _die_ poot _hebben hij_ _voorop_ 
+A|25| A: [ja] kloppen 
+A|26| A: [voorop] [hebben] inderdaad [hebben hij] inderdaad en _dan_ _een_ bak erop en _dan_ [zo'n] d-ding 
+B|27| B: [ja] 
+B|28| B: [Oké] [dan] [weten] [ik] hem denken [ik] 
+A|29| A: [Oké] 
+B|30| B: _ik hebben nu de_ [tafel] 
+B|31| B: _die_ in het-bof daar zo 
+A|32| A: [Oh ja] _met_ [ja] 
+B|33| B: [met] [een] balk er [op] 
+A|34| A: _Eh_ [met] 
+A|35| A: [ja] 
+B|36| B: [een] blok 
+A|37| A: [ik hebben nu de] picknick [tafel] 
+A|38| A: [tafel] [die] _zweven_ [ja] 
+B|39| B: [Oh ja] 
+B|40| B: [Oh ja] 
+B|41| B: waar [zijn] [die] waar [zijn] [die] waar [zijn] [die] 
+B|42| B: [Oh ja] 
+B|43| B: _ik hebben de_ [zweven] _picknicktafel_ 
+A|44| A: [dat] [zijn] 
+A|45| A: [ik hebben de] [picknicktafel] 
+B|46| B: [Eh] 
+B|47| B: [ik hebben de] zeven [picknicktafel] 
+A|48| A: [Oké] [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : nu hebben ik
+	Free: Pattern=ik, Pattern=hebben, Pattern=nu
+	Constrained: 
+Turn ID=2| A | A : het zijn een soort van een tafel wat niet op de grond staan maar een beetje zweeft
+	Free: Pattern=niet, Pattern=een, Pattern=op de grond, Pattern=tafel, Pattern=van, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=de, Pattern=op
+Turn ID=3| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en dan nog een soort van bakje erop vierkant bakje
+	Free: Pattern=dan, Pattern=van, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ja E-en daarachter zo'n gek flimmel
+	Free: Pattern=zo'n, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : hoe doen je dat
+	Free: Pattern=je dat, Pattern=hoe
+	Constrained: Pattern=dat, Pattern=je
+Turn ID=8| A | A : ja een beetje
+	Free: Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : zo'n
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=10| A | A : ja ik weten niet gewoon
+	Free: Pattern=niet, Pattern=ik, Pattern=weten, Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : zo'n
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=12| A | A : ja ik weten niet hoe je dat moeten noemen maar
+	Free: Pattern=ja, Pattern=niet, Pattern=weten, Pattern=ik, Pattern=maar, Pattern=je dat, Pattern=hoe
+	Constrained: Pattern=dat, Pattern=je
+Turn ID=13| A | A : een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=14| B | B : dus niet die tafel op de grond maar die zeven ligbed achtig iets
+	Free: Pattern=niet, Pattern=op de grond, Pattern=maar, Pattern=tafel, Pattern=die
+	Constrained: Pattern=de, Pattern=op
+Turn ID=15| A | A : luchtbed
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : tafel
+	Free: Pattern=tafel
+	Constrained: 
+Turn ID=17| B | B : nee zo'n ligbed weten je wel
+	Free: Pattern=je, Pattern=weten, Pattern=zo'n
+	Constrained: 
+Turn ID=18| B | B : voor in de zon
+	Free: Pattern=de
+	Constrained: 
+Turn ID=19| B | B : niet
+	Free: Pattern=niet
+	Constrained: 
+Turn ID=20| A | A : Oh ik zullen het niet zozeer een een zo'n hangbed noemen
+	Free: Pattern=zo'n, Pattern=niet, Pattern=een, Pattern=ik, Pattern=Oh
+	Constrained: 
+Turn ID=21| B | B : of wel
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : nee niet zo'n hangmet maar zo'n
+	Free: Pattern=niet, Pattern=maar, Pattern=zo'n
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : of twee van die poot hebben hij voorop
+	Free: Pattern=hebben hij, Pattern=voorop, Pattern=die, Pattern=van
+	Constrained: Pattern=hebben
+Turn ID=25| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : voorop hebben inderdaad hebben hij inderdaad en dan een bak erop en dan zo'n d-ding
+	Free: Pattern=hebben hij, Pattern=zo'n, Pattern=voorop, Pattern=dan, Pattern=een, Pattern=hebben
+	Constrained: Pattern=hebben
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Oké dan weten ik hem denken ik
+	Free: Pattern=dan, Pattern=ik, Pattern=weten, Pattern=Oké
+	Constrained: 
+Turn ID=29| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=30| B | B : ik hebben nu de tafel
+	Free: Pattern=ik hebben nu de, Pattern=tafel
+	Constrained: Pattern=de, Pattern=nu, Pattern=ik, Pattern=hebben
+Turn ID=31| B | B : die in het-bof daar zo
+	Free: Pattern=die
+	Constrained: 
+Turn ID=32| A | A : Oh ja met ja
+	Free: Pattern=Oh ja, Pattern=met, Pattern=ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=33| B | B : met een balk er op
+	Free: Pattern=met, Pattern=een, Pattern=op
+	Constrained: 
+Turn ID=34| A | A : Eh met
+	Free: Pattern=met, Pattern=Eh
+	Constrained: 
+Turn ID=35| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : een blok
+	Free: Pattern=een
+	Constrained: 
+Turn ID=37| A | A : ik hebben nu de picknick tafel
+	Free: Pattern=ik hebben nu de, Pattern=tafel
+	Constrained: Pattern=de, Pattern=nu, Pattern=ik, Pattern=hebben
+Turn ID=38| A | A : tafel die zweven ja
+	Free: Pattern=tafel, Pattern=die, Pattern=zweven, Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=40| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=41| B | B : waar zijn die waar zijn die waar zijn die
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=42| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=43| B | B : ik hebben de zweven picknicktafel
+	Free: Pattern=ik hebben de, Pattern=picknicktafel, Pattern=zweven
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=44| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=45| A | A : ik hebben de picknicktafel
+	Free: Pattern=ik hebben de, Pattern=picknicktafel
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=46| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=47| B | B : ik hebben de zeven picknicktafel
+	Free: Pattern=ik hebben de, Pattern=picknicktafel
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=48| A | A : Oké dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=Oké
+	Constrained: 

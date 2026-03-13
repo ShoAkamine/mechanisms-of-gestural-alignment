@@ -1,0 +1,147 @@
+A|0| A: _eh_ dit _hebben_ _ja_ het _soort_ van _de_ vorm _wat_ je in _een_ restaurant _hebben_ waar van _die_ zout dinget uit komen 
+A|1| A: waar zout uit komen 
+A|2| A: dus _een soort_ cilinder 
+A|3| A: _en_ _met_ _aan de_ bovenkant _een_ rond erop 
+A|4| A: _en_ _dat_ steken _aan de_ _en_ _de_ rechterkant eruit 
+A|5| A: _en aan de achterkant_ _hebben_ hij nog _een_ _plaat_ 
+A|6| A: waar _ook_ nog _een_ staaf uit komen 
+B|7| B: [eh] [ja] 
+A|8| A: dus 
+B|9| B: _dat zijn_ 
+B|10| B: _deze hebben _aan de_ achterkant een_ vierkant [plaat] 
+B|11| B: _met een soort_ haak er [aan] 
+B|12| B: _en dan_ links _een klein_ [ja] _pion_ 
+A|13| A: mhm 
+B|14| B: [en] rechts _een wat lang_ _pion_ 
+A|15| A: [ja] [dat zijn] 
+A|16| A: Eh [deze hebben aan de] linkerkant [wat] [een klein] [wat] zeggen _maar_ afgeknipte [pion] 
+A|17| A: [en dan] [aan de] rechterkant _die_ [pion] _maar dan_ weer [wat lang] 
+A|18| A: [en dan] [aan de achterkant een] schuin [plaat] 
+A|19| A: [met] nog iets eraan vast 
+B|20| B: [ja] 
+B|21| B: [deze hebben] links [een soort] [pion] uitsteken 
+B|22| B: [en] rechts [ook] 
+B|23| B: [maar] rechts [zijn] [die] [lang] 
+B|24| B: [en [aan de achterkant] een] vierkant [plaat] _met een_ haak 
+A|25| A: mhm 
+A|26| A: [ja] [dat zijn] 
+A|27| A: ehm [deze hebben aan de] linkerkant [een wat] _kort_ kegel [en aan de] rechterkant [een wat lang] kegel 
+A|28| A: [aan de achterkant] Schuine vlak [plaat] 
+A|29| A: [met een soort] uitsteeksel nog eraan 
+B|30| B: [deze hebben] links [een soort] [pion] 
+B|31| B: [kort] 
+B|32| B: [en] rechts dezelfde [maar dan] [lang] 
+A|33| A: [ja] 
+B|34| B: [en [aan de achterkant] een] vierkant [plaat] [met een] haak 
+A|35| A: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh dit hebben ja het soort van de vorm wat je in een restaurant hebben waar van die zout dinget uit komen
+	Free: Pattern=soort, Pattern=een, Pattern=hebben, Pattern=die, Pattern=eh, Pattern=wat, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : waar zout uit komen
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : dus een soort cilinder
+	Free: Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=3| A | A : en met aan de bovenkant een rond erop
+	Free: Pattern=aan de, Pattern=en, Pattern=met, Pattern=een
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=4| A | A : en dat steken aan de en de rechterkant eruit
+	Free: Pattern=aan de, Pattern=dat, Pattern=en, Pattern=de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=5| A | A : en aan de achterkant hebben hij nog een plaat
+	Free: Pattern=en aan de achterkant, Pattern=hebben, Pattern=plaat, Pattern=een
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=6| A | A : waar ook nog een staaf uit komen
+	Free: Pattern=ook, Pattern=een
+	Constrained: 
+Turn ID=7| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : dus
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| B | B : deze hebben aan de achterkant een vierkant plaat
+	Free: Pattern=deze hebben aan de, Pattern=aan de achterkant een, Pattern=plaat
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=deze hebben, Pattern=de, Pattern=aan
+Turn ID=11| B | B : met een soort haak er aan
+	Free: Pattern=met een soort, Pattern=aan
+	Constrained: Pattern=soort, Pattern=een, Pattern=met, Pattern=met een, Pattern=een soort
+Turn ID=12| B | B : en dan links een klein ja pion
+	Free: Pattern=een klein, Pattern=en dan, Pattern=pion, Pattern=ja
+	Constrained: Pattern=en, Pattern=een
+Turn ID=13| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : en rechts een wat lang pion
+	Free: Pattern=een wat lang, Pattern=pion, Pattern=en
+	Constrained: Pattern=een, Pattern=een wat, Pattern=wat, Pattern=lang, Pattern=wat lang
+Turn ID=15| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=16| A | A : Eh deze hebben aan de linkerkant wat een klein wat zeggen maar afgeknipte pion
+	Free: Pattern=deze hebben aan de, Pattern=wat, Pattern=maar, Pattern=pion, Pattern=een klein
+	Constrained: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=deze hebben, Pattern=de, Pattern=aan
+Turn ID=17| A | A : en dan aan de rechterkant die pion maar dan weer wat lang
+	Free: Pattern=en dan, Pattern=aan de, Pattern=die, Pattern=maar dan, Pattern=wat lang, Pattern=pion
+	Constrained: Pattern=wat, Pattern=lang, Pattern=en, Pattern=maar, Pattern=de, Pattern=aan
+Turn ID=18| A | A : en dan aan de achterkant een schuin plaat
+	Free: Pattern=aan de achterkant een, Pattern=en dan, Pattern=plaat
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=19| A | A : met nog iets eraan vast
+	Free: Pattern=met
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : deze hebben links een soort pion uitsteken
+	Free: Pattern=een soort, Pattern=deze hebben, Pattern=pion
+	Constrained: Pattern=hebben, Pattern=een, Pattern=soort
+Turn ID=22| B | B : en rechts ook
+	Free: Pattern=ook, Pattern=en
+	Constrained: 
+Turn ID=23| B | B : maar rechts zijn die lang
+	Free: Pattern=zijn, Pattern=maar, Pattern=lang, Pattern=die
+	Constrained: 
+Turn ID=24| B | B : en aan de achterkant een vierkant plaat met een haak
+	Free: Pattern=aan de achterkant een, Pattern=en aan de achterkant, Pattern=met een, Pattern=plaat
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=een, Pattern=met, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=25| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : ehm deze hebben aan de linkerkant een wat kort kegel en aan de rechterkant een wat lang kegel
+	Free: Pattern=een wat lang, Pattern=een wat, Pattern=deze hebben aan de, Pattern=kort, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=deze hebben, Pattern=een wat, Pattern=wat, Pattern=lang, Pattern=en, Pattern=wat lang, Pattern=de, Pattern=aan
+Turn ID=28| A | A : aan de achterkant Schuine vlak plaat
+	Free: Pattern=aan de achterkant, Pattern=plaat
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=29| A | A : met een soort uitsteeksel nog eraan
+	Free: Pattern=met een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=met, Pattern=met een, Pattern=een soort
+Turn ID=30| B | B : deze hebben links een soort pion
+	Free: Pattern=een soort, Pattern=deze hebben, Pattern=pion
+	Constrained: Pattern=hebben, Pattern=een, Pattern=soort
+Turn ID=31| B | B : kort
+	Free: Pattern=kort
+	Constrained: 
+Turn ID=32| B | B : en rechts dezelfde maar dan lang
+	Free: Pattern=maar dan, Pattern=en, Pattern=lang
+	Constrained: Pattern=maar
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : en aan de achterkant een vierkant plaat met een haak
+	Free: Pattern=aan de achterkant een, Pattern=en aan de achterkant, Pattern=met een, Pattern=plaat
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=een, Pattern=met, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=aan
+Turn ID=35| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

@@ -1,0 +1,103 @@
+A|0| A: _Euh_ 
+A|1| A: _deze_ hebben een heel lang _voet_ _die_ een beetje _draaien_ _zijn met_ een blok nog daaronder 
+A|2| A: _en_ twee vierkant _bovenop_ _met_ nog een uitsteksel aan _de_ linkerkant 
+B|3| B: [en] _zijn _de_ voet zijn_ _dat_ [die] euh _driehoekig_ 
+A|4| A: _ja_ [de voet zijn] [driehoekig] [en] [de] _been_ [zijn] een beetje _draaien_ 
+B|5| B: [ja] dan _zijn het_ 
+B|6| B: [deze] [zijn _met] het_ [Euh] driehoekje als [voet] 
+B|7| B: [en] dan [de] [draaien] euh [ja] 
+A|8| A: [ja] 
+A|9| A: [ja] 
+B|10| B: spiraal omhoog [ja] 
+A|11| A: Top 
+A|12| A: [dat] [zijn] 
+A|13| A: _dit [zijn_ het] [driehoekig] _voet [met_ het] [draaien] _been_ ertussen 
+B|14| B: [ja] dan [zijn het] 
+B|15| B: euh [dit zijn] [die] [met] [die] _driehoek_ [en] _spiraalvormig been_ omhoog 
+A|16| A: [driehoek] waar staan [de] [driehoek] 
+B|17| B: [Euh] als [voet] [de] driehoekvoet 
+A|18| A: Oh juist [ja] 
+A|19| A: [dit [zijn] de] 
+A|20| A: [dit [zijn] de] [driehoekig] _voet [met_ het] [spiraalvormig been] 
+B|21| B: [ja] euh 
+B|22| B: [dit zijn] [die] euh driehoekvormig [voet met] [dat] euh spiraal 
+B|23| B: [been] er [bovenop] 
+A|24| A: [ja] [dat] [zijn de] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=1| A | A : deze hebben een heel lang voet die een beetje draaien zijn met een blok nog daaronder
+	Free: Pattern=draaien, Pattern=voet, Pattern=deze, Pattern=zijn met, Pattern=die
+	Constrained: Pattern=zijn, Pattern=met
+Turn ID=2| A | A : en twee vierkant bovenop met nog een uitsteksel aan de linkerkant
+	Free: Pattern=bovenop, Pattern=de, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : en zijn de voet zijn dat die euh driehoekig
+	Free: Pattern=dat, Pattern=die, Pattern=driehoekig, Pattern=en, Pattern=zijn de, Pattern=de voet zijn
+	Constrained: Pattern=voet, Pattern=zijn, Pattern=de
+Turn ID=4| A | A : ja de voet zijn driehoekig en de been zijn een beetje draaien
+	Free: Pattern=draaien, Pattern=driehoekig, Pattern=en, Pattern=de voet zijn, Pattern=de, Pattern=ja, Pattern=been, Pattern=zijn
+	Constrained: Pattern=voet, Pattern=zijn, Pattern=de
+Turn ID=5| B | B : ja dan zijn het
+	Free: Pattern=zijn het, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=6| B | B : deze zijn met het Euh driehoekje als voet
+	Free: Pattern=voet, Pattern=Euh, Pattern=zijn met, Pattern=met het, Pattern=deze
+	Constrained: Pattern=zijn, Pattern=met
+Turn ID=7| B | B : en dan de draaien euh ja
+	Free: Pattern=draaien, Pattern=de, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : spiraal omhoog ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Top
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : dit zijn het driehoekig voet met het draaien been ertussen
+	Free: Pattern=voet met, Pattern=zijn het, Pattern=draaien, Pattern=driehoekig, Pattern=met het, Pattern=been, Pattern=dit zijn
+	Constrained: Pattern=voet, Pattern=zijn, Pattern=met
+Turn ID=14| B | B : ja dan zijn het
+	Free: Pattern=zijn het, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : euh dit zijn die met die driehoek en spiraalvormig been omhoog
+	Free: Pattern=driehoek, Pattern=spiraalvormig been, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=been, Pattern=zijn
+Turn ID=16| A | A : driehoek waar staan de driehoek
+	Free: Pattern=de, Pattern=driehoek
+	Constrained: 
+Turn ID=17| B | B : Euh als voet de driehoekvoet
+	Free: Pattern=voet, Pattern=Euh, Pattern=de
+	Constrained: 
+Turn ID=18| A | A : Oh juist ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dit zijn de
+	Free: Pattern=dit zijn, Pattern=zijn de
+	Constrained: Pattern=zijn, Pattern=de
+Turn ID=20| A | A : dit zijn de driehoekig voet met het spiraalvormig been
+	Free: Pattern=voet met, Pattern=spiraalvormig been, Pattern=driehoekig, Pattern=met het, Pattern=zijn de, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=voet, Pattern=met, Pattern=been, Pattern=zijn
+Turn ID=21| B | B : ja euh
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : dit zijn die euh driehoekvormig voet met dat euh spiraal
+	Free: Pattern=dit zijn, Pattern=voet met, Pattern=dat, Pattern=die
+	Constrained: Pattern=voet, Pattern=zijn, Pattern=met
+Turn ID=23| B | B : been er bovenop
+	Free: Pattern=bovenop, Pattern=been
+	Constrained: 
+Turn ID=24| A | A : ja dat zijn de
+	Free: Pattern=zijn de, Pattern=dat, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=de

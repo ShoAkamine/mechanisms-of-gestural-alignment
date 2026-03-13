@@ -1,0 +1,239 @@
+A|0| A: _eh dit_ lijken op _een_ _boot_ 
+A|1| A: Zeggen maar _een_ _boot_ 
+B|2| B: _de boot_ 
+A|3| A: Zeggen maar voor zich _hebben hij_ als _het_ _zijn_ _een_ _ja_ _klein staaf_ 
+A|4| A: _en dan_ _daaruit_ komen ook _weer_ _zo'n_ _staaf_ _omhoog_ 
+A|5| A: _een klein_ ronde 
+A|6| A: _en_ _bovenop_ _hebben hij_ zeggen maar _een_ lang _staaf_ op zich 
+A|7| A: _het_ _zitten_ best wel hoog volgens mij 
+A|8| A: _en_ twee _ja_ ieniemienie-vleugels 
+B|9| B: Eh 
+A|10| A: _het_ _zijn_ niet echt vleugel maar zo 
+A|11| A: _ja_ hoe leggen je _dat_ uit 
+B|12| B: Wacht 
+A|13| A: dus m 
+B|14| B: _Oh_ [hij] [hebben] [een] soort _van_ [hebben hij] [een] soort _van_ 
+B|15| B: _Oh_ _ja ja_ [hij] [hebben] recht [bovenop] [een] soort _van_ hanenkam 
+B|16| B: [zo'n] driehoek [zo'n] rechthoekig dinget 
+A|17| A: [ja] 
+A|18| A: [ja ja] geen [ja] echt [een] _rechthoek_ _zijn_ _het_ 
+B|19| B: [ja [ja] ja] 
+A|20| A: of nee [een] veel [een] [ja] [een] lang _staaf_ 
+B|21| B: [en dan] aan _de_ voorkant 
+B|22| B: _ja precies_ 
+B|23| B: [en] aan _de_ voorkant [zitten] [zo'n] soort _van_ driehoekje met [daaruit] [weer] [een [klein] staaf] 
+B|24| B: [omhoog] 
+A|25| A: [ja] 
+B|26| B: [ja] _oké_ 
+A|27| A: [en dan] nog twee [van] _die_ mini-vleugels of zo 
+B|28| B: [ja] 
+A|29| A: [ja] _dat_ _zijn_ hem 
+B|30| B: [ja] _oké_ helder 
+B|31| B: [eh] nummer 
+B|32| B: [eh _dit] zijn de boot_ 
+B|33| B: met [het] [rechthoek] 
+A|34| A: Oi 
+A|35| A: [de boot] 
+A|36| A: _even_ kijken 
+A|37| A: waar [zijn] _die_ 
+A|38| A: [Oh] 
+A|39| A: [dit zijn de boot] 
+B|40| B: [eh] [ja] _even zoeken_ 
+A|41| A: _die_ [ja] staan nu allemaal ergens ander hè 
+A|42| A: hè [zijn] [weer] echt [even] 
+B|43| B: [ja] met [die] [rechthoek] 
+B|44| B: met [dat] [de] [staaf] [bovenop] toch 
+A|45| A: [ja precies] 
+B|46| B: [ja] _oké_ 
+B|47| B: Oké [de boot] 
+A|48| A: [de boot] [oké] 
+B|49| B: [de boot] 
+A|50| A: [even zoeken] 
+A|51| A: [ja] 
+A|52| A: [de boot] 
+B|53| B: [de boot] [de boot] 
+B|54| B: [ja] nummer 
+B|55| B: [eh] [de boot] 
+A|56| A: Boot [boot] [even zoeken] 
+A|57| A: Boot 
+A|58| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh dit lijken op een boot
+	Free: Pattern=eh dit, Pattern=een, Pattern=boot
+	Constrained: Pattern=eh
+Turn ID=1| A | A : Zeggen maar een boot
+	Free: Pattern=een, Pattern=boot
+	Constrained: 
+Turn ID=2| B | B : de boot
+	Free: Pattern=de boot
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=3| A | A : Zeggen maar voor zich hebben hij als het zijn een ja klein staaf
+	Free: Pattern=hebben hij, Pattern=ja, Pattern=een, Pattern=het, Pattern=klein staaf, Pattern=zijn
+	Constrained: Pattern=hebben, Pattern=hij, Pattern=staaf
+Turn ID=4| A | A : en dan daaruit komen ook weer zo'n staaf omhoog
+	Free: Pattern=zo'n, Pattern=weer, Pattern=daaruit, Pattern=omhoog, Pattern=staaf, Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=5| A | A : een klein ronde
+	Free: Pattern=een klein
+	Constrained: Pattern=een
+Turn ID=6| A | A : en bovenop hebben hij zeggen maar een lang staaf op zich
+	Free: Pattern=bovenop, Pattern=hebben hij, Pattern=staaf, Pattern=een, Pattern=en
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=7| A | A : het zitten best wel hoog volgens mij
+	Free: Pattern=het, Pattern=zitten
+	Constrained: 
+Turn ID=8| A | A : en twee ja ieniemienie-vleugels
+	Free: Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : het zijn niet echt vleugel maar zo
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=11| A | A : ja hoe leggen je dat uit
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Wacht
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : dus m
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : Oh hij hebben een soort van hebben hij een soort van
+	Free: Pattern=hebben hij, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=van, Pattern=Oh
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=15| B | B : Oh ja ja hij hebben recht bovenop een soort van hanenkam
+	Free: Pattern=bovenop, Pattern=ja ja, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=van, Pattern=Oh
+	Constrained: Pattern=ja
+Turn ID=16| B | B : zo'n driehoek zo'n rechthoekig dinget
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja ja geen ja echt een rechthoek zijn het
+	Free: Pattern=rechthoek, Pattern=een, Pattern=het, Pattern=zijn, Pattern=ja, Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=19| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=20| A | A : of nee een veel een ja een lang staaf
+	Free: Pattern=een, Pattern=ja, Pattern=staaf
+	Constrained: 
+Turn ID=21| B | B : en dan aan de voorkant
+	Free: Pattern=en dan, Pattern=de
+	Constrained: Pattern=en
+Turn ID=22| B | B : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=23| B | B : en aan de voorkant zitten zo'n soort van driehoekje met daaruit weer een klein staaf
+	Free: Pattern=zo'n, Pattern=de, Pattern=klein staaf, Pattern=zitten, Pattern=weer, Pattern=daaruit, Pattern=een klein, Pattern=van, Pattern=en
+	Constrained: Pattern=een, Pattern=staaf
+Turn ID=24| B | B : omhoog
+	Free: Pattern=omhoog
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : en dan nog twee van die mini-vleugels of zo
+	Free: Pattern=en dan, Pattern=die, Pattern=van
+	Constrained: Pattern=en
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ja dat zijn hem
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : ja oké helder
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : eh nummer
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=32| B | B : eh dit zijn de boot
+	Free: Pattern=dit zijn de boot, Pattern=eh dit
+	Constrained: Pattern=de, Pattern=boot, Pattern=de boot, Pattern=eh, Pattern=zijn
+Turn ID=33| B | B : met het rechthoek
+	Free: Pattern=het, Pattern=rechthoek
+	Constrained: 
+Turn ID=34| A | A : Oi
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : de boot
+	Free: Pattern=de boot
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=36| A | A : even kijken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=37| A | A : waar zijn die
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=38| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=39| A | A : dit zijn de boot
+	Free: Pattern=dit zijn de boot
+	Constrained: Pattern=boot, Pattern=de, Pattern=zijn, Pattern=de boot
+Turn ID=40| B | B : eh ja even zoeken
+	Free: Pattern=even zoeken, Pattern=eh, Pattern=ja
+	Constrained: Pattern=even
+Turn ID=41| A | A : die ja staan nu allemaal ergens ander hè
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : hè zijn weer echt even
+	Free: Pattern=zijn, Pattern=even, Pattern=weer
+	Constrained: 
+Turn ID=43| B | B : ja met die rechthoek
+	Free: Pattern=die, Pattern=rechthoek, Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : met dat de staaf bovenop toch
+	Free: Pattern=bovenop, Pattern=dat, Pattern=de, Pattern=staaf
+	Constrained: 
+Turn ID=45| A | A : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=46| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : Oké de boot
+	Free: Pattern=de boot
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=48| A | A : de boot oké
+	Free: Pattern=de boot, Pattern=oké
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=49| B | B : de boot
+	Free: Pattern=de boot
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=50| A | A : even zoeken
+	Free: Pattern=even zoeken
+	Constrained: Pattern=even
+Turn ID=51| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=52| A | A : de boot
+	Free: Pattern=de boot
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=53| B | B : de boot de boot
+	Free: Pattern=de boot
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=54| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=55| B | B : eh de boot
+	Free: Pattern=de boot, Pattern=eh
+	Constrained: Pattern=de, Pattern=boot
+Turn ID=56| A | A : Boot boot even zoeken
+	Free: Pattern=even zoeken, Pattern=boot
+	Constrained: Pattern=even
+Turn ID=57| A | A : Boot
+	Free: 
+	Constrained: 
+Turn ID=58| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

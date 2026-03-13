@@ -1,0 +1,111 @@
+A|0| A: _Ehm _ik hebben_ nu_ _één_ _en_ daar zitten _aan de bovenkant en_ _de linkerkant_ zitten _twee_ dezelfde vorm 
+A|1| A: _ja_ soort ver _zijn_ _dat_ 
+A|2| A: _Ehm_ _en_ _aan de rechterkant_ zitten _een kubus_ 
+A|3| A: _en dan_ _zijn_ linksachter komen _er_ _nog_ iets uit wat soort 
+A|4| A: _ja_ _ook_ _een_ soort 
+B|5| B: Oh [ik] _ik weten_ al welk _het_ [zijn] 
+A|6| A: Oké 
+B|7| B: [Ehm ik hebben] [er] hier weer [één] waarbij hij _twee vear_ [hebben] 
+B|8| B: _eentje_ staan [er] recht op [zijn] hoofd _en één_ staan [er] [aan [de] linkerkant] 
+B|9| B: [en dan] [hebben] hij [ook] [nog] [aan de rechterkant] weer _zo'n_ voorwerp [dat] [een] beetje op [een kubus] op [een kubus] op [een kubus] lijken 
+A|10| A: _ja_ [ik weten] [het] 
+A|11| A: [Ehm] 
+A|12| A: [Ehm _ik hebben] nu die met die twee_ veer 
+A|13| A: [eentje] uit _de bovenkant en één_ komen uit [de linkerkant] 
+B|14| B: [ja] 
+A|15| A: [en] rechts zitten _die kubus Kubus kubus_ 
+B|16| B: [zijn] [het] 
+B|17| B: _ik hebben [die met _die_ twee] vear_ [en dan] [één] [aan [de bovenkant en] één] [aan [de] linkerkant] van [het] hoofd 
+A|18| A: [ja] [met] [zo'n] [kubus] [kubus] _kubus aan_ 
+B|19| B: [ja] [ja] 
+A|20| A: [ja] 
+A|21| A: eh [ik hebben die met die] ver [die] [die twee vear] boven [en] link [en] rechts _die kubus Kubus kubus_ 
+B|22| B: ehm waar staan [die] 
+B|23| B: [ja] 
+B|24| B: [ik hebben nu die met die twee] v [één] [aan [de bovenkant en] één] [aan [de] linkerkant] 
+B|25| B: [en] [die kubus Kubus [kubus] [aan] de rechterkant] 
+A|26| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Ehm ik hebben nu één en daar zitten aan de bovenkant en de linkerkant zitten twee dezelfde vorm
+	Free: Pattern=twee, Pattern=Ehm ik hebben, Pattern=de linkerkant, Pattern=één, Pattern=en, Pattern=aan de bovenkant en, Pattern=ik hebben nu
+	Constrained: Pattern=Ehm, Pattern=aan de, Pattern=hebben, Pattern=ik, Pattern=en
+Turn ID=1| A | A : ja soort ver zijn dat
+	Free: Pattern=zijn, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : Ehm en aan de rechterkant zitten een kubus
+	Free: Pattern=aan de rechterkant, Pattern=een kubus, Pattern=en, Pattern=Ehm
+	Constrained: Pattern=een, Pattern=kubus, Pattern=aan de
+Turn ID=3| A | A : en dan zijn linksachter komen er nog iets uit wat soort
+	Free: Pattern=en dan, Pattern=zijn, Pattern=nog, Pattern=er
+	Constrained: Pattern=en
+Turn ID=4| A | A : ja ook een soort
+	Free: Pattern=een, Pattern=ook, Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : Oh ik ik weten al welk het zijn
+	Free: Pattern=ik weten, Pattern=zijn, Pattern=het, Pattern=ik
+	Constrained: Pattern=ik
+Turn ID=6| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Ehm ik hebben er hier weer één waarbij hij twee vear hebben
+	Free: Pattern=Ehm ik hebben, Pattern=twee vear, Pattern=hebben, Pattern=één, Pattern=er
+	Constrained: Pattern=twee, Pattern=Ehm, Pattern=ik, Pattern=hebben
+Turn ID=8| B | B : eentje staan er recht op zijn hoofd en één staan er aan de linkerkant
+	Free: Pattern=eentje, Pattern=aan de, Pattern=de linkerkant, Pattern=er, Pattern=en één, Pattern=zijn
+	Constrained: Pattern=en, Pattern=één
+Turn ID=9| B | B : en dan hebben hij ook nog aan de rechterkant weer zo'n voorwerp dat een beetje op een kubus op een kubus op een kubus lijken
+	Free: Pattern=dat, Pattern=nog, Pattern=zo'n, Pattern=en dan, Pattern=ook, Pattern=hebben, Pattern=aan de rechterkant, Pattern=een, Pattern=een kubus
+	Constrained: Pattern=een, Pattern=kubus, Pattern=en, Pattern=aan de
+Turn ID=10| A | A : ja ik weten het
+	Free: Pattern=ik weten, Pattern=het, Pattern=ja
+	Constrained: Pattern=ik
+Turn ID=11| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=12| A | A : Ehm ik hebben nu die met die twee veer
+	Free: Pattern=ik hebben nu die met die twee, Pattern=Ehm ik hebben
+	Constrained: Pattern=twee, Pattern=Ehm, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=ik hebben nu, Pattern=die, Pattern=die met die twee
+Turn ID=13| A | A : eentje uit de bovenkant en één komen uit de linkerkant
+	Free: Pattern=de bovenkant en één, Pattern=de linkerkant, Pattern=eentje
+	Constrained: Pattern=en, Pattern=één, Pattern=en één
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : en rechts zitten die kubus Kubus kubus
+	Free: Pattern=die kubus Kubus kubus, Pattern=en
+	Constrained: Pattern=kubus, Pattern=die
+Turn ID=16| B | B : zijn het
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=17| B | B : ik hebben die met die twee vear en dan één aan de bovenkant en één aan de linkerkant van het hoofd
+	Free: Pattern=en dan, Pattern=aan de, Pattern=de linkerkant, Pattern=het, Pattern=één, Pattern=die twee vear, Pattern=die met die twee, Pattern=ik hebben die met die, Pattern=de bovenkant en één, Pattern=aan de bovenkant en
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=twee vear, Pattern=hebben, Pattern=één, Pattern=met, Pattern=die, Pattern=ik, Pattern=en, Pattern=en één
+Turn ID=18| A | A : ja met zo'n kubus kubus kubus aan
+	Free: Pattern=zo'n, Pattern=ja, Pattern=kubus aan, Pattern=met, Pattern=kubus
+	Constrained: Pattern=kubus
+Turn ID=19| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : eh ik hebben die met die ver die die twee vear boven en link en rechts die kubus Kubus kubus
+	Free: Pattern=die twee vear, Pattern=die kubus Kubus kubus, Pattern=die, Pattern=ik hebben die met die, Pattern=en
+	Constrained: Pattern=twee, Pattern=twee vear, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=kubus
+Turn ID=22| B | B : ehm waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ik hebben nu die met die twee v één aan de bovenkant en één aan de linkerkant
+	Free: Pattern=aan de, Pattern=de linkerkant, Pattern=één, Pattern=de bovenkant en één, Pattern=aan de bovenkant en, Pattern=ik hebben nu die met die twee
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=één, Pattern=met, Pattern=ik, Pattern=en, Pattern=en één, Pattern=ik hebben nu, Pattern=die, Pattern=die met die twee
+Turn ID=25| B | B : en die kubus Kubus kubus aan de rechterkant
+	Free: Pattern=die kubus Kubus kubus, Pattern=aan de rechterkant, Pattern=kubus aan, Pattern=en
+	Constrained: Pattern=kubus, Pattern=die, Pattern=aan de
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

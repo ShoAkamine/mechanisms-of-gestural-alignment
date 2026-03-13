@@ -1,0 +1,127 @@
+A|0| A: _dit_ vinden _ik_ _een_ beetje op _een_ _een zeepaard_ lijken 
+A|1| A: _het_ hebben _een_ uitwerpsel _aan de_ onderkant _als een_ soort staar 
+A|2| A: _aan de voorkant_ _zitten_ _ook_ _een_ één _een_ _een_ uitsteeksel 
+A|3| A: _en_ _bovenop_ _zitten_ _een_ kantelen vierkant 
+A|4| A: _met_ _twee_ soort van oor eraan _met_ blok 
+B|5| B: _ja_ _ja_ _ja_ 
+B|6| B: _dat zijn_ bij mij 
+B|7| B: _en aan de_ rechterkant [zitten] er [ook] nog iets toch 
+B|8| B: denk [ik] 
+A|9| A: [ja] _een_ soort armpje 
+A|10| A: _en aan de voorkant_ [ook] 
+B|11| B: [ja] 
+B|12| B: [ja] precies 
+B|13| B: [en aan de voorkant] _zijn_ hij recht 
+B|14| B: [en aan de] zijkant [zitten] er [een] kromming in 
+A|15| A: [ja] 
+B|16| B: dan _zijn het_ bij mij _nummer_ 
+B|17| B: deze omschrijven je [als [een] zeepaard] 
+B|18| B: dus onder [een] balk die kromen 
+A|19| A: [ja] 
+B|20| B: [bovenop] [twee] 
+B|21| B: [met] [een] pin erdoorheen 
+A|22| A: [nummer] 
+A|23| A: _dit zijn het zeepaard_ 
+B|24| B: [ja] 
+B|25| B: _dat zijn nummer_ 
+B|26| B: [het zeepaard] 
+A|27| A: [dat zijn nummer] 
+A|28| A: _dit zijn het zeepaard_ 
+B|29| B: [ja] 
+B|30| B: [dit zijn het zeepaard] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit vinden ik een beetje op een een zeepaard lijken
+	Free: Pattern=een zeepaard, Pattern=dit, Pattern=ik, Pattern=een
+	Constrained: Pattern=een
+Turn ID=1| A | A : het hebben een uitwerpsel aan de onderkant als een soort staar
+	Free: Pattern=als een, Pattern=aan de, Pattern=het, Pattern=een
+	Constrained: Pattern=een
+Turn ID=2| A | A : aan de voorkant zitten ook een één een een uitsteeksel
+	Free: Pattern=aan de voorkant, Pattern=ook, Pattern=zitten, Pattern=een
+	Constrained: Pattern=aan de
+Turn ID=3| A | A : en bovenop zitten een kantelen vierkant
+	Free: Pattern=en, Pattern=bovenop, Pattern=zitten, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : met twee soort van oor eraan met blok
+	Free: Pattern=twee, Pattern=met
+	Constrained: 
+Turn ID=5| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=7| B | B : en aan de rechterkant zitten er ook nog iets toch
+	Free: Pattern=en aan de, Pattern=ook, Pattern=zitten
+	Constrained: Pattern=aan de, Pattern=en
+Turn ID=8| B | B : denk ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=9| A | A : ja een soort armpje
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=10| A | A : en aan de voorkant ook
+	Free: Pattern=en aan de voorkant, Pattern=ook
+	Constrained: Pattern=en aan de, Pattern=en, Pattern=aan de, Pattern=aan de voorkant
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en aan de voorkant zijn hij recht
+	Free: Pattern=en aan de voorkant, Pattern=zijn
+	Constrained: Pattern=en aan de, Pattern=en, Pattern=aan de, Pattern=aan de voorkant
+Turn ID=14| B | B : en aan de zijkant zitten er een kromming in
+	Free: Pattern=en aan de, Pattern=zitten, Pattern=een
+	Constrained: Pattern=aan de, Pattern=en
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : dan zijn het bij mij nummer
+	Free: Pattern=zijn het, Pattern=nummer
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=17| B | B : deze omschrijven je als een zeepaard
+	Free: Pattern=als een, Pattern=een zeepaard
+	Constrained: Pattern=een
+Turn ID=18| B | B : dus onder een balk die kromen
+	Free: Pattern=een
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : bovenop twee
+	Free: Pattern=bovenop, Pattern=twee
+	Constrained: 
+Turn ID=21| B | B : met een pin erdoorheen
+	Free: Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=22| A | A : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=23| A | A : dit zijn het zeepaard
+	Free: Pattern=dit zijn het zeepaard
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=het zeepaard, Pattern=dit, Pattern=zijn
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : dat zijn nummer
+	Free: Pattern=dat zijn nummer
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=nummer
+Turn ID=26| B | B : het zeepaard
+	Free: Pattern=het zeepaard
+	Constrained: Pattern=het
+Turn ID=27| A | A : dat zijn nummer
+	Free: Pattern=dat zijn nummer
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=nummer
+Turn ID=28| A | A : dit zijn het zeepaard
+	Free: Pattern=dit zijn het zeepaard
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=het zeepaard, Pattern=dit, Pattern=zijn
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : dit zijn het zeepaard
+	Free: Pattern=dit zijn het zeepaard
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=het zeepaard, Pattern=dit, Pattern=zijn

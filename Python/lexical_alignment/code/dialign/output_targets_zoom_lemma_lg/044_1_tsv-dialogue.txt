@@ -1,0 +1,155 @@
+A|0| A: _Eh_ deze _die_ _hebben_ _aan de_ zijkant _twee van die_ staaf _met_ allemaal _van die_ blok _die steeds groot worden_ 
+B|1| B: _ja ja_ 
+A|2| A: _en dan_ _een soort spijker_ bovenop 
+A|3| A: _en dan_ nog _een_ _vierkant_ voor 
+B|4| B: _ja ja_ 
+B|5| B: _ja_ 
+B|6| B: ehm _ja dat zijn_ nummer 
+B|7| B: _eh dit zijn_ weer _die met_ [de] _kubus die_ uit elkaar gaan naar links 
+B|8| B: [en dan] [aan de] voorkant [de] _plat vierkant_ 
+B|9| B: [en dan] naar boven [een soort spijker] 
+A|10| A: [eh] even zien [die] [kubus die] 
+B|11| B: _ja_ dus er _zijn_ [twee van die] _ja_ buis _die dan_ als kubusvorm zo [steeds groot worden] 
+B|12| B: [en dan] dus naar _de linkerkant_ toe 
+A|13| A: Oh [ja] [en dan] [een] [plat vierkant] 
+B|14| B: [ja] precies [ja] 
+A|15| A: [en] nog [een] spij 
+A|16| A: [ja [ja] dat zijn] bij mij 
+B|17| B: [ja] 
+A|18| A: [eh dit zijn] [die met] [die] [twee] blok [aan de] zijkant [die dan] [steeds groot] [vierkant] [worden] 
+B|19| B: [ja] 
+A|20| A: [en dan] nog één [groot] [vierkant] 
+B|21| B: [de] [plat] 
+B|22| B: [ja] precies [ja] 
+A|23| A: [ja] 
+B|24| B: [dat zijn] nummer 
+B|25| B: ehm ik [hebben] weer [die met] het [de] [kubus die] _aan de linkerkant_ [steeds groot worden] 
+B|26| B: [met] [de] [plat vierkant] 
+A|27| A: [ja dat zijn] bij mij 
+B|28| B: [ja] 
+A|29| A: [eh dit zijn] [die] [een] [met] [die] [twee] blok [aan de linkerkant] [die] [groot worden] 
+A|30| A: _en dat_ [groot] [vierkant] vlak [aan de] rechterkant 
+B|31| B: Yes 
+B|32| B: [Eh] [en [dat] zijn] nummer 
+B|33| B: Ehdit [zijn] weer [die met] [de] [kubus [die] steeds groot worden] naar [de linkerkant] toe 
+B|34| B: [en dan] [dat] [plat vierkant] [aan de] voorkant 
+A|35| A: [ja] 
+B|36| B: [en dan] [aan de] bovenkant zo'n antenne 
+A|37| A: [dat zijn] bij mij 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh deze die hebben aan de zijkant twee van die staaf met allemaal van die blok die steeds groot worden
+	Free: Pattern=twee van die, Pattern=aan de, Pattern=die steeds groot worden, Pattern=met, Pattern=die, Pattern=van die, Pattern=Eh, Pattern=hebben
+	Constrained: Pattern=twee, Pattern=de, Pattern=worden, Pattern=groot, Pattern=steeds groot worden, Pattern=van die, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=1| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=2| A | A : en dan een soort spijker bovenop
+	Free: Pattern=een soort spijker, Pattern=en dan
+	Constrained: Pattern=een, Pattern=en
+Turn ID=3| A | A : en dan nog een vierkant voor
+	Free: Pattern=en dan, Pattern=vierkant, Pattern=een
+	Constrained: Pattern=en
+Turn ID=4| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ehm ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=7| B | B : eh dit zijn weer die met de kubus die uit elkaar gaan naar links
+	Free: Pattern=eh dit zijn, Pattern=kubus die, Pattern=die met, Pattern=de
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=eh
+Turn ID=8| B | B : en dan aan de voorkant de plat vierkant
+	Free: Pattern=en dan, Pattern=aan de, Pattern=plat vierkant, Pattern=de
+	Constrained: Pattern=vierkant, Pattern=de, Pattern=en, Pattern=plat
+Turn ID=9| B | B : en dan naar boven een soort spijker
+	Free: Pattern=een soort spijker, Pattern=en dan
+	Constrained: Pattern=een, Pattern=en
+Turn ID=10| A | A : eh even zien die kubus die
+	Free: Pattern=kubus die, Pattern=die, Pattern=eh
+	Constrained: Pattern=die
+Turn ID=11| B | B : ja dus er zijn twee van die ja buis die dan als kubusvorm zo steeds groot worden
+	Free: Pattern=twee van die, Pattern=ja, Pattern=steeds groot worden, Pattern=die dan, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=worden, Pattern=groot, Pattern=van die, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=12| B | B : en dan dus naar de linkerkant toe
+	Free: Pattern=de linkerkant, Pattern=en dan
+	Constrained: Pattern=de, Pattern=en
+Turn ID=13| A | A : Oh ja en dan een plat vierkant
+	Free: Pattern=en dan, Pattern=plat vierkant, Pattern=ja, Pattern=een
+	Constrained: Pattern=plat, Pattern=vierkant, Pattern=en
+Turn ID=14| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : en nog een spij
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=16| A | A : ja ja dat zijn bij mij
+	Free: Pattern=ja dat zijn, Pattern=ja ja
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : eh dit zijn die met die twee blok aan de zijkant die dan steeds groot vierkant worden
+	Free: Pattern=twee, Pattern=die met, Pattern=eh dit zijn, Pattern=die dan, Pattern=vierkant, Pattern=aan de, Pattern=worden, Pattern=steeds groot, Pattern=die
+	Constrained: Pattern=de, Pattern=groot, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : en dan nog één groot vierkant
+	Free: Pattern=en dan, Pattern=vierkant, Pattern=groot
+	Constrained: Pattern=en
+Turn ID=21| B | B : de plat
+	Free: Pattern=plat, Pattern=de
+	Constrained: 
+Turn ID=22| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=25| B | B : ehm ik hebben weer die met het de kubus die aan de linkerkant steeds groot worden
+	Free: Pattern=de, Pattern=hebben, Pattern=steeds groot worden, Pattern=die met, Pattern=kubus die, Pattern=aan de linkerkant
+	Constrained: Pattern=de, Pattern=de linkerkant, Pattern=groot, Pattern=met, Pattern=groot worden, Pattern=aan de, Pattern=worden, Pattern=steeds groot, Pattern=die
+Turn ID=26| B | B : met de plat vierkant
+	Free: Pattern=plat vierkant, Pattern=de, Pattern=met
+	Constrained: Pattern=plat, Pattern=vierkant
+Turn ID=27| A | A : ja dat zijn bij mij
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : eh dit zijn die een met die twee blok aan de linkerkant die groot worden
+	Free: Pattern=twee, Pattern=een, Pattern=eh dit zijn, Pattern=met, Pattern=die, Pattern=groot worden, Pattern=aan de linkerkant
+	Constrained: Pattern=de, Pattern=de linkerkant, Pattern=groot, Pattern=eh, Pattern=zijn, Pattern=aan de, Pattern=worden
+Turn ID=30| A | A : en dat groot vierkant vlak aan de rechterkant
+	Free: Pattern=en dat, Pattern=aan de, Pattern=vierkant, Pattern=groot
+	Constrained: Pattern=de, Pattern=en, Pattern=dat
+Turn ID=31| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : Eh en dat zijn nummer
+	Free: Pattern=en dat, Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=en, Pattern=zijn, Pattern=dat
+Turn ID=33| B | B : Ehdit zijn weer die met de kubus die steeds groot worden naar de linkerkant toe
+	Free: Pattern=de, Pattern=de linkerkant, Pattern=kubus die, Pattern=zijn, Pattern=die met, Pattern=die steeds groot worden
+	Constrained: Pattern=de, Pattern=worden, Pattern=groot, Pattern=steeds groot worden, Pattern=met, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=34| B | B : en dan dat plat vierkant aan de voorkant
+	Free: Pattern=en dan, Pattern=aan de, Pattern=plat vierkant, Pattern=dat
+	Constrained: Pattern=vierkant, Pattern=de, Pattern=en, Pattern=plat
+Turn ID=35| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : en dan aan de bovenkant zo'n antenne
+	Free: Pattern=en dan, Pattern=aan de
+	Constrained: Pattern=de, Pattern=en
+Turn ID=37| A | A : dat zijn bij mij
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

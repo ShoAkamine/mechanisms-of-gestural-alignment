@@ -1,0 +1,159 @@
+B|0| B: _eh_ dit vinden _ik_ _het_ veel lijken op _een_ staand poppe 
+B|1| B: hij _hebben_ één _die_ staan ook echt op _een standaard_ denken _ik_ 
+B|2| B: _met_ _een_ _en_ _de_ _standaard_ _aan_ _de onderkant zijn_ _een_ _driehoek_ 
+B|3| B: _en_ _het zijn_ _een soort_ draaien 
+B|4| B: _zijn_ been _zijn_ _soort van_ _een_ draaien staaf 
+B|5| B: bovenop _de_ beker staan _een_ blok 
+B|6| B: _en_ hij _hebben_ _dan_ _aan_ _de_ rechterkant _een_ groot blok _als_ arm 
+B|7| B: _en_ _aan_ _de_ linkerkant _een_ één of ander klein figuur 
+B|8| B: bijna _een_ _driehoek_ denken _ik_ 
+A|9| A: _ja [het_ zijn] [ik] [ik] zien hem volgens mij [als] [een [soort] van] _staart_ 
+A|10| A: [en] _dat_ [de] [de onderkant zijn] [dan] [een] _driehoekig_ _driehoekig_ vorm 
+B|11| B: _Oh_ [ja] 
+B|12| B: [ja het] blok _zeggen maar_ [een] [ja] [een] blok [ja] 
+A|13| A: _ja dat zijn_ _dat zijn_ 
+A|14| A: [eh] _ik hebben_ nu eigenlijk [die] we net [hebben] 
+A|15| A: [die] [zeggen maar] wat [ik] [een] heel lang _staart_ _noemen_ 
+A|16| A: [en] _jij noemen_ hem [een standaard] 
+A|17| A: dus _met die_ [driehoek] onderaan 
+B|18| B: _Oh_ [ja dat zijn] 
+B|19| B: _ik hebben die_ op [het] [standaard] [met] [dat] _driehoek aan_ [de onderkant] 
+B|20| B: [jij noemen] [het] [een] [staart] 
+B|21| B: [ik] vinden [het] [een standaard] 
+B|22| B: of eenpo [van] [een] poppe 
+A|23| A: Eh 
+B|24| B: [met] twee kubus _aan_ [de] bovenkant 
+B|25| B: [en] [een] [een] gek _driehoek aan_ [de] linkerkant 
+B|26| B: Zeg [maar] linksboven 
+A|27| A: [Oh] _met die_ [driehoek aan] [het] uiteinde [van] [de] [staart] 
+B|28| B: [ja] kloppen 
+B|29| B: [ja] 
+A|30| A: [ja dat zijn] 
+A|31| A: [Oh] [ik hebben die] weer _met die staart_ [en] [die] [driehoek] 
+A|32| A: [die] [driehoek aan] [het] uiteinde 
+B|33| B: [Oh] [ja dat zijn] 
+B|34| B: [ik hebben die] op [het] [driehoekig] [standaard] staan 
+B|35| B: [met die staart] voor jou 
+A|36| A: Eh [dat zijn] 
+A|37| A: [eh] [ik hebben die] [met] [de] lang [staart] [met] [de] [driehoek] onderaan 
+B|38| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh dit vinden ik het veel lijken op een staand poppe
+	Free: Pattern=ik, Pattern=het, Pattern=eh, Pattern=een
+	Constrained: 
+Turn ID=1| B | B : hij hebben één die staan ook echt op een standaard denken ik
+	Free: Pattern=een standaard, Pattern=die, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=standaard, Pattern=een
+Turn ID=2| B | B : met een en de standaard aan de onderkant zijn een driehoek
+	Free: Pattern=driehoek, Pattern=een, Pattern=met, Pattern=de onderkant zijn, Pattern=en, Pattern=standaard, Pattern=de, Pattern=aan
+	Constrained: Pattern=de onderkant, Pattern=de, Pattern=zijn
+Turn ID=3| B | B : en het zijn een soort draaien
+	Free: Pattern=een soort, Pattern=het zijn, Pattern=en
+	Constrained: Pattern=zijn, Pattern=het, Pattern=een
+Turn ID=4| B | B : zijn been zijn soort van een draaien staaf
+	Free: Pattern=soort van, Pattern=zijn, Pattern=een
+	Constrained: Pattern=van
+Turn ID=5| B | B : bovenop de beker staan een blok
+	Free: Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : en hij hebben dan aan de rechterkant een groot blok als arm
+	Free: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=als, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=7| B | B : en aan de linkerkant een één of ander klein figuur
+	Free: Pattern=aan, Pattern=en, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=8| B | B : bijna een driehoek denken ik
+	Free: Pattern=ik, Pattern=driehoek, Pattern=een
+	Constrained: 
+Turn ID=9| A | A : ja het zijn ik ik zien hem volgens mij als een soort van staart
+	Free: Pattern=ja het, Pattern=staart, Pattern=als, Pattern=het zijn, Pattern=soort van, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=ja, Pattern=een, Pattern=het, Pattern=van, Pattern=zijn
+Turn ID=10| A | A : en dat de de onderkant zijn dan een driehoekig driehoekig vorm
+	Free: Pattern=dat, Pattern=de, Pattern=dan, Pattern=een, Pattern=en, Pattern=driehoekig, Pattern=de onderkant zijn
+	Constrained: Pattern=de onderkant, Pattern=de, Pattern=zijn
+Turn ID=11| B | B : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja het blok zeggen maar een ja een blok ja
+	Free: Pattern=zeggen maar, Pattern=ja het, Pattern=een, Pattern=ja
+	Constrained: Pattern=maar, Pattern=het, Pattern=ja
+Turn ID=13| A | A : ja dat zijn dat zijn
+	Free: Pattern=ja dat zijn, Pattern=dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=14| A | A : eh ik hebben nu eigenlijk die we net hebben
+	Free: Pattern=ik hebben, Pattern=die, Pattern=hebben, Pattern=eh
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=15| A | A : die zeggen maar wat ik een heel lang staart noemen
+	Free: Pattern=een, Pattern=zeggen maar, Pattern=staart, Pattern=die, Pattern=ik, Pattern=noemen
+	Constrained: Pattern=maar
+Turn ID=16| A | A : en jij noemen hem een standaard
+	Free: Pattern=een standaard, Pattern=jij noemen, Pattern=en
+	Constrained: Pattern=standaard, Pattern=noemen, Pattern=een
+Turn ID=17| A | A : dus met die driehoek onderaan
+	Free: Pattern=met die, Pattern=driehoek
+	Constrained: Pattern=die, Pattern=met
+Turn ID=18| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Oh
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=19| B | B : ik hebben die op het standaard met dat driehoek aan de onderkant
+	Free: Pattern=dat, Pattern=driehoek aan, Pattern=het, Pattern=met, Pattern=de onderkant, Pattern=ik hebben die, Pattern=standaard
+	Constrained: Pattern=hebben, Pattern=die, Pattern=ik, Pattern=ik hebben, Pattern=driehoek, Pattern=de, Pattern=aan
+Turn ID=20| B | B : jij noemen het een staart
+	Free: Pattern=jij noemen, Pattern=staart, Pattern=het, Pattern=een
+	Constrained: Pattern=noemen
+Turn ID=21| B | B : ik vinden het een standaard
+	Free: Pattern=een standaard, Pattern=ik, Pattern=het
+	Constrained: Pattern=standaard, Pattern=een
+Turn ID=22| B | B : of eenpo van een poppe
+	Free: Pattern=van, Pattern=een
+	Constrained: 
+Turn ID=23| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : met twee kubus aan de bovenkant
+	Free: Pattern=met, Pattern=aan, Pattern=de
+	Constrained: 
+Turn ID=25| B | B : en een een gek driehoek aan de linkerkant
+	Free: Pattern=driehoek aan, Pattern=en, Pattern=de, Pattern=een
+	Constrained: Pattern=aan, Pattern=driehoek
+Turn ID=26| B | B : Zeg maar linksboven
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=27| A | A : Oh met die driehoek aan het uiteinde van de staart
+	Free: Pattern=met die, Pattern=van, Pattern=Oh, Pattern=de, Pattern=driehoek aan, Pattern=het, Pattern=staart
+	Constrained: Pattern=die, Pattern=met, Pattern=aan, Pattern=driehoek
+Turn ID=28| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=31| A | A : Oh ik hebben die weer met die staart en die driehoek
+	Free: Pattern=driehoek, Pattern=met die staart, Pattern=die, Pattern=ik hebben die, Pattern=en, Pattern=Oh
+	Constrained: Pattern=ik hebben, Pattern=met die, Pattern=staart, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=32| A | A : die driehoek aan het uiteinde
+	Free: Pattern=driehoek aan, Pattern=die, Pattern=het
+	Constrained: Pattern=aan, Pattern=driehoek
+Turn ID=33| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Oh
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=34| B | B : ik hebben die op het driehoekig standaard staan
+	Free: Pattern=ik hebben die, Pattern=driehoekig, Pattern=het, Pattern=standaard
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=35| B | B : met die staart voor jou
+	Free: Pattern=met die staart
+	Constrained: Pattern=met, Pattern=die, Pattern=met die, Pattern=staart
+Turn ID=36| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=37| A | A : eh ik hebben die met de lang staart met de driehoek onderaan
+	Free: Pattern=driehoek, Pattern=de, Pattern=staart, Pattern=met, Pattern=eh, Pattern=ik hebben die
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=38| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

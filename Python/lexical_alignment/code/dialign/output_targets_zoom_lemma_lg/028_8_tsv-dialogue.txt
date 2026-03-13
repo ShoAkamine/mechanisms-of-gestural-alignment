@@ -1,0 +1,159 @@
+B|0| B: hm _deze hebben _een_ soort plat_ ruitvormig _uitsteeksel_ _bovenop_ 
+B|1| B: _met twee_ _ja_ _aan de_ _zijkant_ weer _twee_ 
+B|2| B: _ja_ _een_ beetje _wat_ we ook _met de verrekijker_ zien _aan beide kant_ 
+A|3| A: [ja] juist 
+B|4| B: _en_ _dan_ [ja] linksonder _en_ rechts _nog_ _hetzelfde soort_ buigen _uitsteeksel_ [ja] 
+A|5| A: Goeie uitleg [dan] weten _ik_ _welk het_ _zijn_ 
+B|6| B: oke 
+A|7| A: _het_ _zijn_ 
+A|8| A: [deze hebben een] voe _euh_ [aan de] onderkant [en] [hetzelfde soort] [aan de] rechterkant [met de] 
+A|9| A: [bovenop] [de] _vierkant_ [met twee] [verrekijker] [aan beide kant] 
+B|10| B: even zoeken waar _die_ 
+B|11| B: [ik] _zitten_ even te kijken [welk het] nou [zijn] 
+A|12| A: _je_ weten [welk] [ik] _bedoelen_ 
+B|13| B: nee [ik] [zijn] _hem_ kwijt 
+A|14| A: ah oké [dan] _euh_ omschrijf [ik] [hem] [nog] iets goed [dan] 
+A|15| A: _aan de bovenkant_ [zitten] _er [een soort_ plat] _vierkant_ in 
+A|16| A: [aan de] buitenkant daarvan [twee] _uitsteeksel [aan_ beide kant] 
+A|17| A: Euhm 
+B|18| B: _die_ [met] _dat_ _schap_ veel 
+A|19| A: [wat] _bedoelen je_ [met] [een] [schap] 
+B|20| B: Euh [ja] alsof [er een soort] [schap] _dat_ _die_ [vierkant] 
+B|21| B: alsof _die_ [het] [vierkant] snijden [aan de bovenkant] 
+B|22| B: als [een soort] [schap] 
+A|23| A: [ja] 
+A|24| A: [ja] [dat] 
+B|25| B: _die_ [bedoelen je] 
+A|26| A: Yes 
+B|27| B: [ja] 
+B|28| B: Oké [dan] _zijn het_ 
+B|29| B: [en] _dit zijn_ _die_ [met] _die_ ruitvormig doorboorde [euh] [uitsteeksel [aan] de bovenkant] 
+B|30| B: [en] [dan] [twee] afgebogen uitstekel onder [en] rechts 
+A|31| A: Yes [dat] [zijn] 
+A|32| A: [dit zijn] [de] ruit [die] doorboirden [zijn] [met de verrekijker] 
+B|33| B: [ja] 
+B|34| B: [en] [dit zijn] [die] [met] [die] [euh] ruitvormig [uitsteeksel] boven [aan beide kant] 
+B|35| B: [de verrekijker] 
+A|36| A: Yes [dat] [zijn] 
+A|37| A: [euh] [dit [zijn] het] ruit [met de] [twee] [verrekijker] [aan beide] [zijkant] 
+B|38| B: Euh [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : hm deze hebben een soort plat ruitvormig uitsteeksel bovenop
+	Free: Pattern=deze hebben een, Pattern=een soort plat, Pattern=uitsteeksel, Pattern=bovenop
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=1| B | B : met twee ja aan de zijkant weer twee
+	Free: Pattern=twee, Pattern=ja, Pattern=aan de, Pattern=met twee, Pattern=zijkant
+	Constrained: Pattern=de, Pattern=twee, Pattern=met
+Turn ID=2| B | B : ja een beetje wat we ook met de verrekijker zien aan beide kant
+	Free: Pattern=ja, Pattern=aan beide kant, Pattern=een, Pattern=met de verrekijker, Pattern=wat
+	Constrained: Pattern=aan beide, Pattern=met, Pattern=verrekijker, Pattern=de verrekijker, Pattern=de, Pattern=met de
+Turn ID=3| A | A : ja juist
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en dan ja linksonder en rechts nog hetzelfde soort buigen uitsteeksel ja
+	Free: Pattern=nog, Pattern=ja, Pattern=en, Pattern=hetzelfde soort, Pattern=uitsteeksel, Pattern=dan
+	Constrained: 
+Turn ID=5| A | A : Goeie uitleg dan weten ik welk het zijn
+	Free: Pattern=welk het, Pattern=dan, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=welk, Pattern=het
+Turn ID=6| B | B : oke
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : het zijn
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=8| A | A : deze hebben een voe euh aan de onderkant en hetzelfde soort aan de rechterkant met de
+	Free: Pattern=met de, Pattern=aan de, Pattern=deze hebben een, Pattern=euh, Pattern=en, Pattern=hetzelfde soort
+	Constrained: Pattern=een, Pattern=de, Pattern=met
+Turn ID=9| A | A : bovenop de vierkant met twee verrekijker aan beide kant
+	Free: Pattern=bovenop, Pattern=de, Pattern=aan beide kant, Pattern=met twee, Pattern=verrekijker, Pattern=vierkant
+	Constrained: Pattern=twee, Pattern=aan beide, Pattern=met
+Turn ID=10| B | B : even zoeken waar die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=11| B | B : ik zitten even te kijken welk het nou zijn
+	Free: Pattern=welk het, Pattern=ik, Pattern=zitten, Pattern=zijn
+	Constrained: Pattern=welk, Pattern=het
+Turn ID=12| A | A : je weten welk ik bedoelen
+	Free: Pattern=ik, Pattern=bedoelen, Pattern=welk, Pattern=je
+	Constrained: 
+Turn ID=13| B | B : nee ik zijn hem kwijt
+	Free: Pattern=ik, Pattern=hem, Pattern=zijn
+	Constrained: 
+Turn ID=14| A | A : ah oké dan euh omschrijf ik hem nog iets goed dan
+	Free: Pattern=nog, Pattern=dan, Pattern=euh, Pattern=ik, Pattern=hem
+	Constrained: 
+Turn ID=15| A | A : aan de bovenkant zitten er een soort plat vierkant in
+	Free: Pattern=zitten, Pattern=aan de bovenkant, Pattern=er een soort, Pattern=vierkant, Pattern=een soort plat
+	Constrained: Pattern=een soort, Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=16| A | A : aan de buitenkant daarvan twee uitsteeksel aan beide kant
+	Free: Pattern=aan beide kant, Pattern=aan de, Pattern=uitsteeksel aan, Pattern=twee
+	Constrained: Pattern=aan beide, Pattern=de, Pattern=uitsteeksel
+Turn ID=17| A | A : Euhm
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : die met dat schap veel
+	Free: Pattern=dat, Pattern=die, Pattern=schap, Pattern=met
+	Constrained: 
+Turn ID=19| A | A : wat bedoelen je met een schap
+	Free: Pattern=een, Pattern=wat, Pattern=bedoelen je, Pattern=schap, Pattern=met
+	Constrained: Pattern=bedoelen, Pattern=je
+Turn ID=20| B | B : Euh ja alsof er een soort schap dat die vierkant
+	Free: Pattern=dat, Pattern=ja, Pattern=schap, Pattern=die, Pattern=vierkant, Pattern=er een soort
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=21| B | B : alsof die het vierkant snijden aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=die, Pattern=vierkant, Pattern=het
+	Constrained: Pattern=de, Pattern=aan de
+Turn ID=22| B | B : als een soort schap
+	Free: Pattern=een soort, Pattern=schap
+	Constrained: Pattern=een
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja dat
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : die bedoelen je
+	Free: Pattern=bedoelen je, Pattern=die
+	Constrained: Pattern=bedoelen, Pattern=je
+Turn ID=26| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=29| B | B : en dit zijn die met die ruitvormig doorboorde euh uitsteeksel aan de bovenkant
+	Free: Pattern=euh, Pattern=die, Pattern=dit zijn, Pattern=uitsteeksel aan, Pattern=met, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=de, Pattern=zijn, Pattern=uitsteeksel, Pattern=aan de
+Turn ID=30| B | B : en dan twee afgebogen uitstekel onder en rechts
+	Free: Pattern=dan, Pattern=en, Pattern=twee
+	Constrained: 
+Turn ID=31| A | A : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=32| A | A : dit zijn de ruit die doorboirden zijn met de verrekijker
+	Free: Pattern=de, Pattern=met de verrekijker, Pattern=die, Pattern=zijn, Pattern=dit zijn
+	Constrained: Pattern=met, Pattern=verrekijker, Pattern=de verrekijker, Pattern=zijn, Pattern=de, Pattern=met de
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : en dit zijn die met die euh ruitvormig uitsteeksel boven aan beide kant
+	Free: Pattern=aan beide kant, Pattern=uitsteeksel, Pattern=euh, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=aan beide, Pattern=zijn
+Turn ID=35| B | B : de verrekijker
+	Free: Pattern=de verrekijker
+	Constrained: Pattern=de, Pattern=verrekijker
+Turn ID=36| A | A : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=37| A | A : euh dit zijn het ruit met de twee verrekijker aan beide zijkant
+	Free: Pattern=zijn het, Pattern=twee, Pattern=met de, Pattern=euh, Pattern=aan beide, Pattern=zijkant, Pattern=verrekijker, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=zijn, Pattern=met, Pattern=het
+Turn ID=38| B | B : Euh ja
+	Free: Pattern=ja
+	Constrained: 

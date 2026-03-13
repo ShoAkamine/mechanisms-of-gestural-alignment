@@ -1,0 +1,239 @@
+A|0| A: Eh _deze hebben_ 
+A|1| A: _dat zijn_ twee van langwerpig steelt 
+A|2| A: _en_ _dan_ één daarvan 
+A|3| A: _zeggen_ _maar_ twee dezelfde 
+A|4| A: Ã _en_ daarvan _zitten_ _bovenop_ _en_ één _zitten_ _aan de_ linkerkant _aan de_ zijkant 
+A|5| A: _en_ _dan_ _aan de rechterkant_ _en aan de_ zijkant _hebben_ hij _een soort_ armpje 
+A|6| A: met vierkante _die steeds groot worden_ 
+A|7| A: _en_ _dan_ _aan de achterkant zitten_ er _ook_ nog _een soort_ _staaf_ 
+A|8| A: Heb _je_ nog veel nodig _of_ 
+B|9| B: Eens even kijken horen 
+B|10| B: [aan de rechterkant] [zitten] [een soort] _vierkant_ [zeggen] [je] 
+A|11| A: _ja_ [aan de rechterkant] _hebben_ hij _ook_ [een soort] _ja_ _hebben_ hij [een soort] van _steeds groot_ [vierkant] 
+B|12| B: _Oh_ [ja] 
+A|13| A: _die_ _vierkant die steeds groot worden_ _die_ vanuit _het_ midden 
+B|14| B: [ja] 
+B|15| B: [dan] [zijn] [het] 
+B|16| B: _deze hebben aan de_ [ja] [rechterkant] [of] voorkant 
+B|17| B: [het] liggen [maar] [aan] hoe [je] [het] zien 
+B|18| B: [een] [vierkant] [dat] [steeds groot worden] dus _drie_ keer [een] [vierkant] 
+A|19| A: mhm 
+B|20| B: [dan] links [en] [bovenop] [een soort] kegel 
+B|21| B: ehm [die] [ook] even [groot] [zijn] 
+A|22| A: mhm 
+B|23| B: [en [aan de] achterkant zitten] [een soort] haak [of] [of] [ja] [staaf] 
+A|24| A: [ja] 
+A|25| A: [ja] _dat zijn_ 
+A|26| A: Eh [deze hebben [aan de] rechterkant] weer [het] vormp met [de] kubus [die] [groot worden] 
+A|27| A: [en] [dan] [hebben] hij [bovenop] [en aan de] linkerkant [hebben] hij soortgelijk pionn 
+B|28| B: [ja] 
+A|29| A: [en] [dan] 
+A|30| A: [ja] 
+B|31| B: [dat zijn] 
+B|32| B: ehm [deze hebben] [een] kegel links [en] [een] kegel [bovenop] 
+B|33| B: echt zo'n bowling bowlingding 
+A|34| A: mhm 
+B|35| B: [en] rechts [of] rechts [of] [aan de] voorkant _drie_ [vierkant die steeds groot worden] 
+A|36| A: [ja] [dat zijn] 
+A|37| A: Ehm K 
+A|38| A: [Oh] sorry 
+A|39| A: [deze hebben] [de] [deze hebben] [de] pionn [aan de] bovenkant [en aan de] linkerkant 
+A|40| A: diezelfde pion 
+A|41| A: [en] [dan] [aan de rechterkant] [de] [drie] cubus 
+B|42| B: [dat zijn] 
+B|43| B: [deze hebben] links [en] [bovenop] [een soort] bowling kegel 
+B|44| B: [en] rechts [die] [dat] [drie] keer op [de] voorkant [drie] keer [groot worden] Cubus 
+A|45| A: mhm 
+A|46| A: zullen we [dat] [een] verrekijker noemen 
+A|47| A: daar daar doen ze me [aan] denken 
+B|48| B: _nee_ 
+A|49| A: [Oh] [nee] 
+B|50| B: [nee] 
+B|51| B: [nee] 
+B|52| B: _ik_ weten niet 
+A|53| A: [die] vorm bedoelen [ik] [dan] 
+A|54| A: [nee] 
+B|55| B: [nee] 
+A|56| A: Oké 
+A|57| A: Oké [maar] [het] [zijn] in ieder geval 
+B|58| B: oké 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh deze hebben
+	Free: Pattern=deze hebben
+	Constrained: Pattern=hebben
+Turn ID=1| A | A : dat zijn twee van langwerpig steelt
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=2| A | A : en dan één daarvan
+	Free: Pattern=dan, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : zeggen maar twee dezelfde
+	Free: Pattern=zeggen, Pattern=maar
+	Constrained: 
+Turn ID=4| A | A : Ã en daarvan zitten bovenop en één zitten aan de linkerkant aan de zijkant
+	Free: Pattern=aan de, Pattern=zitten, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=5| A | A : en dan aan de rechterkant en aan de zijkant hebben hij een soort armpje
+	Free: Pattern=dan, Pattern=hebben, Pattern=aan de rechterkant, Pattern=een soort, Pattern=en, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=een, Pattern=rechterkant, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=6| A | A : met vierkante die steeds groot worden
+	Free: Pattern=die steeds groot worden
+	Constrained: Pattern=groot, Pattern=steeds groot worden, Pattern=groot worden, Pattern=steeds groot, Pattern=die
+Turn ID=7| A | A : en dan aan de achterkant zitten er ook nog een soort staaf
+	Free: Pattern=aan de achterkant zitten, Pattern=staaf, Pattern=ook, Pattern=dan, Pattern=een soort, Pattern=en
+	Constrained: Pattern=aan de, Pattern=een, Pattern=zitten, Pattern=de, Pattern=aan
+Turn ID=8| A | A : Heb je nog veel nodig of
+	Free: Pattern=je, Pattern=of
+	Constrained: 
+Turn ID=9| B | B : Eens even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : aan de rechterkant zitten een soort vierkant zeggen je
+	Free: Pattern=zeggen, Pattern=een soort, Pattern=aan de rechterkant, Pattern=zitten, Pattern=vierkant, Pattern=je
+	Constrained: Pattern=aan de, Pattern=een, Pattern=rechterkant, Pattern=de, Pattern=aan
+Turn ID=11| A | A : ja aan de rechterkant hebben hij ook een soort ja hebben hij een soort van steeds groot vierkant
+	Free: Pattern=ja, Pattern=ook, Pattern=hebben, Pattern=een soort, Pattern=vierkant, Pattern=steeds groot, Pattern=aan de rechterkant
+	Constrained: Pattern=aan de, Pattern=een, Pattern=groot, Pattern=rechterkant, Pattern=de, Pattern=aan
+Turn ID=12| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=13| A | A : die vierkant die steeds groot worden die vanuit het midden
+	Free: Pattern=vierkant die steeds groot worden, Pattern=die, Pattern=het
+	Constrained: Pattern=groot, Pattern=steeds groot worden, Pattern=die steeds groot worden, Pattern=groot worden, Pattern=vierkant, Pattern=steeds groot, Pattern=die
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=16| B | B : deze hebben aan de ja rechterkant of voorkant
+	Free: Pattern=deze hebben aan de, Pattern=rechterkant, Pattern=ja, Pattern=of
+	Constrained: Pattern=aan de, Pattern=hebben, Pattern=deze hebben, Pattern=de, Pattern=aan
+Turn ID=17| B | B : het liggen maar aan hoe je het zien
+	Free: Pattern=je, Pattern=het, Pattern=aan, Pattern=maar
+	Constrained: 
+Turn ID=18| B | B : een vierkant dat steeds groot worden dus drie keer een vierkant
+	Free: Pattern=dat, Pattern=een, Pattern=drie, Pattern=steeds groot worden, Pattern=vierkant
+	Constrained: Pattern=steeds groot, Pattern=groot worden, Pattern=groot
+Turn ID=19| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : dan links en bovenop een soort kegel
+	Free: Pattern=een soort, Pattern=dan, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=21| B | B : ehm die ook even groot zijn
+	Free: Pattern=zijn, Pattern=ook, Pattern=die, Pattern=groot
+	Constrained: 
+Turn ID=22| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : en aan de achterkant zitten een soort haak of of ja staaf
+	Free: Pattern=aan de achterkant zitten, Pattern=of, Pattern=ja, Pattern=staaf, Pattern=een soort, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=een, Pattern=zitten, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=26| A | A : Eh deze hebben aan de rechterkant weer het vormp met de kubus die groot worden
+	Free: Pattern=de, Pattern=het, Pattern=deze hebben aan de, Pattern=groot worden, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=aan de, Pattern=deze hebben, Pattern=rechterkant, Pattern=de, Pattern=aan, Pattern=groot, Pattern=hebben
+Turn ID=27| A | A : en dan hebben hij bovenop en aan de linkerkant hebben hij soortgelijk pionn
+	Free: Pattern=bovenop, Pattern=dan, Pattern=hebben, Pattern=en, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=de, Pattern=aan, Pattern=en
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : en dan
+	Free: Pattern=dan, Pattern=en
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=32| B | B : ehm deze hebben een kegel links en een kegel bovenop
+	Free: Pattern=deze hebben, Pattern=een, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=hebben
+Turn ID=33| B | B : echt zo'n bowling bowlingding
+	Free: 
+	Constrained: 
+Turn ID=34| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : en rechts of rechts of aan de voorkant drie vierkant die steeds groot worden
+	Free: Pattern=of, Pattern=aan de, Pattern=drie, Pattern=vierkant die steeds groot worden, Pattern=en
+	Constrained: Pattern=groot, Pattern=steeds groot worden, Pattern=die steeds groot worden, Pattern=groot worden, Pattern=vierkant, Pattern=de, Pattern=aan, Pattern=steeds groot, Pattern=die
+Turn ID=36| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=37| A | A : Ehm K
+	Free: 
+	Constrained: 
+Turn ID=38| A | A : Oh sorry
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=39| A | A : deze hebben de deze hebben de pionn aan de bovenkant en aan de linkerkant
+	Free: Pattern=en aan de, Pattern=deze hebben, Pattern=aan de, Pattern=de
+	Constrained: Pattern=aan de, Pattern=hebben, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=40| A | A : diezelfde pion
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : en dan aan de rechterkant de drie cubus
+	Free: Pattern=de, Pattern=dan, Pattern=drie, Pattern=aan de rechterkant, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=rechterkant
+Turn ID=42| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=43| B | B : deze hebben links en bovenop een soort bowling kegel
+	Free: Pattern=een soort, Pattern=deze hebben, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=hebben
+Turn ID=44| B | B : en rechts die dat drie keer op de voorkant drie keer groot worden Cubus
+	Free: Pattern=dat, Pattern=de, Pattern=drie, Pattern=die, Pattern=en, Pattern=groot worden
+	Constrained: Pattern=groot
+Turn ID=45| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=46| A | A : zullen we dat een verrekijker noemen
+	Free: Pattern=een, Pattern=dat
+	Constrained: 
+Turn ID=47| A | A : daar daar doen ze me aan denken
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=48| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=49| A | A : Oh nee
+	Free: Pattern=nee, Pattern=Oh
+	Constrained: 
+Turn ID=50| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=51| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=52| B | B : ik weten niet
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=53| A | A : die vorm bedoelen ik dan
+	Free: Pattern=dan, Pattern=die, Pattern=ik
+	Constrained: 
+Turn ID=54| A | A : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=55| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=56| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=57| A | A : Oké maar het zijn in ieder geval
+	Free: Pattern=zijn, Pattern=het, Pattern=maar
+	Constrained: 
+Turn ID=58| B | B : oké
+	Free: 
+	Constrained: 

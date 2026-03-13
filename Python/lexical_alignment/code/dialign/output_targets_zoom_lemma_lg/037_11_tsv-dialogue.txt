@@ -1,0 +1,147 @@
+A|0| A: _uhm_ 
+A|1| A: _Oh_ deze hebben _een_ _uhm_ heel _dik neus_ 
+A|2| A: _ja_ _gewoon_ _zo'n_ bolle _op zijn_ _neus_ als het _zijn_ 
+B|3| B: mhm 
+A|4| A: _dan_ link _uhm_ misschien ook _een_ _soort van_ uitsteeksel _dat_ ook _dat_ bestaan uit _twee_ vlak _die _een_ beetje_ haaks _op_ elkaar staan ook 
+A|5| A: _en dan_ bovenop _zijn hoofd_ hebben hij _twee_ uitsteeksel _en_ de _die_ aan de linkerkant _die_ hebben in het midden _een_ _soort van_ Indeuking 
+B|6| B: [ja] 
+A|7| A: _en dan_ gaan het weer in _een_ kegel vormen _en dan_ komen het weer samen 
+A|8| A: _en die_ _soort van_ in in het midden het uitsteeksel _die_ gaan _gewoon_ recht omhoog 
+A|9| A: _dat zijn_ _een_ vlak staaf 
+B|10| B: _ja dat zijn_ 
+B|11| B: _dit zijn [die_ een] _met_ [een] [dik neus] 
+B|12| B: [en] [uhm] [zo'n] armp links [dat] [dat] [soort van] _tent_ lijken _omgekeerd_ 
+B|13| B: [en dan] [twee] ding _op zijn hoofd_ 
+A|14| A: [ja] 
+B|15| B: [die een] _met_ [een] [ja] [een] inkevink [een beetje] veel naar onder _en dat_ balk [gewoon] 
+A|16| A: kegel 
+A|17| A: [ja] 
+A|18| A: [ja dat zijn] 
+A|19| A: Uh _dit zijn die met die dik neus en dan_ [dat] [omgekeerd] [tent] wat jij zeggen _en dan op zijn hoofd_ [een] [soort van] kegelachtig inkepingdingetje _en die_ staaf 
+B|20| B: [Oh] [ja] 
+B|21| B: [dit zijn die met die dik neus [en dan] op zijn hoofd] [twee] ding [die] linker [met] [dat] inkepink 
+A|22| A: [ja] 
+B|23| B: [en die] rechterbalk 
+A|24| A: [dat zijn] 
+A|25| A: [dit zijn die met] de [dik neus [en] dat] [omgekeerd] [tent] link 
+A|26| A: [en die] kegel [met] inkeping [en] staaf [op zijn hoofd] 
+B|27| B: [ja] 
+B|28| B: [dit zijn die met die dik neus en] [en dat] omgekeerde [tent] [en die] [twee] ding [op zijn hoofd] 
+A|29| A: even kijken de [dik neus en] het [omgekeerd] [tent] 
+A|30| A: even kijken waar staan [die] ? even kijken [ja] [dik neus] ik hebben hem vinden 
+B|31| B: maar [die] 
+B|32| B: [ja] 
+A|33| A: ik [zijn] even aan het zoeken 
+B|34| B: Oké top 
+A|35| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : uhm
+	Free: Pattern=uhm
+	Constrained: 
+Turn ID=1| A | A : Oh deze hebben een uhm heel dik neus
+	Free: Pattern=dik neus, Pattern=Oh, Pattern=een, Pattern=uhm
+	Constrained: Pattern=neus
+Turn ID=2| A | A : ja gewoon zo'n bolle op zijn neus als het zijn
+	Free: Pattern=zo'n, Pattern=ja, Pattern=gewoon, Pattern=neus, Pattern=op zijn, Pattern=zijn
+	Constrained: Pattern=op, Pattern=zijn
+Turn ID=3| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : dan link uhm misschien ook een soort van uitsteeksel dat ook dat bestaan uit twee vlak die een beetje haaks op elkaar staan ook
+	Free: Pattern=dat, Pattern=twee, Pattern=op, Pattern=dan, Pattern=een, Pattern=uhm, Pattern=die een, Pattern=soort van, Pattern=een beetje
+	Constrained: Pattern=een, Pattern=die
+Turn ID=5| A | A : en dan bovenop zijn hoofd hebben hij twee uitsteeksel en de die aan de linkerkant die hebben in het midden een soort van Indeuking
+	Free: Pattern=zijn hoofd, Pattern=twee, Pattern=en dan, Pattern=een, Pattern=die, Pattern=en, Pattern=soort van
+	Constrained: Pattern=dan, Pattern=zijn, Pattern=en
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en dan gaan het weer in een kegel vormen en dan komen het weer samen
+	Free: Pattern=en dan, Pattern=een
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=8| A | A : en die soort van in in het midden het uitsteeksel die gaan gewoon recht omhoog
+	Free: Pattern=soort van, Pattern=en die, Pattern=gewoon, Pattern=die
+	Constrained: Pattern=en, Pattern=die
+Turn ID=9| A | A : dat zijn een vlak staaf
+	Free: Pattern=dat zijn, Pattern=een
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : dit zijn die een met een dik neus
+	Free: Pattern=dit zijn die, Pattern=een, Pattern=met, Pattern=die een, Pattern=dik neus
+	Constrained: Pattern=neus, Pattern=een, Pattern=zijn, Pattern=die
+Turn ID=12| B | B : en uhm zo'n armp links dat dat soort van tent lijken omgekeerd
+	Free: Pattern=dat, Pattern=zo'n, Pattern=uhm, Pattern=omgekeerd, Pattern=tent, Pattern=en, Pattern=soort van
+	Constrained: 
+Turn ID=13| B | B : en dan twee ding op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=en dan, Pattern=twee
+	Constrained: Pattern=zijn hoofd, Pattern=op, Pattern=dan, Pattern=zijn, Pattern=en, Pattern=op zijn
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : die een met een ja een inkevink een beetje veel naar onder en dat balk gewoon
+	Free: Pattern=ja, Pattern=een, Pattern=gewoon, Pattern=met, Pattern=die een, Pattern=een beetje, Pattern=en dat
+	Constrained: Pattern=die, Pattern=en, Pattern=een, Pattern=dat
+Turn ID=16| A | A : kegel
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=19| A | A : Uh dit zijn die met die dik neus en dan dat omgekeerd tent wat jij zeggen en dan op zijn hoofd een soort van kegelachtig inkepingdingetje en die staaf
+	Free: Pattern=en die, Pattern=dat, Pattern=en dan op zijn hoofd, Pattern=een, Pattern=omgekeerd, Pattern=tent, Pattern=dit zijn die met die dik neus en dan, Pattern=soort van
+	Constrained: Pattern=en dan, Pattern=op, Pattern=dan, Pattern=dit zijn die met die dik neus en, Pattern=dit zijn die met, Pattern=neus, Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=zijn, Pattern=dik neus, Pattern=dit zijn die, Pattern=zijn hoofd, Pattern=dik neus en, Pattern=en, Pattern=op zijn
+Turn ID=20| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=21| B | B : dit zijn die met die dik neus en dan op zijn hoofd twee ding die linker met dat inkepink
+	Free: Pattern=dat, Pattern=en dan op zijn hoofd, Pattern=twee, Pattern=met, Pattern=die, Pattern=dit zijn die met die dik neus en dan
+	Constrained: Pattern=en dan, Pattern=op, Pattern=dan, Pattern=dit zijn die met die dik neus en, Pattern=dit zijn die met, Pattern=neus, Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=zijn, Pattern=dik neus, Pattern=dit zijn die, Pattern=zijn hoofd, Pattern=dik neus en, Pattern=en, Pattern=op zijn
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : en die rechterbalk
+	Free: Pattern=en die
+	Constrained: Pattern=en, Pattern=die
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| A | A : dit zijn die met de dik neus en dat omgekeerd tent link
+	Free: Pattern=dik neus en, Pattern=dit zijn die met, Pattern=omgekeerd, Pattern=tent, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=dit zijn die, Pattern=neus, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=dik neus
+Turn ID=26| A | A : en die kegel met inkeping en staaf op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=en die, Pattern=en, Pattern=met
+	Constrained: Pattern=zijn hoofd, Pattern=op, Pattern=die, Pattern=zijn, Pattern=en, Pattern=op zijn
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : dit zijn die met die dik neus en en dat omgekeerde tent en die twee ding op zijn hoofd
+	Free: Pattern=en die, Pattern=twee, Pattern=dit zijn die met die dik neus en, Pattern=tent, Pattern=op zijn hoofd, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=op, Pattern=dit zijn die met, Pattern=neus, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dik neus, Pattern=dit zijn die, Pattern=zijn hoofd, Pattern=dik neus en, Pattern=en, Pattern=op zijn
+Turn ID=29| A | A : even kijken de dik neus en het omgekeerd tent
+	Free: Pattern=dik neus en, Pattern=omgekeerd, Pattern=tent
+	Constrained: Pattern=dik neus, Pattern=en, Pattern=neus
+Turn ID=30| A | A : even kijken waar staan die ? even kijken ja dik neus ik hebben hem vinden
+	Free: Pattern=dik neus, Pattern=ja, Pattern=die
+	Constrained: Pattern=neus
+Turn ID=31| B | B : maar die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : ik zijn even aan het zoeken
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=34| B | B : Oké top
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

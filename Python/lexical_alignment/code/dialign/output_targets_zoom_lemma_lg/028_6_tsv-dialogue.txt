@@ -1,0 +1,59 @@
+B|0| B: deze die ik nu zien hebben _een soort_ Euh bolletje als _een_ _neus_ bijna rechts 
+B|1| B: _en_ _dan_ zitten _er_ _een soort_ balk _doorheen_ waardoor _het_ _een_ beetje op _een_ euh _snor_ lijken 
+B|2| B: _en_ _dan_ nog één 
+A|3| A: [en] [een soort] van uitsteeksel aan _de_ bovenkant toch 
+B|4| B: ja naar links afbuigen 
+A|5| A: [dan] _zijn het_ 
+A|6| A: oeh _dit zijn de_ _bollet _met_ de snor_ [er] [doorheen] 
+B|7| B: ja _dat zijn_ euh 
+B|8| B: deze [zijn het] [bollet met] [het] staaf erdoor [de] _de neus [met de_ snor] 
+A|9| A: _dit zijn de neus met de_ doorboordesnor 
+B|10| B: [dit zijn de neus [met de] snor] 
+A|11| A: Yes [dat zijn] 
+A|12| A: [dit zijn [de] snor] [met [de] neus] 
+B|13| B: ja 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze die ik nu zien hebben een soort Euh bolletje als een neus bijna rechts
+	Free: Pattern=een soort, Pattern=neus, Pattern=een
+	Constrained: Pattern=een
+Turn ID=1| B | B : en dan zitten er een soort balk doorheen waardoor het een beetje op een euh snor lijken
+	Free: Pattern=doorheen, Pattern=dan, Pattern=een, Pattern=het, Pattern=er, Pattern=een soort, Pattern=en, Pattern=snor
+	Constrained: Pattern=een
+Turn ID=2| B | B : en dan nog één
+	Free: Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=3| A | A : en een soort van uitsteeksel aan de bovenkant toch
+	Free: Pattern=een soort, Pattern=en, Pattern=de
+	Constrained: Pattern=een
+Turn ID=4| B | B : ja naar links afbuigen
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=het
+Turn ID=6| A | A : oeh dit zijn de bollet met de snor er doorheen
+	Free: Pattern=doorheen, Pattern=bollet met, Pattern=met de snor, Pattern=er, Pattern=dit zijn de
+	Constrained: Pattern=de, Pattern=de snor, Pattern=met de, Pattern=snor
+Turn ID=7| B | B : ja dat zijn euh
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=8| B | B : deze zijn het bollet met het staaf erdoor de de neus met de snor
+	Free: Pattern=zijn het, Pattern=het, Pattern=bollet met, Pattern=met de snor, Pattern=de, Pattern=de neus met de
+	Constrained: Pattern=de neus, Pattern=het, Pattern=snor, Pattern=de, Pattern=met de, Pattern=neus, Pattern=de snor
+Turn ID=9| A | A : dit zijn de neus met de doorboordesnor
+	Free: Pattern=dit zijn de neus met de
+	Constrained: Pattern=de neus, Pattern=neus, Pattern=dit zijn de, Pattern=de, Pattern=met de, Pattern=de neus met de
+Turn ID=10| B | B : dit zijn de neus met de snor
+	Free: Pattern=dit zijn de neus met de, Pattern=met de snor
+	Constrained: Pattern=de neus, Pattern=de, Pattern=met de, Pattern=de neus met de, Pattern=neus, Pattern=de snor, Pattern=snor, Pattern=dit zijn de
+Turn ID=11| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=12| A | A : dit zijn de snor met de neus
+	Free: Pattern=dit zijn de, Pattern=de snor, Pattern=met de, Pattern=de neus
+	Constrained: Pattern=neus, Pattern=de, Pattern=snor
+Turn ID=13| B | B : ja
+	Free: 
+	Constrained: 

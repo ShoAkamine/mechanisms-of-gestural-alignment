@@ -1,0 +1,167 @@
+B|0| B: ehm _dit zijn de_ _veel_ vage van ze allemaal 
+B|1| B: _het_ _hebben_ een punthoed 
+B|2| B: een beetje een _jarig job_ 
+B|3| B: _en de_ _neus_ _zijn_ gigantisch 
+B|4| B: _het zijn_ een _soort_ kubus 
+B|5| B: maar _de_ zeggen maar allebei _de_ kant _zijn_ niet even _groot_ 
+B|6| B: dus _het_ voelen _alsof_ _de_ _neus_ steeds _groot_ _worden_ 
+B|7| B: _en_ _één_ oor _zijn_ een zeggen maar _zo'n_ _zo'n_ blaasdinge 
+A|8| A: _ja_ 
+B|9| B: _dat_ _je_ _ook_ gebruiken _op_ verjaardag 
+A|10| A: _ja_ 
+B|11| B: _zijn_ _ik_ even _de_ naam kwijt 
+A|12| A: _ja_ [ik] snapen wat [je] bedoelen 
+A|13| A: _dat zijn_ [zo'n] heel dun ding [dat] dan zo [worden] toch 
+A|14| A: [zo'n] heel klein 
+B|15| B: [ja] 
+A|16| A: [ja] 
+A|17| A: [en] hij [hebben] dan 
+A|18| A: [het] lijken [alsof] hij [op] [één] klein [soort] rond voe leunt 
+B|19| B: _ja ja_ 
+A|20| A: [ja] dan weten [ik] welk [het zijn] 
+A|21| A: _dat zijn_ letter 
+A|22| A: deze [hebben] we [ook] al [hebben] 
+A|23| A: deze [hebben] [de] feesthoed [en] [dat] raar ding 
+B|24| B: [ja] 
+A|25| A: _met_ [zo'n] heel _groot neus_ 
+B|26| B: Eh 
+B|27| B: _ja ja dat zijn_ nummer 
+B|28| B: _dit zijn de jarig Job_ 
+B|29| B: _met de_ punthoed 
+A|30| A: [ja ja dat zijn] letter 
+A|31| A: [dit zijn de jarig Job] 
+A|32| A: [met de] driehoek bovenop 
+B|33| B: [ja] 
+A|34| A: [en _de] groot_ weten [ik] [veel] Neusding 
+B|35| B: eh nummer 
+B|36| B: eh [dit zijn de] Jarig [Job] 
+B|37| B: [met [de] [groot] neus] 
+A|38| A: [ja] letter 
+A|39| A: [de [jarig] job] 
+B|40| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm dit zijn de veel vage van ze allemaal
+	Free: Pattern=dit zijn de, Pattern=veel
+	Constrained: Pattern=zijn, Pattern=de
+Turn ID=1| B | B : het hebben een punthoed
+	Free: Pattern=het, Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : een beetje een jarig job
+	Free: Pattern=jarig job
+	Constrained: 
+Turn ID=3| B | B : en de neus zijn gigantisch
+	Free: Pattern=en de, Pattern=zijn, Pattern=neus
+	Constrained: Pattern=en, Pattern=de
+Turn ID=4| B | B : het zijn een soort kubus
+	Free: Pattern=het zijn, Pattern=soort
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=5| B | B : maar de zeggen maar allebei de kant zijn niet even groot
+	Free: Pattern=zijn, Pattern=groot, Pattern=de
+	Constrained: 
+Turn ID=6| B | B : dus het voelen alsof de neus steeds groot worden
+	Free: Pattern=de, Pattern=worden, Pattern=het, Pattern=groot, Pattern=neus, Pattern=alsof
+	Constrained: 
+Turn ID=7| B | B : en één oor zijn een zeggen maar zo'n zo'n blaasdinge
+	Free: Pattern=zijn, Pattern=en, Pattern=zo'n, Pattern=één
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : dat je ook gebruiken op verjaardag
+	Free: Pattern=je, Pattern=ook, Pattern=dat, Pattern=op
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : zijn ik even de naam kwijt
+	Free: Pattern=zijn, Pattern=de, Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : ja ik snapen wat je bedoelen
+	Free: Pattern=je, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=13| A | A : dat zijn zo'n heel dun ding dat dan zo worden toch
+	Free: Pattern=dat zijn, Pattern=worden, Pattern=zo'n, Pattern=dat
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=14| A | A : zo'n heel klein
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : en hij hebben dan
+	Free: Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=18| A | A : het lijken alsof hij op één klein soort rond voe leunt
+	Free: Pattern=soort, Pattern=op, Pattern=het, Pattern=één, Pattern=alsof
+	Constrained: 
+Turn ID=19| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=20| A | A : ja dan weten ik welk het zijn
+	Free: Pattern=het zijn, Pattern=ja, Pattern=ik
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=21| A | A : dat zijn letter
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=22| A | A : deze hebben we ook al hebben
+	Free: Pattern=ook, Pattern=hebben
+	Constrained: 
+Turn ID=23| A | A : deze hebben de feesthoed en dat raar ding
+	Free: Pattern=en, Pattern=de, Pattern=dat, Pattern=hebben
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : met zo'n heel groot neus
+	Free: Pattern=groot neus, Pattern=zo'n, Pattern=met
+	Constrained: Pattern=groot, Pattern=neus
+Turn ID=26| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ja ja dat zijn nummer
+	Free: Pattern=ja ja dat zijn
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=dat zijn, Pattern=ja, Pattern=ja ja
+Turn ID=28| B | B : dit zijn de jarig Job
+	Free: Pattern=dit zijn de jarig Job
+	Constrained: Pattern=de, Pattern=de jarig, Pattern=Job, Pattern=zijn, Pattern=dit zijn de
+Turn ID=29| B | B : met de punthoed
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=30| A | A : ja ja dat zijn letter
+	Free: Pattern=ja ja dat zijn
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=dat zijn, Pattern=ja, Pattern=ja ja
+Turn ID=31| A | A : dit zijn de jarig Job
+	Free: Pattern=dit zijn de jarig Job
+	Constrained: Pattern=de, Pattern=de jarig, Pattern=Job, Pattern=zijn, Pattern=dit zijn de
+Turn ID=32| A | A : met de driehoek bovenop
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : en de groot weten ik veel Neusding
+	Free: Pattern=en de, Pattern=de groot, Pattern=veel, Pattern=ik
+	Constrained: Pattern=groot, Pattern=en, Pattern=de
+Turn ID=35| B | B : eh nummer
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : eh dit zijn de Jarig Job
+	Free: Pattern=dit zijn de, Pattern=Job
+	Constrained: Pattern=zijn, Pattern=de
+Turn ID=37| B | B : met de groot neus
+	Free: Pattern=de groot, Pattern=met de, Pattern=groot neus
+	Constrained: Pattern=groot, Pattern=de, Pattern=neus, Pattern=met
+Turn ID=38| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : de jarig job
+	Free: Pattern=jarig job, Pattern=de jarig
+	Constrained: Pattern=de
+Turn ID=40| B | B : nummer
+	Free: 
+	Constrained: 

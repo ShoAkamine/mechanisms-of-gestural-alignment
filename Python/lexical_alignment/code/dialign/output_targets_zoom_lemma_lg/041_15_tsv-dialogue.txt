@@ -1,0 +1,87 @@
+B|0| B: Oké _ik_ _hebben een_ plaat met _twee_ _klein_ uitsteker _aan de bovenkant_ 
+B|1| B: vlak naast elkaar 
+B|2| B: _en_ _om_ het _ja_ _om_ het _soort_ _van_ lichaam of romp _zitten_ _een_ groot vierkant 
+A|3| A: Oh [ja] [ja] 
+B|4| B: _en_ [ja] 
+A|5| A: [ja] mogen [ik] hem _dan_ gewoon zeggen 
+A|6| A: Plaatje 
+A|7| A: [van] irk 
+B|8| B: [ja] 
+A|9| A: _ehm_ deze _die_ [hebben een] [soort] plateau _om zich heen_ [zitten] zeggen maar 
+A|10| A: [en] [twee] [van] _die_ [klein] uitsteeksel [aan de bovenkant] 
+B|11| B: [ja] 
+B|12| B: eh dit _zijn_ [die] [een] met het vierkant [om zich heen] 
+B|13| B: [en] [dan] [die] [twee] uitstekel [aan de bovenkant] 
+A|14| A: _dat zijn_ 
+A|15| A: [en] deze [hebben] _dat_ platform [om zich heen] 
+B|16| B: [ja] [dat zijn] 
+B|17| B: [ehm] vierkant [om zich heen] 
+A|18| A: _Eh_ [dat zijn] 
+A|19| A: deze [hebben] [dat] plateau [om zich heen] 
+B|20| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik hebben een plaat met twee klein uitsteker aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=twee, Pattern=hebben een, Pattern=klein, Pattern=ik
+	Constrained: Pattern=hebben, Pattern=een
+Turn ID=1| B | B : vlak naast elkaar
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : en om het ja om het soort van lichaam of romp zitten een groot vierkant
+	Free: Pattern=soort, Pattern=ja, Pattern=een, Pattern=om, Pattern=zitten, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : Oh ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en ja
+	Free: Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja mogen ik hem dan gewoon zeggen
+	Free: Pattern=dan, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Plaatje
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : van irk
+	Free: Pattern=van
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ehm deze die hebben een soort plateau om zich heen zitten zeggen maar
+	Free: Pattern=soort, Pattern=hebben een, Pattern=om zich heen, Pattern=ehm, Pattern=die, Pattern=zitten
+	Constrained: Pattern=om, Pattern=een, Pattern=hebben
+Turn ID=10| A | A : en twee van die klein uitsteeksel aan de bovenkant
+	Free: Pattern=twee, Pattern=die, Pattern=klein, Pattern=van, Pattern=aan de bovenkant, Pattern=en
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : eh dit zijn die een met het vierkant om zich heen
+	Free: Pattern=om zich heen, Pattern=een, Pattern=zijn, Pattern=die
+	Constrained: Pattern=om
+Turn ID=13| B | B : en dan die twee uitstekel aan de bovenkant
+	Free: Pattern=twee, Pattern=dan, Pattern=die, Pattern=aan de bovenkant, Pattern=en
+	Constrained: 
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=15| A | A : en deze hebben dat platform om zich heen
+	Free: Pattern=om zich heen, Pattern=hebben, Pattern=dat, Pattern=en
+	Constrained: Pattern=om
+Turn ID=16| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=17| B | B : ehm vierkant om zich heen
+	Free: Pattern=om zich heen, Pattern=ehm
+	Constrained: Pattern=om
+Turn ID=18| A | A : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| A | A : deze hebben dat plateau om zich heen
+	Free: Pattern=om zich heen, Pattern=hebben, Pattern=dat
+	Constrained: Pattern=om
+Turn ID=20| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

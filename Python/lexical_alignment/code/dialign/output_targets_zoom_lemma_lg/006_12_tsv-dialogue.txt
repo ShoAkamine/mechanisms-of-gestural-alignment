@@ -1,0 +1,63 @@
+A|0| A: eh _ik hebben_ er nou één _en_ _die_ _hebben_ _ja_ een soort van bleekselderijachtig vormp aan _de_ zijkant 
+A|1| A: _met_ een soort _spijker_ er doorheen 
+A|2| A: _en_ _dan_ gewoon een _rond_ aan _de_ voorkant 
+B|3| B: [ja] [ja] 
+B|4| B: _dat zijn_ [dan] 
+B|5| B: [ik hebben] [die] _met de bleekselderij en de spijker_ erin 
+A|6| A: [dat zijn] 
+A|7| A: [ik hebben] diegene [met de bleekselderij en de _spijker] [en_ de] cirkel 
+B|8| B: Eh [dat zijn] 
+B|9| B: _ik hebben de bleekselderij_ op [die] _spijker en het rond_ dinge 
+A|10| A: [dat zijn] 
+A|11| A: eh _ik hebben de bleekselderij [spijker en_ het rond] 
+B|12| B: [dat zijn] 
+B|13| B: [ik hebben de bleekselderij spijker en] [rond] dingetje 
+A|14| A: Ehm [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh ik hebben er nou één en die hebben ja een soort van bleekselderijachtig vormp aan de zijkant
+	Free: Pattern=ik hebben, Pattern=hebben, Pattern=die, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=hebben
+Turn ID=1| A | A : met een soort spijker er doorheen
+	Free: Pattern=met, Pattern=spijker
+	Constrained: 
+Turn ID=2| A | A : en dan gewoon een rond aan de voorkant
+	Free: Pattern=de, Pattern=dan, Pattern=rond, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : dat zijn dan
+	Free: Pattern=dat zijn, Pattern=dan
+	Constrained: 
+Turn ID=5| B | B : ik hebben die met de bleekselderij en de spijker erin
+	Free: Pattern=met de bleekselderij en de spijker, Pattern=ik hebben, Pattern=die
+	Constrained: Pattern=de, Pattern=en de, Pattern=hebben, Pattern=met, Pattern=en, Pattern=spijker
+Turn ID=6| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=7| A | A : ik hebben diegene met de bleekselderij en de spijker en de cirkel
+	Free: Pattern=met de bleekselderij en de spijker, Pattern=en de, Pattern=ik hebben, Pattern=spijker en
+	Constrained: Pattern=de, Pattern=en de, Pattern=hebben, Pattern=met, Pattern=en, Pattern=spijker
+Turn ID=8| B | B : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=9| B | B : ik hebben de bleekselderij op die spijker en het rond dinge
+	Free: Pattern=spijker en het rond, Pattern=ik hebben de bleekselderij, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=en, Pattern=rond, Pattern=spijker, Pattern=de, Pattern=spijker en
+Turn ID=10| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=11| A | A : eh ik hebben de bleekselderij spijker en het rond
+	Free: Pattern=ik hebben de bleekselderij spijker en, Pattern=spijker en het rond
+	Constrained: Pattern=ik hebben, Pattern=en, Pattern=rond, Pattern=spijker, Pattern=de, Pattern=spijker en, Pattern=hebben, Pattern=ik hebben de bleekselderij
+Turn ID=12| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=13| B | B : ik hebben de bleekselderij spijker en rond dingetje
+	Free: Pattern=ik hebben de bleekselderij spijker en, Pattern=rond
+	Constrained: Pattern=ik hebben, Pattern=en, Pattern=spijker, Pattern=de, Pattern=spijker en, Pattern=hebben, Pattern=ik hebben de bleekselderij
+Turn ID=14| A | A : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 

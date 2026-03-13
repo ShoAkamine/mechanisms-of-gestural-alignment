@@ -1,0 +1,175 @@
+B|0| B: uhm deze _hebben_ _aan de_ onderkant _een soort van_ been _met_ _een_ voe 
+B|1| B: _en_ _aan de rechterkant_ _ook_ 
+B|2| B: alsof _die met_ één been _in_ _de_ lucht staan _en_ _ja_ _of een_ arm _of een_ _neus_ _zo'n_ _staaf_ 
+B|3| B: _en_ _op zijn hoofd hebben_ _hij_ _een_ _kantelen_ rechtopstaand _vierkant_ 
+B|4| B: _met_ _aan beide kant_ _ja een soort van_ gebouwtje _eruit_ 
+A|5| A: [ja een soort van] kerktorentopje 
+B|6| B: _ik weten_ _niet_ hoe _ik_ _het_ moeten omschrijven 
+B|7| B: [ja] precies 
+B|8| B: [ja] 
+A|9| A: [ja] [ja] _dan_ [weten] [ik] hem 
+A|10| A: _Uh_ _dat_ [zijn] 
+B|11| B: Oké 
+A|12| A: Uhm _dit zijn die_ [een] [die] [een soort van] disk [op zijn hoofd hebben] [met] _daar_ [aan beide kant] [zo'n] _kerktoren_ uit 
+A|13| A: [en] [een soort van] armpje onder zich _dat_ schuin gaan [en] [een] armpje rechts [van] zich _dat_ schuin gaan 
+A|14| A: [en] [ook] nog [een soort van] [neus] _dat_ rechts er [een] beetje zo uitsteken 
+A|15| A: [een] [staaf] [zijn] _dat_ volgens _mij_ 
+A|16| A: [of een] _vierkan_ 
+A|17| A: [ja een] [staaf] 
+B|18| B: [ik] [zijn] _even_ heftig [op] zoek naar _de_ [kerktoren] wachten 
+B|19| B: uhm 
+A|20| A: [ja] 
+A|21| A: [het] [zijn] vrij klein _zeggen maar_ als [in] [die] kerktoon want [het] _zijn het_ voornaam [zijn] _dat_ [hij] dus [een soort van] [vierkant] plaat schuin _zeggen maar_ als [een soort van] [kantelen] [op zijn hoofd hebben] 
+B|22| B: [ja] 
+B|23| B: wachten [daar] _zitten_ _de_ kerk toren [in] 
+A|24| A: [ja] _die twee_ [die] noemen _jij_ volgens _mij_ [ook] [een] beetje zo verrekijkerachtig iets [ik weten] [het] [niet] _maar_ 
+B|25| B: [en] _oké_ 
+B|26| B: [en] _hij hebben_ [een soort van] neusje [of] armp 
+A|27| A: [ja] [hij hebben] _zeggen maar_ nog onder [een soort van] armpje _dat_ zo buigen rechts 
+A|28| A: [een soort van] armpje _dat_ buigen [en] _dan_ nog [een] [een] rechtsuitsteeksel 
+A|29| A: [een] beetje [ja] iets iets veel [aan de rechterkant] 
+B|30| B: [ja] 
+B|31| B: Oké [dan] [zijn het] 
+B|32| B: _Uh dit zijn_ diezelfde [die] [jij] net [aan] [mij] beschrijven 
+B|33| B: uhm 
+B|34| B: [met] [op zijn hoofd] [zeggen maar] [dat] [vierkan] _waar die kerktoren_ [in] _zitten_ 
+A|35| A: [ja] [oké] [dan] [hebben] [ik] hem [dat] [zijn] 
+A|36| A: [Uh _dit zijn] die met dat_ [vierkant] plaat _op zijn hoofd [waar die_ kerktoren] als [het] [zijn] tegenaan uitkwamen 
+B|37| B: [ja] 
+B|38| B: [dit zijn die met dat] [vierkan] [op zijn hoofd waar [die] twee] [kerktoren] [in] _zitten_ 
+A|39| A: [ja] [even] kijken [waar die] [zitten] [ja] [dat] [zijn] 
+A|40| A: [dit zijn die met dat] [vierkant] plaat [op zijn hoofd] 
+A|41| A: [met] [die twee] kerktoer [eruit] 
+B|42| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : uhm deze hebben aan de onderkant een soort van been met een voe
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=een soort van, Pattern=met
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=van
+Turn ID=1| B | B : en aan de rechterkant ook
+	Free: Pattern=aan de rechterkant, Pattern=ook, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=2| B | B : alsof die met één been in de lucht staan en ja of een arm of een neus zo'n staaf
+	Free: Pattern=zo'n, Pattern=staaf, Pattern=neus, Pattern=of een, Pattern=en, Pattern=de, Pattern=ja, Pattern=die met, Pattern=in
+	Constrained: Pattern=een, Pattern=met, Pattern=die, Pattern=of
+Turn ID=3| B | B : en op zijn hoofd hebben hij een kantelen rechtopstaand vierkant
+	Free: Pattern=op zijn hoofd hebben, Pattern=een, Pattern=hij, Pattern=kantelen, Pattern=en, Pattern=vierkant
+	Constrained: Pattern=op zijn hoofd, Pattern=zijn, Pattern=hebben, Pattern=op
+Turn ID=4| B | B : met aan beide kant ja een soort van gebouwtje eruit
+	Free: Pattern=ja een soort van, Pattern=aan beide kant, Pattern=met, Pattern=eruit
+	Constrained: Pattern=een, Pattern=een soort van, Pattern=ja een, Pattern=van, Pattern=aan, Pattern=ja
+Turn ID=5| A | A : ja een soort van kerktorentopje
+	Free: Pattern=ja een soort van
+	Constrained: Pattern=ja, Pattern=een, Pattern=een soort van, Pattern=ja een, Pattern=van
+Turn ID=6| B | B : ik weten niet hoe ik het moeten omschrijven
+	Free: Pattern=ik weten, Pattern=ik, Pattern=niet, Pattern=het
+	Constrained: Pattern=ik, Pattern=weten
+Turn ID=7| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja ja dan weten ik hem
+	Free: Pattern=ja, Pattern=dan, Pattern=ik, Pattern=weten
+	Constrained: 
+Turn ID=10| A | A : Uh dat zijn
+	Free: Pattern=zijn, Pattern=dat, Pattern=Uh
+	Constrained: 
+Turn ID=11| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : Uhm dit zijn die een die een soort van disk op zijn hoofd hebben met daar aan beide kant zo'n kerktoren uit
+	Free: Pattern=dit zijn die, Pattern=zo'n, Pattern=aan beide kant, Pattern=op zijn hoofd hebben, Pattern=een soort van, Pattern=met, Pattern=die, Pattern=daar, Pattern=een, Pattern=kerktoren
+	Constrained: Pattern=aan, Pattern=op, Pattern=een, Pattern=hebben, Pattern=die, Pattern=van, Pattern=op zijn hoofd, Pattern=zijn
+Turn ID=13| A | A : en een soort van armpje onder zich dat schuin gaan en een armpje rechts van zich dat schuin gaan
+	Free: Pattern=dat, Pattern=een, Pattern=een soort van, Pattern=van, Pattern=en
+	Constrained: Pattern=een, Pattern=van
+Turn ID=14| A | A : en ook nog een soort van neus dat rechts er een beetje zo uitsteken
+	Free: Pattern=dat, Pattern=ook, Pattern=een, Pattern=een soort van, Pattern=neus, Pattern=en
+	Constrained: Pattern=een, Pattern=van
+Turn ID=15| A | A : een staaf zijn dat volgens mij
+	Free: Pattern=dat, Pattern=staaf, Pattern=een, Pattern=mij, Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : of een vierkan
+	Free: Pattern=of een, Pattern=vierkan
+	Constrained: Pattern=een, Pattern=of
+Turn ID=17| A | A : ja een staaf
+	Free: Pattern=ja een, Pattern=staaf
+	Constrained: Pattern=een, Pattern=ja
+Turn ID=18| B | B : ik zijn even heftig op zoek naar de kerktoren wachten
+	Free: Pattern=de, Pattern=kerktoren, Pattern=ik, Pattern=zijn, Pattern=op, Pattern=even
+	Constrained: 
+Turn ID=19| B | B : uhm
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : het zijn vrij klein zeggen maar als in die kerktoon want het zijn het voornaam zijn dat hij dus een soort van vierkant plaat schuin zeggen maar als een soort van kantelen op zijn hoofd hebben
+	Free: Pattern=dat, Pattern=zijn het, Pattern=op zijn hoofd hebben, Pattern=zeggen maar, Pattern=het, Pattern=hij, Pattern=kantelen, Pattern=die, Pattern=zijn, Pattern=vierkant, Pattern=in, Pattern=een soort van
+	Constrained: Pattern=op, Pattern=een, Pattern=het, Pattern=hebben, Pattern=van, Pattern=op zijn hoofd, Pattern=zijn, Pattern=maar
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : wachten daar zitten de kerk toren in
+	Free: Pattern=daar, Pattern=zitten, Pattern=in, Pattern=de
+	Constrained: 
+Turn ID=24| A | A : ja die twee die noemen jij volgens mij ook een beetje zo verrekijkerachtig iets ik weten het niet maar
+	Free: Pattern=ja, Pattern=ook, Pattern=niet, Pattern=een, Pattern=die, Pattern=ik weten, Pattern=mij, Pattern=maar, Pattern=jij, Pattern=het, Pattern=die twee
+	Constrained: Pattern=die, Pattern=ik, Pattern=weten
+Turn ID=25| B | B : en oké
+	Free: Pattern=oké, Pattern=en
+	Constrained: 
+Turn ID=26| B | B : en hij hebben een soort van neusje of armp
+	Free: Pattern=een soort van, Pattern=hij hebben, Pattern=en, Pattern=of
+	Constrained: Pattern=hij, Pattern=een, Pattern=van, Pattern=hebben
+Turn ID=27| A | A : ja hij hebben zeggen maar nog onder een soort van armpje dat zo buigen rechts
+	Free: Pattern=dat, Pattern=ja, Pattern=zeggen maar, Pattern=hij hebben, Pattern=een soort van
+	Constrained: Pattern=een, Pattern=hebben, Pattern=hij, Pattern=van, Pattern=maar
+Turn ID=28| A | A : een soort van armpje dat buigen en dan nog een een rechtsuitsteeksel
+	Free: Pattern=dat, Pattern=dan, Pattern=een, Pattern=een soort van, Pattern=en
+	Constrained: Pattern=een, Pattern=van
+Turn ID=29| A | A : een beetje ja iets iets veel aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=een, Pattern=ja
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=32| B | B : Uh dit zijn diezelfde die jij net aan mij beschrijven
+	Free: Pattern=aan, Pattern=Uh dit zijn, Pattern=die, Pattern=mij, Pattern=jij
+	Constrained: Pattern=zijn, Pattern=Uh
+Turn ID=33| B | B : uhm
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : met op zijn hoofd zeggen maar dat vierkan waar die kerktoren in zitten
+	Free: Pattern=dat, Pattern=zeggen maar, Pattern=waar die kerktoren, Pattern=in, Pattern=met, Pattern=zitten, Pattern=op zijn hoofd, Pattern=vierkan
+	Constrained: Pattern=kerktoren, Pattern=die, Pattern=op, Pattern=waar die, Pattern=zijn, Pattern=maar
+Turn ID=35| A | A : ja oké dan hebben ik hem dat zijn
+	Free: Pattern=oké, Pattern=dat, Pattern=ja, Pattern=dan, Pattern=hebben, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=36| A | A : Uh dit zijn die met dat vierkant plaat op zijn hoofd waar die kerktoren als het zijn tegenaan uitkwamen
+	Free: Pattern=dit zijn die met dat, Pattern=Uh dit zijn, Pattern=het, Pattern=waar die kerktoren, Pattern=op zijn hoofd waar die, Pattern=zijn, Pattern=vierkant
+	Constrained: Pattern=dat, Pattern=dit zijn die, Pattern=kerktoren, Pattern=die met, Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=zijn, Pattern=Uh, Pattern=op, Pattern=waar die
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : dit zijn die met dat vierkan op zijn hoofd waar die twee kerktoren in zitten
+	Free: Pattern=dit zijn die met dat, Pattern=kerktoren, Pattern=die twee, Pattern=op zijn hoofd waar die, Pattern=in, Pattern=zitten, Pattern=vierkan
+	Constrained: Pattern=dat, Pattern=dit zijn die, Pattern=die met, Pattern=met, Pattern=die, Pattern=op zijn hoofd, Pattern=zijn, Pattern=op, Pattern=waar die
+Turn ID=39| A | A : ja even kijken waar die zitten ja dat zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=zitten, Pattern=zijn, Pattern=waar die, Pattern=even
+	Constrained: Pattern=die
+Turn ID=40| A | A : dit zijn die met dat vierkant plaat op zijn hoofd
+	Free: Pattern=dit zijn die met dat, Pattern=op zijn hoofd, Pattern=vierkant
+	Constrained: Pattern=dat, Pattern=dit zijn die, Pattern=op, Pattern=die met, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=41| A | A : met die twee kerktoer eruit
+	Free: Pattern=die twee, Pattern=met, Pattern=eruit
+	Constrained: Pattern=die
+Turn ID=42| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

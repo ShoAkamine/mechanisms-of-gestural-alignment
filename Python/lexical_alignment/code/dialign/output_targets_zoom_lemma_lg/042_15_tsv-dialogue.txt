@@ -1,0 +1,111 @@
+A|0| A: _ehm deze hebben_ bovenop twee klein toren naast elkaar staan 
+A|1| A: _en_ _een_ _soort van_ _slurf_ _die dan uitkomen op_ _een_ plat dek _een_ _soort van_ _plateau_ 
+A|2| A: Ehm 
+B|3| B: [en] _dat_ [plateau] _zijn_ [soort van] _in het_ midden toch 
+A|4| A: _ja_ [het] [zijn] iets hoog _dan_ 
+A|5| A: _Eh_ _hij_ [zijn] _niet_ helemaal _onderin_ 
+B|6| B: [ja] 
+B|7| B: [en] [dan] [hebben] [hij] links _nog_ [een] buis _met_ [een] hoek 
+A|8| A: [ja] [nog] één uit 
+A|9| A: [ja] 
+B|10| B: [ja] 
+B|11| B: [Eh] 
+B|12| B: [ehm deze hebben] de [een] vierkant plaat 
+B|13| B: [en] [dan] [niet] [onderin] maar _in het_ midden 
+B|14| B: _met die_ [soort van] koker [die dan uitkomen op] [die] vierkant plaat _in het_ midden 
+A|15| A: mhm 
+A|16| A: [ja] 
+A|17| A: [Eh] 
+A|18| A: _eh dit zijn_ [met] [het] [plateau] [met die] _slurf_ [dat] daarop [uitkomen] 
+A|19| A: dus beetje zo iets hoog [dan] [het] begin 
+B|20| B: [ja] nummer 
+B|21| B: [Eh] [dat] vierkant [plateau] middenin 
+B|22| B: [met] de [slurf] ernaartoe 
+A|23| A: mhm 
+A|24| A: _eh_ [plateau] [in het] middens [met] [slurf] 
+B|25| B: [eh dit zijn] weer de vierkant plaat middenin 
+B|26| B: [met] de [slurf] ernaartoe 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben bovenop twee klein toren naast elkaar staan
+	Free: Pattern=ehm deze hebben
+	Constrained: Pattern=hebben
+Turn ID=1| A | A : en een soort van slurf die dan uitkomen op een plat dek een soort van plateau
+	Free: Pattern=die dan uitkomen op, Pattern=slurf, Pattern=een, Pattern=plateau, Pattern=en, Pattern=soort van
+	Constrained: Pattern=dan, Pattern=die, Pattern=uitkomen
+Turn ID=2| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en dat plateau zijn soort van in het midden toch
+	Free: Pattern=dat, Pattern=in het, Pattern=plateau, Pattern=en, Pattern=soort van, Pattern=zijn
+	Constrained: Pattern=het
+Turn ID=4| A | A : ja het zijn iets hoog dan
+	Free: Pattern=het, Pattern=ja, Pattern=dan, Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : Eh hij zijn niet helemaal onderin
+	Free: Pattern=niet, Pattern=onderin, Pattern=Eh, Pattern=hij, Pattern=zijn
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : en dan hebben hij links nog een buis met een hoek
+	Free: Pattern=nog, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=8| A | A : ja nog één uit
+	Free: Pattern=nog, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=12| B | B : ehm deze hebben de een vierkant plaat
+	Free: Pattern=ehm deze hebben, Pattern=een
+	Constrained: Pattern=hebben
+Turn ID=13| B | B : en dan niet onderin maar in het midden
+	Free: Pattern=onderin, Pattern=in het, Pattern=en, Pattern=niet, Pattern=dan
+	Constrained: Pattern=het
+Turn ID=14| B | B : met die soort van koker die dan uitkomen op die vierkant plaat in het midden
+	Free: Pattern=in het, Pattern=die, Pattern=soort van, Pattern=met die, Pattern=die dan uitkomen op
+	Constrained: Pattern=dan, Pattern=uitkomen, Pattern=het, Pattern=met, Pattern=die
+Turn ID=15| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=18| A | A : eh dit zijn met het plateau met die slurf dat daarop uitkomen
+	Free: Pattern=het, Pattern=plateau, Pattern=eh dit zijn, Pattern=met, Pattern=dat, Pattern=met die, Pattern=uitkomen, Pattern=slurf
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=eh
+Turn ID=19| A | A : dus beetje zo iets hoog dan het begin
+	Free: Pattern=het, Pattern=dan
+	Constrained: 
+Turn ID=20| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : Eh dat vierkant plateau middenin
+	Free: Pattern=Eh, Pattern=dat, Pattern=plateau
+	Constrained: 
+Turn ID=22| B | B : met de slurf ernaartoe
+	Free: Pattern=slurf, Pattern=met
+	Constrained: 
+Turn ID=23| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : eh plateau in het middens met slurf
+	Free: Pattern=slurf, Pattern=in het, Pattern=plateau, Pattern=met, Pattern=eh
+	Constrained: Pattern=het
+Turn ID=25| B | B : eh dit zijn weer de vierkant plaat middenin
+	Free: Pattern=eh dit zijn
+	Constrained: Pattern=zijn, Pattern=eh
+Turn ID=26| B | B : met de slurf ernaartoe
+	Free: Pattern=slurf, Pattern=met
+	Constrained: 

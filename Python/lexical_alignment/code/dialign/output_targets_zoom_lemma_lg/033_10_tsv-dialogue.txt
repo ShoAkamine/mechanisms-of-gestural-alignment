@@ -1,0 +1,115 @@
+A|0| A: Oké euh _nu_ _hebben ik_ _er_ één _met_ weer diezelfde basisvorm 
+A|1| A: het lijken wel alsof _er_ _een soort_ van daarachter _een soort_ _ja_ wat in _de_ grond staan _en_ _dan een soort_ wandelbord waar allemaal 
+A|2| A: _ja_ ding opstaan maar dat kunnen je hier niet zien 
+A|3| A: dus dat staan _er_ _een soort_ van achter 
+A|4| A: _en_ daardoor heen zit _een soort_ _staaf met_ twee _knop _aan_ de_ uiteinde van _die staaf_ 
+A|5| A: _en_ _aan de_ onderkant _zitten_ ver niks 
+A|6| A: _en die staaf_ lopen dus echt van helemaal links naar helemaal rechts van _de_ basisvorm 
+A|7| A: dus je zien _hem_ _aan_ beide _kant_ 
+A|8| A: Ehm 
+A|9| A: _ja en_ hij liggen wel achter _de_ basisvorm 
+A|10| A: dus het zijn niet dat je voor _de_ basisvorm langs ook nog _die staaf_ zien 
+B|11| B: [ja en] [zitten] [er] [dan een soort] vierkantachtig iets _aan de bovenkant_ zo schuin 
+A|12| A: [en] [ja] 
+A|13| A: _Euh_ [ja] voor mij links euh [aan] links [aan de bovenkant] 
+A|14| A: [en] dat lijken wel [een soort] vierkant wat op [een] paal staan 
+B|15| B: [ja] oké [dan] [hebben ik] [hem] denken [ik] nummer 
+B|16| B: _ik hebben nu_ [die] _met die wegwijzer_ [aan de] achterkant [en _die _staaf] met_ [knop_ aan] allebei [de] [kant] 
+A|17| A: [ja] euh dat zijn 
+A|18| A: _Euh_ [ik hebben nu] [met die _wegwijzer] en_ [dan] [die staaf met] twee euh knoppen [aan de] zijkant 
+B|19| B: [ja] nummer 
+B|20| B: [ik hebben] _de wegwijzer en de staaf met knop_ 
+A|21| A: [ja] 
+A|22| A: euh waar staan [die] nou 
+A|23| A: Oh [ja] 
+A|24| A: [ik hebben nu] [met] [de wegwijzer en de staaf met knop] 
+B|25| B: [Euh] 
+B|26| B: [ik hebben nu] [de wegwijzer en de staaf met knop] 
+A|27| A: [Euh] dat zijn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké euh nu hebben ik er één met weer diezelfde basisvorm
+	Free: Pattern=hebben ik, Pattern=met, Pattern=nu, Pattern=er
+	Constrained: Pattern=ik
+Turn ID=1| A | A : het lijken wel alsof er een soort van daarachter een soort ja wat in de grond staan en dan een soort wandelbord waar allemaal
+	Free: Pattern=er, Pattern=en, Pattern=de, Pattern=ja, Pattern=dan een soort, Pattern=een soort
+	Constrained: Pattern=een soort, Pattern=een, Pattern=dan
+Turn ID=2| A | A : ja ding opstaan maar dat kunnen je hier niet zien
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : dus dat staan er een soort van achter
+	Free: Pattern=een soort, Pattern=er
+	Constrained: Pattern=een
+Turn ID=4| A | A : en daardoor heen zit een soort staaf met twee knop aan de uiteinde van die staaf
+	Free: Pattern=aan de, Pattern=die staaf, Pattern=staaf met, Pattern=en, Pattern=een soort, Pattern=knop aan
+	Constrained: Pattern=een, Pattern=met, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=5| A | A : en aan de onderkant zitten ver niks
+	Free: Pattern=aan de, Pattern=zitten, Pattern=en
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=6| A | A : en die staaf lopen dus echt van helemaal links naar helemaal rechts van de basisvorm
+	Free: Pattern=en die staaf, Pattern=de
+	Constrained: Pattern=die staaf, Pattern=die, Pattern=en
+Turn ID=7| A | A : dus je zien hem aan beide kant
+	Free: Pattern=kant, Pattern=hem, Pattern=aan
+	Constrained: 
+Turn ID=8| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : ja en hij liggen wel achter de basisvorm
+	Free: Pattern=ja en, Pattern=de
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=10| A | A : dus het zijn niet dat je voor de basisvorm langs ook nog die staaf zien
+	Free: Pattern=die staaf, Pattern=de
+	Constrained: Pattern=die
+Turn ID=11| B | B : ja en zitten er dan een soort vierkantachtig iets aan de bovenkant zo schuin
+	Free: Pattern=zitten, Pattern=er, Pattern=dan een soort, Pattern=aan de bovenkant, Pattern=ja en
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=een, Pattern=een soort, Pattern=en, Pattern=de, Pattern=aan, Pattern=ja
+Turn ID=12| A | A : en ja
+	Free: Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : Euh ja voor mij links euh aan links aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=ja, Pattern=aan, Pattern=Euh
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=14| A | A : en dat lijken wel een soort vierkant wat op een paal staan
+	Free: Pattern=een soort, Pattern=een, Pattern=en
+	Constrained: Pattern=een
+Turn ID=15| B | B : ja oké dan hebben ik hem denken ik nummer
+	Free: Pattern=ja, Pattern=hebben ik, Pattern=dan, Pattern=ik, Pattern=hem
+	Constrained: Pattern=ik
+Turn ID=16| B | B : ik hebben nu die met die wegwijzer aan de achterkant en die staaf met knop aan allebei de kant
+	Free: Pattern=kant, Pattern=aan de, Pattern=die staaf met, Pattern=die, Pattern=knop aan, Pattern=ik hebben nu, Pattern=met die wegwijzer, Pattern=en die staaf, Pattern=de, Pattern=staaf met knop
+	Constrained: Pattern=ik hebben, Pattern=nu, Pattern=met, Pattern=staaf met, Pattern=ik, Pattern=en, Pattern=de, Pattern=aan, Pattern=die staaf, Pattern=die
+Turn ID=17| A | A : ja euh dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Euh ik hebben nu met die wegwijzer en dan die staaf met twee euh knoppen aan de zijkant
+	Free: Pattern=aan de, Pattern=dan, Pattern=Euh, Pattern=die staaf met, Pattern=wegwijzer en, Pattern=ik hebben nu, Pattern=met die wegwijzer
+	Constrained: Pattern=ik hebben, Pattern=nu, Pattern=met, Pattern=staaf met, Pattern=ik, Pattern=en, Pattern=de, Pattern=aan, Pattern=die staaf, Pattern=die
+Turn ID=19| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ik hebben de wegwijzer en de staaf met knop
+	Free: Pattern=de wegwijzer en de staaf met knop, Pattern=ik hebben
+	Constrained: Pattern=met, Pattern=ik, Pattern=en, Pattern=de, Pattern=staaf met knop, Pattern=staaf met, Pattern=wegwijzer en
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : euh waar staan die nou
+	Free: Pattern=die
+	Constrained: 
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ik hebben nu met de wegwijzer en de staaf met knop
+	Free: Pattern=de wegwijzer en de staaf met knop, Pattern=ik hebben nu, Pattern=met
+	Constrained: Pattern=ik hebben, Pattern=nu, Pattern=met, Pattern=ik, Pattern=en, Pattern=de, Pattern=staaf met knop, Pattern=staaf met, Pattern=wegwijzer en
+Turn ID=25| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=26| B | B : ik hebben nu de wegwijzer en de staaf met knop
+	Free: Pattern=de wegwijzer en de staaf met knop, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=nu, Pattern=met, Pattern=ik, Pattern=en, Pattern=de, Pattern=staaf met knop, Pattern=staaf met, Pattern=wegwijzer en
+Turn ID=27| A | A : Euh dat zijn
+	Free: Pattern=Euh
+	Constrained: 

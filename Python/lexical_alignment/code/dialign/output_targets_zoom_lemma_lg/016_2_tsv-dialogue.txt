@@ -1,0 +1,111 @@
+A|0| A: even kijken 
+A|1| A: _dit zijn_ één waar heel veel ding omheen zitten 
+A|2| A: maar wat hem onderscheiden van al ander ding _zijn_ dat hij _bovenop_ een _driehoek_ hebben 
+A|3| A: en aan _de_ linkerkant zitten een soort van een punt _die_ erin steken 
+A|4| A: dus _die_ punt _die_ steken erin en daarnaast een klein stuk 
+B|5| B: _ja_ 
+A|6| A: en aan _de_ voorkant hebben je een groot [ja] groot blok trapezium _die_ erop zitten 
+A|7| A: en dan hebben je nog linksonder een een een rond 
+B|8| B: [ja] [dit zijn] nummer 
+B|9| B: [dit zijn] [die] _met_ [die] [driehoek] _op de_ bovenkant 
+A|10| A: O [ja] en [de] trapezium [op de] voorkant geplakt 
+B|11| B: [ja] 
+A|12| A: [ja] dat [zijn] 
+A|13| A: [dit zijn] degeen [die] een groot _driehoek bovenop_ hebben 
+A|14| A: en een trapezium vooropgeplakt 
+B|15| B: nummer 
+B|16| B: [dit zijn] [die] _met_ _de driehoek_ er [bovenop] 
+A|17| A: [driehoek] erbovenop 
+A|18| A: [ja] [de] trapezium aan [de] voorkant geplakt toch 
+B|19| B: [ja] [ja] 
+A|20| A: dat [zijn] 
+A|21| A: _dit zijn de driehoek bovenop_ 
+A|22| A: en [de] trapezium aan [de] voorkant geplakt 
+B|23| B: [dit zijn de driehoek bovenop] 
+A|24| A: [ja] dat [zijn] [met] trapezium voorop toch 
+B|25| B: [ja] 
+A|26| A: [ja] dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : dit zijn één waar heel veel ding omheen zitten
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=2| A | A : maar wat hem onderscheiden van al ander ding zijn dat hij bovenop een driehoek hebben
+	Free: Pattern=zijn, Pattern=bovenop, Pattern=driehoek
+	Constrained: 
+Turn ID=3| A | A : en aan de linkerkant zitten een soort van een punt die erin steken
+	Free: Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=4| A | A : dus die punt die steken erin en daarnaast een klein stuk
+	Free: Pattern=die
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en aan de voorkant hebben je een groot ja groot blok trapezium die erop zitten
+	Free: Pattern=die, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=7| A | A : en dan hebben je nog linksonder een een een rond
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : ja dit zijn nummer
+	Free: Pattern=dit zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=9| B | B : dit zijn die met die driehoek op de bovenkant
+	Free: Pattern=driehoek, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=op de
+	Constrained: Pattern=zijn, Pattern=de
+Turn ID=10| A | A : O ja en de trapezium op de voorkant geplakt
+	Free: Pattern=op de, Pattern=ja, Pattern=de
+	Constrained: Pattern=de
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : dit zijn degeen die een groot driehoek bovenop hebben
+	Free: Pattern=driehoek bovenop, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn, Pattern=bovenop, Pattern=driehoek
+Turn ID=14| A | A : en een trapezium vooropgeplakt
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : dit zijn die met de driehoek er bovenop
+	Free: Pattern=bovenop, Pattern=de driehoek, Pattern=met, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=de, Pattern=driehoek
+Turn ID=17| A | A : driehoek erbovenop
+	Free: Pattern=driehoek
+	Constrained: 
+Turn ID=18| A | A : ja de trapezium aan de voorkant geplakt toch
+	Free: Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=19| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=21| A | A : dit zijn de driehoek bovenop
+	Free: Pattern=dit zijn de driehoek bovenop
+	Constrained: Pattern=driehoek, Pattern=bovenop, Pattern=de, Pattern=zijn, Pattern=dit zijn, Pattern=driehoek bovenop, Pattern=de driehoek
+Turn ID=22| A | A : en de trapezium aan de voorkant geplakt
+	Free: Pattern=de
+	Constrained: 
+Turn ID=23| B | B : dit zijn de driehoek bovenop
+	Free: Pattern=dit zijn de driehoek bovenop
+	Constrained: Pattern=driehoek, Pattern=bovenop, Pattern=de, Pattern=zijn, Pattern=dit zijn, Pattern=driehoek bovenop, Pattern=de driehoek
+Turn ID=24| A | A : ja dat zijn met trapezium voorop toch
+	Free: Pattern=ja, Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 

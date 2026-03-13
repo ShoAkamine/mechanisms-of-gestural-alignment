@@ -1,0 +1,39 @@
+B|0| B: oké deze hebben aan de rechterkant hebben hij een _is-teken_ 
+A|1| A: _Oh ja_ 
+A|2| A: _ja_ 
+A|3| A: oh _dat_ _zijn_ teken rechts 
+B|4| B: [Oh ja] waar staan je 
+B|5| B: _dit zijn weer_ _met_ [dat] _is-teken_ 
+A|6| A: eh _dit zijn met_ het [is-teken] 
+B|7| B: [dit zijn met] [dat] [is-teken] 
+A|8| A: [dit zijn weer] het [is-teken] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze hebben aan de rechterkant hebben hij een is-teken
+	Free: Pattern=is-teken
+	Constrained: 
+Turn ID=1| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : oh dat zijn teken rechts
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : Oh ja waar staan je
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=5| B | B : dit zijn weer met dat is-teken
+	Free: Pattern=dit zijn weer, Pattern=dat, Pattern=met, Pattern=is-teken
+	Constrained: Pattern=zijn
+Turn ID=6| A | A : eh dit zijn met het is-teken
+	Free: Pattern=dit zijn met, Pattern=is-teken
+	Constrained: Pattern=met, Pattern=zijn
+Turn ID=7| B | B : dit zijn met dat is-teken
+	Free: Pattern=dit zijn met, Pattern=dat, Pattern=is-teken
+	Constrained: Pattern=met, Pattern=zijn
+Turn ID=8| A | A : dit zijn weer het is-teken
+	Free: Pattern=dit zijn weer, Pattern=is-teken
+	Constrained: Pattern=zijn

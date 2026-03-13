@@ -1,0 +1,171 @@
+B|0| B: Oké 
+B|1| B: eh dit _zijn_ _een soort_ _Flappy_ Bird-achtig iets 
+B|2| B: _vinden ik_ 
+A|3| A: mhm 
+B|4| B: eh alleen _zijn_ voor hem linkervleugel _zijn_ iets blokkerig _dan_ _de_ ander 
+B|5| B: _hij_ _hebben_ één zo'n _pluim_ _op zijn hoofd_ 
+B|6| B: _en_ _de_ ander _pluim_ _zijn_ _dan_ _zijn neus_ 
+B|7| B: _zijn_ snavel _als_ je snpen wat _ik_ bedoelen 
+A|8| A: Oh _dat_ [vinden ik] [een] interessant 
+A|9| A: _ehm_ zIjn _dat_ _die_ [een] _met_ _dat_ gek plat vierkant _die_ [als] [een soort] diamant [op zijn hoofd] [zijn] zetten [en] _met_ twee uitsteeksel daaraan 
+B|10| B: nee 
+B|11| B: [ehm] deze [zijn] 
+A|12| A: _die_ gek hoed 
+A|13| A: ohwacht _met_ _die_ twee rechthoek _die_ uit [zijn neus] komen 
+B|14| B: mmm nee nee ook niet denken [ik] 
+A|15| A: Oh 
+B|16| B: _het_ [zijn] Oké _het_ [zijn] [een] beetje dezelfde _plui_ [als] net [die] _wattenstaaf_ zeggen maar 
+B|17| B: eentje zitten [op zijn hoofd] [en] _de_ ander kijken zeggen maar _hij_ kijken naar voor ons links 
+A|18| A: _ja_ 
+A|19| A: Oh _ja_ 
+A|20| A: _met_ [zijn] gek _Minecraft_ Blok 
+B|21| B: rechts 
+A|22| A: _ja_ 
+B|23| B: [ja] 
+A|24| A: _ja en_ [dan] [een] [pluim] aan [de] bovenkant [en] [een] [pluim] aan [de] zijkant 
+B|25| B: [ja en] nog zo'n klein achtersteeksel 
+A|26| A: [ja] _dat zijn_ 
+A|27| A: Ehm _ik hebben_ [die] [een] _met de_ twee [wattenstaaf] 
+A|28| A: [en] [het] vierkant uitsteeksel 
+B|29| B: Eh [dat zijn] _Flappy Bird_ hÃ¨ ? [met de] Minecraft-arm 
+A|30| A: [ja] precies 
+B|31| B: Oké 
+B|32| B: eh [ik hebben] weer _Flappy Bird_ [met] Minecraft-arm 
+A|33| A: [Flappy Bird] waar [zijn] [hij] 
+A|34| A: daar [zijn] [hij] [met de] twee [plui] [en] [een] _Minecraft_ arm 
+A|35| A: [dat zijn] 
+B|36| B: Yes 
+A|37| A: [ik hebben] [de] _Flappy Bird Minecraft_ 
+B|38| B: Eh [Flappy Bird Minecraft] 
+A|39| A: [dat zijn] [dat zijn] 
+A|40| A: [ik hebben] [Flappy Bird Minecraft] 
+B|41| B: Eh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : eh dit zijn een soort Flappy Bird-achtig iets
+	Free: Pattern=een soort, Pattern=Flappy, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=2| B | B : vinden ik
+	Free: Pattern=vinden ik
+	Constrained: Pattern=ik
+Turn ID=3| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : eh alleen zijn voor hem linkervleugel zijn iets blokkerig dan de ander
+	Free: Pattern=dan, Pattern=de, Pattern=zijn
+	Constrained: 
+Turn ID=5| B | B : hij hebben één zo'n pluim op zijn hoofd
+	Free: Pattern=op zijn hoofd, Pattern=hij, Pattern=pluim, Pattern=hebben
+	Constrained: Pattern=zijn
+Turn ID=6| B | B : en de ander pluim zijn dan zijn neus
+	Free: Pattern=dan, Pattern=zijn neus, Pattern=en, Pattern=zijn, Pattern=de, Pattern=pluim
+	Constrained: Pattern=zijn
+Turn ID=7| B | B : zijn snavel als je snpen wat ik bedoelen
+	Free: Pattern=als, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=8| A | A : Oh dat vinden ik een interessant
+	Free: Pattern=vinden ik, Pattern=dat, Pattern=een
+	Constrained: Pattern=ik
+Turn ID=9| A | A : ehm zIjn dat die een met dat gek plat vierkant die als een soort diamant op zijn hoofd zijn zetten en met twee uitsteeksel daaraan
+	Free: Pattern=dat, Pattern=een, Pattern=als, Pattern=die, Pattern=een soort, Pattern=en, Pattern=op zijn hoofd, Pattern=zijn, Pattern=ehm, Pattern=met
+	Constrained: Pattern=zijn, Pattern=een
+Turn ID=10| B | B : nee
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : ehm deze zijn
+	Free: Pattern=ehm, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : die gek hoed
+	Free: Pattern=die
+	Constrained: 
+Turn ID=13| A | A : ohwacht met die twee rechthoek die uit zijn neus komen
+	Free: Pattern=zijn neus, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=14| B | B : mmm nee nee ook niet denken ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=15| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : het zijn Oké het zijn een beetje dezelfde plui als net die wattenstaaf zeggen maar
+	Free: Pattern=plui, Pattern=een, Pattern=het, Pattern=als, Pattern=die, Pattern=wattenstaaf, Pattern=zijn
+	Constrained: 
+Turn ID=17| B | B : eentje zitten op zijn hoofd en de ander kijken zeggen maar hij kijken naar voor ons links
+	Free: Pattern=op zijn hoofd, Pattern=en, Pattern=hij, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : met zijn gek Minecraft Blok
+	Free: Pattern=Minecraft, Pattern=zijn, Pattern=met
+	Constrained: 
+Turn ID=21| B | B : rechts
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja en dan een pluim aan de bovenkant en een pluim aan de zijkant
+	Free: Pattern=dan, Pattern=een, Pattern=en, Pattern=ja en, Pattern=de, Pattern=pluim
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=25| B | B : ja en nog zo'n klein achtersteeksel
+	Free: Pattern=ja en
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=26| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : Ehm ik hebben die een met de twee wattenstaaf
+	Free: Pattern=ik hebben, Pattern=met de, Pattern=een, Pattern=die, Pattern=wattenstaaf
+	Constrained: Pattern=ik, Pattern=de, Pattern=hebben, Pattern=met
+Turn ID=28| A | A : en het vierkant uitsteeksel
+	Free: Pattern=en, Pattern=het
+	Constrained: 
+Turn ID=29| B | B : Eh dat zijn Flappy Bird hÃ¨ ? met de Minecraft-arm
+	Free: Pattern=met de, Pattern=dat zijn, Pattern=Flappy Bird
+	Constrained: Pattern=dat, Pattern=de, Pattern=met, Pattern=Flappy, Pattern=zijn
+Turn ID=30| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : eh ik hebben weer Flappy Bird met Minecraft-arm
+	Free: Pattern=ik hebben, Pattern=Flappy Bird, Pattern=met
+	Constrained: Pattern=ik, Pattern=Flappy, Pattern=hebben
+Turn ID=33| A | A : Flappy Bird waar zijn hij
+	Free: Pattern=Flappy Bird, Pattern=hij, Pattern=zijn
+	Constrained: Pattern=Flappy
+Turn ID=34| A | A : daar zijn hij met de twee plui en een Minecraft arm
+	Free: Pattern=met de, Pattern=plui, Pattern=een, Pattern=hij, Pattern=en, Pattern=zijn, Pattern=Minecraft
+	Constrained: Pattern=de, Pattern=met
+Turn ID=35| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : ik hebben de Flappy Bird Minecraft
+	Free: Pattern=Flappy Bird Minecraft, Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=hebben, Pattern=Flappy Bird, Pattern=Minecraft, Pattern=Flappy, Pattern=ik
+Turn ID=38| B | B : Eh Flappy Bird Minecraft
+	Free: Pattern=Flappy Bird Minecraft
+	Constrained: Pattern=Flappy, Pattern=Flappy Bird, Pattern=Minecraft
+Turn ID=39| A | A : dat zijn dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=40| A | A : ik hebben Flappy Bird Minecraft
+	Free: Pattern=Flappy Bird Minecraft, Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=Flappy Bird, Pattern=Minecraft, Pattern=Flappy, Pattern=ik
+Turn ID=41| B | B : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

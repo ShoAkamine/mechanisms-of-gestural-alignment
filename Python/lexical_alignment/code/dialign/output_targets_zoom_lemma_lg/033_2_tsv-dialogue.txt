@@ -1,0 +1,135 @@
+A|0| A: zien jij _al_ _euh_ zien jij _al_ plaat _al_ voor je 
+B|1| B: _ja_ 
+A|2| A: _Oké_ _Euh ik hebben_ een plaat 
+A|3| A: _het_ _zijn_ _euh_ dezelfde basisvorm 
+A|4| A: _het_ _hebben_ een soort ronde _Euh_ _piramide_ _met_ een _punt_ _op _de_ bovenkant_ 
+A|5| A: _Euh_ _en_ [ja] _ik_ vinden _het_ een beetje _op_ een snavel lijken 
+A|6| A: _en die_ steken _naar_ _de_ rechterkant 
+A|7| A: _Euh_ _en_ _aan de_ linkerkant _Euh_ steekt een heel dun pegeltje uit 
+A|8| A: _met_ _de_ dun kant _naar_ _de_ groot basisvorm _toe_ 
+B|9| B: Zit _er_ _aan de onderkant_ ook nog wat 
+A|10| A: _Euh_ [ja] [aan de onderkant] zitten een soort lijken wel [ja] een cirkel _die_ daar in een soort boog onderdoor lopen 
+B|11| B: [en] _dat_ kegel _zeggen maar_ _met die_ _spits_ [punt] _zijn echt_ _naar boven_ [toe] 
+A|12| A: [ja] [die] [zijn echt] gewoon [naar boven] 
+A|13| A: [die] staan [er] [zeggen maar] [echt] _op_ 
+B|14| B: [ja] 
+B|15| B: [Oké] [ik] denken _dat_ [ik] [het] [al] weten 
+A|16| A: [Oké] 
+B|17| B: _dan_ [euh] gaan [ik] [het] [zeggen] 
+B|18| B: nummer 
+B|19| B: _en dan_ [euh] gaan [ik] [op de] knop drukken hè 
+A|20| A: [ja] 
+B|21| B: _ik hebben nu met_ [het] [Euh] feesthoed [die] kegel [zeggen maar] _aan de bovenkant_ [en die] verschillend uitsteeksel 
+A|22| A: [Euh] 
+A|23| A: Oh [ja] [ik hebben nu [met] die] [euh] [spits] [aan de bovenkant] 
+A|24| A: [ja] [die] _rond piramide_ [zeggen maar] 
+A|25| A: [en dan] [die] soort van snavel 
+B|26| B: [ja] 
+B|27| B: [Euh [ik hebben] nu] [de] puntig [rond piramide] 
+A|28| A: [ja] [dat] [zijn] 
+A|29| A: [en] [ik hebben nu met] _de rond piramide_ [aan de bovenkant] 
+B|30| B: [Euh] 
+B|31| B: [ik hebben] [de rond piramide] 
+A|32| A: [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : zien jij al euh zien jij al plaat al voor je
+	Free: Pattern=euh, Pattern=al
+	Constrained: 
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : Oké Euh ik hebben een plaat
+	Free: Pattern=Euh ik hebben, Pattern=Oké
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben, Pattern=Euh
+Turn ID=3| A | A : het zijn euh dezelfde basisvorm
+	Free: Pattern=zijn, Pattern=euh, Pattern=het
+	Constrained: 
+Turn ID=4| A | A : het hebben een soort ronde Euh piramide met een punt op de bovenkant
+	Free: Pattern=punt, Pattern=piramide, Pattern=de bovenkant, Pattern=Euh, Pattern=het, Pattern=hebben, Pattern=met, Pattern=op de
+	Constrained: Pattern=de, Pattern=op
+Turn ID=5| A | A : Euh en ja ik vinden het een beetje op een snavel lijken
+	Free: Pattern=ja, Pattern=op, Pattern=Euh, Pattern=het, Pattern=ik, Pattern=en
+	Constrained: 
+Turn ID=6| A | A : en die steken naar de rechterkant
+	Free: Pattern=en die, Pattern=de, Pattern=naar
+	Constrained: Pattern=die, Pattern=en
+Turn ID=7| A | A : Euh en aan de linkerkant Euh steekt een heel dun pegeltje uit
+	Free: Pattern=aan de, Pattern=en, Pattern=Euh
+	Constrained: Pattern=de
+Turn ID=8| A | A : met de dun kant naar de groot basisvorm toe
+	Free: Pattern=toe, Pattern=de, Pattern=naar, Pattern=met
+	Constrained: 
+Turn ID=9| B | B : Zit er aan de onderkant ook nog wat
+	Free: Pattern=aan de onderkant, Pattern=er
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=10| A | A : Euh ja aan de onderkant zitten een soort lijken wel ja een cirkel die daar in een soort boog onderdoor lopen
+	Free: Pattern=aan de onderkant, Pattern=die, Pattern=ja, Pattern=Euh
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=11| B | B : en dat kegel zeggen maar met die spits punt zijn echt naar boven toe
+	Free: Pattern=punt, Pattern=zijn echt, Pattern=spits, Pattern=naar boven, Pattern=en, Pattern=dat, Pattern=met die, Pattern=toe, Pattern=zeggen maar
+	Constrained: Pattern=zeggen, Pattern=met, Pattern=die, Pattern=echt, Pattern=zijn, Pattern=naar
+Turn ID=12| A | A : ja die zijn echt gewoon naar boven
+	Free: Pattern=naar boven, Pattern=zijn echt, Pattern=die, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=echt, Pattern=naar
+Turn ID=13| A | A : die staan er zeggen maar echt op
+	Free: Pattern=op, Pattern=zeggen maar, Pattern=die, Pattern=echt, Pattern=er
+	Constrained: Pattern=zeggen
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oké ik denken dat ik het al weten
+	Free: Pattern=dat, Pattern=al, Pattern=het, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=17| B | B : dan euh gaan ik het zeggen
+	Free: Pattern=dan, Pattern=het, Pattern=euh, Pattern=zeggen, Pattern=ik
+	Constrained: 
+Turn ID=18| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : en dan euh gaan ik op de knop drukken hè
+	Free: Pattern=en dan, Pattern=op de, Pattern=ik, Pattern=euh
+	Constrained: Pattern=dan, Pattern=de, Pattern=en, Pattern=op
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ik hebben nu met het Euh feesthoed die kegel zeggen maar aan de bovenkant en die verschillend uitsteeksel
+	Free: Pattern=en die, Pattern=het, Pattern=ik hebben nu met, Pattern=die, Pattern=aan de bovenkant, Pattern=zeggen maar, Pattern=Euh
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=hebben, Pattern=zeggen, Pattern=met, Pattern=die, Pattern=ik, Pattern=en, Pattern=ik hebben nu
+Turn ID=22| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=23| A | A : Oh ja ik hebben nu met die euh spits aan de bovenkant
+	Free: Pattern=met die, Pattern=ja, Pattern=ik hebben nu met, Pattern=euh, Pattern=spits, Pattern=aan de bovenkant
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=ik hebben nu
+Turn ID=24| A | A : ja die rond piramide zeggen maar
+	Free: Pattern=zeggen maar, Pattern=rond piramide, Pattern=die, Pattern=ja
+	Constrained: Pattern=piramide, Pattern=zeggen
+Turn ID=25| A | A : en dan die soort van snavel
+	Free: Pattern=en dan, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Euh ik hebben nu de puntig rond piramide
+	Free: Pattern=ik hebben nu, Pattern=Euh ik hebben, Pattern=rond piramide, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=piramide, Pattern=Euh, Pattern=hebben, Pattern=ik
+Turn ID=28| A | A : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=29| A | A : en ik hebben nu met de rond piramide aan de bovenkant
+	Free: Pattern=ik hebben nu met, Pattern=aan de bovenkant, Pattern=de rond piramide, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de bovenkant, Pattern=rond piramide, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=ik hebben nu, Pattern=piramide, Pattern=aan de
+Turn ID=30| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=31| B | B : ik hebben de rond piramide
+	Free: Pattern=de rond piramide, Pattern=ik hebben
+	Constrained: Pattern=de, Pattern=piramide, Pattern=rond piramide, Pattern=hebben, Pattern=ik
+Turn ID=32| A | A : dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 

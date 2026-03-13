@@ -1,0 +1,127 @@
+A|0| A: _ehm_ _ik_ vinden deze een beetje _op_ een _glijbaan_ _lijken_ 
+A|1| A: _die_ uitkomen _op_ een platform _die_ _niet_ onder _zitten_ _maar_ midden in _de_ in _het_ plaat 
+B|2| B: _ja_ 
+A|3| A: en aan _de_ zijkant een soort van schoorsteen en bovenop _twee_ uitsteeksel 
+B|4| B: _ja_ [twee] _ja_ 
+B|5| B: _Oké_ 
+A|6| A: [ja] 
+B|7| B: dat _zijn_ 
+B|8| B: eh _ik hebben_ dat 
+B|9| B: _Oh_ wat zeggen _je_ nou dat dat [op] [lijken] 
+B|10| B: [ehm] [niet] [het] zwembad [maar] dat ander vlak wat wat iets hoog [zitten] 
+A|11| A: _Oh _ja_ _ja_ ja_ 
+A|12| A: _de_ 
+A|13| A: Ehm [ik] moeten hem _even_ zoeken 
+A|14| A: _ik weten_ welk [je] bedoelen 
+A|15| A: _Oh ja de_ speelplaats 
+B|16| B: [ja ja] 
+A|17| A: _ik hebben _de_ glijbaan_ 
+A|18| A: weer [het] kinderspeeltuin 
+B|19| B: [Oh ja] 
+B|20| B: met [die] [twee] toe ook daarboven he 
+A|21| A: [ja] 
+B|22| B: [ja] dat _zijn_ 
+B|23| B: [ik hebben de] nou [niet] [de glijbaan] [maar] dat [die] iets hoog [zitten] [die] verhoging 
+B|24| B: [ik weten] [even] [niet] hoe we [die] noemen 
+A|25| A: [Oh] _de speeltuin_ 
+B|26| B: [Oh ja [de] speeltuin] 
+A|27| A: [ik hebben [de] speeltuin] 
+A|28| A: [Oké] [zijn] weer versprongen 
+B|29| B: [ja] nu [hebben] [ik] [de speeltuin] 
+A|30| A: Ehm 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm ik vinden deze een beetje op een glijbaan lijken
+	Free: Pattern=op, Pattern=lijken, Pattern=ehm, Pattern=glijbaan, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : die uitkomen op een platform die niet onder zitten maar midden in de in het plaat
+	Free: Pattern=de, Pattern=op, Pattern=niet, Pattern=het, Pattern=maar, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : en aan de zijkant een soort van schoorsteen en bovenop twee uitsteeksel
+	Free: Pattern=de, Pattern=twee
+	Constrained: 
+Turn ID=4| B | B : ja twee ja
+	Free: Pattern=ja, Pattern=twee
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=8| B | B : eh ik hebben dat
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=9| B | B : Oh wat zeggen je nou dat dat op lijken
+	Free: Pattern=je, Pattern=lijken, Pattern=Oh, Pattern=op
+	Constrained: 
+Turn ID=10| B | B : ehm niet het zwembad maar dat ander vlak wat wat iets hoog zitten
+	Free: Pattern=niet, Pattern=het, Pattern=ehm, Pattern=zitten, Pattern=maar
+	Constrained: 
+Turn ID=11| A | A : Oh ja ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=12| A | A : de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=13| A | A : Ehm ik moeten hem even zoeken
+	Free: Pattern=ik, Pattern=even
+	Constrained: 
+Turn ID=14| A | A : ik weten welk je bedoelen
+	Free: Pattern=ik weten, Pattern=je
+	Constrained: Pattern=ik
+Turn ID=15| A | A : Oh ja de speelplaats
+	Free: Pattern=Oh ja de
+	Constrained: Pattern=Oh ja, Pattern=de, Pattern=Oh, Pattern=ja
+Turn ID=16| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=17| A | A : ik hebben de glijbaan
+	Free: Pattern=ik hebben de, Pattern=de glijbaan
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=glijbaan, Pattern=ik
+Turn ID=18| A | A : weer het kinderspeeltuin
+	Free: Pattern=het
+	Constrained: 
+Turn ID=19| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=20| B | B : met die twee toe ook daarboven he
+	Free: Pattern=die, Pattern=twee
+	Constrained: 
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ik hebben de nou niet de glijbaan maar dat die iets hoog zitten die verhoging
+	Free: Pattern=de glijbaan, Pattern=maar, Pattern=ik hebben de, Pattern=niet, Pattern=die, Pattern=zitten
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=glijbaan, Pattern=ik
+Turn ID=24| B | B : ik weten even niet hoe we die noemen
+	Free: Pattern=ik weten, Pattern=die, Pattern=even, Pattern=niet
+	Constrained: Pattern=ik
+Turn ID=25| A | A : Oh de speeltuin
+	Free: Pattern=de speeltuin, Pattern=Oh
+	Constrained: Pattern=de
+Turn ID=26| B | B : Oh ja de speeltuin
+	Free: Pattern=Oh ja de, Pattern=de speeltuin
+	Constrained: Pattern=Oh ja, Pattern=de, Pattern=Oh, Pattern=ja
+Turn ID=27| A | A : ik hebben de speeltuin
+	Free: Pattern=ik hebben de, Pattern=de speeltuin
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=28| A | A : Oké zijn weer versprongen
+	Free: Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=29| B | B : ja nu hebben ik de speeltuin
+	Free: Pattern=de speeltuin, Pattern=ik, Pattern=ja, Pattern=hebben
+	Constrained: Pattern=de
+Turn ID=30| A | A : Ehm
+	Free: 
+	Constrained: 

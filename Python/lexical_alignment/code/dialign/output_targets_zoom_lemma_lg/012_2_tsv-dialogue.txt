@@ -1,0 +1,79 @@
+B|0| B: _Oké_ nou _ik hebben_ _een_ nieuw 
+B|1| B: deze _hebben_ zo'n _punthoed_ 
+A|2| A: [punthoed] oké 
+A|3| A: ehm er _zijn_ maar één _met_ [een] [punthoed] toch 
+B|4| B: en ver lijken 
+B|5| B: _ja_ ver _ik_ vinden hem [een] beetje clownig achtig [met] zo'n gek vierkant vormig neus zoiets 
+A|6| A: _Oh ja_ [ja] 
+A|7| A: dan B 
+A|8| A: [Oké] dan 
+A|9| A: _ik hebben nu_ het gezicht [met] [een] feesthoed op _zijn_ hoofd 
+B|10| B: [Oh ja] _dat zijn_ 
+B|11| B: [ik hebben] _de_ [punthoed] 
+A|12| A: [Oh] 
+A|13| A: [ik hebben] ? [de] feesthoed 
+B|14| B: _dat zijn_ 
+B|15| B: eh [ik hebben nu] weer [de] [punthoed] 
+A|16| A: [Oké] [dat zijn] 
+A|17| A: [ik hebben] feesthoed 
+B|18| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké nou ik hebben een nieuw
+	Free: Pattern=ik hebben, Pattern=een, Pattern=Oké
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=1| B | B : deze hebben zo'n punthoed
+	Free: Pattern=hebben, Pattern=punthoed
+	Constrained: 
+Turn ID=2| A | A : punthoed oké
+	Free: Pattern=punthoed
+	Constrained: 
+Turn ID=3| A | A : ehm er zijn maar één met een punthoed toch
+	Free: Pattern=met, Pattern=zijn, Pattern=een, Pattern=punthoed
+	Constrained: 
+Turn ID=4| B | B : en ver lijken
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ja ver ik vinden hem een beetje clownig achtig met zo'n gek vierkant vormig neus zoiets
+	Free: Pattern=met, Pattern=een, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=7| A | A : dan B
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : Oké dan
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : ik hebben nu het gezicht met een feesthoed op zijn hoofd
+	Free: Pattern=ik hebben nu, Pattern=met, Pattern=zijn, Pattern=een
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=10| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=Oh
+Turn ID=11| B | B : ik hebben de punthoed
+	Free: Pattern=ik hebben, Pattern=de, Pattern=punthoed
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=12| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=13| A | A : ik hebben ? de feesthoed
+	Free: Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=14| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : eh ik hebben nu weer de punthoed
+	Free: Pattern=ik hebben nu, Pattern=de, Pattern=punthoed
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=16| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=zijn
+Turn ID=17| A | A : ik hebben feesthoed
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=18| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

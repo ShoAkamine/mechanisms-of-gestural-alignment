@@ -1,0 +1,99 @@
+B|0| B: _Oh ja_ nu _zijn_ _ik_ _weer_ 
+B|1| B: _Oh ja_ deze _hebben_ _ik_ omschrijven als er staan _een piramide bovenop_ 
+A|2| A: [Oh ja] [een piramide bovenop] met zo'n zijkant 
+A|3| A: [een] soort van telescoop _en_ [een] arm 
+B|4| B: [ja] 
+A|5| A: [een] beetje [een] tipitent _of zo_ 
+B|6| B: [ja] [en] daaronder zitten nog _een half_ bolle [of zo] 
+A|7| A: [een half] [een half] schijf 
+B|8| B: [ja] 
+A|9| A: Oké dan _zijn het_ 
+A|10| A: [Oh] _ik hebben_ die met _de [piramide_ bovenop] 
+B|11| B: [Oh ja] 
+A|12| A: [en] dan links _de_ uitsteeksel [en] _de_ blok [en] onder die [half] schijf 
+B|13| B: [ja] 
+B|14| B: Eh dat [zijn] 
+B|15| B: _ik hebben de piramide_ 
+B|16| B: [bovenop] 
+A|17| A: eh [ik hebben] die met [de [piramide] bovenop] [en] [de] zijkant [een half] schijf 
+B|18| B: [Oh ja] dat [zijn] 
+A|19| A: Oké [zijn] [weer] versprongen 
+B|20| B: [Oh] nu [zijn het] [weer] geswitcht 
+B|21| B: _ik hebben de piramide_ 
+A|22| A: Oké 
+A|23| A: [ik hebben de piramide] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ja nu zijn ik weer
+	Free: Pattern=Oh ja, Pattern=zijn, Pattern=weer, Pattern=ik
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=1| B | B : Oh ja deze hebben ik omschrijven als er staan een piramide bovenop
+	Free: Pattern=een piramide bovenop, Pattern=Oh ja, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=bovenop, Pattern=ja, Pattern=Oh, Pattern=een, Pattern=piramide bovenop
+Turn ID=2| A | A : Oh ja een piramide bovenop met zo'n zijkant
+	Free: Pattern=een piramide bovenop, Pattern=Oh ja
+	Constrained: Pattern=bovenop, Pattern=ja, Pattern=Oh, Pattern=een, Pattern=piramide bovenop
+Turn ID=3| A | A : een soort van telescoop en een arm
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : een beetje een tipitent of zo
+	Free: Pattern=of zo, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ja en daaronder zitten nog een half bolle of zo
+	Free: Pattern=of zo, Pattern=een half, Pattern=ja, Pattern=en
+	Constrained: Pattern=een, Pattern=half
+Turn ID=7| A | A : een half een half schijf
+	Free: Pattern=een half
+	Constrained: Pattern=een, Pattern=half
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké dan zijn het
+	Free: Pattern=zijn het
+	Constrained: Pattern=zijn
+Turn ID=10| A | A : Oh ik hebben die met de piramide bovenop
+	Free: Pattern=piramide bovenop, Pattern=de piramide, Pattern=ik hebben, Pattern=Oh
+	Constrained: Pattern=bovenop, Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=11| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=12| A | A : en dan links de uitsteeksel en de blok en onder die half schijf
+	Free: Pattern=en, Pattern=de, Pattern=half
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Eh dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=15| B | B : ik hebben de piramide
+	Free: Pattern=ik hebben de piramide
+	Constrained: Pattern=ik hebben, Pattern=de piramide, Pattern=de, Pattern=hebben, Pattern=ik
+Turn ID=16| B | B : bovenop
+	Free: Pattern=bovenop
+	Constrained: 
+Turn ID=17| A | A : eh ik hebben die met de piramide bovenop en de zijkant een half schijf
+	Free: Pattern=ik hebben, Pattern=de piramide, Pattern=de, Pattern=piramide bovenop, Pattern=en, Pattern=een half
+	Constrained: Pattern=bovenop, Pattern=de, Pattern=een, Pattern=hebben, Pattern=ik, Pattern=half
+Turn ID=18| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=19| A | A : Oké zijn weer versprongen
+	Free: Pattern=zijn, Pattern=weer
+	Constrained: 
+Turn ID=20| B | B : Oh nu zijn het weer geswitcht
+	Free: Pattern=zijn het, Pattern=Oh, Pattern=weer
+	Constrained: Pattern=zijn
+Turn ID=21| B | B : ik hebben de piramide
+	Free: Pattern=ik hebben de piramide
+	Constrained: Pattern=ik hebben, Pattern=de piramide, Pattern=de, Pattern=hebben, Pattern=ik
+Turn ID=22| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ik hebben de piramide
+	Free: Pattern=ik hebben de piramide
+	Constrained: Pattern=ik hebben, Pattern=de piramide, Pattern=de, Pattern=hebben, Pattern=ik

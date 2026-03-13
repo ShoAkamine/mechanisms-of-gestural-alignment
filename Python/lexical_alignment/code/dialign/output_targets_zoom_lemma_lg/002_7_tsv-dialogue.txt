@@ -1,0 +1,67 @@
+A|0| A: _Oh_ 
+A|1| A: _deze_ 
+A|2| A: _deze_ lijken een beetje alsof hij een _tafel_ vast _hebben_ waar twee po aan zitten 
+B|3| B: _Oh ja _ja_ _ja_ ja_ 
+A|4| A: zoals _die_ hem zo oep 
+B|5| B: _Oh ja_ [die] _ja_ 
+B|6| B: even kijken [deze] [hebben] _die tafel_ _met die_ schuin poot 
+A|7| A: [Oh ja ja] 
+A|8| A: eh waar _zijn_ hij nou 
+A|9| A: wat _zijn_ [die] nou 
+A|10| A: [Oh] daar 
+A|11| A: _dit zijn_ [die] _met die tafel_ 
+B|12| B: [met die tafel] [met die] schef poot _weer_ 
+A|13| A: _dit zijn weer [met_ die tafel] 
+B|14| B: even kijken 
+B|15| B: [dit zijn weer met] de [tafel] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : deze
+	Free: Pattern=deze
+	Constrained: 
+Turn ID=2| A | A : deze lijken een beetje alsof hij een tafel vast hebben waar twee po aan zitten
+	Free: Pattern=deze, Pattern=tafel, Pattern=hebben
+	Constrained: 
+Turn ID=3| B | B : Oh ja ja ja ja
+	Free: Pattern=Oh ja ja, Pattern=ja ja
+	Constrained: Pattern=Oh ja, Pattern=ja ja, Pattern=ja, Pattern=Oh
+Turn ID=4| A | A : zoals die hem zo oep
+	Free: Pattern=die
+	Constrained: 
+Turn ID=5| B | B : Oh ja die ja
+	Free: Pattern=Oh ja, Pattern=ja, Pattern=die
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=6| B | B : even kijken deze hebben die tafel met die schuin poot
+	Free: Pattern=die tafel, Pattern=met die, Pattern=deze, Pattern=hebben
+	Constrained: Pattern=die, Pattern=tafel
+Turn ID=7| A | A : Oh ja ja
+	Free: Pattern=Oh ja ja
+	Constrained: Pattern=Oh ja, Pattern=ja ja, Pattern=ja, Pattern=Oh
+Turn ID=8| A | A : eh waar zijn hij nou
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=9| A | A : wat zijn die nou
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=10| A | A : Oh daar
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=11| A | A : dit zijn die met die tafel
+	Free: Pattern=met die tafel, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=met die, Pattern=die tafel, Pattern=zijn, Pattern=tafel, Pattern=die
+Turn ID=12| B | B : met die tafel met die schef poot weer
+	Free: Pattern=met die tafel, Pattern=met die, Pattern=weer
+	Constrained: Pattern=tafel, Pattern=die, Pattern=met die, Pattern=die tafel
+Turn ID=13| A | A : dit zijn weer met die tafel
+	Free: Pattern=dit zijn weer met, Pattern=met die tafel
+	Constrained: Pattern=met die, Pattern=die tafel, Pattern=zijn, Pattern=weer, Pattern=dit zijn, Pattern=tafel, Pattern=die
+Turn ID=14| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : dit zijn weer met de tafel
+	Free: Pattern=dit zijn weer met, Pattern=tafel
+	Constrained: Pattern=dit zijn, Pattern=weer, Pattern=zijn

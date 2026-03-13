@@ -1,0 +1,107 @@
+A|0| A: Oké dan _euh_ _hebben ik_ _nu_ weer _die_ basisvorm _aan de_ linkerkant 
+A|1| A: _Euh_ _ja_ _het_ zitten _aan_ _die_ basisvorm vast _maar_ _het_ doen mij best wel denken _aan_ een _soort_ _sneeuwschuiver_ 
+A|2| A: zo'n _sneeuwschep_ 
+A|3| A: _en_ _aan de_ linkerkant steken iets uit _en_ daar zitten een rond plateau op 
+A|4| A: of dat ze _aan de rechterkant_ staan een rond plateau 
+A|5| A: Steken _het_ uit 
+A|6| A: _Euh_ _ja_ er steken eigenlijk een balk uit 
+B|7| B: _Oh_ 
+A|8| A: daarop zitten een rond plateau 
+A|9| A: _en_ _aan de_ linkerkant zitten eerst een stok _die_ steeds dunn worden 
+B|10| B: [soort] toeter zeggen [maar] 
+A|11| A: _en_ dan 
+A|12| A: _ja_ 
+B|13| B: [ja] oké nummer 
+B|14| B: [Euh] _ik hebben nu_ [die] toeter slashen [sneeuwschuiver] [en] [de] plateaut [aan de rechterkant] 
+A|15| A: [ja] 
+A|16| A: [ik] moeten [nu] gewoon even zoeken 
+A|17| A: [ja] dat zijn een 
+A|18| A: [Oh] [en] [ik hebben nu] met [die] _sneeuwschep en het_ plateau [aan de rechterkant] 
+B|19| B: [ja] [euh] [die] [hebben ik] zien 
+B|20| B: nummer 
+B|21| B: _ik hebben nu de [sneeuwschep_ en het] plateaut 
+A|22| A: dat zijn 
+A|23| A: [ik hebben nu de sneeuwschep] 
+B|24| B: [Euh] nummer 
+B|25| B: [ik hebben] [de [sneeuwschep] en het] plateaut 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké dan euh hebben ik nu weer die basisvorm aan de linkerkant
+	Free: Pattern=nu, Pattern=euh, Pattern=die, Pattern=hebben ik, Pattern=aan de
+	Constrained: Pattern=ik, Pattern=aan, Pattern=de
+Turn ID=1| A | A : Euh ja het zitten aan die basisvorm vast maar het doen mij best wel denken aan een soort sneeuwschuiver
+	Free: Pattern=soort, Pattern=sneeuwschuiver, Pattern=Euh, Pattern=het, Pattern=die, Pattern=maar, Pattern=aan, Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : zo'n sneeuwschep
+	Free: Pattern=sneeuwschep
+	Constrained: 
+Turn ID=3| A | A : en aan de linkerkant steken iets uit en daar zitten een rond plateau op
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=4| A | A : of dat ze aan de rechterkant staan een rond plateau
+	Free: Pattern=aan de rechterkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=5| A | A : Steken het uit
+	Free: Pattern=het
+	Constrained: 
+Turn ID=6| A | A : Euh ja er steken eigenlijk een balk uit
+	Free: Pattern=ja, Pattern=Euh
+	Constrained: 
+Turn ID=7| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=8| A | A : daarop zitten een rond plateau
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : en aan de linkerkant zitten eerst een stok die steeds dunn worden
+	Free: Pattern=aan de, Pattern=en, Pattern=die
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=10| B | B : soort toeter zeggen maar
+	Free: Pattern=soort, Pattern=maar
+	Constrained: 
+Turn ID=11| A | A : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja oké nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Euh ik hebben nu die toeter slashen sneeuwschuiver en de plateaut aan de rechterkant
+	Free: Pattern=de, Pattern=sneeuwschuiver, Pattern=Euh, Pattern=en, Pattern=ik hebben nu, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=aan de, Pattern=nu, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ik moeten nu gewoon even zoeken
+	Free: Pattern=ik, Pattern=nu
+	Constrained: 
+Turn ID=17| A | A : ja dat zijn een
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Oh en ik hebben nu met die sneeuwschep en het plateau aan de rechterkant
+	Free: Pattern=sneeuwschep en het, Pattern=en, Pattern=Oh, Pattern=ik hebben nu, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=ik hebben, Pattern=aan de, Pattern=nu, Pattern=het, Pattern=ik, Pattern=en, Pattern=de, Pattern=sneeuwschep, Pattern=aan
+Turn ID=19| B | B : ja euh die hebben ik zien
+	Free: Pattern=hebben ik, Pattern=euh, Pattern=ja, Pattern=die
+	Constrained: Pattern=ik
+Turn ID=20| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : ik hebben nu de sneeuwschep en het plateaut
+	Free: Pattern=ik hebben nu de sneeuwschep, Pattern=sneeuwschep en het
+	Constrained: Pattern=ik hebben, Pattern=nu, Pattern=het, Pattern=de sneeuwschep, Pattern=ik, Pattern=en, Pattern=ik hebben nu, Pattern=de, Pattern=sneeuwschep
+Turn ID=22| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ik hebben nu de sneeuwschep
+	Free: Pattern=ik hebben nu de sneeuwschep
+	Constrained: Pattern=ik hebben, Pattern=nu, Pattern=de sneeuwschep, Pattern=ik, Pattern=ik hebben nu, Pattern=de, Pattern=sneeuwschep
+Turn ID=24| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=25| B | B : ik hebben de sneeuwschep en het plateaut
+	Free: Pattern=sneeuwschep en het, Pattern=ik hebben, Pattern=de sneeuwschep
+	Constrained: Pattern=het, Pattern=ik, Pattern=en, Pattern=de, Pattern=sneeuwschep

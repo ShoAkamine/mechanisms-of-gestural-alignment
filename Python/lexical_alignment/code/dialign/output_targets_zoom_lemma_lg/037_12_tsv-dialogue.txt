@@ -1,0 +1,139 @@
+B|0| B: _Uhm_ deze _hebben_ aan _de_ rechterkant _een_ soort rond 
+B|1| B: _alsof_ _die _een_ dienblad_ vast _hebben_ 
+B|2| B: _en_ link _hebben_ _hij een_ soort van selderijstukje 
+A|3| A: _Oh ja_ _ja_ 
+B|4| B: _en_ _dan_ aan _dat_ selderijstukje zitten _een_ soort van [ja] _piramide_ _met_ _een_ vierkant onderkant maar _die_ _zijn_ dus aan _de_ bovenkant _in_ _dit_ plaat 
+A|5| A: [ja] _het_ [zijn] [een] beetje zo'n zo'n nagelspijker eigenlijk 
+B|6| B: [ja] _en het_ _lijken alsof_ _je_ soort van twee armp [ja] _ik_ weten niet 
+A|7| A: toch 
+A|8| A: [ja] 
+A|9| A: [ja] volgens mij volgens mij [hebben] [ik] hem 
+A|10| A: [dat] [zijn] heel spits toch 
+B|11| B: [ja] 
+A|12| A: [die] [piramide] [die] [je] _zeggen_ 
+B|13| B: [ja] [die] punt zitten [zeggen] maar _in_ _de_ cel eruit 
+A|14| A: [ja] 
+A|15| A: [ja] Check 
+A|16| A: [dan] [hebben] [ik] hem 
+A|17| A: [Uhm] [dat] [zijn] 
+B|18| B: _Oké_ 
+A|19| A: _dit zijn [die_ een] waarvan [je] [zeggen] [dat] [het] net [lijken alsof] [hij [een] dienblad] [in] [zijn] hand [hebben] 
+A|20| A: uhm _met de selderij_ [en] [de] [piramide] slashen spijker 
+B|21| B: [Oh ja] 
+B|22| B: _dit zijn die met_ [die] [selderij] 
+A|23| A: [Oh ja] _even kijken_ waar [zijn] _de selderij_ ook alweer heen ? uhm 
+A|24| A: _even kijken_ 
+A|25| A: [Oh ja] [met] [met] [het] [dienblad] 
+B|26| B: [ja] 
+A|27| A: [dat] [zijn] 
+A|28| A: [dit zijn] _met de selderij_ [en het] [dienblad] 
+B|29| B: [Uhm] [even kijken] horen 
+B|30| B: [ja] 
+B|31| B: _dit zijn die met de selderij_ 
+A|32| A: [Oké] [even kijken] waar staan [de selderij] ook al weer [dat] [zijn] 
+A|33| A: [dit zijn die met de selderij] [in] [het] [dienblad] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Uhm deze hebben aan de rechterkant een soort rond
+	Free: Pattern=hebben, Pattern=een, Pattern=de, Pattern=Uhm
+	Constrained: 
+Turn ID=1| B | B : alsof die een dienblad vast hebben
+	Free: Pattern=een dienblad, Pattern=die een, Pattern=hebben, Pattern=alsof
+	Constrained: Pattern=dienblad, Pattern=die, Pattern=een
+Turn ID=2| B | B : en link hebben hij een soort van selderijstukje
+	Free: Pattern=hij een, Pattern=hebben, Pattern=en
+	Constrained: Pattern=een
+Turn ID=3| A | A : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=4| B | B : en dan aan dat selderijstukje zitten een soort van ja piramide met een vierkant onderkant maar die zijn dus aan de bovenkant in dit plaat
+	Free: Pattern=dat, Pattern=piramide, Pattern=dan, Pattern=een, Pattern=dit, Pattern=in, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja het zijn een beetje zo'n zo'n nagelspijker eigenlijk
+	Free: Pattern=zijn, Pattern=het, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ja en het lijken alsof je soort van twee armp ja ik weten niet
+	Free: Pattern=lijken alsof, Pattern=ja, Pattern=en het, Pattern=ik, Pattern=je
+	Constrained: Pattern=het, Pattern=en, Pattern=alsof
+Turn ID=7| A | A : toch
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja volgens mij volgens mij hebben ik hem
+	Free: Pattern=hebben, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : dat zijn heel spits toch
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : die piramide die je zeggen
+	Free: Pattern=piramide, Pattern=die, Pattern=je, Pattern=zeggen
+	Constrained: 
+Turn ID=13| B | B : ja die punt zitten zeggen maar in de cel eruit
+	Free: Pattern=zeggen, Pattern=in, Pattern=die, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : ja Check
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : dan hebben ik hem
+	Free: Pattern=hebben, Pattern=ik, Pattern=dan
+	Constrained: 
+Turn ID=17| A | A : Uhm dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=Uhm
+	Constrained: 
+Turn ID=18| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=19| A | A : dit zijn die een waarvan je zeggen dat het net lijken alsof hij een dienblad in zijn hand hebben
+	Free: Pattern=dat, Pattern=dit zijn die, Pattern=lijken alsof, Pattern=het, Pattern=hebben, Pattern=zeggen, Pattern=die een, Pattern=zijn, Pattern=je, Pattern=hij een, Pattern=een dienblad, Pattern=in
+	Constrained: Pattern=een, Pattern=dit, Pattern=die, Pattern=alsof, Pattern=dienblad, Pattern=zijn, Pattern=dit zijn
+Turn ID=20| A | A : uhm met de selderij en de piramide slashen spijker
+	Free: Pattern=met de selderij, Pattern=piramide, Pattern=en, Pattern=de
+	Constrained: Pattern=de selderij, Pattern=met, Pattern=de, Pattern=selderij
+Turn ID=21| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=22| B | B : dit zijn die met die selderij
+	Free: Pattern=dit zijn die met, Pattern=die, Pattern=selderij
+	Constrained: Pattern=dit zijn die, Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=23| A | A : Oh ja even kijken waar zijn de selderij ook alweer heen ? uhm
+	Free: Pattern=even kijken, Pattern=Oh ja, Pattern=de selderij, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=de, Pattern=selderij
+Turn ID=24| A | A : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=25| A | A : Oh ja met met het dienblad
+	Free: Pattern=Oh ja, Pattern=dienblad, Pattern=het, Pattern=met
+	Constrained: Pattern=ja
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=28| A | A : dit zijn met de selderij en het dienblad
+	Free: Pattern=met de selderij, Pattern=en het, Pattern=dit zijn, Pattern=dienblad
+	Constrained: Pattern=selderij, Pattern=de, Pattern=de selderij, Pattern=het, Pattern=dit, Pattern=met, Pattern=en, Pattern=zijn
+Turn ID=29| B | B : Uhm even kijken horen
+	Free: Pattern=even kijken, Pattern=Uhm
+	Constrained: 
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dit zijn die met de selderij
+	Free: Pattern=dit zijn die met de selderij
+	Constrained: Pattern=selderij, Pattern=dit zijn die, Pattern=de, Pattern=de selderij, Pattern=dit, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn, Pattern=met de selderij, Pattern=dit zijn
+Turn ID=32| A | A : Oké even kijken waar staan de selderij ook al weer dat zijn
+	Free: Pattern=dat, Pattern=de selderij, Pattern=even kijken, Pattern=zijn, Pattern=Oké
+	Constrained: Pattern=de, Pattern=selderij
+Turn ID=33| A | A : dit zijn die met de selderij in het dienblad
+	Free: Pattern=dit zijn die met de selderij, Pattern=dienblad, Pattern=het, Pattern=in
+	Constrained: Pattern=selderij, Pattern=dit zijn die, Pattern=de, Pattern=de selderij, Pattern=dit, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn, Pattern=met de selderij, Pattern=dit zijn

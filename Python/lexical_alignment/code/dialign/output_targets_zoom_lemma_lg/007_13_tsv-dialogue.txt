@@ -1,0 +1,111 @@
+B|0| B: _dit_ plaat hebben _aan de onderkant_ een een _vierkant_ plaat 
+B|1| B: _en aan_ _het_ kop _aan de zijkant_ zitten _drie_ bollet 
+B|2| B: _aan_ zowel links als rechts 
+A|3| A: _dat zijn bij mij nummer_ 
+B|4| B: Yes 
+B|5| B: _Oké_ 
+A|6| A: _dit zijn het_ groot [vierkant] waar [de] kom op staat 
+A|7| A: _met die_ [aan] beide zij _die_ uitsteeksel _met die_ _met die_ [vierkant] 
+A|8| A: dus [aan] allebei [de] kant [drie] [vierkant] 
+B|9| B: Yes 
+B|10| B: _ja_ [dat zijn bij mij nummer] 
+B|11| B: onderop [zijn] er weer een [vierkant] plaat 
+B|12| B: [met _die] drie_ bollet _aan de zijkant_ 
+A|13| A: [Oké] [dat zijn] [nummer] 
+A|14| A: _dit zijn het_ [het] _plateau_ [aan de onderkant] 
+A|15| A: dus [het] [vierkant] _plateau_ 
+A|16| A: daar staan [de] kom op 
+A|17| A: _en die drie_ verschillend 
+A|18| A: _en die_ twee vormp [met] [drie] verschillend ding [aan de zijkant] 
+B|19| B: Yes [nummer] 
+B|20| B: [dit zijn het] plaat [met die] [plateau] onderop 
+B|21| B: [en die drie] bollet [aan de zijkant] 
+A|22| A: ah [ja] 
+A|23| A: [dat zijn] 
+A|24| A: [dit zijn het] rond [vierkant] waar [de] kom op staat 
+A|25| A: [en aan] beide zij [die] driehoek 
+B|26| B: [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit plaat hebben aan de onderkant een een vierkant plaat
+	Free: Pattern=aan de onderkant, Pattern=vierkant, Pattern=dit
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=1| B | B : en aan het kop aan de zijkant zitten drie bollet
+	Free: Pattern=aan de zijkant, Pattern=en aan, Pattern=het, Pattern=drie
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=2| B | B : aan zowel links als rechts
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=3| A | A : dat zijn bij mij nummer
+	Free: Pattern=dat zijn bij mij nummer
+	Constrained: Pattern=zijn, Pattern=nummer, Pattern=dat zijn
+Turn ID=4| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| A | A : dit zijn het groot vierkant waar de kom op staat
+	Free: Pattern=dit zijn het, Pattern=vierkant, Pattern=de
+	Constrained: Pattern=zijn, Pattern=het, Pattern=dit
+Turn ID=7| A | A : met die aan beide zij die uitsteeksel met die met die vierkant
+	Free: Pattern=met die, Pattern=vierkant, Pattern=aan, Pattern=die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=8| A | A : dus aan allebei de kant drie vierkant
+	Free: Pattern=vierkant, Pattern=drie, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=9| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : ja dat zijn bij mij nummer
+	Free: Pattern=dat zijn bij mij nummer, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=nummer, Pattern=dat zijn
+Turn ID=11| B | B : onderop zijn er weer een vierkant plaat
+	Free: Pattern=zijn, Pattern=vierkant
+	Constrained: 
+Turn ID=12| B | B : met die drie bollet aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=met die, Pattern=die drie
+	Constrained: Pattern=drie, Pattern=met, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=13| A | A : Oké dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=Oké, Pattern=nummer
+	Constrained: Pattern=zijn
+Turn ID=14| A | A : dit zijn het het plateau aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=dit zijn het, Pattern=het, Pattern=plateau
+	Constrained: Pattern=het, Pattern=dit, Pattern=zijn, Pattern=de, Pattern=aan
+Turn ID=15| A | A : dus het vierkant plateau
+	Free: Pattern=het, Pattern=plateau, Pattern=vierkant
+	Constrained: 
+Turn ID=16| A | A : daar staan de kom op
+	Free: Pattern=de
+	Constrained: 
+Turn ID=17| A | A : en die drie verschillend
+	Free: Pattern=en die drie
+	Constrained: Pattern=die drie, Pattern=drie, Pattern=die, Pattern=en die
+Turn ID=18| A | A : en die twee vormp met drie verschillend ding aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=en die, Pattern=drie, Pattern=met
+	Constrained: Pattern=aan, Pattern=de, Pattern=die
+Turn ID=19| B | B : Yes nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=20| B | B : dit zijn het plaat met die plateau onderop
+	Free: Pattern=dit zijn het, Pattern=met die, Pattern=plateau
+	Constrained: Pattern=het, Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=21| B | B : en die drie bollet aan de zijkant
+	Free: Pattern=en die drie, Pattern=aan de zijkant
+	Constrained: Pattern=en die, Pattern=die drie, Pattern=drie, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=22| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=24| A | A : dit zijn het rond vierkant waar de kom op staat
+	Free: Pattern=dit zijn het, Pattern=vierkant, Pattern=de
+	Constrained: Pattern=zijn, Pattern=het, Pattern=dit
+Turn ID=25| A | A : en aan beide zij die driehoek
+	Free: Pattern=en aan, Pattern=die
+	Constrained: Pattern=aan
+Turn ID=26| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 

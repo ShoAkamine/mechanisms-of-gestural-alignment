@@ -1,0 +1,235 @@
+B|0| B: ehm _deze_ _vinden_ _ik_ lastig 
+B|1| B: eh _dit _zijn_ een_ pot _met een_ _plat_ lang neus 
+B|2| B: _zegmaar_ _het_ _het_ _het zijn_ _rechthoekig_ _maar_ _plat_ 
+B|3| B: _en _aan_ één _kant_ _hebben hij_ twee_ oor 
+B|4| B: _twee_ rechthoek 
+B|5| B: _en aan de_ bovenkant _zijn het_ alsof _hij_ _een_ _punthoed_ _op_ _hebben_ 
+B|6| B: _maar_ _de_ bovenkant _zijn_ eraf geknipt 
+B|7| B: _en dan_ steken er nog _aan de_ zijkant _zo'n rechthoekig_ buis uit 
+B|8| B: _zegmaar_ _het_ gaan _zo_ _krom_ 
+A|9| A: _ja_ [zo'n] [krom] 
+A|10| A: _ja_ _ja_ [zegmaar] [ik] _zien_ [het] [een] beetje als [een] soort _van_ _vogel_ 
+A|11| A: _dat_ [dan] die [twee] [rechthoekig] ding 
+A|12| A: _dat_ _dat zijn_ [dan] [een] soort _van_ [de] snavel 
+A|13| A: [dan] [hebben hij] [zo'n rechthoekig] _hoed_ [op] 
+A|14| A: [en] _dat_ ander stuk [zijn] [dan] [een] soort _van_ [zo'n] vleugel 
+A|15| A: [en dan] [hebben hij twee] voet [en] _dat zijn_ [dan] _dat_ [krom] ding 
+A|16| A: [maar] [ik] denken _dat_ [ik] weten welk je bedoelen 
+B|17| B: gelukkig 
+A|18| A: _ja_ want [twee] staaf dus [aan één kant] [met een] beetje ruimte ertussen 
+B|19| B: [ja] 
+A|20| A: [en aan de] ander [kant] [één] staaf [en] _dat [zijn_ een] beetje puntig 
+B|21| B: [ja] 
+A|22| A: [en dan] onder [zo'n] draaien ding 
+B|23| B: mhm 
+A|24| A: [en dan] boven [een] _hoed_ 
+A|25| A: _maar dan_ [zijn het] geen [punthoed] want [dan] _zijn de_ [de] punt afsnijden 
+B|26| B: [ja] 
+A|27| A: Oké [dan] [zijn het] 
+A|28| A: Oké 
+A|29| A: [dit] noemen [ik] daar straks _een vogel_ 
+A|30| A: _jij vinden_ [deze] ingewikkeld 
+A|31| A: want [hij] [hebben] [aan de] [een] [kant hebben hij] dus [twee] [rechthoekig] [plat] uitsteeksel 
+B|32| B: Oh [ja] 
+A|33| A: bovenop [hebben hij] [zo'n] [punthoed] die [zijn] afsnijden 
+A|34| A: [en aan de] ander [kant hebben hij] [één] puntig uitsteeksel 
+A|35| A: [en] vanond [hebben hij] [zo'n] rond ding 
+A|36| A: _dat_ [zo] rond vormen [ja] 
+B|37| B: [ja] 
+B|38| B: eh nummer 
+B|39| B: _dit [zijn_ de] jarig Job [maar dan] [met] [de] afgesned [hoed] 
+B|40| B: [en] [twee] dinget [aan één] oor waarvan [jij vinden] [dat] [het] _lijken op een vogel_ 
+A|41| A: [ja] [ja] [ik] [vinden] [het] heel ding [lijken op een vogel] 
+A|42| A: [ja] zeggen [maar] die [twee] ding _dat zijn_ [dan] [een] soort _van_ [een] snavel die open staan 
+B|43| B: Oh nu [zien] [ik] [het] 
+B|44| B: echt _zo'n blokkig vogel_ 
+A|45| A: [ja] [zo'n blokkig vogel] 
+A|46| A: [ja] 
+A|47| A: [ja] [het zijn] letter 
+A|48| A: [dit _zijn] weer_ [het] [vogel] 
+B|49| B: eh [vogel] 
+B|50| B: Oh ze [zijn weer] [van] plek veranderen [dat zijn] 
+A|51| A: [ja] 
+B|52| B: nummer 
+B|53| B: [dit [zijn] de] [vogel] 
+A|54| A: [ja] waar staan die 
+A|55| A: [ja] letter 
+A|56| A: [het] [vogel] 
+B|57| B: eh nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze vinden ik lastig
+	Free: Pattern=ik, Pattern=deze, Pattern=vinden
+	Constrained: 
+Turn ID=1| B | B : eh dit zijn een pot met een plat lang neus
+	Free: Pattern=dit zijn, Pattern=met een, Pattern=zijn een, Pattern=plat
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=een, Pattern=met
+Turn ID=2| B | B : zegmaar het het het zijn rechthoekig maar plat
+	Free: Pattern=rechthoekig, Pattern=het, Pattern=zegmaar, Pattern=het zijn, Pattern=plat, Pattern=maar
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=3| B | B : en aan één kant hebben hij twee oor
+	Free: Pattern=aan één kant, Pattern=hebben hij twee, Pattern=kant hebben hij, Pattern=en aan
+	Constrained: Pattern=kant, Pattern=hebben hij, Pattern=twee, Pattern=hebben, Pattern=één, Pattern=hij, Pattern=en, Pattern=aan één
+Turn ID=4| B | B : twee rechthoek
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=5| B | B : en aan de bovenkant zijn het alsof hij een punthoed op hebben
+	Free: Pattern=zijn het, Pattern=op, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=punthoed, Pattern=en aan de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=het, Pattern=en, Pattern=zijn, Pattern=en aan
+Turn ID=6| B | B : maar de bovenkant zijn eraf geknipt
+	Free: Pattern=maar, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=7| B | B : en dan steken er nog aan de zijkant zo'n rechthoekig buis uit
+	Free: Pattern=aan de, Pattern=en dan, Pattern=zo'n rechthoekig
+	Constrained: Pattern=zo'n, Pattern=dan, Pattern=en, Pattern=de, Pattern=rechthoekig
+Turn ID=8| B | B : zegmaar het gaan zo krom
+	Free: Pattern=krom, Pattern=zo, Pattern=het, Pattern=zegmaar
+	Constrained: 
+Turn ID=9| A | A : ja zo'n krom
+	Free: Pattern=krom, Pattern=ja, Pattern=zo'n
+	Constrained: 
+Turn ID=10| A | A : ja ja zegmaar ik zien het een beetje als een soort van vogel
+	Free: Pattern=vogel, Pattern=ja, Pattern=een, Pattern=het, Pattern=zegmaar, Pattern=zien, Pattern=ik, Pattern=van
+	Constrained: 
+Turn ID=11| A | A : dat dan die twee rechthoekig ding
+	Free: Pattern=dan, Pattern=twee, Pattern=rechthoekig, Pattern=dat
+	Constrained: 
+Turn ID=12| A | A : dat dat zijn dan een soort van de snavel
+	Free: Pattern=de, Pattern=dan, Pattern=een, Pattern=van, Pattern=dat, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=13| A | A : dan hebben hij zo'n rechthoekig hoed op
+	Free: Pattern=hebben hij, Pattern=hoed, Pattern=op, Pattern=dan, Pattern=zo'n rechthoekig
+	Constrained: Pattern=zo'n, Pattern=hebben, Pattern=rechthoekig, Pattern=hij
+Turn ID=14| A | A : en dat ander stuk zijn dan een soort van zo'n vleugel
+	Free: Pattern=dat, Pattern=zo'n, Pattern=dan, Pattern=een, Pattern=zijn, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=15| A | A : en dan hebben hij twee voet en dat zijn dan dat krom ding
+	Free: Pattern=en dan, Pattern=dan, Pattern=hebben hij twee, Pattern=en, Pattern=dat, Pattern=dat zijn, Pattern=krom
+	Constrained: Pattern=dat, Pattern=hebben hij, Pattern=twee, Pattern=dan, Pattern=hebben, Pattern=hij, Pattern=en, Pattern=zijn
+Turn ID=16| A | A : maar ik denken dat ik weten welk je bedoelen
+	Free: Pattern=maar, Pattern=ik, Pattern=dat
+	Constrained: 
+Turn ID=17| B | B : gelukkig
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : ja want twee staaf dus aan één kant met een beetje ruimte ertussen
+	Free: Pattern=aan één kant, Pattern=met een, Pattern=ja, Pattern=twee
+	Constrained: Pattern=kant, Pattern=een, Pattern=één, Pattern=met, Pattern=aan één
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : en aan de ander kant één staaf en dat zijn een beetje puntig
+	Free: Pattern=zijn een, Pattern=één, Pattern=en, Pattern=en aan de, Pattern=dat zijn, Pattern=kant
+	Constrained: Pattern=dat, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=zijn, Pattern=en aan
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : en dan onder zo'n draaien ding
+	Free: Pattern=en dan, Pattern=zo'n
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=23| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : en dan boven een hoed
+	Free: Pattern=en dan, Pattern=hoed, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=25| A | A : maar dan zijn het geen punthoed want dan zijn de de punt afsnijden
+	Free: Pattern=zijn het, Pattern=de, Pattern=dan, Pattern=maar dan, Pattern=punthoed, Pattern=zijn de
+	Constrained: Pattern=de, Pattern=dan, Pattern=het, Pattern=zijn, Pattern=maar
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=28| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : dit noemen ik daar straks een vogel
+	Free: Pattern=een vogel, Pattern=dit, Pattern=ik
+	Constrained: Pattern=vogel, Pattern=een
+Turn ID=30| A | A : jij vinden deze ingewikkeld
+	Free: Pattern=jij vinden, Pattern=deze
+	Constrained: Pattern=vinden
+Turn ID=31| A | A : want hij hebben aan de een kant hebben hij dus twee rechthoekig plat uitsteeksel
+	Free: Pattern=twee, Pattern=rechthoekig, Pattern=kant hebben hij, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=plat
+	Constrained: Pattern=kant, Pattern=hebben hij, Pattern=de, Pattern=hebben, Pattern=hij
+Turn ID=32| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : bovenop hebben hij zo'n punthoed die zijn afsnijden
+	Free: Pattern=hebben hij, Pattern=punthoed, Pattern=zijn, Pattern=zo'n
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=34| A | A : en aan de ander kant hebben hij één puntig uitsteeksel
+	Free: Pattern=en aan de, Pattern=kant hebben hij, Pattern=één
+	Constrained: Pattern=kant, Pattern=hebben hij, Pattern=de, Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=en, Pattern=en aan
+Turn ID=35| A | A : en vanond hebben hij zo'n rond ding
+	Free: Pattern=hebben hij, Pattern=en, Pattern=zo'n
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=36| A | A : dat zo rond vormen ja
+	Free: Pattern=ja, Pattern=zo, Pattern=dat
+	Constrained: 
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : eh nummer
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : dit zijn de jarig Job maar dan met de afgesned hoed
+	Free: Pattern=met, Pattern=maar dan, Pattern=zijn de, Pattern=dit zijn, Pattern=de, Pattern=hoed
+	Constrained: Pattern=de, Pattern=dan, Pattern=dit, Pattern=zijn, Pattern=maar
+Turn ID=40| B | B : en twee dinget aan één oor waarvan jij vinden dat het lijken op een vogel
+	Free: Pattern=dat, Pattern=het, Pattern=en, Pattern=aan één, Pattern=jij vinden, Pattern=lijken op een vogel, Pattern=twee
+	Constrained: Pattern=vogel, Pattern=vinden, Pattern=op, Pattern=een, Pattern=één, Pattern=een vogel
+Turn ID=41| A | A : ja ja ik vinden het heel ding lijken op een vogel
+	Free: Pattern=lijken op een vogel, Pattern=het, Pattern=ik, Pattern=vinden, Pattern=ja
+	Constrained: Pattern=een vogel, Pattern=een, Pattern=vogel, Pattern=op
+Turn ID=42| A | A : ja zeggen maar die twee ding dat zijn dan een soort van een snavel die open staan
+	Free: Pattern=dat zijn, Pattern=twee, Pattern=ja, Pattern=dan, Pattern=een, Pattern=van, Pattern=maar
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=43| B | B : Oh nu zien ik het
+	Free: Pattern=ik, Pattern=het, Pattern=zien
+	Constrained: 
+Turn ID=44| B | B : echt zo'n blokkig vogel
+	Free: Pattern=zo'n blokkig vogel
+	Constrained: Pattern=vogel, Pattern=zo'n
+Turn ID=45| A | A : ja zo'n blokkig vogel
+	Free: Pattern=zo'n blokkig vogel, Pattern=ja
+	Constrained: Pattern=vogel, Pattern=zo'n
+Turn ID=46| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| A | A : ja het zijn letter
+	Free: Pattern=het zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=48| A | A : dit zijn weer het vogel
+	Free: Pattern=dit zijn, Pattern=zijn weer, Pattern=vogel, Pattern=het
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=49| B | B : eh vogel
+	Free: Pattern=vogel
+	Constrained: 
+Turn ID=50| B | B : Oh ze zijn weer van plek veranderen dat zijn
+	Free: Pattern=dat zijn, Pattern=zijn weer, Pattern=van
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=51| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=52| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=53| B | B : dit zijn de vogel
+	Free: Pattern=dit zijn, Pattern=zijn de, Pattern=vogel
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=de
+Turn ID=54| A | A : ja waar staan die
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=55| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=56| A | A : het vogel
+	Free: Pattern=vogel, Pattern=het
+	Constrained: 
+Turn ID=57| B | B : eh nummer
+	Free: 
+	Constrained: 

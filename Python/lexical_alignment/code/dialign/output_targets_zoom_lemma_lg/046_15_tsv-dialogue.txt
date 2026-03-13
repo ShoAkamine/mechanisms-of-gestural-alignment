@@ -1,0 +1,107 @@
+A|0| A: ehm deze hebben redelijk aan _de_ onderkant _een_ beetje _ja_ _een_ vierkant door zich heen 
+B|1| B: Mhm [een] _soort rok_ 
+A|2| A: _ja_ [soort rok] aan _en_ dan aan _de_ bovenkant _die_ twee spriet 
+B|3| B: nee 
+B|4| B: [ja] _dat zijn_ 
+A|5| A: [ja] 
+B|6| B: _dit zijn met_ [die] [rok] zeggen maar _met_ [die] één arm opsteekken 
+A|7| A: hMhm 
+B|8| B: _Eh_ _met_ [de] lang neus 
+A|9| A: [ja] 
+A|10| A: Moeten ik hem even vinden 
+A|11| A: [ja] daar 
+A|12| A: [Eh] [dat zijn] 
+A|13| A: _en_ [dit zijn _met] dat tutu_ aan 
+A|14| A: _het_ [rok] 
+B|15| B: [ja] [dat zijn] 
+B|16| B: _eh_ waar staan [die] 
+B|17| B: _eh_ [dit zijn] [die] [met dat tutu] 
+B|18| B: [met] [met] [die] neus [en] [die] arm 
+A|19| A: _mhm_ 
+A|20| A: [eh] daar 
+A|21| A: [Eh] [dit] zien je _met het_ [tutu] aan 
+B|22| B: [mhm] [dat zijn] 
+B|23| B: [eh] [dit zijn met] [die] [tutu] 
+B|24| B: [met het] hand omhoog 
+A|25| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben redelijk aan de onderkant een beetje ja een vierkant door zich heen
+	Free: Pattern=ja, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=1| B | B : Mhm een soort rok
+	Free: Pattern=soort rok, Pattern=een
+	Constrained: Pattern=rok
+Turn ID=2| A | A : ja soort rok aan en dan aan de bovenkant die twee spriet
+	Free: Pattern=soort rok, Pattern=die, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=rok
+Turn ID=3| B | B : nee
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : dit zijn met die rok zeggen maar met die één arm opsteekken
+	Free: Pattern=dit zijn met, Pattern=die, Pattern=rok, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=met
+Turn ID=7| A | A : hMhm
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : Eh met de lang neus
+	Free: Pattern=de, Pattern=Eh, Pattern=met
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Moeten ik hem even vinden
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ja daar
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: 
+Turn ID=13| A | A : en dit zijn met dat tutu aan
+	Free: Pattern=dit zijn met, Pattern=met dat tutu, Pattern=en
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=met, Pattern=tutu
+Turn ID=14| A | A : het rok
+	Free: Pattern=het, Pattern=rok
+	Constrained: 
+Turn ID=15| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : eh waar staan die
+	Free: Pattern=eh, Pattern=die
+	Constrained: 
+Turn ID=17| B | B : eh dit zijn die met dat tutu
+	Free: Pattern=met dat tutu, Pattern=dit zijn, Pattern=eh, Pattern=die
+	Constrained: Pattern=dit, Pattern=met, Pattern=tutu
+Turn ID=18| B | B : met met die neus en die arm
+	Free: Pattern=en, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=19| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=20| A | A : eh daar
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=21| A | A : Eh dit zien je met het tutu aan
+	Free: Pattern=met het, Pattern=tutu, Pattern=dit, Pattern=Eh
+	Constrained: Pattern=het, Pattern=met
+Turn ID=22| B | B : mhm dat zijn
+	Free: Pattern=dat zijn, Pattern=mhm
+	Constrained: 
+Turn ID=23| B | B : eh dit zijn met die tutu
+	Free: Pattern=dit zijn met, Pattern=eh, Pattern=tutu, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=met
+Turn ID=24| B | B : met het hand omhoog
+	Free: Pattern=met het
+	Constrained: Pattern=het, Pattern=met
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

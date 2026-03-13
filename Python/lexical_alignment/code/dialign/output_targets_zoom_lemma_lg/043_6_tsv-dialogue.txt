@@ -1,0 +1,163 @@
+A|0| A: Oké 
+B|1| B: ehm _deze hebben_ _een_ soort _bol_ ervoor op 
+B|2| B: _en_ daar _zitten_ _iets_ _doorheen_ 
+B|3| B: _een_ balk _met een rond_ _ook_ 
+B|4| B: _en bovenop_ _zitten_ _nog een_ soort _ja_ _ook een_ soort staart weer 
+A|5| A: _eh ja_ wachten _door die bol zitten_ [ook] [iets] hè 
+B|6| B: [ja] 
+A|7| A: _zo'n_ _stok_ [met] _zo'n_ [rond] _aan de rechterkant_ 
+B|8| B: [ja] 
+B|9| B: _en_ [de rechterkant] [ja] 
+A|10| A: [ja] _letter_ 
+A|11| A: Eh [deze hebben] _aan de_ voorkant _zo'n_ bolle 
+A|12| A: [met] _zo'n_ _stok er doorheen_ 
+A|13| A: [met een _rond] eraan_ 
+B|14| B: _Oh _ja_ dat zijn_ [letter] 
+B|15| B: [deze hebben] _dat_ bollet _met die stok er _doorheen met dat_ [rond_ eraan] 
+A|16| A: [ja] 
+A|17| A: Eh [met dat] vierkan erachter 
+A|18| A: of [met dat] dinget 
+B|19| B: [eh _ja] _dat_ rond_ zeggen maar 
+B|20| B: [er] _zitten _zo'n_ bol_ op [aan de rechterkant] 
+B|21| B: _en_ daar [door die bol zitten] [een] 
+A|22| A: [Oh ja] [ja] 
+A|23| A: dit [zitten zo'n] [stok] [doorheen met dat rond] 
+B|24| B: [ja] 
+B|25| B: [ja] 
+A|26| A: [en] [zo'n] dinget [aan de] bovenkant [nog] 
+B|27| B: [ja] 
+A|28| A: [dat zijn] 
+A|29| A: [eh] [deze hebben] _rechts_ [die bol] [met die stok er doorheen met dat] cirkel 
+B|30| B: [Oh _ja] dat zijn_ 
+A|31| A: [en bovenop] [nog een] dinge 
+B|32| B: _deze zijn [met_ [die] bol] voorop 
+B|33| B: [en] dan [dat] ding [er doorheen met] [nog [een] rond] [rechts] 
+A|34| A: [ja dat zijn] 
+A|35| A: Eh [deze zijn met] [rechts] [zo'n bol] erop 
+A|36| A: [met die stok er doorheen met dat] cirkel 
+B|37| B: [Oh ja] 
+A|38| A: [en bovenop] [ook een] dinge 
+B|39| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ehm deze hebben een soort bol ervoor op
+	Free: Pattern=deze hebben, Pattern=een, Pattern=bol
+	Constrained: 
+Turn ID=2| B | B : en daar zitten iets doorheen
+	Free: Pattern=iets, Pattern=doorheen, Pattern=zitten, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : een balk met een rond ook
+	Free: Pattern=met een rond, Pattern=een, Pattern=ook
+	Constrained: Pattern=een rond, Pattern=een, Pattern=met, Pattern=rond
+Turn ID=4| B | B : en bovenop zitten nog een soort ja ook een soort staart weer
+	Free: Pattern=en bovenop, Pattern=ja, Pattern=zitten, Pattern=ook een, Pattern=nog een
+	Constrained: Pattern=nog, Pattern=een, Pattern=en, Pattern=ook
+Turn ID=5| A | A : eh ja wachten door die bol zitten ook iets hè
+	Free: Pattern=door die bol zitten, Pattern=eh ja, Pattern=iets, Pattern=ook
+	Constrained: Pattern=ja, Pattern=bol, Pattern=zitten, Pattern=eh, Pattern=die bol
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : zo'n stok met zo'n rond aan de rechterkant
+	Free: Pattern=zo'n, Pattern=met, Pattern=aan de rechterkant, Pattern=stok, Pattern=rond
+	Constrained: Pattern=de rechterkant, Pattern=aan de
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : en de rechterkant ja
+	Free: Pattern=de rechterkant, Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja letter
+	Free: Pattern=letter, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Eh deze hebben aan de voorkant zo'n bolle
+	Free: Pattern=deze hebben, Pattern=aan de, Pattern=zo'n
+	Constrained: 
+Turn ID=12| A | A : met zo'n stok er doorheen
+	Free: Pattern=stok er doorheen, Pattern=zo'n, Pattern=met
+	Constrained: Pattern=er, Pattern=stok, Pattern=doorheen
+Turn ID=13| A | A : met een rond eraan
+	Free: Pattern=met een rond, Pattern=rond eraan
+	Constrained: Pattern=een rond, Pattern=een, Pattern=met, Pattern=rond
+Turn ID=14| B | B : Oh ja dat zijn letter
+	Free: Pattern=ja dat zijn, Pattern=Oh ja, Pattern=letter
+	Constrained: Pattern=ja dat, Pattern=dat, Pattern=dat zijn, Pattern=ja
+Turn ID=15| B | B : deze hebben dat bollet met die stok er doorheen met dat rond eraan
+	Free: Pattern=dat, Pattern=doorheen met dat rond, Pattern=rond eraan, Pattern=met die stok er doorheen met dat, Pattern=deze hebben
+	Constrained: Pattern=doorheen, Pattern=stok er doorheen, Pattern=er doorheen met, Pattern=met, Pattern=er, Pattern=stok, Pattern=rond, Pattern=dat, Pattern=met die, Pattern=dat rond, Pattern=met dat
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : Eh met dat vierkan erachter
+	Free: Pattern=met dat
+	Constrained: Pattern=dat, Pattern=met
+Turn ID=18| A | A : of met dat dinget
+	Free: Pattern=met dat
+	Constrained: Pattern=dat, Pattern=met
+Turn ID=19| B | B : eh ja dat rond zeggen maar
+	Free: Pattern=eh ja, Pattern=ja dat, Pattern=dat rond
+	Constrained: Pattern=dat, Pattern=eh, Pattern=rond, Pattern=ja
+Turn ID=20| B | B : er zitten zo'n bol op aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=zo'n bol, Pattern=zitten zo'n, Pattern=er
+	Constrained: Pattern=zo'n, Pattern=de rechterkant, Pattern=zitten, Pattern=bol, Pattern=aan de
+Turn ID=21| B | B : en daar door die bol zitten een
+	Free: Pattern=door die bol zitten, Pattern=een, Pattern=en
+	Constrained: Pattern=die bol, Pattern=zitten, Pattern=bol
+Turn ID=22| A | A : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=23| A | A : dit zitten zo'n stok doorheen met dat rond
+	Free: Pattern=doorheen met dat rond, Pattern=zitten zo'n, Pattern=stok
+	Constrained: Pattern=dat, Pattern=zo'n, Pattern=doorheen, Pattern=met, Pattern=zitten, Pattern=rond, Pattern=dat rond, Pattern=met dat
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : en zo'n dinget aan de bovenkant nog
+	Free: Pattern=aan de, Pattern=zo'n, Pattern=nog, Pattern=en
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=29| A | A : eh deze hebben rechts die bol met die stok er doorheen met dat cirkel
+	Free: Pattern=rechts, Pattern=met die stok er doorheen met dat, Pattern=deze hebben, Pattern=eh, Pattern=die bol
+	Constrained: Pattern=doorheen, Pattern=bol, Pattern=stok er doorheen, Pattern=er doorheen met, Pattern=met dat, Pattern=met, Pattern=er, Pattern=stok, Pattern=dat, Pattern=met die
+Turn ID=30| B | B : Oh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja dat, Pattern=dat, Pattern=dat zijn, Pattern=ja
+Turn ID=31| A | A : en bovenop nog een dinge
+	Free: Pattern=en bovenop, Pattern=nog een
+	Constrained: Pattern=een, Pattern=nog, Pattern=en
+Turn ID=32| B | B : deze zijn met die bol voorop
+	Free: Pattern=deze zijn met, Pattern=die bol, Pattern=met die
+	Constrained: Pattern=bol, Pattern=met
+Turn ID=33| B | B : en dan dat ding er doorheen met nog een rond rechts
+	Free: Pattern=dat, Pattern=nog een, Pattern=rechts, Pattern=er doorheen met, Pattern=en, Pattern=een rond
+	Constrained: Pattern=nog, Pattern=doorheen, Pattern=een, Pattern=met, Pattern=er, Pattern=rond
+Turn ID=34| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja dat, Pattern=dat, Pattern=dat zijn, Pattern=ja
+Turn ID=35| A | A : Eh deze zijn met rechts zo'n bol erop
+	Free: Pattern=deze zijn met, Pattern=zo'n bol, Pattern=rechts
+	Constrained: Pattern=bol, Pattern=met, Pattern=zo'n
+Turn ID=36| A | A : met die stok er doorheen met dat cirkel
+	Free: Pattern=met die stok er doorheen met dat
+	Constrained: Pattern=doorheen, Pattern=stok er doorheen, Pattern=er doorheen met, Pattern=met dat, Pattern=met, Pattern=er, Pattern=stok, Pattern=dat, Pattern=met die
+Turn ID=37| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=38| A | A : en bovenop ook een dinge
+	Free: Pattern=en bovenop, Pattern=ook een
+	Constrained: Pattern=een, Pattern=en, Pattern=ook
+Turn ID=39| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

@@ -1,0 +1,103 @@
+B|0| B: oké deze hebben aan de rechterkant een _lang_ armpje _zeggen maar_ 
+B|1| B: _en_ aan de linkerkant hebben hij een _klein_ armp 
+B|2| B: even kijken 
+B|3| B: _en_ aan de achterkant een soort _schuin vierkant_ 
+A|4| A: oh _dat_ _ja_ _die_ vinden ik het moeilijk 
+A|5| A: _dit zijn_ _die_ _met die_ twee uitstekend _arm_ één groot spijker één [klein] spijker [en] het [vierkant] [schuin] 
+B|6| B: even kijken [met] _met dat_ dienblad vast 
+A|7| A: nee nee 
+A|8| A: rechts [lang] spijker links _kort_ spijker [en] dan linksboven zo'n [schuin] vlak [vierkant] 
+B|9| B: _Oh_ [met die] [lang] _en die_ [klein] [arm] 
+A|10| A: _ja ja_ 
+B|11| B: [ja ja] oké [ja [ja] ja] 
+A|12| A: _Oh ja_ [dat] _zijn_ echt exact 
+A|13| A: Exact wat ik [zeggen maar] 
+B|14| B: even kijken 
+B|15| B: even kijken _dit zijn weer_ [met die] [lang] [arm] _en die_ [klein] [arm] _en die_ _schuin vierkant_ 
+B|16| B: [dat] Schuine [vierkant] 
+A|17| A: [Oh] 
+A|18| A: eh [dit zijn weer] [die] [met die] twee [arm] rechts groot link [klein] 
+A|19| A: [en] dan _dat schuin vierkant_ vlak 
+B|20| B: ah [ja] 
+B|21| B: [dit zijn weer] [met die] [klein] [arm] _en die_ [kort] [arm] [en] [dat schuin vierkant] 
+A|22| A: [dit zijn weer] [die] [met [dat] schuin vierkant] vlak [en die] twee [arm] 
+B|23| B: even kijken 
+B|24| B: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze hebben aan de rechterkant een lang armpje zeggen maar
+	Free: Pattern=zeggen maar, Pattern=lang
+	Constrained: 
+Turn ID=1| B | B : en aan de linkerkant hebben hij een klein armp
+	Free: Pattern=en, Pattern=klein
+	Constrained: 
+Turn ID=2| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : en aan de achterkant een soort schuin vierkant
+	Free: Pattern=schuin vierkant, Pattern=en
+	Constrained: Pattern=vierkant, Pattern=schuin
+Turn ID=4| A | A : oh dat ja die vinden ik het moeilijk
+	Free: Pattern=dat, Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : dit zijn die met die twee uitstekend arm één groot spijker één klein spijker en het vierkant schuin
+	Free: Pattern=met die, Pattern=die, Pattern=vierkant, Pattern=dit zijn, Pattern=schuin, Pattern=klein, Pattern=arm, Pattern=en
+	Constrained: Pattern=die, Pattern=zijn, Pattern=met
+Turn ID=6| B | B : even kijken met met dat dienblad vast
+	Free: Pattern=met dat, Pattern=met
+	Constrained: Pattern=dat, Pattern=met
+Turn ID=7| A | A : nee nee
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : rechts lang spijker links kort spijker en dan linksboven zo'n schuin vlak vierkant
+	Free: Pattern=kort, Pattern=en, Pattern=vierkant, Pattern=schuin, Pattern=lang
+	Constrained: 
+Turn ID=9| B | B : Oh met die lang en die klein arm
+	Free: Pattern=en die, Pattern=met die, Pattern=arm, Pattern=Oh, Pattern=klein, Pattern=lang
+	Constrained: Pattern=die, Pattern=en, Pattern=met
+Turn ID=10| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| B | B : ja ja oké ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=12| A | A : Oh ja dat zijn echt exact
+	Free: Pattern=Oh ja, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=13| A | A : Exact wat ik zeggen maar
+	Free: Pattern=zeggen maar
+	Constrained: 
+Turn ID=14| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : even kijken dit zijn weer met die lang arm en die klein arm en die schuin vierkant
+	Free: Pattern=en die, Pattern=met die, Pattern=schuin vierkant, Pattern=arm, Pattern=dit zijn weer, Pattern=klein, Pattern=lang
+	Constrained: Pattern=met, Pattern=die, Pattern=schuin, Pattern=en, Pattern=zijn, Pattern=vierkant, Pattern=dit zijn
+Turn ID=16| B | B : dat Schuine vierkant
+	Free: Pattern=vierkant, Pattern=dat
+	Constrained: 
+Turn ID=17| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=18| A | A : eh dit zijn weer die met die twee arm rechts groot link klein
+	Free: Pattern=met die, Pattern=die, Pattern=klein, Pattern=arm, Pattern=dit zijn weer
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=19| A | A : en dan dat schuin vierkant vlak
+	Free: Pattern=dat schuin vierkant, Pattern=en
+	Constrained: Pattern=schuin vierkant, Pattern=vierkant, Pattern=dat, Pattern=schuin
+Turn ID=20| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : dit zijn weer met die klein arm en die kort arm en dat schuin vierkant
+	Free: Pattern=en die, Pattern=met die, Pattern=dat schuin vierkant, Pattern=kort, Pattern=klein, Pattern=dit zijn weer, Pattern=arm, Pattern=en
+	Constrained: Pattern=dat, Pattern=met, Pattern=die, Pattern=schuin vierkant, Pattern=schuin, Pattern=en, Pattern=zijn, Pattern=vierkant, Pattern=dit zijn
+Turn ID=22| A | A : dit zijn weer die met dat schuin vierkant vlak en die twee arm
+	Free: Pattern=en die, Pattern=dat schuin vierkant, Pattern=met dat, Pattern=die, Pattern=arm, Pattern=dit zijn weer
+	Constrained: Pattern=dat, Pattern=met, Pattern=die, Pattern=schuin vierkant, Pattern=schuin, Pattern=en, Pattern=zijn, Pattern=vierkant, Pattern=dit zijn
+Turn ID=23| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh

@@ -1,0 +1,155 @@
+B|0| B: _eh_ oké _dit_ _ja_ vinden _ik_ _een beetje_ _een_ raar figuur 
+B|1| B: _het_ _zijn_ alsof er _een_ soort van _tafelblad_ _met twee_ po tegenaan _geschoven_ _zijn_ 
+B|2| B: _of_ soort van ingescho 
+B|3| B: _ik weten_ _niet_ 
+B|4| B: _het_ doen me _denken_ _aan_ _een_ _tafelblad_ _met twee poot_ 
+B|5| B: en _het_ ver _zijn_ dus gewoon _die_ komen zoals altijd op al figuur 
+B|6| B: en _dan_ op _dat_ _tafelblad_ _met twee_ _poten_ _zitten_ _een_ soort van omgekeerd piramide 
+A|7| A: _Oh ja_ [ik] [denken] [dat] [ik weten] welk je bedoelen 
+A|8| A: Zeggen maar [die] [tafelblad] [zitten] zeggen maar zo [of] net [een beetje] veel [aan] _de_ bovenkant 
+B|9| B: [ik weten] 
+B|10| B: [ja] best hoog 
+B|11| B: [ja] 
+A|12| A: _de_ [poten] raken _de_ grond zeggen maar [niet] 
+B|13| B: _nee _nee_ nee_ 
+A|14| A: _Oké_ 
+B|15| B: _nee_ [ja] sorry [ik weten] echt [niet] hoe [ik] _dit_ moeten omschrijven 
+A|16| A: [nee nee] _dit zijn_ [een] goed omschrijving 
+A|17| A: _Eh_ [dan] [zijn] [het] 
+B|18| B: [Oké] 
+A|19| A: [Oké] _dit zijn_ wat jij zeggen _met die tafel_ [die] erin [zijn] [geschoven] 
+A|20| A: [dat] [die] [poten] _de_ grond [niet] raken 
+B|21| B: [Oh ja] [die] best wel hoog [zitten] 
+A|22| A: [ja] 
+B|23| B: _eh_ [ik] kunnen hem even [niet] vinden 
+B|24| B: O daar 
+B|25| B: [Eh] _dat zijn_ nummer 
+B|26| B: _eh dit zijn_ [die] [met die _tafel] met twee poot_ 
+A|27| A: [Eh] [die] zo halverwege [zitten] zeggen maar 
+B|28| B: [ja] [ja] 
+A|29| A: [dat zijn] 
+A|30| A: [eh dit zijn] [met] _de_ [tafel] 
+B|31| B: _met twee poot_ 
+A|32| A: [ja] 
+B|33| B: nummer 
+B|34| B: [dit zijn] [de] [tafelblad] _met twee poot_ 
+A|35| A: [dat zijn] 
+A|36| A: ehm [de] [tafel met twee poot] 
+B|37| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh oké dit ja vinden ik een beetje een raar figuur
+	Free: Pattern=ja, Pattern=een, Pattern=dit, Pattern=eh, Pattern=ik, Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=1| B | B : het zijn alsof er een soort van tafelblad met twee po tegenaan geschoven zijn
+	Free: Pattern=het, Pattern=met twee, Pattern=tafelblad, Pattern=zijn, Pattern=een, Pattern=geschoven
+	Constrained: Pattern=met
+Turn ID=2| B | B : of soort van ingescho
+	Free: Pattern=of
+	Constrained: 
+Turn ID=3| B | B : ik weten niet
+	Free: Pattern=ik weten, Pattern=niet
+	Constrained: Pattern=ik
+Turn ID=4| B | B : het doen me denken aan een tafelblad met twee poot
+	Free: Pattern=denken, Pattern=aan, Pattern=een, Pattern=het, Pattern=met twee poot, Pattern=tafelblad
+	Constrained: Pattern=met, Pattern=met twee
+Turn ID=5| B | B : en het ver zijn dus gewoon die komen zoals altijd op al figuur
+	Free: Pattern=die, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=6| B | B : en dan op dat tafelblad met twee poten zitten een soort van omgekeerd piramide
+	Free: Pattern=dat, Pattern=dan, Pattern=een, Pattern=met twee, Pattern=zitten, Pattern=poten, Pattern=tafelblad
+	Constrained: Pattern=met
+Turn ID=7| A | A : Oh ja ik denken dat ik weten welk je bedoelen
+	Free: Pattern=dat, Pattern=denken, Pattern=Oh ja, Pattern=ik weten, Pattern=ik
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=8| A | A : Zeggen maar die tafelblad zitten zeggen maar zo of net een beetje veel aan de bovenkant
+	Free: Pattern=of, Pattern=tafelblad, Pattern=een beetje, Pattern=de, Pattern=aan, Pattern=die, Pattern=zitten
+	Constrained: Pattern=een
+Turn ID=9| B | B : ik weten
+	Free: Pattern=ik weten
+	Constrained: Pattern=ik
+Turn ID=10| B | B : ja best hoog
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : de poten raken de grond zeggen maar niet
+	Free: Pattern=de, Pattern=niet, Pattern=poten
+	Constrained: 
+Turn ID=13| B | B : nee nee nee
+	Free: Pattern=nee nee
+	Constrained: Pattern=nee
+Turn ID=14| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : nee ja sorry ik weten echt niet hoe ik dit moeten omschrijven
+	Free: Pattern=ja, Pattern=niet, Pattern=nee, Pattern=dit, Pattern=ik weten, Pattern=ik
+	Constrained: Pattern=ik
+Turn ID=16| A | A : nee nee dit zijn een goed omschrijving
+	Free: Pattern=dit zijn, Pattern=nee nee, Pattern=een
+	Constrained: Pattern=nee, Pattern=dit, Pattern=zijn
+Turn ID=17| A | A : Eh dan zijn het
+	Free: Pattern=dan, Pattern=het, Pattern=zijn, Pattern=Eh
+	Constrained: 
+Turn ID=18| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=19| A | A : Oké dit zijn wat jij zeggen met die tafel die erin zijn geschoven
+	Free: Pattern=geschoven, Pattern=met die tafel, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=Oké
+	Constrained: Pattern=dit, Pattern=met, Pattern=zijn, Pattern=tafel, Pattern=die
+Turn ID=20| A | A : dat die poten de grond niet raken
+	Free: Pattern=dat, Pattern=de, Pattern=niet, Pattern=die, Pattern=poten
+	Constrained: 
+Turn ID=21| B | B : Oh ja die best wel hoog zitten
+	Free: Pattern=Oh ja, Pattern=die, Pattern=zitten
+	Constrained: Pattern=ja
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : eh ik kunnen hem even niet vinden
+	Free: Pattern=eh, Pattern=niet, Pattern=ik
+	Constrained: 
+Turn ID=24| B | B : O daar
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : Eh dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| B | B : eh dit zijn die met die tafel met twee poot
+	Free: Pattern=tafel met twee poot, Pattern=met die tafel, Pattern=eh dit zijn, Pattern=die
+	Constrained: Pattern=met twee poot, Pattern=dit, Pattern=met twee, Pattern=met, Pattern=eh, Pattern=zijn, Pattern=dit zijn, Pattern=tafel, Pattern=die
+Turn ID=27| A | A : Eh die zo halverwege zitten zeggen maar
+	Free: Pattern=die, Pattern=zitten, Pattern=Eh
+	Constrained: 
+Turn ID=28| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=30| A | A : eh dit zijn met de tafel
+	Free: Pattern=eh dit zijn, Pattern=de, Pattern=tafel, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=eh, Pattern=dit, Pattern=zijn
+Turn ID=31| B | B : met twee poot
+	Free: Pattern=met twee poot
+	Constrained: Pattern=met, Pattern=met twee
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : dit zijn de tafelblad met twee poot
+	Free: Pattern=met twee poot, Pattern=dit zijn, Pattern=de, Pattern=tafelblad
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=met, Pattern=met twee
+Turn ID=35| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| A | A : ehm de tafel met twee poot
+	Free: Pattern=tafel met twee poot, Pattern=de
+	Constrained: Pattern=met twee poot, Pattern=met, Pattern=met twee, Pattern=tafel
+Turn ID=37| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

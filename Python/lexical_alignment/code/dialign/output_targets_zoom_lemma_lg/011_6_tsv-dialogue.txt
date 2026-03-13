@@ -1,0 +1,147 @@
+B|0| B: eh dit vinden _ik_ _een beetje op een_ spies lijken 
+B|1| B: want het _er_ zitten _een_ stok door _een_ bolling heen 
+B|2| B: _en_ aan het uiteinde zijn het _een_ plat rond 
+B|3| B: _en_ daarboven in zijn _een_ 
+B|4| B: _ja_ _een soort_ staar of zo 
+B|5| B: of _ja_ gewoon weer _een_ regendruppel maar _dan_ in het klein 
+A|6| A: Oké 
+A|7| A: Lijken hij misschien [een beetje op een] zo'n filmset weten je wel met zo'n dinge [er] achter _en dan_ 
+B|8| B: _ja_ 
+B|9| B: _ja_ 
+A|10| A: Oké [ja] _en dan_ 
+B|11| B: maar dat doen me gewoon echt vooral aan [een] spies denken 
+B|12| B: omdat het zo echt 
+A|13| A: [en] 
+A|14| A: [en] onder _hebben_ hij [een soort] van statiefje 
+B|15| B: nee dat niet 
+A|16| A: _Oh_ 
+A|17| A: [een] _neuspiercing_ met [een soort] van zuignap eraan 
+B|18| B: [ja] [ja] 
+B|19| B: [ja] dat zijn [een] goed 
+B|20| B: [ja] dat zijn het 
+B|21| B: [en dan] daarbovenop [een soort] staar of zo 
+A|22| A: van [een] sprie 
+A|23| A: Oké [ja] 
+B|24| B: [ja] 
+A|25| A: _ik hebben de_ met _de neuspiercing_ 
+B|26| B: eh even kijken [de] spie 
+B|27| B: waar staan die 
+B|28| B: [Oh] [ja] 
+B|29| B: dat zijn 
+B|30| B: [ik hebben [de] neuspiercing] 
+A|31| A: Neuspiercing [hebben] [ik] 
+B|32| B: even kijken 
+B|33| B: dat zijn 
+B|34| B: [ik hebben [de] neuspiercing] 
+A|35| A: Neuspiercing 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh dit vinden ik een beetje op een spies lijken
+	Free: Pattern=een beetje op een, Pattern=ik
+	Constrained: Pattern=een
+Turn ID=1| B | B : want het er zitten een stok door een bolling heen
+	Free: Pattern=er, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : en aan het uiteinde zijn het een plat rond
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : en daarboven in zijn een
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : ja een soort staar of zo
+	Free: Pattern=een soort, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=5| B | B : of ja gewoon weer een regendruppel maar dan in het klein
+	Free: Pattern=dan, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Lijken hij misschien een beetje op een zo'n filmset weten je wel met zo'n dinge er achter en dan
+	Free: Pattern=een beetje op een, Pattern=en dan, Pattern=er
+	Constrained: Pattern=dan, Pattern=een, Pattern=en
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Oké ja en dan
+	Free: Pattern=en dan, Pattern=ja
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=11| B | B : maar dat doen me gewoon echt vooral aan een spies denken
+	Free: Pattern=een
+	Constrained: 
+Turn ID=12| B | B : omdat het zo echt
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=14| A | A : en onder hebben hij een soort van statiefje
+	Free: Pattern=een soort, Pattern=en, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=15| B | B : nee dat niet
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=17| A | A : een neuspiercing met een soort van zuignap eraan
+	Free: Pattern=een soort, Pattern=neuspiercing, Pattern=een
+	Constrained: Pattern=een
+Turn ID=18| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ja dat zijn een goed
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=20| B | B : ja dat zijn het
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : en dan daarbovenop een soort staar of zo
+	Free: Pattern=een soort, Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan, Pattern=een
+Turn ID=22| A | A : van een sprie
+	Free: Pattern=een
+	Constrained: 
+Turn ID=23| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ik hebben de met de neuspiercing
+	Free: Pattern=ik hebben de, Pattern=de neuspiercing
+	Constrained: Pattern=neuspiercing, Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=26| B | B : eh even kijken de spie
+	Free: Pattern=de
+	Constrained: 
+Turn ID=27| B | B : waar staan die
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : ik hebben de neuspiercing
+	Free: Pattern=ik hebben de, Pattern=de neuspiercing
+	Constrained: Pattern=neuspiercing, Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=31| A | A : Neuspiercing hebben ik
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=32| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : ik hebben de neuspiercing
+	Free: Pattern=ik hebben de, Pattern=de neuspiercing
+	Constrained: Pattern=neuspiercing, Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=35| A | A : Neuspiercing
+	Free: 
+	Constrained: 

@@ -1,0 +1,75 @@
+A|0| A: _Euh_ dan _hebben_ _ik_ hier een vorm _en_ het doen mij een beetje _denken_ aan een _basket_ want het lijken alsof er van boven een _bal_ in komen 
+A|1| A: _Euh_ _en_ er _zitten_ nog een soort beugel omheen eigenlijk lijken wel 
+A|2| A: _en_ aan het lijken alsof wij op _de_ achterkant van een soort korf _kijken_ _en_ er bekendstaan ook nog een paal naar beneden voor _de_ basisvorm 
+A|3| A: _en_ het lijken dus alsof er een soort _bal_ invlen 
+B|4| B: _ja_ nummer [denken] [ik] 
+B|5| B: [en] _ik hebben nu die basket_ euh [bal] enzo 
+A|6| A: [ja] dat zijn 
+A|7| A: Wacht _even_ [ik] moeten hem _even_ zoeken 
+A|8| A: dat zijn 
+A|9| A: _Euh_ [ik hebben nu die basket] 
+B|10| B: nummer 
+B|11| B: euh [de] basketbal [basket] 
+A|12| A: dat zijn 
+A|13| A: _ik hebben de basket_ 
+B|14| B: [Euh] [even] [kijken] 
+B|15| B: waar [zitten] [die] nou 
+B|16| B: nummer 
+B|17| B: [ik hebben de basket] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Euh dan hebben ik hier een vorm en het doen mij een beetje denken aan een basket want het lijken alsof er van boven een bal in komen
+	Free: Pattern=Euh, Pattern=hebben, Pattern=basket, Pattern=ik, Pattern=en, Pattern=denken, Pattern=bal
+	Constrained: 
+Turn ID=1| A | A : Euh en er zitten nog een soort beugel omheen eigenlijk lijken wel
+	Free: Pattern=en, Pattern=Euh, Pattern=zitten
+	Constrained: 
+Turn ID=2| A | A : en aan het lijken alsof wij op de achterkant van een soort korf kijken en er bekendstaan ook nog een paal naar beneden voor de basisvorm
+	Free: Pattern=en, Pattern=kijken, Pattern=de
+	Constrained: 
+Turn ID=3| A | A : en het lijken dus alsof er een soort bal invlen
+	Free: Pattern=en, Pattern=bal
+	Constrained: 
+Turn ID=4| B | B : ja nummer denken ik
+	Free: Pattern=ik, Pattern=denken, Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : en ik hebben nu die basket euh bal enzo
+	Free: Pattern=ik hebben nu die basket, Pattern=en, Pattern=bal
+	Constrained: Pattern=die, Pattern=basket, Pattern=ik, Pattern=hebben
+Turn ID=6| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Wacht even ik moeten hem even zoeken
+	Free: Pattern=even, Pattern=ik
+	Constrained: 
+Turn ID=8| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Euh ik hebben nu die basket
+	Free: Pattern=ik hebben nu die basket, Pattern=Euh
+	Constrained: Pattern=die, Pattern=basket, Pattern=ik, Pattern=hebben
+Turn ID=10| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : euh de basketbal basket
+	Free: Pattern=basket, Pattern=de
+	Constrained: 
+Turn ID=12| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ik hebben de basket
+	Free: Pattern=ik hebben de basket
+	Constrained: Pattern=de, Pattern=basket, Pattern=ik, Pattern=hebben
+Turn ID=14| B | B : Euh even kijken
+	Free: Pattern=even, Pattern=kijken, Pattern=Euh
+	Constrained: 
+Turn ID=15| B | B : waar zitten die nou
+	Free: Pattern=zitten, Pattern=die
+	Constrained: 
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : ik hebben de basket
+	Free: Pattern=ik hebben de basket
+	Constrained: Pattern=de, Pattern=basket, Pattern=ik, Pattern=hebben

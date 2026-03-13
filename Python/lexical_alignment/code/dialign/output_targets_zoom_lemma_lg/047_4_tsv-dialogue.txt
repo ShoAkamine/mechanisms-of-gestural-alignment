@@ -1,0 +1,51 @@
+B|0| B: Eh _dan_ _zijn_ dit _de vogel_ waar _ik_ het over _hebben_ _met de open bek_ 
+A|1| A: _ja_ oké dat [zijn] 
+A|2| A: ehm [dan] [hebben] [ik] nu _de vogel met de open bek_ 
+B|3| B: _eh_ [ja] nummer 
+B|4| B: [de vogel met de open bek] 
+A|5| A: [eh] jou _kip_ 
+A|6| A: [met] een [open bek] 
+B|7| B: nummer 
+B|8| B: mijn [kip] 
+B|9| B: [met de open] snavel 
+A|10| A: [eh] jou [vogel] jou [kip] 
+B|11| B: Hmm nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh dan zijn dit de vogel waar ik het over hebben met de open bek
+	Free: Pattern=met de open bek, Pattern=dan, Pattern=hebben, Pattern=de vogel, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=open bek, Pattern=met de open, Pattern=met, Pattern=vogel
+Turn ID=1| A | A : ja oké dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : ehm dan hebben ik nu de vogel met de open bek
+	Free: Pattern=de vogel met de open bek, Pattern=hebben, Pattern=ik, Pattern=dan
+	Constrained: Pattern=vogel, Pattern=met de open bek, Pattern=met de open, Pattern=met, Pattern=de vogel, Pattern=open bek
+Turn ID=3| B | B : eh ja nummer
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=4| B | B : de vogel met de open bek
+	Free: Pattern=de vogel met de open bek
+	Constrained: Pattern=vogel, Pattern=met de open bek, Pattern=met de open, Pattern=met, Pattern=de vogel, Pattern=open bek
+Turn ID=5| A | A : eh jou kip
+	Free: Pattern=kip, Pattern=eh
+	Constrained: 
+Turn ID=6| A | A : met een open bek
+	Free: Pattern=open bek, Pattern=met
+	Constrained: 
+Turn ID=7| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : mijn kip
+	Free: Pattern=kip
+	Constrained: 
+Turn ID=9| B | B : met de open snavel
+	Free: Pattern=met de open
+	Constrained: Pattern=met
+Turn ID=10| A | A : eh jou vogel jou kip
+	Free: Pattern=kip, Pattern=eh, Pattern=vogel
+	Constrained: 
+Turn ID=11| B | B : Hmm nummer
+	Free: 
+	Constrained: 

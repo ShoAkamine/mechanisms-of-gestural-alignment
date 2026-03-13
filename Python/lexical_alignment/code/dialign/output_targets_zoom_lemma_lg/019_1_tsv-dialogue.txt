@@ -1,0 +1,179 @@
+A|0| A: _ehm_ deze hebben _een_ plat _vierkant_ tegen gich _aan_ 
+A|1| A: Zeg maar alsof _het_ _een_ _schild_ _zijn_ 
+B|2| B: _ja_ 
+A|3| A: _en_ dan voor zich _twee gebouw_ 
+A|4| A: _en_ dan _bovenop_ nog _een paddenstoel_ 
+B|5| B: _ja_ 
+B|6| B: zo'n soort 
+B|7| B: _ja_ _ja_ _ja_ 
+B|8| B: Top 
+B|9| B: Helder 
+B|10| B: Oké _dat zijn_ 
+B|11| B: [ehm] _dit zijn die_ [een] _met _dat_ vierkant_ [aan] de voorkant 
+B|12| B: [en] [twee gebouw] _die_ erin wijzen 
+B|13| B: [en] de de _paddenstoel bovenop_ 
+A|14| A: [vierkant] 
+A|15| A: Oh [ja] 
+A|16| A: [met dat] _schild_ zeggen maar 
+A|17| A: [en] [met] [die] [gebouw] [en] paddestoel 
+B|18| B: [ja] 
+B|19| B: [ja] 
+A|20| A: _eh_ [dit zijn die] [paddenstoel bovenop] 
+A|21| A: [en] dan [die] [twee gebouw] naar _links_ 
+A|22| A: [en] [dat] _schild_ [dat vierkant] 
+B|23| B: [ja] [ja] 
+B|24| B: [eh] yes nummer 
+B|25| B: [ehm] [dit zijn] [het] [vierkant] 
+B|26| B: [het] [schild] [aan] de voorkant 
+B|27| B: [met] de [twee gebouw] erin 
+B|28| B: [en] de [paddenstoel bovenop] 
+A|29| A: Oh [ja] even kijken 
+A|30| A: [ehm] [ja] 
+A|31| A: Eh [die] _gebouw links_ toch 
+B|32| B: [ja] precies 
+A|33| A: [ja] 
+A|34| A: [ja] maar of [zijn] [dat] 
+A|35| A: [eh] [dit zijn] weer [dat] [schild] 
+A|36| A: [en] [die] [paddenstoel bovenop] 
+A|37| A: [en] [die] _gebouw links_ 
+A|38| A: [twee gebouw] 
+B|39| B: [ja] _dat zijn_ nummer 
+B|40| B: [ehm] [dit zijn die] [met] [het] [vierkant] [het] [schild] voorop [twee [gebouw] links] [en] [een [paddenstoel] bovenop] 
+A|41| A: [vierkant] 
+A|42| A: [ja] 
+A|43| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben een plat vierkant tegen gich aan
+	Free: Pattern=ehm, Pattern=aan, Pattern=vierkant, Pattern=een
+	Constrained: 
+Turn ID=1| A | A : Zeg maar alsof het een schild zijn
+	Free: Pattern=het, Pattern=schild, Pattern=een, Pattern=zijn
+	Constrained: 
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : en dan voor zich twee gebouw
+	Free: Pattern=twee gebouw, Pattern=en
+	Constrained: Pattern=gebouw
+Turn ID=4| A | A : en dan bovenop nog een paddenstoel
+	Free: Pattern=een paddenstoel, Pattern=bovenop, Pattern=en
+	Constrained: Pattern=een
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : zo'n soort
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : Helder
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : ehm dit zijn die een met dat vierkant aan de voorkant
+	Free: Pattern=dit zijn die, Pattern=aan, Pattern=een, Pattern=dat vierkant, Pattern=met dat, Pattern=ehm
+	Constrained: Pattern=dat, Pattern=met, Pattern=die, Pattern=zijn, Pattern=vierkant, Pattern=dit zijn
+Turn ID=12| B | B : en twee gebouw die erin wijzen
+	Free: Pattern=twee gebouw, Pattern=die, Pattern=en
+	Constrained: Pattern=gebouw
+Turn ID=13| B | B : en de de paddenstoel bovenop
+	Free: Pattern=paddenstoel bovenop, Pattern=en
+	Constrained: Pattern=bovenop
+Turn ID=14| A | A : vierkant
+	Free: Pattern=vierkant
+	Constrained: 
+Turn ID=15| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : met dat schild zeggen maar
+	Free: Pattern=met dat, Pattern=schild
+	Constrained: Pattern=dat, Pattern=met
+Turn ID=17| A | A : en met die gebouw en paddestoel
+	Free: Pattern=met, Pattern=gebouw, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : eh dit zijn die paddenstoel bovenop
+	Free: Pattern=dit zijn die, Pattern=paddenstoel bovenop, Pattern=eh
+	Constrained: Pattern=dit zijn, Pattern=bovenop, Pattern=die, Pattern=zijn
+Turn ID=21| A | A : en dan die twee gebouw naar links
+	Free: Pattern=twee gebouw, Pattern=links, Pattern=die, Pattern=en
+	Constrained: Pattern=gebouw
+Turn ID=22| A | A : en dat schild dat vierkant
+	Free: Pattern=dat vierkant, Pattern=dat, Pattern=schild, Pattern=en
+	Constrained: Pattern=dat, Pattern=vierkant
+Turn ID=23| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : eh yes nummer
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=25| B | B : ehm dit zijn het vierkant
+	Free: Pattern=dit zijn, Pattern=ehm, Pattern=het, Pattern=vierkant
+	Constrained: Pattern=zijn
+Turn ID=26| B | B : het schild aan de voorkant
+	Free: Pattern=het, Pattern=aan, Pattern=schild
+	Constrained: 
+Turn ID=27| B | B : met de twee gebouw erin
+	Free: Pattern=twee gebouw, Pattern=met
+	Constrained: Pattern=gebouw
+Turn ID=28| B | B : en de paddenstoel bovenop
+	Free: Pattern=paddenstoel bovenop, Pattern=en
+	Constrained: Pattern=bovenop
+Turn ID=29| A | A : Oh ja even kijken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ehm ja
+	Free: Pattern=ehm, Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : Eh die gebouw links toch
+	Free: Pattern=gebouw links, Pattern=die
+	Constrained: Pattern=gebouw, Pattern=links
+Turn ID=32| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : ja maar of zijn dat
+	Free: Pattern=dat, Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=35| A | A : eh dit zijn weer dat schild
+	Free: Pattern=dit zijn, Pattern=dat, Pattern=schild, Pattern=eh
+	Constrained: Pattern=zijn
+Turn ID=36| A | A : en die paddenstoel bovenop
+	Free: Pattern=paddenstoel bovenop, Pattern=die, Pattern=en
+	Constrained: Pattern=bovenop
+Turn ID=37| A | A : en die gebouw links
+	Free: Pattern=gebouw links, Pattern=die, Pattern=en
+	Constrained: Pattern=gebouw, Pattern=links
+Turn ID=38| A | A : twee gebouw
+	Free: Pattern=twee gebouw
+	Constrained: Pattern=gebouw
+Turn ID=39| B | B : ja dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=40| B | B : ehm dit zijn die met het vierkant het schild voorop twee gebouw links en een paddenstoel bovenop
+	Free: Pattern=gebouw links, Pattern=dit zijn die, Pattern=een paddenstoel, Pattern=het, Pattern=twee gebouw, Pattern=en, Pattern=vierkant, Pattern=ehm, Pattern=met, Pattern=schild, Pattern=paddenstoel bovenop
+	Constrained: Pattern=bovenop, Pattern=gebouw, Pattern=een, Pattern=links, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=41| A | A : vierkant
+	Free: Pattern=vierkant
+	Constrained: 
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

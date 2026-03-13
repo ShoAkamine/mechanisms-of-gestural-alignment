@@ -1,0 +1,239 @@
+B|0| B: Maakt niet _heel_ veel uit _denken_ _ik_ maar _ja_ 
+A|1| A: Yes 
+A|2| A: _Oké_ 
+A|3| A: _nou_ [ik] _hebben_ 
+A|4| A: oeh 
+A|5| A: [ja] aan _de_ bovenkant zien je _een_ rechthoekig plank 
+B|6| B: [ja] 
+A|7| A: _en_ aan _de_ zijkant 
+A|8| A: [ik] [denken] links 
+A|9| A: [ja] aan _de_ linkerkant zien je zo'n [ja] _een soort_ van arm eigenlijk 
+B|10| B: mhm 
+A|11| A: _en_ aan _de_ voorkant zien je één [ja] _een_ _neus_ _die_ echt uitsteken 
+A|12| A: _en_ boven _die neus_ zien je ook _een_ [ja] ook _een_ _balk_ eigenlijk 
+B|13| B: _zijn_ _dat_ [die] [balk] _op [die_ neus] _zijn die_ _heel dun_ 
+A|14| A: [ja] [heel dun] [ja] 
+B|15| B: Ehm 
+B|16| B: [en] [die] [die] [die] _gaan_ ze maar recht _omhoog_ [die] _zijn_ verticaal 
+A|17| A: [ja] 
+B|18| B: _dat_ laat [balk] 
+B|19| B: [Oké] [nou] _dan_ [hebben] [ik] hem 
+A|20| A: [ja] bij mij _zijn dan_ letter D 
+B|21| B: [nou] _top_ 
+A|22| A: Oke [top] 
+B|23| B: _ehm_ [ja] deze [zijn dan] zeggen maar [die neus] 
+B|24| B: _en _op_ [die_ neus] staan _een [heel_ dun] _klein_ [balk] 
+A|25| A: _eh_ even kijken waar [zijn die] ook _weer_ 
+A|26| A: Zoeken zoeken zoeken zoeken 
+A|27| A: Oh [ja] [ik] zien het 
+B|28| B: [een] 
+B|29| B: [ja] 
+A|30| A: [ja] het 
+B|31| B: [ja] 
+A|32| A: [ehm] het lijken net [op] [een] _vogel_ 
+A|33| A: [en] [dan] aan _de_ voorkant [hebben] hij [dan] [een heel] [klein] _buis_ [omhoog] 
+B|34| B: Ehm 
+A|35| A: [en _op] de_ [ja] _op de [op_ die] beker [hebben] je [dan] [een] rechthoekig plank 
+B|36| B: [ja] [zijn] dit _met_ [op [die] neus] _dat_ [balk] [heel dun] [balk] 
+A|37| A: [ja] 
+A|38| A: [ja] [ja] [ja] 
+B|39| B: [ja] 
+A|40| A: B 
+A|41| A: Oh 
+B|42| B: [eh] dit [zijn] [ja] [weer] [een soort] [vogel] 
+B|43| B: _met_ [die] [op de] snavel [op de] [neus] [een] [een] lang [dun] [buis] 
+B|44| B: _of_ niet [heel] lang maar [dun] [dun] buisje [dun] [balk] 
+A|45| A: Eh 
+A|46| A: [ja] [ik] [gaan] even zoeken 
+A|47| A: [ja] 
+B|48| B: [ja] dertien 
+A|49| A: Klik jij [of] klik [ik] 
+B|50| B: [ik] klikn wel 
+A|51| A: _eh ja_ [een] [vogel] 
+A|52| A: [met] [dat] [ja] 
+A|53| A: dus tafel [hebben] je [dan] zo'n [buis] [die] [omhoog] [gaan] 
+B|54| B: Ehm 
+A|55| A: A 
+B|56| B: [eh ja] [vogel] [met] [die] [dun] [buis] [op de [op] de] snavel 
+A|57| A: Yes [dat] [zijn] 
+B|58| B: elf 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Maakt niet heel veel uit denken ik maar ja
+	Free: Pattern=denken, Pattern=ja, Pattern=ik, Pattern=heel
+	Constrained: 
+Turn ID=1| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| A | A : nou ik hebben
+	Free: Pattern=hebben, Pattern=ik, Pattern=nou
+	Constrained: 
+Turn ID=4| A | A : oeh
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : ja aan de bovenkant zien je een rechthoekig plank
+	Free: Pattern=een, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en aan de zijkant
+	Free: Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=8| A | A : ik denken links
+	Free: Pattern=denken, Pattern=ik
+	Constrained: 
+Turn ID=9| A | A : ja aan de linkerkant zien je zo'n ja een soort van arm eigenlijk
+	Free: Pattern=een soort, Pattern=ja, Pattern=de
+	Constrained: Pattern=een
+Turn ID=10| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : en aan de voorkant zien je één ja een neus die echt uitsteken
+	Free: Pattern=een, Pattern=neus, Pattern=die, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : en boven die neus zien je ook een ja ook een balk eigenlijk
+	Free: Pattern=die neus, Pattern=ja, Pattern=een, Pattern=balk, Pattern=en
+	Constrained: Pattern=neus, Pattern=die
+Turn ID=13| B | B : zijn dat die balk op die neus zijn die heel dun
+	Free: Pattern=dat, Pattern=die neus, Pattern=zijn die, Pattern=balk, Pattern=op die, Pattern=die, Pattern=heel dun, Pattern=zijn
+	Constrained: Pattern=heel, Pattern=op, Pattern=dun, Pattern=neus, Pattern=die, Pattern=zijn
+Turn ID=14| A | A : ja heel dun ja
+	Free: Pattern=heel dun, Pattern=ja
+	Constrained: Pattern=dun, Pattern=heel
+Turn ID=15| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : en die die die gaan ze maar recht omhoog die zijn verticaal
+	Free: Pattern=die, Pattern=en, Pattern=omhoog, Pattern=zijn, Pattern=gaan
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dat laat balk
+	Free: Pattern=dat, Pattern=balk
+	Constrained: 
+Turn ID=19| B | B : Oké nou dan hebben ik hem
+	Free: Pattern=nou, Pattern=dan, Pattern=hebben, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=20| A | A : ja bij mij zijn dan letter D
+	Free: Pattern=zijn dan, Pattern=ja
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=21| B | B : nou top
+	Free: Pattern=top, Pattern=nou
+	Constrained: 
+Turn ID=22| A | A : Oke top
+	Free: Pattern=top
+	Constrained: 
+Turn ID=23| B | B : ehm ja deze zijn dan zeggen maar die neus
+	Free: Pattern=zijn dan, Pattern=die neus, Pattern=ja, Pattern=ehm
+	Constrained: Pattern=neus, Pattern=dan, Pattern=zijn, Pattern=die
+Turn ID=24| B | B : en op die neus staan een heel dun klein balk
+	Free: Pattern=een heel, Pattern=die neus, Pattern=balk, Pattern=op die, Pattern=heel dun, Pattern=klein, Pattern=en op
+	Constrained: Pattern=heel, Pattern=op, Pattern=neus, Pattern=die, Pattern=en, Pattern=een, Pattern=dun
+Turn ID=25| A | A : eh even kijken waar zijn die ook weer
+	Free: Pattern=zijn die, Pattern=weer, Pattern=eh
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=26| A | A : Zoeken zoeken zoeken zoeken
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : Oh ja ik zien het
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=28| B | B : een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja het
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ehm het lijken net op een vogel
+	Free: Pattern=een, Pattern=vogel, Pattern=ehm, Pattern=op
+	Constrained: 
+Turn ID=33| A | A : en dan aan de voorkant hebben hij dan een heel klein buis omhoog
+	Free: Pattern=een heel, Pattern=de, Pattern=dan, Pattern=hebben, Pattern=buis, Pattern=klein, Pattern=en, Pattern=omhoog
+	Constrained: Pattern=een, Pattern=heel
+Turn ID=34| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : en op de ja op de op die beker hebben je dan een rechthoekig plank
+	Free: Pattern=ja, Pattern=dan, Pattern=op de op, Pattern=een, Pattern=hebben, Pattern=op die, Pattern=en op, Pattern=op de
+	Constrained: Pattern=de, Pattern=op, Pattern=die, Pattern=en, Pattern=op de
+Turn ID=36| B | B : ja zijn dit met op die neus dat balk heel dun balk
+	Free: Pattern=dat, Pattern=die neus, Pattern=ja, Pattern=balk, Pattern=heel dun, Pattern=zijn, Pattern=op die, Pattern=met
+	Constrained: Pattern=heel, Pattern=op, Pattern=dun, Pattern=neus, Pattern=die
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : B
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=42| B | B : eh dit zijn ja weer een soort vogel
+	Free: Pattern=vogel, Pattern=ja, Pattern=eh, Pattern=een soort, Pattern=zijn, Pattern=weer
+	Constrained: Pattern=een
+Turn ID=43| B | B : met die op de snavel op de neus een een lang dun buis
+	Free: Pattern=buis, Pattern=neus, Pattern=met, Pattern=die, Pattern=op de, Pattern=een, Pattern=dun
+	Constrained: Pattern=de, Pattern=op
+Turn ID=44| B | B : of niet heel lang maar dun dun buisje dun balk
+	Free: Pattern=dun, Pattern=balk, Pattern=of, Pattern=heel
+	Constrained: 
+Turn ID=45| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=46| A | A : ja ik gaan even zoeken
+	Free: Pattern=gaan, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=47| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : ja dertien
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=49| A | A : Klik jij of klik ik
+	Free: Pattern=ik, Pattern=of
+	Constrained: 
+Turn ID=50| B | B : ik klikn wel
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=51| A | A : eh ja een vogel
+	Free: Pattern=eh ja, Pattern=een, Pattern=vogel
+	Constrained: Pattern=eh, Pattern=ja
+Turn ID=52| A | A : met dat ja
+	Free: Pattern=dat, Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=53| A | A : dus tafel hebben je dan zo'n buis die omhoog gaan
+	Free: Pattern=dan, Pattern=hebben, Pattern=buis, Pattern=die, Pattern=gaan, Pattern=omhoog
+	Constrained: 
+Turn ID=54| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=55| A | A : A
+	Free: 
+	Constrained: 
+Turn ID=56| B | B : eh ja vogel met die dun buis op de op de snavel
+	Free: Pattern=vogel, Pattern=op de op, Pattern=dun, Pattern=eh ja, Pattern=buis, Pattern=met, Pattern=die, Pattern=op de
+	Constrained: Pattern=op, Pattern=eh, Pattern=op de, Pattern=de, Pattern=ja
+Turn ID=57| A | A : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=58| B | B : elf
+	Free: 
+	Constrained: 

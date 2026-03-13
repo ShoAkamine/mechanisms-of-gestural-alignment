@@ -1,0 +1,115 @@
+B|0| B: _ja_ 
+A|1| A: ehm _ik_ vinden dit heel erg op _een_ _kip_ lijken 
+A|2| A: en nou vinden _ik_ er t nou vinden _ik_ er 
+B|3| B: Oh 
+B|4| B: _met_ [een] snavel _aan_ _de_ rechterkant 
+A|5| A: ehm [ja] maar geen open bek 
+B|6| B: of niet 
+A|7| A: dus hij _hebben_ [aan] beide kant [ja] vleugelt 
+A|8| A: en hij _hebben_ _een balk bovenop liggen_ als [een] soort hanenkam 
+B|9| B: [een balk bovenop liggen] 
+A|10| A: [ja] het 
+B|11| B: Oh [ja] [ik] zien hem 
+A|12| A: Oké 
+B|13| B: [ja] nummer nummer 
+B|14| B: dan [hebben] [ik] jouw [kip] 
+B|15| B: _met de_ dicht snavel 
+A|16| A: _even_ kijken waar die nou staan 
+A|17| A: het zijn verplaatsen 
+A|18| A: Eh dat zijn 
+B|19| B: bij mij ook 
+A|20| A: ehm [de] ander [kip] 
+A|21| A: [met de] [balk] op zijn hoofd 
+B|22| B: [even] zoeken nummer 
+B|23| B: dan jou [kip] 
+A|24| A: _eh_ mijn [kip] 
+B|25| B: [even] zoeken naar jou [kip] 
+B|26| B: [eh] nummer 
+B|27| B: jouw [kip] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : ehm ik vinden dit heel erg op een kip lijken
+	Free: Pattern=een, Pattern=ik, Pattern=kip
+	Constrained: 
+Turn ID=2| A | A : en nou vinden ik er t nou vinden ik er
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=3| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : met een snavel aan de rechterkant
+	Free: Pattern=een, Pattern=de, Pattern=met, Pattern=aan
+	Constrained: 
+Turn ID=5| A | A : ehm ja maar geen open bek
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : of niet
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : dus hij hebben aan beide kant ja vleugelt
+	Free: Pattern=hebben, Pattern=ja, Pattern=aan
+	Constrained: 
+Turn ID=8| A | A : en hij hebben een balk bovenop liggen als een soort hanenkam
+	Free: Pattern=een balk bovenop liggen, Pattern=hebben, Pattern=een
+	Constrained: Pattern=een, Pattern=balk
+Turn ID=9| B | B : een balk bovenop liggen
+	Free: Pattern=een balk bovenop liggen
+	Constrained: Pattern=een, Pattern=balk
+Turn ID=10| A | A : ja het
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Oh ja ik zien hem
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ja nummer nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : dan hebben ik jouw kip
+	Free: Pattern=hebben, Pattern=ik, Pattern=kip
+	Constrained: 
+Turn ID=15| B | B : met de dicht snavel
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=16| A | A : even kijken waar die nou staan
+	Free: Pattern=even
+	Constrained: 
+Turn ID=17| A | A : het zijn verplaatsen
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : Eh dat zijn
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : bij mij ook
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : ehm de ander kip
+	Free: Pattern=de, Pattern=kip
+	Constrained: 
+Turn ID=21| A | A : met de balk op zijn hoofd
+	Free: Pattern=met de, Pattern=balk
+	Constrained: Pattern=de, Pattern=met
+Turn ID=22| B | B : even zoeken nummer
+	Free: Pattern=even
+	Constrained: 
+Turn ID=23| B | B : dan jou kip
+	Free: Pattern=kip
+	Constrained: 
+Turn ID=24| A | A : eh mijn kip
+	Free: Pattern=eh, Pattern=kip
+	Constrained: 
+Turn ID=25| B | B : even zoeken naar jou kip
+	Free: Pattern=even, Pattern=kip
+	Constrained: 
+Turn ID=26| B | B : eh nummer
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=27| B | B : jouw kip
+	Free: Pattern=kip
+	Constrained: 

@@ -1,0 +1,139 @@
+A|0| A: _oké deze_ _hebben_ _een soort_ vierkant vlak door _de_ onderkant heen _en twee_ klein 
+A|1| A: _een soort van_ oog _kunnen_ je _het_ zien aan _de_ bovenkant 
+B|2| B: mhm 
+A|3| A: _en_ _een_ neerwaarts _neus_ 
+A|4| A: zo'n rond _neus_ naar _de_ onderkant 
+A|5| A: _en_ _een soort van_ armpje aan _de_ linkerkant _met een_ knik naar boven 
+B|6| B: Ah [oké] 
+B|7| B: _eh_ voor mij lijken [het] [een] beetje op [een soort van] _olifant_ [met een] _rok_ 
+B|8| B: [kunnen] _dat_ ook voor jou zo _zijn_ 
+A|9| A: Oh _ja_ 
+B|10| B: [ja] 
+A|11| A: oja ik zien [het] eerder als [een] krab maar [een] [olifant] [zijn] wel logisch 
+A|12| A: [ja] 
+B|13| B: [ja] [het] [hebben] _toch_ [een soort van] lang [neus] 
+A|14| A: [ja] 
+B|15| B: [en twee] antennet 
+A|16| A: [ja] 
+A|17| A: [ja] [ja] 
+B|18| B: _Oké_ [ja] 
+B|19| B: [het] [zijn] 
+B|20| B: [oké deze] [zijn] _dat_ _olifan met_ [de] _rok_ 
+A|21| A: even kijken _waar_ staan hij 
+A|22| A: [ja] [met] _die_ [twee] kleintje aan [de] bovenkant [toch] 
+B|23| B: [ja] kloppen 
+A|24| A: [Oké] 
+A|25| A: ehm _dit zijn_ [het] [olifan met] [het] vierkant [met] [rok] 
+B|26| B: [ja] 
+B|27| B: [ja] [dit zijn] 
+B|28| B: [dit zijn] [waar] _dat_ [olifan met] [de] [rok] 
+A|29| A: ehm yes _dat zijn_ 
+A|30| A: [eh] [dit zijn] [het] [olifan] 
+B|31| B: Eh [dat zijn] [dat zijn] 
+B|32| B: [deze] [zijn] [die] [olifant] 
+A|33| A: Ehm [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze hebben een soort vierkant vlak door de onderkant heen en twee klein
+	Free: Pattern=de, Pattern=hebben, Pattern=oké deze, Pattern=een soort, Pattern=en twee
+	Constrained: Pattern=oké, Pattern=twee, Pattern=een, Pattern=en, Pattern=deze
+Turn ID=1| A | A : een soort van oog kunnen je het zien aan de bovenkant
+	Free: Pattern=een soort van, Pattern=de, Pattern=het, Pattern=kunnen
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=2| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en een neerwaarts neus
+	Free: Pattern=een, Pattern=en, Pattern=neus
+	Constrained: 
+Turn ID=4| A | A : zo'n rond neus naar de onderkant
+	Free: Pattern=de, Pattern=neus
+	Constrained: 
+Turn ID=5| A | A : en een soort van armpje aan de linkerkant met een knik naar boven
+	Free: Pattern=een soort van, Pattern=met een, Pattern=de, Pattern=en
+	Constrained: Pattern=een soort, Pattern=een, Pattern=met
+Turn ID=6| B | B : Ah oké
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=7| B | B : eh voor mij lijken het een beetje op een soort van olifant met een rok
+	Free: Pattern=olifant, Pattern=een, Pattern=het, Pattern=een soort van, Pattern=rok, Pattern=met een, Pattern=eh
+	Constrained: Pattern=een soort, Pattern=een, Pattern=met
+Turn ID=8| B | B : kunnen dat ook voor jou zo zijn
+	Free: Pattern=zijn, Pattern=dat, Pattern=kunnen
+	Constrained: 
+Turn ID=9| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : oja ik zien het eerder als een krab maar een olifant zijn wel logisch
+	Free: Pattern=een, Pattern=het, Pattern=zijn, Pattern=olifant
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja het hebben toch een soort van lang neus
+	Free: Pattern=ja, Pattern=het, Pattern=hebben, Pattern=een soort van, Pattern=neus, Pattern=toch
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : en twee antennet
+	Free: Pattern=en twee
+	Constrained: Pattern=en, Pattern=twee
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : het zijn
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=20| B | B : oké deze zijn dat olifan met de rok
+	Free: Pattern=dat, Pattern=de, Pattern=oké deze, Pattern=zijn, Pattern=olifan met, Pattern=rok
+	Constrained: Pattern=deze, Pattern=oké, Pattern=met, Pattern=olifan
+Turn ID=21| A | A : even kijken waar staan hij
+	Free: Pattern=waar
+	Constrained: 
+Turn ID=22| A | A : ja met die twee kleintje aan de bovenkant toch
+	Free: Pattern=twee, Pattern=die, Pattern=de, Pattern=ja, Pattern=toch, Pattern=met
+	Constrained: 
+Turn ID=23| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : ehm dit zijn het olifan met het vierkant met rok
+	Free: Pattern=het, Pattern=met, Pattern=olifan met, Pattern=dit zijn, Pattern=rok
+	Constrained: Pattern=zijn, Pattern=met, Pattern=olifan
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ja dit zijn
+	Free: Pattern=dit zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=28| B | B : dit zijn waar dat olifan met de rok
+	Free: Pattern=dat, Pattern=de, Pattern=waar, Pattern=olifan met, Pattern=dit zijn, Pattern=rok
+	Constrained: Pattern=zijn, Pattern=met, Pattern=olifan
+Turn ID=29| A | A : ehm yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=30| A | A : eh dit zijn het olifan
+	Free: Pattern=dit zijn, Pattern=eh, Pattern=het, Pattern=olifan
+	Constrained: Pattern=zijn
+Turn ID=31| B | B : Eh dat zijn dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=32| B | B : deze zijn die olifant
+	Free: Pattern=deze, Pattern=zijn, Pattern=olifant, Pattern=die
+	Constrained: 
+Turn ID=33| A | A : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

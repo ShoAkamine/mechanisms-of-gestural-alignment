@@ -1,0 +1,127 @@
+A|0| A: _eh ik hebben_ er nu één _die_ _hebben_ _twee buisjes aan de_ _aan de zijkant_ 
+A|1| A: _ik_ vinden _het_ lijken op _buisjes_ 
+A|2| A: hij _hebben_ _een_ rond _bovenop_ 
+A|3| A: _en_ _dan_ _aan de voorkant_ _hebben_ hij nog _een_ _ja_ _een_ soort van rechthoek er _aan_ vastplken 
+B|4| B: [ja] [dan] _zijn_ [het] 
+B|5| B: [eh ik hebben] degeen _met_ [het] bollet [bovenop] 
+B|6| B: [de] 
+B|7| B: [en] _die twee buisjes aan de_ rechter [en] linkerkant 
+B|8| B: _en een_ balk [aan de voorkant] 
+A|9| A: Oh [met] [met] [die] rechthoek 
+B|10| B: [ja] 
+A|11| A: _ja dat zijn_ 
+A|12| A: [eh _ik hebben] die met_ [die _twee buisjes aan de] zijkant_ 
+A|13| A: [en] [dan] [het] bolle [bovenop] 
+A|14| A: [en een] blok [aan de voorkant] 
+B|15| B: [ja] 
+B|16| B: [dat zijn] 
+B|17| B: [ik hebben die met] [het] bollet [bovenop] 
+B|18| B: [en] [de] [twee buisjes aan de zijkant] 
+A|19| A: [eh] _ja dat zijn_ 
+B|20| B: [en] [de] _rechthoekig_ balk [aan de voorkant] 
+A|21| A: [eh [ik hebben] die met] [die [twee buisjes aan de] zijkant] 
+A|22| A: [en] [het] [een] [rechthoekig] blok [aan de voorkant] 
+B|23| B: [ja dat zijn] 
+B|24| B: [ik hebben die met] [het] bollet [aan de] bovenkant 
+B|25| B: [en] [de] [twee] buis 
+B|26| B: Armpjes 
+B|27| B: [aan de zijkant] 
+A|28| A: [met] [de] rechthoek vooraan 
+B|29| B: [ja] 
+A|30| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh ik hebben er nu één die hebben twee buisjes aan de aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=hebben, Pattern=twee buisjes aan de, Pattern=die, Pattern=eh ik hebben
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=buisjes, Pattern=eh, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=1| A | A : ik vinden het lijken op buisjes
+	Free: Pattern=het, Pattern=buisjes, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : hij hebben een rond bovenop
+	Free: Pattern=bovenop, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : en dan aan de voorkant hebben hij nog een ja een soort van rechthoek er aan vastplken
+	Free: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=en, Pattern=aan de voorkant, Pattern=aan, Pattern=ja
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| B | B : ja dan zijn het
+	Free: Pattern=het, Pattern=ja, Pattern=zijn, Pattern=dan
+	Constrained: 
+Turn ID=5| B | B : eh ik hebben degeen met het bollet bovenop
+	Free: Pattern=eh ik hebben, Pattern=het, Pattern=bovenop, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=eh
+Turn ID=6| B | B : de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=7| B | B : en die twee buisjes aan de rechter en linkerkant
+	Free: Pattern=die twee buisjes aan de, Pattern=en
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=twee buisjes aan de, Pattern=buisjes, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=8| B | B : en een balk aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=en een
+	Constrained: Pattern=aan de, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=9| A | A : Oh met met die rechthoek
+	Free: Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=12| A | A : eh ik hebben die met die twee buisjes aan de zijkant
+	Free: Pattern=die twee buisjes aan de, Pattern=twee buisjes aan de zijkant, Pattern=ik hebben die met, Pattern=eh ik hebben
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=aan de zijkant, Pattern=hebben, Pattern=twee buisjes aan de, Pattern=buisjes, Pattern=met, Pattern=die, Pattern=eh, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=13| A | A : en dan het bolle bovenop
+	Free: Pattern=het, Pattern=en, Pattern=bovenop, Pattern=dan
+	Constrained: 
+Turn ID=14| A | A : en een blok aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=en een
+	Constrained: Pattern=aan de, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=17| B | B : ik hebben die met het bollet bovenop
+	Free: Pattern=ik hebben die met, Pattern=het, Pattern=bovenop
+	Constrained: Pattern=met, Pattern=die, Pattern=ik, Pattern=hebben
+Turn ID=18| B | B : en de twee buisjes aan de zijkant
+	Free: Pattern=twee buisjes aan de zijkant, Pattern=en, Pattern=de
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=aan de zijkant, Pattern=twee buisjes aan de, Pattern=buisjes, Pattern=de, Pattern=aan
+Turn ID=19| A | A : eh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=eh
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=20| B | B : en de rechthoekig balk aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=en, Pattern=de, Pattern=rechthoekig
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=21| A | A : eh ik hebben die met die twee buisjes aan de zijkant
+	Free: Pattern=die twee buisjes aan de, Pattern=twee buisjes aan de zijkant, Pattern=ik hebben die met, Pattern=eh ik hebben
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=aan de zijkant, Pattern=hebben, Pattern=twee buisjes aan de, Pattern=buisjes, Pattern=met, Pattern=die, Pattern=eh, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=22| A | A : en het een rechthoekig blok aan de voorkant
+	Free: Pattern=rechthoekig, Pattern=een, Pattern=het, Pattern=en, Pattern=aan de voorkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=23| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=24| B | B : ik hebben die met het bollet aan de bovenkant
+	Free: Pattern=ik hebben die met, Pattern=aan de, Pattern=het
+	Constrained: Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=de, Pattern=aan
+Turn ID=25| B | B : en de twee buis
+	Free: Pattern=en, Pattern=de, Pattern=twee
+	Constrained: 
+Turn ID=26| B | B : Armpjes
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : aan de zijkant
+	Free: Pattern=aan de zijkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=28| A | A : met de rechthoek vooraan
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn

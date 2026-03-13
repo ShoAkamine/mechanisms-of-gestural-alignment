@@ -1,0 +1,195 @@
+A|0| A: nu _hebben_ _de_ _beker_ _een plateau_ om zich _heen_ 
+B|1| B: _ja_ 
+A|2| A: _en_ _aan de bovenkant_ _steken_ _twee_ _van_ dezelfde lengte _ding_ _eruit_ 
+A|3| A: _en_ _ook_ _nog een_ haak _aan de_ zijkant 
+B|4| B: _ja_ 
+A|5| A: _en één_ 
+A|6| A: [ja] 
+A|7| A: _een rond_ staaf 
+B|8| B: [ja] precies daar _bovenop_ wat [eruit] [steken] _zijn_ best wel _klein_ toch 
+A|9| A: [ja] _heel klein_ [ja] 
+B|10| B: [ja] [ja] [ja] dan _zijn_ het 
+B|11| B: Ehm 
+B|12| B: _deze hebben_ 
+B|13| B: Ehm 
+B|14| B: Oh [ja] _die_ _hebben een_ soort [van] _twee heel klein_ [ding] _bovenop_ _die_ hetzelfde _zijn_ 
+B|15| B: _Eeh_ 
+B|16| B: [aan de] [een] kant [een] soort [ja] arm _die_ [een] 90 graad hoek maken 
+A|17| A: Mhmm 
+B|18| B: Eh [en] [nog [een] rond] slurf 
+B|19| B: Lijken t [een] beetje 
+B|20| B: [en] er zitten _die_ [beker] _die_ gaan door [een] vierkant vlak [heen] 
+A|21| A: hmm 
+B|22| B: _die_ [hebben] we [de] vorig ronde [ook] al voorbij 
+B|23| B: [ja] we [hebben] trouwens alles [de] vorig ronde [hebben] maar 
+A|24| A: Bedoel jij _met die_ 
+A|25| A: _die twee heel klein dinge_ [bovenop] 
+B|26| B: Hele [klein] 
+B|27| B: [ja] [ja] 
+B|28| B: [ja] [die] [ja] 
+A|29| A: Oké _dat zijn_ 
+A|30| A: _ehh_ 
+A|31| A: [deze [hebben] _een] plateau_ om zich [heen] _met_ [twee] kort [ding] _aan de bovenkant_ 
+B|32| B: [ehh] beh beh beh 
+B|33| B: even zoeken 
+B|34| B: [ja] [dat zijn] 
+B|35| B: [ehh] 
+B|36| B: dit [zijn] weer [met [die] twee heel klein dinge] [aan de bovenkant] 
+B|37| B: onderin net niet helemaal onderin zitten er [een plateau] omheen 
+B|38| B: [en één] 
+A|39| A: [ja] 
+B|40| B: [ja] 
+A|41| A: [Eeh] 
+A|42| A: Plateautje [met] [twee] kort spriet [bovenop] 
+B|43| B: [ja] 
+B|44| B: [ehh] 
+B|45| B: dit [zijn] weer het plateaut redelijk laag 
+B|46| B: [en] [bovenop] [die twee] [klein] dinget [die] uitsteken 
+A|47| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : nu hebben de beker een plateau om zich heen
+	Free: Pattern=beker, Pattern=de, Pattern=een plateau, Pattern=hebben, Pattern=heen
+	Constrained: Pattern=een
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : en aan de bovenkant steken twee van dezelfde lengte ding eruit
+	Free: Pattern=twee, Pattern=ding, Pattern=eruit, Pattern=steken, Pattern=van, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=3| A | A : en ook nog een haak aan de zijkant
+	Free: Pattern=nog een, Pattern=aan de, Pattern=en, Pattern=ook
+	Constrained: Pattern=een, Pattern=de
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en één
+	Free: Pattern=en één
+	Constrained: Pattern=en
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : een rond staaf
+	Free: Pattern=een rond
+	Constrained: Pattern=een
+Turn ID=8| B | B : ja precies daar bovenop wat eruit steken zijn best wel klein toch
+	Free: Pattern=bovenop, Pattern=ja, Pattern=eruit, Pattern=klein, Pattern=zijn, Pattern=steken
+	Constrained: 
+Turn ID=9| A | A : ja heel klein ja
+	Free: Pattern=heel klein, Pattern=ja
+	Constrained: Pattern=klein
+Turn ID=10| B | B : ja ja ja dan zijn het
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=11| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : deze hebben
+	Free: Pattern=deze hebben
+	Constrained: Pattern=hebben
+Turn ID=13| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : Oh ja die hebben een soort van twee heel klein ding bovenop die hetzelfde zijn
+	Free: Pattern=bovenop, Pattern=hebben een, Pattern=ja, Pattern=ding, Pattern=die, Pattern=van, Pattern=zijn, Pattern=twee heel klein
+	Constrained: Pattern=twee, Pattern=een, Pattern=hebben, Pattern=klein, Pattern=heel klein
+Turn ID=15| B | B : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=16| B | B : aan de een kant een soort ja arm die een 90 graad hoek maken
+	Free: Pattern=aan de, Pattern=die, Pattern=ja, Pattern=een
+	Constrained: Pattern=de
+Turn ID=17| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : Eh en nog een rond slurf
+	Free: Pattern=nog een, Pattern=een rond, Pattern=en
+	Constrained: Pattern=een
+Turn ID=19| B | B : Lijken t een beetje
+	Free: Pattern=een
+	Constrained: 
+Turn ID=20| B | B : en er zitten die beker die gaan door een vierkant vlak heen
+	Free: Pattern=beker, Pattern=een, Pattern=heen, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=21| A | A : hmm
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : die hebben we de vorig ronde ook al voorbij
+	Free: Pattern=die, Pattern=hebben, Pattern=de, Pattern=ook
+	Constrained: 
+Turn ID=23| B | B : ja we hebben trouwens alles de vorig ronde hebben maar
+	Free: Pattern=hebben, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=24| A | A : Bedoel jij met die
+	Free: Pattern=met die
+	Constrained: Pattern=die, Pattern=met
+Turn ID=25| A | A : die twee heel klein dinge bovenop
+	Free: Pattern=die twee heel klein dinge, Pattern=bovenop
+	Constrained: Pattern=twee, Pattern=die twee, Pattern=die, Pattern=klein, Pattern=heel klein, Pattern=twee heel klein
+Turn ID=26| B | B : Hele klein
+	Free: Pattern=klein
+	Constrained: 
+Turn ID=27| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ja die ja
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=30| A | A : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=31| A | A : deze hebben een plateau om zich heen met twee kort ding aan de bovenkant
+	Free: Pattern=ding, Pattern=een plateau, Pattern=deze hebben, Pattern=heen, Pattern=met, Pattern=aan de bovenkant, Pattern=twee, Pattern=hebben een
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de, Pattern=hebben
+Turn ID=32| B | B : ehh beh beh beh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=33| B | B : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=35| B | B : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=36| B | B : dit zijn weer met die twee heel klein dinge aan de bovenkant
+	Free: Pattern=die twee heel klein dinge, Pattern=aan de bovenkant, Pattern=met die, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=de, Pattern=aan de, Pattern=die twee, Pattern=met, Pattern=die, Pattern=klein, Pattern=heel klein, Pattern=twee heel klein
+Turn ID=37| B | B : onderin net niet helemaal onderin zitten er een plateau omheen
+	Free: Pattern=een plateau
+	Constrained: Pattern=een
+Turn ID=38| B | B : en één
+	Free: Pattern=en één
+	Constrained: Pattern=en
+Turn ID=39| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=42| A | A : Plateautje met twee kort spriet bovenop
+	Free: Pattern=twee, Pattern=met, Pattern=bovenop
+	Constrained: 
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=45| B | B : dit zijn weer het plateaut redelijk laag
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=46| B | B : en bovenop die twee klein dinget die uitsteken
+	Free: Pattern=bovenop, Pattern=die twee, Pattern=die, Pattern=klein, Pattern=en
+	Constrained: Pattern=twee, Pattern=die
+Turn ID=47| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

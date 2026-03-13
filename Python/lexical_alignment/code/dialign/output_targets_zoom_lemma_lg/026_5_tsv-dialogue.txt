@@ -1,0 +1,191 @@
+A|0| A: _Oké_ nou _moeten_ jij _weer omschrijven_ _ja_ 
+B|1| B: [Oké] 
+B|2| B: [ja] nu [moeten] _ik_ [weer omschrijven] 
+B|3| B: euh deze _zijn_ ook erg euh symmetrisch 
+B|4| B: Euh hij _hebben_ ook _het zijn een_ cup _met_ _een_ lang _neus_ 
+B|5| B: _maar_ _op_ _de_ bovenkant _van_ _de_ _neus_ _zitten een_ dun steelt 
+B|6| B: _Euhm_ _en_ _aan_ beide _zijkant_ _hebben_ hij _zeggen maar_ zo'n flap 
+B|7| B: _en_ _op_ _de_ bovenkant _een_ euh _staaf_ 
+B|8| B: _wat_ _zeggen maar_ gewoon _plat op liggen_ 
+A|9| A: [een] [staaf] _dat_ _er_ [plat op liggen] 
+B|10| B: [ja] 
+A|11| A: [ja] [Euhm] [zijn] _dat_ [zeggen maar] [een] soort _balk_ 
+B|12| B: [ja] _een balk_ [ja] 
+A|13| A: [ja] oké _dan hebben ik_ hem 
+A|14| A: oké _en dan hebben ik_ [Euhm] _ja dat [zijn_ een] soort lijken wel soort robot _die_ [hebben] [een] linkerarm _die_ [met] [het] hand omhoog _en dan_ [de] rechterkant lijken [wat] armpje omlaag _en dan_ _als hoofddeksel_ [een balk] [een] _langwerpig balk_ 
+B|15| B: Euh even kijken 
+B|16| B: Euh [ja] [de] [hoofddeksel] [langwerpig balk] inderdaad [en dan] [zeggen maar] [de] _neus_ [zijn] lang [met] zo'n klein [staaf] [er] nog bovenop 
+B|17| B: toch 
+A|18| A: Neus ? [Euhm] 
+B|19| B: nee 
+A|20| A: [ja] zegmaar [ik] willen [het] niet eens [een] [neus] noemen 
+A|21| A: ze [zitten een] beetje [aan] [de] [zijkant] [van] _die_ kop 
+B|22| B: [ja] 
+B|23| B: mhm 
+A|24| A: [Euhm] [ja] [het zijn een] beetje één _staan_ zegmaar [de] linkerkant _voor_ jou rechts [dan] 
+A|25| A: [maar] [ik] zien [het] [een] beetje _als_ [een] soort lichaam [met] [de] linkerarm omhoog [en] [de] rechterarm omlaag 
+B|26| B: mhm 
+B|27| B: even kijken 
+B|28| B: [ja] [ik] denken [dat] [ik] weten welk [ik] bedoelen 
+B|29| B: [dat zijn] 
+A|30| A: [Oké] 
+B|31| B: Euh [ja] [dan hebben ik] diegene [met] [dat] euh [liggen] [balk] [zeggen maar] [als hoofddeksel] 
+A|32| A: oke 
+B|33| B: Euh 
+A|34| A: _ja dat zijn voor mij_ 
+B|35| B: mhm 
+A|36| A: [dan hebben ik] [dat] euhm [ja] figuur _met die twee arm_ waarvan [de] één linkerkant omhoog _staan_ 
+A|37| A: [en] [dat] _balk als_ hoed 
+B|38| B: Mjm 
+B|39| B: [ja dat zijn voor mij] 
+B|40| B: Euh [ja] [en dan hebben ik] diegene [met] euh [dat] [ja] omgevallen Like [balk als] hoofdeksel 
+B|41| B: [met die twee arm] 
+A|42| A: [ja dat zijn] 
+A|43| A: [twee arm] één omhoog 
+B|44| B: [ja] even kijken 
+B|45| B: [dat zijn voor mij] waar [staan] [die] 
+B|46| B: Euhhh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké nou moeten jij weer omschrijven ja
+	Free: Pattern=weer omschrijven, Pattern=Oké, Pattern=ja, Pattern=moeten
+	Constrained: 
+Turn ID=1| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| B | B : ja nu moeten ik weer omschrijven
+	Free: Pattern=weer omschrijven, Pattern=ja, Pattern=moeten, Pattern=ik
+	Constrained: 
+Turn ID=3| B | B : euh deze zijn ook erg euh symmetrisch
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : Euh hij hebben ook het zijn een cup met een lang neus
+	Free: Pattern=het zijn een, Pattern=een, Pattern=hebben, Pattern=neus, Pattern=met
+	Constrained: Pattern=zijn een, Pattern=het, Pattern=zijn, Pattern=een
+Turn ID=5| B | B : maar op de bovenkant van de neus zitten een dun steelt
+	Free: Pattern=de, Pattern=op, Pattern=neus, Pattern=zitten een, Pattern=van, Pattern=maar
+	Constrained: Pattern=een
+Turn ID=6| B | B : Euhm en aan beide zijkant hebben hij zeggen maar zo'n flap
+	Free: Pattern=aan, Pattern=zeggen maar, Pattern=hebben, Pattern=Euhm, Pattern=zijkant, Pattern=en
+	Constrained: Pattern=maar
+Turn ID=7| B | B : en op de bovenkant een euh staaf
+	Free: Pattern=de, Pattern=staaf, Pattern=op, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=8| B | B : wat zeggen maar gewoon plat op liggen
+	Free: Pattern=plat op liggen, Pattern=zeggen maar, Pattern=wat
+	Constrained: Pattern=liggen, Pattern=op, Pattern=maar
+Turn ID=9| A | A : een staaf dat er plat op liggen
+	Free: Pattern=dat, Pattern=staaf, Pattern=een, Pattern=er, Pattern=plat op liggen
+	Constrained: Pattern=liggen, Pattern=op
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja Euhm zijn dat zeggen maar een soort balk
+	Free: Pattern=dat, Pattern=ja, Pattern=een, Pattern=zeggen maar, Pattern=Euhm, Pattern=balk, Pattern=zijn
+	Constrained: Pattern=maar
+Turn ID=12| B | B : ja een balk ja
+	Free: Pattern=een balk, Pattern=ja
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=13| A | A : ja oké dan hebben ik hem
+	Free: Pattern=dan hebben ik, Pattern=ja
+	Constrained: Pattern=dan, Pattern=hebben, Pattern=ik
+Turn ID=14| A | A : oké en dan hebben ik Euhm ja dat zijn een soort lijken wel soort robot die hebben een linkerarm die met het hand omhoog en dan de rechterkant lijken wat armpje omlaag en dan als hoofddeksel een balk een langwerpig balk
+	Free: Pattern=als hoofddeksel, Pattern=langwerpig balk, Pattern=de, Pattern=en dan, Pattern=zijn een, Pattern=het, Pattern=hebben, Pattern=Euhm, Pattern=met, Pattern=die, Pattern=wat, Pattern=en dan hebben ik, Pattern=een balk, Pattern=ja dat zijn, Pattern=een
+	Constrained: Pattern=ja, Pattern=en dan, Pattern=een, Pattern=hebben, Pattern=dan hebben ik, Pattern=ik, Pattern=en, Pattern=zijn, Pattern=dat, Pattern=dat zijn, Pattern=hoofddeksel, Pattern=dan, Pattern=als, Pattern=balk
+Turn ID=15| B | B : Euh even kijken
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Euh ja de hoofddeksel langwerpig balk inderdaad en dan zeggen maar de neus zijn lang met zo'n klein staaf er nog bovenop
+	Free: Pattern=langwerpig balk, Pattern=hoofddeksel, Pattern=zeggen maar, Pattern=neus, Pattern=met, Pattern=er, Pattern=zijn, Pattern=de, Pattern=ja, Pattern=staaf, Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan, Pattern=balk, Pattern=maar
+Turn ID=17| B | B : toch
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : Neus ? Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=19| B | B : nee
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : ja zegmaar ik willen het niet eens een neus noemen
+	Free: Pattern=ja, Pattern=een, Pattern=het, Pattern=neus, Pattern=ik
+	Constrained: 
+Turn ID=21| A | A : ze zitten een beetje aan de zijkant van die kop
+	Free: Pattern=zitten een, Pattern=van, Pattern=de, Pattern=aan, Pattern=die, Pattern=zijkant
+	Constrained: Pattern=een
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : Euhm ja het zijn een beetje één staan zegmaar de linkerkant voor jou rechts dan
+	Free: Pattern=staan, Pattern=voor, Pattern=Euhm, Pattern=de, Pattern=ja, Pattern=het zijn een, Pattern=dan
+	Constrained: Pattern=zijn een, Pattern=het, Pattern=zijn, Pattern=een
+Turn ID=25| A | A : maar ik zien het een beetje als een soort lichaam met de linkerarm omhoog en de rechterarm omlaag
+	Free: Pattern=de, Pattern=een, Pattern=het, Pattern=als, Pattern=met, Pattern=ik, Pattern=en, Pattern=maar
+	Constrained: 
+Turn ID=26| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : ja ik denken dat ik weten welk ik bedoelen
+	Free: Pattern=ja, Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=29| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=30| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=31| B | B : Euh ja dan hebben ik diegene met dat euh liggen balk zeggen maar als hoofddeksel
+	Free: Pattern=dat, Pattern=als hoofddeksel, Pattern=ja, Pattern=zeggen maar, Pattern=balk, Pattern=met, Pattern=dan hebben ik, Pattern=liggen
+	Constrained: Pattern=hebben, Pattern=als, Pattern=ik, Pattern=maar, Pattern=hoofddeksel, Pattern=dan
+Turn ID=32| A | A : oke
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=34| A | A : ja dat zijn voor mij
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat zijn voor mij, Pattern=ja, Pattern=ja dat zijn, Pattern=voor, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=35| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : dan hebben ik dat euhm ja figuur met die twee arm waarvan de één linkerkant omhoog staan
+	Free: Pattern=met die twee arm, Pattern=dat, Pattern=staan, Pattern=dan hebben ik, Pattern=de, Pattern=ja
+	Constrained: Pattern=dan, Pattern=hebben, Pattern=twee arm, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=37| A | A : en dat balk als hoed
+	Free: Pattern=balk als, Pattern=en, Pattern=dat
+	Constrained: Pattern=balk, Pattern=als
+Turn ID=38| B | B : Mjm
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : ja dat zijn voor mij
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat zijn voor mij, Pattern=ja, Pattern=ja dat zijn, Pattern=voor, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=40| B | B : Euh ja en dan hebben ik diegene met euh dat ja omgevallen Like balk als hoofdeksel
+	Free: Pattern=dat, Pattern=balk als, Pattern=ja, Pattern=met, Pattern=en dan hebben ik
+	Constrained: Pattern=en dan, Pattern=dan, Pattern=hebben, Pattern=dan hebben ik, Pattern=ik, Pattern=en, Pattern=als, Pattern=balk
+Turn ID=41| B | B : met die twee arm
+	Free: Pattern=met die twee arm
+	Constrained: Pattern=die, Pattern=twee arm, Pattern=met
+Turn ID=42| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=43| A | A : twee arm één omhoog
+	Free: Pattern=twee arm
+	Constrained: 
+Turn ID=44| B | B : ja even kijken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| B | B : dat zijn voor mij waar staan die
+	Free: Pattern=dat zijn voor mij, Pattern=staan, Pattern=die
+	Constrained: Pattern=voor, Pattern=zijn, Pattern=dat zijn, Pattern=dat
+Turn ID=46| B | B : Euhhh
+	Free: 
+	Constrained: 

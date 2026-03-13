@@ -1,0 +1,191 @@
+B|0| B: Ehm 
+B|1| B: _deze_ doen me denken aan _een_ klimrek 
+B|2| B: op _een_ speeltuin 
+B|3| B: _het zijn_ gewoon _een pot_ _en dan_ _hebben_ je _een_ cirkel boven 
+B|4| B: _en dan_ _hebben_ je als neus _een_ verticaal staaf 
+B|5| B: _die_ _zo_ naar beneden gaan 
+B|6| B: _het_ _hebben_ _twee_ half maan cirkel 
+B|7| B: aan _de_ zijkant 
+B|8| B: _en dan_ doen _dat_ me denken aan _die_ speelrek 
+B|9| B: waar je _dan_ je hand op zet 
+B|10| B: _dan_ kunnen je _zo_ heen _en_ _weer_ bewegen 
+B|11| B: _dus_ zegmaar _het_ _het_ _het zijn_ alsof _het_ _een_ knot _hebben_ 
+B|12| B: _en_ aan allebei _de_ kant _hebben_ je _buis_ 
+B|13| B: _die een_ beetje _een_ half maan vorm _hebben_ 
+A|14| A: _Oh_ _ja_ _ja_ _ja_ 
+A|15| A: [dus] [het zijn] [een pot] hij [hebben] _bovenop_ [hebben] hij [een] bolle 
+B|16| B: [ja] 
+A|17| A: [en dan] [twee] inderdaad [twee] van [die] soort van arm 
+A|18| A: [en] voor [zijn] inderdaad zo'n [buis] ervoor 
+B|19| B: [ja] 
+A|20| A: [die] [dan] zeggen maar laag komen [dan] [dat] [de] [pot] komen 
+B|21| B: Klopt 
+A|22| A: [ja] oké 
+A|23| A: _dan _zijn_ het_ letter 
+A|24| A: oké volgens mij [hebben] we [deze] al [hebben] 
+A|25| A: want _dit zijn_ _dit zijn_ [weer] [die een] [die] zeggen maar [zo] [die] [hebben] [zo] [twee] van [die] arm 
+A|26| A: [en dan] [die] [pot] [hebben] [zo] [twee] van [die] arm [en dan] zo'n bol 
+A|27| A: jij noemen _dit_ [het] speeltoestel volgens mij 
+B|28| B: [ja] 
+B|29| B: eh [ja] [dan zijn] [dat] nummer 
+A|30| A: [ja] 
+B|31| B: _dit zijn het_ speelrek _met de bobbel_ op [de] bovenkant 
+B|32| B: _met de_ [twee] half maan 
+A|33| A: [ja] 
+A|34| A: _even zoeken_ 
+A|35| A: _Oh_ [ja] hier 
+A|36| A: Letter 
+A|37| A: [dit zijn het] speeltoestel 
+B|38| B: eh [even zoeken] 
+B|39| B: waar [zijn] [die] 
+B|40| B: [Oh] 
+B|41| B: eh nummer 
+B|42| B: [dit zijn het] speelrek 
+B|43| B: _met de_ knobbel [bovenop] 
+A|44| A: [ja] letter 
+A|45| A: [dit zijn het] speeltoestel [met de bobbel] [bovenop] 
+B|46| B: ehm nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : deze doen me denken aan een klimrek
+	Free: Pattern=deze, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : op een speeltuin
+	Free: Pattern=een
+	Constrained: 
+Turn ID=3| B | B : het zijn gewoon een pot en dan hebben je een cirkel boven
+	Free: Pattern=en dan, Pattern=een, Pattern=hebben, Pattern=het zijn, Pattern=een pot
+	Constrained: Pattern=dan, Pattern=een, Pattern=het, Pattern=en, Pattern=zijn, Pattern=pot
+Turn ID=4| B | B : en dan hebben je als neus een verticaal staaf
+	Free: Pattern=en dan, Pattern=hebben, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=5| B | B : die zo naar beneden gaan
+	Free: Pattern=die, Pattern=zo
+	Constrained: 
+Turn ID=6| B | B : het hebben twee half maan cirkel
+	Free: Pattern=twee, Pattern=hebben, Pattern=het
+	Constrained: 
+Turn ID=7| B | B : aan de zijkant
+	Free: Pattern=de
+	Constrained: 
+Turn ID=8| B | B : en dan doen dat me denken aan die speelrek
+	Free: Pattern=en dan, Pattern=die, Pattern=dat
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=9| B | B : waar je dan je hand op zet
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=10| B | B : dan kunnen je zo heen en weer bewegen
+	Free: Pattern=dan, Pattern=en, Pattern=weer, Pattern=zo
+	Constrained: 
+Turn ID=11| B | B : dus zegmaar het het het zijn alsof het een knot hebben
+	Free: Pattern=dus, Pattern=een, Pattern=het, Pattern=hebben, Pattern=het zijn
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=12| B | B : en aan allebei de kant hebben je buis
+	Free: Pattern=buis, Pattern=hebben, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=13| B | B : die een beetje een half maan vorm hebben
+	Free: Pattern=die een, Pattern=hebben, Pattern=een
+	Constrained: Pattern=die, Pattern=een
+Turn ID=14| A | A : Oh ja ja ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=15| A | A : dus het zijn een pot hij hebben bovenop hebben hij een bolle
+	Free: Pattern=bovenop, Pattern=dus, Pattern=een, Pattern=hebben, Pattern=het zijn, Pattern=een pot
+	Constrained: Pattern=pot, Pattern=zijn, Pattern=het, Pattern=een
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : en dan twee inderdaad twee van die soort van arm
+	Free: Pattern=en dan, Pattern=twee, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=18| A | A : en voor zijn inderdaad zo'n buis ervoor
+	Free: Pattern=buis, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : die dan zeggen maar laag komen dan dat de pot komen
+	Free: Pattern=dat, Pattern=de, Pattern=dan, Pattern=die, Pattern=pot
+	Constrained: 
+Turn ID=21| B | B : Klopt
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : dan zijn het letter
+	Free: Pattern=zijn het, Pattern=dan zijn
+	Constrained: Pattern=dan, Pattern=zijn, Pattern=het
+Turn ID=24| A | A : oké volgens mij hebben we deze al hebben
+	Free: Pattern=hebben, Pattern=deze
+	Constrained: 
+Turn ID=25| A | A : want dit zijn dit zijn weer die een die zeggen maar zo die hebben zo twee van die arm
+	Free: Pattern=twee, Pattern=hebben, Pattern=zo, Pattern=die, Pattern=die een, Pattern=weer, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=die, Pattern=zijn, Pattern=een
+Turn ID=26| A | A : en dan die pot hebben zo twee van die arm en dan zo'n bol
+	Free: Pattern=twee, Pattern=en dan, Pattern=hebben, Pattern=zo, Pattern=die, Pattern=pot
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=27| A | A : jij noemen dit het speeltoestel volgens mij
+	Free: Pattern=dit, Pattern=het
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : eh ja dan zijn dat nummer
+	Free: Pattern=dan zijn, Pattern=ja, Pattern=dat
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dit zijn het speelrek met de bobbel op de bovenkant
+	Free: Pattern=dit zijn het, Pattern=met de bobbel, Pattern=de
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=dit, Pattern=zijn, Pattern=dit zijn, Pattern=de, Pattern=met de
+Turn ID=32| B | B : met de twee half maan
+	Free: Pattern=met de, Pattern=twee
+	Constrained: Pattern=de
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : even zoeken
+	Free: Pattern=even zoeken
+	Constrained: 
+Turn ID=35| A | A : Oh ja hier
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=36| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : dit zijn het speeltoestel
+	Free: Pattern=dit zijn het
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=dit, Pattern=zijn, Pattern=dit zijn
+Turn ID=38| B | B : eh even zoeken
+	Free: Pattern=even zoeken
+	Constrained: 
+Turn ID=39| B | B : waar zijn die
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=40| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=41| B | B : eh nummer
+	Free: 
+	Constrained: 
+Turn ID=42| B | B : dit zijn het speelrek
+	Free: Pattern=dit zijn het
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=dit, Pattern=zijn, Pattern=dit zijn
+Turn ID=43| B | B : met de knobbel bovenop
+	Free: Pattern=met de, Pattern=bovenop
+	Constrained: Pattern=de
+Turn ID=44| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : dit zijn het speeltoestel met de bobbel bovenop
+	Free: Pattern=dit zijn het, Pattern=met de bobbel, Pattern=bovenop
+	Constrained: Pattern=zijn het, Pattern=het, Pattern=dit, Pattern=zijn, Pattern=dit zijn, Pattern=de, Pattern=met de
+Turn ID=46| B | B : ehm nummer
+	Free: 
+	Constrained: 

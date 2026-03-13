@@ -1,0 +1,131 @@
+B|0| B: Oké 
+B|1| B: _ik_ hebben hier _een_ beetje in mijn hoofd _dat_ het _ja_ zeggen maar dan 
+B|2| B: de beker zullen _ik_ maar zeggen 
+B|3| B: noemen _ik_ dan even de persoon 
+B|4| B: _die_ zitten _een_ beetje aan _een soort_ _kindertafel_ 
+B|5| B: dus dan zitten er zo'n _soort_ 
+B|6| B: _ja_ vierkant omheen _met_ twee zeggen maar poot 
+B|7| B: noemen _ik_ het dan maar 
+B|8| B: en dan op de _tafel_ staan _een_ 
+B|9| B: _ja_ zo'n vierkant _dat_ zeggen maar klein beginnen maar groot worden 
+B|10| B: _ja_ _een soort_ piramide zullen _ik_ maar zeggen maar dan omdraaien 
+B|11| B: en dan daarachter _nog_ _een_ klein haak 
+A|12| A: O [ja] 
+A|13| A: [ik] denken [dat] je bedoelen 
+B|14| B: [ja] 
+B|15| B: Oké 
+B|16| B: [ja] 
+A|17| A: _dit zijn_ [die] [een] [met] 
+A|18| A: [met] [een soort] 
+A|19| A: kleuter eettafeltje 
+B|20| B: Oh oké 
+B|21| B: even kijken waar staan [die] 
+A|22| A: [met] [dat] ding daar achter [nog] 
+B|23| B: _oh dat zijn_ 
+B|24| B: [ja] 
+B|25| B: [dit zijn] [met] het _kinder tafel_ 
+A|26| A: [dit zijn] [dat] [kinder tafel] 
+B|27| B: Oké _dat zijn_ 
+B|28| B: [dit zijn] [met] de _kindertafel_ 
+A|29| A: [oh dat zijn] 
+A|30| A: [dit zijn] [die] [met] [dat] [kindertafel] 
+B|31| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ik hebben hier een beetje in mijn hoofd dat het ja zeggen maar dan
+	Free: Pattern=een, Pattern=dat, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : de beker zullen ik maar zeggen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=3| B | B : noemen ik dan even de persoon
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=4| B | B : die zitten een beetje aan een soort kindertafel
+	Free: Pattern=een soort, Pattern=een, Pattern=die, Pattern=kindertafel
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=5| B | B : dus dan zitten er zo'n soort
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=6| B | B : ja vierkant omheen met twee zeggen maar poot
+	Free: Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=7| B | B : noemen ik het dan maar
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=8| B | B : en dan op de tafel staan een
+	Free: Pattern=een, Pattern=tafel
+	Constrained: 
+Turn ID=9| B | B : ja zo'n vierkant dat zeggen maar klein beginnen maar groot worden
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja een soort piramide zullen ik maar zeggen maar dan omdraaien
+	Free: Pattern=een soort, Pattern=ik, Pattern=ja
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=11| B | B : en dan daarachter nog een klein haak
+	Free: Pattern=een, Pattern=nog
+	Constrained: 
+Turn ID=12| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ik denken dat je bedoelen
+	Free: Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dit zijn die een met
+	Free: Pattern=dit zijn, Pattern=een, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=18| A | A : met een soort
+	Free: Pattern=een soort, Pattern=met
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=19| A | A : kleuter eettafeltje
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : Oh oké
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : even kijken waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=22| A | A : met dat ding daar achter nog
+	Free: Pattern=nog, Pattern=dat, Pattern=met
+	Constrained: 
+Turn ID=23| B | B : oh dat zijn
+	Free: Pattern=oh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : dit zijn met het kinder tafel
+	Free: Pattern=kinder tafel, Pattern=dit zijn, Pattern=met
+	Constrained: Pattern=tafel
+Turn ID=26| A | A : dit zijn dat kinder tafel
+	Free: Pattern=kinder tafel, Pattern=dit zijn, Pattern=dat
+	Constrained: Pattern=tafel
+Turn ID=27| B | B : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=28| B | B : dit zijn met de kindertafel
+	Free: Pattern=dit zijn, Pattern=kindertafel, Pattern=met
+	Constrained: 
+Turn ID=29| A | A : oh dat zijn
+	Free: Pattern=oh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat
+Turn ID=30| A | A : dit zijn die met dat kindertafel
+	Free: Pattern=dat, Pattern=kindertafel, Pattern=met, Pattern=die, Pattern=dit zijn
+	Constrained: 
+Turn ID=31| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

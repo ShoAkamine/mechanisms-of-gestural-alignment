@@ -1,0 +1,159 @@
+A|0| A: Oké _ik hebben nu_ _ja_ _een_ soort van je zien _een_ _paal_ _zeggen maar_ _en_ daar _zitten_ _het kop_ aan vast 
+A|1| A: _een_ beetje _bovenop_ _de paal_ _zeggen maar_ zo 
+A|2| A: zo soort van 
+B|3| B: mhm 
+A|4| A: Ehm _en_ _bovenop_ _het kop_ liggen _een rond_ 
+B|5| B: _Oh ja_ _en [de_ paal] [zitten] vooraan [zeggen maar] 
+A|6| A: [ja] [ja] 
+A|7| A: [en de] _armp_ soort van naar achter 
+B|8| B: [ja] 
+B|9| B: _ja heel dun armpjes_ 
+A|10| A: [ja] oké 
+A|11| A: [ja heel dun armpjes] 
+B|12| B: ok 
+B|13| B: [ik hebben] [het kop] _met_ [een rond] er [bovenop] 
+B|14| B: [en] dan zo'n balk vooraan 
+B|15| B: [en] [heel dun armpjes] 
+A|16| A: [ja] [ik] weten [het] 
+A|17| A: [ik hebben] één 
+A|18| A: [ja] [het] staan op [een] soort stok 
+A|19| A: [en] [bovenop] liggen [een] bolle 
+A|20| A: [een rond] 
+B|21| B: _met dun_ [armp] _weer_ 
+A|22| A: [met dun] 
+A|23| A: [ja] [weer] _die_ 
+B|24| B: _Oh ja_ 
+A|25| A: [Oh] 
+A|26| A: _die_ [hebben] net omschrijven 
+B|27| B: [ik hebben nu] dat [kop] [met] [een rond] er [bovenop] 
+B|28| B: [en] [een] stuk balk [zeggen maar] voor 
+B|29| B: [en] dan [met] [die] [dun armpjes] 
+A|30| A: [ja] [ja] 
+A|31| A: [ja] [ja] 
+A|32| A: [Oh] [ik hebben nu] [een rond] [bovenop] 
+A|33| A: Eh aan [een] [paal] 
+A|34| A: [met [dun] armpjes] 
+B|35| B: [ja] 
+B|36| B: [ik hebben] [het] [rond] [met] [die] [dun armpjes] 
+B|37| B: [en] [die] balk 
+A|38| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben nu ja een soort van je zien een paal zeggen maar en daar zitten het kop aan vast
+	Free: Pattern=ja, Pattern=het kop, Pattern=een, Pattern=zeggen maar, Pattern=zitten, Pattern=ik hebben nu, Pattern=paal, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=kop, Pattern=ik
+Turn ID=1| A | A : een beetje bovenop de paal zeggen maar zo
+	Free: Pattern=de paal, Pattern=zeggen maar, Pattern=bovenop, Pattern=een
+	Constrained: Pattern=paal
+Turn ID=2| A | A : zo soort van
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : Ehm en bovenop het kop liggen een rond
+	Free: Pattern=het kop, Pattern=een rond, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=het, Pattern=rond, Pattern=kop, Pattern=een
+Turn ID=5| B | B : Oh ja en de paal zitten vooraan zeggen maar
+	Free: Pattern=Oh ja, Pattern=de paal, Pattern=zitten, Pattern=zeggen maar, Pattern=en de
+	Constrained: Pattern=paal, Pattern=Oh, Pattern=en, Pattern=ja
+Turn ID=6| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en de armp soort van naar achter
+	Free: Pattern=en de, Pattern=armp
+	Constrained: Pattern=en
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja heel dun armpjes
+	Free: Pattern=ja heel dun armpjes
+	Constrained: Pattern=dun armpjes, Pattern=heel dun armpjes, Pattern=ja
+Turn ID=10| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja heel dun armpjes
+	Free: Pattern=ja heel dun armpjes
+	Constrained: Pattern=dun armpjes, Pattern=heel dun armpjes, Pattern=ja
+Turn ID=12| B | B : ok
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ik hebben het kop met een rond er bovenop
+	Free: Pattern=ik hebben, Pattern=bovenop, Pattern=het kop, Pattern=met, Pattern=een rond
+	Constrained: Pattern=een, Pattern=het, Pattern=hebben, Pattern=kop, Pattern=ik, Pattern=rond
+Turn ID=14| B | B : en dan zo'n balk vooraan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=15| B | B : en heel dun armpjes
+	Free: Pattern=heel dun armpjes, Pattern=en
+	Constrained: Pattern=dun armpjes
+Turn ID=16| A | A : ja ik weten het
+	Free: Pattern=het, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ik hebben één
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=18| A | A : ja het staan op een soort stok
+	Free: Pattern=het, Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : en bovenop liggen een bolle
+	Free: Pattern=en, Pattern=bovenop, Pattern=een
+	Constrained: 
+Turn ID=20| A | A : een rond
+	Free: Pattern=een rond
+	Constrained: Pattern=rond, Pattern=een
+Turn ID=21| B | B : met dun armp weer
+	Free: Pattern=met dun, Pattern=weer, Pattern=armp
+	Constrained: Pattern=met
+Turn ID=22| A | A : met dun
+	Free: Pattern=met dun
+	Constrained: Pattern=met
+Turn ID=23| A | A : ja weer die
+	Free: Pattern=weer, Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=25| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=26| A | A : die hebben net omschrijven
+	Free: Pattern=hebben, Pattern=die
+	Constrained: 
+Turn ID=27| B | B : ik hebben nu dat kop met een rond er bovenop
+	Free: Pattern=bovenop, Pattern=kop, Pattern=met, Pattern=een rond, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=een, Pattern=hebben, Pattern=ik, Pattern=rond
+Turn ID=28| B | B : en een stuk balk zeggen maar voor
+	Free: Pattern=zeggen maar, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=29| B | B : en dan met die dun armpjes
+	Free: Pattern=dun armpjes, Pattern=en, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=30| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : Oh ik hebben nu een rond bovenop
+	Free: Pattern=ik hebben nu, Pattern=een rond, Pattern=bovenop, Pattern=Oh
+	Constrained: Pattern=ik hebben, Pattern=een, Pattern=hebben, Pattern=ik, Pattern=rond
+Turn ID=33| A | A : Eh aan een paal
+	Free: Pattern=paal, Pattern=een
+	Constrained: 
+Turn ID=34| A | A : met dun armpjes
+	Free: Pattern=dun armpjes, Pattern=met dun
+	Constrained: Pattern=met
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : ik hebben het rond met die dun armpjes
+	Free: Pattern=ik hebben, Pattern=dun armpjes, Pattern=het, Pattern=met, Pattern=die, Pattern=rond
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=37| B | B : en die balk
+	Free: Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=38| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja

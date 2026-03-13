@@ -1,0 +1,135 @@
+B|0| B: _euh deze_ _zijn_ best wel compact 
+B|1| B: en hij _hebben_ erboven _een soort_ 
+B|2| B: _ja_ wat _zijn_ _het_ 
+B|3| B: _een_ _balk_ _er_ recht overheen lopen en links _een soort_ _ja_ zuigkap _of_ zo linksonder 
+B|4| B: en dan rechts _ja_ _een_ streep en iets van nog _een_ _blok_ eronder 
+A|5| A: [ja] 
+A|6| A: ik denken _dat_ _het zijn_ 
+B|7| B: [het zijn] niet heel duidelijk vorm 
+A|8| A: [ja] 
+A|9| A: nee G [zijn] _de_ enig _met een_ vierkant [blok] [er] echt _bovenop_ liggen 
+A|10| A: [of] [een] _rechthoekig_ [blok] 
+B|11| B: [ja] [een] beetje [rechthoekig] 
+B|12| B: _ja ja_ kloppen 
+A|13| A: [ja] [euh] 
+A|14| A: _euh deze hebben een_ _horizontaal_ vierkant [blok] [of] [een] [rechthoekig] [blok] [er] _bovenop_ liggen 
+A|15| A: [een soort] afzuigkap 
+B|16| B: en twee van _die_ _balk_ aan [de] zijkant 
+A|17| A: [ja ja] 
+B|18| B: _dat zijn_ 
+B|19| B: [euh deze hebben [een] soort] _balk_ [bovenop] 
+B|20| B: over eigenlijk gewoon [de] heel oppervlakte lopen 
+B|21| B: dan linksonder [een soort] dinge 
+B|22| B: en rechts ook iets [met een] streep nog 
+A|23| A: [zijn] [dat] [met] [die] Afzuigkap 
+B|24| B: [ja] 
+A|25| A: [euh deze hebben] _zo'n_ _horizontaal_ _zo'n_ _zo'n_ [rechthoekig] [blok] [bovenop] liggen 
+B|26| B: _euh waar zijn die_ _dat zijn_ 
+B|27| B: [euh deze hebben] aan [de] bovenkant [zo'n] plat _balk_ lopen 
+B|28| B: [horizontaal] 
+A|29| A: [euh waar zijn die] 
+A|30| A: [dat zijn] 
+A|31| A: [euh] dit [zijn die] [met] [die] [horizontaal] [balk] [die] [er] [bovenop] liggen 
+B|32| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : euh deze zijn best wel compact
+	Free: Pattern=euh deze, Pattern=zijn
+	Constrained: Pattern=euh
+Turn ID=1| B | B : en hij hebben erboven een soort
+	Free: Pattern=een soort, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=2| B | B : ja wat zijn het
+	Free: Pattern=zijn, Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : een balk er recht overheen lopen en links een soort ja zuigkap of zo linksonder
+	Free: Pattern=of, Pattern=ja, Pattern=een, Pattern=balk, Pattern=er, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=4| B | B : en dan rechts ja een streep en iets van nog een blok eronder
+	Free: Pattern=een, Pattern=blok, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ik denken dat het zijn
+	Free: Pattern=het zijn, Pattern=dat
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=7| B | B : het zijn niet heel duidelijk vorm
+	Free: Pattern=het zijn
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : nee G zijn de enig met een vierkant blok er echt bovenop liggen
+	Free: Pattern=bovenop, Pattern=de, Pattern=met een, Pattern=er, Pattern=blok, Pattern=zijn
+	Constrained: Pattern=een, Pattern=met
+Turn ID=10| A | A : of een rechthoekig blok
+	Free: Pattern=een, Pattern=blok, Pattern=of, Pattern=rechthoekig
+	Constrained: 
+Turn ID=11| B | B : ja een beetje rechthoekig
+	Free: Pattern=een, Pattern=rechthoekig, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja ja kloppen
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=13| A | A : ja euh
+	Free: Pattern=euh, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : euh deze hebben een horizontaal vierkant blok of een rechthoekig blok er bovenop liggen
+	Free: Pattern=bovenop, Pattern=of, Pattern=euh deze hebben een, Pattern=rechthoekig, Pattern=een, Pattern=er, Pattern=blok, Pattern=horizontaal
+	Constrained: Pattern=euh deze hebben, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=euh deze
+Turn ID=15| A | A : een soort afzuigkap
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=16| B | B : en twee van die balk aan de zijkant
+	Free: Pattern=balk, Pattern=de, Pattern=die
+	Constrained: 
+Turn ID=17| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=18| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : euh deze hebben een soort balk bovenop
+	Free: Pattern=euh deze hebben een, Pattern=een soort, Pattern=bovenop, Pattern=balk
+	Constrained: Pattern=euh deze hebben, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=euh deze
+Turn ID=20| B | B : over eigenlijk gewoon de heel oppervlakte lopen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=21| B | B : dan linksonder een soort dinge
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=22| B | B : en rechts ook iets met een streep nog
+	Free: Pattern=met een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=23| A | A : zijn dat met die Afzuigkap
+	Free: Pattern=dat, Pattern=met, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : euh deze hebben zo'n horizontaal zo'n zo'n rechthoekig blok bovenop liggen
+	Free: Pattern=bovenop, Pattern=zo'n, Pattern=rechthoekig, Pattern=euh deze hebben, Pattern=blok, Pattern=horizontaal
+	Constrained: Pattern=euh deze, Pattern=euh, Pattern=hebben
+Turn ID=26| B | B : euh waar zijn die dat zijn
+	Free: Pattern=euh waar zijn die, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn die, Pattern=euh, Pattern=die, Pattern=zijn
+Turn ID=27| B | B : euh deze hebben aan de bovenkant zo'n plat balk lopen
+	Free: Pattern=euh deze hebben, Pattern=zo'n, Pattern=balk, Pattern=de
+	Constrained: Pattern=euh deze, Pattern=euh, Pattern=hebben
+Turn ID=28| B | B : horizontaal
+	Free: Pattern=horizontaal
+	Constrained: 
+Turn ID=29| A | A : euh waar zijn die
+	Free: Pattern=euh waar zijn die
+	Constrained: Pattern=zijn die, Pattern=zijn, Pattern=die, Pattern=euh
+Turn ID=30| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| A | A : euh dit zijn die met die horizontaal balk die er bovenop liggen
+	Free: Pattern=bovenop, Pattern=zijn die, Pattern=euh, Pattern=balk, Pattern=met, Pattern=die, Pattern=er, Pattern=horizontaal
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=32| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

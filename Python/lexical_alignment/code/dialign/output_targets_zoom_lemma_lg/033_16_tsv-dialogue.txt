@@ -1,0 +1,75 @@
+A|0| A: Oké _euh_ nu _hebben_ _ik_ er één 
+A|1| A: _en_ het doen mij eigenlijk ook _denken_ _aan_ een soort gezicht 
+A|2| A: alleen _dan_ dat al _euh_ uitsteeksel heel erg uitvergroot zijn 
+A|3| A: _dus_ je _hebben_ een soort van eeniets naar voren _en_ dat zijn dat zijn _worden_ eerst _steeds_ bred _en_ _dan_ weer _steeds_ dunn dat zijn hetzelfde _aan de_ bovenkant zien als soort vorm van een _veer_ _aan de_ voorkant als je het als plat iets zien _en_ _aan de_ zijkant zijn het naar _de rechterkant_ allemaal _blok_ _die steeds groot worden_ _en_ naar _de linkerkant_ lijken het een soort kronkel buis 
+B|4| B: _ja_ nummer [denken] [ik] 
+B|5| B: _Euh_ _ja_ _ik hebben_ [dan] _die _met die_ veert_ 
+B|6| B: [dus] [euh] 1 [veer] boven 1 [veer] voor 
+B|7| B: [dan] [die] _blok aan de rechterkant_ [die steeds groot worden] 
+B|8| B: [en] [die] kringel [aan [de] linkerkant] 
+A|9| A: [ja] [euh] [ja] [dus] dat zijn 
+A|10| A: [Euh] nu [hebben] [ik] [die met die] vergroot [met die veert] [en] [met die] vergroot [blok aan de rechterkant] 
+B|11| B: [ja] 
+B|12| B: [Euh] _ik hebben_ [die met die] [veer] 
+A|13| A: [ja] dat zijn 
+A|14| A: [en] [ik hebben] nu [met] [de] [veer] 
+B|15| B: nummer 
+B|16| B: [euh] [de] [veert] 
+A|17| A: dat zijn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké euh nu hebben ik er één
+	Free: Pattern=euh, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=1| A | A : en het doen mij eigenlijk ook denken aan een soort gezicht
+	Free: Pattern=en, Pattern=aan, Pattern=denken
+	Constrained: 
+Turn ID=2| A | A : alleen dan dat al euh uitsteeksel heel erg uitvergroot zijn
+	Free: Pattern=euh, Pattern=dan
+	Constrained: 
+Turn ID=3| A | A : dus je hebben een soort van eeniets naar voren en dat zijn dat zijn worden eerst steeds bred en dan weer steeds dunn dat zijn hetzelfde aan de bovenkant zien als soort vorm van een veer aan de voorkant als je het als plat iets zien en aan de zijkant zijn het naar de rechterkant allemaal blok die steeds groot worden en naar de linkerkant lijken het een soort kronkel buis
+	Free: Pattern=veer, Pattern=dus, Pattern=de rechterkant, Pattern=dan, Pattern=de linkerkant, Pattern=die steeds groot worden, Pattern=en, Pattern=blok, Pattern=aan de, Pattern=worden, Pattern=steeds, Pattern=hebben
+	Constrained: Pattern=worden, Pattern=steeds, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=4| B | B : ja nummer denken ik
+	Free: Pattern=ja, Pattern=ik, Pattern=denken
+	Constrained: 
+Turn ID=5| B | B : Euh ja ik hebben dan die met die veert
+	Free: Pattern=ik hebben, Pattern=ja, Pattern=die met die, Pattern=dan, Pattern=met die veert, Pattern=Euh
+	Constrained: Pattern=met die, Pattern=hebben, Pattern=met, Pattern=die, Pattern=veert, Pattern=ik
+Turn ID=6| B | B : dus euh 1 veer boven 1 veer voor
+	Free: Pattern=euh, Pattern=veer, Pattern=dus
+	Constrained: 
+Turn ID=7| B | B : dan die blok aan de rechterkant die steeds groot worden
+	Free: Pattern=die steeds groot worden, Pattern=blok aan de rechterkant, Pattern=die, Pattern=dan
+	Constrained: Pattern=de rechterkant, Pattern=steeds, Pattern=die, Pattern=blok, Pattern=de, Pattern=aan, Pattern=aan de, Pattern=worden
+Turn ID=8| B | B : en die kringel aan de linkerkant
+	Free: Pattern=de linkerkant, Pattern=aan de, Pattern=en, Pattern=die
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=9| A | A : ja euh ja dus dat zijn
+	Free: Pattern=euh, Pattern=ja, Pattern=dus
+	Constrained: 
+Turn ID=10| A | A : Euh nu hebben ik die met die vergroot met die veert en met die vergroot blok aan de rechterkant
+	Free: Pattern=met die, Pattern=die met die, Pattern=blok aan de rechterkant, Pattern=met die veert, Pattern=Euh, Pattern=hebben, Pattern=ik, Pattern=en
+	Constrained: Pattern=met die, Pattern=de rechterkant, Pattern=aan de, Pattern=met, Pattern=die, Pattern=veert, Pattern=blok, Pattern=de, Pattern=aan
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Euh ik hebben die met die veer
+	Free: Pattern=die met die, Pattern=ik hebben, Pattern=veer, Pattern=Euh
+	Constrained: Pattern=met die, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=13| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : en ik hebben nu met de veer
+	Free: Pattern=de, Pattern=met, Pattern=en, Pattern=ik hebben, Pattern=veer
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=15| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : euh de veert
+	Free: Pattern=euh, Pattern=de, Pattern=veert
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: 
+	Constrained: 

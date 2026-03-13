@@ -1,0 +1,131 @@
+A|0| A: Oké _de_ volgen _zijn_ eigenlijk _zijn_ _een_ kom 
+A|1| A: maar _het_ lijken net op _een_ _die_ komen zullen dan _een_ _fietsmand_ _kunnen_ _zijn_ 
+A|2| A: waarbij je _het_ stuur eromheen _hebben_ 
+A|3| A: _met_ _de_ stang naar beneden 
+B|4| B: _ja_ [met] [een] rond balletje erbovenop 
+A|5| A: [ja] [ja] 
+B|6| B: [ja] oké 
+B|7| B: _dit zijn_ hoe jij als [de] _de fietsmand_ omschrijven 
+B|8| B: _of_ _basketbal_ 
+B|9| B: Net [hebben] _ik_ _hem_ 
+A|10| A: [ja] 
+A|11| A: [ik] [hebben] [hem] 
+A|12| A: [basketbal] [zijn] leuk 
+B|13| B: [ja] 
+B|14| B: [ja] 
+A|15| A: P 
+A|16| A: [dit zijn] [de] [basketbal] 
+A|17| A: _of de_ mand _of de fietsmand_ 
+B|18| B: Hm-hm 
+B|19| B: waar [zijn] [die] heen 
+B|20| B: ah hier 
+B|21| B: [de] [het] basketbalnet 
+B|22| B: [of de fietsmand] 
+A|23| A: [ja] 
+A|24| A: dat [zijn] 
+A|25| A: [de fietsmand] 
+B|26| B: [de fietsmand] 
+B|27| B: [die] [zijn] altijd makkelijk 
+B|28| B: als [ik] [hem] [kunnen] vinden 
+B|29| B: Basketbalnet 
+A|30| A: [ja] 
+A|31| A: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké de volgen zijn eigenlijk zijn een kom
+	Free: Pattern=een, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=1| A | A : maar het lijken net op een die komen zullen dan een fietsmand kunnen zijn
+	Free: Pattern=kunnen, Pattern=een, Pattern=het, Pattern=die, Pattern=fietsmand, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : waarbij je het stuur eromheen hebben
+	Free: Pattern=het, Pattern=hebben
+	Constrained: 
+Turn ID=3| A | A : met de stang naar beneden
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=4| B | B : ja met een rond balletje erbovenop
+	Free: Pattern=een, Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=5| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : dit zijn hoe jij als de de fietsmand omschrijven
+	Free: Pattern=de fietsmand, Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=fietsmand, Pattern=zijn, Pattern=de
+Turn ID=8| B | B : of basketbal
+	Free: Pattern=of, Pattern=basketbal
+	Constrained: 
+Turn ID=9| B | B : Net hebben ik hem
+	Free: Pattern=hebben, Pattern=hem, Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ik hebben hem
+	Free: Pattern=hebben, Pattern=hem, Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : basketbal zijn leuk
+	Free: Pattern=basketbal, Pattern=zijn
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : P
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : dit zijn de basketbal
+	Free: Pattern=dit zijn, Pattern=basketbal, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=17| A | A : of de mand of de fietsmand
+	Free: Pattern=of de fietsmand, Pattern=of de
+	Constrained: Pattern=of de, Pattern=of, Pattern=de fietsmand, Pattern=de, Pattern=fietsmand
+Turn ID=18| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : waar zijn die heen
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=20| B | B : ah hier
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : de het basketbalnet
+	Free: Pattern=het, Pattern=de
+	Constrained: 
+Turn ID=22| B | B : of de fietsmand
+	Free: Pattern=of de fietsmand
+	Constrained: Pattern=of de, Pattern=of, Pattern=de fietsmand, Pattern=de, Pattern=fietsmand
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=25| A | A : de fietsmand
+	Free: Pattern=de fietsmand
+	Constrained: Pattern=fietsmand, Pattern=de
+Turn ID=26| B | B : de fietsmand
+	Free: Pattern=de fietsmand
+	Constrained: Pattern=fietsmand, Pattern=de
+Turn ID=27| B | B : die zijn altijd makkelijk
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=28| B | B : als ik hem kunnen vinden
+	Free: Pattern=hem, Pattern=kunnen, Pattern=ik
+	Constrained: 
+Turn ID=29| B | B : Basketbalnet
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

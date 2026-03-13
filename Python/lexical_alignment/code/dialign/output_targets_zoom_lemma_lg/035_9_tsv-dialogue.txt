@@ -1,0 +1,163 @@
+B|0| B: _Oh_ nee 
+B|1| B: _Ehm_ 
+B|2| B: _ik hebben nu_ bij mijn plaat _een_ vierkant ergens omheen 
+B|3| B: _en_ _die_ _hebben_ dan links van _het_ hoofdonderdeel _een soort_ van cilinderachtig uitsteeksel 
+B|4| B: dan _hebben hij een_ half _cirkel_ bovenop _zijn_ hoofd zeggen _maar_ 
+B|5| B: _en_ _een soort_ van _veerachtig_ vormp ook op _zijn_ hoofd _maar_ dan _aan de_ rechterkant 
+A|6| A: Steekt _hij een beetje_ rechtsuit naar boven 
+A|7| A: [die] [veerachtig] ding 
+B|8| B: _ja_ 
+A|9| A: Oké [ik] denken _dat_ 
+B|10| B: _en_ onder onder _hebben [hij een_ beetje] _zo'n_ ovaal-achtig pootje zeggen _maar_ 
+A|11| A: Oké [ik] denken _dat_ [ik] [het] _weten_ 
+A|12| A: [Ehm] 
+A|13| A: [Ehm] [ik hebben _nu] één_ [en] daar komen weer [zo'n] [soort] _veer_ uit _rechtsboven_ 
+A|14| A: [en] link [hebben hij [een] soort] cilinderafgevormig neus _lijken_ [het] wel 
+A|15| A: [en] _er_ komen linksboven nog [een soort] [cirkel] uit _maar die zien_ je [maar] voor [een] klein deel 
+B|16| B: _Oh_ _ja_ [ik] [weten] welk [het] _zijn_ 
+B|17| B: [ik hebben] [er] [nu één] [die] [een] 
+B|18| B: [soort] van [cirkel] _aan de_ linkerkant [hebben] [maar die zien] wij _niet helemaal_ dus [dat] [lijken] op [zo'n] half [cirkel] 
+B|19| B: [en] _aan de_ linkerkant [hebben hij] ook [zo'n] cilinder uitsteken 
+B|20| B: [en] [die] [hebben] ook _zo'n veer_ op _de_ kop [die] rechts uitsteken 
+A|21| A: waar zitten _die cirkel die we_ [niet helemaal] [zien] 
+B|22| B: _aan de_ linkerkant 
+B|23| B: [een beetje] zo bovenop hetje [zien] [het] eigenlijk als [een] half [cirkel] bovenop [het] hoofd 
+A|24| A: [Oh] [en] linksboven komen [er] [zo'n veer] uit 
+B|25| B: Eh _ja_ _ja_ [rechtsboven] 
+A|26| A: eh [rechtsboven] bedoelen [ik] 
+A|27| A: [ja] [dat] [zijn] 
+A|28| A: [ik hebben] _met die cirkel die we_ nauwelijks [zien] [aan de] bovenkant 
+A|29| A: [en] [zo'n veer] [die] komen [aan de] rechterbovenkant eruit 
+A|30| A: [ja] 
+B|31| B: [Oh] [ja] 
+B|32| B: Eh [met] [dat] [met die] [soort] van cilinder [aan de] linkerkant 
+A|33| A: [ja] kloppen [ja] 
+B|34| B: [ja] 
+B|35| B: _ik hebben die met die cirkel die we_ bijna [niet] _zien en_ dan [die] [veer] op [de] rechterkant van [het] hoofd 
+B|36| B: [met] [dat] cilindervormig uitstuksel [aan de] linkerkant 
+A|37| A: [ja] 
+A|38| A: eh [ik hebben die met die cirkel die we] nauwelijks [zien en] daar komen [een] [veer] nog rechtsbovenuit 
+B|39| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh nee
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=2| B | B : ik hebben nu bij mijn plaat een vierkant ergens omheen
+	Free: Pattern=ik hebben nu, Pattern=een
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=3| B | B : en die hebben dan links van het hoofdonderdeel een soort van cilinderachtig uitsteeksel
+	Free: Pattern=het, Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=4| B | B : dan hebben hij een half cirkel bovenop zijn hoofd zeggen maar
+	Free: Pattern=hebben hij een, Pattern=zijn, Pattern=maar, Pattern=cirkel
+	Constrained: Pattern=een, Pattern=hebben hij, Pattern=hebben
+Turn ID=5| B | B : en een soort van veerachtig vormp ook op zijn hoofd maar dan aan de rechterkant
+	Free: Pattern=veerachtig, Pattern=aan de, Pattern=een soort, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=een, Pattern=de, Pattern=soort
+Turn ID=6| A | A : Steekt hij een beetje rechtsuit naar boven
+	Free: Pattern=hij een beetje
+	Constrained: Pattern=een beetje, Pattern=een
+Turn ID=7| A | A : die veerachtig ding
+	Free: Pattern=veerachtig, Pattern=die
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké ik denken dat
+	Free: Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=10| B | B : en onder onder hebben hij een beetje zo'n ovaal-achtig pootje zeggen maar
+	Free: Pattern=zo'n, Pattern=hebben hij een, Pattern=hij een beetje, Pattern=en, Pattern=maar
+	Constrained: Pattern=een beetje, Pattern=een, Pattern=hebben hij, Pattern=hebben
+Turn ID=11| A | A : Oké ik denken dat ik het weten
+	Free: Pattern=dat, Pattern=het, Pattern=ik, Pattern=weten
+	Constrained: 
+Turn ID=12| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=13| A | A : Ehm ik hebben nu één en daar komen weer zo'n soort veer uit rechtsboven
+	Free: Pattern=veer, Pattern=soort, Pattern=zo'n, Pattern=rechtsboven, Pattern=en, Pattern=ik hebben nu, Pattern=Ehm, Pattern=nu één
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=14| A | A : en link hebben hij een soort cilinderafgevormig neus lijken het wel
+	Free: Pattern=lijken, Pattern=hebben hij een, Pattern=het, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=hebben hij, Pattern=soort, Pattern=hebben
+Turn ID=15| A | A : en er komen linksboven nog een soort cirkel uit maar die zien je maar voor een klein deel
+	Free: Pattern=cirkel, Pattern=maar die zien, Pattern=een, Pattern=er, Pattern=een soort, Pattern=en, Pattern=maar
+	Constrained: Pattern=soort, Pattern=een, Pattern=maar, Pattern=die, Pattern=zien
+Turn ID=16| B | B : Oh ja ik weten welk het zijn
+	Free: Pattern=ja, Pattern=weten, Pattern=het, Pattern=ik, Pattern=Oh, Pattern=zijn
+	Constrained: 
+Turn ID=17| B | B : ik hebben er nu één die een
+	Free: Pattern=ik hebben, Pattern=nu één, Pattern=een, Pattern=die, Pattern=er
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=18| B | B : soort van cirkel aan de linkerkant hebben maar die zien wij niet helemaal dus dat lijken op zo'n half cirkel
+	Free: Pattern=cirkel, Pattern=dat, Pattern=soort, Pattern=zo'n, Pattern=maar die zien, Pattern=niet helemaal, Pattern=aan de, Pattern=lijken, Pattern=hebben
+	Constrained: Pattern=de, Pattern=niet, Pattern=maar, Pattern=die, Pattern=zien
+Turn ID=19| B | B : en aan de linkerkant hebben hij ook zo'n cilinder uitsteken
+	Free: Pattern=hebben hij, Pattern=aan de, Pattern=zo'n, Pattern=en
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=20| B | B : en die hebben ook zo'n veer op de kop die rechts uitsteken
+	Free: Pattern=de, Pattern=hebben, Pattern=en, Pattern=zo'n veer, Pattern=die
+	Constrained: Pattern=zo'n, Pattern=veer
+Turn ID=21| A | A : waar zitten die cirkel die we niet helemaal zien
+	Free: Pattern=die cirkel die we, Pattern=niet helemaal, Pattern=zien
+	Constrained: Pattern=niet, Pattern=cirkel, Pattern=die
+Turn ID=22| B | B : aan de linkerkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=23| B | B : een beetje zo bovenop hetje zien het eigenlijk als een half cirkel bovenop het hoofd
+	Free: Pattern=cirkel, Pattern=een, Pattern=het, Pattern=zien, Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=24| A | A : Oh en linksboven komen er zo'n veer uit
+	Free: Pattern=zo'n veer, Pattern=Oh, Pattern=en, Pattern=er
+	Constrained: Pattern=zo'n, Pattern=veer
+Turn ID=25| B | B : Eh ja ja rechtsboven
+	Free: Pattern=ja, Pattern=rechtsboven
+	Constrained: 
+Turn ID=26| A | A : eh rechtsboven bedoelen ik
+	Free: Pattern=ik, Pattern=rechtsboven
+	Constrained: 
+Turn ID=27| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ik hebben met die cirkel die we nauwelijks zien aan de bovenkant
+	Free: Pattern=met die cirkel die we, Pattern=ik hebben, Pattern=aan de, Pattern=zien
+	Constrained: Pattern=cirkel, Pattern=met die, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=die cirkel die we
+Turn ID=29| A | A : en zo'n veer die komen aan de rechterbovenkant eruit
+	Free: Pattern=zo'n veer, Pattern=aan de, Pattern=en, Pattern=die
+	Constrained: Pattern=zo'n, Pattern=veer, Pattern=de
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=32| B | B : Eh met dat met die soort van cilinder aan de linkerkant
+	Free: Pattern=soort, Pattern=aan de, Pattern=met, Pattern=dat, Pattern=met die
+	Constrained: Pattern=de, Pattern=die, Pattern=met
+Turn ID=33| A | A : ja kloppen ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : ik hebben die met die cirkel die we bijna niet zien en dan die veer op de rechterkant van het hoofd
+	Free: Pattern=veer, Pattern=ik hebben die met die cirkel die we, Pattern=niet, Pattern=het, Pattern=die, Pattern=de, Pattern=zien en
+	Constrained: Pattern=met die, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=die cirkel die we, Pattern=ik hebben, Pattern=cirkel, Pattern=die, Pattern=zien, Pattern=met die cirkel die we, Pattern=en
+Turn ID=36| B | B : met dat cilindervormig uitstuksel aan de linkerkant
+	Free: Pattern=aan de, Pattern=dat, Pattern=met
+	Constrained: Pattern=de
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : eh ik hebben die met die cirkel die we nauwelijks zien en daar komen een veer nog rechtsbovenuit
+	Free: Pattern=ik hebben die met die cirkel die we, Pattern=zien en, Pattern=een, Pattern=veer
+	Constrained: Pattern=met die, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=die cirkel die we, Pattern=ik hebben, Pattern=cirkel, Pattern=die, Pattern=zien, Pattern=met die cirkel die we, Pattern=en
+Turn ID=39| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

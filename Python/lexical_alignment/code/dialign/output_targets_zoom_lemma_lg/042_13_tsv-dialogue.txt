@@ -1,0 +1,67 @@
+A|0| A: ehm _deze_ doen mezelf aan _Pippi Langkous_ denken 
+A|1| A: alsof er _een_ soort van vlechten aan _de_ zijkant zitten 
+A|2| A: Eh _en_ _een_ soort van rond neus op _een_ _plateau_ 
+B|3| B: _ja_ [de] enig met [een] echt bodem toch 
+A|4| A: [ja] 
+B|5| B: [ja] 
+B|6| B: _Oh_ [deze] hebben we al hebben 
+B|7| B: [en] _dit zijn Pippi Langkous_ voor jou 
+B|8| B: met dat vierkant [plateau] 
+A|9| A: [ja] 
+A|10| A: Yes 
+A|11| A: [Oh] 
+A|12| A: [dit zijn Pippi Langkous] 
+B|13| B: [dit zijn Pippi Langkous] weer 
+A|14| A: [Pippi Langkous] 
+B|15| B: [dit zijn Pippi Langkous] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze doen mezelf aan Pippi Langkous denken
+	Free: Pattern=Pippi Langkous, Pattern=deze
+	Constrained: 
+Turn ID=1| A | A : alsof er een soort van vlechten aan de zijkant zitten
+	Free: Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=2| A | A : Eh en een soort van rond neus op een plateau
+	Free: Pattern=een, Pattern=en, Pattern=plateau
+	Constrained: 
+Turn ID=3| B | B : ja de enig met een echt bodem toch
+	Free: Pattern=een, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oh deze hebben we al hebben
+	Free: Pattern=deze, Pattern=Oh
+	Constrained: 
+Turn ID=7| B | B : en dit zijn Pippi Langkous voor jou
+	Free: Pattern=dit zijn Pippi Langkous, Pattern=en
+	Constrained: Pattern=Pippi Langkous
+Turn ID=8| B | B : met dat vierkant plateau
+	Free: Pattern=plateau
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| A | A : dit zijn Pippi Langkous
+	Free: Pattern=dit zijn Pippi Langkous
+	Constrained: Pattern=Pippi Langkous
+Turn ID=13| B | B : dit zijn Pippi Langkous weer
+	Free: Pattern=dit zijn Pippi Langkous
+	Constrained: Pattern=Pippi Langkous
+Turn ID=14| A | A : Pippi Langkous
+	Free: Pattern=Pippi Langkous
+	Constrained: 
+Turn ID=15| B | B : dit zijn Pippi Langkous
+	Free: Pattern=dit zijn Pippi Langkous
+	Constrained: Pattern=Pippi Langkous

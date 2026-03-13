@@ -1,0 +1,147 @@
+B|0| B: _Oké_ 
+B|1| B: Ehm 
+A|2| A: [Oké] 
+B|3| B: Hebben jij _nu iets_ 
+A|4| A: _ja_ _ik hebben_ [nu iets] 
+B|5| B: [Oké] 
+A|6| A: [Oké] 
+A|7| A: ehm _het_ lijken een beetje _op_ een _robot_ vinden _ik_ 
+A|8| A: _Eh_ _het_ _hebben_ een atenne 
+A|9| A: eh beetje 
+B|10| B: _Oh_ [ja] 
+B|11| B: _en_ _twee van die_ 
+A|12| A: [ja] [twee van die] robotarm 
+A|13| A: [en] _dan_ _link_ _hebben hij_ een heel groot wit plaat tegen tegen _zijn_ h-h-h lichaam aan 
+B|14| B: Hebben [hij] [hebben hij] [twee van die] soort half _verrekijker_ [op] [zijn] oog 
+A|15| A: [ja] [ja] [ja] 
+B|16| B: [link] 
+A|17| A: [ja] [link] [ja] 
+A|18| A: Klopt 
+B|19| B: oké [dan] weten [ik] [het] denken [ik] 
+A|20| A: [Oké] 
+B|21| B: [Oké] nou 
+B|22| B: [ik hebben] _de robot_ 
+A|23| A: oeh met [de] [verrekijker] 
+B|24| B: [ja] 
+A|25| A: [Oh] 
+A|26| A: eh [ik hebben] [nu] [de robot] 
+B|27| B: _dat_ [zijn] 
+B|28| B: [ik hebben] [de robot] 
+A|29| A: [ja] 
+B|30| B: Top 
+A|31| A: [de robot] [hebben] [ik] 
+B|32| B: [Eh] 
+B|33| B: [ik hebben] [robot] 
+A|34| A: Robot 
+A|35| A: Wacht [ik] moeten eerst kijken voor [dat] [ik] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| B | B : Hebben jij nu iets
+	Free: Pattern=nu iets
+	Constrained: Pattern=nu
+Turn ID=4| A | A : ja ik hebben nu iets
+	Free: Pattern=nu iets, Pattern=ik hebben, Pattern=ja
+	Constrained: Pattern=hebben, Pattern=nu, Pattern=ik
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| A | A : ehm het lijken een beetje op een robot vinden ik
+	Free: Pattern=het, Pattern=ik, Pattern=robot, Pattern=op
+	Constrained: 
+Turn ID=8| A | A : Eh het hebben een atenne
+	Free: Pattern=hebben, Pattern=het, Pattern=Eh
+	Constrained: 
+Turn ID=9| A | A : eh beetje
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=11| B | B : en twee van die
+	Free: Pattern=twee van die, Pattern=en
+	Constrained: 
+Turn ID=12| A | A : ja twee van die robotarm
+	Free: Pattern=twee van die, Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en dan link hebben hij een heel groot wit plaat tegen tegen zijn h-h-h lichaam aan
+	Free: Pattern=hebben hij, Pattern=dan, Pattern=link, Pattern=en, Pattern=zijn
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=14| B | B : Hebben hij hebben hij twee van die soort half verrekijker op zijn oog
+	Free: Pattern=twee van die, Pattern=hebben hij, Pattern=op, Pattern=hij, Pattern=verrekijker, Pattern=zijn
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=15| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : link
+	Free: Pattern=link
+	Constrained: 
+Turn ID=17| A | A : ja link ja
+	Free: Pattern=link, Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Klopt
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : oké dan weten ik het denken ik
+	Free: Pattern=het, Pattern=dan, Pattern=ik
+	Constrained: 
+Turn ID=20| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=21| B | B : Oké nou
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=22| B | B : ik hebben de robot
+	Free: Pattern=de robot, Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik, Pattern=robot, Pattern=de
+Turn ID=23| A | A : oeh met de verrekijker
+	Free: Pattern=verrekijker, Pattern=de
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=26| A | A : eh ik hebben nu de robot
+	Free: Pattern=de robot, Pattern=ik hebben, Pattern=nu
+	Constrained: Pattern=hebben, Pattern=ik, Pattern=robot, Pattern=de
+Turn ID=27| B | B : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=28| B | B : ik hebben de robot
+	Free: Pattern=de robot, Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik, Pattern=robot, Pattern=de
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : de robot hebben ik
+	Free: Pattern=de robot, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=robot, Pattern=de
+Turn ID=32| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=33| B | B : ik hebben robot
+	Free: Pattern=ik hebben, Pattern=robot
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=34| A | A : Robot
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : Wacht ik moeten eerst kijken voor dat ik
+	Free: Pattern=ik, Pattern=dat
+	Constrained: 

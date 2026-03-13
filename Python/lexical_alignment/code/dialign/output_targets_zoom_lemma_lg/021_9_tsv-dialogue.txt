@@ -1,0 +1,207 @@
+A|0| A: hier zijn drie vier uitstulping 
+A|1| A: bovenaan _zien_ je _een_ schijf citroen 
+A|2| A: doet _het_ me _aan_ _denken_ 
+A|3| A: _en dan_ hebben je nog iets 
+A|4| A: weer _een_ _kegel_ _aan_ de bovenkant 
+A|5| A: _en_ _aan_ de zijkant hebben je _een soort_ _handvat_ 
+A|6| A: _en_ _het_ _voorwerp_ _rust op een_ 
+A|7| A: _op een_ weer _een_ ander _voorwerp_ _met een_ plat onderkant 
+B|8| B: _ja_ 
+B|9| B: nummer 
+B|10| B: kijken 
+B|11| B: _dit_ doen mij [een] beetje [denken] [aan] [een] pan 
+B|12| B: [met _een] handvat_ _en een_ _deksel_ die _er_ half [op] _staan_ 
+B|13| B: _en [een_ soort] _ja_ [kegel] 
+B|14| B: maar [het] _ja_ [een] beetje _een lepel_ 
+B|15| B: [en dan] [rust] die inderdaad ergens [op] zeggen maar 
+A|16| A: [en] je _zien_ de [deksel] _zien_ je wel 
+A|17| A: voor de helft ongeveer 
+B|18| B: _ja_ _ja_ 
+A|19| A: Oké 
+A|20| A: [ja] letter 
+A|21| A: [dit] lijken _op een_ 
+A|22| A: koffiekopje 
+A|23| A: [met] weer [een lepel] daarin 
+A|24| A: [en een] koek 
+A|25| A: [aan] de zijkant 
+A|26| A: [en dan] nog één rond uitsteeksel 
+A|27| A: [aan] de zijkant 
+A|28| A: Oh [en] _ik zien_ nu _dat_ [er] nog één 
+A|29| A: vergelijkbaar zijn 
+A|30| A: [het] koffiekopje _rust op een_ 
+A|31| A: _op een voorwerp_ _dat_ zorgen _dat_ [het] kunnen blijven [staan] 
+A|32| A: dus [met een] vlak onderkant 
+B|33| B: [ja] 
+B|34| B: nummer 
+B|35| B: _ik zien een_ 
+B|36| B: Pannetje [dat] [rust op een] object wat eronder [staan] 
+A|37| A: [ja] 
+A|38| A: Letter 
+A|39| A: [ik zien een] koffiekopje 
+A|40| A: [met [een] lepel] daarin 
+B|41| B: [en [een] soort] neus 
+A|42| A: nee 
+A|43| A: [een handvat] 
+A|44| A: [een] rond [een] [een] langwerpig rond 
+A|45| A: [aan] de zijkant 
+B|46| B: nummer 
+B|47| B: [ik zien een] panne 
+B|48| B: [dat] [rust [op een] voorwerp] 
+A|49| A: [ja] 
+A|50| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : hier zijn drie vier uitstulping
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : bovenaan zien je een schijf citroen
+	Free: Pattern=een, Pattern=zien
+	Constrained: 
+Turn ID=2| A | A : doet het me aan denken
+	Free: Pattern=het, Pattern=aan, Pattern=denken
+	Constrained: 
+Turn ID=3| A | A : en dan hebben je nog iets
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=4| A | A : weer een kegel aan de bovenkant
+	Free: Pattern=een, Pattern=aan, Pattern=kegel
+	Constrained: 
+Turn ID=5| A | A : en aan de zijkant hebben je een soort handvat
+	Free: Pattern=een soort, Pattern=aan, Pattern=en, Pattern=handvat
+	Constrained: Pattern=een
+Turn ID=6| A | A : en het voorwerp rust op een
+	Free: Pattern=rust op een, Pattern=het, Pattern=en, Pattern=voorwerp
+	Constrained: Pattern=op een, Pattern=een, Pattern=rust, Pattern=op
+Turn ID=7| A | A : op een weer een ander voorwerp met een plat onderkant
+	Free: Pattern=op een, Pattern=met een, Pattern=een, Pattern=voorwerp
+	Constrained: Pattern=een, Pattern=op, Pattern=met
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : dit doen mij een beetje denken aan een pan
+	Free: Pattern=een, Pattern=aan, Pattern=denken, Pattern=dit
+	Constrained: 
+Turn ID=12| B | B : met een handvat en een deksel die er half op staan
+	Free: Pattern=deksel, Pattern=op, Pattern=staan, Pattern=met een, Pattern=er, Pattern=een handvat, Pattern=en een
+	Constrained: Pattern=een, Pattern=en, Pattern=handvat, Pattern=met
+Turn ID=13| B | B : en een soort ja kegel
+	Free: Pattern=en een, Pattern=een soort, Pattern=ja, Pattern=kegel
+	Constrained: Pattern=een, Pattern=en
+Turn ID=14| B | B : maar het ja een beetje een lepel
+	Free: Pattern=een lepel, Pattern=een, Pattern=het, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=15| B | B : en dan rust die inderdaad ergens op zeggen maar
+	Free: Pattern=en dan, Pattern=rust, Pattern=op
+	Constrained: Pattern=en
+Turn ID=16| A | A : en je zien de deksel zien je wel
+	Free: Pattern=en, Pattern=zien, Pattern=deksel
+	Constrained: 
+Turn ID=17| A | A : voor de helft ongeveer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : dit lijken op een
+	Free: Pattern=op een, Pattern=dit
+	Constrained: Pattern=een, Pattern=op
+Turn ID=22| A | A : koffiekopje
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : met weer een lepel daarin
+	Free: Pattern=een lepel, Pattern=met
+	Constrained: Pattern=een
+Turn ID=24| A | A : en een koek
+	Free: Pattern=en een
+	Constrained: Pattern=een, Pattern=en
+Turn ID=25| A | A : aan de zijkant
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=26| A | A : en dan nog één rond uitsteeksel
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=27| A | A : aan de zijkant
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=28| A | A : Oh en ik zien nu dat er nog één
+	Free: Pattern=ik zien, Pattern=er, Pattern=en, Pattern=dat
+	Constrained: Pattern=zien
+Turn ID=29| A | A : vergelijkbaar zijn
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : het koffiekopje rust op een
+	Free: Pattern=rust op een, Pattern=het
+	Constrained: Pattern=op een, Pattern=een, Pattern=rust, Pattern=op
+Turn ID=31| A | A : op een voorwerp dat zorgen dat het kunnen blijven staan
+	Free: Pattern=op een voorwerp, Pattern=staan, Pattern=het, Pattern=dat
+	Constrained: Pattern=op een, Pattern=een, Pattern=voorwerp, Pattern=op
+Turn ID=32| A | A : dus met een vlak onderkant
+	Free: Pattern=met een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=ik zien, Pattern=een, Pattern=zien
+Turn ID=36| B | B : Pannetje dat rust op een object wat eronder staan
+	Free: Pattern=rust op een, Pattern=staan, Pattern=dat
+	Constrained: Pattern=op een, Pattern=een, Pattern=rust, Pattern=op
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : ik zien een koffiekopje
+	Free: Pattern=ik zien een
+	Constrained: Pattern=ik zien, Pattern=een, Pattern=zien
+Turn ID=40| A | A : met een lepel daarin
+	Free: Pattern=een lepel, Pattern=met een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=41| B | B : en een soort neus
+	Free: Pattern=en een, Pattern=een soort
+	Constrained: Pattern=een, Pattern=en
+Turn ID=42| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : een handvat
+	Free: Pattern=een handvat
+	Constrained: Pattern=een, Pattern=handvat
+Turn ID=44| A | A : een rond een een langwerpig rond
+	Free: Pattern=een
+	Constrained: 
+Turn ID=45| A | A : aan de zijkant
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=46| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=47| B | B : ik zien een panne
+	Free: Pattern=ik zien een
+	Constrained: Pattern=ik zien, Pattern=een, Pattern=zien
+Turn ID=48| B | B : dat rust op een voorwerp
+	Free: Pattern=op een voorwerp, Pattern=rust op een, Pattern=dat
+	Constrained: Pattern=op, Pattern=een, Pattern=op een, Pattern=voorwerp, Pattern=rust
+Turn ID=49| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : Letter
+	Free: 
+	Constrained: 

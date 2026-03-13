@@ -1,0 +1,227 @@
+A|0| A: _ja_ _ik_ _zijn_ _ook_ heel benieuwd 
+B|1| B: _met_ jou [ook] alles goed 
+A|2| A: _ja_ [met] _mij ook_ wel 
+A|3| A: _ik_ vinden _Oh_ _oké_ _we_ mogen beginnen 
+B|4| B: mooi 
+B|5| B: _Yes_ 
+A|6| A: Ehm _ik_ _ik hebben_ _het_ vierkan _dus_ _ik_ moeten beginnen [met] uitleggen he 
+B|7| B: _Oké_ 
+A|8| A: Ehm 
+A|9| A: [Oké] _ik hebben_ _dus_ _zeggen_ maar _ja_ _dat_ _soort_ _van_ reactortje _die_ _staan_ _op een_ _op een_ _ja_ _op een_ vlakje 
+A|10| A: _dat _zijn_ een_ _een_ _een_ ovaal vlak 
+A|11| A: _en_ _dat _zijn_ een soort_ _van_ _ja_ staand iets waar _die op_ staat 
+A|12| A: _dan_ _lijken_ _het_ alsof hij roeren worden omdat er _een_ _ja_ pinne _op_ _zitten_ 
+B|13| B: mhm 
+A|14| A: _ehm_ hij _hebben_ één arm _en_ _aan de_ achterkant _hebben_ hij _een_ _cirkel_ 
+A|15| A: _ehm_ _ja die_ er tegenaan _zitten_ 
+B|16| B: [ja] 
+B|17| B: [oké] [ik] denken [dat] [ik] [het] weten 
+A|18| A: [ja] 
+A|19| A: [Oké] 
+B|20| B: [ja] 
+A|21| A: _dan_ moe 
+B|22| B: [dus] [dan] [zeggen] [ik] [het] nummer toch 
+A|23| A: [ja] 
+B|24| B: [dus] [dat zijn] 
+B|25| B: _Eh_ _nee_ 
+B|26| B: [ja] 
+B|27| B: Jawel 
+B|28| B: [en] [dan] druk [ik] _op de_ _rood_ knop volgens [mij] 
+A|29| A: [ja] [ja] [ja] [nee] [ja] [op de] groen moeten [ik] drukken _hebben_ jij _een rood_ 
+B|30| B: _Oh ik hebben_ [een rood] [ja] 
+A|31| A: [Oké] 
+B|32| B: [ja] [dan] druk [ik] [op de] knop 
+A|33| A: [ja] 
+B|34| B: Top 
+B|35| B: [ehm] deze [hebben] [we] [ook] [hebben] 
+B|36| B: [dus] [dan] [zitten] [we] in [de] twee ronde waarschijnlijk 
+A|37| A: [ja] 
+B|38| B: dit [zijn een soort] [cirkel] [de] plat [cirkel] achterop 
+B|39| B: [die] [lijken] [op een] _citroen_ 
+B|40| B: [en] [dan] zo [hebben] je [de] lepel in [het] glas [en] [dan] nog [een] uitsteeksel 
+B|41| B: [aan de] linkerkant 
+B|42| B: [en] onderop [staan] [die [op] [een] soort] langwerpig balk 
+A|43| A: [Yes] [die] [hebben] [ik] [ook] [dat zijn] 
+A|44| A: [Oh] mijn scherm [zijn] veranderen 
+B|45| B: [ja die] [van] [mij ook] 
+A|46| A: [Oh ik hebben] weer [de] cocktail _met het citroen en_ [het] armpje [en] [het] roerstaaf 
+B|47| B: [ja] 
+B|48| B: [dat zijn] nummer 
+B|49| B: [ik hebben] [de] [het] _cocktailglas_ [met het citroen en] [de] lepel 
+A|50| A: [Yes] 
+A|51| A: [Eh] [dat zijn] 
+A|52| A: eh [cocktailglas] 
+B|53| B: [dat zijn] 
+B|54| B: dit [zijn] [het] [cocktailglas] 
+A|55| A: [Yes] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja ik zijn ook heel benieuwd
+	Free: Pattern=zijn, Pattern=ik, Pattern=ja, Pattern=ook
+	Constrained: 
+Turn ID=1| B | B : met jou ook alles goed
+	Free: Pattern=ook, Pattern=met
+	Constrained: 
+Turn ID=2| A | A : ja met mij ook wel
+	Free: Pattern=mij ook, Pattern=ja, Pattern=met
+	Constrained: Pattern=mij, Pattern=ook
+Turn ID=3| A | A : ik vinden Oh oké we mogen beginnen
+	Free: Pattern=we, Pattern=ik, Pattern=Oh, Pattern=oké
+	Constrained: 
+Turn ID=4| B | B : mooi
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Yes
+	Free: Pattern=Yes
+	Constrained: 
+Turn ID=6| A | A : Ehm ik ik hebben het vierkan dus ik moeten beginnen met uitleggen he
+	Free: Pattern=ik hebben, Pattern=dus, Pattern=het, Pattern=met, Pattern=ik
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Oké ik hebben dus zeggen maar ja dat soort van reactortje die staan op een op een ja op een vlakje
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=soort, Pattern=staan, Pattern=zeggen, Pattern=die, Pattern=van, Pattern=op een, Pattern=Oké, Pattern=dus, Pattern=ja
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=op, Pattern=een
+Turn ID=10| A | A : dat zijn een een een ovaal vlak
+	Free: Pattern=zijn een, Pattern=dat zijn, Pattern=een
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=een
+Turn ID=11| A | A : en dat zijn een soort van ja staand iets waar die op staat
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=die op, Pattern=zijn een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=dat, Pattern=soort, Pattern=op, Pattern=zijn een, Pattern=een, Pattern=die, Pattern=een soort, Pattern=zijn
+Turn ID=12| A | A : dan lijken het alsof hij roeren worden omdat er een ja pinne op zitten
+	Free: Pattern=ja, Pattern=op, Pattern=een, Pattern=het, Pattern=zitten, Pattern=lijken, Pattern=dan
+	Constrained: 
+Turn ID=13| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : ehm hij hebben één arm en aan de achterkant hebben hij een cirkel
+	Free: Pattern=cirkel, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=ehm, Pattern=en
+	Constrained: Pattern=de
+Turn ID=15| A | A : ehm ja die er tegenaan zitten
+	Free: Pattern=ja die, Pattern=zitten, Pattern=ehm
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : oké ik denken dat ik het weten
+	Free: Pattern=dat, Pattern=het, Pattern=ik, Pattern=oké
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : dan moe
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=22| B | B : dus dan zeggen ik het nummer toch
+	Free: Pattern=dus, Pattern=dan, Pattern=het, Pattern=zeggen, Pattern=ik
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : dus dat zijn
+	Free: Pattern=dat zijn, Pattern=dus
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| B | B : Eh nee
+	Free: Pattern=Eh, Pattern=nee
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Jawel
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : en dan druk ik op de rood knop volgens mij
+	Free: Pattern=rood, Pattern=dan, Pattern=en, Pattern=op de, Pattern=mij, Pattern=ik
+	Constrained: Pattern=de, Pattern=op
+Turn ID=29| A | A : ja ja ja nee ja op de groen moeten ik drukken hebben jij een rood
+	Free: Pattern=een rood, Pattern=ja, Pattern=nee, Pattern=hebben, Pattern=ik, Pattern=op de
+	Constrained: Pattern=de, Pattern=op, Pattern=rood, Pattern=een
+Turn ID=30| B | B : Oh ik hebben een rood ja
+	Free: Pattern=Oh ik hebben, Pattern=een rood, Pattern=ja
+	Constrained: Pattern=een, Pattern=hebben, Pattern=ik, Pattern=Oh, Pattern=ik hebben, Pattern=rood
+Turn ID=31| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=32| B | B : ja dan druk ik op de knop
+	Free: Pattern=op de, Pattern=dan, Pattern=ik, Pattern=ja
+	Constrained: Pattern=de, Pattern=op
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : ehm deze hebben we ook hebben
+	Free: Pattern=we, Pattern=hebben, Pattern=ehm, Pattern=ook
+	Constrained: 
+Turn ID=36| B | B : dus dan zitten we in de twee ronde waarschijnlijk
+	Free: Pattern=dan, Pattern=de, Pattern=dus, Pattern=we, Pattern=zitten
+	Constrained: 
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : dit zijn een soort cirkel de plat cirkel achterop
+	Free: Pattern=zijn een soort, Pattern=de, Pattern=cirkel
+	Constrained: Pattern=soort, Pattern=zijn een, Pattern=een, Pattern=een soort, Pattern=zijn
+Turn ID=39| B | B : die lijken op een citroen
+	Free: Pattern=op een, Pattern=citroen, Pattern=die, Pattern=lijken
+	Constrained: Pattern=op, Pattern=een
+Turn ID=40| B | B : en dan zo hebben je de lepel in het glas en dan nog een uitsteeksel
+	Free: Pattern=de, Pattern=dan, Pattern=een, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=41| B | B : aan de linkerkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=42| B | B : en onderop staan die op een soort langwerpig balk
+	Free: Pattern=staan, Pattern=en, Pattern=op een, Pattern=die op, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=die, Pattern=op, Pattern=een
+Turn ID=43| A | A : Yes die hebben ik ook dat zijn
+	Free: Pattern=dat zijn, Pattern=ook, Pattern=hebben, Pattern=ik, Pattern=Yes, Pattern=die
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=44| A | A : Oh mijn scherm zijn veranderen
+	Free: Pattern=zijn, Pattern=Oh
+	Constrained: 
+Turn ID=45| B | B : ja die van mij ook
+	Free: Pattern=ja die, Pattern=mij ook, Pattern=van
+	Constrained: Pattern=mij, Pattern=die, Pattern=ja, Pattern=ook
+Turn ID=46| A | A : Oh ik hebben weer de cocktail met het citroen en het armpje en het roerstaaf
+	Free: Pattern=met het citroen en, Pattern=Oh ik hebben, Pattern=de, Pattern=het, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=met, Pattern=citroen, Pattern=ik, Pattern=en, Pattern=Oh
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=49| B | B : ik hebben de het cocktailglas met het citroen en de lepel
+	Free: Pattern=ik hebben, Pattern=met het citroen en, Pattern=de, Pattern=het, Pattern=cocktailglas
+	Constrained: Pattern=het, Pattern=hebben, Pattern=met, Pattern=citroen, Pattern=ik, Pattern=en
+Turn ID=50| A | A : Yes
+	Free: Pattern=Yes
+	Constrained: 
+Turn ID=51| A | A : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=52| A | A : eh cocktailglas
+	Free: Pattern=cocktailglas
+	Constrained: 
+Turn ID=53| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=54| B | B : dit zijn het cocktailglas
+	Free: Pattern=zijn, Pattern=het, Pattern=cocktailglas
+	Constrained: 
+Turn ID=55| A | A : Yes dat zijn
+	Free: Pattern=dat zijn, Pattern=Yes
+	Constrained: Pattern=dat, Pattern=zijn

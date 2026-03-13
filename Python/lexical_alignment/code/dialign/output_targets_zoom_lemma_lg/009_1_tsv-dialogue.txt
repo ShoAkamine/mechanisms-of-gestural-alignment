@@ -1,0 +1,147 @@
+B|0| B: _Oh ja_ ok 
+A|1| A: [Oh ja] oké 
+B|2| B: _ik hebben een_ _kop_ 
+B|3| B: _en_ daar staan _een soort_ _vierkant_ tegenaan 
+A|4| A: even kijken horen 
+B|5| B: _en_ dan _hebben_ hij _twee van die_ uitsteeksel naar links 
+A|6| A: [ja] 
+B|7| B: dezelfde uitsteeksel 
+B|8| B: _en_ dan nog _een soort_ lepel in _het kop_ zeggen maar 
+A|9| A: [soort] _spijker_ _of_ zo 
+B|10| B: [ja] zoiets [ja] 
+A|11| A: [ja] oké [ja] [ik] denken _dat_ [ik] [het] weten 
+A|12| A: Oké 
+A|13| A: Oké [ik hebben] nu [een] _spijker_ echt op [het kop] 
+B|14| B: [ja] 
+A|15| A: Eh [en] één [en] vanaf _de_ zijkant [een soort] _twee pistolen_ 
+B|16| B: _en een vierkant_ [of] niet 
+A|17| A: [ja] [ja] 
+B|18| B: [ja] ok 
+B|19| B: Ehm [ik hebben] [het kop] met [het] met _die_ [spijker] erin 
+B|20| B: [en] dan _een vierkant_ ertegenaan 
+B|21| B: [en] nog [twee] diezelfde _vierkant_ 
+A|22| A: ah [ja] 
+A|23| A: [ja] [ja] 
+A|24| A: [Oh] [ik hebben een] [spijker] bovenop 
+A|25| A: [en een vierkant] 
+B|26| B: [Oh ja] 
+A|27| A: [en] [twee van die] [soort] pistol 
+B|28| B: [ja] 
+B|29| B: _ik hebben de spijker_ erin 
+B|30| B: [en] dan [dat] [vierkant] ervoor 
+B|31| B: [en] [de] [twee pistolen] 
+A|32| A: hmm 
+A|33| A: [Oh ja] 
+A|34| A: [ik hebben de spijker] bovenop [en] [het] [vierkant] 
+B|35| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ja ok
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=1| A | A : Oh ja oké
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=2| B | B : ik hebben een kop
+	Free: Pattern=ik hebben een, Pattern=kop
+	Constrained: Pattern=een, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=3| B | B : en daar staan een soort vierkant tegenaan
+	Free: Pattern=een soort, Pattern=en, Pattern=vierkant
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=4| A | A : even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : en dan hebben hij twee van die uitsteeksel naar links
+	Free: Pattern=twee van die, Pattern=en, Pattern=hebben
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : dezelfde uitsteeksel
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : en dan nog een soort lepel in het kop zeggen maar
+	Free: Pattern=het kop, Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=het, Pattern=een, Pattern=kop
+Turn ID=9| A | A : soort spijker of zo
+	Free: Pattern=soort, Pattern=spijker, Pattern=of
+	Constrained: 
+Turn ID=10| B | B : ja zoiets ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja oké ja ik denken dat ik het weten
+	Free: Pattern=ja, Pattern=het, Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : Oké ik hebben nu een spijker echt op het kop
+	Free: Pattern=het kop, Pattern=ik hebben, Pattern=spijker, Pattern=een
+	Constrained: Pattern=hebben, Pattern=het, Pattern=kop, Pattern=ik
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : Eh en één en vanaf de zijkant een soort twee pistolen
+	Free: Pattern=een soort, Pattern=twee pistolen, Pattern=de, Pattern=en
+	Constrained: Pattern=soort, Pattern=twee, Pattern=een
+Turn ID=16| B | B : en een vierkant of niet
+	Free: Pattern=en een vierkant, Pattern=of
+	Constrained: Pattern=een vierkant, Pattern=en, Pattern=vierkant, Pattern=een
+Turn ID=17| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja ok
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : Ehm ik hebben het kop met het met die spijker erin
+	Free: Pattern=ik hebben, Pattern=het kop, Pattern=het, Pattern=die, Pattern=spijker
+	Constrained: Pattern=hebben, Pattern=het, Pattern=kop, Pattern=ik
+Turn ID=20| B | B : en dan een vierkant ertegenaan
+	Free: Pattern=een vierkant, Pattern=en
+	Constrained: Pattern=vierkant, Pattern=een
+Turn ID=21| B | B : en nog twee diezelfde vierkant
+	Free: Pattern=en, Pattern=twee, Pattern=vierkant
+	Constrained: 
+Turn ID=22| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oh ik hebben een spijker bovenop
+	Free: Pattern=ik hebben een, Pattern=spijker, Pattern=Oh
+	Constrained: Pattern=een, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=25| A | A : en een vierkant
+	Free: Pattern=en een vierkant
+	Constrained: Pattern=een vierkant, Pattern=en, Pattern=vierkant, Pattern=een
+Turn ID=26| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=27| A | A : en twee van die soort pistol
+	Free: Pattern=twee van die, Pattern=soort, Pattern=en
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ik hebben de spijker erin
+	Free: Pattern=ik hebben de spijker
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=spijker
+Turn ID=30| B | B : en dan dat vierkant ervoor
+	Free: Pattern=en, Pattern=vierkant, Pattern=dat
+	Constrained: 
+Turn ID=31| B | B : en de twee pistolen
+	Free: Pattern=twee pistolen, Pattern=de, Pattern=en
+	Constrained: Pattern=twee
+Turn ID=32| A | A : hmm
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=34| A | A : ik hebben de spijker bovenop en het vierkant
+	Free: Pattern=ik hebben de spijker, Pattern=en, Pattern=vierkant, Pattern=het
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=spijker
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

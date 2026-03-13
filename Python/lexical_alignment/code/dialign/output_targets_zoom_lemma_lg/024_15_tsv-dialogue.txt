@@ -1,0 +1,231 @@
+B|0| B: nou _ik_ _zijn_ benieuwd 
+B|1| B: Oké _ik_ _hebben_ _het_ _het_ _vierkant_ dus _dan_ moeten _ik_ uitleggen 
+B|2| B: Oké hoe _ik_ _het_ net _op_ _het_ scherm _hebben_ uitleggen _zijn_ _dat_ _het_ _een_ beetje _op een olifant_ _lijken_ 
+B|3| B: want _het_ _hebben_ _twee_ klein zeggen maar _cilinder_ bovenop _het_ glas zullen _ik_ maar zeggen 
+A|4| A: _ja_ i-i-ik zien hem al 
+B|5| B: _en dan_ _met die_ lang neus _en_ zo'n _vierkant_ _en_ 
+B|6| B: [ja] 
+A|7| A: [ik] denken 
+A|8| A: [ik] denken 
+B|9| B: Oké 
+A|10| A: [en dan] 
+B|11| B: Moeten _jij op_ _de_ knop drukken hè 
+A|12| A: _O_ [ja] tuurlijk 
+B|13| B: [ja] oké [ja] top 
+A|14| A: aan [de] zijkant [hebben] [die] [een] soort L-vorm 
+A|15| A: voor [een] [cilinder] [die] naar beneden _gaan_ 
+A|16| A: [en] 
+A|17| A: iets in [het] midden 
+A|18| A: iets veel naar onder 
+A|19| A: Zit [een] 
+A|20| A: [een] [vierkant] vlak 
+A|21| A: door [het] 
+A|22| A: door [de] basis heen 
+A|23| A: [en] boven zitten 
+A|24| A: zitten [twee] spriet 
+B|25| B: even kijken 
+A|26| A: [een] soort L-vorm 
+A|27| A: aan [de] 
+B|28| B: [O] 
+A|29| A: aan [de] linkerkant 
+B|30| B: [die] [gaan] [en dan] [gaan] [de] _L_ [die] [gaan] omhoog zeggen maar 
+A|31| A: [ja] [het] [zijn] [een] omgedraaide [L] 
+B|32| B: [de] Ja 
+B|33| B: Oké [ja] 
+B|34| B: _dat zijn_ degeen [die] [ik] _op een olifant vinden lijken_ 
+B|35| B: Oké maar _dat zijn_ dus 
+A|36| A: [ik] zien [het] niet 
+B|37| B: [ja] 
+B|38| B: Oké 
+B|39| B: [ja] [ik] _vinden_ deze dus _op een olifant_ _lijken_ 
+B|40| B: maar hij [hebben] dus [twee] klein [cilinder] _op_ [de] bovenkant 
+B|41| B: [en dan] _die L_ 
+B|42| B: [en dan] zo'n [vierkant] [en] [een] 
+B|43| B: [ja] 
+B|44| B: Neus zullen [ik] zeggen 
+A|45| A: [O] [ja] 
+A|46| A: [dat zijn] 
+A|47| A: dit [zijn] [die] [met die] L-vorm aan [de] linkerkant 
+A|48| A: [die] [jij [op] een olifant vinden lijken] 
+A|49| A: [met die] vlakte 
+B|50| B: [ja] 
+B|51| B: [ja] [dat zijn] 
+B|52| B: [ja] [die] [ik] [op een olifant vinden lijken] 
+B|53| B: [met] [de] [L] 
+A|54| A: [O] [dat zijn] 
+A|55| A: dit [zijn] [die] [jij [op] een olifant vinden lijken] [met [die] L] aan [de] linkerkant 
+B|56| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : nou ik zijn benieuwd
+	Free: Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : Oké ik hebben het het vierkant dus dan moeten ik uitleggen
+	Free: Pattern=dan, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=vierkant
+	Constrained: 
+Turn ID=2| B | B : Oké hoe ik het net op het scherm hebben uitleggen zijn dat het een beetje op een olifant lijken
+	Free: Pattern=dat, Pattern=op een olifant, Pattern=op, Pattern=lijken, Pattern=een, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=zijn
+	Constrained: Pattern=een, Pattern=op
+Turn ID=3| B | B : want het hebben twee klein zeggen maar cilinder bovenop het glas zullen ik maar zeggen
+	Free: Pattern=twee, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=cilinder
+	Constrained: 
+Turn ID=4| A | A : ja i-i-ik zien hem al
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : en dan met die lang neus en zo'n vierkant en
+	Free: Pattern=en dan, Pattern=met die, Pattern=en, Pattern=vierkant
+	Constrained: Pattern=en, Pattern=dan, Pattern=met, Pattern=die
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ik denken
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=8| A | A : ik denken
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=9| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=11| B | B : Moeten jij op de knop drukken hè
+	Free: Pattern=jij op, Pattern=de
+	Constrained: Pattern=op
+Turn ID=12| A | A : O ja tuurlijk
+	Free: Pattern=O, Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja oké ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : aan de zijkant hebben die een soort L-vorm
+	Free: Pattern=een, Pattern=de, Pattern=hebben, Pattern=die
+	Constrained: 
+Turn ID=15| A | A : voor een cilinder die naar beneden gaan
+	Free: Pattern=een, Pattern=gaan, Pattern=cilinder, Pattern=die
+	Constrained: 
+Turn ID=16| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=17| A | A : iets in het midden
+	Free: Pattern=het
+	Constrained: 
+Turn ID=18| A | A : iets veel naar onder
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : Zit een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=20| A | A : een vierkant vlak
+	Free: Pattern=een, Pattern=vierkant
+	Constrained: 
+Turn ID=21| A | A : door het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=22| A | A : door de basis heen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=23| A | A : en boven zitten
+	Free: Pattern=en
+	Constrained: 
+Turn ID=24| A | A : zitten twee spriet
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=25| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : een soort L-vorm
+	Free: Pattern=een
+	Constrained: 
+Turn ID=27| A | A : aan de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=28| B | B : O
+	Free: Pattern=O
+	Constrained: 
+Turn ID=29| A | A : aan de linkerkant
+	Free: Pattern=de
+	Constrained: 
+Turn ID=30| B | B : die gaan en dan gaan de L die gaan omhoog zeggen maar
+	Free: Pattern=L, Pattern=de, Pattern=en dan, Pattern=die, Pattern=gaan
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=31| A | A : ja het zijn een omgedraaide L
+	Free: Pattern=L, Pattern=ja, Pattern=een, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=32| B | B : de Ja
+	Free: Pattern=de
+	Constrained: 
+Turn ID=33| B | B : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : dat zijn degeen die ik op een olifant vinden lijken
+	Free: Pattern=op een olifant vinden lijken, Pattern=dat zijn, Pattern=ik, Pattern=die
+	Constrained: Pattern=dat, Pattern=op een olifant, Pattern=vinden, Pattern=op, Pattern=lijken, Pattern=een, Pattern=zijn
+Turn ID=35| B | B : Oké maar dat zijn dus
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| A | A : ik zien het niet
+	Free: Pattern=ik, Pattern=het
+	Constrained: 
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : ja ik vinden deze dus op een olifant lijken
+	Free: Pattern=op een olifant, Pattern=lijken, Pattern=ik, Pattern=vinden, Pattern=ja
+	Constrained: Pattern=een, Pattern=op
+Turn ID=40| B | B : maar hij hebben dus twee klein cilinder op de bovenkant
+	Free: Pattern=twee, Pattern=de, Pattern=op, Pattern=hebben, Pattern=cilinder
+	Constrained: 
+Turn ID=41| B | B : en dan die L
+	Free: Pattern=en dan, Pattern=die L
+	Constrained: Pattern=en, Pattern=L, Pattern=dan, Pattern=die
+Turn ID=42| B | B : en dan zo'n vierkant en een
+	Free: Pattern=en dan, Pattern=een, Pattern=en, Pattern=vierkant
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : Neus zullen ik zeggen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=45| A | A : O ja
+	Free: Pattern=O, Pattern=ja
+	Constrained: 
+Turn ID=46| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=47| A | A : dit zijn die met die L-vorm aan de linkerkant
+	Free: Pattern=met die, Pattern=zijn, Pattern=de, Pattern=die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=48| A | A : die jij op een olifant vinden lijken
+	Free: Pattern=op een olifant vinden lijken, Pattern=jij op, Pattern=die
+	Constrained: Pattern=op een olifant, Pattern=vinden, Pattern=op, Pattern=lijken, Pattern=een
+Turn ID=49| A | A : met die vlakte
+	Free: Pattern=met die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=50| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=51| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=52| B | B : ja die ik op een olifant vinden lijken
+	Free: Pattern=op een olifant vinden lijken, Pattern=ik, Pattern=ja, Pattern=die
+	Constrained: Pattern=op een olifant, Pattern=vinden, Pattern=op, Pattern=lijken, Pattern=een
+Turn ID=53| B | B : met de L
+	Free: Pattern=L, Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=54| A | A : O dat zijn
+	Free: Pattern=dat zijn, Pattern=O
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=55| A | A : dit zijn die jij op een olifant vinden lijken met die L aan de linkerkant
+	Free: Pattern=met die, Pattern=de, Pattern=jij op, Pattern=die L, Pattern=die, Pattern=op een olifant vinden lijken, Pattern=zijn
+	Constrained: Pattern=L, Pattern=op een olifant, Pattern=vinden, Pattern=op, Pattern=lijken, Pattern=een, Pattern=met, Pattern=die
+Turn ID=56| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

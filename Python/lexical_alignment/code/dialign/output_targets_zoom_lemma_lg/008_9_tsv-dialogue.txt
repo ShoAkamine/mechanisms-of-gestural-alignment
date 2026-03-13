@@ -1,0 +1,175 @@
+B|0| B: ehm _deze_ die die _staan_ eigenlijk _op _een_ soort_ van _ovaal_ 
+B|1| B: Ehm _en_ _hij_ _hebben_ _aan de bovenkant_ _hebben hij_ rechts alsof er _een soort lepel_ uitsteken 
+B|2| B: zo'n _ja_ zo'n dinge 
+B|3| B: _en_ link _hebben hij_ ook _een_ balk 
+B|4| B: in _het_ midden 
+B|5| B: die links uitsteken 
+B|6| B: _en_ _aan de_ achterkant _hebben hij _een_ cirkel_ 
+B|7| B: die zien je voor _de_ helft 
+A|8| A: _eh_ wachten [deze] _moeten_ ik event 
+B|9| B: je [moeten] even kijken naar _de_ onderkaai 
+B|10| B: _hij_ _staan_ echt _op _een_ soort statief_ 
+B|11| B: alsof _het_ _een soort_ van alsof _het_ _een soort_ standbeeld _zijn_ 
+A|12| A: [en] [hebben hij een] 
+A|13| A: [en] [hebben hij [een] soort lepel] Erbovenin zitten of 
+B|14| B: _ja_ _ja_ 
+A|15| A: Oké dan [zijn] [het] 
+A|16| A: _Eh deze staan op_ iets 
+A|17| A: [en] [hebben] [een cirkel] achterin zitten 
+A|18| A: [en] [een soort lepel] erbovenop zitten 
+B|19| B: _ja_ _ja dat zijn_ 
+B|20| B: [deze staan op] zo'n _ovaal ding_ 
+B|21| B: _met_ zo'n _lepel aan de_ rechterkant 
+B|22| B: boven 
+A|23| A: [ovaal ding] [met] [een] [lepel] 
+B|24| B: _ja_ die [staan _op] [een_ soort] van _statief_ 
+B|25| B: _als_ [en] [soort] standbeeld 
+B|26| B: [en] [hij] [hebben] 
+A|27| A: _O_ [en] dan [de] [cirkel] daarachter 
+B|28| B: _ja_ 
+A|29| A: [ja dat zijn] 
+A|30| A: _Eh deze_ [ja] [staan] [als] [het] [zijn] [op] [dat] statiefachtig 
+A|31| A: [en] [hebben] dan [een] [lepel] erin [en] [een _cirkel] achter_ 
+B|32| B: Yes 
+B|33| B: [Eh deze staan op] zo'n standbeeld _statief_ 
+B|34| B: [met] zo'n [lepel] link rechts 
+B|35| B: [en] zo'n [cirkel achter] 
+A|36| A: Oké [dat zijn] 
+A|37| A: [Eh deze staan] dus [op een] [ja] [een soort statief] 
+A|38| A: [en] [hebben] dan [een [cirkel] achter] [met] [een soort lepel] erin 
+B|39| B: [eh] yes 
+A|40| A: [de] [lepel [aan de] bovenkant] dus [en] dan [de] [cirkel] erachter 
+B|41| B: Moeten even zoeken 
+B|42| B: [O] [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze die die staan eigenlijk op een soort van ovaal
+	Free: Pattern=staan, Pattern=ovaal, Pattern=een soort, Pattern=deze, Pattern=op een
+	Constrained: Pattern=soort, Pattern=op, Pattern=een
+Turn ID=1| B | B : Ehm en hij hebben aan de bovenkant hebben hij rechts alsof er een soort lepel uitsteken
+	Free: Pattern=hebben hij, Pattern=hebben, Pattern=hij, Pattern=aan de bovenkant, Pattern=en, Pattern=een soort lepel
+	Constrained: Pattern=lepel, Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort
+Turn ID=2| B | B : zo'n ja zo'n dinge
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : en link hebben hij ook een balk
+	Free: Pattern=hebben hij, Pattern=en, Pattern=een
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=4| B | B : in het midden
+	Free: Pattern=het
+	Constrained: 
+Turn ID=5| B | B : die links uitsteken
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : en aan de achterkant hebben hij een cirkel
+	Free: Pattern=hebben hij een, Pattern=een cirkel, Pattern=aan de, Pattern=en
+	Constrained: Pattern=cirkel, Pattern=hebben hij, Pattern=de, Pattern=een, Pattern=hebben, Pattern=hij
+Turn ID=7| B | B : die zien je voor de helft
+	Free: Pattern=de
+	Constrained: 
+Turn ID=8| A | A : eh wachten deze moeten ik event
+	Free: Pattern=deze, Pattern=eh, Pattern=moeten
+	Constrained: 
+Turn ID=9| B | B : je moeten even kijken naar de onderkaai
+	Free: Pattern=de, Pattern=moeten
+	Constrained: 
+Turn ID=10| B | B : hij staan echt op een soort statief
+	Free: Pattern=een soort statief, Pattern=op een, Pattern=hij, Pattern=staan
+	Constrained: Pattern=soort, Pattern=statief, Pattern=op, Pattern=een, Pattern=een soort
+Turn ID=11| B | B : alsof het een soort van alsof het een soort standbeeld zijn
+	Free: Pattern=een soort, Pattern=het, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=12| A | A : en hebben hij een
+	Free: Pattern=hebben hij een, Pattern=en
+	Constrained: Pattern=hij, Pattern=een, Pattern=hebben hij, Pattern=hebben
+Turn ID=13| A | A : en hebben hij een soort lepel Erbovenin zitten of
+	Free: Pattern=een soort lepel, Pattern=hebben hij een, Pattern=en
+	Constrained: Pattern=soort, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=hebben hij, Pattern=lepel
+Turn ID=14| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : Oké dan zijn het
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : Eh deze staan op iets
+	Free: Pattern=Eh deze staan op
+	Constrained: Pattern=deze staan op, Pattern=op, Pattern=staan, Pattern=Eh deze staan, Pattern=Eh deze, Pattern=staan op, Pattern=deze
+Turn ID=17| A | A : en hebben een cirkel achterin zitten
+	Free: Pattern=een cirkel, Pattern=hebben, Pattern=en
+	Constrained: Pattern=cirkel, Pattern=een
+Turn ID=18| A | A : en een soort lepel erbovenop zitten
+	Free: Pattern=een soort lepel, Pattern=en
+	Constrained: Pattern=een, Pattern=een soort, Pattern=lepel, Pattern=soort
+Turn ID=19| B | B : ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=20| B | B : deze staan op zo'n ovaal ding
+	Free: Pattern=deze staan op, Pattern=ovaal ding
+	Constrained: Pattern=op, Pattern=staan, Pattern=ovaal, Pattern=staan op, Pattern=deze
+Turn ID=21| B | B : met zo'n lepel aan de rechterkant
+	Free: Pattern=lepel aan de, Pattern=met
+	Constrained: Pattern=aan de, Pattern=lepel, Pattern=de
+Turn ID=22| B | B : boven
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ovaal ding met een lepel
+	Free: Pattern=ovaal ding, Pattern=met, Pattern=lepel, Pattern=een
+	Constrained: Pattern=ovaal
+Turn ID=24| B | B : ja die staan op een soort van statief
+	Free: Pattern=een soort, Pattern=staan op, Pattern=op een, Pattern=ja, Pattern=statief
+	Constrained: Pattern=soort, Pattern=op, Pattern=een, Pattern=staan
+Turn ID=25| B | B : als en soort standbeeld
+	Free: Pattern=soort, Pattern=en, Pattern=als
+	Constrained: 
+Turn ID=26| B | B : en hij hebben
+	Free: Pattern=hij, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=27| A | A : O en dan de cirkel daarachter
+	Free: Pattern=cirkel, Pattern=en, Pattern=de, Pattern=O
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=30| A | A : Eh deze ja staan als het zijn op dat statiefachtig
+	Free: Pattern=dat, Pattern=ja, Pattern=op, Pattern=staan, Pattern=het, Pattern=als, Pattern=zijn, Pattern=Eh deze
+	Constrained: Pattern=deze
+Turn ID=31| A | A : en hebben dan een lepel erin en een cirkel achter
+	Free: Pattern=lepel, Pattern=cirkel achter, Pattern=hebben, Pattern=en, Pattern=een, Pattern=een cirkel
+	Constrained: Pattern=cirkel, Pattern=een
+Turn ID=32| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : Eh deze staan op zo'n standbeeld statief
+	Free: Pattern=Eh deze staan op, Pattern=statief
+	Constrained: Pattern=deze staan op, Pattern=op, Pattern=staan, Pattern=Eh deze staan, Pattern=Eh deze, Pattern=staan op, Pattern=deze
+Turn ID=34| B | B : met zo'n lepel link rechts
+	Free: Pattern=met, Pattern=lepel
+	Constrained: 
+Turn ID=35| B | B : en zo'n cirkel achter
+	Free: Pattern=cirkel achter, Pattern=en
+	Constrained: Pattern=cirkel
+Turn ID=36| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=37| A | A : Eh deze staan dus op een ja een soort statief
+	Free: Pattern=Eh deze staan, Pattern=een soort statief, Pattern=op een, Pattern=ja
+	Constrained: Pattern=soort, Pattern=statief, Pattern=op, Pattern=een soort, Pattern=Eh deze, Pattern=deze, Pattern=een, Pattern=staan
+Turn ID=38| A | A : en hebben dan een cirkel achter met een soort lepel erin
+	Free: Pattern=cirkel achter, Pattern=een cirkel, Pattern=hebben, Pattern=met, Pattern=en, Pattern=een soort lepel
+	Constrained: Pattern=cirkel, Pattern=lepel, Pattern=soort, Pattern=een, Pattern=een soort
+Turn ID=39| B | B : eh yes
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=40| A | A : de lepel aan de bovenkant dus en dan de cirkel erachter
+	Free: Pattern=cirkel, Pattern=de, Pattern=lepel aan de, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=lepel, Pattern=de, Pattern=aan de
+Turn ID=41| B | B : Moeten even zoeken
+	Free: 
+	Constrained: 
+Turn ID=42| B | B : O ja
+	Free: Pattern=ja, Pattern=O
+	Constrained: 

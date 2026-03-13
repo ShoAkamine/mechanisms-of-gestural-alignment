@@ -1,0 +1,167 @@
+B|0| B: Hi 
+A|1| A: Oh 
+A|2| A: _Oké_ 
+A|3| A: Ehm _ik_ hebben nu geen _vierkant_ er omheen 
+B|4| B: [ik] wel 
+B|5| B: _eh_ [ik] zien _een_ ding _met twee_ [vierkant] uitsteeksel 
+B|6| B: _en_ _op de bovenkant_ _een soort_ van driehoek zonder _top_ 
+B|7| B: _met_ _aan de_ onderkant _een soort_ van vormig 
+A|8| A: Oh _ja_ 
+A|9| A: [een soort] neus [met twee] _dan_ zo'n [soort] plank [aan de] zijkant 
+B|10| B: [ja] _en_ _op de bovenkant_ [een] driehoek zonder _top_ 
+A|11| A: zo'n [top] 
+A|12| A: _Oké_ 
+B|13| B: [ja] 
+A|14| A: [ja] 
+B|15| B: [Oké] 
+A|16| A: _wat_ moeten [ik] ook alweer zeggen 
+A|17| A: gewoon _wat_ [ik] 
+B|18| B: _eh_ één 
+A|19| A: _het cijfer of_ [de] _of_ [de] _letter_ toch 
+A|20| A: _die_ [ik] _dan_ hebben 
+B|21| B: [ja] [het cijfer of] [letter] [ik] weten niet [wat] je zien _en_ [dan] _op de_ knop drukken denken [ik] 
+A|22| A: Oh 
+A|23| A: [ja] 
+A|24| A: [Oké] 
+A|25| A: Eh 
+B|26| B: right 
+A|27| A: _dit zijn die _met_ die twee_ plank [aan de] zijkant 
+A|28| A: [en] [een] _piramide_ [op de bovenkant] _die_ geen _zijn_ geen [top] hebben 
+B|29| B: [ja] oké 
+B|30| B: [Oké] [dit zijn die met] [op de bovenkant] [de] afgehakte driehoek 
+B|31| B: [met die twee] rechthoekig _aan de rechterkant_ 
+B|32| B: [en] nog [twee] friemel [aan de] linkerkant 
+A|33| A: Oh [ja] [zijn] [zijn] 
+A|34| A: [dit zijn die [met] die twee] gelijk plank [en] dat afgesneden verjaardagshoed 
+B|35| B: [ja] 
+B|36| B: [dit zijn die met] [op de bovenkant] [een] _afgezaagd_ [piramide] 
+B|37| B: [met die twee] _dezelfde_ uitsteeksel _aan de rechterkant_ 
+A|38| A: [eh] [afgezaagd] feesthoed [en] [twee] plank [aan de rechterkant] 
+B|39| B: [ja] 
+A|40| A: [dezelfde] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Hi
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| A | A : Ehm ik hebben nu geen vierkant er omheen
+	Free: Pattern=ik, Pattern=vierkant
+	Constrained: 
+Turn ID=4| B | B : ik wel
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=5| B | B : eh ik zien een ding met twee vierkant uitsteeksel
+	Free: Pattern=een, Pattern=met twee, Pattern=eh, Pattern=ik, Pattern=vierkant
+	Constrained: Pattern=twee, Pattern=met
+Turn ID=6| B | B : en op de bovenkant een soort van driehoek zonder top
+	Free: Pattern=op de bovenkant, Pattern=een soort, Pattern=top, Pattern=en
+	Constrained: Pattern=op de, Pattern=een, Pattern=de, Pattern=soort
+Turn ID=7| B | B : met aan de onderkant een soort van vormig
+	Free: Pattern=aan de, Pattern=een soort, Pattern=met
+	Constrained: Pattern=de, Pattern=soort, Pattern=een
+Turn ID=8| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : een soort neus met twee dan zo'n soort plank aan de zijkant
+	Free: Pattern=soort, Pattern=aan de, Pattern=dan, Pattern=met twee, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=twee, Pattern=de, Pattern=een, Pattern=met
+Turn ID=10| B | B : ja en op de bovenkant een driehoek zonder top
+	Free: Pattern=ja, Pattern=een, Pattern=top, Pattern=op de bovenkant, Pattern=en
+	Constrained: Pattern=op de, Pattern=de
+Turn ID=11| A | A : zo'n top
+	Free: Pattern=top
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : wat moeten ik ook alweer zeggen
+	Free: Pattern=ik, Pattern=wat
+	Constrained: 
+Turn ID=17| A | A : gewoon wat ik
+	Free: Pattern=ik, Pattern=wat
+	Constrained: 
+Turn ID=18| B | B : eh één
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=19| A | A : het cijfer of de of de letter toch
+	Free: Pattern=het cijfer of, Pattern=letter, Pattern=of, Pattern=de
+	Constrained: Pattern=of
+Turn ID=20| A | A : die ik dan hebben
+	Free: Pattern=ik, Pattern=die, Pattern=dan
+	Constrained: 
+Turn ID=21| B | B : ja het cijfer of letter ik weten niet wat je zien en dan op de knop drukken denken ik
+	Free: Pattern=ja, Pattern=het cijfer of, Pattern=dan, Pattern=letter, Pattern=wat, Pattern=ik, Pattern=en, Pattern=op de
+	Constrained: Pattern=of, Pattern=de
+Turn ID=22| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : right
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : dit zijn die met die twee plank aan de zijkant
+	Free: Pattern=dit zijn die met, Pattern=met die twee, Pattern=aan de
+	Constrained: Pattern=twee, Pattern=de, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=28| A | A : en een piramide op de bovenkant die geen zijn geen top hebben
+	Free: Pattern=piramide, Pattern=een, Pattern=top, Pattern=die, Pattern=op de bovenkant, Pattern=en, Pattern=zijn
+	Constrained: Pattern=op de, Pattern=de
+Turn ID=29| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : Oké dit zijn die met op de bovenkant de afgehakte driehoek
+	Free: Pattern=dit zijn die met, Pattern=op de bovenkant, Pattern=de, Pattern=Oké
+	Constrained: Pattern=de, Pattern=met, Pattern=die, Pattern=zijn, Pattern=op de
+Turn ID=31| B | B : met die twee rechthoekig aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=met die twee
+	Constrained: Pattern=twee, Pattern=de, Pattern=aan de, Pattern=met, Pattern=die
+Turn ID=32| B | B : en nog twee friemel aan de linkerkant
+	Free: Pattern=aan de, Pattern=twee, Pattern=en
+	Constrained: Pattern=de
+Turn ID=33| A | A : Oh ja zijn zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : dit zijn die met die twee gelijk plank en dat afgesneden verjaardagshoed
+	Free: Pattern=dit zijn die met, Pattern=met die twee, Pattern=en
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=twee
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : dit zijn die met op de bovenkant een afgezaagd piramide
+	Free: Pattern=afgezaagd, Pattern=piramide, Pattern=een, Pattern=dit zijn die met, Pattern=op de bovenkant
+	Constrained: Pattern=de, Pattern=met, Pattern=die, Pattern=zijn, Pattern=op de
+Turn ID=37| B | B : met die twee dezelfde uitsteeksel aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=met die twee, Pattern=dezelfde
+	Constrained: Pattern=twee, Pattern=de, Pattern=aan de, Pattern=met, Pattern=die
+Turn ID=38| A | A : eh afgezaagd feesthoed en twee plank aan de rechterkant
+	Free: Pattern=twee, Pattern=afgezaagd, Pattern=aan de rechterkant, Pattern=eh, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=39| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : dezelfde
+	Free: Pattern=dezelfde
+	Constrained: 

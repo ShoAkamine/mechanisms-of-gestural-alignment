@@ -1,0 +1,47 @@
+A|0| A: ehm deze hebben een lang voet _die_ een beetje draaien _zijn_ 
+A|1| A: en dan onderin zitten een driehoek 
+A|2| A: dus eigenlijk in mijn optiek een beetje _de_ enig _die_ echt naar boven wat hoog _zijn_ 
+A|3| A: Ehm en het doen me ook een beetje aan een _cocktail_ denken 
+B|4| B: ja nummer 
+B|5| B: dit [zijn] [die] [cocktail] 
+A|6| A: eh [cocktail] 
+B|7| B: nummer 
+B|8| B: dit [zijn] weer [de] [cocktail] 
+A|9| A: [cocktail] 
+B|10| B: dit [zijn] [de] [cocktail] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben een lang voet die een beetje draaien zijn
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=1| A | A : en dan onderin zitten een driehoek
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : dus eigenlijk in mijn optiek een beetje de enig die echt naar boven wat hoog zijn
+	Free: Pattern=de, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : Ehm en het doen me ook een beetje aan een cocktail denken
+	Free: Pattern=cocktail
+	Constrained: 
+Turn ID=4| B | B : ja nummer
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : dit zijn die cocktail
+	Free: Pattern=cocktail, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=6| A | A : eh cocktail
+	Free: Pattern=cocktail
+	Constrained: 
+Turn ID=7| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : dit zijn weer de cocktail
+	Free: Pattern=de, Pattern=cocktail, Pattern=zijn
+	Constrained: 
+Turn ID=9| A | A : cocktail
+	Free: Pattern=cocktail
+	Constrained: 
+Turn ID=10| B | B : dit zijn de cocktail
+	Free: Pattern=de, Pattern=cocktail, Pattern=zijn
+	Constrained: 

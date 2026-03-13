@@ -1,0 +1,131 @@
+A|0| A: _Oké_ _ik_ vinden _dit_ dus lijken op _een koelkastdeur_ 
+A|1| A: met _een is-teken_ ernaast 
+B|2| B: gatver 
+B|3| B: _eh_ [een koelkastdeur] 
+A|4| A: gewoon _echt_ _echt_ letterlijk _echt_ gewoon _het_ _is-teken_ 
+A|5| A: _dat_ als je _dat_ zoeken 
+B|6| B: _Oh_ oké 
+B|7| B: [ik] zien [een is-teken] denken [ik] 
+A|8| A: _ja en_ _dat_ zitten aan _de_ rechterkant 
+B|9| B: [ja] 
+A|10| A: _en_ dan _hebben_ je dus _dat_ figuur met _een soort van_ hendel _in_ _het_ midden link 
+B|11| B: [ja] 
+A|12| A: _en_ dan zitten _er_ zo'n half piramide bovenop 
+A|13| A: _en_ nog [een] hoek 
+B|14| B: [ja en] [soort van] ding linksonder 
+A|15| A: [ja] [een] leunding of zo 
+B|16| B: [Oké] 
+B|17| B: wauw yo [een koelkastdeur] 
+B|18| B: _die_ [hebben] [ik] [er] [echt] niet [in] zien 
+B|19| B: [Oké] [in] mijn hoofd _zijn_ [het] veel [een soort van] nou goed maken niet uit 
+B|20| B: _eh_ [het] _zijn_ nummer 
+B|21| B: [dit] _zijn_ jou [koelkastdeur] 
+A|22| A: Eh _dat zijn_ 
+A|23| A: [eh] _de koelkastdeur_ met [is-teken] 
+B|24| B: [eh] [ja] [dat zijn] 
+A|25| A: [Oh] [ja] [zijn] weer anders 
+B|26| B: ehm [ja] [dit] [zijn] [de] koelkast 
+A|27| A: Eh [die] staan nu 
+A|28| A: [eh] _de koelkastdeur_ 
+B|29| B: [die] [zijn] nummer 
+B|30| B: [eh] [dit] [zijn] [de koelkastdeur] 
+A|31| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik vinden dit dus lijken op een koelkastdeur
+	Free: Pattern=een koelkastdeur, Pattern=dit, Pattern=Oké, Pattern=ik
+	Constrained: Pattern=een, Pattern=koelkastdeur
+Turn ID=1| A | A : met een is-teken ernaast
+	Free: Pattern=een is-teken
+	Constrained: Pattern=is-teken, Pattern=een
+Turn ID=2| B | B : gatver
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : eh een koelkastdeur
+	Free: Pattern=een koelkastdeur, Pattern=eh
+	Constrained: Pattern=een, Pattern=koelkastdeur
+Turn ID=4| A | A : gewoon echt echt letterlijk echt gewoon het is-teken
+	Free: Pattern=is-teken, Pattern=echt, Pattern=het
+	Constrained: 
+Turn ID=5| A | A : dat als je dat zoeken
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=6| B | B : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=7| B | B : ik zien een is-teken denken ik
+	Free: Pattern=een is-teken, Pattern=ik
+	Constrained: Pattern=is-teken, Pattern=een
+Turn ID=8| A | A : ja en dat zitten aan de rechterkant
+	Free: Pattern=ja en, Pattern=dat, Pattern=de
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : en dan hebben je dus dat figuur met een soort van hendel in het midden link
+	Free: Pattern=dat, Pattern=het, Pattern=hebben, Pattern=en, Pattern=in, Pattern=een soort van
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : en dan zitten er zo'n half piramide bovenop
+	Free: Pattern=er, Pattern=en
+	Constrained: 
+Turn ID=13| A | A : en nog een hoek
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : ja en soort van ding linksonder
+	Free: Pattern=soort van, Pattern=ja en
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=15| A | A : ja een leunding of zo
+	Free: Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=17| B | B : wauw yo een koelkastdeur
+	Free: Pattern=een koelkastdeur
+	Constrained: Pattern=een, Pattern=koelkastdeur
+Turn ID=18| B | B : die hebben ik er echt niet in zien
+	Free: Pattern=hebben, Pattern=in, Pattern=die, Pattern=echt, Pattern=er, Pattern=ik
+	Constrained: 
+Turn ID=19| B | B : Oké in mijn hoofd zijn het veel een soort van nou goed maken niet uit
+	Free: Pattern=het, Pattern=zijn, Pattern=Oké, Pattern=in, Pattern=een soort van
+	Constrained: Pattern=soort van, Pattern=een
+Turn ID=20| B | B : eh het zijn nummer
+	Free: Pattern=eh, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=21| B | B : dit zijn jou koelkastdeur
+	Free: Pattern=dit, Pattern=zijn, Pattern=koelkastdeur
+	Constrained: 
+Turn ID=22| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| A | A : eh de koelkastdeur met is-teken
+	Free: Pattern=de koelkastdeur, Pattern=is-teken, Pattern=eh
+	Constrained: Pattern=de, Pattern=koelkastdeur
+Turn ID=24| B | B : eh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=eh, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| A | A : Oh ja zijn weer anders
+	Free: Pattern=Oh, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ehm ja dit zijn de koelkast
+	Free: Pattern=dit, Pattern=de, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : Eh die staan nu
+	Free: Pattern=die
+	Constrained: 
+Turn ID=28| A | A : eh de koelkastdeur
+	Free: Pattern=de koelkastdeur, Pattern=eh
+	Constrained: Pattern=de, Pattern=koelkastdeur
+Turn ID=29| B | B : die zijn nummer
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=30| B | B : eh dit zijn de koelkastdeur
+	Free: Pattern=de koelkastdeur, Pattern=eh, Pattern=dit, Pattern=zijn
+	Constrained: Pattern=de, Pattern=koelkastdeur
+Turn ID=31| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

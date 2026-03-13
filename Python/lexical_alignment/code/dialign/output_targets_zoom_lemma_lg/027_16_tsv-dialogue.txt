@@ -1,0 +1,211 @@
+B|0| B: dit kop _hebben_ _een soort_ konijnenoor 
+B|1| B: eentje _bovenaan_ 
+B|2| B: _en_ één _steken_ _naar_ voren 
+B|3| B: _en_ ver zitten er _nog_ twee _soort_ van arm _aan _de_ zijkant_ 
+B|4| B: één lijken _een_ omgekeerd blokkentoren 
+B|5| B: _en_ _links_ _zijn_ _het_ _een soort_ van buisje 
+B|6| B: die zien u niet _zo_ goed 
+B|7| B: die wijzen _een_ beetje _naar_ achter 
+A|8| A: _ik_ zoeken [naar] konijnenoort maar _ik_ vinden 
+B|9| B: _ja_ _het_ _zijn_ echt eigenlijk één ding wat bovenop staan 
+B|10| B: _het_ _zijn_ _een_ beetje _een_ zo'n vorm 
+A|11| A: [ja] 
+B|12| B: _en_ één _steken_ er [naar] voren 
+B|13| B: _een_ _identiek_ als _dat_ er bovenop zitten 
+B|14| B: _en dan_ zitten er ver 
+A|15| A: ah [ja] [ja] oké 
+B|16| B: [ja] 
+A|17| A: [en dan] 
+A|18| A: [aan de] [aan de] rechterkant [hebben] _je_ [zo] _nog een_ object [dat] erin [steken] ook 
+B|19| B: [ja] met beetje blokachtig 
+A|20| A: [ja] [ja] oké 
+B|21| B: [ja] 
+A|22| A: [ja] object 
+A|23| A: helemaal [bovenaan] [een soort] _bowlingkegel_ 
+A|24| A: _en dan links_ ook [nog] eens diezelfde _kegel_ maar [dan] in [de zijkant] 
+B|25| B: Oh _ja en dan_ [nog] twee uitsteeksel [links] [en] _rechts_ 
+A|26| A: [ja] [ja] 
+B|27| B: [ja] nummer 
+A|28| A: Exact 
+B|29| B: _het_ konijnenoor bovenop 
+B|30| B: [en] [naar] voren 
+B|31| B: [en] [nog] twee armp [links] [en] _rechts_ 
+B|32| B: of [ja] één of [ja] of [ja] _de bowlingkegel_ 
+B|33| B: omgekeerd 
+B|34| B: bovenop [en] [naar] 
+B|35| B: Weet [je] welk [ik] bedoelen 
+A|36| A: [ja en dan] helemaal [rechts] [een soort] pixelachtig 
+B|37| B: [ja] [de] blok blok 
+A|38| A: [ja] 
+A|39| A: [ja] [ja] [ja] 
+A|40| A: object object 
+A|41| A: [bovenaan] [de bowlingkegel] 
+A|42| A: [en dan] exact dezelfde _kegel_ [nog] eens link 
+B|43| B: nummer 
+B|44| B: _de omgekeerde kegel_ bovenop [en] [een] _identiek_ [aan de] voorkant 
+B|45| B: [en dan] [en] [rechts] [nog [een] soort] pixel 
+B|46| B: [en dan links] [een] klein armp 
+A|47| A: [ja] wachten even zoeken 
+A|48| A: _dat zijn_ object 
+A|49| A: in [het] [bovenaan] [de omgekeerde kegel] 
+A|50| A: [en dan links] [identiek] hetzelfde 
+B|51| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit kop hebben een soort konijnenoor
+	Free: Pattern=een soort, Pattern=hebben
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=1| B | B : eentje bovenaan
+	Free: Pattern=bovenaan
+	Constrained: 
+Turn ID=2| B | B : en één steken naar voren
+	Free: Pattern=steken, Pattern=naar, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : en ver zitten er nog twee soort van arm aan de zijkant
+	Free: Pattern=aan de, Pattern=de zijkant, Pattern=en, Pattern=nog, Pattern=soort
+	Constrained: Pattern=de
+Turn ID=4| B | B : één lijken een omgekeerd blokkentoren
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| B | B : en links zijn het een soort van buisje
+	Free: Pattern=links, Pattern=het, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=6| B | B : die zien u niet zo goed
+	Free: Pattern=zo
+	Constrained: 
+Turn ID=7| B | B : die wijzen een beetje naar achter
+	Free: Pattern=naar, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : ik zoeken naar konijnenoort maar ik vinden
+	Free: Pattern=naar, Pattern=ik
+	Constrained: 
+Turn ID=9| B | B : ja het zijn echt eigenlijk één ding wat bovenop staan
+	Free: Pattern=zijn, Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : het zijn een beetje een zo'n vorm
+	Free: Pattern=zijn, Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : en één steken er naar voren
+	Free: Pattern=steken, Pattern=naar, Pattern=en
+	Constrained: 
+Turn ID=13| B | B : een identiek als dat er bovenop zitten
+	Free: Pattern=dat, Pattern=identiek, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : en dan zitten er ver
+	Free: Pattern=en dan
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=15| A | A : ah ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=18| A | A : aan de aan de rechterkant hebben je zo nog een object dat erin steken ook
+	Free: Pattern=dat, Pattern=nog een, Pattern=aan de, Pattern=hebben, Pattern=zo, Pattern=je, Pattern=steken
+	Constrained: Pattern=nog, Pattern=een, Pattern=de
+Turn ID=19| B | B : ja met beetje blokachtig
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : ja object
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : helemaal bovenaan een soort bowlingkegel
+	Free: Pattern=een soort, Pattern=bovenaan, Pattern=bowlingkegel
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=24| A | A : en dan links ook nog eens diezelfde kegel maar dan in de zijkant
+	Free: Pattern=kegel, Pattern=nog, Pattern=dan, Pattern=en dan links, Pattern=de zijkant
+	Constrained: Pattern=de, Pattern=en dan, Pattern=dan, Pattern=links, Pattern=en
+Turn ID=25| B | B : Oh ja en dan nog twee uitsteeksel links en rechts
+	Free: Pattern=nog, Pattern=rechts, Pattern=links, Pattern=ja en dan, Pattern=en
+	Constrained: Pattern=en dan, Pattern=dan, Pattern=ja, Pattern=en
+Turn ID=26| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : Exact
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : het konijnenoor bovenop
+	Free: Pattern=het
+	Constrained: 
+Turn ID=30| B | B : en naar voren
+	Free: Pattern=naar, Pattern=en
+	Constrained: 
+Turn ID=31| B | B : en nog twee armp links en rechts
+	Free: Pattern=links, Pattern=rechts, Pattern=nog, Pattern=en
+	Constrained: 
+Turn ID=32| B | B : of ja één of ja of ja de bowlingkegel
+	Free: Pattern=de bowlingkegel, Pattern=ja
+	Constrained: Pattern=bowlingkegel, Pattern=de
+Turn ID=33| B | B : omgekeerd
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : bovenop en naar
+	Free: Pattern=naar, Pattern=en
+	Constrained: 
+Turn ID=35| B | B : Weet je welk ik bedoelen
+	Free: Pattern=je, Pattern=ik
+	Constrained: 
+Turn ID=36| A | A : ja en dan helemaal rechts een soort pixelachtig
+	Free: Pattern=ja en dan, Pattern=een soort, Pattern=rechts
+	Constrained: Pattern=soort, Pattern=ja, Pattern=en dan, Pattern=dan, Pattern=een, Pattern=en
+Turn ID=37| B | B : ja de blok blok
+	Free: Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=38| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : object object
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : bovenaan de bowlingkegel
+	Free: Pattern=de bowlingkegel, Pattern=bovenaan
+	Constrained: Pattern=bowlingkegel, Pattern=de
+Turn ID=42| A | A : en dan exact dezelfde kegel nog eens link
+	Free: Pattern=en dan, Pattern=nog, Pattern=kegel
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=43| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : de omgekeerde kegel bovenop en een identiek aan de voorkant
+	Free: Pattern=aan de, Pattern=een, Pattern=de omgekeerde kegel, Pattern=en, Pattern=identiek
+	Constrained: Pattern=kegel, Pattern=de
+Turn ID=45| B | B : en dan en rechts nog een soort pixel
+	Free: Pattern=nog een, Pattern=rechts, Pattern=en dan, Pattern=een soort, Pattern=en
+	Constrained: Pattern=dan, Pattern=een, Pattern=en, Pattern=nog, Pattern=soort
+Turn ID=46| B | B : en dan links een klein armp
+	Free: Pattern=en dan links, Pattern=een
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=links, Pattern=en
+Turn ID=47| A | A : ja wachten even zoeken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| A | A : dat zijn object
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=49| A | A : in het bovenaan de omgekeerde kegel
+	Free: Pattern=de omgekeerde kegel, Pattern=het, Pattern=bovenaan
+	Constrained: Pattern=kegel, Pattern=de
+Turn ID=50| A | A : en dan links identiek hetzelfde
+	Free: Pattern=en dan links, Pattern=identiek
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=links, Pattern=en
+Turn ID=51| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

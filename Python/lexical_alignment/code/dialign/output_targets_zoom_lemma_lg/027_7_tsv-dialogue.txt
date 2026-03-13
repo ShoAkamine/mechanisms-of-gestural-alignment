@@ -1,0 +1,119 @@
+A|0| A: goed opnieuw _een_ kop _en_ ik kunnen _het_ best omschrijven als _een_ soort _tafel_ _die_ _die_ er doorheen gaan 
+A|1| A: dus je hebben _het_ kop _en_ dan uitgaan er echt zo'n tafelachtig _object_ doorheen 
+A|2| A: aan _de_ bovenkant ongeveer 
+B|3| B: [en] daar staan ook [een] omgekeerad piramide op 
+A|4| A: _ja_ exact 
+B|5| B: op _dat_ [tafel] 
+A|6| A: _ja_ 
+B|7| B: _dat zijn object_ nummer 
+B|8| B: dit _zijn_ [die] [tafel] 
+B|9| B: [die] iets [ja] _met_ [een] _omgekeerd_ piramide 
+A|10| A: [ja] 
+A|11| A: [die] er [met] _de_ [omgekeerd] 
+A|12| A: [ja] 
+A|13| A: [object] 
+A|14| A: _de tafel_ 
+A|15| A: bovenaan 
+B|16| B: nummer 
+B|17| B: [het] [tafel] 
+A|18| A: [dat zijn] 
+B|19| B: [met] [een] omgekeerde afgetopte piramide bovenop 
+A|20| A: [ja] 
+A|21| A: ik zoeken hem even 
+A|22| A: [ja] [ja] 
+B|23| B: [ja] 
+A|24| A: [dat zijn object] 
+A|25| A: _de tafel_ 
+B|26| B: nummer 
+B|27| B: [de tafel] 
+A|28| A: [object] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : goed opnieuw een kop en ik kunnen het best omschrijven als een soort tafel die die er doorheen gaan
+	Free: Pattern=een, Pattern=het, Pattern=en, Pattern=tafel, Pattern=die
+	Constrained: 
+Turn ID=1| A | A : dus je hebben het kop en dan uitgaan er echt zo'n tafelachtig object doorheen
+	Free: Pattern=en, Pattern=het, Pattern=object
+	Constrained: 
+Turn ID=2| A | A : aan de bovenkant ongeveer
+	Free: Pattern=de
+	Constrained: 
+Turn ID=3| B | B : en daar staan ook een omgekeerad piramide op
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : ja exact
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : op dat tafel
+	Free: Pattern=dat, Pattern=tafel
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : dat zijn object nummer
+	Free: Pattern=dat zijn object
+	Constrained: Pattern=dat, Pattern=dat zijn, Pattern=zijn, Pattern=object
+Turn ID=8| B | B : dit zijn die tafel
+	Free: Pattern=zijn, Pattern=tafel, Pattern=die
+	Constrained: 
+Turn ID=9| B | B : die iets ja met een omgekeerd piramide
+	Free: Pattern=ja, Pattern=een, Pattern=met, Pattern=die, Pattern=omgekeerd
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : die er met de omgekeerd
+	Free: Pattern=omgekeerd, Pattern=met, Pattern=de, Pattern=die
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=14| A | A : de tafel
+	Free: Pattern=de tafel
+	Constrained: Pattern=tafel, Pattern=de
+Turn ID=15| A | A : bovenaan
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : het tafel
+	Free: Pattern=het, Pattern=tafel
+	Constrained: 
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| B | B : met een omgekeerde afgetopte piramide bovenop
+	Free: Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ik zoeken hem even
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : dat zijn object
+	Free: Pattern=dat zijn object
+	Constrained: Pattern=dat, Pattern=dat zijn, Pattern=zijn, Pattern=object
+Turn ID=25| A | A : de tafel
+	Free: Pattern=de tafel
+	Constrained: Pattern=tafel, Pattern=de
+Turn ID=26| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : de tafel
+	Free: Pattern=de tafel
+	Constrained: Pattern=tafel, Pattern=de
+Turn ID=28| A | A : object
+	Free: Pattern=object
+	Constrained: 

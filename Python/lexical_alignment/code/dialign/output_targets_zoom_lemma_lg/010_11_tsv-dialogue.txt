@@ -1,0 +1,79 @@
+B|0| B: deze _hebben_ _een_ soort op _de_ kop _kegel_ 
+B|1| B: _bovenop_ _en_ voorop _een_ _groot_ bol _ja_ bol 
+B|2| B: _met_ _een_ _aan de_ zijkant _een_ langwerpig driehoek 
+B|3| B: _en_ _bovenop een rechthoek_ 
+A|4| A: Eh 
+B|5| B: _naast de kegel_ 
+A|6| A: [bovenop een rechthoek] [naast de kegel] 
+B|7| B: echt gewoon [een] plat [rechthoek] 
+A|8| A: Oh 
+A|9| A: [ja] die [hebben] zo'n heel _groot neus_ [aan de] voorkant 
+B|10| B: [ja] kloppen 
+A|11| A: [ja] dat zijn 
+A|12| A: _eh_ dit zijn hij [met] die _groot neus_ [met] _twee_ roerstaafjes _twee_ verschillend 
+A|13| A: [en] link [hebben] hij [een] klein driehoekig armp 
+B|14| B: deze [hebben] [twee] staaf [bovenop] [groot neus] voorop [en] [een] zijkant driehoek 
+A|15| A: Oh dit zijn die [met] die [groot neus] [aan de] voorkant [en] die _twee roerstaaf_ die verschillend 
+B|16| B: _eh de_ [groot neus] voorop [en] [twee roerstaaf] bovenin 
+A|17| A: dat zijn 
+A|18| A: [eh de] [neus] [met] [de] [twee] verschillend [roerstaaf] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben een soort op de kop kegel
+	Free: Pattern=een, Pattern=kegel, Pattern=de, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : bovenop en voorop een groot bol ja bol
+	Free: Pattern=bovenop, Pattern=ja, Pattern=een, Pattern=groot, Pattern=en
+	Constrained: 
+Turn ID=2| B | B : met een aan de zijkant een langwerpig driehoek
+	Free: Pattern=aan de, Pattern=een, Pattern=met
+	Constrained: Pattern=de
+Turn ID=3| B | B : en bovenop een rechthoek
+	Free: Pattern=bovenop een rechthoek, Pattern=en
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=rechthoek
+Turn ID=4| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : naast de kegel
+	Free: Pattern=naast de kegel
+	Constrained: Pattern=kegel, Pattern=de
+Turn ID=6| A | A : bovenop een rechthoek naast de kegel
+	Free: Pattern=bovenop een rechthoek, Pattern=naast de kegel
+	Constrained: Pattern=kegel, Pattern=bovenop, Pattern=rechthoek, Pattern=de, Pattern=een
+Turn ID=7| B | B : echt gewoon een plat rechthoek
+	Free: Pattern=een, Pattern=rechthoek
+	Constrained: 
+Turn ID=8| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : ja die hebben zo'n heel groot neus aan de voorkant
+	Free: Pattern=groot neus, Pattern=aan de, Pattern=ja, Pattern=hebben
+	Constrained: Pattern=neus, Pattern=groot, Pattern=de
+Turn ID=10| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : eh dit zijn hij met die groot neus met twee roerstaafjes twee verschillend
+	Free: Pattern=groot neus, Pattern=eh, Pattern=met, Pattern=twee
+	Constrained: Pattern=neus, Pattern=groot
+Turn ID=13| A | A : en link hebben hij een klein driehoekig armp
+	Free: Pattern=een, Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=14| B | B : deze hebben twee staaf bovenop groot neus voorop en een zijkant driehoek
+	Free: Pattern=bovenop, Pattern=twee, Pattern=een, Pattern=en, Pattern=hebben, Pattern=groot neus
+	Constrained: Pattern=neus, Pattern=groot
+Turn ID=15| A | A : Oh dit zijn die met die groot neus aan de voorkant en die twee roerstaaf die verschillend
+	Free: Pattern=twee roerstaaf, Pattern=aan de, Pattern=groot neus, Pattern=met, Pattern=en
+	Constrained: Pattern=twee, Pattern=de, Pattern=groot, Pattern=neus, Pattern=roerstaaf
+Turn ID=16| B | B : eh de groot neus voorop en twee roerstaaf bovenin
+	Free: Pattern=eh de, Pattern=twee roerstaaf, Pattern=groot neus, Pattern=en
+	Constrained: Pattern=twee, Pattern=de, Pattern=groot, Pattern=neus, Pattern=eh, Pattern=roerstaaf
+Turn ID=17| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : eh de neus met de twee verschillend roerstaaf
+	Free: Pattern=eh de, Pattern=twee, Pattern=de, Pattern=neus, Pattern=met, Pattern=roerstaaf
+	Constrained: Pattern=de, Pattern=eh

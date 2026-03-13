@@ -1,0 +1,119 @@
+B|0| B: _eh_ _oké_ 
+B|1| B: _ehm_ _ik_ zien _een_ _vierkant_ om het figuur heen zitten 
+B|2| B: _en_ het _hebben_ _een _soort_ van_ hoe noemen we _dat_ stofzuigerslurf _aan de voorkant_ 
+B|3| B: _en_ bovenop twee rond 
+A|4| A: even denken horen 
+A|5| A: _Oh_ [en] dan [een soort] uitsteeksel [aan de] linkerkant 
+A|6| A: _met_ [een] alsof je zwaaien [soort van] 
+B|7| B: _ja_ 
+B|8| B: _ja_ _ja_ precies 
+A|9| A: [ja] [oké] 
+A|10| A: dan _zijn_ [dat] voor _mij_ 
+B|11| B: Oké 
+A|12| A: [en] dan moeten [ik] gewoon klikken 
+A|13| A: [ehm] [ja] _deze hebben_ die _slurf aan de voorkant_ 
+A|14| A: [en] dan [een soort] [vierkant] _er dwars doorheen_ 
+B|15| B: [Oh] [ja] _ja dat zijn bij mij_ 
+A|16| A: [en] 
+B|17| B: _eh_ [deze hebben] [vierkant] door het vorm heen 
+B|18| B: [de] vorm heen 
+A|19| A: [ehm] [ja dat zijn] [ja dat zijn bij mij] 
+B|20| B: [met] zo'n [slurf aan de voorkant] 
+A|21| A: [ehm] [ja] [met] [dat] [vierkant] _er dwars doorheen_ 
+A|22| A: [en] dan die [slurf] 
+B|23| B: [Oh] [ja] nummer 
+B|24| B: [met] het vierkan [er dwars doorheen] 
+B|25| B: [en] [de] [slurf] 
+A|26| A: [eh] [zijn] [dat] [bij mij] 
+A|27| A: [ehm] [ja] dit [zijn] één [met] [dat] [vierkant] [er dwars doorheen] 
+B|28| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh oké
+	Free: Pattern=oké, Pattern=eh
+	Constrained: 
+Turn ID=1| B | B : ehm ik zien een vierkant om het figuur heen zitten
+	Free: Pattern=vierkant, Pattern=ik, Pattern=een, Pattern=ehm
+	Constrained: 
+Turn ID=2| B | B : en het hebben een soort van hoe noemen we dat stofzuigerslurf aan de voorkant
+	Free: Pattern=dat, Pattern=hebben, Pattern=een soort, Pattern=en, Pattern=soort van, Pattern=aan de voorkant
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=3| B | B : en bovenop twee rond
+	Free: Pattern=en
+	Constrained: 
+Turn ID=4| A | A : even denken horen
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : Oh en dan een soort uitsteeksel aan de linkerkant
+	Free: Pattern=aan de, Pattern=een soort, Pattern=Oh, Pattern=en
+	Constrained: Pattern=een, Pattern=de
+Turn ID=6| A | A : met een alsof je zwaaien soort van
+	Free: Pattern=soort van, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : dan zijn dat voor mij
+	Free: Pattern=zijn, Pattern=dat, Pattern=mij
+	Constrained: 
+Turn ID=11| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : en dan moeten ik gewoon klikken
+	Free: Pattern=ik, Pattern=en
+	Constrained: 
+Turn ID=13| A | A : ehm ja deze hebben die slurf aan de voorkant
+	Free: Pattern=slurf aan de voorkant, Pattern=deze hebben, Pattern=ja, Pattern=ehm
+	Constrained: Pattern=de, Pattern=aan de, Pattern=slurf, Pattern=hebben, Pattern=aan de voorkant
+Turn ID=14| A | A : en dan een soort vierkant er dwars doorheen
+	Free: Pattern=er dwars doorheen, Pattern=een soort, Pattern=vierkant, Pattern=en
+	Constrained: Pattern=een
+Turn ID=15| B | B : Oh ja ja dat zijn bij mij
+	Free: Pattern=ja dat zijn bij mij, Pattern=ja, Pattern=Oh
+	Constrained: Pattern=dat, Pattern=ja, Pattern=ja dat zijn, Pattern=mij, Pattern=zijn, Pattern=bij mij
+Turn ID=16| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=17| B | B : eh deze hebben vierkant door het vorm heen
+	Free: Pattern=deze hebben, Pattern=vierkant, Pattern=eh
+	Constrained: Pattern=hebben
+Turn ID=18| B | B : de vorm heen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=19| A | A : ehm ja dat zijn ja dat zijn bij mij
+	Free: Pattern=ja dat zijn bij mij, Pattern=ja dat zijn, Pattern=ehm
+	Constrained: Pattern=dat, Pattern=ja, Pattern=ja dat zijn, Pattern=mij, Pattern=zijn, Pattern=bij mij
+Turn ID=20| B | B : met zo'n slurf aan de voorkant
+	Free: Pattern=slurf aan de voorkant, Pattern=met
+	Constrained: Pattern=slurf, Pattern=de, Pattern=aan de, Pattern=aan de voorkant
+Turn ID=21| A | A : ehm ja met dat vierkant er dwars doorheen
+	Free: Pattern=dat, Pattern=ja, Pattern=er dwars doorheen, Pattern=vierkant, Pattern=ehm, Pattern=met
+	Constrained: 
+Turn ID=22| A | A : en dan die slurf
+	Free: Pattern=en, Pattern=slurf
+	Constrained: 
+Turn ID=23| B | B : Oh ja nummer
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=24| B | B : met het vierkan er dwars doorheen
+	Free: Pattern=er dwars doorheen, Pattern=met
+	Constrained: 
+Turn ID=25| B | B : en de slurf
+	Free: Pattern=en, Pattern=slurf, Pattern=de
+	Constrained: 
+Turn ID=26| A | A : eh zijn dat bij mij
+	Free: Pattern=bij mij, Pattern=zijn, Pattern=eh, Pattern=dat
+	Constrained: Pattern=mij
+Turn ID=27| A | A : ehm ja dit zijn één met dat vierkant er dwars doorheen
+	Free: Pattern=dat, Pattern=ja, Pattern=vierkant, Pattern=ehm, Pattern=met, Pattern=zijn, Pattern=er dwars doorheen
+	Constrained: 
+Turn ID=28| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

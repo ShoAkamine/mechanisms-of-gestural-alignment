@@ -1,0 +1,131 @@
+B|0| B: _Oké_ euhm nou deze hebben dus van _die_ heel gek _oor_ zeggen maar van _die driedelig oor_ 
+B|1| B: drie van _die soort_ diamant _oor_ _die_ heel erg 
+A|2| A: _ja_ 
+A|3| A: _ja _ja_ en_ allebei _de_ kant 
+B|4| B: [ja en] euh 
+A|5| A: [en] hij staan op een [soort] vierkant 
+B|6| B: [ja en] één euh zeggen maar _rond_ ding voorop toch 
+A|7| A: [Oké] 
+A|8| A: op _zijn_ _ja _ja_ ja_ ik weten hem ik weten hem 
+B|9| B: [ja ja] oké 
+A|10| A: oh _dit zijn_ diegene _met [die_ soort] [driedelig oor] _aan_ allebei _de_ kant 
+A|11| A: een [soort] vlecht vinden ik _het_ op lijken 
+A|12| A: [en] een [soort] plat _rond aan de voorkant_ _en het_ staan op zo'n vierkant 
+B|13| B: _Euh_ [ja] 
+B|14| B: ehm _dit zijn met die_ mooi [oor] zeggen maar _met die driedelig oor_ 
+A|15| A: [ja] 
+B|16| B: [Oké] 
+A|17| A: Yes 
+A|18| A: [Euh] 
+B|19| B: Oke top 
+A|20| A: [dit zijn [met die] driedelig oor] 
+B|21| B: ehm even zoekenEuh 
+B|22| B: [en het] [rond aan de voorkant] hè 
+A|23| A: [ja [ja] en] op [het] vierkant 
+B|24| B: [Oké] 
+B|25| B: [ja] 
+B|26| B: ehm [dit zijn] [die] mooi [oor] [die driedelig oor] 
+A|27| A: [ja] 
+B|28| B: [Oké] 
+A|29| A: [Euh] 
+A|30| A: [dit zijn] [de] [driedelig oor] 
+B|31| B: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké euhm nou deze hebben dus van die heel gek oor zeggen maar van die driedelig oor
+	Free: Pattern=die driedelig oor, Pattern=oor, Pattern=Oké, Pattern=die
+	Constrained: Pattern=driedelig oor, Pattern=oor, Pattern=die
+Turn ID=1| B | B : drie van die soort diamant oor die heel erg
+	Free: Pattern=die soort, Pattern=oor, Pattern=die
+	Constrained: Pattern=die, Pattern=soort
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : ja ja en allebei de kant
+	Free: Pattern=ja en, Pattern=ja ja, Pattern=de
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=4| B | B : ja en euh
+	Free: Pattern=ja en
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=5| A | A : en hij staan op een soort vierkant
+	Free: Pattern=soort, Pattern=en
+	Constrained: 
+Turn ID=6| B | B : ja en één euh zeggen maar rond ding voorop toch
+	Free: Pattern=ja en, Pattern=rond
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=7| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : op zijn ja ja ja ik weten hem ik weten hem
+	Free: Pattern=ja ja, Pattern=zijn
+	Constrained: Pattern=ja
+Turn ID=9| B | B : ja ja oké
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=10| A | A : oh dit zijn diegene met die soort driedelig oor aan allebei de kant
+	Free: Pattern=met die, Pattern=die soort, Pattern=dit zijn, Pattern=driedelig oor, Pattern=de, Pattern=aan
+	Constrained: Pattern=oor, Pattern=die, Pattern=soort, Pattern=zijn
+Turn ID=11| A | A : een soort vlecht vinden ik het op lijken
+	Free: Pattern=het, Pattern=soort
+	Constrained: 
+Turn ID=12| A | A : en een soort plat rond aan de voorkant en het staan op zo'n vierkant
+	Free: Pattern=rond aan de voorkant, Pattern=en het, Pattern=soort, Pattern=en
+	Constrained: Pattern=het, Pattern=en, Pattern=rond, Pattern=de, Pattern=aan
+Turn ID=13| B | B : Euh ja
+	Free: Pattern=ja, Pattern=Euh
+	Constrained: 
+Turn ID=14| B | B : ehm dit zijn met die mooi oor zeggen maar met die driedelig oor
+	Free: Pattern=dit zijn met die, Pattern=met die driedelig oor, Pattern=oor
+	Constrained: Pattern=met die, Pattern=oor, Pattern=die, Pattern=zijn, Pattern=die driedelig oor, Pattern=dit zijn, Pattern=driedelig oor
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=17| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=19| B | B : Oke top
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : dit zijn met die driedelig oor
+	Free: Pattern=dit zijn met die, Pattern=met die driedelig oor
+	Constrained: Pattern=met die, Pattern=oor, Pattern=die, Pattern=zijn, Pattern=die driedelig oor, Pattern=dit zijn, Pattern=driedelig oor
+Turn ID=21| B | B : ehm even zoekenEuh
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : en het rond aan de voorkant hè
+	Free: Pattern=rond aan de voorkant, Pattern=en het
+	Constrained: Pattern=het, Pattern=en, Pattern=rond, Pattern=de, Pattern=aan
+Turn ID=23| A | A : ja ja en op het vierkant
+	Free: Pattern=ja en, Pattern=ja ja, Pattern=het
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=24| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ehm dit zijn die mooi oor die driedelig oor
+	Free: Pattern=die driedelig oor, Pattern=dit zijn, Pattern=oor, Pattern=die
+	Constrained: Pattern=driedelig oor, Pattern=oor, Pattern=die, Pattern=zijn
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=29| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=30| A | A : dit zijn de driedelig oor
+	Free: Pattern=dit zijn, Pattern=driedelig oor, Pattern=de
+	Constrained: Pattern=oor, Pattern=zijn
+Turn ID=31| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 

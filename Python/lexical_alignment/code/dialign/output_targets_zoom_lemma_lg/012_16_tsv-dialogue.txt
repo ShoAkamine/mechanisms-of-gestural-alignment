@@ -1,0 +1,279 @@
+B|0| B: ehm _ja_ deze _hebben_ _ik_ omschrijven _als_ _twee knuppel_ 
+A|1| A: _Oké_ 
+B|2| B: eentje _boven_ _en_ _één_ link 
+A|3| A: [boven] [één] _links_ 
+B|4| B: _echt_ _zo'n_ knuppelvorm laten _maar_ _zeggen_ 
+A|5| A: _Oh ja_ 
+B|6| B: _en_ _dan_ _rechts_ zitten er _zo'n_ gek _verrekijker_ vorm 
+B|7| B: zoals bij _die robot_ 
+B|8| B: _en_ er zitten [links] _nog_ [één] of _ander_ gek 
+A|9| A: _Ehm_ 
+A|10| A: [nog] _een_ [verrekijker] 
+A|11| A: _zijn_ [ik] _op_ zoek 
+B|12| B: [ja] weten _je_ [nog] _die robot_ _met _die_ twee_ 
+A|13| A: J-Ja 
+B|14| B: [ja] _die_ _hebben_ hij _dan_ _rechts_ 
+A|15| A: _Oh_ oké 
+B|16| B: _zo'n_ zelfde vorm 
+A|17| A: _Oh ja_ [ik] zien _hem_ 
+B|18| B: _en_ _dan_ _twee knuppel_ 
+B|19| B: _en_ [nog] _zo'n_ gek flummel 
+A|20| A: [ja] [nog] _een_ arm 
+B|21| B: [ja] zoiets 
+A|22| A: [zo'n] 
+B|23| B: [ik] weten _niet_ _wat_ _dat zijn_ 
+B|24| B: [ik] neem alles _wat_ [ik] _niet_ weten _gewoon_ [een] flummel 
+B|25| B: _maar dan_ weten _je_ _dat_ 
+A|26| A: [ja] _nee_ _nee_ _nee_ [zijn] goed 
+A|27| A: [als] [je] [zeggen] waar [die] positie [zijn] [zeggen] [maar dan] snap [ik] 
+B|28| B: [ja] 
+A|29| A: _Oké_ het [zijn] 
+A|30| A: _Ehm_ 
+A|31| A: [ja] 
+A|32| A: [ik] vinden het [echt] _op_ iets _lijken maar_ [ik] willen [gewoon] [niet] [zeggen] [wat] want het klinken _zo_ 
+A|33| A: het [zijn] [zeggen] [maar] [een] [hebben] [een] _verrekijker rechts_ 
+B|34| B: [Oh] _met _de_ twee knuppel_ 
+A|35| A: Uitsteken 
+A|36| A: [ja] [ik] vinden het _op_ iets [ander] _lijken maar_ [ik] willen het [echt] 
+A|37| A: [ja] 
+B|38| B: [Oké] [ik] weten in ieder geval welk [je] _bedoelen_ 
+A|39| A: [Oké] 
+A|40| A: [ja] 
+B|41| B: _dat zijn_ 
+B|42| B: eh _ik hebben_ weer _de twee knuppel_ _en_ _de [verrekijker_ rechts] 
+A|43| A: Knoppels 
+A|44| A: [Oh] [bedoelen] [je] [die robot] 
+A|45| A: [met die] [verrekijker] 
+B|46| B: [nee] [die] _knuppel_ [boven] _en_ link [die] jij net [zo] ergens [op] plaatsvinden [lijken maar] waarvan [je] 
+A|47| A: [Oh] 
+A|48| A: _Oh ja_ 
+B|49| B: [die] 
+A|50| A: [ik hebben] _de twee knuppel met de verrekijker_ 
+B|51| B: [Oh ja] _dat zijn_ 
+B|52| B: eh [de twee knuppel met de verrekijker] 
+A|53| A: [dat zijn] 
+A|54| A: [nee] grap 
+B|55| B: Harold 
+B|56| B: [ja] _we_ houden [hem] al 
+A|57| A: [nee] [op] zich [zijn] man [met] neus wel heel duidelijk 
+B|58| B: [Oké] 
+A|59| A: [Oké] dit [zijn] [verrekijker rechts] 
+A|60| A: [en] [die [twee] knuppel] 
+B|61| B: [Oh ja] 
+A|62| A: [maar] wa-hoe zullen [we] [dat] noemen 
+B|63| B: [Oh ja] 
+B|64| B: [Ehm] 
+B|65| B: [knuppel] 
+A|66| A: [knuppel] [ja] 
+A|67| A: [ja] [ja] [knuppel] [zijn] goed 
+B|68| B: [Oké] [dat] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm ja deze hebben ik omschrijven als twee knuppel
+	Free: Pattern=ja, Pattern=hebben, Pattern=ik, Pattern=twee knuppel, Pattern=als
+	Constrained: Pattern=knuppel
+Turn ID=1| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| B | B : eentje boven en één link
+	Free: Pattern=boven, Pattern=en, Pattern=één
+	Constrained: 
+Turn ID=3| A | A : boven één links
+	Free: Pattern=boven, Pattern=links, Pattern=één
+	Constrained: 
+Turn ID=4| B | B : echt zo'n knuppelvorm laten maar zeggen
+	Free: Pattern=zo'n, Pattern=echt, Pattern=maar, Pattern=zeggen
+	Constrained: 
+Turn ID=5| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=6| B | B : en dan rechts zitten er zo'n gek verrekijker vorm
+	Free: Pattern=zo'n, Pattern=rechts, Pattern=dan, Pattern=verrekijker, Pattern=en
+	Constrained: 
+Turn ID=7| B | B : zoals bij die robot
+	Free: Pattern=die robot
+	Constrained: Pattern=die
+Turn ID=8| B | B : en er zitten links nog één of ander gek
+	Free: Pattern=nog, Pattern=links, Pattern=één, Pattern=ander, Pattern=en
+	Constrained: 
+Turn ID=9| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=10| A | A : nog een verrekijker
+	Free: Pattern=een, Pattern=verrekijker, Pattern=nog
+	Constrained: 
+Turn ID=11| A | A : zijn ik op zoek
+	Free: Pattern=zijn, Pattern=ik, Pattern=op
+	Constrained: 
+Turn ID=12| B | B : ja weten je nog die robot met die twee
+	Free: Pattern=met die, Pattern=nog, Pattern=ja, Pattern=je, Pattern=die twee, Pattern=die robot
+	Constrained: Pattern=die, Pattern=met
+Turn ID=13| A | A : J-Ja
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : ja die hebben hij dan rechts
+	Free: Pattern=dan, Pattern=hebben, Pattern=die, Pattern=rechts, Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=16| B | B : zo'n zelfde vorm
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=17| A | A : Oh ja ik zien hem
+	Free: Pattern=Oh ja, Pattern=ik, Pattern=hem
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=18| B | B : en dan twee knuppel
+	Free: Pattern=twee knuppel, Pattern=en, Pattern=dan
+	Constrained: Pattern=knuppel
+Turn ID=19| B | B : en nog zo'n gek flummel
+	Free: Pattern=en, Pattern=zo'n, Pattern=nog
+	Constrained: 
+Turn ID=20| A | A : ja nog een arm
+	Free: Pattern=ja, Pattern=een, Pattern=nog
+	Constrained: 
+Turn ID=21| B | B : ja zoiets
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : zo'n
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=23| B | B : ik weten niet wat dat zijn
+	Free: Pattern=dat zijn, Pattern=niet, Pattern=ik, Pattern=wat
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=24| B | B : ik neem alles wat ik niet weten gewoon een flummel
+	Free: Pattern=niet, Pattern=een, Pattern=gewoon, Pattern=wat, Pattern=ik
+	Constrained: 
+Turn ID=25| B | B : maar dan weten je dat
+	Free: Pattern=maar dan, Pattern=dat, Pattern=je
+	Constrained: Pattern=dan, Pattern=maar
+Turn ID=26| A | A : ja nee nee nee zijn goed
+	Free: Pattern=nee, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : als je zeggen waar die positie zijn zeggen maar dan snap ik
+	Free: Pattern=zeggen, Pattern=als, Pattern=die, Pattern=maar dan, Pattern=ik, Pattern=zijn, Pattern=je
+	Constrained: Pattern=dan, Pattern=maar
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : Oké het zijn
+	Free: Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=30| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ik vinden het echt op iets lijken maar ik willen gewoon niet zeggen wat want het klinken zo
+	Free: Pattern=op, Pattern=niet, Pattern=gewoon, Pattern=lijken maar, Pattern=echt, Pattern=wat, Pattern=ik, Pattern=zeggen, Pattern=zo
+	Constrained: Pattern=maar
+Turn ID=33| A | A : het zijn zeggen maar een hebben een verrekijker rechts
+	Free: Pattern=een, Pattern=hebben, Pattern=zeggen, Pattern=verrekijker rechts, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=rechts, Pattern=verrekijker
+Turn ID=34| B | B : Oh met de twee knuppel
+	Free: Pattern=de twee knuppel, Pattern=met de, Pattern=Oh
+	Constrained: Pattern=knuppel, Pattern=met, Pattern=twee knuppel
+Turn ID=35| A | A : Uitsteken
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : ja ik vinden het op iets ander lijken maar ik willen het echt
+	Free: Pattern=ja, Pattern=op, Pattern=lijken maar, Pattern=echt, Pattern=ik, Pattern=ander
+	Constrained: Pattern=maar
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : Oké ik weten in ieder geval welk je bedoelen
+	Free: Pattern=ik, Pattern=Oké, Pattern=bedoelen, Pattern=je
+	Constrained: 
+Turn ID=39| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=42| B | B : eh ik hebben weer de twee knuppel en de verrekijker rechts
+	Free: Pattern=ik hebben, Pattern=en, Pattern=de verrekijker, Pattern=de twee knuppel, Pattern=verrekijker rechts
+	Constrained: Pattern=rechts, Pattern=knuppel, Pattern=hebben, Pattern=twee knuppel, Pattern=ik, Pattern=verrekijker
+Turn ID=43| A | A : Knoppels
+	Free: 
+	Constrained: 
+Turn ID=44| A | A : Oh bedoelen je die robot
+	Free: Pattern=die robot, Pattern=Oh, Pattern=bedoelen, Pattern=je
+	Constrained: Pattern=die
+Turn ID=45| A | A : met die verrekijker
+	Free: Pattern=met die, Pattern=verrekijker
+	Constrained: Pattern=die, Pattern=met
+Turn ID=46| B | B : nee die knuppel boven en link die jij net zo ergens op plaatsvinden lijken maar waarvan je
+	Free: Pattern=boven, Pattern=nee, Pattern=zo, Pattern=lijken maar, Pattern=die, Pattern=en, Pattern=je, Pattern=op, Pattern=knuppel
+	Constrained: Pattern=maar
+Turn ID=47| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=48| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=49| B | B : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=50| A | A : ik hebben de twee knuppel met de verrekijker
+	Free: Pattern=de twee knuppel met de verrekijker, Pattern=ik hebben
+	Constrained: Pattern=met de, Pattern=knuppel, Pattern=hebben, Pattern=twee knuppel, Pattern=met, Pattern=ik, Pattern=verrekijker, Pattern=de verrekijker, Pattern=de twee knuppel
+Turn ID=51| B | B : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=Oh ja
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=Oh, Pattern=ja
+Turn ID=52| B | B : eh de twee knuppel met de verrekijker
+	Free: Pattern=de twee knuppel met de verrekijker
+	Constrained: Pattern=met de, Pattern=knuppel, Pattern=twee knuppel, Pattern=met, Pattern=verrekijker, Pattern=de verrekijker, Pattern=de twee knuppel
+Turn ID=53| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=54| A | A : nee grap
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=55| B | B : Harold
+	Free: 
+	Constrained: 
+Turn ID=56| B | B : ja we houden hem al
+	Free: Pattern=hem, Pattern=ja, Pattern=we
+	Constrained: 
+Turn ID=57| A | A : nee op zich zijn man met neus wel heel duidelijk
+	Free: Pattern=nee, Pattern=zijn, Pattern=met, Pattern=op
+	Constrained: 
+Turn ID=58| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=59| A | A : Oké dit zijn verrekijker rechts
+	Free: Pattern=verrekijker rechts, Pattern=zijn, Pattern=Oké
+	Constrained: Pattern=rechts, Pattern=verrekijker
+Turn ID=60| A | A : en die twee knuppel
+	Free: Pattern=twee knuppel, Pattern=die twee, Pattern=en
+	Constrained: Pattern=knuppel, Pattern=die
+Turn ID=61| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=62| A | A : maar wa-hoe zullen we dat noemen
+	Free: Pattern=dat, Pattern=maar, Pattern=we
+	Constrained: 
+Turn ID=63| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=64| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=65| B | B : knuppel
+	Free: Pattern=knuppel
+	Constrained: 
+Turn ID=66| A | A : knuppel ja
+	Free: Pattern=knuppel, Pattern=ja
+	Constrained: 
+Turn ID=67| A | A : ja ja knuppel zijn goed
+	Free: Pattern=knuppel, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=68| B | B : Oké dat dat zijn
+	Free: Pattern=dat zijn, Pattern=dat, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn

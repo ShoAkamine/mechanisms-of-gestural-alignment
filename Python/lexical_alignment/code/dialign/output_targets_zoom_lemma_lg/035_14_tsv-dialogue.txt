@@ -1,0 +1,119 @@
+A|0| A: eh bij mij _zitten_ _nu_ een _bolle_ _die_ liggen _er_ bovenop 
+A|1| A: _Ehm_ _en_ _aan de_ rechtervoorkant wijzen _er_ een _balk_ naar beneden 
+A|2| A: _Ehm_ 
+B|3| B: Oh _ik_ weten het al welk het zijn 
+B|4| B: _Hebben_ hij _ook_ nog _twee_ van zo'n uitsteksel soort van armp 
+A|5| A: _ja_ _ja_ kloppen 
+B|6| B: [ja] 
+B|7| B: [Ehm] _ik hebben er één_ [die] zeggen maar recht voor zich zo'n heel lang [balk] _hebben_ staan 
+B|8| B: [en] boven op het hoofd [zitten] zo'n [bolle] 
+A|9| A: [Hebben] _die twee_ uitsteeksel [ook] 
+B|10| B: [en] dan 
+B|11| B: [ja] 
+A|12| A: [ja] 
+A|13| A: eh [ik hebben er één] [en] [er] liggen een [bolle] bovenop 
+A|14| A: [en] _aan de rechtervoorzijde_ zien wij een [balk] naar beneden wijzen 
+B|15| B: [ja] 
+B|16| B: _met_ [die twee] uitsteksel [aan] beide kant 
+A|17| A: [ja] kloppen 
+B|18| B: _ik hebben die_ _met_ [die] heel lang [balk] [aan de] voorzijde [en] dan _met dat bolle_ op het hoofd 
+B|19| B: _met_ [die twee] uitstiksel 
+A|20| A: [ja] 
+A|21| A: [ik hebben die] een [met dat bolle] [die] [er] bovenop liggen 
+A|22| A: _en die_ [balk] [die] wij zien [aan de] rechterkant een beetje 
+A|23| A: [en] [twee] uiksteeksel 
+B|24| B: Yes 
+B|25| B: [ik hebben] [nu] [die] [met dat bolle] op het hoofd [en] zo'n heel lang [balk] [aan de rechtervoorzijde] 
+B|26| B: [en [die] twee] uitsteksel 
+A|27| A: [ja] 
+A|28| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh bij mij zitten nu een bolle die liggen er bovenop
+	Free: Pattern=nu, Pattern=bolle, Pattern=er, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=1| A | A : Ehm en aan de rechtervoorkant wijzen er een balk naar beneden
+	Free: Pattern=Ehm, Pattern=aan de, Pattern=balk, Pattern=er, Pattern=en
+	Constrained: Pattern=aan
+Turn ID=2| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=3| B | B : Oh ik weten het al welk het zijn
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=4| B | B : Hebben hij ook nog twee van zo'n uitsteksel soort van armp
+	Free: Pattern=ook, Pattern=Hebben, Pattern=twee
+	Constrained: 
+Turn ID=5| A | A : ja ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : Ehm ik hebben er één die zeggen maar recht voor zich zo'n heel lang balk hebben staan
+	Free: Pattern=Ehm, Pattern=hebben, Pattern=balk, Pattern=die, Pattern=ik hebben er één
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben, Pattern=er
+Turn ID=8| B | B : en boven op het hoofd zitten zo'n bolle
+	Free: Pattern=zitten, Pattern=bolle, Pattern=en
+	Constrained: 
+Turn ID=9| A | A : Hebben die twee uitsteeksel ook
+	Free: Pattern=die twee, Pattern=ook, Pattern=Hebben
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=10| B | B : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : eh ik hebben er één en er liggen een bolle bovenop
+	Free: Pattern=ik hebben er één, Pattern=bolle, Pattern=en, Pattern=er
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben, Pattern=er
+Turn ID=14| A | A : en aan de rechtervoorzijde zien wij een balk naar beneden wijzen
+	Free: Pattern=aan de rechtervoorzijde, Pattern=balk, Pattern=en
+	Constrained: Pattern=aan, Pattern=aan de
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : met die twee uitsteksel aan beide kant
+	Free: Pattern=die twee, Pattern=aan, Pattern=met
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=17| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ik hebben die met die heel lang balk aan de voorzijde en dan met dat bolle op het hoofd
+	Free: Pattern=aan de, Pattern=balk, Pattern=met, Pattern=die, Pattern=ik hebben die, Pattern=en, Pattern=met dat bolle
+	Constrained: Pattern=ik hebben, Pattern=aan, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=bolle, Pattern=met
+Turn ID=19| B | B : met die twee uitstiksel
+	Free: Pattern=die twee, Pattern=met
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ik hebben die een met dat bolle die er bovenop liggen
+	Free: Pattern=ik hebben die, Pattern=met dat bolle, Pattern=die, Pattern=er
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=bolle, Pattern=met
+Turn ID=22| A | A : en die balk die wij zien aan de rechterkant een beetje
+	Free: Pattern=aan de, Pattern=en die, Pattern=die, Pattern=balk
+	Constrained: Pattern=die, Pattern=aan, Pattern=en
+Turn ID=23| A | A : en twee uiksteeksel
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=24| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : ik hebben nu die met dat bolle op het hoofd en zo'n heel lang balk aan de rechtervoorzijde
+	Free: Pattern=ik hebben, Pattern=nu, Pattern=balk, Pattern=die, Pattern=aan de rechtervoorzijde, Pattern=en, Pattern=met dat bolle
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=hebben, Pattern=ik, Pattern=bolle, Pattern=met
+Turn ID=26| B | B : en die twee uitsteksel
+	Free: Pattern=die twee, Pattern=en die
+	Constrained: Pattern=die, Pattern=twee, Pattern=en
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : Eh
+	Free: 
+	Constrained: 

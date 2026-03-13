@@ -1,0 +1,83 @@
+B|0| B: Eh deze hebben zo'n zo'n is-teak _aan de zijkant_ _aan de_ rechterkant 
+B|1| B: _met_ een _met_ een bijna afmaken _hoed_ maar niet helemaal 
+A|2| A: _Oh ja_ 
+A|3| A: _ja_ _ja_ _dat zijn_ 
+A|4| A: eh _dit _zijn met dat is-teken_ aan de zijkant_ 
+B|5| B: [Oh ja] _met het_ half _hoed_ 
+A|6| A: Halve [hoed] [ja] kloppen 
+B|7| B: [ja] [zijn] [dat] 
+B|8| B: [dit zijn met dat is-teken] 
+B|9| B: en [dat] half [hoed] 
+A|10| A: Hmhm 
+A|11| A: _dat zijn_ 
+A|12| A: [dit zijn [met] het] _is-teken aan de zijkant_ 
+B|13| B: _mhm_ [dat zijn] 
+B|14| B: S [zijn met dat is-teken aan de zijkant] 
+A|15| A: [mhm] 
+A|16| A: [dit zijn [met] het] [is-teken aan de zijkant] 
+B|17| B: [mhm] 
+B|18| B: waar staan hij 
+B|19| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh deze hebben zo'n zo'n is-teak aan de zijkant aan de rechterkant
+	Free: Pattern=aan de zijkant, Pattern=aan de
+	Constrained: Pattern=aan de
+Turn ID=1| B | B : met een met een bijna afmaken hoed maar niet helemaal
+	Free: Pattern=hoed, Pattern=met
+	Constrained: 
+Turn ID=2| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=3| A | A : ja ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=4| A | A : eh dit zijn met dat is-teken aan de zijkant
+	Free: Pattern=zijn met dat is-teken aan de zijkant, Pattern=dit zijn met dat is-teken
+	Constrained: Pattern=dat, Pattern=is-teken aan de zijkant, Pattern=aan de, Pattern=met, Pattern=zijn, Pattern=aan de zijkant, Pattern=dit zijn met
+Turn ID=5| B | B : Oh ja met het half hoed
+	Free: Pattern=met het, Pattern=Oh ja, Pattern=hoed
+	Constrained: Pattern=met, Pattern=ja
+Turn ID=6| A | A : Halve hoed ja kloppen
+	Free: Pattern=hoed, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja zijn dat
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : dit zijn met dat is-teken
+	Free: Pattern=dit zijn met dat is-teken
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=met, Pattern=dit zijn met
+Turn ID=9| B | B : en dat half hoed
+	Free: Pattern=hoed, Pattern=dat
+	Constrained: 
+Turn ID=10| A | A : Hmhm
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| A | A : dit zijn met het is-teken aan de zijkant
+	Free: Pattern=is-teken aan de zijkant, Pattern=dit zijn met, Pattern=met het
+	Constrained: Pattern=zijn, Pattern=met, Pattern=aan de zijkant, Pattern=aan de
+Turn ID=13| B | B : mhm dat zijn
+	Free: Pattern=dat zijn, Pattern=mhm
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : S zijn met dat is-teken aan de zijkant
+	Free: Pattern=zijn met dat is-teken aan de zijkant
+	Constrained: Pattern=dat, Pattern=is-teken aan de zijkant, Pattern=aan de, Pattern=aan de zijkant, Pattern=met, Pattern=zijn
+Turn ID=15| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=16| A | A : dit zijn met het is-teken aan de zijkant
+	Free: Pattern=is-teken aan de zijkant, Pattern=dit zijn met, Pattern=met het
+	Constrained: Pattern=zijn, Pattern=met, Pattern=aan de zijkant, Pattern=aan de
+Turn ID=17| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=18| B | B : waar staan hij
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

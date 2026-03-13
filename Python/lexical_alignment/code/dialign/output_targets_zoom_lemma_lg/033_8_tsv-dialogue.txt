@@ -1,0 +1,71 @@
+A|0| A: Oké _euh_ _nu_ _hebben_ _ik_ er één 
+A|1| A: je _hebben_ _die_ basisvorm 
+A|2| A: echt _aan de_ onderkant van _die_ basisvorm zijn een _euh_ _ja_ een boog 
+A|3| A: en _die_ _komen_ eigenlijk naar je toe 
+A|4| A: _Euh_ 
+A|5| A: _aan de bovenkant_ zitten een soort _ruit met_ _aan_ twee kant een uitsteeksel _die_ steeds dikk _worden_ 
+A|6| A: en _euh_ naar _de_ rechterkant _die_ iets ver naar achter zijn draaien steken ook weer een draaien L _uit_ 
+B|7| B: [ja] nummer denken [ik] 
+B|8| B: _Euh ik hebben_ euijhoorbeeld [nu] [die] [met] [euh] _de ruit aan de bovenkant_ _met die_ _blok die_ dan [uit] _de ruit_ [komen] 
+A|9| A: [ja] dat zijn 
+A|10| A: [Euh ik hebben] [nu] hem weer [met die] _ruit [met_ die] steeds _groot worden_ [aan] beide kant _met [de_ ruit aan de bovenkant] 
+B|11| B: [ja] nummer 
+B|12| B: [ik hebben] [de _ruit] met de blok die_ [groot worden] 
+A|13| A: [ja] dat zijn 
+A|14| A: en [ik hebben] [nu] [met] het [ruit met de blok die] steeds [groot worden] 
+B|15| B: nummer 
+B|16| B: [ik hebben] [de [ruit] met de blok die] [groot worden] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké euh nu hebben ik er één
+	Free: Pattern=nu, Pattern=ik, Pattern=euh, Pattern=hebben
+	Constrained: 
+Turn ID=1| A | A : je hebben die basisvorm
+	Free: Pattern=die, Pattern=hebben
+	Constrained: 
+Turn ID=2| A | A : echt aan de onderkant van die basisvorm zijn een euh ja een boog
+	Free: Pattern=aan de, Pattern=die, Pattern=euh, Pattern=ja
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=3| A | A : en die komen eigenlijk naar je toe
+	Free: Pattern=die, Pattern=komen
+	Constrained: 
+Turn ID=4| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=5| A | A : aan de bovenkant zitten een soort ruit met aan twee kant een uitsteeksel die steeds dikk worden
+	Free: Pattern=aan, Pattern=worden, Pattern=die, Pattern=ruit met, Pattern=aan de bovenkant
+	Constrained: Pattern=aan, Pattern=de, Pattern=met, Pattern=aan de
+Turn ID=6| A | A : en euh naar de rechterkant die iets ver naar achter zijn draaien steken ook weer een draaien L uit
+	Free: Pattern=uit, Pattern=die, Pattern=de, Pattern=euh
+	Constrained: 
+Turn ID=7| B | B : ja nummer denken ik
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Euh ik hebben euijhoorbeeld nu die met euh de ruit aan de bovenkant met die blok die dan uit de ruit komen
+	Free: Pattern=met die, Pattern=de ruit, Pattern=uit, Pattern=de ruit aan de bovenkant, Pattern=komen, Pattern=nu, Pattern=met, Pattern=blok die, Pattern=euh, Pattern=die, Pattern=Euh ik hebben
+	Constrained: Pattern=ik hebben, Pattern=de ruit, Pattern=aan de, Pattern=Euh, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=aan de bovenkant, Pattern=de, Pattern=aan
+Turn ID=9| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : Euh ik hebben nu hem weer met die ruit met die steeds groot worden aan beide kant met de ruit aan de bovenkant
+	Free: Pattern=met die, Pattern=de ruit aan de bovenkant, Pattern=nu, Pattern=Euh ik hebben, Pattern=ruit met, Pattern=groot worden, Pattern=met de, Pattern=aan
+	Constrained: Pattern=ik hebben, Pattern=de ruit, Pattern=Euh, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=aan de bovenkant, Pattern=de, Pattern=aan, Pattern=aan de, Pattern=worden
+Turn ID=11| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ik hebben de ruit met de blok die groot worden
+	Free: Pattern=ruit met de blok die, Pattern=groot worden, Pattern=de ruit, Pattern=ik hebben
+	Constrained: Pattern=worden, Pattern=hebben, Pattern=blok die, Pattern=met, Pattern=die, Pattern=ruit met, Pattern=ik, Pattern=de, Pattern=met de
+Turn ID=13| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : en ik hebben nu met het ruit met de blok die steeds groot worden
+	Free: Pattern=ik hebben, Pattern=ruit met de blok die, Pattern=nu, Pattern=met, Pattern=groot worden
+	Constrained: Pattern=worden, Pattern=hebben, Pattern=blok die, Pattern=met, Pattern=die, Pattern=ruit met, Pattern=ik, Pattern=de, Pattern=met de
+Turn ID=15| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ik hebben de ruit met de blok die groot worden
+	Free: Pattern=ruit met de blok die, Pattern=groot worden, Pattern=de ruit, Pattern=ik hebben
+	Constrained: Pattern=worden, Pattern=hebben, Pattern=blok die, Pattern=met, Pattern=die, Pattern=ruit met, Pattern=ik, Pattern=de, Pattern=met de

@@ -1,0 +1,111 @@
+A|0| A: deze hebben links twee van _die aflopen_ vierkan 
+A|1| A: _en dan zo'n_ _vierkant vlak_ rechts voren 
+B|2| B: Oh _ja_ 
+B|3| B: _met_ de _spijker bovenop_ 
+A|4| A: [ja] 
+B|5| B: [ja] 
+B|6| B: even kijken _dit zijn_ _met die_ 
+B|7| B: _die spijker bovenop_ 
+B|8| B: [en dan zo'n] plat _vierkant voor_ 
+A|9| A: [ja] 
+B|10| B: [en] 
+B|11| B: [ja] 
+A|12| A: _dit zijn weer_ [die] [met die] twee _aflopen_ [vierkant] link 
+A|13| A: [en dan] _dat_ schroef [bovenop] 
+A|14| A: _en dat_ _vlak_ [vierkant voor] 
+B|15| B: kijken 
+B|16| B: Oh [ja] 
+B|17| B: even kijken _dit zijn weer met die_ ander _spijker bovenop_ [en dat] plat [vierkant voor] 
+A|18| A: O nee 
+A|19| A: wachten 
+B|20| B: [die aflopen] [ja] 
+A|21| A: O daar 
+A|22| A: _dit zijn weer met die spijker bovenop_ 
+A|23| A: [en] [die] link [die] [vierkant] aflopend [en _dat] vierkant vlak_ 
+B|24| B: ah [ja] 
+B|25| B: [dit zijn weer met die spijker bovenop] [met] [dat vierkant vlak] 
+B|26| B: aan de voorkant 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : deze hebben links twee van die aflopen vierkan
+	Free: Pattern=die aflopen
+	Constrained: Pattern=aflopen, Pattern=die
+Turn ID=1| A | A : en dan zo'n vierkant vlak rechts voren
+	Free: Pattern=en dan zo'n, Pattern=vierkant vlak
+	Constrained: Pattern=vierkant, Pattern=en dan, Pattern=en, Pattern=vlak
+Turn ID=2| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : met de spijker bovenop
+	Free: Pattern=spijker bovenop, Pattern=met
+	Constrained: Pattern=bovenop
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : even kijken dit zijn met die
+	Free: Pattern=met die, Pattern=dit zijn
+	Constrained: Pattern=met, Pattern=die
+Turn ID=7| B | B : die spijker bovenop
+	Free: Pattern=die spijker bovenop
+	Constrained: Pattern=spijker bovenop, Pattern=bovenop, Pattern=die
+Turn ID=8| B | B : en dan zo'n plat vierkant voor
+	Free: Pattern=en dan zo'n, Pattern=vierkant voor
+	Constrained: Pattern=vierkant, Pattern=en dan, Pattern=en
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : dit zijn weer die met die twee aflopen vierkant link
+	Free: Pattern=met die, Pattern=aflopen, Pattern=die, Pattern=vierkant, Pattern=dit zijn weer
+	Constrained: Pattern=dit zijn, Pattern=met, Pattern=die
+Turn ID=13| A | A : en dan dat schroef bovenop
+	Free: Pattern=en dan, Pattern=dat, Pattern=bovenop
+	Constrained: Pattern=en
+Turn ID=14| A | A : en dat vlak vierkant voor
+	Free: Pattern=en dat, Pattern=vierkant voor, Pattern=vlak
+	Constrained: Pattern=dat, Pattern=en, Pattern=vierkant
+Turn ID=15| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : even kijken dit zijn weer met die ander spijker bovenop en dat plat vierkant voor
+	Free: Pattern=dit zijn weer met die, Pattern=spijker bovenop, Pattern=en dat, Pattern=vierkant voor
+	Constrained: Pattern=met, Pattern=die, Pattern=en, Pattern=vierkant, Pattern=dit zijn, Pattern=dit zijn weer, Pattern=dat, Pattern=met die, Pattern=bovenop
+Turn ID=18| A | A : O nee
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : wachten
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : die aflopen ja
+	Free: Pattern=die aflopen, Pattern=ja
+	Constrained: Pattern=aflopen, Pattern=die
+Turn ID=21| A | A : O daar
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : dit zijn weer met die spijker bovenop
+	Free: Pattern=dit zijn weer met die spijker bovenop
+	Constrained: Pattern=dit zijn weer met die, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=dit zijn weer, Pattern=met die, Pattern=bovenop, Pattern=spijker bovenop, Pattern=die spijker bovenop
+Turn ID=23| A | A : en die link die vierkant aflopend en dat vierkant vlak
+	Free: Pattern=die, Pattern=dat vierkant vlak, Pattern=en, Pattern=vierkant, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=vierkant vlak, Pattern=vlak, Pattern=en, Pattern=vierkant
+Turn ID=24| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : dit zijn weer met die spijker bovenop met dat vierkant vlak
+	Free: Pattern=dit zijn weer met die spijker bovenop, Pattern=dat vierkant vlak, Pattern=met
+	Constrained: Pattern=dit zijn weer met die, Pattern=met, Pattern=die, Pattern=vierkant vlak, Pattern=vlak, Pattern=vierkant, Pattern=dit zijn, Pattern=dit zijn weer, Pattern=dat, Pattern=met die, Pattern=bovenop, Pattern=spijker bovenop, Pattern=die spijker bovenop
+Turn ID=26| B | B : aan de voorkant
+	Free: 
+	Constrained: 

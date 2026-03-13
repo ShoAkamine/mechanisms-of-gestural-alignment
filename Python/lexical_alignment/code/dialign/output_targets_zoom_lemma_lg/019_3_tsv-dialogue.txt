@@ -1,0 +1,219 @@
+A|0| A: _ehm_ deze _hebben_ als enig echt _nog_ zeggen maar _een_ _iets_ onder _een_ kop 
+A|1| A: _een soort van_ 
+A|2| A: _ehm_ hoe zeggen je _dat_ 
+A|3| A: _een soort van_ _staaf_ _met_ daaronder _op_ _een_ _driehoek_ 
+A|4| A: Zeg maar alsof het kop _op_ _een_ _driehoek staan_ 
+B|5| B: _Oh_ _ja_ 
+B|6| B: _ja_ 
+B|7| B: _ja_ _en_ dan twee _vierkant_ _ook_ [nog] erbovenop 
+A|8| A: _ja precies_ 
+B|9| B: _en_ [een] ding 
+A|10| A: [ja] _die_ [ja] 
+B|11| B: [ja] top 
+B|12| B: _Oké_ _dat zijn_ 
+B|13| B: [ehm] oké 
+B|14| B: _Oh_ dan [hebben] _we_ nu weer [dat] [een] [dat] [op] [dat] [driehoek staan] 
+B|15| B: [ehm] [met] [een soort van] [op] been [met] [een] 
+B|16| B: _ja dat_ [driehoek] [met] [een] stuk ertussen 
+B|17| B: _en_ dan komen [die] mok 
+A|18| A: [ja [dat] zijn] gewoon 
+B|19| B: _en_ dan _met die vierkant_ erboven [die] 
+A|20| A: [die] [we] al [hebben] [hebben] _toch_ 
+B|21| B: [ja precies] 
+A|22| A: [ja] 
+B|23| B: _volgens mij_ beginnen [we] nu weer opnieuw 
+A|24| A: [volgens mij] [ook] [ja] 
+A|25| A: zes ronde 
+B|26| B: Chill 
+A|27| A: [Oké] 
+A|28| A: nou _dit zijn_ 
+A|29| A: _dit zijn die driehoek_ onder 
+A|30| A: onder het kop 
+A|31| A: _en _die_ staaf_ onder het kop 
+B|32| B: _Oh_ [ja] 
+B|33| B: [ja] [ja] [ja] [ja] 
+A|34| A: _en [met_ die vierkant] [ja] 
+B|35| B: [ja] Lalala nummer 
+B|36| B: eh [ja] [dit zijn die] [op] [dat] [dat] [die] [staan] [op] [dat] [driehoek] 
+B|37| B: [met] [dat] stuk ertussen 
+B|38| B: [en die] twee [vierkant] _op de_ bovenkant 
+A|39| A: [Oh] [dat] 
+B|40| B: [en] links [ook] [nog] [iets] 
+A|41| A: [ja] even zoeken 
+A|42| A: [ja] 
+A|43| A: [ehm] _dit zijn die driehoek_ [en _die] staaf_ aan [de] onderkant 
+A|44| A: onder het kop 
+B|45| B: [ja] [en die] twee [vierkant] [toch] bovenop 
+A|46| A: [ja] 
+B|47| B: [ja] 
+B|48| B: nummer 
+B|49| B: eh [dit zijn die driehoek] [die] [op] [die staaf] [staan] 
+B|50| B: [en met] twee [vierkant] bovenop 
+A|51| A: [driehoek] [op de] [staaf] 
+A|52| A: [ja] 
+A|53| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben als enig echt nog zeggen maar een iets onder een kop
+	Free: Pattern=nog, Pattern=iets, Pattern=een, Pattern=hebben, Pattern=ehm
+	Constrained: 
+Turn ID=1| A | A : een soort van
+	Free: Pattern=een soort van
+	Constrained: Pattern=een
+Turn ID=2| A | A : ehm hoe zeggen je dat
+	Free: Pattern=dat, Pattern=ehm
+	Constrained: 
+Turn ID=3| A | A : een soort van staaf met daaronder op een driehoek
+	Free: Pattern=driehoek, Pattern=staaf, Pattern=op, Pattern=een, Pattern=een soort van, Pattern=met
+	Constrained: Pattern=een
+Turn ID=4| A | A : Zeg maar alsof het kop op een driehoek staan
+	Free: Pattern=driehoek staan, Pattern=een, Pattern=op
+	Constrained: Pattern=driehoek, Pattern=staan
+Turn ID=5| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja en dan twee vierkant ook nog erbovenop
+	Free: Pattern=nog, Pattern=ja, Pattern=ook, Pattern=en, Pattern=vierkant
+	Constrained: 
+Turn ID=8| A | A : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=9| B | B : en een ding
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=10| A | A : ja die ja
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=11| B | B : ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat
+Turn ID=13| B | B : ehm oké
+	Free: Pattern=ehm
+	Constrained: 
+Turn ID=14| B | B : Oh dan hebben we nu weer dat een dat op dat driehoek staan
+	Free: Pattern=dat, Pattern=op, Pattern=een, Pattern=hebben, Pattern=we, Pattern=driehoek staan, Pattern=Oh
+	Constrained: Pattern=driehoek, Pattern=staan
+Turn ID=15| B | B : ehm met een soort van op been met een
+	Free: Pattern=op, Pattern=een, Pattern=een soort van, Pattern=ehm, Pattern=met
+	Constrained: Pattern=een
+Turn ID=16| B | B : ja dat driehoek met een stuk ertussen
+	Free: Pattern=ja dat, Pattern=driehoek, Pattern=met, Pattern=een
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=17| B | B : en dan komen die mok
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=18| A | A : ja dat zijn gewoon
+	Free: Pattern=ja dat, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=19| B | B : en dan met die vierkant erboven die
+	Free: Pattern=met die vierkant, Pattern=die, Pattern=en
+	Constrained: Pattern=met, Pattern=die, Pattern=vierkant
+Turn ID=20| A | A : die we al hebben hebben toch
+	Free: Pattern=hebben, Pattern=die, Pattern=toch, Pattern=we
+	Constrained: 
+Turn ID=21| B | B : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : volgens mij beginnen we nu weer opnieuw
+	Free: Pattern=volgens mij, Pattern=we
+	Constrained: 
+Turn ID=24| A | A : volgens mij ook ja
+	Free: Pattern=volgens mij, Pattern=ook, Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : zes ronde
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : Chill
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| A | A : nou dit zijn
+	Free: Pattern=dit zijn
+	Constrained: 
+Turn ID=29| A | A : dit zijn die driehoek onder
+	Free: Pattern=dit zijn die driehoek
+	Constrained: Pattern=dit zijn, Pattern=die, Pattern=driehoek, Pattern=dit zijn die
+Turn ID=30| A | A : onder het kop
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : en die staaf onder het kop
+	Free: Pattern=die staaf, Pattern=en die
+	Constrained: Pattern=die, Pattern=staaf, Pattern=en
+Turn ID=32| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=33| B | B : ja ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : en met die vierkant ja
+	Free: Pattern=met die vierkant, Pattern=en met, Pattern=ja
+	Constrained: Pattern=vierkant, Pattern=die, Pattern=en, Pattern=met
+Turn ID=35| B | B : ja Lalala nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : eh ja dit zijn die op dat dat die staan op dat driehoek
+	Free: Pattern=driehoek, Pattern=dat, Pattern=dit zijn die, Pattern=ja, Pattern=op, Pattern=staan, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=die
+Turn ID=37| B | B : met dat stuk ertussen
+	Free: Pattern=dat, Pattern=met
+	Constrained: 
+Turn ID=38| B | B : en die twee vierkant op de bovenkant
+	Free: Pattern=op de, Pattern=en die, Pattern=vierkant
+	Constrained: Pattern=de, Pattern=die, Pattern=en, Pattern=op
+Turn ID=39| A | A : Oh dat
+	Free: Pattern=dat, Pattern=Oh
+	Constrained: 
+Turn ID=40| B | B : en links ook nog iets
+	Free: Pattern=ook, Pattern=en, Pattern=iets, Pattern=nog
+	Constrained: 
+Turn ID=41| A | A : ja even zoeken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| A | A : ehm dit zijn die driehoek en die staaf aan de onderkant
+	Free: Pattern=en die, Pattern=de, Pattern=dit zijn die driehoek, Pattern=ehm, Pattern=die staaf
+	Constrained: Pattern=driehoek, Pattern=dit zijn die, Pattern=staaf, Pattern=die, Pattern=en, Pattern=dit zijn
+Turn ID=44| A | A : onder het kop
+	Free: 
+	Constrained: 
+Turn ID=45| B | B : ja en die twee vierkant toch bovenop
+	Free: Pattern=en die, Pattern=ja, Pattern=vierkant, Pattern=toch
+	Constrained: Pattern=die, Pattern=en
+Turn ID=46| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=49| B | B : eh dit zijn die driehoek die op die staaf staan
+	Free: Pattern=op, Pattern=staan, Pattern=dit zijn die driehoek, Pattern=die staaf, Pattern=die
+	Constrained: Pattern=driehoek, Pattern=dit zijn die, Pattern=staaf, Pattern=die, Pattern=dit zijn
+Turn ID=50| B | B : en met twee vierkant bovenop
+	Free: Pattern=en met, Pattern=vierkant
+	Constrained: Pattern=met, Pattern=en
+Turn ID=51| A | A : driehoek op de staaf
+	Free: Pattern=op de, Pattern=driehoek, Pattern=staaf
+	Constrained: Pattern=de, Pattern=op
+Turn ID=52| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : Eh
+	Free: 
+	Constrained: 

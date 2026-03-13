@@ -1,0 +1,67 @@
+B|0| B: _Oké_ nou _ik_ zien _dit_ dus als euijhoorbeeld iemand _die_ aan het _juichen_ _zijn_ en zeggen maar daarbij een soort rond draaien hij hebben maar _één been_ 
+A|1| A: _ja_ _ja_ [ik] weten welk je bedoelen [ik] weten welk je bedoelen _ja_ 
+B|2| B: _Oké_ top 
+A|3| A: _Oké dit zijn_ dat _man_ wat _toejuichen_ op [één been] 
+B|4| B: [Oké] 
+B|5| B: [Oké dit zijn] _euh_ _euh_ het dansen manne 
+A|6| A: _die toejuichen_ 
+B|7| B: dus _euh_ [ja] [die toejuichen] 
+A|8| A: [Oké] 
+A|9| A: _euh dit zijn_ [juichen] _man_ op [één been] 
+B|10| B: _Euh_ oké 
+B|11| B: [euh dit zijn] het dansen [man] 
+A|12| A: Yes 
+A|13| A: [Euh] 
+A|14| A: [dit zijn] [juichen] [man] 
+B|15| B: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké nou ik zien dit dus als euijhoorbeeld iemand die aan het juichen zijn en zeggen maar daarbij een soort rond draaien hij hebben maar één been
+	Free: Pattern=dit, Pattern=die, Pattern=één been, Pattern=ik, Pattern=zijn, Pattern=juichen, Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ja ja ik weten welk je bedoelen ik weten welk je bedoelen ja
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=2| B | B : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| A | A : Oké dit zijn dat man wat toejuichen op één been
+	Free: Pattern=Oké dit zijn, Pattern=één been, Pattern=man, Pattern=toejuichen
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=Oké, Pattern=zijn
+Turn ID=4| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : Oké dit zijn euh euh het dansen manne
+	Free: Pattern=Oké dit zijn, Pattern=euh
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=zijn, Pattern=Oké
+Turn ID=6| A | A : die toejuichen
+	Free: Pattern=die toejuichen
+	Constrained: Pattern=toejuichen, Pattern=die
+Turn ID=7| B | B : dus euh ja die toejuichen
+	Free: Pattern=die toejuichen, Pattern=euh, Pattern=ja
+	Constrained: Pattern=toejuichen, Pattern=die
+Turn ID=8| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : euh dit zijn juichen man op één been
+	Free: Pattern=euh dit zijn, Pattern=één been, Pattern=man, Pattern=juichen
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=zijn, Pattern=euh
+Turn ID=10| B | B : Euh oké
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=11| B | B : euh dit zijn het dansen man
+	Free: Pattern=euh dit zijn, Pattern=man
+	Constrained: Pattern=dit zijn, Pattern=dit, Pattern=euh, Pattern=zijn
+Turn ID=12| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=14| A | A : dit zijn juichen man
+	Free: Pattern=dit zijn, Pattern=man, Pattern=juichen
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=15| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 

@@ -1,0 +1,131 @@
+B|0| B: _Oké_ wachten nu kunnen ik Oh nee 
+B|1| B: _ja_ 
+B|2| B: ik zien _het_ plaat 
+B|3| B: _en_ dan hebben je _dus_ die komen zoals op ieder plaat 
+B|4| B: aan _de_ bovenkant _zitten_ _twee_ _ja_ _pinnet_ vlak naast elkaar 
+B|5| B: _en_ aan _de_ voorkant _zitten ook een_ cilinder lijken op _een slurf_ 
+B|6| B: _en_ aan _de_ linkerkant _zitten_ _er_ _een_ armpje in _een_ L-vorm 
+A|7| A: [en] [er] [zitten ook een] vierkant blad doorheen 
+B|8| B: _ja_ precies 
+A|9| A: [Oké] _dat zijn_ _bij mij_ _nummer_ 
+A|10| A: deze beschrijven jij als [een slurf] 
+A|11| A: [dus] _met_ [het] vierkant _dienblad_ [er] doorheen 
+B|12| B: Oh _ja_ 
+A|13| A: [en] links [een] uitsteeksel 
+A|14| A: [en] _bovenop_ nog [twee] [pinnet] 
+B|15| B: _ja_ 
+B|16| B: _ja_ _dat zijn nummer bij mij_ 
+B|17| B: _dit zijn_ weer [het] plaat _met _de_ slurf_ 
+B|18| B: [met] die [twee] pinne bovenin 
+A|19| A: [ja] 
+B|20| B: Elf-vormige arm 
+A|21| A: [dat zijn nummer bij mij] 
+A|22| A: [dit zijn] [de slurf] 
+A|23| A: [met] [dat] _dienblad_ dwars _door de kom heen_ 
+B|24| B: Yes [nummer] 
+B|25| B: [nummer] 
+B|26| B: [dit zijn] [het] plaat _met [de_ slurf] 
+B|27| B: [en] [het] [dienblad] [door de kom heen] 
+B|28| B: [en] [de] [twee] staaf [bovenop] 
+A|29| A: [dat zijn] 
+A|30| A: [dit zijn] [de slurf] [met de] vierkant [door de kom heen] 
+B|31| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké wachten nu kunnen ik Oh nee
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : ik zien het plaat
+	Free: Pattern=het
+	Constrained: 
+Turn ID=3| B | B : en dan hebben je dus die komen zoals op ieder plaat
+	Free: Pattern=dus, Pattern=en
+	Constrained: 
+Turn ID=4| B | B : aan de bovenkant zitten twee ja pinnet vlak naast elkaar
+	Free: Pattern=pinnet, Pattern=twee, Pattern=zitten, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : en aan de voorkant zitten ook een cilinder lijken op een slurf
+	Free: Pattern=zitten ook een, Pattern=een slurf, Pattern=de, Pattern=en
+	Constrained: Pattern=zitten, Pattern=een
+Turn ID=6| B | B : en aan de linkerkant zitten er een armpje in een L-vorm
+	Free: Pattern=de, Pattern=een, Pattern=zitten, Pattern=er, Pattern=en
+	Constrained: 
+Turn ID=7| A | A : en er zitten ook een vierkant blad doorheen
+	Free: Pattern=zitten ook een, Pattern=er, Pattern=en
+	Constrained: Pattern=zitten, Pattern=een
+Turn ID=8| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké dat zijn bij mij nummer
+	Free: Pattern=dat zijn, Pattern=bij mij, Pattern=Oké, Pattern=nummer
+	Constrained: Pattern=dat
+Turn ID=10| A | A : deze beschrijven jij als een slurf
+	Free: Pattern=een slurf
+	Constrained: Pattern=een
+Turn ID=11| A | A : dus met het vierkant dienblad er doorheen
+	Free: Pattern=dus, Pattern=het, Pattern=met, Pattern=er, Pattern=dienblad
+	Constrained: 
+Turn ID=12| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en links een uitsteeksel
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=14| A | A : en bovenop nog twee pinnet
+	Free: Pattern=pinnet, Pattern=en, Pattern=twee, Pattern=bovenop
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja dat zijn nummer bij mij
+	Free: Pattern=dat zijn nummer bij mij, Pattern=ja
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=nummer, Pattern=dat zijn
+Turn ID=17| B | B : dit zijn weer het plaat met de slurf
+	Free: Pattern=de slurf, Pattern=dit zijn, Pattern=met de, Pattern=het
+	Constrained: Pattern=de, Pattern=met
+Turn ID=18| B | B : met die twee pinne bovenin
+	Free: Pattern=twee, Pattern=met
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Elf-vormige arm
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : dat zijn nummer bij mij
+	Free: Pattern=dat zijn nummer bij mij
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=nummer, Pattern=dat zijn
+Turn ID=22| A | A : dit zijn de slurf
+	Free: Pattern=de slurf, Pattern=dit zijn
+	Constrained: Pattern=de
+Turn ID=23| A | A : met dat dienblad dwars door de kom heen
+	Free: Pattern=door de kom heen, Pattern=dat, Pattern=dienblad, Pattern=met
+	Constrained: Pattern=de
+Turn ID=24| B | B : Yes nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=25| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=26| B | B : dit zijn het plaat met de slurf
+	Free: Pattern=de slurf, Pattern=dit zijn, Pattern=met de, Pattern=het
+	Constrained: Pattern=de, Pattern=met
+Turn ID=27| B | B : en het dienblad door de kom heen
+	Free: Pattern=door de kom heen, Pattern=dienblad, Pattern=en, Pattern=het
+	Constrained: Pattern=de
+Turn ID=28| B | B : en de twee staaf bovenop
+	Free: Pattern=de, Pattern=en, Pattern=twee, Pattern=bovenop
+	Constrained: 
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=30| A | A : dit zijn de slurf met de vierkant door de kom heen
+	Free: Pattern=door de kom heen, Pattern=de slurf, Pattern=dit zijn, Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=31| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

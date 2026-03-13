@@ -1,0 +1,179 @@
+B|0| B: _ik_ hebben _een_ soort _piramide_ helemaal _bovenop_ staan 
+B|1| B: _een_ soort _ja_ hoe heten zo'n puntig 
+B|2| B: _iets_ 
+A|3| A: mhm [ja] [ja] [ja] 
+B|4| B: hoe heten _het_ 
+B|5| B: _en een_ soort heel _groot_ blok _aan de_ zijkant 
+A|6| A: mhm 
+B|7| B: dat 
+B|8| B: _en een_ heel klein dinget _aan de_ linkerkant 
+A|9| A: [ja] 
+A|10| A: _aan de onderkant_ zitten daar _ook nog iets_ 
+B|11| B: [ja] [iets] beetje ronds 
+A|12| A: _Oké_ 
+A|13| A: [ja] 
+A|14| A: dan weten [ik] [het] 
+A|15| A: Letter 
+A|16| A: _ik zien_ _ook_ [een] [groot] neus 
+A|17| A: alleen zijn die _niet_ _rond_ 
+A|18| A: maar _vierkant_ 
+A|19| A: Beetje _vierkant_ 
+A|20| A: [en] [bovenop] [het] voorwerp 
+A|21| A: zitten [een] [piramide] 
+B|22| B: [en] [aan de] zijkant [nog iets] 
+B|23| B: [en] [aan de onderkant] [ook nog iets] klein 
+A|24| A: [ja] 
+B|25| B: [Oké] nummer 
+B|26| B: even kijken 
+B|27| B: _ik zien een_ soort hoed [bovenop] 
+A|28| A: mhm 
+B|29| B: heel erg spits 
+B|30| B: [en] [aan de] zijkant [een] soort heel [groot] [ja] _net niet vierkant_ 
+B|31| B: [en] onderop [nog] [een] [rond] 
+B|32| B: [en] [aan de] zijkant [nog iets] heel klein 
+A|33| A: [ja] 
+A|34| A: Letter 
+A|35| A: [ik zien een] 
+A|36| A: [aan de] voorkant [een] [een] [net niet vierkant] neus 
+A|37| A: met _een feesthoed_ op 
+B|38| B: nummer 
+B|39| B: _ik zien een feesthoed_ [bovenop] 
+A|40| A: Letter 
+A|41| A: [ik zien een feesthoed] 
+A|42| A: [en een] dik [net niet vierkant] neus 
+B|43| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben een soort piramide helemaal bovenop staan
+	Free: Pattern=piramide, Pattern=een, Pattern=ik, Pattern=bovenop
+	Constrained: 
+Turn ID=1| B | B : een soort ja hoe heten zo'n puntig
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : iets
+	Free: Pattern=iets
+	Constrained: 
+Turn ID=3| A | A : mhm ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : hoe heten het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=5| B | B : en een soort heel groot blok aan de zijkant
+	Free: Pattern=aan de, Pattern=en een, Pattern=groot
+	Constrained: Pattern=een, Pattern=en
+Turn ID=6| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : dat
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : en een heel klein dinget aan de linkerkant
+	Free: Pattern=aan de, Pattern=en een
+	Constrained: Pattern=een, Pattern=en
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : aan de onderkant zitten daar ook nog iets
+	Free: Pattern=aan de onderkant, Pattern=ook nog iets
+	Constrained: Pattern=nog, Pattern=iets, Pattern=nog iets, Pattern=aan de, Pattern=ook
+Turn ID=11| B | B : ja iets beetje ronds
+	Free: Pattern=ja, Pattern=iets
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : dan weten ik het
+	Free: Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=15| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ik zien ook een groot neus
+	Free: Pattern=ik zien, Pattern=een, Pattern=groot, Pattern=ook
+	Constrained: Pattern=ik
+Turn ID=17| A | A : alleen zijn die niet rond
+	Free: Pattern=rond, Pattern=niet
+	Constrained: 
+Turn ID=18| A | A : maar vierkant
+	Free: Pattern=vierkant
+	Constrained: 
+Turn ID=19| A | A : Beetje vierkant
+	Free: Pattern=vierkant
+	Constrained: 
+Turn ID=20| A | A : en bovenop het voorwerp
+	Free: Pattern=het, Pattern=en, Pattern=bovenop
+	Constrained: 
+Turn ID=21| A | A : zitten een piramide
+	Free: Pattern=piramide, Pattern=een
+	Constrained: 
+Turn ID=22| B | B : en aan de zijkant nog iets
+	Free: Pattern=aan de, Pattern=nog iets, Pattern=en
+	Constrained: Pattern=iets, Pattern=nog
+Turn ID=23| B | B : en aan de onderkant ook nog iets klein
+	Free: Pattern=aan de onderkant, Pattern=ook nog iets, Pattern=en
+	Constrained: Pattern=nog, Pattern=iets, Pattern=nog iets, Pattern=aan de, Pattern=ook
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : Oké nummer
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=26| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ik zien een soort hoed bovenop
+	Free: Pattern=ik zien een, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=28| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : heel erg spits
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : en aan de zijkant een soort heel groot ja net niet vierkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=een, Pattern=groot, Pattern=en, Pattern=net niet vierkant
+	Constrained: Pattern=niet, Pattern=vierkant
+Turn ID=31| B | B : en onderop nog een rond
+	Free: Pattern=rond, Pattern=een, Pattern=nog, Pattern=en
+	Constrained: 
+Turn ID=32| B | B : en aan de zijkant nog iets heel klein
+	Free: Pattern=aan de, Pattern=nog iets, Pattern=en
+	Constrained: Pattern=iets, Pattern=nog
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=35| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=36| A | A : aan de voorkant een een net niet vierkant neus
+	Free: Pattern=net niet vierkant, Pattern=aan de, Pattern=een
+	Constrained: Pattern=niet, Pattern=vierkant
+Turn ID=37| A | A : met een feesthoed op
+	Free: Pattern=een feesthoed
+	Constrained: Pattern=een
+Turn ID=38| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : ik zien een feesthoed bovenop
+	Free: Pattern=ik zien een feesthoed, Pattern=bovenop
+	Constrained: Pattern=ik zien, Pattern=ik, Pattern=ik zien een, Pattern=een, Pattern=een feesthoed
+Turn ID=40| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : ik zien een feesthoed
+	Free: Pattern=ik zien een feesthoed
+	Constrained: Pattern=ik zien, Pattern=ik, Pattern=ik zien een, Pattern=een, Pattern=een feesthoed
+Turn ID=42| A | A : en een dik net niet vierkant neus
+	Free: Pattern=net niet vierkant, Pattern=en een
+	Constrained: Pattern=een, Pattern=niet, Pattern=en, Pattern=vierkant
+Turn ID=43| B | B : nummer
+	Free: 
+	Constrained: 

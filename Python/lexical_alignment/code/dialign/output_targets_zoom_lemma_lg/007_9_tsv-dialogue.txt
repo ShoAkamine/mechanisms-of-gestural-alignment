@@ -1,0 +1,195 @@
+B|0| B: Hoor _je_ _mij_ 
+A|1| A: _ja_ 
+B|2| B: Oh top 
+B|3| B: _Oké_ 
+B|4| B: [ja] _ik_ hebben _een_ plaat 
+B|5| B: _en_ _ik_ zullen hem zelf omschrijven _als_ _een_ _Pinocchio_ 
+B|6| B: _met een_ 
+B|7| B: [ja] _als_ _een_ Pinocchio-neus 
+B|8| B: _en_ daarbij _lijken het_ ook _alsof_ _er _een_ soort_ _lepel_ in _een_ glas zitten 
+B|9| B: _dus_ enerzijds lijk _op_ iets menselijk _met een_ _neus_ 
+B|10| B: maar anderzijds zullen _ik_ _het_ ook koppelen _aan_ _een_ glas _met een_ 
+A|11| A: Zit [er een] ronde cirkel _aan de achterkant_ 
+B|12| B: [ja] 
+A|13| A: [Oké] _die staan_ _bij mij_ [op] _nummer_ 
+B|14| B: [Oké] [bij mij] 
+B|15| B: Oh _moeten_ _ik_ trouwens nu 
+A|16| A: [ik] [moeten] klikken volgens [mij] 
+B|17| B: [ja] [ja] [ja] oké 
+A|18| A: _dit zijn_ [een soort] komen [met een] _lepel erin_ 
+A|19| A: [een] cirkel _aan de achterkant_ 
+A|20| A: link [een] uitsteeksel 
+A|21| A: [en] daaronder [lijken het] [alsof] _die_ komen [op] [een soort] verhoginkje _zijn_ zetten 
+B|22| B: [ja] [ja] 
+B|23| B: _even kijken_ 
+B|24| B: _dus_ weer zo'n _Pinocchio_ neusachtig iets 
+A|25| A: [ja] _die_ [ja] 
+B|26| B: Top 
+B|27| B: dan [zijn] _dat_ [nummer] [bij mij] 
+B|28| B: [dit zijn] [het] plaat weer [met] [het] [lepel erin] 
+B|29| B: [de] _Pinocchio_ _neus_ 
+B|30| B: [het] rond [aan de achterkant] 
+A|31| A: [ja] 
+B|32| B: [en] [het] [lijken] [op] iets te [staan] 
+A|33| A: zIjn [nummer] 
+A|34| A: [dit] beschrijven [je] [als] [Pinocchio] 
+A|35| A: [dus] [met] _die_ [lepel erin] 
+A|36| A: [en] links [een] cirkel [en] [een] lang [neus] 
+B|37| B: Yes _even kijken waar die staan_ 
+B|38| B: [ja] [nummer] 
+B|39| B: [dit zijn] [de] [Pinocchio] 
+B|40| B: [met] [het] [lepel erin] 
+B|41| B: [en] [het] cirkelt [aan de achterkant] 
+A|42| A: [even kijken waar die staan] 
+A|43| A: [ja] [dat] [zijn] 
+A|44| A: [dit zijn] [Pinocchio] 
+B|45| B: [ja] 
+B|46| B: [waar] [staan] [Pinocchio] [bij mij] 
+B|47| B: Oh [ja] [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Hoor je mij
+	Free: Pattern=je, Pattern=mij
+	Constrained: 
+Turn ID=1| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : Oh top
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| B | B : ja ik hebben een plaat
+	Free: Pattern=ik, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=5| B | B : en ik zullen hem zelf omschrijven als een Pinocchio
+	Free: Pattern=Pinocchio, Pattern=een, Pattern=als, Pattern=ik, Pattern=en
+	Constrained: 
+Turn ID=6| B | B : met een
+	Free: Pattern=met een
+	Constrained: Pattern=met, Pattern=een
+Turn ID=7| B | B : ja als een Pinocchio-neus
+	Free: Pattern=als, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=8| B | B : en daarbij lijken het ook alsof er een soort lepel in een glas zitten
+	Free: Pattern=een, Pattern=er een, Pattern=alsof, Pattern=een soort, Pattern=en, Pattern=lijken het, Pattern=lepel
+	Constrained: Pattern=het, Pattern=lijken, Pattern=een
+Turn ID=9| B | B : dus enerzijds lijk op iets menselijk met een neus
+	Free: Pattern=met een, Pattern=neus, Pattern=dus, Pattern=op
+	Constrained: Pattern=met, Pattern=een
+Turn ID=10| B | B : maar anderzijds zullen ik het ook koppelen aan een glas met een
+	Free: Pattern=aan, Pattern=een, Pattern=het, Pattern=met een, Pattern=ik
+	Constrained: Pattern=met, Pattern=een
+Turn ID=11| A | A : Zit er een ronde cirkel aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=er een
+	Constrained: Pattern=aan, Pattern=een, Pattern=de
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : Oké die staan bij mij op nummer
+	Free: Pattern=nummer, Pattern=op, Pattern=bij mij, Pattern=Oké, Pattern=die staan
+	Constrained: Pattern=mij, Pattern=die, Pattern=staan
+Turn ID=14| B | B : Oké bij mij
+	Free: Pattern=bij mij, Pattern=Oké
+	Constrained: Pattern=mij
+Turn ID=15| B | B : Oh moeten ik trouwens nu
+	Free: Pattern=ik, Pattern=moeten
+	Constrained: 
+Turn ID=16| A | A : ik moeten klikken volgens mij
+	Free: Pattern=ik, Pattern=moeten, Pattern=mij
+	Constrained: 
+Turn ID=17| B | B : ja ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : dit zijn een soort komen met een lepel erin
+	Free: Pattern=een soort, Pattern=met een, Pattern=lepel erin, Pattern=dit zijn
+	Constrained: Pattern=lepel, Pattern=een, Pattern=dit, Pattern=met, Pattern=zijn
+Turn ID=19| A | A : een cirkel aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=een
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=20| A | A : link een uitsteeksel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=21| A | A : en daaronder lijken het alsof die komen op een soort verhoginkje zijn zetten
+	Free: Pattern=lijken het, Pattern=op, Pattern=die, Pattern=alsof, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=het, Pattern=lijken, Pattern=een
+Turn ID=22| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=24| B | B : dus weer zo'n Pinocchio neusachtig iets
+	Free: Pattern=dus, Pattern=Pinocchio
+	Constrained: 
+Turn ID=25| A | A : ja die ja
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=26| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : dan zijn dat nummer bij mij
+	Free: Pattern=bij mij, Pattern=dat, Pattern=zijn, Pattern=nummer
+	Constrained: Pattern=mij
+Turn ID=28| B | B : dit zijn het plaat weer met het lepel erin
+	Free: Pattern=lepel erin, Pattern=dit zijn, Pattern=het, Pattern=met
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=lepel
+Turn ID=29| B | B : de Pinocchio neus
+	Free: Pattern=neus, Pattern=Pinocchio, Pattern=de
+	Constrained: 
+Turn ID=30| B | B : het rond aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=het
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : en het lijken op iets te staan
+	Free: Pattern=op, Pattern=lijken, Pattern=staan, Pattern=het, Pattern=en
+	Constrained: 
+Turn ID=33| A | A : zIjn nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=34| A | A : dit beschrijven je als Pinocchio
+	Free: Pattern=als, Pattern=dit, Pattern=je, Pattern=Pinocchio
+	Constrained: 
+Turn ID=35| A | A : dus met die lepel erin
+	Free: Pattern=lepel erin, Pattern=dus, Pattern=met, Pattern=die
+	Constrained: Pattern=lepel
+Turn ID=36| A | A : en links een cirkel en een lang neus
+	Free: Pattern=en, Pattern=neus, Pattern=een
+	Constrained: 
+Turn ID=37| B | B : Yes even kijken waar die staan
+	Free: Pattern=even kijken waar die staan
+	Constrained: Pattern=waar, Pattern=staan, Pattern=die, Pattern=even kijken, Pattern=die staan
+Turn ID=38| B | B : ja nummer
+	Free: Pattern=ja, Pattern=nummer
+	Constrained: 
+Turn ID=39| B | B : dit zijn de Pinocchio
+	Free: Pattern=dit zijn, Pattern=Pinocchio, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=40| B | B : met het lepel erin
+	Free: Pattern=lepel erin, Pattern=het, Pattern=met
+	Constrained: Pattern=lepel
+Turn ID=41| B | B : en het cirkelt aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=en, Pattern=het
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=42| A | A : even kijken waar die staan
+	Free: Pattern=even kijken waar die staan
+	Constrained: Pattern=waar, Pattern=staan, Pattern=die, Pattern=even kijken, Pattern=die staan
+Turn ID=43| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=44| A | A : dit zijn Pinocchio
+	Free: Pattern=dit zijn, Pattern=Pinocchio
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=45| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : waar staan Pinocchio bij mij
+	Free: Pattern=bij mij, Pattern=waar, Pattern=Pinocchio, Pattern=staan
+	Constrained: Pattern=mij
+Turn ID=47| B | B : Oh ja nummer
+	Free: Pattern=ja, Pattern=nummer
+	Constrained: 

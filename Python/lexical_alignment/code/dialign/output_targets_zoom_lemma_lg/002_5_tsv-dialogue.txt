@@ -1,0 +1,107 @@
+A|0| A: _Oh_ deze 
+A|1| A: hebben _ja_ ik _zeggen_ _een_ _hanekam_ 
+A|2| A: in mijn beschrijving 
+A|3| A: _maar_ _ja_ en _die_ doen _zo_ sssj eigenlijk lijken _het_ op 
+A|4| A: _met_ _zijn_ rechterarmpje 
+B|5| B: even kijken of [een] piramide bovenop 
+B|6| B: bedoelen je [die] of 
+A|7| A: nee [die] niet 
+A|8| A: nee _het_ _zijn_ [een] soort vierkant _hanekam_ 
+A|9| A: _het_ _zijn_ _zeggen maar_ alsof iemand gewoon [een] kraaitje erbovenop hebben leggen 
+B|10| B: [Oh] 
+A|11| A: en _die die_ staan _zo_ 
+B|12| B: [ja] [ja] [ja] [ja] oké 
+B|13| B: kijken _dit zijn_ [die] jij [zo] plaatsvinden shushen [zeggen maar] 
+B|14| B: [met] dat hanenkamme 
+A|15| A: [ja] 
+A|16| A: Eh 
+A|17| A: _dit zijn weer die_ shusht 
+B|18| B: kijken 
+B|19| B: even kijken [dit zijn weer [die] die] aan [het] sushen [zijn] 
+B|20| B: [met] [die] [hanekam] 
+A|21| A: traag 
+A|22| A: Eh 
+A|23| A: [dit zijn weer die] shusht 
+B|24| B: kijken 
+B|25| B: [dit zijn weer die] sush 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh deze
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : hebben ja ik zeggen een hanekam
+	Free: Pattern=een, Pattern=ja, Pattern=hanekam, Pattern=zeggen
+	Constrained: 
+Turn ID=2| A | A : in mijn beschrijving
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : maar ja en die doen zo sssj eigenlijk lijken het op
+	Free: Pattern=ja, Pattern=het, Pattern=zo, Pattern=die, Pattern=maar
+	Constrained: 
+Turn ID=4| A | A : met zijn rechterarmpje
+	Free: Pattern=zijn, Pattern=met
+	Constrained: 
+Turn ID=5| B | B : even kijken of een piramide bovenop
+	Free: Pattern=een
+	Constrained: 
+Turn ID=6| B | B : bedoelen je die of
+	Free: Pattern=die
+	Constrained: 
+Turn ID=7| A | A : nee die niet
+	Free: Pattern=die
+	Constrained: 
+Turn ID=8| A | A : nee het zijn een soort vierkant hanekam
+	Free: Pattern=een, Pattern=hanekam, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=9| A | A : het zijn zeggen maar alsof iemand gewoon een kraaitje erbovenop hebben leggen
+	Free: Pattern=zeggen maar, Pattern=een, Pattern=zijn, Pattern=het
+	Constrained: Pattern=maar, Pattern=zeggen
+Turn ID=10| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=11| A | A : en die die staan zo
+	Free: Pattern=die die, Pattern=zo
+	Constrained: Pattern=die
+Turn ID=12| B | B : ja ja ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : kijken dit zijn die jij zo plaatsvinden shushen zeggen maar
+	Free: Pattern=dit zijn, Pattern=zeggen maar, Pattern=zo, Pattern=die
+	Constrained: Pattern=maar, Pattern=zijn, Pattern=zeggen
+Turn ID=14| B | B : met dat hanenkamme
+	Free: Pattern=met
+	Constrained: 
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : dit zijn weer die shusht
+	Free: Pattern=dit zijn weer die
+	Constrained: Pattern=zijn, Pattern=die, Pattern=dit zijn
+Turn ID=18| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : even kijken dit zijn weer die die aan het sushen zijn
+	Free: Pattern=dit zijn weer die, Pattern=die die, Pattern=zijn, Pattern=het
+	Constrained: Pattern=zijn, Pattern=die, Pattern=dit zijn
+Turn ID=20| B | B : met die hanekam
+	Free: Pattern=hanekam, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=21| A | A : traag
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : dit zijn weer die shusht
+	Free: Pattern=dit zijn weer die
+	Constrained: Pattern=zijn, Pattern=die, Pattern=dit zijn
+Turn ID=24| B | B : kijken
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : dit zijn weer die sush
+	Free: Pattern=dit zijn weer die
+	Constrained: Pattern=zijn, Pattern=die, Pattern=dit zijn

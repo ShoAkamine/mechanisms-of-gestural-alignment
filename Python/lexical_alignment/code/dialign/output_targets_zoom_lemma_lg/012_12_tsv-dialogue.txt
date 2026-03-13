@@ -1,0 +1,207 @@
+B|0| B: _maar_ _je_ _zien mij_ niet hè 
+A|1| A: nee [maar] wachten jij [zien mij] wel 
+B|2| B: _ja_ _oké_ 
+B|3| B: _ik_ _moeten_ jou nu _gaan_ omschrijven welk plaat _ik zien_ 
+A|4| A: _Oh_ [oké] 
+B|5| B: _Ehm_ 
+B|6| B: _het_ _zijn_ dus zo'n kop 
+B|7| B: _en_ _aan_ laat [maar] _zeggen_ _in spiegelbeeld_ _zijn_ rechterarm zitten zo'n lang _toeter_ 
+A|8| A: _Oké_ wachten 
+A|9| A: [in spiegelbeeld] wat bedoelen [je] daarmee 
+B|10| B: _ja_ dus als _hij_ _met de_ rug laten [maar] _zeggen_ _naar_ 
+A|11| A: _Oh_ 
+A|12| A: _Oké_ wachten 
+B|13| B: of ander voor ons _aan de linkerkant_ als [je] nu gewoon _naar_ _het_ plaat kijken _dan_ _aan de linkerkant_ zitten er _een_ _toeter_ op _zijn_ arm 
+A|14| A: [ja] 
+A|15| A: [ja] 
+B|16| B: zo'n smal 
+A|17| A: _Oh ja_ [ik zien] hem 
+A|18| A: [Ehm] [en] _hebben_ [hij] [aan de linkerkant] [een] soort van bijten [zeggen] [maar] 
+A|19| A: _ik hebben_ [het] bijten zettafel _noemen_ 
+A|20| A: _dat_ [het] één ronde [ja] _plateau_ inderdaad 
+B|21| B: [ja] 
+B|22| B: [ja] zo'n [plateau] 
+A|23| A: [ja] 
+A|24| A: [ja] [plateau] inderdaad 
+B|25| B: [ja] 
+A|26| A: _en dan_ [een] [ja] 
+A|27| A: [dan] _hebben_ [ik] hem 
+A|28| A: _dan moeten_ [ik] hem 
+B|29| B: [Oké] 
+B|30| B: [ja] nu [moeten] [je] [de] letter [zeggen] of [het] nummer of hoe [noemen] [je] [het] 
+A|31| A: Letter [zeggen] [ja] 
+A|32| A: [Oké] 
+B|33| B: [en [dan] moeten] [dat] knop drukken 
+A|34| A: _eh_ dit [zijn] [de] soort van [toeter] _die_ jij omschreeffen 
+B|35| B: [Oh ja] 
+A|36| A: _die_ [naar] 
+A|37| A: rechts [naar] achter [gaan] [ja] 
+B|38| B: [ja] [die] dun [toeter] 
+A|39| A: [ja] 
+B|40| B: [ja] _dat zijn_ 
+B|41| B: [ik hebben] nu _de toeter_ 
+A|42| A: [Oh ja] 
+A|43| A: [dat zijn] 
+A|44| A: _ik hebben de toeter_ 
+B|45| B: [dat zijn] 
+A|46| A: [met de] bijzettafel 
+B|47| B: Yes 
+B|48| B: _eh ik hebben de toeter_ 
+A|49| A: [de toeter] [dat zijn] 
+A|50| A: [eh ik hebben de toeter] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : maar je zien mij niet hè
+	Free: Pattern=zien mij, Pattern=je, Pattern=maar
+	Constrained: 
+Turn ID=1| A | A : nee maar wachten jij zien mij wel
+	Free: Pattern=zien mij, Pattern=maar
+	Constrained: 
+Turn ID=2| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : ik moeten jou nu gaan omschrijven welk plaat ik zien
+	Free: Pattern=ik zien, Pattern=ik, Pattern=moeten, Pattern=gaan
+	Constrained: Pattern=ik
+Turn ID=4| A | A : Oh oké
+	Free: Pattern=oké, Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=6| B | B : het zijn dus zo'n kop
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=7| B | B : en aan laat maar zeggen in spiegelbeeld zijn rechterarm zitten zo'n lang toeter
+	Free: Pattern=aan, Pattern=in spiegelbeeld, Pattern=zeggen, Pattern=toeter, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=8| A | A : Oké wachten
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : in spiegelbeeld wat bedoelen je daarmee
+	Free: Pattern=in spiegelbeeld, Pattern=je
+	Constrained: 
+Turn ID=10| B | B : ja dus als hij met de rug laten maar zeggen naar
+	Free: Pattern=maar, Pattern=naar, Pattern=met de, Pattern=ja, Pattern=zeggen, Pattern=hij
+	Constrained: Pattern=de
+Turn ID=11| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| A | A : Oké wachten
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : of ander voor ons aan de linkerkant als je nu gewoon naar het plaat kijken dan aan de linkerkant zitten er een toeter op zijn arm
+	Free: Pattern=dan, Pattern=een, Pattern=het, Pattern=toeter, Pattern=zijn, Pattern=je, Pattern=aan de linkerkant, Pattern=naar
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : zo'n smal
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : Oh ja ik zien hem
+	Free: Pattern=ik zien, Pattern=Oh ja
+	Constrained: Pattern=ik, Pattern=ja, Pattern=Oh
+Turn ID=18| A | A : Ehm en hebben hij aan de linkerkant een soort van bijten zeggen maar
+	Free: Pattern=Ehm, Pattern=een, Pattern=hebben, Pattern=en, Pattern=maar, Pattern=aan de linkerkant, Pattern=zeggen, Pattern=hij
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=19| A | A : ik hebben het bijten zettafel noemen
+	Free: Pattern=ik hebben, Pattern=noemen, Pattern=het
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=20| A | A : dat het één ronde ja plateau inderdaad
+	Free: Pattern=dat, Pattern=ja, Pattern=plateau, Pattern=het
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja zo'n plateau
+	Free: Pattern=ja, Pattern=plateau
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja plateau inderdaad
+	Free: Pattern=ja, Pattern=plateau
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : en dan een ja
+	Free: Pattern=en dan, Pattern=ja, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=27| A | A : dan hebben ik hem
+	Free: Pattern=ik, Pattern=dan, Pattern=hebben
+	Constrained: 
+Turn ID=28| A | A : dan moeten ik hem
+	Free: Pattern=dan moeten, Pattern=ik
+	Constrained: Pattern=dan, Pattern=moeten
+Turn ID=29| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=30| B | B : ja nu moeten je de letter zeggen of het nummer of hoe noemen je het
+	Free: Pattern=zeggen, Pattern=je, Pattern=noemen, Pattern=de, Pattern=ja, Pattern=moeten, Pattern=het
+	Constrained: 
+Turn ID=31| A | A : Letter zeggen ja
+	Free: Pattern=ja, Pattern=zeggen
+	Constrained: 
+Turn ID=32| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=33| B | B : en dan moeten dat knop drukken
+	Free: Pattern=en dan, Pattern=dan moeten, Pattern=dat
+	Constrained: Pattern=dan, Pattern=moeten, Pattern=en
+Turn ID=34| A | A : eh dit zijn de soort van toeter die jij omschreeffen
+	Free: Pattern=de, Pattern=die, Pattern=eh, Pattern=toeter, Pattern=zijn
+	Constrained: 
+Turn ID=35| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=36| A | A : die naar
+	Free: Pattern=die, Pattern=naar
+	Constrained: 
+Turn ID=37| A | A : rechts naar achter gaan ja
+	Free: Pattern=ja, Pattern=naar, Pattern=gaan
+	Constrained: 
+Turn ID=38| B | B : ja die dun toeter
+	Free: Pattern=die, Pattern=ja, Pattern=toeter
+	Constrained: 
+Turn ID=39| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=41| B | B : ik hebben nu de toeter
+	Free: Pattern=ik hebben, Pattern=de toeter
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=de, Pattern=toeter
+Turn ID=42| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=43| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=44| A | A : ik hebben de toeter
+	Free: Pattern=ik hebben de toeter
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=de toeter, Pattern=ik, Pattern=toeter
+Turn ID=45| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=46| A | A : met de bijzettafel
+	Free: Pattern=met de
+	Constrained: Pattern=de
+Turn ID=47| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=48| B | B : eh ik hebben de toeter
+	Free: Pattern=eh ik hebben de toeter
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=toeter, Pattern=ik hebben de toeter, Pattern=de toeter, Pattern=eh
+Turn ID=49| A | A : de toeter dat zijn
+	Free: Pattern=dat zijn, Pattern=de toeter
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=de, Pattern=toeter
+Turn ID=50| A | A : eh ik hebben de toeter
+	Free: Pattern=eh ik hebben de toeter
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=toeter, Pattern=ik hebben de toeter, Pattern=de toeter, Pattern=eh

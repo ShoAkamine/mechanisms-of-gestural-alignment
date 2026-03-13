@@ -1,0 +1,107 @@
+B|0| B: _Uhm_ _ik_ _hebben_ nu één die aan _de_ rechterkant twee bak _hebben_ als _een soort_ _pauzeknop_ 
+A|1| A: even kijken 
+B|2| B: _en_ hij _hebben_ _een soort van_ hoed _op_ 
+A|3| A: _ja_ 
+B|4| B: _zo'n_ bakje 
+A|5| A: _ja_ 
+A|6| A: [en] Lijken _het_ [een] beetje _op [een_ soort van] _eend_ _ook_ al of zo ? zijkantprofiel 
+B|7| B: [ja] nu je [het] _zeggen_ 
+B|8| B: [ja] [het] _lijken_ _dan_ _ook op_ die vleugel aan _de_ linkerkant 
+A|9| A: [ja] met [een soort van] staart of zo 
+A|10| A: Zeggen maar [zo'n] 
+B|11| B: [ja] 
+A|12| A: [en] onder links 
+B|13| B: [ja] [een soort van] halve-magneet-achtig vorm 
+A|14| A: [ja] 
+A|15| A: _Oké_ [dan] [hebben] [ik] hem [ook] 
+B|16| B: [Oké] 
+A|17| A: [dan] zeg [ik] 
+A|18| A: Uh _dit zijn de eend_ [van] [de] zijkant waarvan _jij_ [zeggen] _dat_ [het] [ook _op] een_ [pauzeknop] [lijken] 
+B|19| B: Oh [ja] _dat zijn_ 
+B|20| B: [dit zijn] die [jij] [op een] [eend] vinden [lijken] 
+A|21| A: [Uhm] even kijken [dat zijn] 
+A|22| A: Uh _dit zijn de eend_ 
+B|23| B: [dit zijn de eend] 
+A|24| A: even kijken waar [zijn de eend] ? [dat zijn] 
+A|25| A: [dit zijn de eend] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Uhm ik hebben nu één die aan de rechterkant twee bak hebben als een soort pauzeknop
+	Free: Pattern=hebben, Pattern=pauzeknop, Pattern=de, Pattern=Uhm, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=1| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : en hij hebben een soort van hoed op
+	Free: Pattern=een soort van, Pattern=en, Pattern=hebben, Pattern=op
+	Constrained: Pattern=een soort, Pattern=een, Pattern=van
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : zo'n bakje
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en Lijken het een beetje op een soort van eend ook al of zo ? zijkantprofiel
+	Free: Pattern=eend, Pattern=ook, Pattern=een, Pattern=het, Pattern=een soort van, Pattern=en, Pattern=op een
+	Constrained: Pattern=een soort, Pattern=een, Pattern=op, Pattern=van
+Turn ID=7| B | B : ja nu je het zeggen
+	Free: Pattern=ja, Pattern=het, Pattern=zeggen
+	Constrained: 
+Turn ID=8| B | B : ja het lijken dan ook op die vleugel aan de linkerkant
+	Free: Pattern=het, Pattern=de, Pattern=ja, Pattern=ook op, Pattern=lijken, Pattern=dan
+	Constrained: Pattern=ook, Pattern=op
+Turn ID=9| A | A : ja met een soort van staart of zo
+	Free: Pattern=een soort van, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een, Pattern=van
+Turn ID=10| A | A : Zeggen maar zo'n
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : en onder links
+	Free: Pattern=en
+	Constrained: 
+Turn ID=13| B | B : ja een soort van halve-magneet-achtig vorm
+	Free: Pattern=een soort van, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een, Pattern=van
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : Oké dan hebben ik hem ook
+	Free: Pattern=ook, Pattern=dan, Pattern=hebben, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=16| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=17| A | A : dan zeg ik
+	Free: Pattern=ik, Pattern=dan
+	Constrained: 
+Turn ID=18| A | A : Uh dit zijn de eend van de zijkant waarvan jij zeggen dat het ook op een pauzeknop lijken
+	Free: Pattern=dat, Pattern=de, Pattern=het, Pattern=zeggen, Pattern=dit zijn de eend, Pattern=van, Pattern=op een, Pattern=pauzeknop, Pattern=jij, Pattern=ook op, Pattern=lijken
+	Constrained: Pattern=de, Pattern=eend, Pattern=dit zijn, Pattern=op, Pattern=ook, Pattern=een, Pattern=zijn de eend
+Turn ID=19| B | B : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=20| B | B : dit zijn die jij op een eend vinden lijken
+	Free: Pattern=eend, Pattern=lijken, Pattern=op een, Pattern=dit zijn, Pattern=jij
+	Constrained: Pattern=een, Pattern=op
+Turn ID=21| A | A : Uhm even kijken dat zijn
+	Free: Pattern=dat zijn, Pattern=Uhm
+	Constrained: Pattern=dat
+Turn ID=22| A | A : Uh dit zijn de eend
+	Free: Pattern=dit zijn de eend
+	Constrained: Pattern=zijn de eend, Pattern=de, Pattern=eend, Pattern=dit zijn
+Turn ID=23| B | B : dit zijn de eend
+	Free: Pattern=dit zijn de eend
+	Constrained: Pattern=zijn de eend, Pattern=de, Pattern=eend, Pattern=dit zijn
+Turn ID=24| A | A : even kijken waar zijn de eend ? dat zijn
+	Free: Pattern=zijn de eend, Pattern=dat zijn
+	Constrained: Pattern=eend, Pattern=dat, Pattern=de
+Turn ID=25| A | A : dit zijn de eend
+	Free: Pattern=dit zijn de eend
+	Constrained: Pattern=zijn de eend, Pattern=de, Pattern=eend, Pattern=dit zijn

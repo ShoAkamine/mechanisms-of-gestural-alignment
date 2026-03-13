@@ -1,0 +1,151 @@
+A|0| A: Yes 
+B|1| B: _Eh _ja ik_ zien_ _een_ kop 
+B|2| B: voor op op op _de_ _bovenkant hebben_ _hij_ _een_ heel groot _piramide die_ gewoon rechtop _staan_ 
+B|3| B: _en aan de_ rechter _voorkant hebben_ _hij_ ook _een piramide die_ zeggen _maar_ 
+B|4| B: _ja_ naar voren gaan _maar_ _die_ _die_ _zijn_ zeggen _maar_ _afsnijden_ 
+B|5| B: dus _die_ _die_ _die_ _bovenkant_ _zijn_ niet _een_ _driehoek_ _maar_ _een_ vierkant 
+B|6| B: om _ja_ 
+A|7| A: ohja [ja] 
+A|8| A: [ja ik zien] het al [ja] 
+B|9| B: _en_ 
+B|10| B: [ja] 
+B|11| B: _en_ _een_ soort wiele eronder _een_ cirkel 
+A|12| A: [ja] lijken lijken alsof [hij] skate of zo 
+B|13| B: [ja] zoiets 
+A|14| A: [ja] het [zijn] [de] letter 
+B|15| B: 11 J 
+A|16| A: yes 
+A|17| A: [Eh ja ik] inzien weer [een piramide] _bovenop_ 
+A|18| A: _en aan de voorkant_ [een piramide die] [afsnijden] [zijn] 
+B|19| B: [ja] dat [zijn] 
+A|20| A: [ja] bij mij [staan] er P 
+B|21| B: _eh_ [ja] dit [zijn] met [die] _driehoek_ [bovenop] 
+B|22| B: [en aan de voorkant] [die] _driehoek_ [die] [zijn] [afsnijden] 
+A|23| A: Oh [ja] 
+A|24| A: [eh] o 
+B|25| B: [een] twaalf 
+A|26| A: _ehm_ [bovenkant hebben] je [een piramide] 
+A|27| A: [en] [de [voorkant] hebben] je [een piramide die] [ja] [afsnijden] [zijn] 
+B|28| B: [ja] 
+A|29| A: P 
+B|30| B: [ehm] [ja] _driehoek_ [aan de] [bovenkant] [en] _driehoek_ [aan de voorkant] 
+B|31| B: [die] [zijn] [afsnijden] 
+B|32| B: twee 
+A|33| A: [ehm] [driehoek] [bovenkant] [piramide] 
+A|34| A: [en aan de voorkant] weer [een piramide] [maar] dan [afsnijden] 
+B|35| B: [eh] [ja] 
+A|36| A: K 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : Eh ja ik zien een kop
+	Free: Pattern=ja ik zien, Pattern=Eh ja ik, Pattern=een
+	Constrained: Pattern=ja
+Turn ID=2| B | B : voor op op op de bovenkant hebben hij een heel groot piramide die gewoon rechtop staan
+	Free: Pattern=de, Pattern=bovenkant hebben, Pattern=een, Pattern=staan, Pattern=piramide die, Pattern=hij
+	Constrained: Pattern=die, Pattern=piramide, Pattern=bovenkant
+Turn ID=3| B | B : en aan de rechter voorkant hebben hij ook een piramide die zeggen maar
+	Free: Pattern=een piramide die, Pattern=hij, Pattern=voorkant hebben, Pattern=maar, Pattern=en aan de
+	Constrained: Pattern=de, Pattern=een, Pattern=piramide die, Pattern=die, Pattern=en, Pattern=een piramide, Pattern=piramide, Pattern=aan de
+Turn ID=4| B | B : ja naar voren gaan maar die die zijn zeggen maar afsnijden
+	Free: Pattern=ja, Pattern=afsnijden, Pattern=die, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=5| B | B : dus die die die bovenkant zijn niet een driehoek maar een vierkant
+	Free: Pattern=driehoek, Pattern=een, Pattern=bovenkant, Pattern=die, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=6| B | B : om ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ohja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja ik zien het al ja
+	Free: Pattern=ja ik zien, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=9| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : en een soort wiele eronder een cirkel
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=12| A | A : ja lijken lijken alsof hij skate of zo
+	Free: Pattern=hij, Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja zoiets
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja het zijn de letter
+	Free: Pattern=de, Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=15| B | B : 11 J
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : yes
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : Eh ja ik inzien weer een piramide bovenop
+	Free: Pattern=Eh ja ik, Pattern=een piramide, Pattern=bovenop
+	Constrained: Pattern=piramide, Pattern=een, Pattern=ja
+Turn ID=18| A | A : en aan de voorkant een piramide die afsnijden zijn
+	Free: Pattern=en aan de voorkant, Pattern=een piramide die, Pattern=afsnijden, Pattern=zijn
+	Constrained: Pattern=de, Pattern=een, Pattern=piramide die, Pattern=en, Pattern=en aan de, Pattern=piramide, Pattern=aan de, Pattern=de voorkant, Pattern=die, Pattern=een piramide, Pattern=aan de voorkant
+Turn ID=19| B | B : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=20| A | A : ja bij mij staan er P
+	Free: Pattern=staan, Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : eh ja dit zijn met die driehoek bovenop
+	Free: Pattern=driehoek, Pattern=bovenop, Pattern=ja, Pattern=die, Pattern=eh, Pattern=zijn
+	Constrained: 
+Turn ID=22| B | B : en aan de voorkant die driehoek die zijn afsnijden
+	Free: Pattern=driehoek, Pattern=en aan de voorkant, Pattern=afsnijden, Pattern=die, Pattern=zijn
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de voorkant, Pattern=en, Pattern=aan de voorkant, Pattern=en aan de
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : eh o
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=25| B | B : een twaalf
+	Free: Pattern=een
+	Constrained: 
+Turn ID=26| A | A : ehm bovenkant hebben je een piramide
+	Free: Pattern=een piramide, Pattern=bovenkant hebben, Pattern=ehm
+	Constrained: Pattern=piramide, Pattern=bovenkant, Pattern=een
+Turn ID=27| A | A : en de voorkant hebben je een piramide die ja afsnijden zijn
+	Free: Pattern=ja, Pattern=een piramide die, Pattern=afsnijden, Pattern=de voorkant, Pattern=voorkant hebben, Pattern=en, Pattern=zijn
+	Constrained: Pattern=de, Pattern=piramide, Pattern=een, Pattern=piramide die, Pattern=die, Pattern=een piramide
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : P
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : ehm ja driehoek aan de bovenkant en driehoek aan de voorkant
+	Free: Pattern=driehoek, Pattern=ja, Pattern=aan de, Pattern=bovenkant, Pattern=ehm, Pattern=en, Pattern=aan de voorkant
+	Constrained: Pattern=de voorkant, Pattern=aan de, Pattern=de
+Turn ID=31| B | B : die zijn afsnijden
+	Free: Pattern=die, Pattern=afsnijden, Pattern=zijn
+	Constrained: 
+Turn ID=32| B | B : twee
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : ehm driehoek bovenkant piramide
+	Free: Pattern=driehoek, Pattern=ehm, Pattern=piramide, Pattern=bovenkant
+	Constrained: 
+Turn ID=34| A | A : en aan de voorkant weer een piramide maar dan afsnijden
+	Free: Pattern=en aan de voorkant, Pattern=een piramide, Pattern=maar, Pattern=afsnijden
+	Constrained: Pattern=de, Pattern=een, Pattern=de voorkant, Pattern=en, Pattern=aan de voorkant, Pattern=en aan de, Pattern=piramide, Pattern=aan de
+Turn ID=35| B | B : eh ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=36| A | A : K
+	Free: 
+	Constrained: 

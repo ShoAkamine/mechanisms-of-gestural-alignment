@@ -1,0 +1,103 @@
+A|0| A: ik _hebben_ nu euhm _twee_ druppelvormig uitsteksel 
+A|1| A: eentje _aan de bovenkant en_ één _een_ beetje _aan de linkerkant_ 
+A|2| A: _en dan_ zitten _aan de_ _ander_ zijkant _een soort_ van pijp _en_ _een soort_ toren _een_ blokkendoos toren 
+B|3| B: Oh _ja_ dus gewoon _met die vier_ losse _uitsteeksel_ 
+A|4| A: [ja] waarvan er _dan twee_ _hetzelfde_ _zijn_ want _het_ _zijn_ [die] gek _druppel_ _zijn_ 
+B|5| B: [ja] 
+B|6| B: Oké [dan] _zijn het_ 
+B|7| B: _Euh_ deze [hebben] [aan de bovenkant en] [de linkerkant] _dezelfde_ _uitsteeksel_ [en] [aan de] achterkant [en dan] nog [een] klein ding [en] [aan de] voorkant [een soort] blok 
+A|8| A: _ja dat zijn_ 
+A|9| A: ik [hebben] nu [die vier] [uitsteeksel] waarvan _twee_ [dezelfde] [zijn] 
+A|10| A: [Euh] 
+B|11| B: Oh [ja dat zijn] [ja] 
+A|12| A: [zijn het] duidelijk genoeg 
+B|13| B: [Euh] _met_ [de] tweezelfde uitstoppingen [aan de linkerkant] [en] [de bovenkant] 
+A|14| A: Euhh 
+A|15| A: Wacht even hoor 
+A|16| A: ik weten nu even niet welk je bedoelen 
+B|17| B: hij [hebben] [vier] in totaal [en] [de] linker [en] [de] bovenste uitstoppingen [zijn] [hetzelfde] 
+A|18| A: Aah 
+A|19| A: [ja] oké [dat zijn] 
+B|20| B: [de] Hydropuls 
+A|21| A: ik [hebben] nu [met die vier] uitsteksel waarvan [de] _twee_ [hetzelfde] [zijn] 
+B|22| B: I 
+B|23| B: dit [zijn] [met die] [druppel] [en] [de bovenkant en] [de linkerkant] [en [dan] twee] [ander] [uitsteeksel] nog 
+A|24| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hebben nu euhm twee druppelvormig uitsteksel
+	Free: Pattern=hebben, Pattern=twee
+	Constrained: 
+Turn ID=1| A | A : eentje aan de bovenkant en één een beetje aan de linkerkant
+	Free: Pattern=aan de bovenkant en, Pattern=aan de linkerkant, Pattern=een
+	Constrained: Pattern=de bovenkant en, Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=de linkerkant, Pattern=en
+Turn ID=2| A | A : en dan zitten aan de ander zijkant een soort van pijp en een soort toren een blokkendoos toren
+	Free: Pattern=en dan, Pattern=aan de, Pattern=een, Pattern=en, Pattern=een soort, Pattern=ander
+	Constrained: Pattern=dan, Pattern=een, Pattern=de, Pattern=en
+Turn ID=3| B | B : Oh ja dus gewoon met die vier losse uitsteeksel
+	Free: Pattern=met die vier, Pattern=uitsteeksel, Pattern=ja
+	Constrained: Pattern=met die, Pattern=met, Pattern=die, Pattern=die vier, Pattern=vier
+Turn ID=4| A | A : ja waarvan er dan twee hetzelfde zijn want het zijn die gek druppel zijn
+	Free: Pattern=dan twee, Pattern=ja, Pattern=hetzelfde, Pattern=die, Pattern=zijn, Pattern=het, Pattern=druppel
+	Constrained: Pattern=twee, Pattern=dan
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=7| B | B : Euh deze hebben aan de bovenkant en de linkerkant dezelfde uitsteeksel en aan de achterkant en dan nog een klein ding en aan de voorkant een soort blok
+	Free: Pattern=dezelfde, Pattern=en dan, Pattern=aan de, Pattern=uitsteeksel, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=en, Pattern=aan de bovenkant en, Pattern=de linkerkant, Pattern=Euh
+	Constrained: Pattern=de bovenkant en, Pattern=de, Pattern=aan de, Pattern=dan, Pattern=de bovenkant, Pattern=een, Pattern=en
+Turn ID=8| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=9| A | A : ik hebben nu die vier uitsteeksel waarvan twee dezelfde zijn
+	Free: Pattern=uitsteeksel, Pattern=hebben, Pattern=die vier, Pattern=zijn, Pattern=twee, Pattern=dezelfde
+	Constrained: Pattern=die, Pattern=vier
+Turn ID=10| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=11| B | B : Oh ja dat zijn ja
+	Free: Pattern=ja dat zijn, Pattern=ja
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=12| A | A : zijn het duidelijk genoeg
+	Free: Pattern=zijn het
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=13| B | B : Euh met de tweezelfde uitstoppingen aan de linkerkant en de bovenkant
+	Free: Pattern=de, Pattern=de bovenkant, Pattern=Euh, Pattern=met, Pattern=en, Pattern=aan de linkerkant
+	Constrained: Pattern=de linkerkant, Pattern=de, Pattern=aan de
+Turn ID=14| A | A : Euhh
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : Wacht even hoor
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ik weten nu even niet welk je bedoelen
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : hij hebben vier in totaal en de linker en de bovenste uitstoppingen zijn hetzelfde
+	Free: Pattern=de, Pattern=hetzelfde, Pattern=hebben, Pattern=en, Pattern=zijn, Pattern=vier
+	Constrained: 
+Turn ID=18| A | A : Aah
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : de Hydropuls
+	Free: Pattern=de
+	Constrained: 
+Turn ID=21| A | A : ik hebben nu met die vier uitsteksel waarvan de twee hetzelfde zijn
+	Free: Pattern=met die vier, Pattern=twee, Pattern=de, Pattern=hetzelfde, Pattern=hebben, Pattern=zijn
+	Constrained: Pattern=met die, Pattern=met, Pattern=die, Pattern=die vier, Pattern=vier
+Turn ID=22| B | B : I
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : dit zijn met die druppel en de bovenkant en de linkerkant en dan twee ander uitsteeksel nog
+	Free: Pattern=met die, Pattern=dan twee, Pattern=de bovenkant en, Pattern=en dan, Pattern=uitsteeksel, Pattern=de linkerkant, Pattern=druppel, Pattern=ander, Pattern=en, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=de, Pattern=dan, Pattern=de bovenkant, Pattern=met, Pattern=die, Pattern=en
+Turn ID=24| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja

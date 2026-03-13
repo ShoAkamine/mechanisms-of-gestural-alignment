@@ -1,0 +1,311 @@
+B|0| B: Nice 
+A|1| A: _Oh ja_ nu _deze_ _zijn_ raar 
+A|2| A: _dit zijn_ _die_ bak 
+A|3| A: dus _die_ _dat_ _die_ elk _hebben_ 
+B|4| B: _mhm_ 
+B|5| B: [ja] 
+A|6| A: _en dan _hebben_ hij_ _bovenop_ _een_ _rechthoek_ 
+B|7| B: _mhm_ 
+A|8| A: _en dan_ links aan _de_ zijkant _hebben hij _een_ soort van_ lijken alsof _er iets uit_ zullen _kunnen vallen_ 
+A|9| A: _en_ aan _de_ rechterkant _hebben hij een_ _balk_ _dat_ _een_ beetje aan _de_ middenkant eruit komen 
+A|10| A: _met_ _er_ nog _een_ staaf 
+A|11| A: _die_ _er_ [ja] _op_ staat 
+B|12| B: eh wachten _even_ hoor 
+B|13| B: ehm _even kijken_ [bovenop] [hebben hij een] 
+B|14| B: [rechthoek] 
+A|15| A: _ja die_ gewoon _liggen_ _zijn_ 
+A|16| A: volgens mij _zijn_ _dat_ _de_ enig _die_ 
+B|17| B: [Oh] 
+B|18| B: [ja] 
+A|19| A: [ja] 
+B|20| B: [en dan hebben] [die] [een soort van] 
+B|21| B: _ik_ zien [deze] als schoonmaakrobot 
+A|22| A: _ja ja_ 
+B|23| B: [die] [hebben] zeggen maar [een soort van] stofzuiger [en] [iets] [van] [een] blik [en] handveag vast 
+A|24| A: [ja] 
+B|25| B: _Oké_ [ja] 
+B|26| B: [dat] [zijn] nummer 
+A|27| A: [ja] 
+B|28| B: oh [dit zijn] ronde _denken_ _ik_ 
+A|29| A: _ja dat_ [denken] 
+B|30| B: [zijn] _allemaal_ veranderen [van] [van] plek [op] mijn scherm 
+A|31| A: [ja] 
+B|32| B: _Oké_ 
+B|33| B: eh _ik_ mogen weer beginnen [met] uit-eh-beelde 
+B|34| B: _het_ [zijn] 
+A|35| A: [mhm] 
+B|36| B: _het_ [zijn] weer [die] schoonmaakrobot zeggen maar _met die_ stofzuiger [en] [die] blik [en] handveger in [zijn] hand 
+B|37| B: _met de_ [balk] [bovenop] 
+A|38| A: [Oké] 
+A|39| A: [even kijken] welk [dat] 
+A|40| A: Wacht 
+A|41| A: [even] zoeken want [zijn] inderdaad [allemaal] 
+B|42| B: [ja] [zijn] [allemaal] veranderen [van] plek 
+A|43| A: want _kunnen_ je nog eens omschrijven 
+A|44| A: [iets] aan [de] 
+A|45| A: [Oh] [met die] [met die] 
+B|46| B: [ja] jij zeggen [dat] [er iets uit] [kunnen vallen] 
+A|47| A: recht 
+A|48| A: _Oh ja_ [met die] r-rechthoek [bovenop] 
+B|49| B: _ik hebben_ _het_ veel 
+B|50| B: [ja] 
+B|51| B: [ja die] plat [liggen] 
+A|52| A: [Oké] 
+A|53| A: [ja] letter 
+B|54| B: [Oké] 
+A|55| A: [ik hebben] 
+A|56| A: _Oh ja_ [dit zijn] ook [een] schoonmaak [iets] 
+A|57| A: [met] [dat] [met] [dat] [rechthoek] [bovenop] 
+A|58| A: [die] [er] 
+B|59| B: Eh 
+A|60| A: [met] [dat] [rechthoek] [er] echt 
+B|61| B: [Oh [ja] [ja] ja] 
+A|62| A: [ja] 
+B|63| B: [die] erop zeggen maar [die] [liggen] 
+A|64| A: [ja] precies 
+B|65| B: [ja dat] [zijn] nummer 
+B|66| B: [ik hebben] [die] schoonmaakrobot 
+B|67| B: Wa-met [die] [balk] [bovenop] [liggen] 
+A|68| A: [Oh ja] 
+A|69| A: [met de] 
+A|70| A: [Oh ja] 
+A|71| A: Letter 
+A|72| A: _ik hebben de stofzuigrobot_ [met] [het] [rechthoek] [bovenop] 
+B|73| B: [Oké] nummer 
+B|74| B: [ik hebben de stofzuigrobot] 
+B|75| B: [met de] [balk] [bovenop] 
+A|76| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Nice
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : Oh ja nu deze zijn raar
+	Free: Pattern=Oh ja, Pattern=deze, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=2| A | A : dit zijn die bak
+	Free: Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=3| A | A : dus die dat die elk hebben
+	Free: Pattern=dat, Pattern=hebben, Pattern=die
+	Constrained: 
+Turn ID=4| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en dan hebben hij bovenop een rechthoek
+	Free: Pattern=bovenop, Pattern=hebben hij, Pattern=rechthoek, Pattern=een, Pattern=en dan hebben
+	Constrained: Pattern=en dan, Pattern=en, Pattern=hebben
+Turn ID=7| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=8| A | A : en dan links aan de zijkant hebben hij een soort van lijken alsof er iets uit zullen kunnen vallen
+	Free: Pattern=de, Pattern=en dan, Pattern=hebben hij een, Pattern=een soort van, Pattern=kunnen vallen, Pattern=er iets uit
+	Constrained: Pattern=hebben hij, Pattern=kunnen, Pattern=iets, Pattern=een, Pattern=hebben, Pattern=er, Pattern=van, Pattern=en
+Turn ID=9| A | A : en aan de rechterkant hebben hij een balk dat een beetje aan de middenkant eruit komen
+	Free: Pattern=dat, Pattern=de, Pattern=een, Pattern=hebben hij een, Pattern=balk, Pattern=en
+	Constrained: Pattern=een, Pattern=hebben hij, Pattern=hebben
+Turn ID=10| A | A : met er nog een staaf
+	Free: Pattern=er, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=11| A | A : die er ja op staat
+	Free: Pattern=ja, Pattern=die, Pattern=er, Pattern=op
+	Constrained: 
+Turn ID=12| B | B : eh wachten even hoor
+	Free: Pattern=even
+	Constrained: 
+Turn ID=13| B | B : ehm even kijken bovenop hebben hij een
+	Free: Pattern=hebben hij een, Pattern=even kijken, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=hebben hij, Pattern=even, Pattern=hebben
+Turn ID=14| B | B : rechthoek
+	Free: Pattern=rechthoek
+	Constrained: 
+Turn ID=15| A | A : ja die gewoon liggen zijn
+	Free: Pattern=ja die, Pattern=zijn, Pattern=liggen
+	Constrained: Pattern=ja, Pattern=die
+Turn ID=16| A | A : volgens mij zijn dat de enig die
+	Free: Pattern=dat, Pattern=zijn, Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=17| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : en dan hebben die een soort van
+	Free: Pattern=en dan hebben, Pattern=een soort van, Pattern=die
+	Constrained: Pattern=en dan, Pattern=een, Pattern=hebben, Pattern=van, Pattern=en
+Turn ID=21| B | B : ik zien deze als schoonmaakrobot
+	Free: Pattern=deze, Pattern=ik
+	Constrained: 
+Turn ID=22| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=23| B | B : die hebben zeggen maar een soort van stofzuiger en iets van een blik en handveag vast
+	Free: Pattern=iets, Pattern=een, Pattern=hebben, Pattern=een soort van, Pattern=die, Pattern=van, Pattern=en
+	Constrained: Pattern=van, Pattern=een
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : dat zijn nummer
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : oh dit zijn ronde denken ik
+	Free: Pattern=dit zijn, Pattern=denken, Pattern=ik
+	Constrained: Pattern=zijn
+Turn ID=29| A | A : ja dat denken
+	Free: Pattern=ja dat, Pattern=denken
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=30| B | B : zijn allemaal veranderen van van plek op mijn scherm
+	Free: Pattern=zijn, Pattern=van, Pattern=allemaal, Pattern=op
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=33| B | B : eh ik mogen weer beginnen met uit-eh-beelde
+	Free: Pattern=ik, Pattern=met
+	Constrained: 
+Turn ID=34| B | B : het zijn
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=35| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=36| B | B : het zijn weer die schoonmaakrobot zeggen maar met die stofzuiger en die blik en handveger in zijn hand
+	Free: Pattern=met die, Pattern=het, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: Pattern=die, Pattern=met
+Turn ID=37| B | B : met de balk bovenop
+	Free: Pattern=met de, Pattern=balk, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=met
+Turn ID=38| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=39| A | A : even kijken welk dat
+	Free: Pattern=even kijken, Pattern=dat
+	Constrained: Pattern=even
+Turn ID=40| A | A : Wacht
+	Free: 
+	Constrained: 
+Turn ID=41| A | A : even zoeken want zijn inderdaad allemaal
+	Free: Pattern=even, Pattern=zijn, Pattern=allemaal
+	Constrained: 
+Turn ID=42| B | B : ja zijn allemaal veranderen van plek
+	Free: Pattern=zijn, Pattern=van, Pattern=ja, Pattern=allemaal
+	Constrained: 
+Turn ID=43| A | A : want kunnen je nog eens omschrijven
+	Free: Pattern=kunnen
+	Constrained: 
+Turn ID=44| A | A : iets aan de
+	Free: Pattern=de, Pattern=iets
+	Constrained: 
+Turn ID=45| A | A : Oh met die met die
+	Free: Pattern=met die, Pattern=Oh
+	Constrained: Pattern=die, Pattern=met
+Turn ID=46| B | B : ja jij zeggen dat er iets uit kunnen vallen
+	Free: Pattern=er iets uit, Pattern=kunnen vallen, Pattern=dat, Pattern=ja
+	Constrained: Pattern=iets, Pattern=kunnen, Pattern=er
+Turn ID=47| A | A : recht
+	Free: 
+	Constrained: 
+Turn ID=48| A | A : Oh ja met die r-rechthoek bovenop
+	Free: Pattern=met die, Pattern=Oh ja, Pattern=bovenop
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=die, Pattern=met
+Turn ID=49| B | B : ik hebben het veel
+	Free: Pattern=ik hebben, Pattern=het
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=50| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=51| B | B : ja die plat liggen
+	Free: Pattern=ja die, Pattern=liggen
+	Constrained: Pattern=ja, Pattern=die
+Turn ID=52| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=53| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=54| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=55| A | A : ik hebben
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=56| A | A : Oh ja dit zijn ook een schoonmaak iets
+	Free: Pattern=Oh ja, Pattern=dit zijn, Pattern=iets, Pattern=een
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=Oh
+Turn ID=57| A | A : met dat met dat rechthoek bovenop
+	Free: Pattern=dat, Pattern=rechthoek, Pattern=met, Pattern=bovenop
+	Constrained: 
+Turn ID=58| A | A : die er
+	Free: Pattern=die, Pattern=er
+	Constrained: 
+Turn ID=59| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=60| A | A : met dat rechthoek er echt
+	Free: Pattern=dat, Pattern=er, Pattern=rechthoek, Pattern=met
+	Constrained: 
+Turn ID=61| B | B : Oh ja ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=62| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : die erop zeggen maar die liggen
+	Free: Pattern=die, Pattern=liggen
+	Constrained: 
+Turn ID=64| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=65| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat, Pattern=zijn
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=66| B | B : ik hebben die schoonmaakrobot
+	Free: Pattern=ik hebben, Pattern=die
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=67| B | B : Wa-met die balk bovenop liggen
+	Free: Pattern=die, Pattern=balk, Pattern=bovenop, Pattern=liggen
+	Constrained: 
+Turn ID=68| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=69| A | A : met de
+	Free: Pattern=met de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=70| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=71| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=72| A | A : ik hebben de stofzuigrobot met het rechthoek bovenop
+	Free: Pattern=bovenop, Pattern=rechthoek, Pattern=ik hebben de stofzuigrobot, Pattern=het, Pattern=met
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=73| B | B : Oké nummer
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=74| B | B : ik hebben de stofzuigrobot
+	Free: Pattern=ik hebben de stofzuigrobot
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=75| B | B : met de balk bovenop
+	Free: Pattern=met de, Pattern=balk, Pattern=bovenop
+	Constrained: Pattern=de, Pattern=met
+Turn ID=76| A | A : Letter
+	Free: 
+	Constrained: 

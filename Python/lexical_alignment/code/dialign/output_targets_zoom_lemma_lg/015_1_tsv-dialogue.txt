@@ -1,0 +1,155 @@
+B|0| B: _dit zijn_ _er_ één 
+B|1| B: _die_ _hebben_ eigenlijk 
+B|2| B: _dit zijn_ weer een kom _met_ een soort van _antenne_ 
+B|3| B: een soort van bril _die_ heel ver uitsteekt 
+B|4| B: _en_ een schild _aan de_ voorkant eigenlijk 
+B|5| B: zo _hebben_ ik hem omschrijven 
+B|6| B: dus _je_ moeten hem eigenlijk zien als 
+A|7| A: Oh _ja_ 
+A|8| A: [en] 
+B|9| B: hij kijken naar links voor ons 
+A|10| A: _ja_ 
+B|11| B: [ja] 
+A|12| A: [ja] 
+A|13| A: [en] [je] zullen zeggen maar [die] twee ding [die] uitsteken zullen [je] ook kunnen vergelijken [met] zo'n _cartoon_ waarbij og eruit springen 
+B|14| B: Exact 
+B|15| B: [ja] _dat zijn_ hem 
+A|16| A: Oké [ja] 
+A|17| A: [dit zijn] degeen [met] [die] uitpuilen _oog_ [die] we eerst [hebben] 
+B|18| B: [ja] 
+B|19| B: waar staan [die] 
+A|20| A: [en] het vierkant [aan de] rechterkant [er] tegenaan 
+B|21| B: _en _de_ antenne_ of net wat 
+A|22| A: Antenne [ja] 
+B|23| B: [ja] 
+B|24| B: [dit zijn] weer [de] [cartoon] [die] zo naar voren kijken [met] [zijn] [oog] 
+A|25| A: [ja] Hebbes 
+A|26| A: [dit zijn] [de] robot 
+A|27| A: _met [de_ antenne] 
+A|28| A: [en de] uitpuilen [oog] 
+B|29| B: Hm-hm 
+B|30| B: [dit zijn] weer [de] [cartoon] [met de] [oog] 
+A|31| A: [ja] 
+A|32| A: [dat zijn] 
+A|33| A: [de] robot 
+A|34| A: [met [de] antenne] 
+B|35| B: Robot 
+B|36| B: Yes 
+B|37| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit zijn er één
+	Free: Pattern=dit zijn, Pattern=er
+	Constrained: Pattern=zijn
+Turn ID=1| B | B : die hebben eigenlijk
+	Free: Pattern=hebben, Pattern=die
+	Constrained: 
+Turn ID=2| B | B : dit zijn weer een kom met een soort van antenne
+	Free: Pattern=dit zijn, Pattern=antenne, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=3| B | B : een soort van bril die heel ver uitsteekt
+	Free: Pattern=die
+	Constrained: 
+Turn ID=4| B | B : en een schild aan de voorkant eigenlijk
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=5| B | B : zo hebben ik hem omschrijven
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=6| B | B : dus je moeten hem eigenlijk zien als
+	Free: Pattern=je
+	Constrained: 
+Turn ID=7| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=9| B | B : hij kijken naar links voor ons
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en je zullen zeggen maar die twee ding die uitsteken zullen je ook kunnen vergelijken met zo'n cartoon waarbij og eruit springen
+	Free: Pattern=cartoon, Pattern=met, Pattern=die, Pattern=en, Pattern=je
+	Constrained: 
+Turn ID=14| B | B : Exact
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : ja dat zijn hem
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=16| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dit zijn degeen met die uitpuilen oog die we eerst hebben
+	Free: Pattern=hebben, Pattern=met, Pattern=die, Pattern=oog, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=20| A | A : en het vierkant aan de rechterkant er tegenaan
+	Free: Pattern=aan de, Pattern=er, Pattern=en
+	Constrained: Pattern=de
+Turn ID=21| B | B : en de antenne of net wat
+	Free: Pattern=de antenne, Pattern=en de
+	Constrained: Pattern=antenne, Pattern=de, Pattern=en
+Turn ID=22| A | A : Antenne ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : dit zijn weer de cartoon die zo naar voren kijken met zijn oog
+	Free: Pattern=de, Pattern=cartoon, Pattern=met, Pattern=die, Pattern=oog, Pattern=zijn, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=25| A | A : ja Hebbes
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : dit zijn de robot
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=27| A | A : met de antenne
+	Free: Pattern=de antenne, Pattern=met de
+	Constrained: Pattern=antenne, Pattern=de, Pattern=met
+Turn ID=28| A | A : en de uitpuilen oog
+	Free: Pattern=en de, Pattern=oog
+	Constrained: Pattern=de, Pattern=en
+Turn ID=29| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : dit zijn weer de cartoon met de oog
+	Free: Pattern=cartoon, Pattern=oog, Pattern=dit zijn, Pattern=de, Pattern=met de
+	Constrained: Pattern=zijn, Pattern=de, Pattern=met
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=33| A | A : de robot
+	Free: Pattern=de
+	Constrained: 
+Turn ID=34| A | A : met de antenne
+	Free: Pattern=de antenne, Pattern=met de
+	Constrained: Pattern=antenne, Pattern=de, Pattern=met
+Turn ID=35| B | B : Robot
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=37| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

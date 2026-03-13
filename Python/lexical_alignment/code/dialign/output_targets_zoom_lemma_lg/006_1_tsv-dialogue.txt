@@ -1,0 +1,103 @@
+B|0| B: _ik hebben_ nu één _ik vinden_ _die_ _een beetje_ _op een_ _satelliet_ _lijken_ 
+B|1| B: hij _hebben_ _een_ vierkant _ja_ _aan de_ voorkant geplakt 
+B|2| B: _en_ _aan de_ zijkant twee van _die_ achtig stengel 
+A|3| A: [ja] 
+B|4| B: _en_ _aan de bovenkant_ nog _een_ stengel 
+A|5| A: [ja] [ik vinden] het [lijken] [op een] champignon [aan de bovenkant] 
+B|6| B: [ja] [ja] inderdaad 
+A|7| A: Oké _dan_ [hebben] we [de] zelfde 
+A|8| A: _dan_ _zijn_ _dat_ 
+A|9| A: Oké [ik hebben] diegene [die] jij [een beetje] plaatsvinden [lijken] [op] wat _zijn_ het zo'n [satelliet] of iets 
+A|10| A: met [een] champignon [aan de bovenkant] 
+B|11| B: [ja] 
+B|12| B: Oh [ja] 
+B|13| B: [ja] _dat zijn_ [dan] 
+B|14| B: _ik hebben de satelliet_ 
+A|15| A: eh [ja] met champignon dus [dat zijn] 
+B|16| B: [ja] 
+A|17| A: eh [ik hebben de satelliet] 
+B|18| B: _even kijken_ 
+B|19| B: [ja] [dat zijn] 
+B|20| B: [ik hebben de satelliet] 
+A|21| A: eh [even kijken] 
+A|22| A: [dat zijn] 
+A|23| A: [en] [dan] [hebben] [ik] [de satelliet] 
+B|24| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben nu één ik vinden die een beetje op een satelliet lijken
+	Free: Pattern=ik hebben, Pattern=ik vinden, Pattern=lijken, Pattern=die, Pattern=satelliet, Pattern=een beetje, Pattern=op een
+	Constrained: Pattern=een, Pattern=op, Pattern=ik, Pattern=hebben
+Turn ID=1| B | B : hij hebben een vierkant ja aan de voorkant geplakt
+	Free: Pattern=aan de, Pattern=ja, Pattern=een, Pattern=hebben
+	Constrained: Pattern=de
+Turn ID=2| B | B : en aan de zijkant twee van die achtig stengel
+	Free: Pattern=aan de, Pattern=en, Pattern=die
+	Constrained: Pattern=de
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en aan de bovenkant nog een stengel
+	Free: Pattern=aan de bovenkant, Pattern=en, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=5| A | A : ja ik vinden het lijken op een champignon aan de bovenkant
+	Free: Pattern=ja, Pattern=ik vinden, Pattern=lijken, Pattern=aan de bovenkant, Pattern=op een
+	Constrained: Pattern=de, Pattern=een, Pattern=ik, Pattern=op, Pattern=aan de
+Turn ID=6| B | B : ja ja inderdaad
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Oké dan hebben we de zelfde
+	Free: Pattern=dan, Pattern=de, Pattern=hebben
+	Constrained: 
+Turn ID=8| A | A : dan zijn dat
+	Free: Pattern=dan, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=9| A | A : Oké ik hebben diegene die jij een beetje plaatsvinden lijken op wat zijn het zo'n satelliet of iets
+	Free: Pattern=ik hebben, Pattern=op, Pattern=lijken, Pattern=die, Pattern=satelliet, Pattern=zijn, Pattern=een beetje
+	Constrained: Pattern=ik, Pattern=een, Pattern=hebben
+Turn ID=10| A | A : met een champignon aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja dat zijn dan
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=dan
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : ik hebben de satelliet
+	Free: Pattern=ik hebben de satelliet
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de satelliet, Pattern=hebben, Pattern=ik, Pattern=satelliet
+Turn ID=15| A | A : eh ja met champignon dus dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : eh ik hebben de satelliet
+	Free: Pattern=ik hebben de satelliet
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de satelliet, Pattern=hebben, Pattern=ik, Pattern=satelliet
+Turn ID=18| B | B : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=19| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| B | B : ik hebben de satelliet
+	Free: Pattern=ik hebben de satelliet
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=de satelliet, Pattern=hebben, Pattern=ik, Pattern=satelliet
+Turn ID=21| A | A : eh even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=22| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| A | A : en dan hebben ik de satelliet
+	Free: Pattern=hebben, Pattern=ik, Pattern=en, Pattern=de satelliet, Pattern=dan
+	Constrained: Pattern=satelliet, Pattern=de
+Turn ID=24| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

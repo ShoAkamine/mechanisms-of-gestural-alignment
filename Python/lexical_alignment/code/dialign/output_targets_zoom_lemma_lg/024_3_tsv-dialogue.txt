@@ -1,0 +1,139 @@
+B|0| B: oké _deze_ _zijn_ _een beetje_ dynamisch 
+B|1| B: want zeggen maar _het_ _lijken een beetje_ _op een_ wijnglas 
+B|2| B: alleen dan zeggen maar _de_ 
+B|3| B: _ja_ hoe heten _dat_ 
+B|4| B: Steel van _de_ wijnglas _die_ _zijn_ _een beetje_ _draaien_ 
+B|5| B: _en_ bovenop zitten nog vier 
+B|6| B: _ja_ twee vierkante _en_ één 
+B|7| B: uitstulping 
+B|8| B: maar hij _hebben_ zeggen maar gewoon zo'n onderkant zo'n _soort_ _steel_ 
+B|9| B: _en_ dan _een_ 
+B|10| B: glas met 
+A|11| A: [ja] 
+B|12| B: [ja] oké 
+A|13| A: [ja] 
+A|14| A: _ik_ vinden [het] [op een] _tulp_ [lijken een beetje] 
+A|15| A: [zijn] [het] 
+A|16| A: [deze] vinden _ik_ [op een] _tulp_ [lijken] 
+A|17| A: [en] [het] [hebben] [een] 
+A|18| A: [het] [hebben] [een] [steel] [die] zo [draaien] 
+B|19| B: [ja] 
+A|20| A: [en] _aan_ [de] rechterkant [een] [soort] vierkant 
+A|21| A: kubus 
+B|22| B: [ja] _dat zijn_ 
+B|23| B: Oké [ik] [hebben] nou 
+B|24| B: precies dezelfde als [die] jij net [aan] mij [aan] [het] uitleggen [zijn] 
+A|25| A: O [die] _tulp_ 
+A|26| A: [dat zijn] 
+A|27| A: _dit zijn_ [die] _tulp_ 
+B|28| B: [dat zijn] 
+B|29| B: waar staan [die] 
+B|30| B: [dit zijn] weer [de] [tulp] 
+A|31| A: [dat zijn] 
+A|32| A: [dit zijn] [die] [tulp] 
+B|33| B: [de] [tulp] staan 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze zijn een beetje dynamisch
+	Free: Pattern=een beetje, Pattern=deze, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=1| B | B : want zeggen maar het lijken een beetje op een wijnglas
+	Free: Pattern=lijken een beetje, Pattern=op een, Pattern=het
+	Constrained: Pattern=een beetje, Pattern=een, Pattern=lijken
+Turn ID=2| B | B : alleen dan zeggen maar de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=3| B | B : ja hoe heten dat
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Steel van de wijnglas die zijn een beetje draaien
+	Free: Pattern=de, Pattern=draaien, Pattern=die, Pattern=zijn, Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=5| B | B : en bovenop zitten nog vier
+	Free: Pattern=en
+	Constrained: 
+Turn ID=6| B | B : ja twee vierkante en één
+	Free: Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : uitstulping
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : maar hij hebben zeggen maar gewoon zo'n onderkant zo'n soort steel
+	Free: Pattern=hebben, Pattern=soort, Pattern=steel
+	Constrained: 
+Turn ID=9| B | B : en dan een
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=10| B | B : glas met
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ik vinden het op een tulp lijken een beetje
+	Free: Pattern=lijken een beetje, Pattern=ik, Pattern=op een, Pattern=het, Pattern=tulp
+	Constrained: Pattern=een beetje, Pattern=een, Pattern=lijken
+Turn ID=15| A | A : zijn het
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=16| A | A : deze vinden ik op een tulp lijken
+	Free: Pattern=lijken, Pattern=tulp, Pattern=ik, Pattern=deze, Pattern=op een
+	Constrained: Pattern=een
+Turn ID=17| A | A : en het hebben een
+	Free: Pattern=hebben, Pattern=een, Pattern=en, Pattern=het
+	Constrained: 
+Turn ID=18| A | A : het hebben een steel die zo draaien
+	Free: Pattern=draaien, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=steel
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : en aan de rechterkant een soort vierkant
+	Free: Pattern=soort, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=21| A | A : kubus
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| B | B : Oké ik hebben nou
+	Free: Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=24| B | B : precies dezelfde als die jij net aan mij aan het uitleggen zijn
+	Free: Pattern=zijn, Pattern=aan, Pattern=die, Pattern=het
+	Constrained: 
+Turn ID=25| A | A : O die tulp
+	Free: Pattern=tulp, Pattern=die
+	Constrained: 
+Turn ID=26| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : dit zijn die tulp
+	Free: Pattern=dit zijn, Pattern=tulp, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=28| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=29| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=30| B | B : dit zijn weer de tulp
+	Free: Pattern=dit zijn, Pattern=tulp, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=31| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=32| A | A : dit zijn die tulp
+	Free: Pattern=dit zijn, Pattern=tulp, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=33| B | B : de tulp staan
+	Free: Pattern=tulp, Pattern=de
+	Constrained: 

@@ -1,0 +1,135 @@
+A|0| A: Oh nee 
+A|1| A: ehm oké 
+A|2| A: dus hier komen ook weer _iets uit_ _de_ bovenkant _een een_ klein steelt 
+A|3| A: _en dan_ _aan de voorkant_ _zitten_ _een_ één rond balletje 
+A|4| A: _en_ door _dat_ ballet gaan _dan_ _een _een_ soort_ hoe noemen je _dat_ _een soort_ staaf 
+B|5| B: _ja_ 
+A|6| A: _en aan_ het einde van het staaf _zitten_ _zitten_ ook weer _een_ rond 
+B|7| B: Oké 
+B|8| B: _deze hebben [een_ _een] bal aan de voorkant_ _met_ [een] _balk_ _er doorheen_ 
+B|9| B: [en dan] nog [een soort] _plat cirkel aan de rechterkant_ 
+A|10| A: mhm 
+B|11| B: [en [aan] de] achterkant steken [een soort] lepelachtig [iets uit] 
+A|12| A: [ja] _dat zijn_ 
+A|13| A: Eh _deze hebben een bal aan de voorkant_ 
+A|14| A: _waar_ [dan] [een soort] _balk doorheen zitten_ [met] [aan] het uiteinde zo'n [cirkel] 
+B|15| B: [ja] 
+A|16| A: [ja] 
+B|17| B: _met die lepel_ 
+B|18| B: boven 
+A|19| A: [ja] [met die lepel] bovenin [ja] [ja] 
+B|20| B: twaalf [dat zijn] 
+B|21| B: [deze hebben een bal aan de voorkant] [waar] [een] [balk doorheen zitten] 
+B|22| B: [met] _een plat cirkel_ 
+A|23| A: [ja] 
+A|24| A: [dat zijn] 
+A|25| A: dit [zijn] [de] het rond [aan de voorkant] 
+A|26| A: [met] [dan] [de] staaf [er doorheen] 
+A|27| A: door het rond [en] [een [plat cirkel] aan de rechterkant] 
+B|28| B: [dat zijn] 
+B|29| B: [deze hebben] [die] [bal aan de voorkant] [met die] [balk] [er doorheen] 
+A|30| A: [ja] 
+B|31| B: [en dan] [dat] 
+A|32| A: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh nee
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : ehm oké
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : dus hier komen ook weer iets uit de bovenkant een een klein steelt
+	Free: Pattern=iets uit, Pattern=een een, Pattern=de
+	Constrained: Pattern=een
+Turn ID=3| A | A : en dan aan de voorkant zitten een één rond balletje
+	Free: Pattern=aan de voorkant, Pattern=en dan, Pattern=een, Pattern=zitten
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=4| A | A : en door dat ballet gaan dan een een soort hoe noemen je dat een soort staaf
+	Free: Pattern=dat, Pattern=dan, Pattern=een een, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en aan het einde van het staaf zitten zitten ook weer een rond
+	Free: Pattern=en aan, Pattern=een, Pattern=zitten
+	Constrained: Pattern=aan, Pattern=en
+Turn ID=7| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : deze hebben een een bal aan de voorkant met een balk er doorheen
+	Free: Pattern=een, Pattern=er doorheen, Pattern=balk, Pattern=een bal aan de voorkant, Pattern=deze hebben een, Pattern=een een, Pattern=met
+	Constrained: Pattern=bal aan de voorkant, Pattern=aan de, Pattern=een, Pattern=deze hebben, Pattern=aan de voorkant, Pattern=de, Pattern=aan
+Turn ID=9| B | B : en dan nog een soort plat cirkel aan de rechterkant
+	Free: Pattern=plat cirkel aan de rechterkant, Pattern=een soort, Pattern=en dan
+	Constrained: Pattern=cirkel, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=10| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : en aan de achterkant steken een soort lepelachtig iets uit
+	Free: Pattern=iets uit, Pattern=een soort, Pattern=en aan, Pattern=aan de
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=en
+Turn ID=12| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=13| A | A : Eh deze hebben een bal aan de voorkant
+	Free: Pattern=deze hebben een bal aan de voorkant
+	Constrained: Pattern=bal aan de voorkant, Pattern=aan de, Pattern=een, Pattern=deze hebben, Pattern=aan de voorkant, Pattern=de, Pattern=aan, Pattern=een bal aan de voorkant, Pattern=deze hebben een
+Turn ID=14| A | A : waar dan een soort balk doorheen zitten met aan het uiteinde zo'n cirkel
+	Free: Pattern=cirkel, Pattern=aan, Pattern=waar, Pattern=dan, Pattern=met, Pattern=balk doorheen zitten, Pattern=een soort
+	Constrained: Pattern=balk, Pattern=een, Pattern=zitten
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : met die lepel
+	Free: Pattern=met die lepel
+	Constrained: Pattern=met, Pattern=die, Pattern=met die
+Turn ID=18| B | B : boven
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : ja met die lepel bovenin ja ja
+	Free: Pattern=met die lepel, Pattern=ja
+	Constrained: Pattern=met, Pattern=die, Pattern=met die
+Turn ID=20| B | B : twaalf dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| B | B : deze hebben een bal aan de voorkant waar een balk doorheen zitten
+	Free: Pattern=deze hebben een bal aan de voorkant, Pattern=balk doorheen zitten, Pattern=waar, Pattern=een
+	Constrained: Pattern=bal aan de voorkant, Pattern=aan de, Pattern=een, Pattern=deze hebben, Pattern=balk, Pattern=zitten, Pattern=aan de voorkant, Pattern=de, Pattern=aan, Pattern=een bal aan de voorkant, Pattern=deze hebben een
+Turn ID=22| B | B : met een plat cirkel
+	Free: Pattern=een plat cirkel, Pattern=met
+	Constrained: Pattern=een, Pattern=cirkel
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=25| A | A : dit zijn de het rond aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=zijn, Pattern=de
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=26| A | A : met dan de staaf er doorheen
+	Free: Pattern=er doorheen, Pattern=met, Pattern=dan, Pattern=de
+	Constrained: 
+Turn ID=27| A | A : door het rond en een plat cirkel aan de rechterkant
+	Free: Pattern=plat cirkel aan de rechterkant, Pattern=een plat cirkel, Pattern=en
+	Constrained: Pattern=cirkel, Pattern=aan de, Pattern=een, Pattern=de, Pattern=aan
+Turn ID=28| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=29| B | B : deze hebben die bal aan de voorkant met die balk er doorheen
+	Free: Pattern=balk, Pattern=die, Pattern=met die, Pattern=bal aan de voorkant, Pattern=deze hebben, Pattern=er doorheen
+	Constrained: Pattern=aan de, Pattern=met, Pattern=die, Pattern=aan de voorkant, Pattern=de, Pattern=aan
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : en dan dat
+	Free: Pattern=en dan, Pattern=dat
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=32| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat

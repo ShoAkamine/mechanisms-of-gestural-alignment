@@ -1,0 +1,175 @@
+B|0| B: _dan_ _hebben_ _ik_ _deze_ _die_ _zijn_ anders _dan de_ ander omdat _het_ _een_ soort bokaal lijken 
+B|1| B: _een_ _beker_ 
+B|2| B: dus onder _het_ kop _zitten_ _een_ _ja_ _een_ soort draaien buis naar onder 
+B|3| B: _met_ daaronder _een driehoek_ 
+B|4| B: of _ja_ één _een_ ruimtelijk _driehoek_ 
+A|5| A: _Oh ja_ 
+B|6| B: _hoe noemen je dat_ _een_ Prisma 
+A|7| A: [ja] _en_ bovenop [zitten] _drie dinget_ 
+B|8| B: [ja] daar [zitten] _de [drie_ dinget] in 
+A|9| A: [ja] [dat] [zijn] 
+A|10| A: _Oh ja_ nu moeten [ik] sorry 
+A|11| A: volgens mij [zijn] we [een] ronde voorbij want [deze] [hebben] we net ook al [hebben] 
+A|12| A: _dit zijn_ diegene [die] [een driehoek] onderaan [hebben] 
+A|13| A: _en_ [die] [dan] zo [die] omhoog staan zeggen maar 
+A|14| A: _dit zijn_ [de] enig [die] hoog bekendstaan [dan de] rest 
+A|15| A: [ik] weten niet [hoe] jij [het] omschreeft maar 
+B|16| B: [ja] nummer [ja] nummer 
+A|17| A: [ja] 
+B|18| B: [dit zijn] [die] _beker_ [de] bokaal 
+A|19| A: _Oh ja_ [die] verhogen [zitten] toch 
+A|20| A: [met] [die] [drie] ding er bovenop 
+B|21| B: [ja] 
+A|22| A: [ja] [dat] [zijn] 
+B|23| B: [ja] 
+A|24| A: [dit zijn] degeen [die] weer [die] [ja] [hoe noemen je dat] 
+A|25| A: [die] verhogen [met] [die] [drie] ding bovenop 
+A|26| A: _en_ [dat] driehoekje eronder [met] _zo'n_ staaf _en_ [dat] [die] [dan] hoog [zitten] 
+B|27| B: [Oh ja] 
+B|28| B: [ja] nummer 
+A|29| A: [ja] 
+B|30| B: [dit] [noemen] [ik] _de beker_ 
+B|31| B: [die] _met de_ o-onderzet [met] [een] [dinget] eromheen 
+A|32| A: Diegene [met] [dat] [met de] omgekeerad bowlingbal erin 
+A|33| A: _nee_ [de] bowling 
+B|34| B: [nee] 
+B|35| B: [nee] [die] [met] onderin [zo'n] [driehoek] [hebben] 
+B|36| B: [die] [met] [ja] soort pilaar erboven [en] [drie dinget] bovenin 
+A|37| A: [Oh ja] [ja] [ja] 
+A|38| A: [de beker] 
+A|39| A: Oké [dat] [zijn] 
+A|40| A: [dit zijn] degeen [die] hij [het] bekert [noemen] 
+A|41| A: [met [de] drie] ding bovenop [die] verhogen staan 
+B|42| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan hebben ik deze die zijn anders dan de ander omdat het een soort bokaal lijken
+	Free: Pattern=dan, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=zijn, Pattern=deze, Pattern=dan de
+	Constrained: Pattern=dan, Pattern=de
+Turn ID=1| B | B : een beker
+	Free: Pattern=beker, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : dus onder het kop zitten een ja een soort draaien buis naar onder
+	Free: Pattern=zitten, Pattern=het, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : met daaronder een driehoek
+	Free: Pattern=een driehoek, Pattern=met
+	Constrained: Pattern=driehoek, Pattern=een
+Turn ID=4| B | B : of ja één een ruimtelijk driehoek
+	Free: Pattern=driehoek, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=5| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=6| B | B : hoe noemen je dat een Prisma
+	Free: Pattern=hoe noemen je dat, Pattern=een
+	Constrained: Pattern=hoe, Pattern=noemen, Pattern=dat
+Turn ID=7| A | A : ja en bovenop zitten drie dinget
+	Free: Pattern=drie dinget, Pattern=zitten, Pattern=en, Pattern=ja
+	Constrained: Pattern=drie, Pattern=dinget
+Turn ID=8| B | B : ja daar zitten de drie dinget in
+	Free: Pattern=drie dinget, Pattern=de drie, Pattern=zitten, Pattern=ja
+	Constrained: Pattern=de, Pattern=drie, Pattern=dinget
+Turn ID=9| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=10| A | A : Oh ja nu moeten ik sorry
+	Free: Pattern=Oh ja, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=11| A | A : volgens mij zijn we een ronde voorbij want deze hebben we net ook al hebben
+	Free: Pattern=hebben, Pattern=deze, Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : dit zijn diegene die een driehoek onderaan hebben
+	Free: Pattern=dit zijn, Pattern=een driehoek, Pattern=hebben, Pattern=die
+	Constrained: Pattern=driehoek, Pattern=dit, Pattern=zijn, Pattern=een
+Turn ID=13| A | A : en die dan zo die omhoog staan zeggen maar
+	Free: Pattern=dan, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=14| A | A : dit zijn de enig die hoog bekendstaan dan de rest
+	Free: Pattern=dit zijn, Pattern=dan de, Pattern=de, Pattern=die
+	Constrained: Pattern=dan, Pattern=dit, Pattern=de, Pattern=zijn
+Turn ID=15| A | A : ik weten niet hoe jij het omschreeft maar
+	Free: Pattern=ik, Pattern=hoe, Pattern=het
+	Constrained: 
+Turn ID=16| B | B : ja nummer ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dit zijn die beker de bokaal
+	Free: Pattern=dit zijn, Pattern=de, Pattern=die, Pattern=beker
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=19| A | A : Oh ja die verhogen zitten toch
+	Free: Pattern=Oh ja, Pattern=zitten, Pattern=die
+	Constrained: Pattern=ja
+Turn ID=20| A | A : met die drie ding er bovenop
+	Free: Pattern=drie, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : dit zijn degeen die weer die ja hoe noemen je dat
+	Free: Pattern=hoe noemen je dat, Pattern=dit zijn, Pattern=ja, Pattern=die
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=noemen, Pattern=dat, Pattern=hoe
+Turn ID=25| A | A : die verhogen met die drie ding bovenop
+	Free: Pattern=drie, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=26| A | A : en dat driehoekje eronder met zo'n staaf en dat die dan hoog zitten
+	Free: Pattern=dat, Pattern=zo'n, Pattern=dan, Pattern=met, Pattern=en, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=27| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=28| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : dit noemen ik de beker
+	Free: Pattern=de beker, Pattern=noemen, Pattern=ik, Pattern=dit
+	Constrained: Pattern=de, Pattern=beker
+Turn ID=31| B | B : die met de o-onderzet met een dinget eromheen
+	Free: Pattern=met de, Pattern=dinget, Pattern=een, Pattern=met, Pattern=die
+	Constrained: Pattern=de, Pattern=met
+Turn ID=32| A | A : Diegene met dat met de omgekeerad bowlingbal erin
+	Free: Pattern=met de, Pattern=met, Pattern=dat
+	Constrained: Pattern=de, Pattern=met
+Turn ID=33| A | A : nee de bowling
+	Free: Pattern=nee, Pattern=de
+	Constrained: 
+Turn ID=34| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=35| B | B : nee die met onderin zo'n driehoek hebben
+	Free: Pattern=driehoek, Pattern=zo'n, Pattern=nee, Pattern=hebben, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=36| B | B : die met ja soort pilaar erboven en drie dinget bovenin
+	Free: Pattern=ja, Pattern=met, Pattern=en, Pattern=drie dinget, Pattern=die
+	Constrained: Pattern=drie, Pattern=dinget
+Turn ID=37| A | A : Oh ja ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=38| A | A : de beker
+	Free: Pattern=de beker
+	Constrained: Pattern=de, Pattern=beker
+Turn ID=39| A | A : Oké dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=40| A | A : dit zijn degeen die hij het bekert noemen
+	Free: Pattern=dit zijn, Pattern=noemen, Pattern=het, Pattern=die
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=41| A | A : met de drie ding bovenop die verhogen staan
+	Free: Pattern=met de, Pattern=de drie, Pattern=die
+	Constrained: Pattern=de, Pattern=drie, Pattern=met
+Turn ID=42| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

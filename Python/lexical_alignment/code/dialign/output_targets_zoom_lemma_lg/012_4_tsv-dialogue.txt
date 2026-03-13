@@ -1,0 +1,323 @@
+B|0| B: ehm _ja_ deze _vinden ik_ _lijken_ _op een eend_ 
+B|1| B: _hij hebben_ _rechts twee_ van _die_ _heel_ rechthoekigebalkjes 
+A|2| A: Pfff 
+A|3| A: [ja] 
+B|4| B: _Eh_ _en dan_ link _hebben hij_ _zo'n_ klein mini staartje _en_ _zo'n_ vleugel 
+A|5| A: hm _oké_ [ik] moeten event goed kijken 
+A|6| A: _dus_ je _zeggen_ _dat_ [hij] 
+A|7| A: [Eh] 
+B|8| B: [ja] _rechts_ [dus] _twee_ van _die_ balk 
+A|9| A: [ja] 
+B|10| B: _en dan_ 
+B|11| B: _aan de_ linkerkant _één_ _zo'n_ balk _maar_ _dan_ _een_ soort pun eraan _ook_ 
+B|12| B: achtig iets 
+B|13| B: _en_ _linksonder_ _zo'n_ klein 
+B|14| B: v-vormig 
+A|15| A: eh _zijn_ [die] [een] beetje _zijn_ [die] [een] beetje rond _dat_ _dat_ stuk 
+B|16| B: _aan de_ onderkant _hebben hij_ wel [een] _boog_ [ja] 
+A|17| A: [ja] [en dan] [twee] arm [aan de] rechterkant 
+A|18| A: [ja] 
+A|19| A: [ja] [en dan] [en dan] [twee] arm [aan de] rechterkant 
+B|20| B: _hij hebben_ 
+A|21| A: [die] _zijn_ vierkant 
+B|22| B: [ja] 
+B|23| B: [ja] 
+B|24| B: _en hij hebben_ bovenop [een] soort van pyramide _zonder punt_ 
+A|25| A: Oh [ja] [dan] [hebben] [ik] hem 
+B|26| B: _Oké_ 
+A|27| A: [Oké] 
+A|28| A: dit [vinden ik] [op] Pinocchio [lijken] 
+A|29| A: _dat zijn_ 
+A|30| A: [een] staaf [die] naar links gaan [en] [rechts] [hebben hij] [twee] vierkant arm rechthoekig arm 
+A|31| A: [Eh] of oor wat _het_ [ook] _zijn_ 
+A|32| A: [en hij hebben] _een hoed_ [op] [zonder punt] 
+A|33| A: [een] piramide [zonder punt] 
+B|34| B: oh [zijn] [dat] [die] _eend_ [die] _ik hebben_ omschrijven 
+B|35| B: toevallig 
+A|36| A: _ja ik_ weten _het_ _niet_ veel eigenlijk 
+B|37| B: [Oké] 
+A|38| A: [ik] [vinden] hem _niet_ [ik] [vinden] _het_ zelf _niet_ [op een eend] [lijken] [maar] 
+A|39| A: _het_ [hebben] [dus] [linksonder] [een] [zo'n] [boog] [zo'n] friemel 
+B|40| B: [ja] 
+B|41| B: [ja] 
+A|42| A: [rechts twee] vierkant _ding_ 
+A|43| A: [een] neus 
+B|44| B: [ja] 
+A|45| A: [en] [een] piramide [zonder punt] 
+B|46| B: [ja] [oké] 
+B|47| B: [dat zijn] 
+A|48| A: _het_ [zijn] soms _even_ zoeken of zo 
+B|49| B: [ja ik] kunnen [het] [even] [niet] [vinden] 
+B|50| B: ehm [ja _ik] hebben_ weer [die] [eend] [maar] jij [zeggen] [twee] recht balk [rechts] 
+B|51| B: [en] link [dan] 
+B|52| B: onder [zo'n] fliepel [en] daarboven [een hoed] [zonder punt] 
+A|53| A: Oh [die] [ja] 
+A|54| A: [Eh] 
+A|55| A: huh ? 
+A|56| A: Oh wachten [ik] 
+A|57| A: [de] [eend] [ja] 
+A|58| A: [de] piramide [zonder punt] 
+A|59| A: [ja] [dat zijn] 
+B|60| B: [ja] 
+A|61| A: [ik hebben] nu [de] 
+A|62| A: jouw Eend 
+B|63| B: [dat zijn] 
+B|64| B: [ik hebben] mijn [eend] 
+A|65| A: jouw Eend 
+A|66| A: [Eh] 
+B|67| B: deze woord [aan] deze [ding] [dat zijn] _echt heel_ grappig 
+A|68| A: Oh 
+A|69| A: [ja ik] [vinden] [het] [echt heel] 
+A|70| A: [Eh] [dat zijn] 
+A|71| A: Ehm [ik hebben] 
+A|72| A: jouw 
+A|73| A: [zijn] dit nou jou 
+A|74| A: volgens mij [zijn] dit jou [eend] met [die] [twee] arm 
+B|75| B: [ja] 
+A|76| A: [en] [één] 
+B|77| B: [ja] ? 
+A|78| A: [ja] jou [eend] 
+B|79| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm ja deze vinden ik lijken op een eend
+	Free: Pattern=op een eend, Pattern=vinden ik, Pattern=ja, Pattern=lijken
+	Constrained: Pattern=vinden, Pattern=eend, Pattern=op, Pattern=een, Pattern=ik
+Turn ID=1| B | B : hij hebben rechts twee van die heel rechthoekigebalkjes
+	Free: Pattern=rechts twee, Pattern=hij hebben, Pattern=heel, Pattern=die
+	Constrained: Pattern=rechts, Pattern=twee, Pattern=hebben, Pattern=hij
+Turn ID=2| A | A : Pfff
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Eh en dan link hebben hij zo'n klein mini staartje en zo'n vleugel
+	Free: Pattern=hebben hij, Pattern=zo'n, Pattern=en dan, Pattern=Eh, Pattern=en
+	Constrained: Pattern=en, Pattern=hebben, Pattern=dan, Pattern=hij
+Turn ID=5| A | A : hm oké ik moeten event goed kijken
+	Free: Pattern=ik, Pattern=oké
+	Constrained: 
+Turn ID=6| A | A : dus je zeggen dat hij
+	Free: Pattern=dus, Pattern=zeggen, Pattern=hij, Pattern=dat
+	Constrained: 
+Turn ID=7| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=8| B | B : ja rechts dus twee van die balk
+	Free: Pattern=twee, Pattern=die, Pattern=rechts, Pattern=dus, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=11| B | B : aan de linkerkant één zo'n balk maar dan een soort pun eraan ook
+	Free: Pattern=zo'n, Pattern=dan, Pattern=een, Pattern=één, Pattern=maar, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=12| B | B : achtig iets
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : en linksonder zo'n klein
+	Free: Pattern=linksonder, Pattern=zo'n, Pattern=en
+	Constrained: 
+Turn ID=14| B | B : v-vormig
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : eh zijn die een beetje zijn die een beetje rond dat dat stuk
+	Free: Pattern=een, Pattern=zijn, Pattern=die, Pattern=dat
+	Constrained: 
+Turn ID=16| B | B : aan de onderkant hebben hij wel een boog ja
+	Free: Pattern=hebben hij, Pattern=ja, Pattern=boog, Pattern=aan de, Pattern=een
+	Constrained: Pattern=de, Pattern=hebben, Pattern=aan, Pattern=hij
+Turn ID=17| A | A : ja en dan twee arm aan de rechterkant
+	Free: Pattern=en dan, Pattern=aan de, Pattern=ja, Pattern=twee
+	Constrained: Pattern=de, Pattern=en, Pattern=aan, Pattern=dan
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja en dan en dan twee arm aan de rechterkant
+	Free: Pattern=en dan, Pattern=aan de, Pattern=ja, Pattern=twee
+	Constrained: Pattern=de, Pattern=en, Pattern=aan, Pattern=dan
+Turn ID=20| B | B : hij hebben
+	Free: Pattern=hij hebben
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=21| A | A : die zijn vierkant
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : en hij hebben bovenop een soort van pyramide zonder punt
+	Free: Pattern=en hij hebben, Pattern=zonder punt, Pattern=een
+	Constrained: Pattern=hij, Pattern=hij hebben, Pattern=hebben, Pattern=en
+Turn ID=25| A | A : Oh ja dan hebben ik hem
+	Free: Pattern=ja, Pattern=ik, Pattern=hebben, Pattern=dan
+	Constrained: 
+Turn ID=26| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=27| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| A | A : dit vinden ik op Pinocchio lijken
+	Free: Pattern=vinden ik, Pattern=op, Pattern=lijken
+	Constrained: Pattern=vinden, Pattern=ik
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=30| A | A : een staaf die naar links gaan en rechts hebben hij twee vierkant arm rechthoekig arm
+	Free: Pattern=hebben hij, Pattern=twee, Pattern=rechts, Pattern=een, Pattern=die, Pattern=en
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=31| A | A : Eh of oor wat het ook zijn
+	Free: Pattern=ook, Pattern=het, Pattern=Eh, Pattern=zijn
+	Constrained: 
+Turn ID=32| A | A : en hij hebben een hoed op zonder punt
+	Free: Pattern=en hij hebben, Pattern=een hoed, Pattern=zonder punt, Pattern=op
+	Constrained: Pattern=een, Pattern=hebben, Pattern=hij, Pattern=hij hebben, Pattern=en
+Turn ID=33| A | A : een piramide zonder punt
+	Free: Pattern=zonder punt, Pattern=een
+	Constrained: 
+Turn ID=34| B | B : oh zijn dat die eend die ik hebben omschrijven
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=eend, Pattern=die, Pattern=zijn
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=35| B | B : toevallig
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : ja ik weten het niet veel eigenlijk
+	Free: Pattern=ja ik, Pattern=het, Pattern=niet
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=37| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=38| A | A : ik vinden hem niet ik vinden het zelf niet op een eend lijken maar
+	Free: Pattern=vinden, Pattern=het, Pattern=op een eend, Pattern=ik, Pattern=maar, Pattern=lijken, Pattern=niet
+	Constrained: Pattern=een, Pattern=eend, Pattern=op
+Turn ID=39| A | A : het hebben dus linksonder een zo'n boog zo'n friemel
+	Free: Pattern=zo'n, Pattern=dus, Pattern=boog, Pattern=een, Pattern=het, Pattern=hebben, Pattern=linksonder
+	Constrained: 
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : rechts twee vierkant ding
+	Free: Pattern=rechts twee, Pattern=ding
+	Constrained: Pattern=rechts, Pattern=twee
+Turn ID=43| A | A : een neus
+	Free: Pattern=een
+	Constrained: 
+Turn ID=44| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : en een piramide zonder punt
+	Free: Pattern=zonder punt, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=46| B | B : ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=47| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=48| A | A : het zijn soms even zoeken of zo
+	Free: Pattern=even, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=49| B | B : ja ik kunnen het even niet vinden
+	Free: Pattern=vinden, Pattern=even, Pattern=niet, Pattern=het, Pattern=ja ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=50| B | B : ehm ja ik hebben weer die eend maar jij zeggen twee recht balk rechts
+	Free: Pattern=ik hebben, Pattern=twee, Pattern=rechts, Pattern=eend, Pattern=zeggen, Pattern=die, Pattern=ja ik, Pattern=maar
+	Constrained: Pattern=ja, Pattern=ik, Pattern=hebben
+Turn ID=51| B | B : en link dan
+	Free: Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=52| B | B : onder zo'n fliepel en daarboven een hoed zonder punt
+	Free: Pattern=een hoed, Pattern=zonder punt, Pattern=zo'n, Pattern=en
+	Constrained: Pattern=een
+Turn ID=53| A | A : Oh die ja
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=54| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=55| A | A : huh ?
+	Free: 
+	Constrained: 
+Turn ID=56| A | A : Oh wachten ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=57| A | A : de eend ja
+	Free: Pattern=ja, Pattern=de, Pattern=eend
+	Constrained: 
+Turn ID=58| A | A : de piramide zonder punt
+	Free: Pattern=zonder punt, Pattern=de
+	Constrained: 
+Turn ID=59| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=60| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=61| A | A : ik hebben nu de
+	Free: Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=62| A | A : jouw Eend
+	Free: 
+	Constrained: 
+Turn ID=63| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=64| B | B : ik hebben mijn eend
+	Free: Pattern=ik hebben, Pattern=eend
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=65| A | A : jouw Eend
+	Free: 
+	Constrained: 
+Turn ID=66| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=67| B | B : deze woord aan deze ding dat zijn echt heel grappig
+	Free: Pattern=echt heel, Pattern=dat zijn, Pattern=aan, Pattern=ding
+	Constrained: Pattern=heel, Pattern=zijn, Pattern=dat
+Turn ID=68| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=69| A | A : ja ik vinden het echt heel
+	Free: Pattern=echt heel, Pattern=ja ik, Pattern=vinden, Pattern=het
+	Constrained: Pattern=heel, Pattern=ja, Pattern=ik
+Turn ID=70| A | A : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=71| A | A : Ehm ik hebben
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=72| A | A : jouw
+	Free: 
+	Constrained: 
+Turn ID=73| A | A : zijn dit nou jou
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=74| A | A : volgens mij zijn dit jou eend met die twee arm
+	Free: Pattern=eend, Pattern=twee, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=75| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=76| A | A : en één
+	Free: Pattern=en, Pattern=één
+	Constrained: 
+Turn ID=77| B | B : ja ?
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=78| A | A : ja jou eend
+	Free: Pattern=ja, Pattern=eend
+	Constrained: 
+Turn ID=79| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

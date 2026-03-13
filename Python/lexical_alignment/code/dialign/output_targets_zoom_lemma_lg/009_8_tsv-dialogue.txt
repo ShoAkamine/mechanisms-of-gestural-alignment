@@ -1,0 +1,259 @@
+A|0| A: Oké 
+A|1| A: dit _vinden_ _ik_ _een_ heel lastig 
+A|2| A: Oké _ik hebben_ _een kop_ 
+A|3| A: _en_ onder _het_ _kop_ _zitten_ _een_ _soort_ van poo 
+A|4| A: maar _het_ lopen _een_ _soort_ van _zo_ 
+A|5| A: als je mij kunnen zien zeggen maar 
+B|6| B: [een] _boch_ 
+A|7| A: [een] _soort_ _ja_ [boch] 
+B|8| B: _Oh ja_ 
+A|9| A: _en_ [een] ander 
+A|10| A: _ja ik_ gaan hem dus heel _ik_ gaan _het_ gewoon nadoen want jij kunnen mij zien 
+A|11| A: [een] ander poo _hebben _die_ soort_ van _zo_ 
+A|12| A: _en_ [een] _soort_ neus 
+B|13| B: [ja] best wel hoog _dan_ toch 
+A|14| A: _hij_ _staan_ _soort_ van _zo_ [ja] 
+B|15| B: [ja] 
+A|16| A: _en_ _bovenop_ zijn [een] _soort_ driehoek _met_ daarnaast 
+B|17| B: _twee oor_ 
+A|18| A: _ja ja_ 
+B|19| B: [ja [ja] [ja] [ja] ja] 
+B|20| B: ok 
+A|21| A: Oké 
+B|22| B: _ik hebben dat_ [een kop] op _dat_ bochtig dinget onderaan 
+A|23| A: ah zijn 
+B|24| B: _en dan_ _met [die_ soort] _ruit_ er [bovenop] _met twee oor_ 
+A|25| A: _even kijken_ horen 
+A|26| A: [een] [ruit] [met twee oor] 
+B|27| B: [ja] _dat_ [zitten] er [bovenop] 
+A|28| A: Eh 
+B|29| B: [ik] [vinden] [het] [een] beetje lijken op [een] koala of [zo] 
+A|30| A: [Oh] wachten [ik] denken [ja] wachten 
+B|31| B: [met] _dat_ bochtig dingetje er onderaan 
+A|32| A: ah 
+A|33| A: [ja ja] [en] ook [zo] _die een_ poot zeggen maar [zo] 
+B|34| B: [ja [ja] [ja] ja] 
+A|35| A: [ja] oké [ja] 
+A|36| A: Eh 
+A|37| A: Oké [ik hebben] nu [dat] gek ding waarbij [ik] [zo] doen 
+B|38| B: _Oh ja_ 
+A|39| A: [met die] neus 
+A|40| A: [en dan] [een] driehoek bovenkant [en] [twee] van [die] uitsteeksel 
+B|41| B: [ja] 
+A|42| A: [Oh] 
+B|43| B: _Oh [ja_ [ik] [hebben] [die] een] op [een] bochtig stuk onderaan 
+A|44| A: _even kijken_ horen 
+A|45| A: [Oh _ja] even_ 
+A|46| A: [Oh ja] _waar_ dik gek spring altijd 
+B|47| B: [ja] 
+A|48| A: [ja] 
+A|49| A: eh [ik hebben dat] ding wat [ik] altijd gek doen [met] de driehoek [bovenop] 
+B|50| B: [Oh ja] 
+A|51| A: [met die] poot [zo] 
+A|52| A: [en dan] [twee] van [die] uitsteeksel aan de driehoek 
+B|53| B: [ja [even] kijken] [waar] [zitten] [die] 
+B|54| B: [ja] 
+A|55| A: [Oh] top 
+B|56| B: [ik hebben dat] op [die] dun [boch] [staan] [hij] [bovenop] 
+A|57| A: [Oh ja] 
+B|58| B: [en dan] [met die] 
+A|59| A: [dat] gek spronge 
+A|60| A: [even kijken] 
+B|61| B: [ja] 
+A|62| A: [waar] zijn [hij] 
+A|63| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : dit vinden ik een heel lastig
+	Free: Pattern=een, Pattern=vinden, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : Oké ik hebben een kop
+	Free: Pattern=ik hebben, Pattern=een kop
+	Constrained: Pattern=kop, Pattern=een, Pattern=ik
+Turn ID=3| A | A : en onder het kop zitten een soort van poo
+	Free: Pattern=soort, Pattern=een, Pattern=het, Pattern=kop, Pattern=zitten, Pattern=en
+	Constrained: 
+Turn ID=4| A | A : maar het lopen een soort van zo
+	Free: Pattern=een, Pattern=zo, Pattern=het, Pattern=soort
+	Constrained: 
+Turn ID=5| A | A : als je mij kunnen zien zeggen maar
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : een boch
+	Free: Pattern=een, Pattern=boch
+	Constrained: 
+Turn ID=7| A | A : een soort ja boch
+	Free: Pattern=ja, Pattern=een, Pattern=boch, Pattern=soort
+	Constrained: 
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=9| A | A : en een ander
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=10| A | A : ja ik gaan hem dus heel ik gaan het gewoon nadoen want jij kunnen mij zien
+	Free: Pattern=ja ik, Pattern=het, Pattern=ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=11| A | A : een ander poo hebben die soort van zo
+	Free: Pattern=die soort, Pattern=hebben die, Pattern=een, Pattern=zo
+	Constrained: Pattern=die, Pattern=soort
+Turn ID=12| A | A : en een soort neus
+	Free: Pattern=een, Pattern=en, Pattern=soort
+	Constrained: 
+Turn ID=13| B | B : ja best wel hoog dan toch
+	Free: Pattern=dan, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : hij staan soort van zo ja
+	Free: Pattern=soort, Pattern=ja, Pattern=staan, Pattern=hij, Pattern=zo
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : en bovenop zijn een soort driehoek met daarnaast
+	Free: Pattern=bovenop, Pattern=soort, Pattern=een, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=17| B | B : twee oor
+	Free: Pattern=twee oor
+	Constrained: Pattern=twee
+Turn ID=18| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=19| B | B : ja ja ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=20| B | B : ok
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : ik hebben dat een kop op dat bochtig dinget onderaan
+	Free: Pattern=ik hebben dat, Pattern=een kop, Pattern=dat
+	Constrained: Pattern=ik hebben, Pattern=dat, Pattern=een, Pattern=kop, Pattern=ik
+Turn ID=23| A | A : ah zijn
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : en dan met die soort ruit er bovenop met twee oor
+	Free: Pattern=ruit, Pattern=en dan, Pattern=die soort, Pattern=met twee oor, Pattern=met die, Pattern=bovenop
+	Constrained: Pattern=soort, Pattern=twee, Pattern=twee oor, Pattern=dan, Pattern=met, Pattern=die, Pattern=en
+Turn ID=25| A | A : even kijken horen
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=26| A | A : een ruit met twee oor
+	Free: Pattern=met twee oor, Pattern=een, Pattern=ruit
+	Constrained: Pattern=twee oor, Pattern=twee, Pattern=met
+Turn ID=27| B | B : ja dat zitten er bovenop
+	Free: Pattern=ja, Pattern=zitten, Pattern=bovenop, Pattern=dat
+	Constrained: 
+Turn ID=28| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : ik vinden het een beetje lijken op een koala of zo
+	Free: Pattern=vinden, Pattern=een, Pattern=het, Pattern=zo, Pattern=ik
+	Constrained: 
+Turn ID=30| A | A : Oh wachten ik denken ja wachten
+	Free: Pattern=ja, Pattern=Oh, Pattern=ik
+	Constrained: 
+Turn ID=31| B | B : met dat bochtig dingetje er onderaan
+	Free: Pattern=met, Pattern=dat
+	Constrained: 
+Turn ID=32| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : ja ja en ook zo die een poot zeggen maar zo
+	Free: Pattern=ja ja, Pattern=die een, Pattern=zo, Pattern=en
+	Constrained: Pattern=ja, Pattern=een, Pattern=die
+Turn ID=34| B | B : ja ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=35| A | A : ja oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : Oké ik hebben nu dat gek ding waarbij ik zo doen
+	Free: Pattern=ik hebben, Pattern=zo, Pattern=ik, Pattern=dat
+	Constrained: Pattern=ik
+Turn ID=38| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=39| A | A : met die neus
+	Free: Pattern=met die
+	Constrained: Pattern=die, Pattern=met
+Turn ID=40| A | A : en dan een driehoek bovenkant en twee van die uitsteeksel
+	Free: Pattern=twee, Pattern=en dan, Pattern=een, Pattern=die, Pattern=en
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=43| B | B : Oh ja ik hebben die een op een bochtig stuk onderaan
+	Free: Pattern=ik hebben, Pattern=die een, Pattern=ja ik, Pattern=hebben die, Pattern=een, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=een, Pattern=die, Pattern=ik, Pattern=Oh
+Turn ID=44| A | A : even kijken horen
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=45| A | A : Oh ja even
+	Free: Pattern=ja even, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=46| A | A : Oh ja waar dik gek spring altijd
+	Free: Pattern=Oh ja, Pattern=waar
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=49| A | A : eh ik hebben dat ding wat ik altijd gek doen met de driehoek bovenop
+	Free: Pattern=ik hebben dat, Pattern=met, Pattern=bovenop, Pattern=ik
+	Constrained: Pattern=dat, Pattern=ik hebben, Pattern=ik
+Turn ID=50| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=51| A | A : met die poot zo
+	Free: Pattern=met die, Pattern=zo
+	Constrained: Pattern=die, Pattern=met
+Turn ID=52| A | A : en dan twee van die uitsteeksel aan de driehoek
+	Free: Pattern=en dan, Pattern=die, Pattern=twee
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=53| B | B : ja even kijken waar zitten die
+	Free: Pattern=waar, Pattern=even kijken, Pattern=ja even, Pattern=die, Pattern=zitten
+	Constrained: Pattern=ja
+Turn ID=54| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=55| A | A : Oh top
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=56| B | B : ik hebben dat op die dun boch staan hij bovenop
+	Free: Pattern=bovenop, Pattern=staan, Pattern=hij, Pattern=boch, Pattern=ik hebben dat, Pattern=die
+	Constrained: Pattern=dat, Pattern=ik hebben, Pattern=ik
+Turn ID=57| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=58| B | B : en dan met die
+	Free: Pattern=met die, Pattern=en dan
+	Constrained: Pattern=dan, Pattern=die, Pattern=en, Pattern=met
+Turn ID=59| A | A : dat gek spronge
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=60| A | A : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=61| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=62| A | A : waar zijn hij
+	Free: Pattern=hij, Pattern=waar
+	Constrained: 
+Turn ID=63| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh

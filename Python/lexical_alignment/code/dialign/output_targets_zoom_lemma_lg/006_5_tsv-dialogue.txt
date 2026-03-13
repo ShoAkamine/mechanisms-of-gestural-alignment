@@ -1,0 +1,199 @@
+B|0| B: Ehm _ik_ _hebben_ _er_ nu _één met _een_ soort_ _langwerpig_ _blok_ erbovenop 
+B|1| B: als _een soort ja_ als _het_ _een_ kapsel zullen _zijn_ _zijn het_ gewoon _een_ _langwerpig_ _blok_ erbovenop 
+B|2| B: want volgens mij _hebben_ ander _dat_ niet 
+B|3| B: _en _dan_ _hebben_ die_ _aan de zijkant_ ook _wat_ _ja_ vormp 
+B|4| B: maar _ik weten_ niet _zo_ goed hoe _ik_ _dat_ _uit_ moeten leggen 
+B|5| B: Ehm 
+A|6| A: [zijn het] _veel_ [een] kegel bovenop of 
+B|7| B: nee echt [een] [een] rechthoek 
+B|8| B: [een] dun lang rechthoek 
+B|9| B: [een] beetje zoals diegene _die_ we volgens mij als _één_ _hebben_ 
+B|10| B: _die_ op [een] voetstuk staan 
+B|11| B: maar _dan_ erbovenop 
+B|12| B: _en_ niet _zo_ _rond_ [veel] 
+A|13| A: ah [ja] [dan] [weten] [ik] denken [ik] welk je bedoelen 
+A|14| A: [en dan] [aan de] voorkant [hebben die] [dan] nog [een soort] _van_ [langwerpig] [rond] iets 
+A|15| A: [en] [aan de zijkant] iets [wat] _van_ smal _naar_ breed _gaan_ 
+B|16| B: [ja] kloppen [ja] _dat_ 
+A|17| A: Oké [dan] [zijn het] 
+B|18| B: _ja ik weten_ niet _zo_ goed hoe _ik die_ moeten omschrijven 
+A|19| A: [dat] snap [ik] 
+A|20| A: [dan] [zijn] [dat] 
+A|21| A: ehm [dan hebben] [ik] [er] [één met een] _horizontaal balk_ [aan de] bovenkant 
+A|22| A: [en dan] [een soort ja] arm [dat] [dan] _van_ breed _naar_ smal of _van_ smal _naar_ breed _gaan_ [aan de zijkant] 
+A|23| A: [en] nog [wat] raar figuur [aan de] voorkant 
+A|24| A: [een soort] _van_ opvaal puis 
+A|25| A: [en] nog iets daaronder 
+B|26| B: [ja] 
+B|27| B: [ja] _die _met_ dat_ [langwerpig] _blok_ erbovenop 
+A|28| A: [ja] 
+B|29| B: [ja] _dat zijn_ [dan] 
+B|30| B: [ik] [hebben _die] met het_ [langwerpig] _blok_ erbovenop weer 
+B|31| B: [met] [ja] [die] [zijkant] [die] [van] klein [naar] groot [gaan] 
+B|32| B: [ik] vinden deze [het] lastigst om _te_ omschrijven 
+A|33| A: [ja ik weten] welk je bedoelen 
+B|34| B: maar [dat] [langwerpig] _blok_ erop 
+A|35| A: [dat zijn] 
+A|36| A: ehm [dan hebben] [ik _die] met het horizontaal balk_ [aan de] bovenkant 
+A|37| A: [en dan] [het] armpje [dat] [van] smal [naar] breed [gaan] 
+B|38| B: [ja] [dat zijn] 
+B|39| B: [ik] [hebben [die] met het horizontaal balk] erbovenop 
+B|40| B: [en] _met dat_ uitlopen ding [aan de zijkant] [die] [ik] [het] lastigst vinden 
+A|41| A: [ja] 
+A|42| A: [dat zijn] 
+A|43| A: Eh [dan hebben] [ik die] 
+A|44| A: [die] jij [zo] moeilijk plaatsvinden [uit] [te] uitleggen 
+A|45| A: [met dat] [blok] [aan de] bovenkant 
+A|46| A: [dat] [horizontaal] [blok] 
+A|47| A: [en] [dat] dinge [dat] [van] smal [naar] breed [gaan] 
+B|48| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm ik hebben er nu één met een soort langwerpig blok erbovenop
+	Free: Pattern=langwerpig, Pattern=één met een, Pattern=hebben, Pattern=er, Pattern=blok, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een, Pattern=met, Pattern=één
+Turn ID=1| B | B : als een soort ja als het een kapsel zullen zijn zijn het gewoon een langwerpig blok erbovenop
+	Free: Pattern=een soort ja, Pattern=zijn het, Pattern=langwerpig, Pattern=een, Pattern=het, Pattern=blok, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=een, Pattern=het, Pattern=een soort, Pattern=zijn
+Turn ID=2| B | B : want volgens mij hebben ander dat niet
+	Free: Pattern=hebben, Pattern=dat
+	Constrained: 
+Turn ID=3| B | B : en dan hebben die aan de zijkant ook wat ja vormp
+	Free: Pattern=ja, Pattern=en dan, Pattern=aan de zijkant, Pattern=dan hebben, Pattern=wat, Pattern=hebben die
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=hebben, Pattern=en, Pattern=die, Pattern=zijkant
+Turn ID=4| B | B : maar ik weten niet zo goed hoe ik dat uit moeten leggen
+	Free: Pattern=dat, Pattern=uit, Pattern=zo, Pattern=ik weten, Pattern=ik
+	Constrained: Pattern=ik, Pattern=weten
+Turn ID=5| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : zijn het veel een kegel bovenop of
+	Free: Pattern=zijn het, Pattern=veel, Pattern=een
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=7| B | B : nee echt een een rechthoek
+	Free: Pattern=een
+	Constrained: 
+Turn ID=8| B | B : een dun lang rechthoek
+	Free: Pattern=een
+	Constrained: 
+Turn ID=9| B | B : een beetje zoals diegene die we volgens mij als één hebben
+	Free: Pattern=hebben, Pattern=één, Pattern=een, Pattern=die
+	Constrained: 
+Turn ID=10| B | B : die op een voetstuk staan
+	Free: Pattern=een, Pattern=die
+	Constrained: 
+Turn ID=11| B | B : maar dan erbovenop
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=12| B | B : en niet zo rond veel
+	Free: Pattern=zo, Pattern=rond, Pattern=veel, Pattern=en
+	Constrained: 
+Turn ID=13| A | A : ah ja dan weten ik denken ik welk je bedoelen
+	Free: Pattern=dan, Pattern=ja, Pattern=ik, Pattern=weten
+	Constrained: 
+Turn ID=14| A | A : en dan aan de voorkant hebben die dan nog een soort van langwerpig rond iets
+	Free: Pattern=langwerpig, Pattern=en dan, Pattern=aan de, Pattern=dan, Pattern=een soort, Pattern=van, Pattern=rond, Pattern=hebben die
+	Constrained: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=die, Pattern=en
+Turn ID=15| A | A : en aan de zijkant iets wat van smal naar breed gaan
+	Free: Pattern=aan de zijkant, Pattern=wat, Pattern=gaan, Pattern=naar, Pattern=van, Pattern=en
+	Constrained: Pattern=aan de, Pattern=zijkant
+Turn ID=16| B | B : ja kloppen ja dat
+	Free: Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=17| A | A : Oké dan zijn het
+	Free: Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=18| B | B : ja ik weten niet zo goed hoe ik die moeten omschrijven
+	Free: Pattern=ja ik weten, Pattern=ik die, Pattern=zo
+	Constrained: Pattern=ja, Pattern=weten, Pattern=die, Pattern=ik weten, Pattern=ik
+Turn ID=19| A | A : dat snap ik
+	Free: Pattern=ik, Pattern=dat
+	Constrained: 
+Turn ID=20| A | A : dan zijn dat
+	Free: Pattern=dan, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=21| A | A : ehm dan hebben ik er één met een horizontaal balk aan de bovenkant
+	Free: Pattern=aan de, Pattern=één met een, Pattern=dan hebben, Pattern=horizontaal balk, Pattern=er, Pattern=ik
+	Constrained: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=één, Pattern=met, Pattern=horizontaal
+Turn ID=22| A | A : en dan een soort ja arm dat dan van breed naar smal of van smal naar breed gaan aan de zijkant
+	Free: Pattern=en dan, Pattern=dan, Pattern=aan de zijkant, Pattern=van, Pattern=gaan, Pattern=naar, Pattern=dat, Pattern=een soort ja
+	Constrained: Pattern=ja, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=zijkant, Pattern=een soort, Pattern=en
+Turn ID=23| A | A : en nog wat raar figuur aan de voorkant
+	Free: Pattern=aan de, Pattern=wat, Pattern=en
+	Constrained: 
+Turn ID=24| A | A : een soort van opvaal puis
+	Free: Pattern=een soort, Pattern=van
+	Constrained: Pattern=een
+Turn ID=25| A | A : en nog iets daaronder
+	Free: Pattern=en
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ja die met dat langwerpig blok erbovenop
+	Free: Pattern=langwerpig, Pattern=ja, Pattern=die met, Pattern=met dat, Pattern=blok
+	Constrained: Pattern=met, Pattern=dat, Pattern=die
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja dat zijn dan
+	Free: Pattern=dat zijn, Pattern=dan, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=30| B | B : ik hebben die met het langwerpig blok erbovenop weer
+	Free: Pattern=langwerpig, Pattern=ik, Pattern=blok, Pattern=die met het, Pattern=hebben die
+	Constrained: Pattern=het, Pattern=hebben, Pattern=die met, Pattern=met, Pattern=die
+Turn ID=31| B | B : met ja die zijkant die van klein naar groot gaan
+	Free: Pattern=ja, Pattern=met, Pattern=van, Pattern=gaan, Pattern=naar, Pattern=die, Pattern=zijkant
+	Constrained: 
+Turn ID=32| B | B : ik vinden deze het lastigst om te omschrijven
+	Free: Pattern=ik, Pattern=het, Pattern=te
+	Constrained: 
+Turn ID=33| A | A : ja ik weten welk je bedoelen
+	Free: Pattern=ja ik weten
+	Constrained: Pattern=ik weten, Pattern=ja, Pattern=ik, Pattern=weten
+Turn ID=34| B | B : maar dat langwerpig blok erop
+	Free: Pattern=langwerpig, Pattern=blok, Pattern=dat
+	Constrained: 
+Turn ID=35| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=36| A | A : ehm dan hebben ik die met het horizontaal balk aan de bovenkant
+	Free: Pattern=die met het horizontaal balk, Pattern=dan hebben, Pattern=ik die, Pattern=aan de
+	Constrained: Pattern=dan, Pattern=het, Pattern=hebben, Pattern=die met, Pattern=horizontaal balk, Pattern=met, Pattern=die, Pattern=ik, Pattern=die met het, Pattern=horizontaal
+Turn ID=37| A | A : en dan het armpje dat van smal naar breed gaan
+	Free: Pattern=dat, Pattern=en dan, Pattern=het, Pattern=van, Pattern=gaan, Pattern=naar
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=38| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=39| B | B : ik hebben die met het horizontaal balk erbovenop
+	Free: Pattern=die met het horizontaal balk, Pattern=hebben die, Pattern=ik
+	Constrained: Pattern=het, Pattern=hebben, Pattern=die met, Pattern=horizontaal balk, Pattern=met, Pattern=die, Pattern=die met het, Pattern=horizontaal
+Turn ID=40| B | B : en met dat uitlopen ding aan de zijkant die ik het lastigst vinden
+	Free: Pattern=aan de zijkant, Pattern=het, Pattern=met dat, Pattern=die, Pattern=ik, Pattern=en
+	Constrained: Pattern=zijkant, Pattern=dat, Pattern=met, Pattern=aan de
+Turn ID=41| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=43| A | A : Eh dan hebben ik die
+	Free: Pattern=dan hebben, Pattern=ik die
+	Constrained: Pattern=dan, Pattern=hebben, Pattern=ik, Pattern=die
+Turn ID=44| A | A : die jij zo moeilijk plaatsvinden uit te uitleggen
+	Free: Pattern=zo, Pattern=uit, Pattern=te, Pattern=die
+	Constrained: 
+Turn ID=45| A | A : met dat blok aan de bovenkant
+	Free: Pattern=met dat, Pattern=aan de, Pattern=blok
+	Constrained: Pattern=met, Pattern=dat
+Turn ID=46| A | A : dat horizontaal blok
+	Free: Pattern=horizontaal, Pattern=blok, Pattern=dat
+	Constrained: 
+Turn ID=47| A | A : en dat dinge dat van smal naar breed gaan
+	Free: Pattern=dat, Pattern=gaan, Pattern=naar, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=48| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat

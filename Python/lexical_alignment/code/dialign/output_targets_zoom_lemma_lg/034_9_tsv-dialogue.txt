@@ -1,0 +1,135 @@
+B|0| B: _Oh_ _euh_ _ja_ _het_ _zijn_ ook één _van_ _die_ _dinget_ 
+B|1| B: _en_ _euh_ _aan de linkerkant_ steekt _er _een_ soort_ _balk uit_ 
+B|2| B: _en_ zeggen maar achter _een soort_ _half rond_ 
+B|3| B: _en _aan de_ onderkant_ _een_ _blok_ _die_ _er een_ beetje _half_ in zitten 
+B|4| B: _en_ rechtsboven eruit _een soort _ovaal_ dinget_ 
+A|5| A: [zijn] dit uitstulpsel [aan de linkerkant] [zijn] [die] [soort] [van] [half rond] met _een recht_ hoek 
+A|6| A: of hoe leggen _ik_ _dat_ [uit] 
+A|7| A: of [zijn] [die] _helemaal_ [rond] 
+B|8| B: hij [zijn] denken [ik] [een] beetje hoekig [rond] 
+A|9| A: Oké [ja] 
+B|10| B: dus _het_ _het_ onderste deel [van] _het_ uitstulp [zijn] best _wel_ duidelijk donker [een recht] lijn 
+A|11| A: [Oh] 
+A|12| A: [ja] 
+B|13| B: _en_ _het_ bovenste deel best _wel_ duidelijk licht 
+A|14| A: Oké _dan zijn het_ 
+A|15| A: _euh deze hebben_ _deze_ staat _op_ [een soort ovaal] [soort ovaal] uitstulping [aan de onderkant] 
+A|16| A: [aan de linkerkant] komen [er _een] [balk_ uit] 
+A|17| A: [en _aan de] bovenkant_ zien je zo _een half_ cirkel [en] _nog_ _zo'n ovaal_ uitstulping 
+B|18| B: Klopt [het] [dat] we [die] net al [hebben] [hebben] 
+A|19| A: [ja] volgens mij [wel] 
+B|20| B: [ja] oké [dan zijn het] 
+B|21| B: [euh deze hebben] _een half rond_ bovenop [en] [dan] [soort] rechts [een] _ovaal ding_ eruit steken 
+B|22| B: Links iets rechts eruit steken waarbij [de onderkant] donkerd [zijn] [dan] [de bovenkant] 
+B|23| B: [en] [helemaal] eronder [een soort] _blok_ waar [dat] _ding_ in zitten 
+A|24| A: _dat zijn_ 
+A|25| A: _Euh_ [deze] staat _op_ [dat] [ovaal dinget] met [aan de linkerkant] _een balk_ [aan de] achterkant [een _half rond] [en_ _aan de] bovenkant_ _nog_ _zo'n [ovaal_ ding] 
+B|26| B: [Euh] [ja] [dat zijn] 
+B|27| B: [euh deze hebben] [aan de bovenkant] [zo'n] [half rond en] [dan] rechtsboven [zo'n [ovaal] dinget] 
+B|28| B: Links [een balk] [en] onder _staan_ [het] [nog] [half] _op zo'n_ vierkant [ding] 
+A|29| A: [dat zijn] 
+A|30| A: [euh] dit [zijn] [euh] [die] [op zo'n] [blok] [staan] met [een [half rond] en] [zo'n ovaal] erin 
+A|31| A: [en] [nog] [een balk] [op] links 
+B|32| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh euh ja het zijn ook één van die dinget
+	Free: Pattern=ja, Pattern=dinget, Pattern=het, Pattern=euh, Pattern=die, Pattern=van, Pattern=Oh, Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : en euh aan de linkerkant steekt er een soort balk uit
+	Free: Pattern=euh, Pattern=balk uit, Pattern=er een, Pattern=een soort, Pattern=en, Pattern=aan de linkerkant
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=uit, Pattern=een
+Turn ID=2| B | B : en zeggen maar achter een soort half rond
+	Free: Pattern=half rond, Pattern=een soort, Pattern=en
+	Constrained: Pattern=half, Pattern=soort, Pattern=rond, Pattern=een
+Turn ID=3| B | B : en aan de onderkant een blok die er een beetje half in zitten
+	Free: Pattern=een, Pattern=aan de onderkant, Pattern=die, Pattern=er een, Pattern=blok, Pattern=en aan de, Pattern=half
+	Constrained: Pattern=de onderkant, Pattern=een, Pattern=en, Pattern=aan de
+Turn ID=4| B | B : en rechtsboven eruit een soort ovaal dinget
+	Free: Pattern=een soort ovaal, Pattern=ovaal dinget, Pattern=en
+	Constrained: Pattern=soort, Pattern=dinget, Pattern=een, Pattern=soort ovaal, Pattern=een soort
+Turn ID=5| A | A : zijn dit uitstulpsel aan de linkerkant zijn die soort van half rond met een recht hoek
+	Free: Pattern=half rond, Pattern=soort, Pattern=een recht, Pattern=die, Pattern=van, Pattern=zijn, Pattern=aan de linkerkant
+	Constrained: Pattern=aan de, Pattern=een, Pattern=half, Pattern=rond
+Turn ID=6| A | A : of hoe leggen ik dat uit
+	Free: Pattern=dat, Pattern=uit, Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : of zijn die helemaal rond
+	Free: Pattern=zijn, Pattern=rond, Pattern=helemaal, Pattern=die
+	Constrained: 
+Turn ID=8| B | B : hij zijn denken ik een beetje hoekig rond
+	Free: Pattern=zijn, Pattern=rond, Pattern=een, Pattern=ik
+	Constrained: 
+Turn ID=9| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : dus het het onderste deel van het uitstulp zijn best wel duidelijk donker een recht lijn
+	Free: Pattern=wel, Pattern=een recht, Pattern=het, Pattern=van, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=11| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en het bovenste deel best wel duidelijk licht
+	Free: Pattern=het, Pattern=en, Pattern=wel
+	Constrained: 
+Turn ID=14| A | A : Oké dan zijn het
+	Free: Pattern=dan zijn het
+	Constrained: Pattern=dan, Pattern=het, Pattern=zijn
+Turn ID=15| A | A : euh deze hebben deze staat op een soort ovaal soort ovaal uitstulping aan de onderkant
+	Free: Pattern=euh deze hebben, Pattern=op, Pattern=deze, Pattern=een soort ovaal, Pattern=soort ovaal, Pattern=aan de onderkant
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=de onderkant, Pattern=een soort, Pattern=deze, Pattern=soort ovaal, Pattern=euh
+Turn ID=16| A | A : aan de linkerkant komen er een balk uit
+	Free: Pattern=aan de linkerkant, Pattern=er een, Pattern=een balk, Pattern=balk uit
+	Constrained: Pattern=aan de, Pattern=uit, Pattern=een
+Turn ID=17| A | A : en aan de bovenkant zien je zo een half cirkel en nog zo'n ovaal uitstulping
+	Free: Pattern=nog, Pattern=zo'n ovaal, Pattern=en aan de, Pattern=een half, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=zo'n, Pattern=aan de, Pattern=de bovenkant, Pattern=een, Pattern=en, Pattern=half
+Turn ID=18| B | B : Klopt het dat we die net al hebben hebben
+	Free: Pattern=dat, Pattern=het, Pattern=die, Pattern=hebben
+	Constrained: 
+Turn ID=19| A | A : ja volgens mij wel
+	Free: Pattern=ja, Pattern=wel
+	Constrained: 
+Turn ID=20| B | B : ja oké dan zijn het
+	Free: Pattern=dan zijn het, Pattern=ja
+	Constrained: Pattern=dan, Pattern=het, Pattern=zijn
+Turn ID=21| B | B : euh deze hebben een half rond bovenop en dan soort rechts een ovaal ding eruit steken
+	Free: Pattern=soort, Pattern=euh deze hebben, Pattern=dan, Pattern=een, Pattern=ovaal ding, Pattern=en, Pattern=een half rond
+	Constrained: Pattern=half rond, Pattern=ding, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=rond, Pattern=deze, Pattern=half, Pattern=een half
+Turn ID=22| B | B : Links iets rechts eruit steken waarbij de onderkant donkerd zijn dan de bovenkant
+	Free: Pattern=de onderkant, Pattern=de bovenkant, Pattern=dan, Pattern=zijn
+	Constrained: 
+Turn ID=23| B | B : en helemaal eronder een soort blok waar dat ding in zitten
+	Free: Pattern=dat, Pattern=helemaal, Pattern=ding, Pattern=een soort, Pattern=en, Pattern=blok
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| A | A : Euh deze staat op dat ovaal dinget met aan de linkerkant een balk aan de achterkant een half rond en aan de bovenkant nog zo'n ovaal ding
+	Free: Pattern=dat, Pattern=zo'n ovaal, Pattern=Euh, Pattern=ovaal ding, Pattern=half rond en, Pattern=aan de bovenkant, Pattern=deze, Pattern=en aan de, Pattern=een half rond, Pattern=aan de linkerkant, Pattern=een balk, Pattern=nog, Pattern=ovaal dinget, Pattern=op, Pattern=aan de
+	Constrained: Pattern=half rond, Pattern=zo'n, Pattern=een, Pattern=en, Pattern=rond, Pattern=half, Pattern=een half, Pattern=dinget, Pattern=aan de, Pattern=de bovenkant, Pattern=ding
+Turn ID=26| B | B : Euh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=Euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| B | B : euh deze hebben aan de bovenkant zo'n half rond en dan rechtsboven zo'n ovaal dinget
+	Free: Pattern=ovaal dinget, Pattern=zo'n, Pattern=dan, Pattern=half rond en, Pattern=aan de bovenkant, Pattern=euh deze hebben, Pattern=zo'n ovaal
+	Constrained: Pattern=half rond, Pattern=zo'n, Pattern=de bovenkant, Pattern=hebben, Pattern=euh, Pattern=en, Pattern=rond, Pattern=deze, Pattern=half, Pattern=dinget, Pattern=aan de
+Turn ID=28| B | B : Links een balk en onder staan het nog half op zo'n vierkant ding
+	Free: Pattern=ding, Pattern=staan, Pattern=het, Pattern=en, Pattern=half, Pattern=een balk, Pattern=nog, Pattern=op zo'n
+	Constrained: Pattern=een, Pattern=zo'n, Pattern=op
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=30| A | A : euh dit zijn euh die op zo'n blok staan met een half rond en zo'n ovaal erin
+	Free: Pattern=op zo'n, Pattern=zo'n ovaal, Pattern=staan, Pattern=euh, Pattern=die, Pattern=half rond en, Pattern=blok, Pattern=zijn, Pattern=een half rond
+	Constrained: Pattern=half rond, Pattern=zo'n, Pattern=op, Pattern=een, Pattern=en, Pattern=rond, Pattern=half, Pattern=een half
+Turn ID=31| A | A : en nog een balk op links
+	Free: Pattern=een balk, Pattern=en, Pattern=op, Pattern=nog
+	Constrained: Pattern=een
+Turn ID=32| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

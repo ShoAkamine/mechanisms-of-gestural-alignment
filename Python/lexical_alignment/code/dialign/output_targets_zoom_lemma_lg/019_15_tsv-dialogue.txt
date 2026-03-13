@@ -1,0 +1,219 @@
+A|0| A: _ehm_ deze _hebben_ 
+A|1| A: _het_ _zijn_ _ook_ _die_ ander _met_ _een_ _dienblad_ 
+A|2| A: _maar_ _die_ jij toen bedoelen _met die_ olifantensturf 
+A|3| A: _en_ _twee_ _twee spriet bovenop_ 
+B|4| B: _Oh ja_ [twee] 
+B|5| B: _ja_ top 
+A|6| A: _en_ 
+B|7| B: _Oké_ 
+A|8| A: [ja] 
+B|9| B: _ja die_ [hebben] ik 
+B|10| B: _dat zijn_ nummer 
+B|11| B: _ehm dit zijn_ [met] de _slurf_ 
+B|12| B: [en] _dat_ vierkan waar [die] half _een beetje_ in hangen 
+B|13| B: _en die_ [twee] punt aan de bovenkant 
+A|14| A: [ehm] even zoeken hoor 
+B|15| B: Jep 
+A|16| A: olifant [slurf] 
+B|17| B: _en dan_ [een] _zo'n_ soort van _uitsteeksel_ aan de _links_ aan de zijkant 
+A|18| A: [die] wachten _olifantenslurf_ [met] welk 
+A|19| A: [met] [twee] 
+B|20| B: [met die] [twee] punt aan de bovenkant 
+A|21| A: [en dan] [zo'n] _dienblad_ _ook_ om zich heen 
+B|22| B: _en die_ 
+B|23| B: _ja ja ja_ [maar] [dan] veel de onderkant 
+A|24| A: [en] één 
+A|25| A: [ja ja ja] 
+A|26| A: [Oké] [dat zijn] 
+A|27| A: [dit zijn] diegene [met] [dat] _dienblad_ [een beetje] onder 
+A|28| A: [en dan] [die] olifantenneus 
+A|29| A: [en] [twee] sliert boven [twee] [uitsteeksel] 
+A|30| A: _en links nog een_ _arm_ 
+B|31| B: _Oh ja_ 
+B|32| B: [ja] top 
+B|33| B: nummer 
+B|34| B: _ehm dit zijn_ de de [die] [die] in [het] [dienblad] hangen 
+B|35| B: [met] de olifantensnurf [en] de [twee spriet bovenop] 
+A|36| A: _eh_ diemblant _olifantenslurf [en_ die] [spriet bovenop] 
+A|37| A: even kijken horen 
+B|38| B: [en dan] [links] [ook] [nog een] soort van rechthoekig [arm] [die] eruit komen 
+A|39| A: [Oh [ja] die] [ja ja ja] 
+A|40| A: [Oké] 
+A|41| A: [ehm dit zijn] [die] [dienblad] [dat] [dienblad] zeggen [maar] onderaan 
+B|42| B: mhm 
+A|43| A: [en dan] [die] _olifantenslurf_ 
+A|44| A: [en dan] [twee] hoornt 
+A|45| A: _en links nog_ wat 
+B|46| B: [ja] 
+B|47| B: [ja] nummer 
+B|48| B: [eh] [dit zijn] weer [het] kop in [het] [dienblad] [met] [olifantenslurf en] de [twee spriet] bovenaan 
+B|49| B: [en links nog een] rechthoekig [arm] er uit 
+A|50| A: Kop 
+A|51| A: [ehm] [die] [dat] laag [dienblad] 
+B|52| B: [ja] precies 
+A|53| A: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben
+	Free: Pattern=hebben, Pattern=ehm
+	Constrained: 
+Turn ID=1| A | A : het zijn ook die ander met een dienblad
+	Free: Pattern=ook, Pattern=een, Pattern=het, Pattern=met, Pattern=die, Pattern=dienblad, Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : maar die jij toen bedoelen met die olifantensturf
+	Free: Pattern=met die, Pattern=maar, Pattern=die
+	Constrained: Pattern=die, Pattern=met
+Turn ID=3| A | A : en twee twee spriet bovenop
+	Free: Pattern=twee spriet bovenop, Pattern=twee, Pattern=en
+	Constrained: Pattern=twee, Pattern=twee spriet, Pattern=spriet bovenop
+Turn ID=4| B | B : Oh ja twee
+	Free: Pattern=Oh ja, Pattern=twee
+	Constrained: Pattern=ja
+Turn ID=5| B | B : ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja die hebben ik
+	Free: Pattern=ja die, Pattern=hebben
+	Constrained: Pattern=ja, Pattern=die
+Turn ID=10| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : ehm dit zijn met de slurf
+	Free: Pattern=ehm dit zijn, Pattern=slurf, Pattern=met
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=12| B | B : en dat vierkan waar die half een beetje in hangen
+	Free: Pattern=een beetje, Pattern=dat, Pattern=die, Pattern=en
+	Constrained: Pattern=een
+Turn ID=13| B | B : en die twee punt aan de bovenkant
+	Free: Pattern=en die, Pattern=twee
+	Constrained: Pattern=die, Pattern=en
+Turn ID=14| A | A : ehm even zoeken hoor
+	Free: Pattern=ehm
+	Constrained: 
+Turn ID=15| B | B : Jep
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : olifant slurf
+	Free: Pattern=slurf
+	Constrained: 
+Turn ID=17| B | B : en dan een zo'n soort van uitsteeksel aan de links aan de zijkant
+	Free: Pattern=zo'n, Pattern=en dan, Pattern=uitsteeksel, Pattern=een, Pattern=links
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=18| A | A : die wachten olifantenslurf met welk
+	Free: Pattern=olifantenslurf, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=19| A | A : met twee
+	Free: Pattern=twee, Pattern=met
+	Constrained: 
+Turn ID=20| B | B : met die twee punt aan de bovenkant
+	Free: Pattern=met die, Pattern=twee
+	Constrained: Pattern=die, Pattern=met
+Turn ID=21| A | A : en dan zo'n dienblad ook om zich heen
+	Free: Pattern=en dan, Pattern=dienblad, Pattern=zo'n, Pattern=ook
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=22| B | B : en die
+	Free: Pattern=en die
+	Constrained: Pattern=die, Pattern=en
+Turn ID=23| B | B : ja ja ja maar dan veel de onderkant
+	Free: Pattern=ja ja ja, Pattern=dan, Pattern=maar
+	Constrained: Pattern=ja
+Turn ID=24| A | A : en één
+	Free: Pattern=en
+	Constrained: 
+Turn ID=25| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=26| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : dit zijn diegene met dat dienblad een beetje onder
+	Free: Pattern=dat, Pattern=met, Pattern=dienblad, Pattern=een beetje, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=een
+Turn ID=28| A | A : en dan die olifantenneus
+	Free: Pattern=en dan, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=29| A | A : en twee sliert boven twee uitsteeksel
+	Free: Pattern=twee, Pattern=en, Pattern=uitsteeksel
+	Constrained: 
+Turn ID=30| A | A : en links nog een arm
+	Free: Pattern=en links nog een, Pattern=arm
+	Constrained: Pattern=nog een, Pattern=en links nog, Pattern=een, Pattern=links, Pattern=en
+Turn ID=31| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=32| B | B : ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : ehm dit zijn de de die die in het dienblad hangen
+	Free: Pattern=ehm dit zijn, Pattern=dienblad, Pattern=het, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=35| B | B : met de olifantensnurf en de twee spriet bovenop
+	Free: Pattern=twee spriet bovenop, Pattern=met, Pattern=en
+	Constrained: Pattern=twee, Pattern=twee spriet, Pattern=spriet bovenop
+Turn ID=36| A | A : eh diemblant olifantenslurf en die spriet bovenop
+	Free: Pattern=en die, Pattern=olifantenslurf en, Pattern=spriet bovenop, Pattern=eh
+	Constrained: Pattern=die, Pattern=en, Pattern=olifantenslurf
+Turn ID=37| A | A : even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : en dan links ook nog een soort van rechthoekig arm die eruit komen
+	Free: Pattern=nog een, Pattern=en dan, Pattern=ook, Pattern=links, Pattern=die, Pattern=arm
+	Constrained: Pattern=dan, Pattern=een, Pattern=en
+Turn ID=39| A | A : Oh ja die ja ja ja
+	Free: Pattern=ja ja ja, Pattern=Oh ja, Pattern=ja die
+	Constrained: Pattern=ja, Pattern=die
+Turn ID=40| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=41| A | A : ehm dit zijn die dienblad dat dienblad zeggen maar onderaan
+	Free: Pattern=dat, Pattern=die, Pattern=dienblad, Pattern=ehm dit zijn, Pattern=maar
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=42| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : en dan die olifantenslurf
+	Free: Pattern=en dan, Pattern=olifantenslurf, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=44| A | A : en dan twee hoornt
+	Free: Pattern=en dan, Pattern=twee
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=45| A | A : en links nog wat
+	Free: Pattern=en links nog
+	Constrained: Pattern=links, Pattern=en
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : eh dit zijn weer het kop in het dienblad met olifantenslurf en de twee spriet bovenaan
+	Free: Pattern=twee spriet, Pattern=het, Pattern=met, Pattern=eh, Pattern=dienblad, Pattern=olifantenslurf en, Pattern=dit zijn
+	Constrained: Pattern=twee, Pattern=zijn, Pattern=en, Pattern=olifantenslurf
+Turn ID=49| B | B : en links nog een rechthoekig arm er uit
+	Free: Pattern=en links nog een, Pattern=arm
+	Constrained: Pattern=nog een, Pattern=en links nog, Pattern=een, Pattern=links, Pattern=en
+Turn ID=50| A | A : Kop
+	Free: 
+	Constrained: 
+Turn ID=51| A | A : ehm die dat laag dienblad
+	Free: Pattern=dat, Pattern=dienblad, Pattern=ehm, Pattern=die
+	Constrained: 
+Turn ID=52| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : ja
+	Free: Pattern=ja
+	Constrained: 

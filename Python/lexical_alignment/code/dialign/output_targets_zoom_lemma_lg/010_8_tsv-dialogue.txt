@@ -1,0 +1,75 @@
+A|0| A: eh sorry 
+A|1| A: hij _hebben_ _de_ _propeller bovenop_ 
+A|2| A: dat zijn zeggen maar _een_ soort vierkan wat erin steken met twee van die blokkentorens _aan de zijkant_ 
+B|3| B: _ja_ 
+A|4| A: onderin _hebben_ hij _een_ klein poo 
+B|5| B: Oké 
+B|6| B: Eh deze [hebben] [een] [propeller bovenop] 
+B|7| B: _en_ [een] stok [aan de] onderkant [aan de] voorkant _en_ [aan de zijkant] 
+A|8| A: [ja] dat zijn 
+A|9| A: eh [de] [propeller bovenop] 
+A|10| A: [en] onderaan zo'n staafje waar statiefje 
+B|11| B: Oh 
+B|12| B: [propeller] [aan de] bovenkant [en] drie uitsteeksel 
+A|13| A: dat zijn 
+A|14| A: dit zijn die met [de] [propeller bovenop] 
+A|15| A: [en] dan zo'n poo naar onder 
+B|16| B: Propeller [bovenop] 
+A|17| A: dat zijn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh sorry
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : hij hebben de propeller bovenop
+	Free: Pattern=propeller bovenop, Pattern=hebben, Pattern=de
+	Constrained: Pattern=propeller, Pattern=bovenop
+Turn ID=2| A | A : dat zijn zeggen maar een soort vierkan wat erin steken met twee van die blokkentorens aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : onderin hebben hij een klein poo
+	Free: Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Eh deze hebben een propeller bovenop
+	Free: Pattern=propeller bovenop, Pattern=hebben, Pattern=een
+	Constrained: Pattern=propeller, Pattern=bovenop
+Turn ID=7| B | B : en een stok aan de onderkant aan de voorkant en aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=aan de, Pattern=een, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=8| A | A : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : eh de propeller bovenop
+	Free: Pattern=propeller bovenop, Pattern=de
+	Constrained: Pattern=propeller, Pattern=bovenop
+Turn ID=10| A | A : en onderaan zo'n staafje waar statiefje
+	Free: Pattern=en
+	Constrained: 
+Turn ID=11| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : propeller aan de bovenkant en drie uitsteeksel
+	Free: Pattern=aan de, Pattern=propeller, Pattern=en
+	Constrained: Pattern=de
+Turn ID=13| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : dit zijn die met de propeller bovenop
+	Free: Pattern=propeller bovenop, Pattern=de
+	Constrained: Pattern=propeller, Pattern=bovenop
+Turn ID=15| A | A : en dan zo'n poo naar onder
+	Free: Pattern=en
+	Constrained: 
+Turn ID=16| B | B : Propeller bovenop
+	Free: Pattern=bovenop
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: 
+	Constrained: 

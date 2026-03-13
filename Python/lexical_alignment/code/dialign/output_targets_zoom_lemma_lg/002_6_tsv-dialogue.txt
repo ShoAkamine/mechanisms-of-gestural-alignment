@@ -1,0 +1,119 @@
+B|0| B: Oké even kijken 
+B|1| B: ehm _ja_ in deze _lijken_ ook _een_ soort lepel te zitten _zeggen_ maar 
+A|2| A: [ja] 
+B|3| B: en aan _de_ voorkant zitten er zo'n staaf _door een ei_ 
+A|4| A: _Oh ja_ _dat_ noemen ik [een] parapluu 
+A|5| A: [ja] 
+A|6| A: toch 
+B|7| B: [Oh ja] [ja] 
+A|8| A: _het_ [lijken] [een] beetje op [een] zijwaarts parapluut 
+B|9| B: [ja] er zitten inderdaad zo'n soort [ja] zo'n plat ding aan _de_ rechterkant 
+A|10| A: [ja] oké [ja] 
+B|11| B: aan _de_ staaf 
+A|12| A: _dit zijn_ _die_ _met dat paraplu_ zo onder [de] arm 
+A|13| A: of [ja] jij [zeggen] [een ei] _met_ daar doorheen [een] schroef 
+B|14| B: [Oh ja] 
+B|15| B: [Oh ja] 
+B|16| B: even kijken [dit zijn] [met dat _paraplu] _door_ dat ei_ heen 
+A|17| A: [Oh ja] 
+A|18| A: O 
+A|19| A: [dit zijn] weer [dat] 
+A|20| A: Eh wat [zeggen] je nou _spijker_ [door een ei] 
+B|21| B: [de] [spijker] 
+B|22| B: even kijken 
+A|23| A: [paraplu [door] een ei] 
+B|24| B: [Oh ja] 
+B|25| B: kijken [een] soort [die] [paraplu door] [het] [ei] 
+A|26| A: [dit zijn] weer [met] [die] [spijker] [door dat ei] 
+A|27| A: Paraplutje 
+B|28| B: kijken 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké even kijken
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ehm ja in deze lijken ook een soort lepel te zitten zeggen maar
+	Free: Pattern=ja, Pattern=lijken, Pattern=een, Pattern=zeggen
+	Constrained: 
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : en aan de voorkant zitten er zo'n staaf door een ei
+	Free: Pattern=door een ei, Pattern=de
+	Constrained: Pattern=een ei, Pattern=ei, Pattern=een
+Turn ID=4| A | A : Oh ja dat noemen ik een parapluu
+	Free: Pattern=Oh ja, Pattern=dat, Pattern=een
+	Constrained: Pattern=ja
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : toch
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=8| A | A : het lijken een beetje op een zijwaarts parapluut
+	Free: Pattern=het, Pattern=lijken, Pattern=een
+	Constrained: 
+Turn ID=9| B | B : ja er zitten inderdaad zo'n soort ja zo'n plat ding aan de rechterkant
+	Free: Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=10| A | A : ja oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : aan de staaf
+	Free: Pattern=de
+	Constrained: 
+Turn ID=12| A | A : dit zijn die met dat paraplu zo onder de arm
+	Free: Pattern=met dat paraplu, Pattern=dit zijn, Pattern=de, Pattern=die
+	Constrained: Pattern=dat, Pattern=met
+Turn ID=13| A | A : of ja jij zeggen een ei met daar doorheen een schroef
+	Free: Pattern=ja, Pattern=een, Pattern=met, Pattern=zeggen, Pattern=een ei
+	Constrained: Pattern=ei, Pattern=een
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=15| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=16| B | B : even kijken dit zijn met dat paraplu door dat ei heen
+	Free: Pattern=door dat ei, Pattern=met dat paraplu, Pattern=dit zijn, Pattern=paraplu door
+	Constrained: Pattern=ei, Pattern=dat, Pattern=met
+Turn ID=17| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=18| A | A : O
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : dit zijn weer dat
+	Free: Pattern=dit zijn, Pattern=dat
+	Constrained: 
+Turn ID=20| A | A : Eh wat zeggen je nou spijker door een ei
+	Free: Pattern=door een ei, Pattern=spijker, Pattern=zeggen
+	Constrained: Pattern=een ei, Pattern=ei, Pattern=een
+Turn ID=21| B | B : de spijker
+	Free: Pattern=de, Pattern=spijker
+	Constrained: 
+Turn ID=22| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : paraplu door een ei
+	Free: Pattern=door een ei, Pattern=paraplu door
+	Constrained: Pattern=een ei, Pattern=ei, Pattern=een
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=25| B | B : kijken een soort die paraplu door het ei
+	Free: Pattern=ei, Pattern=een, Pattern=het, Pattern=paraplu door, Pattern=die
+	Constrained: 
+Turn ID=26| A | A : dit zijn weer met die spijker door dat ei
+	Free: Pattern=door dat ei, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=spijker
+	Constrained: Pattern=ei, Pattern=dat
+Turn ID=27| A | A : Paraplutje
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : kijken
+	Free: 
+	Constrained: 

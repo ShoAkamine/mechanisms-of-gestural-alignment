@@ -1,0 +1,379 @@
+B|0| B: _Oké_ _ik hebben_ nu _een_ _een_ heel raar 
+B|1| B: _deze hebben_ _zeggen maar_ 
+B|2| B: onderin _hebben hij_ _een_ buis 
+B|3| B: _eh_ _ja_ gewoon _een_ slurf 
+B|4| B: _en_ bovenin _hebben hij_ _zeggen maar_ als hoofd 
+A|5| A: _Oh ja_ 
+B|6| B: _ik hebben_ eigenlijk alles _soort van_ als robot zien 
+B|7| B: Hebben _hij_ _een soort van_ spek vorm 
+B|8| B: _dus_ als één _weten_ _ik_ _veel_ _iets_ _van_ _een_ ovaal of zo 
+B|9| B: Snap _je_ 
+B|10| B: _eh_ _waar_ _twee_ _van_ _die_ dinget _uitkomen_ 
+A|11| A: _mhm_ 
+A|12| A: _aan_ de 
+A|13| A: [ik] denken _dat_ _ik hem_ [weten] _want_ volgens mij _zijn_ _zijn er_ _niet_ zoveel _met_ [iets] _aan_ de onderkant 
+B|14| B: _eh_ nee [dat] kloppen 
+B|15| B: even kijken 
+B|16| B: _we_ _hebben_ [er] al _twee_ _van_ _hebben_ _ook_ 
+B|17| B: _dus_ [er] [zijn er] 
+A|18| A: [ja] 
+B|19| B: Eh _en_ _het_ _het_ [zijn] [niet] vogel [want] _die_ _hebben we_ _ook_ al _hebben_ 
+B|20| B: _dus zijn_ _die_ ander [met] _het_ slurf 
+A|21| A: [ja] [dus zijn] [het] 
+A|22| A: _dan_ [hebben] [je] [die] basisvorm [met] daaronder 
+A|23| A: alsof [er] [iets] uit zullen _kunnen_ _vallen_ 
+A|24| A: [een soort van] Buis achtig [iets] 
+B|25| B: [mhm] 
+B|26| B: knik 
+B|27| B: [ja] 
+A|28| A: [en] daarop 
+A|29| A: [ja] [het] lijken _op een_ _vierkant die_ [die] [er] in [zijn] komen 
+B|30| B: _ja precies_ 
+A|31| A: toch 
+B|32| B: [ja] 
+A|33| A: [Oké] [ja] 
+A|34| A: Letter 
+B|35| B: [Oké] 
+A|36| A: [ik hebben] de 
+A|37| A: [ik] [weten] [niet] [veel] hoe [we] [deze hebben] 
+A|38| A: [deze _hebben] die_ _het vierkant_ [dat] [er] [zeggen maar] half in _zijn vallen_ 
+B|39| B: [mhm] 
+A|40| A: [met] _aan_ 
+A|41| A: _op_ _het vierkant_ _aan_ allebei de kant [iets] _wat_ [er] uitsteken 
+A|42| A: [en] _aan_ de onderkant bekendstaan _hij op [een_ soort van] 
+A|43| A: [ja] buisjeachtig [iets] 
+B|44| B: [Oh] 
+A|45| A: _op_ 
+B|46| B: huh 
+B|47| B: staat [hij _op een] buisje_ 
+B|48| B: [Oh] wachten even 
+A|49| A: [ja] 
+A|50| A: [niet] [op een buisje] 
+B|51| B: [Oh] [dan] 
+A|52| A: [ik] [weten] [niet] _wat_ [waar] [die] [hij] 
+A|53| A: Zeggen [maar] komen onder [ook] [iets] uit 
+A|54| A: volgens mij [hebben we] [er] drie waaronder [iets] [uitkomen] 
+A|55| A: [en] [deze hebben] [dan] _aan_ de rechterkant [twee] uitsteeksel 
+A|56| A: [en] bovenop [hebben hij] 
+B|57| B: [Oh] [dat] [vierkant] [wat] _erin zijn vallen_ 
+B|58| B: nou zien 
+A|59| A: [ja precies] 
+B|60| B: [ja] [ja] 
+B|61| B: nou snap [ik hem] 
+A|62| A: [ja] 
+B|63| B: Eh [dat] [zijn] nummer 
+B|64| B: [ik hebben] [ja] [die] [een] _met die_ _vierkant die erin zijn vallen_ 
+B|65| B: _met die_ oor [zeggen maar] 
+A|66| A: [Oh] 
+A|67| A: [eh] letter 
+A|68| A: [ik hebben] 
+A|69| A: [Oh] [met] de [vierkant] [erin] geval 
+A|70| A: [en] _aan_ de onderkant nog [iets] eruit 
+A|71| A: [en] rechts [ook] [twee] ding 
+B|72| B: [ja] [dat] [zijn] nummer 
+B|73| B: [ik [hebben] die] [een] [met] [het vierkant] [wat] _erin zijn vallen_ 
+A|74| A: [ja] 
+B|75| B: _met die_ dinget onderuit 
+A|76| A: Letter 
+A|77| A: [ik hebben] de [vierkant die erin zijn vallen] 
+A|78| A: [met] nog zoiets eronderuit 
+B|79| B: [eh] wachten even hoor 
+B|80| B: vierkante 
+B|81| B: [wat] [wat] [zijn] [ik] [aan] [het] doen 
+B|82| B: [kunnen] [het] [niet] vinden 
+A|83| A: Weet [je] 
+A|84| A: Weet [je] wel welk [ik] bedoelen 
+B|85| B: Ehm 
+B|86| B: nee 
+A|87| A: [Oh] [dus] [zeggen maar] [met die] 
+B|88| B: [Oh ja] [ja] [ja] 
+B|89| B: [ja] 
+A|90| A: [ja] 
+B|91| B: [ja] 
+A|92| A: [Oké] 
+B|93| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik hebben nu een een heel raar
+	Free: Pattern=ik hebben, Pattern=een, Pattern=Oké
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=1| B | B : deze hebben zeggen maar
+	Free: Pattern=deze hebben, Pattern=zeggen maar
+	Constrained: Pattern=hebben, Pattern=maar
+Turn ID=2| B | B : onderin hebben hij een buis
+	Free: Pattern=hebben hij, Pattern=een
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=3| B | B : eh ja gewoon een slurf
+	Free: Pattern=eh, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : en bovenin hebben hij zeggen maar als hoofd
+	Free: Pattern=hebben hij, Pattern=zeggen maar, Pattern=en
+	Constrained: Pattern=hebben, Pattern=hij, Pattern=maar
+Turn ID=5| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=6| B | B : ik hebben eigenlijk alles soort van als robot zien
+	Free: Pattern=ik hebben, Pattern=soort van
+	Constrained: Pattern=van, Pattern=hebben, Pattern=ik
+Turn ID=7| B | B : Hebben hij een soort van spek vorm
+	Free: Pattern=een soort van, Pattern=hij
+	Constrained: Pattern=soort van, Pattern=van, Pattern=een
+Turn ID=8| B | B : dus als één weten ik veel iets van een ovaal of zo
+	Free: Pattern=veel, Pattern=een, Pattern=weten, Pattern=ik, Pattern=van, Pattern=iets, Pattern=dus
+	Constrained: 
+Turn ID=9| B | B : Snap je
+	Free: Pattern=je
+	Constrained: 
+Turn ID=10| B | B : eh waar twee van die dinget uitkomen
+	Free: Pattern=twee, Pattern=waar, Pattern=uitkomen, Pattern=die, Pattern=eh, Pattern=van
+	Constrained: 
+Turn ID=11| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=12| A | A : aan de
+	Free: Pattern=aan
+	Constrained: 
+Turn ID=13| A | A : ik denken dat ik hem weten want volgens mij zijn zijn er niet zoveel met iets aan de onderkant
+	Free: Pattern=dat, Pattern=niet, Pattern=weten, Pattern=zijn er, Pattern=met, Pattern=ik, Pattern=zijn, Pattern=ik hem, Pattern=want, Pattern=aan, Pattern=iets
+	Constrained: Pattern=zijn, Pattern=er, Pattern=ik
+Turn ID=14| B | B : eh nee dat kloppen
+	Free: Pattern=eh, Pattern=dat
+	Constrained: 
+Turn ID=15| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : we hebben er al twee van hebben ook
+	Free: Pattern=twee, Pattern=ook, Pattern=hebben, Pattern=we, Pattern=er, Pattern=van
+	Constrained: 
+Turn ID=17| B | B : dus er zijn er
+	Free: Pattern=zijn er, Pattern=dus, Pattern=er
+	Constrained: Pattern=zijn, Pattern=er
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : Eh en het het zijn niet vogel want die hebben we ook al hebben
+	Free: Pattern=want, Pattern=ook, Pattern=niet, Pattern=het, Pattern=hebben, Pattern=die, Pattern=hebben we, Pattern=en, Pattern=zijn
+	Constrained: Pattern=hebben, Pattern=we
+Turn ID=20| B | B : dus zijn die ander met het slurf
+	Free: Pattern=dus zijn, Pattern=die, Pattern=met, Pattern=het
+	Constrained: Pattern=zijn, Pattern=dus
+Turn ID=21| A | A : ja dus zijn het
+	Free: Pattern=dus zijn, Pattern=ja, Pattern=het
+	Constrained: Pattern=zijn, Pattern=dus
+Turn ID=22| A | A : dan hebben je die basisvorm met daaronder
+	Free: Pattern=dan, Pattern=hebben, Pattern=met, Pattern=die, Pattern=je
+	Constrained: 
+Turn ID=23| A | A : alsof er iets uit zullen kunnen vallen
+	Free: Pattern=iets, Pattern=kunnen, Pattern=er, Pattern=vallen
+	Constrained: 
+Turn ID=24| A | A : een soort van Buis achtig iets
+	Free: Pattern=een soort van, Pattern=iets
+	Constrained: Pattern=soort van, Pattern=van, Pattern=een
+Turn ID=25| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=26| B | B : knik
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : en daarop
+	Free: Pattern=en
+	Constrained: 
+Turn ID=29| A | A : ja het lijken op een vierkant die die er in zijn komen
+	Free: Pattern=ja, Pattern=die, Pattern=er, Pattern=zijn, Pattern=op een, Pattern=het, Pattern=vierkant die
+	Constrained: Pattern=vierkant, Pattern=die, Pattern=een, Pattern=op
+Turn ID=30| B | B : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=31| A | A : toch
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=34| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=36| A | A : ik hebben de
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=37| A | A : ik weten niet veel hoe we deze hebben
+	Free: Pattern=niet, Pattern=veel, Pattern=weten, Pattern=deze hebben, Pattern=we, Pattern=ik
+	Constrained: Pattern=hebben
+Turn ID=38| A | A : deze hebben die het vierkant dat er zeggen maar half in zijn vallen
+	Free: Pattern=dat, Pattern=zeggen maar, Pattern=deze hebben, Pattern=het vierkant, Pattern=er, Pattern=zijn vallen, Pattern=hebben die
+	Constrained: Pattern=het, Pattern=hebben, Pattern=vallen, Pattern=die, Pattern=vierkant, Pattern=zijn, Pattern=maar
+Turn ID=39| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=40| A | A : met aan
+	Free: Pattern=aan, Pattern=met
+	Constrained: 
+Turn ID=41| A | A : op het vierkant aan allebei de kant iets wat er uitsteken
+	Free: Pattern=op, Pattern=het vierkant, Pattern=aan, Pattern=iets, Pattern=wat, Pattern=er
+	Constrained: Pattern=vierkant, Pattern=het
+Turn ID=42| A | A : en aan de onderkant bekendstaan hij op een soort van
+	Free: Pattern=hij op een, Pattern=een soort van, Pattern=en, Pattern=aan
+	Constrained: Pattern=op, Pattern=een, Pattern=hij, Pattern=van, Pattern=soort van, Pattern=op een
+Turn ID=43| A | A : ja buisjeachtig iets
+	Free: Pattern=iets, Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=45| A | A : op
+	Free: Pattern=op
+	Constrained: 
+Turn ID=46| B | B : huh
+	Free: 
+	Constrained: 
+Turn ID=47| B | B : staat hij op een buisje
+	Free: Pattern=hij op een, Pattern=op een buisje
+	Constrained: Pattern=op een, Pattern=hij, Pattern=een, Pattern=op
+Turn ID=48| B | B : Oh wachten even
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=49| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : niet op een buisje
+	Free: Pattern=op een buisje, Pattern=niet
+	Constrained: Pattern=op een, Pattern=een, Pattern=op
+Turn ID=51| B | B : Oh dan
+	Free: Pattern=Oh, Pattern=dan
+	Constrained: 
+Turn ID=52| A | A : ik weten niet wat waar die hij
+	Free: Pattern=waar, Pattern=niet, Pattern=weten, Pattern=hij, Pattern=die, Pattern=wat, Pattern=ik
+	Constrained: 
+Turn ID=53| A | A : Zeggen maar komen onder ook iets uit
+	Free: Pattern=iets, Pattern=ook, Pattern=maar
+	Constrained: 
+Turn ID=54| A | A : volgens mij hebben we er drie waaronder iets uitkomen
+	Free: Pattern=hebben we, Pattern=iets, Pattern=uitkomen, Pattern=er
+	Constrained: Pattern=hebben, Pattern=we
+Turn ID=55| A | A : en deze hebben dan aan de rechterkant twee uitsteeksel
+	Free: Pattern=twee, Pattern=aan, Pattern=dan, Pattern=deze hebben, Pattern=en
+	Constrained: Pattern=hebben
+Turn ID=56| A | A : en bovenop hebben hij
+	Free: Pattern=hebben hij, Pattern=en
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=57| B | B : Oh dat vierkant wat erin zijn vallen
+	Free: Pattern=dat, Pattern=wat, Pattern=erin zijn vallen, Pattern=Oh, Pattern=vierkant
+	Constrained: Pattern=zijn vallen, Pattern=zijn, Pattern=erin, Pattern=vallen
+Turn ID=58| B | B : nou zien
+	Free: 
+	Constrained: 
+Turn ID=59| A | A : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=60| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=61| B | B : nou snap ik hem
+	Free: Pattern=ik hem
+	Constrained: Pattern=ik
+Turn ID=62| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : Eh dat zijn nummer
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=64| B | B : ik hebben ja die een met die vierkant die erin zijn vallen
+	Free: Pattern=ik hebben, Pattern=met die, Pattern=een, Pattern=die, Pattern=vierkant die erin zijn vallen, Pattern=ja
+	Constrained: Pattern=vierkant die, Pattern=hebben, Pattern=vallen, Pattern=met, Pattern=die, Pattern=ik, Pattern=erin zijn vallen, Pattern=erin, Pattern=zijn, Pattern=vierkant, Pattern=zijn vallen
+Turn ID=65| B | B : met die oor zeggen maar
+	Free: Pattern=zeggen maar, Pattern=met die
+	Constrained: Pattern=die, Pattern=met, Pattern=maar
+Turn ID=66| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=67| A | A : eh letter
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=68| A | A : ik hebben
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=69| A | A : Oh met de vierkant erin geval
+	Free: Pattern=vierkant, Pattern=met, Pattern=Oh, Pattern=erin
+	Constrained: 
+Turn ID=70| A | A : en aan de onderkant nog iets eruit
+	Free: Pattern=iets, Pattern=en, Pattern=aan
+	Constrained: 
+Turn ID=71| A | A : en rechts ook twee ding
+	Free: Pattern=en, Pattern=ook, Pattern=twee
+	Constrained: 
+Turn ID=72| B | B : ja dat zijn nummer
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=73| B | B : ik hebben die een met het vierkant wat erin zijn vallen
+	Free: Pattern=ik hebben, Pattern=een, Pattern=wat, Pattern=erin zijn vallen, Pattern=hebben die, Pattern=het vierkant, Pattern=met
+	Constrained: Pattern=het, Pattern=hebben, Pattern=vallen, Pattern=die, Pattern=ik, Pattern=erin, Pattern=zijn, Pattern=vierkant, Pattern=zijn vallen
+Turn ID=74| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=75| B | B : met die dinget onderuit
+	Free: Pattern=met die
+	Constrained: Pattern=die, Pattern=met
+Turn ID=76| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=77| A | A : ik hebben de vierkant die erin zijn vallen
+	Free: Pattern=vierkant die erin zijn vallen, Pattern=ik hebben
+	Constrained: Pattern=vierkant die, Pattern=hebben, Pattern=vallen, Pattern=die, Pattern=ik, Pattern=erin zijn vallen, Pattern=erin, Pattern=zijn, Pattern=vierkant, Pattern=zijn vallen
+Turn ID=78| A | A : met nog zoiets eronderuit
+	Free: Pattern=met
+	Constrained: 
+Turn ID=79| B | B : eh wachten even hoor
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=80| B | B : vierkante
+	Free: 
+	Constrained: 
+Turn ID=81| B | B : wat wat zijn ik aan het doen
+	Free: Pattern=aan, Pattern=het, Pattern=wat, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=82| B | B : kunnen het niet vinden
+	Free: Pattern=kunnen, Pattern=niet, Pattern=het
+	Constrained: 
+Turn ID=83| A | A : Weet je
+	Free: Pattern=je
+	Constrained: 
+Turn ID=84| A | A : Weet je wel welk ik bedoelen
+	Free: Pattern=je, Pattern=ik
+	Constrained: 
+Turn ID=85| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=86| B | B : nee
+	Free: 
+	Constrained: 
+Turn ID=87| A | A : Oh dus zeggen maar met die
+	Free: Pattern=zeggen maar, Pattern=met die, Pattern=dus, Pattern=Oh
+	Constrained: Pattern=die, Pattern=met, Pattern=maar
+Turn ID=88| B | B : Oh ja ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=89| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=90| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=91| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=92| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=93| B | B : nummer
+	Free: 
+	Constrained: 

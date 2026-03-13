@@ -1,0 +1,119 @@
+B|0| B: zo 
+B|1| B: Oh _deze hebben een soort_ _balk_ _er_ _doorheen_ 
+B|2| B: _met _twee_ rond aan_ beide kant _van_ _de_ _balk_ 
+B|3| B: _en daarachter_ _zijn_ _een soort_ _vierkant_ vlak _met een_ iets eronder 
+A|4| A: _ja_ _dat zijn_ letter 
+A|5| A: [deze hebben een _soort] van_ _ja_ _die_ stok erdoorheen [met] _aan de_ buiten _of_ [de] uiteinde allebei [een _soort] van_ bolle 
+B|6| B: Oh [ja] 
+A|7| A: [en daarachter] staan _nog_ [een] _vierkant [met_ een] _ding_ 
+B|8| B: [ja] dan [zijn] het 
+B|9| B: Eh [deze] zitten zeggen maar [die] _balk_ _achter_ [of] _doorheen_ _met twee_ [ding] [aan] beide kant 
+B|10| B: _en dat vierkant_ dan [nog] erbij 
+B|11| B: [daarachter] zeggen maar [nog] 
+A|12| A: [ja] [ja] [ja] 
+B|13| B: [met] iets onder 
+A|14| A: _dat zijn_ 
+A|15| A: _dit zijn_ [die] _met die_ _soort van_ stok [er] helemaal [doorheen] 
+A|16| A: [met twee] bolle _aan de_ buitenkant 
+A|17| A: [en] [achter] [nog] zo'n _vierkant [met_ een] dinget 
+B|18| B: Mja [dat zijn] 
+B|19| B: _dit zijn met die_ _balk_ [soort van] half [achter] half [doorheen] 
+B|20| B: [met _twee] rond aan de_ zijkant 
+B|21| B: [en] dan _dat [vierkant_ met] wat [dat] [ding] eronder 
+A|22| A: [ja] [dat zijn] 
+A|23| A: [dit zijn met die] [soort van] [balk] erdoorheen 
+A|24| A: [met die] [twee rond aan de] buitenkant 
+A|25| A: [en dat vierkant] erachter 
+B|26| B: [ja] 
+A|27| A: [met] [dat] dinget 
+B|28| B: Ehm [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : zo
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : Oh deze hebben een soort balk er doorheen
+	Free: Pattern=deze hebben een soort, Pattern=doorheen, Pattern=er, Pattern=balk
+	Constrained: Pattern=een soort, Pattern=een, Pattern=deze
+Turn ID=2| B | B : met twee rond aan beide kant van de balk
+	Free: Pattern=twee rond aan, Pattern=de, Pattern=met twee, Pattern=balk, Pattern=van
+	Constrained: Pattern=aan, Pattern=met
+Turn ID=3| B | B : en daarachter zijn een soort vierkant vlak met een iets eronder
+	Free: Pattern=met een, Pattern=een soort, Pattern=en daarachter, Pattern=zijn, Pattern=vierkant
+	Constrained: Pattern=daarachter, Pattern=een, Pattern=met, Pattern=en
+Turn ID=4| A | A : ja dat zijn letter
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=5| A | A : deze hebben een soort van ja die stok erdoorheen met aan de buiten of de uiteinde allebei een soort van bolle
+	Free: Pattern=of, Pattern=aan de, Pattern=deze hebben een soort, Pattern=met, Pattern=die, Pattern=een soort, Pattern=soort van, Pattern=de, Pattern=ja
+	Constrained: Pattern=een, Pattern=een soort, Pattern=van, Pattern=deze, Pattern=de, Pattern=aan
+Turn ID=6| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en daarachter staan nog een vierkant met een ding
+	Free: Pattern=nog, Pattern=ding, Pattern=met een, Pattern=en daarachter, Pattern=een, Pattern=vierkant met
+	Constrained: Pattern=daarachter, Pattern=een, Pattern=met, Pattern=en, Pattern=vierkant
+Turn ID=8| B | B : ja dan zijn het
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Eh deze zitten zeggen maar die balk achter of doorheen met twee ding aan beide kant
+	Free: Pattern=of, Pattern=ding, Pattern=achter, Pattern=met twee, Pattern=balk, Pattern=die, Pattern=deze, Pattern=aan, Pattern=doorheen
+	Constrained: Pattern=met
+Turn ID=10| B | B : en dat vierkant dan nog erbij
+	Free: Pattern=en dat vierkant, Pattern=nog
+	Constrained: Pattern=dat vierkant, Pattern=dat, Pattern=en, Pattern=vierkant
+Turn ID=11| B | B : daarachter zeggen maar nog
+	Free: Pattern=daarachter, Pattern=nog
+	Constrained: 
+Turn ID=12| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : met iets onder
+	Free: Pattern=met
+	Constrained: 
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=15| A | A : dit zijn die met die soort van stok er helemaal doorheen
+	Free: Pattern=met die, Pattern=doorheen, Pattern=die, Pattern=er, Pattern=soort van, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=van
+Turn ID=16| A | A : met twee bolle aan de buitenkant
+	Free: Pattern=met twee, Pattern=aan de
+	Constrained: Pattern=aan, Pattern=met, Pattern=de
+Turn ID=17| A | A : en achter nog zo'n vierkant met een dinget
+	Free: Pattern=nog, Pattern=vierkant met, Pattern=achter, Pattern=met een, Pattern=en
+	Constrained: Pattern=vierkant, Pattern=met, Pattern=een
+Turn ID=18| B | B : Mja dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| B | B : dit zijn met die balk soort van half achter half doorheen
+	Free: Pattern=doorheen, Pattern=achter, Pattern=balk, Pattern=soort van, Pattern=dit zijn met die
+	Constrained: Pattern=met die, Pattern=met, Pattern=die, Pattern=van, Pattern=zijn, Pattern=dit zijn
+Turn ID=20| B | B : met twee rond aan de zijkant
+	Free: Pattern=twee rond aan de, Pattern=met twee
+	Constrained: Pattern=twee rond aan, Pattern=aan de, Pattern=met, Pattern=de, Pattern=aan
+Turn ID=21| B | B : en dan dat vierkant met wat dat ding eronder
+	Free: Pattern=dat, Pattern=ding, Pattern=vierkant met, Pattern=dat vierkant, Pattern=en
+	Constrained: Pattern=dat, Pattern=vierkant, Pattern=met
+Turn ID=22| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=23| A | A : dit zijn met die soort van balk erdoorheen
+	Free: Pattern=dit zijn met die, Pattern=soort van, Pattern=balk
+	Constrained: Pattern=met die, Pattern=met, Pattern=die, Pattern=van, Pattern=zijn, Pattern=dit zijn
+Turn ID=24| A | A : met die twee rond aan de buitenkant
+	Free: Pattern=twee rond aan de, Pattern=met die
+	Constrained: Pattern=twee rond aan, Pattern=aan de, Pattern=met, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=25| A | A : en dat vierkant erachter
+	Free: Pattern=en dat vierkant
+	Constrained: Pattern=dat vierkant, Pattern=dat, Pattern=en, Pattern=vierkant
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : met dat dinget
+	Free: Pattern=dat, Pattern=met
+	Constrained: 
+Turn ID=28| B | B : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

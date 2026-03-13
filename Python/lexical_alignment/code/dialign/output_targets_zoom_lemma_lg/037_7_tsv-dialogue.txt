@@ -1,0 +1,139 @@
+A|0| A: _Oh_ _uhm dit zijn_ _een_ figuur waar ook _een soort_ vanuhm _een_ vlak _er_ tegenaan _zijn_ gooien dus je kijken _een_ beetje _van_ _de_ zijkant _en_ _het_ lijken _een_ beetje _op een_ boekenplank _eigenlijk_ _met_ _twee_ _van_ _die_ _poot_ _die een_ beetje schuin _staan_ _en_ daarop _staan _een_ soort van_ hoe _zeggen_ je _dat een_ beetje _een_ vierkant _niet_ vierkant _maar_ _het_ lopen _wat_ uit blok _en_ linksboven zitten ook weer _een soort van_ mini staaf 
+B|1| B: Wacht _even_ [dit] vinden _deze zijn_ _even_ 
+A|2| A: [deze zijn] te moeilijk 
+A|3| A: _Oké_ 
+A|4| A: Uhm je _hebben_ _zeggen maar_ _een_ beetje _de_ _de_ basisfiguur 
+B|5| B: _ja_ 
+A|6| A: Uhm _en dan_ zitten _er een soort_ _uhm_ [ja] _een soort van_ tafelvorm of zoiets 
+A|7| A: _er_ zitten iets hoog tegen _dat_ _hoofd_ _aan_ of zoiets 
+B|8| B: _Oh ja_ [hebben] [die] [hebben] [dat] tafel [zeggen maar] [twee] [poot] [aan] [de] voorkant 
+A|9| A: [ja] 
+B|10| B: [Oké] [ja] 
+A|11| A: [ja] 
+B|12| B: [en dan] [zijn] [er [een soort] van] bakje erop 
+A|13| A: [ja] [ja] _het_ lijken _het_ lijken [een] beetje _op een_ serviesplank 
+A|14| A: zoiets [zeggen maar] 
+B|15| B: oké nee [dan] denken ik [er] [zijn] [er] [maar] één [die] [dat] [dan] akn [zijn] denken ik 
+B|16| B: hij [hebben] _niks op zijn hoofd_ toch 
+B|17| B: alleen [dat een] flap net onder _zijn hoofd_ 
+A|18| A: [ja] ver [niks op zijn hoofd] 
+B|19| B: [Oké] [dan] [zijn] [het] 
+B|20| B: [uhm _dit zijn] [die_ een] [met] [een soort] tafel _door zijn hoofd_ heen 
+A|21| A: [Oh ja] 
+B|22| B: [en] [dat] flap [aan] [de] achterkant [een soort van] staart [en] [op] [het] tafel [staan een] [ja] bakjeIk weten [niet] [wat] [het] [zijn] [eigenlijk] 
+A|23| A: [ja] _dat zijn_ 
+A|24| A: _dit zijn die met_ [dat] _serviesbak_ [die] zo'n plaat [door zijn hoofd] [hebben] 
+B|25| B: [Oké] 
+B|26| B: [dat zijn] 
+B|27| B: _dit zijn die met het_ [serviesbak] [en] [de] [die] [op een] tafel [staan] [door zijn hoofd] 
+A|28| A: [Oh ja] 
+A|29| A: [ja] [dat zijn] 
+A|30| A: [dit zijn die met het] serviesplankje 
+A|31| A: [die] 
+B|32| B: [dit zijn die met het] [serviesbak] 
+A|33| A: [even] kijken [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh uhm dit zijn een figuur waar ook een soort vanuhm een vlak er tegenaan zijn gooien dus je kijken een beetje van de zijkant en het lijken een beetje op een boekenplank eigenlijk met twee van die poot die een beetje schuin staan en daarop staan een soort van hoe zeggen je dat een beetje een vierkant niet vierkant maar het lopen wat uit blok en linksboven zitten ook weer een soort van mini staaf
+	Free: Pattern=dat een, Pattern=twee, Pattern=de, Pattern=staan een, Pattern=het, Pattern=een soort van, Pattern=met, Pattern=die, Pattern=die een, Pattern=Oh, Pattern=op een, Pattern=poot, Pattern=niet, Pattern=een, Pattern=staan, Pattern=zeggen, Pattern=eigenlijk, Pattern=wat, Pattern=er, Pattern=een soort, Pattern=uhm dit zijn, Pattern=van, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=dat, Pattern=op, Pattern=dit, Pattern=uhm, Pattern=die, Pattern=een soort, Pattern=van, Pattern=zijn, Pattern=een, Pattern=staan
+Turn ID=1| B | B : Wacht even dit vinden deze zijn even
+	Free: Pattern=deze zijn, Pattern=even, Pattern=dit
+	Constrained: Pattern=zijn
+Turn ID=2| A | A : deze zijn te moeilijk
+	Free: Pattern=deze zijn
+	Constrained: Pattern=zijn
+Turn ID=3| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| A | A : Uhm je hebben zeggen maar een beetje de de basisfiguur
+	Free: Pattern=zeggen maar, Pattern=hebben, Pattern=de, Pattern=een
+	Constrained: Pattern=maar, Pattern=zeggen
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Uhm en dan zitten er een soort uhm ja een soort van tafelvorm of zoiets
+	Free: Pattern=ja, Pattern=en dan, Pattern=een soort van, Pattern=uhm, Pattern=er een soort
+	Constrained: Pattern=dan, Pattern=een, Pattern=er, Pattern=een soort, Pattern=van, Pattern=en
+Turn ID=7| A | A : er zitten iets hoog tegen dat hoofd aan of zoiets
+	Free: Pattern=hoofd, Pattern=aan, Pattern=er, Pattern=dat
+	Constrained: 
+Turn ID=8| B | B : Oh ja hebben die hebben dat tafel zeggen maar twee poot aan de voorkant
+	Free: Pattern=dat, Pattern=twee, Pattern=poot, Pattern=Oh ja, Pattern=zeggen maar, Pattern=hebben, Pattern=die, Pattern=de, Pattern=aan
+	Constrained: Pattern=maar, Pattern=Oh, Pattern=zeggen, Pattern=ja
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : en dan zijn er een soort van bakje erop
+	Free: Pattern=er een soort, Pattern=een soort van, Pattern=en dan, Pattern=zijn
+	Constrained: Pattern=dan, Pattern=een, Pattern=er, Pattern=een soort, Pattern=van, Pattern=en
+Turn ID=13| A | A : ja ja het lijken het lijken een beetje op een serviesplank
+	Free: Pattern=op een, Pattern=het, Pattern=een, Pattern=ja
+	Constrained: Pattern=op, Pattern=een
+Turn ID=14| A | A : zoiets zeggen maar
+	Free: Pattern=zeggen maar
+	Constrained: Pattern=maar, Pattern=zeggen
+Turn ID=15| B | B : oké nee dan denken ik er zijn er maar één die dat dan akn zijn denken ik
+	Free: Pattern=dat, Pattern=dan, Pattern=die, Pattern=er, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=16| B | B : hij hebben niks op zijn hoofd toch
+	Free: Pattern=niks op zijn hoofd, Pattern=hebben
+	Constrained: Pattern=hoofd, Pattern=zijn, Pattern=zijn hoofd, Pattern=op
+Turn ID=17| B | B : alleen dat een flap net onder zijn hoofd
+	Free: Pattern=dat een, Pattern=zijn hoofd
+	Constrained: Pattern=hoofd, Pattern=een, Pattern=zijn, Pattern=dat
+Turn ID=18| A | A : ja ver niks op zijn hoofd
+	Free: Pattern=niks op zijn hoofd, Pattern=ja
+	Constrained: Pattern=hoofd, Pattern=zijn, Pattern=zijn hoofd, Pattern=op
+Turn ID=19| B | B : Oké dan zijn het
+	Free: Pattern=dan, Pattern=Oké, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=20| B | B : uhm dit zijn die een met een soort tafel door zijn hoofd heen
+	Free: Pattern=door zijn hoofd, Pattern=dit zijn die, Pattern=met, Pattern=die een, Pattern=een soort, Pattern=uhm dit zijn
+	Constrained: Pattern=zijn hoofd, Pattern=een, Pattern=dit, Pattern=uhm, Pattern=die, Pattern=zijn, Pattern=hoofd
+Turn ID=21| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=22| B | B : en dat flap aan de achterkant een soort van staart en op het tafel staan een ja bakjeIk weten niet wat het zijn eigenlijk
+	Free: Pattern=dat, Pattern=op, Pattern=niet, Pattern=staan een, Pattern=het, Pattern=eigenlijk, Pattern=een soort van, Pattern=wat, Pattern=en, Pattern=zijn, Pattern=de, Pattern=aan, Pattern=ja
+	Constrained: Pattern=een soort, Pattern=een, Pattern=staan, Pattern=van
+Turn ID=23| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=24| A | A : dit zijn die met dat serviesbak die zo'n plaat door zijn hoofd hebben
+	Free: Pattern=door zijn hoofd, Pattern=dat, Pattern=serviesbak, Pattern=hebben, Pattern=dit zijn die met, Pattern=die
+	Constrained: Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn die, Pattern=zijn hoofd
+Turn ID=25| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=26| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=27| B | B : dit zijn die met het serviesbak en de die op een tafel staan door zijn hoofd
+	Free: Pattern=door zijn hoofd, Pattern=dit zijn die met het, Pattern=de, Pattern=staan, Pattern=serviesbak, Pattern=die, Pattern=en, Pattern=op een
+	Constrained: Pattern=op, Pattern=een, Pattern=het, Pattern=dit, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn die, Pattern=zijn hoofd
+Turn ID=28| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=29| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=30| A | A : dit zijn die met het serviesplankje
+	Free: Pattern=dit zijn die met het
+	Constrained: Pattern=dit zijn die, Pattern=het, Pattern=dit, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=31| A | A : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=32| B | B : dit zijn die met het serviesbak
+	Free: Pattern=dit zijn die met het, Pattern=serviesbak
+	Constrained: Pattern=dit zijn die, Pattern=het, Pattern=dit, Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=33| A | A : even kijken dat zijn
+	Free: Pattern=dat zijn, Pattern=even
+	Constrained: Pattern=zijn, Pattern=dat

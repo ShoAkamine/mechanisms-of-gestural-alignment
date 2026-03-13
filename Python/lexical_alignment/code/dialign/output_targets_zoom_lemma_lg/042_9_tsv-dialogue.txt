@@ -1,0 +1,115 @@
+A|0| A: _ehm_ deze _hebben_ onderin _een soort van_ _langwerpig_ voe 
+A|1| A: _die_ _niet_ geen recht hoek _hebben_ _maar_ _een_ beetje _rond_ 
+A|2| A: Eh _ook_ weer _een soort van_ _lepel_ in het kop 
+A|3| A: met _een_ _half_ _rond_ 
+A|4| A: _en_ _ook_ _een soort van_ Pinocchio neus weer aan _de_ linkerkant 
+B|5| B: Ehm [en] dan [ook] nog zo'n [soort van] _munt_ _plat_ cirkel erachter 
+B|6| B: [die] er [half] invlen 
+A|7| A: _ja_ 
+B|8| B: Oh [ja] 
+B|9| B: _ehm dit zijn_ volgens mij [de] één _waar_ _jij_ zeggen [lepel] 
+B|10| B: _dat_ hij [een soort] voet [hebben] _wat_ wel [langwerpig] _zijn_ [maar] [rond] 
+B|11| B: dus [niet] rechthoekig of [rond] kant 
+B|12| B: [en] dan links één staaf [en] _achterin_ [een] _plat disk_ [een] ronde _disk_ 
+A|13| A: [ja] [die] [wat] [jij] als [munt] benoemen 
+B|14| B: [ja] [ja] 
+A|15| A: [ehm dit zijn] weer met [de] [disk] [achterin] [die] [munt] 
+A|16| A: [en] [dat] [lepel] 
+B|17| B: Oh nummer 
+B|18| B: [ehm dit zijn] [die] _plat_ [munt] 
+B|19| B: [en] [de] [lepel] erin 
+B|20| B: [en] links [de] staaf 
+A|21| A: even kijken [waar] [die] staan 
+A|22| A: [ehm] met _de plat disk_ [achterin] 
+B|23| B: [en] [de] [lepel] [een soort van] erin 
+A|24| A: [ja] 
+B|25| B: nummer 
+B|26| B: [dit zijn] [de plat disk] 
+B|27| B: [en] [de] [lepel] erin 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben onderin een soort van langwerpig voe
+	Free: Pattern=een soort van, Pattern=hebben, Pattern=langwerpig, Pattern=ehm
+	Constrained: Pattern=een soort, Pattern=een, Pattern=soort van
+Turn ID=1| A | A : die niet geen recht hoek hebben maar een beetje rond
+	Free: Pattern=niet, Pattern=een, Pattern=hebben, Pattern=die, Pattern=rond, Pattern=maar
+	Constrained: 
+Turn ID=2| A | A : Eh ook weer een soort van lepel in het kop
+	Free: Pattern=een soort van, Pattern=ook, Pattern=lepel
+	Constrained: Pattern=een soort, Pattern=een, Pattern=soort van
+Turn ID=3| A | A : met een half rond
+	Free: Pattern=rond, Pattern=half, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : en ook een soort van Pinocchio neus weer aan de linkerkant
+	Free: Pattern=een soort van, Pattern=en, Pattern=ook, Pattern=de
+	Constrained: Pattern=een soort, Pattern=een, Pattern=soort van
+Turn ID=5| B | B : Ehm en dan ook nog zo'n soort van munt plat cirkel erachter
+	Free: Pattern=ook, Pattern=en, Pattern=plat, Pattern=soort van, Pattern=munt
+	Constrained: 
+Turn ID=6| B | B : die er half invlen
+	Free: Pattern=die, Pattern=half
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ehm dit zijn volgens mij de één waar jij zeggen lepel
+	Free: Pattern=lepel, Pattern=de, Pattern=waar, Pattern=ehm dit zijn, Pattern=jij
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=10| B | B : dat hij een soort voet hebben wat wel langwerpig zijn maar rond
+	Free: Pattern=dat, Pattern=langwerpig, Pattern=hebben, Pattern=wat, Pattern=een soort, Pattern=rond, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=een
+Turn ID=11| B | B : dus niet rechthoekig of rond kant
+	Free: Pattern=niet, Pattern=rond
+	Constrained: 
+Turn ID=12| B | B : en dan links één staaf en achterin een plat disk een ronde disk
+	Free: Pattern=plat disk, Pattern=een, Pattern=disk, Pattern=achterin, Pattern=en
+	Constrained: Pattern=disk, Pattern=plat
+Turn ID=13| A | A : ja die wat jij als munt benoemen
+	Free: Pattern=ja, Pattern=die, Pattern=wat, Pattern=munt, Pattern=jij
+	Constrained: 
+Turn ID=14| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : ehm dit zijn weer met de disk achterin die munt
+	Free: Pattern=de, Pattern=disk, Pattern=achterin, Pattern=die, Pattern=ehm dit zijn, Pattern=munt
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=16| A | A : en dat lepel
+	Free: Pattern=en, Pattern=dat, Pattern=lepel
+	Constrained: 
+Turn ID=17| B | B : Oh nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ehm dit zijn die plat munt
+	Free: Pattern=ehm dit zijn, Pattern=die, Pattern=munt, Pattern=plat
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=19| B | B : en de lepel erin
+	Free: Pattern=en, Pattern=de, Pattern=lepel
+	Constrained: 
+Turn ID=20| B | B : en links de staaf
+	Free: Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=21| A | A : even kijken waar die staan
+	Free: Pattern=die, Pattern=waar
+	Constrained: 
+Turn ID=22| A | A : ehm met de plat disk achterin
+	Free: Pattern=de plat disk, Pattern=ehm, Pattern=achterin
+	Constrained: Pattern=plat disk, Pattern=disk, Pattern=de, Pattern=plat
+Turn ID=23| B | B : en de lepel een soort van erin
+	Free: Pattern=een soort van, Pattern=en, Pattern=de, Pattern=lepel
+	Constrained: Pattern=een soort, Pattern=een, Pattern=soort van
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : dit zijn de plat disk
+	Free: Pattern=de plat disk, Pattern=dit zijn
+	Constrained: Pattern=plat disk, Pattern=de, Pattern=disk, Pattern=plat, Pattern=zijn
+Turn ID=27| B | B : en de lepel erin
+	Free: Pattern=en, Pattern=de, Pattern=lepel
+	Constrained: 

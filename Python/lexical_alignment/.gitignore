@@ -46,21 +46,21 @@ share/python-wheels/
 MANIFEST
 
 # data files such as .csv, mp4, mp3, wav, etc.
-*.csv
+# *.csv
 *.mp4
 *.mp3
 *.avi
-*.png
+# *.png
 *.wav
-*.jpg
-*.jpeg
+# *.jpg
+# *.jpeg
 *.gif
 *.zip
 *.tar.gz
 *.mat 
 *.m4a
 *.tsv
-*.txt
+# *.txt
 *.json
 *.pkl
 *.h5

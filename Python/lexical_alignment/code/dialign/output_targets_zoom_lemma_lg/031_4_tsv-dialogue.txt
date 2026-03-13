@@ -1,0 +1,115 @@
+B|0| B: _Oké_ 
+A|1| A: Oh _ja_ nu moeten _ik_ weer 
+A|2| A: nou _ik_ vinden _dit_ dus lijken op een _vis_ _maar_ _ik_ weten niet of je dat zullen snappen 
+A|3| A: [Oké] 
+B|4| B: _Euh_ [ik] _hebben_ hier ook _aan_ denken [maar] even kijken 
+A|5| A: [Oké] je [hebben] weer zo'n soort staart [aan] _de_ onderkant [maar] _die_ zitten nu veel veel een beetje [aan] _de_ zijkant onderkant 
+B|6| B: [ja] 
+A|7| A: en [aan] _de_ rechterkant [hebben] je een soort _twee_ rechthoekig blok _die_ uitsteken 
+B|8| B: [ja] oké 
+A|9| A: en [aan] _de_ bovenkant [hebben] je een soort haaienvi [maar] dat _de_ _de_ punt ervan missen 
+B|10| B: [ja] oké 
+A|11| A: [Oké] 
+B|12| B: [Oké] Euhm _dit zijn_ Euhm [die] [vis] 
+B|13| B: met [die] [twee] euh uitsteksel naar rechts 
+A|14| A: [Oké] [ja] [ik] weten het [ik] weten het 
+B|15| B: [Oké] 
+A|16| A: Ehm 
+B|17| B: [ja] 
+A|18| A: _dit zijn de_ _dit zijn de vis_ 
+B|19| B: Uhm oké 
+B|20| B: ehm [dit zijn de vis] 
+A|21| A: Yes 
+B|22| B: _Euh_ 
+A|23| A: [Euh] 
+A|24| A: [dit zijn de vis] 
+B|25| B: [Euh] 
+B|26| B: ehm [dit zijn de vis] 
+A|27| A: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : Oh ja nu moeten ik weer
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=2| A | A : nou ik vinden dit dus lijken op een vis maar ik weten niet of je dat zullen snappen
+	Free: Pattern=ik, Pattern=vis, Pattern=dit, Pattern=maar
+	Constrained: 
+Turn ID=3| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| B | B : Euh ik hebben hier ook aan denken maar even kijken
+	Free: Pattern=aan, Pattern=Euh, Pattern=hebben, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=5| A | A : Oké je hebben weer zo'n soort staart aan de onderkant maar die zitten nu veel veel een beetje aan de zijkant onderkant
+	Free: Pattern=hebben, Pattern=die, Pattern=maar, Pattern=Oké, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : en aan de rechterkant hebben je een soort twee rechthoekig blok die uitsteken
+	Free: Pattern=twee, Pattern=hebben, Pattern=die, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=8| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : en aan de bovenkant hebben je een soort haaienvi maar dat de de punt ervan missen
+	Free: Pattern=de, Pattern=maar, Pattern=aan, Pattern=hebben
+	Constrained: 
+Turn ID=10| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : Oké Euhm dit zijn Euhm die vis
+	Free: Pattern=dit zijn, Pattern=vis, Pattern=Oké, Pattern=die
+	Constrained: Pattern=dit
+Turn ID=13| B | B : met die twee euh uitsteksel naar rechts
+	Free: Pattern=die, Pattern=twee
+	Constrained: 
+Turn ID=14| A | A : Oké ja ik weten het ik weten het
+	Free: Pattern=ja, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : dit zijn de dit zijn de vis
+	Free: Pattern=dit zijn de vis, Pattern=dit zijn de
+	Constrained: Pattern=de, Pattern=dit, Pattern=vis, Pattern=dit zijn de, Pattern=dit zijn
+Turn ID=19| B | B : Uhm oké
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ehm dit zijn de vis
+	Free: Pattern=dit zijn de vis
+	Constrained: Pattern=de, Pattern=dit, Pattern=vis, Pattern=dit zijn de, Pattern=dit zijn
+Turn ID=21| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=23| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=24| A | A : dit zijn de vis
+	Free: Pattern=dit zijn de vis
+	Constrained: Pattern=de, Pattern=dit, Pattern=vis, Pattern=dit zijn de, Pattern=dit zijn
+Turn ID=25| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=26| B | B : ehm dit zijn de vis
+	Free: Pattern=dit zijn de vis
+	Constrained: Pattern=de, Pattern=dit, Pattern=vis, Pattern=dit zijn de, Pattern=dit zijn
+Turn ID=27| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 

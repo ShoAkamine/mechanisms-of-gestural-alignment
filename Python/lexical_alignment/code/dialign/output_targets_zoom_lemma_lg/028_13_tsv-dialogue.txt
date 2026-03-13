@@ -1,0 +1,59 @@
+A|0| A: oeh _deze hebben een_ _plateau_ _aan de_ onderkant waar _het_ figuur _op_ staat 
+A|1| A: _en_ _aan_ beide _zijkant_ drie soort van _bollet_ 
+B|2| B: _ja_ die _zijn_ wel makkelijk 
+A|3| A: [ja] 
+B|4| B: _dat zijn_ _euh_ 
+B|5| B: [en] [deze hebben een] _euh_ [een] plat voet [en] die _twee_ _euh_ [ja] [bollet] staar [aan de] [zijkant] 
+A|6| A: [dat zijn] 
+A|7| A: [euh] _dit zijn_ _het _plateau met_ de_ [twee] _staart_ 
+B|8| B: [ja] 
+B|9| B: [dit zijn] die [op] [het plateau met] die [twee] Euh [staart] 
+A|10| A: [dit zijn] [het _plateau met] de_ [twee] [staart] 
+B|11| B: [ja] 
+B|12| B: [en] [dit zijn] [euh] [het] vierkant [plateau met de] [staart] 
+A|13| A: Yes [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oeh deze hebben een plateau aan de onderkant waar het figuur op staat
+	Free: Pattern=deze hebben een, Pattern=het, Pattern=plateau, Pattern=op, Pattern=aan de
+	Constrained: Pattern=een, Pattern=aan
+Turn ID=1| A | A : en aan beide zijkant drie soort van bollet
+	Free: Pattern=aan, Pattern=bollet, Pattern=en, Pattern=zijkant
+	Constrained: 
+Turn ID=2| B | B : ja die zijn wel makkelijk
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : dat zijn euh
+	Free: Pattern=dat zijn, Pattern=euh
+	Constrained: Pattern=zijn
+Turn ID=5| B | B : en deze hebben een euh een plat voet en die twee euh ja bollet staar aan de zijkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=deze hebben een, Pattern=een, Pattern=euh, Pattern=zijkant, Pattern=en, Pattern=twee, Pattern=bollet
+	Constrained: Pattern=een, Pattern=aan
+Turn ID=6| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=7| A | A : euh dit zijn het plateau met de twee staart
+	Free: Pattern=twee, Pattern=het plateau met, Pattern=plateau met de, Pattern=staart, Pattern=euh, Pattern=dit zijn
+	Constrained: Pattern=plateau, Pattern=zijn, Pattern=het
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : dit zijn die op het plateau met die twee Euh staart
+	Free: Pattern=twee, Pattern=staart, Pattern=dit zijn, Pattern=op, Pattern=het plateau met
+	Constrained: Pattern=plateau, Pattern=zijn, Pattern=het
+Turn ID=10| A | A : dit zijn het plateau met de twee staart
+	Free: Pattern=twee, Pattern=het plateau met, Pattern=plateau met de, Pattern=staart, Pattern=dit zijn
+	Constrained: Pattern=plateau, Pattern=zijn, Pattern=het
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : en dit zijn euh het vierkant plateau met de staart
+	Free: Pattern=plateau met de, Pattern=euh, Pattern=en, Pattern=dit zijn, Pattern=het, Pattern=staart
+	Constrained: Pattern=plateau, Pattern=zijn
+Turn ID=13| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

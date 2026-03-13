@@ -1,0 +1,175 @@
+A|0| A: _ja_ hier zitten _een_ soort 
+A|1| A: _ik vinden het een beetje op_ _zout_ _of_ _peper_ pott _lijken_ aan _de_ zijkant 
+A|2| A: _en_ _een_ soort jumpboard 
+A|3| A: achter 
+A|4| A: maar _dat_ _zien_ _je_ _niet_ helemaal 
+A|5| A: zo _zien_ _ik_ _het_ 
+A|6| A: _O_ _je_ kunnen _het ook_ _zien_ als _een_ soort omgedraaien Y 
+B|7| B: [O] [en] 
+A|8| A: _dat_ achter 
+A|9| A: Zeggen maar _de_ letter Y 
+B|10| B: omgedraaid ei 
+A|11| A: als _je_ _die_ _dan_ omdraaien 
+B|12| B: _O ja_ [ik] [zien] [het] 
+B|13| B: [ja] [ik] weten [niet] [of] 
+B|14| B: [ik] denken 
+B|15| B: [ik vinden het een beetje op] [een] zonnepaneel [lijken] [of] 
+B|16| B: [ik] weten [niet] [of] [dat] 
+A|17| A: [O ja] [ja] 
+B|18| B: [ja] 
+A|19| A: [ja] 
+B|20| B: Oké [dan] _zijn_ [het] 
+B|21| B: _dit zijn_ [die] 
+B|22| B: _met_ _zout en peper_ 
+B|23| B: [en] [de] zonnepaneel [of] hoe [je] [het ook] willen 
+A|24| A: [O ja] 
+B|25| B: [ja] 
+A|26| A: _dat zijn_ 
+A|27| A: [dit zijn] [met] [die] zoutpott 
+A|28| A: [en] [die] zonnebank 
+B|29| B: [ja] 
+B|30| B: [dat zijn] 
+B|31| B: _zout en peper_ 
+A|32| A: [dit zijn] [zout en peper] 
+A|33| A: [met] [die] zon erop 
+B|34| B: [ja] 
+B|35| B: [dat zijn] 
+B|36| B: waar staan [die] 
+B|37| B: [dat zijn] 
+B|38| B: [dit zijn] 
+B|39| B: [die] [met] twee 
+B|40| B: [peper] [en] [zout] 
+B|41| B: [en] zonpaneel 
+A|42| A: [O] [dit zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja hier zitten een soort
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=1| A | A : ik vinden het een beetje op zout of peper pott lijken aan de zijkant
+	Free: Pattern=of, Pattern=de, Pattern=lijken, Pattern=ik vinden het een beetje op, Pattern=zout, Pattern=peper
+	Constrained: Pattern=een, Pattern=het, Pattern=ik
+Turn ID=2| A | A : en een soort jumpboard
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=3| A | A : achter
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : maar dat zien je niet helemaal
+	Free: Pattern=niet, Pattern=zien, Pattern=dat, Pattern=je
+	Constrained: 
+Turn ID=5| A | A : zo zien ik het
+	Free: Pattern=zien, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=6| A | A : O je kunnen het ook zien als een soort omgedraaien Y
+	Free: Pattern=O, Pattern=het ook, Pattern=een, Pattern=zien, Pattern=je
+	Constrained: Pattern=het
+Turn ID=7| B | B : O en
+	Free: Pattern=O, Pattern=en
+	Constrained: 
+Turn ID=8| A | A : dat achter
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=9| A | A : Zeggen maar de letter Y
+	Free: Pattern=de
+	Constrained: 
+Turn ID=10| B | B : omgedraaid ei
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : als je die dan omdraaien
+	Free: Pattern=dan, Pattern=je, Pattern=die
+	Constrained: 
+Turn ID=12| B | B : O ja ik zien het
+	Free: Pattern=O ja, Pattern=zien, Pattern=het, Pattern=ik
+	Constrained: Pattern=O, Pattern=ja
+Turn ID=13| B | B : ja ik weten niet of
+	Free: Pattern=niet, Pattern=of, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=14| B | B : ik denken
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=15| B | B : ik vinden het een beetje op een zonnepaneel lijken of
+	Free: Pattern=ik vinden het een beetje op, Pattern=of, Pattern=een, Pattern=lijken
+	Constrained: Pattern=een, Pattern=het, Pattern=ik
+Turn ID=16| B | B : ik weten niet of dat
+	Free: Pattern=niet, Pattern=dat, Pattern=of, Pattern=ik
+	Constrained: 
+Turn ID=17| A | A : O ja ja
+	Free: Pattern=O ja, Pattern=ja
+	Constrained: Pattern=O, Pattern=ja
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=21| B | B : dit zijn die
+	Free: Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=22| B | B : met zout en peper
+	Free: Pattern=zout en peper, Pattern=met
+	Constrained: Pattern=zout, Pattern=en, Pattern=peper
+Turn ID=23| B | B : en de zonnepaneel of hoe je het ook willen
+	Free: Pattern=of, Pattern=de, Pattern=het ook, Pattern=en, Pattern=je
+	Constrained: Pattern=het
+Turn ID=24| A | A : O ja
+	Free: Pattern=O ja
+	Constrained: Pattern=O, Pattern=ja
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=27| A | A : dit zijn met die zoutpott
+	Free: Pattern=dit zijn, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=28| A | A : en die zonnebank
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| B | B : zout en peper
+	Free: Pattern=zout en peper
+	Constrained: Pattern=zout, Pattern=en, Pattern=peper
+Turn ID=32| A | A : dit zijn zout en peper
+	Free: Pattern=zout en peper, Pattern=dit zijn
+	Constrained: Pattern=peper, Pattern=zijn, Pattern=zout, Pattern=en
+Turn ID=33| A | A : met die zon erop
+	Free: Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=37| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=38| B | B : dit zijn
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=39| B | B : die met twee
+	Free: Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=40| B | B : peper en zout
+	Free: Pattern=zout, Pattern=en, Pattern=peper
+	Constrained: 
+Turn ID=41| B | B : en zonpaneel
+	Free: Pattern=en
+	Constrained: 
+Turn ID=42| A | A : O dit zijn
+	Free: Pattern=dit zijn, Pattern=O
+	Constrained: Pattern=zijn

@@ -1,0 +1,115 @@
+B|0| B: Oké 
+B|1| B: _ik_ vinden deze _op Pinocchio lijken_ 
+B|2| B: want hij _hebben_ zeggen maar _een soort_ van zo'n zo'n neus _die_ _Pinocchio_ _ook_ _hebben_ 
+A|3| A: O _ja_ 
+B|4| B: _en_ dan zo'n _cirkel_ _en_ nog zo'n knuppel _en_ aan de bovenkant 
+A|5| A: _ja en_ [ook] [een soort] nek [hebben] [die] toch 
+B|6| B: [ja] [ja] 
+A|7| A: Vond [ik] 
+A|8| A: [ja] 
+A|9| A: [ja] het 
+A|10| A: _dit zijn_ [die] [op Pinocchio lijken] 
+A|11| A: het [hebben] [een] nek 
+A|12| A: [en] [een] cilinder [die] naar links wijzen 
+A|13| A: [een] 
+B|14| B: [ja] 
+B|15| B: [ja] _dat zijn_ 
+A|16| A: [een] [cirkel] boven 
+A|17| A: [ja] 
+B|18| B: [ja en] _dit zijn Pinocchio_ 
+A|19| A: [dit zijn Pinocchio] 
+A|20| A: [die] 
+B|21| B: [ja] 
+A|22| A: Balk naar links 
+B|23| B: [die] [zijn] 
+B|24| B: [Pinocchio] 
+A|25| A: O [dat zijn] 
+A|26| A: [dit zijn Pinocchio] 
+B|27| B: [Pinocchio] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ik vinden deze op Pinocchio lijken
+	Free: Pattern=op Pinocchio lijken, Pattern=ik
+	Constrained: Pattern=Pinocchio
+Turn ID=2| B | B : want hij hebben zeggen maar een soort van zo'n zo'n neus die Pinocchio ook hebben
+	Free: Pattern=Pinocchio, Pattern=ook, Pattern=hebben, Pattern=die, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=3| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en dan zo'n cirkel en nog zo'n knuppel en aan de bovenkant
+	Free: Pattern=en, Pattern=cirkel
+	Constrained: 
+Turn ID=5| A | A : ja en ook een soort nek hebben die toch
+	Free: Pattern=ook, Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=ja en
+	Constrained: Pattern=een, Pattern=ja, Pattern=en
+Turn ID=6| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Vond ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja het
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : dit zijn die op Pinocchio lijken
+	Free: Pattern=op Pinocchio lijken, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn, Pattern=Pinocchio
+Turn ID=11| A | A : het hebben een nek
+	Free: Pattern=een, Pattern=hebben
+	Constrained: 
+Turn ID=12| A | A : en een cilinder die naar links wijzen
+	Free: Pattern=een, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=13| A | A : een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=16| A | A : een cirkel boven
+	Free: Pattern=een, Pattern=cirkel
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja en dit zijn Pinocchio
+	Free: Pattern=dit zijn Pinocchio, Pattern=ja en
+	Constrained: Pattern=en, Pattern=zijn, Pattern=dit zijn, Pattern=ja, Pattern=Pinocchio
+Turn ID=19| A | A : dit zijn Pinocchio
+	Free: Pattern=dit zijn Pinocchio
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=Pinocchio
+Turn ID=20| A | A : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : Balk naar links
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : die zijn
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=24| B | B : Pinocchio
+	Free: Pattern=Pinocchio
+	Constrained: 
+Turn ID=25| A | A : O dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=26| A | A : dit zijn Pinocchio
+	Free: Pattern=dit zijn Pinocchio
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=Pinocchio
+Turn ID=27| B | B : Pinocchio zijn
+	Free: Pattern=zijn, Pattern=Pinocchio
+	Constrained: 

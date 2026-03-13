@@ -1,0 +1,107 @@
+A|0| A: _Oh_ oké 
+A|1| A: deze noemen _ik_ _Pipi Langkous_ want ze-het _hebben_ van die staart 
+A|2| A: zo 
+B|3| B: [Oh] _op_ zo'n _plateau_ 
+A|4| A: en dan een 
+A|5| A: _ja_ 
+A|6| A: [op] een [plateau] inderdaad 
+A|7| A: en een cirkel 
+B|8| B: [Oh] [ja] 
+B|9| B: Oké 
+B|10| B: _dat zijn_ 
+A|11| A: en nog 
+B|12| B: _ik hebben nu_ Pippi [Langkous] 
+B|13| B: met de op-op de tafel 
+A|14| A: [Oh] oké 
+A|15| A: die 
+A|16| A: [ja] 
+A|17| A: [dat] 
+B|18| B: [ja] 
+A|19| A: [ik hebben nu] _Pipi Langkous_ 
+B|20| B: _dat zijn_ 
+B|21| B: _ik hebben Pipi Langkous_ 
+A|22| A: eh [ik hebben Pipi Langkous] 
+B|23| B: _dat zijn_ 
+B|24| B: [ik hebben Pipi Langkous] 
+A|25| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : deze noemen ik Pipi Langkous want ze-het hebben van die staart
+	Free: Pattern=Pipi Langkous, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=Langkous
+Turn ID=2| A | A : zo
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : Oh op zo'n plateau
+	Free: Pattern=Oh, Pattern=op, Pattern=plateau
+	Constrained: 
+Turn ID=4| A | A : en dan een
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : op een plateau inderdaad
+	Free: Pattern=op, Pattern=plateau
+	Constrained: 
+Turn ID=7| A | A : en een cirkel
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=Oh, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=11| A | A : en nog
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : ik hebben nu Pippi Langkous
+	Free: Pattern=ik hebben nu, Pattern=Langkous
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=13| B | B : met de op-op de tafel
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=15| A | A : die
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dat
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ik hebben nu Pipi Langkous
+	Free: Pattern=ik hebben nu, Pattern=Pipi Langkous
+	Constrained: Pattern=Langkous, Pattern=ik, Pattern=hebben
+Turn ID=20| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=21| B | B : ik hebben Pipi Langkous
+	Free: Pattern=ik hebben Pipi Langkous
+	Constrained: Pattern=Pipi Langkous, Pattern=Langkous, Pattern=ik, Pattern=hebben
+Turn ID=22| A | A : eh ik hebben Pipi Langkous
+	Free: Pattern=ik hebben Pipi Langkous
+	Constrained: Pattern=Pipi Langkous, Pattern=Langkous, Pattern=ik, Pattern=hebben
+Turn ID=23| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=24| B | B : ik hebben Pipi Langkous
+	Free: Pattern=ik hebben Pipi Langkous
+	Constrained: Pattern=Pipi Langkous, Pattern=Langkous, Pattern=ik, Pattern=hebben
+Turn ID=25| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

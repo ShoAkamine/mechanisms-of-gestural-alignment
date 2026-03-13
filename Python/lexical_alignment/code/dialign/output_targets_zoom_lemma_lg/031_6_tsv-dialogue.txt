@@ -1,0 +1,115 @@
+A|0| A: _Oké dit_ vinden _ik_ ook een beetje _op_ een _hoofd_ lijken 
+B|1| B: [Oké] 
+A|2| A: _het_ hebben _zo'n_ bol _neus_ 
+B|3| B: mhm 
+A|4| A: _en het_ lijken een beetje alsof een _heel groot_ spijker _door die neus heen_ zitten 
+B|5| B: _Oh_ [ik] weten wel [ik] moeten _hem_ _even zoeken_ 
+A|6| A: _en_ hij hebben een soort van één haar _op_ _zijn_ _hoofd_ 
+B|7| B: [Oké] 
+A|8| A: of één mini pluk 
+B|9| B: Ehm 
+B|10| B: Euh _ja ik_ weten welk je bedoelen maar [ik] moeten _hem_ echt _zoeken_ 
+B|11| B: _Oh _ja_ euh_ 
+B|12| B: [Oké _dit] zijn dat_ _er_ weer iets [door die neus heen] [zijn] stoppen _met_ [zo'n] _rond_ aan _de_ rechterkant 
+A|13| A: [ja] [ja ik] hebben [hem] 
+A|14| A: [Oh] [dit zijn dat] man [met] [die] [rond] [neus] [met] [die] soort _groot_ spijker erdoorheen _en_ één pluk haar 
+B|15| B: Uhm oké 
+B|16| B: _even zoeken_ 
+B|17| B: Euh [ja] 
+B|18| B: _euh_ [dit zijn] weer _euh_ [dat] _er_ iets steken [zijn] [door die neus] _en dat_ pluis [op] [het] [hoofd] 
+A|19| A: [ja euh] 
+B|20| B: [Oké] 
+B|21| B: mhm 
+A|22| A: [dit zijn] [de] bolneus [met] [die] _heel groot_ spijker [er] doorheen [en dat] een pluk haar 
+B|23| B: hm 
+B|24| B: Euh 
+B|25| B: [dit zijn] Euhm [dat] [er] weer [dat] [heel groot] ding [door] [de] [neus] [zijn] gaan [en het] pluis [op] [het] [op] [het] [hoofd] 
+A|26| A: [ja] [even zoeken] 
+A|27| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké dit vinden ik ook een beetje op een hoofd lijken
+	Free: Pattern=Oké dit, Pattern=hoofd, Pattern=op, Pattern=ik
+	Constrained: Pattern=Oké
+Turn ID=1| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| A | A : het hebben zo'n bol neus
+	Free: Pattern=het, Pattern=neus, Pattern=zo'n
+	Constrained: 
+Turn ID=3| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : en het lijken een beetje alsof een heel groot spijker door die neus heen zitten
+	Free: Pattern=door die neus heen, Pattern=en het, Pattern=heel groot
+	Constrained: Pattern=door, Pattern=het, Pattern=neus, Pattern=die, Pattern=en, Pattern=door die neus, Pattern=groot
+Turn ID=5| B | B : Oh ik weten wel ik moeten hem even zoeken
+	Free: Pattern=even zoeken, Pattern=Oh, Pattern=hem, Pattern=ik
+	Constrained: Pattern=zoeken
+Turn ID=6| A | A : en hij hebben een soort van één haar op zijn hoofd
+	Free: Pattern=zijn, Pattern=hoofd, Pattern=op, Pattern=en
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| A | A : of één mini pluk
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Euh ja ik weten welk je bedoelen maar ik moeten hem echt zoeken
+	Free: Pattern=ja ik, Pattern=hem, Pattern=zoeken, Pattern=ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=11| B | B : Oh ja euh
+	Free: Pattern=ja euh, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=euh
+Turn ID=12| B | B : Oké dit zijn dat er weer iets door die neus heen zijn stoppen met zo'n rond aan de rechterkant
+	Free: Pattern=door die neus heen, Pattern=zo'n, Pattern=de, Pattern=met, Pattern=er, Pattern=rond, Pattern=zijn, Pattern=Oké dit, Pattern=dit zijn dat
+	Constrained: Pattern=dat, Pattern=door, Pattern=door die neus, Pattern=neus, Pattern=die, Pattern=zijn, Pattern=dit zijn, Pattern=Oké
+Turn ID=13| A | A : ja ja ik hebben hem
+	Free: Pattern=ja ik, Pattern=ja, Pattern=hem
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=14| A | A : Oh dit zijn dat man met die rond neus met die soort groot spijker erdoorheen en één pluk haar
+	Free: Pattern=groot, Pattern=neus, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn dat, Pattern=rond, Pattern=Oh
+	Constrained: Pattern=dit zijn, Pattern=dat, Pattern=zijn
+Turn ID=15| B | B : Uhm oké
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : even zoeken
+	Free: Pattern=even zoeken
+	Constrained: Pattern=zoeken
+Turn ID=17| B | B : Euh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : euh dit zijn weer euh dat er iets steken zijn door die neus en dat pluis op het hoofd
+	Free: Pattern=dat, Pattern=op, Pattern=het, Pattern=door die neus, Pattern=euh, Pattern=er, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=door, Pattern=neus, Pattern=die, Pattern=en, Pattern=zijn
+Turn ID=19| A | A : ja euh
+	Free: Pattern=ja euh
+	Constrained: Pattern=ja, Pattern=euh
+Turn ID=20| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=21| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : dit zijn de bolneus met die heel groot spijker er doorheen en dat een pluk haar
+	Free: Pattern=heel groot, Pattern=de, Pattern=met, Pattern=die, Pattern=er, Pattern=dit zijn, Pattern=en dat
+	Constrained: Pattern=groot, Pattern=dat, Pattern=zijn, Pattern=en
+Turn ID=23| B | B : hm
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : dit zijn Euhm dat er weer dat heel groot ding door de neus zijn gaan en het pluis op het op het hoofd
+	Free: Pattern=dat, Pattern=heel groot, Pattern=de, Pattern=door, Pattern=het, Pattern=neus, Pattern=er, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn, Pattern=op, Pattern=en het
+	Constrained: Pattern=groot, Pattern=zijn, Pattern=en, Pattern=het
+Turn ID=26| A | A : ja even zoeken
+	Free: Pattern=even zoeken, Pattern=ja
+	Constrained: Pattern=zoeken
+Turn ID=27| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh

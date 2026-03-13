@@ -1,0 +1,167 @@
+A|0| A: _ik hebben_ nu _die_ bak _die_ we _de_ heel tijd _hebben_ 
+B|1| B: mhm 
+A|2| A: _en_ dan onder _staan_ _hij_ eigenlijk _op _een_ soort van_ _standaard_ 
+A|3| A: aan _de_ linkerkant _hebben hij_ _ja_ _hebben hij_ _iets_ uitsteken 
+B|4| B: mhm 
+B|5| B: M-ké 
+A|6| A: _en_ _er_ zitten weer _een schroevendraaier_ achtig _iets_ in 
+A|7| A: _en_ _er_ zitten _ook_ _een_ _rond_ aan 
+B|8| B: [ja] 
+A|9| A: maar _die_ zien je niet veel helemaal 
+B|10| B: [ja] dat zijn prullenbaken 
+B|11| B: [ja] 
+B|12| B: dat zijn letter 
+B|13| B: _ik hebben de_ ander prullenbak 
+B|14| B: [die] [een] [die] [op een] [standaard] [staan] 
+B|15| B: Eh _met_ links [een] buis 
+B|16| B: [ja] één [een] [een] balk [er] uit 
+B|17| B: [en] bovenin [een schroevendraaier] [en] achter hangen [er] _nog_ [een soort van] [rond] deksel 
+A|18| A: Yes 
+A|19| A: Letter 
+A|20| A: [ik hebben de] [ja] [met] [een _schroevendraaier] erin_ 
+A|21| A: eh rondje [er] [een] beetje [die] je niet veel helemaal zien 
+A|22| A: [en] aan [de] onderkant _een blok_ waar [die] 
+B|23| B: [ja] 
+A|24| A: [ja] 
+B|25| B: [ja] nummer 
+B|26| B: [ik hebben] [die] prullenbak [die] [op een] [standaard] bekendstaan [met] [die] schroefdraai [erin] 
+B|27| B: [rond] deksel achter 
+B|28| B: Links _nog iets_ uitstekend 
+A|29| A: Oh [ja] 
+A|30| A: Letter 
+A|31| A: [ik hebben] degeen [met] [de] Schroevendraaier eruit [en] het _rond erachter_ 
+A|32| A: aan [de] linkerkant [nog iets] eruit 
+B|33| B: [ja] 
+B|34| B: nummer 
+B|35| B: [ik hebben] [die] prullenbak [met] [schroevendraaier erin] [rond erachter] 
+B|36| B: [hij] [staan] [op [een] blok] 
+B|37| B: Ish 
+B|38| B: [en] link [hebben hij] [ook] [nog] [een] dinge 
+A|39| A: Oh [ja] 
+A|40| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hebben nu die bak die we de heel tijd hebben
+	Free: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=die
+	Constrained: Pattern=hebben
+Turn ID=1| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : en dan onder staan hij eigenlijk op een soort van standaard
+	Free: Pattern=staan, Pattern=hij, Pattern=een soort van, Pattern=en, Pattern=standaard, Pattern=op een
+	Constrained: Pattern=een
+Turn ID=3| A | A : aan de linkerkant hebben hij ja hebben hij iets uitsteken
+	Free: Pattern=hebben hij, Pattern=iets, Pattern=ja, Pattern=de
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=4| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : M-ké
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : en er zitten weer een schroevendraaier achtig iets in
+	Free: Pattern=een schroevendraaier, Pattern=er, Pattern=iets, Pattern=en
+	Constrained: Pattern=een
+Turn ID=7| A | A : en er zitten ook een rond aan
+	Free: Pattern=ook, Pattern=een, Pattern=er, Pattern=en, Pattern=rond
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : maar die zien je niet veel helemaal
+	Free: Pattern=die
+	Constrained: 
+Turn ID=10| B | B : ja dat zijn prullenbaken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : dat zijn letter
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : ik hebben de ander prullenbak
+	Free: Pattern=ik hebben de
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben
+Turn ID=14| B | B : die een die op een standaard staan
+	Free: Pattern=die, Pattern=standaard, Pattern=op een, Pattern=een, Pattern=staan
+	Constrained: Pattern=een
+Turn ID=15| B | B : Eh met links een buis
+	Free: Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=16| B | B : ja één een een balk er uit
+	Free: Pattern=er, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=17| B | B : en bovenin een schroevendraaier en achter hangen er nog een soort van rond deksel
+	Free: Pattern=nog, Pattern=een soort van, Pattern=er, Pattern=en, Pattern=rond, Pattern=een schroevendraaier
+	Constrained: Pattern=een
+Turn ID=18| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : ik hebben de ja met een schroevendraaier erin
+	Free: Pattern=ja, Pattern=ik hebben de, Pattern=schroevendraaier erin, Pattern=met, Pattern=een schroevendraaier
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=een, Pattern=hebben, Pattern=erin
+Turn ID=21| A | A : eh rondje er een beetje die je niet veel helemaal zien
+	Free: Pattern=er, Pattern=een, Pattern=die
+	Constrained: 
+Turn ID=22| A | A : en aan de onderkant een blok waar die
+	Free: Pattern=een blok, Pattern=en, Pattern=de, Pattern=die
+	Constrained: Pattern=een
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ik hebben die prullenbak die op een standaard bekendstaan met die schroefdraai erin
+	Free: Pattern=ik hebben, Pattern=met, Pattern=die, Pattern=erin, Pattern=standaard, Pattern=op een
+	Constrained: Pattern=hebben, Pattern=een
+Turn ID=27| B | B : rond deksel achter
+	Free: Pattern=rond
+	Constrained: 
+Turn ID=28| B | B : Links nog iets uitstekend
+	Free: Pattern=nog iets
+	Constrained: Pattern=iets, Pattern=nog
+Turn ID=29| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : ik hebben degeen met de Schroevendraaier eruit en het rond erachter
+	Free: Pattern=ik hebben, Pattern=de, Pattern=met, Pattern=en, Pattern=rond erachter
+	Constrained: Pattern=rond, Pattern=hebben
+Turn ID=32| A | A : aan de linkerkant nog iets eruit
+	Free: Pattern=nog iets, Pattern=de
+	Constrained: Pattern=iets, Pattern=nog
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : ik hebben die prullenbak met schroevendraaier erin rond erachter
+	Free: Pattern=ik hebben, Pattern=schroevendraaier erin, Pattern=met, Pattern=die, Pattern=rond erachter
+	Constrained: Pattern=erin, Pattern=rond, Pattern=hebben
+Turn ID=36| B | B : hij staan op een blok
+	Free: Pattern=op een, Pattern=een blok, Pattern=hij, Pattern=staan
+	Constrained: Pattern=een
+Turn ID=37| B | B : Ish
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : en link hebben hij ook nog een dinge
+	Free: Pattern=hebben hij, Pattern=nog, Pattern=ook, Pattern=een, Pattern=en
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=39| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : Letter
+	Free: 
+	Constrained: 

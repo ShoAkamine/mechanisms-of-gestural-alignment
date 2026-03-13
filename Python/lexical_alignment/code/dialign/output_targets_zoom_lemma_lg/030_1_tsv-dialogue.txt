@@ -1,0 +1,127 @@
+B|0| B: nou _ik_ _zijn_ benieuwd 
+A|1| A: Oh hey Hey 
+A|2| A: _ja_ [ik] ook 
+A|3| A: waar waar zitten _de_ microfoon eigenlijk 
+B|4| B: _Oké_ 
+A|5| A: _die_ zitten gewoon ergens in _de_ 
+B|6| B: _ik hebben_ geen idee 
+A|7| A: [Oké] 
+B|8| B: _ik hebben_ _het_ _Euh_ vierkan 
+A|9| A: oké welk 
+B|10| B: _Euh_ 
+B|11| B: _ik hebben_ _het_ volgens mij omschrijven als 
+B|12| B: [ja] _een_ soort beker [die] door _een_ _verrekijker_ heen _kijken_ _aan de_ linkerzijkant 
+A|13| A: Oh [ja] euh [een] kubus ver [kijken] zeggen maar 
+B|14| B: [ja] 
+A|15| A: [ja] oké dan weten [ik] hem al denken [ik] 
+B|16| B: nou 
+A|17| A: hij [hebben] toch [een] euh [een] raar antenne en één en [een] vierkant vlak [aan de] zijkant 
+B|18| B: [ja] [ja] 
+A|19| A: [Oké] dan [zijn] [het] en dan druk [ik] op [de] knop 
+A|20| A: knop 
+A|21| A: [Euh] [ik hebben] _nu_ _de verrekijker_ [die] naar links [kijken] 
+A|22| A: [Euh] kubus [verrekijker] 
+B|23| B: [Oké] 
+B|24| B: [nu] [hebben] [ik] weer [de verrekijker] 
+A|25| A: [Euh] yes 
+A|26| A: K 
+A|27| A: euh [de verrekijker] naar links 
+B|28| B: [de verrekijker] 
+A|29| A: [Euh] 
+A|30| A: [de verrekijker] naar links 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : nou ik zijn benieuwd
+	Free: Pattern=zijn, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : Oh hey Hey
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : ja ik ook
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=3| A | A : waar waar zitten de microfoon eigenlijk
+	Free: Pattern=de
+	Constrained: 
+Turn ID=4| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| A | A : die zitten gewoon ergens in de
+	Free: Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=6| B | B : ik hebben geen idee
+	Free: Pattern=ik hebben
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=7| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : ik hebben het Euh vierkan
+	Free: Pattern=ik hebben, Pattern=Euh, Pattern=het
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=9| A | A : oké welk
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=11| B | B : ik hebben het volgens mij omschrijven als
+	Free: Pattern=ik hebben, Pattern=het
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=12| B | B : ja een soort beker die door een verrekijker heen kijken aan de linkerzijkant
+	Free: Pattern=ja, Pattern=aan de, Pattern=kijken, Pattern=een, Pattern=die, Pattern=verrekijker
+	Constrained: Pattern=de
+Turn ID=13| A | A : Oh ja euh een kubus ver kijken zeggen maar
+	Free: Pattern=kijken, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : ja oké dan weten ik hem al denken ik
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=16| B | B : nou
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : hij hebben toch een euh een raar antenne en één en een vierkant vlak aan de zijkant
+	Free: Pattern=aan de, Pattern=hebben, Pattern=een
+	Constrained: Pattern=de
+Turn ID=18| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oké dan zijn het en dan druk ik op de knop
+	Free: Pattern=de, Pattern=het, Pattern=ik, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=20| A | A : knop
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : Euh ik hebben nu de verrekijker die naar links kijken
+	Free: Pattern=ik hebben, Pattern=kijken, Pattern=die, Pattern=de verrekijker, Pattern=Euh, Pattern=nu
+	Constrained: Pattern=de, Pattern=hebben, Pattern=ik, Pattern=verrekijker
+Turn ID=22| A | A : Euh kubus verrekijker
+	Free: Pattern=Euh, Pattern=verrekijker
+	Constrained: 
+Turn ID=23| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=24| B | B : nu hebben ik weer de verrekijker
+	Free: Pattern=de verrekijker, Pattern=hebben, Pattern=ik, Pattern=nu
+	Constrained: Pattern=de, Pattern=verrekijker
+Turn ID=25| A | A : Euh yes
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=26| A | A : K
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : euh de verrekijker naar links
+	Free: Pattern=de verrekijker
+	Constrained: Pattern=de, Pattern=verrekijker
+Turn ID=28| B | B : de verrekijker
+	Free: Pattern=de verrekijker
+	Constrained: Pattern=de, Pattern=verrekijker
+Turn ID=29| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=30| A | A : de verrekijker naar links
+	Free: Pattern=de verrekijker
+	Constrained: Pattern=de, Pattern=verrekijker

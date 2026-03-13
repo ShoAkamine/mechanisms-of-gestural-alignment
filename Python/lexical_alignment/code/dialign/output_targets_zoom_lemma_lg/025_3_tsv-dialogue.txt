@@ -1,0 +1,131 @@
+B|0| B: _Oké_ 
+B|1| B: _eh_ _dit zijn_ echt _een soort_ _standbeeld_ 
+B|2| B: _het_ staan op _een_ voet _met_ _een_ paal daarop 
+B|3| B: _en_ _dan_ krijgen je pas _dat_ _ja_ _dat_ figuur 
+B|4| B: _en_ _dan_ aan _de_ bovenkant hebben je _een_ kubus aan _de_ rechterkant erop zitten 
+B|5| B: _en_ _dan_ hebben je 
+A|6| A: _ja en_ in [het] midden _ook nog één_ 
+B|7| B: [ja en] _dan_ _links [ook_ nog één] 
+A|8| A: [en] [links ook] 
+A|9| A: _ja oké_ [dan] [zijn] [het] 
+B|10| B: [nog] iets 
+A|11| A: _ehm_ [dit zijn] volgens mij noemen _jij_ [het] [een] [standbeeld] 
+A|12| A: ik zien [het] _als_ [een soort] van _trofee_ 
+B|13| B: Oh [oké] [ja] 
+A|14| A: [een] schef _trofee_ 
+B|15| B: [ja] 
+B|16| B: _ja met_ zo'n _blok bovenop_ 
+A|17| A: [ja met] _die_ drie [blok bovenop] [ja] 
+B|18| B: [ja oké] _dat zijn_ nummer 
+B|19| B: alles [zijn] weer veranderen 
+B|20| B: Hebben [jij] _dat_ [ook] 
+A|21| A: [eh] [ja] 
+B|22| B: _Oké_ 
+B|23| B: [eh] [dit zijn] dezelfde [als] [die] we precies net zeiden 
+B|24| B: _dat_ [die] [trofee] [met] [het] [blok] 
+A|25| A: [Oké] [dat zijn] 
+A|26| A: _dit zijn de scheve trofee_ 
+B|27| B: [ja] [dat zijn] nummer 
+B|28| B: [dit zijn de scheve trofee] 
+A|29| A: Eh 
+A|30| A: [eh] [de] [trofee] 
+B|31| B: [ehm] [ja] [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : eh dit zijn echt een soort standbeeld
+	Free: Pattern=een soort, Pattern=dit zijn, Pattern=standbeeld, Pattern=eh
+	Constrained: Pattern=zijn, Pattern=een
+Turn ID=2| B | B : het staan op een voet met een paal daarop
+	Free: Pattern=het, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : en dan krijgen je pas dat ja dat figuur
+	Free: Pattern=dat, Pattern=dan, Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en dan aan de bovenkant hebben je een kubus aan de rechterkant erop zitten
+	Free: Pattern=dan, Pattern=en, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=5| B | B : en dan hebben je
+	Free: Pattern=dan, Pattern=en
+	Constrained: 
+Turn ID=6| A | A : ja en in het midden ook nog één
+	Free: Pattern=ook nog één, Pattern=ja en, Pattern=het
+	Constrained: Pattern=nog, Pattern=en, Pattern=ook, Pattern=ja
+Turn ID=7| B | B : ja en dan links ook nog één
+	Free: Pattern=ook nog één, Pattern=ja en, Pattern=links ook, Pattern=dan
+	Constrained: Pattern=nog, Pattern=en, Pattern=ook, Pattern=ja
+Turn ID=8| A | A : en links ook
+	Free: Pattern=links ook, Pattern=en
+	Constrained: Pattern=ook
+Turn ID=9| A | A : ja oké dan zijn het
+	Free: Pattern=ja oké, Pattern=dan, Pattern=zijn, Pattern=het
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=10| B | B : nog iets
+	Free: Pattern=nog
+	Constrained: 
+Turn ID=11| A | A : ehm dit zijn volgens mij noemen jij het een standbeeld
+	Free: Pattern=standbeeld, Pattern=een, Pattern=het, Pattern=ehm, Pattern=dit zijn, Pattern=jij
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : ik zien het als een soort van trofee
+	Free: Pattern=een soort, Pattern=trofee, Pattern=het, Pattern=als
+	Constrained: Pattern=een
+Turn ID=13| B | B : Oh oké ja
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : een schef trofee
+	Free: Pattern=trofee, Pattern=een
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ja met zo'n blok bovenop
+	Free: Pattern=blok bovenop, Pattern=ja met
+	Constrained: Pattern=blok, Pattern=met, Pattern=ja
+Turn ID=17| A | A : ja met die drie blok bovenop ja
+	Free: Pattern=blok bovenop, Pattern=ja met, Pattern=die, Pattern=ja
+	Constrained: Pattern=blok, Pattern=met, Pattern=ja
+Turn ID=18| B | B : ja oké dat zijn nummer
+	Free: Pattern=ja oké, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=oké, Pattern=ja
+Turn ID=19| B | B : alles zijn weer veranderen
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=20| B | B : Hebben jij dat ook
+	Free: Pattern=dat, Pattern=ook, Pattern=jij
+	Constrained: 
+Turn ID=21| A | A : eh ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=22| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=23| B | B : eh dit zijn dezelfde als die we precies net zeiden
+	Free: Pattern=dit zijn, Pattern=die, Pattern=als, Pattern=eh
+	Constrained: Pattern=zijn
+Turn ID=24| B | B : dat die trofee met het blok
+	Free: Pattern=dat, Pattern=het, Pattern=met, Pattern=die, Pattern=blok, Pattern=trofee
+	Constrained: 
+Turn ID=25| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| A | A : dit zijn de scheve trofee
+	Free: Pattern=dit zijn de scheve trofee
+	Constrained: Pattern=dit zijn, Pattern=trofee, Pattern=de, Pattern=zijn
+Turn ID=27| B | B : ja dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=28| B | B : dit zijn de scheve trofee
+	Free: Pattern=dit zijn de scheve trofee
+	Constrained: Pattern=dit zijn, Pattern=trofee, Pattern=de, Pattern=zijn
+Turn ID=29| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : eh de trofee
+	Free: Pattern=trofee, Pattern=de, Pattern=eh
+	Constrained: 
+Turn ID=31| B | B : ehm ja dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=ehm, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

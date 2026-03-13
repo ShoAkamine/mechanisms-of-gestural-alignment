@@ -1,0 +1,147 @@
+A|0| A: _Eh_ deze _hebben_ _een bolle aan de bovenkant_ 
+A|1| A: _en_ _een_ soort _verticaal_ _balk_ _aan de voorkant_ zitten 
+A|2| A: _met_ soort van _twee armp_ 
+B|3| B: _Oh_ _ja_ _ja_ 
+B|4| B: _ik_ zien al welk je bedoelen 
+B|5| B: denken _ik_ 
+B|6| B: _er zijn_ geen ander [met] [een bolle aan de bovenkant] 
+A|7| A: _nee_ 
+B|8| B: [nee] 
+B|9| B: _Oké_ _dan_ _zijn_ _dat_ 
+A|10| A: [Oh] [er zijn] bijna nieuw 
+B|11| B: [Eh] 
+B|12| B: [Oh] _ja_ ze [zijn] veranderen inderdaad 
+A|13| A: [ja] 
+B|14| B: _Oké_ dus _dan hebben_ we ze nu allemaal één keer [hebben] volgens mij 
+A|15| A: [ja] 
+B|16| B: ehm nou _dan hebben ik_ nu dus weer diegene [met] _dat_ _rond_ bolletje erbovenop _die_ [twee armp] _en dan_ _die_ lang stok [aan de voorkant] 
+A|17| A: _ja _dat_ balk_ 
+B|18| B: dus voor [zijn] buik 
+B|19| B: [dat balk] [ja] 
+A|20| A: [ja] 
+A|21| A: [Oké] _dat zijn_ [dan] 
+A|22| A: [Eh] [dan hebben ik] _die met het rond aan de bovenkant_ 
+A|23| A: _en [dat_ balk] _verticaal_ [aan de voorkant] 
+A|24| A: [en dan] [een] soort [twee armp] 
+B|25| B: [ja [dat] zijn] 
+B|26| B: _ik hebben die met het rond aan de bovenkant_ 
+B|27| B: [en] [die] [twee armp] 
+B|28| B: [en dat] [verticaal] ding [aan de voorkant] 
+A|29| A: [dat zijn] 
+A|30| A: [ik hebben die met het rond aan de bovenkant] 
+A|31| A: [en] [het] [balk] [verticaal] [aan de voorkant] [met] [twee armp] 
+B|32| B: [ja [dat] zijn] 
+B|33| B: [ik hebben die met het] bonnet erbovenop 
+B|34| B: [en dat] [verticaal] ding [aan de voorkant] 
+A|35| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh deze hebben een bolle aan de bovenkant
+	Free: Pattern=een bolle aan de bovenkant, Pattern=hebben, Pattern=Eh
+	Constrained: Pattern=een
+Turn ID=1| A | A : en een soort verticaal balk aan de voorkant zitten
+	Free: Pattern=verticaal, Pattern=een, Pattern=balk, Pattern=en, Pattern=aan de voorkant
+	Constrained: 
+Turn ID=2| A | A : met soort van twee armp
+	Free: Pattern=twee armp, Pattern=met
+	Constrained: 
+Turn ID=3| B | B : Oh ja ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=4| B | B : ik zien al welk je bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=5| B | B : denken ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=6| B | B : er zijn geen ander met een bolle aan de bovenkant
+	Free: Pattern=een bolle aan de bovenkant, Pattern=er zijn, Pattern=met
+	Constrained: Pattern=een, Pattern=zijn
+Turn ID=7| A | A : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=8| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=9| B | B : Oké dan zijn dat
+	Free: Pattern=Oké, Pattern=dan, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=10| A | A : Oh er zijn bijna nieuw
+	Free: Pattern=er zijn, Pattern=Oh
+	Constrained: Pattern=zijn
+Turn ID=11| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=12| B | B : Oh ja ze zijn veranderen inderdaad
+	Free: Pattern=ja, Pattern=Oh, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Oké dus dan hebben we ze nu allemaal één keer hebben volgens mij
+	Free: Pattern=dan hebben, Pattern=Oké, Pattern=hebben
+	Constrained: Pattern=hebben, Pattern=dan
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : ehm nou dan hebben ik nu dus weer diegene met dat rond bolletje erbovenop die twee armp en dan die lang stok aan de voorkant
+	Free: Pattern=dat, Pattern=en dan, Pattern=twee armp, Pattern=met, Pattern=rond, Pattern=aan de voorkant, Pattern=dan hebben ik, Pattern=die
+	Constrained: Pattern=dan, Pattern=hebben, Pattern=dan hebben, Pattern=ik, Pattern=en
+Turn ID=17| A | A : ja dat balk
+	Free: Pattern=dat balk, Pattern=ja dat
+	Constrained: Pattern=balk, Pattern=ja, Pattern=dat
+Turn ID=18| B | B : dus voor zijn buik
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : dat balk ja
+	Free: Pattern=dat balk, Pattern=ja
+	Constrained: Pattern=balk, Pattern=dat
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : Oké dat zijn dan
+	Free: Pattern=dat zijn, Pattern=Oké, Pattern=dan
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| A | A : Eh dan hebben ik die met het rond aan de bovenkant
+	Free: Pattern=die met het rond aan de bovenkant, Pattern=dan hebben ik, Pattern=Eh
+	Constrained: Pattern=dan, Pattern=het, Pattern=hebben, Pattern=dan hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=rond
+Turn ID=23| A | A : en dat balk verticaal aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=dat balk, Pattern=en dat, Pattern=verticaal
+	Constrained: Pattern=balk, Pattern=dat, Pattern=en
+Turn ID=24| A | A : en dan een soort twee armp
+	Free: Pattern=twee armp, Pattern=en dan, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=25| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=26| B | B : ik hebben die met het rond aan de bovenkant
+	Free: Pattern=ik hebben die met het rond aan de bovenkant
+	Constrained: Pattern=die met het rond aan de bovenkant, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=ik hebben die met het, Pattern=rond
+Turn ID=27| B | B : en die twee armp
+	Free: Pattern=twee armp, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=28| B | B : en dat verticaal ding aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=en dat, Pattern=verticaal
+	Constrained: Pattern=dat, Pattern=en
+Turn ID=29| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=30| A | A : ik hebben die met het rond aan de bovenkant
+	Free: Pattern=ik hebben die met het rond aan de bovenkant
+	Constrained: Pattern=die met het rond aan de bovenkant, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=ik hebben die met het, Pattern=rond
+Turn ID=31| A | A : en het balk verticaal aan de voorkant met twee armp
+	Free: Pattern=verticaal, Pattern=twee armp, Pattern=het, Pattern=balk, Pattern=met, Pattern=en, Pattern=aan de voorkant
+	Constrained: 
+Turn ID=32| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=33| B | B : ik hebben die met het bonnet erbovenop
+	Free: Pattern=ik hebben die met het
+	Constrained: Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=34| B | B : en dat verticaal ding aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=en dat, Pattern=verticaal
+	Constrained: Pattern=dat, Pattern=en
+Turn ID=35| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

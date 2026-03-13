@@ -1,0 +1,103 @@
+A|0| A: _Oké_ _het_ plaat lijken _een_ klein _beetje_ op _een_ _wijnglas_ 
+B|1| B: [Oké] 
+A|2| A: ehm dus _het_ _hebben_ _een_ steel aan de onderkant met _een_ soort _van_ _driehoek_ 
+B|3| B: Oh _ja_ oké 
+A|4| A: _en dan_ wat dingetje nog er bovenop drie [ja] blok 
+B|5| B: [ja] oké 
+B|6| B: [en dan] [het] [het] [het] voet zijn inderdaad [een] [driehoek] 
+A|7| A: [ja] 
+B|8| B: [Oké] [en] [het] steelt [van] _het wijnglas_ zijn [een] [beetje] getwist draaien 
+A|9| A: [ja] die [ja] 
+B|10| B: [Oké] [ja] 
+B|11| B: [dan] zijn [het] nummer voor mij 
+B|12| B: _ik hebben het wijnglas_ 
+A|13| A: [ik hebben het wijnglas] 
+B|14| B: nummer 
+B|15| B: [het wijnglas] 
+A|16| A: [het wijnglas] 
+B|17| B: dat zijn voor mij nummer 
+B|18| B: oh dat zijn niet waar trouwens 
+B|19| B: oepsie 
+B|20| B: [ik] weten niet of [ik] mezelf mogen correct 
+B|21| B: _Eh_ maar [het] zijn nummer 
+A|22| A: [Oké] 
+B|23| B: [het wijnglas] 
+A|24| A: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké het plaat lijken een klein beetje op een wijnglas
+	Free: Pattern=wijnglas, Pattern=beetje, Pattern=een, Pattern=het, Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| A | A : ehm dus het hebben een steel aan de onderkant met een soort van driehoek
+	Free: Pattern=driehoek, Pattern=een, Pattern=het, Pattern=hebben, Pattern=van
+	Constrained: 
+Turn ID=3| B | B : Oh ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en dan wat dingetje nog er bovenop drie ja blok
+	Free: Pattern=en dan, Pattern=ja
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=5| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : en dan het het het voet zijn inderdaad een driehoek
+	Free: Pattern=en dan, Pattern=een, Pattern=driehoek, Pattern=het
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Oké en het steelt van het wijnglas zijn een beetje getwist draaien
+	Free: Pattern=het wijnglas, Pattern=beetje, Pattern=een, Pattern=het, Pattern=Oké, Pattern=van, Pattern=en
+	Constrained: Pattern=het, Pattern=wijnglas
+Turn ID=9| A | A : ja die ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=11| B | B : dan zijn het nummer voor mij
+	Free: Pattern=het, Pattern=dan
+	Constrained: 
+Turn ID=12| B | B : ik hebben het wijnglas
+	Free: Pattern=ik hebben het wijnglas
+	Constrained: Pattern=het wijnglas, Pattern=wijnglas, Pattern=het, Pattern=hebben, Pattern=ik
+Turn ID=13| A | A : ik hebben het wijnglas
+	Free: Pattern=ik hebben het wijnglas
+	Constrained: Pattern=het wijnglas, Pattern=wijnglas, Pattern=het, Pattern=hebben, Pattern=ik
+Turn ID=14| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : het wijnglas
+	Free: Pattern=het wijnglas
+	Constrained: Pattern=het, Pattern=wijnglas
+Turn ID=16| A | A : het wijnglas
+	Free: Pattern=het wijnglas
+	Constrained: Pattern=het, Pattern=wijnglas
+Turn ID=17| B | B : dat zijn voor mij nummer
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : oh dat zijn niet waar trouwens
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : oepsie
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ik weten niet of ik mezelf mogen correct
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=21| B | B : Eh maar het zijn nummer
+	Free: Pattern=Eh, Pattern=het
+	Constrained: 
+Turn ID=22| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=23| B | B : het wijnglas
+	Free: Pattern=het wijnglas
+	Constrained: Pattern=het, Pattern=wijnglas
+Turn ID=24| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 

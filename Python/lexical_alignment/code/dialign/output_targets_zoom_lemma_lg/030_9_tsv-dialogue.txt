@@ -1,0 +1,103 @@
+B|0| B: _Oké_ _dan_ _hebben_ _ik_ _deze_ 
+B|1| B: _ik_ vinden dit _een_ beetje _een soort_ tandenborstelhouder _met_ ook _een_ tandenborstel _erin_ weer 
+B|2| B: _Euh_ _aan de_ _het zijn_ _een_ _beker met_ _aan de onderkant_ _nog een_ klein stuk _met_ _wat_ _dan_ weer _plat_ _zijn_ _aan de onderkant_ 
+B|3| B: _Euh_ _met een_ rond _aan de achterkant_ _en_ rechts 
+A|4| A: _ja_ [ik] [hebben] hem _ja_ 
+B|5| B: _Oké_ 
+A|6| A: [het zijn] _euh_ 
+A|7| A: [Euh] oké 
+A|8| A: [Euh] [ik] weten even niet veel hoe [de] 
+A|9| A: _ja_ [deze] [beker] [hebben] [aan de onderkant] iets [wat] hem stabiel houden 
+A|10| A: zodat _hij_ hem vlak houden 
+A|11| A: [en] [dan] zitten _er_ [een soort] van [Euh] cirkeltje [aan de achterkant] 
+A|12| A: _er_ zitten _één_ [Euh] lepel _in_ 
+A|13| A: _en aan de zijkant_ zitten [nog een] handvat 
+B|14| B: [ja] 
+B|15| B: [dan] [hebben] [ik] [de] _beker met_ [aan de onderkant] waar die op kunnen _staan_ [een] ding _erin en een_ rond schijf achter 
+B|16| B: [en aan de zijkant] ook [een] [euh] rond langwerpig oor 
+A|17| A: [Euh] [ja] [met] zo'n lepel [erin] toch 
+B|18| B: Beetje [ja] [ja] 
+A|19| A: [Oké] 
+A|20| A: [Euh] [ja] [ik] [hebben] hier [het] _beker met een_ onderstuk zodat _hij_ [plat] [staan] [en een] cirkel erachter [en een] lepel [erin en een] handvat 
+B|21| B: [Euh] 
+B|22| B: [de] [beker met een] of geen platform maar [met] [de onderkant] waar [hij] op kunnen bijstaan [met] [één] ding [er] [in] [de] ronde [achterkant] 
+A|23| A: Oh [ja] 
+A|24| A: [euh] stabilisator [Euh] theekopje [met een] cirkel erachter [en een] lepel 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké dan hebben ik deze
+	Free: Pattern=dan, Pattern=hebben, Pattern=ik, Pattern=deze, Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : ik vinden dit een beetje een soort tandenborstelhouder met ook een tandenborstel erin weer
+	Free: Pattern=een, Pattern=met, Pattern=erin, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=2| B | B : Euh aan de het zijn een beker met aan de onderkant nog een klein stuk met wat dan weer plat zijn aan de onderkant
+	Free: Pattern=nog een, Pattern=beker met, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=Euh, Pattern=aan de onderkant, Pattern=met, Pattern=het zijn, Pattern=wat, Pattern=plat, Pattern=zijn
+	Constrained: Pattern=beker, Pattern=de, Pattern=aan de, Pattern=een, Pattern=het, Pattern=met, Pattern=de onderkant, Pattern=zijn
+Turn ID=3| B | B : Euh met een rond aan de achterkant en rechts
+	Free: Pattern=aan de achterkant, Pattern=met een, Pattern=en, Pattern=Euh
+	Constrained: Pattern=de, Pattern=aan de, Pattern=een, Pattern=met, Pattern=achterkant
+Turn ID=4| A | A : ja ik hebben hem ja
+	Free: Pattern=ik, Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| A | A : het zijn euh
+	Free: Pattern=het zijn, Pattern=euh
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=7| A | A : Euh oké
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=8| A | A : Euh ik weten even niet veel hoe de
+	Free: Pattern=Euh, Pattern=ik, Pattern=de
+	Constrained: 
+Turn ID=9| A | A : ja deze beker hebben aan de onderkant iets wat hem stabiel houden
+	Free: Pattern=beker, Pattern=ja, Pattern=hebben, Pattern=aan de onderkant, Pattern=wat, Pattern=deze
+	Constrained: Pattern=de onderkant, Pattern=aan de, Pattern=de
+Turn ID=10| A | A : zodat hij hem vlak houden
+	Free: Pattern=hij
+	Constrained: 
+Turn ID=11| A | A : en dan zitten er een soort van Euh cirkeltje aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=dan, Pattern=Euh, Pattern=er, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de, Pattern=achterkant
+Turn ID=12| A | A : er zitten één Euh lepel in
+	Free: Pattern=één, Pattern=Euh, Pattern=in, Pattern=er
+	Constrained: 
+Turn ID=13| A | A : en aan de zijkant zitten nog een handvat
+	Free: Pattern=en aan de zijkant, Pattern=nog een
+	Constrained: Pattern=een, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : dan hebben ik de beker met aan de onderkant waar die op kunnen staan een ding erin en een rond schijf achter
+	Free: Pattern=dan, Pattern=hebben, Pattern=aan de onderkant, Pattern=de, Pattern=beker met, Pattern=een, Pattern=staan, Pattern=ik, Pattern=erin en een
+	Constrained: Pattern=beker, Pattern=de, Pattern=aan de, Pattern=een, Pattern=met, Pattern=de onderkant, Pattern=en, Pattern=erin, Pattern=en een
+Turn ID=16| B | B : en aan de zijkant ook een euh rond langwerpig oor
+	Free: Pattern=en aan de zijkant, Pattern=een, Pattern=euh
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=17| A | A : Euh ja met zo'n lepel erin toch
+	Free: Pattern=Euh, Pattern=met, Pattern=ja, Pattern=erin
+	Constrained: 
+Turn ID=18| B | B : Beetje ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| A | A : Euh ja ik hebben hier het beker met een onderstuk zodat hij plat staan en een cirkel erachter en een lepel erin en een handvat
+	Free: Pattern=staan, Pattern=Euh, Pattern=het, Pattern=hebben, Pattern=hij, Pattern=plat, Pattern=en een, Pattern=ja, Pattern=beker met een, Pattern=ik, Pattern=erin en een
+	Constrained: Pattern=beker, Pattern=beker met, Pattern=een, Pattern=met, Pattern=met een, Pattern=en, Pattern=erin, Pattern=en een
+Turn ID=21| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=22| B | B : de beker met een of geen platform maar met de onderkant waar hij op kunnen bijstaan met één ding er in de ronde achterkant
+	Free: Pattern=één, Pattern=hij, Pattern=in, Pattern=met, Pattern=de onderkant, Pattern=er, Pattern=achterkant, Pattern=de, Pattern=beker met een
+	Constrained: Pattern=beker, Pattern=een, Pattern=met, Pattern=met een, Pattern=de, Pattern=beker met
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : euh stabilisator Euh theekopje met een cirkel erachter en een lepel
+	Free: Pattern=met een, Pattern=en een, Pattern=Euh, Pattern=euh
+	Constrained: Pattern=en, Pattern=met, Pattern=een

@@ -1,0 +1,167 @@
+A|0| A: Eh _deze hebben_ op _de bovenkant_ _zitten_ gewoon _een_ scherp _driehoek_ 
+A|1| A: _en dan aan de_ rechterkant wat veel il het midden _zitten_ _een soort_ raar cubusvorm 
+A|2| A: niet perfect niet _een_ perfect vorm 
+A|3| A: _dan aan de linkerkant_ _zitten_ ook _een soort_ spits spits ding 
+A|4| A: _en dan_ _linksonder_ _hebben_ hij _een _een_ een_ rond _die_ er _half_ _half_ in het object _zitten_ zeggen _maar_ 
+B|5| B: [deze hebben] [een soort] _piramide_ of [driehoek] [aan [de] bovenkant] 
+B|6| B: Best wel dunnig 
+B|7| B: [dan aan de linkerkant] steken [een soort] klein kegel uit 
+B|8| B: [linksonder] zien je [een] [half] _cirkel_ 
+A|9| A: mhm 
+B|10| B: of _ja_ [een] deel van [een] _cirkel_ 
+A|11| A: _iets_ 
+A|12| A: [ja] [ja] 
+B|13| B: [en dan aan de] voorkant nog [een soort] kubus 
+B|14| B: [maar] [dan] [iets] bred [dan] [een] vierkant 
+A|15| A: Nja 
+A|16| A: [ja] _dat zijn_ 
+A|17| A: [deze hebben] [de] gewoon [de] spits [driehoek] bovenop 
+A|18| A: [en dan] [linksonder] [hebben] hij [de] [cirkel] 
+B|19| B: _Oh ja_ 
+B|20| B: [dat zijn] 
+B|21| B: [deze hebben] [een soort] spitsig lang [driehoek] [aan [de] bovenkant] 
+B|22| B: [en] [linksonder] [een] [half] of [een] deel van [een] [cirkel] 
+A|23| A: even kijken Spitsig 
+B|24| B: [ja] nee [ja] 
+B|25| B: [een een] inderdaad [een] lang [driehoek] 
+A|26| A: [Oh ja] 
+B|27| B: langwerpig [driehoek] 
+B|28| B: [en] link [linksonder] [een soort] [cirkel] 
+A|29| A: _die cirkel_ [ja] 
+A|30| A: [dat zijn] 
+A|31| A: eh _dit zijn_ met [de] [de] [piramide] op [de bovenkant] 
+A|32| A: [de] puntig 
+B|33| B: hmm 
+B|34| B: _en dan links_ [die cirkel] 
+A|35| A: [en dan links] onder [de] [cirkel] [ja] 
+B|36| B: [ja] 
+B|37| B: [dit zijn] [die cirkel] [die] [linksonder] gedeeltelijk [zitten] 
+A|38| A: mhm 
+B|39| B: [en] [die] [dat] lang [driehoek] 
+A|40| A: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh deze hebben op de bovenkant zitten gewoon een scherp driehoek
+	Free: Pattern=driehoek, Pattern=de bovenkant, Pattern=een, Pattern=deze hebben, Pattern=zitten
+	Constrained: Pattern=hebben, Pattern=de
+Turn ID=1| A | A : en dan aan de rechterkant wat veel il het midden zitten een soort raar cubusvorm
+	Free: Pattern=en dan aan de, Pattern=een soort, Pattern=zitten
+	Constrained: Pattern=de, Pattern=en dan, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=en
+Turn ID=2| A | A : niet perfect niet een perfect vorm
+	Free: Pattern=een
+	Constrained: 
+Turn ID=3| A | A : dan aan de linkerkant zitten ook een soort spits spits ding
+	Free: Pattern=dan aan de linkerkant, Pattern=een soort, Pattern=zitten
+	Constrained: Pattern=dan, Pattern=de, Pattern=aan de, Pattern=een
+Turn ID=4| A | A : en dan linksonder hebben hij een een een rond die er half half in het object zitten zeggen maar
+	Free: Pattern=en dan, Pattern=hebben, Pattern=een een, Pattern=linksonder, Pattern=maar, Pattern=half, Pattern=die, Pattern=zitten
+	Constrained: Pattern=dan, Pattern=een, Pattern=en
+Turn ID=5| B | B : deze hebben een soort piramide of driehoek aan de bovenkant
+	Free: Pattern=driehoek, Pattern=de bovenkant, Pattern=deze hebben, Pattern=een soort, Pattern=piramide, Pattern=aan de
+	Constrained: Pattern=een, Pattern=de, Pattern=hebben
+Turn ID=6| B | B : Best wel dunnig
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : dan aan de linkerkant steken een soort klein kegel uit
+	Free: Pattern=dan aan de linkerkant, Pattern=een soort
+	Constrained: Pattern=dan, Pattern=de, Pattern=aan de, Pattern=een
+Turn ID=8| B | B : linksonder zien je een half cirkel
+	Free: Pattern=half, Pattern=cirkel, Pattern=linksonder, Pattern=een
+	Constrained: 
+Turn ID=9| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : of ja een deel van een cirkel
+	Free: Pattern=cirkel, Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : iets
+	Free: Pattern=iets
+	Constrained: 
+Turn ID=12| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en dan aan de voorkant nog een soort kubus
+	Free: Pattern=en dan aan de, Pattern=een soort
+	Constrained: Pattern=de, Pattern=en dan, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=en
+Turn ID=14| B | B : maar dan iets bred dan een vierkant
+	Free: Pattern=dan, Pattern=maar, Pattern=een, Pattern=iets
+	Constrained: 
+Turn ID=15| A | A : Nja
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=17| A | A : deze hebben de gewoon de spits driehoek bovenop
+	Free: Pattern=deze hebben, Pattern=driehoek, Pattern=de
+	Constrained: Pattern=hebben
+Turn ID=18| A | A : en dan linksonder hebben hij de cirkel
+	Free: Pattern=cirkel, Pattern=de, Pattern=en dan, Pattern=hebben, Pattern=linksonder
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=19| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=20| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=21| B | B : deze hebben een soort spitsig lang driehoek aan de bovenkant
+	Free: Pattern=driehoek, Pattern=aan de, Pattern=de bovenkant, Pattern=deze hebben, Pattern=een soort
+	Constrained: Pattern=een, Pattern=de, Pattern=hebben
+Turn ID=22| B | B : en linksonder een half of een deel van een cirkel
+	Free: Pattern=cirkel, Pattern=een, Pattern=en, Pattern=linksonder, Pattern=half
+	Constrained: 
+Turn ID=23| A | A : even kijken Spitsig
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : ja nee ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : een een inderdaad een lang driehoek
+	Free: Pattern=een een, Pattern=driehoek, Pattern=een
+	Constrained: Pattern=een
+Turn ID=26| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=27| B | B : langwerpig driehoek
+	Free: Pattern=driehoek
+	Constrained: 
+Turn ID=28| B | B : en link linksonder een soort cirkel
+	Free: Pattern=een soort, Pattern=cirkel, Pattern=linksonder, Pattern=en
+	Constrained: Pattern=een
+Turn ID=29| A | A : die cirkel ja
+	Free: Pattern=die cirkel, Pattern=ja
+	Constrained: Pattern=cirkel, Pattern=die
+Turn ID=30| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=31| A | A : eh dit zijn met de de piramide op de bovenkant
+	Free: Pattern=dit zijn, Pattern=de bovenkant, Pattern=piramide, Pattern=de
+	Constrained: Pattern=de
+Turn ID=32| A | A : de puntig
+	Free: Pattern=de
+	Constrained: 
+Turn ID=33| B | B : hmm
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : en dan links die cirkel
+	Free: Pattern=en dan links, Pattern=die cirkel
+	Constrained: Pattern=cirkel, Pattern=en dan, Pattern=dan, Pattern=die, Pattern=en
+Turn ID=35| A | A : en dan links onder de cirkel ja
+	Free: Pattern=en dan links, Pattern=cirkel, Pattern=ja, Pattern=de
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=en
+Turn ID=36| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| B | B : dit zijn die cirkel die linksonder gedeeltelijk zitten
+	Free: Pattern=die cirkel, Pattern=linksonder, Pattern=dit zijn, Pattern=die, Pattern=zitten
+	Constrained: Pattern=cirkel, Pattern=die
+Turn ID=38| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : en die dat lang driehoek
+	Free: Pattern=dat, Pattern=driehoek, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=40| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat

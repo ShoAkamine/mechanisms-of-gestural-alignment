@@ -1,0 +1,167 @@
+A|0| A: Oké kunnen je _mij_ horen 
+B|1| B: Yes zeker 
+A|2| A: Oké _ik hebben_ _het_ rood vierkan 
+A|3| A: _en _het_ zijn_ _ik_ zien _het_ plaat als _dat_ _hij_ _twee rechthoekig handvat_ _hebben_ _aan_ dezelfde kant 
+A|4| A: _Eh_ _en_ _ik_ vinden _het_ _een_ beetje lijken _op_ _een_ gezicht 
+A|5| A: _dus_ _hij_ _hebben_ _een_ _neus_ 
+A|6| A: _en_ _dan_ _hebben hij_ _aan de rechterkant_ _twee rechthoekig_ _ja_ _handvat_ _zullen ik_ zeggen 
+A|7| A: _en_ _dan_ onderaan _zijn_ nog _een_ klein uitsteeksel 
+B|8| B: [en] [hebben hij] iets [een] hoedje-achtig ding [op] 
+A|9| A: _ja_ 
+B|10| B: [ik hebben] hier cijfer maar [ik] denken [dat] [ik] wel weten welk [het zijn] 
+A|11| A: _ja_ 
+B|12| B: maar [ik] denken [dat] [ik] [een] _letter_ moeten geven 
+B|13| B: maar [ik hebben] nu cijfer [dus] [ik] geven maar gewoon [een] cijfer [dan] 
+A|14| A: eh _volgens_ m 
+B|15| B: [zullen ik] [dat] doen 
+A|16| A: _ja_ want [ik hebben] [letter] 
+B|17| B: Ah oké 
+B|18| B: [dan] denken [ik] [dat] [het zijn] 
+B|19| B: Ehm [ik hebben] [dat] ding _met_ [een] soort _zijn gelijk teken_ [aan de] zijkant 
+B|20| B: _met dat_ hoed bovenop 
+B|21| B: [en] [een] staar linksonder achter 
+B|22| B: [en] [een] soort [neus] 
+A|23| A: Ehf 
+B|24| B: [volgens] [mij] [hebben] jij [het] over [twee rechthoekig handvat] [aan de rechterkant] 
+B|25| B: boven elkaar 
+A|26| A: eh _ja dat_ wat lijken [op] [een] hoofd toch 
+B|27| B: [ja] [ja] 
+A|28| A: _ja dat zijn_ 
+A|29| A: [ik hebben] _die [met_ _dat] [zijn_ gelijk teken] 
+A|30| A: [en] _die_ 
+A|31| A: [ja] wat [dus] lijken [op] [een] hoofd 
+B|32| B: [ja dat zijn] nummer 
+A|33| A: [met] [met] _die_ [neus] 
+B|34| B: [ik hebben] weer _met [het_ [zijn] gelijk teken] 
+B|35| B: [en het] hoed 
+A|36| A: [ja dat zijn] 
+A|37| A: [ik hebben] _die met het_ is-gelijk [teken] 
+B|38| B: [dat zijn] 
+B|39| B: [Eh] [die met [het] [zijn] gelijk] tekenen [en het] hoed 
+A|40| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké kunnen je mij horen
+	Free: Pattern=mij
+	Constrained: 
+Turn ID=1| B | B : Yes zeker
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Oké ik hebben het rood vierkan
+	Free: Pattern=ik hebben, Pattern=het
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=3| A | A : en het zijn ik zien het plaat als dat hij twee rechthoekig handvat hebben aan dezelfde kant
+	Free: Pattern=dat, Pattern=aan, Pattern=en het, Pattern=hebben, Pattern=hij, Pattern=het zijn, Pattern=ik, Pattern=twee rechthoekig handvat, Pattern=het
+	Constrained: Pattern=het, Pattern=handvat, Pattern=en, Pattern=twee rechthoekig, Pattern=zijn
+Turn ID=4| A | A : Eh en ik vinden het een beetje lijken op een gezicht
+	Free: Pattern=op, Pattern=een, Pattern=het, Pattern=Eh, Pattern=ik, Pattern=en
+	Constrained: 
+Turn ID=5| A | A : dus hij hebben een neus
+	Free: Pattern=dus, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=neus
+	Constrained: 
+Turn ID=6| A | A : en dan hebben hij aan de rechterkant twee rechthoekig ja handvat zullen ik zeggen
+	Free: Pattern=hebben hij, Pattern=zullen ik, Pattern=ja, Pattern=dan, Pattern=handvat, Pattern=aan de rechterkant, Pattern=en, Pattern=twee rechthoekig
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=ik
+Turn ID=7| A | A : en dan onderaan zijn nog een klein uitsteeksel
+	Free: Pattern=zijn, Pattern=dan, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=8| B | B : en hebben hij iets een hoedje-achtig ding op
+	Free: Pattern=hebben hij, Pattern=op, Pattern=en, Pattern=een
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ik hebben hier cijfer maar ik denken dat ik wel weten welk het zijn
+	Free: Pattern=het zijn, Pattern=ik hebben, Pattern=ik, Pattern=dat
+	Constrained: Pattern=zijn, Pattern=ik, Pattern=het, Pattern=hebben
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : maar ik denken dat ik een letter moeten geven
+	Free: Pattern=ik, Pattern=letter, Pattern=dat, Pattern=een
+	Constrained: 
+Turn ID=13| B | B : maar ik hebben nu cijfer dus ik geven maar gewoon een cijfer dan
+	Free: Pattern=ik hebben, Pattern=dus, Pattern=dan, Pattern=een, Pattern=ik
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=14| A | A : eh volgens m
+	Free: Pattern=volgens
+	Constrained: 
+Turn ID=15| B | B : zullen ik dat doen
+	Free: Pattern=zullen ik, Pattern=dat
+	Constrained: Pattern=ik
+Turn ID=16| A | A : ja want ik hebben letter
+	Free: Pattern=ik hebben, Pattern=letter, Pattern=ja
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=17| B | B : Ah oké
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : dan denken ik dat het zijn
+	Free: Pattern=het zijn, Pattern=ik, Pattern=dan, Pattern=dat
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=19| B | B : Ehm ik hebben dat ding met een soort zijn gelijk teken aan de zijkant
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=zijn gelijk teken, Pattern=aan de, Pattern=een, Pattern=met
+	Constrained: Pattern=aan, Pattern=hebben, Pattern=zijn gelijk, Pattern=teken, Pattern=ik, Pattern=zijn
+Turn ID=20| B | B : met dat hoed bovenop
+	Free: Pattern=met dat
+	Constrained: Pattern=met, Pattern=dat
+Turn ID=21| B | B : en een staar linksonder achter
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=22| B | B : en een soort neus
+	Free: Pattern=en, Pattern=een, Pattern=neus
+	Constrained: 
+Turn ID=23| A | A : Ehf
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : volgens mij hebben jij het over twee rechthoekig handvat aan de rechterkant
+	Free: Pattern=hebben, Pattern=volgens, Pattern=aan de rechterkant, Pattern=mij, Pattern=twee rechthoekig handvat, Pattern=het
+	Constrained: Pattern=aan, Pattern=twee rechthoekig, Pattern=handvat, Pattern=aan de
+Turn ID=25| B | B : boven elkaar
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : eh ja dat wat lijken op een hoofd toch
+	Free: Pattern=ja dat, Pattern=op, Pattern=een
+	Constrained: Pattern=ja, Pattern=dat
+Turn ID=27| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=29| A | A : ik hebben die met dat zijn gelijk teken
+	Free: Pattern=ik hebben, Pattern=dat zijn, Pattern=zijn gelijk teken, Pattern=die met, Pattern=met dat
+	Constrained: Pattern=dat, Pattern=hebben, Pattern=zijn gelijk, Pattern=met, Pattern=ik, Pattern=zijn, Pattern=teken, Pattern=die
+Turn ID=30| A | A : en die
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=31| A | A : ja wat dus lijken op een hoofd
+	Free: Pattern=dus, Pattern=op, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=32| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=33| A | A : met met die neus
+	Free: Pattern=met, Pattern=die, Pattern=neus
+	Constrained: 
+Turn ID=34| B | B : ik hebben weer met het zijn gelijk teken
+	Free: Pattern=zijn gelijk teken, Pattern=het zijn, Pattern=met het, Pattern=ik hebben
+	Constrained: Pattern=het, Pattern=hebben, Pattern=zijn gelijk, Pattern=met, Pattern=teken, Pattern=ik, Pattern=zijn
+Turn ID=35| B | B : en het hoed
+	Free: Pattern=en het
+	Constrained: Pattern=het, Pattern=en
+Turn ID=36| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=37| A | A : ik hebben die met het is-gelijk teken
+	Free: Pattern=die met het, Pattern=ik hebben, Pattern=teken
+	Constrained: Pattern=het, Pattern=hebben, Pattern=die met, Pattern=met, Pattern=die, Pattern=ik, Pattern=met het
+Turn ID=38| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=39| B | B : Eh die met het zijn gelijk tekenen en het hoed
+	Free: Pattern=en het, Pattern=Eh, Pattern=zijn gelijk, Pattern=het zijn, Pattern=die met het
+	Constrained: Pattern=het, Pattern=die met, Pattern=met, Pattern=die, Pattern=en, Pattern=met het, Pattern=zijn
+Turn ID=40| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn

@@ -1,0 +1,143 @@
+B|0| B: _dan hebben_ _ik_ _het_ verjaardagshoed 
+A|1| A: _zijn_ _dat_ _de_ piramide piramidehoed 
+B|2| B: eh _ja maar dan_ wel kegelvorm dus _ik_ denken wel [dat] _hij_ _rond_ [zijn] 
+A|3| A: [ja] 
+B|4| B: Tenminste zo lijken _het_ 
+B|5| B: en _hij_ _hebben_ _een_ hoekig neus 
+B|6| B: en _een soort_ van 
+A|7| A: mhm 
+A|8| A: alsof er [een soort] kurk uit [zijn] arm komen 
+A|9| A: of nou [ja maar dan] [zijn] [het] niet echt [een] kurk [maar [dan] hebben] [hij] [een] punt 
+B|10| B: [ja] 
+B|11| B: [ja] 
+B|12| B: [een soort] van 
+A|13| A: [ja] 
+B|14| B: Nevermind 
+B|15| B: [ja] _die_ denken _ik_ 
+B|16| B: en [hij] [hebben] [een soort] _rond_ link 
+A|17| A: [ja] precies linksonder [dat] [rond] [ja] precies 
+B|18| B: onderin 
+B|19| B: Yes 
+A|20| A: _dat zijn_ 
+A|21| A: _ik hebben_ feesthoed 
+A|22| A: _met_ [zijn] gek kurk [die] geen kurk [zijn] 
+B|23| B: [met] neus 
+B|24| B: [ja] [dat zijn] 
+B|25| B: [ik hebben] verjaardagshoed 
+A|26| A: [dat zijn] 
+A|27| A: [ik hebben] feesthoed 
+A|28| A: [met] gek kurk 
+B|29| B: Gezellig 
+B|30| B: [dat zijn] 
+B|31| B: Ehm [ik hebben] [de] Verjaardagshoed 
+A|32| A: [die] Toetoe toetoe [dat zijn] 
+A|33| A: [ik hebben] feesthoed 
+B|34| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan hebben ik het verjaardagshoed
+	Free: Pattern=dan hebben, Pattern=ik, Pattern=het
+	Constrained: Pattern=hebben
+Turn ID=1| A | A : zijn dat de piramide piramidehoed
+	Free: Pattern=zijn, Pattern=dat, Pattern=de
+	Constrained: 
+Turn ID=2| B | B : eh ja maar dan wel kegelvorm dus ik denken wel dat hij rond zijn
+	Free: Pattern=dat, Pattern=hij, Pattern=ik, Pattern=rond, Pattern=ja maar dan, Pattern=zijn
+	Constrained: Pattern=maar dan, Pattern=ja
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Tenminste zo lijken het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=5| B | B : en hij hebben een hoekig neus
+	Free: Pattern=hij, Pattern=een, Pattern=hebben
+	Constrained: 
+Turn ID=6| B | B : en een soort van
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=7| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : alsof er een soort kurk uit zijn arm komen
+	Free: Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=9| A | A : of nou ja maar dan zijn het niet echt een kurk maar dan hebben hij een punt
+	Free: Pattern=een, Pattern=het, Pattern=maar dan, Pattern=dan hebben, Pattern=hij, Pattern=ja maar dan, Pattern=zijn
+	Constrained: Pattern=maar dan, Pattern=ja, Pattern=hebben
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : een soort van
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : Nevermind
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : ja die denken ik
+	Free: Pattern=ja, Pattern=ik, Pattern=die
+	Constrained: 
+Turn ID=16| B | B : en hij hebben een soort rond link
+	Free: Pattern=een soort, Pattern=rond, Pattern=hij, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=17| A | A : ja precies linksonder dat rond ja precies
+	Free: Pattern=rond, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=18| B | B : onderin
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| A | A : ik hebben feesthoed
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=22| A | A : met zijn gek kurk die geen kurk zijn
+	Free: Pattern=zijn, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=23| B | B : met neus
+	Free: Pattern=met
+	Constrained: 
+Turn ID=24| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=25| B | B : ik hebben verjaardagshoed
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=26| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=27| A | A : ik hebben feesthoed
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=28| A | A : met gek kurk
+	Free: Pattern=met
+	Constrained: 
+Turn ID=29| B | B : Gezellig
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=31| B | B : Ehm ik hebben de Verjaardagshoed
+	Free: Pattern=ik hebben, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=32| A | A : die Toetoe toetoe dat zijn
+	Free: Pattern=dat zijn, Pattern=die
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=33| A | A : ik hebben feesthoed
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=34| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

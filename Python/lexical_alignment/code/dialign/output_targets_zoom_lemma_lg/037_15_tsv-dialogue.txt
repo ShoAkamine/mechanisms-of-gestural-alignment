@@ -1,0 +1,111 @@
+A|0| A: _oké_ _dit zijn_ _de_ enig _die een_ soort van blad _door_ _zijn_ kop _hebben_ 
+A|1| A: _zo'n_ _plateau_ 
+B|2| B: mhm 
+A|3| A: _en dat_ zitten _gewoon_ _door_ _zijn_ hoofd _heen_ 
+A|4| A: _en_ _hij_ _hebben_ _een_ armpje _aan de_ linkerkant wat _een_ beetje omhoog steken 
+A|5| A: _en twee_ klein _voelsprietjes_ op _het_ hoofd 
+B|6| B: _ja_ _ik_ denken [dat] _ik_ [hebben] [hij] _ook zo'n_ slurf [aan de] voorkant 
+A|7| A: [ja] 
+B|8| B: [oké] uhm [ja] _ik_ denken [dat] _ik_ [het] _weten_ zullen _ik_ [het] [gewoon] doen 
+A|9| A: [ja] gaan er maar voor 
+B|10| B: _ik_ zeggen 
+B|11| B: _dit zijn [die_ een] [die] [gewoon] [een] [plateau] [door] zich [heen] [hebben] rammen 
+B|12| B: [en twee] voelspri [aan de] bovenkant 
+A|13| A: Oké 
+A|14| A: even kijken even kijken waar [die] staan 
+A|15| A: [ja] [dat] [weten] [ik] 
+A|16| A: [dat] [zijn] 
+A|17| A: _dit zijn die met_ op [zijn] hoofd [twee] van [de] klein spoelsprietjes [en] [ook zo'n] plaat iets veel onder 
+A|18| A: [door] [door] [door] [het] hoofd [heen] [en] link [zo'n] armpje [dat] omhoog gaan 
+B|19| B: [ja] 
+B|20| B: [dit zijn die met] [die] _voelsprietjes en_ [die] [ja] balk of tafelblad [door] zich [heen] 
+A|21| A: [ja] 
+A|22| A: [ja] [die] [hebben] [ik] [dat] [zijn] 
+A|23| A: [dit zijn die met] [twee] [voelsprietjes en] [de] [de] plaat [door] [zijn] hoofd [en] [het] armpje links [dat] omhoog gaan 
+B|24| B: [ja] 
+B|25| B: [dit zijn die met] [die] [voelsprietjes [en] dat] tafelblad [door] zich [heen] 
+A|26| A: [ja] [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké dit zijn de enig die een soort van blad door zijn kop hebben
+	Free: Pattern=oké, Pattern=de, Pattern=door, Pattern=hebben, Pattern=die een, Pattern=zijn, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=een, Pattern=die
+Turn ID=1| A | A : zo'n plateau
+	Free: Pattern=zo'n, Pattern=plateau
+	Constrained: 
+Turn ID=2| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en dat zitten gewoon door zijn hoofd heen
+	Free: Pattern=door, Pattern=gewoon, Pattern=heen, Pattern=zijn, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=en
+Turn ID=4| A | A : en hij hebben een armpje aan de linkerkant wat een beetje omhoog steken
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=en
+	Constrained: Pattern=de
+Turn ID=5| A | A : en twee klein voelsprietjes op het hoofd
+	Free: Pattern=en twee, Pattern=het, Pattern=voelsprietjes
+	Constrained: Pattern=twee, Pattern=en
+Turn ID=6| B | B : ja ik denken dat ik hebben hij ook zo'n slurf aan de voorkant
+	Free: Pattern=dat, Pattern=ja, Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=ook zo'n, Pattern=ik
+	Constrained: Pattern=de, Pattern=zo'n
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : oké uhm ja ik denken dat ik het weten zullen ik het gewoon doen
+	Free: Pattern=oké, Pattern=dat, Pattern=ja, Pattern=het, Pattern=ik, Pattern=weten, Pattern=gewoon
+	Constrained: 
+Turn ID=9| A | A : ja gaan er maar voor
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ik zeggen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=11| B | B : dit zijn die een die gewoon een plateau door zich heen hebben rammen
+	Free: Pattern=dit zijn die, Pattern=door, Pattern=een, Pattern=gewoon, Pattern=hebben, Pattern=plateau, Pattern=heen, Pattern=die, Pattern=die een
+	Constrained: Pattern=dit zijn, Pattern=een, Pattern=zijn, Pattern=die
+Turn ID=12| B | B : en twee voelspri aan de bovenkant
+	Free: Pattern=aan de, Pattern=en twee
+	Constrained: Pattern=twee, Pattern=de, Pattern=en
+Turn ID=13| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : even kijken even kijken waar die staan
+	Free: Pattern=die
+	Constrained: 
+Turn ID=15| A | A : ja dat weten ik
+	Free: Pattern=ik, Pattern=weten, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=17| A | A : dit zijn die met op zijn hoofd twee van de klein spoelsprietjes en ook zo'n plaat iets veel onder
+	Free: Pattern=twee, Pattern=de, Pattern=dit zijn die met, Pattern=ook zo'n, Pattern=en, Pattern=zijn
+	Constrained: Pattern=dit zijn die, Pattern=zo'n, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=18| A | A : door door door het hoofd heen en link zo'n armpje dat omhoog gaan
+	Free: Pattern=dat, Pattern=zo'n, Pattern=door, Pattern=het, Pattern=heen, Pattern=en
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : dit zijn die met die voelsprietjes en die ja balk of tafelblad door zich heen
+	Free: Pattern=voelsprietjes en, Pattern=ja, Pattern=door, Pattern=die, Pattern=dit zijn die met, Pattern=heen
+	Constrained: Pattern=dit zijn die, Pattern=die, Pattern=en, Pattern=voelsprietjes, Pattern=zijn, Pattern=dit zijn
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : ja die hebben ik dat zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=23| A | A : dit zijn die met twee voelsprietjes en de de plaat door zijn hoofd en het armpje links dat omhoog gaan
+	Free: Pattern=dat, Pattern=voelsprietjes en, Pattern=twee, Pattern=de, Pattern=door, Pattern=het, Pattern=dit zijn die met, Pattern=en, Pattern=zijn
+	Constrained: Pattern=dit zijn die, Pattern=die, Pattern=en, Pattern=voelsprietjes, Pattern=zijn, Pattern=dit zijn
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : dit zijn die met die voelsprietjes en dat tafelblad door zich heen
+	Free: Pattern=voelsprietjes en, Pattern=door, Pattern=die, Pattern=en dat, Pattern=dit zijn die met, Pattern=heen
+	Constrained: Pattern=dat, Pattern=dit zijn die, Pattern=die, Pattern=en, Pattern=voelsprietjes, Pattern=zijn, Pattern=dit zijn
+Turn ID=26| A | A : ja dat zijn
+	Free: Pattern=zijn, Pattern=dat, Pattern=ja
+	Constrained: 

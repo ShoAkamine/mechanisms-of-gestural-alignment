@@ -1,0 +1,175 @@
+A|0| A: _Oké_ 
+B|1| B: Hi 
+B|2| B: hoi 
+A|3| A: Haha oké 
+A|4| A: we gaan _een_ spel spelen samen volgens mij 
+B|5| B: nou leuk 
+B|6| B: [Oké] 
+B|7| B: Uhm _ik_ zien _ik_ inzien nu [een] figuur _met een_ rood _vierkant_ 
+B|8| B: dus zullen _ik_ _gewoon_ beginnen _met_ _omschrijven_ van mijn plaat 
+A|9| A: Uh _ja_ _dat_ _zijn_ _dat_ _zijn_ prima denken [ik] 
+A|10| A: _ja_ [gewoon] de uitsteksel misschien [een] beetje _en_ waar _het_ _op_ _lijken_ 
+A|11| A: Begin maar 
+B|12| B: [Oké] 
+B|13| B: Uhm [ik] zullen _zeggen_ [dat] _hij een_ soort van _feesthoed_ [op] _hebben_ 
+A|14| A: _ja ik_ denken [dat] [ik] hem al bijna weten 
+A|15| A: Hebben [hij een] dik _neus_ 
+B|16| B: [Oké] 
+B|17| B: [ja] als _je_ [het] als [neus] _kunnen_ beschouwen [een] soort van [het] [zijn] niet rond [het] [zijn] hoekig 
+A|18| A: [ja] [vierkant] [met een] afvlakken Zeg maar punt [zijn] _er_ afgechappen 
+B|19| B: [ja] inderdaad 
+B|20| B: _en dan_ link _hebben_ [hij] zo'n 
+B|21| B: [ja] [het] [zijn] [een] verrekijker 
+A|22| A: Flapper oor zo 
+A|23| A: [ja] 
+B|24| B: [Oké] [ja] 
+A|25| A: [ik] denken [dat] [ik] hem weten 
+B|26| B: [Oké] 
+A|27| A: maar [ja] [je] [kunnen] hem nog ver [omschrijven] maar volgens mij [hebben] [ik] hem 
+B|28| B: nou [ja ik] [ik] geloven [je] 
+B|29| B: want [er] [zijn] niet echt iets [dat] hierop [lijken] 
+A|30| A: [Oké] 
+A|31| A: nee [dan] [zeggen] [ik] [en dan] gaan we door 
+A|32| A: oh _dit zijn_ de [een] _met het feesthoed_ 
+A|33| A: [en] de gek [neus] _die_ [vierkant] [zijn] maar afgechapt 
+B|34| B: [ja] 
+B|35| B: Uhm _dit zijn die [met_ het feesthoed] 
+A|36| A: uhm even kijken waar staan [die] ook alweer 
+A|37| A: [ja] [dat] [zijn] 
+A|38| A: [dit zijn die met] de [feesthoed] 
+B|39| B: [dit zijn die [met] het feesthoed] 
+A|40| A: [ja] 
+A|41| A: even kijken waar staan [die] [dat] [zijn] 
+A|42| A: Uh [dit zijn] de [het feesthoed] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : Hi
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : hoi
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : Haha oké
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : we gaan een spel spelen samen volgens mij
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| B | B : nou leuk
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : Uhm ik zien ik inzien nu een figuur met een rood vierkant
+	Free: Pattern=met een, Pattern=vierkant, Pattern=ik, Pattern=een
+	Constrained: Pattern=met, Pattern=een
+Turn ID=8| B | B : dus zullen ik gewoon beginnen met omschrijven van mijn plaat
+	Free: Pattern=met, Pattern=omschrijven, Pattern=gewoon, Pattern=ik
+	Constrained: 
+Turn ID=9| A | A : Uh ja dat zijn dat zijn prima denken ik
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : ja gewoon de uitsteksel misschien een beetje en waar het op lijken
+	Free: Pattern=ja, Pattern=op, Pattern=lijken, Pattern=een, Pattern=gewoon, Pattern=het, Pattern=en
+	Constrained: 
+Turn ID=11| A | A : Begin maar
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : Uhm ik zullen zeggen dat hij een soort van feesthoed op hebben
+	Free: Pattern=dat, Pattern=op, Pattern=hebben, Pattern=zeggen, Pattern=ik, Pattern=feesthoed, Pattern=hij een
+	Constrained: Pattern=hij, Pattern=een
+Turn ID=14| A | A : ja ik denken dat ik hem al bijna weten
+	Free: Pattern=ja ik, Pattern=dat, Pattern=ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=15| A | A : Hebben hij een dik neus
+	Free: Pattern=hij een, Pattern=neus
+	Constrained: Pattern=hij, Pattern=een
+Turn ID=16| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=17| B | B : ja als je het als neus kunnen beschouwen een soort van het zijn niet rond het zijn hoekig
+	Free: Pattern=kunnen, Pattern=ja, Pattern=een, Pattern=het, Pattern=neus, Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=18| A | A : ja vierkant met een afvlakken Zeg maar punt zijn er afgechappen
+	Free: Pattern=ja, Pattern=met een, Pattern=er, Pattern=zijn, Pattern=vierkant
+	Constrained: Pattern=met, Pattern=een
+Turn ID=19| B | B : ja inderdaad
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : en dan link hebben hij zo'n
+	Free: Pattern=en dan, Pattern=hij, Pattern=hebben
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=21| B | B : ja het zijn een verrekijker
+	Free: Pattern=het, Pattern=zijn, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=22| A | A : Flapper oor zo
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : ik denken dat ik hem weten
+	Free: Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=26| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=27| A | A : maar ja je kunnen hem nog ver omschrijven maar volgens mij hebben ik hem
+	Free: Pattern=kunnen, Pattern=ja, Pattern=hebben, Pattern=omschrijven, Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=28| B | B : nou ja ik ik geloven je
+	Free: Pattern=ja ik, Pattern=je, Pattern=ik
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=29| B | B : want er zijn niet echt iets dat hierop lijken
+	Free: Pattern=er, Pattern=dat, Pattern=zijn, Pattern=lijken
+	Constrained: 
+Turn ID=30| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=31| A | A : nee dan zeggen ik en dan gaan we door
+	Free: Pattern=en dan, Pattern=dan, Pattern=zeggen, Pattern=ik
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=32| A | A : oh dit zijn de een met het feesthoed
+	Free: Pattern=met het feesthoed, Pattern=dit zijn, Pattern=een
+	Constrained: Pattern=het, Pattern=het feesthoed, Pattern=met, Pattern=feesthoed, Pattern=zijn
+Turn ID=33| A | A : en de gek neus die vierkant zijn maar afgechapt
+	Free: Pattern=neus, Pattern=die, Pattern=en, Pattern=zijn, Pattern=vierkant
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : Uhm dit zijn die met het feesthoed
+	Free: Pattern=dit zijn die met, Pattern=met het feesthoed
+	Constrained: Pattern=het, Pattern=het feesthoed, Pattern=met, Pattern=die, Pattern=feesthoed, Pattern=zijn, Pattern=dit zijn
+Turn ID=36| A | A : uhm even kijken waar staan die ook alweer
+	Free: Pattern=die
+	Constrained: 
+Turn ID=37| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : dit zijn die met de feesthoed
+	Free: Pattern=dit zijn die met, Pattern=feesthoed
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=met, Pattern=die
+Turn ID=39| B | B : dit zijn die met het feesthoed
+	Free: Pattern=dit zijn die met, Pattern=met het feesthoed
+	Constrained: Pattern=het, Pattern=het feesthoed, Pattern=met, Pattern=die, Pattern=feesthoed, Pattern=zijn, Pattern=dit zijn
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : even kijken waar staan die dat zijn
+	Free: Pattern=die, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=42| A | A : Uh dit zijn de het feesthoed
+	Free: Pattern=het feesthoed, Pattern=dit zijn
+	Constrained: Pattern=het, Pattern=zijn, Pattern=feesthoed

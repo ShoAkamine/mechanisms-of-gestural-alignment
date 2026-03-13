@@ -1,0 +1,131 @@
+A|0| A: oké kunnen we elkaar _horen_ 
+B|1| B: _Yes_ ik [horen] jou _in_ ieder geval 
+A|2| A: _Oké_ het het _plaat_ _hebben_ _een soort_ kegel op _de_ bovenkant maar _dan_ zeggen maar afvlakken 
+A|3| A: _en_ _aan de rechterkant_ _zitten_ _twee_ _balk_ _die_ uitsteken 
+A|4| A: _die_ lopen parallel _aan_ elkaar naar rechts 
+B|5| B: mhm 
+A|6| A: _en_ _aan de_ linkerkant lopen er ook _een_ _ja_ wat _zijn_ het _een_ rond _balk_ naar _de_ linkerkant 
+B|7| B: [ja] [en] linksonder [zitten] nog [een soort] _van_ poog of zo 
+A|8| A: [Yes] _ja dat zijn_ hem 
+B|9| B: [Oké] 
+B|10| B: eh [plaat] 
+B|11| B: eh dit [zijn] [die] met _twee dezelfde_ uitstekel [aan de rechterkant] 
+B|12| B: [en] [dan] [een] ander nog links 
+B|13| B: [en] [een] klein voet linksonder 
+A|14| A: [ja] 
+B|15| B: [ja] 
+A|16| A: _dat zijn_ 
+A|17| A: _ehm_ _deze hebben_ [aan de rechterkant] [twee dezelfde] _arm_ 
+A|18| A: [twee] [van] [die] _balk_ 
+A|19| A: [en] [aan de] linkerkant _hebben_ hij _zo'n_ krom uitsteeksel 
+A|20| A: [en] één _arm_ [in] het midden 
+B|21| B: [ja dat zijn] 
+B|22| B: [ehm] met _die twee_ diezelfde [balk] balkjes [aan de rechterkant] 
+B|23| B: als [arm] 
+B|24| B: [en] link [die] [dat] klein kromminkje linksonder 
+A|25| A: [ja dat zijn] 
+A|26| A: [en] _deze hebben_ [die twee] balkvormig [arm] [aan de rechterkant] 
+B|27| B: [ja dat zijn] 
+B|28| B: eh [deze hebben] [twee dezelfde] [balk] als [de] rechterarm 
+B|29| B: [en] [dan] links [zo'n] ander [arm] 
+A|30| A: [de] 
+A|31| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké kunnen we elkaar horen
+	Free: Pattern=horen
+	Constrained: 
+Turn ID=1| B | B : Yes ik horen jou in ieder geval
+	Free: Pattern=horen, Pattern=in, Pattern=Yes
+	Constrained: 
+Turn ID=2| A | A : Oké het het plaat hebben een soort kegel op de bovenkant maar dan zeggen maar afvlakken
+	Free: Pattern=de, Pattern=dan, Pattern=hebben, Pattern=een soort, Pattern=Oké, Pattern=plaat
+	Constrained: Pattern=een
+Turn ID=3| A | A : en aan de rechterkant zitten twee balk die uitsteken
+	Free: Pattern=twee, Pattern=balk, Pattern=en, Pattern=aan de rechterkant, Pattern=die, Pattern=zitten
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| A | A : die lopen parallel aan elkaar naar rechts
+	Free: Pattern=die, Pattern=aan
+	Constrained: 
+Turn ID=5| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : en aan de linkerkant lopen er ook een ja wat zijn het een rond balk naar de linkerkant
+	Free: Pattern=aan de, Pattern=een, Pattern=balk, Pattern=en, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=7| B | B : ja en linksonder zitten nog een soort van poog of zo
+	Free: Pattern=ja, Pattern=zitten, Pattern=een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=een
+Turn ID=8| A | A : Yes ja dat zijn hem
+	Free: Pattern=ja dat zijn, Pattern=Yes
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=9| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| B | B : eh plaat
+	Free: Pattern=plaat
+	Constrained: 
+Turn ID=11| B | B : eh dit zijn die met twee dezelfde uitstekel aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=twee dezelfde, Pattern=zijn, Pattern=die
+	Constrained: Pattern=twee, Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=12| B | B : en dan een ander nog links
+	Free: Pattern=dan, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=13| B | B : en een klein voet linksonder
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : ehm deze hebben aan de rechterkant twee dezelfde arm
+	Free: Pattern=deze hebben, Pattern=ehm, Pattern=aan de rechterkant, Pattern=twee dezelfde, Pattern=arm
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=de, Pattern=aan
+Turn ID=18| A | A : twee van die balk
+	Free: Pattern=die, Pattern=van, Pattern=twee, Pattern=balk
+	Constrained: 
+Turn ID=19| A | A : en aan de linkerkant hebben hij zo'n krom uitsteeksel
+	Free: Pattern=aan de, Pattern=zo'n, Pattern=hebben, Pattern=en
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=20| A | A : en één arm in het midden
+	Free: Pattern=in, Pattern=en, Pattern=arm
+	Constrained: 
+Turn ID=21| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=22| B | B : ehm met die twee diezelfde balk balkjes aan de rechterkant
+	Free: Pattern=aan de rechterkant, Pattern=die twee, Pattern=ehm, Pattern=balk
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=23| B | B : als arm
+	Free: Pattern=arm
+	Constrained: 
+Turn ID=24| B | B : en link die dat klein kromminkje linksonder
+	Free: Pattern=dat, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=25| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=26| A | A : en deze hebben die twee balkvormig arm aan de rechterkant
+	Free: Pattern=die twee, Pattern=deze hebben, Pattern=aan de rechterkant, Pattern=arm, Pattern=en
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=27| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=28| B | B : eh deze hebben twee dezelfde balk als de rechterarm
+	Free: Pattern=deze hebben, Pattern=twee dezelfde, Pattern=de, Pattern=balk
+	Constrained: Pattern=twee, Pattern=hebben
+Turn ID=29| B | B : en dan links zo'n ander arm
+	Free: Pattern=zo'n, Pattern=dan, Pattern=en, Pattern=arm
+	Constrained: 
+Turn ID=30| A | A : de
+	Free: Pattern=de
+	Constrained: 
+Turn ID=31| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

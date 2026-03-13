@@ -1,0 +1,315 @@
+B|0| B: Ehm 
+B|1| B: _ja_ nu _hebben_ _ik_ _weer_ _het_ vierkant 
+B|2| B: deze _hebben_ onder _een soort_ boog 
+A|3| A: [ja] 
+B|4| B: _aan de_ _aan de onderkant_ _van_ _het kop_ 
+B|5| B: hij _hebben_ _een soort_ Pinocchio-neus 
+B|6| B: _soort_ balk _die_ eruit komen 
+A|7| A: [ja] 
+B|8| B: Ehm _en_ bovenop zitten _twee_ [ja] vierkant _twee_ ruit 
+B|9| B: _met_ daardoor heen _ook_ _weer_ _een_ balk 
+B|10| B: dus _een soort_ [ja] _satelliet_ _lijken_ _het_ wel 
+A|11| A: [ja] 
+B|12| B: _Eh_ _en aan de zijkant_ _hebben_ hij nog _een soort_ 
+B|13| B: [ja] _een_ arm om _het_ zo _maar_ te _zeggen_ 
+B|14| B: _aan de_ _aan de rechterkant_ als wij _het_ _zeggen_ _maar_ _zien_ 
+A|15| A: [ja] [ik] [ik] [hebben] [het] _denken_ [ik] 
+B|16| B: [ja] _en_ _die_ _die_ arm _aan de rechterkant_ [hebben] dezelfde vorm als _die_ _aan de onderkant_ 
+A|17| A: [ja] 
+A|18| A: [ja] klop [het] 
+B|19| B: alleen 
+B|20| B: [ja] oké top 
+A|21| A: [ja] 
+B|22| B: 4 [hebben] [ik] dus 
+A|23| A: [ja] bij mij _zijn_ letter 
+B|24| B: _Top_ 
+A|25| A: [Top] 
+A|26| A: Moeten [ik] nou doorklikken of _jij_ 
+B|27| B: _eh_ [ik] [denken] [jij] 
+A|28| A: Oké 
+A|29| A: _ehm_ [ik] [zien] hier [ja] 
+A|30| A: [een] [ja] op [het kop] [zien] _je_ _dan_ [een] hoofd 
+A|31| A: [maar] _dan_ [van] [een] [ja] driehoek 
+A|32| A: [en aan de zijkant] [zien] _je_ [weer] [van] [die] flat gebouw 
+A|33| A: [en aan de] voorkant steken 
+A|34| A: [ja] hoe [hebben] _je_ [hebben] _je_ [die] hoe _zijn_ dat [ook] alweer 
+A|35| A: even [denken] 
+A|36| A: zo'n neus [die] uitsteken 
+A|37| A: [en [aan de] rechterkant] [zien] _je_ [weer] zo'n 
+A|38| A: [ja] één niet echt één [maar] [een] rechthoekig 
+A|39| A: [ja] hand laten [maar] [zeggen] 
+A|40| A: _en aan de onderkant_ [ook] 
+A|41| A: [het] _zijn_ [een soort] [van] [een] [het] [lijken] op [een] dier 
+B|42| B: [ja] _met_ _ja die_ [die] [die] [die] buis [aan de rechterkant] [en aan de onderkant] [die] [zijn] dezelfde vorm 
+A|43| A: [ja] [ja] [ja] 
+A|44| A: [ja] precies 
+A|45| A: [ja] [ja die] 
+B|46| B: [ja] 
+B|47| B: [ja] _met_ [de] _satelliet_ 
+B|48| B: noemen 
+A|49| A: Oh [ja] [ja] [ja] dat [zijn] [het] [ja] 
+B|50| B: [ja] nee _met die_ _met die_ _flatgebouw_ [ja] 
+A|51| A: [satelliet] [ja] 
+A|52| A: [ja] precies 
+A|53| A: [ja] B 
+B|54| B: _Eh_ 
+B|55| B: [ehm] [ja] dit [zijn] [weer] _met die_ [satelliet] 
+B|56| B: Ehm [en] [dan] rechts [een soort] buigen balkje [die] [je] [ook] onder [hebben] 
+A|57| A: [satelliet] waar [zijn] [die] 
+A|58| A: even kijken 
+A|59| A: [Eh] [die] 
+B|60| B: _met die_ _twee_ [ja] 
+B|61| B: _flatgebouw die_ 
+A|62| A: _twee flatgebouw_ 
+A|63| A: [ja] [ja] 
+B|64| B: [ja _die] naar elkaar toe gaan_ 
+A|65| A: [ja] 
+B|66| B: [ja] 15 
+A|67| A: [Eh] nou [je] [hebben] [met die] satellieat [weer] 
+A|68| A: [met die] flat gebouw [die naar elkaar toe gaan] 
+B|69| B: [ja] 
+A|70| A: M 
+B|71| B: [ehm] _twee flatgebouw die naar elkaar toe gaan_ 
+B|72| B: [satelliet] 
+A|73| A: [eh] even kijken waar [zijn] [die] 
+A|74| A: zoeken zoeken zoeken zoeken zoeken 
+A|75| A: [ja] 
+A|76| A: [eh] [satelliet] [met] [twee flatgebouw die naar elkaar toe gaan] 
+A|77| A: F 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ja nu hebben ik weer het vierkant
+	Free: Pattern=ja, Pattern=het, Pattern=hebben, Pattern=ik, Pattern=weer
+	Constrained: 
+Turn ID=2| B | B : deze hebben onder een soort boog
+	Free: Pattern=een soort, Pattern=hebben
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : aan de aan de onderkant van het kop
+	Free: Pattern=aan de onderkant, Pattern=het kop, Pattern=aan de, Pattern=van
+	Constrained: Pattern=de, Pattern=het, Pattern=aan de
+Turn ID=5| B | B : hij hebben een soort Pinocchio-neus
+	Free: Pattern=een soort, Pattern=hebben
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=6| B | B : soort balk die eruit komen
+	Free: Pattern=soort, Pattern=die
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Ehm en bovenop zitten twee ja vierkant twee ruit
+	Free: Pattern=en, Pattern=twee, Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : met daardoor heen ook weer een balk
+	Free: Pattern=weer, Pattern=een, Pattern=met, Pattern=ook
+	Constrained: 
+Turn ID=10| B | B : dus een soort ja satelliet lijken het wel
+	Free: Pattern=ja, Pattern=lijken, Pattern=het, Pattern=een soort, Pattern=satelliet
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Eh en aan de zijkant hebben hij nog een soort
+	Free: Pattern=en aan de zijkant, Pattern=een soort, Pattern=Eh, Pattern=hebben
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=en aan de
+Turn ID=13| B | B : ja een arm om het zo maar te zeggen
+	Free: Pattern=ja, Pattern=een, Pattern=het, Pattern=zeggen, Pattern=maar
+	Constrained: 
+Turn ID=14| B | B : aan de aan de rechterkant als wij het zeggen maar zien
+	Free: Pattern=aan de, Pattern=het, Pattern=zeggen, Pattern=maar, Pattern=aan de rechterkant, Pattern=zien
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=15| A | A : ja ik ik hebben het denken ik
+	Free: Pattern=denken, Pattern=ja, Pattern=het, Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=16| B | B : ja en die die arm aan de rechterkant hebben dezelfde vorm als die aan de onderkant
+	Free: Pattern=ja, Pattern=hebben, Pattern=aan de onderkant, Pattern=en, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=de, Pattern=aan de
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja klop het
+	Free: Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : alleen
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ja oké top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : 4 hebben ik dus
+	Free: Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=23| A | A : ja bij mij zijn letter
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Top
+	Free: Pattern=Top
+	Constrained: 
+Turn ID=25| A | A : Top
+	Free: Pattern=Top
+	Constrained: 
+Turn ID=26| A | A : Moeten ik nou doorklikken of jij
+	Free: Pattern=jij, Pattern=ik
+	Constrained: 
+Turn ID=27| B | B : eh ik denken jij
+	Free: Pattern=jij, Pattern=eh, Pattern=ik, Pattern=denken
+	Constrained: 
+Turn ID=28| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : ehm ik zien hier ja
+	Free: Pattern=zien, Pattern=ehm, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : een ja op het kop zien je dan een hoofd
+	Free: Pattern=ja, Pattern=dan, Pattern=het kop, Pattern=een, Pattern=zien, Pattern=je
+	Constrained: Pattern=het
+Turn ID=31| A | A : maar dan van een ja driehoek
+	Free: Pattern=ja, Pattern=dan, Pattern=een, Pattern=van, Pattern=maar
+	Constrained: 
+Turn ID=32| A | A : en aan de zijkant zien je weer van die flat gebouw
+	Free: Pattern=van, Pattern=die, Pattern=zien, Pattern=weer, Pattern=en aan de zijkant, Pattern=je
+	Constrained: Pattern=en aan de, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=33| A | A : en aan de voorkant steken
+	Free: Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=de, Pattern=en
+Turn ID=34| A | A : ja hoe hebben je hebben je die hoe zijn dat ook alweer
+	Free: Pattern=ja, Pattern=ook, Pattern=hebben, Pattern=die, Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=35| A | A : even denken
+	Free: Pattern=denken
+	Constrained: 
+Turn ID=36| A | A : zo'n neus die uitsteken
+	Free: Pattern=die
+	Constrained: 
+Turn ID=37| A | A : en aan de rechterkant zien je weer zo'n
+	Free: Pattern=en aan de, Pattern=aan de rechterkant, Pattern=zien, Pattern=weer, Pattern=je
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=38| A | A : ja één niet echt één maar een rechthoekig
+	Free: Pattern=maar, Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : ja hand laten maar zeggen
+	Free: Pattern=maar, Pattern=zeggen, Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : en aan de onderkant ook
+	Free: Pattern=en aan de onderkant, Pattern=ook
+	Constrained: Pattern=de, Pattern=aan de, Pattern=aan de onderkant, Pattern=en, Pattern=en aan de
+Turn ID=41| A | A : het zijn een soort van een het lijken op een dier
+	Free: Pattern=lijken, Pattern=een, Pattern=het, Pattern=een soort, Pattern=van, Pattern=zijn
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=42| B | B : ja met ja die die die die buis aan de rechterkant en aan de onderkant die zijn dezelfde vorm
+	Free: Pattern=ja die, Pattern=ja, Pattern=met, Pattern=zijn, Pattern=en aan de onderkant, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=aan de, Pattern=aan de onderkant, Pattern=die, Pattern=en, Pattern=en aan de, Pattern=de, Pattern=ja
+Turn ID=43| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : ja ja die
+	Free: Pattern=ja die, Pattern=ja
+	Constrained: Pattern=ja, Pattern=die
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : ja met de satelliet
+	Free: Pattern=de, Pattern=met, Pattern=ja, Pattern=satelliet
+	Constrained: 
+Turn ID=48| B | B : noemen
+	Free: 
+	Constrained: 
+Turn ID=49| A | A : Oh ja ja ja dat zijn het ja
+	Free: Pattern=het, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=50| B | B : ja nee met die met die flatgebouw ja
+	Free: Pattern=met die, Pattern=flatgebouw, Pattern=ja
+	Constrained: Pattern=met, Pattern=die
+Turn ID=51| A | A : satelliet ja
+	Free: Pattern=ja, Pattern=satelliet
+	Constrained: 
+Turn ID=52| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : ja B
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=54| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=55| B | B : ehm ja dit zijn weer met die satelliet
+	Free: Pattern=met die, Pattern=ja, Pattern=ehm, Pattern=satelliet, Pattern=zijn, Pattern=weer
+	Constrained: Pattern=met, Pattern=die
+Turn ID=56| B | B : Ehm en dan rechts een soort buigen balkje die je ook onder hebben
+	Free: Pattern=ook, Pattern=dan, Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=en, Pattern=je
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=57| A | A : satelliet waar zijn die
+	Free: Pattern=zijn, Pattern=satelliet, Pattern=die
+	Constrained: 
+Turn ID=58| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=59| A | A : Eh die
+	Free: Pattern=Eh, Pattern=die
+	Constrained: 
+Turn ID=60| B | B : met die twee ja
+	Free: Pattern=met die, Pattern=twee, Pattern=ja
+	Constrained: Pattern=met, Pattern=die
+Turn ID=61| B | B : flatgebouw die
+	Free: Pattern=flatgebouw die
+	Constrained: Pattern=flatgebouw, Pattern=die
+Turn ID=62| A | A : twee flatgebouw
+	Free: Pattern=twee flatgebouw
+	Constrained: Pattern=twee, Pattern=flatgebouw
+Turn ID=63| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=64| B | B : ja die naar elkaar toe gaan
+	Free: Pattern=die naar elkaar toe gaan, Pattern=ja die
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=65| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=66| B | B : ja 15
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=67| A | A : Eh nou je hebben met die satellieat weer
+	Free: Pattern=met die, Pattern=Eh, Pattern=hebben, Pattern=weer, Pattern=je
+	Constrained: Pattern=met, Pattern=die
+Turn ID=68| A | A : met die flat gebouw die naar elkaar toe gaan
+	Free: Pattern=die naar elkaar toe gaan, Pattern=met die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=69| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=70| A | A : M
+	Free: 
+	Constrained: 
+Turn ID=71| B | B : ehm twee flatgebouw die naar elkaar toe gaan
+	Free: Pattern=twee flatgebouw die naar elkaar toe gaan, Pattern=ehm
+	Constrained: Pattern=twee, Pattern=flatgebouw, Pattern=flatgebouw die, Pattern=die naar elkaar toe gaan, Pattern=die, Pattern=twee flatgebouw
+Turn ID=72| B | B : satelliet
+	Free: Pattern=satelliet
+	Constrained: 
+Turn ID=73| A | A : eh even kijken waar zijn die
+	Free: Pattern=zijn, Pattern=eh, Pattern=die
+	Constrained: 
+Turn ID=74| A | A : zoeken zoeken zoeken zoeken zoeken
+	Free: 
+	Constrained: 
+Turn ID=75| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=76| A | A : eh satelliet met twee flatgebouw die naar elkaar toe gaan
+	Free: Pattern=twee flatgebouw die naar elkaar toe gaan, Pattern=met, Pattern=eh, Pattern=satelliet
+	Constrained: Pattern=twee, Pattern=flatgebouw, Pattern=flatgebouw die, Pattern=die naar elkaar toe gaan, Pattern=die, Pattern=twee flatgebouw
+Turn ID=77| A | A : F
+	Free: 
+	Constrained: 

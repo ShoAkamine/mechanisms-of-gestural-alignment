@@ -1,0 +1,91 @@
+B|0| B: _Ehm_ 
+B|1| B: nu hebben ik wel _die_ een _met die_ kegel _met die piramide bovenop_ _zijn_ kop _die_ nu wel puntig _zijn_ 
+A|2| A: _ja dat zijn_ 
+B|3| B: en dan ver [ja dat zijn] de enig _die_ _er_ [zijn] 
+B|4| B: trouwens 
+A|5| A: [ja] 
+A|6| A: [dat zijn] 
+A|7| A: [Ehm] 
+A|8| A: [met die piramide bovenop] 
+B|9| B: Oh [ja] 
+B|10| B: [dat zijn] 
+A|11| A: Top 
+B|12| B: _ehh_ 
+B|13| B: deze dit [zijn] [die piramide] aan de bovenkant 
+B|14| B: helemaal [die] punt 
+A|15| A: [ja dat zijn] 
+A|16| A: [ehh] 
+A|17| A: Pyramide erbovenop 
+B|18| B: [ja] Ehh waar [zijn] je 
+B|19| B: dan de [piramide bovenop] 
+A|20| A: [Ehm] 
+A|21| A: [met die piramide] [er] [bovenop] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=1| B | B : nu hebben ik wel die een met die kegel met die piramide bovenop zijn kop die nu wel puntig zijn
+	Free: Pattern=met die piramide bovenop, Pattern=met die, Pattern=die, Pattern=zijn
+	Constrained: Pattern=met die piramide, Pattern=piramide bovenop, Pattern=die, Pattern=die piramide, Pattern=met die, Pattern=bovenop
+Turn ID=2| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=3| B | B : en dan ver ja dat zijn de enig die er zijn
+	Free: Pattern=ja dat zijn, Pattern=die, Pattern=zijn, Pattern=er
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=4| B | B : trouwens
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=7| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=8| A | A : met die piramide bovenop
+	Free: Pattern=met die piramide bovenop
+	Constrained: Pattern=met die piramide, Pattern=piramide bovenop, Pattern=die, Pattern=die piramide, Pattern=met die, Pattern=bovenop
+Turn ID=9| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=11| A | A : Top
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=13| B | B : deze dit zijn die piramide aan de bovenkant
+	Free: Pattern=die piramide, Pattern=zijn
+	Constrained: Pattern=die
+Turn ID=14| B | B : helemaal die punt
+	Free: Pattern=die
+	Constrained: 
+Turn ID=15| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=ja, Pattern=zijn
+Turn ID=16| A | A : ehh
+	Free: Pattern=ehh
+	Constrained: 
+Turn ID=17| A | A : Pyramide erbovenop
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ja Ehh waar zijn je
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : dan de piramide bovenop
+	Free: Pattern=piramide bovenop
+	Constrained: Pattern=bovenop
+Turn ID=20| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=21| A | A : met die piramide er bovenop
+	Free: Pattern=met die piramide, Pattern=bovenop, Pattern=er
+	Constrained: Pattern=die piramide, Pattern=met die, Pattern=die

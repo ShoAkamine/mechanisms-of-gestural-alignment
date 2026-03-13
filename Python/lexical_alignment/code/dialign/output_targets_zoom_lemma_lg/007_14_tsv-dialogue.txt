@@ -1,0 +1,131 @@
+A|0| A: _dit zijn_ _een lang balk_ aan _de_ voorkant 
+A|1| A: rechts voor _de_ afbeelding 
+A|2| A: geen enkel _van_ _de_ _plaat_ hebben zo'n _lang balk_ 
+A|3| A: _en_ _die_ _balk_ _zijn_ _verticaal_ positioneren 
+B|4| B: _ja_ 
+A|5| A: aan _de_ zijkant uitzitten er twee buis 
+A|6| A: _en_ _bovenop_ zitten _een_ cirkel 
+B|7| B: _ja dat zijn_ _bij mij_ _nummer_ 
+B|8| B: _ja ik_ vinden deze zelf op [een] _fietsstuur_ lijken 
+B|9| B: _met_ [een] kinderzitje 
+B|10| B: _dat _zijn_ die_ jij omschrijven als [een lang balk] 
+B|11| B: [van] [die] [verticaal] liggen [zijn] 
+B|12| B: _met_ [een] bolle [bovenop] [de] kom 
+A|13| A: Oh 
+A|14| A: [ja ik] hebben hem 
+A|15| A: [dat zijn] [nummer] [bij mij] 
+B|16| B: Top 
+A|17| A: _dit [zijn_ _die] lang_ buis aan [de] voorkant 
+A|18| A: _met die_ twee armp 
+A|19| A: _en_ [dat] rond hoofd [bovenop] 
+B|20| B: Yes [nummer] 
+B|21| B: _dit zijn het_ [plaat] [die] [ik] dan weer beschrijven als _fietsstuur_ 
+B|22| B: [met [die] [lang] balk] vooraan [van] boven naar beneden 
+A|23| A: Oh [ja] _en_ [die] twee armp aan [de] zijkant 
+B|24| B: [ja] 
+A|25| A: [ja dat zijn] [nummer] 
+A|26| A: [dit zijn _het] fietsstuur_ 
+A|27| A: [met] _de balk_ 
+B|28| B: Yes [nummer] 
+B|29| B: [het fietsstuur] 
+B|30| B: [met] [het] kinderzitje [en] [de balk] 
+A|31| A: [die] staan [bij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit zijn een lang balk aan de voorkant
+	Free: Pattern=een lang balk, Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=balk, Pattern=een, Pattern=zijn, Pattern=lang balk
+Turn ID=1| A | A : rechts voor de afbeelding
+	Free: Pattern=de
+	Constrained: 
+Turn ID=2| A | A : geen enkel van de plaat hebben zo'n lang balk
+	Free: Pattern=lang balk, Pattern=van, Pattern=de, Pattern=plaat
+	Constrained: Pattern=balk
+Turn ID=3| A | A : en die balk zijn verticaal positioneren
+	Free: Pattern=verticaal, Pattern=balk, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : aan de zijkant uitzitten er twee buis
+	Free: Pattern=de
+	Constrained: 
+Turn ID=6| A | A : en bovenop zitten een cirkel
+	Free: Pattern=een, Pattern=en, Pattern=bovenop
+	Constrained: 
+Turn ID=7| B | B : ja dat zijn bij mij nummer
+	Free: Pattern=ja dat zijn, Pattern=bij mij, Pattern=nummer
+	Constrained: Pattern=ja, Pattern=bij, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=8| B | B : ja ik vinden deze zelf op een fietsstuur lijken
+	Free: Pattern=ja ik, Pattern=een, Pattern=fietsstuur
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=9| B | B : met een kinderzitje
+	Free: Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=10| B | B : dat zijn die jij omschrijven als een lang balk
+	Free: Pattern=een lang balk, Pattern=zijn die, Pattern=dat zijn
+	Constrained: Pattern=lang balk, Pattern=dat, Pattern=een, Pattern=balk, Pattern=die, Pattern=zijn
+Turn ID=11| B | B : van die verticaal liggen zijn
+	Free: Pattern=zijn, Pattern=van, Pattern=verticaal, Pattern=die
+	Constrained: 
+Turn ID=12| B | B : met een bolle bovenop de kom
+	Free: Pattern=een, Pattern=met, Pattern=de, Pattern=bovenop
+	Constrained: 
+Turn ID=13| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : ja ik hebben hem
+	Free: Pattern=ja ik
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=15| A | A : dat zijn nummer bij mij
+	Free: Pattern=bij mij, Pattern=dat zijn, Pattern=nummer
+	Constrained: Pattern=bij, Pattern=zijn, Pattern=dat
+Turn ID=16| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : dit zijn die lang buis aan de voorkant
+	Free: Pattern=zijn die, Pattern=dit zijn, Pattern=die lang, Pattern=de
+	Constrained: Pattern=zijn, Pattern=die
+Turn ID=18| A | A : met die twee armp
+	Free: Pattern=met die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=19| A | A : en dat rond hoofd bovenop
+	Free: Pattern=en, Pattern=dat, Pattern=bovenop
+	Constrained: 
+Turn ID=20| B | B : Yes nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=21| B | B : dit zijn het plaat die ik dan weer beschrijven als fietsstuur
+	Free: Pattern=fietsstuur, Pattern=die, Pattern=ik, Pattern=dit zijn het, Pattern=plaat
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=het
+Turn ID=22| B | B : met die lang balk vooraan van boven naar beneden
+	Free: Pattern=lang balk, Pattern=met die, Pattern=die lang, Pattern=van
+	Constrained: Pattern=met, Pattern=balk, Pattern=die
+Turn ID=23| A | A : Oh ja en die twee armp aan de zijkant
+	Free: Pattern=ja, Pattern=de, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ja dat zijn nummer
+	Free: Pattern=ja dat zijn, Pattern=nummer
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=26| A | A : dit zijn het fietsstuur
+	Free: Pattern=dit zijn het, Pattern=het fietsstuur
+	Constrained: Pattern=dit zijn, Pattern=fietsstuur, Pattern=het, Pattern=zijn
+Turn ID=27| A | A : met de balk
+	Free: Pattern=de balk, Pattern=met
+	Constrained: Pattern=de, Pattern=balk
+Turn ID=28| B | B : Yes nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=29| B | B : het fietsstuur
+	Free: Pattern=het fietsstuur
+	Constrained: Pattern=fietsstuur, Pattern=het
+Turn ID=30| B | B : met het kinderzitje en de balk
+	Free: Pattern=de balk, Pattern=met, Pattern=het, Pattern=en
+	Constrained: Pattern=de, Pattern=balk
+Turn ID=31| A | A : die staan bij
+	Free: Pattern=bij, Pattern=die
+	Constrained: 

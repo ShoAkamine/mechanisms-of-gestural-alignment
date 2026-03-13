@@ -1,0 +1,179 @@
+B|0| B: _ja_ 
+A|1| A: _bij mij_ _zijn_ er _zo'n_ bolle 
+A|2| A: _en_ _die_ zitten _dan_ niet erop maar aan _de_ zijkant rechts 
+A|3| A: _en_ _het_ lijken een beetje op een _kop_ zeggen maar _met zo'n_ lepel _erin_ 
+B|4| B: _Oh_ 
+B|5| B: [met] _twee lepelt_ 
+A|6| A: [ja] 
+A|7| A: wel verschillend lepel 
+B|8| B: _Oh ja_ 
+B|9| B: [ja] [ja] [ja] 
+B|10| B: [ja] _ik_ zien hem 
+B|11| B: _dat zijn bij mij_ 
+A|12| A: _Oké_ 
+B|13| B: _ik hebben nu met_ [die] _twee lepelt_ [die] we helemaal in [het] begin _hebben_ 
+B|14| B: [en] [dan] [met] _dat_ _bollet_ _voorop_ 
+A|15| A: mhm 
+A|16| A: [Oh ja] _neus voorop_ 
+B|17| B: [ja] 
+A|18| A: [dat zijn bij mij] 
+B|19| B: [Oké] 
+A|20| A: [ik hebben nu _met] _de_ neus_ aan _de_ voorkant 
+A|21| A: [en] _de twee lepelt_ 
+B|22| B: [Oh ja] 
+B|23| B: [en] nog één dinget naar links ook 
+A|24| A: [ja] 
+B|25| B: [ja] [dat zijn] 
+A|26| A: Hm-hm 
+B|27| B: [Oh] [ik hebben nu [met] zo'n] [neus voorop] 
+B|28| B: [en] [twee lepelt] [erin] 
+A|29| A: [Oh ja] 
+A|30| A: [ja] _het kop_ zeggen maar 
+A|31| A: [dat zijn bij mij] 
+B|32| B: [ja] 
+A|33| A: [Oké] 
+A|34| A: oh _kop_ [met] [het] neusje aan _de_ voorkant [het] [bollet] voor 
+B|35| B: [Oh ja] 
+A|36| A: [Oké] 
+A|37| A: [Oké] 
+B|38| B: [en] [ik hebben nu] [de [neus] voorop] 
+B|39| B: [met [de] twee lepelt] 
+A|40| A: [Oké] _het kop_ 
+B|41| B: [ja] 
+B|42| B: [het kop] 
+A|43| A: [bij mij] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : bij mij zijn er zo'n bolle
+	Free: Pattern=bij mij, Pattern=zijn, Pattern=zo'n
+	Constrained: 
+Turn ID=2| A | A : en die zitten dan niet erop maar aan de zijkant rechts
+	Free: Pattern=die, Pattern=en, Pattern=de, Pattern=dan
+	Constrained: 
+Turn ID=3| A | A : en het lijken een beetje op een kop zeggen maar met zo'n lepel erin
+	Free: Pattern=het, Pattern=kop, Pattern=en, Pattern=erin, Pattern=met zo'n
+	Constrained: Pattern=zo'n, Pattern=met
+Turn ID=4| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : met twee lepelt
+	Free: Pattern=twee lepelt, Pattern=met
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : wel verschillend lepel
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=9| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja ik zien hem
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=11| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=zijn, Pattern=dat zijn
+Turn ID=12| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : ik hebben nu met die twee lepelt die we helemaal in het begin hebben
+	Free: Pattern=het, Pattern=die, Pattern=twee lepelt, Pattern=hebben, Pattern=ik hebben nu met
+	Constrained: Pattern=met, Pattern=ik hebben nu, Pattern=ik, Pattern=hebben
+Turn ID=14| B | B : en dan met dat bollet voorop
+	Free: Pattern=dat, Pattern=bollet, Pattern=voorop, Pattern=dan, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=15| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Oh ja neus voorop
+	Free: Pattern=Oh ja, Pattern=neus voorop
+	Constrained: Pattern=ja, Pattern=voorop, Pattern=Oh
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=zijn, Pattern=dat zijn
+Turn ID=19| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=20| A | A : ik hebben nu met de neus aan de voorkant
+	Free: Pattern=ik hebben nu met, Pattern=de neus, Pattern=met de, Pattern=de
+	Constrained: Pattern=de, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=ik hebben nu
+Turn ID=21| A | A : en de twee lepelt
+	Free: Pattern=de twee lepelt, Pattern=en
+	Constrained: Pattern=twee lepelt, Pattern=de
+Turn ID=22| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=23| B | B : en nog één dinget naar links ook
+	Free: Pattern=en
+	Constrained: 
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=26| A | A : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : Oh ik hebben nu met zo'n neus voorop
+	Free: Pattern=ik hebben nu met, Pattern=met zo'n, Pattern=neus voorop, Pattern=Oh
+	Constrained: Pattern=zo'n, Pattern=voorop, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=ik hebben nu
+Turn ID=28| B | B : en twee lepelt erin
+	Free: Pattern=twee lepelt, Pattern=erin, Pattern=en
+	Constrained: 
+Turn ID=29| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=30| A | A : ja het kop zeggen maar
+	Free: Pattern=het kop, Pattern=ja
+	Constrained: Pattern=kop, Pattern=het
+Turn ID=31| A | A : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=zijn, Pattern=dat zijn
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=34| A | A : oh kop met het neusje aan de voorkant het bollet voor
+	Free: Pattern=bollet, Pattern=de, Pattern=het, Pattern=kop, Pattern=met
+	Constrained: 
+Turn ID=35| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=36| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=37| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=38| B | B : en ik hebben nu de neus voorop
+	Free: Pattern=ik hebben nu, Pattern=de neus, Pattern=neus voorop, Pattern=en
+	Constrained: Pattern=de, Pattern=voorop, Pattern=ik, Pattern=hebben
+Turn ID=39| B | B : met de twee lepelt
+	Free: Pattern=de twee lepelt, Pattern=met de
+	Constrained: Pattern=twee lepelt, Pattern=de, Pattern=met
+Turn ID=40| A | A : Oké het kop
+	Free: Pattern=het kop, Pattern=Oké
+	Constrained: Pattern=kop, Pattern=het
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| B | B : het kop
+	Free: Pattern=het kop
+	Constrained: Pattern=kop, Pattern=het
+Turn ID=43| A | A : bij mij
+	Free: Pattern=bij mij
+	Constrained: 

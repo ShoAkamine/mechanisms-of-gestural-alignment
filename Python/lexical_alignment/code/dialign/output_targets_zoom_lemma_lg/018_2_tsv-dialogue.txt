@@ -1,0 +1,243 @@
+B|0| B: _Oh ik hebben nu_ _die_ _met_ _die_ _tipi tent_ op _zijn_ hoofd 
+B|1| B: _die_ _driehoek_ 
+A|2| A: _Oh ja_ 
+A|3| A: _er zijn_ _een_ [tipi] _er zijn_ zeggen _maar_ één _heel_ puntig [driehoek] 
+A|4| A: _en er zijn_ _er_ één [met] _een_ _veel_ afgeflakt [driehoek] 
+A|5| A: Hebben [die] _zo'n_ rond 
+A|6| A: _dat_ _er_ _zo_ insteken 
+A|7| A: _of_ [hebben] [die] weer [die] _uitsteeksel_ van net 
+B|8| B: huh 
+B|9| B: hij [hebben] gewoon [een] [heel] groot [driehoek] op [zijn] hoofd 
+B|10| B: [en er zijn] _ook_ _aan_ _de_ onderkant [een] soort 
+B|11| B: _ik_ weten niet [een] soort balk [of] [zo] 
+A|12| A: [Oh] 
+B|13| B: [en] _aan_ _de_ zijkant nog [zo'n] dinget [een] klein [uitsteeksel] 
+B|14| B: [en] nog [een] soort groot blok wat erop zitten 
+B|15| B: [maar] hij [hebben] vooral gewoon bovenaan _echt_ gewoon [zo'n] [driehoek] [zo] 
+B|16| B: op [zijn] hoofd 
+A|17| A: _Oké_ _oké_ 
+A|18| A: [zijn] _dat_ driehoekje _veel naar links_ [of] _veel naar_ rechts 
+B|19| B: iets [veel naar links] [maar] _echt_ [heel] klein stuk 
+A|20| A: [echt] [zo] 
+A|21| A: [Oh] _oké_ [echt] [zo'n] [heel] scherp punt 
+B|22| B: _ja _ja_ ja_ 
+B|23| B: [echt] gewoon [zo] 
+A|24| A: [Oh] 
+B|25| B: op [zijn] hoofd 
+A|26| A: _Oké_ dan [zijn] het wel degeen [die] [ik] al [aan] het begin denken 
+A|27| A: dan [zijn] het _bij mij_ 
+B|28| B: ah [ja] 
+A|29| A: _Oké_ [ja] 
+A|30| A: [ja] want [er zijn] [er] [ook] één [met] [veel] [een] afgeflakt [maar] [die] [hebben] [ik] al net 
+B|31| B: [ja] 
+B|32| B: [ja] precies 
+A|33| A: _Oké_ _oké_ 
+B|34| B: [ja] 
+A|35| A: [ja _ja] oké_ 
+A|36| A: dan [zijn] het _bij mij_ 
+A|37| A: [Oh ik hebben nu] [tipi tent] 
+B|38| B: [Oh ja] 
+B|39| B: gewoon [die] spits 
+A|40| A: [ja] 
+B|41| B: [ja oké] 
+A|42| A: [en] dan _dat_ rond _dat_ [er] [zo] insteeken van link 
+B|43| B: [ja] 
+B|44| B: _dat zijn bij mij_ 
+A|45| A: _Oké_ 
+B|46| B: [ik hebben nu] _de_ [heel] tipitent 
+A|47| A: _Oké_ 
+B|48| B: op [zijn] hoofd 
+A|49| A: dus [de] [echt] punt-punt [tipi tent] 
+B|50| B: [ja] 
+A|51| A: _Oké [dat zijn_ bij mij] 
+A|52| A: [Oh ik hebben nu] [tipi tent] 
+B|53| B: [Oh ja] 
+B|54| B: [dat zijn] 
+B|55| B: [ik hebben] [de] [tipi tent] 
+A|56| A: _Oké dat zijn_ 
+A|57| A: [ik hebben] [tipi tent] [de] [echt] [de] scherp 
+B|58| B: [Oké dat zijn] 
+A|59| A: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ik hebben nu die met die tipi tent op zijn hoofd
+	Free: Pattern=Oh ik hebben nu, Pattern=tipi tent, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=ik, Pattern=Oh, Pattern=tipi, Pattern=ik hebben nu
+Turn ID=1| B | B : die driehoek
+	Free: Pattern=die, Pattern=driehoek
+	Constrained: 
+Turn ID=2| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=3| A | A : er zijn een tipi er zijn zeggen maar één heel puntig driehoek
+	Free: Pattern=heel, Pattern=een, Pattern=maar, Pattern=tipi, Pattern=er zijn, Pattern=driehoek
+	Constrained: Pattern=zijn, Pattern=er
+Turn ID=4| A | A : en er zijn er één met een veel afgeflakt driehoek
+	Free: Pattern=driehoek, Pattern=veel, Pattern=een, Pattern=en er zijn, Pattern=met, Pattern=er
+	Constrained: Pattern=er zijn, Pattern=zijn, Pattern=en, Pattern=er
+Turn ID=5| A | A : Hebben die zo'n rond
+	Free: Pattern=die, Pattern=zo'n
+	Constrained: 
+Turn ID=6| A | A : dat er zo insteken
+	Free: Pattern=dat, Pattern=zo, Pattern=er
+	Constrained: 
+Turn ID=7| A | A : of hebben die weer die uitsteeksel van net
+	Free: Pattern=hebben, Pattern=uitsteeksel, Pattern=die, Pattern=of
+	Constrained: 
+Turn ID=8| B | B : huh
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : hij hebben gewoon een heel groot driehoek op zijn hoofd
+	Free: Pattern=driehoek, Pattern=heel, Pattern=een, Pattern=hebben, Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : en er zijn ook aan de onderkant een soort
+	Free: Pattern=ook, Pattern=een, Pattern=en er zijn, Pattern=de, Pattern=aan
+	Constrained: Pattern=er zijn, Pattern=zijn, Pattern=en, Pattern=er
+Turn ID=11| B | B : ik weten niet een soort balk of zo
+	Free: Pattern=ik, Pattern=zo, Pattern=een, Pattern=of
+	Constrained: 
+Turn ID=12| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=13| B | B : en aan de zijkant nog zo'n dinget een klein uitsteeksel
+	Free: Pattern=zo'n, Pattern=uitsteeksel, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=14| B | B : en nog een soort groot blok wat erop zitten
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=15| B | B : maar hij hebben vooral gewoon bovenaan echt gewoon zo'n driehoek zo
+	Free: Pattern=driehoek, Pattern=zo'n, Pattern=hebben, Pattern=zo, Pattern=echt, Pattern=maar
+	Constrained: 
+Turn ID=16| B | B : op zijn hoofd
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : Oké oké
+	Free: Pattern=oké, Pattern=Oké
+	Constrained: 
+Turn ID=18| A | A : zijn dat driehoekje veel naar links of veel naar rechts
+	Free: Pattern=dat, Pattern=of, Pattern=veel naar links, Pattern=veel naar, Pattern=zijn
+	Constrained: Pattern=veel naar, Pattern=veel
+Turn ID=19| B | B : iets veel naar links maar echt heel klein stuk
+	Free: Pattern=veel naar links, Pattern=echt, Pattern=maar, Pattern=heel
+	Constrained: Pattern=veel naar, Pattern=veel
+Turn ID=20| A | A : echt zo
+	Free: Pattern=echt, Pattern=zo
+	Constrained: 
+Turn ID=21| A | A : Oh oké echt zo'n heel scherp punt
+	Free: Pattern=oké, Pattern=heel, Pattern=zo'n, Pattern=echt, Pattern=Oh
+	Constrained: 
+Turn ID=22| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=23| B | B : echt gewoon zo
+	Free: Pattern=echt, Pattern=zo
+	Constrained: 
+Turn ID=24| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=25| B | B : op zijn hoofd
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=26| A | A : Oké dan zijn het wel degeen die ik al aan het begin denken
+	Free: Pattern=aan, Pattern=die, Pattern=ik, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=27| A | A : dan zijn het bij mij
+	Free: Pattern=bij mij, Pattern=zijn
+	Constrained: 
+Turn ID=28| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : Oké ja
+	Free: Pattern=Oké, Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja want er zijn er ook één met veel een afgeflakt maar die hebben ik al net
+	Free: Pattern=er zijn, Pattern=ja, Pattern=ook, Pattern=veel, Pattern=een, Pattern=hebben, Pattern=met, Pattern=die, Pattern=er, Pattern=ik, Pattern=maar
+	Constrained: Pattern=zijn, Pattern=er
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : Oké oké
+	Free: Pattern=oké, Pattern=Oké
+	Constrained: 
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : ja ja oké
+	Free: Pattern=ja oké, Pattern=ja ja
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=36| A | A : dan zijn het bij mij
+	Free: Pattern=bij mij, Pattern=zijn
+	Constrained: 
+Turn ID=37| A | A : Oh ik hebben nu tipi tent
+	Free: Pattern=Oh ik hebben nu, Pattern=tipi tent
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=ik, Pattern=Oh, Pattern=tipi, Pattern=ik hebben nu
+Turn ID=38| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=39| B | B : gewoon die spits
+	Free: Pattern=die
+	Constrained: 
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=42| A | A : en dan dat rond dat er zo insteeken van link
+	Free: Pattern=dat, Pattern=en, Pattern=zo, Pattern=er
+	Constrained: 
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=dat, Pattern=bij mij, Pattern=zijn, Pattern=dat zijn
+Turn ID=45| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=46| B | B : ik hebben nu de heel tipitent
+	Free: Pattern=ik hebben nu, Pattern=de, Pattern=heel
+	Constrained: Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=47| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=48| B | B : op zijn hoofd
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=49| A | A : dus de echt punt-punt tipi tent
+	Free: Pattern=tipi tent, Pattern=echt, Pattern=de
+	Constrained: Pattern=tipi
+Turn ID=50| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=51| A | A : Oké dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=Oké dat zijn
+	Constrained: Pattern=zijn, Pattern=bij mij, Pattern=Oké, Pattern=dat, Pattern=dat zijn
+Turn ID=52| A | A : Oh ik hebben nu tipi tent
+	Free: Pattern=Oh ik hebben nu, Pattern=tipi tent
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=ik, Pattern=Oh, Pattern=tipi, Pattern=ik hebben nu
+Turn ID=53| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=54| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=55| B | B : ik hebben de tipi tent
+	Free: Pattern=ik hebben, Pattern=tipi tent, Pattern=de
+	Constrained: Pattern=hebben, Pattern=tipi, Pattern=ik
+Turn ID=56| A | A : Oké dat zijn
+	Free: Pattern=Oké dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=Oké
+Turn ID=57| A | A : ik hebben tipi tent de echt de scherp
+	Free: Pattern=ik hebben, Pattern=tipi tent, Pattern=echt, Pattern=de
+	Constrained: Pattern=hebben, Pattern=tipi, Pattern=ik
+Turn ID=58| B | B : Oké dat zijn
+	Free: Pattern=Oké dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=Oké
+Turn ID=59| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 

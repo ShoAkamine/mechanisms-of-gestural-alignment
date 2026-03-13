@@ -1,0 +1,367 @@
+A|0| A: _Oké_ 
+A|1| A: ehm _ja_ 
+A|2| A: _ik vinden het echt_ _op_ _een_ gezicht lijken _van_ _een_ _man met_ _een_ _groot neus_ 
+A|3| A: _hij_ _hebben_ 
+A|4| A: ehm _het_ _zijn_ rechts _dan_ lijken _het_ _op_ _een_ _neus_ 
+A|5| A: _Eh_ _dan_ staan _het_ midden _op zijn_ gezicht rechts 
+B|6| B: [ja] 
+B|7| B: _zo_ [een] ronde _of_ _een balk_ 
+A|8| A: _ik_ ween 
+A|9| A: [ja] _ik kunnen_ _het_ niet [zo] goed uitleggen 
+B|10| B: oh [zijn] [het] 
+A|11| A: [ja] [het] [zijn] niet _heel_ [het] [zijn] [een] _heel_ onduidelijk vorm _vinden_ _ik_ 
+A|12| A: Ehm 
+B|13| B: [zijn] [het] net zoals _die_ robot oog [van] net 
+A|14| A: _nee_ [ja] 
+B|15| B: _Oh_ 
+A|16| A: _nee_ _ik_ _denken_ [het] niet 
+A|17| A: _Oké_ wachten 
+A|18| A: _hij_ _hebben_ [een] _rechthoekig_ _balk op zijn hoofd_ 
+B|19| B: [rechthoekig] 
+B|20| B: Wacht [ik kunnen] jou _wel_ zien he 
+B|21| B: _dus_ _jij_ [kunnen] eventueel uitbeelden als je _dat_ willen 
+A|22| A: [ja] mogen [dat] 
+B|23| B: [ja] volgens mij _wel_ 
+A|24| A: _Oh ja_ 
+B|25| B: [Oh] _hebben hij_ [zo] _een balk_ _plat op zijn hoofd_ 
+A|26| A: [ja] [plat op zijn hoofd] 
+A|27| A: _en dan_ nog [een] armpje [zo] 
+B|28| B: _zo'n_ klein driehoekig 
+A|29| A: [ja] [zo'n] 
+A|30| A: [dus] [hij] kijken beetje [zo] _en dan_ [hebben hij] hier [een balk] 
+B|31| B: [Oh ja] 
+A|32| A: _en_ hier [hebben hij] nog [een] arm _en_ [een] _heel groot neus_ 
+B|33| B: [ja] 
+B|34| B: [Oké] _ik hebben_ _hem_ [dan] [denken] [ik] 
+A|35| A: [Oké] 
+B|36| B: [Eh] 
+B|37| B: [Eh] 
+B|38| B: oh dit [zijn] weer _die_ vent [met] _die_ gek [neus] [met] _die_ [plat] [balk] [van] jou 
+A|39| A: _Oh _met_ de_ piercing zeggen maar 
+A|40| A: _die _met_ de_ 
+B|41| B: [nee] [met] [die met] [die] [balk] [plat op zijn hoofd] 
+A|42| A: [Oh] 
+B|43| B: [en] [die] [heel _groot neus] [en_ dan] [dat] gek driehoek aan [de] zijkant 
+A|44| A: [Oké] 
+A|45| A: [Eh] 
+A|46| A: Moeten _even_ opnieuw zoeken want [de] volgorde [zijn] anders 
+B|47| B: _ja ja_ snapen [ik] 
+A|48| A: eh _oké_ wachten 
+A|49| A: _de man met de neus_ hè 
+B|50| B: [ja] [en dan] [met] [die] [plat] [balk op zijn hoofd] 
+A|51| A: [Oh ja] 
+A|52| A: [ik hebben] _nu_ [het] gezicht _met de_ [groot neus] 
+A|53| A: _de man met de_ [groot neus en] [een [balk] op zijn hoofd] 
+B|54| B: [Oh ja] 
+B|55| B: _dat zijn_ 
+B|56| B: [ik hebben] weer [de man met de [neus] en] [de] [plat] [balk op zijn hoofd] 
+A|57| A: [Oké] 
+A|58| A: [ik hebben] [de man met] [groot neus] 
+B|59| B: hM 
+A|60| A: [de] [balk] 
+B|61| B: [met] [die] [balk] 
+A|62| A: [ja] 
+B|63| B: [Oh met] [die] [die] _die knuffelt_ 
+A|64| A: [nee] [nee] [nee] niet [die knuffelt] maar gewoon alleen [het] gezicht 
+B|65| B: [Oh] [die] 
+B|66| B: [Oh] [de] [de] [plat] [balk] 
+A|67| A: [met de] arm 
+B|68| B: [Oh ja] 
+B|69| B: [ja] 
+B|70| B: _dat zijn_ 
+B|71| B: [ik vinden het echt] [heel] _grappig_ 
+A|72| A: [ja] [het] [zijn] [wel] [grappig] [dat] _we_ [met] [een] één woord [dat] [kunnen] beschrijven 
+B|73| B: [ja] _dat zijn_ best bizar 
+A|74| A: [en] sommig woord [of] sommig afbeelding [wel] [met] veel woord 
+A|75| A: want daar [hebben] _we_ nog niet [echt] _een naam voor_ [of] [zo] 
+B|76| B: [nee] 
+B|77| B: [we] moeten [we] moeten er ook [even] [een naam voor] krijgen 
+A|78| A: [ja] [zijn] [zijn] goed 
+A|79| A: [dat zijn] [wel] [grappig] 
+A|80| A: _oké_ welk [hebben] [jij] 
+B|81| B: [oké] deze [zijn] [groot neus] 
+A|82| A: [groot neus] 
+A|83| A: [Oh [ja] ja] 
+A|84| A: [even] kijken 
+A|85| A: [dat] 
+B|86| B: [met] [die] [balk] weten je [wel] 
+B|87| B: [dat zijn] [voor] [het] [nu] [groot neus] [dan] 
+A|88| A: [ja] 
+A|89| A: [dat zijn] 
+A|90| A: [ik] noemen [hem] Harror Harold 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ehm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : ik vinden het echt op een gezicht lijken van een man met een groot neus
+	Free: Pattern=op, Pattern=een, Pattern=groot neus, Pattern=ik vinden het echt, Pattern=van, Pattern=man met
+	Constrained: Pattern=vinden, Pattern=het, Pattern=neus, Pattern=met, Pattern=echt, Pattern=ik
+Turn ID=3| A | A : hij hebben
+	Free: Pattern=hebben, Pattern=hij
+	Constrained: 
+Turn ID=4| A | A : ehm het zijn rechts dan lijken het op een neus
+	Free: Pattern=op, Pattern=dan, Pattern=een, Pattern=het, Pattern=neus, Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : Eh dan staan het midden op zijn gezicht rechts
+	Free: Pattern=op zijn, Pattern=het, Pattern=dan, Pattern=Eh
+	Constrained: Pattern=op, Pattern=zijn
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : zo een ronde of een balk
+	Free: Pattern=een balk, Pattern=zo, Pattern=of, Pattern=een
+	Constrained: Pattern=balk, Pattern=een
+Turn ID=8| A | A : ik ween
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=9| A | A : ja ik kunnen het niet zo goed uitleggen
+	Free: Pattern=ik kunnen, Pattern=zo, Pattern=het, Pattern=ja
+	Constrained: Pattern=ik, Pattern=kunnen
+Turn ID=10| B | B : oh zijn het
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=11| A | A : ja het zijn niet heel het zijn een heel onduidelijk vorm vinden ik
+	Free: Pattern=heel, Pattern=een, Pattern=het, Pattern=ik, Pattern=zijn, Pattern=vinden, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : zijn het net zoals die robot oog van net
+	Free: Pattern=van, Pattern=het, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=14| A | A : nee ja
+	Free: Pattern=nee, Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=16| A | A : nee ik denken het niet
+	Free: Pattern=ik, Pattern=het, Pattern=denken, Pattern=nee
+	Constrained: 
+Turn ID=17| A | A : Oké wachten
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=18| A | A : hij hebben een rechthoekig balk op zijn hoofd
+	Free: Pattern=rechthoekig, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=balk op zijn hoofd
+	Constrained: Pattern=balk, Pattern=op zijn, Pattern=zijn, Pattern=op
+Turn ID=19| B | B : rechthoekig
+	Free: Pattern=rechthoekig
+	Constrained: 
+Turn ID=20| B | B : Wacht ik kunnen jou wel zien he
+	Free: Pattern=ik kunnen, Pattern=wel
+	Constrained: Pattern=ik, Pattern=kunnen
+Turn ID=21| B | B : dus jij kunnen eventueel uitbeelden als je dat willen
+	Free: Pattern=dat, Pattern=jij, Pattern=kunnen, Pattern=dus
+	Constrained: 
+Turn ID=22| A | A : ja mogen dat
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja volgens mij wel
+	Free: Pattern=wel, Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=25| B | B : Oh hebben hij zo een balk plat op zijn hoofd
+	Free: Pattern=hebben hij, Pattern=plat op zijn hoofd, Pattern=zo, Pattern=Oh, Pattern=een balk
+	Constrained: Pattern=op, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=balk, Pattern=op zijn, Pattern=plat, Pattern=zijn
+Turn ID=26| A | A : ja plat op zijn hoofd
+	Free: Pattern=plat op zijn hoofd, Pattern=ja
+	Constrained: Pattern=op zijn, Pattern=zijn, Pattern=op, Pattern=plat
+Turn ID=27| A | A : en dan nog een armpje zo
+	Free: Pattern=en dan, Pattern=zo, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=28| B | B : zo'n klein driehoekig
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=29| A | A : ja zo'n
+	Free: Pattern=zo'n, Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : dus hij kijken beetje zo en dan hebben hij hier een balk
+	Free: Pattern=hebben hij, Pattern=dus, Pattern=en dan, Pattern=een balk, Pattern=hij, Pattern=zo
+	Constrained: Pattern=dan, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=balk, Pattern=en
+Turn ID=31| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=32| A | A : en hier hebben hij nog een arm en een heel groot neus
+	Free: Pattern=heel groot neus, Pattern=hebben hij, Pattern=een, Pattern=en
+	Constrained: Pattern=heel, Pattern=hij, Pattern=neus, Pattern=hebben, Pattern=groot neus
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : Oké ik hebben hem dan denken ik
+	Free: Pattern=ik hebben, Pattern=denken, Pattern=dan, Pattern=ik, Pattern=hem, Pattern=Oké
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=35| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=36| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=37| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=38| B | B : oh dit zijn weer die vent met die gek neus met die plat balk van jou
+	Free: Pattern=met, Pattern=die, Pattern=van, Pattern=plat, Pattern=zijn, Pattern=neus, Pattern=balk
+	Constrained: 
+Turn ID=39| A | A : Oh met de piercing zeggen maar
+	Free: Pattern=Oh met, Pattern=met de
+	Constrained: Pattern=met, Pattern=Oh, Pattern=de
+Turn ID=40| A | A : die met de
+	Free: Pattern=met de, Pattern=die met
+	Constrained: Pattern=met, Pattern=de, Pattern=die
+Turn ID=41| B | B : nee met die met die balk plat op zijn hoofd
+	Free: Pattern=nee, Pattern=plat op zijn hoofd, Pattern=die met, Pattern=balk, Pattern=met, Pattern=die
+	Constrained: Pattern=op, Pattern=met, Pattern=die, Pattern=op zijn, Pattern=plat, Pattern=zijn
+Turn ID=42| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=43| B | B : en die heel groot neus en dan dat gek driehoek aan de zijkant
+	Free: Pattern=dat, Pattern=de, Pattern=en dan, Pattern=heel groot neus, Pattern=die, Pattern=en, Pattern=groot neus en
+	Constrained: Pattern=heel, Pattern=dan, Pattern=groot neus, Pattern=neus, Pattern=neus en, Pattern=en
+Turn ID=44| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=45| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=46| A | A : Moeten even opnieuw zoeken want de volgorde zijn anders
+	Free: Pattern=zijn, Pattern=de, Pattern=even
+	Constrained: 
+Turn ID=47| B | B : ja ja snapen ik
+	Free: Pattern=ja ja, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=48| A | A : eh oké wachten
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=49| A | A : de man met de neus hè
+	Free: Pattern=de man met de neus
+	Constrained: Pattern=de man met, Pattern=de man met de, Pattern=neus, Pattern=met, Pattern=man met, Pattern=de, Pattern=met de
+Turn ID=50| B | B : ja en dan met die plat balk op zijn hoofd
+	Free: Pattern=ja, Pattern=en dan, Pattern=balk op zijn hoofd, Pattern=met, Pattern=die, Pattern=plat
+	Constrained: Pattern=op, Pattern=dan, Pattern=balk, Pattern=zijn, Pattern=en, Pattern=op zijn
+Turn ID=51| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=52| A | A : ik hebben nu het gezicht met de groot neus
+	Free: Pattern=ik hebben, Pattern=met de, Pattern=nu, Pattern=het, Pattern=groot neus
+	Constrained: Pattern=de, Pattern=hebben, Pattern=neus, Pattern=met, Pattern=ik
+Turn ID=53| A | A : de man met de groot neus en een balk op zijn hoofd
+	Free: Pattern=balk op zijn hoofd, Pattern=de man met de, Pattern=groot neus en, Pattern=een balk
+	Constrained: Pattern=de man met, Pattern=op, Pattern=een, Pattern=groot neus, Pattern=man met, Pattern=zijn, Pattern=de, Pattern=met de, Pattern=neus, Pattern=balk, Pattern=neus en, Pattern=met, Pattern=en, Pattern=op zijn
+Turn ID=54| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=55| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=56| B | B : ik hebben weer de man met de neus en de plat balk op zijn hoofd
+	Free: Pattern=ik hebben, Pattern=de, Pattern=balk op zijn hoofd, Pattern=neus en, Pattern=de man met de neus, Pattern=plat
+	Constrained: Pattern=de man met, Pattern=op, Pattern=de man met de, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=man met, Pattern=zijn, Pattern=de, Pattern=met de, Pattern=neus, Pattern=balk, Pattern=en, Pattern=op zijn
+Turn ID=57| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=58| A | A : ik hebben de man met groot neus
+	Free: Pattern=de man met, Pattern=groot neus, Pattern=ik hebben
+	Constrained: Pattern=de, Pattern=hebben, Pattern=neus, Pattern=met, Pattern=ik, Pattern=man met
+Turn ID=59| B | B : hM
+	Free: 
+	Constrained: 
+Turn ID=60| A | A : de balk
+	Free: Pattern=balk, Pattern=de
+	Constrained: 
+Turn ID=61| B | B : met die balk
+	Free: Pattern=met, Pattern=balk, Pattern=die
+	Constrained: 
+Turn ID=62| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : Oh met die die die knuffelt
+	Free: Pattern=die knuffelt, Pattern=Oh met, Pattern=die
+	Constrained: Pattern=met, Pattern=Oh, Pattern=die
+Turn ID=64| A | A : nee nee nee niet die knuffelt maar gewoon alleen het gezicht
+	Free: Pattern=die knuffelt, Pattern=het, Pattern=nee
+	Constrained: Pattern=die
+Turn ID=65| B | B : Oh die
+	Free: Pattern=Oh, Pattern=die
+	Constrained: 
+Turn ID=66| B | B : Oh de de plat balk
+	Free: Pattern=Oh, Pattern=balk, Pattern=de, Pattern=plat
+	Constrained: 
+Turn ID=67| A | A : met de arm
+	Free: Pattern=met de
+	Constrained: Pattern=met, Pattern=de
+Turn ID=68| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=69| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=70| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=71| B | B : ik vinden het echt heel grappig
+	Free: Pattern=ik vinden het echt, Pattern=heel, Pattern=grappig
+	Constrained: Pattern=echt, Pattern=het, Pattern=ik, Pattern=vinden
+Turn ID=72| A | A : ja het zijn wel grappig dat we met een één woord dat kunnen beschrijven
+	Free: Pattern=dat, Pattern=kunnen, Pattern=ja, Pattern=het, Pattern=grappig, Pattern=met, Pattern=we, Pattern=zijn, Pattern=een, Pattern=wel
+	Constrained: 
+Turn ID=73| B | B : ja dat zijn best bizar
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=74| A | A : en sommig woord of sommig afbeelding wel met veel woord
+	Free: Pattern=met, Pattern=of, Pattern=wel, Pattern=en
+	Constrained: 
+Turn ID=75| A | A : want daar hebben we nog niet echt een naam voor of zo
+	Free: Pattern=of, Pattern=hebben, Pattern=zo, Pattern=we, Pattern=een naam voor, Pattern=echt
+	Constrained: Pattern=voor, Pattern=een
+Turn ID=76| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=77| B | B : we moeten we moeten er ook even een naam voor krijgen
+	Free: Pattern=een naam voor, Pattern=we, Pattern=even
+	Constrained: Pattern=voor, Pattern=een
+Turn ID=78| A | A : ja zijn zijn goed
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=79| A | A : dat zijn wel grappig
+	Free: Pattern=dat zijn, Pattern=grappig, Pattern=wel
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=80| A | A : oké welk hebben jij
+	Free: Pattern=jij, Pattern=hebben, Pattern=oké
+	Constrained: 
+Turn ID=81| B | B : oké deze zijn groot neus
+	Free: Pattern=groot neus, Pattern=zijn, Pattern=oké
+	Constrained: Pattern=neus
+Turn ID=82| A | A : groot neus
+	Free: Pattern=groot neus
+	Constrained: Pattern=neus
+Turn ID=83| A | A : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=84| A | A : even kijken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=85| A | A : dat
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=86| B | B : met die balk weten je wel
+	Free: Pattern=met, Pattern=balk, Pattern=die, Pattern=wel
+	Constrained: 
+Turn ID=87| B | B : dat zijn voor het nu groot neus dan
+	Free: Pattern=dat zijn, Pattern=dan, Pattern=nu, Pattern=groot neus, Pattern=het, Pattern=voor
+	Constrained: Pattern=neus, Pattern=dat, Pattern=zijn
+Turn ID=88| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=89| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=90| A | A : ik noemen hem Harror Harold
+	Free: Pattern=ik, Pattern=hem
+	Constrained: 

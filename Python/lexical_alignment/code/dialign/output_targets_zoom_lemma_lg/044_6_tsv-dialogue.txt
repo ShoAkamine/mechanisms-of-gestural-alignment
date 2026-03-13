@@ -1,0 +1,143 @@
+B|0| B: Oké hier hebben ik hebben je voor één _een _soort_ van_ staaf _door_ _een_ rond _heen_ zitten 
+B|1| B: _en dan met_ _een_ plat iets eraan 
+B|2| B: ik vinden _het_ lijken op _een_ _wc-ontstopper_ 
+B|3| B: _en dan_ tegen _een _soort_ van_ tegen _de_ rechterkant aan 
+B|4| B: _en dan_ hebben hij aan _de_ bovenkant 
+A|5| A: _Oh ja_ nog zo'n staar 
+B|6| B: [ja] 
+A|7| A: [ja] 
+B|8| B: [ja] precies [ja] 
+A|9| A: [ja] oké 
+A|10| A: [ja] _dat zijn_ [van] mij 
+B|11| B: mhm 
+A|12| A: _eh dit zijn_ die [een] waarvan jij zeggen [een soort] [wc-ontstopper] 
+A|13| A: _door de_ _voorkant_ 
+B|14| B: Mja [dat zijn] nummer 
+B|15| B: [eh] ik hebben hier weer _met_ [de] [wc-ontstopper] 
+B|16| B: _en dan met_ [dat] bolle [dat] aan [de] wc 
+A|17| A: _Oh ja_ [ja] 
+A|18| A: [ja] [dat zijn] bij mij 
+A|19| A: _dit zijn_ die [een] [met] die [soort van] _spijker_ _door de neus heen_ 
+B|20| B: Ehm 
+A|21| A: [en dan met] [het] staart bovenop 
+B|22| B: [met] [een] staafje [voorkant] 
+B|23| B: Spijker [door de neus heen] [spijker] 
+B|24| B: [Oh ja] wat [een] beetje lijken op [een] [wc-ontstopper] als je hem om zullen draaien 
+A|25| A: [Oh ja] [ja] zo noemen jij [dat] inderdaad 
+B|26| B: [ja] 
+B|27| B: [ja] nummer 
+A|28| A: [ja] kloppen [ja] 
+B|29| B: [eh dit zijn] weer [de] [wc-ontstopper] of [de] [spijker] er doorheen vanaf [de] rechterkant 
+A|30| A: [ja] [ja] [ja] [dat zijn] bij mij 
+A|31| A: [dit zijn] die [een] [van] die [wc-ontstopper] 
+B|32| B: Mh 
+B|33| B: Eh [dat zijn] even zoeken 
+B|34| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké hier hebben ik hebben je voor één een soort van staaf door een rond heen zitten
+	Free: Pattern=door, Pattern=een, Pattern=heen, Pattern=een soort, Pattern=soort van
+	Constrained: Pattern=van, Pattern=een
+Turn ID=1| B | B : en dan met een plat iets eraan
+	Free: Pattern=en dan met, Pattern=een
+	Constrained: Pattern=en dan, Pattern=met
+Turn ID=2| B | B : ik vinden het lijken op een wc-ontstopper
+	Free: Pattern=het, Pattern=wc-ontstopper, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : en dan tegen een soort van tegen de rechterkant aan
+	Free: Pattern=soort van, Pattern=en dan, Pattern=een soort, Pattern=de
+	Constrained: Pattern=van, Pattern=een
+Turn ID=4| B | B : en dan hebben hij aan de bovenkant
+	Free: Pattern=en dan, Pattern=de
+	Constrained: 
+Turn ID=5| A | A : Oh ja nog zo'n staar
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ja dat zijn van mij
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=van
+	Constrained: Pattern=dat
+Turn ID=11| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : eh dit zijn die een waarvan jij zeggen een soort wc-ontstopper
+	Free: Pattern=eh dit zijn, Pattern=een soort, Pattern=wc-ontstopper, Pattern=een
+	Constrained: Pattern=dit zijn, Pattern=een, Pattern=eh
+Turn ID=13| A | A : door de voorkant
+	Free: Pattern=door de, Pattern=voorkant
+	Constrained: Pattern=door, Pattern=de
+Turn ID=14| B | B : Mja dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=15| B | B : eh ik hebben hier weer met de wc-ontstopper
+	Free: Pattern=eh, Pattern=met, Pattern=de, Pattern=wc-ontstopper
+	Constrained: 
+Turn ID=16| B | B : en dan met dat bolle dat aan de wc
+	Free: Pattern=en dan met, Pattern=dat, Pattern=de
+	Constrained: Pattern=en dan, Pattern=met
+Turn ID=17| A | A : Oh ja ja
+	Free: Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=18| A | A : ja dat zijn bij mij
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=19| A | A : dit zijn die een met die soort van spijker door de neus heen
+	Free: Pattern=een, Pattern=door de neus heen, Pattern=met, Pattern=soort van, Pattern=dit zijn, Pattern=spijker
+	Constrained: Pattern=de, Pattern=door, Pattern=heen, Pattern=van, Pattern=door de
+Turn ID=20| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : en dan met het staart bovenop
+	Free: Pattern=en dan met, Pattern=het
+	Constrained: Pattern=en dan, Pattern=met
+Turn ID=22| B | B : met een staafje voorkant
+	Free: Pattern=met, Pattern=voorkant, Pattern=een
+	Constrained: 
+Turn ID=23| B | B : Spijker door de neus heen spijker
+	Free: Pattern=door de neus heen, Pattern=spijker
+	Constrained: Pattern=door, Pattern=door de, Pattern=de, Pattern=heen
+Turn ID=24| B | B : Oh ja wat een beetje lijken op een wc-ontstopper als je hem om zullen draaien
+	Free: Pattern=Oh ja, Pattern=wc-ontstopper, Pattern=een
+	Constrained: Pattern=ja
+Turn ID=25| A | A : Oh ja ja zo noemen jij dat inderdaad
+	Free: Pattern=Oh ja, Pattern=dat, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ja kloppen ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : eh dit zijn weer de wc-ontstopper of de spijker er doorheen vanaf de rechterkant
+	Free: Pattern=eh dit zijn, Pattern=de, Pattern=spijker, Pattern=wc-ontstopper
+	Constrained: Pattern=dit zijn, Pattern=eh
+Turn ID=30| A | A : ja ja ja dat zijn bij mij
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=31| A | A : dit zijn die een van die wc-ontstopper
+	Free: Pattern=dit zijn, Pattern=van, Pattern=wc-ontstopper, Pattern=een
+	Constrained: 
+Turn ID=32| B | B : Mh
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : Eh dat zijn even zoeken
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=34| B | B : nummer
+	Free: 
+	Constrained: 

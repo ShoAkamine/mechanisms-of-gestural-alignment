@@ -1,0 +1,115 @@
+B|0| B: ehm deze hebben ik omschrijven als _Pinocchio_ 
+B|1| B: met _een_ lang _neus_ 
+B|2| B: _die_ _ja_ net als _Pinocchio_ gewoon _een soort_ houten staaf _zijn_ 
+B|3| B: _en dan onderin_ _een_ buis met _een_ bocht 
+B|4| B: _en rechts_ ook _een_ buis met _een_ bocht 
+B|5| B: _en dan_ bovenin één ik vinden _het_ lijken op _een_ boek _een soort_ schuin boek wat schuin _in_ dat hoofd _zijn_ planten 
+B|6| B: _en_ dat boek hebben _dan_ nog twee _soort van_ antenne 
+B|7| B: link _en rechts_ 
+A|8| A: [ja] [en dan onderin] [en rechts] steekt iets uit 
+A|9| A: [en] [een [soort] van] _in het midden_ toch 
+B|10| B: [ja] [in het midden] _zijn_ [dan] _die neus_ 
+A|11| A: [ja] [die neus] 
+A|12| A: [ja] precies 
+B|13| B: [ja] 
+A|14| A: Oké 
+A|15| A: _Eh_ 
+A|16| A: Ehm [Pinocchio] 
+B|17| B: [ja] 
+B|18| B: ik zien hem weer niet maar ik weten wel 
+B|19| B: _Oh ja_ 
+B|20| B: eh _dit zijn_ weer [Pinocchio] 
+B|21| B: met [een] boek 
+B|22| B: [ja] dat b schuin boek [in] _zijn_ hoofd 
+A|23| A: [Oh ja] 
+A|24| A: [Pinocchio] 
+B|25| B: nummer 
+B|26| B: [Eh] [Pinocchio] 
+A|27| A: [dit zijn] [Pinocchio] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben ik omschrijven als Pinocchio
+	Free: Pattern=Pinocchio
+	Constrained: 
+Turn ID=1| B | B : met een lang neus
+	Free: Pattern=neus, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : die ja net als Pinocchio gewoon een soort houten staaf zijn
+	Free: Pattern=die, Pattern=een soort, Pattern=zijn, Pattern=ja, Pattern=Pinocchio
+	Constrained: Pattern=een
+Turn ID=3| B | B : en dan onderin een buis met een bocht
+	Free: Pattern=en dan onderin, Pattern=een
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=en
+Turn ID=4| B | B : en rechts ook een buis met een bocht
+	Free: Pattern=en rechts, Pattern=een
+	Constrained: Pattern=en
+Turn ID=5| B | B : en dan bovenin één ik vinden het lijken op een boek een soort schuin boek wat schuin in dat hoofd zijn planten
+	Free: Pattern=en dan, Pattern=een, Pattern=het, Pattern=in, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=en, Pattern=dan, Pattern=een
+Turn ID=6| B | B : en dat boek hebben dan nog twee soort van antenne
+	Free: Pattern=soort van, Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=7| B | B : link en rechts
+	Free: Pattern=en rechts
+	Constrained: Pattern=en
+Turn ID=8| A | A : ja en dan onderin en rechts steekt iets uit
+	Free: Pattern=en dan onderin, Pattern=en rechts, Pattern=ja
+	Constrained: Pattern=dan, Pattern=en dan, Pattern=en
+Turn ID=9| A | A : en een soort van in het midden toch
+	Free: Pattern=in het midden, Pattern=soort van, Pattern=een soort, Pattern=en
+	Constrained: Pattern=in, Pattern=een, Pattern=het
+Turn ID=10| B | B : ja in het midden zijn dan die neus
+	Free: Pattern=die neus, Pattern=ja, Pattern=dan, Pattern=zijn, Pattern=in het midden
+	Constrained: Pattern=in, Pattern=neus, Pattern=die, Pattern=het
+Turn ID=11| A | A : ja die neus
+	Free: Pattern=die neus, Pattern=ja
+	Constrained: Pattern=neus, Pattern=die
+Turn ID=12| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=16| A | A : Ehm Pinocchio
+	Free: Pattern=Pinocchio
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ik zien hem weer niet maar ik weten wel
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=20| B | B : eh dit zijn weer Pinocchio
+	Free: Pattern=dit zijn, Pattern=Pinocchio
+	Constrained: Pattern=zijn
+Turn ID=21| B | B : met een boek
+	Free: Pattern=een
+	Constrained: 
+Turn ID=22| B | B : ja dat b schuin boek in zijn hoofd
+	Free: Pattern=ja, Pattern=zijn, Pattern=in
+	Constrained: 
+Turn ID=23| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=24| A | A : Pinocchio
+	Free: Pattern=Pinocchio
+	Constrained: 
+Turn ID=25| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : Eh Pinocchio
+	Free: Pattern=Pinocchio, Pattern=Eh
+	Constrained: 
+Turn ID=27| A | A : dit zijn Pinocchio
+	Free: Pattern=dit zijn, Pattern=Pinocchio
+	Constrained: Pattern=zijn

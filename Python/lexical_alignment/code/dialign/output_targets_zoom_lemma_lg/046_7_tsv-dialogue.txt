@@ -1,0 +1,111 @@
+A|0| A: _ik_ hebben _ja_ wat _zijn_ het 
+A|1| A: _een soort_ dienblad lijken het 
+A|2| A: Best wel hoog op op het ding 
+A|3| A: en dan _met twee_ ding _naar_ beneden 
+B|4| B: _ja ja_ 
+A|5| A: en _een soort_ komme erop 
+B|6| B: [ja] [met twee] _tafelpoo_ aan _de_ zijkant zeggen maar 
+A|7| A: [ja ja] 
+B|8| B: [ja] 
+B|9| B: Eh _dat zijn_ 
+B|10| B: _eh_ _dit zijn met dat_ [met] [een soort] tafel _met die_ [twee] tafelpot _die_ uitsteken [naar] onder 
+A|11| A: huh 
+B|12| B: Eh [met] 
+A|13| A: even zoeken waar [die] staan 
+A|14| A: Oh [ja] 
+B|15| B: _ja dat_ denken [ik] 
+A|16| A: [ja] 
+A|17| A: [dit zijn met dat] dienblad [met die] [tafelpoo] 
+B|18| B: _eh_ _ja dat zijn_ 
+B|19| B: _eh_ [dit zijn [met] die] tafel er doorheen 
+B|20| B: [met die] poot aan _de_ zijkant 
+A|21| A: mhm 
+A|22| A: [ja dat zijn] 
+A|23| A: [eh] dienbladen _met de_ [tafelpoo] 
+B|24| B: [eh] [ja] 
+B|25| B: Eh [met de] tafel [met twee] tafelpo 
+A|26| A: mhm 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hebben ja wat zijn het
+	Free: Pattern=ik, Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=1| A | A : een soort dienblad lijken het
+	Free: Pattern=een soort
+	Constrained: 
+Turn ID=2| A | A : Best wel hoog op op het ding
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en dan met twee ding naar beneden
+	Free: Pattern=met twee, Pattern=naar
+	Constrained: Pattern=met, Pattern=twee
+Turn ID=4| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=5| A | A : en een soort komme erop
+	Free: Pattern=een soort
+	Constrained: 
+Turn ID=6| B | B : ja met twee tafelpoo aan de zijkant zeggen maar
+	Free: Pattern=met twee, Pattern=de, Pattern=tafelpoo, Pattern=ja
+	Constrained: Pattern=met, Pattern=twee
+Turn ID=7| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=10| B | B : eh dit zijn met dat met een soort tafel met die twee tafelpot die uitsteken naar onder
+	Free: Pattern=met die, Pattern=twee, Pattern=dit zijn met dat, Pattern=met, Pattern=die, Pattern=eh, Pattern=een soort, Pattern=naar
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=dit zijn met
+Turn ID=11| A | A : huh
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : Eh met
+	Free: Pattern=met
+	Constrained: 
+Turn ID=13| A | A : even zoeken waar die staan
+	Free: Pattern=die
+	Constrained: 
+Turn ID=14| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja dat denken ik
+	Free: Pattern=ja dat, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dit zijn met dat dienblad met die tafelpoo
+	Free: Pattern=dit zijn met dat, Pattern=met die, Pattern=tafelpoo
+	Constrained: Pattern=zijn, Pattern=met, Pattern=die, Pattern=dit zijn met
+Turn ID=18| B | B : eh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=eh
+	Constrained: Pattern=ja dat, Pattern=zijn, Pattern=dat zijn, Pattern=ja
+Turn ID=19| B | B : eh dit zijn met die tafel er doorheen
+	Free: Pattern=dit zijn met, Pattern=met die, Pattern=eh
+	Constrained: Pattern=die, Pattern=met, Pattern=zijn
+Turn ID=20| B | B : met die poot aan de zijkant
+	Free: Pattern=met die, Pattern=de
+	Constrained: Pattern=die, Pattern=met
+Turn ID=21| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja dat, Pattern=zijn, Pattern=dat zijn, Pattern=ja
+Turn ID=23| A | A : eh dienbladen met de tafelpoo
+	Free: Pattern=met de, Pattern=eh, Pattern=tafelpoo
+	Constrained: Pattern=de, Pattern=met
+Turn ID=24| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : Eh met de tafel met twee tafelpo
+	Free: Pattern=met de, Pattern=met twee
+	Constrained: Pattern=de, Pattern=met, Pattern=twee
+Turn ID=26| A | A : mhm
+	Free: 
+	Constrained: 

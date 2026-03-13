@@ -1,0 +1,127 @@
+B|0| B: oké deze vinden _ik_ alsof hij _een soort_ _van_ propeller _aan de voorkant_ hebben zitten 
+B|1| B: maar _een_ kant zitten _een_ rond _en_ _aan de_ ander kant niet 
+B|2| B: _en_ hij hebben _een soort_ _van_ _sprie_ uitsteken _aan de_ bovenkant 
+A|3| A: Uh hmm 
+A|4| A: popeller [aan de voorkant] 
+B|5| B: _ja_ het _zijn_ _een_ bol _met_ twee staaf eruit 
+B|6| B: _en_ [aan de] _een_ [aan de] rechterstaaf zitten wel _een_ rond maar [aan de] ander niet 
+B|7| B: _en_ dan hebben hij alleen [de] bovenkant nog _een_ klein _sprie_ uitsteken 
+A|8| A: _Oh_ _op een_ [ja] _op [een_ soort] _neuspiercing_ 
+A|9| A: [een soort] groot groot _neuspiercing_ 
+B|10| B: [Oh] [ja] 
+B|11| B: _ik_ snap wat je bedoelen 
+A|12| A: _Oké_ 
+A|13| A: Ehm 
+A|14| A: _eh dit zijn die_ _met die_ piercing door [de] neus 
+B|15| B: [Oké] wachten hij staan ergens ander nu 
+B|16| B: [ja] 
+B|17| B: [eh dit zijn die] _waarvan ik zeggen_ _dat_ het lijken [op een] propeller 
+B|18| B: [met] [een] klein _sprie_ 
+B|19| B: maar je gaan [met die] bol _en_ [die] twee uitsteeksel [aan de voorkant] waar één _van_ [de] uitsteeksel [een] rond hebben 
+A|20| A: [Oh] [waarvan ik zeggen] [van] [die] piercing 
+B|21| B: [ja] [ja] 
+A|22| A: [Oké] [zijn] 
+A|23| A: [dit zijn die] [met die] groot piercing [en] [dat] _sprie op_ [zijn] kop 
+B|24| B: [ja] 
+B|25| B: [dit zijn] _met de_ [neuspiercing] 
+B|26| B: [en] het [sprie op] [de] bovenkant 
+A|27| A: Ehm 
+A|28| A: [met de] groot piercing 
+A|29| A: in [de] neus 
+B|30| B: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze vinden ik alsof hij een soort van propeller aan de voorkant hebben zitten
+	Free: Pattern=aan de voorkant, Pattern=een soort, Pattern=ik, Pattern=van
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=1| B | B : maar een kant zitten een rond en aan de ander kant niet
+	Free: Pattern=aan de, Pattern=en, Pattern=een
+	Constrained: Pattern=de
+Turn ID=2| B | B : en hij hebben een soort van sprie uitsteken aan de bovenkant
+	Free: Pattern=sprie, Pattern=aan de, Pattern=een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=een, Pattern=de
+Turn ID=3| A | A : Uh hmm
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : popeller aan de voorkant
+	Free: Pattern=aan de voorkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=5| B | B : ja het zijn een bol met twee staaf eruit
+	Free: Pattern=zijn, Pattern=een, Pattern=met, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : en aan de een aan de rechterstaaf zitten wel een rond maar aan de ander niet
+	Free: Pattern=aan de, Pattern=en, Pattern=een
+	Constrained: Pattern=de
+Turn ID=7| B | B : en dan hebben hij alleen de bovenkant nog een klein sprie uitsteken
+	Free: Pattern=en, Pattern=een, Pattern=sprie, Pattern=de
+	Constrained: 
+Turn ID=8| A | A : Oh op een ja op een soort neuspiercing
+	Free: Pattern=ja, Pattern=een soort, Pattern=Oh, Pattern=op een, Pattern=neuspiercing
+	Constrained: Pattern=een
+Turn ID=9| A | A : een soort groot groot neuspiercing
+	Free: Pattern=een soort, Pattern=neuspiercing
+	Constrained: Pattern=een
+Turn ID=10| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=11| B | B : ik snap wat je bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : eh dit zijn die met die piercing door de neus
+	Free: Pattern=eh dit zijn die, Pattern=met die, Pattern=de
+	Constrained: Pattern=dit zijn die, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=15| B | B : Oké wachten hij staan ergens ander nu
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : eh dit zijn die waarvan ik zeggen dat het lijken op een propeller
+	Free: Pattern=eh dit zijn die, Pattern=waarvan ik zeggen, Pattern=op een, Pattern=dat
+	Constrained: Pattern=dit zijn die, Pattern=een, Pattern=die, Pattern=ik, Pattern=zijn, Pattern=dit zijn
+Turn ID=18| B | B : met een klein sprie
+	Free: Pattern=een, Pattern=sprie, Pattern=met
+	Constrained: 
+Turn ID=19| B | B : maar je gaan met die bol en die twee uitsteeksel aan de voorkant waar één van de uitsteeksel een rond hebben
+	Free: Pattern=met die, Pattern=de, Pattern=een, Pattern=die, Pattern=aan de voorkant, Pattern=van, Pattern=en
+	Constrained: Pattern=de, Pattern=die, Pattern=aan de, Pattern=met
+Turn ID=20| A | A : Oh waarvan ik zeggen van die piercing
+	Free: Pattern=waarvan ik zeggen, Pattern=die, Pattern=van, Pattern=Oh
+	Constrained: Pattern=ik
+Turn ID=21| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : Oké zijn
+	Free: Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=23| A | A : dit zijn die met die groot piercing en dat sprie op zijn kop
+	Free: Pattern=dit zijn die, Pattern=en, Pattern=sprie op, Pattern=zijn, Pattern=dat, Pattern=met die
+	Constrained: Pattern=sprie, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : dit zijn met de neuspiercing
+	Free: Pattern=dit zijn, Pattern=met de, Pattern=neuspiercing
+	Constrained: Pattern=zijn, Pattern=met, Pattern=de
+Turn ID=26| B | B : en het sprie op de bovenkant
+	Free: Pattern=sprie op, Pattern=en, Pattern=de
+	Constrained: Pattern=sprie
+Turn ID=27| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=28| A | A : met de groot piercing
+	Free: Pattern=met de
+	Constrained: Pattern=met, Pattern=de
+Turn ID=29| A | A : in de neus
+	Free: Pattern=de
+	Constrained: 
+Turn ID=30| B | B : Eh
+	Free: 
+	Constrained: 

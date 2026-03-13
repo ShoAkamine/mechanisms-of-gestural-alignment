@@ -1,0 +1,111 @@
+B|0| B: Oké _dan_ zien ik nu _een_ euh _en_ linksonder zien je _een_ _soort_ zelfde kegelvormig 
+B|1| B: ja _uitsteeksel_ _handvat_ bijna 
+B|2| B: _en dan_ _rechts_ _een_ _veel_ vierkant blok eraan 
+A|3| A: _Euh_ lijken _het_ op _één_ van de _verrekijker_ 
+B|4| B: ja kloppen 
+A|5| A: _dan zijn het_ 
+B|6| B: ja 
+A|7| A: nummer 
+A|8| A: _Euh_ 
+A|9| A: _deze_ hebben _het_ [soort] [handvat] aan de bovenkant [en] aan de linkerzijkant 
+A|10| A: [en] de _verrekijker_ [rechts] [en] _nog een_ [uitsteeksel] linksachter [veel] 
+B|11| B: ja [dan zijn het] 
+B|12| B: [deze] [zijn] _met_ _die_ _twee_ kegelvormig [handvat] 
+B|13| B: _boven_ [één] _en link_ 
+B|14| B: _en dan_ [rechts] [nog een] euh stuk [verrekijker] 
+A|15| A: _dit zijn_ de 
+A|16| A: [deze] hebben de [twee] dezelfde _handvat boven en link_ 
+A|17| A: [en] [die] [verrekijker] [rechts] 
+B|18| B: ja 
+B|19| B: [en] [dit zijn] [die] _met_ [die] kegelvormig [handvat boven en link] 
+A|20| A: Yes 
+A|21| A: [en dan] de [verrekijker] 
+B|22| B: ja 
+A|23| A: dat [zijn] de 
+A|24| A: [het] [zijn] [twee] dezelfde [handvat] [met] de half [verrekijker] _Euh_ [rechts] 
+B|25| B: ja 
+B|26| B: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké dan zien ik nu een euh en linksonder zien je een soort zelfde kegelvormig
+	Free: Pattern=en, Pattern=soort, Pattern=een, Pattern=dan
+	Constrained: 
+Turn ID=1| B | B : ja uitsteeksel handvat bijna
+	Free: Pattern=uitsteeksel, Pattern=handvat
+	Constrained: 
+Turn ID=2| B | B : en dan rechts een veel vierkant blok eraan
+	Free: Pattern=en dan, Pattern=rechts, Pattern=veel, Pattern=een
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=3| A | A : Euh lijken het op één van de verrekijker
+	Free: Pattern=verrekijker, Pattern=Euh, Pattern=één, Pattern=het
+	Constrained: 
+Turn ID=4| B | B : ja kloppen
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : dan zijn het
+	Free: Pattern=dan zijn het
+	Constrained: Pattern=zijn, Pattern=dan, Pattern=het
+Turn ID=6| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : nummer
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=9| A | A : deze hebben het soort handvat aan de bovenkant en aan de linkerzijkant
+	Free: Pattern=soort, Pattern=het, Pattern=handvat, Pattern=en, Pattern=deze
+	Constrained: 
+Turn ID=10| A | A : en de verrekijker rechts en nog een uitsteeksel linksachter veel
+	Free: Pattern=nog een, Pattern=rechts, Pattern=uitsteeksel, Pattern=veel, Pattern=verrekijker, Pattern=en
+	Constrained: Pattern=een
+Turn ID=11| B | B : ja dan zijn het
+	Free: Pattern=dan zijn het
+	Constrained: Pattern=zijn, Pattern=dan, Pattern=het
+Turn ID=12| B | B : deze zijn met die twee kegelvormig handvat
+	Free: Pattern=twee, Pattern=handvat, Pattern=met, Pattern=die, Pattern=zijn, Pattern=deze
+	Constrained: 
+Turn ID=13| B | B : boven één en link
+	Free: Pattern=en link, Pattern=boven, Pattern=één
+	Constrained: Pattern=en
+Turn ID=14| B | B : en dan rechts nog een euh stuk verrekijker
+	Free: Pattern=en dan, Pattern=nog een, Pattern=verrekijker, Pattern=rechts
+	Constrained: Pattern=en, Pattern=een, Pattern=dan
+Turn ID=15| A | A : dit zijn de
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=16| A | A : deze hebben de twee dezelfde handvat boven en link
+	Free: Pattern=handvat boven en link, Pattern=twee, Pattern=deze
+	Constrained: Pattern=boven, Pattern=en, Pattern=handvat, Pattern=en link
+Turn ID=17| A | A : en die verrekijker rechts
+	Free: Pattern=verrekijker, Pattern=rechts, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : en dit zijn die met die kegelvormig handvat boven en link
+	Free: Pattern=handvat boven en link, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=boven, Pattern=en link, Pattern=handvat, Pattern=en, Pattern=zijn
+Turn ID=20| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : en dan de verrekijker
+	Free: Pattern=en dan, Pattern=verrekijker
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=22| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : dat zijn de
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=24| A | A : het zijn twee dezelfde handvat met de half verrekijker Euh rechts
+	Free: Pattern=twee, Pattern=rechts, Pattern=Euh, Pattern=het, Pattern=handvat, Pattern=met, Pattern=verrekijker, Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 

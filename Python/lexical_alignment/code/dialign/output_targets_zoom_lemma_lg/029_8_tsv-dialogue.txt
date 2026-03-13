@@ -1,0 +1,211 @@
+B|0| B: _Ehm_ 
+B|1| B: _ja_ deze _hebben_ 
+B|2| B: _een_ soort _ja_ haakachtig vorm _aan de onderkant_ 
+B|3| B: _die_ daar uitsteken 
+A|4| A: Mhmm 
+B|5| B: _Ehm_ 
+B|6| B: _dan hebben_ hij ook nog 
+B|7| B: _ja_ _aan de bovenkant_ 
+B|8| B: Zit _een_ soort van ingehakt _een_ soort rui _met_ _aan_ beide kant uit _die ruit_ komen ook weer ehh 
+B|9| B: eh _twee_ van _die_ vormp _die_ net _als_ bij _het_ één plaat zegmaar eruit komen 
+B|10| B: soort kegelachtig spijker 
+A|11| A: [ja] 
+B|12| B: en _dan_ 
+B|13| B: [ja] _hebben_ hij ook nog 
+B|14| B: _aan_ één van _de_ zijkant _een_ soort haakachtig arm 
+B|15| B: _aan_ [ja] 
+B|16| B: _een_ dun dun 
+B|17| B: dunne pilaar nog _aan_ één zijkant _aan de_ voorkant in mijn geval maar _dat_ weten _ik_ niet _hoe_ jij _dat_ zien 
+A|18| A: [ja] 
+A|19| A: _dat zijn_ 
+A|20| A: [Ehm] 
+A|21| A: [aan de onderkant] _zijn_ er [een] haak 
+A|22| A: [aan de bovenkant] [een] 
+A|23| A: [hoe] zeggen je [dat] nou 
+A|24| A: [Ehm] 
+A|25| A: [ik] _zijn_ [de] naam even kwijt 
+A|26| A: [als] je [een] spel 
+B|27| B: kegel 
+A|28| A: nee [als] je [een] spelkaart [hebben] [dan hebben] je 
+A|29| A: _Oh_ ruiten _dat zijn_ [het] 
+B|30| B: [Oh] [ja] [ja] [ja] 
+A|31| A: _ruit _met_ twee Eiffeltorens_ 
+B|32| B: [ja] [dat zijn] 
+A|33| A: _Eh_ 
+B|34| B: [Ehm] 
+B|35| B: Oei deze weer 
+B|36| B: [met] 
+B|37| B: hij [hebben] [aan de] achterkant [een] soort rui [met twee Eiffeltorens] 
+B|38| B: _die ruit_ zitten erin steken in [de] beker [met twee Eiffeltorens] door [de] [ruit] heen 
+A|39| A: ah [ja] 
+A|40| A: [ja] 
+A|41| A: [Ehm] 
+A|42| A: [die ruit] [aan de bovenkant] [met twee] keer [de] Eiffeltoren 
+B|43| B: [ja] [dat zijn] 
+B|44| B: ehh 
+B|45| B: dit [zijn] [met] [die] [aan de] achterkant [die [ruit] met] [die] [twee] pyramide [die] uit [die ruit] steken links en rechts 
+A|46| A: Yes [dat zijn] 
+A|47| A: [Ehm] 
+A|48| A: [ruit [met] twee Eiffeltorens] 
+B|49| B: [ja] 
+A|50| A: _Eh_ 
+B|51| B: [Eh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=1| B | B : ja deze hebben
+	Free: Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : een soort ja haakachtig vorm aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=ja, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=3| B | B : die daar uitsteken
+	Free: Pattern=die
+	Constrained: 
+Turn ID=4| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=6| B | B : dan hebben hij ook nog
+	Free: Pattern=dan hebben
+	Constrained: Pattern=dan, Pattern=hebben
+Turn ID=7| B | B : ja aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=ja
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=8| B | B : Zit een soort van ingehakt een soort rui met aan beide kant uit die ruit komen ook weer ehh
+	Free: Pattern=die ruit, Pattern=aan, Pattern=een, Pattern=met
+	Constrained: Pattern=die, Pattern=ruit
+Turn ID=9| B | B : eh twee van die vormp die net als bij het één plaat zegmaar eruit komen
+	Free: Pattern=die, Pattern=het, Pattern=als, Pattern=twee
+	Constrained: 
+Turn ID=10| B | B : soort kegelachtig spijker
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : en dan
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=13| B | B : ja hebben hij ook nog
+	Free: Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=14| B | B : aan één van de zijkant een soort haakachtig arm
+	Free: Pattern=aan, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=15| B | B : aan ja
+	Free: Pattern=ja, Pattern=aan
+	Constrained: 
+Turn ID=16| B | B : een dun dun
+	Free: Pattern=een
+	Constrained: 
+Turn ID=17| B | B : dunne pilaar nog aan één zijkant aan de voorkant in mijn geval maar dat weten ik niet hoe jij dat zien
+	Free: Pattern=aan, Pattern=aan de, Pattern=ik, Pattern=dat, Pattern=hoe
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=20| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=21| A | A : aan de onderkant zijn er een haak
+	Free: Pattern=aan de onderkant, Pattern=zijn, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=22| A | A : aan de bovenkant een
+	Free: Pattern=aan de bovenkant, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=23| A | A : hoe zeggen je dat nou
+	Free: Pattern=hoe, Pattern=dat
+	Constrained: 
+Turn ID=24| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=25| A | A : ik zijn de naam even kwijt
+	Free: Pattern=zijn, Pattern=de, Pattern=ik
+	Constrained: 
+Turn ID=26| A | A : als je een spel
+	Free: Pattern=een, Pattern=als
+	Constrained: 
+Turn ID=27| B | B : kegel
+	Free: 
+	Constrained: 
+Turn ID=28| A | A : nee als je een spelkaart hebben dan hebben je
+	Free: Pattern=dan hebben, Pattern=een, Pattern=hebben, Pattern=als
+	Constrained: Pattern=dan, Pattern=hebben
+Turn ID=29| A | A : Oh ruiten dat zijn het
+	Free: Pattern=dat zijn, Pattern=Oh, Pattern=het
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=30| B | B : Oh ja ja ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=31| A | A : ruit met twee Eiffeltorens
+	Free: Pattern=met twee Eiffeltorens, Pattern=ruit met
+	Constrained: Pattern=twee, Pattern=ruit, Pattern=met, Pattern=met twee
+Turn ID=32| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=33| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=34| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=35| B | B : Oei deze weer
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : met
+	Free: Pattern=met
+	Constrained: 
+Turn ID=37| B | B : hij hebben aan de achterkant een soort rui met twee Eiffeltorens
+	Free: Pattern=met twee Eiffeltorens, Pattern=aan de, Pattern=een, Pattern=hebben
+	Constrained: Pattern=twee, Pattern=met twee, Pattern=met, Pattern=de, Pattern=aan
+Turn ID=38| B | B : die ruit zitten erin steken in de beker met twee Eiffeltorens door de ruit heen
+	Free: Pattern=met twee Eiffeltorens, Pattern=die ruit, Pattern=ruit, Pattern=de
+	Constrained: Pattern=ruit, Pattern=twee, Pattern=met twee, Pattern=met, Pattern=die
+Turn ID=39| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=42| A | A : die ruit aan de bovenkant met twee keer de Eiffeltoren
+	Free: Pattern=aan de bovenkant, Pattern=met twee, Pattern=die ruit, Pattern=de
+	Constrained: Pattern=ruit, Pattern=twee, Pattern=aan de, Pattern=met, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=43| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=44| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=45| B | B : dit zijn met die aan de achterkant die ruit met die twee pyramide die uit die ruit steken links en rechts
+	Free: Pattern=twee, Pattern=aan de, Pattern=die ruit, Pattern=met, Pattern=die, Pattern=ruit met, Pattern=zijn
+	Constrained: Pattern=ruit, Pattern=met, Pattern=die, Pattern=de, Pattern=aan
+Turn ID=46| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=47| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=48| A | A : ruit met twee Eiffeltorens
+	Free: Pattern=met twee Eiffeltorens, Pattern=ruit met
+	Constrained: Pattern=twee, Pattern=ruit, Pattern=met, Pattern=met twee
+Turn ID=49| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=51| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 

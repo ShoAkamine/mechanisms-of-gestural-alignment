@@ -1,0 +1,175 @@
+A|0| A: _Oh_ oké 
+A|1| A: _ik hebben_ nu _een_ soort _ik_ vinden _het_ _een_ soort gezicht _een_ soort _ja_ misschien racistisch _maar_ dat bedoelen _ik_ niet zo _een_ _indiaan_ 
+A|2| A: soort _met_ snorharen _zeggen maar_ zo 
+A|3| A: _ik_ kunnen _het_ nadoen zo 
+A|4| A: _en dan_ hier zo'n soort _neus_ 
+B|5| B: [Oh] 
+A|6| A: dus 
+A|7| A: Wacht bovenop staan soort _een_ soort _driehoek_ _maar_ _dan_ _de_ punt _van_ _het driehoek_ _zijn_ soort _afsnijden_ 
+B|8| B: _Oh ja_ 
+B|9| B: [ja] 
+A|10| A: _en_ rechts staan _zeggen maar_ _twee van die_ snorhaar 
+B|11| B: [ja] [die] zitten _zeggen maar parallel_ aan elkaar 
+A|12| A: [ja] 
+A|13| A: _en_ links _hebben_ je _een_ soort neusje _en_ _een_ soort voe of zoiets 
+B|14| B: [ja] 
+B|15| B: _ja _ja_ ja_ 
+A|16| A: [ja] 
+B|17| B: ok [dan] _weten_ [ik] hem 
+A|18| A: oké top [ja] 
+B|19| B: Ok [ik hebben] [die] [een] [met] [het driehoek] [die] [afsnijden] [zijn] bovenaan 
+A|20| A: hmm [ja] 
+B|21| B: op [het] kop 
+B|22| B: [en dan] [een] puntig [neus] naar voren 
+B|23| B: [en dan] [twee van die] _parallel_ lopen balkjes aan [de] ander kant 
+A|24| A: [Oh ja] 
+A|25| A: _ja ik_ [weten] [het] [ja] 
+A|26| A: Oké 
+A|27| A: Oké [ik hebben] dus [die] _indiaan_ 
+A|28| A: [ik] [weten] niet of je [weten] welk [ik] bedoelen 
+B|29| B: [Oh] 
+A|30| A: [maar] [die] _met die_ [twee] streep [zeggen maar parallel] 
+B|31| B: [Oh _ja] _ja_ [ja_ [ik] hebben] hem weer 
+A|32| A: [ja ja] 
+B|33| B: [ja] [met die] [driehoek] [die] [afsnijden] [zijn] 
+A|34| A: [ja ja] 
+B|35| B: ok 
+B|36| B: _ik hebben de indiaan_ 
+A|37| A: [Oh ja] 
+A|38| A: Eh 
+A|39| A: [ik hebben de indiaan] 
+B|40| B: [Oh ja] 
+B|41| B: [ik hebben de indiaan] 
+A|42| A: Indiaan 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : ik hebben nu een soort ik vinden het een soort gezicht een soort ja misschien racistisch maar dat bedoelen ik niet zo een indiaan
+	Free: Pattern=ik hebben, Pattern=ja, Pattern=een, Pattern=het, Pattern=indiaan, Pattern=ik, Pattern=maar
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=2| A | A : soort met snorharen zeggen maar zo
+	Free: Pattern=zeggen maar, Pattern=met
+	Constrained: Pattern=maar
+Turn ID=3| A | A : ik kunnen het nadoen zo
+	Free: Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=4| A | A : en dan hier zo'n soort neus
+	Free: Pattern=en dan, Pattern=neus
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=5| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=6| A | A : dus
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Wacht bovenop staan soort een soort driehoek maar dan de punt van het driehoek zijn soort afsnijden
+	Free: Pattern=driehoek, Pattern=de, Pattern=dan, Pattern=het driehoek, Pattern=een, Pattern=afsnijden, Pattern=van, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=het, Pattern=driehoek
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : en rechts staan zeggen maar twee van die snorhaar
+	Free: Pattern=twee van die, Pattern=zeggen maar, Pattern=en
+	Constrained: Pattern=twee, Pattern=die, Pattern=maar, Pattern=van
+Turn ID=11| B | B : ja die zitten zeggen maar parallel aan elkaar
+	Free: Pattern=zeggen maar parallel, Pattern=die, Pattern=ja
+	Constrained: Pattern=zeggen maar, Pattern=maar, Pattern=parallel
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en links hebben je een soort neusje en een soort voe of zoiets
+	Free: Pattern=en, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ok dan weten ik hem
+	Free: Pattern=dan, Pattern=weten, Pattern=ik
+	Constrained: 
+Turn ID=18| A | A : oké top ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : Ok ik hebben die een met het driehoek die afsnijden zijn bovenaan
+	Free: Pattern=ik hebben, Pattern=het driehoek, Pattern=een, Pattern=afsnijden, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: Pattern=het, Pattern=driehoek, Pattern=hebben, Pattern=ik
+Turn ID=20| A | A : hmm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : op het kop
+	Free: Pattern=het
+	Constrained: 
+Turn ID=22| B | B : en dan een puntig neus naar voren
+	Free: Pattern=en dan, Pattern=een, Pattern=neus
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=23| B | B : en dan twee van die parallel lopen balkjes aan de ander kant
+	Free: Pattern=twee van die, Pattern=en dan, Pattern=de, Pattern=parallel
+	Constrained: Pattern=twee, Pattern=dan, Pattern=die, Pattern=van, Pattern=en
+Turn ID=24| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=25| A | A : ja ik weten het ja
+	Free: Pattern=ja ik, Pattern=ja, Pattern=het, Pattern=weten
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=26| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : Oké ik hebben dus die indiaan
+	Free: Pattern=ik hebben, Pattern=die, Pattern=indiaan
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=28| A | A : ik weten niet of je weten welk ik bedoelen
+	Free: Pattern=weten, Pattern=ik
+	Constrained: 
+Turn ID=29| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=30| A | A : maar die met die twee streep zeggen maar parallel
+	Free: Pattern=met die, Pattern=twee, Pattern=die, Pattern=maar, Pattern=zeggen maar parallel
+	Constrained: Pattern=zeggen maar, Pattern=parallel, Pattern=met, Pattern=die, Pattern=maar
+Turn ID=31| B | B : Oh ja ja ja ik hebben hem weer
+	Free: Pattern=Oh ja, Pattern=ik hebben, Pattern=ja ik, Pattern=ja ja
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=hebben, Pattern=ik
+Turn ID=32| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=33| B | B : ja met die driehoek die afsnijden zijn
+	Free: Pattern=driehoek, Pattern=met die, Pattern=ja, Pattern=afsnijden, Pattern=die, Pattern=zijn
+	Constrained: Pattern=die, Pattern=met
+Turn ID=34| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=35| B | B : ok
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : ik hebben de indiaan
+	Free: Pattern=ik hebben de indiaan
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=indiaan, Pattern=ik
+Turn ID=37| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=38| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : ik hebben de indiaan
+	Free: Pattern=ik hebben de indiaan
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=indiaan, Pattern=ik
+Turn ID=40| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=41| B | B : ik hebben de indiaan
+	Free: Pattern=ik hebben de indiaan
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=indiaan, Pattern=ik
+Turn ID=42| A | A : Indiaan
+	Free: 
+	Constrained: 

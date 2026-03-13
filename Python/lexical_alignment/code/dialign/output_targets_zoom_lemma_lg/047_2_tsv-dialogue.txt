@@ -1,0 +1,63 @@
+B|0| B: deze _hebben_ een een piramide op _zijn_ hoofd staan een soort _feesthoed_ op 
+A|1| A: _ja_ 
+B|2| B: _dat zijn_ er maar één denken _ik_ 
+B|3| B: Oh [ja] en [ja] en hij _hebben_ een soort rond onder 
+B|4| B: _het_ lijken alsof hij een soort wiel _hebben_ 
+A|5| A: [ja] oké [dat zijn] 
+A|6| A: Ehm [ik] [hebben] die _met het feesthoed_ 
+A|7| A: ehm die l 
+B|8| B: [ja] nummer 
+B|9| B: [met het feesthoed] 
+A|10| A: Eh [feesthoed] 
+B|11| B: nummer 
+B|12| B: [het feesthoed] 
+A|13| A: [het feesthoed] 
+B|14| B: [dat zijn] nummer voor mij 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben een een piramide op zijn hoofd staan een soort feesthoed op
+	Free: Pattern=feesthoed, Pattern=zijn, Pattern=hebben
+	Constrained: 
+Turn ID=1| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : dat zijn er maar één denken ik
+	Free: Pattern=dat zijn, Pattern=ik
+	Constrained: Pattern=zijn
+Turn ID=3| B | B : Oh ja en ja en hij hebben een soort rond onder
+	Free: Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=4| B | B : het lijken alsof hij een soort wiel hebben
+	Free: Pattern=het, Pattern=hebben
+	Constrained: 
+Turn ID=5| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=6| A | A : Ehm ik hebben die met het feesthoed
+	Free: Pattern=met het feesthoed, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=het feesthoed, Pattern=feesthoed, Pattern=het
+Turn ID=7| A | A : ehm die l
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : met het feesthoed
+	Free: Pattern=met het feesthoed
+	Constrained: Pattern=het feesthoed, Pattern=feesthoed, Pattern=het
+Turn ID=10| A | A : Eh feesthoed
+	Free: Pattern=feesthoed
+	Constrained: 
+Turn ID=11| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : het feesthoed
+	Free: Pattern=het feesthoed
+	Constrained: Pattern=feesthoed, Pattern=het
+Turn ID=13| A | A : het feesthoed
+	Free: Pattern=het feesthoed
+	Constrained: Pattern=feesthoed, Pattern=het
+Turn ID=14| B | B : dat zijn nummer voor mij
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

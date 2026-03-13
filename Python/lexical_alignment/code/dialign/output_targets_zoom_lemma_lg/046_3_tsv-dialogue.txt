@@ -1,0 +1,195 @@
+B|0| B: _ik_ zien helemaal niks 
+B|1| B: _Oh_ 
+A|2| A: _ja_ nu _wel_ 
+B|3| B: Hebben jij _een_ _rood_ vierkant 
+A|4| A: _ja_ 
+B|5| B: _Oké_ 
+A|6| A: [Oké] dus [ik] _moeten_ deze _dan_ _aan_ jou beschrijven _hè_ 
+B|7| B: [ja] 
+A|8| A: [ja] 
+A|9| A: [Oh] _dit zijn_ [ja] _een soort_ bloem vinden [ik] _het_ 
+A|10| A: _met een_ stengel _aan de onderkant_ 
+A|11| A: _en dan_ _en_ _die_ _dat_ rond ding 
+A|12| A: _en dan_ zitten er nog [een] vierkan bovenop 
+A|13| A: [een] _kubus_ 
+B|14| B: wat 
+B|15| B: Stengeltje [aan de onderkant] 
+A|16| A: [ja] 
+B|17| B: [kubus] [aan de] bovenkant 
+B|18| B: [zijn] [dit] [een soort] _strijkijzer aan de onderkant_ 
+A|19| A: _een driehoek_ [ja] 
+B|20| B: [ja] [ja] [ja] 
+A|21| A: [ja] 
+B|22| B: [Oké] [dan] 
+A|23| A: Heb je hem [dan] 
+B|24| B: [dat] denken [wel] 
+B|25| B: _maar_ hoe [moeten] [ik] [dat] [dan] _drukken_ 
+A|26| A: volgens j volgens mij [moeten] je hem zeggen _en dan_ _op de_ [rood] _knop drukken_ [maar] 
+B|27| B: hoe kunnen 
+B|28| B: [hè] 
+B|29| B: of [moeten] [ik] 
+B|30| B: [Oké] [ik] denken 
+B|31| B: [en dan] [moeten] [ik] [op de] groen [knop drukken] 
+B|32| B: _eh dit zijn met_ [die] [ik] noemen [het] [een] _strijkijzer_ 
+B|33| B: [maar] [aan de onderkant] [zijn] [het] [een soort] van uittreksel [met [een] driehoek] 
+A|34| A: [ja] 
+A|35| A: [ja] _dat zijn_ 
+A|36| A: [dit zijn met] jou [strijkijzer aan de onderkant] 
+B|37| B: ah [ja] 
+B|38| B: [dat zijn] 
+B|39| B: _eh_ waar [zijn] [ik] zien kunnen 
+B|40| B: [zijn] [dat] 
+B|41| B: _eh dit zijn met_ [dat] [strijkijzer] onderaan 
+A|42| A: Uh 
+A|43| A: [eh dit zijn met] strijkeizer 
+B|44| B: _mhm_ [dat zijn] 
+B|45| B: [eh dit zijn] [die] [met] [dat] [strijkijzer] onderaan 
+A|46| A: [mhm] 
+A|47| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik zien helemaal niks
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=2| A | A : ja nu wel
+	Free: Pattern=ja, Pattern=wel
+	Constrained: 
+Turn ID=3| B | B : Hebben jij een rood vierkant
+	Free: Pattern=een, Pattern=rood
+	Constrained: 
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| A | A : Oké dus ik moeten deze dan aan jou beschrijven hè
+	Free: Pattern=aan, Pattern=dan, Pattern=moeten, Pattern=hè, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oh dit zijn ja een soort bloem vinden ik het
+	Free: Pattern=ja, Pattern=het, Pattern=Oh, Pattern=dit zijn, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=dit, Pattern=een, Pattern=zijn
+Turn ID=10| A | A : met een stengel aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=met een
+	Constrained: Pattern=aan, Pattern=een, Pattern=met, Pattern=aan de
+Turn ID=11| A | A : en dan en die dat rond ding
+	Free: Pattern=en dan, Pattern=dat, Pattern=die, Pattern=en
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=12| A | A : en dan zitten er nog een vierkan bovenop
+	Free: Pattern=en dan, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=13| A | A : een kubus
+	Free: Pattern=een, Pattern=kubus
+	Constrained: 
+Turn ID=14| B | B : wat
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : Stengeltje aan de onderkant
+	Free: Pattern=aan de onderkant
+	Constrained: Pattern=aan, Pattern=aan de
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : kubus aan de bovenkant
+	Free: Pattern=aan de, Pattern=kubus
+	Constrained: Pattern=aan
+Turn ID=18| B | B : zijn dit een soort strijkijzer aan de onderkant
+	Free: Pattern=strijkijzer aan de onderkant, Pattern=een soort, Pattern=dit, Pattern=zijn
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=een, Pattern=aan de onderkant, Pattern=strijkijzer
+Turn ID=19| A | A : een driehoek ja
+	Free: Pattern=een driehoek, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=20| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Oké dan
+	Free: Pattern=Oké, Pattern=dan
+	Constrained: 
+Turn ID=23| A | A : Heb je hem dan
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=24| B | B : dat denken wel
+	Free: Pattern=dat, Pattern=wel
+	Constrained: 
+Turn ID=25| B | B : maar hoe moeten ik dat dan drukken
+	Free: Pattern=dat, Pattern=dan, Pattern=moeten, Pattern=drukken, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=26| A | A : volgens j volgens mij moeten je hem zeggen en dan op de rood knop drukken maar
+	Free: Pattern=rood, Pattern=en dan, Pattern=moeten, Pattern=knop drukken, Pattern=maar, Pattern=op de
+	Constrained: Pattern=dan, Pattern=drukken, Pattern=en
+Turn ID=27| B | B : hoe kunnen
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : hè
+	Free: Pattern=hè
+	Constrained: 
+Turn ID=29| B | B : of moeten ik
+	Free: Pattern=moeten, Pattern=ik
+	Constrained: 
+Turn ID=30| B | B : Oké ik denken
+	Free: Pattern=Oké, Pattern=ik
+	Constrained: 
+Turn ID=31| B | B : en dan moeten ik op de groen knop drukken
+	Free: Pattern=en dan, Pattern=moeten, Pattern=ik, Pattern=knop drukken, Pattern=op de
+	Constrained: Pattern=dan, Pattern=drukken, Pattern=en
+Turn ID=32| B | B : eh dit zijn met die ik noemen het een strijkijzer
+	Free: Pattern=een, Pattern=ik, Pattern=eh dit zijn met, Pattern=het, Pattern=strijkijzer, Pattern=die
+	Constrained: Pattern=dit zijn met, Pattern=dit, Pattern=eh dit zijn, Pattern=met, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=33| B | B : maar aan de onderkant zijn het een soort van uittreksel met een driehoek
+	Free: Pattern=het, Pattern=aan de onderkant, Pattern=met een, Pattern=een soort, Pattern=een driehoek, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=aan, Pattern=een, Pattern=met, Pattern=aan de
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=36| A | A : dit zijn met jou strijkijzer aan de onderkant
+	Free: Pattern=strijkijzer aan de onderkant, Pattern=dit zijn met
+	Constrained: Pattern=aan, Pattern=aan de, Pattern=aan de onderkant, Pattern=dit, Pattern=met, Pattern=strijkijzer, Pattern=zijn, Pattern=dit zijn
+Turn ID=37| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=39| B | B : eh waar zijn ik zien kunnen
+	Free: Pattern=eh, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=40| B | B : zijn dat
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=41| B | B : eh dit zijn met dat strijkijzer onderaan
+	Free: Pattern=eh dit zijn met, Pattern=dat, Pattern=strijkijzer
+	Constrained: Pattern=dit zijn met, Pattern=dit, Pattern=eh dit zijn, Pattern=met, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=42| A | A : Uh
+	Free: 
+	Constrained: 
+Turn ID=43| A | A : eh dit zijn met strijkeizer
+	Free: Pattern=eh dit zijn met
+	Constrained: Pattern=dit zijn met, Pattern=dit, Pattern=eh dit zijn, Pattern=met, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=44| B | B : mhm dat zijn
+	Free: Pattern=dat zijn, Pattern=mhm
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=45| B | B : eh dit zijn die met dat strijkijzer onderaan
+	Free: Pattern=dat, Pattern=eh dit zijn, Pattern=met, Pattern=strijkijzer, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=eh, Pattern=dit, Pattern=zijn
+Turn ID=46| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=47| A | A : Eh
+	Free: 
+	Constrained: 

@@ -1,0 +1,123 @@
+B|0| B: _Oké_ dit _vinden_ _ik_ _lijken_ _op_ ook weer _de_ _piramide_ _maar_ _dan_ _lijken_ _het_ veel _op een_ vulkaan 
+B|1| B: _en_ _aan de_ zijkant _hebben het_ _twee_ uitstekend 
+B|2| B: _ja_ _het_ _lijken_ misschien _een beetje op_ _twee_ bord of zo 
+A|3| A: [en] [hebben het] [aan de] rechterkant [twee] uitsteeksel 
+B|4| B: _ja_ [en] link [hebben het] dus ook nog _een_ puntig iets _en dan_ [aan de] onderkant _een soort_ voet 
+A|5| A: [en] [lijken] [ik] [vinden] [het] [een beetje _op] een krokodil lijken_ 
+A|6| A: _met die_ bek _zeggen_ [maar] 
+B|7| B: _ja ja_ dat snapen [ik] 
+A|8| A: [en dan] [een soort] van [piramide] bovenop _die_ afgekaptten _zijn_ 
+B|9| B: _ja_ 
+B|10| B: _ja ja_ precies 
+A|11| A: [Oké] [dan] _zijn_ [het] 
+A|12| A: Okee _ik hebben _de krokodil_ met_ _staart_ [en] bovenop zo'n hoed 
+B|13| B: even kijken 
+B|14| B: [de krokodil met] [de] [staart] 
+A|15| A: Weet je wel [met] rechts [twee] van _die_ balk 
+B|16| B: _Oh ja_ [met] [de] vulkaan wat [ik] [zeggen] 
+A|17| A: [ja [ja] ja] 
+B|18| B: [ja] oké 
+B|19| B: dat [zijn] 
+B|20| B: wat wat [hebben] we hier nou voor bedenken 
+B|21| B: dit [zijn] in ieder geval 
+B|22| B: _Oh ja_ jij [vinden] hem [op een krokodil lijken] 
+B|23| B: [met die] _half piramide_ 
+A|24| A: [Oh [ja] ja] 
+A|25| A: _ik hebben de krokodil_ 
+A|26| A: [met] [het] [staart] [en] [de] [half piramide] 
+B|27| B: [Oh ja] dat [zijn] 
+B|28| B: [ik hebben de krokodil] 
+A|29| A: [ik hebben de krokodil] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké dit vinden ik lijken op ook weer de piramide maar dan lijken het veel op een vulkaan
+	Free: Pattern=het, Pattern=ik, Pattern=maar, Pattern=op een, Pattern=Oké, Pattern=de, Pattern=vinden, Pattern=piramide, Pattern=op, Pattern=lijken, Pattern=dan
+	Constrained: Pattern=op, Pattern=een
+Turn ID=1| B | B : en aan de zijkant hebben het twee uitstekend
+	Free: Pattern=aan de, Pattern=hebben het, Pattern=twee, Pattern=en
+	Constrained: Pattern=hebben, Pattern=het, Pattern=de
+Turn ID=2| B | B : ja het lijken misschien een beetje op twee bord of zo
+	Free: Pattern=twee, Pattern=ja, Pattern=lijken, Pattern=het, Pattern=een beetje op
+	Constrained: Pattern=op, Pattern=een
+Turn ID=3| A | A : en hebben het aan de rechterkant twee uitsteeksel
+	Free: Pattern=aan de, Pattern=hebben het, Pattern=twee, Pattern=en
+	Constrained: Pattern=hebben, Pattern=het, Pattern=de
+Turn ID=4| B | B : ja en link hebben het dus ook nog een puntig iets en dan aan de onderkant een soort voet
+	Free: Pattern=hebben het, Pattern=ja, Pattern=en dan, Pattern=aan de, Pattern=een, Pattern=een soort, Pattern=en
+	Constrained: Pattern=de, Pattern=dan, Pattern=een, Pattern=het, Pattern=hebben, Pattern=en
+Turn ID=5| A | A : en lijken ik vinden het een beetje op een krokodil lijken
+	Free: Pattern=vinden, Pattern=lijken, Pattern=het, Pattern=ik, Pattern=en, Pattern=een beetje op, Pattern=op een krokodil lijken
+	Constrained: Pattern=lijken, Pattern=op een, Pattern=een, Pattern=op
+Turn ID=6| A | A : met die bek zeggen maar
+	Free: Pattern=met die, Pattern=maar, Pattern=zeggen
+	Constrained: Pattern=met, Pattern=die
+Turn ID=7| B | B : ja ja dat snapen ik
+	Free: Pattern=ja ja, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=8| A | A : en dan een soort van piramide bovenop die afgekaptten zijn
+	Free: Pattern=en dan, Pattern=piramide, Pattern=die, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=dan, Pattern=een, Pattern=en
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja ja precies
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : Oké dan zijn het
+	Free: Pattern=dan, Pattern=zijn, Pattern=Oké, Pattern=het
+	Constrained: 
+Turn ID=12| A | A : Okee ik hebben de krokodil met staart en bovenop zo'n hoed
+	Free: Pattern=ik hebben de krokodil, Pattern=de krokodil met, Pattern=staart, Pattern=en
+	Constrained: Pattern=de, Pattern=met, Pattern=ik, Pattern=hebben
+Turn ID=13| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : de krokodil met de staart
+	Free: Pattern=de krokodil met, Pattern=staart, Pattern=de
+	Constrained: Pattern=de, Pattern=met
+Turn ID=15| A | A : Weet je wel met rechts twee van die balk
+	Free: Pattern=twee, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=16| B | B : Oh ja met de vulkaan wat ik zeggen
+	Free: Pattern=de, Pattern=Oh ja, Pattern=zeggen, Pattern=met, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=17| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=18| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=20| B | B : wat wat hebben we hier nou voor bedenken
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=21| B | B : dit zijn in ieder geval
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=22| B | B : Oh ja jij vinden hem op een krokodil lijken
+	Free: Pattern=op een krokodil lijken, Pattern=Oh ja, Pattern=vinden
+	Constrained: Pattern=ja, Pattern=op, Pattern=lijken, Pattern=een, Pattern=op een
+Turn ID=23| B | B : met die half piramide
+	Free: Pattern=met die, Pattern=half piramide
+	Constrained: Pattern=piramide, Pattern=met, Pattern=die
+Turn ID=24| A | A : Oh ja ja
+	Free: Pattern=ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=25| A | A : ik hebben de krokodil
+	Free: Pattern=ik hebben de krokodil
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=26| A | A : met het staart en de half piramide
+	Free: Pattern=de, Pattern=met, Pattern=en, Pattern=half piramide, Pattern=het, Pattern=staart
+	Constrained: Pattern=piramide
+Turn ID=27| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=zijn
+	Constrained: Pattern=ja
+Turn ID=28| B | B : ik hebben de krokodil
+	Free: Pattern=ik hebben de krokodil
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben
+Turn ID=29| A | A : ik hebben de krokodil
+	Free: Pattern=ik hebben de krokodil
+	Constrained: Pattern=de, Pattern=ik, Pattern=hebben

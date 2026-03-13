@@ -1,0 +1,55 @@
+B|0| B: Eh _dan hebben_ deze _bovenop_ een bolle of een _ballet_ liggen 
+B|1| B: _en_ _aan de zijkant_ _zijn_ _twee_ soort van _handvat_ 
+B|2| B: _en_ _dan_ _aan de_ voorkant een verticaal _balk_ 
+A|3| A: dat [zijn] 
+A|4| A: _ehm_ [dan hebben] ik nu weer degeen _met_ _het_ [ballet] [bovenop] 
+A|5| A: _en _die_ _twee_ handvat_ [aan de zijkant] _met de_ [balk] in _het_ midden 
+B|6| B: nummer 
+B|7| B: [ehm] ja [die] [met] [die twee] uitsteeksel [aan de zijkant] _het bollet bovenop_ [en die] verticaal [balk] 
+A|8| A: [ehm] [de] [het bollet _bovenop] met de_ [handvat] 
+B|9| B: nummer 
+B|10| B: [dan] _bolletje [bovenop_ met de] [twee handvat] 
+A|11| A: _eh_ [bolletje bovenop] 
+B|12| B: [eh] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh dan hebben deze bovenop een bolle of een ballet liggen
+	Free: Pattern=dan hebben, Pattern=ballet, Pattern=bovenop
+	Constrained: Pattern=dan
+Turn ID=1| B | B : en aan de zijkant zijn twee soort van handvat
+	Free: Pattern=twee, Pattern=aan de zijkant, Pattern=handvat, Pattern=en, Pattern=zijn
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=2| B | B : en dan aan de voorkant een verticaal balk
+	Free: Pattern=aan de, Pattern=dan, Pattern=en, Pattern=balk
+	Constrained: Pattern=de
+Turn ID=3| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : ehm dan hebben ik nu weer degeen met het ballet bovenop
+	Free: Pattern=bovenop, Pattern=ballet, Pattern=het, Pattern=dan hebben, Pattern=ehm, Pattern=met
+	Constrained: Pattern=dan
+Turn ID=5| A | A : en die twee handvat aan de zijkant met de balk in het midden
+	Free: Pattern=en die, Pattern=met de, Pattern=aan de zijkant, Pattern=balk, Pattern=twee handvat, Pattern=het, Pattern=die twee
+	Constrained: Pattern=twee, Pattern=de, Pattern=aan de, Pattern=handvat, Pattern=met, Pattern=die, Pattern=en
+Turn ID=6| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ehm ja die met die twee uitsteeksel aan de zijkant het bollet bovenop en die verticaal balk
+	Free: Pattern=en die, Pattern=aan de zijkant, Pattern=die twee, Pattern=balk, Pattern=die, Pattern=het bollet bovenop, Pattern=ehm, Pattern=met
+	Constrained: Pattern=bovenop, Pattern=twee, Pattern=de, Pattern=aan de, Pattern=het, Pattern=die, Pattern=en
+Turn ID=8| A | A : ehm de het bollet bovenop met de handvat
+	Free: Pattern=de, Pattern=handvat, Pattern=ehm, Pattern=het bollet bovenop, Pattern=bovenop met de
+	Constrained: Pattern=bovenop, Pattern=het, Pattern=met, Pattern=de, Pattern=met de
+Turn ID=9| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : dan bolletje bovenop met de twee handvat
+	Free: Pattern=bovenop met de, Pattern=bolletje bovenop, Pattern=twee handvat, Pattern=dan
+	Constrained: Pattern=bovenop, Pattern=twee, Pattern=handvat, Pattern=met, Pattern=de, Pattern=met de
+Turn ID=11| A | A : eh bolletje bovenop
+	Free: Pattern=bolletje bovenop, Pattern=eh
+	Constrained: Pattern=bovenop
+Turn ID=12| B | B : eh nummer
+	Free: Pattern=eh
+	Constrained: 

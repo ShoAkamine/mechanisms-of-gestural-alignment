@@ -1,0 +1,75 @@
+A|0| A: _oh_ deze vinden _ik_ een beetje op een zwembad lijken _met_ je _hebben_ onder _hebben_ je een heledat _zijn_ het enig plaat _met_ onder een vierkant plank 
+B|1| B: _Oh_ _ja_ _ja_ 
+B|2| B: dan en dan [hebben] hij zo twee _van die_ stok daarboven 
+A|3| A: [van die] _kralen_ erachter 
+B|4| B: _Oh_ wachten 
+B|5| B: [oh] nee dan [hebben] [ik] _de_ ander 
+B|6| B: _Oh_ [met] [van die] twee uitstekend aan aan beide kant [van die] uitstekend _krael_ 
+A|7| A: [ja] 
+B|8| B: [ja] [ja] oké 
+B|9| B: dat [zijn] 
+B|10| B: _ik hebben die met_ [die] _krael_ aan _de_ zijkant 
+A|11| A: [Oh] 
+A|12| A: [ik hebben] het zwembad [met] [krael] 
+B|13| B: [Oh] [ja] dat [zijn] 
+B|14| B: _ik hebben die met de_ twee kraal aan _de_ zijkant 
+A|15| A: [Oh] 
+A|16| A: [ik hebben die met de] [krael] 
+B|17| B: [ik hebben] [de] twee [kralen] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oh deze vinden ik een beetje op een zwembad lijken met je hebben onder hebben je een heledat zijn het enig plaat met onder een vierkant plank
+	Free: Pattern=oh, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : Oh ja ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=2| B | B : dan en dan hebben hij zo twee van die stok daarboven
+	Free: Pattern=van die, Pattern=hebben
+	Constrained: Pattern=die
+Turn ID=3| A | A : van die kralen erachter
+	Free: Pattern=van die, Pattern=kralen
+	Constrained: Pattern=die
+Turn ID=4| B | B : Oh wachten
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : oh nee dan hebben ik de ander
+	Free: Pattern=oh, Pattern=ik, Pattern=de, Pattern=hebben
+	Constrained: 
+Turn ID=6| B | B : Oh met van die twee uitstekend aan aan beide kant van die uitstekend krael
+	Free: Pattern=van die, Pattern=Oh, Pattern=krael, Pattern=met
+	Constrained: Pattern=die
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : ik hebben die met die krael aan de zijkant
+	Free: Pattern=ik hebben die met, Pattern=die, Pattern=krael, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=11| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| A | A : ik hebben het zwembad met krael
+	Free: Pattern=ik hebben, Pattern=krael, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=13| B | B : Oh ja dat zijn
+	Free: Pattern=ja, Pattern=Oh, Pattern=zijn
+	Constrained: 
+Turn ID=14| B | B : ik hebben die met de twee kraal aan de zijkant
+	Free: Pattern=ik hebben die met de, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben die met, Pattern=ik
+Turn ID=15| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=16| A | A : ik hebben die met de krael
+	Free: Pattern=ik hebben die met de, Pattern=krael
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben die met, Pattern=ik
+Turn ID=17| B | B : ik hebben de twee kralen
+	Free: Pattern=ik hebben, Pattern=kralen, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben

@@ -1,0 +1,207 @@
+A|0| A: _ja_ 
+A|1| A: Oké nou _hebben_ ik weer _die_ _vinden_ ik lijken op _Pinocchio_ 
+A|2| A: omdat _hij_ _één_ _neus_ _hebben_ _en_ er zitten _zo'n_ _schijf_ bij _het_ hoofd 
+B|3| B: Oh [ja] 
+B|4| B: _mhm_ 
+A|5| A: _en_ _dan_ _nog_ _een soort_ kuifje _aan de_ bovenkant 
+B|6| B: _met_ twee spriet zeggen maar toch 
+A|7| A: _één sprie_ _aan de_ bovenkant _dan_ _in ieder geval_ 
+B|8| B: Oh [één] st 
+B|9| B: [één sprie] 
+B|10| B: huh 
+B|11| B: Wa _hebben hij_ geen arm zeggen maar _dat_ omhoog steken 
+A|12| A: nee nee 
+B|13| B: oh niet [die] 
+B|14| B: _Eh_ _met_ [een] _met_ [zo'n] slurf [in] [de] onderkant [dan] of _wat_ 
+A|15| A: nee 
+A|16| A: _even kijken_ horen 
+A|17| A: [Eh] _aan de_ linkerkant zitten [een] balk [die] uitzeekt [dat] _vinden_ ik [dan] [de] _neus_ 
+B|18| B: [ja] 
+A|19| A: _en aan de_ bovenkant [hebben hij] dus [één] [zo'n] _half_ rond [sprie] 
+A|20| A: _en_ vanaf hier _aan de_ achterkant zien je _een soort_ rond _schijf_ 
+B|21| B: Oh [ja] [ja] [en aan de] ander kant [een soort] van langwerpig ding [nog] 
+A|22| A: [ja] 
+A|23| A: [ja] 
+B|24| B: [ja] [ja] oké oké 
+A|25| A: [ja] 
+B|26| B: [dan] _zijn_ [het] 
+A|27| A: Oké 
+B|28| B: eh _dit zijn_ volgens mij [vinden] jij Pinocchio-achtig 
+B|29| B: [in ieder geval] [neus] [neus] naar links [en] [een] [half] _schijf erachter_ 
+B|30| B: [en] [een] soeplepel erin of [een] [sprie] 
+A|31| A: [ja] 
+A|32| A: [ja] 
+A|33| A: [dit zijn] pedokio 
+B|34| B: [even kijken] [ja] 
+A|35| A: [met] [één] lepel 
+B|36| B: [ja] [en] [een] [half] [schijf] [dat] [zijn] 
+A|37| A: [ja] 
+B|38| B: [dit zijn] [die] [Pinocchio] 
+A|39| A: [mhm] 
+A|40| A: [even kijken] 
+A|41| A: [ja] 
+A|42| A: [dit zijn] [de] [Pinocchio] 
+A|43| A: [met] [schijf erachter] 
+B|44| B: Hmm [ja] 
+B|45| B: waar _staan_ [die] 
+B|46| B: eh [ja] [dat] [zijn] 
+B|47| B: [ja] 
+B|48| B: eh [dit zijn] [die] [Pinocchio] 
+A|49| A: [mhm] 
+A|50| A: [kijken] [wat] [staan] daar 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : Oké nou hebben ik weer die vinden ik lijken op Pinocchio
+	Free: Pattern=Pinocchio, Pattern=hebben, Pattern=die, Pattern=vinden
+	Constrained: 
+Turn ID=2| A | A : omdat hij één neus hebben en er zitten zo'n schijf bij het hoofd
+	Free: Pattern=zo'n, Pattern=het, Pattern=één, Pattern=hij, Pattern=neus, Pattern=en, Pattern=hebben, Pattern=schijf
+	Constrained: 
+Turn ID=3| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=5| A | A : en dan nog een soort kuifje aan de bovenkant
+	Free: Pattern=nog, Pattern=aan de, Pattern=dan, Pattern=een soort, Pattern=en
+	Constrained: Pattern=de, Pattern=een
+Turn ID=6| B | B : met twee spriet zeggen maar toch
+	Free: Pattern=met
+	Constrained: 
+Turn ID=7| A | A : één sprie aan de bovenkant dan in ieder geval
+	Free: Pattern=in ieder geval, Pattern=één sprie, Pattern=aan de, Pattern=dan
+	Constrained: Pattern=in, Pattern=sprie, Pattern=één, Pattern=de
+Turn ID=8| B | B : Oh één st
+	Free: Pattern=één
+	Constrained: 
+Turn ID=9| B | B : één sprie
+	Free: Pattern=één sprie
+	Constrained: Pattern=sprie, Pattern=één
+Turn ID=10| B | B : huh
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : Wa hebben hij geen arm zeggen maar dat omhoog steken
+	Free: Pattern=hebben hij, Pattern=dat
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=12| A | A : nee nee
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : oh niet die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=14| B | B : Eh met een met zo'n slurf in de onderkant dan of wat
+	Free: Pattern=zo'n, Pattern=de, Pattern=dan, Pattern=een, Pattern=Eh, Pattern=in, Pattern=met, Pattern=wat
+	Constrained: 
+Turn ID=15| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : even kijken horen
+	Free: Pattern=even kijken
+	Constrained: Pattern=kijken
+Turn ID=17| A | A : Eh aan de linkerkant zitten een balk die uitzeekt dat vinden ik dan de neus
+	Free: Pattern=dat, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=Eh, Pattern=neus, Pattern=die, Pattern=de, Pattern=vinden
+	Constrained: Pattern=de
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : en aan de bovenkant hebben hij dus één zo'n half rond sprie
+	Free: Pattern=sprie, Pattern=hebben hij, Pattern=zo'n, Pattern=één, Pattern=en aan de, Pattern=half
+	Constrained: Pattern=de, Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=en
+Turn ID=20| A | A : en vanaf hier aan de achterkant zien je een soort rond schijf
+	Free: Pattern=een soort, Pattern=aan de, Pattern=schijf, Pattern=en
+	Constrained: Pattern=de, Pattern=een
+Turn ID=21| B | B : Oh ja ja en aan de ander kant een soort van langwerpig ding nog
+	Free: Pattern=en aan de, Pattern=een soort, Pattern=ja, Pattern=nog
+	Constrained: Pattern=een, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ja ja oké oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : dan zijn het
+	Free: Pattern=dan, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=27| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : eh dit zijn volgens mij vinden jij Pinocchio-achtig
+	Free: Pattern=dit zijn, Pattern=vinden
+	Constrained: Pattern=zijn
+Turn ID=29| B | B : in ieder geval neus neus naar links en een half schijf erachter
+	Free: Pattern=schijf erachter, Pattern=een, Pattern=neus, Pattern=half, Pattern=in ieder geval, Pattern=en
+	Constrained: Pattern=in, Pattern=schijf
+Turn ID=30| B | B : en een soeplepel erin of een sprie
+	Free: Pattern=en, Pattern=sprie, Pattern=een
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : dit zijn pedokio
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=34| B | B : even kijken ja
+	Free: Pattern=even kijken, Pattern=ja
+	Constrained: Pattern=kijken
+Turn ID=35| A | A : met één lepel
+	Free: Pattern=één, Pattern=met
+	Constrained: 
+Turn ID=36| B | B : ja en een half schijf dat zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=een, Pattern=schijf, Pattern=en, Pattern=zijn, Pattern=half
+	Constrained: 
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : dit zijn die Pinocchio
+	Free: Pattern=dit zijn, Pattern=Pinocchio, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=39| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=40| A | A : even kijken
+	Free: Pattern=even kijken
+	Constrained: Pattern=kijken
+Turn ID=41| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| A | A : dit zijn de Pinocchio
+	Free: Pattern=dit zijn, Pattern=de, Pattern=Pinocchio
+	Constrained: Pattern=zijn
+Turn ID=43| A | A : met schijf erachter
+	Free: Pattern=schijf erachter, Pattern=met
+	Constrained: Pattern=schijf
+Turn ID=44| B | B : Hmm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| B | B : waar staan die
+	Free: Pattern=die, Pattern=staan
+	Constrained: 
+Turn ID=46| B | B : eh ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : eh dit zijn die Pinocchio
+	Free: Pattern=dit zijn, Pattern=Pinocchio, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=49| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=50| A | A : kijken wat staan daar
+	Free: Pattern=kijken, Pattern=wat, Pattern=staan
+	Constrained: 

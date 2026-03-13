@@ -1,0 +1,63 @@
+B|0| B: _Euh_ dan _hebben_ _ik_ _een_ _beker_ _met_ eigenlijk _een_ plateau _door de beker_ weer _heen_ 
+A|1| A: Oh 
+B|2| B: _en_ uit _de beker_ komen _een_ soort _glijbaan_ 
+A|3| A: Yes [ik] snapen hem 
+A|4| A: [Euh] 
+A|5| A: Oh [ik] [hebben] nu degeen waar [een] _euh_ vlak [door de beker] [heen] gaan [en] dat zijn als [een] [glijbaan] aan [de] zijkant 
+B|6| B: _even_ zoeken 
+B|7| B: [Euh] dan [hebben] [ik] [euh] [de] [glijbaan] 
+A|8| A: [Euh] yes [even] kijken waar die staan 
+A|9| A: ah ja 
+A|10| A: [Euh] ja [ik] [hebben] degeen [met] het vlak [door de beker] [heen] [en] [een] [glijbaan] aan [de] zijkant 
+B|11| B: dan [de] [glijbaan] 
+A|12| A: [Euh] [even] kijken waar die staan toch 
+A|13| A: ah daar 
+A|14| A: [Euh] glijbaant [met] vlak 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh dan hebben ik een beker met eigenlijk een plateau door de beker weer heen
+	Free: Pattern=beker, Pattern=een, Pattern=Euh, Pattern=hebben, Pattern=door de beker, Pattern=heen, Pattern=met, Pattern=ik
+	Constrained: Pattern=de beker, Pattern=beker, Pattern=de
+Turn ID=1| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : en uit de beker komen een soort glijbaan
+	Free: Pattern=de beker, Pattern=een, Pattern=en, Pattern=glijbaan
+	Constrained: Pattern=beker, Pattern=de
+Turn ID=3| A | A : Yes ik snapen hem
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=4| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=5| A | A : Oh ik hebben nu degeen waar een euh vlak door de beker heen gaan en dat zijn als een glijbaan aan de zijkant
+	Free: Pattern=de, Pattern=een, Pattern=hebben, Pattern=heen, Pattern=glijbaan, Pattern=ik, Pattern=en, Pattern=euh, Pattern=door de beker
+	Constrained: Pattern=de beker, Pattern=beker, Pattern=de
+Turn ID=6| B | B : even zoeken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=7| B | B : Euh dan hebben ik euh de glijbaan
+	Free: Pattern=de, Pattern=Euh, Pattern=hebben, Pattern=euh, Pattern=glijbaan, Pattern=ik
+	Constrained: 
+Turn ID=8| A | A : Euh yes even kijken waar die staan
+	Free: Pattern=even, Pattern=Euh
+	Constrained: 
+Turn ID=9| A | A : ah ja
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : Euh ja ik hebben degeen met het vlak door de beker heen en een glijbaan aan de zijkant
+	Free: Pattern=de, Pattern=een, Pattern=Euh, Pattern=hebben, Pattern=door de beker, Pattern=heen, Pattern=met, Pattern=glijbaan, Pattern=ik, Pattern=en
+	Constrained: Pattern=de beker, Pattern=beker, Pattern=de
+Turn ID=11| B | B : dan de glijbaan
+	Free: Pattern=glijbaan, Pattern=de
+	Constrained: 
+Turn ID=12| A | A : Euh even kijken waar die staan toch
+	Free: Pattern=even, Pattern=Euh
+	Constrained: 
+Turn ID=13| A | A : ah daar
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : Euh glijbaant met vlak
+	Free: Pattern=Euh, Pattern=met
+	Constrained: 

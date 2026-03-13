@@ -1,0 +1,183 @@
+A|0| A: _ehm ja_ _ik_ inzien weer _een_ _ja_ _een_ beker 
+A|1| A: aan de voorkant _zien_ _ik_ 
+A|2| A: _een_ _ja_ lijken net _een_ neus eigenlijk 
+B|3| B: [ja] 
+A|4| A: _en_ aan de linkerkant _zien_ _ik_ _een_ driehoek 
+A|5| A: _maar_ dan steken _dat_ eruit 
+A|6| A: _en_ bovenkant dus _erin_ in _die_ beker 
+A|7| A: _zien_ _ik_ 
+A|8| A: [ja] lijken net op _een_ _lineaal_ 
+B|9| B: [ja] 
+A|10| A: _en_ aan _een_ sch 
+A|11| A: [ja] aan _een_ 
+A|12| A: _ik_ weten niet 
+A|13| A: _een_ _pen_ 
+A|14| A: of _een_ potlood 
+B|15| B: [ja] [ja] [ja] 
+B|16| B: nee [ik] [zien] hem 
+A|17| A: [ja] 
+B|18| B: [een] soort omgekeerde kegel van van Bowlen zeggen [maar] 
+A|19| A: [ja] precies 
+A|20| A: [ja] 
+B|21| B: [ja] 
+B|22| B: _eh_ _zijn_ [dat] 
+A|23| A: [ja] 
+A|24| A: [ja] bij mij [zijn] het letter M 
+B|25| B: [ja] 
+A|26| A: Oké 
+B|27| B: [ik] [zien] [ja] [die] _met_ [die] _lineaal en_ [die] [pen] [erin] 
+A|28| A: Oh [ja] dit [zijn] letter 
+B|29| B: [ja] 
+A|30| A: _Eh_ nou [ik] inzien weer [een] neus 
+A|31| A: [met] _lineaal en pen_ 
+B|32| B: [Eh] [dat] [zijn] 
+A|33| A: L 
+B|34| B: [ehm ja] [die] [lineaal en] [die] [pen] 
+A|35| A: [ehm ja] 
+B|36| B: zeven 
+A|37| A: Oké 
+B|38| B: _eh_ [ja] 
+A|39| A: [ehm ja] [ik] inzien weer [een] neus [en] _lineaal en pen_ 
+B|40| B: hm [ja] 
+A|41| A: J 
+B|42| B: [ehm] [lineaal en pen] 
+A|43| A: [eh] waar [zijn] [die] waar [zijn] [die] waar [zijn] [die] 
+B|44| B: zeven 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm ja ik inzien weer een ja een beker
+	Free: Pattern=ehm ja, Pattern=ik, Pattern=ja, Pattern=een
+	Constrained: Pattern=ehm, Pattern=ja
+Turn ID=1| A | A : aan de voorkant zien ik
+	Free: Pattern=ik, Pattern=zien
+	Constrained: 
+Turn ID=2| A | A : een ja lijken net een neus eigenlijk
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en aan de linkerkant zien ik een driehoek
+	Free: Pattern=en, Pattern=ik, Pattern=zien, Pattern=een
+	Constrained: 
+Turn ID=5| A | A : maar dan steken dat eruit
+	Free: Pattern=dat, Pattern=maar
+	Constrained: 
+Turn ID=6| A | A : en bovenkant dus erin in die beker
+	Free: Pattern=erin, Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=7| A | A : zien ik
+	Free: Pattern=ik, Pattern=zien
+	Constrained: 
+Turn ID=8| A | A : ja lijken net op een lineaal
+	Free: Pattern=lineaal, Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : en aan een sch
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=11| A | A : ja aan een
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : ik weten niet
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=13| A | A : een pen
+	Free: Pattern=pen, Pattern=een
+	Constrained: 
+Turn ID=14| A | A : of een potlood
+	Free: Pattern=een
+	Constrained: 
+Turn ID=15| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : nee ik zien hem
+	Free: Pattern=ik, Pattern=zien
+	Constrained: 
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : een soort omgekeerde kegel van van Bowlen zeggen maar
+	Free: Pattern=maar, Pattern=een
+	Constrained: 
+Turn ID=19| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : eh zijn dat
+	Free: Pattern=eh, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja bij mij zijn het letter M
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ik zien ja die met die lineaal en die pen erin
+	Free: Pattern=ja, Pattern=met, Pattern=ik, Pattern=erin, Pattern=pen, Pattern=lineaal en, Pattern=die, Pattern=zien
+	Constrained: Pattern=lineaal, Pattern=en
+Turn ID=28| A | A : Oh ja dit zijn letter
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : Eh nou ik inzien weer een neus
+	Free: Pattern=Eh, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=31| A | A : met lineaal en pen
+	Free: Pattern=lineaal en pen, Pattern=met
+	Constrained: Pattern=lineaal, Pattern=pen, Pattern=en, Pattern=lineaal en
+Turn ID=32| B | B : Eh dat zijn
+	Free: Pattern=Eh, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=33| A | A : L
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : ehm ja die lineaal en die pen
+	Free: Pattern=ehm ja, Pattern=lineaal en, Pattern=die, Pattern=pen
+	Constrained: Pattern=lineaal, Pattern=en, Pattern=ehm, Pattern=ja
+Turn ID=35| A | A : ehm ja
+	Free: Pattern=ehm ja
+	Constrained: Pattern=ehm, Pattern=ja
+Turn ID=36| B | B : zeven
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : ehm ja ik inzien weer een neus en lineaal en pen
+	Free: Pattern=lineaal en pen, Pattern=een, Pattern=ik, Pattern=en, Pattern=ehm ja
+	Constrained: Pattern=ja, Pattern=lineaal, Pattern=ehm, Pattern=lineaal en, Pattern=en, Pattern=pen
+Turn ID=40| B | B : hm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : J
+	Free: 
+	Constrained: 
+Turn ID=42| B | B : ehm lineaal en pen
+	Free: Pattern=lineaal en pen, Pattern=ehm
+	Constrained: Pattern=lineaal, Pattern=pen, Pattern=en, Pattern=lineaal en
+Turn ID=43| A | A : eh waar zijn die waar zijn die waar zijn die
+	Free: Pattern=eh, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=44| B | B : zeven
+	Free: 
+	Constrained: 

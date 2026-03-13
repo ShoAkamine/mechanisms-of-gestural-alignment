@@ -1,0 +1,195 @@
+A|0| A: _oké_ deze _zijn_ naar 
+A|1| A: _ehm_ _je hebben_ zeggen _maar_ _een soort van_ bak in _het_ midden 
+A|2| A: _en dan_ _aan_ _de_ rechterkant _zitten er_ _een_ schijf 
+A|3| A: ongeveer in _het_ midden _van_ die bak 
+A|4| A: _en_ _aan_ _de_ linkerkant steken _een soort van_ _ja_ _een_ beetje _een_ _dubbel buis_ _uit_ 
+A|5| A: _en_ die _zijn_ die worden _een soort van_ _ja_ niet helemaal doorboren 
+A|6| A: _maar_ _het_ lijken alsof _er_ _een_ luik _links_ bovenin _zitten_ 
+A|7| A: _waar_ _licht_ doorheen komen of zo 
+A|8| A: _wat_ _dan_ precies op die _buis_ link _vallen_ 
+B|9| B: Oké 
+B|10| B: Oké 
+A|11| A: _het_ _zijn_ _als_ _je_ of _als_ _je_ _het_ _het_ figuur pakken _zitten_ linksbovenin _een_ _heel_ klein vierkan 
+A|12| A: _en_ daar komen echt _zo'n_ straal _soort van_ doorheen 
+B|13| B: Oké 
+B|14| B: [ehm] _ik_ denken _dat_ _ik_ wel weten [wat] [je] bedoelen 
+B|15| B: want [er] [zitten] dus [links] [een soort van] [dubbel buis] _met_ dus _dat_ [licht] gebeuren 
+A|16| A: aha 
+B|17| B: [en dan] rechts [zitten er] [zo'n] [soort van] opzettafel eigenlijk [aan] [zo'n] ding vast 
+A|18| A: _ja_ echt [zo'n] [zo'n] [een _soort van] dienblad_ of zo [wat] eruit steken 
+B|19| B: [ja] 
+B|20| B: [ja] [oké] 
+B|21| B: [ja] _ik_ 
+B|22| B: [ja] [oké] 
+B|23| B: dus [een] opzetblad 
+B|24| B: [en] [een soort van] _ik_ [hebben] _dat_ [licht] veel _zien_ [als] [een soort van] _toeter_ 
+B|25| B: [maar] [licht] 
+A|26| A: [ja] zo zullen [je] _het_ _ook_ kunnen [zien] 
+A|27| A: [ja] 
+B|28| B: [ja] [oké] 
+B|29| B: [dan] [zijn] _ik_ [er] [uit] 
+B|30| B: [dan] [zijn] [het] nummer 
+B|31| B: sorry _ik_ moeten iets doen 
+B|32| B: _dit zijn_ [waar] _jij_ _dat_ [heel] verhaal [hebben] over _dat_ [het] [licht] erin [vallen] 
+B|33| B: [en] [je hebben] [zo'n] [soort van dienblad] 
+A|34| A: Oh [ja] 
+A|35| A: even kijken [waar] staan die 
+A|36| A: _eh ja_ [dat] [zijn] 
+A|37| A: Oh [dit zijn] die [met] [dat] [wat] [jij] [een] [toeter] noemen 
+A|38| A: [en] [wat] [ik] [een] lichtvenster noemen 
+B|39| B: nummer 
+B|40| B: [eh ja] [dit zijn] _de toeter_ 
+B|41| B: [maar] [ook] [de] _lichtinval_ 
+A|42| A: Eh [dat] [zijn] 
+A|43| A: [eh] _de toeter slashen lichtinval_ 
+B|44| B: [ehm] nummer 
+B|45| B: sorry [ik] moeten klikken 
+B|46| B: [dit zijn] [de toeter slashen lichtinval] 
+A|47| A: [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze zijn naar
+	Free: Pattern=oké, Pattern=zijn
+	Constrained: 
+Turn ID=1| A | A : ehm je hebben zeggen maar een soort van bak in het midden
+	Free: Pattern=je hebben, Pattern=het, Pattern=een soort van, Pattern=ehm, Pattern=maar
+	Constrained: Pattern=een, Pattern=hebben, Pattern=van, Pattern=soort van, Pattern=je
+Turn ID=2| A | A : en dan aan de rechterkant zitten er een schijf
+	Free: Pattern=en dan, Pattern=een, Pattern=zitten er, Pattern=de, Pattern=aan
+	Constrained: Pattern=dan, Pattern=zitten, Pattern=er, Pattern=en
+Turn ID=3| A | A : ongeveer in het midden van die bak
+	Free: Pattern=het, Pattern=van
+	Constrained: 
+Turn ID=4| A | A : en aan de linkerkant steken een soort van ja een beetje een dubbel buis uit
+	Free: Pattern=dubbel buis, Pattern=uit, Pattern=een, Pattern=een soort van, Pattern=en, Pattern=de, Pattern=aan, Pattern=ja
+	Constrained: Pattern=soort van, Pattern=buis, Pattern=van, Pattern=een
+Turn ID=5| A | A : en die zijn die worden een soort van ja niet helemaal doorboren
+	Free: Pattern=een soort van, Pattern=ja, Pattern=zijn, Pattern=en
+	Constrained: Pattern=soort van, Pattern=van, Pattern=een
+Turn ID=6| A | A : maar het lijken alsof er een luik links bovenin zitten
+	Free: Pattern=een, Pattern=links, Pattern=het, Pattern=zitten, Pattern=er, Pattern=maar
+	Constrained: 
+Turn ID=7| A | A : waar licht doorheen komen of zo
+	Free: Pattern=waar, Pattern=licht
+	Constrained: 
+Turn ID=8| A | A : wat dan precies op die buis link vallen
+	Free: Pattern=buis, Pattern=dan, Pattern=wat, Pattern=vallen
+	Constrained: 
+Turn ID=9| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : het zijn als je of als je het het figuur pakken zitten linksbovenin een heel klein vierkan
+	Free: Pattern=heel, Pattern=een, Pattern=het, Pattern=als, Pattern=zitten, Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=12| A | A : en daar komen echt zo'n straal soort van doorheen
+	Free: Pattern=soort van, Pattern=zo'n, Pattern=en
+	Constrained: Pattern=van
+Turn ID=13| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : ehm ik denken dat ik wel weten wat je bedoelen
+	Free: Pattern=dat, Pattern=ehm, Pattern=wat, Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=15| B | B : want er zitten dus links een soort van dubbel buis met dus dat licht gebeuren
+	Free: Pattern=dubbel buis, Pattern=dat, Pattern=een soort van, Pattern=met, Pattern=zitten, Pattern=er, Pattern=licht, Pattern=links
+	Constrained: Pattern=soort van, Pattern=buis, Pattern=van, Pattern=een
+Turn ID=16| A | A : aha
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : en dan rechts zitten er zo'n soort van opzettafel eigenlijk aan zo'n ding vast
+	Free: Pattern=zo'n, Pattern=aan, Pattern=en dan, Pattern=soort van, Pattern=zitten er
+	Constrained: Pattern=dan, Pattern=zitten, Pattern=er, Pattern=van, Pattern=en
+Turn ID=18| A | A : ja echt zo'n zo'n een soort van dienblad of zo wat eruit steken
+	Free: Pattern=zo'n, Pattern=ja, Pattern=een soort van, Pattern=wat, Pattern=soort van dienblad
+	Constrained: Pattern=een, Pattern=van, Pattern=soort van
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : ja ik
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=22| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : dus een opzetblad
+	Free: Pattern=een
+	Constrained: 
+Turn ID=24| B | B : en een soort van ik hebben dat licht veel zien als een soort van toeter
+	Free: Pattern=dat, Pattern=licht, Pattern=hebben, Pattern=een soort van, Pattern=als, Pattern=zien, Pattern=ik, Pattern=toeter, Pattern=en
+	Constrained: Pattern=soort van, Pattern=van, Pattern=een
+Turn ID=25| B | B : maar licht
+	Free: Pattern=maar, Pattern=licht
+	Constrained: 
+Turn ID=26| A | A : ja zo zullen je het ook kunnen zien
+	Free: Pattern=ja, Pattern=ook, Pattern=het, Pattern=zien, Pattern=je
+	Constrained: 
+Turn ID=27| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : dan zijn ik er uit
+	Free: Pattern=uit, Pattern=dan, Pattern=er, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=30| B | B : dan zijn het nummer
+	Free: Pattern=dan, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=31| B | B : sorry ik moeten iets doen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=32| B | B : dit zijn waar jij dat heel verhaal hebben over dat het licht erin vallen
+	Free: Pattern=dat, Pattern=heel, Pattern=waar, Pattern=licht, Pattern=het, Pattern=hebben, Pattern=vallen, Pattern=dit zijn, Pattern=jij
+	Constrained: Pattern=zijn
+Turn ID=33| B | B : en je hebben zo'n soort van dienblad
+	Free: Pattern=soort van dienblad, Pattern=je hebben, Pattern=zo'n, Pattern=en
+	Constrained: Pattern=je, Pattern=van, Pattern=soort van, Pattern=hebben
+Turn ID=34| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : even kijken waar staan die
+	Free: Pattern=waar
+	Constrained: 
+Turn ID=36| A | A : eh ja dat zijn
+	Free: Pattern=eh ja, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=eh, Pattern=ja
+Turn ID=37| A | A : Oh dit zijn die met dat wat jij een toeter noemen
+	Free: Pattern=dat, Pattern=een, Pattern=met, Pattern=wat, Pattern=toeter, Pattern=dit zijn, Pattern=jij
+	Constrained: Pattern=zijn
+Turn ID=38| A | A : en wat ik een lichtvenster noemen
+	Free: Pattern=ik, Pattern=wat, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=39| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : eh ja dit zijn de toeter
+	Free: Pattern=eh ja, Pattern=de toeter, Pattern=dit zijn
+	Constrained: Pattern=eh, Pattern=toeter, Pattern=zijn, Pattern=de, Pattern=ja
+Turn ID=41| B | B : maar ook de lichtinval
+	Free: Pattern=lichtinval, Pattern=ook, Pattern=de, Pattern=maar
+	Constrained: 
+Turn ID=42| A | A : Eh dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=43| A | A : eh de toeter slashen lichtinval
+	Free: Pattern=de toeter slashen lichtinval, Pattern=eh
+	Constrained: Pattern=de, Pattern=lichtinval, Pattern=toeter, Pattern=de toeter
+Turn ID=44| B | B : ehm nummer
+	Free: Pattern=ehm
+	Constrained: 
+Turn ID=45| B | B : sorry ik moeten klikken
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=46| B | B : dit zijn de toeter slashen lichtinval
+	Free: Pattern=de toeter slashen lichtinval, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=lichtinval, Pattern=de toeter, Pattern=toeter, Pattern=zijn
+Turn ID=47| A | A : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 

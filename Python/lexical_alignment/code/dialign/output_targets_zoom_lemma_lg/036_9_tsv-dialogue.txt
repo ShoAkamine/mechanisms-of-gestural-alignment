@@ -1,0 +1,207 @@
+A|0| A: _Oké_ _de_ volgen _het_ _lijken_ alsof er _een soort van rond_ _lang neus_ _aan_ zitten _aan de_ linkerkant 
+A|1| A: _en_ _het_ _hebben_ _een soort van_ pluim _aan de_ bovenkant _en_ _aan de_ achterkant _een soort_ _rond_ 
+A|2| A: _en_ _het_ _staan_ _op een soort_ ovaal hoe noemen _je dat_ _een_ rechthoekig dinget _het_ kop 
+B|3| B: _Oh_ _oké_ [hebben] [het] echt _één_ _rond aan_ _één_ kant 
+A|4| A: _een [rond_ aan] _ja_ _aan de_ achterkant 
+A|5| A: _en_ _aan de_ zitten _ook_ _een soort van_ pluim _aan de_ bovenkant _en een_ neu gro of _ja_ _lang neus_ _aan de_ voorkant 
+B|6| B: [en] dan 
+B|7| B: ah [ja] _ik_ _denken_ [dat] _ik_ [het] wel weten 
+B|8| B: _zijn_ 
+B|9| B: kunnen _ik_ gewoon drukken hè 
+A|10| A: [ja] 
+B|11| B: [Oké] 
+B|12| B: _oké_ deze [lijken] [ook] [op] _Oh_ [hebben] _we_ deze al [hebben] 
+B|13| B: _volgens mij_ wel maar 
+A|14| A: [ja] [volgens mij] moeten [we] nu zes ronde doen _dus_ gaan [we] [denken] [ik] nu naar _de_ twee ronde 
+B|15| B: _Oh_ _oké_ 
+B|16| B: _oké_ deze _zijn_ weer _met [een soort van_ rond] oor _en een lang neus [en_ een] _antenne_ 
+A|17| A: ehm _even_ kijken 
+A|18| A: [Oh] _ja oké_ [op] zo'n hij _staan_ [op] zo'n klein _balk_ _toch_ 
+B|19| B: nee nee nee nee sorry sorry [dus] [ja] [je] [hebben] [het] om aangeven [dat] [het] [een soort] [op [een soort] van] [ja] [op [een soort] van] [balk] [staan] [toch] 
+A|20| A: of _die_ 
+A|21| A: [ja] 
+A|22| A: [ja] zo'n klein 
+B|23| B: _ja ja_ kloppen Sorry 
+B|24| B: [ja] 
+A|25| A: dit [zijn] degeen _met een [rond_ _aan] de_ achterkant [en een lang neus en] zo'n pluim [op] [zijn] hoofd 
+A|26| A: _die_ [op] zo'n dinget [staan] 
+B|27| B: [Oh] sorry kunnen [je dat] herhalen 
+A|28| A: [met] [het] [rond] 
+A|29| A: er zitten _een [rond_ _aan] de_ achterkant 
+A|30| A: [met [een] lang] [rond] [neus] 
+A|31| A: [met een soort van] pluim [op] [zijn] hoofd 
+A|32| A: [met] zo'n [antenne] [op] [zijn] hoofd 
+B|33| B: Oei [even] hoor [even] zoeken 
+A|34| A: _dat zijn_ degeen _die_ [op] zo'n klein blok [staan] 
+B|35| B: O 
+B|36| B: ah [ja] [met] [die] [die] [balk] _nek_ 
+A|37| A: zo'n langwerpig 
+A|38| A: [ja] 
+B|39| B: _ja ja_ [ik] weten al 
+B|40| B: Eh deze [zijn] [de] [een] [met [een soort van] rond] rondje achter zich [en een lang neus] 
+B|41| B: [en] dan _één_ [antenne] 
+A|42| A: [ja ja] oke _dat zijn_ 
+B|43| B: [Oh] _en dat_ [balk] [aan de] onderkant [ja] 
+A|44| A: [ja] _dat zijn_ 
+A|45| A: ehm dit [zijn] degeen [die] [dat] raar [nek] [hebben] [en dat] [rond [aan] de] achterkant [met] [dat] [één] ding [op] [zijn] hoofd [en een lang neus] 
+B|46| B: [ja oké] [dat zijn] 
+B|47| B: [ja] deze [zijn] weer [die] [een] [met] [één] [dat] [op een] ballet [staan] [met een rond] [rond] achter zich [en een] [antenne] 
+A|48| A: [ja] 
+B|49| B: [ja] 
+A|50| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké de volgen het lijken alsof er een soort van rond lang neus aan zitten aan de linkerkant
+	Free: Pattern=aan de, Pattern=lijken, Pattern=het, Pattern=lang neus, Pattern=een soort van rond, Pattern=Oké, Pattern=de, Pattern=aan
+	Constrained: Pattern=een, Pattern=een soort van, Pattern=neus, Pattern=een soort, Pattern=rond, Pattern=de, Pattern=aan
+Turn ID=1| A | A : en het hebben een soort van pluim aan de bovenkant en aan de achterkant een soort rond
+	Free: Pattern=aan de, Pattern=het, Pattern=hebben, Pattern=een soort van, Pattern=een soort, Pattern=en, Pattern=rond
+	Constrained: Pattern=een soort, Pattern=aan, Pattern=een, Pattern=de
+Turn ID=2| A | A : en het staan op een soort ovaal hoe noemen je dat een rechthoekig dinget het kop
+	Free: Pattern=je dat, Pattern=het, Pattern=op een soort, Pattern=en, Pattern=een, Pattern=staan
+	Constrained: Pattern=dat, Pattern=op, Pattern=een, Pattern=een soort, Pattern=je, Pattern=op een
+Turn ID=3| B | B : Oh oké hebben het echt één rond aan één kant
+	Free: Pattern=oké, Pattern=het, Pattern=hebben, Pattern=één, Pattern=rond aan, Pattern=Oh
+	Constrained: Pattern=aan, Pattern=rond
+Turn ID=4| A | A : een rond aan ja aan de achterkant
+	Free: Pattern=aan de, Pattern=een rond, Pattern=rond aan, Pattern=ja
+	Constrained: Pattern=aan, Pattern=de, Pattern=een, Pattern=rond
+Turn ID=5| A | A : en aan de zitten ook een soort van pluim aan de bovenkant en een neu gro of ja lang neus aan de voorkant
+	Free: Pattern=ja, Pattern=een soort van, Pattern=lang neus, Pattern=en, Pattern=en een, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=een, Pattern=neus, Pattern=een soort, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=6| B | B : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=7| B | B : ah ja ik denken dat ik het wel weten
+	Free: Pattern=dat, Pattern=denken, Pattern=ja, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=8| B | B : zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=9| B | B : kunnen ik gewoon drukken hè
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : oké deze lijken ook op Oh hebben we deze al hebben
+	Free: Pattern=oké, Pattern=lijken, Pattern=hebben, Pattern=we, Pattern=Oh, Pattern=op, Pattern=ook
+	Constrained: 
+Turn ID=13| B | B : volgens mij wel maar
+	Free: Pattern=volgens mij
+	Constrained: 
+Turn ID=14| A | A : ja volgens mij moeten we nu zes ronde doen dus gaan we denken ik nu naar de twee ronde
+	Free: Pattern=denken, Pattern=we, Pattern=volgens mij, Pattern=ik, Pattern=de, Pattern=dus, Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oh oké
+	Free: Pattern=oké, Pattern=Oh
+	Constrained: 
+Turn ID=16| B | B : oké deze zijn weer met een soort van rond oor en een lang neus en een antenne
+	Free: Pattern=oké, Pattern=met een soort van, Pattern=en een lang neus en, Pattern=antenne, Pattern=en een, Pattern=zijn, Pattern=een soort van rond
+	Constrained: Pattern=en een lang neus, Pattern=een lang, Pattern=een, Pattern=een soort van, Pattern=neus, Pattern=met, Pattern=met een, Pattern=lang neus, Pattern=een soort, Pattern=en, Pattern=rond, Pattern=en een
+Turn ID=17| A | A : ehm even kijken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=18| A | A : Oh ja oké op zo'n hij staan op zo'n klein balk toch
+	Free: Pattern=op, Pattern=staan, Pattern=balk, Pattern=toch, Pattern=Oh, Pattern=ja oké
+	Constrained: Pattern=oké, Pattern=ja
+Turn ID=19| B | B : nee nee nee nee sorry sorry dus ja je hebben het om aangeven dat het een soort op een soort van ja op een soort van balk staan toch
+	Free: Pattern=dat, Pattern=staan, Pattern=het, Pattern=hebben, Pattern=een soort van, Pattern=toch, Pattern=een soort, Pattern=je, Pattern=dus, Pattern=ja, Pattern=op een soort, Pattern=balk
+	Constrained: Pattern=een soort, Pattern=op een, Pattern=een, Pattern=op
+Turn ID=20| A | A : of die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : ja zo'n klein
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ja ja kloppen Sorry
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : dit zijn degeen met een rond aan de achterkant en een lang neus en zo'n pluim op zijn hoofd
+	Free: Pattern=met een rond, Pattern=en een lang neus en, Pattern=rond aan, Pattern=zijn, Pattern=op, Pattern=aan de
+	Constrained: Pattern=en een lang neus, Pattern=een lang, Pattern=een, Pattern=neus, Pattern=met, Pattern=met een, Pattern=lang neus, Pattern=en, Pattern=en een, Pattern=de, Pattern=aan, Pattern=een rond, Pattern=rond
+Turn ID=26| A | A : die op zo'n dinget staan
+	Free: Pattern=die, Pattern=staan, Pattern=op
+	Constrained: 
+Turn ID=27| B | B : Oh sorry kunnen je dat herhalen
+	Free: Pattern=je dat, Pattern=Oh
+	Constrained: Pattern=dat, Pattern=je
+Turn ID=28| A | A : met het rond
+	Free: Pattern=het, Pattern=met, Pattern=rond
+	Constrained: 
+Turn ID=29| A | A : er zitten een rond aan de achterkant
+	Free: Pattern=aan de, Pattern=een rond, Pattern=rond aan
+	Constrained: Pattern=aan, Pattern=de, Pattern=een, Pattern=rond
+Turn ID=30| A | A : met een lang rond neus
+	Free: Pattern=een lang, Pattern=met een, Pattern=neus, Pattern=rond
+	Constrained: Pattern=met, Pattern=een
+Turn ID=31| A | A : met een soort van pluim op zijn hoofd
+	Free: Pattern=met een soort van, Pattern=zijn, Pattern=op
+	Constrained: Pattern=een, Pattern=een soort van, Pattern=met, Pattern=met een, Pattern=een soort
+Turn ID=32| A | A : met zo'n antenne op zijn hoofd
+	Free: Pattern=zijn, Pattern=met, Pattern=antenne, Pattern=op
+	Constrained: 
+Turn ID=33| B | B : Oei even hoor even zoeken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=34| A | A : dat zijn degeen die op zo'n klein blok staan
+	Free: Pattern=dat zijn, Pattern=die, Pattern=staan, Pattern=op
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=35| B | B : O
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : ah ja met die die balk nek
+	Free: Pattern=ja, Pattern=nek, Pattern=balk, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=37| A | A : zo'n langwerpig
+	Free: 
+	Constrained: 
+Turn ID=38| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : ja ja ik weten al
+	Free: Pattern=ja ja, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=40| B | B : Eh deze zijn de een met een soort van rond rondje achter zich en een lang neus
+	Free: Pattern=en een lang neus, Pattern=de, Pattern=een, Pattern=met een soort van, Pattern=zijn, Pattern=een soort van rond
+	Constrained: Pattern=een lang, Pattern=een, Pattern=een soort van, Pattern=neus, Pattern=met, Pattern=met een, Pattern=lang neus, Pattern=een soort, Pattern=en, Pattern=rond, Pattern=en een
+Turn ID=41| B | B : en dan één antenne
+	Free: Pattern=en, Pattern=één, Pattern=antenne
+	Constrained: 
+Turn ID=42| A | A : ja ja oke dat zijn
+	Free: Pattern=ja ja, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=43| B | B : Oh en dat balk aan de onderkant ja
+	Free: Pattern=ja, Pattern=aan de, Pattern=balk, Pattern=Oh, Pattern=en dat
+	Constrained: Pattern=en, Pattern=aan, Pattern=dat, Pattern=de
+Turn ID=44| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=45| A | A : ehm dit zijn degeen die dat raar nek hebben en dat rond aan de achterkant met dat één ding op zijn hoofd en een lang neus
+	Free: Pattern=dat, Pattern=en een lang neus, Pattern=hebben, Pattern=één, Pattern=nek, Pattern=met, Pattern=die, Pattern=rond aan, Pattern=zijn, Pattern=en dat, Pattern=op, Pattern=aan de
+	Constrained: Pattern=dat, Pattern=een lang, Pattern=een, Pattern=neus, Pattern=lang neus, Pattern=en, Pattern=rond, Pattern=en een, Pattern=de, Pattern=aan
+Turn ID=46| B | B : ja oké dat zijn
+	Free: Pattern=ja oké, Pattern=dat zijn
+	Constrained: Pattern=oké, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=47| B | B : ja deze zijn weer die een met één dat op een ballet staan met een rond rond achter zich en een antenne
+	Free: Pattern=dat, Pattern=met een rond, Pattern=ja, Pattern=één, Pattern=met, Pattern=die, Pattern=antenne, Pattern=rond, Pattern=op een, Pattern=een, Pattern=staan, Pattern=en een, Pattern=zijn
+	Constrained: Pattern=op, Pattern=een, Pattern=met, Pattern=met een, Pattern=en, Pattern=een rond, Pattern=rond
+Turn ID=48| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=49| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

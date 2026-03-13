@@ -1,0 +1,87 @@
+A|0| A: oh deze vinden _ik_ op een _koffiemolen_ lijken 
+A|1| A: aan _de_ onderkant zitten zo'n soort van swirl zitten _die_ draaien 
+A|2| A: Eh op een voetstuk van een driehoek 
+B|3| B: _ja_ 
+A|4| A: en dan steken er aan _de_ zijkant _iets_ uit en een vierkant blok rechts 
+B|5| B: _ja ja_ helemaal 
+B|6| B: [die] snap [ik] 
+B|7| B: dat zijn 
+B|8| B: _ik hebben_ dat niet het koffiekopje maar dat dat koffie dat waar je het mee zet 
+B|9| B: Zeggen maar met dat uitsteeksel 
+A|10| A: _Oh_ [ja] 
+A|11| A: _ik hebben _de_ koffiezetmo_ 
+B|12| B: [de koffiezetmo] 
+B|13| B: dat zijn 
+B|14| B: [Oh] nu zijn het weer versprongen 
+B|15| B: Oké [ik hebben] nu weer [die] 
+B|16| B: [die] [koffiemolen] zeggen maar [die] [iets] hoog staan 
+A|17| A: [Oh] [ja [ja] [ja] ja] 
+A|18| A: [ik hebben] koffiezet molen 
+B|19| B: waar staan [die] 
+B|20| B: [ik hebben de] [koffiemolen] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oh deze vinden ik op een koffiemolen lijken
+	Free: Pattern=ik, Pattern=koffiemolen
+	Constrained: 
+Turn ID=1| A | A : aan de onderkant zitten zo'n soort van swirl zitten die draaien
+	Free: Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=2| A | A : Eh op een voetstuk van een driehoek
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en dan steken er aan de zijkant iets uit en een vierkant blok rechts
+	Free: Pattern=iets, Pattern=de
+	Constrained: 
+Turn ID=5| B | B : ja ja helemaal
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=6| B | B : die snap ik
+	Free: Pattern=ik, Pattern=die
+	Constrained: 
+Turn ID=7| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : ik hebben dat niet het koffiekopje maar dat dat koffie dat waar je het mee zet
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik
+Turn ID=9| B | B : Zeggen maar met dat uitsteeksel
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=11| A | A : ik hebben de koffiezetmo
+	Free: Pattern=ik hebben de, Pattern=de koffiezetmo
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik
+Turn ID=12| B | B : de koffiezetmo
+	Free: Pattern=de koffiezetmo
+	Constrained: Pattern=de
+Turn ID=13| B | B : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : Oh nu zijn het weer versprongen
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=15| B | B : Oké ik hebben nu weer die
+	Free: Pattern=ik hebben, Pattern=die
+	Constrained: Pattern=ik
+Turn ID=16| B | B : die koffiemolen zeggen maar die iets hoog staan
+	Free: Pattern=iets, Pattern=die, Pattern=koffiemolen
+	Constrained: 
+Turn ID=17| A | A : Oh ja ja ja ja
+	Free: Pattern=ja ja, Pattern=Oh
+	Constrained: Pattern=ja
+Turn ID=18| A | A : ik hebben koffiezet molen
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik
+Turn ID=19| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=20| B | B : ik hebben de koffiemolen
+	Free: Pattern=ik hebben de, Pattern=koffiemolen
+	Constrained: Pattern=de, Pattern=ik hebben, Pattern=ik

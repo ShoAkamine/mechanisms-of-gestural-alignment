@@ -1,0 +1,107 @@
+A|0| A: euh dit _zijn_ _een soort van_ 
+A|1| A: _een_ euh _ik_ _hebben_ _het_ bedaeken als _een_ perkamentrol _die_ _achter de beker_ liggen 
+A|2| A: _en_ _dan hebben_ je _ook_ nog _een soort van_ _spiegel_ dat er _ook_ nog _achter de beker_ zitten 
+A|3| A: in ieder geval je _hebben_ gewoon alleen _een_ euh super saai _beker_ _en_ _daarachter_ liggen wat object 
+A|4| A: _Euh_ je kunnen _het_ _ook_ zien als _een soort van_ 
+A|5| A: _ja_ dat _zijn_ gewoon _een_ _staaf_ _die_ _achter de_ 
+B|6| B: [ja] [en] aan [het] eind [van] [die] [staaf] [hebben] hij [een] beetje [een] bolle [een] bol 
+A|7| A: [ja] precies [ja] 
+B|8| B: Oké 
+B|9| B: Oh nu [zijn] ze verplaatsen 
+B|10| B: Oké 
+A|11| A: Yes 
+B|12| B: [Euh] nu [hebben] [ik] [ook] weer [die] [een] _met_ [een soort van] [een] [spiegel] erachter 
+B|13| B: [en] [die] [staaf] erachter _met_ [die] bol uiteinde 
+A|14| A: Yes [ik] weten welk je bedoelen 
+A|15| A: [ik] weten even niet waar [die] staan 
+A|16| A: [Euh] [ik] [hebben] hem [ja] 
+A|17| A: _de_ Perkamentrol euh _achter de beker_ 
+A|18| A: of _de_ [staaf] _achter de beker_ 
+A|19| A: [met] _het spiegel_ [ook] nog 
+B|20| B: [ja] 
+B|21| B: [dan hebben] [ik] [de beker] [met] [daarachter] [die] rol [en] [het] spiegelt 
+A|22| A: Yes euh even kijken 
+A|23| A: [de] Perkamentrol _achter de beker_ 
+B|24| B: [Euh] [de] rol [en] [het spiegel] [achter de beker] 
+A|25| A: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : euh dit zijn een soort van
+	Free: Pattern=een soort van, Pattern=zijn
+	Constrained: Pattern=een, Pattern=van
+Turn ID=1| A | A : een euh ik hebben het bedaeken als een perkamentrol die achter de beker liggen
+	Free: Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=achter de beker
+	Constrained: Pattern=de beker, Pattern=achter de, Pattern=beker, Pattern=de
+Turn ID=2| A | A : en dan hebben je ook nog een soort van spiegel dat er ook nog achter de beker zitten
+	Free: Pattern=ook, Pattern=dan hebben, Pattern=een soort van, Pattern=spiegel, Pattern=achter de beker, Pattern=en
+	Constrained: Pattern=beker, Pattern=de beker, Pattern=de, Pattern=een, Pattern=achter de, Pattern=hebben, Pattern=van
+Turn ID=3| A | A : in ieder geval je hebben gewoon alleen een euh super saai beker en daarachter liggen wat object
+	Free: Pattern=beker, Pattern=daarachter, Pattern=een, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=4| A | A : Euh je kunnen het ook zien als een soort van
+	Free: Pattern=een soort van, Pattern=Euh, Pattern=het, Pattern=ook
+	Constrained: Pattern=een, Pattern=van
+Turn ID=5| A | A : ja dat zijn gewoon een staaf die achter de
+	Free: Pattern=ja, Pattern=staaf, Pattern=een, Pattern=achter de, Pattern=die, Pattern=zijn
+	Constrained: Pattern=de
+Turn ID=6| B | B : ja en aan het eind van die staaf hebben hij een beetje een bolle een bol
+	Free: Pattern=ja, Pattern=staaf, Pattern=een, Pattern=het, Pattern=hebben, Pattern=die, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=7| A | A : ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : Oh nu zijn ze verplaatsen
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=10| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : Euh nu hebben ik ook weer die een met een soort van een spiegel erachter
+	Free: Pattern=ook, Pattern=een, Pattern=Euh, Pattern=hebben, Pattern=een soort van, Pattern=met, Pattern=die, Pattern=ik, Pattern=spiegel
+	Constrained: Pattern=een, Pattern=van
+Turn ID=13| B | B : en die staaf erachter met die bol uiteinde
+	Free: Pattern=en, Pattern=die, Pattern=staaf, Pattern=met
+	Constrained: 
+Turn ID=14| A | A : Yes ik weten welk je bedoelen
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=15| A | A : ik weten even niet waar die staan
+	Free: Pattern=die, Pattern=ik
+	Constrained: 
+Turn ID=16| A | A : Euh ik hebben hem ja
+	Free: Pattern=Euh, Pattern=hebben, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=17| A | A : de Perkamentrol euh achter de beker
+	Free: Pattern=achter de beker, Pattern=de
+	Constrained: Pattern=de beker, Pattern=achter de, Pattern=beker, Pattern=de
+Turn ID=18| A | A : of de staaf achter de beker
+	Free: Pattern=achter de beker, Pattern=de, Pattern=staaf
+	Constrained: Pattern=de beker, Pattern=achter de, Pattern=beker, Pattern=de
+Turn ID=19| A | A : met het spiegel ook nog
+	Free: Pattern=het spiegel, Pattern=ook, Pattern=met
+	Constrained: Pattern=het, Pattern=spiegel
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : dan hebben ik de beker met daarachter die rol en het spiegelt
+	Free: Pattern=daarachter, Pattern=de beker, Pattern=het, Pattern=dan hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=en
+	Constrained: Pattern=beker, Pattern=hebben, Pattern=de
+Turn ID=22| A | A : Yes euh even kijken
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : de Perkamentrol achter de beker
+	Free: Pattern=achter de beker, Pattern=de
+	Constrained: Pattern=de beker, Pattern=achter de, Pattern=beker, Pattern=de
+Turn ID=24| B | B : Euh de rol en het spiegel achter de beker
+	Free: Pattern=het spiegel, Pattern=de, Pattern=Euh, Pattern=achter de beker, Pattern=en
+	Constrained: Pattern=beker, Pattern=de beker, Pattern=de, Pattern=achter de, Pattern=het, Pattern=spiegel
+Turn ID=25| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 

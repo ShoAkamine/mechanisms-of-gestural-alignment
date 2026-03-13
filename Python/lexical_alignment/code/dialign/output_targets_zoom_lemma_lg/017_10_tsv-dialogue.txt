@@ -1,0 +1,171 @@
+B|0| B: Top 
+A|1| A: _dan_ _zien_ _ik_ er _een_ 
+A|2| A: _even kijken_ 
+A|3| A: _dat_ lijken _een_ beetje op _een_ wapenachtig _zeggen_ maar _zo'n_ oud wapen 
+A|4| A: _die_ _hebben_ _dan_ zowel _rechts_ als _links_ _een_ staaf _met_ _dan_ _een_ dop erop lijken _het_ 
+B|5| B: [even kijken] horen 
+A|6| A: _ik_ _weten_ niet _of_ _dit_ duidelijk _zijn_ 
+A|7| A: maar hij _hebben_ er zo linksboven _een_ _soort zonnepaneel_ lijken _het_ 
+B|8| B: _Oh ja_ 
+B|9| B: _ja_ _ja_ [ik] [zien] [het] 
+A|10| A: _ook_ nog iets _wat_ zo 
+A|11| A: _Oké_ 
+B|12| B: _ja_ 
+B|13| B: _ja dat zijn_ 
+B|14| B: [Oké] volgen [zijn] [die] [een] [met] [dat] zonnescherm link 
+B|15| B: [of] _ja_ zonnescherm [of] [wat] [zeggen] jij nou 
+B|16| B: [zo'n] [soort zonnepaneel] [weten] _je_ wel 
+A|17| A: [Oh ja] 
+A|18| A: [Oh ja] 
+A|19| A: _en dan_ zo _met die twee_ _uitsteeksel_ 
+B|20| B: [ja] 
+A|21| A: [ja] _oké_ 
+A|22| A: [dat zijn] 
+A|23| A: _dan_ _hebben_ [ik] er [een] [ja] _met die_ [soort] zonnepanel 
+A|24| A: _en_ alsof [dat] dus [een] [soort] [ja] wapen [zijn] 
+B|25| B: [ja] 
+B|26| B: [ja] [ja] precies 
+B|27| B: [met die twee] ding [rechts] [en] 
+B|28| B: [of] [rechts] [en] [links] allebei [ja] 
+A|29| A: [ja] 
+B|30| B: top top 
+A|31| A: [ja] 
+B|32| B: [dat zijn] 
+B|33| B: [oké] _deze_ [hebben] weer [dat] [zonnepaneel] 
+B|34| B: [en dan] [links] [en] [rechts] [ook] [zo'n] [uitsteeksel] [met] [een] rond eraan 
+A|35| A: [Oh ja] [oké] [dat zijn] 
+A|36| A: [dan] [zijn] [deze] [met] [het] [zonnepaneel] 
+A|37| A: [en] [het] geweer lijken me 
+B|38| B: [ja] _ja dat zijn_ 
+B|39| B: [dit] [zijn] [die] [met] [een] [zonnepaneel] 
+A|40| A: Kijken waar [zijn] [je] 
+A|41| A: [Oh [ja] dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : dan zien ik er een
+	Free: Pattern=dan, Pattern=ik, Pattern=zien, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : even kijken
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=3| A | A : dat lijken een beetje op een wapenachtig zeggen maar zo'n oud wapen
+	Free: Pattern=dat, Pattern=zeggen, Pattern=zo'n, Pattern=een
+	Constrained: 
+Turn ID=4| A | A : die hebben dan zowel rechts als links een staaf met dan een dop erop lijken het
+	Free: Pattern=rechts, Pattern=dan, Pattern=een, Pattern=links, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=5| B | B : even kijken horen
+	Free: Pattern=even kijken
+	Constrained: 
+Turn ID=6| A | A : ik weten niet of dit duidelijk zijn
+	Free: Pattern=of, Pattern=weten, Pattern=dit, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : maar hij hebben er zo linksboven een soort zonnepaneel lijken het
+	Free: Pattern=soort zonnepaneel, Pattern=hebben, Pattern=het, Pattern=een
+	Constrained: Pattern=soort, Pattern=zonnepaneel
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=9| B | B : ja ja ik zien het
+	Free: Pattern=ik, Pattern=ja, Pattern=het, Pattern=zien
+	Constrained: 
+Turn ID=10| A | A : ook nog iets wat zo
+	Free: Pattern=ook, Pattern=wat
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=14| B | B : Oké volgen zijn die een met dat zonnescherm link
+	Free: Pattern=dat, Pattern=een, Pattern=met, Pattern=die, Pattern=zijn, Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : of ja zonnescherm of wat zeggen jij nou
+	Free: Pattern=wat, Pattern=zeggen, Pattern=ja, Pattern=of
+	Constrained: 
+Turn ID=16| B | B : zo'n soort zonnepaneel weten je wel
+	Free: Pattern=soort zonnepaneel, Pattern=zo'n, Pattern=je, Pattern=weten
+	Constrained: Pattern=soort, Pattern=zonnepaneel
+Turn ID=17| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=18| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=19| A | A : en dan zo met die twee uitsteeksel
+	Free: Pattern=met die twee, Pattern=en dan, Pattern=uitsteeksel
+	Constrained: Pattern=met die, Pattern=dan, Pattern=met, Pattern=die, Pattern=en
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=22| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| A | A : dan hebben ik er een ja met die soort zonnepanel
+	Free: Pattern=met die, Pattern=soort, Pattern=ja, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=die, Pattern=met
+Turn ID=24| A | A : en alsof dat dus een soort ja wapen zijn
+	Free: Pattern=dat, Pattern=soort, Pattern=ja, Pattern=een, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : ja ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : met die twee ding rechts en
+	Free: Pattern=met die twee, Pattern=en, Pattern=rechts
+	Constrained: Pattern=met, Pattern=die, Pattern=met die
+Turn ID=28| B | B : of rechts en links allebei ja
+	Free: Pattern=of, Pattern=links, Pattern=en, Pattern=rechts, Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : top top
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=33| B | B : oké deze hebben weer dat zonnepaneel
+	Free: Pattern=oké, Pattern=dat, Pattern=hebben, Pattern=deze, Pattern=zonnepaneel
+	Constrained: 
+Turn ID=34| B | B : en dan links en rechts ook zo'n uitsteeksel met een rond eraan
+	Free: Pattern=zo'n, Pattern=rechts, Pattern=en dan, Pattern=ook, Pattern=uitsteeksel, Pattern=een, Pattern=links, Pattern=met, Pattern=en
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=35| A | A : Oh ja oké dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn, Pattern=oké
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=36| A | A : dan zijn deze met het zonnepaneel
+	Free: Pattern=dan, Pattern=het, Pattern=met, Pattern=zijn, Pattern=deze, Pattern=zonnepaneel
+	Constrained: 
+Turn ID=37| A | A : en het geweer lijken me
+	Free: Pattern=en, Pattern=het
+	Constrained: 
+Turn ID=38| B | B : ja ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=ja
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=39| B | B : dit zijn die met een zonnepaneel
+	Free: Pattern=een, Pattern=dit, Pattern=met, Pattern=die, Pattern=zijn, Pattern=zonnepaneel
+	Constrained: 
+Turn ID=40| A | A : Kijken waar zijn je
+	Free: Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=41| A | A : Oh ja dat zijn
+	Free: Pattern=ja dat zijn, Pattern=Oh ja
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=zijn, Pattern=ja

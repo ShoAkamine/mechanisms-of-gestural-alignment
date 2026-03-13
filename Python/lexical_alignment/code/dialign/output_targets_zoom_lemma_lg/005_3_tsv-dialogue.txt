@@ -1,0 +1,143 @@
+B|0| B: _deze_ _hebben_ _een_ rechts _een_ uitstekend vierkant 
+B|1| B: _kubus_ 
+B|2| B: _Eh en dan_ _daar links_ van ook één _maar_ _die_ _zijn_ wat klein 
+A|3| A: mhm 
+B|4| B: _en dan_ _dat zijn_ _aan _de_ bovenkant_ sorry 
+B|5| B: _dus_ _aan _de_ bovenkant_ rechtsboven _een_ vierkant 
+B|6| B: _daar_ link van _nog_ één erop 
+B|7| B: _en_ _daar_ link van steekt _een soort_ bliksemschichtachtig iets uit 
+B|8| B: _en_ _aan de onderkant_ zitten _een_ draaien balk 
+A|9| A: mhm 
+B|10| B: _die_ aansluiten _op_ _een_ _driehoek_ 
+A|11| A: ja 
+A|12| A: ja 
+A|13| A: [dat zijn] 
+A|14| A: ehm _dit zijn_ 
+A|15| A: [Eh] [die] staan [op] [die] [driehoek] 
+A|16| A: _met_ [dan] [een soort] _met_ zo'n stuk _dat dan_ [de bovenkant] verbinden via zo'n [soort] _spiraal_ 
+A|17| A: [dus] [die] [bovenkant] [hebben] hij [nog] twee twee cubus 
+A|18| A: _met_ [daar links] [nog] [een] [een] driehoekig uitsteeksel 
+B|19| B: [dat zijn] 
+B|20| B: _deze_ [hebben] _deze_ [hebben] _aan de onderkant_ [een soort] draaien balk 
+B|21| B: [met] [een] [driehoek] erop 
+A|22| A: ja 
+B|23| B: eronder 
+A|24| A: ja [dat zijn] 
+A|25| A: [Eh] [deze] staan [op] [de] [op] [die] [driehoek] 
+A|26| A: [en dan] _met _die_ spiraal_ [die] [dan] naar boven gaan 
+A|27| A: [Eh en dan] zeggen [maar] [de] gebruikelijk vorm [met] twee [kubus] bovenop 
+A|28| A: [en] [links] [nog] [een] uitsteeksel 
+B|29| B: [dat zijn] 
+B|30| B: [dit zijn] [die] [die spiraal] [met die] [dat dan] uineindigt in [een] [driehoek] 
+A|31| A: ja 
+A|32| A: ja [dat zijn] 
+A|33| A: [dit zijn] [de] [driehoek] [aan de onderkant] [met] [de] [spiraal] [die] naar boven gaan 
+B|34| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze hebben een rechts een uitstekend vierkant
+	Free: Pattern=deze, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=1| B | B : kubus
+	Free: Pattern=kubus
+	Constrained: 
+Turn ID=2| B | B : Eh en dan daar links van ook één maar die zijn wat klein
+	Free: Pattern=die, Pattern=daar links, Pattern=Eh en dan, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=en dan, Pattern=dan, Pattern=links, Pattern=Eh, Pattern=en, Pattern=daar
+Turn ID=3| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : en dan dat zijn aan de bovenkant sorry
+	Free: Pattern=dat zijn, Pattern=aan de, Pattern=en dan, Pattern=de bovenkant
+	Constrained: Pattern=de, Pattern=dan, Pattern=bovenkant, Pattern=en, Pattern=zijn
+Turn ID=5| B | B : dus aan de bovenkant rechtsboven een vierkant
+	Free: Pattern=aan de, Pattern=de bovenkant, Pattern=dus, Pattern=een
+	Constrained: Pattern=de, Pattern=bovenkant
+Turn ID=6| B | B : daar link van nog één erop
+	Free: Pattern=daar, Pattern=nog
+	Constrained: 
+Turn ID=7| B | B : en daar link van steekt een soort bliksemschichtachtig iets uit
+	Free: Pattern=een soort, Pattern=en, Pattern=daar
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=8| B | B : en aan de onderkant zitten een draaien balk
+	Free: Pattern=aan de onderkant, Pattern=en, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=9| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : die aansluiten op een driehoek
+	Free: Pattern=driehoek, Pattern=op, Pattern=die, Pattern=een
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=14| A | A : ehm dit zijn
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=15| A | A : Eh die staan op die driehoek
+	Free: Pattern=driehoek, Pattern=op, Pattern=die, Pattern=Eh
+	Constrained: 
+Turn ID=16| A | A : met dan een soort met zo'n stuk dat dan de bovenkant verbinden via zo'n soort spiraal
+	Free: Pattern=soort, Pattern=dan, Pattern=de bovenkant, Pattern=met, Pattern=spiraal, Pattern=een soort, Pattern=dat dan
+	Constrained: Pattern=soort, Pattern=de, Pattern=dan, Pattern=een, Pattern=bovenkant
+Turn ID=17| A | A : dus die bovenkant hebben hij nog twee twee cubus
+	Free: Pattern=nog, Pattern=dus, Pattern=die, Pattern=hebben, Pattern=bovenkant
+	Constrained: 
+Turn ID=18| A | A : met daar links nog een een driehoekig uitsteeksel
+	Free: Pattern=daar links, Pattern=nog, Pattern=een, Pattern=met
+	Constrained: Pattern=links, Pattern=daar
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : deze hebben deze hebben aan de onderkant een soort draaien balk
+	Free: Pattern=aan de onderkant, Pattern=een soort, Pattern=deze, Pattern=hebben
+	Constrained: Pattern=een, Pattern=de, Pattern=soort, Pattern=aan de
+Turn ID=21| B | B : met een driehoek erop
+	Free: Pattern=driehoek, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : eronder
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : ja dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=25| A | A : Eh deze staan op de op die driehoek
+	Free: Pattern=driehoek, Pattern=de, Pattern=op, Pattern=Eh, Pattern=die, Pattern=deze
+	Constrained: 
+Turn ID=26| A | A : en dan met die spiraal die dan naar boven gaan
+	Free: Pattern=met die, Pattern=en dan, Pattern=dan, Pattern=die, Pattern=die spiraal
+	Constrained: Pattern=dan, Pattern=met, Pattern=die, Pattern=spiraal, Pattern=en
+Turn ID=27| A | A : Eh en dan zeggen maar de gebruikelijk vorm met twee kubus bovenop
+	Free: Pattern=de, Pattern=met, Pattern=Eh en dan, Pattern=maar, Pattern=kubus
+	Constrained: Pattern=en dan, Pattern=en, Pattern=dan, Pattern=Eh
+Turn ID=28| A | A : en links nog een uitsteeksel
+	Free: Pattern=en, Pattern=links, Pattern=nog, Pattern=een
+	Constrained: 
+Turn ID=29| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=30| B | B : dit zijn die die spiraal met die dat dan uineindigt in een driehoek
+	Free: Pattern=driehoek, Pattern=met die, Pattern=een, Pattern=die, Pattern=dat dan, Pattern=dit zijn, Pattern=die spiraal
+	Constrained: Pattern=dan, Pattern=met, Pattern=die, Pattern=spiraal, Pattern=zijn
+Turn ID=31| A | A : ja
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : ja dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=33| A | A : dit zijn de driehoek aan de onderkant met de spiraal die naar boven gaan
+	Free: Pattern=driehoek, Pattern=de, Pattern=aan de onderkant, Pattern=met, Pattern=die, Pattern=spiraal, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=34| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

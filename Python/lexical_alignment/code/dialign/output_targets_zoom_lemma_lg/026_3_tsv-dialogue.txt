@@ -1,0 +1,151 @@
+A|0| A: _ja_ 
+B|1| B: _Oké_ nou dit _zijn_ dus _een_ Euh euh _Cup_ 
+B|2| B: _en_ _die_ _staan_ zeggen maar _op een draaien_ euh _cilinder_ 
+B|3| B: dus _die_ _cilinder_ _zijn_ 
+A|4| A: _hij_ [staan] [op een draaien] [cilinder] 
+B|5| B: [ja] _de_ [cilinder] _zijn_ om zichzelf [draaien] 
+A|6| A: [ja] _hebben_ _hij_ [een] puntmuts ? _hebben_ _hij_ [een] puntmuts 
+B|7| B: _Euhm_ [hij] [hebben] zeggen maar _twee_ van _die_ euh 
+B|8| B: je bedoelen je _op de_ onderkant of _aan de bovenkant_ 
+A|9| A: Oh [staan] [hij] [op een] soort _wokkel_ [op een] _voetstuk_ 
+B|10| B: [ja] [ja] precies [op] zo'n [voetstuk] [ja] 
+A|11| A: [ja] oké [hebben] hem [hebben] m 
+A|12| A: _ik hebben_ _nu_ [de] [Cup] [op de] spiraal [en] het [voetstuk] _met_ [een] blok rechts 
+B|13| B: [ja] 
+A|14| A: [ja] oké 
+B|15| B: [ja] 
+B|16| B: Euh _ja ik hebben_ letterlijk diezelfde [nu] net 
+B|17| B: dus _die_ [met] _dat voetstuk_ 
+A|18| A: [Oké] 
+A|19| A: [ja ik hebben] _dan die_ [Euhm] [Cup] [op] [die] [Euhm] _wokkel_ [en] [dat voetstuk] 
+B|20| B: [ja] 
+A|21| A: [en] _nog_ [die] _drie_ figuur [aan de bovenkant] 
+A|22| A: _dat zijn voor mij_ 
+B|23| B: _ja dat zijn voor mij_ 
+B|24| B: Euh [ja ik hebben] degeen [met] [dat] _draaien _voetstuk_ waar nog_ [drie] _voorwerp op staan_ 
+A|25| A: Gedraaide [voetstuk waar nog] [twee] [voorwerp op staan] 
+B|26| B: [ja] [drie] [voorwerp op] [op de] cup zeggen maar 
+A|27| A: even euhm [draaien voetstuk] 
+B|28| B: _ja dat_ driehoekig [voetstuk] _en [dan_ die] [wokkel] zeggen maar 
+A|29| A: Oh 
+A|30| A: Oh [ja] oké 
+A|31| A: [ja dat zijn voor mij] 
+B|32| B: [ja] 
+A|33| A: [ja] [en dan] [hebben] [ik] [Euhm] [de] kelk [op] het [voetstuk] [met] [de] [wokkel] [en] [de] [drie] object 
+B|34| B: [ja] 
+B|35| B: [ja dat zijn] euh [voor mij] 
+A|36| A: [voor mij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| B | B : Oké nou dit zijn dus een Euh euh Cup
+	Free: Pattern=Oké, Pattern=Cup, Pattern=een, Pattern=zijn
+	Constrained: 
+Turn ID=2| B | B : en die staan zeggen maar op een draaien euh cilinder
+	Free: Pattern=staan, Pattern=die, Pattern=op een draaien, Pattern=cilinder, Pattern=en
+	Constrained: Pattern=op een, Pattern=op, Pattern=een, Pattern=draaien
+Turn ID=3| B | B : dus die cilinder zijn
+	Free: Pattern=die, Pattern=cilinder, Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : hij staan op een draaien cilinder
+	Free: Pattern=op een draaien, Pattern=staan, Pattern=cilinder, Pattern=hij
+	Constrained: Pattern=op een, Pattern=op, Pattern=een, Pattern=draaien
+Turn ID=5| B | B : ja de cilinder zijn om zichzelf draaien
+	Free: Pattern=draaien, Pattern=cilinder, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja hebben hij een puntmuts ? hebben hij een puntmuts
+	Free: Pattern=hebben, Pattern=ja, Pattern=een, Pattern=hij
+	Constrained: 
+Turn ID=7| B | B : Euhm hij hebben zeggen maar twee van die euh
+	Free: Pattern=twee, Pattern=hebben, Pattern=hij, Pattern=Euhm, Pattern=die
+	Constrained: 
+Turn ID=8| B | B : je bedoelen je op de onderkant of aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=op de
+	Constrained: Pattern=de, Pattern=op
+Turn ID=9| A | A : Oh staan hij op een soort wokkel op een voetstuk
+	Free: Pattern=wokkel, Pattern=staan, Pattern=hij, Pattern=voetstuk, Pattern=op een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=10| B | B : ja ja precies op zo'n voetstuk ja
+	Free: Pattern=op, Pattern=ja, Pattern=voetstuk
+	Constrained: 
+Turn ID=11| A | A : ja oké hebben hem hebben m
+	Free: Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ik hebben nu de Cup op de spiraal en het voetstuk met een blok rechts
+	Free: Pattern=ik hebben, Pattern=de, Pattern=Cup, Pattern=een, Pattern=nu, Pattern=voetstuk, Pattern=met, Pattern=en, Pattern=op de
+	Constrained: Pattern=de, Pattern=op, Pattern=hebben, Pattern=ik
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Euh ja ik hebben letterlijk diezelfde nu net
+	Free: Pattern=ja ik hebben, Pattern=nu
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=ik, Pattern=ja
+Turn ID=17| B | B : dus die met dat voetstuk
+	Free: Pattern=dat voetstuk, Pattern=die, Pattern=met
+	Constrained: Pattern=dat, Pattern=voetstuk
+Turn ID=18| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=19| A | A : ja ik hebben dan die Euhm Cup op die Euhm wokkel en dat voetstuk
+	Free: Pattern=dan die, Pattern=wokkel, Pattern=ja ik hebben, Pattern=Euhm, Pattern=die, Pattern=en, Pattern=dat voetstuk, Pattern=op, Pattern=Cup
+	Constrained: Pattern=ik hebben, Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=voetstuk, Pattern=die, Pattern=ik
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : en nog die drie figuur aan de bovenkant
+	Free: Pattern=nog, Pattern=drie, Pattern=die, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=de
+Turn ID=22| A | A : dat zijn voor mij
+	Free: Pattern=dat zijn voor mij
+	Constrained: Pattern=voor mij, Pattern=zijn, Pattern=dat
+Turn ID=23| B | B : ja dat zijn voor mij
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat, Pattern=dat zijn voor mij, Pattern=ja, Pattern=ja dat zijn, Pattern=voor mij, Pattern=zijn, Pattern=ja dat
+Turn ID=24| B | B : Euh ja ik hebben degeen met dat draaien voetstuk waar nog drie voorwerp op staan
+	Free: Pattern=draaien voetstuk, Pattern=dat, Pattern=voorwerp op staan, Pattern=drie, Pattern=ja ik hebben, Pattern=met, Pattern=voetstuk waar nog
+	Constrained: Pattern=ik hebben, Pattern=nog, Pattern=ja, Pattern=op, Pattern=draaien, Pattern=staan, Pattern=hebben, Pattern=voorwerp op, Pattern=voetstuk, Pattern=ik
+Turn ID=25| A | A : Gedraaide voetstuk waar nog twee voorwerp op staan
+	Free: Pattern=voetstuk waar nog, Pattern=voorwerp op staan, Pattern=twee
+	Constrained: Pattern=nog, Pattern=op, Pattern=staan, Pattern=voorwerp op, Pattern=voetstuk
+Turn ID=26| B | B : ja drie voorwerp op op de cup zeggen maar
+	Free: Pattern=voorwerp op, Pattern=op de, Pattern=ja, Pattern=drie
+	Constrained: Pattern=de, Pattern=op
+Turn ID=27| A | A : even euhm draaien voetstuk
+	Free: Pattern=draaien voetstuk
+	Constrained: Pattern=draaien, Pattern=voetstuk
+Turn ID=28| B | B : ja dat driehoekig voetstuk en dan die wokkel zeggen maar
+	Free: Pattern=dan die, Pattern=voetstuk, Pattern=ja dat, Pattern=wokkel, Pattern=en dan
+	Constrained: Pattern=dat, Pattern=die, Pattern=en, Pattern=ja
+Turn ID=29| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : Oh ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : ja dat zijn voor mij
+	Free: Pattern=ja dat zijn voor mij
+	Constrained: Pattern=dat, Pattern=dat zijn voor mij, Pattern=ja, Pattern=ja dat zijn, Pattern=voor mij, Pattern=zijn, Pattern=ja dat
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : ja en dan hebben ik Euhm de kelk op het voetstuk met de wokkel en de drie object
+	Free: Pattern=op, Pattern=drie, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=en, Pattern=de, Pattern=ja, Pattern=wokkel, Pattern=en dan, Pattern=voetstuk, Pattern=Euhm
+	Constrained: Pattern=en
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : ja dat zijn euh voor mij
+	Free: Pattern=ja dat zijn, Pattern=voor mij
+	Constrained: Pattern=ja dat, Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=36| A | A : voor mij
+	Free: Pattern=voor mij
+	Constrained: 

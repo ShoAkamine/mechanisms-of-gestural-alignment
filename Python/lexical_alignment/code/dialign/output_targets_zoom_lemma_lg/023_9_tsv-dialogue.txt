@@ -1,0 +1,271 @@
+A|0| A: eh _ik_ _hebben_ hier _een_ _kop_ _met_ _aan de_ linkerkant _een_ _ja _een_ cilinder_ 
+B|1| B: [ja] 
+A|2| A: _en_ _onderkant_ lijken net _een_ _ja een rechthoek_ 
+A|3| A: _maar_ _dan met_ hoe _zeggen_ je dat _boog_ _erin_ 
+B|4| B: _ja ja ja_ 
+A|5| A: _en aan de_ voorkant _hebben hij_ _dan_ _ja _een_ half_ _half cirkel_ eigenlijk 
+B|6| B: [ja] 
+B|7| B: mhm 
+A|8| A: _en aan de_ _achterkant_ _hebben hij een soort_ van _een_ 
+A|9| A: _ik_ weten niet 
+A|10| A: _zo'n_ 
+A|11| A: [ja] lijken net _een_ fles of zo _een_ waterfles 
+A|12| A: _ik_ _hebben_ geen idee zoiets 
+B|13| B: [en] _die_ _die_ opsteken er [aan] [aan de] bovenkant [zeggen] [maar] uit 
+A|14| A: [ja ja] 
+B|15| B: ehm [ja] [en] [hij] [hij] staan als het _zijn_ op op [zo'n] stuk [met] 
+B|16| B: [ja een _rechthoek] maar_ [met] [met] rond _zijkant_ 
+A|17| A: [ja] dus [aan de] voorkant _hebben hij_ _dan_ laten [maar] [zeggen] _een half cirkel_ 
+A|18| A: _en aan de_ linkerkant _hebben hij_ _dan_ [zo'n] _cilinder_ 
+B|19| B: mhm 
+B|20| B: [ja] 
+A|21| A: _en _aan de_ onderkant_ _hebben hij_ ook _soort_ van [een rechthoek] 
+A|22| A: [maar] _dan_ [ja] _met die boog_ _dan_ laten [maar] [zeggen] 
+B|23| B: [ja] nee [ja] [dan] [hebben] [ik] hem 
+A|24| A: _Oké_ top 
+B|25| B: vijftienEh 
+A|26| A: bij mij [zijn] letter B 
+B|27| B: [Oké] 
+B|28| B: ehm [ja] dit [zijn] [die] 
+B|29| B: het [kop] staan op [een] vierkant [met die boog] [zeggen] [maar] _weer_ 
+B|30| B: [aan de onderkant] 
+A|31| A: _Ehm_ 
+B|32| B: _met die met _die_ half cirkel_ [erin] 
+A|33| A: Halve [cirkel] 
+A|34| A: even kijken horen 
+B|35| B: [ja] link [hebben hij een soort] buis [die] eruit komen 
+B|36| B: [en aan de] [ja] [achterkant] [een] [een] [een half cirkel] 
+B|37| B: _Eh_ [en] onder staan [hij] op [een soort] 
+A|38| A: Oh 
+A|39| A: [ja ja ja] 
+B|40| B: [ja] 
+A|41| A: Hmm nou _de kegel_ bovenop 
+A|42| A: [en] [de] voorkant [die half cirkel] 
+B|43| B: [ja] 
+A|44| A: [de] [zijkant] [een] arm van _cilinder_ 
+A|45| A: [en [aan de] onderkant] [weer] _die [rechthoek_ maar] _dan [met die_ boog] laten me [zeggen] 
+B|46| B: [met die boog] [ja] 
+A|47| A: Yes 
+A|48| A: I 
+B|49| B: ehm dit [zijn] [met die] op [die rechthoek] staan [met die boog] 
+A|50| A: eh [rechthoek] [met] [boog] 
+A|51| A: even kijken 
+B|52| B: [ja] _en [dan_ met [die] half cirkel] 
+A|53| A: Oh [met die met die] _kegel_ ook of niet 
+B|54| B: [ja ja] 
+A|55| A: _en dan [de_ onderkant] [weer] [met [die] rechthoek] [met] [boog] toch 
+B|56| B: [ja ja] 
+A|57| A: [Oké] 
+A|58| A: _Ehm_ Kegel [met] [half cirkel] [aan de] voorkant 
+A|59| A: [en [aan de] onderkant] [een rechthoek] [met] [boog] 
+B|60| B: _Eh_ 
+A|61| A: B 
+B|62| B: ehm [ja] [half cirkel] 
+B|63| B: [en dan [de] kegel] [erin] 
+B|64| B: [Ehm] [en] link [een cilinder] 
+A|65| A: [Eh] 
+B|66| B: vier 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh ik hebben hier een kop met aan de linkerkant een ja een cilinder
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=kop, Pattern=een cilinder, Pattern=ik, Pattern=ja een, Pattern=met
+	Constrained: Pattern=een, Pattern=cilinder, Pattern=de, Pattern=aan, Pattern=ja
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : en onderkant lijken net een ja een rechthoek
+	Free: Pattern=ja een rechthoek, Pattern=en, Pattern=onderkant, Pattern=een
+	Constrained: Pattern=een rechthoek, Pattern=rechthoek, Pattern=ja, Pattern=een, Pattern=ja een
+Turn ID=3| A | A : maar dan met hoe zeggen je dat boog erin
+	Free: Pattern=boog, Pattern=zeggen, Pattern=dan met, Pattern=erin, Pattern=maar
+	Constrained: Pattern=met, Pattern=dan
+Turn ID=4| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=5| A | A : en aan de voorkant hebben hij dan ja een half half cirkel eigenlijk
+	Free: Pattern=hebben hij, Pattern=dan, Pattern=ja een, Pattern=en aan de, Pattern=half cirkel, Pattern=een half
+	Constrained: Pattern=cirkel, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=en, Pattern=de, Pattern=aan, Pattern=ja
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : en aan de achterkant hebben hij een soort van een
+	Free: Pattern=hebben hij een soort, Pattern=en aan de, Pattern=een, Pattern=achterkant
+	Constrained: Pattern=hebben hij, Pattern=soort, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=9| A | A : ik weten niet
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : zo'n
+	Free: Pattern=zo'n
+	Constrained: 
+Turn ID=11| A | A : ja lijken net een fles of zo een waterfles
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=12| A | A : ik hebben geen idee zoiets
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=13| B | B : en die die opsteken er aan aan de bovenkant zeggen maar uit
+	Free: Pattern=aan, Pattern=aan de, Pattern=zeggen, Pattern=die, Pattern=en, Pattern=maar
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=14| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=15| B | B : ehm ja en hij hij staan als het zijn op op zo'n stuk met
+	Free: Pattern=zo'n, Pattern=ja, Pattern=hij, Pattern=met, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=16| B | B : ja een rechthoek maar met met rond zijkant
+	Free: Pattern=ja een rechthoek, Pattern=rechthoek maar, Pattern=zijkant, Pattern=met
+	Constrained: Pattern=een rechthoek, Pattern=rechthoek, Pattern=ja, Pattern=een, Pattern=ja een, Pattern=maar
+Turn ID=17| A | A : ja dus aan de voorkant hebben hij dan laten maar zeggen een half cirkel
+	Free: Pattern=een half cirkel, Pattern=hebben hij, Pattern=ja, Pattern=aan de, Pattern=dan, Pattern=zeggen, Pattern=maar
+	Constrained: Pattern=cirkel, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=de, Pattern=aan, Pattern=half cirkel, Pattern=een half
+Turn ID=18| A | A : en aan de linkerkant hebben hij dan zo'n cilinder
+	Free: Pattern=hebben hij, Pattern=zo'n, Pattern=dan, Pattern=cilinder, Pattern=en aan de
+	Constrained: Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=19| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : en aan de onderkant hebben hij ook soort van een rechthoek
+	Free: Pattern=hebben hij, Pattern=aan de onderkant, Pattern=en aan de, Pattern=een rechthoek, Pattern=soort
+	Constrained: Pattern=rechthoek, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=de onderkant, Pattern=onderkant, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=22| A | A : maar dan ja met die boog dan laten maar zeggen
+	Free: Pattern=ja, Pattern=dan, Pattern=met die boog, Pattern=zeggen, Pattern=maar
+	Constrained: Pattern=boog, Pattern=met, Pattern=die, Pattern=met die
+Turn ID=23| B | B : ja nee ja dan hebben ik hem
+	Free: Pattern=ja, Pattern=ik, Pattern=hebben, Pattern=dan
+	Constrained: 
+Turn ID=24| A | A : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| B | B : vijftienEh
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : bij mij zijn letter B
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=27| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| B | B : ehm ja dit zijn die
+	Free: Pattern=zijn, Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=29| B | B : het kop staan op een vierkant met die boog zeggen maar weer
+	Free: Pattern=een, Pattern=met die boog, Pattern=maar, Pattern=weer, Pattern=kop, Pattern=zeggen
+	Constrained: Pattern=boog, Pattern=met, Pattern=die, Pattern=met die
+Turn ID=30| B | B : aan de onderkant
+	Free: Pattern=aan de onderkant
+	Constrained: Pattern=aan de, Pattern=de onderkant, Pattern=onderkant, Pattern=de, Pattern=aan
+Turn ID=31| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=32| B | B : met die met die half cirkel erin
+	Free: Pattern=met die met die, Pattern=die half cirkel, Pattern=erin
+	Constrained: Pattern=cirkel, Pattern=met die, Pattern=met, Pattern=die, Pattern=half cirkel
+Turn ID=33| A | A : Halve cirkel
+	Free: Pattern=cirkel
+	Constrained: 
+Turn ID=34| A | A : even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : ja link hebben hij een soort buis die eruit komen
+	Free: Pattern=hebben hij een soort, Pattern=ja, Pattern=die
+	Constrained: Pattern=hebben hij, Pattern=soort, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=een soort
+Turn ID=36| B | B : en aan de ja achterkant een een een half cirkel
+	Free: Pattern=een half cirkel, Pattern=ja, Pattern=een, Pattern=en aan de, Pattern=achterkant
+	Constrained: Pattern=cirkel, Pattern=aan de, Pattern=een, Pattern=en, Pattern=de, Pattern=aan, Pattern=half cirkel, Pattern=een half
+Turn ID=37| B | B : Eh en onder staan hij op een soort
+	Free: Pattern=een soort, Pattern=en, Pattern=Eh, Pattern=hij
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=38| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : Hmm nou de kegel bovenop
+	Free: Pattern=de kegel
+	Constrained: Pattern=kegel, Pattern=de
+Turn ID=42| A | A : en de voorkant die half cirkel
+	Free: Pattern=die half cirkel, Pattern=en, Pattern=de
+	Constrained: Pattern=half cirkel, Pattern=cirkel, Pattern=die
+Turn ID=43| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| A | A : de zijkant een arm van cilinder
+	Free: Pattern=cilinder, Pattern=zijkant, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=45| A | A : en aan de onderkant weer die rechthoek maar dan met die boog laten me zeggen
+	Free: Pattern=met die boog, Pattern=aan de onderkant, Pattern=dan met die, Pattern=die rechthoek, Pattern=weer, Pattern=en aan de, Pattern=zeggen, Pattern=rechthoek maar
+	Constrained: Pattern=met die, Pattern=rechthoek, Pattern=boog, Pattern=aan de, Pattern=dan, Pattern=met, Pattern=onderkant, Pattern=dan met, Pattern=en, Pattern=maar, Pattern=de, Pattern=aan, Pattern=die, Pattern=de onderkant
+Turn ID=46| B | B : met die boog ja
+	Free: Pattern=met die boog, Pattern=ja
+	Constrained: Pattern=boog, Pattern=met, Pattern=die, Pattern=met die
+Turn ID=47| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=48| A | A : I
+	Free: 
+	Constrained: 
+Turn ID=49| B | B : ehm dit zijn met die op die rechthoek staan met die boog
+	Free: Pattern=met die boog, Pattern=met die, Pattern=die rechthoek, Pattern=zijn
+	Constrained: Pattern=met die, Pattern=rechthoek, Pattern=boog, Pattern=met, Pattern=die
+Turn ID=50| A | A : eh rechthoek met boog
+	Free: Pattern=met, Pattern=boog, Pattern=rechthoek
+	Constrained: 
+Turn ID=51| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=52| B | B : ja en dan met die half cirkel
+	Free: Pattern=dan met die, Pattern=die half cirkel, Pattern=en dan, Pattern=ja
+	Constrained: Pattern=cirkel, Pattern=met die, Pattern=dan, Pattern=met, Pattern=die, Pattern=dan met, Pattern=en, Pattern=half cirkel
+Turn ID=53| A | A : Oh met die met die kegel ook of niet
+	Free: Pattern=met die met die, Pattern=kegel
+	Constrained: Pattern=met die, Pattern=met, Pattern=die
+Turn ID=54| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=55| A | A : en dan de onderkant weer met die rechthoek met boog toch
+	Free: Pattern=met die, Pattern=met, Pattern=de onderkant, Pattern=die rechthoek, Pattern=weer, Pattern=boog, Pattern=en dan de
+	Constrained: Pattern=rechthoek, Pattern=de, Pattern=en dan, Pattern=dan, Pattern=met, Pattern=die, Pattern=onderkant, Pattern=en
+Turn ID=56| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=57| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=58| A | A : Ehm Kegel met half cirkel aan de voorkant
+	Free: Pattern=half cirkel, Pattern=aan de, Pattern=met, Pattern=Ehm
+	Constrained: Pattern=aan, Pattern=cirkel, Pattern=de
+Turn ID=59| A | A : en aan de onderkant een rechthoek met boog
+	Free: Pattern=een rechthoek, Pattern=boog, Pattern=aan de onderkant, Pattern=met, Pattern=en aan de
+	Constrained: Pattern=rechthoek, Pattern=aan de, Pattern=een, Pattern=de onderkant, Pattern=onderkant, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=60| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=61| A | A : B
+	Free: 
+	Constrained: 
+Turn ID=62| B | B : ehm ja half cirkel
+	Free: Pattern=half cirkel, Pattern=ja
+	Constrained: Pattern=cirkel
+Turn ID=63| B | B : en dan de kegel erin
+	Free: Pattern=en dan de, Pattern=de kegel, Pattern=erin
+	Constrained: Pattern=kegel, Pattern=de, Pattern=en dan, Pattern=dan, Pattern=en
+Turn ID=64| B | B : Ehm en link een cilinder
+	Free: Pattern=een cilinder, Pattern=en, Pattern=Ehm
+	Constrained: Pattern=cilinder, Pattern=een
+Turn ID=65| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=66| B | B : vier
+	Free: 
+	Constrained: 

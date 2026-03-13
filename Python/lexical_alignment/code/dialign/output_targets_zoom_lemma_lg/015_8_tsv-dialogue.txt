@@ -1,0 +1,175 @@
+A|0| A: _dit zijn_ _een_ heel ingewikkeld 
+A|1| A: want _het_ _zijn_ _een_ kom 
+A|2| A: _en_ _bovenop_ _die_ komen schuin zitten _een soort_ ruitvorm 
+A|3| A: _waar_ _dan_ _een_ _stok_ _doorheen_ zitten 
+A|4| A: _en_ _aan de onderkant_ hebben je _een_ uitsteeksel _als_ _een_ J 
+B|5| B: _ja_ 
+B|6| B: _ja ja ja_ 
+B|7| B: [die] ik [en] [een soort] van _ja_ [stok] [die] _er_ ook nog uitsteken 
+A|8| A: [ja] _met een_ [stok] eruit 
+B|9| B: _ja ja_ precies 
+A|10| A: [ja] 
+B|11| B: [dit zijn] diezelfde [die] jij volgens mij al eerder omschraf 
+B|12| B: [met [een] soort] van staart [aan de onderkant] of [een] voetstuk 
+B|13| B: [een soort] Pinocchio neus 
+B|14| B: [en] [dan] [het] vierkant op [het] hoofd [met] [de] stang _er doorheen_ of 
+A|15| A: Oh [ja] 
+A|16| A: [die] _ruit_ 
+B|17| B: exact 
+A|18| A: [ja] 
+B|19| B: [de] [ruit] [met] [de] stang 
+B|20| B: [ja] 
+A|21| A: Oké 
+A|22| A: [dit _zijn] die_ ingewikkeld _weer_ 
+A|23| A: [die] mok [met] [die] _ruit als_ [aan de] achterkant uitstekend 
+A|24| A: [met] [die] [stok] [er doorheen] 
+A|25| A: [aan de onderkant] [die] vorm Die J-vorm 
+B|26| B: ah 
+B|27| B: [ja] 
+B|28| B: [waar] [zijn die] 
+B|29| B: [dit zijn] [weer] [met] [de] [ruit] [bovenop] [de] kop 
+B|30| B: [en] daar [de] stang [doorheen] 
+B|31| B: _met het_ voetstuk 
+A|32| A: [ja] 
+A|33| A: dat [zijn] 
+A|34| A: nu hebben we [de] complex 
+A|35| A: [met het] ruitvormig [bovenop] 
+A|36| A: [met] [die] [stok] [er doorheen] 
+A|37| A: [en] [de] J [aan de onderkant] 
+B|38| B: [ja] 
+B|39| B: [dit zijn] [weer] [met] [de] [ruit als] haar [en] [dan] [de] stang erdoorheen 
+A|40| A: [ja] 
+A|41| A: [ja [ja ja] ja] 
+A|42| A: dat [die] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit zijn een heel ingewikkeld
+	Free: Pattern=dit zijn, Pattern=een
+	Constrained: Pattern=zijn
+Turn ID=1| A | A : want het zijn een kom
+	Free: Pattern=zijn, Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : en bovenop die komen schuin zitten een soort ruitvorm
+	Free: Pattern=een soort, Pattern=en, Pattern=bovenop, Pattern=die
+	Constrained: Pattern=een
+Turn ID=3| A | A : waar dan een stok doorheen zitten
+	Free: Pattern=doorheen, Pattern=waar, Pattern=dan, Pattern=een, Pattern=stok
+	Constrained: 
+Turn ID=4| A | A : en aan de onderkant hebben je een uitsteeksel als een J
+	Free: Pattern=aan de onderkant, Pattern=en, Pattern=een, Pattern=als
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=7| B | B : die ik en een soort van ja stok die er ook nog uitsteken
+	Free: Pattern=ja, Pattern=die, Pattern=er, Pattern=en, Pattern=een soort, Pattern=stok
+	Constrained: Pattern=een
+Turn ID=8| A | A : ja met een stok eruit
+	Free: Pattern=met een, Pattern=ja, Pattern=stok
+	Constrained: Pattern=een, Pattern=met
+Turn ID=9| B | B : ja ja precies
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : dit zijn diezelfde die jij volgens mij al eerder omschraf
+	Free: Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=12| B | B : met een soort van staart aan de onderkant of een voetstuk
+	Free: Pattern=aan de onderkant, Pattern=met een, Pattern=een soort, Pattern=een
+	Constrained: Pattern=een, Pattern=de, Pattern=met, Pattern=aan de
+Turn ID=13| B | B : een soort Pinocchio neus
+	Free: Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=14| B | B : en dan het vierkant op het hoofd met de stang er doorheen of
+	Free: Pattern=de, Pattern=dan, Pattern=het, Pattern=er doorheen, Pattern=met, Pattern=en
+	Constrained: Pattern=doorheen, Pattern=er
+Turn ID=15| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : die ruit
+	Free: Pattern=ruit, Pattern=die
+	Constrained: 
+Turn ID=17| B | B : exact
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : de ruit met de stang
+	Free: Pattern=ruit, Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : dit zijn die ingewikkeld weer
+	Free: Pattern=zijn die, Pattern=dit zijn, Pattern=weer
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=23| A | A : die mok met die ruit als aan de achterkant uitstekend
+	Free: Pattern=ruit als, Pattern=aan de, Pattern=die, Pattern=met
+	Constrained: Pattern=ruit, Pattern=de, Pattern=als
+Turn ID=24| A | A : met die stok er doorheen
+	Free: Pattern=er doorheen, Pattern=die, Pattern=stok, Pattern=met
+	Constrained: Pattern=doorheen, Pattern=er
+Turn ID=25| A | A : aan de onderkant die vorm Die J-vorm
+	Free: Pattern=aan de onderkant, Pattern=die
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=26| B | B : ah
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : waar zijn die
+	Free: Pattern=zijn die, Pattern=waar
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=29| B | B : dit zijn weer met de ruit bovenop de kop
+	Free: Pattern=bovenop, Pattern=ruit, Pattern=de, Pattern=met, Pattern=weer, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=30| B | B : en daar de stang doorheen
+	Free: Pattern=en, Pattern=doorheen, Pattern=de
+	Constrained: 
+Turn ID=31| B | B : met het voetstuk
+	Free: Pattern=met het
+	Constrained: Pattern=het, Pattern=met
+Turn ID=32| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=34| A | A : nu hebben we de complex
+	Free: Pattern=de
+	Constrained: 
+Turn ID=35| A | A : met het ruitvormig bovenop
+	Free: Pattern=met het, Pattern=bovenop
+	Constrained: Pattern=het, Pattern=met
+Turn ID=36| A | A : met die stok er doorheen
+	Free: Pattern=er doorheen, Pattern=die, Pattern=stok, Pattern=met
+	Constrained: Pattern=doorheen, Pattern=er
+Turn ID=37| A | A : en de J aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=en, Pattern=de
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=38| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : dit zijn weer met de ruit als haar en dan de stang erdoorheen
+	Free: Pattern=de, Pattern=dan, Pattern=ruit als, Pattern=met, Pattern=en, Pattern=weer, Pattern=dit zijn
+	Constrained: Pattern=ruit, Pattern=zijn, Pattern=als
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : ja ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=42| A | A : dat die zijn
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 

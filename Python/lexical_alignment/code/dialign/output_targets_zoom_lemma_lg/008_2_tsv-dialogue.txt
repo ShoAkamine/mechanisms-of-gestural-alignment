@@ -1,0 +1,155 @@
+B|0| B: _je_ krijgen geen feedback 
+B|1| B: ik denken _dat_ _je_ feedback krijgen maar _dat_ krijgen _je_ niet 
+A|2| A: nee 
+A|3| A: nee 
+A|4| A: ehm bij _deze_ zitten er _een soort_ _ja_ _driehoek_ bovenop 
+A|5| A: Ehm _en_ dan _hebben_ [je] nog verschillend uitsteeksel aan de 
+A|6| A: _ja_ aan de _hebben_ [je] wat klein iets [dat] _van_ _smal_ naar _bred_ gaan 
+A|7| A: aan de rechterkant _hebben_ [je] _ja_ _ja_ _een soort blok_ 
+B|8| B: [een soort blok] 
+A|9| A: aan de onderkant zitten [een soort] schijf er _ook_ weer _onder_ 
+B|10| B: _ja _dat_ zijn_ 
+B|11| B: [deze] _die_ [hebben] [een soort] [driehoek] erop 
+B|12| B: _die_ _met_ [een] heel scherp punt 
+B|13| B: [en] hij [hebben] daaronder [hebben] hij [een soort] [van] [soort] [van] cirkeltje 
+B|14| B: [en] links [en] rechts 
+B|15| B: rechts [hebben] hij [een] super _groot_ [blok] 
+B|16| B: [en] link [hebben] hij [een soort] [van] [ja] [ook] [een soort] gek dinge [dat] [dat] heel [smal] beginnen [en] [bred] worden 
+A|17| A: [ja] 
+A|18| A: [dat zijn] 
+A|19| A: _Eh_ _deze hebben_ [ja dat] puntig ding bovenop 
+A|20| A: [een soort] driehoekachtig 
+A|21| A: [en] dan [dat] ding [dat] [van] [smal] naar [groot] gaan aan de linkerkant 
+A|22| A: [en] [dat] ding [dat] eronder zitten dan [ja] 
+B|23| B: [ja] 
+B|24| B: [zijn] [dat] [ja] 
+B|25| B: [Eh] _met_ het punt 
+B|26| B: _met_ [een] driehoekpunt erop 
+B|27| B: [en] [een] cirkeltje [onder] links [onder] 
+A|28| A: Oké [en] dan [die] [dat] [van] klein naar [groot] gaan aan de linkerkant 
+B|29| B: [ja] 
+A|30| A: [ja] 
+A|31| A: Oké 
+A|32| A: [ja] dit [zijn] de puntig [met] de vorm [die] [van] klein naar [groot] gaan aan de linkerkant 
+A|33| A: [en] dan de _cirkel_ [die] linksonder zitten 
+B|34| B: Yes [zijn] 
+B|35| B: [deze hebben] [die] punthoek [driehoek] erop 
+B|36| B: [en] daaronder zo'n rond [cirkel] 
+A|37| A: O [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : je krijgen geen feedback
+	Free: Pattern=je
+	Constrained: 
+Turn ID=1| B | B : ik denken dat je feedback krijgen maar dat krijgen je niet
+	Free: Pattern=dat, Pattern=je
+	Constrained: 
+Turn ID=2| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : ehm bij deze zitten er een soort ja driehoek bovenop
+	Free: Pattern=een soort, Pattern=ja, Pattern=driehoek, Pattern=deze
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=5| A | A : Ehm en dan hebben je nog verschillend uitsteeksel aan de
+	Free: Pattern=en, Pattern=hebben, Pattern=je
+	Constrained: 
+Turn ID=6| A | A : ja aan de hebben je wat klein iets dat van smal naar bred gaan
+	Free: Pattern=dat, Pattern=ja, Pattern=smal, Pattern=van, Pattern=je, Pattern=hebben, Pattern=bred
+	Constrained: 
+Turn ID=7| A | A : aan de rechterkant hebben je ja ja een soort blok
+	Free: Pattern=een soort blok, Pattern=hebben, Pattern=ja, Pattern=je
+	Constrained: Pattern=een soort, Pattern=een, Pattern=blok, Pattern=soort
+Turn ID=8| B | B : een soort blok
+	Free: Pattern=een soort blok
+	Constrained: Pattern=een soort, Pattern=een, Pattern=blok, Pattern=soort
+Turn ID=9| A | A : aan de onderkant zitten een soort schijf er ook weer onder
+	Free: Pattern=een soort, Pattern=onder, Pattern=ook
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=10| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=ja, Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : deze die hebben een soort driehoek erop
+	Free: Pattern=driehoek, Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=deze
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=12| B | B : die met een heel scherp punt
+	Free: Pattern=die, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=13| B | B : en hij hebben daaronder hebben hij een soort van soort van cirkeltje
+	Free: Pattern=soort, Pattern=hebben, Pattern=een soort, Pattern=van, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=14| B | B : en links en rechts
+	Free: Pattern=en
+	Constrained: 
+Turn ID=15| B | B : rechts hebben hij een super groot blok
+	Free: Pattern=hebben, Pattern=blok, Pattern=groot, Pattern=een
+	Constrained: 
+Turn ID=16| B | B : en link hebben hij een soort van ja ook een soort gek dinge dat dat heel smal beginnen en bred worden
+	Free: Pattern=dat, Pattern=ja, Pattern=ook, Pattern=smal, Pattern=een soort, Pattern=hebben, Pattern=bred, Pattern=van, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| A | A : Eh deze hebben ja dat puntig ding bovenop
+	Free: Pattern=deze hebben, Pattern=ja dat, Pattern=Eh
+	Constrained: Pattern=hebben, Pattern=ja, Pattern=dat, Pattern=deze
+Turn ID=20| A | A : een soort driehoekachtig
+	Free: Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=21| A | A : en dan dat ding dat van smal naar groot gaan aan de linkerkant
+	Free: Pattern=dat, Pattern=smal, Pattern=groot, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=22| A | A : en dat ding dat eronder zitten dan ja
+	Free: Pattern=en, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : zijn dat ja
+	Free: Pattern=ja, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=25| B | B : Eh met het punt
+	Free: Pattern=Eh, Pattern=met
+	Constrained: 
+Turn ID=26| B | B : met een driehoekpunt erop
+	Free: Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=27| B | B : en een cirkeltje onder links onder
+	Free: Pattern=en, Pattern=onder, Pattern=een
+	Constrained: 
+Turn ID=28| A | A : Oké en dan die dat van klein naar groot gaan aan de linkerkant
+	Free: Pattern=dat, Pattern=groot, Pattern=die, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : ja dit zijn de puntig met de vorm die van klein naar groot gaan aan de linkerkant
+	Free: Pattern=ja, Pattern=groot, Pattern=met, Pattern=die, Pattern=van, Pattern=zijn
+	Constrained: 
+Turn ID=33| A | A : en dan de cirkel die linksonder zitten
+	Free: Pattern=en, Pattern=die, Pattern=cirkel
+	Constrained: 
+Turn ID=34| B | B : Yes zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=35| B | B : deze hebben die punthoek driehoek erop
+	Free: Pattern=deze hebben, Pattern=die, Pattern=driehoek
+	Constrained: Pattern=hebben, Pattern=deze
+Turn ID=36| B | B : en daaronder zo'n rond cirkel
+	Free: Pattern=en, Pattern=cirkel
+	Constrained: 
+Turn ID=37| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 

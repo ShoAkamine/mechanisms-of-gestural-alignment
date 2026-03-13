@@ -1,0 +1,99 @@
+B|0| B: _oké_ deze lijken opOké _het_ hebben _ook_ _een_ _hoed_ 
+B|1| B: _maar_ _het hoed_ _zijn_ _niet zo puntig_ _het_ _zijn_ afgevlken 
+A|2| A: Oh _ja_ [oké] 
+A|3| A: [een] _soort van_ Eend 
+B|4| B: en 
+B|5| B: [ja] _het_ lijken bijna op [een] _eend_ want _het_ hebben [soort van] twee lip om _het_ _zo_ te zeggen 
+A|6| A: [ja] 
+A|7| A: _Oké_ dan weten ik hem denken ik 
+B|8| B: [ja] 
+B|9| B: [Oké] 
+A|10| A: dit [zijn] de _eend met_ [ook] [het _hoed] maar_ [niet] [het] puntigst _hoed maar dat_ ander [hoed] 
+B|11| B: Yes _dat zijn_ 
+B|12| B: deze [zijn] _die_ [een] _die_ lijken op [een] [eend met] [een] [hoed maar dat] [niet] _puntig zijn_ 
+A|13| A: [ja] 
+A|14| A: ehm even kijken waar [die] staan Oh [dat zijn] 
+A|15| A: dit [zijn] de [eend met] [het] roe wat [niet zo [puntig] zijn] 
+B|16| B: [ja] [dat zijn] 
+B|17| B: deze [zijn] [die] [eend] 
+B|18| B: [met] [een] [hoed] [dat] [niet] [puntig zijn] 
+A|19| A: [ja] 
+A|20| A: even kijken waar [die] staan 
+A|21| A: oh [dat zijn] 
+A|22| A: Eh [dat zijn] de [eend met] [het] [niet zo puntig] [hoed] 
+B|23| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze lijken opOké het hebben ook een hoed
+	Free: Pattern=oké, Pattern=hoed, Pattern=ook, Pattern=een, Pattern=het
+	Constrained: 
+Turn ID=1| B | B : maar het hoed zijn niet zo puntig het zijn afgevlken
+	Free: Pattern=het hoed, Pattern=het, Pattern=niet zo puntig, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=hoed, Pattern=niet, Pattern=zo, Pattern=het
+Turn ID=2| A | A : Oh ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=3| A | A : een soort van Eend
+	Free: Pattern=soort van, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : en
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ja het lijken bijna op een eend want het hebben soort van twee lip om het zo te zeggen
+	Free: Pattern=ja, Pattern=eend, Pattern=een, Pattern=het, Pattern=zo, Pattern=soort van
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Oké dan weten ik hem denken ik
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| A | A : dit zijn de eend met ook het hoed maar niet het puntigst hoed maar dat ander hoed
+	Free: Pattern=eend met, Pattern=het hoed, Pattern=hoed, Pattern=ook, Pattern=niet, Pattern=het, Pattern=hoed maar dat, Pattern=zijn, Pattern=hoed maar
+	Constrained: Pattern=dat, Pattern=hoed, Pattern=eend, Pattern=het, Pattern=met, Pattern=maar, Pattern=hoed maar
+Turn ID=11| B | B : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=12| B | B : deze zijn die een die lijken op een eend met een hoed maar dat niet puntig zijn
+	Free: Pattern=eend met, Pattern=een, Pattern=hoed maar dat, Pattern=die, Pattern=zijn, Pattern=puntig zijn, Pattern=niet
+	Constrained: Pattern=dat, Pattern=hoed, Pattern=eend, Pattern=met, Pattern=hoed maar, Pattern=zijn, Pattern=maar
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| A | A : ehm even kijken waar die staan Oh dat zijn
+	Free: Pattern=dat zijn, Pattern=die
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=15| A | A : dit zijn de eend met het roe wat niet zo puntig zijn
+	Free: Pattern=eend met, Pattern=puntig zijn, Pattern=het, Pattern=zijn, Pattern=niet zo puntig
+	Constrained: Pattern=eend, Pattern=niet, Pattern=zo, Pattern=met, Pattern=zijn
+Turn ID=16| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=17| B | B : deze zijn die eend
+	Free: Pattern=zijn, Pattern=die, Pattern=eend
+	Constrained: 
+Turn ID=18| B | B : met een hoed dat niet puntig zijn
+	Free: Pattern=dat, Pattern=hoed, Pattern=een, Pattern=met, Pattern=puntig zijn, Pattern=niet
+	Constrained: Pattern=zijn
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : even kijken waar die staan
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| A | A : oh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=22| A | A : Eh dat zijn de eend met het niet zo puntig hoed
+	Free: Pattern=dat zijn, Pattern=eend met, Pattern=hoed, Pattern=het, Pattern=niet zo puntig
+	Constrained: Pattern=dat, Pattern=eend, Pattern=niet, Pattern=zo, Pattern=met, Pattern=zijn
+Turn ID=23| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

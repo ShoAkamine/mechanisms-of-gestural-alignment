@@ -1,0 +1,103 @@
+B|0| B: _dan_ deze _hebben_ _aan de_ rechterkant _een soort_ plat plateau 
+B|1| B: _een_ rond plat plateau 
+B|2| B: _en dan_ _aan de_ linkerkant _een_ arm 
+B|3| B: _met_ _nog _een_ soort_ _toeter_ eraan 
+A|4| A: _Oké_ 
+A|5| A: [dan] denken ik dat ik al weten wat _het_ zijn 
+A|6| A: maar zijn _het_ [een soort] van pionachtig vorm 
+B|7| B: _ja_ _ja_ 
+A|8| A: _Oké_ [dan] zijn dat voor mij 
+B|9| B: zeker 
+B|10| B: [Oké] 
+A|11| A: eh ik [hebben] nu _die _met_ die_ [toeter] bovenop 
+A|12| A: [en] dat [ja] dat cirkel [aan de] zijkant 
+A|13| A: ehm dus _met de_ spies [en dan] [nog een] [toeter] 
+B|14| B: Oh [ja] 
+B|15| B: _met die pion_ 
+A|16| A: [ja] [met die pion] 
+B|17| B: [ja] nummer 
+B|18| B: [die [met] de] [met de] [toeter] _met de omgekeerd pion_ 
+A|19| A: ehm [de omgekeerd pion] 
+A|20| A: _met het_ dienblad 
+B|21| B: nummer 
+B|22| B: [met het] [toeter] 
+A|23| A: Eh [met de omgekeerd pion] 
+B|24| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan deze hebben aan de rechterkant een soort plat plateau
+	Free: Pattern=aan de, Pattern=een soort, Pattern=dan, Pattern=hebben
+	Constrained: Pattern=een
+Turn ID=1| B | B : een rond plat plateau
+	Free: Pattern=een
+	Constrained: 
+Turn ID=2| B | B : en dan aan de linkerkant een arm
+	Free: Pattern=aan de, Pattern=en dan, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=3| B | B : met nog een soort toeter eraan
+	Free: Pattern=een soort, Pattern=nog een, Pattern=met, Pattern=toeter
+	Constrained: Pattern=een
+Turn ID=4| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| A | A : dan denken ik dat ik al weten wat het zijn
+	Free: Pattern=dan, Pattern=het
+	Constrained: 
+Turn ID=6| A | A : maar zijn het een soort van pionachtig vorm
+	Free: Pattern=een soort, Pattern=het
+	Constrained: Pattern=een
+Turn ID=7| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : Oké dan zijn dat voor mij
+	Free: Pattern=dan, Pattern=Oké
+	Constrained: 
+Turn ID=9| B | B : zeker
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=11| A | A : eh ik hebben nu die met die toeter bovenop
+	Free: Pattern=met die, Pattern=die met, Pattern=toeter, Pattern=hebben
+	Constrained: Pattern=met
+Turn ID=12| A | A : en dat ja dat cirkel aan de zijkant
+	Free: Pattern=aan de, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=13| A | A : ehm dus met de spies en dan nog een toeter
+	Free: Pattern=met de, Pattern=en dan, Pattern=nog een, Pattern=toeter
+	Constrained: Pattern=dan, Pattern=een, Pattern=met, Pattern=en
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : met die pion
+	Free: Pattern=met die pion
+	Constrained: Pattern=met, Pattern=met die
+Turn ID=16| A | A : ja met die pion
+	Free: Pattern=met die pion, Pattern=ja
+	Constrained: Pattern=met, Pattern=met die
+Turn ID=17| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : die met de met de toeter met de omgekeerd pion
+	Free: Pattern=met de omgekeerd pion, Pattern=met de, Pattern=die met, Pattern=toeter
+	Constrained: Pattern=de omgekeerd pion, Pattern=met de, Pattern=met
+Turn ID=19| A | A : ehm de omgekeerd pion
+	Free: Pattern=de omgekeerd pion
+	Constrained: 
+Turn ID=20| A | A : met het dienblad
+	Free: Pattern=met het
+	Constrained: Pattern=met, Pattern=het
+Turn ID=21| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : met het toeter
+	Free: Pattern=met het, Pattern=toeter
+	Constrained: Pattern=met, Pattern=het
+Turn ID=23| A | A : Eh met de omgekeerd pion
+	Free: Pattern=met de omgekeerd pion
+	Constrained: Pattern=de omgekeerd pion, Pattern=met de, Pattern=met
+Turn ID=24| B | B : nummer
+	Free: 
+	Constrained: 

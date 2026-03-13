@@ -1,0 +1,75 @@
+A|0| A: _Oké ik_ hebben _een_ rood vierkant 
+B|1| B: Hmhm 
+A|2| A: ehm even kijken _links_ hebben je eigenlijk _een_ heel groot _uitsteeksel_ 
+A|3| A: dus _een uitsteeksel_ _met_ daarop _een_ heel groot _uitsteeksel_ omhoog 
+A|4| A: en _aan de_ rechterkant hebben je _een soort_ _tafel_ eigenlijk _een_ rond _tafel_ 
+A|5| A: _een_ beetje halverwege 
+B|6| B: [Oké ik] weten hem 
+A|7| A: [Oké] top 
+B|8| B: deze _dat tafel_ [aan de] rechterzijkant _met links_ [een] [een uitsteeksel] waar [een soort] _spijker_ op zitten 
+A|9| A: ja [dat] zijn 
+A|10| A: die [met] [dat _tafel] rechts_ 
+A|11| A: en [links] [dat] groot [uitsteeksel] 
+B|12| B: _eh_ [tafel rechts] 
+B|13| B: [met] _spijker_ [links] 
+A|14| A: [dat] zijn 
+A|15| A: [eh] dit zijn die [met links] die groot [spijker] en [rechts] [dat tafel] 
+B|16| B: [eh] [tafel rechts] [spijker] link 
+A|17| A: [dat] zijn 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben een rood vierkant
+	Free: Pattern=Oké ik, Pattern=een
+	Constrained: Pattern=Oké
+Turn ID=1| B | B : Hmhm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : ehm even kijken links hebben je eigenlijk een heel groot uitsteeksel
+	Free: Pattern=een, Pattern=uitsteeksel, Pattern=links
+	Constrained: 
+Turn ID=3| A | A : dus een uitsteeksel met daarop een heel groot uitsteeksel omhoog
+	Free: Pattern=een uitsteeksel, Pattern=een, Pattern=uitsteeksel, Pattern=met
+	Constrained: Pattern=een, Pattern=uitsteeksel
+Turn ID=4| A | A : en aan de rechterkant hebben je een soort tafel eigenlijk een rond tafel
+	Free: Pattern=aan de, Pattern=een soort, Pattern=tafel, Pattern=een
+	Constrained: Pattern=een
+Turn ID=5| A | A : een beetje halverwege
+	Free: Pattern=een
+	Constrained: 
+Turn ID=6| B | B : Oké ik weten hem
+	Free: Pattern=Oké ik
+	Constrained: Pattern=Oké
+Turn ID=7| A | A : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : deze dat tafel aan de rechterzijkant met links een een uitsteeksel waar een soort spijker op zitten
+	Free: Pattern=aan de, Pattern=een, Pattern=met links, Pattern=een soort, Pattern=dat tafel, Pattern=een uitsteeksel, Pattern=spijker
+	Constrained: Pattern=dat, Pattern=uitsteeksel, Pattern=een, Pattern=links, Pattern=met, Pattern=tafel
+Turn ID=9| A | A : ja dat zijn
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=10| A | A : die met dat tafel rechts
+	Free: Pattern=tafel rechts, Pattern=dat tafel, Pattern=met
+	Constrained: Pattern=tafel, Pattern=dat, Pattern=rechts
+Turn ID=11| A | A : en links dat groot uitsteeksel
+	Free: Pattern=dat, Pattern=uitsteeksel, Pattern=links
+	Constrained: 
+Turn ID=12| B | B : eh tafel rechts
+	Free: Pattern=tafel rechts, Pattern=eh
+	Constrained: Pattern=tafel, Pattern=rechts
+Turn ID=13| B | B : met spijker links
+	Free: Pattern=met, Pattern=spijker, Pattern=links
+	Constrained: 
+Turn ID=14| A | A : dat zijn
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=15| A | A : eh dit zijn die met links die groot spijker en rechts dat tafel
+	Free: Pattern=rechts, Pattern=met links, Pattern=eh, Pattern=dat tafel, Pattern=spijker
+	Constrained: Pattern=tafel, Pattern=dat, Pattern=met, Pattern=links
+Turn ID=16| B | B : eh tafel rechts spijker link
+	Free: Pattern=tafel rechts, Pattern=eh, Pattern=spijker
+	Constrained: Pattern=tafel, Pattern=rechts
+Turn ID=17| A | A : dat zijn
+	Free: Pattern=dat
+	Constrained: 

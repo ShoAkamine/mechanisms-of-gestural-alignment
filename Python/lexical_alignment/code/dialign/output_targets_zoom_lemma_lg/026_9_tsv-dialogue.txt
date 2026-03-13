@@ -1,0 +1,171 @@
+B|0| B: _Euhm_ oké Noueuh 
+B|1| B: Zeggen _maar_ mijn Euh Cup _hebben_ dus _een_ euh lang _balk_ _aan de_ zijkant 
+B|2| B: _en_ hij _staan_ _zeggen maar_ _op een_ te smal _een_ te smal ondergrond eigenlijk 
+B|3| B: _de_ ondergrond _zijn_ smal _dan_ _de_ _cup_ zelf 
+B|4| B: _en dan_ steken _nog_ _zo'n_ euh bol 
+A|5| A: _Oh ja_ [en] [nog] [een] _rond_ erachter 
+B|6| B: [ja] [ja] precies _die_ 
+A|7| A: _dan hebben_ [Euhm] _ik_ [zeggen maar] [Euhm] 
+A|8| A: _ja dat zijn_ [een] [cup] [die] [staan] [op een] [zeggen maar] 
+A|9| A: [ja] [op een] soort _voetstuk_ 
+A|10| A: _het zijn_ _een beetje_ alsof _je_ [een] feunen kwartslag draaien naar rechts 
+A|11| A: [en] [aan de] linkerkant [een] [balk] 
+A|12| A: [een] soort handvat 
+A|13| A: [en dan] rechts [aan de] rechterrand van [de] mok [een] soort van 
+A|14| A: [een] _ballonnet_ [een] klein _ballonnet_ 
+A|15| A: [en] _aan de achterkant_ [een] _rond_ plaat 
+B|16| B: Euhhh even kijken 
+B|17| B: [ja] _die op_ _zo'n_ [voetstuk] [staan] inderdaad 
+A|18| A: [ja] 
+B|19| B: [ja] [ik] [hebben] hem 
+B|20| B: [dat zijn] 
+A|21| A: [ja] 
+A|22| A: [ja] 
+B|23| B: Euh [ja] _dan hebben ik_ euh degeen _met_ [het] staaf weten [je] wel te smal [voetstuk] [het] staaf [het] [rond] [aan de achterkant] [en] [het] [ballonnet] bovenop 
+A|24| A: [ja] 
+A|25| A: Oké 
+A|26| A: _dan hebben ik de omgekeerd_ föhn 
+B|27| B: even kijken euhh waar [staan] hij bij _mij_ euhh 
+B|28| B: Euh kunnen [je] hem even [nog] wat euh 
+A|29| A: [ja] _omgekeerd_ föhn [die [op] een] plateauotje [staan] [Euhm] [met] [zo'n] schroef handvaar [aan de] rechterkant [en] [nog] [een] [rond] plaat [aan de achterkant] 
+B|30| B: [Oh ja] 
+B|31| B: [Oh ja] [die] [ja] [ja] 
+A|32| A: [dat] zien [ik] als [een] soort omgekeerde föhn 
+B|33| B: [ja] inderdaad 
+A|34| A: [ja] 
+B|35| B: [het zijn] [het] lijken [een beetje] [op een] fohnstuk 
+A|36| A: [ja] 
+A|37| A: Oké 
+B|38| B: Euh [dan _hebben ik de omgekeerd] fohn_ 
+A|39| A: Oké _dat zijn voor mij_ 
+A|40| A: daar [hebben ik de omgekeerd fohn] 
+B|41| B: [ja [dat zijn] voor mij] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm oké Noueuh
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=1| B | B : Zeggen maar mijn Euh Cup hebben dus een euh lang balk aan de zijkant
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=balk, Pattern=maar
+	Constrained: Pattern=de
+Turn ID=2| B | B : en hij staan zeggen maar op een te smal een te smal ondergrond eigenlijk
+	Free: Pattern=zeggen maar, Pattern=en, Pattern=op een, Pattern=een, Pattern=staan
+	Constrained: Pattern=maar, Pattern=een
+Turn ID=3| B | B : de ondergrond zijn smal dan de cup zelf
+	Free: Pattern=cup, Pattern=zijn, Pattern=de, Pattern=dan
+	Constrained: 
+Turn ID=4| B | B : en dan steken nog zo'n euh bol
+	Free: Pattern=en dan, Pattern=zo'n, Pattern=nog
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=5| A | A : Oh ja en nog een rond erachter
+	Free: Pattern=nog, Pattern=en, Pattern=rond, Pattern=een, Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=6| B | B : ja ja precies die
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=7| A | A : dan hebben Euhm ik zeggen maar Euhm
+	Free: Pattern=dan hebben, Pattern=zeggen maar, Pattern=ik, Pattern=Euhm
+	Constrained: Pattern=maar, Pattern=hebben, Pattern=dan
+Turn ID=8| A | A : ja dat zijn een cup die staan op een zeggen maar
+	Free: Pattern=zeggen maar, Pattern=die, Pattern=cup, Pattern=op een, Pattern=staan, Pattern=ja dat zijn, Pattern=een
+	Constrained: Pattern=ja, Pattern=een, Pattern=dat, Pattern=dat zijn, Pattern=zijn, Pattern=maar
+Turn ID=9| A | A : ja op een soort voetstuk
+	Free: Pattern=op een, Pattern=ja, Pattern=voetstuk
+	Constrained: Pattern=een
+Turn ID=10| A | A : het zijn een beetje alsof je een feunen kwartslag draaien naar rechts
+	Free: Pattern=een beetje, Pattern=het zijn, Pattern=je, Pattern=een
+	Constrained: Pattern=zijn, Pattern=het, Pattern=een
+Turn ID=11| A | A : en aan de linkerkant een balk
+	Free: Pattern=aan de, Pattern=een, Pattern=balk, Pattern=en
+	Constrained: Pattern=de
+Turn ID=12| A | A : een soort handvat
+	Free: Pattern=een
+	Constrained: 
+Turn ID=13| A | A : en dan rechts aan de rechterrand van de mok een soort van
+	Free: Pattern=en dan, Pattern=aan de, Pattern=de, Pattern=een
+	Constrained: Pattern=de, Pattern=en, Pattern=dan
+Turn ID=14| A | A : een ballonnet een klein ballonnet
+	Free: Pattern=een, Pattern=ballonnet
+	Constrained: 
+Turn ID=15| A | A : en aan de achterkant een rond plaat
+	Free: Pattern=aan de achterkant, Pattern=rond, Pattern=een, Pattern=en
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=16| B | B : Euhhh even kijken
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : ja die op zo'n voetstuk staan inderdaad
+	Free: Pattern=zo'n, Pattern=ja, Pattern=staan, Pattern=voetstuk, Pattern=die op
+	Constrained: Pattern=die
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ja ik hebben hem
+	Free: Pattern=ja, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=20| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : Euh ja dan hebben ik euh degeen met het staaf weten je wel te smal voetstuk het staaf het rond aan de achterkant en het ballonnet bovenop
+	Free: Pattern=aan de achterkant, Pattern=ja, Pattern=het, Pattern=ballonnet, Pattern=voetstuk, Pattern=met, Pattern=dan hebben ik, Pattern=en, Pattern=rond, Pattern=je
+	Constrained: Pattern=de, Pattern=aan de, Pattern=dan, Pattern=hebben, Pattern=dan hebben, Pattern=ik
+Turn ID=24| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : dan hebben ik de omgekeerd föhn
+	Free: Pattern=dan hebben ik de omgekeerd
+	Constrained: Pattern=de, Pattern=dan, Pattern=hebben, Pattern=dan hebben, Pattern=dan hebben ik, Pattern=omgekeerd, Pattern=ik
+Turn ID=27| B | B : even kijken euhh waar staan hij bij mij euhh
+	Free: Pattern=staan, Pattern=mij
+	Constrained: 
+Turn ID=28| B | B : Euh kunnen je hem even nog wat euh
+	Free: Pattern=je, Pattern=nog
+	Constrained: 
+Turn ID=29| A | A : ja omgekeerd föhn die op een plateauotje staan Euhm met zo'n schroef handvaar aan de rechterkant en nog een rond plaat aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=nog, Pattern=zo'n, Pattern=ja, Pattern=aan de, Pattern=Euhm, Pattern=met, Pattern=omgekeerd, Pattern=die op, Pattern=en, Pattern=rond, Pattern=op een, Pattern=een, Pattern=staan
+	Constrained: Pattern=een, Pattern=de, Pattern=die, Pattern=aan de
+Turn ID=30| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=31| B | B : Oh ja die ja ja
+	Free: Pattern=Oh ja, Pattern=ja, Pattern=die
+	Constrained: Pattern=ja
+Turn ID=32| A | A : dat zien ik als een soort omgekeerde föhn
+	Free: Pattern=ik, Pattern=een, Pattern=dat
+	Constrained: 
+Turn ID=33| B | B : ja inderdaad
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : het zijn het lijken een beetje op een fohnstuk
+	Free: Pattern=een beetje, Pattern=op een, Pattern=het zijn, Pattern=het
+	Constrained: Pattern=een, Pattern=zijn, Pattern=het
+Turn ID=36| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : Euh dan hebben ik de omgekeerd fohn
+	Free: Pattern=hebben ik de omgekeerd fohn, Pattern=dan hebben ik de omgekeerd
+	Constrained: Pattern=de, Pattern=dan, Pattern=hebben, Pattern=dan hebben, Pattern=dan hebben ik, Pattern=omgekeerd, Pattern=ik
+Turn ID=39| A | A : Oké dat zijn voor mij
+	Free: Pattern=dat zijn voor mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=dat zijn, Pattern=dat
+Turn ID=40| A | A : daar hebben ik de omgekeerd fohn
+	Free: Pattern=hebben ik de omgekeerd fohn
+	Constrained: Pattern=de, Pattern=omgekeerd, Pattern=ik, Pattern=hebben
+Turn ID=41| B | B : ja dat zijn voor mij
+	Free: Pattern=dat zijn voor mij, Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=mij, Pattern=zijn, Pattern=dat, Pattern=dat zijn

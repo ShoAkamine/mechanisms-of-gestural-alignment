@@ -1,0 +1,107 @@
+A|0| A: _Eh_ nu _hebben_ _ik_ één _die hebben_ rechts _twee_ _ja_ _plat_ _plat_ plank eigenlijk 
+A|1| A: boven elkaar 
+A|2| A: _bovenop_ _een_ beetje _een_ driehoekig vorm _zonder_ _een_ _punt_ 
+B|3| B: [ik] [hebben] hem 
+A|4| A: Oké top 
+B|5| B: _eh dit zijn_ [een] soort _vogel_ _met_ _met_ snavelt _met_ [twee] dinget _aan de_ voorkant _die plat_ stok 
+B|6| B: en _dat_ _driehoek_ [zonder] _de_ [punt] 
+B|7| B: [bovenop] 
+A|8| A: Oh _ja_ [dat] [zijn] 
+A|9| A: [eh dit zijn] [die] [met] [die] net geen [driehoek] [bovenop] 
+A|10| A: [met] _aan de rechterkant_ [twee] van [die plat] [plat] plaat 
+A|11| A: [die] boven elkaar zitten 
+B|12| B: [eh] _de vogel_ [met] [twee] stok [aan de] zijkant [aan de rechterkant] 
+A|13| A: [de vogel] 
+A|14| A: O [dat] [zijn] 
+A|15| A: _eh het vogel_ 
+B|16| B: [een] klein compact [vogel] 
+A|17| A: _ja_ [die] [met] _die twee_ uitsteeksel naar rechts 
+B|18| B: of [die twee] 
+B|19| B: [ja] [ik] denken al 
+A|20| A: [ja] 
+B|21| B: [die hebben] we al [hebben] 
+A|22| A: sorry 
+B|23| B: [Eh] 
+B|24| B: [eh het vogel] [met] [twee] balk als snavel 
+A|25| A: [ja] [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh nu hebben ik één die hebben rechts twee ja plat plat plank eigenlijk
+	Free: Pattern=twee, Pattern=ja, Pattern=die hebben, Pattern=ik, Pattern=plat, Pattern=Eh, Pattern=hebben
+	Constrained: Pattern=die, Pattern=hebben
+Turn ID=1| A | A : boven elkaar
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : bovenop een beetje een driehoekig vorm zonder een punt
+	Free: Pattern=punt, Pattern=bovenop, Pattern=zonder, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : ik hebben hem
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=4| A | A : Oké top
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : eh dit zijn een soort vogel met met snavelt met twee dinget aan de voorkant die plat stok
+	Free: Pattern=vogel, Pattern=twee, Pattern=aan de, Pattern=een, Pattern=eh dit zijn, Pattern=met, Pattern=die plat
+	Constrained: Pattern=de, Pattern=die, Pattern=eh, Pattern=plat, Pattern=zijn
+Turn ID=6| B | B : en dat driehoek zonder de punt
+	Free: Pattern=driehoek, Pattern=punt, Pattern=de, Pattern=dat, Pattern=zonder
+	Constrained: 
+Turn ID=7| B | B : bovenop
+	Free: Pattern=bovenop
+	Constrained: 
+Turn ID=8| A | A : Oh ja dat zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=9| A | A : eh dit zijn die met die net geen driehoek bovenop
+	Free: Pattern=driehoek, Pattern=bovenop, Pattern=eh dit zijn, Pattern=met, Pattern=die
+	Constrained: Pattern=eh, Pattern=zijn
+Turn ID=10| A | A : met aan de rechterkant twee van die plat plat plaat
+	Free: Pattern=twee, Pattern=met, Pattern=aan de rechterkant, Pattern=plat, Pattern=die plat
+	Constrained: Pattern=de, Pattern=die, Pattern=plat, Pattern=aan de
+Turn ID=11| A | A : die boven elkaar zitten
+	Free: Pattern=die
+	Constrained: 
+Turn ID=12| B | B : eh de vogel met twee stok aan de zijkant aan de rechterkant
+	Free: Pattern=twee, Pattern=aan de, Pattern=met, Pattern=aan de rechterkant, Pattern=eh, Pattern=de vogel
+	Constrained: Pattern=de, Pattern=vogel, Pattern=aan de
+Turn ID=13| A | A : de vogel
+	Free: Pattern=de vogel
+	Constrained: Pattern=de, Pattern=vogel
+Turn ID=14| A | A : O dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=15| A | A : eh het vogel
+	Free: Pattern=eh het vogel
+	Constrained: Pattern=eh, Pattern=vogel
+Turn ID=16| B | B : een klein compact vogel
+	Free: Pattern=vogel, Pattern=een
+	Constrained: 
+Turn ID=17| A | A : ja die met die twee uitsteeksel naar rechts
+	Free: Pattern=die twee, Pattern=ja, Pattern=die, Pattern=met
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=18| B | B : of die twee
+	Free: Pattern=die twee
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=19| B | B : ja ik denken al
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : die hebben we al hebben
+	Free: Pattern=die hebben, Pattern=hebben
+	Constrained: Pattern=die, Pattern=hebben
+Turn ID=22| A | A : sorry
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=24| B | B : eh het vogel met twee balk als snavel
+	Free: Pattern=eh het vogel, Pattern=twee, Pattern=met
+	Constrained: Pattern=eh, Pattern=vogel
+Turn ID=25| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn, Pattern=dat
+	Constrained: 

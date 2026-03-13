@@ -1,0 +1,139 @@
+B|0| B: even kijken deze _hebben_ _ja_ 
+B|1| B: _ik_ _hebben_ het omschrijven als 
+B|2| B: bovenop in het midden _een soort_ bloeme _en aan de zijkant_ ook 
+B|3| B: of _een lepel_ wat je willen _ja_ 
+B|4| B: _en_ 
+A|5| A: wachten 
+B|6| B: _ja_ 
+A|7| A: nee 
+B|8| B: Weet je oké weten je hoe het bovenste van _een_ bowlingkegel eruit zien 
+A|9| A: nee 
+A|10| A: [ja] 
+A|11| A: _dat_ noemen [ik] [een lepel] 
+B|12| B: Oké 
+A|13| A: denken [ik] 
+B|14| B: _Oh_ [ja] oké oké 
+B|15| B: [ja] 
+A|16| A: [Oh] [en aan de zijkant] [hebben] _die_ _rechts_ [een soort] _vierkan_ _dat_ zo 
+B|17| B: _ja ja_ [die] [een] beetje af [die] [ik] steeds klein worden het [vierkan] [ja] 
+A|18| A: [en] dan 
+A|19| A: [ja [ja] [ja] [ja] [ja] ja] 
+A|20| A: [Oh] _dit zijn_ [die] _met die_ twee [lepel] 
+A|21| A: zo één [lepel] boven één [lepel] links [en] [een] aflopend [vierkan] _rechts_ 
+B|22| B: even kijken 
+B|23| B: [Oh] [ja] 
+B|24| B: even kijken _dit zijn weer_ [met die] [lepel] bovenop [en] link [en] [met] het aflopen _vierkant_ 
+B|25| B: [rechts] 
+A|26| A: O [ja] 
+A|27| A: eh [dit zijn weer] [die] [met die] twee [lepel] 
+A|28| A: één boven één links [en] [een] aflopend _vierkant rechts_ 
+B|29| B: [ja] 
+B|30| B: [dit zijn weer] [dat] [die] [lepel] bovenop [en aan de] linkerkant 
+B|31| B: [en] [die] aflopen [vierkant rechts] 
+A|32| A: [dit zijn weer] [die] [met die] twee [lepel] 
+B|33| B: [Oh] [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : even kijken deze hebben ja
+	Free: Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : ik hebben het omschrijven als
+	Free: Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=2| B | B : bovenop in het midden een soort bloeme en aan de zijkant ook
+	Free: Pattern=en aan de zijkant, Pattern=een soort
+	Constrained: Pattern=en, Pattern=een, Pattern=en aan de
+Turn ID=3| B | B : of een lepel wat je willen ja
+	Free: Pattern=een lepel, Pattern=ja
+	Constrained: Pattern=een, Pattern=lepel
+Turn ID=4| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| A | A : wachten
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : Weet je oké weten je hoe het bovenste van een bowlingkegel eruit zien
+	Free: Pattern=een
+	Constrained: 
+Turn ID=9| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : dat noemen ik een lepel
+	Free: Pattern=een lepel, Pattern=dat, Pattern=ik
+	Constrained: Pattern=een, Pattern=lepel
+Turn ID=12| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : denken ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=14| B | B : Oh ja oké oké
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : Oh en aan de zijkant hebben die rechts een soort vierkan dat zo
+	Free: Pattern=dat, Pattern=rechts, Pattern=hebben, Pattern=die, Pattern=een soort, Pattern=Oh, Pattern=en aan de zijkant, Pattern=vierkan
+	Constrained: Pattern=en, Pattern=een, Pattern=en aan de
+Turn ID=17| B | B : ja ja die een beetje af die ik steeds klein worden het vierkan ja
+	Free: Pattern=een, Pattern=die, Pattern=ik, Pattern=vierkan, Pattern=ja, Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=18| A | A : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=19| A | A : ja ja ja ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=20| A | A : Oh dit zijn die met die twee lepel
+	Free: Pattern=met die, Pattern=lepel, Pattern=die, Pattern=Oh, Pattern=dit zijn
+	Constrained: Pattern=met, Pattern=die
+Turn ID=21| A | A : zo één lepel boven één lepel links en een aflopend vierkan rechts
+	Free: Pattern=lepel, Pattern=rechts, Pattern=een, Pattern=en, Pattern=vierkan
+	Constrained: 
+Turn ID=22| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=24| B | B : even kijken dit zijn weer met die lepel bovenop en link en met het aflopen vierkant
+	Free: Pattern=met die, Pattern=lepel, Pattern=met, Pattern=en, Pattern=vierkant, Pattern=dit zijn weer
+	Constrained: Pattern=dit zijn, Pattern=met, Pattern=die
+Turn ID=25| B | B : rechts
+	Free: Pattern=rechts
+	Constrained: 
+Turn ID=26| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : eh dit zijn weer die met die twee lepel
+	Free: Pattern=dit zijn weer, Pattern=met die, Pattern=lepel, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=met, Pattern=die
+Turn ID=28| A | A : één boven één links en een aflopend vierkant rechts
+	Free: Pattern=vierkant rechts, Pattern=een, Pattern=en
+	Constrained: Pattern=vierkant, Pattern=rechts
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : dit zijn weer dat die lepel bovenop en aan de linkerkant
+	Free: Pattern=dat, Pattern=lepel, Pattern=die, Pattern=en aan de, Pattern=dit zijn weer
+	Constrained: Pattern=dit zijn, Pattern=en
+Turn ID=31| B | B : en die aflopen vierkant rechts
+	Free: Pattern=vierkant rechts, Pattern=en, Pattern=die
+	Constrained: Pattern=vierkant, Pattern=rechts
+Turn ID=32| A | A : dit zijn weer die met die twee lepel
+	Free: Pattern=dit zijn weer, Pattern=met die, Pattern=lepel, Pattern=die
+	Constrained: Pattern=dit zijn, Pattern=met, Pattern=die
+Turn ID=33| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 

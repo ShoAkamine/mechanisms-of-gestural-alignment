@@ -1,0 +1,135 @@
+A|0| A: _Oké_ 
+A|1| A: Ehm _ik_ z _dit_ doen mij ook een beetje _denken_ aan een een _hoofd_ 
+A|2| A: ehm _met_ _er_ zitten een _soort_ _van_ ruit bovenop 
+A|3| A: _met van die_ _Frankenstein_ _ding_ _erin_ 
+A|4| A: Ehm _en_ _het_ lijken alsof _er_ een arm uitsteekt 
+A|5| A: _en_ een nek of zo een schef nek 
+B|6| B: [Oké] 
+A|7| A: _Eh_ _het_ hebben een een lang puntig neus 
+B|8| B: [Oké] 
+A|9| A: dunne neus 
+B|10| B: _ja_ 
+B|11| B: _ja_ 
+B|12| B: [Oké] 
+B|13| B: [en] _dat_ _dat_ [ding] op _zijn_ [hoofd] _zijn_ wel zeggen maar symmetrisch toch 
+B|14| B: [het] _zijn_ twee [soort] vierkant tegen elkaar [met van die] punt [erin] 
+A|15| A: [met] een ruit in [het] midden 
+B|16| B: _ja_ 
+B|17| B: [Oké] 
+B|18| B: [Eh] _dat_ kunnen [er] maar één _zijn_ [denken] [ik] 
+A|19| A: [ja] 
+B|20| B: dus _dat zijn_ nummer 
+B|21| B: [dit] _zijn_ wat jij omschrijven als Frankestein 
+A|22| A: Oh _even kijken waar zijn hij_ 
+A|23| A: Oh [ja] [dat zijn] 
+A|24| A: _eh_ _Frankenstein_ 
+B|25| B: [dat zijn] nummer 
+B|26| B: [eh] [dit] [zijn] [Frankenstein] 
+A|27| A: [Frankenstein] [zijn] 
+A|28| A: [eh] [Frankenstein] 
+B|29| B: [even kijken waar zijn hij] 
+B|30| B: nummer 
+B|31| B: [dit] [zijn] [Frankenstein] 
+A|32| A: [Frankenstein] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : Ehm ik z dit doen mij ook een beetje denken aan een een hoofd
+	Free: Pattern=dit, Pattern=denken, Pattern=ik, Pattern=hoofd
+	Constrained: 
+Turn ID=2| A | A : ehm met er zitten een soort van ruit bovenop
+	Free: Pattern=er, Pattern=soort, Pattern=van, Pattern=met
+	Constrained: 
+Turn ID=3| A | A : met van die Frankenstein ding erin
+	Free: Pattern=met van die, Pattern=Frankenstein, Pattern=ding, Pattern=erin
+	Constrained: Pattern=van, Pattern=met
+Turn ID=4| A | A : Ehm en het lijken alsof er een arm uitsteekt
+	Free: Pattern=er, Pattern=en, Pattern=het
+	Constrained: 
+Turn ID=5| A | A : en een nek of zo een schef nek
+	Free: Pattern=en
+	Constrained: 
+Turn ID=6| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| A | A : Eh het hebben een een lang puntig neus
+	Free: Pattern=het, Pattern=Eh
+	Constrained: 
+Turn ID=8| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : dunne neus
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| B | B : en dat dat ding op zijn hoofd zijn wel zeggen maar symmetrisch toch
+	Free: Pattern=dat, Pattern=ding, Pattern=en, Pattern=zijn, Pattern=hoofd
+	Constrained: 
+Turn ID=14| B | B : het zijn twee soort vierkant tegen elkaar met van die punt erin
+	Free: Pattern=soort, Pattern=het, Pattern=erin, Pattern=zijn, Pattern=met van die
+	Constrained: Pattern=van, Pattern=met
+Turn ID=15| A | A : met een ruit in het midden
+	Free: Pattern=met, Pattern=het
+	Constrained: 
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=18| B | B : Eh dat kunnen er maar één zijn denken ik
+	Free: Pattern=dat, Pattern=denken, Pattern=Eh, Pattern=er, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : dus dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=21| B | B : dit zijn wat jij omschrijven als Frankestein
+	Free: Pattern=dit, Pattern=zijn
+	Constrained: 
+Turn ID=22| A | A : Oh even kijken waar zijn hij
+	Free: Pattern=even kijken waar zijn hij
+	Constrained: Pattern=zijn
+Turn ID=23| A | A : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=24| A | A : eh Frankenstein
+	Free: Pattern=eh, Pattern=Frankenstein
+	Constrained: 
+Turn ID=25| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| B | B : eh dit zijn Frankenstein
+	Free: Pattern=eh, Pattern=Frankenstein, Pattern=dit, Pattern=zijn
+	Constrained: 
+Turn ID=27| A | A : Frankenstein zijn
+	Free: Pattern=Frankenstein, Pattern=zijn
+	Constrained: 
+Turn ID=28| A | A : eh Frankenstein
+	Free: Pattern=eh, Pattern=Frankenstein
+	Constrained: 
+Turn ID=29| B | B : even kijken waar zijn hij
+	Free: Pattern=even kijken waar zijn hij
+	Constrained: Pattern=zijn
+Turn ID=30| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=31| B | B : dit zijn Frankenstein
+	Free: Pattern=Frankenstein, Pattern=dit, Pattern=zijn
+	Constrained: 
+Turn ID=32| A | A : Frankenstein zijn
+	Free: Pattern=Frankenstein, Pattern=zijn
+	Constrained: 

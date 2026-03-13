@@ -1,0 +1,103 @@
+A|0| A: _Oké_ 
+A|1| A: _dit zijn_ _een_ _pot_ 
+A|2| A: _en_ _het_ _zijn_ _alsof_ _er_ zo'n houten bank eraan vast _zijn_ maken 
+A|3| A: _en_ _dat_ afhangen zo 
+B|4| B: [alsof] _die_ [het] optilt 
+A|5| A: _ja_ _ja_ 
+A|6| A: _ja_ 
+B|7| B: [en] [er] zitten [een] soort vaag asymmetrisch schaal op 
+A|8| A: _ja_ 
+A|9| A: _ja_ 
+B|10| B: [Oké] dan denken ik [dat] ik [dat] weten 
+B|11| B: eh nummer 
+B|12| B: _dit zijn de pot die een_ tafel op _hebben_ 
+B|13| B: _met_ [een] asymmetrisch schaal _erop_ 
+A|14| A: _ja_ oké 
+A|15| A: [dat] [zijn] letter 
+A|16| A: _ja_ [dit zijn de pot die een] hangen bank [hebben] [met] zo'n schotel [erop] 
+B|17| B: [ja] nummer 
+B|18| B: [dit zijn de] zweven tafel _met het schaalt_ [erop] 
+A|19| A: [ja] [dat] [zijn] letter 
+A|20| A: [dit zijn de] hangen bank [met het schaalt] 
+B|21| B: eh even zoeken 
+B|22| B: nummer 
+B|23| B: eh [de pot] [met] [de] tafel [die] hij optillen [met] [de] schaal [erop] 
+A|24| A: [ja] letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : dit zijn een pot
+	Free: Pattern=dit zijn, Pattern=een, Pattern=pot
+	Constrained: Pattern=zijn
+Turn ID=2| A | A : en het zijn alsof er zo'n houten bank eraan vast zijn maken
+	Free: Pattern=het, Pattern=alsof, Pattern=er, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : en dat afhangen zo
+	Free: Pattern=en, Pattern=dat
+	Constrained: 
+Turn ID=4| B | B : alsof die het optilt
+	Free: Pattern=het, Pattern=alsof, Pattern=die
+	Constrained: 
+Turn ID=5| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : en er zitten een soort vaag asymmetrisch schaal op
+	Free: Pattern=er, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké dan denken ik dat ik dat weten
+	Free: Pattern=dat, Pattern=Oké
+	Constrained: 
+Turn ID=11| B | B : eh nummer
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : dit zijn de pot die een tafel op hebben
+	Free: Pattern=dit zijn de pot die een, Pattern=hebben
+	Constrained: Pattern=de, Pattern=een, Pattern=de pot, Pattern=die, Pattern=zijn, Pattern=dit zijn de, Pattern=pot, Pattern=dit zijn
+Turn ID=13| B | B : met een asymmetrisch schaal erop
+	Free: Pattern=erop, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=14| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : dat zijn letter
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=16| A | A : ja dit zijn de pot die een hangen bank hebben met zo'n schotel erop
+	Free: Pattern=ja, Pattern=erop, Pattern=dit zijn de pot die een, Pattern=hebben, Pattern=met
+	Constrained: Pattern=de, Pattern=een, Pattern=de pot, Pattern=die, Pattern=zijn, Pattern=dit zijn de, Pattern=pot, Pattern=dit zijn
+Turn ID=17| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dit zijn de zweven tafel met het schaalt erop
+	Free: Pattern=dit zijn de, Pattern=met het schaalt, Pattern=erop
+	Constrained: Pattern=de, Pattern=het, Pattern=met, Pattern=zijn, Pattern=dit zijn
+Turn ID=19| A | A : ja dat zijn letter
+	Free: Pattern=zijn, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : dit zijn de hangen bank met het schaalt
+	Free: Pattern=dit zijn de, Pattern=met het schaalt
+	Constrained: Pattern=de, Pattern=het, Pattern=met, Pattern=zijn, Pattern=dit zijn
+Turn ID=21| B | B : eh even zoeken
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : eh de pot met de tafel die hij optillen met de schaal erop
+	Free: Pattern=de, Pattern=erop, Pattern=de pot, Pattern=met, Pattern=die
+	Constrained: Pattern=de, Pattern=pot
+Turn ID=24| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 

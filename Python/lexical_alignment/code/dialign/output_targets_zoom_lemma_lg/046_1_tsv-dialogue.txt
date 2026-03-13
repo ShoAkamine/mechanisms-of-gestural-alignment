@@ -1,0 +1,103 @@
+A|0| A: _eh dit zijn_ _een soort_ _robot_ zombie 
+A|1| A: hij hebben _een_ antenne bovenop _en_ _twee_ van _die_ uitstekend armp _die_ van klein naar groot in _kubus_ gaan 
+B|2| B: _Eh die_ 
+B|3| B: Oh _ja _ja _ja_ _ja_ ja_ ja_ 
+B|4| B: _dat zijn met_ [een] [een] _vierkant_ [een] ernaast _hè_ 
+A|5| A: [ja ja] kloppen 
+B|6| B: [ja] 
+B|7| B: [zijn] _dat_ 
+B|8| B: [eh dit _zijn] _met_ die_ [twee] [kubus] opbouwen [kubus] _met_ [een] _met_ één sprie [en] [een] rechthoek ernaast 
+A|9| A: [Eh die] 
+B|10| B: [eh] [een soort] robotachtig 
+A|11| A: [ja ja ja] ik zien hem 
+A|12| A: [dat zijn _met] dat vierkant aan de zijkant_ [hè] 
+B|13| B: [ja ja] 
+A|14| A: [ja] [dat zijn] 
+A|15| A: _eh dit zijn die robot_ 
+B|16| B: hmhmhmhm waar staan [die] 
+A|17| A: [met die] [vierkant] 
+B|18| B: [dat zijn] [zijn] [dat] 
+B|19| B: [eh dit zijn die robot] 
+B|20| B: [met dat vierkant aan de zijkant] 
+A|21| A: mhm 
+A|22| A: [dit zijn] [de] [robot] 
+B|23| B: [ja] 
+B|24| B: [Eh [die] robot] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh dit zijn een soort robot zombie
+	Free: Pattern=eh dit zijn, Pattern=een soort, Pattern=robot
+	Constrained: Pattern=dit zijn, Pattern=een, Pattern=zijn, Pattern=eh
+Turn ID=1| A | A : hij hebben een antenne bovenop en twee van die uitstekend armp die van klein naar groot in kubus gaan
+	Free: Pattern=twee, Pattern=een, Pattern=die, Pattern=en, Pattern=kubus
+	Constrained: 
+Turn ID=2| B | B : Eh die
+	Free: Pattern=Eh die
+	Constrained: Pattern=die
+Turn ID=3| B | B : Oh ja ja ja ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=4| B | B : dat zijn met een een vierkant een ernaast hè
+	Free: Pattern=dat zijn met, Pattern=hè, Pattern=een, Pattern=vierkant
+	Constrained: Pattern=met, Pattern=zijn met, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=5| A | A : ja ja kloppen
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : zijn dat
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=8| B | B : eh dit zijn met die twee kubus opbouwen kubus met een met één sprie en een rechthoek ernaast
+	Free: Pattern=met die, Pattern=twee, Pattern=een, Pattern=eh dit zijn, Pattern=met, Pattern=zijn met, Pattern=en, Pattern=kubus
+	Constrained: Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn
+Turn ID=9| A | A : Eh die
+	Free: Pattern=Eh die
+	Constrained: Pattern=die
+Turn ID=10| B | B : eh een soort robotachtig
+	Free: Pattern=een soort, Pattern=eh
+	Constrained: Pattern=een
+Turn ID=11| A | A : ja ja ja ik zien hem
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=12| A | A : dat zijn met dat vierkant aan de zijkant hè
+	Free: Pattern=met dat vierkant aan de zijkant, Pattern=dat zijn met, Pattern=hè
+	Constrained: Pattern=de, Pattern=met, Pattern=zijn met, Pattern=zijn, Pattern=vierkant, Pattern=dat, Pattern=dat zijn
+Turn ID=13| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=14| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| A | A : eh dit zijn die robot
+	Free: Pattern=eh dit zijn die robot
+	Constrained: Pattern=die robot, Pattern=eh dit zijn, Pattern=die, Pattern=eh, Pattern=dit zijn, Pattern=zijn, Pattern=robot
+Turn ID=16| B | B : hmhmhmhm waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=17| A | A : met die vierkant
+	Free: Pattern=met die, Pattern=vierkant
+	Constrained: Pattern=met, Pattern=die
+Turn ID=18| B | B : dat zijn zijn dat
+	Free: Pattern=dat zijn, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : eh dit zijn die robot
+	Free: Pattern=eh dit zijn die robot
+	Constrained: Pattern=die robot, Pattern=eh dit zijn, Pattern=die, Pattern=eh, Pattern=dit zijn, Pattern=zijn, Pattern=robot
+Turn ID=20| B | B : met dat vierkant aan de zijkant
+	Free: Pattern=met dat vierkant aan de zijkant
+	Constrained: Pattern=dat, Pattern=de, Pattern=met, Pattern=vierkant
+Turn ID=21| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : dit zijn de robot
+	Free: Pattern=dit zijn, Pattern=robot, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Eh die robot
+	Free: Pattern=die robot, Pattern=Eh die
+	Constrained: Pattern=robot, Pattern=die

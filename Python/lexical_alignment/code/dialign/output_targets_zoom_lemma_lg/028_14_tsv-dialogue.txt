@@ -1,0 +1,91 @@
+A|0| A: _Oké_ 
+B|1| B: [Oké] _dan_ zien _ik_ nu _een_ _euh_ _ja_ _een_ ballet bovenop 
+B|2| B: _en_ _dan_ lijken _het_ alsof _het_ _een_ beetje zo'n soort basket worden 
+B|3| B: Valt 
+B|4| B: _een_ band 
+A|5| A: [en] zitten er _een balk aan de voorkant_ rechterkant 
+B|6| B: _ja_ [een balk aan de voorkant] [en] _dan_ _twee_ uitsteeksel Euh dun uitsteeksel [aan] beide 
+A|7| A: [ja] 
+A|8| A: [dan] weten [ik] welk [het] _zijn_ 
+A|9| A: [het] _zijn_ 
+A|10| A: [euh] _dit zijn_ [de] bolle met [de] [twee] armp [euh] [de] _basketbal_ 
+B|11| B: [ja] even kijken waar die 
+B|12| B: deze [zijn] [het] ballet _dat_ in [de] in [de] [ja] [basketbal] vallen 
+A|13| A: [ja] [euh] ah _dat zijn_ 
+A|14| A: _dit zijn_ [de] basketbalhoep 
+B|15| B: [ja] 
+A|16| A: hmmh 
+B|17| B: [en] [dit zijn] [het] ballet in [de] basket 
+A|18| A: _dat zijn_ nummer 
+A|19| A: nee 
+A|20| A: [dit zijn] [de] basketbalhoep 
+B|21| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : Oké dan zien ik nu een euh ja een ballet bovenop
+	Free: Pattern=ja, Pattern=dan, Pattern=een, Pattern=euh, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=2| B | B : en dan lijken het alsof het een beetje zo'n soort basket worden
+	Free: Pattern=een, Pattern=en, Pattern=dan, Pattern=het
+	Constrained: 
+Turn ID=3| B | B : Valt
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : een band
+	Free: Pattern=een
+	Constrained: 
+Turn ID=5| A | A : en zitten er een balk aan de voorkant rechterkant
+	Free: Pattern=een balk aan de voorkant, Pattern=en
+	Constrained: Pattern=aan, Pattern=een, Pattern=de
+Turn ID=6| B | B : ja een balk aan de voorkant en dan twee uitsteeksel Euh dun uitsteeksel aan beide
+	Free: Pattern=twee, Pattern=dan, Pattern=een balk aan de voorkant, Pattern=en, Pattern=aan, Pattern=ja
+	Constrained: Pattern=aan, Pattern=een, Pattern=de
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : dan weten ik welk het zijn
+	Free: Pattern=zijn, Pattern=ik, Pattern=dan, Pattern=het
+	Constrained: 
+Turn ID=9| A | A : het zijn
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=10| A | A : euh dit zijn de bolle met de twee armp euh de basketbal
+	Free: Pattern=twee, Pattern=de, Pattern=euh, Pattern=basketbal, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=11| B | B : ja even kijken waar die
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : deze zijn het ballet dat in de in de ja basketbal vallen
+	Free: Pattern=dat, Pattern=het, Pattern=basketbal, Pattern=zijn, Pattern=de, Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja euh ah dat zijn
+	Free: Pattern=dat zijn, Pattern=euh, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=14| A | A : dit zijn de basketbalhoep
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : hmmh
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : en dit zijn het ballet in de basket
+	Free: Pattern=dit zijn, Pattern=en, Pattern=de, Pattern=het
+	Constrained: Pattern=zijn
+Turn ID=18| A | A : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=19| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : dit zijn de basketbalhoep
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=21| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat

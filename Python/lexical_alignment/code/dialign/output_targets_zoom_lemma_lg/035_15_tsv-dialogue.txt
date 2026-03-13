@@ -1,0 +1,107 @@
+B|0| B: _Ehm_ _ik hebben_ nu één _die _een_ soort_ van rokje _aan_ _hebben_ 
+B|1| B: _een soort_ van tutu-achtig _ding_ 
+B|2| B: _en_ dan _hebben_ hij _aan de_ linkerkant _een_ _L-vormig uitsteeksel_ 
+A|3| A: _ja_ 
+B|4| B: _en bovenop_ _zijn_ _hoofd_ staan _twee_ heel _kort_ rechthoek 
+A|5| A: _ja_ oké [ik] denken _dat_ [ik] weten welk _het_ [zijn] 
+A|6| A: Komt er _nog_ [een soort] _ja_ [ding] uit 
+B|7| B: [een soort] van slurf-achtig 
+A|8| A: _ja_ _ja_ 
+B|9| B: [ja] 
+A|10| A: ehm er komen [een soort] slurf uit ons kant _op_ [en] er _gaan_ [een soort] _vierkant door het_ hoofdlichaam [ja] _door het hoofdgedeelte heen_ 
+A|11| A: [Ehm] [en] er komen links [een soort] [L-vormig uitsteeksel] uit [en bovenop] _zitten_ _twee klein_ blok [ja] _twee klein_ [uitsteeksel] 
+B|12| B: [ja] 
+B|13| B: _ik hebben_ nu _die_ waar _zo'n_ driehoek nee _een vierkant door het_ [door het hoofdgedeelte heen] [zitten] 
+B|14| B: _en die_ _hebben_ dan [nog] [twee] van _die_ heel _kort_ rechthoek boven [op] _het hoofd_ 
+B|15| B: _en zo'n_ [L-vormig] uitsteksel _aan de_ linkerkant 
+A|16| A: [ja] 
+A|17| A: [ik hebben] [die een] _met die twee_ [kort] [uitsteeksel] [aan de] bovenkant [en zo'n] [soort] slurf [die] eruit komen 
+A|18| A: _met_ [een _vierkant door het] hoofdgedeelte_ 
+B|19| B: [ja] 
+B|20| B: [ik hebben] nu [die] waar euh [zo'n] [vierkant [door het hoofdgedeelte] heen] [gaan] [met _die twee] klein_ rechthoekjes [bovenop] 
+B|21| B: [en] [dat] [L-vormig] uitstiksel 
+A|22| A: [ja] 
+A|23| A: Euh [ik hebben] [die] [met] [dat] [vierkant door [het] hoofd] [heen] [en [die] twee klein] dinge [aan de] bovenkant 
+A|24| A: Euh [met die] slurfachtig 
+B|25| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm ik hebben nu één die een soort van rokje aan hebben
+	Free: Pattern=ik hebben, Pattern=hebben, Pattern=die een, Pattern=een soort, Pattern=Ehm, Pattern=aan
+	Constrained: Pattern=soort, Pattern=een, Pattern=hebben, Pattern=die, Pattern=ik
+Turn ID=1| B | B : een soort van tutu-achtig ding
+	Free: Pattern=een soort, Pattern=ding
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=2| B | B : en dan hebben hij aan de linkerkant een L-vormig uitsteeksel
+	Free: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=L-vormig uitsteeksel, Pattern=en
+	Constrained: Pattern=uitsteeksel, Pattern=aan, Pattern=L-vormig
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en bovenop zijn hoofd staan twee heel kort rechthoek
+	Free: Pattern=en bovenop, Pattern=twee, Pattern=kort, Pattern=zijn, Pattern=hoofd
+	Constrained: Pattern=en, Pattern=bovenop
+Turn ID=5| A | A : ja oké ik denken dat ik weten welk het zijn
+	Free: Pattern=dat, Pattern=ja, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=6| A | A : Komt er nog een soort ja ding uit
+	Free: Pattern=een soort, Pattern=ding, Pattern=ja, Pattern=nog
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=7| B | B : een soort van slurf-achtig
+	Free: Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=8| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : ehm er komen een soort slurf uit ons kant op en er gaan een soort vierkant door het hoofdlichaam ja door het hoofdgedeelte heen
+	Free: Pattern=door het hoofdgedeelte heen, Pattern=ja, Pattern=op, Pattern=vierkant door het, Pattern=een soort, Pattern=en, Pattern=gaan
+	Constrained: Pattern=een, Pattern=soort, Pattern=het, Pattern=heen
+Turn ID=11| A | A : Ehm en er komen links een soort L-vormig uitsteeksel uit en bovenop zitten twee klein blok ja twee klein uitsteeksel
+	Free: Pattern=en bovenop, Pattern=uitsteeksel, Pattern=L-vormig uitsteeksel, Pattern=zitten, Pattern=een soort, Pattern=en, Pattern=twee klein, Pattern=Ehm, Pattern=ja
+	Constrained: Pattern=bovenop, Pattern=soort, Pattern=twee, Pattern=uitsteeksel, Pattern=een, Pattern=en, Pattern=L-vormig
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : ik hebben nu die waar zo'n driehoek nee een vierkant door het door het hoofdgedeelte heen zitten
+	Free: Pattern=ik hebben, Pattern=een vierkant door het, Pattern=door het hoofdgedeelte heen, Pattern=zo'n, Pattern=die, Pattern=zitten
+	Constrained: Pattern=vierkant door het, Pattern=een, Pattern=het, Pattern=hebben, Pattern=heen, Pattern=ik
+Turn ID=14| B | B : en die hebben dan nog twee van die heel kort rechthoek boven op het hoofd
+	Free: Pattern=en die, Pattern=het hoofd, Pattern=nog, Pattern=twee, Pattern=op, Pattern=hebben, Pattern=die, Pattern=kort
+	Constrained: Pattern=die, Pattern=hoofd, Pattern=het, Pattern=en
+Turn ID=15| B | B : en zo'n L-vormig uitsteksel aan de linkerkant
+	Free: Pattern=en zo'n, Pattern=aan de, Pattern=L-vormig
+	Constrained: Pattern=aan, Pattern=zo'n, Pattern=en
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : ik hebben die een met die twee kort uitsteeksel aan de bovenkant en zo'n soort slurf die eruit komen
+	Free: Pattern=ik hebben, Pattern=en zo'n, Pattern=soort, Pattern=aan de, Pattern=uitsteeksel, Pattern=met die twee, Pattern=die, Pattern=die een, Pattern=kort
+	Constrained: Pattern=met die, Pattern=aan, Pattern=een, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=en, Pattern=zo'n, Pattern=twee
+Turn ID=18| A | A : met een vierkant door het hoofdgedeelte
+	Free: Pattern=vierkant door het hoofdgedeelte, Pattern=een vierkant door het, Pattern=met
+	Constrained: Pattern=een, Pattern=het, Pattern=vierkant door het
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : ik hebben nu die waar euh zo'n vierkant door het hoofdgedeelte heen gaan met die twee klein rechthoekjes bovenop
+	Free: Pattern=ik hebben, Pattern=bovenop, Pattern=met die twee, Pattern=die twee klein, Pattern=die, Pattern=vierkant door het hoofdgedeelte, Pattern=gaan, Pattern=door het hoofdgedeelte heen, Pattern=zo'n
+	Constrained: Pattern=met die, Pattern=twee, Pattern=vierkant door het, Pattern=het, Pattern=hebben, Pattern=heen, Pattern=met, Pattern=die, Pattern=ik, Pattern=twee klein
+Turn ID=21| B | B : en dat L-vormig uitstiksel
+	Free: Pattern=dat, Pattern=en, Pattern=L-vormig
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : Euh ik hebben die met dat vierkant door het hoofd heen en die twee klein dinge aan de bovenkant
+	Free: Pattern=dat, Pattern=het hoofd, Pattern=aan de, Pattern=vierkant door het, Pattern=die twee klein, Pattern=heen, Pattern=met, Pattern=die, Pattern=ik hebben, Pattern=en die
+	Constrained: Pattern=twee, Pattern=aan, Pattern=het, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=en, Pattern=twee klein, Pattern=hoofd
+Turn ID=24| A | A : Euh met die slurfachtig
+	Free: Pattern=met die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

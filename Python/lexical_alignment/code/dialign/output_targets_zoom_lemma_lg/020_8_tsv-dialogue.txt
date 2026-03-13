@@ -1,0 +1,295 @@
+B|0| B: _oké_ deze vinden ik veel _uitsteeksel_ _hebben_ 
+B|1| B: _aan de onderkant_ _hebben_ _hij_ _een soort_ _van_ buigen handvat _maar_ wel _in de_ vorm _van_ _een_ rechthoek 
+B|2| B: dus _het zijn_ _niet_ rond 
+A|3| A: _ja_ 
+B|4| B: _en aan _de_ bovenkant_ _zitten er_ _een soort_ _van_ _plat_ _plat vierkant_ _maar_ _dan_ verticaal neerzetten 
+A|5| A: _Oh_ rechtop erin 
+B|6| B: _met_ _twee_ _uitsteeksel eraan_ 
+A|7| A: _ja_ [oké] 
+B|8| B: [ja] _met _die_ met die twee_ _ding_ _eraan_ vast 
+A|9| A: [ja] [oké] _en de_ _en [de_ onderkant] lijken _op_ [een soort] lucht schacht 
+B|10| B: [ja] 
+A|11| A: _Oké_ _dat zijn_ 
+A|12| A: _dit zijn_ [hij] weer [met die twee] vierkante _op de bovenkant_ 
+B|13| B: mhm 
+A|14| A: [en] _met dat_ _luchtschacht_ onderaan 
+B|15| B: _Oh ja_ [die] heel 
+B|16| B: _even kijken waar_ _staan_ [die] 
+A|17| A: [hij] [hebben] zeggen [maar] [twee] zo'n [plat vierkant] [en] [dan] [het zijn] [en] [ja] 
+B|18| B: _Oh ja_ ik [hebben] hem 
+A|19| A: [oké] top 
+B|20| B: [ja] [met die] afgezaagd piramide 
+A|21| A: _nee_ _nee_ _nee_ _dat_ [niet] 
+B|22| B: [nee] 
+A|23| A: [hij] [hebben] [twee] zo'n zelfde platgeslagen vlak _op de bovenkant_ 
+B|24| B: Wacht 
+A|25| A: [maar] [die] steken [er] zeggen [maar] recht [in] 
+A|26| A: [en aan] beneden [zitten er] zo'n tuitje [in] 
+B|27| B: [Oké] wachten 
+A|28| A: _en dat_ lijken [een] beetje _op_ [een] _luchtschacht_ 
+A|29| A: [en aan de] rechterkant [zitten] [een soort] gelijk tuit 
+A|30| A: [die] ook _op_ [een] _luchtschacht_ lijken 
+A|31| A: [en] [dan] [zitten er] nog iets [in de] voorkant 
+B|32| B: ehm _even kijken_ ik zien hem [niet] ah 
+B|33| B: ik zien [er] [twee] [die] [het] zullen kunnen [zijn] 
+B|34| B: [en [dat] _zijn] die [met_ dat] [met dat] [vierkant] _waar die_ [in] [zitten] 
+A|35| A: Zeggen [maar] 
+B|36| B: [en de] ander [hebben] [de] afgezaagd piramide 
+B|37| B: [maar] ik kunnen [die] ander _even_ [niet] zien 
+A|38| A: [Oh ja] [het zijn] [het zijn] zeggen [maar] [het] [hebben] echt [twee] precies dezelfde _vierkant op de bovenkant_ 
+B|39| B: mhm 
+A|40| A: _en die_ [zitten] zeggen [maar] [een] _punt_ [zitten] erin [van] [met] [van] allebei 
+A|41| A: _dit zijn_ zeggen [maar] _op de bovenkant_ [zijn] [het] super symmetrisch 
+A|42| A: [en] [dan] steker nog [twee] zo'n [ding] uit [die] of uit [die] sorry [ja] uit _die vierkant_ 
+B|43| B: [Oh] _die met [die_ vierkant] [met] [de] [punt] 
+B|44| B: [die] 
+A|45| A: [ja] [en] [er] [zitten] nog zo'n zo'n [soort] luchtschachtding [aan de onderkant] 
+B|46| B: [ja] 
+B|47| B: [ja] [nee] ik zien hem 
+B|48| B: [hij] _staan_ _nu_ [op] 
+A|49| A: [Oké] 
+B|50| B: [dat zijn] 
+B|51| B: ehm [met] [het] uitstekend rechthoekig puntig [vierkant op de bovenkant] 
+B|52| B: _en die luchtschacht_ [aan de] zijkant [en] [onderkant] 
+A|53| A: _eh_ [even kijken [waar] die] [nu] [staan] 
+A|54| A: oh [dat zijn] [met die twee] dezelfde [vierkant op de bovenkant] hè 
+B|55| B: [ja] 
+B|56| B: [ja] 
+A|57| A: [zijn] 
+A|58| A: _dit zijn [die met_ die twee] gelijk [vierkant op de bovenkant] [met] [een] [uitsteeksel] [die] [er] recht [in] opsteken 
+A|59| A: [en] [dan] [aan de onderkant] [die] Afzuigkap 
+B|60| B: ehm [even kijken] [die] [die] hoekig 
+A|61| A: [ja] zeggen [maar] _je_ [hebben] [twee] platgeslagen vierkante [die] [zitten] recht erin [op de bovenkant] 
+B|62| B: [ja] 
+A|63| A: [Oké] 
+B|64| B: [ja] [met die] pin 
+B|65| B: [ja] 
+A|66| A: [ja] 
+B|67| B: [eh] [dit zijn die met] [de] [luchtschacht] [aan de onderkant] [en de] zijkant 
+B|68| B: [met die] draaien rechthoek [die] [je] zo insteekt [waar] [twee] [ding] uitsteken [aan [de] bovenkant] 
+A|69| A: [Oh ja] 
+A|70| A: Eh [met die twee] gelijk [vierkant op de bovenkant] [met die] [uitsteeksel eraan] 
+A|71| A: [en die] of [en die luchtschacht] 
+B|72| B: [eh] [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze vinden ik veel uitsteeksel hebben
+	Free: Pattern=uitsteeksel, Pattern=oké, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : aan de onderkant hebben hij een soort van buigen handvat maar wel in de vorm van een rechthoek
+	Free: Pattern=een, Pattern=hebben, Pattern=aan de onderkant, Pattern=hij, Pattern=in de, Pattern=een soort, Pattern=van, Pattern=maar
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=in, Pattern=de onderkant, Pattern=onderkant
+Turn ID=2| B | B : dus het zijn niet rond
+	Free: Pattern=het zijn, Pattern=niet
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en aan de bovenkant zitten er een soort van plat plat vierkant maar dan verticaal neerzetten
+	Free: Pattern=plat vierkant, Pattern=dan, Pattern=de bovenkant, Pattern=een soort, Pattern=van, Pattern=plat, Pattern=en aan de, Pattern=maar, Pattern=zitten er
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=zitten, Pattern=er, Pattern=en, Pattern=plat, Pattern=vierkant, Pattern=en aan
+Turn ID=5| A | A : Oh rechtop erin
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=6| B | B : met twee uitsteeksel eraan
+	Free: Pattern=uitsteeksel eraan, Pattern=twee, Pattern=met
+	Constrained: Pattern=eraan, Pattern=uitsteeksel
+Turn ID=7| A | A : ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=8| B | B : ja met die met die twee ding eraan vast
+	Free: Pattern=met die, Pattern=ja, Pattern=ding, Pattern=eraan, Pattern=die met die twee
+	Constrained: Pattern=met die, Pattern=twee, Pattern=die met die, Pattern=met die twee, Pattern=met, Pattern=die
+Turn ID=9| A | A : ja oké en de en de onderkant lijken op een soort lucht schacht
+	Free: Pattern=oké, Pattern=ja, Pattern=op, Pattern=en de, Pattern=de onderkant, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=de, Pattern=een, Pattern=onderkant, Pattern=en
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=12| A | A : dit zijn hij weer met die twee vierkante op de bovenkant
+	Free: Pattern=met die twee, Pattern=op de bovenkant, Pattern=dit zijn, Pattern=hij
+	Constrained: Pattern=met die, Pattern=twee, Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=13| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : en met dat luchtschacht onderaan
+	Free: Pattern=met dat, Pattern=en, Pattern=luchtschacht
+	Constrained: Pattern=dat, Pattern=met
+Turn ID=15| B | B : Oh ja die heel
+	Free: Pattern=Oh ja, Pattern=die
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=16| B | B : even kijken waar staan die
+	Free: Pattern=even kijken waar, Pattern=staan, Pattern=die
+	Constrained: Pattern=even kijken, Pattern=waar, Pattern=even
+Turn ID=17| A | A : hij hebben zeggen maar twee zo'n plat vierkant en dan het zijn en ja
+	Free: Pattern=plat vierkant, Pattern=twee, Pattern=ja, Pattern=dan, Pattern=hebben, Pattern=hij, Pattern=het zijn, Pattern=en, Pattern=maar
+	Constrained: Pattern=zijn, Pattern=het, Pattern=vierkant, Pattern=plat
+Turn ID=18| B | B : Oh ja ik hebben hem
+	Free: Pattern=Oh ja, Pattern=hebben
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=19| A | A : oké top
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=20| B | B : ja met die afgezaagd piramide
+	Free: Pattern=met die, Pattern=ja
+	Constrained: Pattern=met, Pattern=die
+Turn ID=21| A | A : nee nee nee dat niet
+	Free: Pattern=dat, Pattern=nee, Pattern=niet
+	Constrained: 
+Turn ID=22| B | B : nee
+	Free: Pattern=nee
+	Constrained: 
+Turn ID=23| A | A : hij hebben twee zo'n zelfde platgeslagen vlak op de bovenkant
+	Free: Pattern=op de bovenkant, Pattern=twee, Pattern=hij, Pattern=hebben
+	Constrained: Pattern=de bovenkant, Pattern=de, Pattern=op
+Turn ID=24| B | B : Wacht
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : maar die steken er zeggen maar recht in
+	Free: Pattern=maar, Pattern=in, Pattern=er, Pattern=die
+	Constrained: 
+Turn ID=26| A | A : en aan beneden zitten er zo'n tuitje in
+	Free: Pattern=en aan, Pattern=zitten er, Pattern=in
+	Constrained: Pattern=en, Pattern=zitten, Pattern=er
+Turn ID=27| B | B : Oké wachten
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| A | A : en dat lijken een beetje op een luchtschacht
+	Free: Pattern=en dat, Pattern=op, Pattern=een, Pattern=luchtschacht
+	Constrained: Pattern=dat, Pattern=en
+Turn ID=29| A | A : en aan de rechterkant zitten een soort gelijk tuit
+	Free: Pattern=en aan de, Pattern=een soort, Pattern=zitten
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=en aan
+Turn ID=30| A | A : die ook op een luchtschacht lijken
+	Free: Pattern=op, Pattern=een, Pattern=luchtschacht, Pattern=die
+	Constrained: 
+Turn ID=31| A | A : en dan zitten er nog iets in de voorkant
+	Free: Pattern=zitten er, Pattern=in de, Pattern=en, Pattern=dan
+	Constrained: Pattern=de, Pattern=in, Pattern=zitten, Pattern=er
+Turn ID=32| B | B : ehm even kijken ik zien hem niet ah
+	Free: Pattern=even kijken, Pattern=niet
+	Constrained: Pattern=even
+Turn ID=33| B | B : ik zien er twee die het zullen kunnen zijn
+	Free: Pattern=twee, Pattern=het, Pattern=die, Pattern=er, Pattern=zijn
+	Constrained: 
+Turn ID=34| B | B : en dat zijn die met dat met dat vierkant waar die in zitten
+	Free: Pattern=dat zijn, Pattern=waar die, Pattern=in, Pattern=met dat, Pattern=zitten, Pattern=en dat, Pattern=vierkant, Pattern=zijn die met
+	Constrained: Pattern=dat, Pattern=waar, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn
+Turn ID=35| A | A : Zeggen maar
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=36| B | B : en de ander hebben de afgezaagd piramide
+	Free: Pattern=en de, Pattern=de, Pattern=hebben
+	Constrained: Pattern=de, Pattern=en
+Turn ID=37| B | B : maar ik kunnen die ander even niet zien
+	Free: Pattern=maar, Pattern=niet, Pattern=even, Pattern=die
+	Constrained: 
+Turn ID=38| A | A : Oh ja het zijn het zijn zeggen maar het hebben echt twee precies dezelfde vierkant op de bovenkant
+	Free: Pattern=vierkant op de bovenkant, Pattern=twee, Pattern=Oh ja, Pattern=het, Pattern=hebben, Pattern=het zijn, Pattern=maar
+	Constrained: Pattern=op, Pattern=de bovenkant, Pattern=het, Pattern=op de bovenkant, Pattern=Oh, Pattern=zijn, Pattern=vierkant, Pattern=de, Pattern=ja
+Turn ID=39| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=40| A | A : en die zitten zeggen maar een punt zitten erin van met van allebei
+	Free: Pattern=en die, Pattern=punt, Pattern=een, Pattern=met, Pattern=zitten, Pattern=van, Pattern=maar
+	Constrained: Pattern=en, Pattern=die
+Turn ID=41| A | A : dit zijn zeggen maar op de bovenkant zijn het super symmetrisch
+	Free: Pattern=het, Pattern=op de bovenkant, Pattern=dit zijn, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=de, Pattern=zijn, Pattern=de bovenkant, Pattern=op
+Turn ID=42| A | A : en dan steker nog twee zo'n ding uit die of uit die sorry ja uit die vierkant
+	Free: Pattern=die vierkant, Pattern=twee, Pattern=ja, Pattern=dan, Pattern=ding, Pattern=die, Pattern=en
+	Constrained: Pattern=vierkant, Pattern=die
+Turn ID=43| B | B : Oh die met die vierkant met de punt
+	Free: Pattern=de, Pattern=die met die, Pattern=met, Pattern=Oh, Pattern=die vierkant, Pattern=punt
+	Constrained: Pattern=vierkant, Pattern=met, Pattern=die, Pattern=met die
+Turn ID=44| B | B : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=45| A | A : ja en er zitten nog zo'n zo'n soort luchtschachtding aan de onderkant
+	Free: Pattern=soort, Pattern=ja, Pattern=aan de onderkant, Pattern=zitten, Pattern=er, Pattern=en
+	Constrained: Pattern=de onderkant, Pattern=de, Pattern=onderkant, Pattern=aan de
+Turn ID=46| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| B | B : ja nee ik zien hem
+	Free: Pattern=nee, Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : hij staan nu op
+	Free: Pattern=op, Pattern=staan, Pattern=nu, Pattern=hij
+	Constrained: 
+Turn ID=49| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=50| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=51| B | B : ehm met het uitstekend rechthoekig puntig vierkant op de bovenkant
+	Free: Pattern=vierkant op de bovenkant, Pattern=het, Pattern=met
+	Constrained: Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=op de bovenkant, Pattern=vierkant
+Turn ID=52| B | B : en die luchtschacht aan de zijkant en onderkant
+	Free: Pattern=en die luchtschacht, Pattern=aan de, Pattern=en, Pattern=onderkant
+	Constrained: Pattern=en die, Pattern=de, Pattern=luchtschacht, Pattern=die, Pattern=en
+Turn ID=53| A | A : eh even kijken waar die nu staan
+	Free: Pattern=waar die, Pattern=even kijken waar, Pattern=staan, Pattern=nu, Pattern=eh
+	Constrained: Pattern=even kijken, Pattern=waar, Pattern=die, Pattern=even
+Turn ID=54| A | A : oh dat zijn met die twee dezelfde vierkant op de bovenkant hè
+	Free: Pattern=vierkant op de bovenkant, Pattern=met die twee, Pattern=dat zijn
+	Constrained: Pattern=twee, Pattern=de, Pattern=op, Pattern=de bovenkant, Pattern=met, Pattern=die, Pattern=op de bovenkant, Pattern=zijn, Pattern=vierkant, Pattern=dat, Pattern=met die
+Turn ID=55| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=56| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=57| A | A : zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=58| A | A : dit zijn die met die twee gelijk vierkant op de bovenkant met een uitsteeksel die er recht in opsteken
+	Free: Pattern=vierkant op de bovenkant, Pattern=uitsteeksel, Pattern=een, Pattern=met, Pattern=er, Pattern=dit zijn die met, Pattern=in, Pattern=die, Pattern=die met die twee
+	Constrained: Pattern=met die, Pattern=twee, Pattern=de, Pattern=die met die, Pattern=op, Pattern=met, Pattern=die, Pattern=op de bovenkant, Pattern=zijn, Pattern=dit zijn, Pattern=de bovenkant, Pattern=met die twee, Pattern=vierkant, Pattern=zijn die met
+Turn ID=59| A | A : en dan aan de onderkant die Afzuigkap
+	Free: Pattern=aan de onderkant, Pattern=en, Pattern=dan, Pattern=die
+	Constrained: Pattern=de onderkant, Pattern=de, Pattern=onderkant, Pattern=aan de
+Turn ID=60| B | B : ehm even kijken die die hoekig
+	Free: Pattern=even kijken, Pattern=die
+	Constrained: Pattern=even
+Turn ID=61| A | A : ja zeggen maar je hebben twee platgeslagen vierkante die zitten recht erin op de bovenkant
+	Free: Pattern=twee, Pattern=ja, Pattern=hebben, Pattern=op de bovenkant, Pattern=maar, Pattern=je, Pattern=die, Pattern=zitten
+	Constrained: Pattern=de bovenkant, Pattern=de, Pattern=op
+Turn ID=62| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=64| B | B : ja met die pin
+	Free: Pattern=met die, Pattern=ja
+	Constrained: Pattern=met, Pattern=die
+Turn ID=65| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=66| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=67| B | B : eh dit zijn die met de luchtschacht aan de onderkant en de zijkant
+	Free: Pattern=de, Pattern=en de, Pattern=dit zijn die met, Pattern=eh, Pattern=luchtschacht, Pattern=aan de onderkant
+	Constrained: Pattern=de, Pattern=aan de, Pattern=met, Pattern=onderkant, Pattern=en, Pattern=zijn, Pattern=zijn die met, Pattern=dit zijn, Pattern=die, Pattern=de onderkant
+Turn ID=68| B | B : met die draaien rechthoek die je zo insteekt waar twee ding uitsteken aan de bovenkant
+	Free: Pattern=met die, Pattern=twee, Pattern=waar, Pattern=aan de, Pattern=die, Pattern=je, Pattern=de bovenkant, Pattern=ding
+	Constrained: Pattern=de, Pattern=met, Pattern=die
+Turn ID=69| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=70| A | A : Eh met die twee gelijk vierkant op de bovenkant met die uitsteeksel eraan
+	Free: Pattern=vierkant op de bovenkant, Pattern=met die twee, Pattern=met die, Pattern=uitsteeksel eraan
+	Constrained: Pattern=met die, Pattern=twee, Pattern=de, Pattern=op, Pattern=uitsteeksel, Pattern=de bovenkant, Pattern=eraan, Pattern=met, Pattern=die, Pattern=op de bovenkant, Pattern=vierkant
+Turn ID=71| A | A : en die of en die luchtschacht
+	Free: Pattern=en die luchtschacht, Pattern=en die
+	Constrained: Pattern=die, Pattern=en, Pattern=luchtschacht, Pattern=en die
+Turn ID=72| B | B : eh ja
+	Free: Pattern=eh, Pattern=ja
+	Constrained: 

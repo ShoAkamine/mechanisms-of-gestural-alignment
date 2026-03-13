@@ -1,0 +1,115 @@
+B|0| B: dan _de_ volgen 
+B|1| B: _er_ _zitten_ _een_ één 
+B|2| B: _er_ dwars _doorheen zitten_ _een_ soort plank 
+B|3| B: _met twee poot_ eraan 
+B|4| B: Zullen ik het willen noemen 
+B|5| B: dus 
+B|6| B: _en_ _op_ _die_ plank daarop _staan_ _een_ omgekeerde _trapezium_ 
+B|7| B: _en_ aan _de_ achterkant _zitten_ nog _een_ soort 
+A|8| A: Oh _ja_ 
+B|9| B: net zoals _van_ _een_ fluitketel 
+B|10| B: zo'n of zo'n olifant slurfen zegmaar 
+A|11| A: _ja_ oké _dat zijn_ 
+A|12| A: _dit zijn_ degeen _die er_ [van] _tafel_ [doorheen] hebben 
+A|13| A: waar [een] [trapezium] [op] [staan] 
+A|14| A: [met twee poot] eronder 
+B|15| B: [ja] 
+B|16| B: nummer 
+B|17| B: [dit zijn] weer [met] [die] _tafel die er_ dwars [doorheen] gaan 
+A|18| A: [ja] _dat zijn_ 
+A|19| A: [en] [dit zijn] [die] [met] _de [tafel_ die er] [doorheen zitten] 
+B|20| B: even zoeken 
+B|21| B: [tafel] 
+B|22| B: nummer 
+B|23| B: [de tafel] 
+A|24| A: [ja] _dat zijn_ 
+A|25| A: [dit zijn] [de [tafel] die er] [doorheen zitten] 
+B|26| B: Oké [dat zijn] 
+B|27| B: even zoeken [de tafel] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan de volgen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=1| B | B : er zitten een één
+	Free: Pattern=er, Pattern=zitten, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : er dwars doorheen zitten een soort plank
+	Free: Pattern=doorheen zitten, Pattern=er, Pattern=een
+	Constrained: Pattern=doorheen, Pattern=zitten
+Turn ID=3| B | B : met twee poot eraan
+	Free: Pattern=met twee poot
+	Constrained: Pattern=met
+Turn ID=4| B | B : Zullen ik het willen noemen
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : dus
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : en op die plank daarop staan een omgekeerde trapezium
+	Free: Pattern=op, Pattern=trapezium, Pattern=die, Pattern=en, Pattern=een, Pattern=staan
+	Constrained: 
+Turn ID=7| B | B : en aan de achterkant zitten nog een soort
+	Free: Pattern=en, Pattern=de, Pattern=zitten, Pattern=een
+	Constrained: 
+Turn ID=8| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : net zoals van een fluitketel
+	Free: Pattern=van, Pattern=een
+	Constrained: 
+Turn ID=10| B | B : zo'n of zo'n olifant slurfen zegmaar
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : dit zijn degeen die er van tafel doorheen hebben
+	Free: Pattern=die er, Pattern=doorheen, Pattern=tafel, Pattern=van, Pattern=dit zijn
+	Constrained: Pattern=er, Pattern=die
+Turn ID=13| A | A : waar een trapezium op staan
+	Free: Pattern=trapezium, Pattern=op, Pattern=staan, Pattern=een
+	Constrained: 
+Turn ID=14| A | A : met twee poot eronder
+	Free: Pattern=met twee poot
+	Constrained: Pattern=met
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : dit zijn weer met die tafel die er dwars doorheen gaan
+	Free: Pattern=doorheen, Pattern=tafel die er, Pattern=met, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=tafel, Pattern=die er, Pattern=die, Pattern=er
+Turn ID=18| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : en dit zijn die met de tafel die er doorheen zitten
+	Free: Pattern=tafel die er, Pattern=doorheen zitten, Pattern=de tafel, Pattern=met, Pattern=die, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=die er, Pattern=er, Pattern=de, Pattern=doorheen, Pattern=tafel, Pattern=die, Pattern=zitten
+Turn ID=20| B | B : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=21| B | B : tafel
+	Free: Pattern=tafel
+	Constrained: 
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : de tafel
+	Free: Pattern=de tafel
+	Constrained: Pattern=tafel, Pattern=de
+Turn ID=24| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : dit zijn de tafel die er doorheen zitten
+	Free: Pattern=tafel die er, Pattern=doorheen zitten, Pattern=de tafel, Pattern=dit zijn
+	Constrained: Pattern=die er, Pattern=er, Pattern=de, Pattern=doorheen, Pattern=tafel, Pattern=die, Pattern=zitten
+Turn ID=26| B | B : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=27| B | B : even zoeken de tafel
+	Free: Pattern=de tafel
+	Constrained: Pattern=tafel, Pattern=de

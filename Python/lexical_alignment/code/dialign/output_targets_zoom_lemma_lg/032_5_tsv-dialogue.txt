@@ -1,0 +1,83 @@
+B|0| B: Euhm _ik hebben_ deze _hebben_ _een_ _balk die_ gewoon in _de_ breedte _liggen_ _bovenop_ en aan _de_ onderkant zitten _een soort_ lampenkap en aan _de_ rechterkant iets onduidelijks 
+A|1| A: hmmhmm 
+A|2| A: _ja_ _ja_ _dan_ _zijn_ het 
+A|3| A: [ik hebben] nu _euh_ [die] [liggen] [balk] _op de_ 
+A|4| A: _ja_ [ik] vinden het eigenlijk [een soort] man _met_ [een] gek neus 
+A|5| A: waar [die] _bovenop liggen_ 
+B|6| B: _Euh_ 
+B|7| B: Oh [ja] en [dan] [met] rechts _dat_ onduidelijk [ja] [euh] 
+A|8| A: [ja] precies 
+B|9| B: _Euh_ 
+B|10| B: dit [zijn] [met] [de] _balk die_ in [de] breedte [bovenop liggen] 
+A|11| A: [ja] _dat zijn_ 
+A|12| A: [ik hebben] nu _die [balk_ die] er [bovenop liggen] 
+B|13| B: [dat zijn] 
+B|14| B: _Euh_ dit [zijn] [met] [die balk] in [de] breedte [op de] bovenkant 
+A|15| A: Yes 
+A|16| A: waar [zijn] [die] 
+A|17| A: ah [dat zijn] 
+A|18| A: [Euh] [ik hebben] [die] [liggen] [balk] 
+B|19| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euhm ik hebben deze hebben een balk die gewoon in de breedte liggen bovenop en aan de onderkant zitten een soort lampenkap en aan de rechterkant iets onduidelijks
+	Free: Pattern=ik hebben, Pattern=bovenop, Pattern=de, Pattern=balk die, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=liggen
+	Constrained: Pattern=een, Pattern=hebben, Pattern=balk, Pattern=die, Pattern=ik
+Turn ID=1| A | A : hmmhmm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : ja ja dan zijn het
+	Free: Pattern=ja, Pattern=zijn, Pattern=dan
+	Constrained: 
+Turn ID=3| A | A : ik hebben nu euh die liggen balk op de
+	Free: Pattern=ik hebben, Pattern=euh, Pattern=balk, Pattern=die, Pattern=liggen, Pattern=op de
+	Constrained: Pattern=de, Pattern=hebben, Pattern=ik
+Turn ID=4| A | A : ja ik vinden het eigenlijk een soort man met een gek neus
+	Free: Pattern=ja, Pattern=een, Pattern=met, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=5| A | A : waar die bovenop liggen
+	Free: Pattern=bovenop liggen, Pattern=die
+	Constrained: Pattern=liggen, Pattern=bovenop
+Turn ID=6| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=7| B | B : Oh ja en dan met rechts dat onduidelijk ja euh
+	Free: Pattern=dat, Pattern=ja, Pattern=dan, Pattern=euh, Pattern=met
+	Constrained: 
+Turn ID=8| A | A : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=10| B | B : dit zijn met de balk die in de breedte bovenop liggen
+	Free: Pattern=bovenop liggen, Pattern=de, Pattern=balk die, Pattern=met, Pattern=zijn
+	Constrained: Pattern=liggen, Pattern=bovenop, Pattern=die, Pattern=balk
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| A | A : ik hebben nu die balk die er bovenop liggen
+	Free: Pattern=die balk, Pattern=ik hebben, Pattern=balk die, Pattern=bovenop liggen
+	Constrained: Pattern=bovenop, Pattern=hebben, Pattern=balk, Pattern=die, Pattern=ik, Pattern=liggen
+Turn ID=13| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : Euh dit zijn met die balk in de breedte op de bovenkant
+	Free: Pattern=die balk, Pattern=de, Pattern=Euh, Pattern=met, Pattern=zijn, Pattern=op de
+	Constrained: Pattern=die, Pattern=de, Pattern=balk
+Turn ID=15| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : waar zijn die
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : ah dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=18| A | A : Euh ik hebben die liggen balk
+	Free: Pattern=ik hebben, Pattern=Euh, Pattern=balk, Pattern=die, Pattern=liggen
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

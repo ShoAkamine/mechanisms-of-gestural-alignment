@@ -1,0 +1,107 @@
+B|0| B: All right _ja_ want nu _hebben_ _ik_ _de_ volgen 
+A|1| A: [ja] 
+B|2| B: Oké 
+A|3| A: top 
+B|4| B: ehm deze [ja] _ik hebben_ _het_ net aangeven hij _hebben_ _een_ soort neus _met_ _een_ staaf erdoorheen 
+A|5| A: [een] beetje [ja] 
+A|6| A: Oh [met] die _neuspiercing_ 
+A|7| A: [met] _dat_ gek dinge eraan 
+B|8| B: [ja] [ja] [ja] 
+A|9| A: _en_ die [een] pluim bovenop 
+B|10| B: [ja] 
+A|11| A: _dat zijn_ 
+A|12| A: _ik hebben de neuspiercing_ 
+A|13| A: [met] [het] ovaal dinge eraan 
+B|14| B: ah 
+B|15| B: [ja] [en] [een] pluimp 
+B|16| B: [dat zijn] 
+A|17| A: [ja] 
+B|18| B: [ik hebben de neuspiercing] 
+A|19| A: [dat zijn] even zien 
+A|20| A: [ik hebben de neuspiercing] 
+B|21| B: [dat zijn] 
+B|22| B: [ik hebben] [neuspiercing] 
+A|23| A: [dat zijn] 
+A|24| A: [ik hebben] neuspierching 
+B|25| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : All right ja want nu hebben ik de volgen
+	Free: Pattern=ja, Pattern=ik, Pattern=de, Pattern=hebben
+	Constrained: 
+Turn ID=1| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : top
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : ehm deze ja ik hebben het net aangeven hij hebben een soort neus met een staaf erdoorheen
+	Free: Pattern=ik hebben, Pattern=ja, Pattern=een, Pattern=het, Pattern=hebben, Pattern=met
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=5| A | A : een beetje ja
+	Free: Pattern=ja, Pattern=een
+	Constrained: 
+Turn ID=6| A | A : Oh met die neuspiercing
+	Free: Pattern=met, Pattern=neuspiercing
+	Constrained: 
+Turn ID=7| A | A : met dat gek dinge eraan
+	Free: Pattern=dat, Pattern=met
+	Constrained: 
+Turn ID=8| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : en die een pluim bovenop
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=12| A | A : ik hebben de neuspiercing
+	Free: Pattern=ik hebben de neuspiercing
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=neuspiercing
+Turn ID=13| A | A : met het ovaal dinge eraan
+	Free: Pattern=met, Pattern=het
+	Constrained: 
+Turn ID=14| B | B : ah
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : ja en een pluimp
+	Free: Pattern=ja, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=16| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ik hebben de neuspiercing
+	Free: Pattern=ik hebben de neuspiercing
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=neuspiercing
+Turn ID=19| A | A : dat zijn even zien
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=20| A | A : ik hebben de neuspiercing
+	Free: Pattern=ik hebben de neuspiercing
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=ik, Pattern=neuspiercing
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=22| B | B : ik hebben neuspiercing
+	Free: Pattern=ik hebben, Pattern=neuspiercing
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=23| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=24| A | A : ik hebben neuspierching
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=25| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

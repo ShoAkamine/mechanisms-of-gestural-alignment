@@ -1,0 +1,83 @@
+A|0| A: Eh dan _hebben_ _ik_ een kop _met_ twee _rond_ _rond_ zijkant 
+A|1| A: _en_ hij _hebben_ een vierkant _achter_ zich 
+A|2| A: _en_ _ik_ vinden _dat_ persoonlijk een beetje lijken op een _zonnepaneel_ 
+A|3| A: Eh dus _ik_ _weten_ niet of je _weten_ wat _ik_ bedoelen 
+B|4| B: _ja_ 
+B|5| B: Denken [dat] [ik] _het_ al [weten] 
+B|6| B: volgens mij _zijn_ _het_ 
+A|7| A: Oké 
+B|8| B: _eh ik hebben die met het zonnepaneel_ 
+B|9| B: [en] de [rond] staaf 
+A|10| A: [eh] [ja] _dat zijn_ _dat zijn_ 
+B|11| B: [achter] de beker 
+A|12| A: [eh ik hebben die met het zonnepaneel] 
+B|13| B: [dat zijn] nummer 
+B|14| B: [ik hebben die met het zonnepaneel] 
+A|15| A: Eh at [zijn] 
+A|16| A: [ik hebben die met het zonnepaneel] 
+B|17| B: [dat zijn] 
+B|18| B: [ik hebben die met het zonnepaneel] 
+A|19| A: Eh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Eh dan hebben ik een kop met twee rond rond zijkant
+	Free: Pattern=met, Pattern=rond, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=1| A | A : en hij hebben een vierkant achter zich
+	Free: Pattern=en, Pattern=achter, Pattern=hebben
+	Constrained: 
+Turn ID=2| A | A : en ik vinden dat persoonlijk een beetje lijken op een zonnepaneel
+	Free: Pattern=en, Pattern=zonnepaneel, Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=3| A | A : Eh dus ik weten niet of je weten wat ik bedoelen
+	Free: Pattern=weten, Pattern=ik
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : Denken dat ik het al weten
+	Free: Pattern=weten, Pattern=het, Pattern=dat, Pattern=ik
+	Constrained: 
+Turn ID=6| B | B : volgens mij zijn het
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : eh ik hebben die met het zonnepaneel
+	Free: Pattern=eh ik hebben die met het zonnepaneel
+	Constrained: Pattern=het, Pattern=met, Pattern=eh, Pattern=ik, Pattern=zonnepaneel, Pattern=ik hebben die met het zonnepaneel, Pattern=hebben
+Turn ID=9| B | B : en de rond staaf
+	Free: Pattern=en, Pattern=rond
+	Constrained: 
+Turn ID=10| A | A : eh ja dat zijn dat zijn
+	Free: Pattern=dat zijn, Pattern=eh, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=11| B | B : achter de beker
+	Free: Pattern=achter
+	Constrained: 
+Turn ID=12| A | A : eh ik hebben die met het zonnepaneel
+	Free: Pattern=eh ik hebben die met het zonnepaneel
+	Constrained: Pattern=het, Pattern=met, Pattern=eh, Pattern=ik, Pattern=zonnepaneel, Pattern=ik hebben die met het zonnepaneel, Pattern=hebben
+Turn ID=13| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=14| B | B : ik hebben die met het zonnepaneel
+	Free: Pattern=ik hebben die met het zonnepaneel
+	Constrained: Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zonnepaneel
+Turn ID=15| A | A : Eh at zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : ik hebben die met het zonnepaneel
+	Free: Pattern=ik hebben die met het zonnepaneel
+	Constrained: Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zonnepaneel
+Turn ID=17| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=18| B | B : ik hebben die met het zonnepaneel
+	Free: Pattern=ik hebben die met het zonnepaneel
+	Constrained: Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=zonnepaneel
+Turn ID=19| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

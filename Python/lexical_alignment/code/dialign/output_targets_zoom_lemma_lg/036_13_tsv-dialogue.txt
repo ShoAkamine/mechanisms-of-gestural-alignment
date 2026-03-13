@@ -1,0 +1,75 @@
+A|0| A: _oké_ _deze_ vinden _ik_ een beetje op _Pipi_ _Langkous_ _Pipi_ _Langkous_ lijken want hij hebben _van_ _die_ drie bollet aan de zijkant _die_ zo naar buiten voorgaan 
+B|1| B: ah _ja_ _ja_ _ja_ 
+A|2| A: en dan zo'n rond aan de voorkant als een _soort van_ neus 
+A|3| A: en op één _het_ staat op een _vierkant_ 
+B|4| B: mhm 
+B|5| B: _ja_ 
+B|6| B: [oké] _dat_ weten [ik] [het] _zijn_ 
+B|7| B: [deze] _zijn_ _met_ [die] [soort van] onderlegger [die] [vierkant] onderlegger _met_ [die] _ja_ [het] _Pipi langkous_ _ja_ kloppen 
+A|8| A: _Oh ja_ [die] [Pipi langkous] 
+A|9| A: dit [zijn] [Pipi] Lankaus [met] de rond neus op [het] [vierkant] 
+B|10| B: [ja] 
+B|11| B: [Oh ja] _dat zijn_ 
+B|12| B: [deze] [zijn] weer [die] pipi [langkous] 
+A|13| A: [dat zijn] 
+A|14| A: dit [zijn] Pipilanko op [dat] [vierkant] 
+B|15| B: [dat zijn] 
+B|16| B: [deze] [zijn] Pippi [Langkous] 
+A|17| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze vinden ik een beetje op Pipi Langkous Pipi Langkous lijken want hij hebben van die drie bollet aan de zijkant die zo naar buiten voorgaan
+	Free: Pattern=oké, Pattern=Langkous, Pattern=Pipi, Pattern=die, Pattern=ik, Pattern=van, Pattern=deze
+	Constrained: 
+Turn ID=1| B | B : ah ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : en dan zo'n rond aan de voorkant als een soort van neus
+	Free: Pattern=soort van
+	Constrained: Pattern=van
+Turn ID=3| A | A : en op één het staat op een vierkant
+	Free: Pattern=vierkant, Pattern=het
+	Constrained: 
+Turn ID=4| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : oké dat weten ik het zijn
+	Free: Pattern=oké, Pattern=dat, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=7| B | B : deze zijn met die soort van onderlegger die vierkant onderlegger met die ja het Pipi langkous ja kloppen
+	Free: Pattern=ja, Pattern=het, Pattern=met, Pattern=die, Pattern=Pipi langkous, Pattern=soort van, Pattern=zijn, Pattern=vierkant, Pattern=deze
+	Constrained: Pattern=langkous, Pattern=van, Pattern=Pipi
+Turn ID=8| A | A : Oh ja die Pipi langkous
+	Free: Pattern=Pipi langkous, Pattern=Oh ja, Pattern=die
+	Constrained: Pattern=langkous, Pattern=ja, Pattern=Pipi
+Turn ID=9| A | A : dit zijn Pipi Lankaus met de rond neus op het vierkant
+	Free: Pattern=het, Pattern=Pipi, Pattern=met, Pattern=zijn, Pattern=vierkant
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=dat
+Turn ID=12| B | B : deze zijn weer die pipi langkous
+	Free: Pattern=deze, Pattern=langkous, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=13| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=14| A | A : dit zijn Pipilanko op dat vierkant
+	Free: Pattern=vierkant, Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=15| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=16| B | B : deze zijn Pippi Langkous
+	Free: Pattern=deze, Pattern=Langkous, Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

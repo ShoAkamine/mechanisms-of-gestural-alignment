@@ -1,0 +1,103 @@
+A|0| A: Oké ik vinden deze een beetje op een _trofee_ lijken 
+A|1| A: _Euhm_ 
+A|2| A: er zitten een soort lang uitstulpsel aan _de_ onderkant 
+A|3| A: _met_ nog een soort piramide eraanvast 
+A|4| A: of piramide een soort dik driehoek 
+B|5| B: _ja_ _die_ soeppan 
+A|6| A: waar rechtsbovenin Euh 
+A|7| A: Weet ik niet 
+A|8| A: even kijken 
+A|9| A: _dat zijn_ één van _de_ enig nog _met_ een lang iets aan _de_ onderkant 
+B|10| B: _ja_ 
+A|11| A: en rechtsbovenin _zijn_ dan een kubus 
+B|12| B: _ja dat zijn_ 
+A|13| A: en daarbovenop ook nog 
+B|14| B: _ja oké_ 
+B|15| B: [Euhm] _dit zijn_ [de] _trofee met_ [dat] driehoekig ding onder 
+A|16| A: [ja oké] [dat zijn] 
+A|17| A: _euh dit zijn_ [die] [trofee met] [die] kubus bovenop 
+B|18| B: [zijn] [euh] 
+B|19| B: [euh dit zijn] [de] [trofee] 
+A|20| A: [ja dat zijn] 
+A|21| A: Euh [dat zijn] [die] troffeeten 
+B|22| B: [Euhm] 
+B|23| B: [dit zijn] [de] [trofee] 
+A|24| A: [ja dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik vinden deze een beetje op een trofee lijken
+	Free: Pattern=trofee
+	Constrained: 
+Turn ID=1| A | A : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=2| A | A : er zitten een soort lang uitstulpsel aan de onderkant
+	Free: Pattern=de
+	Constrained: 
+Turn ID=3| A | A : met nog een soort piramide eraanvast
+	Free: Pattern=met
+	Constrained: 
+Turn ID=4| A | A : of piramide een soort dik driehoek
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ja die soeppan
+	Free: Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : waar rechtsbovenin Euh
+	Free: 
+	Constrained: 
+Turn ID=7| A | A : Weet ik niet
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : dat zijn één van de enig nog met een lang iets aan de onderkant
+	Free: Pattern=dat zijn, Pattern=met, Pattern=de
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : en rechtsbovenin zijn dan een kubus
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=12| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=13| A | A : en daarbovenop ook nog
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja
+Turn ID=15| B | B : Euhm dit zijn de trofee met dat driehoekig ding onder
+	Free: Pattern=dat, Pattern=de, Pattern=trofee met, Pattern=Euhm, Pattern=dit zijn
+	Constrained: Pattern=trofee, Pattern=met, Pattern=zijn
+Turn ID=16| A | A : ja oké dat zijn
+	Free: Pattern=ja oké, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=17| A | A : euh dit zijn die trofee met die kubus bovenop
+	Free: Pattern=euh dit zijn, Pattern=trofee met, Pattern=die
+	Constrained: Pattern=euh, Pattern=met, Pattern=zijn, Pattern=trofee, Pattern=dit zijn
+Turn ID=18| B | B : zijn euh
+	Free: Pattern=euh, Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : euh dit zijn de trofee
+	Free: Pattern=euh dit zijn, Pattern=trofee, Pattern=de
+	Constrained: Pattern=dit zijn, Pattern=euh, Pattern=zijn
+Turn ID=20| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn
+Turn ID=21| A | A : Euh dat zijn die troffeeten
+	Free: Pattern=dat zijn, Pattern=die
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| B | B : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=23| B | B : dit zijn de trofee
+	Free: Pattern=dit zijn, Pattern=trofee, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=24| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=dat, Pattern=ja, Pattern=zijn

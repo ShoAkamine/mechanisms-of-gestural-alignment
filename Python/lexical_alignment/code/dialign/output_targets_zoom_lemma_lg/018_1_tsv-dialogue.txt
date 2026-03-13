@@ -1,0 +1,179 @@
+A|0| A: _ja_ dit _zijn_ _dan_ degeen _met die antenne_ 
+A|1| A: hij lijken _een_ beetje op _een_ _robot_ 
+A|2| A: _en dan_ lijken het alsof er _zo_ 
+A|3| A: _twee armp_ uitsteken naar links 
+A|4| A: _en_ er bovenop zitten 
+B|5| B: _Oh_ 
+A|6| A: _ja ja_ 
+B|7| B: [en] nog [een] _vierkant_ ook 
+A|8| A: _ja ja_ _dat_ zitten eraan vast 
+B|9| B: [ja] 
+B|10| B: [ja ja] 
+A|11| A: [ja] 
+B|12| B: _dat zijn bij mij_ 
+A|13| A: Oké 
+B|14| B: _ik hebben nu_ 
+B|15| B: hoe noemen 
+B|16| B: [met die antenne] zeggen _je_ [dat] volgens _mij_ 
+B|17| B: [en dan] [twee] soort [robot] [armp] 
+A|18| A: _Oh ja_ 
+A|19| A: [ja] 
+B|20| B: [zo] aan _de_ zijkant 
+A|21| A: [ik] weten welk [je] bedoelen 
+B|22| B: zien [je] [die] 
+A|23| A: [ja ja] 
+A|24| A: [met] [dat] _vierkan_ er tegenaan toch 
+B|25| B: [ja ja] 
+A|26| A: [ja] [dat zijn bij mij] 
+A|27| A: [Oh] [ik hebben] degeen [die] [ik] op [een] [robot] vinden lijken 
+A|28| A: [met] [een] [antenne] bovenop [en] [twee] van [die] [armp] naar links [en] het [vierkant] 
+B|29| B: [Oh ja] 
+B|30| B: [ja] 
+B|31| B: [dat zijn bij mij] 
+B|32| B: [ik hebben] _de antenne_ [met] [twee armp] [zo] [en] [een] [vierkan] 
+A|33| A: Oké [dat zijn bij mij] 
+A|34| A: [Oh] [ik hebben nu] [robot] _met [de_ antenne] 
+A|35| A: [en] het [vierkan] 
+B|36| B: [Oh ja] 
+B|37| B: [ja] 
+A|38| A: Oké 
+B|39| B: [dat zijn bij mij] 
+A|40| A: Oké 
+B|41| B: [ik hebben nu] [de antenne] [met de] [twee armp] [zo] 
+A|42| A: [Oh ja] [dat zijn] 
+A|43| A: [bij mij] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja dit zijn dan degeen met die antenne
+	Free: Pattern=met die antenne, Pattern=zijn, Pattern=ja, Pattern=dan
+	Constrained: Pattern=antenne, Pattern=die, Pattern=met
+Turn ID=1| A | A : hij lijken een beetje op een robot
+	Free: Pattern=robot, Pattern=een
+	Constrained: 
+Turn ID=2| A | A : en dan lijken het alsof er zo
+	Free: Pattern=en dan, Pattern=zo
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=3| A | A : twee armp uitsteken naar links
+	Free: Pattern=twee armp
+	Constrained: Pattern=twee, Pattern=armp
+Turn ID=4| A | A : en er bovenop zitten
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=6| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=7| B | B : en nog een vierkant ook
+	Free: Pattern=vierkant, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=8| A | A : ja ja dat zitten eraan vast
+	Free: Pattern=ja ja, Pattern=dat
+	Constrained: Pattern=ja
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=13| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : ik hebben nu
+	Free: Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=ik
+Turn ID=15| B | B : hoe noemen
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : met die antenne zeggen je dat volgens mij
+	Free: Pattern=met die antenne, Pattern=mij, Pattern=je, Pattern=dat
+	Constrained: Pattern=antenne, Pattern=die, Pattern=met
+Turn ID=17| B | B : en dan twee soort robot armp
+	Free: Pattern=en dan, Pattern=twee, Pattern=armp, Pattern=robot
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=18| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : zo aan de zijkant
+	Free: Pattern=zo, Pattern=de
+	Constrained: 
+Turn ID=21| A | A : ik weten welk je bedoelen
+	Free: Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=22| B | B : zien je die
+	Free: Pattern=die, Pattern=je
+	Constrained: 
+Turn ID=23| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=24| A | A : met dat vierkan er tegenaan toch
+	Free: Pattern=vierkan, Pattern=met, Pattern=dat
+	Constrained: 
+Turn ID=25| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=26| A | A : ja dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=ja
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=27| A | A : Oh ik hebben degeen die ik op een robot vinden lijken
+	Free: Pattern=ik hebben, Pattern=een, Pattern=die, Pattern=ik, Pattern=Oh, Pattern=robot
+	Constrained: Pattern=ik
+Turn ID=28| A | A : met een antenne bovenop en twee van die armp naar links en het vierkant
+	Free: Pattern=twee, Pattern=een, Pattern=armp, Pattern=met, Pattern=die, Pattern=antenne, Pattern=en, Pattern=vierkant
+	Constrained: 
+Turn ID=29| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=32| B | B : ik hebben de antenne met twee armp zo en een vierkan
+	Free: Pattern=ik hebben, Pattern=de antenne, Pattern=zo, Pattern=met, Pattern=en, Pattern=vierkan, Pattern=een, Pattern=twee armp
+	Constrained: Pattern=twee, Pattern=de, Pattern=armp, Pattern=antenne, Pattern=ik
+Turn ID=33| A | A : Oké dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=34| A | A : Oh ik hebben nu robot met de antenne
+	Free: Pattern=met de, Pattern=de antenne, Pattern=Oh, Pattern=robot, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=met, Pattern=antenne, Pattern=ik
+Turn ID=35| A | A : en het vierkan
+	Free: Pattern=vierkan, Pattern=en
+	Constrained: 
+Turn ID=36| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=39| B | B : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=40| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=41| B | B : ik hebben nu de antenne met de twee armp zo
+	Free: Pattern=met de, Pattern=de antenne, Pattern=twee armp, Pattern=zo, Pattern=ik hebben nu
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=de, Pattern=armp, Pattern=met, Pattern=antenne, Pattern=ik
+Turn ID=42| A | A : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=Oh, Pattern=dat
+Turn ID=43| A | A : bij mij
+	Free: Pattern=bij mij
+	Constrained: Pattern=mij

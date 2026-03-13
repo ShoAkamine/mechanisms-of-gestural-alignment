@@ -1,0 +1,63 @@
+B|0| B: _Ehm_ _ik hebben_ er nu één waarvan _het_ _lijken alsof_ _die een_ _soort dienblad vasthouden met_ twee van _zijn_ poot eronder 
+B|1| B: _en_ bovenop _dat dienblad_ dan zitten _een_ _soort_ komme 
+A|2| A: _ja ik weten_ [het] 
+A|3| A: [Ehm] 
+A|4| A: ehm deze _ja_ [lijken alsof] hij _zo'n_ _tafel_ vastheeffen [en] op [die] _tafel_ staan [een] bakje 
+B|5| B: [ja ik weten] hem al 
+B|6| B: _zijn_ [het] 
+B|7| B: _eh_ _ik hebben_ nu [die] _met dat_ [tafel] _met dat_ komme _erop_ 
+A|8| A: [eh] [ja] [dat] [zijn] 
+A|9| A: [ik hebben] [die een] _die zo'n_ [soort _dienblad vasthouden met] een_ bakje [erop] 
+B|10| B: [ja] 
+B|11| B: [ik hebben] dan nu [die] [die zo'n] [dienblad vasthouden met een] bord [erop] 
+A|12| A: [ja] 
+A|13| A: [ik hebben] [dat dienblad] [met dat] bakje [erop] 
+B|14| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehm ik hebben er nu één waarvan het lijken alsof die een soort dienblad vasthouden met twee van zijn poot eronder
+	Free: Pattern=ik hebben, Pattern=lijken alsof, Pattern=Ehm, Pattern=soort dienblad vasthouden met, Pattern=het, Pattern=die een, Pattern=zijn
+	Constrained: Pattern=die, Pattern=soort, Pattern=een
+Turn ID=1| B | B : en bovenop dat dienblad dan zitten een soort komme
+	Free: Pattern=dat dienblad, Pattern=en, Pattern=soort, Pattern=een
+	Constrained: Pattern=dat
+Turn ID=2| A | A : ja ik weten het
+	Free: Pattern=ja ik weten, Pattern=het
+	Constrained: Pattern=ja
+Turn ID=3| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=4| A | A : ehm deze ja lijken alsof hij zo'n tafel vastheeffen en op die tafel staan een bakje
+	Free: Pattern=ja, Pattern=een, Pattern=en, Pattern=zo'n, Pattern=lijken alsof, Pattern=tafel, Pattern=die
+	Constrained: 
+Turn ID=5| B | B : ja ik weten hem al
+	Free: Pattern=ja ik weten
+	Constrained: Pattern=ja
+Turn ID=6| B | B : zijn het
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=7| B | B : eh ik hebben nu die met dat tafel met dat komme erop
+	Free: Pattern=ik hebben, Pattern=erop, Pattern=met dat, Pattern=eh, Pattern=tafel, Pattern=die
+	Constrained: Pattern=dat
+Turn ID=8| A | A : eh ja dat zijn
+	Free: Pattern=eh, Pattern=zijn, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ik hebben die een die zo'n soort dienblad vasthouden met een bakje erop
+	Free: Pattern=ik hebben, Pattern=erop, Pattern=soort dienblad vasthouden met, Pattern=dienblad vasthouden met een, Pattern=die een, Pattern=die zo'n
+	Constrained: Pattern=die, Pattern=een, Pattern=soort, Pattern=zo'n
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : ik hebben dan nu die die zo'n dienblad vasthouden met een bord erop
+	Free: Pattern=ik hebben, Pattern=erop, Pattern=dienblad vasthouden met een, Pattern=die, Pattern=die zo'n
+	Constrained: Pattern=die, Pattern=zo'n, Pattern=een
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ik hebben dat dienblad met dat bakje erop
+	Free: Pattern=ik hebben, Pattern=dat dienblad, Pattern=met dat, Pattern=erop
+	Constrained: Pattern=dat
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

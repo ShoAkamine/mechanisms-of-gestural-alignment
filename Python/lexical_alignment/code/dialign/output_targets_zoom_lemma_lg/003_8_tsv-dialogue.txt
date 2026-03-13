@@ -1,0 +1,239 @@
+B|0| B: Oké _ik hebben_ _de_ _een_ heel langwerpig als in van boven naar beneden lang 
+B|1| B: Ehm 
+A|2| A: _Oh_ _die_ springen 
+A|3| A: _met_ _die_ gek spiraal 
+B|4| B: eh _hebben_ 
+B|5| B: nee _hij staan op_ _één poot_ wel 
+A|6| A: _Oh_ 
+B|7| B: ehm _hij_ lijken er _een_ beetje _op_ 
+A|8| A: mhm 
+B|9| B: _niet_ echt _kijken_ _maar niet_ _aan_ [die] ander 
+B|10| B: Eh _het_ lijken alsof _hij_ twee armp naar voren _hebben_ 
+B|11| B: _dat_ _hij_ richting rechts bewegen 
+B|12| B: _en_ _zeggen maar_ _zijn hoofd_ _hebben_ twee zijkantuitsteeksel 
+B|13| B: Beetje Frankenstein-achtig idee 
+B|14| B: _ik_ _vinden_ _het_ _een_ beetje _op een_ zombie lijken 
+A|15| A: oeh 
+B|16| B: _maar_ _hij hebben_ dus _één poot_ onderaan 
+B|17| B: volgens mij _zijn_ _dat_ _de_ enig [met] _één poot_ 
+A|18| A: [één] 
+A|19| A: _ja_ wat [één] [hebben] [zeggen maar] [een] soort [één poot] [en] [staan [op] een] driehoek [en] [één] [hebben] [één poot] [en] [die] _poot zijn buigen_ 
+B|20| B: [ja] _de_ [poot zijn buigen] 
+B|21| B: dus _hij staan_ [met] [zijn] voet [zeggen maar] naar voren 
+A|22| A: [ja] 
+A|23| A: [ja] precies [hij hebben] [een] soort gekke Pinocchioneus [en] [één] arm 
+A|24| A: zo zullen _je het_ _kunnen_ zien 
+B|25| B: ah 
+B|26| B: [Oh] _ja dat_ [kunnen] _ook_ misschien [en] [hij hebben] iets _op zijn hoofd_ dus dan 
+A|27| A: [ja] precies [die] gek 
+B|28| B: [ja] 
+B|29| B: [ja] 
+A|30| A: [ja] 
+A|31| A: _dat zijn_ 
+A|32| A: [ik hebben] [die] [een] [die] [ik] Pinocchio _neus_ noemen 
+A|33| A: [die] [op] zo'n platformp [staan] 
+A|34| A: [maar niet] [op een] driehoek 
+A|35| A: [en] [ook] [niet] [op een] vierkant 
+B|36| B: Ehm 
+A|37| A: [en] [ook] [niet] [op een] ovaal 
+A|38| A: [op _een] poo_ [staan] [die] 
+B|39| B: eh welk [zijn] [dat] nog [een] keer ? Kun [je het] nog [één] keer [zeggen] 
+A|40| A: [hij staan [op] een] [buigen] _poo_ 
+A|41| A: [hij hebben] [één] arm [aan] [de] linkerkant [vinden] [ik] want [zijn] _neus_ zitten daarnaast [zijn] Pinocchio _neus_ 
+A|42| A: [maar] [de] arm [zijn] eigenlijk [het] uitsteeksel [zijn] [aan] [de] rechterkant [maar] [het] [zijn] [een] linkerarm 
+B|43| B: [Oh] 
+B|44| B: [zijn] _Frankenstein_ tafereel [ja] 
+A|45| A: [ja] vra 
+B|46| B: eh [ik hebben] [de] _Frankenstein_ gebeuren 
+A|47| A: _Yes_ _dat zijn_ 
+A|48| A: even [kijken] [ja _dat] zijn_ [die] [met] [de] gek linkerarm [en] [dat] gek ding [op zijn hoofd] 
+B|49| B: [met] [een] [neus] [en] [een poo] 
+A|50| A: [ja] precies _dat zijn_ 
+B|51| B: [ja] 
+A|52| A: _ik hebben Frankenstein_ [met] Pinocchio [neus] 
+B|53| B: [Yes] 
+B|54| B: Ehm [dat zijn] 
+B|55| B: [ik hebben Frankenstein] 
+A|56| A: [dat zijn] 
+A|57| A: [ik hebben Frankenstein] 
+B|58| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik hebben de een heel langwerpig als in van boven naar beneden lang
+	Free: Pattern=ik hebben, Pattern=de, Pattern=een
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=1| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : Oh die springen
+	Free: Pattern=Oh, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : met die gek spiraal
+	Free: Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=4| B | B : eh hebben
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=5| B | B : nee hij staan op één poot wel
+	Free: Pattern=hij staan op, Pattern=één poot
+	Constrained: Pattern=op, Pattern=hij staan, Pattern=staan, Pattern=één, Pattern=hij, Pattern=staan op
+Turn ID=6| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=7| B | B : ehm hij lijken er een beetje op
+	Free: Pattern=op, Pattern=een, Pattern=hij
+	Constrained: 
+Turn ID=8| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : niet echt kijken maar niet aan die ander
+	Free: Pattern=aan, Pattern=niet, Pattern=kijken, Pattern=maar niet, Pattern=die
+	Constrained: Pattern=niet, Pattern=maar
+Turn ID=10| B | B : Eh het lijken alsof hij twee armp naar voren hebben
+	Free: Pattern=hebben, Pattern=het, Pattern=hij
+	Constrained: 
+Turn ID=11| B | B : dat hij richting rechts bewegen
+	Free: Pattern=dat, Pattern=hij
+	Constrained: 
+Turn ID=12| B | B : en zeggen maar zijn hoofd hebben twee zijkantuitsteeksel
+	Free: Pattern=zeggen maar, Pattern=zijn hoofd, Pattern=en, Pattern=hebben
+	Constrained: Pattern=maar, Pattern=zijn, Pattern=zeggen
+Turn ID=13| B | B : Beetje Frankenstein-achtig idee
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : ik vinden het een beetje op een zombie lijken
+	Free: Pattern=vinden, Pattern=een, Pattern=het, Pattern=ik, Pattern=op een
+	Constrained: Pattern=op, Pattern=een
+Turn ID=15| A | A : oeh
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : maar hij hebben dus één poot onderaan
+	Free: Pattern=hij hebben, Pattern=één poot, Pattern=maar
+	Constrained: Pattern=hebben, Pattern=één, Pattern=hij
+Turn ID=17| B | B : volgens mij zijn dat de enig met één poot
+	Free: Pattern=dat, Pattern=met, Pattern=zijn, Pattern=de, Pattern=één poot
+	Constrained: Pattern=één
+Turn ID=18| A | A : één
+	Free: Pattern=één
+	Constrained: 
+Turn ID=19| A | A : ja wat één hebben zeggen maar een soort één poot en staan op een driehoek en één hebben één poot en die poot zijn buigen
+	Free: Pattern=een, Pattern=zeggen maar, Pattern=hebben, Pattern=één, Pattern=die, Pattern=poot zijn buigen, Pattern=en, Pattern=staan op, Pattern=op een, Pattern=één poot, Pattern=ja
+	Constrained: Pattern=op, Pattern=één, Pattern=zeggen, Pattern=buigen, Pattern=een, Pattern=staan, Pattern=zijn, Pattern=maar
+Turn ID=20| B | B : ja de poot zijn buigen
+	Free: Pattern=poot zijn buigen, Pattern=ja, Pattern=de
+	Constrained: Pattern=buigen, Pattern=zijn
+Turn ID=21| B | B : dus hij staan met zijn voet zeggen maar naar voren
+	Free: Pattern=zeggen maar, Pattern=hij staan, Pattern=met, Pattern=zijn
+	Constrained: Pattern=maar, Pattern=staan, Pattern=hij, Pattern=zeggen
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja precies hij hebben een soort gekke Pinocchioneus en één arm
+	Free: Pattern=ja, Pattern=een, Pattern=één, Pattern=hij hebben, Pattern=en
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=24| A | A : zo zullen je het kunnen zien
+	Free: Pattern=je het, Pattern=kunnen
+	Constrained: Pattern=het
+Turn ID=25| B | B : ah
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : Oh ja dat kunnen ook misschien en hij hebben iets op zijn hoofd dus dan
+	Free: Pattern=kunnen, Pattern=ook, Pattern=hij hebben, Pattern=en, Pattern=ja dat, Pattern=op zijn hoofd, Pattern=Oh
+	Constrained: Pattern=dat, Pattern=zijn hoofd, Pattern=ja, Pattern=op, Pattern=hebben, Pattern=hij, Pattern=zijn
+Turn ID=27| A | A : ja precies die gek
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=32| A | A : ik hebben die een die ik Pinocchio neus noemen
+	Free: Pattern=ik hebben, Pattern=een, Pattern=neus, Pattern=die, Pattern=ik
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=33| A | A : die op zo'n platformp staan
+	Free: Pattern=op, Pattern=die, Pattern=staan
+	Constrained: 
+Turn ID=34| A | A : maar niet op een driehoek
+	Free: Pattern=op een, Pattern=maar niet
+	Constrained: Pattern=niet, Pattern=op, Pattern=maar, Pattern=een
+Turn ID=35| A | A : en ook niet op een vierkant
+	Free: Pattern=op een, Pattern=en, Pattern=niet, Pattern=ook
+	Constrained: Pattern=op, Pattern=een
+Turn ID=36| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : en ook niet op een ovaal
+	Free: Pattern=op een, Pattern=en, Pattern=niet, Pattern=ook
+	Constrained: Pattern=op, Pattern=een
+Turn ID=38| A | A : op een poo staan die
+	Free: Pattern=een poo, Pattern=op een, Pattern=die, Pattern=staan
+	Constrained: Pattern=poo, Pattern=op, Pattern=een
+Turn ID=39| B | B : eh welk zijn dat nog een keer ? Kun je het nog één keer zeggen
+	Free: Pattern=dat, Pattern=je het, Pattern=een, Pattern=één, Pattern=zeggen, Pattern=zijn
+	Constrained: Pattern=het
+Turn ID=40| A | A : hij staan op een buigen poo
+	Free: Pattern=hij staan op, Pattern=op een, Pattern=buigen, Pattern=poo
+	Constrained: Pattern=op, Pattern=hij staan, Pattern=hij, Pattern=staan op, Pattern=een, Pattern=staan
+Turn ID=41| A | A : hij hebben één arm aan de linkerkant vinden ik want zijn neus zitten daarnaast zijn Pinocchio neus
+	Free: Pattern=één, Pattern=hij hebben, Pattern=neus, Pattern=ik, Pattern=zijn, Pattern=de, Pattern=aan, Pattern=vinden
+	Constrained: Pattern=hebben, Pattern=hij
+Turn ID=42| A | A : maar de arm zijn eigenlijk het uitsteeksel zijn aan de rechterkant maar het zijn een linkerarm
+	Free: Pattern=een, Pattern=het, Pattern=de, Pattern=aan, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=43| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=44| B | B : zijn Frankenstein tafereel ja
+	Free: Pattern=ja, Pattern=Frankenstein, Pattern=zijn
+	Constrained: 
+Turn ID=45| A | A : ja vra
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| B | B : eh ik hebben de Frankenstein gebeuren
+	Free: Pattern=ik hebben, Pattern=de, Pattern=Frankenstein
+	Constrained: Pattern=hebben, Pattern=ik
+Turn ID=47| A | A : Yes dat zijn
+	Free: Pattern=dat zijn, Pattern=Yes
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=48| A | A : even kijken ja dat zijn die met de gek linkerarm en dat gek ding op zijn hoofd
+	Free: Pattern=de, Pattern=kijken, Pattern=met, Pattern=die, Pattern=en, Pattern=op zijn hoofd, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn hoofd, Pattern=ja, Pattern=op, Pattern=zijn
+Turn ID=49| B | B : met een neus en een poo
+	Free: Pattern=een, Pattern=neus, Pattern=met, Pattern=een poo, Pattern=en
+	Constrained: Pattern=poo, Pattern=een
+Turn ID=50| A | A : ja precies dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=51| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=52| A | A : ik hebben Frankenstein met Pinocchio neus
+	Free: Pattern=ik hebben Frankenstein, Pattern=neus, Pattern=met
+	Constrained: Pattern=Frankenstein, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=53| B | B : Yes
+	Free: Pattern=Yes
+	Constrained: 
+Turn ID=54| B | B : Ehm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=55| B | B : ik hebben Frankenstein
+	Free: Pattern=ik hebben Frankenstein
+	Constrained: Pattern=Frankenstein, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=56| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=57| A | A : ik hebben Frankenstein
+	Free: Pattern=ik hebben Frankenstein
+	Constrained: Pattern=Frankenstein, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=58| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

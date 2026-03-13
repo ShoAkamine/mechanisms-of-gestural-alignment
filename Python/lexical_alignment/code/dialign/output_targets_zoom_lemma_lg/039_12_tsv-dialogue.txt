@@ -1,0 +1,79 @@
+A|0| A: _eh ik hebben_ er nu één _dat zijn_ een heel scherp voorwerp 
+A|1| A: _dat_ zitten zeggen _maar_ in _het_ handvat 
+A|2| A: en _ik hebben_ _het_ omschrijven _als_ een spies 
+B|3| B: _ja_ 
+A|4| A: en _het_ _hebben_ een een _plat rond aan de_ rechterkant 
+B|5| B: [ik hebben] hem [als] spijker [maar] [dat zijn] 
+A|6| A: Oké [ja] 
+B|7| B: [eh _ik hebben] die met de spie_ 
+B|8| B: alias spijker 
+B|9| B: _met_ [het] [plat rond aan de] zijkant 
+A|10| A: _eh even kijken_ 
+A|11| A: [ja] [dat zijn] 
+A|12| A: [eh ik hebben] [de] spies 
+B|13| B: [eh even kijken] [dat zijn] 
+B|14| B: _ik hebben die met de spie_ 
+A|15| A: Eh [dat zijn] 
+A|16| A: [ik hebben die met de spie] 
+B|17| B: [ik hebben die met de spie] 
+A|18| A: Eh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh ik hebben er nu één dat zijn een heel scherp voorwerp
+	Free: Pattern=eh ik hebben, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=ik hebben, Pattern=hebben
+Turn ID=1| A | A : dat zitten zeggen maar in het handvat
+	Free: Pattern=maar, Pattern=het, Pattern=dat
+	Constrained: 
+Turn ID=2| A | A : en ik hebben het omschrijven als een spies
+	Free: Pattern=ik hebben, Pattern=het, Pattern=als
+	Constrained: Pattern=hebben
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en het hebben een een plat rond aan de rechterkant
+	Free: Pattern=plat rond aan de, Pattern=hebben, Pattern=het
+	Constrained: Pattern=de
+Turn ID=5| B | B : ik hebben hem als spijker maar dat zijn
+	Free: Pattern=dat zijn, Pattern=ik hebben, Pattern=maar, Pattern=als
+	Constrained: Pattern=hebben, Pattern=dat
+Turn ID=6| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : eh ik hebben die met de spie
+	Free: Pattern=ik hebben die met de spie, Pattern=eh ik hebben
+	Constrained: Pattern=de, Pattern=met, Pattern=ik hebben, Pattern=hebben
+Turn ID=8| B | B : alias spijker
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : met het plat rond aan de zijkant
+	Free: Pattern=plat rond aan de, Pattern=met, Pattern=het
+	Constrained: Pattern=de
+Turn ID=10| A | A : eh even kijken
+	Free: Pattern=eh even kijken
+	Constrained: 
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat
+Turn ID=12| A | A : eh ik hebben de spies
+	Free: Pattern=eh ik hebben, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=hebben
+Turn ID=13| B | B : eh even kijken dat zijn
+	Free: Pattern=eh even kijken, Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=14| B | B : ik hebben die met de spie
+	Free: Pattern=ik hebben die met de spie
+	Constrained: Pattern=de, Pattern=met, Pattern=ik hebben, Pattern=hebben
+Turn ID=15| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat
+Turn ID=16| A | A : ik hebben die met de spie
+	Free: Pattern=ik hebben die met de spie
+	Constrained: Pattern=de, Pattern=met, Pattern=ik hebben, Pattern=hebben
+Turn ID=17| B | B : ik hebben die met de spie
+	Free: Pattern=ik hebben die met de spie
+	Constrained: Pattern=de, Pattern=met, Pattern=ik hebben, Pattern=hebben
+Turn ID=18| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat

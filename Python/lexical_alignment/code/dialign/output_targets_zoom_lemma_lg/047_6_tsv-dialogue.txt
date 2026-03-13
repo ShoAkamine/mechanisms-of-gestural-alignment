@@ -1,0 +1,55 @@
+B|0| B: dan deze hebben een soort deze lijken ook een beetje op zo'n man _met_ een bol _neus_ 
+B|1| B: alleen die hebben een soort heel raar _neuspiercing_ _door zijn neus_ 
+B|2| B: zo'n soort stampertje wat je in je in je drankje hebben 
+A|3| A: ja _dat zijn_ 
+A|4| A: Eh [met] _de_ piercing [door zijn neus] 
+B|5| B: nummer 
+B|6| B: _eh_ [de] _neuspiercing_ 
+A|7| A: [eh] piercing 
+B|8| B: even zoeken 
+B|9| B: nummer 
+B|10| B: [de] raar _neuspiercing_ 
+A|11| A: [met] [neuspiercing] 
+B|12| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dan deze hebben een soort deze lijken ook een beetje op zo'n man met een bol neus
+	Free: Pattern=neus, Pattern=met
+	Constrained: 
+Turn ID=1| B | B : alleen die hebben een soort heel raar neuspiercing door zijn neus
+	Free: Pattern=door zijn neus, Pattern=neuspiercing
+	Constrained: Pattern=neus
+Turn ID=2| B | B : zo'n soort stampertje wat je in je in je drankje hebben
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : ja dat zijn
+	Free: Pattern=dat zijn
+	Constrained: 
+Turn ID=4| A | A : Eh met de piercing door zijn neus
+	Free: Pattern=door zijn neus, Pattern=de, Pattern=met
+	Constrained: Pattern=neus
+Turn ID=5| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : eh de neuspiercing
+	Free: Pattern=eh, Pattern=neuspiercing, Pattern=de
+	Constrained: 
+Turn ID=7| A | A : eh piercing
+	Free: Pattern=eh
+	Constrained: 
+Turn ID=8| B | B : even zoeken
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : de raar neuspiercing
+	Free: Pattern=neuspiercing, Pattern=de
+	Constrained: 
+Turn ID=11| A | A : met neuspiercing
+	Free: Pattern=neuspiercing, Pattern=met
+	Constrained: 
+Turn ID=12| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: 

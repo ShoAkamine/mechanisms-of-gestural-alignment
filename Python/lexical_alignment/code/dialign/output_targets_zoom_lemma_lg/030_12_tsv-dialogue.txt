@@ -1,0 +1,55 @@
+A|0| A: en dit zijn een beker met een vreemd handvat waar een soort van _spijker_ zijn inslaan 
+A|1| A: een euh beetje puntig _spijker_ 
+A|2| A: en aan _de_ zijkant zitten nog een klein euh zijkant van _de_ beker zitten ook nog een klein vasthouddinge of zo een schotel 
+B|3| B: ja 
+A|4| A: maar _de spijker_ vallen heel erg op 
+B|5| B: ja 
+B|6| B: dan _hebben_ _ik_ [de spijker] 
+A|7| A: Euh yes 
+A|8| A: K 
+A|9| A: Euh [ik] [hebben] weer [de spijker] in het handvat 
+B|10| B: dan [hebben] [ik] [de spijker] 
+A|11| A: Euh [spijker] in het handvat 
+B|12| B: [de spijker] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : en dit zijn een beker met een vreemd handvat waar een soort van spijker zijn inslaan
+	Free: Pattern=spijker
+	Constrained: 
+Turn ID=1| A | A : een euh beetje puntig spijker
+	Free: Pattern=spijker
+	Constrained: 
+Turn ID=2| A | A : en aan de zijkant zitten nog een klein euh zijkant van de beker zitten ook nog een klein vasthouddinge of zo een schotel
+	Free: Pattern=de
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : maar de spijker vallen heel erg op
+	Free: Pattern=de spijker
+	Constrained: Pattern=spijker, Pattern=de
+Turn ID=5| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : dan hebben ik de spijker
+	Free: Pattern=de spijker, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=spijker, Pattern=de
+Turn ID=7| A | A : Euh yes
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : K
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : Euh ik hebben weer de spijker in het handvat
+	Free: Pattern=de spijker, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=spijker, Pattern=de
+Turn ID=10| B | B : dan hebben ik de spijker
+	Free: Pattern=de spijker, Pattern=hebben, Pattern=ik
+	Constrained: Pattern=spijker, Pattern=de
+Turn ID=11| A | A : Euh spijker in het handvat
+	Free: Pattern=spijker
+	Constrained: 
+Turn ID=12| B | B : de spijker
+	Free: Pattern=de spijker
+	Constrained: Pattern=spijker, Pattern=de

@@ -1,0 +1,143 @@
+B|0| B: _Oké_ 
+B|1| B: _ja_ 
+B|2| B: er zitten _zeggen maar_ nou je _hebben_ dus _die_ cilindervorm _en_ _dan_ _hebben_ je daar omheen zo'n _plank_ 
+B|3| B: _ik_ _Euh_ _ik_ zien het als _plank_ _en_ _dan_ _euh_ zitten daar bovenop _een_ _omgekeerd piramide_ 
+A|4| A: Wacht [een] _plank met_ [een] ongekeerd [piramide] 
+B|5| B: _een soort_ [plank] om _die_ _euh_ om _die_ cilinder heen 
+B|6| B: Ehm laten we het anders uitleggen _euh_ 
+B|7| B: _oké_ zien jij ergens _euh_ [een] _omgekeerd piramide_ 
+A|8| A: _Oh_ 
+A|9| A: _Oh ja_ [ja] [zeggen maar] 
+A|10| A: [die] [plank] [hebben] hij [zeggen maar] [een soort] van _twee_ uitstulpsel aan _de_ onderkant 
+B|11| B: J-ja [ja] 
+A|12| A: [ja] [oké] dat _weten_ [ik] hem [dan] _weten_ [ik] hem 
+B|13| B: _Oké_ 
+A|14| A: [Oké] 
+A|15| A: _Oh_ _dit zijn_ [die] [soort] [euh] [die] [plank] [soort] _tafel_ ding _met_ [die] dat [omgekeerd _piramide] erop_ [en] [die] [soort] _twee poot_ eraan 
+B|16| B: [Oh ja] [ik] [weten] welkw je bedoelen 
+B|17| B: _even zoeken_ 
+B|18| B: Ehm 
+B|19| B: [Oh] 
+B|20| B: ehm _dit zijn de_ [plank _met] de omgekeerad [piramide_ erop] 
+A|21| A: [ja] [euh] 
+A|22| A: oh [dit zijn] weer _die tafel [met de_ omgekeerad piramide] [en] [die] _twee poot_ [en] 
+B|23| B: Ehm 
+B|24| B: [die _tafel met de] omgekeerd piramide_ 
+B|25| B: Ehm 
+B|26| B: [ja] 
+B|27| B: [Oké] [dit zijn] [euh] [de] [plank _met] de omgekeerd piramide_ 
+A|28| A: [Euh] [even zoeken] [even zoeken] 
+B|29| B: [en] [de] [twee poot] dus [ja] 
+A|30| A: Yes 
+A|31| A: [Euh] 
+A|32| A: [dit zijn de] [tafel met de omgekeerd piramide] 
+B|33| B: Mm 
+B|34| B: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| B | B : er zitten zeggen maar nou je hebben dus die cilindervorm en dan hebben je daar omheen zo'n plank
+	Free: Pattern=plank, Pattern=dan, Pattern=zeggen maar, Pattern=hebben, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : ik Euh ik zien het als plank en dan euh zitten daar bovenop een omgekeerd piramide
+	Free: Pattern=plank, Pattern=dan, Pattern=een, Pattern=Euh, Pattern=omgekeerd piramide, Pattern=euh, Pattern=ik, Pattern=en
+	Constrained: Pattern=piramide
+Turn ID=4| A | A : Wacht een plank met een ongekeerd piramide
+	Free: Pattern=plank met, Pattern=piramide, Pattern=een
+	Constrained: Pattern=met, Pattern=plank
+Turn ID=5| B | B : een soort plank om die euh om die cilinder heen
+	Free: Pattern=een soort, Pattern=euh, Pattern=die, Pattern=plank
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=6| B | B : Ehm laten we het anders uitleggen euh
+	Free: Pattern=euh
+	Constrained: 
+Turn ID=7| B | B : oké zien jij ergens euh een omgekeerd piramide
+	Free: Pattern=omgekeerd piramide, Pattern=euh, Pattern=oké, Pattern=een
+	Constrained: Pattern=piramide
+Turn ID=8| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=9| A | A : Oh ja ja zeggen maar
+	Free: Pattern=zeggen maar, Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=10| A | A : die plank hebben hij zeggen maar een soort van twee uitstulpsel aan de onderkant
+	Free: Pattern=twee, Pattern=de, Pattern=plank, Pattern=zeggen maar, Pattern=hebben, Pattern=die, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=11| B | B : J-ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja oké dat weten ik hem dan weten ik hem
+	Free: Pattern=oké, Pattern=ja, Pattern=dan, Pattern=weten, Pattern=ik
+	Constrained: 
+Turn ID=13| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=14| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| A | A : Oh dit zijn die soort euh die plank soort tafel ding met die dat omgekeerd piramide erop en die soort twee poot eraan
+	Free: Pattern=soort, Pattern=plank, Pattern=omgekeerd piramide, Pattern=euh, Pattern=piramide erop, Pattern=en, Pattern=Oh, Pattern=dit zijn, Pattern=twee poot, Pattern=met, Pattern=tafel, Pattern=die
+	Constrained: Pattern=twee, Pattern=piramide
+Turn ID=16| B | B : Oh ja ik weten welkw je bedoelen
+	Free: Pattern=Oh ja, Pattern=weten, Pattern=ik
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=17| B | B : even zoeken
+	Free: Pattern=even zoeken
+	Constrained: 
+Turn ID=18| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=20| B | B : ehm dit zijn de plank met de omgekeerad piramide erop
+	Free: Pattern=met de omgekeerad piramide, Pattern=dit zijn de, Pattern=piramide erop, Pattern=plank met
+	Constrained: Pattern=de, Pattern=met, Pattern=dit zijn, Pattern=piramide, Pattern=plank
+Turn ID=21| A | A : ja euh
+	Free: Pattern=euh, Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : oh dit zijn weer die tafel met de omgekeerad piramide en die twee poot en
+	Free: Pattern=met de omgekeerad piramide, Pattern=die tafel met de, Pattern=twee poot, Pattern=die, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=twee, Pattern=de, Pattern=piramide, Pattern=met, Pattern=tafel, Pattern=die
+Turn ID=23| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : die tafel met de omgekeerd piramide
+	Free: Pattern=tafel met de omgekeerd piramide, Pattern=die tafel met de
+	Constrained: Pattern=de, Pattern=piramide, Pattern=omgekeerd piramide, Pattern=met, Pattern=met de omgekeerd piramide, Pattern=tafel, Pattern=die
+Turn ID=25| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Oké dit zijn euh de plank met de omgekeerd piramide
+	Free: Pattern=de, Pattern=euh, Pattern=plank met, Pattern=met de omgekeerd piramide, Pattern=dit zijn, Pattern=Oké
+	Constrained: Pattern=de, Pattern=omgekeerd piramide, Pattern=met, Pattern=piramide, Pattern=plank
+Turn ID=28| A | A : Euh even zoeken even zoeken
+	Free: Pattern=even zoeken, Pattern=Euh
+	Constrained: 
+Turn ID=29| B | B : en de twee poot dus ja
+	Free: Pattern=twee poot, Pattern=ja, Pattern=de, Pattern=en
+	Constrained: Pattern=twee
+Turn ID=30| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=32| A | A : dit zijn de tafel met de omgekeerd piramide
+	Free: Pattern=tafel met de omgekeerd piramide, Pattern=dit zijn de
+	Constrained: Pattern=de, Pattern=piramide, Pattern=omgekeerd piramide, Pattern=met, Pattern=tafel, Pattern=met de omgekeerd piramide, Pattern=dit zijn
+Turn ID=33| B | B : Mm
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 

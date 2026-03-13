@@ -1,0 +1,163 @@
+B|0| B: _ik_ hebben _een voorwerp_ waarbij je _aan de_ _een_ _kant_ _een soort_ _rond_ plateau hebben 
+B|1| B: _en_ _aan de ander kant_ _een soort_ _ja_ uitstulpsel met _een soort_ _splinter_ idee _spijker_ 
+A|2| A: [ja] 
+A|3| A: _nummer_ 
+A|4| A: _ik zien een soort_ 
+A|5| A: omgekeerde verkeerspion 
+A|6| A: bovenop [een] 
+A|7| A: _draaien hartje_ 
+A|8| A: [en] dan [aan de ander kant] zitten _een rond plateauotje_ 
+B|9| B: [een] [draaien hartje] [en] [een] 
+A|10| A: [ja] 
+A|11| A: als [ik] _het_ _zo_ goed kunnen _zien_ 
+B|12| B: Oh [ja] [ja] 
+A|13| A: [en] _het_ _zijn_ 
+B|14| B: [nummer] 
+B|15| B: [ik zien _een soort] spijker_ helemaal _aan de linkerkant_ 
+B|16| B: [een] heel langwerpig _soort spijker_ 
+B|17| B: [en] die steken _in een_ [ja] [soort] letter B lijken [het] op 
+B|18| B: [en] [aan de] rechterkant [zijn] _er_ nog [een] [plateauotje] 
+B|19| B: [een rond plateauotje] 
+A|20| A: [en] liggen dat [rond plateauotje] liggen dat 
+A|21| A: _zo_ ? _of_ liggen dat 
+B|22| B: Horizontaal [ja] [zo] 
+A|23| A: horizontaal Oké 
+A|24| A: Letter 
+A|25| A: [ik zien een] 
+A|26| A: [ja] 
+A|27| A: drie object [aan de] zijkant van [het] groot object 
+A|28| A: [en] 
+A|29| A: [aan de linkerkant] _worden_ [er] [een soort spijker] 
+A|30| A: _of_ [een] 
+A|31| A: [splinter] [in] [het] object _duwen_ 
+B|32| B: [nummer] 
+B|33| B: [ik zien een] [spijker] [of] [splinter] 
+B|34| B: die ergens [in] [worden] [duwen] 
+A|35| A: even zoeken even zoeken even zoeken 
+A|36| A: Letter 
+A|37| A: [ik zien een] [splinter] 
+A|38| A: [in [een] voorwerp] 
+B|39| B: [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik hebben een voorwerp waarbij je aan de een kant een soort rond plateau hebben
+	Free: Pattern=kant, Pattern=aan de, Pattern=een, Pattern=een voorwerp, Pattern=rond, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=1| B | B : en aan de ander kant een soort ja uitstulpsel met een soort splinter idee spijker
+	Free: Pattern=splinter, Pattern=ja, Pattern=aan de ander kant, Pattern=een soort, Pattern=en, Pattern=spijker
+	Constrained: Pattern=kant, Pattern=een, Pattern=soort, Pattern=aan de
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=4| A | A : ik zien een soort
+	Free: Pattern=ik zien een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=zien, Pattern=ik zien een, Pattern=ik, Pattern=een soort
+Turn ID=5| A | A : omgekeerde verkeerspion
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : bovenop een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=7| A | A : draaien hartje
+	Free: Pattern=draaien hartje
+	Constrained: 
+Turn ID=8| A | A : en dan aan de ander kant zitten een rond plateauotje
+	Free: Pattern=aan de ander kant, Pattern=een rond plateauotje, Pattern=en
+	Constrained: Pattern=kant, Pattern=plateauotje, Pattern=aan de, Pattern=een, Pattern=rond, Pattern=rond plateauotje
+Turn ID=9| B | B : een draaien hartje en een
+	Free: Pattern=draaien hartje, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : als ik het zo goed kunnen zien
+	Free: Pattern=zo, Pattern=het, Pattern=ik, Pattern=zien
+	Constrained: 
+Turn ID=12| B | B : Oh ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : en het zijn
+	Free: Pattern=zijn, Pattern=het, Pattern=en
+	Constrained: 
+Turn ID=14| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=15| B | B : ik zien een soort spijker helemaal aan de linkerkant
+	Free: Pattern=ik zien een soort, Pattern=een soort spijker, Pattern=aan de linkerkant
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=zien, Pattern=spijker, Pattern=ik, Pattern=een soort, Pattern=ik zien een, Pattern=soort spijker
+Turn ID=16| B | B : een heel langwerpig soort spijker
+	Free: Pattern=soort spijker, Pattern=een
+	Constrained: Pattern=spijker, Pattern=soort
+Turn ID=17| B | B : en die steken in een ja soort letter B lijken het op
+	Free: Pattern=soort, Pattern=ja, Pattern=en, Pattern=in een, Pattern=het
+	Constrained: Pattern=in, Pattern=een
+Turn ID=18| B | B : en aan de rechterkant zijn er nog een plateauotje
+	Free: Pattern=plateauotje, Pattern=aan de, Pattern=een, Pattern=er, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=19| B | B : een rond plateauotje
+	Free: Pattern=een rond plateauotje
+	Constrained: Pattern=rond plateauotje, Pattern=rond, Pattern=een, Pattern=plateauotje
+Turn ID=20| A | A : en liggen dat rond plateauotje liggen dat
+	Free: Pattern=rond plateauotje, Pattern=en
+	Constrained: Pattern=rond, Pattern=plateauotje
+Turn ID=21| A | A : zo ? of liggen dat
+	Free: Pattern=zo, Pattern=of
+	Constrained: 
+Turn ID=22| B | B : Horizontaal ja zo
+	Free: Pattern=ja, Pattern=zo
+	Constrained: 
+Turn ID=23| A | A : horizontaal Oké
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=ik, Pattern=een, Pattern=zien
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : drie object aan de zijkant van het groot object
+	Free: Pattern=aan de, Pattern=het
+	Constrained: 
+Turn ID=28| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=29| A | A : aan de linkerkant worden er een soort spijker
+	Free: Pattern=een soort spijker, Pattern=aan de linkerkant, Pattern=worden, Pattern=er
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=een soort, Pattern=soort spijker, Pattern=spijker
+Turn ID=30| A | A : of een
+	Free: Pattern=een, Pattern=of
+	Constrained: 
+Turn ID=31| A | A : splinter in het object duwen
+	Free: Pattern=in, Pattern=het, Pattern=splinter, Pattern=duwen
+	Constrained: 
+Turn ID=32| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=33| B | B : ik zien een spijker of splinter
+	Free: Pattern=ik zien een, Pattern=spijker, Pattern=of, Pattern=splinter
+	Constrained: Pattern=ik, Pattern=een, Pattern=zien
+Turn ID=34| B | B : die ergens in worden duwen
+	Free: Pattern=in, Pattern=worden, Pattern=duwen
+	Constrained: 
+Turn ID=35| A | A : even zoeken even zoeken even zoeken
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : ik zien een splinter
+	Free: Pattern=ik zien een, Pattern=splinter
+	Constrained: Pattern=ik, Pattern=een, Pattern=zien
+Turn ID=38| A | A : in een voorwerp
+	Free: Pattern=een voorwerp, Pattern=in een
+	Constrained: Pattern=in, Pattern=een
+Turn ID=39| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 

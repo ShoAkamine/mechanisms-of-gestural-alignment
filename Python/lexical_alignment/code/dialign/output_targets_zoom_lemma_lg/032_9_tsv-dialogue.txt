@@ -1,0 +1,91 @@
+B|0| B: Euh deze _hebben_ _een_ half cirkel _bovenop_ _en_ _nog_ _een soort_ _cilinder_ _die_ ook _een soort_ dun dinget _eruit_ steken 
+B|1| B: _en_ _dan_ links _nog_ _een_ balk _en aan de_ onderkant _een soort_ _ja_ _waar_ _die_ _op_ staat zeggen maar 
+A|2| A: [ja] _dat zijn_ 
+A|3| A: ik [hebben] nu euhm [die] [een] [waar] [bovenop] [een soort] van druppel [eruit] komen [en] [een soort] _cirkeltje_ 
+A|4| A: [en aan de] linkerkant [dan] euijhoorbeeld [ja] [nog] zo'n [soort] moer of [cilinder] ding 
+A|5| A: ik vinden _het_ eigenlijk [een] beetje [op] [een] _cocktail_ lijken 
+A|6| A: alsof er zo'n schijf citroen of zo [op] [de] zijkant hangen 
+B|7| B: Oh met [die] half cirkel 
+A|8| A: [ja] 
+B|9| B: ohja 
+B|10| B: [dat zijn] 
+B|11| B: Èuh dit [zijn] met [die] [cocktail] met [het] half [cirkeltje] 
+A|12| A: Euhhh 
+A|13| A: [waar] [zijn] [die] 
+A|14| A: O [ja] [dat zijn] 
+A|15| A: ik [hebben] nu _de cocktail_ 
+B|16| B: Oh [ja] euh [dat zijn] 
+B|17| B: Euh dit [zijn] met [de cocktail] met [de] half cirkel 
+A|18| A: mmm yes Euhm 
+A|19| A: [dat zijn] 
+A|20| A: ik [hebben] nu weer [de cocktail] 
+B|21| B: Euh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh deze hebben een half cirkel bovenop en nog een soort cilinder die ook een soort dun dinget eruit steken
+	Free: Pattern=bovenop, Pattern=nog, Pattern=een, Pattern=die, Pattern=een soort, Pattern=hebben, Pattern=eruit, Pattern=cilinder, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=1| B | B : en dan links nog een balk en aan de onderkant een soort ja waar die op staat zeggen maar
+	Free: Pattern=nog, Pattern=ja, Pattern=waar, Pattern=op, Pattern=dan, Pattern=een, Pattern=die, Pattern=een soort, Pattern=en, Pattern=en aan de
+	Constrained: Pattern=een, Pattern=de, Pattern=soort, Pattern=en
+Turn ID=2| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=3| A | A : ik hebben nu euhm die een waar bovenop een soort van druppel eruit komen en een soort cirkeltje
+	Free: Pattern=bovenop, Pattern=waar, Pattern=een, Pattern=cirkeltje, Pattern=die, Pattern=een soort, Pattern=en, Pattern=hebben, Pattern=eruit
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=4| A | A : en aan de linkerkant dan euijhoorbeeld ja nog zo'n soort moer of cilinder ding
+	Free: Pattern=ja, Pattern=dan, Pattern=cilinder, Pattern=en aan de, Pattern=nog, Pattern=soort
+	Constrained: Pattern=en, Pattern=de
+Turn ID=5| A | A : ik vinden het eigenlijk een beetje op een cocktail lijken
+	Free: Pattern=een, Pattern=het, Pattern=op, Pattern=cocktail
+	Constrained: 
+Turn ID=6| A | A : alsof er zo'n schijf citroen of zo op de zijkant hangen
+	Free: Pattern=de, Pattern=op
+	Constrained: 
+Turn ID=7| B | B : Oh met die half cirkel
+	Free: Pattern=die
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ohja
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=11| B | B : Èuh dit zijn met die cocktail met het half cirkeltje
+	Free: Pattern=cocktail, Pattern=het, Pattern=cirkeltje, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : Euhhh
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : waar zijn die
+	Free: Pattern=waar, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=14| A | A : O ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=15| A | A : ik hebben nu de cocktail
+	Free: Pattern=de cocktail, Pattern=hebben
+	Constrained: Pattern=de, Pattern=cocktail
+Turn ID=16| B | B : Oh ja euh dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=17| B | B : Euh dit zijn met de cocktail met de half cirkel
+	Free: Pattern=de cocktail, Pattern=de, Pattern=zijn
+	Constrained: Pattern=de, Pattern=cocktail
+Turn ID=18| A | A : mmm yes Euhm
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=20| A | A : ik hebben nu weer de cocktail
+	Free: Pattern=de cocktail, Pattern=hebben
+	Constrained: Pattern=de, Pattern=cocktail
+Turn ID=21| B | B : Euh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

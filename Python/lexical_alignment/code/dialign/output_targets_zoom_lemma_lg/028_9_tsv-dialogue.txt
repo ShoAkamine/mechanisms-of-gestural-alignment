@@ -1,0 +1,107 @@
+A|0| A: oeh _deze hebben _een_ soort_ van _ja_ handvat _aan de linkerkant_ _een_ rond handvat 
+A|1| A: _en_ _een plat cirkel_ _aan de_ achterkant 
+A|2| A: _en_ bovenop _nog een_ recht bovenop _een soort_ van _ja_ uitsteksel weer 
+B|3| B: [en] hij staan op [een soort] balkje-achtig 
+A|4| A: _ja_ 
+A|5| A: Klopt 
+B|6| B: [ja] oké dan _zijn het_ 
+B|7| B: [deze hebben een] _euh_ [soort] zeshoekig _euh_ staaf [aan de linkerkant] 
+B|8| B: [en] hij staan op [een] balk 
+B|9| B: [en] dan zien je [nog [een] plat cirkel] veel Euh linksachter 
+B|10| B: [en] dan [nog een] uitsteeksel rechtsboven 
+A|11| A: Yes _dat_ [zijn] 
+A|12| A: _dit zijn euh_ 
+A|13| A: Cylinder [aan de linkerkant] [plat cirkel] [aan de] achterkant 
+A|14| A: [en] [nog] [het] [soort] [ja] 
+B|15| B: [ja] [en] [euh] die staan op [dat] balk 
+A|16| A: Oh [ja] kloppen 
+B|17| B: [ja] 
+B|18| B: [dit zijn] die [euh] op [het] balk staan met die [plat cirkel] linksachter _en het_ staaf ook links 
+A|19| A: Yes 
+A|20| A: [dat] [zijn] [de] 
+A|21| A: [euh] [dit [zijn] het] [euh] _plat cirkeltje_ [aan de] achterkant [en het] cilindervormig handvat [aan de linkerkant] 
+B|22| B: [ja] op [het] balk 
+A|23| A: [ja] 
+B|24| B: [dit zijn euh] [deze] staat op [dat] balk met [het] [plat cirkeltje] linksachter 
+A|25| A: Yes [dat] [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oeh deze hebben een soort van ja handvat aan de linkerkant een rond handvat
+	Free: Pattern=ja, Pattern=deze hebben een, Pattern=een, Pattern=een soort, Pattern=aan de linkerkant
+	Constrained: Pattern=soort, Pattern=de, Pattern=aan de, Pattern=een, Pattern=deze
+Turn ID=1| A | A : en een plat cirkel aan de achterkant
+	Free: Pattern=een plat cirkel, Pattern=aan de, Pattern=en
+	Constrained: Pattern=een, Pattern=de, Pattern=plat cirkel
+Turn ID=2| A | A : en bovenop nog een recht bovenop een soort van ja uitsteksel weer
+	Free: Pattern=een soort, Pattern=nog een, Pattern=en, Pattern=ja
+	Constrained: Pattern=nog, Pattern=soort, Pattern=een
+Turn ID=3| B | B : en hij staan op een soort balkje-achtig
+	Free: Pattern=een soort, Pattern=en
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : Klopt
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : ja oké dan zijn het
+	Free: Pattern=zijn het, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=7| B | B : deze hebben een euh soort zeshoekig euh staaf aan de linkerkant
+	Free: Pattern=deze hebben een, Pattern=aan de linkerkant, Pattern=soort, Pattern=euh
+	Constrained: Pattern=de, Pattern=deze, Pattern=aan de, Pattern=een
+Turn ID=8| B | B : en hij staan op een balk
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=9| B | B : en dan zien je nog een plat cirkel veel Euh linksachter
+	Free: Pattern=een plat cirkel, Pattern=nog een, Pattern=en
+	Constrained: Pattern=nog, Pattern=een, Pattern=plat cirkel
+Turn ID=10| B | B : en dan nog een uitsteeksel rechtsboven
+	Free: Pattern=nog een, Pattern=en
+	Constrained: Pattern=nog, Pattern=een
+Turn ID=11| A | A : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : dit zijn euh
+	Free: Pattern=dit zijn euh
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=euh
+Turn ID=13| A | A : Cylinder aan de linkerkant plat cirkel aan de achterkant
+	Free: Pattern=aan de linkerkant, Pattern=aan de, Pattern=plat cirkel
+	Constrained: Pattern=de, Pattern=aan de
+Turn ID=14| A | A : en nog het soort ja
+	Free: Pattern=ja, Pattern=het, Pattern=en, Pattern=nog, Pattern=soort
+	Constrained: 
+Turn ID=15| B | B : ja en euh die staan op dat balk
+	Free: Pattern=dat, Pattern=en, Pattern=euh, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : Oh ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dit zijn die euh op het balk staan met die plat cirkel linksachter en het staaf ook links
+	Free: Pattern=en het, Pattern=euh, Pattern=dit zijn, Pattern=het, Pattern=plat cirkel
+	Constrained: Pattern=zijn, Pattern=en, Pattern=het
+Turn ID=19| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : dat zijn de
+	Free: Pattern=dat, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=21| A | A : euh dit zijn het euh plat cirkeltje aan de achterkant en het cilindervormig handvat aan de linkerkant
+	Free: Pattern=zijn het, Pattern=euh, Pattern=plat cirkeltje, Pattern=dit zijn, Pattern=aan de linkerkant, Pattern=aan de, Pattern=en het
+	Constrained: Pattern=de, Pattern=aan de, Pattern=het, Pattern=en, Pattern=zijn
+Turn ID=22| B | B : ja op het balk
+	Free: Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : dit zijn euh deze staat op dat balk met het plat cirkeltje linksachter
+	Free: Pattern=dat, Pattern=dit zijn euh, Pattern=het, Pattern=plat cirkeltje, Pattern=deze
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=euh
+Turn ID=25| A | A : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 

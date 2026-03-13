@@ -1,0 +1,111 @@
+A|0| A: ehm deze vinden _ik_ _een_ beetje op _een_ _een_ koffiemokje _met twee ding_ _erin_ zeggen maar 
+A|1| A: Eh er zitten er _in_ zitten _twee ding_ eén zo'n soort van 
+B|2| B: _ja_ _en de_ ander _zijn_ gewoon [een] rechthoek 
+A|3| A: [en] [een] stok 
+B|4| B: _ja_ 
+A|5| A: [en] [een] rond aan [de] zijkant [en] nog zo'n soort van gieter link 
+B|6| B: _ja_ 
+B|7| B: _ja_ _dat_ _zijn_ 
+B|8| B: _ik hebben_ _die_ nu [met _twee ding] in_ [de] bovenkant _en de_ één _zijn_ [een] _kegel_ _en de_ ander _zijn_ [een] paal 
+A|9| A: [zijn] [dat] _het koffiekopje_ 
+B|10| B: _ja_ [met] [dat] bolle 
+A|11| A: _met de_ bollet aan [de] zijkant [en] [een] dinge nog aan [de] 
+B|12| B: _ja_ 
+A|13| A: Oké 
+A|14| A: _ik hebben het koffiekopje met de_ bol aan [de] zijkant [en _de] kegel_ er [in] [en] _het_ staaf [en] dan links [dat] tuu 
+B|15| B: Wacht even want [dat] [zijn] 
+A|16| A: _met die_ bol aan [de] zijkant 
+A|17| A: [en] dan daar boven [een] soort van staaf [en] aan [de] zijkant zo'n [kegel] [met] zo 
+A|18| A: [en] dan zien je [dat] tuutje zo 
+B|19| B: _Oh_ _ja_ dus [hebben] hij [die] [kegel] [en] [dat] [die] [dat] blok 
+A|20| A: [ja] [twee ding in] _het_ mokje zeggen maar 
+B|21| B: [ja] 
+B|22| B: _Oh_ [ja] [dat] [zijn] 
+B|23| B: [ik hebben het koffiekopje met [de] kegel] [erin] [en] [die] balk [erin] 
+A|24| A: [Oh] 
+A|25| A: [ik hebben] [de] koffiekop [met de] [twee ding] [erin] 
+B|26| B: [ik hebben het] kop [met die] [kegel] [en] [die] balk [erin] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze vinden ik een beetje op een een koffiemokje met twee ding erin zeggen maar
+	Free: Pattern=met twee ding, Pattern=ik, Pattern=een, Pattern=erin
+	Constrained: Pattern=twee ding, Pattern=met
+Turn ID=1| A | A : Eh er zitten er in zitten twee ding eén zo'n soort van
+	Free: Pattern=twee ding, Pattern=in
+	Constrained: 
+Turn ID=2| B | B : ja en de ander zijn gewoon een rechthoek
+	Free: Pattern=en de, Pattern=zijn, Pattern=ja, Pattern=een
+	Constrained: Pattern=en, Pattern=de
+Turn ID=3| A | A : en een stok
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en een rond aan de zijkant en nog zo'n soort van gieter link
+	Free: Pattern=en, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=8| B | B : ik hebben die nu met twee ding in de bovenkant en de één zijn een kegel en de ander zijn een paal
+	Free: Pattern=de, Pattern=een, Pattern=en de, Pattern=twee ding in, Pattern=die, Pattern=zijn, Pattern=met twee ding, Pattern=ik hebben, Pattern=kegel
+	Constrained: Pattern=de, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=en, Pattern=twee ding, Pattern=in
+Turn ID=9| A | A : zijn dat het koffiekopje
+	Free: Pattern=het koffiekopje, Pattern=zijn, Pattern=dat
+	Constrained: Pattern=het
+Turn ID=10| B | B : ja met dat bolle
+	Free: Pattern=met, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=11| A | A : met de bollet aan de zijkant en een dinge nog aan de
+	Free: Pattern=met de, Pattern=en, Pattern=de, Pattern=een
+	Constrained: Pattern=met, Pattern=de
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : ik hebben het koffiekopje met de bol aan de zijkant en de kegel er in en het staaf en dan links dat tuu
+	Free: Pattern=dat, Pattern=de, Pattern=de kegel, Pattern=en de, Pattern=het, Pattern=ik hebben het koffiekopje met de, Pattern=in, Pattern=en
+	Constrained: Pattern=het koffiekopje, Pattern=ik hebben het, Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=en, Pattern=ik hebben, Pattern=kegel, Pattern=de, Pattern=met de
+Turn ID=15| B | B : Wacht even want dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=16| A | A : met die bol aan de zijkant
+	Free: Pattern=met die, Pattern=de
+	Constrained: Pattern=die, Pattern=met
+Turn ID=17| A | A : en dan daar boven een soort van staaf en aan de zijkant zo'n kegel met zo
+	Free: Pattern=kegel, Pattern=de, Pattern=een, Pattern=met, Pattern=en
+	Constrained: 
+Turn ID=18| A | A : en dan zien je dat tuutje zo
+	Free: Pattern=en, Pattern=dat
+	Constrained: 
+Turn ID=19| B | B : Oh ja dus hebben hij die kegel en dat die dat blok
+	Free: Pattern=kegel, Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=die, Pattern=en, Pattern=Oh
+	Constrained: 
+Turn ID=20| A | A : ja twee ding in het mokje zeggen maar
+	Free: Pattern=twee ding in, Pattern=ja, Pattern=het
+	Constrained: Pattern=twee ding, Pattern=in
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Oh ja dat zijn
+	Free: Pattern=zijn, Pattern=Oh, Pattern=ja, Pattern=dat
+	Constrained: 
+Turn ID=23| B | B : ik hebben het koffiekopje met de kegel erin en die balk erin
+	Free: Pattern=de kegel, Pattern=ik hebben het koffiekopje met de, Pattern=die, Pattern=en, Pattern=erin
+	Constrained: Pattern=het koffiekopje, Pattern=ik hebben het, Pattern=het, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=ik hebben, Pattern=kegel, Pattern=de, Pattern=met de
+Turn ID=24| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=25| A | A : ik hebben de koffiekop met de twee ding erin
+	Free: Pattern=ik hebben, Pattern=twee ding, Pattern=erin, Pattern=de, Pattern=met de
+	Constrained: Pattern=de, Pattern=met, Pattern=ik, Pattern=hebben
+Turn ID=26| B | B : ik hebben het kop met die kegel en die balk erin
+	Free: Pattern=kegel, Pattern=met die, Pattern=ik hebben het, Pattern=die, Pattern=en, Pattern=erin
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik

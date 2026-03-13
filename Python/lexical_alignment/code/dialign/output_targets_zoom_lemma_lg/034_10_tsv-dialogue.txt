@@ -1,0 +1,107 @@
+A|0| A: Euh nou _dan_ _hebben_ je weer _zo'n_ _soort_ schaal _euh_ _met_ _twee_ uitstulping 
+A|1| A: _waar_ op al _twee_ _de_ uitstulping _een_ rond zitten 
+A|2| A: dus _een_ kort _link_ _en_ _een_ lang _rechts_ 
+B|3| B: _ja_ [en] _er_ 
+A|4| A: _en dan_ steken [er] ook _nog een_ plank _soort_ van _links_ bovenin uit 
+B|5| B: _ja_ [met] [zo'n] _balk_ eronder 
+A|6| A: _ja _ja_ ja_ 
+B|7| B: Oké [dan] _zijn_ het 
+B|8| B: _euh deze hebben_ _aan_ beide kant iets 
+B|9| B: [rechts] groot [dan] [link] 
+B|10| B: [en] linksboven [een] [soort] plat vierkant [met] [nog een] dinget eronder 
+A|11| A: _dat zijn_ 
+A|12| A: [euh deze hebben] _twee_ [balk] [en] _links_ _zijn die_ kort [dan] [rechts] _met die_ [aan] _de_ achterkant _nog zo'n_ schuin tafel zeggen maar 
+A|13| A: _met die bolal erop_ 
+B|14| B: [dat zijn] 
+B|15| B: [met die bolal erop] 
+A|16| A: [ja] op op [die] [balk] 
+B|17| B: Oh [ja ja] 
+B|18| B: [euh] eze [hebben] [links] [en] [rechts] [twee] uitsteeksel [met] [de] [rechts] groot [dan] [links] [en dan] [nog zo'n] vierkant plateau erachter [met] [zo'n] dinget eronder 
+A|19| A: [dat zijn] 
+A|20| A: [euh deze hebben] [twee] [balk] één [link] [en] één [rechts] waarvan [de] [een] klein [zijn] 
+B|21| B: _euh waar_ [zijn die] 
+B|22| B: [dat zijn] 
+B|23| B: dit [zijn die] [met] [links] [en] [rechts] [en dan] [zijn] [rechts] groot [en dan] [nog zo'n] vierkant erachter 
+A|24| A: [euh waar] zitten [die] 
+A|25| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Euh nou dan hebben je weer zo'n soort schaal euh met twee uitstulping
+	Free: Pattern=soort, Pattern=dan, Pattern=hebben, Pattern=euh, Pattern=met, Pattern=zo'n, Pattern=twee
+	Constrained: 
+Turn ID=1| A | A : waar op al twee de uitstulping een rond zitten
+	Free: Pattern=de, Pattern=waar, Pattern=een, Pattern=twee
+	Constrained: 
+Turn ID=2| A | A : dus een kort link en een lang rechts
+	Free: Pattern=rechts, Pattern=link, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : ja en er
+	Free: Pattern=er, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=4| A | A : en dan steken er ook nog een plank soort van links bovenin uit
+	Free: Pattern=soort, Pattern=nog een, Pattern=en dan, Pattern=links, Pattern=er
+	Constrained: Pattern=dan, Pattern=een, Pattern=en
+Turn ID=5| B | B : ja met zo'n balk eronder
+	Free: Pattern=zo'n, Pattern=balk, Pattern=met, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=7| B | B : Oké dan zijn het
+	Free: Pattern=zijn, Pattern=dan
+	Constrained: 
+Turn ID=8| B | B : euh deze hebben aan beide kant iets
+	Free: Pattern=euh deze hebben, Pattern=aan
+	Constrained: Pattern=euh, Pattern=hebben
+Turn ID=9| B | B : rechts groot dan link
+	Free: Pattern=rechts, Pattern=dan, Pattern=link
+	Constrained: 
+Turn ID=10| B | B : en linksboven een soort plat vierkant met nog een dinget eronder
+	Free: Pattern=soort, Pattern=nog een, Pattern=een, Pattern=met, Pattern=en
+	Constrained: Pattern=een
+Turn ID=11| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : euh deze hebben twee balk en links zijn die kort dan rechts met die aan de achterkant nog zo'n schuin tafel zeggen maar
+	Free: Pattern=met die, Pattern=twee, Pattern=euh deze hebben, Pattern=dan, Pattern=links, Pattern=zijn die, Pattern=balk, Pattern=en, Pattern=nog zo'n, Pattern=de, Pattern=rechts, Pattern=aan
+	Constrained: Pattern=zo'n, Pattern=hebben, Pattern=euh, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=13| A | A : met die bolal erop
+	Free: Pattern=met die bolal erop
+	Constrained: Pattern=met, Pattern=die, Pattern=met die
+Turn ID=14| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : met die bolal erop
+	Free: Pattern=met die bolal erop
+	Constrained: Pattern=met, Pattern=die, Pattern=met die
+Turn ID=16| A | A : ja op op die balk
+	Free: Pattern=die, Pattern=balk, Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : Oh ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=18| B | B : euh eze hebben links en rechts twee uitsteeksel met de rechts groot dan links en dan nog zo'n vierkant plateau erachter met zo'n dinget eronder
+	Free: Pattern=en dan, Pattern=dan, Pattern=links, Pattern=hebben, Pattern=euh, Pattern=met, Pattern=en, Pattern=nog zo'n, Pattern=zo'n, Pattern=twee, Pattern=de, Pattern=rechts
+	Constrained: Pattern=zo'n, Pattern=dan, Pattern=en
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=20| A | A : euh deze hebben twee balk één link en één rechts waarvan de een klein zijn
+	Free: Pattern=twee, Pattern=euh deze hebben, Pattern=een, Pattern=balk, Pattern=link, Pattern=en, Pattern=zijn, Pattern=de, Pattern=rechts
+	Constrained: Pattern=euh, Pattern=hebben
+Turn ID=21| B | B : euh waar zijn die
+	Free: Pattern=zijn die, Pattern=euh waar
+	Constrained: Pattern=die, Pattern=euh, Pattern=zijn, Pattern=waar
+Turn ID=22| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=23| B | B : dit zijn die met links en rechts en dan zijn rechts groot en dan nog zo'n vierkant erachter
+	Free: Pattern=rechts, Pattern=en dan, Pattern=links, Pattern=zijn die, Pattern=met, Pattern=en, Pattern=zijn, Pattern=nog zo'n
+	Constrained: Pattern=zo'n, Pattern=dan, Pattern=die, Pattern=en, Pattern=zijn
+Turn ID=24| A | A : euh waar zitten die
+	Free: Pattern=euh waar, Pattern=die
+	Constrained: Pattern=euh, Pattern=waar
+Turn ID=25| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

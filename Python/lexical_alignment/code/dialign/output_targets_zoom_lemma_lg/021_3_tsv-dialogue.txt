@@ -1,0 +1,115 @@
+A|0| A: dit _lijken op een_ vaas 
+A|1| A: maar _dan_ geen normaal vaas maar _een_ vaas _op een_ stok 
+B|2| B: _Oké_ 
+B|3| B: nummer 
+B|4| B: _het_ [lijken] _ja_ _ik_ vinden _het_ [een] beetje [lijken op _een] trofee_ 
+B|5| B: _met_ onderaan [een] klein _plateauo_ 
+B|6| B: _en dan_ steken _het_ [een] beetje omhoog 
+B|7| B: _en dan_ 
+B|8| B: _ja_ zijn _dat_ bollig vormpje _met_ drie klein dinge bovenop _nog_ 
+A|9| A: [Oké] 
+A|10| A: Letter 
+A|11| A: dit [lijken] voor mij [op een] cocktailglas 
+A|12| A: [met] [een] rie daarin 
+A|13| A: [en] één 
+A|14| A: [een] vierkan [op] de zijkant 
+A|15| A: [dat] [lijken op een] stuk fruit of zo 
+A|16| A: [en dan] [nog] [een] vierkan daarin 
+A|17| A: [het] glas staan [op een] driehoekig [plateauo] 
+B|18| B: _ja_ 
+B|19| B: nummer 
+B|20| B: _ik zien een_ soort _trofee_ 
+B|21| B: [op een] plateauotje 
+A|22| A: Letter 
+A|23| A: [ik zien een] 
+A|24| A: [een] beker [een trofee] 
+B|25| B: nummer 
+B|26| B: [ik zien [een] trofee] 
+A|27| A: [ja] letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : dit lijken op een vaas
+	Free: Pattern=lijken op een
+	Constrained: Pattern=op een, Pattern=een, Pattern=op, Pattern=lijken
+Turn ID=1| A | A : maar dan geen normaal vaas maar een vaas op een stok
+	Free: Pattern=op een, Pattern=een, Pattern=dan
+	Constrained: Pattern=een, Pattern=op
+Turn ID=2| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : het lijken ja ik vinden het een beetje lijken op een trofee
+	Free: Pattern=ja, Pattern=lijken, Pattern=een, Pattern=het, Pattern=lijken op een, Pattern=ik, Pattern=een trofee
+	Constrained: Pattern=op, Pattern=lijken, Pattern=een, Pattern=op een, Pattern=trofee
+Turn ID=5| B | B : met onderaan een klein plateauo
+	Free: Pattern=met, Pattern=plateauo, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : en dan steken het een beetje omhoog
+	Free: Pattern=en dan, Pattern=het, Pattern=een
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=7| B | B : en dan
+	Free: Pattern=en dan
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=8| B | B : ja zijn dat bollig vormpje met drie klein dinge bovenop nog
+	Free: Pattern=met, Pattern=nog, Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : dit lijken voor mij op een cocktailglas
+	Free: Pattern=op een, Pattern=lijken
+	Constrained: Pattern=een, Pattern=op
+Turn ID=12| A | A : met een rie daarin
+	Free: Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=13| A | A : en één
+	Free: Pattern=en
+	Constrained: 
+Turn ID=14| A | A : een vierkan op de zijkant
+	Free: Pattern=een, Pattern=op
+	Constrained: 
+Turn ID=15| A | A : dat lijken op een stuk fruit of zo
+	Free: Pattern=lijken op een, Pattern=dat
+	Constrained: Pattern=op een, Pattern=een, Pattern=op, Pattern=lijken
+Turn ID=16| A | A : en dan nog een vierkan daarin
+	Free: Pattern=en dan, Pattern=een, Pattern=nog
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=17| A | A : het glas staan op een driehoekig plateauo
+	Free: Pattern=op een, Pattern=plateauo, Pattern=het
+	Constrained: Pattern=een, Pattern=op
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ik zien een soort trofee
+	Free: Pattern=ik zien een, Pattern=trofee
+	Constrained: Pattern=een, Pattern=ik
+Turn ID=21| B | B : op een plateauotje
+	Free: Pattern=op een
+	Constrained: Pattern=een, Pattern=op
+Turn ID=22| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : ik zien een
+	Free: Pattern=ik zien een
+	Constrained: Pattern=een, Pattern=ik
+Turn ID=24| A | A : een beker een trofee
+	Free: Pattern=een trofee, Pattern=een
+	Constrained: Pattern=trofee, Pattern=een
+Turn ID=25| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ik zien een trofee
+	Free: Pattern=ik zien een, Pattern=een trofee
+	Constrained: Pattern=trofee, Pattern=een, Pattern=ik
+Turn ID=27| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 

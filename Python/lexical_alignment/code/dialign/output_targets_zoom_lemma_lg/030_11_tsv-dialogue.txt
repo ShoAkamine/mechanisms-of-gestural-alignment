@@ -1,0 +1,91 @@
+B|0| B: _ja_ oké 
+B|1| B: _dan_ _hebben_ _ik_ _er_ weer één _euh_ 
+B|2| B: _ja_ wat _hebben_ _ik_ hier _ook_ alweer bij _zeggen_ 
+B|3| B: het zijn _in_ ieder geval _ook_ weer _een_ soort _beker en_ volgens mij _hebben_ _ik_ _zeggen_ _dat_ _er_ _een_ soort 
+B|4| B: _Euh_ 
+B|5| B: _ja_ _er zitten_ _ook een_ soort _neus_ op _en_ _aan de_ zijkant _een driehoekig_ oor _een driehoekig_ langwerpig oor 
+A|6| A: Oh _ja en_ [er zitten] _twee_ lepertjes [aan de] bovenkant kloppen [dat] 
+B|7| B: [ja en] _dan_ zijn één zegmaar _een_ beetje _een_ diamantvorm [en] [de] ander gewoon _een_ balk 
+A|8| A: Precies [dan] weten [ik] hem 
+A|9| A: [Euh] 
+A|10| A: Oh [euh] [ja] deze [hebben] [ook een] neusje 
+A|11| A: maar [er zitten] _twee_ [euh] 
+A|12| A: Lepels [zeggen] maar [in] _in de [beker_ en] [hebben] [een driehoekig] handva 
+B|13| B: [Euh] [dan] [hebben] [ik] [de beker] _met twee_ ding erin _en _een_ _bol_ neus_ _en een driehoekig_ oor 
+A|14| A: yes 
+A|15| A: [Euh] [ik] [hebben] [een bol] neusje [met twee] lepel _in de beker_ 
+A|16| A: [en een driehoekig] handvat 
+B|17| B: [ja] 
+B|18| B: [dan] [de] [twee] ding [in de beker] [de] _bol neus_ [en] [de] [driehoekig] oor 
+A|19| A: [Euh] even kijken 
+A|20| A: ah daar 
+A|21| A: [Euh] [bol neus] [twee] lepel 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| B | B : dan hebben ik er weer één euh
+	Free: Pattern=dan, Pattern=hebben, Pattern=euh, Pattern=er, Pattern=ik
+	Constrained: 
+Turn ID=2| B | B : ja wat hebben ik hier ook alweer bij zeggen
+	Free: Pattern=ja, Pattern=ook, Pattern=hebben, Pattern=zeggen, Pattern=ik
+	Constrained: 
+Turn ID=3| B | B : het zijn in ieder geval ook weer een soort beker en volgens mij hebben ik zeggen dat er een soort
+	Free: Pattern=dat, Pattern=beker en, Pattern=ook, Pattern=een, Pattern=hebben, Pattern=zeggen, Pattern=in, Pattern=er, Pattern=ik
+	Constrained: Pattern=en
+Turn ID=4| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=5| B | B : ja er zitten ook een soort neus op en aan de zijkant een driehoekig oor een driehoekig langwerpig oor
+	Free: Pattern=ook een, Pattern=ja, Pattern=aan de, Pattern=neus, Pattern=en, Pattern=een driehoekig, Pattern=er zitten
+	Constrained: Pattern=de, Pattern=ook, Pattern=een, Pattern=er, Pattern=driehoekig
+Turn ID=6| A | A : Oh ja en er zitten twee lepertjes aan de bovenkant kloppen dat
+	Free: Pattern=dat, Pattern=twee, Pattern=aan de, Pattern=er zitten, Pattern=ja en
+	Constrained: Pattern=de, Pattern=ja, Pattern=er, Pattern=en
+Turn ID=7| B | B : ja en dan zijn één zegmaar een beetje een diamantvorm en de ander gewoon een balk
+	Free: Pattern=de, Pattern=dan, Pattern=een, Pattern=en, Pattern=ja en
+	Constrained: Pattern=ja, Pattern=en
+Turn ID=8| A | A : Precies dan weten ik hem
+	Free: Pattern=ik, Pattern=dan
+	Constrained: 
+Turn ID=9| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=10| A | A : Oh euh ja deze hebben ook een neusje
+	Free: Pattern=ook een, Pattern=euh, Pattern=ja, Pattern=hebben
+	Constrained: Pattern=ook, Pattern=een
+Turn ID=11| A | A : maar er zitten twee euh
+	Free: Pattern=er zitten, Pattern=euh, Pattern=twee
+	Constrained: Pattern=er
+Turn ID=12| A | A : Lepels zeggen maar in in de beker en hebben een driehoekig handva
+	Free: Pattern=in de beker, Pattern=beker en, Pattern=hebben, Pattern=zeggen, Pattern=in, Pattern=een driehoekig
+	Constrained: Pattern=de beker, Pattern=de, Pattern=een, Pattern=in, Pattern=driehoekig, Pattern=en
+Turn ID=13| B | B : Euh dan hebben ik de beker met twee ding erin en een bol neus en een driehoekig oor
+	Free: Pattern=bol neus, Pattern=de beker, Pattern=dan, Pattern=Euh, Pattern=hebben, Pattern=met twee, Pattern=ik, Pattern=en een, Pattern=een bol, Pattern=en een driehoekig
+	Constrained: Pattern=twee, Pattern=de, Pattern=een, Pattern=neus, Pattern=een driehoekig, Pattern=driehoekig, Pattern=en, Pattern=en een
+Turn ID=14| A | A : yes
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : Euh ik hebben een bol neusje met twee lepel in de beker
+	Free: Pattern=in de beker, Pattern=Euh, Pattern=hebben, Pattern=met twee, Pattern=een bol, Pattern=ik
+	Constrained: Pattern=de beker, Pattern=twee, Pattern=de, Pattern=een, Pattern=in
+Turn ID=16| A | A : en een driehoekig handvat
+	Free: Pattern=en een driehoekig
+	Constrained: Pattern=een, Pattern=een driehoekig, Pattern=driehoekig, Pattern=en, Pattern=en een
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dan de twee ding in de beker de bol neus en de driehoekig oor
+	Free: Pattern=bol neus, Pattern=in de beker, Pattern=twee, Pattern=de, Pattern=dan, Pattern=driehoekig, Pattern=en
+	Constrained: Pattern=in, Pattern=neus, Pattern=de, Pattern=de beker
+Turn ID=19| A | A : Euh even kijken
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=20| A | A : ah daar
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : Euh bol neus twee lepel
+	Free: Pattern=bol neus, Pattern=twee, Pattern=Euh
+	Constrained: Pattern=neus

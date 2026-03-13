@@ -1,0 +1,247 @@
+B|0| B: _Oh_ 
+B|1| B: _Oh_ _oké_ 
+A|2| A: _ja_ nou _zijn_ hebben _ik_ geen vierkant veel 
+B|3| B: _Oké_ 
+B|4| B: ehm [ik] _vinden_ _het_ _een_ beetje zeggen _maar_ _twee_ soeplepel 
+B|5| B: eentje _erin en één aan de zijkant_ 
+B|6| B: _en_ _een_ soort opstapelen _kubus_ _aan de zijkant_ 
+B|7| B: _met_ _een_ slurf _aan de_ achterkant 
+A|8| A: Whoa wachten [twee] soep 
+A|9| A: [Oh] wachten 
+A|10| A: [Oké] nog [een] keer 
+A|11| A: [twee] soeplabel [erin] 
+B|12| B: [ja] 
+B|13| B: nee _één erin en één aan de zijkant_ 
+A|14| A: [ja] 
+A|15| A: [Oh] [één erin en één aan de zijkant] 
+A|16| A: dus hij hebben [aan de] bovenkant _dan_ [twee] _één floep_ _of_ zo 
+B|17| B: identiek 
+B|18| B: [ja] [één floep] 
+B|19| B: _en dan_ [aan de zijkant] [aan de] rechterkant _kubus_ zeggen _maar die_ _steeds groot worden_ 
+B|20| B: [een] soort wat [zijn] dat verrekijkerachtig ding 
+A|21| A: [Oh] [en] [die] hebben ook nog [aan] [die] ander kant 
+A|22| A: Zeggen [maar die] hebben [aan] elk kant iets zitten toch 
+B|23| B: [aan de] achterkant 
+B|24| B: [ja] 
+A|25| A: [een] uitstulpsel 
+A|26| A: [en dan] bovenin [één] 
+B|27| B: [ja] 
+A|28| A: [ja] [oké] 
+B|29| B: [ja] 
+A|30| A: [ja] [dan] [zijn] [het] 
+A|31| A: [en dan] moeten [ik] drukken denken [ik] 
+A|32| A: _dit zijn_ degeen [die] [ik] [het] moeilijk [vinden] 
+A|33| A: [met] [die] zo'n uitsteeksel [die] van klein naar [groot] [kubus] gaan 
+A|34| A: [en dan] nog bovenin 
+B|35| B: mhm 
+B|36| B: [één] [of] [twee] 
+A|37| A: [één] bovenin 
+B|38| B: ah [ja] 
+A|39| A: [en dan] nog [aan] al kant nog uitsteeksel 
+B|40| B: [ja] dat [zijn] 
+B|41| B: _eh_ _dit zijn die_ ingewikkeld [met] [één] [kubus] opstapelen ding [met] _twee lepel_ 
+A|42| A: [ja] 
+A|43| A: [ja] 
+B|44| B: [ja] 
+A|45| A: [eh] where it [zijn] 
+A|46| A: _ja ja_ 
+A|47| A: [ja] [dit zijn die] moeilijk [met] [de] [groot worden] [kubus] 
+A|48| A: [en] [die] [één] [lepel] Erbovenin 
+A|49| A: [en dan] [twee] [aan de zijkant] 
+B|50| B: Eh dat [zijn] 
+B|51| B: [eh] [dit zijn die] ingewikkeld [met] [één] [kubus] 
+B|52| B: [en] [twee] 
+A|53| A: Uh 
+A|54| A: [eh] [ja] [dit zijn die] moeilijk [met] [die] [kubus] [die] zo [steeds groot worden] 
+B|55| B: [eh] [één] [of] [twee] 
+B|56| B: [één] 
+A|57| A: [ja] je hebben zo [één] uitsteeksel [met] [die] zo [steeds groot worden] 
+A|58| A: [en dan] [een] [lepel] bovenin [en dan] [twee lepel] in [de zijkant] 
+B|59| B: ah [ja [ja] [ja] ja] 
+B|60| B: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| B | B : Oh oké
+	Free: Pattern=Oh, Pattern=oké
+	Constrained: 
+Turn ID=2| A | A : ja nou zijn hebben ik geen vierkant veel
+	Free: Pattern=zijn, Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| B | B : ehm ik vinden het een beetje zeggen maar twee soeplepel
+	Free: Pattern=twee, Pattern=vinden, Pattern=een, Pattern=het, Pattern=ik, Pattern=maar
+	Constrained: 
+Turn ID=5| B | B : eentje erin en één aan de zijkant
+	Free: Pattern=erin en één aan de zijkant
+	Constrained: Pattern=aan de, Pattern=aan de zijkant, Pattern=één, Pattern=de zijkant, Pattern=en, Pattern=erin, Pattern=de, Pattern=aan
+Turn ID=6| B | B : en een soort opstapelen kubus aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=en, Pattern=kubus, Pattern=een
+	Constrained: Pattern=aan, Pattern=de zijkant, Pattern=de, Pattern=aan de
+Turn ID=7| B | B : met een slurf aan de achterkant
+	Free: Pattern=aan de, Pattern=met, Pattern=een
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=8| A | A : Whoa wachten twee soep
+	Free: Pattern=twee
+	Constrained: 
+Turn ID=9| A | A : Oh wachten
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=10| A | A : Oké nog een keer
+	Free: Pattern=Oké, Pattern=een
+	Constrained: 
+Turn ID=11| A | A : twee soeplabel erin
+	Free: Pattern=twee, Pattern=erin
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : nee één erin en één aan de zijkant
+	Free: Pattern=één erin en één aan de zijkant
+	Constrained: Pattern=aan de, Pattern=aan de zijkant, Pattern=erin en één aan de zijkant, Pattern=één, Pattern=de zijkant, Pattern=en, Pattern=erin, Pattern=de, Pattern=aan
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : Oh één erin en één aan de zijkant
+	Free: Pattern=één erin en één aan de zijkant, Pattern=Oh
+	Constrained: Pattern=aan de, Pattern=aan de zijkant, Pattern=erin en één aan de zijkant, Pattern=één, Pattern=de zijkant, Pattern=en, Pattern=erin, Pattern=de, Pattern=aan
+Turn ID=16| A | A : dus hij hebben aan de bovenkant dan twee één floep of zo
+	Free: Pattern=of, Pattern=twee, Pattern=één floep, Pattern=aan de, Pattern=dan
+	Constrained: Pattern=de, Pattern=aan, Pattern=één
+Turn ID=17| B | B : identiek
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ja één floep
+	Free: Pattern=één floep, Pattern=ja
+	Constrained: Pattern=één
+Turn ID=19| B | B : en dan aan de zijkant aan de rechterkant kubus zeggen maar die steeds groot worden
+	Free: Pattern=maar die, Pattern=en dan, Pattern=aan de, Pattern=aan de zijkant, Pattern=steeds groot worden, Pattern=kubus
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=groot, Pattern=die, Pattern=de zijkant, Pattern=en, Pattern=groot worden, Pattern=maar, Pattern=de, Pattern=aan
+Turn ID=20| B | B : een soort wat zijn dat verrekijkerachtig ding
+	Free: Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=21| A | A : Oh en die hebben ook nog aan die ander kant
+	Free: Pattern=en, Pattern=Oh, Pattern=aan, Pattern=die
+	Constrained: 
+Turn ID=22| A | A : Zeggen maar die hebben aan elk kant iets zitten toch
+	Free: Pattern=maar die, Pattern=aan
+	Constrained: Pattern=maar, Pattern=die
+Turn ID=23| B | B : aan de achterkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : een uitstulpsel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=26| A | A : en dan bovenin één
+	Free: Pattern=en dan, Pattern=één
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| A | A : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : ja dan zijn het
+	Free: Pattern=dan, Pattern=het, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : en dan moeten ik drukken denken ik
+	Free: Pattern=en dan, Pattern=ik
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=32| A | A : dit zijn degeen die ik het moeilijk vinden
+	Free: Pattern=vinden, Pattern=het, Pattern=die, Pattern=ik, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=33| A | A : met die zo'n uitsteeksel die van klein naar groot kubus gaan
+	Free: Pattern=met, Pattern=groot, Pattern=kubus, Pattern=die
+	Constrained: 
+Turn ID=34| A | A : en dan nog bovenin
+	Free: Pattern=en dan
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=35| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : één of twee
+	Free: Pattern=twee, Pattern=of, Pattern=één
+	Constrained: 
+Turn ID=37| A | A : één bovenin
+	Free: Pattern=één
+	Constrained: 
+Turn ID=38| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : en dan nog aan al kant nog uitsteeksel
+	Free: Pattern=en dan, Pattern=aan
+	Constrained: Pattern=en, Pattern=dan
+Turn ID=40| B | B : ja dat zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : eh dit zijn die ingewikkeld met één kubus opstapelen ding met twee lepel
+	Free: Pattern=dit zijn die, Pattern=één, Pattern=eh, Pattern=kubus, Pattern=twee lepel, Pattern=met
+	Constrained: Pattern=lepel, Pattern=twee, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : eh where it zijn
+	Free: Pattern=eh, Pattern=zijn
+	Constrained: 
+Turn ID=46| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=47| A | A : ja dit zijn die moeilijk met de groot worden kubus
+	Free: Pattern=dit zijn die, Pattern=met, Pattern=groot worden, Pattern=kubus, Pattern=de, Pattern=ja
+	Constrained: Pattern=dit zijn, Pattern=groot, Pattern=zijn, Pattern=die
+Turn ID=48| A | A : en die één lepel Erbovenin
+	Free: Pattern=en, Pattern=lepel, Pattern=die, Pattern=één
+	Constrained: 
+Turn ID=49| A | A : en dan twee aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=en dan, Pattern=twee
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=de zijkant, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=50| B | B : Eh dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=51| B | B : eh dit zijn die ingewikkeld met één kubus
+	Free: Pattern=dit zijn die, Pattern=één, Pattern=met, Pattern=eh, Pattern=kubus
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=die
+Turn ID=52| B | B : en twee
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=53| A | A : Uh
+	Free: 
+	Constrained: 
+Turn ID=54| A | A : eh ja dit zijn die moeilijk met die kubus die zo steeds groot worden
+	Free: Pattern=dit zijn die, Pattern=ja, Pattern=steeds groot worden, Pattern=met, Pattern=die, Pattern=eh, Pattern=kubus
+	Constrained: Pattern=groot, Pattern=die, Pattern=groot worden, Pattern=zijn, Pattern=dit zijn
+Turn ID=55| B | B : eh één of twee
+	Free: Pattern=twee, Pattern=eh, Pattern=of, Pattern=één
+	Constrained: 
+Turn ID=56| B | B : één
+	Free: Pattern=één
+	Constrained: 
+Turn ID=57| A | A : ja je hebben zo één uitsteeksel met die zo steeds groot worden
+	Free: Pattern=ja, Pattern=met, Pattern=die, Pattern=steeds groot worden, Pattern=één
+	Constrained: Pattern=groot worden, Pattern=groot
+Turn ID=58| A | A : en dan een lepel bovenin en dan twee lepel in de zijkant
+	Free: Pattern=lepel, Pattern=en dan, Pattern=een, Pattern=twee lepel, Pattern=de zijkant
+	Constrained: Pattern=lepel, Pattern=twee, Pattern=de, Pattern=dan, Pattern=en
+Turn ID=59| B | B : ah ja ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=60| B | B : dat zijn
+	Free: Pattern=zijn
+	Constrained: 

@@ -1,0 +1,303 @@
+B|0| B: _ik_ denken eerst _de_ ander inderdaad 
+B|1| B: _maar_ _die _zijn_ het_ _dan_ niet 
+A|2| A: _ja_ _ja_ oké 
+B|3| B: _ik hebben_ _er_ nu _één_ met _een soort_ _kegel_ _bovenop_ 
+B|4| B: _en_ _ook een_ _kegel_ _naar_ _de zijkant_ 
+B|5| B: _en_ zo'n blok 
+B|6| B: Torentje _soort_ van 
+B|7| B: _ook_ nog _naar_ _de zijkant_ 
+B|8| B: zien je _die_ 
+A|9| A: _Oh_ 
+A|10| A: [zijn het] [een soort] antenne [die] [er] op staat 
+B|11| B: [ja] _het zijn_ echt zo'n [soort] 
+B|12| B: _zo_ 
+B|13| B: zo'n _kegel_ _zo_ 
+A|14| A: _Oh_ oké 
+B|15| B: zien je [die] 
+A|16| A: _Oh_ 
+A|17| A: [ja] [ja] [die zijn] lastig 
+A|18| A: [maar] [het] [kegel] [zijn het] makkelijk 
+A|19| A: [het zijn] [een soort] _cactus_ of [zo] 
+A|20| A: [en] _dat_ [kegel] wat [er] op staat steken [ook] uit _aan de zijkant_ [naar] 
+B|21| B: [ja] precies 
+A|22| A: _Oh ja_ [dan] [zijn het] _bij mij_ 
+B|23| B: [ja] 
+B|24| B: [die [zijn] het] 
+A|25| A: Oké 
+A|26| A: [ik hebben] _dat_ [ik] net [de] _cactus_ _noemen_ 
+A|27| A: [en] [dan] [hebben] [het] 
+B|28| B: [Oh ja] 
+A|29| A: [ja] volgens _mij_ [hebben] jij hem toen 
+B|30| B: [Oh] 
+B|31| B: [ja] 
+A|32| A: [ja] [en] [dan] 
+A|33| A: [ja] 
+B|34| B: met zo'n ding _bovenop_ zo'n ding 
+A|35| A: [ja] 
+A|36| A: zowel [bovenop] als _uitsteeksel_ 
+B|37| B: [ja] 
+B|38| B: [aan de zijkant] 
+B|39| B: [ja] 
+A|40| A: [ja] 
+B|41| B: _dat zijn_ 
+A|42| A: Oké 
+B|43| B: [Oh] [ik hebben] nu weer [die] [cactus] 
+A|44| A: Oké 
+A|45| A: _dat zijn bij mij_ 
+A|46| A: [ik hebben] [de] [cactus] 
+A|47| A: dus [dat] [er] [zo] [één] 
+B|48| B: [Oh ja] 
+A|49| A: Oké [ja] 
+B|50| B: even kijken 
+B|51| B: [en] [ook] zo'n [soort] [ja] [zo] twee [uitsteeksel] [zo] toch 
+B|52| B: [die] hetzelfde [zijn] 
+A|53| A: [ja] 
+A|54| A: [ja] 
+B|55| B: [ja] [dat zijn bij mij] 
+A|56| A: [en] dus 
+A|57| A: [ja] [er] zitten [ook [een] soort] slurf [aan de] achterkant 
+A|58| A: [en] [zo] [een soort] 
+B|59| B: [ja] 
+A|60| A: [ja] 
+B|61| B: zo'n blok 
+B|62| B: [ja] [dat zijn] 
+A|63| A: [ja] 
+B|64| B: [ik hebben] nu 
+B|65| B: hoe [noemen] je [die] [ook] alweer 
+B|66| B: [ik] weten niet 
+B|67| B: met [die] twee ding hier [en] hier 
+B|68| B: [Oh] [cactus] 
+A|69| A: [Oh ja] [cactus] 
+B|70| B: [ja] 
+A|71| A: [Oh ja] [zijn] [dat] [bij mij] 
+A|72| A: [ik hebben] [cactus] 
+B|73| B: [ja] 
+B|74| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ik denken eerst de ander inderdaad
+	Free: Pattern=ik, Pattern=de
+	Constrained: 
+Turn ID=1| B | B : maar die zijn het dan niet
+	Free: Pattern=die zijn, Pattern=zijn het, Pattern=dan, Pattern=maar
+	Constrained: Pattern=het, Pattern=die, Pattern=zijn
+Turn ID=2| A | A : ja ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : ik hebben er nu één met een soort kegel bovenop
+	Free: Pattern=bovenop, Pattern=één, Pattern=er, Pattern=een soort, Pattern=ik hebben, Pattern=kegel
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=soort
+Turn ID=4| B | B : en ook een kegel naar de zijkant
+	Free: Pattern=kegel, Pattern=ook een, Pattern=de zijkant, Pattern=en, Pattern=naar
+	Constrained: Pattern=ook, Pattern=de
+Turn ID=5| B | B : en zo'n blok
+	Free: Pattern=en
+	Constrained: 
+Turn ID=6| B | B : Torentje soort van
+	Free: Pattern=soort
+	Constrained: 
+Turn ID=7| B | B : ook nog naar de zijkant
+	Free: Pattern=de zijkant, Pattern=naar, Pattern=ook
+	Constrained: Pattern=de
+Turn ID=8| B | B : zien je die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=9| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=10| A | A : zijn het een soort antenne die er op staat
+	Free: Pattern=een soort, Pattern=zijn het, Pattern=die, Pattern=er
+	Constrained: Pattern=het, Pattern=zijn, Pattern=soort
+Turn ID=11| B | B : ja het zijn echt zo'n soort
+	Free: Pattern=het zijn, Pattern=ja, Pattern=soort
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=12| B | B : zo
+	Free: Pattern=zo
+	Constrained: 
+Turn ID=13| B | B : zo'n kegel zo
+	Free: Pattern=zo, Pattern=kegel
+	Constrained: 
+Turn ID=14| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=15| B | B : zien je die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=16| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=17| A | A : ja ja die zijn lastig
+	Free: Pattern=die zijn, Pattern=ja
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=18| A | A : maar het kegel zijn het makkelijk
+	Free: Pattern=zijn het, Pattern=het, Pattern=kegel, Pattern=maar
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=19| A | A : het zijn een soort cactus of zo
+	Free: Pattern=een soort, Pattern=het zijn, Pattern=cactus, Pattern=zo
+	Constrained: Pattern=het, Pattern=zijn, Pattern=soort
+Turn ID=20| A | A : en dat kegel wat er op staat steken ook uit aan de zijkant naar
+	Free: Pattern=kegel, Pattern=dat, Pattern=ook, Pattern=aan de zijkant, Pattern=er, Pattern=en, Pattern=naar
+	Constrained: Pattern=aan de, Pattern=de zijkant, Pattern=de
+Turn ID=21| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : Oh ja dan zijn het bij mij
+	Free: Pattern=bij mij, Pattern=Oh ja, Pattern=zijn het, Pattern=dan
+	Constrained: Pattern=ja, Pattern=het, Pattern=mij, Pattern=Oh, Pattern=zijn
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : die zijn het
+	Free: Pattern=die zijn, Pattern=zijn het
+	Constrained: Pattern=het, Pattern=die, Pattern=zijn
+Turn ID=25| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : ik hebben dat ik net de cactus noemen
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=de, Pattern=cactus, Pattern=ik, Pattern=noemen
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=27| A | A : en dan hebben het
+	Free: Pattern=dan, Pattern=het, Pattern=hebben, Pattern=en
+	Constrained: 
+Turn ID=28| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=29| A | A : ja volgens mij hebben jij hem toen
+	Free: Pattern=mij, Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : ja en dan
+	Free: Pattern=dan, Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=33| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : met zo'n ding bovenop zo'n ding
+	Free: Pattern=bovenop
+	Constrained: 
+Turn ID=35| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : zowel bovenop als uitsteeksel
+	Free: Pattern=uitsteeksel, Pattern=bovenop
+	Constrained: 
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : aan de zijkant
+	Free: Pattern=aan de zijkant
+	Constrained: Pattern=aan de, Pattern=de zijkant, Pattern=de
+Turn ID=39| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=42| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=43| B | B : Oh ik hebben nu weer die cactus
+	Free: Pattern=ik hebben, Pattern=cactus, Pattern=die, Pattern=Oh
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=44| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=45| A | A : dat zijn bij mij
+	Free: Pattern=dat zijn bij mij
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=46| A | A : ik hebben de cactus
+	Free: Pattern=ik hebben, Pattern=cactus, Pattern=de
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=47| A | A : dus dat er zo één
+	Free: Pattern=dat, Pattern=zo, Pattern=er, Pattern=één
+	Constrained: 
+Turn ID=48| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=49| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=50| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=51| B | B : en ook zo'n soort ja zo twee uitsteeksel zo toch
+	Free: Pattern=soort, Pattern=ja, Pattern=ook, Pattern=uitsteeksel, Pattern=zo, Pattern=en
+	Constrained: 
+Turn ID=52| B | B : die hetzelfde zijn
+	Free: Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=53| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=54| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=55| B | B : ja dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=ja
+	Constrained: Pattern=mij, Pattern=zijn, Pattern=bij mij, Pattern=dat, Pattern=dat zijn
+Turn ID=56| A | A : en dus
+	Free: Pattern=en
+	Constrained: 
+Turn ID=57| A | A : ja er zitten ook een soort slurf aan de achterkant
+	Free: Pattern=ook een, Pattern=ja, Pattern=aan de, Pattern=er, Pattern=een soort
+	Constrained: Pattern=ook, Pattern=soort, Pattern=de
+Turn ID=58| A | A : en zo een soort
+	Free: Pattern=een soort, Pattern=zo, Pattern=en
+	Constrained: Pattern=soort
+Turn ID=59| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=60| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=61| B | B : zo'n blok
+	Free: 
+	Constrained: 
+Turn ID=62| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=63| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=64| B | B : ik hebben nu
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=65| B | B : hoe noemen je die ook alweer
+	Free: Pattern=noemen, Pattern=ook, Pattern=die
+	Constrained: 
+Turn ID=66| B | B : ik weten niet
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=67| B | B : met die twee ding hier en hier
+	Free: Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=68| B | B : Oh cactus
+	Free: Pattern=cactus, Pattern=Oh
+	Constrained: 
+Turn ID=69| A | A : Oh ja cactus
+	Free: Pattern=Oh ja, Pattern=cactus
+	Constrained: Pattern=Oh, Pattern=ja
+Turn ID=70| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=71| A | A : Oh ja zijn dat bij mij
+	Free: Pattern=bij mij, Pattern=Oh ja, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=mij, Pattern=Oh, Pattern=ja
+Turn ID=72| A | A : ik hebben cactus
+	Free: Pattern=ik hebben, Pattern=cactus
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=73| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=74| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

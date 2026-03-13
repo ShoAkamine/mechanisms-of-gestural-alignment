@@ -1,0 +1,171 @@
+B|0| B: dit _zijn_ 
+B|1| B: vinden ik _een_ beetje _lijken_ op _een_ _kop_ _die_ _een soort_ hand hebben 
+B|2| B: _en_ houden _een soort_ dartpijl _of_ _een soort_ van wc-ontstopper vast 
+B|3| B: _en_ bovenop _zitten_ echt nog _een_ heel klein sprie 
+B|4| B: klein mini antenne _of_ zo 
+B|5| B: _en die_ wijzen naar _links_ 
+B|6| B: _en die_ wc-ontstopper wijzen naar _rechts_ 
+B|7| B: _het_ _zijn_ echt zo _alsof_ hij zoiets vasthouden _zeggen maar_ _ja_ 
+B|8| B: _het_ _zijn_ _een soort_ _het_ _zijn_ _een soort_ hand 
+B|9| B: _het_ _zijn_ _een soort_ ei _een_ bolle 
+B|10| B: _en_ daar gaan _dan_ weer _een_ staaf doorheen 
+B|11| B: _en_ daar _zitten_ _dan_ weer _een_ rond uiteinde aan 
+B|12| B: _het_ voelen _ja_ 
+A|13| A: [zijn] [het] twee _streep_ bovenaan [of] _één_ 
+B|14| B: [één] [streep] 
+B|15| B: _en die_ wijzen naar _links_ 
+A|16| A: ah [ja] [en] [en die] [die] ronde [zijn] [die] [rechts] [en] _doorboord_ 
+B|17| B: [ja] 
+A|18| A: Oké [en] [en] [het] [lijken] [alsof] er [een] _lepel_ in _de_ in in in [het] [kop] [zitten] [zeggen maar] 
+B|19| B: [ja] [ja] [ja] [ja] 
+A|20| A: Oké [ja] 
+A|21| A: object 
+A|22| A: [rechts] [een] bal [die] doorboren worden 
+A|23| A: [een soort] pingpongballe [lijken] [het] wel 
+A|24| A: [en] [dan] [links] [een] _lepel_ in [het] [kop] 
+B|25| B: _dat zijn_ nummer 
+B|26| B: [de] _link_ [een] klein [lepel] 
+B|27| B: Linksboven 
+B|28| B: [en] _rechts _de_ doorboord_ pingpongbal 
+A|29| A: [ja] 
+A|30| A: object 
+A|31| A: [de] doorboorde ping pongbal [rechts] 
+A|32| A: [en] [een] [lepel] [link] 
+B|33| B: nummer 
+B|34| B: [link] _het lepel_ 
+B|35| B: [en] _rechts _de_ doorboord_ pingpongbal 
+A|36| A: [ja] 
+A|37| A: [ja] [dat zijn] object 
+A|38| A: [de doorboord] bal 
+A|39| A: Links sorry [rechts de] doordeboord bal 
+A|40| A: [en] bovenaan [links] [het lepel] 
+B|41| B: [dat zijn] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : vinden ik een beetje lijken op een kop die een soort hand hebben
+	Free: Pattern=lijken, Pattern=een, Pattern=kop, Pattern=die, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=2| B | B : en houden een soort dartpijl of een soort van wc-ontstopper vast
+	Free: Pattern=een soort, Pattern=of, Pattern=en
+	Constrained: Pattern=een
+Turn ID=3| B | B : en bovenop zitten echt nog een heel klein sprie
+	Free: Pattern=een, Pattern=en, Pattern=zitten
+	Constrained: 
+Turn ID=4| B | B : klein mini antenne of zo
+	Free: Pattern=of
+	Constrained: 
+Turn ID=5| B | B : en die wijzen naar links
+	Free: Pattern=en die, Pattern=links
+	Constrained: Pattern=en, Pattern=die
+Turn ID=6| B | B : en die wc-ontstopper wijzen naar rechts
+	Free: Pattern=en die, Pattern=rechts
+	Constrained: Pattern=en, Pattern=die
+Turn ID=7| B | B : het zijn echt zo alsof hij zoiets vasthouden zeggen maar ja
+	Free: Pattern=ja, Pattern=zeggen maar, Pattern=het, Pattern=alsof, Pattern=zijn
+	Constrained: 
+Turn ID=8| B | B : het zijn een soort het zijn een soort hand
+	Free: Pattern=een soort, Pattern=zijn, Pattern=het
+	Constrained: Pattern=een
+Turn ID=9| B | B : het zijn een soort ei een bolle
+	Free: Pattern=een soort, Pattern=zijn, Pattern=een, Pattern=het
+	Constrained: Pattern=een
+Turn ID=10| B | B : en daar gaan dan weer een staaf doorheen
+	Free: Pattern=een, Pattern=en, Pattern=dan
+	Constrained: 
+Turn ID=11| B | B : en daar zitten dan weer een rond uiteinde aan
+	Free: Pattern=een, Pattern=en, Pattern=dan, Pattern=zitten
+	Constrained: 
+Turn ID=12| B | B : het voelen ja
+	Free: Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=13| A | A : zijn het twee streep bovenaan of één
+	Free: Pattern=of, Pattern=het, Pattern=één, Pattern=zijn, Pattern=streep
+	Constrained: 
+Turn ID=14| B | B : één streep
+	Free: Pattern=streep, Pattern=één
+	Constrained: 
+Turn ID=15| B | B : en die wijzen naar links
+	Free: Pattern=en die, Pattern=links
+	Constrained: Pattern=en, Pattern=die
+Turn ID=16| A | A : ah ja en en die die ronde zijn die rechts en doorboord
+	Free: Pattern=en die, Pattern=doorboord, Pattern=die, Pattern=en, Pattern=zijn, Pattern=rechts, Pattern=ja
+	Constrained: Pattern=en, Pattern=die
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : Oké en en het lijken alsof er een lepel in de in in in het kop zitten zeggen maar
+	Free: Pattern=lepel, Pattern=de, Pattern=lijken, Pattern=een, Pattern=zeggen maar, Pattern=het, Pattern=kop, Pattern=zitten, Pattern=alsof, Pattern=en
+	Constrained: 
+Turn ID=19| B | B : ja ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Oké ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : object
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : rechts een bal die doorboren worden
+	Free: Pattern=een, Pattern=rechts, Pattern=die
+	Constrained: 
+Turn ID=23| A | A : een soort pingpongballe lijken het wel
+	Free: Pattern=een soort, Pattern=het, Pattern=lijken
+	Constrained: Pattern=een
+Turn ID=24| A | A : en dan links een lepel in het kop
+	Free: Pattern=lepel, Pattern=dan, Pattern=een, Pattern=links, Pattern=het, Pattern=kop, Pattern=en
+	Constrained: 
+Turn ID=25| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=26| B | B : de link een klein lepel
+	Free: Pattern=een, Pattern=link, Pattern=de, Pattern=lepel
+	Constrained: 
+Turn ID=27| B | B : Linksboven
+	Free: 
+	Constrained: 
+Turn ID=28| B | B : en rechts de doorboord pingpongbal
+	Free: Pattern=rechts de, Pattern=de doorboord, Pattern=en
+	Constrained: Pattern=doorboord, Pattern=rechts, Pattern=de
+Turn ID=29| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : object
+	Free: 
+	Constrained: 
+Turn ID=31| A | A : de doorboorde ping pongbal rechts
+	Free: Pattern=rechts, Pattern=de
+	Constrained: 
+Turn ID=32| A | A : en een lepel link
+	Free: Pattern=een, Pattern=link, Pattern=en, Pattern=lepel
+	Constrained: 
+Turn ID=33| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : link het lepel
+	Free: Pattern=het lepel, Pattern=link
+	Constrained: Pattern=het, Pattern=lepel
+Turn ID=35| B | B : en rechts de doorboord pingpongbal
+	Free: Pattern=rechts de, Pattern=de doorboord, Pattern=en
+	Constrained: Pattern=doorboord, Pattern=rechts, Pattern=de
+Turn ID=36| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| A | A : ja dat zijn object
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=38| A | A : de doorboord bal
+	Free: Pattern=de doorboord
+	Constrained: Pattern=doorboord, Pattern=de
+Turn ID=39| A | A : Links sorry rechts de doordeboord bal
+	Free: Pattern=rechts de
+	Constrained: Pattern=rechts, Pattern=de
+Turn ID=40| A | A : en bovenaan links het lepel
+	Free: Pattern=het lepel, Pattern=en, Pattern=links
+	Constrained: Pattern=het, Pattern=lepel
+Turn ID=41| B | B : dat zijn nummer
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

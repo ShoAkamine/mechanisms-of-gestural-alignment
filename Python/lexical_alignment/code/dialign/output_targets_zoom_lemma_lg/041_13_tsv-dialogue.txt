@@ -1,0 +1,71 @@
+B|0| B: oké _deze staan op_ een groot _vierkant_ plateau 
+A|1| A: O _ja_ _dat zijn_ er maar één 
+B|2| B: _en_ 
+A|3| A: Plaatje 
+B|4| B: [ja] die [zijn] lekker makkelijk 
+A|5| A: [ja] _deze staan op dat_ [vierkant] plat onderstuk 
+B|6| B: Oh die _we al hebben_ _hebben_ 
+A|7| A: [en] 
+A|8| A: [ja] [deze] [hebben] [we al hebben] 
+B|9| B: [ja] nummer 
+B|10| B: _Eh deze staan op dat_ groot [vierkant] 
+A|11| A: kijken _dat zijn_ 
+A|12| A: [deze staan op] het plat [vierkant] 
+B|13| B: _Eh deze staan op dat_ groot [vierkant] 
+A|14| A: [Eh] _dat zijn_ 
+A|15| A: [Eh deze staan op dat] [vierkant] 
+B|16| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : oké deze staan op een groot vierkant plateau
+	Free: Pattern=deze staan op, Pattern=vierkant
+	Constrained: Pattern=deze
+Turn ID=1| A | A : O ja dat zijn er maar één
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=2| B | B : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=3| A | A : Plaatje
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : ja die zijn lekker makkelijk
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : ja deze staan op dat vierkant plat onderstuk
+	Free: Pattern=deze staan op dat, Pattern=vierkant, Pattern=ja
+	Constrained: Pattern=deze, Pattern=deze staan op
+Turn ID=6| B | B : Oh die we al hebben hebben
+	Free: Pattern=we al hebben, Pattern=hebben
+	Constrained: Pattern=hebben
+Turn ID=7| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=8| A | A : ja deze hebben we al hebben
+	Free: Pattern=we al hebben, Pattern=hebben, Pattern=deze, Pattern=ja
+	Constrained: Pattern=hebben
+Turn ID=9| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Eh deze staan op dat groot vierkant
+	Free: Pattern=Eh deze staan op dat, Pattern=vierkant
+	Constrained: Pattern=Eh, Pattern=deze, Pattern=deze staan op, Pattern=deze staan op dat
+Turn ID=11| A | A : kijken dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : deze staan op het plat vierkant
+	Free: Pattern=deze staan op, Pattern=vierkant
+	Constrained: Pattern=deze
+Turn ID=13| B | B : Eh deze staan op dat groot vierkant
+	Free: Pattern=Eh deze staan op dat, Pattern=vierkant
+	Constrained: Pattern=Eh, Pattern=deze, Pattern=deze staan op, Pattern=deze staan op dat
+Turn ID=14| A | A : Eh dat zijn
+	Free: Pattern=dat zijn, Pattern=Eh
+	Constrained: Pattern=zijn
+Turn ID=15| A | A : Eh deze staan op dat vierkant
+	Free: Pattern=Eh deze staan op dat, Pattern=vierkant
+	Constrained: Pattern=Eh, Pattern=deze, Pattern=deze staan op, Pattern=deze staan op dat
+Turn ID=16| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

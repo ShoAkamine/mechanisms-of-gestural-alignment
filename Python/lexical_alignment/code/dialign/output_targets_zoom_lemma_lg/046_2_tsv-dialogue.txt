@@ -1,0 +1,79 @@
+B|0| B: eh ik hebben nu één _met_ een _feesthoed_ 
+B|1| B: _met_ een soort Eendenbek 
+B|2| B: eh _met_ aan de linkerkant nog een soort dan sprie 
+A|3| A: _ja_ _ja_ [met] al _die_ gek vorm 
+B|4| B: wat _zijn_ het 
+B|5| B: [ja] 
+A|6| A: [ja] oké _dat zijn_ 
+A|7| A: ehm _dit zijn met_ _dat_ [feesthoed] op 
+A|8| A: _die_ wel helemaal _af zijn_ 
+B|9| B: Oh [ja] [dat zijn] 
+B|10| B: [dat [zijn] met] [die] [feesthoed] 
+B|11| B: [die] [af zijn] 
+A|12| A: mhm 
+A|13| A: _dit zijn met_ [feesthoed] 
+B|14| B: [ja] [dat zijn] 
+B|15| B: eh [dit zijn met] [die] feestmuts 
+A|16| A: mhm [dat zijn] 
+A|17| A: Eh [feesthoed] 
+B|18| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh ik hebben nu één met een feesthoed
+	Free: Pattern=met, Pattern=feesthoed
+	Constrained: 
+Turn ID=1| B | B : met een soort Eendenbek
+	Free: Pattern=met
+	Constrained: 
+Turn ID=2| B | B : eh met aan de linkerkant nog een soort dan sprie
+	Free: Pattern=met
+	Constrained: 
+Turn ID=3| A | A : ja ja met al die gek vorm
+	Free: Pattern=die, Pattern=met, Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : wat zijn het
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| A | A : ehm dit zijn met dat feesthoed op
+	Free: Pattern=dit zijn met, Pattern=dat, Pattern=feesthoed
+	Constrained: Pattern=zijn met, Pattern=zijn, Pattern=met
+Turn ID=8| A | A : die wel helemaal af zijn
+	Free: Pattern=af zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=9| B | B : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| B | B : dat zijn met die feesthoed
+	Free: Pattern=zijn met, Pattern=dat zijn, Pattern=die, Pattern=feesthoed
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=met
+Turn ID=11| B | B : die af zijn
+	Free: Pattern=af zijn, Pattern=die
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : dit zijn met feesthoed
+	Free: Pattern=dit zijn met, Pattern=feesthoed
+	Constrained: Pattern=zijn met, Pattern=zijn, Pattern=met
+Turn ID=14| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=15| B | B : eh dit zijn met die feestmuts
+	Free: Pattern=dit zijn met, Pattern=die
+	Constrained: Pattern=zijn met, Pattern=zijn, Pattern=met
+Turn ID=16| A | A : mhm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : Eh feesthoed
+	Free: Pattern=feesthoed
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

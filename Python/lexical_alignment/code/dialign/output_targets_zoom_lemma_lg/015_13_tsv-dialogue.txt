@@ -1,0 +1,91 @@
+B|0| B: _ja_ _dit zijn_ er één 
+B|1| B: die _zijn_ ook wel gek 
+B|2| B: dat _zijn_ in ieder geval _een_ _plat_ onderstuk 
+B|3| B: groot komen erop 
+B|4| B: en dan _met_ _een_ soort van _ja_ clowns 
+A|5| A: [ja] 
+B|6| B: [ja] 
+A|7| A: _Pippi Langkous_ 
+B|8| B: precies [ja] 
+A|9| A: deze staan op [een] vlak op _de_ tafel [met] _de_ pippi _Langkous_ uitsteeksel 
+B|10| B: Hm-hm 
+B|11| B: Hm-hm 
+B|12| B: [ja] 
+B|13| B: _dit zijn_ _de Pippi Langkous_ mok 
+A|14| A: [ja] 
+A|15| A: [dit zijn] het [plat] vlak 
+A|16| A: [met] [de Pippi Langkous] staart 
+B|17| B: [ja] 
+B|18| B: [Pippi Langkous] 
+A|19| A: [ja] 
+A|20| A: [Pippi Langkous] 
+B|21| B: Hm-hm 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ja dit zijn er één
+	Free: Pattern=dit zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=1| B | B : die zijn ook wel gek
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=2| B | B : dat zijn in ieder geval een plat onderstuk
+	Free: Pattern=zijn, Pattern=plat, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : groot komen erop
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : en dan met een soort van ja clowns
+	Free: Pattern=ja, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : Pippi Langkous
+	Free: Pattern=Pippi Langkous
+	Constrained: Pattern=Langkous
+Turn ID=8| B | B : precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : deze staan op een vlak op de tafel met de pippi Langkous uitsteeksel
+	Free: Pattern=Langkous, Pattern=de, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=10| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=11| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : dit zijn de Pippi Langkous mok
+	Free: Pattern=de Pippi Langkous, Pattern=dit zijn
+	Constrained: Pattern=Pippi Langkous, Pattern=Langkous, Pattern=zijn, Pattern=de
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : dit zijn het plat vlak
+	Free: Pattern=dit zijn, Pattern=plat
+	Constrained: Pattern=zijn
+Turn ID=16| A | A : met de Pippi Langkous staart
+	Free: Pattern=de Pippi Langkous, Pattern=met
+	Constrained: Pattern=Pippi Langkous, Pattern=Langkous, Pattern=de
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : Pippi Langkous
+	Free: Pattern=Pippi Langkous
+	Constrained: Pattern=Langkous
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Pippi Langkous
+	Free: Pattern=Pippi Langkous
+	Constrained: Pattern=Langkous
+Turn ID=21| B | B : Hm-hm
+	Free: 
+	Constrained: 

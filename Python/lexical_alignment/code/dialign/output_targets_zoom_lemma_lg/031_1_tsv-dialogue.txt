@@ -1,0 +1,147 @@
+B|0| B: _Oké_ _ik_ zien _het_ vierkan 
+A|1| A: [Oké] vertellen 
+B|2| B: ehm _ik_ zien _zeggen maar_ uitpuilen _oog aan de_ linkerkant 
+B|3| B: Zeggen _maar_ _Euh_ snap je wat _ik_ bedoelen 
+B|4| B: dus _die_ _oog_ worden steeds groot 
+A|5| A: _Oh_ _ja_ hebben hij zo'n _plat vierkant_ [zeggen maar] voorop 
+B|6| B: nee _aan de_ rechterkant wel _een_ [plat vierkant] 
+A|7| A: _en_ hebben hij [een] soort _spijker op_ _zijn_ _hoofd_ of zo 
+B|8| B: [en] [ja] [ja] [ja] 
+A|9| A: [Oké] dan weten [ik] [het] 
+B|10| B: [Oké] 
+A|11| A: [Oké] 
+B|12| B: [Oké] top 
+A|13| A: _Oké dit zijn_ degeen _met_ [die] _twee_ _uitpeilen [oog_ aan de] zijkant 
+A|14| A: [en] [een] soort [plat _vierkant] aan de_ voorkant 
+A|15| A: _en die_ soort _spijker op_ _zijn_ _hoofd_ 
+B|16| B: _Euh_ _euh_ even 
+B|17| B: _Euh_ [zijn] [het] [de] [uitpeilen oog] 
+A|18| A: [ja] 
+A|19| A: [ja] 
+B|20| B: [Oh] 
+B|21| B: [Oké dit zijn] _euh_ _euh_ [ja] _met de_ uitpuilen [oog] [en] _euh_ [de] [vierkant aan de] rechterkant _en die [spijker_ op] [het] [hoofd] 
+A|22| A: _Euh ja_ 
+A|23| A: [ja] 
+A|24| A: [Euh] 
+A|25| A: [euh] [dit zijn] [met _de] twee_ uitpijnen [oog] dat [vierkant] [op] [zijn] _hoofd [en_ die spijker] erop 
+B|26| B: [Euh ja] 
+B|27| B: ehm _dit zijn de twee_ uitpuilen _oog met spijker op_ [het] [hoofd en] 
+A|28| A: [ja] 
+B|29| B: [Oké] 
+A|30| A: [Euh] 
+A|31| A: [dit zijn de twee] [uitpeilen [oog] met spijker op] [zijn] [hoofd] 
+B|32| B: mhm 
+A|33| A: [en] dat vlak [euh] 
+B|34| B: [Euh] 
+B|35| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké ik zien het vierkan
+	Free: Pattern=Oké, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : Oké vertellen
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| B | B : ehm ik zien zeggen maar uitpuilen oog aan de linkerkant
+	Free: Pattern=oog aan de, Pattern=zeggen maar, Pattern=ik
+	Constrained: Pattern=aan de, Pattern=maar, Pattern=de, Pattern=oog
+Turn ID=3| B | B : Zeggen maar Euh snap je wat ik bedoelen
+	Free: Pattern=maar, Pattern=ik, Pattern=Euh
+	Constrained: 
+Turn ID=4| B | B : dus die oog worden steeds groot
+	Free: Pattern=die, Pattern=oog
+	Constrained: 
+Turn ID=5| A | A : Oh ja hebben hij zo'n plat vierkant zeggen maar voorop
+	Free: Pattern=plat vierkant, Pattern=zeggen maar, Pattern=Oh, Pattern=ja
+	Constrained: Pattern=maar, Pattern=vierkant
+Turn ID=6| B | B : nee aan de rechterkant wel een plat vierkant
+	Free: Pattern=aan de, Pattern=plat vierkant, Pattern=een
+	Constrained: Pattern=de, Pattern=vierkant
+Turn ID=7| A | A : en hebben hij een soort spijker op zijn hoofd of zo
+	Free: Pattern=een, Pattern=spijker op, Pattern=en, Pattern=zijn, Pattern=hoofd
+	Constrained: Pattern=op
+Turn ID=8| B | B : en ja ja ja
+	Free: Pattern=en, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : Oké dan weten ik het
+	Free: Pattern=Oké, Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=10| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| A | A : Oké dit zijn degeen met die twee uitpeilen oog aan de zijkant
+	Free: Pattern=Oké dit zijn, Pattern=twee, Pattern=uitpeilen oog, Pattern=met, Pattern=die, Pattern=oog aan de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=oog, Pattern=zijn, Pattern=dit zijn, Pattern=Oké
+Turn ID=14| A | A : en een soort plat vierkant aan de voorkant
+	Free: Pattern=vierkant aan de, Pattern=plat vierkant, Pattern=en, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de, Pattern=vierkant
+Turn ID=15| A | A : en die soort spijker op zijn hoofd
+	Free: Pattern=spijker op, Pattern=en die, Pattern=zijn, Pattern=hoofd
+	Constrained: Pattern=op, Pattern=die, Pattern=en
+Turn ID=16| B | B : Euh euh even
+	Free: Pattern=Euh, Pattern=euh
+	Constrained: 
+Turn ID=17| B | B : Euh zijn het de uitpeilen oog
+	Free: Pattern=de, Pattern=uitpeilen oog, Pattern=Euh, Pattern=het, Pattern=zijn
+	Constrained: Pattern=oog
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=21| B | B : Oké dit zijn euh euh ja met de uitpuilen oog en euh de vierkant aan de rechterkant en die spijker op het hoofd
+	Free: Pattern=Oké dit zijn, Pattern=het, Pattern=euh, Pattern=spijker op, Pattern=oog, Pattern=en, Pattern=hoofd, Pattern=de, Pattern=met de, Pattern=ja, Pattern=vierkant aan de, Pattern=en die spijker
+	Constrained: Pattern=en die, Pattern=de, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=vierkant, Pattern=op, Pattern=aan de, Pattern=dit zijn, Pattern=Oké
+Turn ID=22| A | A : Euh ja
+	Free: Pattern=Euh ja
+	Constrained: Pattern=Euh, Pattern=ja
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=25| A | A : euh dit zijn met de twee uitpijnen oog dat vierkant op zijn hoofd en die spijker erop
+	Free: Pattern=met de, Pattern=euh, Pattern=oog, Pattern=hoofd en, Pattern=zijn, Pattern=vierkant, Pattern=dit zijn, Pattern=en die spijker, Pattern=de twee, Pattern=op
+	Constrained: Pattern=en die, Pattern=twee, Pattern=de, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=hoofd
+Turn ID=26| B | B : Euh ja
+	Free: Pattern=Euh ja
+	Constrained: Pattern=Euh, Pattern=ja
+Turn ID=27| B | B : ehm dit zijn de twee uitpuilen oog met spijker op het hoofd en
+	Free: Pattern=oog met spijker op, Pattern=dit zijn de twee, Pattern=hoofd en, Pattern=het
+	Constrained: Pattern=twee, Pattern=de, Pattern=met, Pattern=spijker op, Pattern=oog, Pattern=en, Pattern=zijn, Pattern=hoofd, Pattern=dit zijn, Pattern=de twee, Pattern=op
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=30| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=31| A | A : dit zijn de twee uitpeilen oog met spijker op zijn hoofd
+	Free: Pattern=uitpeilen oog, Pattern=dit zijn de twee, Pattern=oog met spijker op, Pattern=zijn, Pattern=hoofd
+	Constrained: Pattern=twee, Pattern=de, Pattern=met, Pattern=spijker op, Pattern=oog, Pattern=zijn, Pattern=dit zijn, Pattern=de twee, Pattern=op
+Turn ID=32| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : en dat vlak euh
+	Free: Pattern=en, Pattern=euh
+	Constrained: 
+Turn ID=34| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=35| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

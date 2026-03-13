@@ -1,0 +1,111 @@
+B|0| B: Oké _Euh ik hebben_ _er_ één _dat zijn_ _euh_ natuurlijk weer diezelfde basisvorm 
+B|1| B: hij _hebben_ _een soort_ 
+B|2| B: _ik_ zien _het_ alsof _er_ _een soort_ _citroenschijfje_ op _een_ glas _zitten_ zeggen maar 
+B|3| B: zo _aan de_ bovenkant 
+B|4| B: _en_ _dat_ steken _dan_ _nog_ iets uit 
+B|5| B: _dat_ kunnen je zien als _een_ lepel of zo 
+B|6| B: _en_ _aan de_ zijkant _zitten_ _ook_ _een soort_ staaf 
+B|7| B: _soort_ _euh_ handvatachtig 
+B|8| B: _en_ _dan_ _aan_ _aan de onderkant_ _zitten_ _ook_ _een_ _ovaal_ vorm zeggen maar 
+A|9| A: _ja_ oké [ik] denken [dat] [ik] hem [dan] al [hebben] 
+A|10| A: [Euh] [het] [zijn] letter 
+A|11| A: [Euh] [dan] [hebben] [ik] [er] hier [nog] [een] 
+A|12| A: [Euh] [dat zijn] [ook] hoe jij hem omschrijven 
+A|13| A: [er] [zitten] naar [de] linkerkant [een soort] rond uitsteeksel [euh] _met dat citroenschijfje_ erop 
+A|14| A: [en] [een] lang [ovaal] [aan de onderkant] 
+B|15| B: Oh [ja] 
+A|16| A: die [hebben] [ik] _nu_ 
+B|17| B: [Euh] nummer 
+B|18| B: _Euh _ik hebben_ nu [met_ dat citroenschijfje] 
+A|19| A: [ja] 
+A|20| A: [Euh] [dat zijn] 
+A|21| A: [en] [ik hebben nu met] _het citroenschijf_ 
+B|22| B: nummer 
+B|23| B: _ik hebben het citroenschijf_ 
+A|24| A: [Euh] [ja] [dat zijn] 
+A|25| A: [Euh [ik hebben] het citroenschijf] 
+B|26| B: nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké Euh ik hebben er één dat zijn euh natuurlijk weer diezelfde basisvorm
+	Free: Pattern=Euh ik hebben, Pattern=dat zijn, Pattern=euh, Pattern=er
+	Constrained: Pattern=dat, Pattern=Euh, Pattern=hebben, Pattern=ik, Pattern=zijn
+Turn ID=1| B | B : hij hebben een soort
+	Free: Pattern=een soort, Pattern=hebben
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=2| B | B : ik zien het alsof er een soort citroenschijfje op een glas zitten zeggen maar
+	Free: Pattern=citroenschijfje, Pattern=een, Pattern=het, Pattern=zitten, Pattern=er, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=3| B | B : zo aan de bovenkant
+	Free: Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=4| B | B : en dat steken dan nog iets uit
+	Free: Pattern=dat, Pattern=dan, Pattern=nog, Pattern=en
+	Constrained: 
+Turn ID=5| B | B : dat kunnen je zien als een lepel of zo
+	Free: Pattern=dat, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : en aan de zijkant zitten ook een soort staaf
+	Free: Pattern=zitten, Pattern=een soort, Pattern=en, Pattern=aan de, Pattern=ook
+	Constrained: Pattern=aan, Pattern=de, Pattern=een, Pattern=soort
+Turn ID=7| B | B : soort euh handvatachtig
+	Free: Pattern=euh, Pattern=soort
+	Constrained: 
+Turn ID=8| B | B : en dan aan aan de onderkant zitten ook een ovaal vorm zeggen maar
+	Free: Pattern=aan, Pattern=ook, Pattern=dan, Pattern=een, Pattern=aan de onderkant, Pattern=zitten, Pattern=ovaal, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=9| A | A : ja oké ik denken dat ik hem dan al hebben
+	Free: Pattern=dat, Pattern=ja, Pattern=dan, Pattern=hebben, Pattern=ik
+	Constrained: 
+Turn ID=10| A | A : Euh het zijn letter
+	Free: Pattern=Euh, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=11| A | A : Euh dan hebben ik er hier nog een
+	Free: Pattern=nog, Pattern=dan, Pattern=een, Pattern=Euh, Pattern=hebben, Pattern=er, Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : Euh dat zijn ook hoe jij hem omschrijven
+	Free: Pattern=dat zijn, Pattern=Euh, Pattern=ook
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| A | A : er zitten naar de linkerkant een soort rond uitsteeksel euh met dat citroenschijfje erop
+	Free: Pattern=de, Pattern=met dat citroenschijfje, Pattern=euh, Pattern=zitten, Pattern=er, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=dat, Pattern=citroenschijfje
+Turn ID=14| A | A : en een lang ovaal aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=ovaal, Pattern=en, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=15| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : die hebben ik nu
+	Free: Pattern=hebben, Pattern=ik, Pattern=nu
+	Constrained: 
+Turn ID=17| B | B : Euh nummer
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=18| B | B : Euh ik hebben nu met dat citroenschijfje
+	Free: Pattern=ik hebben nu met, Pattern=met dat citroenschijfje, Pattern=Euh ik hebben
+	Constrained: Pattern=dat, Pattern=citroenschijfje, Pattern=hebben, Pattern=ik, Pattern=Euh, Pattern=nu
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Euh dat zijn
+	Free: Pattern=dat zijn, Pattern=Euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=21| A | A : en ik hebben nu met het citroenschijf
+	Free: Pattern=ik hebben nu met, Pattern=het citroenschijf, Pattern=en
+	Constrained: Pattern=nu, Pattern=het, Pattern=ik, Pattern=hebben
+Turn ID=22| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : ik hebben het citroenschijf
+	Free: Pattern=ik hebben het citroenschijf
+	Constrained: Pattern=het citroenschijf, Pattern=het, Pattern=ik, Pattern=hebben
+Turn ID=24| A | A : Euh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=Euh, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=25| A | A : Euh ik hebben het citroenschijf
+	Free: Pattern=ik hebben het citroenschijf, Pattern=Euh ik hebben
+	Constrained: Pattern=Euh, Pattern=het, Pattern=ik, Pattern=hebben, Pattern=het citroenschijf
+Turn ID=26| B | B : nummer
+	Free: 
+	Constrained: 

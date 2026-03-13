@@ -1,0 +1,111 @@
+B|0| B: Eh deze hebben twee dun arm zeggen maar 
+B|1| B: _met_ een bolle _bovenop_ 
+B|2| B: _en_ een _balk_ daarnaast _verticaal_ staand 
+A|3| A: _Oh_ _ja_ dan weten ik hem al wel 
+A|4| A: Oké nou _zijn_ ze veranderen hè _ja_ 
+B|5| B: [Oh] 
+B|6| B: [ja] 
+A|7| A: ehm _dit zijn_ diegene [met] _dat_ bollet [bovenop] 
+A|8| A: [en] _die balk_ dan aan de zijkant zo naar beneden 
+B|9| B: Eh [die balk] [die] 
+B|10| B: [Oh] [die] [met] [ja] _die verticaal_ _staan_ [die balk] 
+A|11| A: [ja] [ja] precies 
+B|12| B: [ja] _dat zijn_ 
+B|13| B: _dit zijn met_ _die verticaal balk_ ernaast [en] een bolle erop 
+A|14| A: Yes [dat zijn] 
+A|15| A: waar [staan] hij waar [staan] hij 
+A|16| A: [Oh] 
+A|17| A: [dit zijn met] de bal [bovenop] 
+A|18| A: [en] dan [die] [staan] [balk] 
+B|19| B: eh [ja] [dat zijn] 
+B|20| B: eh [dit zijn met] _die verticaal balk_ ernaast 
+B|21| B: [en] het bolle erbovenop 
+A|22| A: mhm 
+A|23| A: even zien 
+A|24| A: [dat zijn] 
+A|25| A: [dit zijn] de bal [bovenop] [en] dan [die verticaal balk] 
+B|26| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh deze hebben twee dun arm zeggen maar
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : met een bolle bovenop
+	Free: Pattern=bovenop, Pattern=met
+	Constrained: 
+Turn ID=2| B | B : en een balk daarnaast verticaal staand
+	Free: Pattern=en, Pattern=verticaal, Pattern=balk
+	Constrained: 
+Turn ID=3| A | A : Oh ja dan weten ik hem al wel
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=4| A | A : Oké nou zijn ze veranderen hè ja
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : ehm dit zijn diegene met dat bollet bovenop
+	Free: Pattern=dit zijn, Pattern=bovenop, Pattern=dat, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=8| A | A : en die balk dan aan de zijkant zo naar beneden
+	Free: Pattern=die balk, Pattern=en
+	Constrained: Pattern=die, Pattern=balk
+Turn ID=9| B | B : Eh die balk die
+	Free: Pattern=die balk, Pattern=die
+	Constrained: Pattern=die, Pattern=balk
+Turn ID=10| B | B : Oh die met ja die verticaal staan die balk
+	Free: Pattern=die balk, Pattern=ja, Pattern=die verticaal, Pattern=staan, Pattern=met, Pattern=die, Pattern=Oh
+	Constrained: Pattern=die, Pattern=verticaal, Pattern=balk
+Turn ID=11| A | A : ja ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=13| B | B : dit zijn met die verticaal balk ernaast en een bolle erop
+	Free: Pattern=die verticaal balk, Pattern=dit zijn met, Pattern=en
+	Constrained: Pattern=verticaal, Pattern=die verticaal, Pattern=balk, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=14| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=15| A | A : waar staan hij waar staan hij
+	Free: Pattern=staan
+	Constrained: 
+Turn ID=16| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=17| A | A : dit zijn met de bal bovenop
+	Free: Pattern=dit zijn met, Pattern=bovenop
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=met
+Turn ID=18| A | A : en dan die staan balk
+	Free: Pattern=en, Pattern=die, Pattern=staan, Pattern=balk
+	Constrained: 
+Turn ID=19| B | B : eh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=20| B | B : eh dit zijn met die verticaal balk ernaast
+	Free: Pattern=die verticaal balk, Pattern=dit zijn met
+	Constrained: Pattern=verticaal, Pattern=die verticaal, Pattern=balk, Pattern=met, Pattern=die, Pattern=zijn, Pattern=dit zijn
+Turn ID=21| B | B : en het bolle erbovenop
+	Free: Pattern=en
+	Constrained: 
+Turn ID=22| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : even zien
+	Free: 
+	Constrained: 
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=25| A | A : dit zijn de bal bovenop en dan die verticaal balk
+	Free: Pattern=die verticaal balk, Pattern=dit zijn, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=verticaal, Pattern=die verticaal, Pattern=balk, Pattern=die, Pattern=zijn
+Turn ID=26| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat

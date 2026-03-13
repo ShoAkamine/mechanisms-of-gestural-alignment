@@ -1,0 +1,119 @@
+A|0| A: _Oké_ 
+A|1| A: deze pot lijken me eigenlijk gewoon 
+A|2| A: _die_ doen me gewoon _denken_ aan _een_ _kop_ 
+A|3| A: want hij _hebben_ zo één uitsteeksel 
+A|4| A: dus dat _zijn_ _dan_ _het_ _handvat_ 
+A|5| A: _en_ _het_ _zijn_ alsof er _een_ lepel bovenop zitten 
+A|6| A: waarmee je _dan_ _kunnen_ roeren 
+A|7| A: _en_ aan _de_ achterkant van _het_ bekert _zijn_ _een soort_ van rond te zien 
+B|8| B: _ja _en_ de_ beker [hebben] [een soort] 
+B|9| B: Zeggen maar [dan] steken onder nog iets uit waardoor [het] niet om [kunnen] vallen 
+A|10| A: [ja] kloppen 
+A|11| A: [ja] 
+B|12| B: [Oké] [dan] weten ik [die] [denken] ik 
+B|13| B: eh nummer 
+B|14| B: _dit zijn_ [de] [kop] thee _met_ [een] _roerstaaf_ erin 
+B|15| B: [en] [een] [handvat] [en] [een] dinget onderin zodat [het] niet omvallen 
+A|16| A: [ja en] zo'n cirkel aan [de] achterkant zo'n _pannenkoek_ 
+B|17| B: [ja] 
+A|18| A: [ja] oké letter 
+A|19| A: [dit zijn] weer [het] theekoep 
+A|20| A: _met het roerstaaf en de_ achterkant _de pannenkoek_ 
+B|21| B: [ja] nummer 
+B|22| B: eh [dit zijn] [de] [kop] thee 
+B|23| B: [met] [de] Roerstaaf [en [de] pannenkoek] 
+A|24| A: Letter 
+A|25| A: [dit zijn] [het] theekop [met] achterkant [de pannenkoek] [en] _het roerstaaf_ 
+B|26| B: ehm nummer 
+B|27| B: eh [de] [kop] thee [met het roerstaaf en [de] pannenkoek] 
+A|28| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : deze pot lijken me eigenlijk gewoon
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : die doen me gewoon denken aan een kop
+	Free: Pattern=denken, Pattern=kop, Pattern=die, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : want hij hebben zo één uitsteeksel
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=4| A | A : dus dat zijn dan het handvat
+	Free: Pattern=dan, Pattern=handvat, Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=5| A | A : en het zijn alsof er een lepel bovenop zitten
+	Free: Pattern=en, Pattern=het, Pattern=een, Pattern=zijn
+	Constrained: 
+Turn ID=6| A | A : waarmee je dan kunnen roeren
+	Free: Pattern=dan, Pattern=kunnen
+	Constrained: 
+Turn ID=7| A | A : en aan de achterkant van het bekert zijn een soort van rond te zien
+	Free: Pattern=de, Pattern=het, Pattern=een soort, Pattern=en, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=8| B | B : ja en de beker hebben een soort
+	Free: Pattern=en de, Pattern=een soort, Pattern=ja en, Pattern=hebben
+	Constrained: Pattern=een, Pattern=de, Pattern=en, Pattern=ja
+Turn ID=9| B | B : Zeggen maar dan steken onder nog iets uit waardoor het niet om kunnen vallen
+	Free: Pattern=dan, Pattern=kunnen, Pattern=het
+	Constrained: 
+Turn ID=10| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Oké dan weten ik die denken ik
+	Free: Pattern=Oké, Pattern=dan, Pattern=denken, Pattern=die
+	Constrained: 
+Turn ID=13| B | B : eh nummer
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : dit zijn de kop thee met een roerstaaf erin
+	Free: Pattern=de, Pattern=een, Pattern=kop, Pattern=met, Pattern=roerstaaf, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=15| B | B : en een handvat en een dinget onderin zodat het niet omvallen
+	Free: Pattern=en, Pattern=handvat, Pattern=het, Pattern=een
+	Constrained: 
+Turn ID=16| A | A : ja en zo'n cirkel aan de achterkant zo'n pannenkoek
+	Free: Pattern=ja en, Pattern=de, Pattern=pannenkoek
+	Constrained: Pattern=en, Pattern=ja
+Turn ID=17| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| A | A : ja oké letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dit zijn weer het theekoep
+	Free: Pattern=dit zijn, Pattern=het
+	Constrained: Pattern=zijn
+Turn ID=20| A | A : met het roerstaaf en de achterkant de pannenkoek
+	Free: Pattern=met het roerstaaf en de, Pattern=de pannenkoek
+	Constrained: Pattern=de, Pattern=en de, Pattern=het, Pattern=met, Pattern=het roerstaaf, Pattern=pannenkoek, Pattern=en, Pattern=roerstaaf
+Turn ID=21| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : eh dit zijn de kop thee
+	Free: Pattern=dit zijn, Pattern=kop, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=23| B | B : met de Roerstaaf en de pannenkoek
+	Free: Pattern=en de, Pattern=de pannenkoek, Pattern=de, Pattern=met
+	Constrained: Pattern=en, Pattern=de, Pattern=pannenkoek
+Turn ID=24| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=25| A | A : dit zijn het theekop met achterkant de pannenkoek en het roerstaaf
+	Free: Pattern=de pannenkoek, Pattern=het, Pattern=met, Pattern=en, Pattern=het roerstaaf, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=het, Pattern=roerstaaf, Pattern=zijn, Pattern=pannenkoek
+Turn ID=26| B | B : ehm nummer
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : eh de kop thee met het roerstaaf en de pannenkoek
+	Free: Pattern=met het roerstaaf en de, Pattern=de pannenkoek, Pattern=kop, Pattern=de
+	Constrained: Pattern=de, Pattern=en de, Pattern=het, Pattern=met, Pattern=het roerstaaf, Pattern=pannenkoek, Pattern=en, Pattern=roerstaaf
+Turn ID=28| A | A : Letter
+	Free: 
+	Constrained: 

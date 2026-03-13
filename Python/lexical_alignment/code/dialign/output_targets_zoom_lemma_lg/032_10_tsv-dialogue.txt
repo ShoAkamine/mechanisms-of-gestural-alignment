@@ -1,0 +1,91 @@
+A|0| A: ik hebben euh _nu_ één _die_ hebben _aan_ beide kant _een_ soort van _paddenstoel_ uitsteken 
+A|1| A: eentje naar _links en_ één naar _rechts_ 
+A|2| A: _en_ daarachter lijken _een_ soort van Lichtstoel te staan 
+B|3| B: Euh 
+B|4| B: Oh _ja_ _het_ _zijn_ vrij dik [paddenstoel] toch 
+A|5| A: [ja] maar wel _met_ van _die_ rond kop dr op 
+B|6| B: [ja] 
+B|7| B: [ja] dan _zijn_ _het_ 
+A|8| A: oke 
+B|9| B: Euh Oh dit _zijn_ [nu] zitten we in [een] nieuw ronde volgens mij 
+B|10| B: dit _zijn_ [links _en] rechts_ _die paddenstoel_ [en] dan _aan de_ achterkant nog [een] _vierkant_ 
+A|11| A: [ja] _dat zijn_ 
+A|12| A: ik hebben [nu] [die] twee [paddenstoel] [aan de] zijkant _met_ [het] [vierkant] ding daarachter 
+B|13| B: ah [ja] Euhm even kijken 
+B|14| B: ah [ja] 
+B|15| B: Euh dit [zijn] [met] [de] [paddenstoel] [links _en] rechts_ 
+A|16| A: [ja] _dat zijn_ 
+A|17| A: ik hebben [nu] [die] [met] [die paddenstoel] link [en rechts] 
+B|18| B: Euh 
+B|19| B: [dat zijn] 
+B|20| B: Euh dit [zijn] [met] [de] [paddenstoel] [links [en] rechts] 
+A|21| A: [en] yes [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik hebben euh nu één die hebben aan beide kant een soort van paddenstoel uitsteken
+	Free: Pattern=aan, Pattern=een, Pattern=die, Pattern=paddenstoel, Pattern=nu
+	Constrained: 
+Turn ID=1| A | A : eentje naar links en één naar rechts
+	Free: Pattern=links en, Pattern=rechts
+	Constrained: Pattern=en
+Turn ID=2| A | A : en daarachter lijken een soort van Lichtstoel te staan
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=3| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : Oh ja het zijn vrij dik paddenstoel toch
+	Free: Pattern=ja, Pattern=zijn, Pattern=het, Pattern=paddenstoel
+	Constrained: 
+Turn ID=5| A | A : ja maar wel met van die rond kop dr op
+	Free: Pattern=ja, Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja dan zijn het
+	Free: Pattern=ja, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=8| A | A : oke
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : Euh Oh dit zijn nu zitten we in een nieuw ronde volgens mij
+	Free: Pattern=nu, Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=10| B | B : dit zijn links en rechts die paddenstoel en dan aan de achterkant nog een vierkant
+	Free: Pattern=en rechts, Pattern=aan de, Pattern=een, Pattern=die paddenstoel, Pattern=en, Pattern=zijn, Pattern=vierkant, Pattern=links en
+	Constrained: Pattern=paddenstoel, Pattern=die, Pattern=en, Pattern=de, Pattern=rechts, Pattern=aan
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : ik hebben nu die twee paddenstoel aan de zijkant met het vierkant ding daarachter
+	Free: Pattern=aan de, Pattern=het, Pattern=met, Pattern=die, Pattern=vierkant, Pattern=paddenstoel, Pattern=nu
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=13| B | B : ah ja Euhm even kijken
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Euh dit zijn met de paddenstoel links en rechts
+	Free: Pattern=en rechts, Pattern=de, Pattern=paddenstoel, Pattern=met, Pattern=zijn, Pattern=links en
+	Constrained: Pattern=rechts, Pattern=en
+Turn ID=16| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=17| A | A : ik hebben nu die met die paddenstoel link en rechts
+	Free: Pattern=en rechts, Pattern=met, Pattern=die, Pattern=die paddenstoel, Pattern=nu
+	Constrained: Pattern=rechts, Pattern=en, Pattern=die, Pattern=paddenstoel
+Turn ID=18| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=19| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : Euh dit zijn met de paddenstoel links en rechts
+	Free: Pattern=en rechts, Pattern=de, Pattern=paddenstoel, Pattern=met, Pattern=zijn, Pattern=links en
+	Constrained: Pattern=rechts, Pattern=en
+Turn ID=21| A | A : en yes dat zijn
+	Free: Pattern=dat zijn, Pattern=en
+	Constrained: Pattern=zijn

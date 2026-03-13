@@ -1,0 +1,115 @@
+B|0| B: dit _object_ hebben _een kegel_ _op_ zijn hoofd 
+B|1| B: _soort_ hoed lijken _het_ 
+B|2| B: _en link_ zitten _een_ heel scherp _potloodpunt_ lijken _het_ 
+B|3| B: of _ja_ _link_ zitten _dat_ 
+B|4| B: aan _de_ linkerkant van _het_ kop 
+A|5| A: [ja] ik denken [dat] ik [het] zien 
+A|6| A: [en] dan [link] onderaan [een] [soort] balachtig 
+B|7| B: [ja] 
+A|8| A: [ja] oké 
+B|9| B: [ja] 
+A|10| A: [object] 
+A|11| A: [een kegel] 
+A|12| A: [op] [de] bovenkant 
+A|13| A: _en het potloodpunt links_ 
+B|14| B: nummer 
+B|15| B: [het] verjaardagshoed 
+B|16| B: _de kegel_ bovenop 
+B|17| B: [en] [links] [een] [potloodpunt] 
+A|18| A: [ja] 
+A|19| A: Alright [object] 
+A|20| A: bovenaan [de kegel] [en] dan [links] _het potloodpunt_ 
+B|21| B: [ja] [dat] zijn nummer 
+B|22| B: [het] [de kegel] boven [en het potloodpunt links] 
+A|23| A: [ja] ik zoeken hem even 
+A|24| A: [ja] [object] 
+A|25| A: [de kegel] bovenaan 
+A|26| A: [en link] [het potloodpunt] 
+B|27| B: [dat] zijn nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit object hebben een kegel op zijn hoofd
+	Free: Pattern=een kegel, Pattern=object, Pattern=op
+	Constrained: Pattern=een
+Turn ID=1| B | B : soort hoed lijken het
+	Free: Pattern=het, Pattern=soort
+	Constrained: 
+Turn ID=2| B | B : en link zitten een heel scherp potloodpunt lijken het
+	Free: Pattern=en link, Pattern=het, Pattern=een, Pattern=potloodpunt
+	Constrained: Pattern=en, Pattern=link
+Turn ID=3| B | B : of ja link zitten dat
+	Free: Pattern=dat, Pattern=ja, Pattern=link
+	Constrained: 
+Turn ID=4| B | B : aan de linkerkant van het kop
+	Free: Pattern=de, Pattern=het
+	Constrained: 
+Turn ID=5| A | A : ja ik denken dat ik het zien
+	Free: Pattern=dat, Pattern=het, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : en dan link onderaan een soort balachtig
+	Free: Pattern=en, Pattern=soort, Pattern=een, Pattern=link
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=11| A | A : een kegel
+	Free: Pattern=een kegel
+	Constrained: Pattern=een
+Turn ID=12| A | A : op de bovenkant
+	Free: Pattern=de, Pattern=op
+	Constrained: 
+Turn ID=13| A | A : en het potloodpunt links
+	Free: Pattern=en het potloodpunt links
+	Constrained: Pattern=links, Pattern=potloodpunt, Pattern=en, Pattern=het, Pattern=het potloodpunt
+Turn ID=14| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=15| B | B : het verjaardagshoed
+	Free: Pattern=het
+	Constrained: 
+Turn ID=16| B | B : de kegel bovenop
+	Free: Pattern=de kegel
+	Constrained: Pattern=de
+Turn ID=17| B | B : en links een potloodpunt
+	Free: Pattern=links, Pattern=en, Pattern=een, Pattern=potloodpunt
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Alright object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=20| A | A : bovenaan de kegel en dan links het potloodpunt
+	Free: Pattern=het potloodpunt, Pattern=de kegel, Pattern=links, Pattern=en
+	Constrained: Pattern=de, Pattern=het, Pattern=potloodpunt
+Turn ID=21| B | B : ja dat zijn nummer
+	Free: Pattern=dat, Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : het de kegel boven en het potloodpunt links
+	Free: Pattern=en het potloodpunt links, Pattern=de kegel, Pattern=het
+	Constrained: Pattern=de, Pattern=links, Pattern=potloodpunt, Pattern=en, Pattern=het, Pattern=het potloodpunt
+Turn ID=23| A | A : ja ik zoeken hem even
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| A | A : ja object
+	Free: Pattern=object, Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : de kegel bovenaan
+	Free: Pattern=de kegel
+	Constrained: Pattern=de
+Turn ID=26| A | A : en link het potloodpunt
+	Free: Pattern=het potloodpunt, Pattern=en link
+	Constrained: Pattern=en, Pattern=het, Pattern=potloodpunt, Pattern=link
+Turn ID=27| B | B : dat zijn nummer
+	Free: Pattern=dat
+	Constrained: 

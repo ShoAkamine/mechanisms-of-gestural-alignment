@@ -1,0 +1,279 @@
+B|0| B: _Oh ja_ _dit_ vinden _ik_ _een_ lastig 
+B|1| B: _dit zijn_ volgens mij één van _de_ weinig _die een_ soort van ovaal voetstuk _hebben_ 
+B|2| B: _en_ _aan de linkerkant_ steekt _er_ weer _iets_ uit 
+B|3| B: _een_ soort stok _zullen_ _je_ _dat_ kunnen zeggen _zullen_ _je zullen_ _je_ kunnen zeggen 
+B|4| B: _en_ _aan de achterkant_ lijken _een_ soort van cirkel te _zitten_ 
+B|5| B: daar _tegenaan_ geplakt 
+B|6| B: _en_ _er_ _steken_ ook nog _iets_ uit _aan de_ rechterkant van _de_ kom 
+B|7| B: dus _met_ naam _het_ voetstuk vinden _ik_ _zijn_ onderscheiden 
+B|8| B: dus _dat_ _het_ 
+B|9| B: _het_ _zijn_ niet _een_ normaal kom zoals _de_ veel 
+B|10| B: maar dus _het_ _zijn_ echt _een_ soort ovaal voetstuk 
+A|11| A: [ja] _alsof_ [je] [een] [iets] onderop [tegenaan] [hebben] zetten 
+B|12| B: Exact [ja] [ja] 
+A|13| A: [ja] 
+B|14| B: _met_ dan 
+B|15| B: [ja] 
+A|16| A: [ja] [ik] [hebben] hem 
+B|17| B: [je] verliezen ze zo uit _het_ oog 
+A|18| A: [ja] 
+A|19| A: [dit zijn] 
+A|20| A: [je zullen] hem [een] _klein_ beetje 
+A|21| A: [dit zijn] poh 
+A|22| A: [ja] Oké 
+A|23| A: [dit zijn] [een] kop 
+A|24| A: [met] [een] langgerekt _neus_ _naar_ voren _als_ _Pinocchio_ 
+A|25| A: [en] [een] pluk _haar_ omhoog 
+A|26| A: _aan de zijkant_ [hebben] hij [die] schijf [zitten] 
+A|27| A: [aan de achterkant] 
+B|28| B: [aan de zijkant] [zitten] 
+B|29| B: [ja] [ja] 
+B|30| B: _en de_ [Pinocchio] [zitten] [naar] links dan 
+A|31| A: [ja] 
+B|32| B: [ja] 
+B|33| B: _Oh ja_ [dit zijn] [die] raar dus weer [met] _dat_ ovaal voetstuk 
+B|34| B: [en] waar dan [de] cirkel [aan de achterkant] [zitten] 
+B|35| B: [de] [neus] eigenlijk of [de] stok _aan de linkerkant_ ervan 
+B|36| B: [en] één [klein] [haar] of net wat wat uitsteken 
+B|37| B: of _het_ kunnen _er_ ook [als] [een] _schroevendraaier_ uitzien 
+A|38| A: [ja] [ik] [hebben] hem 
+A|39| A: [dit zijn] [de] gereedschapskist 
+A|40| A: _met het_ [schroevendraaier] [die] eruit [steken] 
+B|41| B: [ja] _en de_ bol [aan de] voorkant of [het] net wat 
+A|42| A: [ja] 
+B|43| B: _Oh_ god 
+B|44| B: [dit zijn] weer [die] raar [met het] [het] voetstuk [het] ovaal voetstuk 
+B|45| B: [met] daarin dan [de] Schroevendraaier bovenin 
+B|46| B: _en de_ cirkel [aan de achterkant] 
+B|47| B: [en] link daarvan _de de_ uitstekend stok 
+A|48| A: Wacht even 
+A|49| A: oval voet 
+B|50| B: Hadden we [die] 
+B|51| B: we [hebben] daar nog geen woord voor vinden volgens mij maar 
+A|52| A: [ja] 
+A|53| A: [Oh ja] 
+A|54| A: [die een] [met] [die] zegmaar [die] _piramide_ [er] bovenop 
+B|55| B: nee nee nee niet [piramide] 
+A|56| A: [die] 
+B|57| B: dus echt [als] [je] [naar] [het] voetstuk kijken [zijn] _dat_ _dat_ ovaal voetstuk [alsof] [het] vanuit [de] grond [zijn] geschoven 
+B|58| B: op [de] mok 
+B|59| B: [en] _aan de linkerkant_ [steken] [een] stok uit 
+A|60| A: [Oh ja] [ik] [hebben] hem [ik] [hebben] hem 
+B|61| B: Top 
+A|62| A: [dit zijn] [de de] kop 
+A|63| A: [met] [die] pluk [haar] [aan de] bovenkant 
+A|64| A: [en de] schijf [aan de achterkant] 
+A|65| A: [en] [een] [neus] [aan de linkerkant] 
+B|66| B: Hm-hm 
+B|67| B: Yes 
+A|68| A: [dat] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh ja dit vinden ik een lastig
+	Free: Pattern=Oh ja, Pattern=ik, Pattern=dit, Pattern=een
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=1| B | B : dit zijn volgens mij één van de weinig die een soort van ovaal voetstuk hebben
+	Free: Pattern=dit zijn, Pattern=die een, Pattern=hebben, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=die, Pattern=een
+Turn ID=2| B | B : en aan de linkerkant steekt er weer iets uit
+	Free: Pattern=aan de linkerkant, Pattern=iets, Pattern=en, Pattern=er
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=3| B | B : een soort stok zullen je dat kunnen zeggen zullen je zullen je kunnen zeggen
+	Free: Pattern=dat, Pattern=zullen, Pattern=een, Pattern=je zullen, Pattern=je
+	Constrained: Pattern=je, Pattern=zullen
+Turn ID=4| B | B : en aan de achterkant lijken een soort van cirkel te zitten
+	Free: Pattern=aan de achterkant, Pattern=zitten, Pattern=en, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=5| B | B : daar tegenaan geplakt
+	Free: Pattern=tegenaan
+	Constrained: 
+Turn ID=6| B | B : en er steken ook nog iets uit aan de rechterkant van de kom
+	Free: Pattern=aan de, Pattern=er, Pattern=en, Pattern=steken, Pattern=de, Pattern=iets
+	Constrained: Pattern=de
+Turn ID=7| B | B : dus met naam het voetstuk vinden ik zijn onderscheiden
+	Free: Pattern=ik, Pattern=het, Pattern=zijn, Pattern=met
+	Constrained: 
+Turn ID=8| B | B : dus dat het
+	Free: Pattern=het, Pattern=dat
+	Constrained: 
+Turn ID=9| B | B : het zijn niet een normaal kom zoals de veel
+	Free: Pattern=het, Pattern=zijn, Pattern=een, Pattern=de
+	Constrained: 
+Turn ID=10| B | B : maar dus het zijn echt een soort ovaal voetstuk
+	Free: Pattern=het, Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=11| A | A : ja alsof je een iets onderop tegenaan hebben zetten
+	Free: Pattern=een, Pattern=hebben, Pattern=alsof, Pattern=je, Pattern=tegenaan, Pattern=iets, Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : Exact ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : met dan
+	Free: Pattern=met
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja ik hebben hem
+	Free: Pattern=ja, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=17| B | B : je verliezen ze zo uit het oog
+	Free: Pattern=je, Pattern=het
+	Constrained: 
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dit zijn
+	Free: Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=20| A | A : je zullen hem een klein beetje
+	Free: Pattern=je zullen, Pattern=een, Pattern=klein
+	Constrained: Pattern=je, Pattern=zullen
+Turn ID=21| A | A : dit zijn poh
+	Free: Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=22| A | A : ja Oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : dit zijn een kop
+	Free: Pattern=dit zijn, Pattern=een
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=24| A | A : met een langgerekt neus naar voren als Pinocchio
+	Free: Pattern=Pinocchio, Pattern=een, Pattern=met, Pattern=naar, Pattern=neus, Pattern=als
+	Constrained: 
+Turn ID=25| A | A : en een pluk haar omhoog
+	Free: Pattern=haar, Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=26| A | A : aan de zijkant hebben hij die schijf zitten
+	Free: Pattern=aan de zijkant, Pattern=zitten, Pattern=hebben, Pattern=die
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=27| A | A : aan de achterkant
+	Free: Pattern=aan de achterkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=28| B | B : aan de zijkant zitten
+	Free: Pattern=aan de zijkant, Pattern=zitten
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=29| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : en de Pinocchio zitten naar links dan
+	Free: Pattern=en de, Pattern=naar, Pattern=zitten, Pattern=Pinocchio
+	Constrained: Pattern=en, Pattern=de
+Turn ID=31| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=33| B | B : Oh ja dit zijn die raar dus weer met dat ovaal voetstuk
+	Free: Pattern=dat, Pattern=Oh ja, Pattern=met, Pattern=die, Pattern=dit zijn
+	Constrained: Pattern=ja, Pattern=Oh, Pattern=dit, Pattern=zijn
+Turn ID=34| B | B : en waar dan de cirkel aan de achterkant zitten
+	Free: Pattern=aan de achterkant, Pattern=zitten, Pattern=en, Pattern=de
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=35| B | B : de neus eigenlijk of de stok aan de linkerkant ervan
+	Free: Pattern=aan de linkerkant, Pattern=neus, Pattern=de
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=36| B | B : en één klein haar of net wat wat uitsteken
+	Free: Pattern=haar, Pattern=en, Pattern=klein
+	Constrained: 
+Turn ID=37| B | B : of het kunnen er ook als een schroevendraaier uitzien
+	Free: Pattern=een, Pattern=het, Pattern=als, Pattern=er, Pattern=schroevendraaier
+	Constrained: 
+Turn ID=38| A | A : ja ik hebben hem
+	Free: Pattern=ja, Pattern=ik, Pattern=hebben
+	Constrained: 
+Turn ID=39| A | A : dit zijn de gereedschapskist
+	Free: Pattern=dit zijn, Pattern=de
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=40| A | A : met het schroevendraaier die eruit steken
+	Free: Pattern=met het, Pattern=schroevendraaier, Pattern=die, Pattern=steken
+	Constrained: Pattern=het, Pattern=met
+Turn ID=41| B | B : ja en de bol aan de voorkant of het net wat
+	Free: Pattern=en de, Pattern=aan de, Pattern=ja, Pattern=het
+	Constrained: Pattern=en, Pattern=de
+Turn ID=42| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| B | B : Oh god
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=44| B | B : dit zijn weer die raar met het het voetstuk het ovaal voetstuk
+	Free: Pattern=dit zijn, Pattern=met het, Pattern=het, Pattern=die
+	Constrained: Pattern=het, Pattern=dit, Pattern=zijn, Pattern=met
+Turn ID=45| B | B : met daarin dan de Schroevendraaier bovenin
+	Free: Pattern=met, Pattern=de
+	Constrained: 
+Turn ID=46| B | B : en de cirkel aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=en de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=en
+Turn ID=47| B | B : en link daarvan de de uitstekend stok
+	Free: Pattern=de de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=48| A | A : Wacht even
+	Free: 
+	Constrained: 
+Turn ID=49| A | A : oval voet
+	Free: 
+	Constrained: 
+Turn ID=50| B | B : Hadden we die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=51| B | B : we hebben daar nog geen woord voor vinden volgens mij maar
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=52| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=53| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=54| A | A : die een met die zegmaar die piramide er bovenop
+	Free: Pattern=piramide, Pattern=met, Pattern=die, Pattern=die een, Pattern=er
+	Constrained: Pattern=die, Pattern=een
+Turn ID=55| B | B : nee nee nee niet piramide
+	Free: Pattern=piramide
+	Constrained: 
+Turn ID=56| A | A : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=57| B | B : dus echt als je naar het voetstuk kijken zijn dat dat ovaal voetstuk alsof het vanuit de grond zijn geschoven
+	Free: Pattern=dat, Pattern=de, Pattern=het, Pattern=als, Pattern=alsof, Pattern=zijn, Pattern=je, Pattern=naar
+	Constrained: 
+Turn ID=58| B | B : op de mok
+	Free: Pattern=de
+	Constrained: 
+Turn ID=59| B | B : en aan de linkerkant steken een stok uit
+	Free: Pattern=aan de linkerkant, Pattern=en, Pattern=een, Pattern=steken
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=60| A | A : Oh ja ik hebben hem ik hebben hem
+	Free: Pattern=Oh ja, Pattern=ik, Pattern=hebben
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=61| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=62| A | A : dit zijn de de kop
+	Free: Pattern=de de, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=de
+Turn ID=63| A | A : met die pluk haar aan de bovenkant
+	Free: Pattern=aan de, Pattern=haar, Pattern=die, Pattern=met
+	Constrained: Pattern=de
+Turn ID=64| A | A : en de schijf aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=en de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=en
+Turn ID=65| A | A : en een neus aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=en, Pattern=neus, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=66| B | B : Hm-hm
+	Free: 
+	Constrained: 
+Turn ID=67| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=68| A | A : dat
+	Free: Pattern=dat
+	Constrained: 

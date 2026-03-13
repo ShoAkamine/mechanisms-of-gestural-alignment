@@ -1,0 +1,111 @@
+A|0| A: Oh _dan_ moeten ik weer beschrijven _ja_ 
+A|1| A: ehm deze _hebben_ _aan de_ bovenkant _twee uitsteksel_ 
+A|2| A: eentje _zijn_ Rondachtig _en_ _de_ ander helemaal vierkant 
+B|3| B: eh [zijn] het _die_ _zijn met_ _een_ draai erin 
+A|4| A: _ja_ [die] [een] _ja_ 
+A|5| A: _en die_ ander [zijn] gewoon [een] _recht_ hoekje 
+B|6| B: [ja] [en] [dan] _met_ [een] soort van _neus_ _rond neus_ 
+A|7| A: Langwerpig 
+A|8| A: [ja] [rond neus] [en] _aan de zijkant_ _nog_ [een] ploefje 
+B|9| B: Oké 
+B|10| B: [ja] [dan] [zijn] het 
+B|11| B: eh _dit zijn_ _dit_ [hebben] [een] [rond] neusje zeggen maar 
+B|12| B: _met_ _met_ [twee uitsteksel] erboav _één draaien_ _en één_ rechthoekig 
+A|13| A: Hmhm 
+A|14| A: _ja dat zijn_ 
+A|15| A: _dit zijn die met één draaien lepel en één recht lepel_ _aan de_ bovenkant 
+B|16| B: [met] [nog] [één] [aan de zijkant] 
+A|17| A: [ja] 
+B|18| B: of [ja dat zijn] 
+B|19| B: eh [dit zijn die met één draaien lepel en één recht lepel] 
+A|20| A: _mhm_ 
+A|21| A: [dat zijn] 
+A|22| A: _dit zijn [met_ één draaien lepel en één recht lepel] 
+B|23| B: [mhm] [dat zijn] 
+B|24| B: eh [dit zijn met] [die] [draaien lepel [en] die] [recht lepel] 
+A|25| A: [mhm] 
+A|26| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh dan moeten ik weer beschrijven ja
+	Free: Pattern=dan, Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : ehm deze hebben aan de bovenkant twee uitsteksel
+	Free: Pattern=twee uitsteksel, Pattern=aan de, Pattern=hebben
+	Constrained: Pattern=de
+Turn ID=2| A | A : eentje zijn Rondachtig en de ander helemaal vierkant
+	Free: Pattern=de, Pattern=zijn, Pattern=en
+	Constrained: 
+Turn ID=3| B | B : eh zijn het die zijn met een draai erin
+	Free: Pattern=zijn met, Pattern=die, Pattern=zijn, Pattern=een
+	Constrained: Pattern=met, Pattern=zijn
+Turn ID=4| A | A : ja die een ja
+	Free: Pattern=die, Pattern=een, Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en die ander zijn gewoon een recht hoekje
+	Free: Pattern=en die, Pattern=recht, Pattern=zijn, Pattern=een
+	Constrained: Pattern=die, Pattern=en
+Turn ID=6| B | B : ja en dan met een soort van neus rond neus
+	Free: Pattern=dan, Pattern=een, Pattern=neus, Pattern=met, Pattern=en, Pattern=rond neus, Pattern=ja
+	Constrained: Pattern=neus, Pattern=rond
+Turn ID=7| A | A : Langwerpig
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : ja rond neus en aan de zijkant nog een ploefje
+	Free: Pattern=nog, Pattern=en, Pattern=rond neus, Pattern=ja, Pattern=een, Pattern=aan de zijkant
+	Constrained: Pattern=neus, Pattern=de, Pattern=rond, Pattern=aan de
+Turn ID=9| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : ja dan zijn het
+	Free: Pattern=zijn, Pattern=dan, Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : eh dit zijn dit hebben een rond neusje zeggen maar
+	Free: Pattern=een, Pattern=hebben, Pattern=dit, Pattern=rond, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn
+Turn ID=12| B | B : met met twee uitsteksel erboav één draaien en één rechthoekig
+	Free: Pattern=twee uitsteksel, Pattern=één draaien, Pattern=en één, Pattern=met
+	Constrained: Pattern=één, Pattern=en
+Turn ID=13| A | A : Hmhm
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=15| A | A : dit zijn die met één draaien lepel en één recht lepel aan de bovenkant
+	Free: Pattern=dit zijn die met één draaien lepel en één recht lepel, Pattern=aan de
+	Constrained: Pattern=de, Pattern=met één draaien lepel en één recht lepel, Pattern=recht, Pattern=één, Pattern=met, Pattern=die, Pattern=recht lepel, Pattern=en, Pattern=één draaien, Pattern=dit zijn, Pattern=dit, Pattern=draaien lepel en, Pattern=en één, Pattern=zijn
+Turn ID=16| B | B : met nog één aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=met, Pattern=één, Pattern=nog
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=17| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : of ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=ja
+Turn ID=19| B | B : eh dit zijn die met één draaien lepel en één recht lepel
+	Free: Pattern=dit zijn die met één draaien lepel en één recht lepel
+	Constrained: Pattern=met één draaien lepel en één recht lepel, Pattern=recht, Pattern=één, Pattern=met, Pattern=die, Pattern=recht lepel, Pattern=en, Pattern=één draaien, Pattern=dit zijn, Pattern=dit, Pattern=draaien lepel en, Pattern=en één, Pattern=zijn
+Turn ID=20| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=21| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=22| A | A : dit zijn met één draaien lepel en één recht lepel
+	Free: Pattern=met één draaien lepel en één recht lepel, Pattern=dit zijn met
+	Constrained: Pattern=recht, Pattern=één, Pattern=met, Pattern=zijn met, Pattern=recht lepel, Pattern=en, Pattern=één draaien, Pattern=dit zijn, Pattern=dit, Pattern=draaien lepel en, Pattern=en één, Pattern=zijn
+Turn ID=23| B | B : mhm dat zijn
+	Free: Pattern=dat zijn, Pattern=mhm
+	Constrained: Pattern=zijn
+Turn ID=24| B | B : eh dit zijn met die draaien lepel en die recht lepel
+	Free: Pattern=en die, Pattern=dit zijn met, Pattern=draaien lepel en, Pattern=die, Pattern=recht lepel
+	Constrained: Pattern=recht, Pattern=dit, Pattern=met, Pattern=en, Pattern=zijn, Pattern=dit zijn, Pattern=zijn met, Pattern=die
+Turn ID=25| A | A : mhm
+	Free: Pattern=mhm
+	Constrained: 
+Turn ID=26| A | A : Eh
+	Free: 
+	Constrained: 

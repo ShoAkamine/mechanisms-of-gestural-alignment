@@ -1,0 +1,159 @@
+B|0| B: _dit_ plaat vinden _ik_ 
+B|1| B: _dan hebben ik_ _dus_ eerst _die_ _die_ _die_ _die komen_ 
+B|2| B: _en_ _dan_ vinden _ik_ _dat_ _er_ _aan de_ rechterzijde _lijken _een_ _rond_ neus_ te _zitten_ 
+B|3| B: alsof je _een_ gezicht zien 
+B|4| B: _een _rond_ neus_ 
+B|5| B: _met_ _aan de linkerkant_ _een_ _een oor_ _in de_ _vorm_ van _een_ driehoek 
+B|6| B: _en_ _dan_ bovenop _zitten_ _er_ link _ja_ _een soort_ lepel 
+A|7| A: [en] rechts _zijn_ [een soort] _lineaal_ 
+B|8| B: _ja_ precies 
+A|9| A: [dan hebben ik] hem al 
+A|10| A: _dat zijn_ _nummer_ _bij mij_ 
+B|11| B: Top 
+A|12| A: [ja] deze [hebben] [een rond] cirkel _aan de voorkant_ als _zijn_ [een soort] neusje 
+A|13| A: [aan de linkerkant] [zitten] [dan] [een] uitsteeksel 
+A|14| A: [dat] zullen [een oor] kunnen _zijn_ 
+A|15| A: [en] _in de kom_ [zitten] twee verschillend verschillend uitzien uitsteeksel 
+B|16| B: [ja] [dat zijn] 
+A|17| A: _en de_ rechter 
+B|18| B: _Oh_ sorry 
+A|19| A: [de] rechter [lijken een] beetje op [een] _lineaal_ 
+B|20| B: [ja] precies 
+B|21| B: [de] lepel [en de] [lineaal] 
+B|22| B: [dat zijn] voor [mij] [nummer] 
+A|23| A: Oké 
+B|24| B: _dit zijn_ het plaat _met_ [de] lepel [en de] _lineaal [in_ de kom] 
+A|25| A: [Oh] [ja] 
+B|26| B: _met_ [de] _neus aan de_ rechterkant 
+A|27| A: [dat zijn] [nummer] 
+A|28| A: [dit zijn] [die] _rond neus aan de voorkant_ 
+A|29| A: [en] [die] twee verschillend [vorm] [in de kom] 
+A|30| A: [dus] [met] [die] [lineaal] 
+B|31| B: [ja] [dat zijn] [bij mij] 
+B|32| B: [dit zijn] het plaat [met] [de] [lineaal] [en de] lepel 
+B|33| B: [en de] [rond neus aan de voorkant] 
+A|34| A: ah [ja] [die] staan 
+A|35| A: [Oh] [ja] 
+A|36| A: [dit zijn] [die] [lineaal in] [die komen] 
+A|37| A: [met] [dat] ander vormp [er] nog naast 
+B|38| B: Yes 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : dit plaat vinden ik
+	Free: Pattern=dit, Pattern=ik
+	Constrained: 
+Turn ID=1| B | B : dan hebben ik dus eerst die die die die komen
+	Free: Pattern=dan hebben ik, Pattern=die komen, Pattern=dus, Pattern=die
+	Constrained: Pattern=die, Pattern=dan, Pattern=ik, Pattern=hebben
+Turn ID=2| B | B : en dan vinden ik dat er aan de rechterzijde lijken een rond neus te zitten
+	Free: Pattern=dat, Pattern=rond neus, Pattern=aan de, Pattern=dan, Pattern=zitten, Pattern=er, Pattern=en, Pattern=een rond, Pattern=lijken een, Pattern=ik
+	Constrained: Pattern=een, Pattern=de
+Turn ID=3| B | B : alsof je een gezicht zien
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| B | B : een rond neus
+	Free: Pattern=een rond, Pattern=rond neus
+	Constrained: Pattern=een
+Turn ID=5| B | B : met aan de linkerkant een een oor in de vorm van een driehoek
+	Free: Pattern=vorm, Pattern=een, Pattern=in de, Pattern=met, Pattern=een oor, Pattern=aan de linkerkant
+	Constrained: Pattern=aan de, Pattern=een, Pattern=de
+Turn ID=6| B | B : en dan bovenop zitten er link ja een soort lepel
+	Free: Pattern=ja, Pattern=dan, Pattern=zitten, Pattern=er, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=7| A | A : en rechts zijn een soort lineaal
+	Free: Pattern=een soort, Pattern=zijn, Pattern=en, Pattern=lineaal
+	Constrained: Pattern=een
+Turn ID=8| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : dan hebben ik hem al
+	Free: Pattern=dan hebben ik
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=dan
+Turn ID=10| A | A : dat zijn nummer bij mij
+	Free: Pattern=dat zijn, Pattern=bij mij, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=mij, Pattern=dat
+Turn ID=11| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : ja deze hebben een rond cirkel aan de voorkant als zijn een soort neusje
+	Free: Pattern=ja, Pattern=hebben, Pattern=een soort, Pattern=een rond, Pattern=zijn, Pattern=aan de voorkant
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=13| A | A : aan de linkerkant zitten dan een uitsteeksel
+	Free: Pattern=aan de linkerkant, Pattern=een, Pattern=zitten, Pattern=dan
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=14| A | A : dat zullen een oor kunnen zijn
+	Free: Pattern=een oor, Pattern=zijn, Pattern=dat
+	Constrained: Pattern=een
+Turn ID=15| A | A : en in de kom zitten twee verschillend verschillend uitzien uitsteeksel
+	Free: Pattern=in de kom, Pattern=en, Pattern=zitten
+	Constrained: Pattern=in de, Pattern=de
+Turn ID=16| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=17| A | A : en de rechter
+	Free: Pattern=en de
+	Constrained: Pattern=en, Pattern=de
+Turn ID=18| B | B : Oh sorry
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=19| A | A : de rechter lijken een beetje op een lineaal
+	Free: Pattern=lijken een, Pattern=een, Pattern=lineaal, Pattern=de
+	Constrained: Pattern=een
+Turn ID=20| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : de lepel en de lineaal
+	Free: Pattern=en de, Pattern=lineaal, Pattern=de
+	Constrained: Pattern=en, Pattern=de
+Turn ID=22| B | B : dat zijn voor mij nummer
+	Free: Pattern=dat zijn, Pattern=mij, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=23| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : dit zijn het plaat met de lepel en de lineaal in de kom
+	Free: Pattern=in de kom, Pattern=de, Pattern=en de, Pattern=lineaal in, Pattern=met, Pattern=dit zijn
+	Constrained: Pattern=de, Pattern=lineaal, Pattern=dit, Pattern=in de, Pattern=en, Pattern=zijn
+Turn ID=25| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=26| B | B : met de neus aan de rechterkant
+	Free: Pattern=neus aan de, Pattern=de, Pattern=met
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=27| A | A : dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=nummer
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=28| A | A : dit zijn die rond neus aan de voorkant
+	Free: Pattern=rond neus aan de voorkant, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=aan de, Pattern=dit, Pattern=aan de voorkant, Pattern=de, Pattern=rond neus, Pattern=neus aan de, Pattern=zijn
+Turn ID=29| A | A : en die twee verschillend vorm in de kom
+	Free: Pattern=in de kom, Pattern=en, Pattern=die, Pattern=vorm
+	Constrained: Pattern=in de, Pattern=de
+Turn ID=30| A | A : dus met die lineaal
+	Free: Pattern=lineaal, Pattern=dus, Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=31| B | B : ja dat zijn bij mij
+	Free: Pattern=dat zijn, Pattern=bij mij, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=mij, Pattern=dat
+Turn ID=32| B | B : dit zijn het plaat met de lineaal en de lepel
+	Free: Pattern=de, Pattern=en de, Pattern=lineaal, Pattern=met, Pattern=dit zijn
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=en, Pattern=de
+Turn ID=33| B | B : en de rond neus aan de voorkant
+	Free: Pattern=rond neus aan de voorkant, Pattern=en de
+	Constrained: Pattern=aan de, Pattern=en, Pattern=neus aan de, Pattern=aan de voorkant, Pattern=de, Pattern=rond neus
+Turn ID=34| A | A : ah ja die staan
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=35| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=36| A | A : dit zijn die lineaal in die komen
+	Free: Pattern=die komen, Pattern=lineaal in, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=dit, Pattern=lineaal, Pattern=zijn, Pattern=die
+Turn ID=37| A | A : met dat ander vormp er nog naast
+	Free: Pattern=met, Pattern=dat, Pattern=er
+	Constrained: 
+Turn ID=38| B | B : Yes
+	Free: 
+	Constrained: 

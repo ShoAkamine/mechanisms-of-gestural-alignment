@@ -1,0 +1,107 @@
+B|0| B: Eh nu _hebben_ _ik_ _diegene met_ _dat_ _vierkant_ _ja_ bord eronder 
+A|1| A: _en dan_ [dat] _rond_ _aan de_ voorkant 
+B|2| B: dus _dat zijn_ 
+B|3| B: _ja_ [en dan] _die_ twee _drie_ stengel [aan de] zijkant 
+A|4| A: [ja] 
+B|5| B: [ja] 
+A|6| A: Oké [dan] [zijn] [dat] 
+A|7| A: eh _ik hebben_ [diegene met] _het_ _rond_ neusje 
+A|8| A: _die op_ zo'n heel _groot vierkant_ platvorm staan 
+A|9| A: [met] van [die] [ja] [drie] bollet als oor 
+B|10| B: [ja] 
+A|11| A: [en] een soort krulstaar 
+B|12| B: [ja] _dat zijn_ 
+B|13| B: _ik hebben die op het groot vierkant _platform_ met de_ [drie] dinget zijkant 
+A|14| A: [ja] 
+A|15| A: [dat zijn] 
+A|16| A: eh [ik hebben die op het groot vierkant platform] 
+A|17| A: [met] [die] [drie] bolle 
+B|18| B: [ja] [dat zijn] 
+B|19| B: [ik hebben die op het] [vierkant platform] 
+B|20| B: _met de_ [drie] [rond] 
+A|21| A: [dat zijn] 
+A|22| A: eh [ik hebben die op het groot] [platform met de] bolle 
+A|23| A: [het] staart 
+A|24| A: [en] [het] [rond] [aan de] voorkant 
+B|25| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Eh nu hebben ik diegene met dat vierkant ja bord eronder
+	Free: Pattern=dat, Pattern=ja, Pattern=hebben, Pattern=ik, Pattern=diegene met, Pattern=vierkant
+	Constrained: Pattern=met
+Turn ID=1| A | A : en dan dat rond aan de voorkant
+	Free: Pattern=aan de, Pattern=en dan, Pattern=dat, Pattern=rond
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=2| B | B : dus dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=3| B | B : ja en dan die twee drie stengel aan de zijkant
+	Free: Pattern=ja, Pattern=en dan, Pattern=aan de, Pattern=drie, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Oké dan zijn dat
+	Free: Pattern=dan, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : eh ik hebben diegene met het rond neusje
+	Free: Pattern=ik hebben, Pattern=diegene met, Pattern=het, Pattern=rond
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=met
+Turn ID=8| A | A : die op zo'n heel groot vierkant platvorm staan
+	Free: Pattern=die op, Pattern=groot vierkant
+	Constrained: Pattern=die, Pattern=vierkant
+Turn ID=9| A | A : met van die ja drie bollet als oor
+	Free: Pattern=die, Pattern=drie, Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : en een soort krulstaar
+	Free: Pattern=en
+	Constrained: 
+Turn ID=12| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=13| B | B : ik hebben die op het groot vierkant platform met de drie dinget zijkant
+	Free: Pattern=ik hebben die op het groot vierkant platform, Pattern=platform met de, Pattern=drie
+	Constrained: Pattern=ik hebben, Pattern=vierkant platform, Pattern=ik hebben die op het groot, Pattern=met de, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=vierkant, Pattern=groot vierkant, Pattern=ik hebben die op het, Pattern=die op, Pattern=ik
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=16| A | A : eh ik hebben die op het groot vierkant platform
+	Free: Pattern=ik hebben die op het groot vierkant platform
+	Constrained: Pattern=ik hebben, Pattern=vierkant platform, Pattern=ik hebben die op het groot, Pattern=het, Pattern=hebben, Pattern=die, Pattern=vierkant, Pattern=groot vierkant, Pattern=ik hebben die op het, Pattern=die op, Pattern=ik
+Turn ID=17| A | A : met die drie bolle
+	Free: Pattern=die, Pattern=drie, Pattern=met
+	Constrained: 
+Turn ID=18| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : ik hebben die op het vierkant platform
+	Free: Pattern=ik hebben die op het, Pattern=vierkant platform
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=die, Pattern=vierkant, Pattern=die op, Pattern=ik
+Turn ID=20| B | B : met de drie rond
+	Free: Pattern=met de, Pattern=drie, Pattern=rond
+	Constrained: Pattern=met
+Turn ID=21| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| A | A : eh ik hebben die op het groot platform met de bolle
+	Free: Pattern=ik hebben die op het groot, Pattern=platform met de
+	Constrained: Pattern=ik hebben, Pattern=met de, Pattern=ik hebben die op het, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=die op, Pattern=ik
+Turn ID=23| A | A : het staart
+	Free: Pattern=het
+	Constrained: 
+Turn ID=24| A | A : en het rond aan de voorkant
+	Free: Pattern=aan de, Pattern=het, Pattern=rond, Pattern=en
+	Constrained: 
+Turn ID=25| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

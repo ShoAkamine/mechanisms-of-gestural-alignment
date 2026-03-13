@@ -1,0 +1,151 @@
+A|0| A: Oh 
+A|1| A: deze _zijn_ 
+A|2| A: dit lijken 
+A|3| A: deze staan als enig _op_ een vierkant 
+B|4| B: _Oké_ 
+B|5| B: _met_ _de_ twee _ja_ 
+B|6| B: _Einstein_ _haar_ zeggen maar 
+A|7| A: [ja] 
+A|8| A: [ja] 
+B|9| B: _Oké_ 
+B|10| B: _Letter_ of nummer 
+B|11| B: _Oké_ _ik hebben_ _Einstein_ 
+B|12| B: [op] _die_ tafel 
+A|13| A: [die] [met] [die] [met] [die] [haar] _toch_ 
+B|14| B: [ja] 
+A|15| A: dus [die] _drie_ [die] _drie_ keer aan allebei [de] kant _van die_ driehoek 
+B|16| B: _ja precies_ [drie] [van die] dop 
+A|17| A: [Oké] 
+A|18| A: [Letter] 
+A|19| A: [ik hebben] [die] 
+A|20| A: hoe noemen we [die] 
+A|21| A: [Einstein] volgens mij 
+B|22| B: [Einstein] 
+A|23| A: [met] [die] [haar] 
+B|24| B: [ja] 
+A|25| A: Oh nee 
+A|26| A: [ja] oké 
+B|27| B: Op-op [de] tafel [zijn] dat [toch] 
+A|28| A: [ja precies] 
+B|29| B: Ké nummer 
+B|30| B: [ik hebben] [Einstein] 
+A|31| A: [Letter] 
+A|32| A: [ik hebben] degeen [die] [op] [Einstein] lijken 
+B|33| B: [Oké] 
+B|34| B: [ik hebben] [Einstein] 
+A|35| A: Oh [ja] 
+A|36| A: [Letter] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : deze zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=2| A | A : dit lijken
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : deze staan als enig op een vierkant
+	Free: Pattern=op
+	Constrained: 
+Turn ID=4| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : met de twee ja
+	Free: Pattern=met, Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=6| B | B : Einstein haar zeggen maar
+	Free: Pattern=haar, Pattern=Einstein
+	Constrained: 
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| B | B : Letter of nummer
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=11| B | B : Oké ik hebben Einstein
+	Free: Pattern=ik hebben, Pattern=Einstein, Pattern=Oké
+	Constrained: 
+Turn ID=12| B | B : op die tafel
+	Free: Pattern=die, Pattern=op
+	Constrained: 
+Turn ID=13| A | A : die met die met die haar toch
+	Free: Pattern=met, Pattern=haar, Pattern=toch, Pattern=die
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : dus die drie die drie keer aan allebei de kant van die driehoek
+	Free: Pattern=van die, Pattern=drie, Pattern=die, Pattern=de
+	Constrained: Pattern=die
+Turn ID=16| B | B : ja precies drie van die dop
+	Free: Pattern=van die, Pattern=ja precies, Pattern=drie
+	Constrained: Pattern=ja, Pattern=die
+Turn ID=17| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=18| A | A : Letter
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=19| A | A : ik hebben die
+	Free: Pattern=ik hebben, Pattern=die
+	Constrained: 
+Turn ID=20| A | A : hoe noemen we die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| A | A : Einstein volgens mij
+	Free: Pattern=Einstein
+	Constrained: 
+Turn ID=22| B | B : Einstein
+	Free: Pattern=Einstein
+	Constrained: 
+Turn ID=23| A | A : met die haar
+	Free: Pattern=met, Pattern=haar, Pattern=die
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : Oh nee
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Op-op de tafel zijn dat toch
+	Free: Pattern=toch, Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=28| A | A : ja precies
+	Free: Pattern=ja precies
+	Constrained: Pattern=ja
+Turn ID=29| B | B : Ké nummer
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : ik hebben Einstein
+	Free: Pattern=ik hebben, Pattern=Einstein
+	Constrained: 
+Turn ID=31| A | A : Letter
+	Free: Pattern=Letter
+	Constrained: 
+Turn ID=32| A | A : ik hebben degeen die op Einstein lijken
+	Free: Pattern=ik hebben, Pattern=die, Pattern=Einstein, Pattern=op
+	Constrained: 
+Turn ID=33| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=34| B | B : ik hebben Einstein
+	Free: Pattern=ik hebben, Pattern=Einstein
+	Constrained: 
+Turn ID=35| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : Letter
+	Free: Pattern=Letter
+	Constrained: 

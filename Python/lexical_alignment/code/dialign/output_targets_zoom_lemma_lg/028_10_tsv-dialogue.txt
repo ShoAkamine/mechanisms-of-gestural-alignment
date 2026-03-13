@@ -1,0 +1,115 @@
+B|0| B: _en_ _deze hebben_ _soort van_ _euh_ _twee_ armp _met_ _ja_ _soort_ bollet _erop_ _aan_ beide kant 
+B|1| B: maar rechts _zijn_ _die_ _lang dan_ link 
+A|2| A: juist 
+A|3| A: [en] [hebben] een [soort van] _springplank_ [aan] _de_ achterkant 
+B|4| B: _ja_ kloppen 
+A|5| A: dat [zijn] 
+A|6| A: ah _dan zijn_ dat _de_ één ronde denken ik dus [dan] beginnen we nu _met de twee_ 
+B|7| B: _ja_ 
+A|8| A: [euh] [deze hebben] weer _de twee_ uitsteeksel [aan] _de_ zijkant [met] een bolle [erop] _en de springplank_ 
+B|9| B: _Euh_ 
+A|10| A: [Euh] [aan] _de_ bovenkant 
+B|11| B: _Oh ja_ [met de twee] armp 
+A|12| A: [ja] [de] rechter [zijn] [lang dan] [de] 
+B|13| B: [ja] 
+B|14| B: [ja] [dan zijn] het 
+B|15| B: [deze] [zijn] [met _de twee] ongelijk_ armp in [de springplank] achter 
+A|16| A: [ja] dat [zijn] 
+A|17| A: [deze hebben] [twee] uitsteeksel [aan] [de] zijkant 
+A|18| A: [de] rechter [lang] [zijn] [dan] [de] linker _en de springplank_ daarachter 
+B|19| B: _ja even_ 
+B|20| B: _waar_ _staan_ _die_ 
+B|21| B: O [ja] 
+B|22| B: _dit zijn_ _die_ [met] _die_ [euh] _ongelijk_ armp [en de springplank] 
+A|23| A: [ja even] kijken [waar] [die] [staan] 
+A|24| A: [Oh ja] dat [zijn] [de] 
+A|25| A: [dit zijn] [de twee ongelijk] arm [met de] springplak 
+B|26| B: [ja] 
+B|27| B: [Oh ja] daar [staan] hij 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : en deze hebben soort van euh twee armp met ja soort bollet erop aan beide kant
+	Free: Pattern=soort, Pattern=twee, Pattern=erop, Pattern=euh, Pattern=deze hebben, Pattern=met, Pattern=en, Pattern=soort van, Pattern=aan, Pattern=ja
+	Constrained: Pattern=soort, Pattern=deze, Pattern=hebben
+Turn ID=1| B | B : maar rechts zijn die lang dan link
+	Free: Pattern=lang dan, Pattern=zijn, Pattern=die
+	Constrained: Pattern=dan, Pattern=lang
+Turn ID=2| A | A : juist
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : en hebben een soort van springplank aan de achterkant
+	Free: Pattern=hebben, Pattern=en, Pattern=soort van, Pattern=springplank, Pattern=de, Pattern=aan
+	Constrained: Pattern=soort
+Turn ID=4| B | B : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=6| A | A : ah dan zijn dat de één ronde denken ik dus dan beginnen we nu met de twee
+	Free: Pattern=met de twee, Pattern=dan zijn, Pattern=de, Pattern=dan
+	Constrained: Pattern=twee, Pattern=de twee, Pattern=dan, Pattern=met, Pattern=zijn, Pattern=de, Pattern=met de
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : euh deze hebben weer de twee uitsteeksel aan de zijkant met een bolle erop en de springplank
+	Free: Pattern=erop, Pattern=de twee, Pattern=euh, Pattern=deze hebben, Pattern=met, Pattern=en de springplank, Pattern=de, Pattern=aan
+	Constrained: Pattern=twee, Pattern=de, Pattern=hebben, Pattern=de springplank, Pattern=en, Pattern=deze, Pattern=springplank
+Turn ID=9| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=10| A | A : Euh aan de bovenkant
+	Free: Pattern=de, Pattern=Euh, Pattern=aan
+	Constrained: 
+Turn ID=11| B | B : Oh ja met de twee armp
+	Free: Pattern=met de twee, Pattern=Oh ja
+	Constrained: Pattern=twee, Pattern=de twee, Pattern=met, Pattern=de, Pattern=met de, Pattern=ja
+Turn ID=12| A | A : ja de rechter zijn lang dan de
+	Free: Pattern=lang dan, Pattern=de, Pattern=ja, Pattern=zijn
+	Constrained: Pattern=dan, Pattern=lang
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja dan zijn het
+	Free: Pattern=dan zijn, Pattern=ja
+	Constrained: Pattern=dan, Pattern=zijn
+Turn ID=15| B | B : deze zijn met de twee ongelijk armp in de springplank achter
+	Free: Pattern=met de twee, Pattern=de twee ongelijk, Pattern=de springplank, Pattern=zijn, Pattern=deze
+	Constrained: Pattern=twee, Pattern=de twee, Pattern=ongelijk, Pattern=met, Pattern=springplank, Pattern=de, Pattern=met de
+Turn ID=16| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=17| A | A : deze hebben twee uitsteeksel aan de zijkant
+	Free: Pattern=deze hebben, Pattern=de, Pattern=twee, Pattern=aan
+	Constrained: Pattern=deze, Pattern=hebben
+Turn ID=18| A | A : de rechter lang zijn dan de linker en de springplank daarachter
+	Free: Pattern=de, Pattern=dan, Pattern=lang, Pattern=zijn, Pattern=en de springplank
+	Constrained: Pattern=de springplank, Pattern=de, Pattern=springplank, Pattern=en
+Turn ID=19| B | B : ja even
+	Free: Pattern=ja even
+	Constrained: Pattern=ja
+Turn ID=20| B | B : waar staan die
+	Free: Pattern=staan, Pattern=die, Pattern=waar
+	Constrained: 
+Turn ID=21| B | B : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : dit zijn die met die euh ongelijk armp en de springplank
+	Free: Pattern=ongelijk, Pattern=euh, Pattern=met, Pattern=die, Pattern=dit zijn, Pattern=en de springplank
+	Constrained: Pattern=de, Pattern=de springplank, Pattern=en, Pattern=zijn, Pattern=springplank
+Turn ID=23| A | A : ja even kijken waar die staan
+	Free: Pattern=ja even, Pattern=staan, Pattern=die, Pattern=waar
+	Constrained: Pattern=ja
+Turn ID=24| A | A : Oh ja dat zijn de
+	Free: Pattern=Oh ja, Pattern=de, Pattern=zijn
+	Constrained: Pattern=ja
+Turn ID=25| A | A : dit zijn de twee ongelijk arm met de springplak
+	Free: Pattern=de twee ongelijk, Pattern=met de, Pattern=dit zijn
+	Constrained: Pattern=twee, Pattern=de, Pattern=de twee, Pattern=ongelijk, Pattern=met, Pattern=zijn
+Turn ID=26| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : Oh ja daar staan hij
+	Free: Pattern=Oh ja, Pattern=staan
+	Constrained: Pattern=ja

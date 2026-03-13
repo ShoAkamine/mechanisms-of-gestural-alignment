@@ -1,0 +1,67 @@
+B|0| B: _Euh_ 
+B|1| B: ja volgens mij hebben _ik_ deze _een_ beetje omschrijven als _een_ soort van _raket_ 
+B|2| B: _ik_ vinden in ieder geval dat er soort van twee vleugel _aan de_ zijkant zitten op deze manier 
+A|3| A: ah 
+B|4| B: en dan _aan de bovenkant_ _zijn_ eigenlijk gewoon _een balk_ bovenop _de_ beker 
+A|5| A: [ik] [ik] wi 
+A|6| A: [ik] weten het precies het [zijn] 
+A|7| A: euh [de] half _afgebouwen raket_ 
+A|8| A: met [een balk] [aan de bovenkant] 
+B|9| B: dan hebben [ik] [de] niet [afgebouwen raket] 
+A|10| A: Yes 
+A|11| A: euh [de] half [afgebouwen raket] 
+B|12| B: even kijken ja 
+B|13| B: dan [de] niet afgemaaken [raket] 
+A|14| A: [Euh] 
+A|15| A: [de] [raket] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=1| B | B : ja volgens mij hebben ik deze een beetje omschrijven als een soort van raket
+	Free: Pattern=raket, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=2| B | B : ik vinden in ieder geval dat er soort van twee vleugel aan de zijkant zitten op deze manier
+	Free: Pattern=aan de, Pattern=ik
+	Constrained: Pattern=de
+Turn ID=3| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : en dan aan de bovenkant zijn eigenlijk gewoon een balk bovenop de beker
+	Free: Pattern=aan de bovenkant, Pattern=een balk, Pattern=de, Pattern=zijn
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=5| A | A : ik ik wi
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=6| A | A : ik weten het precies het zijn
+	Free: Pattern=zijn, Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : euh de half afgebouwen raket
+	Free: Pattern=afgebouwen raket, Pattern=de
+	Constrained: Pattern=raket
+Turn ID=8| A | A : met een balk aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=een balk
+	Constrained: Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=9| B | B : dan hebben ik de niet afgebouwen raket
+	Free: Pattern=afgebouwen raket, Pattern=de, Pattern=ik
+	Constrained: Pattern=raket
+Turn ID=10| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : euh de half afgebouwen raket
+	Free: Pattern=afgebouwen raket, Pattern=de
+	Constrained: Pattern=raket
+Turn ID=12| B | B : even kijken ja
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : dan de niet afgemaaken raket
+	Free: Pattern=de, Pattern=raket
+	Constrained: 
+Turn ID=14| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=15| A | A : de raket
+	Free: Pattern=de, Pattern=raket
+	Constrained: 

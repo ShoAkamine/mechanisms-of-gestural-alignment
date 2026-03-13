@@ -1,0 +1,139 @@
+A|0| A: _Oké_ _ik hebben hem_ _weer_ 
+B|1| B: _ja_ 
+A|2| A: _Euh_ _oké ik_ vinden deze echt stom 
+A|3| A: _Oké_ hij _hebben_ _een_ soort _rond_ _schijf_ horizontaal _aan de voorkant_ 
+A|4| A: _en_ _dan hebben je _aan_ de_ linkerkant _een_ soort uitstulpsel _en_ _dan hebben _je_ een_ soort punt _die_ daar _weer_ _op_ staat _en_ naar boven wijzen 
+B|5| B: ehm _ja ja [oké_ [ik] hebben hem] [ik] denken _dat_ [ik] [hem] al [hebben] 
+A|6| A: _Oké_ nice nice 
+A|7| A: _Oké_ 
+B|8| B: Ehm 
+B|9| B: ehm even 
+B|10| B: [Euh] _ja_ _dit_ kunnen [je een] beetje zien als _diegene_ [die] _één oor_ [hebben] [en] [die] [hebben] [dan] _zo'n_ heel lang uitsteeksel [op] _dat raar _oor_ en_ [aan de voorkant] _zitten_ [weer] _zo'n_ [rond] 
+A|11| A: [ja [ja] ja oké] 
+B|12| B: [Oké] 
+A|13| A: oh _dit zijn_ [diegene] _met_ _ook_ [zo'n] _schijf [aan de_ voorkant] [en] _met [dat_ raar oor] 
+A|14| A: _maar_ [één oor] [zitten] [aan de] linkerkant [en] _met_ [die] uit _dat oor_ komen [die] [raar] punt 
+B|15| B: Ehm 
+B|16| B: wacht kunnen [je] _het_ _nog_ [één] keer beschrijven 
+A|17| A: [Oké] _je hebben_ [één _oor] en dat_ [zitten] [aan de] linkerkant [en] daaruit komen [weer] [een] soort punt 
+A|18| A: of [ja] [de] punt [zitten] veel richting [het] [oor] 
+B|19| B: [ja] 
+A|20| A: [en] _je hebben_ [zo'n] _schijf_ [nog] _aan de rechterkant_ wat plat [zitten] 
+B|21| B: [ja] 
+B|22| B: ehm _dit zijn weer_ [met [dat] [oor] en dat] heel lang uitsteeksel eraan [en] [het] [rond] zien [je] [dan] [ook] zeggen [maar] 
+A|23| A: [ja] M 
+B|24| B: [Oké] 
+A|25| A: [Euh] 
+A|26| A: [dit zijn weer] _dat oor [met_ [dat] raar] uitstulpsel [en dat] _schijf_ 
+B|27| B: ehm [dat oor met] [het] [raar] 
+B|28| B: [Euh] [ja] 
+B|29| B: ehm [dit zijn] 
+B|30| B: [Euh] [je hebben] [het] [schijf [aan de] rechterkant] [dan hebben je aan] [dat oor] [weer] [die] heel lang uitsteeksel [zitten] 
+B|31| B: dus [Oké] 
+A|32| A: Oh [ja ja] 
+A|33| A: [Euh] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben hem weer
+	Free: Pattern=ik hebben hem, Pattern=weer, Pattern=Oké
+	Constrained: Pattern=hem, Pattern=ik, Pattern=hebben
+Turn ID=1| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : Euh oké ik vinden deze echt stom
+	Free: Pattern=oké ik, Pattern=Euh
+	Constrained: Pattern=ik
+Turn ID=3| A | A : Oké hij hebben een soort rond schijf horizontaal aan de voorkant
+	Free: Pattern=een, Pattern=rond, Pattern=aan de voorkant, Pattern=Oké, Pattern=hebben, Pattern=schijf
+	Constrained: Pattern=de, Pattern=aan de
+Turn ID=4| A | A : en dan hebben je aan de linkerkant een soort uitstulpsel en dan hebben je een soort punt die daar weer op staat en naar boven wijzen
+	Free: Pattern=je een, Pattern=een, Pattern=dan hebben je aan, Pattern=dan hebben je, Pattern=die, Pattern=en, Pattern=weer, Pattern=op, Pattern=aan de
+	Constrained: Pattern=de, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=dan hebben je, Pattern=je
+Turn ID=5| B | B : ehm ja ja oké ik hebben hem ik denken dat ik hem al hebben
+	Free: Pattern=dat, Pattern=ja ja oké, Pattern=ik hebben hem, Pattern=hebben, Pattern=hem, Pattern=oké ik, Pattern=ik
+	Constrained: Pattern=hebben, Pattern=ik, Pattern=hem, Pattern=ja, Pattern=ja ja
+Turn ID=6| A | A : Oké nice nice
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=8| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : ehm even
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : Euh ja dit kunnen je een beetje zien als diegene die één oor hebben en die hebben dan zo'n heel lang uitsteeksel op dat raar oor en aan de voorkant zitten weer zo'n rond
+	Free: Pattern=zo'n, Pattern=ja, Pattern=je een, Pattern=op, Pattern=dan, Pattern=Euh, Pattern=hebben, Pattern=dit, Pattern=diegene, Pattern=en, Pattern=rond, Pattern=één oor, Pattern=dat raar oor, Pattern=die, Pattern=zitten, Pattern=oor en, Pattern=weer, Pattern=aan de voorkant
+	Constrained: Pattern=dat, Pattern=dat raar, Pattern=aan de, Pattern=een, Pattern=één, Pattern=en, Pattern=je, Pattern=raar, Pattern=de, Pattern=oor
+Turn ID=11| A | A : ja ja ja oké
+	Free: Pattern=ja ja oké, Pattern=ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=12| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=13| A | A : oh dit zijn diegene met ook zo'n schijf aan de voorkant en met dat raar oor
+	Free: Pattern=dat raar oor, Pattern=zo'n, Pattern=ook, Pattern=schijf aan de, Pattern=met dat, Pattern=met, Pattern=diegene, Pattern=en, Pattern=aan de voorkant, Pattern=dit zijn
+	Constrained: Pattern=dat, Pattern=dat raar, Pattern=aan de, Pattern=schijf, Pattern=dit, Pattern=met, Pattern=raar, Pattern=de, Pattern=oor
+Turn ID=14| A | A : maar één oor zitten aan de linkerkant en met die uit dat oor komen die raar punt
+	Free: Pattern=één oor, Pattern=aan de, Pattern=met, Pattern=dat oor, Pattern=en, Pattern=maar, Pattern=raar, Pattern=die, Pattern=zitten
+	Constrained: Pattern=dat, Pattern=één, Pattern=oor, Pattern=de
+Turn ID=15| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : wacht kunnen je het nog één keer beschrijven
+	Free: Pattern=nog, Pattern=je, Pattern=één, Pattern=het
+	Constrained: 
+Turn ID=17| A | A : Oké je hebben één oor en dat zitten aan de linkerkant en daaruit komen weer een soort punt
+	Free: Pattern=één oor, Pattern=een, Pattern=je hebben, Pattern=zitten, Pattern=en, Pattern=weer, Pattern=Oké, Pattern=aan de, Pattern=oor en dat
+	Constrained: Pattern=dat, Pattern=hebben, Pattern=één, Pattern=oor en, Pattern=en, Pattern=je, Pattern=en dat, Pattern=de, Pattern=oor
+Turn ID=18| A | A : of ja de punt zitten veel richting het oor
+	Free: Pattern=het, Pattern=zitten, Pattern=de, Pattern=oor, Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : en je hebben zo'n schijf nog aan de rechterkant wat plat zitten
+	Free: Pattern=nog, Pattern=zo'n, Pattern=je hebben, Pattern=schijf, Pattern=en, Pattern=aan de rechterkant, Pattern=zitten
+	Constrained: Pattern=de, Pattern=je, Pattern=hebben, Pattern=aan de
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ehm dit zijn weer met dat oor en dat heel lang uitsteeksel eraan en het rond zien je dan ook zeggen maar
+	Free: Pattern=dan, Pattern=het, Pattern=met dat, Pattern=dat oor, Pattern=en, Pattern=rond, Pattern=maar, Pattern=je, Pattern=dit zijn weer, Pattern=ook, Pattern=oor en dat
+	Constrained: Pattern=dat, Pattern=oor, Pattern=dit, Pattern=met, Pattern=oor en, Pattern=en, Pattern=weer, Pattern=dit zijn, Pattern=en dat
+Turn ID=23| A | A : ja M
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=26| A | A : dit zijn weer dat oor met dat raar uitstulpsel en dat schijf
+	Free: Pattern=dat oor met, Pattern=dat raar, Pattern=schijf, Pattern=met dat, Pattern=dit zijn weer, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=oor, Pattern=dit, Pattern=met, Pattern=dat oor, Pattern=en, Pattern=weer, Pattern=dit zijn, Pattern=raar
+Turn ID=27| B | B : ehm dat oor met het raar
+	Free: Pattern=dat oor met, Pattern=het, Pattern=raar
+	Constrained: Pattern=dat oor, Pattern=dat, Pattern=oor, Pattern=met
+Turn ID=28| B | B : Euh ja
+	Free: Pattern=ja, Pattern=Euh
+	Constrained: 
+Turn ID=29| B | B : ehm dit zijn
+	Free: Pattern=dit zijn
+	Constrained: Pattern=dit
+Turn ID=30| B | B : Euh je hebben het schijf aan de rechterkant dan hebben je aan dat oor weer die heel lang uitsteeksel zitten
+	Free: Pattern=het, Pattern=schijf aan de, Pattern=dat oor, Pattern=weer, Pattern=je hebben, Pattern=Euh, Pattern=dan hebben je aan, Pattern=aan de rechterkant, Pattern=die, Pattern=zitten
+	Constrained: Pattern=dat, Pattern=aan de, Pattern=dan, Pattern=dan hebben je, Pattern=je, Pattern=de, Pattern=oor, Pattern=hebben, Pattern=schijf
+Turn ID=31| B | B : dus Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=32| A | A : Oh ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=33| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 

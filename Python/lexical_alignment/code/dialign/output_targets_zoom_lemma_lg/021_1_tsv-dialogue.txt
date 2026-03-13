@@ -1,0 +1,99 @@
+A|0| A: _ja_ hier zitten één uitsteeksel _bovenop_ het voorwerp 
+A|1| A: _en_ twee 
+A|2| A: _ja_ _vierkant_ _vierkant_ oog 
+A|3| A: _vierkant_ uitpuilen oog 
+B|4| B: _een_ soort _verrekijker_ idee 
+A|5| A: _ja_ 
+B|6| B: Oké 
+B|7| B: _ik zien_ iets wat lijken op _een verrekijker_ 
+B|8| B: met aan de zijkant _een_ [vierkant] 
+A|9| A: mhm 
+B|10| B: [en] [bovenop] nog iets klein 
+A|11| A: _ja_ 
+A|12| A: Letter 
+A|13| A: [ik zien] 
+A|14| A: [een verrekijker] 
+B|15| B: even kijken 
+B|16| B: Oh [ja] nummer 
+B|17| B: [ik zien] [een verrekijker] 
+A|18| A: Letter 
+A|19| A: [ik zien] 
+A|20| A: [een verrekijker] 
+B|21| B: nummer 
+B|22| B: [ik zien] [een verrekijker] 
+A|23| A: Letter 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ja hier zitten één uitsteeksel bovenop het voorwerp
+	Free: Pattern=ja, Pattern=bovenop
+	Constrained: 
+Turn ID=1| A | A : en twee
+	Free: Pattern=en
+	Constrained: 
+Turn ID=2| A | A : ja vierkant vierkant oog
+	Free: Pattern=vierkant, Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : vierkant uitpuilen oog
+	Free: Pattern=vierkant
+	Constrained: 
+Turn ID=4| B | B : een soort verrekijker idee
+	Free: Pattern=een, Pattern=verrekijker
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : ik zien iets wat lijken op een verrekijker
+	Free: Pattern=ik zien, Pattern=een verrekijker
+	Constrained: Pattern=een, Pattern=verrekijker
+Turn ID=8| B | B : met aan de zijkant een vierkant
+	Free: Pattern=een, Pattern=vierkant
+	Constrained: 
+Turn ID=9| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : en bovenop nog iets klein
+	Free: Pattern=bovenop, Pattern=en
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: 
+Turn ID=14| A | A : een verrekijker
+	Free: Pattern=een verrekijker
+	Constrained: Pattern=een, Pattern=verrekijker
+Turn ID=15| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : Oh ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ik zien een verrekijker
+	Free: Pattern=ik zien, Pattern=een verrekijker
+	Constrained: Pattern=een, Pattern=verrekijker
+Turn ID=18| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=19| A | A : ik zien
+	Free: Pattern=ik zien
+	Constrained: 
+Turn ID=20| A | A : een verrekijker
+	Free: Pattern=een verrekijker
+	Constrained: Pattern=een, Pattern=verrekijker
+Turn ID=21| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : ik zien een verrekijker
+	Free: Pattern=ik zien, Pattern=een verrekijker
+	Constrained: Pattern=een, Pattern=verrekijker
+Turn ID=23| A | A : Letter
+	Free: 
+	Constrained: 

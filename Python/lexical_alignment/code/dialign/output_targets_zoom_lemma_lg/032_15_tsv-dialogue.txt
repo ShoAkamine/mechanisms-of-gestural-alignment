@@ -1,0 +1,87 @@
+B|0| B: _Euh_ 
+B|1| B: deze _hebben_ _een_ _buis_ _op_ _een_ vierkant _plateau en_ _de_ bovenkant _twee klein_ heel _klein_ boo staan _erop_ _en_ _de_ linkerkant _een soort haak_ 
+A|2| A: _ja_ 
+A|3| A: _ja_ _dat zijn_ 
+A|4| A: ik [hebben] nu _Euhm_ _die_ lang _buis die_ [op] _dat_ [plateau] liggen _met _die_ twee klein_ ploepjes er _bovenop_ [en] [een soort haak] aan [de] zijkant 
+B|5| B: _Euh_ _Ohja_ 
+B|6| B: [dat zijn] 
+B|7| B: [Euhm] 
+B|8| B: deze [hebben] _het _plateau_ met die [buis_ die] _erop_ staan [en] dan links [de] [haak] [en] [bovenop] [twee] van [die] _klein dinget_ 
+A|9| A: [Euh] _ja_ [dat zijn] 
+A|10| A: ik [hebben] nu [die] euh _ja_ _die [met_ die] [haak] aan [de] zijkant [en] [het [plateau] en] _ja_ [dat] lang buisding aan één kant [die] eruit steken _en die twee [klein_ dinget] [erop] 
+B|11| B: oja [met [die] met] [de] driehoek [bovenop] [ja] 
+A|12| A: [Euh] 
+B|13| B: [Euh] 
+B|14| B: dit [zijn] [het _plateau] met die_ cilinder [en die twee klein] pinnet daarin 
+B|15| B: [de] bovenkant 
+A|16| A: Euhhh 
+A|17| A: waar [zijn] [die] [Ohja] 
+A|18| A: [dat zijn] 
+A|19| A: ik [hebben] nu weer [dat] [plateau met die buis] [erop] 
+B|20| B: [Euh] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=1| B | B : deze hebben een buis op een vierkant plateau en de bovenkant twee klein heel klein boo staan erop en de linkerkant een soort haak
+	Free: Pattern=de, Pattern=erop, Pattern=op, Pattern=een, Pattern=hebben, Pattern=buis, Pattern=een soort haak, Pattern=klein, Pattern=en, Pattern=plateau en, Pattern=twee klein
+	Constrained: Pattern=twee, Pattern=een, Pattern=plateau, Pattern=klein, Pattern=en, Pattern=haak
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=4| A | A : ik hebben nu Euhm die lang buis die op dat plateau liggen met die twee klein ploepjes er bovenop en een soort haak aan de zijkant
+	Free: Pattern=de, Pattern=op, Pattern=plateau, Pattern=Euhm, Pattern=die, Pattern=een soort haak, Pattern=en, Pattern=buis die, Pattern=dat, Pattern=met die, Pattern=bovenop, Pattern=die twee klein, Pattern=hebben
+	Constrained: Pattern=twee, Pattern=een, Pattern=buis, Pattern=die, Pattern=klein, Pattern=haak, Pattern=twee klein
+Turn ID=5| B | B : Euh Ohja
+	Free: Pattern=Euh, Pattern=Ohja
+	Constrained: 
+Turn ID=6| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| B | B : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=8| B | B : deze hebben het plateau met die buis die erop staan en dan links de haak en bovenop twee van die klein dinget
+	Free: Pattern=het plateau, Pattern=bovenop, Pattern=twee, Pattern=erop, Pattern=die, Pattern=en, Pattern=haak, Pattern=buis die, Pattern=de, Pattern=klein dinget, Pattern=plateau met die buis, Pattern=hebben
+	Constrained: Pattern=met die, Pattern=plateau met die, Pattern=plateau, Pattern=buis, Pattern=die, Pattern=klein
+Turn ID=9| A | A : Euh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=Euh
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=10| A | A : ik hebben nu die euh ja die met die haak aan de zijkant en het plateau en ja dat lang buisding aan één kant die eruit steken en die twee klein dinget erop
+	Free: Pattern=het plateau, Pattern=erop, Pattern=hebben, Pattern=die met, Pattern=die, Pattern=en die twee klein, Pattern=en, Pattern=haak, Pattern=plateau en, Pattern=dat, Pattern=met die, Pattern=de, Pattern=klein dinget, Pattern=ja
+	Constrained: Pattern=twee, Pattern=die twee klein, Pattern=plateau, Pattern=die, Pattern=klein, Pattern=en, Pattern=twee klein
+Turn ID=11| B | B : oja met die met de driehoek bovenop ja
+	Free: Pattern=die met, Pattern=met die, Pattern=bovenop, Pattern=de, Pattern=ja
+	Constrained: Pattern=die
+Turn ID=12| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=13| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=14| B | B : dit zijn het plateau met die cilinder en die twee klein pinnet daarin
+	Free: Pattern=en die twee klein, Pattern=plateau met die, Pattern=het plateau, Pattern=zijn
+	Constrained: Pattern=met die, Pattern=twee, Pattern=die twee klein, Pattern=plateau, Pattern=die, Pattern=klein, Pattern=en, Pattern=twee klein
+Turn ID=15| B | B : de bovenkant
+	Free: Pattern=de
+	Constrained: 
+Turn ID=16| A | A : Euhhh
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : waar zijn die Ohja
+	Free: Pattern=die, Pattern=Ohja, Pattern=zijn
+	Constrained: 
+Turn ID=18| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| A | A : ik hebben nu weer dat plateau met die buis erop
+	Free: Pattern=plateau met die buis, Pattern=hebben, Pattern=erop, Pattern=dat
+	Constrained: Pattern=met die, Pattern=plateau met die, Pattern=plateau, Pattern=buis, Pattern=die
+Turn ID=20| B | B : Euh dat zijn
+	Free: Pattern=dat zijn, Pattern=Euh
+	Constrained: Pattern=dat, Pattern=zijn

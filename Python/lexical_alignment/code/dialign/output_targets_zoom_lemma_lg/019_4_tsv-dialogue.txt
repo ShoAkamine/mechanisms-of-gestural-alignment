@@ -1,0 +1,163 @@
+A|0| A: ehm jij _hebben een_ rood vierkan hè 
+B|1| B: _Oké_ 
+B|2| B: _Oh_ _ja_ 
+A|3| A: [ja] 
+B|4| B: [ja] _oké_ 
+B|5| B: ik beginnen nu _met_ uitleggen 
+B|6| B: wat ik zien _zijn_ [een] soort van vogel _met_ [een] soort van vierkant snavel 
+B|7| B: en hij [hebben een] soort van 
+A|8| A: _eh_ zo'n _dubbel_ gewoon [een] _dubbel_ [een] _eend_ 
+B|9| B: [ja] 
+B|10| B: dubbele [dubbel] 
+A|11| A: Lijken op [een] _eend_ 
+B|12| B: [ja] [ja] [ja] 
+B|13| B: en hij [hebben een] soort van [ja] f 
+B|14| B: _het_ _zijn_ soort van staart link onderin 
+A|15| A: [ja] [met] zo'n _plat_ piramide bovenop 
+B|16| B: Eh en één vleugel 
+B|17| B: en zo 
+B|18| B: [ja] precies 
+A|19| A: [Oké] [oké] dan [zijn] [het] 
+B|20| B: _die_ 
+B|21| B: Top 
+A|22| A: _dit zijn _de_ eend_ 
+A|23| A: [met] [die] _plat_ piramide bovenop 
+B|24| B: [ja] [ja] helder 
+B|25| B: [eh] [dit zijn de] [de eend] 
+B|26| B: [met] [de] [plat] driehoek aan [de] bovenkant 
+A|27| A: [Oh] 
+A|28| A: [ja] [die] [eend] 
+A|29| A: even zoeken horen 
+A|30| A: waar staan [die] 
+A|31| A: ehm [ja] 
+A|32| A: [dit zijn [de] eend] 
+B|33| B: [de eend] 
+B|34| B: [Oké] nummer 
+B|35| B: [de] [de eend] 
+A|36| A: ah [de eend] 
+A|37| A: [Oké] 
+A|38| A: [eh] _Eend_ 
+B|39| B: [Eend] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm jij hebben een rood vierkan hè
+	Free: Pattern=hebben een
+	Constrained: Pattern=een
+Turn ID=1| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=2| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : ja oké
+	Free: Pattern=oké, Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ik beginnen nu met uitleggen
+	Free: Pattern=met
+	Constrained: 
+Turn ID=6| B | B : wat ik zien zijn een soort van vogel met een soort van vierkant snavel
+	Free: Pattern=zijn, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=7| B | B : en hij hebben een soort van
+	Free: Pattern=hebben een
+	Constrained: Pattern=een
+Turn ID=8| A | A : eh zo'n dubbel gewoon een dubbel een eend
+	Free: Pattern=dubbel, Pattern=eh, Pattern=eend, Pattern=een
+	Constrained: 
+Turn ID=9| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : dubbele dubbel
+	Free: Pattern=dubbel
+	Constrained: 
+Turn ID=11| A | A : Lijken op een eend
+	Free: Pattern=eend, Pattern=een
+	Constrained: 
+Turn ID=12| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en hij hebben een soort van ja f
+	Free: Pattern=hebben een, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=14| B | B : het zijn soort van staart link onderin
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=15| A | A : ja met zo'n plat piramide bovenop
+	Free: Pattern=met, Pattern=plat, Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Eh en één vleugel
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : en zo
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : Oké oké dan zijn het
+	Free: Pattern=Oké, Pattern=zijn, Pattern=oké, Pattern=het
+	Constrained: 
+Turn ID=20| B | B : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=21| B | B : Top
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : dit zijn de eend
+	Free: Pattern=dit zijn de, Pattern=de eend
+	Constrained: Pattern=zijn, Pattern=de, Pattern=eend
+Turn ID=23| A | A : met die plat piramide bovenop
+	Free: Pattern=die, Pattern=met, Pattern=plat
+	Constrained: 
+Turn ID=24| B | B : ja ja helder
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : eh dit zijn de de eend
+	Free: Pattern=dit zijn de, Pattern=de eend, Pattern=eh
+	Constrained: Pattern=zijn, Pattern=de, Pattern=eend
+Turn ID=26| B | B : met de plat driehoek aan de bovenkant
+	Free: Pattern=de, Pattern=met, Pattern=plat
+	Constrained: 
+Turn ID=27| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=28| A | A : ja die eend
+	Free: Pattern=die, Pattern=eend, Pattern=ja
+	Constrained: 
+Turn ID=29| A | A : even zoeken horen
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=31| A | A : ehm ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : dit zijn de eend
+	Free: Pattern=dit zijn de, Pattern=de eend
+	Constrained: Pattern=zijn, Pattern=de, Pattern=eend
+Turn ID=33| B | B : de eend
+	Free: Pattern=de eend
+	Constrained: Pattern=de, Pattern=eend
+Turn ID=34| B | B : Oké nummer
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=35| B | B : de de eend
+	Free: Pattern=de eend, Pattern=de
+	Constrained: Pattern=de, Pattern=eend
+Turn ID=36| A | A : ah de eend
+	Free: Pattern=de eend
+	Constrained: Pattern=de, Pattern=eend
+Turn ID=37| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=38| A | A : eh Eend
+	Free: Pattern=eh, Pattern=Eend
+	Constrained: 
+Turn ID=39| B | B : Eend nummer
+	Free: Pattern=Eend
+	Constrained: 

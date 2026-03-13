@@ -1,0 +1,135 @@
+B|0| B: _Oké_ 
+B|1| B: _ehm_ _deze hebben_ _bovenop_ _een soort_ omgekeerde _kegel_ 
+B|2| B: _van_ Bowlen _zeggen maar_ 
+B|3| B: _en _een_ rechthoek_ 
+B|4| B: _en een_ _neus_ _aan de_ voorkant 
+B|5| B: gewoon _een soort_ _ja_ _in_ _een soort_ eivorm 
+B|6| B: _en aan de_ linkerkant _hebben_ hij _een driehoek_ 
+A|7| A: _Oh ja_ [ja] volgens _mij_ _zijn_ _dat_ voor _mij_ 
+B|8| B: _Oké_ 
+A|9| A: [ehm] [ja] [deze hebben] [zeggen maar] _zo'n_ [neus] voorop 
+A|10| A: [en] dan links [een soort] kegelachtig iets 
+A|11| A: [en] dan rechts [een] [een rechthoek] 
+B|12| B: _ja _dat zijn_ bij mij_ 
+A|13| A: Erboven 
+A|14| A: [Oké] 
+B|15| B: [ehm] [deze hebben] [zo'n] [een soort] eivormig ding als [neus] 
+B|16| B: _en een_ omgekeerde _kegel bovenop_ 
+B|17| B: _en [een_ rechthoek] _bovenop_ 
+A|18| A: _Oh [ja_ dat zijn] [van] [dat zijn bij mij] 
+B|19| B: _en aan de zijkant een driehoek_ 
+A|20| A: [ehm] [ja] [deze hebben] [zeggen maar] [zo'n] [neus] 
+A|21| A: [en] dan [een] vierkan [bovenop] 
+A|22| A: [en [een] soort] [kegel bovenop] 
+A|23| A: [en aan de zijkant een driehoek] 
+B|24| B: [Oh ja] nummer 
+B|25| B: dit [zijn] _die_ _met_ [de] omgekeerde [kegel] [en] [driehoek] [bovenop] 
+B|26| B: sorry [rechthoek] 
+B|27| B: [en] [de] [neus] [aan de] voorkant 
+A|28| A: [Oh ja] [zijn] [dat] 
+A|29| A: [ja] [met] [die] [neus] 
+A|30| A: [en] dan [de] omgekeerd [kegel] [in] het vierkan 
+A|31| A: [en aan de zijkant] [de] [driehoek] 
+B|32| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : ehm deze hebben bovenop een soort omgekeerde kegel
+	Free: Pattern=kegel, Pattern=bovenop, Pattern=deze hebben, Pattern=ehm, Pattern=een soort
+	Constrained: Pattern=een, Pattern=hebben
+Turn ID=2| B | B : van Bowlen zeggen maar
+	Free: Pattern=zeggen maar, Pattern=van
+	Constrained: 
+Turn ID=3| B | B : en een rechthoek
+	Free: Pattern=een rechthoek, Pattern=en een
+	Constrained: Pattern=een, Pattern=en, Pattern=rechthoek
+Turn ID=4| B | B : en een neus aan de voorkant
+	Free: Pattern=en een, Pattern=aan de, Pattern=neus
+	Constrained: Pattern=een, Pattern=de, Pattern=en
+Turn ID=5| B | B : gewoon een soort ja in een soort eivorm
+	Free: Pattern=een soort, Pattern=in, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=6| B | B : en aan de linkerkant hebben hij een driehoek
+	Free: Pattern=en aan de, Pattern=een driehoek, Pattern=hebben
+	Constrained: Pattern=driehoek, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en
+Turn ID=7| A | A : Oh ja ja volgens mij zijn dat voor mij
+	Free: Pattern=dat, Pattern=ja, Pattern=Oh ja, Pattern=mij, Pattern=zijn
+	Constrained: Pattern=ja
+Turn ID=8| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=9| A | A : ehm ja deze hebben zeggen maar zo'n neus voorop
+	Free: Pattern=zo'n, Pattern=ja, Pattern=zeggen maar, Pattern=deze hebben, Pattern=neus, Pattern=ehm
+	Constrained: Pattern=hebben
+Turn ID=10| A | A : en dan links een soort kegelachtig iets
+	Free: Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=11| A | A : en dan rechts een een rechthoek
+	Free: Pattern=een rechthoek, Pattern=een, Pattern=en
+	Constrained: Pattern=een, Pattern=rechthoek
+Turn ID=12| B | B : ja dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=ja dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja, Pattern=mij
+Turn ID=13| A | A : Erboven
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| B | B : ehm deze hebben zo'n een soort eivormig ding als neus
+	Free: Pattern=zo'n, Pattern=deze hebben, Pattern=neus, Pattern=ehm, Pattern=een soort
+	Constrained: Pattern=een, Pattern=hebben
+Turn ID=16| B | B : en een omgekeerde kegel bovenop
+	Free: Pattern=kegel bovenop, Pattern=en een
+	Constrained: Pattern=een, Pattern=en, Pattern=bovenop, Pattern=kegel
+Turn ID=17| B | B : en een rechthoek bovenop
+	Free: Pattern=een rechthoek, Pattern=en een, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=en, Pattern=rechthoek
+Turn ID=18| A | A : Oh ja dat zijn van dat zijn bij mij
+	Free: Pattern=dat zijn bij mij, Pattern=ja dat zijn, Pattern=Oh ja, Pattern=van
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja, Pattern=mij
+Turn ID=19| B | B : en aan de zijkant een driehoek
+	Free: Pattern=en aan de zijkant een driehoek
+	Constrained: Pattern=driehoek, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=en aan de zijkant, Pattern=en aan de, Pattern=een driehoek
+Turn ID=20| A | A : ehm ja deze hebben zeggen maar zo'n neus
+	Free: Pattern=zo'n, Pattern=ja, Pattern=zeggen maar, Pattern=deze hebben, Pattern=neus, Pattern=ehm
+	Constrained: Pattern=hebben
+Turn ID=21| A | A : en dan een vierkan bovenop
+	Free: Pattern=een, Pattern=en, Pattern=bovenop
+	Constrained: 
+Turn ID=22| A | A : en een soort kegel bovenop
+	Free: Pattern=kegel bovenop, Pattern=een soort, Pattern=en een
+	Constrained: Pattern=bovenop, Pattern=een, Pattern=en, Pattern=kegel
+Turn ID=23| A | A : en aan de zijkant een driehoek
+	Free: Pattern=en aan de zijkant een driehoek
+	Constrained: Pattern=driehoek, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en, Pattern=en aan de zijkant, Pattern=en aan de, Pattern=een driehoek
+Turn ID=24| B | B : Oh ja nummer
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=25| B | B : dit zijn die met de omgekeerde kegel en driehoek bovenop
+	Free: Pattern=bovenop, Pattern=de, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=kegel, Pattern=driehoek
+	Constrained: 
+Turn ID=26| B | B : sorry rechthoek
+	Free: Pattern=rechthoek
+	Constrained: 
+Turn ID=27| B | B : en de neus aan de voorkant
+	Free: Pattern=aan de, Pattern=de, Pattern=en, Pattern=neus
+	Constrained: Pattern=de
+Turn ID=28| A | A : Oh ja zijn dat
+	Free: Pattern=Oh ja, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=ja
+Turn ID=29| A | A : ja met die neus
+	Free: Pattern=die, Pattern=met, Pattern=neus, Pattern=ja
+	Constrained: 
+Turn ID=30| A | A : en dan de omgekeerd kegel in het vierkan
+	Free: Pattern=de, Pattern=en, Pattern=in, Pattern=kegel
+	Constrained: 
+Turn ID=31| A | A : en aan de zijkant de driehoek
+	Free: Pattern=en aan de zijkant, Pattern=de, Pattern=driehoek
+	Constrained: Pattern=en aan de, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=32| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

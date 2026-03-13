@@ -1,0 +1,51 @@
+B|0| B: ehm deze _hebben_ 
+B|1| B: _ja_ het _zijn_ alsof het _een_ kop midden in _de_ tafel _zijn_ 
+B|2| B: _met twee_ tafelpoot 
+B|3| B: en daarop staan _een_ soort _bakje_ 
+B|4| B: _met_ aan _de_ achterkant _een_ soort schoorsteen staart omhoog 
+A|5| A: [ja] oké dat [zijn] 
+A|6| A: eh dit [zijn] die [met] die plaat er doorheen waar _een bakje_ op staat [met twee] van die _poot_ [hebben] die plaat 
+B|7| B: Tafeltje [met _twee] poot_ 
+A|8| A: eh dit [zijn] die [met] die plaat [met] [de] poo [met] dat [bakje] erop 
+B|9| B: Tafeltje [met _twee] poot_ en [een bakje] 
+A|10| A: [ja] dat [zijn] 
+A|11| A: Eh die [met] die plaat [met] die [twee poot] [met] dat bak 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : ja het zijn alsof het een kop midden in de tafel zijn
+	Free: Pattern=ja, Pattern=de, Pattern=een, Pattern=zijn
+	Constrained: 
+Turn ID=2| B | B : met twee tafelpoot
+	Free: Pattern=met twee
+	Constrained: Pattern=met
+Turn ID=3| B | B : en daarop staan een soort bakje
+	Free: Pattern=bakje, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : met aan de achterkant een soort schoorsteen staart omhoog
+	Free: Pattern=de, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=5| A | A : ja oké dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=6| A | A : eh dit zijn die met die plaat er doorheen waar een bakje op staat met twee van die poot hebben die plaat
+	Free: Pattern=een bakje, Pattern=poot, Pattern=hebben, Pattern=met twee, Pattern=met, Pattern=zijn
+	Constrained: Pattern=bakje, Pattern=een, Pattern=met
+Turn ID=7| B | B : Tafeltje met twee poot
+	Free: Pattern=twee poot, Pattern=met twee
+	Constrained: Pattern=met, Pattern=poot
+Turn ID=8| A | A : eh dit zijn die met die plaat met de poo met dat bakje erop
+	Free: Pattern=bakje, Pattern=de, Pattern=zijn, Pattern=met
+	Constrained: 
+Turn ID=9| B | B : Tafeltje met twee poot en een bakje
+	Free: Pattern=een bakje, Pattern=twee poot, Pattern=met twee
+	Constrained: Pattern=poot, Pattern=een, Pattern=met, Pattern=bakje
+Turn ID=10| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=11| A | A : Eh die met die plaat met die twee poot met dat bak
+	Free: Pattern=twee poot, Pattern=met
+	Constrained: Pattern=poot

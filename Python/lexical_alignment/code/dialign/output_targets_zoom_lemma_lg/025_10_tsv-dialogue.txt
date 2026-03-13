@@ -1,0 +1,119 @@
+A|0| A: Oké _ik hebben_ _dit_ net _omschrijven_ bij _die_ opdracht _als_ _een_ soort van _emmer_ waar _een_ zo'n verrekijker doorheen opsteken 
+A|1| A: en _dan_ zitten er nog 
+A|2| A: ehm je zien _die_ verrekijker _aan_ allebei _de_ kant eruit steken 
+A|3| A: _aan de_ rechterkant _wat_ lang _dan_ _aan de linkerkant_ 
+B|4| B: _Oh ja_ [ik] denken 
+A|5| A: Ehm en _dan_ zitten er nog zo'n zo'n bord naast of zo 
+B|6| B: _eh_ _ja_ [een] beetje [aan de linkerkant] veel 
+A|7| A: [ja] 
+B|8| B: _ja ja_ [ik hebben] _het_ ook [omschrijven] [als] iets [wat] _doorboren worden_ 
+A|9| A: [ja ja] 
+B|10| B: _ja oké_ [dan] _zijn_ _het_ nummer 
+B|11| B: _eh dit zijn die_ [emmer] _die doorboren worden_ 
+A|12| A: en _met_ [die] 
+A|13| A: [Oh _ja] met_ _dat_ houten of [ja] _in mijn hoofd zijn_ _dat_ ding hout 
+B|14| B: [ja _met] het_ [in mijn hoofd zijn] _het_ [een] _zonnepaneel_ 
+B|15| B: maar 
+A|16| A: [Oh [ja] oké] [ja] 
+A|17| A: Oké _dat zijn_ 
+A|18| A: even kijken [dit zijn die] [die doorboren worden] 
+A|19| A: _met het zonnepaneel_ 
+B|20| B: _Eh dat zijn_ nummer 
+B|21| B: _eh dit zijn_ [de] [emmer] [die doorboren worden] 
+B|22| B: [met het zonnepaneel] 
+A|23| A: [Eh dat zijn] 
+A|24| A: [eh dit zijn [die] doorboren worden] [met] [zonnepaneel] 
+B|25| B: [Eh dat zijn] nummer 
+B|26| B: [eh dit zijn] [de] [emmer] [die doorboren worden] 
+B|27| B: [met het zonnepaneel] 
+A|28| A: [Eh dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik hebben dit net omschrijven bij die opdracht als een soort van emmer waar een zo'n verrekijker doorheen opsteken
+	Free: Pattern=ik hebben, Pattern=een, Pattern=dit, Pattern=omschrijven, Pattern=als, Pattern=die, Pattern=emmer
+	Constrained: Pattern=ik
+Turn ID=1| A | A : en dan zitten er nog
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=2| A | A : ehm je zien die verrekijker aan allebei de kant eruit steken
+	Free: Pattern=aan, Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=3| A | A : aan de rechterkant wat lang dan aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=aan de, Pattern=wat, Pattern=dan
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| B | B : Oh ja ik denken
+	Free: Pattern=Oh ja, Pattern=ik
+	Constrained: Pattern=ja
+Turn ID=5| A | A : Ehm en dan zitten er nog zo'n zo'n bord naast of zo
+	Free: Pattern=dan
+	Constrained: 
+Turn ID=6| B | B : eh ja een beetje aan de linkerkant veel
+	Free: Pattern=aan de linkerkant, Pattern=een, Pattern=ja, Pattern=eh
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja ja ik hebben het ook omschrijven als iets wat doorboren worden
+	Free: Pattern=ik hebben, Pattern=ja ja, Pattern=het, Pattern=als, Pattern=wat, Pattern=omschrijven, Pattern=doorboren worden
+	Constrained: Pattern=ik, Pattern=ja
+Turn ID=9| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=10| B | B : ja oké dan zijn het nummer
+	Free: Pattern=ja oké, Pattern=het, Pattern=zijn, Pattern=dan
+	Constrained: Pattern=ja
+Turn ID=11| B | B : eh dit zijn die emmer die doorboren worden
+	Free: Pattern=eh dit zijn die, Pattern=die doorboren worden, Pattern=emmer
+	Constrained: Pattern=dit zijn die, Pattern=dit, Pattern=doorboren worden, Pattern=eh dit zijn, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=12| A | A : en met die
+	Free: Pattern=met, Pattern=die
+	Constrained: 
+Turn ID=13| A | A : Oh ja met dat houten of ja in mijn hoofd zijn dat ding hout
+	Free: Pattern=dat, Pattern=in mijn hoofd zijn, Pattern=ja, Pattern=Oh ja, Pattern=ja met
+	Constrained: Pattern=zijn, Pattern=met, Pattern=ja
+Turn ID=14| B | B : ja met het in mijn hoofd zijn het een zonnepaneel
+	Free: Pattern=in mijn hoofd zijn, Pattern=het, Pattern=met het, Pattern=zonnepaneel, Pattern=een, Pattern=ja met
+	Constrained: Pattern=zijn, Pattern=met, Pattern=het, Pattern=ja
+Turn ID=15| B | B : maar
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : Oh ja oké ja
+	Free: Pattern=ja oké, Pattern=Oh ja, Pattern=ja
+	Constrained: Pattern=ja
+Turn ID=17| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=18| A | A : even kijken dit zijn die die doorboren worden
+	Free: Pattern=die doorboren worden, Pattern=dit zijn die
+	Constrained: Pattern=dit, Pattern=zijn, Pattern=die, Pattern=doorboren worden
+Turn ID=19| A | A : met het zonnepaneel
+	Free: Pattern=met het zonnepaneel
+	Constrained: Pattern=zonnepaneel, Pattern=met, Pattern=het, Pattern=met het
+Turn ID=20| B | B : Eh dat zijn nummer
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat
+Turn ID=21| B | B : eh dit zijn de emmer die doorboren worden
+	Free: Pattern=die doorboren worden, Pattern=eh dit zijn, Pattern=emmer, Pattern=de
+	Constrained: Pattern=dit, Pattern=doorboren worden, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=22| B | B : met het zonnepaneel
+	Free: Pattern=met het zonnepaneel
+	Constrained: Pattern=zonnepaneel, Pattern=met, Pattern=het, Pattern=met het
+Turn ID=23| A | A : Eh dat zijn
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat
+Turn ID=24| A | A : eh dit zijn die doorboren worden met zonnepaneel
+	Free: Pattern=eh dit zijn die, Pattern=die doorboren worden, Pattern=zonnepaneel, Pattern=met
+	Constrained: Pattern=dit zijn die, Pattern=dit, Pattern=doorboren worden, Pattern=eh dit zijn, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=25| B | B : Eh dat zijn nummer
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat
+Turn ID=26| B | B : eh dit zijn de emmer die doorboren worden
+	Free: Pattern=die doorboren worden, Pattern=eh dit zijn, Pattern=emmer, Pattern=de
+	Constrained: Pattern=dit, Pattern=doorboren worden, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=27| B | B : met het zonnepaneel
+	Free: Pattern=met het zonnepaneel
+	Constrained: Pattern=zonnepaneel, Pattern=met, Pattern=het, Pattern=met het
+Turn ID=28| A | A : Eh dat zijn
+	Free: Pattern=Eh dat zijn
+	Constrained: Pattern=dat zijn, Pattern=zijn, Pattern=dat

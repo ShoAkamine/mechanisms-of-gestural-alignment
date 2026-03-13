@@ -1,0 +1,195 @@
+B|0| B: _Oh_ hè _dat zijn_ 
+B|1| B: _Oh_ 
+B|2| B: _hij_ _zijn_ niet goed 
+A|3| A: huh 
+A|4| A: [Oh] god 
+B|5| B: hè ? _Oké dat_ vinden _ik_ wel raar 
+B|6| B: nou _ja_ _oké_ 
+B|7| B: [Oh] nee 
+A|8| A: [dat zijn] 
+B|9| B: [Oh] maar misschien _hebben_ _ik_ hem wel goed 
+B|10| B: _ik_ _hebben_ gewoon nu _een_ ander rood _vierkant_ 
+B|11| B: _Oké_ _dit zijn_ _een_ ander 
+A|12| A: [ja] 
+B|13| B: _Oké_ daar _aan de_ bovenkant _zitten_ _een soort_ _van_ schoorsteenachtig _iets_ 
+B|14| B: _met_ zo'n [ja] _een soort_ schoorsteen 
+B|15| B: _en_ _aan de linkerkant_ _zitten_ _twee_ pinn 
+B|16| B: _op_ _dezelfde_ 
+B|17| B: _Eh_ [zijn] precies hetzelfde 
+B|18| B: _en dan_ rechts _een_ beetje voor _zitten_ _een_ supergroot _vierkant_ 
+A|19| A: O [oké] 
+A|20| A: [dat zijn] denken [ik] [dan] bij mij 
+A|21| A: dus 
+A|22| A: [Eh] _deze hebben_ [dat] _vierkan_ [dat] er _vooraan_ [op] [zitten] 
+A|23| A: [dan] [hebben] [hij] _twee dezelfde_ ding naast elkaar staan [aan de linkerkant] 
+A|24| A: [en dan] [hebben] [hij] bovenop [hebben] [hij] _nog_ [iets] [met] [twee] schijf erop 
+B|25| B: _eh_ [ja] o [ja] 
+A|26| A: als [een soort] uitsteeksel [met] [twee] 
+B|27| B: [dat zijn] 
+B|28| B: [deze hebben] [een] _vierkant aan de voorkant_ 
+B|29| B: [en] links [twee dezelfde] _blok_ 
+B|30| B: _die _van_ klein naar groot gaan_ 
+B|31| B: [en] boven [nog] zo'n [ja] [twee] _van_ _die_ rond 
+B|32| B: [met] [een] stok 
+A|33| A: [Oké [dat] zijn] 
+A|34| A: [eh] [dit zijn] degeen [met] het _vierkan_ ervoor 
+A|35| A: [en dan] _link_ [hebben] [hij] [die] [blok] [die _van] groot naar klein_ [gaan] 
+A|36| A: [hebben] [hij] er [twee] naast elkaar [zitten] 
+A|37| A: [en dan] bovenop [hebben] [hij] [de] uitsteeksel [met] [twee] 
+B|38| B: [ja] zIjn 
+B|39| B: [deze hebben] [een] [vierkan] [vooraan] 
+B|40| B: [en] [twee dezelfde] [link] 
+B|41| B: [Eh] [van groot naar klein] 
+B|42| B: [en] _van klein naar groot_ 
+A|43| A: [ja] [dat zijn] 
+A|44| A: [eh] [dit zijn] degeen [met] [de] [vierkant aan de voorkant] 
+A|45| A: [en dan] [link] [hebben] [hij] [die] [twee] ding [die] dus [van klein naar groot gaan] 
+A|46| A: [en dan] bovenop [hebben] [hij] [die] [twee] schijf [op] [nog] [een] uitsteeksel 
+B|47| B: Yes 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh hè dat zijn
+	Free: Pattern=dat zijn, Pattern=Oh
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=1| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=2| B | B : hij zijn niet goed
+	Free: Pattern=hij, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : huh
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : Oh god
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : hè ? Oké dat vinden ik wel raar
+	Free: Pattern=Oké dat, Pattern=ik
+	Constrained: Pattern=Oké, Pattern=dat
+Turn ID=6| B | B : nou ja oké
+	Free: Pattern=ja, Pattern=oké
+	Constrained: 
+Turn ID=7| B | B : Oh nee
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=8| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=9| B | B : Oh maar misschien hebben ik hem wel goed
+	Free: Pattern=ik, Pattern=hebben, Pattern=Oh
+	Constrained: 
+Turn ID=10| B | B : ik hebben gewoon nu een ander rood vierkant
+	Free: Pattern=vierkant, Pattern=ik, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=11| B | B : Oké dit zijn een ander
+	Free: Pattern=dit zijn, Pattern=Oké, Pattern=een
+	Constrained: Pattern=zijn
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : Oké daar aan de bovenkant zitten een soort van schoorsteenachtig iets
+	Free: Pattern=iets, Pattern=aan de, Pattern=zitten, Pattern=een soort, Pattern=van, Pattern=Oké
+	Constrained: Pattern=de, Pattern=een
+Turn ID=14| B | B : met zo'n ja een soort schoorsteen
+	Free: Pattern=een soort, Pattern=ja, Pattern=met
+	Constrained: Pattern=een
+Turn ID=15| B | B : en aan de linkerkant zitten twee pinn
+	Free: Pattern=aan de linkerkant, Pattern=twee, Pattern=en, Pattern=zitten
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=16| B | B : op dezelfde
+	Free: Pattern=dezelfde, Pattern=op
+	Constrained: 
+Turn ID=17| B | B : Eh zijn precies hetzelfde
+	Free: Pattern=Eh, Pattern=zijn
+	Constrained: 
+Turn ID=18| B | B : en dan rechts een beetje voor zitten een supergroot vierkant
+	Free: Pattern=en dan, Pattern=vierkant, Pattern=een, Pattern=zitten
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=19| A | A : O oké
+	Free: Pattern=oké
+	Constrained: 
+Turn ID=20| A | A : dat zijn denken ik dan bij mij
+	Free: Pattern=dat zijn, Pattern=ik, Pattern=dan
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=21| A | A : dus
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : Eh deze hebben dat vierkan dat er vooraan op zitten
+	Free: Pattern=dat, Pattern=op, Pattern=Eh, Pattern=deze hebben, Pattern=zitten, Pattern=vooraan, Pattern=vierkan
+	Constrained: Pattern=hebben
+Turn ID=23| A | A : dan hebben hij twee dezelfde ding naast elkaar staan aan de linkerkant
+	Free: Pattern=dan, Pattern=hebben, Pattern=hij, Pattern=twee dezelfde, Pattern=aan de linkerkant
+	Constrained: Pattern=de, Pattern=aan de, Pattern=dezelfde, Pattern=twee
+Turn ID=24| A | A : en dan hebben hij bovenop hebben hij nog iets met twee schijf erop
+	Free: Pattern=nog, Pattern=twee, Pattern=iets, Pattern=en dan, Pattern=hebben, Pattern=hij, Pattern=met
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=25| B | B : eh ja o ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=26| A | A : als een soort uitsteeksel met twee
+	Free: Pattern=een soort, Pattern=twee, Pattern=met
+	Constrained: Pattern=een
+Turn ID=27| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=28| B | B : deze hebben een vierkant aan de voorkant
+	Free: Pattern=vierkant aan de voorkant, Pattern=deze hebben, Pattern=een
+	Constrained: Pattern=vierkant, Pattern=de, Pattern=aan de, Pattern=hebben
+Turn ID=29| B | B : en links twee dezelfde blok
+	Free: Pattern=twee dezelfde, Pattern=en, Pattern=blok
+	Constrained: Pattern=dezelfde, Pattern=twee
+Turn ID=30| B | B : die van klein naar groot gaan
+	Free: Pattern=van klein naar groot gaan, Pattern=die van
+	Constrained: Pattern=van klein naar groot, Pattern=die, Pattern=gaan, Pattern=van
+Turn ID=31| B | B : en boven nog zo'n ja twee van die rond
+	Free: Pattern=nog, Pattern=twee, Pattern=ja, Pattern=die, Pattern=van, Pattern=en
+	Constrained: 
+Turn ID=32| B | B : met een stok
+	Free: Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=33| A | A : Oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oké dat
+	Constrained: Pattern=Oké, Pattern=zijn, Pattern=dat
+Turn ID=34| A | A : eh dit zijn degeen met het vierkan ervoor
+	Free: Pattern=dit zijn, Pattern=eh, Pattern=met, Pattern=vierkan
+	Constrained: Pattern=zijn
+Turn ID=35| A | A : en dan link hebben hij die blok die van groot naar klein gaan
+	Free: Pattern=en dan, Pattern=hij, Pattern=van groot naar klein, Pattern=die, Pattern=link, Pattern=blok, Pattern=gaan, Pattern=hebben, Pattern=die van
+	Constrained: Pattern=dan, Pattern=die, Pattern=van, Pattern=en
+Turn ID=36| A | A : hebben hij er twee naast elkaar zitten
+	Free: Pattern=hij, Pattern=twee, Pattern=hebben, Pattern=zitten
+	Constrained: 
+Turn ID=37| A | A : en dan bovenop hebben hij de uitsteeksel met twee
+	Free: Pattern=twee, Pattern=de, Pattern=en dan, Pattern=hebben, Pattern=hij, Pattern=met
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=38| B | B : ja zIjn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| B | B : deze hebben een vierkan vooraan
+	Free: Pattern=deze hebben, Pattern=een, Pattern=vierkan, Pattern=vooraan
+	Constrained: Pattern=hebben
+Turn ID=40| B | B : en twee dezelfde link
+	Free: Pattern=twee dezelfde, Pattern=en, Pattern=link
+	Constrained: Pattern=dezelfde, Pattern=twee
+Turn ID=41| B | B : Eh van groot naar klein
+	Free: Pattern=van groot naar klein, Pattern=Eh
+	Constrained: Pattern=van
+Turn ID=42| B | B : en van klein naar groot
+	Free: Pattern=van klein naar groot, Pattern=en
+	Constrained: Pattern=van
+Turn ID=43| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=44| A | A : eh dit zijn degeen met de vierkant aan de voorkant
+	Free: Pattern=de, Pattern=met, Pattern=eh, Pattern=dit zijn, Pattern=vierkant aan de voorkant
+	Constrained: Pattern=vierkant, Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=45| A | A : en dan link hebben hij die twee ding die dus van klein naar groot gaan
+	Free: Pattern=twee, Pattern=en dan, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=link, Pattern=van klein naar groot gaan
+	Constrained: Pattern=van klein naar groot, Pattern=dan, Pattern=gaan, Pattern=van, Pattern=en
+Turn ID=46| A | A : en dan bovenop hebben hij die twee schijf op nog een uitsteeksel
+	Free: Pattern=nog, Pattern=twee, Pattern=en dan, Pattern=op, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=47| B | B : Yes
+	Free: 
+	Constrained: 

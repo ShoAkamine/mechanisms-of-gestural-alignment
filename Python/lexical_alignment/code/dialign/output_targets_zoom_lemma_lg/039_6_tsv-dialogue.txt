@@ -1,0 +1,207 @@
+A|0| A: eh _ik hebben_ nu _een_ kop _met een_ _heel_ _klein_ uitsteeksel _bovenop_ 
+A|1| A: _en dat_ vinden _ik_ _een_ beetje _een_ _ja_ _een soort_ _van_ enkel _haar_ 
+A|2| A: Uitzien _als een_ enkel _haar_ _wat_ erop _zitten_ 
+A|3| A: Eh _en dan_ _hebben_ _hij_ nog _een_ _zijkant_ _met _een_ rond_ 
+A|4| A: _en_ daarbij vier vierhoekig handvat 
+A|5| A: _maar_ _zeggen maar_ _met_ _met_ twee _rond_ 
+A|6| A: _en_ _hebben_ _dus_ _een_ _heel_ _klein_ _dinget_ _bovenop_ eruitsteken 
+B|7| B: Hmm _kijken_ waar 
+B|8| B: [dus] _hij hebben_ _één_ [haar] [bovenop] 
+A|9| A: _ja_ 
+B|10| B: [en] _zijn_ _het_ vierkant _aan de_ [zijkant] [zeggen] je 
+A|11| A: _ja_ _maar_ _er_ _zitten_ ook _rond_ 
+A|12| A: [hij] [zijn] eigenlijk _heel_ simpel 
+B|13| B: [en] [zeggen maar] [heel] eenvoudig uitvoeren bedoelen je 
+A|14| A: _ja_ 
+B|15| B: Oké 
+B|16| B: [ik hebben] [er] _één_ _in_ mijn hoofd 
+B|17| B: [ik] denken [ik hebben] _hem_ beschrijven [als [een] soort] _neus_ 
+B|18| B: [met [een] soort] propellor doorheen [zijn] geschroven 
+B|19| B: Klopt [dat] of niet 
+B|20| B: [dat] kunnen je [dat] 
+A|21| A: Eh _ja_ [ik] inzien [er] nu ook wel [een] [neus] [in] inderdaad 
+A|22| A: _ja_ 
+B|23| B: Oké [dan] denken [ik] [dat] _het_ [zijn] 
+B|24| B: [ik hebben] weer [met] _die_ propellorneus 
+B|25| B: [en dat] haart _aan de bovenkant_ 
+A|26| A: eh _even_ [kijken] 
+B|27| B: _hij hebben_ _één_ zo'n uitstekend [dinget] _aan de bovenkant_ 
+B|28| B: [en _dan] een_ dopneus [met een] staaf [er] doorheen 
+B|29| B: [en] _een rond aan de rechterkant_ 
+A|30| A: [hij hebben] [een rond aan de rechterkant] 
+B|31| B: _ja dat_ [zitten] [aan] _die_ staaf vast [zeggen maar] 
+B|32| B: [dus] [aan de] voorkant [van] [de] beker [hebben] je _die_ [ja] dopneus doen [ik] _hem_ [maar] [even] 
+B|33| B: daar [zitten] [een] recht staaf doorheen 
+B|34| B: [en] [aan] _die_ staaf [zitten] [een rond] vast 
+B|35| B: [en] [bovenop] [zijn] [dus] [dat] [klein] sprie [wat] uitsteken 
+B|36| B: _volgens mij_ _noemen_ _jij_ _het_ [een] haart 
+A|37| A: ah [ja] 
+A|38| A: [ik] zien [hem] 
+A|39| A: _dat zijn_ 
+A|40| A: eh _ik hebben die met_ [jij] [noemen] [volgens mij] [een] propeller door [de] [neus] 
+A|41| A: [en] [één] [dan een] [klein] uitsteeksel [aan de bovenkant] 
+B|42| B: Oh [ja] 
+B|43| B: _ja dat zijn_ nummer 
+B|44| B: _ik hebben die met de_ propellerneus 
+A|45| A: eh [ja dat zijn] 
+A|46| A: eh [ik hebben die met de] propeller door [de] [neus] 
+A|47| A: [en] [het] pluis 
+B|48| B: hmm [ja dat zijn] 
+B|49| B: [ik hebben die met de] propellorneus 
+A|50| A: Eh [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh ik hebben nu een kop met een heel klein uitsteeksel bovenop
+	Free: Pattern=ik hebben, Pattern=bovenop, Pattern=heel, Pattern=een, Pattern=met een, Pattern=klein
+	Constrained: Pattern=met, Pattern=ik, Pattern=hebben, Pattern=een
+Turn ID=1| A | A : en dat vinden ik een beetje een ja een soort van enkel haar
+	Free: Pattern=ja, Pattern=een, Pattern=van, Pattern=haar, Pattern=en dat, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=en, Pattern=een, Pattern=dat
+Turn ID=2| A | A : Uitzien als een enkel haar wat erop zitten
+	Free: Pattern=als een, Pattern=haar, Pattern=zitten, Pattern=wat
+	Constrained: Pattern=een
+Turn ID=3| A | A : Eh en dan hebben hij nog een zijkant met een rond
+	Free: Pattern=en dan, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=zijkant, Pattern=met een, Pattern=een rond
+	Constrained: Pattern=dan, Pattern=een, Pattern=met, Pattern=en, Pattern=rond
+Turn ID=4| A | A : en daarbij vier vierhoekig handvat
+	Free: Pattern=en
+	Constrained: 
+Turn ID=5| A | A : maar zeggen maar met met twee rond
+	Free: Pattern=zeggen maar, Pattern=rond, Pattern=met, Pattern=maar
+	Constrained: Pattern=maar, Pattern=zeggen
+Turn ID=6| A | A : en hebben dus een heel klein dinget bovenop eruitsteken
+	Free: Pattern=bovenop, Pattern=heel, Pattern=dus, Pattern=dinget, Pattern=een, Pattern=hebben, Pattern=klein, Pattern=en
+	Constrained: 
+Turn ID=7| B | B : Hmm kijken waar
+	Free: Pattern=kijken
+	Constrained: 
+Turn ID=8| B | B : dus hij hebben één haar bovenop
+	Free: Pattern=bovenop, Pattern=dus, Pattern=één, Pattern=hij hebben, Pattern=haar
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : en zijn het vierkant aan de zijkant zeggen je
+	Free: Pattern=aan de, Pattern=het, Pattern=zeggen, Pattern=zijkant, Pattern=en, Pattern=zijn
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=11| A | A : ja maar er zitten ook rond
+	Free: Pattern=ja, Pattern=zitten, Pattern=er, Pattern=rond, Pattern=maar
+	Constrained: 
+Turn ID=12| A | A : hij zijn eigenlijk heel simpel
+	Free: Pattern=zijn, Pattern=hij, Pattern=heel
+	Constrained: 
+Turn ID=13| B | B : en zeggen maar heel eenvoudig uitvoeren bedoelen je
+	Free: Pattern=zeggen maar, Pattern=en, Pattern=heel
+	Constrained: Pattern=maar, Pattern=zeggen
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ik hebben er één in mijn hoofd
+	Free: Pattern=ik hebben, Pattern=in, Pattern=één, Pattern=er
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=17| B | B : ik denken ik hebben hem beschrijven als een soort neus
+	Free: Pattern=ik hebben, Pattern=hem, Pattern=neus, Pattern=als een, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=ik, Pattern=hebben, Pattern=een
+Turn ID=18| B | B : met een soort propellor doorheen zijn geschroven
+	Free: Pattern=met een, Pattern=een soort, Pattern=zijn
+	Constrained: Pattern=met, Pattern=een
+Turn ID=19| B | B : Klopt dat of niet
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=20| B | B : dat kunnen je dat
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=21| A | A : Eh ja ik inzien er nu ook wel een neus in inderdaad
+	Free: Pattern=ja, Pattern=een, Pattern=in, Pattern=neus, Pattern=er, Pattern=ik
+	Constrained: 
+Turn ID=22| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : Oké dan denken ik dat het zijn
+	Free: Pattern=dat, Pattern=dan, Pattern=het, Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=24| B | B : ik hebben weer met die propellorneus
+	Free: Pattern=ik hebben, Pattern=met, Pattern=die
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=25| B | B : en dat haart aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=aan de, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=26| A | A : eh even kijken
+	Free: Pattern=kijken, Pattern=even
+	Constrained: 
+Turn ID=27| B | B : hij hebben één zo'n uitstekend dinget aan de bovenkant
+	Free: Pattern=aan de bovenkant, Pattern=hij hebben, Pattern=één, Pattern=dinget
+	Constrained: Pattern=aan de, Pattern=hebben, Pattern=hij, Pattern=de, Pattern=aan
+Turn ID=28| B | B : en dan een dopneus met een staaf er doorheen
+	Free: Pattern=met een, Pattern=dan een, Pattern=en dan, Pattern=er
+	Constrained: Pattern=dan, Pattern=en, Pattern=met, Pattern=een
+Turn ID=29| B | B : en een rond aan de rechterkant
+	Free: Pattern=een rond aan de rechterkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=een, Pattern=de, Pattern=aan, Pattern=een rond, Pattern=rond
+Turn ID=30| A | A : hij hebben een rond aan de rechterkant
+	Free: Pattern=een rond aan de rechterkant, Pattern=hij hebben
+	Constrained: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=de, Pattern=aan, Pattern=een rond, Pattern=rond
+Turn ID=31| B | B : ja dat zitten aan die staaf vast zeggen maar
+	Free: Pattern=aan, Pattern=zeggen maar, Pattern=ja dat, Pattern=die, Pattern=zitten
+	Constrained: Pattern=maar, Pattern=ja, Pattern=zeggen, Pattern=dat
+Turn ID=32| B | B : dus aan de voorkant van de beker hebben je die ja dopneus doen ik hem maar even
+	Free: Pattern=hebben, Pattern=die, Pattern=ik, Pattern=van, Pattern=maar, Pattern=hem, Pattern=de, Pattern=dus, Pattern=ja, Pattern=aan de, Pattern=even
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=33| B | B : daar zitten een recht staaf doorheen
+	Free: Pattern=zitten, Pattern=een
+	Constrained: 
+Turn ID=34| B | B : en aan die staaf zitten een rond vast
+	Free: Pattern=aan, Pattern=en, Pattern=een rond, Pattern=die, Pattern=zitten
+	Constrained: Pattern=rond, Pattern=een
+Turn ID=35| B | B : en bovenop zijn dus dat klein sprie wat uitsteken
+	Free: Pattern=dus, Pattern=wat, Pattern=klein, Pattern=en, Pattern=zijn, Pattern=dat, Pattern=bovenop
+	Constrained: 
+Turn ID=36| B | B : volgens mij noemen jij het een haart
+	Free: Pattern=een, Pattern=het, Pattern=volgens mij, Pattern=noemen, Pattern=jij
+	Constrained: 
+Turn ID=37| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| A | A : ik zien hem
+	Free: Pattern=ik, Pattern=hem
+	Constrained: 
+Turn ID=39| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=40| A | A : eh ik hebben die met jij noemen volgens mij een propeller door de neus
+	Free: Pattern=de, Pattern=een, Pattern=neus, Pattern=volgens mij, Pattern=ik hebben die met, Pattern=noemen, Pattern=jij
+	Constrained: Pattern=ik hebben, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik
+Turn ID=41| A | A : en één dan een klein uitsteeksel aan de bovenkant
+	Free: Pattern=één, Pattern=dan een, Pattern=klein, Pattern=aan de bovenkant, Pattern=en
+	Constrained: Pattern=aan de, Pattern=dan, Pattern=een, Pattern=de, Pattern=aan
+Turn ID=42| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| B | B : ja dat zijn nummer
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=44| B | B : ik hebben die met de propellerneus
+	Free: Pattern=ik hebben die met de
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben die met, Pattern=ik
+Turn ID=45| A | A : eh ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=46| A | A : eh ik hebben die met de propeller door de neus
+	Free: Pattern=ik hebben die met de, Pattern=neus, Pattern=de
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben die met, Pattern=ik
+Turn ID=47| A | A : en het pluis
+	Free: Pattern=het, Pattern=en
+	Constrained: 
+Turn ID=48| B | B : hmm ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=ja, Pattern=zijn, Pattern=ja dat, Pattern=dat, Pattern=dat zijn
+Turn ID=49| B | B : ik hebben die met de propellorneus
+	Free: Pattern=ik hebben die met de
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik hebben die met, Pattern=ik
+Turn ID=50| A | A : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

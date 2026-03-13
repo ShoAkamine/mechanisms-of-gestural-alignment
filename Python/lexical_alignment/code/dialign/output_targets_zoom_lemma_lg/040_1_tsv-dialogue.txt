@@ -1,0 +1,111 @@
+B|0| B: _ehm_ _oké_ deze _hebben_ _een_ _vierkant aan de voorkant_ 
+B|1| B: _en_ daar _bovenop_ lijken _een soort_ paddenstoel-achtig iets te _zitten_ 
+A|2| A: _Oh ja_ 
+B|3| B: _en_ _aan de_ linkerzijkant _hebben_ hij twee [ja] wat _zijn het_ 
+A|4| A: [ja] [een soort] schroef of zo 
+B|5| B: Blokjes 
+B|6| B: [ja] precies 
+A|7| A: of [ja] 
+B|8| B: [ja] 
+A|9| A: [ja] [oké] dan [zijn het] voor mij 
+A|10| A: Ehm ik [hebben] _met_ die _paddenstoel bovenop_ 
+A|11| A: [en] dan _dat_ [vierkant aan de voorkant] 
+B|12| B: _Oh ja dat zijn_ 
+B|13| B: _eh_ dit [zijn] diegene [met] [paddenstoel bovenop] 
+B|14| B: _en dat_ vierkan [aan de voorkant] 
+A|15| A: [Oh ja dat zijn] bij mij 
+A|16| A: die _zijn met_ die [paddenstoel bovenop] 
+B|17| B: mmmh even zoeken horen 
+A|18| A: [en [dat] zijn] [vierkant] 
+A|19| A: [aan de] zijkant 
+A|20| A: of [aan de voorkant] [zitten] [dat] [vierkant] 
+B|21| B: [Oh ja dat zijn] 
+B|22| B: _ehm_ dit [zijn _met] de paddenstoel bovenop_ 
+B|23| B: [en] [het] vierkan [aan de voorkant] 
+A|24| A: [ehm] [zijn] [dat] bij mij 
+A|25| A: [eh] [ja] [met de paddenstoel bovenop] 
+B|26| B: mmh nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm oké deze hebben een vierkant aan de voorkant
+	Free: Pattern=oké, Pattern=een, Pattern=hebben, Pattern=ehm, Pattern=vierkant aan de voorkant
+	Constrained: Pattern=vierkant, Pattern=aan de, Pattern=aan de voorkant
+Turn ID=1| B | B : en daar bovenop lijken een soort paddenstoel-achtig iets te zitten
+	Free: Pattern=een soort, Pattern=zitten, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=2| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja
+Turn ID=3| B | B : en aan de linkerzijkant hebben hij twee ja wat zijn het
+	Free: Pattern=zijn het, Pattern=ja, Pattern=aan de, Pattern=hebben, Pattern=en
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=4| A | A : ja een soort schroef of zo
+	Free: Pattern=een soort, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=5| B | B : Blokjes
+	Free: 
+	Constrained: 
+Turn ID=6| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| A | A : of ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja oké dan zijn het voor mij
+	Free: Pattern=zijn het, Pattern=ja, Pattern=oké
+	Constrained: Pattern=het, Pattern=zijn
+Turn ID=10| A | A : Ehm ik hebben met die paddenstoel bovenop
+	Free: Pattern=paddenstoel bovenop, Pattern=met, Pattern=hebben
+	Constrained: Pattern=bovenop
+Turn ID=11| A | A : en dan dat vierkant aan de voorkant
+	Free: Pattern=vierkant aan de voorkant, Pattern=dat, Pattern=en
+	Constrained: Pattern=vierkant, Pattern=aan de, Pattern=aan de voorkant
+Turn ID=12| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja dat zijn
+	Constrained: Pattern=ja, Pattern=Oh ja, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=13| B | B : eh dit zijn diegene met paddenstoel bovenop
+	Free: Pattern=paddenstoel bovenop, Pattern=zijn, Pattern=eh, Pattern=met
+	Constrained: Pattern=bovenop
+Turn ID=14| B | B : en dat vierkan aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=en dat
+	Constrained: Pattern=dat, Pattern=en, Pattern=aan de
+Turn ID=15| A | A : Oh ja dat zijn bij mij
+	Free: Pattern=Oh ja dat zijn
+	Constrained: Pattern=ja, Pattern=Oh ja, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=16| A | A : die zijn met die paddenstoel bovenop
+	Free: Pattern=zijn met, Pattern=paddenstoel bovenop
+	Constrained: Pattern=zijn, Pattern=bovenop, Pattern=met
+Turn ID=17| B | B : mmmh even zoeken horen
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : en dat zijn vierkant
+	Free: Pattern=dat zijn, Pattern=en dat, Pattern=vierkant
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=en
+Turn ID=19| A | A : aan de zijkant
+	Free: Pattern=aan de
+	Constrained: 
+Turn ID=20| A | A : of aan de voorkant zitten dat vierkant
+	Free: Pattern=aan de voorkant, Pattern=dat, Pattern=zitten, Pattern=vierkant
+	Constrained: Pattern=aan de
+Turn ID=21| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja dat zijn
+	Constrained: Pattern=ja, Pattern=Oh ja, Pattern=zijn, Pattern=dat, Pattern=dat zijn
+Turn ID=22| B | B : ehm dit zijn met de paddenstoel bovenop
+	Free: Pattern=met de paddenstoel bovenop, Pattern=zijn met, Pattern=ehm
+	Constrained: Pattern=paddenstoel bovenop, Pattern=zijn, Pattern=met, Pattern=bovenop
+Turn ID=23| B | B : en het vierkan aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=het, Pattern=en
+	Constrained: Pattern=aan de
+Turn ID=24| A | A : ehm zijn dat bij mij
+	Free: Pattern=zijn, Pattern=dat, Pattern=ehm
+	Constrained: 
+Turn ID=25| A | A : eh ja met de paddenstoel bovenop
+	Free: Pattern=met de paddenstoel bovenop, Pattern=ja, Pattern=eh
+	Constrained: Pattern=paddenstoel bovenop, Pattern=met, Pattern=bovenop
+Turn ID=26| B | B : mmh nummer
+	Free: 
+	Constrained: 

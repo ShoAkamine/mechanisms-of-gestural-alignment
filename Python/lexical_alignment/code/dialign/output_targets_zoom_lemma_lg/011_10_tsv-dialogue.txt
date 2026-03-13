@@ -1,0 +1,107 @@
+B|0| B: Oh wachten nu _zijn_ _ik_ 
+B|1| B: _ja_ dit vinden _ik_ op _een_ gieter lijken _met een_ _zonnepaneel_ er achter 
+B|2| B: dus _het_ _zijn_ _aan de_ rechterkant je _hebben het_ _aan_ beide _kant_ steeken _het_ uit _aan de_ 
+A|3| A: [zijn] _dat_ _het kanon_ _die_ [ik] omschrijven 
+B|4| B: Oh _ja_ _met_ [dat] _met_ [dat] _vlak_ erachter 
+B|5| B: _ja_ 
+A|6| A: [met] zo'n schuin [vlak] 
+B|7| B: _ja ja_ kloppen 
+A|8| A: _en_ dan [aan de] [een] [kant] [met een] bolling [aan de] zijkant _en_ nog [een] bolling 
+B|9| B: _ja_ [en] [die] [aan de] rechterkant steken iets veel uit 
+A|10| A: [ja ja] 
+A|11| A: _ik hebben het kanon met_ [het] lichtbed 
+B|12| B: even kijken 
+A|13| A: [die] rechts net wat lang uitsteken dan links 
+B|14| B: [ja] _met zonnepaneel_ 
+A|15| A: [ja] 
+B|16| B: Oh [ja] oké [dat] [zijn] 
+B|17| B: _ik hebben de_ 
+B|18| B: Oh jij vinden [die] op [een] [kanon] lijken 
+B|19| B: [die] [met] [die] [dat] [zijn] zeggen maar [die] half gieter _met de zonnepaneel_ achterop 
+A|20| A: [ja] 
+A|21| A: _ik hebben het kanon met de zonnepaneel_ 
+B|22| B: even kijken waar [die] staan 
+B|23| B: Oh [ja] 
+B|24| B: [ik hebben het kanon met de zonnepaneel] 
+A|25| A: [ik hebben de] [kanon [met] zonnepaneel] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oh wachten nu zijn ik
+	Free: Pattern=ik, Pattern=zijn
+	Constrained: 
+Turn ID=1| B | B : ja dit vinden ik op een gieter lijken met een zonnepaneel er achter
+	Free: Pattern=ja, Pattern=een, Pattern=met een, Pattern=ik, Pattern=zonnepaneel
+	Constrained: Pattern=met, Pattern=een
+Turn ID=2| B | B : dus het zijn aan de rechterkant je hebben het aan beide kant steeken het uit aan de
+	Free: Pattern=kant, Pattern=hebben het, Pattern=aan, Pattern=aan de, Pattern=het, Pattern=zijn
+	Constrained: Pattern=het, Pattern=aan
+Turn ID=3| A | A : zijn dat het kanon die ik omschrijven
+	Free: Pattern=dat, Pattern=die, Pattern=ik, Pattern=zijn, Pattern=het kanon
+	Constrained: Pattern=kanon, Pattern=het
+Turn ID=4| B | B : Oh ja met dat met dat vlak erachter
+	Free: Pattern=met, Pattern=dat, Pattern=vlak, Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : met zo'n schuin vlak
+	Free: Pattern=met, Pattern=vlak
+	Constrained: 
+Turn ID=7| B | B : ja ja kloppen
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=8| A | A : en dan aan de een kant met een bolling aan de zijkant en nog een bolling
+	Free: Pattern=kant, Pattern=aan de, Pattern=een, Pattern=met een, Pattern=en
+	Constrained: Pattern=met, Pattern=een, Pattern=aan
+Turn ID=9| B | B : ja en die aan de rechterkant steken iets veel uit
+	Free: Pattern=aan de, Pattern=die, Pattern=en, Pattern=ja
+	Constrained: Pattern=aan
+Turn ID=10| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : ik hebben het kanon met het lichtbed
+	Free: Pattern=ik hebben het kanon met, Pattern=het
+	Constrained: Pattern=kanon met, Pattern=het, Pattern=met, Pattern=ik, Pattern=het kanon, Pattern=hebben het, Pattern=kanon
+Turn ID=12| B | B : even kijken
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : die rechts net wat lang uitsteken dan links
+	Free: Pattern=die
+	Constrained: 
+Turn ID=14| B | B : ja met zonnepaneel
+	Free: Pattern=met zonnepaneel, Pattern=ja
+	Constrained: Pattern=zonnepaneel, Pattern=met
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : Oh ja oké dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ik hebben de
+	Free: Pattern=ik hebben de
+	Constrained: Pattern=ik
+Turn ID=18| B | B : Oh jij vinden die op een kanon lijken
+	Free: Pattern=kanon, Pattern=een, Pattern=die
+	Constrained: 
+Turn ID=19| B | B : die met die dat zijn zeggen maar die half gieter met de zonnepaneel achterop
+	Free: Pattern=dat, Pattern=met de zonnepaneel, Pattern=met, Pattern=die, Pattern=zijn
+	Constrained: Pattern=zonnepaneel, Pattern=met
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : ik hebben het kanon met de zonnepaneel
+	Free: Pattern=ik hebben het kanon met de zonnepaneel
+	Constrained: Pattern=kanon met, Pattern=met de zonnepaneel, Pattern=ik hebben het kanon met, Pattern=het, Pattern=met, Pattern=ik, Pattern=het kanon, Pattern=zonnepaneel, Pattern=hebben het, Pattern=kanon
+Turn ID=22| B | B : even kijken waar die staan
+	Free: Pattern=die
+	Constrained: 
+Turn ID=23| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ik hebben het kanon met de zonnepaneel
+	Free: Pattern=ik hebben het kanon met de zonnepaneel
+	Constrained: Pattern=kanon met, Pattern=met de zonnepaneel, Pattern=ik hebben het kanon met, Pattern=het, Pattern=met, Pattern=ik, Pattern=het kanon, Pattern=zonnepaneel, Pattern=hebben het, Pattern=kanon
+Turn ID=25| A | A : ik hebben de kanon met zonnepaneel
+	Free: Pattern=ik hebben de, Pattern=kanon met, Pattern=met zonnepaneel
+	Constrained: Pattern=zonnepaneel, Pattern=met, Pattern=kanon, Pattern=ik

@@ -1,0 +1,67 @@
+B|0| B: eh _deze_ _hebben_ links _en_ boven _twee_ _ja_ uitsteeksel _die_ mij doen denken aan een bowling _bowlingkegel_ 
+B|1| B: _en dan_ rechts een uitsteeksel _die_ blokkerig _zijn_ 
+B|2| B: _en_ _die_ van klein naar groot gaan 
+A|3| A: [ja] 
+B|4| B: _en dan_ links slash achter _nog_ een soort ronde of niet niet recht staaf 
+A|5| A: [ja] _ik_ [hebben] hem 
+A|6| A: [ja] _ik_ [hebben] hem 
+A|7| A: Eh 
+A|8| A: ehm [deze] [zijn] met _de bowlingkegel_ [die] jij _zeggen_ 
+A|9| A: Ehm [en dan] [nog] [twee] ander uitstulping 
+B|10| B: [ja] 
+B|11| B: eh dit [zijn] wat [ik] [zeggen] bowlingkegels bovenin [en] link 
+A|12| A: _de_ [twee] [bowlingkegel] 
+B|13| B: nummer 
+B|14| B: eh [de bowlingkegel] bovenin [en] link 
+A|15| A: [de] [twee] [bowlingkegel] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh deze hebben links en boven twee ja uitsteeksel die mij doen denken aan een bowling bowlingkegel
+	Free: Pattern=twee, Pattern=ja, Pattern=hebben, Pattern=die, Pattern=en, Pattern=deze, Pattern=bowlingkegel
+	Constrained: 
+Turn ID=1| B | B : en dan rechts een uitsteeksel die blokkerig zijn
+	Free: Pattern=en dan, Pattern=zijn, Pattern=die
+	Constrained: Pattern=en
+Turn ID=2| B | B : en die van klein naar groot gaan
+	Free: Pattern=en, Pattern=die
+	Constrained: 
+Turn ID=3| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : en dan links slash achter nog een soort ronde of niet niet recht staaf
+	Free: Pattern=en dan, Pattern=nog
+	Constrained: Pattern=en
+Turn ID=5| A | A : ja ik hebben hem
+	Free: Pattern=hebben, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=6| A | A : ja ik hebben hem
+	Free: Pattern=hebben, Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=7| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : ehm deze zijn met de bowlingkegel die jij zeggen
+	Free: Pattern=de bowlingkegel, Pattern=zeggen, Pattern=die, Pattern=zijn, Pattern=deze
+	Constrained: Pattern=bowlingkegel, Pattern=de
+Turn ID=9| A | A : Ehm en dan nog twee ander uitstulping
+	Free: Pattern=en dan, Pattern=twee, Pattern=nog
+	Constrained: Pattern=en
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : eh dit zijn wat ik zeggen bowlingkegels bovenin en link
+	Free: Pattern=zijn, Pattern=en, Pattern=ik, Pattern=zeggen
+	Constrained: 
+Turn ID=12| A | A : de twee bowlingkegel
+	Free: Pattern=twee, Pattern=bowlingkegel, Pattern=de
+	Constrained: 
+Turn ID=13| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : eh de bowlingkegel bovenin en link
+	Free: Pattern=de bowlingkegel, Pattern=en
+	Constrained: Pattern=bowlingkegel, Pattern=de
+Turn ID=15| A | A : de twee bowlingkegel
+	Free: Pattern=twee, Pattern=bowlingkegel, Pattern=de
+	Constrained: 

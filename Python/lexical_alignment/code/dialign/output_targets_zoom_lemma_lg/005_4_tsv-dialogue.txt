@@ -1,0 +1,155 @@
+A|0| A: ehm _deze hebben aan de_ achterkant _hebben_ hij weer _een soort_ van _haak_ _waar_ je _een_ iets _aan_ zullen kunnen ophangen 
+A|1| A: _en dan_ tegenover _aan de_ ander kant daarvan _hebben_ hij _twee_ rechthoek 
+A|2| A: _en_ _die_ _zitten_ er _zijn_ er _zitten_ _een_ klein stuk _tussen_ 
+A|3| A: _die_ steken allebei uit 
+A|4| A: maar ze _zitten_ _niet_ _aan_ elkaar vast _zitten_ _nog_ _wat ruimte tussen_ 
+A|5| A: _en_ daar _bovenop_ _hebben_ hij _ook_ _een soort_ _driehoek_ _niet_ _een_ heel _driehoek_ maar _ja_ 
+A|6| A: _hebben_ hij _een_ _driehoek_ 
+A|7| A: _en dan_ _ook nog_ _aan de_ linkerkant _in het midden_ _hebben_ hij _ook nog een soort_ staaf _die_ uitsteken 
+A|8| A: _die_ _aan de_ zijkant _een_ beetje _zitten_ 
+B|9| B: Eh _dat zijn_ 
+B|10| B: [deze hebben _aan de] rechterkant twee_ soortgelijk balk 
+B|11| B: [bovenop] [een soort] _niet afgemaaken driehoek_ 
+A|12| A: mhm 
+B|13| B: Linksonder [een soort] [haak] of vierkan 
+B|14| B: [en dan] links [in het midden] [ook nog een soort] [ja] balk 
+A|15| A: [ja] [dat zijn] 
+A|16| A: eh dit dit [zijn] _die_ geen met [de] [niet afgemaaken driehoek] [bovenop] 
+A|17| A: [en dan] [aan de rechterkant twee] rechthoek 
+A|18| A: _die_ [niet] [aan] elkaar vastzitten 
+B|19| B: [ja] 
+A|20| A: [en dan] met [het] staart zeggen maar 
+B|21| B: Eh [dat zijn] 
+B|22| B: [deze hebben] rechts [twee] balk 
+A|23| A: mhm 
+B|24| B: [en] [bovenop] [een soort] half [driehoek] 
+B|25| B: of [een soort] _niet afgemaken piramide_ 
+A|26| A: [ja] 
+A|27| A: Jadat [zijn] 
+A|28| A: ehm dit [hebben] _die_ [niet afgemaken piramide] [driehoek] [bovenop] 
+A|29| A: [en] [aan de rechterkant] [de] [de] rechthoek 
+A|30| A: _die_ [niet] elkaar aanraken 
+B|31| B: even zoeken horen 
+B|32| B: [piramide] [niet] afmaken 
+A|33| A: _die_ [zijn] [bovenop] 
+B|34| B: Oh [ja] 
+B|35| B: [deze hebben [aan de] rechterkant twee] balk [waar] nogal [wat ruimte tussen] [zitten] 
+B|36| B: [en dan] [die] half [piramide] of [driehoek] erboav 
+A|37| A: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm deze hebben aan de achterkant hebben hij weer een soort van haak waar je een iets aan zullen kunnen ophangen
+	Free: Pattern=aan, Pattern=waar, Pattern=een, Pattern=hebben, Pattern=deze hebben aan de, Pattern=een soort, Pattern=haak
+	Constrained: Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=deze hebben, Pattern=de, Pattern=aan
+Turn ID=1| A | A : en dan tegenover aan de ander kant daarvan hebben hij twee rechthoek
+	Free: Pattern=en dan, Pattern=aan de, Pattern=twee, Pattern=hebben
+	Constrained: Pattern=aan, Pattern=de, Pattern=en
+Turn ID=2| A | A : en die zitten er zijn er zitten een klein stuk tussen
+	Free: Pattern=een, Pattern=en, Pattern=zijn, Pattern=tussen, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=3| A | A : die steken allebei uit
+	Free: Pattern=die
+	Constrained: 
+Turn ID=4| A | A : maar ze zitten niet aan elkaar vast zitten nog wat ruimte tussen
+	Free: Pattern=nog, Pattern=aan, Pattern=niet, Pattern=wat ruimte tussen, Pattern=zitten
+	Constrained: Pattern=tussen
+Turn ID=5| A | A : en daar bovenop hebben hij ook een soort driehoek niet een heel driehoek maar ja
+	Free: Pattern=driehoek, Pattern=bovenop, Pattern=ja, Pattern=ook, Pattern=niet, Pattern=een, Pattern=hebben, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=6| A | A : hebben hij een driehoek
+	Free: Pattern=een, Pattern=driehoek, Pattern=hebben
+	Constrained: 
+Turn ID=7| A | A : en dan ook nog aan de linkerkant in het midden hebben hij ook nog een soort staaf die uitsteken
+	Free: Pattern=ook nog, Pattern=en dan, Pattern=aan de, Pattern=hebben, Pattern=die, Pattern=ook nog een soort, Pattern=in het midden
+	Constrained: Pattern=ook, Pattern=een, Pattern=het, Pattern=een soort, Pattern=en, Pattern=nog, Pattern=ook nog, Pattern=de, Pattern=aan
+Turn ID=8| A | A : die aan de zijkant een beetje zitten
+	Free: Pattern=aan de, Pattern=een, Pattern=zitten, Pattern=die
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=9| B | B : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=10| B | B : deze hebben aan de rechterkant twee soortgelijk balk
+	Free: Pattern=deze hebben aan de, Pattern=aan de rechterkant twee
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=deze hebben, Pattern=aan de rechterkant, Pattern=de, Pattern=aan
+Turn ID=11| B | B : bovenop een soort niet afgemaaken driehoek
+	Free: Pattern=niet afgemaaken driehoek, Pattern=een soort, Pattern=bovenop
+	Constrained: Pattern=een, Pattern=niet, Pattern=driehoek
+Turn ID=12| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : Linksonder een soort haak of vierkan
+	Free: Pattern=een soort, Pattern=haak
+	Constrained: Pattern=een
+Turn ID=14| B | B : en dan links in het midden ook nog een soort ja balk
+	Free: Pattern=ook nog een soort, Pattern=in het midden, Pattern=en dan, Pattern=ja
+	Constrained: Pattern=ook, Pattern=een, Pattern=het, Pattern=een soort, Pattern=en, Pattern=nog, Pattern=ook nog
+Turn ID=15| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=16| A | A : eh dit dit zijn die geen met de niet afgemaaken driehoek bovenop
+	Free: Pattern=bovenop, Pattern=de, Pattern=die, Pattern=niet afgemaaken driehoek, Pattern=zijn
+	Constrained: Pattern=driehoek, Pattern=niet
+Turn ID=17| A | A : en dan aan de rechterkant twee rechthoek
+	Free: Pattern=aan de rechterkant twee, Pattern=en dan
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=aan de rechterkant, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=18| A | A : die niet aan elkaar vastzitten
+	Free: Pattern=aan, Pattern=die, Pattern=niet
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : en dan met het staart zeggen maar
+	Free: Pattern=en dan, Pattern=het
+	Constrained: Pattern=en
+Turn ID=21| B | B : Eh dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=22| B | B : deze hebben rechts twee balk
+	Free: Pattern=deze hebben, Pattern=twee
+	Constrained: Pattern=hebben
+Turn ID=23| A | A : mhm
+	Free: 
+	Constrained: 
+Turn ID=24| B | B : en bovenop een soort half driehoek
+	Free: Pattern=een soort, Pattern=driehoek, Pattern=en, Pattern=bovenop
+	Constrained: Pattern=een
+Turn ID=25| B | B : of een soort niet afgemaken piramide
+	Free: Pattern=niet afgemaken piramide, Pattern=een soort
+	Constrained: Pattern=piramide, Pattern=een, Pattern=niet
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : Jadat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=28| A | A : ehm dit hebben die niet afgemaken piramide driehoek bovenop
+	Free: Pattern=driehoek, Pattern=bovenop, Pattern=hebben, Pattern=die, Pattern=niet afgemaken piramide
+	Constrained: Pattern=piramide, Pattern=niet
+Turn ID=29| A | A : en aan de rechterkant de de rechthoek
+	Free: Pattern=aan de rechterkant, Pattern=de, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=30| A | A : die niet elkaar aanraken
+	Free: Pattern=die, Pattern=niet
+	Constrained: 
+Turn ID=31| B | B : even zoeken horen
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : piramide niet afmaken
+	Free: Pattern=piramide, Pattern=niet
+	Constrained: 
+Turn ID=33| A | A : die zijn bovenop
+	Free: Pattern=die, Pattern=bovenop, Pattern=zijn
+	Constrained: 
+Turn ID=34| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| B | B : deze hebben aan de rechterkant twee balk waar nogal wat ruimte tussen zitten
+	Free: Pattern=waar, Pattern=wat ruimte tussen, Pattern=deze hebben aan de, Pattern=zitten, Pattern=aan de rechterkant twee
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=hebben, Pattern=deze hebben, Pattern=aan de rechterkant, Pattern=tussen, Pattern=de, Pattern=aan
+Turn ID=36| B | B : en dan die half piramide of driehoek erboav
+	Free: Pattern=en dan, Pattern=driehoek, Pattern=piramide, Pattern=die
+	Constrained: Pattern=en
+Turn ID=37| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn

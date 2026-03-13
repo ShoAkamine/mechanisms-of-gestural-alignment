@@ -1,0 +1,151 @@
+A|0| A: oké _deze hebben _twee_ dezelfde_ ik denken in elk geval _twee dezelfde_ uitsteeksel _aan de_ linker _en_ rechterkant 
+A|1| A: _dan_ _hebben_ _hij_ _een_ ballet _bovenop liggen_ 
+A|2| A: _en dan_ _hebben_ _hij_ nog _een balk_ _die_ naar beneden wijzen _aan de voorkant_ 
+B|3| B: _O ja_ 
+B|4| B: _ja dat zijn_ 
+B|5| B: [deze hebben twee] van [die] 
+B|6| B: of houden _ja_ [hij] [hebben] [een] [een] [een balk] [aan de voorkant] 
+B|7| B: [die] ook [een] beetje uitsteekt onder 
+B|8| B: [bovenop liggen] _een bal_ 
+B|9| B: [en] [aan de] zijkant [liggen] [twee] van [die] smal _ding_ 
+A|10| A: Oh 
+A|11| A: [ja dat zijn] 
+A|12| A: [O] ze [zijn] verwisseld 
+B|13| B: Yes 
+A|14| A: nou dit [zijn] precies _dezelfde_ als [dat] je net zeggen 
+B|15| B: _met_ [die] _cirkel_ erop [balk] erop 
+A|16| A: [met] [de] [bal] 
+A|17| A: [ja] [bal] [bal] [ja] 
+B|18| B: [ja] 
+B|19| B: [deze hebben] _een bal_ achter [bovenop] 
+B|20| B: _en een balk_ _voor_ [die] [een] beetje onderuit steken 
+B|21| B: [en] [twee dezelfde] pinn 
+B|22| B: soort van [aan de] zijkant 
+B|23| B: _bal bovenop_ 
+A|24| A: [O] [zijn] 
+B|25| B: [aan de] achterkant 
+A|26| A: [een [bal] bovenop] 
+A|27| A: [O] 
+B|28| B: [en dan] [een balk] _voor_ 
+A|29| A: [en een balk] [die] [voor] naar beneden gaan 
+B|30| B: [ja] 
+A|31| A: eh dit [zijn] degeen [met] [de] [cirkel] [bovenop] 
+A|32| A: [en] [de] [balk] [die] [aan de voorkant] naar beneden gaan 
+A|33| A: [en dan] [de] [twee] symmetrisch [ding] 
+B|34| B: Eh 
+B|35| B: [deze hebben] [die] [bal bovenop] [en] [die] [balk] [aan de voorkant] [en] [aan de] zijkant 2 [dezelfde] [ding] 
+A|36| A: [O ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze hebben twee dezelfde ik denken in elk geval twee dezelfde uitsteeksel aan de linker en rechterkant
+	Free: Pattern=deze hebben twee, Pattern=aan de, Pattern=twee dezelfde, Pattern=en
+	Constrained: Pattern=de, Pattern=hebben, Pattern=deze hebben, Pattern=twee, Pattern=dezelfde
+Turn ID=1| A | A : dan hebben hij een ballet bovenop liggen
+	Free: Pattern=bovenop liggen, Pattern=dan, Pattern=een, Pattern=hebben, Pattern=hij
+	Constrained: Pattern=bovenop, Pattern=liggen
+Turn ID=2| A | A : en dan hebben hij nog een balk die naar beneden wijzen aan de voorkant
+	Free: Pattern=en dan, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=aan de voorkant, Pattern=een balk
+	Constrained: Pattern=de, Pattern=aan de, Pattern=dan, Pattern=een, Pattern=balk, Pattern=en
+Turn ID=3| B | B : O ja
+	Free: Pattern=O ja
+	Constrained: Pattern=ja, Pattern=O
+Turn ID=4| B | B : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=5| B | B : deze hebben twee van die
+	Free: Pattern=deze hebben twee, Pattern=die
+	Constrained: Pattern=deze hebben, Pattern=hebben, Pattern=twee
+Turn ID=6| B | B : of houden ja hij hebben een een een balk aan de voorkant
+	Free: Pattern=ja, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=aan de voorkant, Pattern=een balk
+	Constrained: Pattern=balk, Pattern=een, Pattern=de, Pattern=aan de
+Turn ID=7| B | B : die ook een beetje uitsteekt onder
+	Free: Pattern=die, Pattern=een
+	Constrained: 
+Turn ID=8| B | B : bovenop liggen een bal
+	Free: Pattern=een bal, Pattern=bovenop liggen
+	Constrained: Pattern=bal, Pattern=bovenop, Pattern=liggen, Pattern=een
+Turn ID=9| B | B : en aan de zijkant liggen twee van die smal ding
+	Free: Pattern=twee, Pattern=aan de, Pattern=ding, Pattern=die, Pattern=en, Pattern=liggen
+	Constrained: Pattern=de
+Turn ID=10| A | A : Oh
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=ja dat zijn
+	Constrained: Pattern=zijn, Pattern=ja, Pattern=dat
+Turn ID=12| A | A : O ze zijn verwisseld
+	Free: Pattern=zijn, Pattern=O
+	Constrained: 
+Turn ID=13| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : nou dit zijn precies dezelfde als dat je net zeggen
+	Free: Pattern=zijn, Pattern=dezelfde, Pattern=dat
+	Constrained: 
+Turn ID=15| B | B : met die cirkel erop balk erop
+	Free: Pattern=die, Pattern=cirkel, Pattern=met, Pattern=balk
+	Constrained: 
+Turn ID=16| A | A : met de bal
+	Free: Pattern=de, Pattern=bal, Pattern=met
+	Constrained: 
+Turn ID=17| A | A : ja bal bal ja
+	Free: Pattern=bal, Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : deze hebben een bal achter bovenop
+	Free: Pattern=een bal, Pattern=deze hebben, Pattern=bovenop
+	Constrained: Pattern=bal, Pattern=hebben, Pattern=een
+Turn ID=20| B | B : en een balk voor die een beetje onderuit steken
+	Free: Pattern=en een balk, Pattern=die, Pattern=voor, Pattern=een
+	Constrained: Pattern=een balk, Pattern=en, Pattern=balk, Pattern=een
+Turn ID=21| B | B : en twee dezelfde pinn
+	Free: Pattern=twee dezelfde, Pattern=en
+	Constrained: Pattern=twee, Pattern=dezelfde
+Turn ID=22| B | B : soort van aan de zijkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=23| B | B : bal bovenop
+	Free: Pattern=bal bovenop
+	Constrained: Pattern=bal, Pattern=bovenop
+Turn ID=24| A | A : O zijn
+	Free: Pattern=zijn, Pattern=O
+	Constrained: 
+Turn ID=25| B | B : aan de achterkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=26| A | A : een bal bovenop
+	Free: Pattern=een bal, Pattern=bal bovenop
+	Constrained: Pattern=bal, Pattern=bovenop, Pattern=een
+Turn ID=27| A | A : O
+	Free: Pattern=O
+	Constrained: 
+Turn ID=28| B | B : en dan een balk voor
+	Free: Pattern=een balk, Pattern=en dan, Pattern=voor
+	Constrained: Pattern=dan, Pattern=en, Pattern=balk, Pattern=een
+Turn ID=29| A | A : en een balk die voor naar beneden gaan
+	Free: Pattern=en een balk, Pattern=die, Pattern=voor
+	Constrained: Pattern=een balk, Pattern=en, Pattern=balk, Pattern=een
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : eh dit zijn degeen met de cirkel bovenop
+	Free: Pattern=cirkel, Pattern=bovenop, Pattern=de, Pattern=met, Pattern=zijn
+	Constrained: 
+Turn ID=32| A | A : en de balk die aan de voorkant naar beneden gaan
+	Free: Pattern=de, Pattern=balk, Pattern=die, Pattern=en, Pattern=aan de voorkant
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=33| A | A : en dan de twee symmetrisch ding
+	Free: Pattern=en dan, Pattern=de, Pattern=ding, Pattern=twee
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=34| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : deze hebben die bal bovenop en die balk aan de voorkant en aan de zijkant 2 dezelfde ding
+	Free: Pattern=dezelfde, Pattern=aan de, Pattern=ding, Pattern=deze hebben, Pattern=balk, Pattern=die, Pattern=aan de voorkant, Pattern=en, Pattern=bal bovenop
+	Constrained: Pattern=bovenop, Pattern=bal, Pattern=de, Pattern=aan de, Pattern=hebben
+Turn ID=36| A | A : O ja
+	Free: Pattern=O ja
+	Constrained: Pattern=ja, Pattern=O

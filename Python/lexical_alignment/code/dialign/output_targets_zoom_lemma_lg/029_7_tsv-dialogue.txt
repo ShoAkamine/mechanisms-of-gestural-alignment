@@ -1,0 +1,223 @@
+A|0| A: _Oké_ 
+A|1| A: _ik_ zien _een soort_ _van_ bankje-achtig 
+A|2| A: _met_ iets wat erop staan 
+A|3| A: Zeggen _maar_ _een_ _een_ plat ding _met twee schuin poot_ _aan de_ onderkant 
+B|4| B: _ja_ 
+A|5| A: _en_ _daar_ bovenop 
+A|6| A: _het_ _zijn_ geen vierkant _maar_ [ja] iets wat _er_ bovenop staan _zeggen maar_ 
+B|7| B: [ja] 
+A|8| A: _en_ _aan de_ zijkant _hebben_ _je_ _nog een soort_ _van_ oort 
+A|9| A: iets wat _een beetje_ erbovenuit steken 
+B|10| B: [ja] 
+B|11| B: _die_ [er] 
+B|12| B: _ja ja ja_ 
+B|13| B: [Oké] [daar] willen [ik] net vragen 
+B|14| B: dan [zijn] [het] 
+B|15| B: Ehm 
+B|16| B: deze [hebben] [een] haak [aan] 
+B|17| B: Lijken [een beetje] op [een] tafel [met twee schuin poot] 
+B|18| B: _en een_ haak [aan de] achterkant [van] [de] beker komen eruit _naar boven_ 
+B|19| B: [en] op _dat_ tafel zitten ook [nog een soort] [ja] _omgekeerde_ _piramide_ 
+A|20| A: Hmmm 
+A|21| A: niet _met die_ heel lang schroef [er] doorheen hè 
+B|22| B: nee nee nee 
+B|23| B: _Eh_ nee 
+B|24| B: [die] beker _gaan_ weer door [het] tafel heen [zeggen maar] 
+B|25| B: _dat_ tafel zitten best _wel_ hoog in [de] om [de] beker heen 
+B|26| B: [en] dan op _dat_ tafel zitten [een soort] _omgekeerde_ _piramide_ 
+A|27| A: Oh [ja [ja ja] ja] 
+A|28| A: _dat zijn_ 
+A|29| A: we _gaan steeds_ snel hè 
+B|30| B: [ja] precies [gaan steeds] makkelijk 
+A|31| A: laugh 
+A|32| A: eehhm 
+A|33| A: [het] [zijn] [dat] 
+A|34| A: _plateaut_ [aan de] 
+A|35| A: niet helemaal [aan de] bovenkant [maar] 
+A|36| A: [wel] redelijk [naar boven] 
+B|37| B: _bijna_ 
+A|38| A: [en een] [omgekeerde] half [piramide] 
+B|39| B: [ja] 
+B|40| B: [ja] [dat zijn] 
+B|41| B: _Eh_ 
+B|42| B: dit [zijn] weer [die] [een] _met [een_ soort] plateautje best [wel] hoog [met die] omgekeerd [piramide] 
+A|43| A: [ja] 
+B|44| B: _Eh_ 
+A|45| A: Eehm 
+A|46| A: Plateautje [bijna] helemaal bovenin [met een] [omgekeerde] 
+B|47| B: [ja] 
+B|48| B: waar [zijn] [je] 
+B|49| B: [dat zijn] 
+B|50| B: ehh 
+B|51| B: dit [zijn] [met] [dat] [plateaut] best [wel] hoog [en] [die] omgekeerd [piramide] op [dat] plateau 
+A|52| A: Yes 
+A|53| A: [Eh] 
+A|54| A: even zoeken even zoeken 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| A | A : ik zien een soort van bankje-achtig
+	Free: Pattern=een soort, Pattern=van, Pattern=ik
+	Constrained: Pattern=een
+Turn ID=2| A | A : met iets wat erop staan
+	Free: Pattern=met
+	Constrained: 
+Turn ID=3| A | A : Zeggen maar een een plat ding met twee schuin poot aan de onderkant
+	Free: Pattern=met twee schuin poot, Pattern=aan de, Pattern=maar, Pattern=een
+	Constrained: Pattern=aan, Pattern=de, Pattern=met
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en daar bovenop
+	Free: Pattern=en, Pattern=daar
+	Constrained: 
+Turn ID=6| A | A : het zijn geen vierkant maar ja iets wat er bovenop staan zeggen maar
+	Free: Pattern=ja, Pattern=zeggen maar, Pattern=het, Pattern=er, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=maar
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : en aan de zijkant hebben je nog een soort van oort
+	Free: Pattern=aan de, Pattern=hebben, Pattern=nog een soort, Pattern=je, Pattern=van, Pattern=en
+	Constrained: Pattern=een soort, Pattern=aan, Pattern=een, Pattern=de
+Turn ID=9| A | A : iets wat een beetje erbovenuit steken
+	Free: Pattern=een beetje
+	Constrained: Pattern=een
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| B | B : die er
+	Free: Pattern=die, Pattern=er
+	Constrained: 
+Turn ID=12| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=13| B | B : Oké daar willen ik net vragen
+	Free: Pattern=daar, Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=14| B | B : dan zijn het
+	Free: Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=15| B | B : Ehm
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : deze hebben een haak aan
+	Free: Pattern=aan, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=17| B | B : Lijken een beetje op een tafel met twee schuin poot
+	Free: Pattern=met twee schuin poot, Pattern=een beetje, Pattern=een
+	Constrained: Pattern=een, Pattern=met
+Turn ID=18| B | B : en een haak aan de achterkant van de beker komen eruit naar boven
+	Free: Pattern=de, Pattern=aan de, Pattern=naar boven, Pattern=van, Pattern=en een
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=en
+Turn ID=19| B | B : en op dat tafel zitten ook nog een soort ja omgekeerde piramide
+	Free: Pattern=dat, Pattern=ja, Pattern=piramide, Pattern=omgekeerde, Pattern=nog een soort, Pattern=en
+	Constrained: Pattern=een soort, Pattern=een
+Turn ID=20| A | A : Hmmm
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : niet met die heel lang schroef er doorheen hè
+	Free: Pattern=met die, Pattern=er
+	Constrained: Pattern=die, Pattern=met
+Turn ID=22| B | B : nee nee nee
+	Free: 
+	Constrained: 
+Turn ID=23| B | B : Eh nee
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=24| B | B : die beker gaan weer door het tafel heen zeggen maar
+	Free: Pattern=zeggen maar, Pattern=die, Pattern=het, Pattern=gaan
+	Constrained: Pattern=maar
+Turn ID=25| B | B : dat tafel zitten best wel hoog in de om de beker heen
+	Free: Pattern=dat, Pattern=wel, Pattern=de
+	Constrained: 
+Turn ID=26| B | B : en dan op dat tafel zitten een soort omgekeerde piramide
+	Free: Pattern=dat, Pattern=piramide, Pattern=omgekeerde, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een
+Turn ID=27| A | A : Oh ja ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=28| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=29| A | A : we gaan steeds snel hè
+	Free: Pattern=gaan steeds
+	Constrained: Pattern=gaan
+Turn ID=30| B | B : ja precies gaan steeds makkelijk
+	Free: Pattern=gaan steeds, Pattern=ja
+	Constrained: Pattern=gaan
+Turn ID=31| A | A : laugh
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : eehhm
+	Free: 
+	Constrained: 
+Turn ID=33| A | A : het zijn dat
+	Free: Pattern=dat, Pattern=zijn, Pattern=het
+	Constrained: 
+Turn ID=34| A | A : plateaut aan de
+	Free: Pattern=aan de, Pattern=plateaut
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=35| A | A : niet helemaal aan de bovenkant maar
+	Free: Pattern=aan de, Pattern=maar
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=36| A | A : wel redelijk naar boven
+	Free: Pattern=naar boven, Pattern=wel
+	Constrained: 
+Turn ID=37| B | B : bijna
+	Free: Pattern=bijna
+	Constrained: 
+Turn ID=38| A | A : en een omgekeerde half piramide
+	Free: Pattern=en een, Pattern=piramide, Pattern=omgekeerde
+	Constrained: Pattern=en, Pattern=een
+Turn ID=39| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=41| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=42| B | B : dit zijn weer die een met een soort plateautje best wel hoog met die omgekeerd piramide
+	Free: Pattern=met die, Pattern=piramide, Pattern=die, Pattern=met een, Pattern=een soort, Pattern=zijn, Pattern=een, Pattern=wel
+	Constrained: Pattern=die, Pattern=een, Pattern=met
+Turn ID=43| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=45| A | A : Eehm
+	Free: 
+	Constrained: 
+Turn ID=46| A | A : Plateautje bijna helemaal bovenin met een omgekeerde
+	Free: Pattern=met een, Pattern=bijna, Pattern=omgekeerde
+	Constrained: Pattern=een, Pattern=met
+Turn ID=47| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=48| B | B : waar zijn je
+	Free: Pattern=zijn, Pattern=je
+	Constrained: 
+Turn ID=49| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=50| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=51| B | B : dit zijn met dat plateaut best wel hoog en die omgekeerd piramide op dat plateau
+	Free: Pattern=piramide, Pattern=wel, Pattern=met, Pattern=die, Pattern=en, Pattern=zijn, Pattern=dat, Pattern=plateaut
+	Constrained: 
+Turn ID=52| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=53| A | A : Eh
+	Free: Pattern=Eh
+	Constrained: 
+Turn ID=54| A | A : even zoeken even zoeken
+	Free: 
+	Constrained: 

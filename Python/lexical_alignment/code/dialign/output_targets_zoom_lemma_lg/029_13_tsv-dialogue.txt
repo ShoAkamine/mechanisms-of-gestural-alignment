@@ -1,0 +1,151 @@
+A|0| A: Oké ik zullen _het_ omschrijven als _een_ _heel_ _lang _schroef_ die er_ _die _er_ doorheen_ _gaan_ 
+A|1| A: _en die_ beker _staan_ _op een_ soort _van_ plateau-achtig iets 
+B|2| B: _ja_ 
+A|3| A: _en_ bij mij _zijn_ aan _de_ voorkant _een_ cirkel _met_ iets _wat_ uitsteken 
+B|4| B: _ja_ 
+A|5| A: _en_ 
+A|6| A: ehm _dat_ ding _wat_ uitsteken aan _die_ zij _zegmaar_ aan _de_ voorkant _dat_ _steken_ ook _uit_ ui _die_ _plateau_ 
+A|7| A: _het_ _zijn_ _een_ _een_ _een half rond_ 
+B|8| B: [een half rond] [wat] [uit] [dat] [plateau] eruit [steken] zeggen maar 
+A|9| A: [ja] 
+B|10| B: [ja] dan 
+A|11| A: [ja] 
+B|12| B: [en die] [schroef die er] helemaal [doorheen] zitten _dat zijn_ [van] [die] [ja] 
+B|13| B: [wat] [zijn] [het] 
+B|14| B: [de] [heel] tijd [gaan] t [zegmaar] worden [het] groot [en] dunn dikk dunn 
+B|15| B: [die] [schroef] 
+A|16| A: _ja ja ja_ 
+B|17| B: [ja ja ja] _dat zijn_ _dat zijn_ 
+B|18| B: dit [zijn] [die] [een] _met die_ [schroef die er] helemaal [doorheen] [zijn] [en die] [op een] plateaut [staan] 
+A|19| A: [ja] 
+B|20| B: [met] [ja] 
+A|21| A: [dat zijn] 
+A|22| A: Ehm 
+A|23| A: [met _die] lang _schroef_ er doorheen_ 
+B|24| B: Eh 
+B|25| B: [dat zijn] 
+B|26| B: Eeh 
+B|27| B: dit [zijn] weer [met die] spijker [er] helemaal [doorheen] [op] [het] plateaut 
+A|28| A: Ehm 
+A|29| A: [met _die] lang _schroef_ er doorheen_ 
+B|30| B: [ja] 
+B|31| B: ehh 
+B|32| B: dit [zijn] [met die] [schroef er doorheen] [op] [het] plateaut 
+A|33| A: Mmmm 
+B|34| B: [die lang schroef] 
+A|35| A: Oh [ja] 
+A|36| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oké ik zullen het omschrijven als een heel lang schroef die er die er doorheen gaan
+	Free: Pattern=lang schroef, Pattern=schroef die er, Pattern=een, Pattern=het, Pattern=er doorheen, Pattern=gaan, Pattern=die er, Pattern=heel
+	Constrained: Pattern=die er, Pattern=doorheen, Pattern=die, Pattern=er, Pattern=schroef
+Turn ID=1| A | A : en die beker staan op een soort van plateau-achtig iets
+	Free: Pattern=op een, Pattern=en die, Pattern=van, Pattern=staan
+	Constrained: Pattern=en, Pattern=een, Pattern=die, Pattern=op
+Turn ID=2| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : en bij mij zijn aan de voorkant een cirkel met iets wat uitsteken
+	Free: Pattern=de, Pattern=een, Pattern=met, Pattern=wat, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=6| A | A : ehm dat ding wat uitsteken aan die zij zegmaar aan de voorkant dat steken ook uit ui die plateau
+	Free: Pattern=dat, Pattern=de, Pattern=uit, Pattern=zegmaar, Pattern=plateau, Pattern=die, Pattern=wat, Pattern=steken
+	Constrained: 
+Turn ID=7| A | A : het zijn een een een half rond
+	Free: Pattern=een half rond, Pattern=een, Pattern=het, Pattern=zijn
+	Constrained: Pattern=een
+Turn ID=8| B | B : een half rond wat uit dat plateau eruit steken zeggen maar
+	Free: Pattern=dat, Pattern=uit, Pattern=plateau, Pattern=wat, Pattern=een half rond, Pattern=steken
+	Constrained: Pattern=een
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ja dan
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : en die schroef die er helemaal doorheen zitten dat zijn van die ja
+	Free: Pattern=en die, Pattern=dat zijn, Pattern=schroef die er, Pattern=die, Pattern=van, Pattern=ja, Pattern=doorheen
+	Constrained: Pattern=dat, Pattern=die er, Pattern=die, Pattern=er, Pattern=schroef, Pattern=en, Pattern=zijn
+Turn ID=13| B | B : wat zijn het
+	Free: Pattern=het, Pattern=zijn, Pattern=wat
+	Constrained: 
+Turn ID=14| B | B : de heel tijd gaan t zegmaar worden het groot en dunn dikk dunn
+	Free: Pattern=heel, Pattern=de, Pattern=het, Pattern=zegmaar, Pattern=en, Pattern=gaan
+	Constrained: 
+Turn ID=15| B | B : die schroef
+	Free: Pattern=die, Pattern=schroef
+	Constrained: 
+Turn ID=16| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja
+Turn ID=17| B | B : ja ja ja dat zijn dat zijn
+	Free: Pattern=ja ja ja, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja
+Turn ID=18| B | B : dit zijn die een met die schroef die er helemaal doorheen zijn en die op een plateaut staan
+	Free: Pattern=en die, Pattern=met die, Pattern=schroef die er, Pattern=doorheen, Pattern=die, Pattern=zijn, Pattern=op een, Pattern=een, Pattern=staan
+	Constrained: Pattern=die er, Pattern=op, Pattern=een, Pattern=met, Pattern=die, Pattern=er, Pattern=schroef, Pattern=en
+Turn ID=19| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| B | B : met ja
+	Free: Pattern=ja, Pattern=met
+	Constrained: 
+Turn ID=21| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=22| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : met die lang schroef er doorheen
+	Free: Pattern=schroef er doorheen, Pattern=die lang schroef, Pattern=met die
+	Constrained: Pattern=lang schroef, Pattern=doorheen, Pattern=er doorheen, Pattern=met, Pattern=die, Pattern=er, Pattern=schroef
+Turn ID=24| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=25| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=26| B | B : Eeh
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : dit zijn weer met die spijker er helemaal doorheen op het plateaut
+	Free: Pattern=met die, Pattern=doorheen, Pattern=op, Pattern=het, Pattern=er, Pattern=zijn
+	Constrained: Pattern=die, Pattern=met
+Turn ID=28| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : met die lang schroef er doorheen
+	Free: Pattern=schroef er doorheen, Pattern=die lang schroef, Pattern=met die
+	Constrained: Pattern=lang schroef, Pattern=doorheen, Pattern=er doorheen, Pattern=met, Pattern=die, Pattern=er, Pattern=schroef
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : dit zijn met die schroef er doorheen op het plateaut
+	Free: Pattern=met die, Pattern=op, Pattern=het, Pattern=schroef er doorheen, Pattern=zijn
+	Constrained: Pattern=doorheen, Pattern=er doorheen, Pattern=met, Pattern=die, Pattern=er, Pattern=schroef
+Turn ID=33| A | A : Mmmm
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : die lang schroef
+	Free: Pattern=die lang schroef
+	Constrained: Pattern=lang schroef, Pattern=die, Pattern=schroef
+Turn ID=35| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

@@ -1,0 +1,139 @@
+B|0| B: Oké 
+B|1| B: _ik_ _vinden_ deze _een_ beetje _op_ _een soort_ robot _met_ _twee_ heel uitstulpig oog _lijken_ 
+B|2| B: maar hij hebben _aan de_ zijkant _een vierkant_ 
+B|3| B: hij hebben eigenlijk _twee_ liggen toren als zeggen maar _de_ oog dan 
+B|4| B: _en_ _op_ _zijn_ _hoofd_ hebben hij _een soort paddenstoel_ staan 
+A|5| A: _ja_ 
+A|6| A: _ja_ het [zijn] 
+B|7| B: Oké 
+A|8| A: _ja_ _dit zijn_ die 
+A|9| A: wat _ik op_ _verrekijker_ [vinden] [lijken] 
+A|10| A: die wijzen naar links 
+A|11| A: [en] 
+A|12| A: voor zitten [een vierkant] 
+A|13| A: [en] [een soort paddenstoel] denken [ik] 
+A|14| A: [op] het [op] het [hoofd] 
+B|15| B: Oh [ja] _dat zijn_ 
+B|16| B: deze [vinden] [ik op] [een] robot 
+B|17| B: _met_ zeggen maar [een] [paddenstoel] [op] _de_ bovenkant 
+B|18| B: [en] _twee verrekijker_ 
+A|19| A: O [ja] 
+A|20| A: [dat zijn] 
+A|21| A: _dit zijn_ die 
+A|22| A: [met] die [twee verrekijker] naar links 
+A|23| A: [een soort paddenstoel] naar boven 
+A|24| A: [en] [een vierkant] 
+A|25| A: [aan de] voorkant 
+B|26| B: [ja] [dat zijn] 
+B|27| B: [en] [dit zijn] [met] [de] [paddenstoel] 
+B|28| B: [en] [de] [twee verrekijker] 
+A|29| A: O [dat zijn] 
+A|30| A: [dit zijn] die [met] die [verrekijker] naar links 
+A|31| A: [en] die [paddenstoel] 
+A|32| A: daar boven 
+B|33| B: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : ik vinden deze een beetje op een soort robot met twee heel uitstulpig oog lijken
+	Free: Pattern=twee, Pattern=vinden, Pattern=op, Pattern=lijken, Pattern=een, Pattern=met, Pattern=ik, Pattern=een soort
+	Constrained: Pattern=een
+Turn ID=2| B | B : maar hij hebben aan de zijkant een vierkant
+	Free: Pattern=een vierkant, Pattern=aan de
+	Constrained: Pattern=een, Pattern=de
+Turn ID=3| B | B : hij hebben eigenlijk twee liggen toren als zeggen maar de oog dan
+	Free: Pattern=de, Pattern=twee
+	Constrained: 
+Turn ID=4| B | B : en op zijn hoofd hebben hij een soort paddenstoel staan
+	Free: Pattern=op, Pattern=een soort paddenstoel, Pattern=en, Pattern=zijn, Pattern=hoofd
+	Constrained: Pattern=een soort, Pattern=een, Pattern=paddenstoel
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : ja het zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : ja dit zijn die
+	Free: Pattern=dit zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=9| A | A : wat ik op verrekijker vinden lijken
+	Free: Pattern=ik op, Pattern=vinden, Pattern=lijken, Pattern=verrekijker
+	Constrained: Pattern=ik, Pattern=op
+Turn ID=10| A | A : die wijzen naar links
+	Free: 
+	Constrained: 
+Turn ID=11| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=12| A | A : voor zitten een vierkant
+	Free: Pattern=een vierkant
+	Constrained: Pattern=een
+Turn ID=13| A | A : en een soort paddenstoel denken ik
+	Free: Pattern=een soort paddenstoel, Pattern=ik, Pattern=en
+	Constrained: Pattern=een soort, Pattern=een, Pattern=paddenstoel
+Turn ID=14| A | A : op het op het hoofd
+	Free: Pattern=hoofd, Pattern=op
+	Constrained: 
+Turn ID=15| B | B : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=16| B | B : deze vinden ik op een robot
+	Free: Pattern=ik op, Pattern=een, Pattern=vinden
+	Constrained: Pattern=ik, Pattern=op
+Turn ID=17| B | B : met zeggen maar een paddenstoel op de bovenkant
+	Free: Pattern=de, Pattern=op, Pattern=een, Pattern=paddenstoel, Pattern=met
+	Constrained: 
+Turn ID=18| B | B : en twee verrekijker
+	Free: Pattern=twee verrekijker, Pattern=en
+	Constrained: Pattern=verrekijker, Pattern=twee
+Turn ID=19| A | A : O ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=21| A | A : dit zijn die
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=22| A | A : met die twee verrekijker naar links
+	Free: Pattern=twee verrekijker, Pattern=met
+	Constrained: Pattern=verrekijker, Pattern=twee
+Turn ID=23| A | A : een soort paddenstoel naar boven
+	Free: Pattern=een soort paddenstoel
+	Constrained: Pattern=een soort, Pattern=een, Pattern=paddenstoel
+Turn ID=24| A | A : en een vierkant
+	Free: Pattern=een vierkant, Pattern=en
+	Constrained: Pattern=een
+Turn ID=25| A | A : aan de voorkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=26| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=27| B | B : en dit zijn met de paddenstoel
+	Free: Pattern=de, Pattern=paddenstoel, Pattern=met, Pattern=en, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=28| B | B : en de twee verrekijker
+	Free: Pattern=twee verrekijker, Pattern=de, Pattern=en
+	Constrained: Pattern=verrekijker, Pattern=twee
+Turn ID=29| A | A : O dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=30| A | A : dit zijn die met die verrekijker naar links
+	Free: Pattern=dit zijn, Pattern=verrekijker, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=31| A | A : en die paddenstoel
+	Free: Pattern=paddenstoel, Pattern=en
+	Constrained: 
+Turn ID=32| A | A : daar boven
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn

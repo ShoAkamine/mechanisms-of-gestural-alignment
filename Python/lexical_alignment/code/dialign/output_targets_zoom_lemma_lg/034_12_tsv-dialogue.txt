@@ -1,0 +1,203 @@
+A|0| A: _euh deze hebben_ _een rond_ plateaut _aan de_ rechtervoorkant 
+A|1| A: _een soort_ gek vormen uitstulping _aan de_ linkerkant 
+A|2| A: _met_ daar bovenop _nog_ weer _een_ 
+A|3| A: _ja_ ik vinden _het een_ beetje _op_ _een_ toeter lijken 
+B|4| B: Heeft [het] [soort] van [aan de] bovenkant [nog] twee twee dinget eruit _steken_ 
+A|5| A: nee 
+A|6| A: _Euh_ _even_ zien 
+A|7| A: _Euh_ [het] _zijn_ _aan de rechterkant_ _zijn_ _er_ _een rond_ plaat eigenlijk _die_ _er_ vanaf hangen 
+B|8| B: _Oh ja_ 
+A|9| A: _en_ [aan de] linkerkant _hebben_ je één [ja] _dat zijn_ _een_ buigen uitstulping eigenlijk 
+A|10| A: _dus_ hij _komen_ wel rechtuit _maar_ _dat_ _ding_ zelf _zijn_ krom 
+A|11| A: _en dan_ steeds naar boven _iets wat_ smal beginnen _en_ breed eindigen eigenlijk 
+A|12| A: helemaal _links_ _zijn_ _dat_ 
+B|13| B: _Oh ja_ 
+B|14| B: [ja] [dus] [links] [iets] hoog [en dan] _rechts_ [iets] laag [en dan] [op] [dat] linker [ding] [een soort] _punt_ [die] erin zitten 
+A|15| A: [ja] [ja] [die] [ja] [ja] 
+B|16| B: _Oh ja_ oké [dat zijn] 
+B|17| B: _euh dit _zijn_ die_ [een] [met] [die] twee [ding] [aan de] zijkant 
+B|18| B: [dus] link [en] _rechts_ [iets] 
+B|19| B: [en dan] [op] [de] linker [een] _puntig_ [iets wat] erin _steken_ 
+A|20| A: O [ja] [dat zijn] 
+A|21| A: _euh deze hebben_ [dat] _rond_ _plateau_ [en] [die] buigen uitstulping [links] [met] daarover [die] [puntig] 
+B|22| B: [Euh] wachten [nog] [een] keer 
+A|23| A: _deze hebben_ _aan de rechterkant_ _zo'n_ _rond_ _plateau_ 
+A|24| A: [en] [aan de] linkerkant [een] _balk_ [die] _rond_ lopen 
+B|25| B: [ja] 
+A|26| A: [en] daar [steken] _zo'n_ toeter uit [die] zo _in_ _een punt_ lopen 
+B|27| B: [even] kijken hoor _rechts_ [zo'n] [plateau] 
+A|28| A: nee _ja rechts_ [plateau] _en links een_ _balk_ [en dan] daar _komen_ [die] toeter uit [die] zo smal beginnen [en] [wat] bred eindigen 
+B|29| B: _Oh ja_ [en dan] [aan de] bovenkant [nog] [zo'n] [soort] schroef 
+A|30| A: [ja] 
+B|31| B: _Oh ja_ [euh] 
+B|32| B: [euh deze hebben] [links] [en] [rechts] [iets] 
+B|33| B: [en dan] [in] [het] linker [komen] [er] [zo'n] [punt] 
+B|34| B: Zeggen [maar] [een punt] [wat] erin [steken] 
+B|35| B: [dus] [ja rechts] [hebben] [het [een] soort] [rond] zitten [aan de rechterkant] 
+A|36| A: [Euh] [met] [dat] [rond] [plateau] [ding] 
+A|37| A: nee 
+B|38| B: [en] link 
+B|39| B: [ja] [een soort] hoeken [balk] 
+B|40| B: [en dan] [in] [dat] linker [balk] [komen] [een soort] [punt] 
+A|41| A: [Oh ja] [dat zijn] 
+B|42| B: [iets] [met] [een punt] 
+A|43| A: [euh dit zijn] weer [met] [dat] [euh] ronde [plateau] [aan de rechterkant] 
+A|44| A: [en] [die] [puntig] [die] daar uitsteken [aan de] linkerkant 
+B|45| B: [dat zijn] 
+B|46| B: [euh dit _zijn] die_ [met] [een] [rechts] [een rond] [en links een] hoekig [iets] [en dan] [met] [zo'n] [punt] [op] [die] linker 
+B|47| B: [zo'n] [puntig] [iets] 
+A|48| A: [Oh] [die] [Euh] waar [zijn die] ? waar [zijn die] 
+A|49| A: [Oh] daar 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : euh deze hebben een rond plateaut aan de rechtervoorkant
+	Free: Pattern=euh deze hebben, Pattern=een rond, Pattern=aan de
+	Constrained: Pattern=de, Pattern=een, Pattern=hebben, Pattern=euh, Pattern=deze hebben, Pattern=rond
+Turn ID=1| A | A : een soort gek vormen uitstulping aan de linkerkant
+	Free: Pattern=een soort, Pattern=aan de
+	Constrained: Pattern=de, Pattern=soort, Pattern=een
+Turn ID=2| A | A : met daar bovenop nog weer een
+	Free: Pattern=nog, Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=3| A | A : ja ik vinden het een beetje op een toeter lijken
+	Free: Pattern=het een, Pattern=ja, Pattern=een, Pattern=op
+	Constrained: Pattern=het, Pattern=een
+Turn ID=4| B | B : Heeft het soort van aan de bovenkant nog twee twee dinget eruit steken
+	Free: Pattern=aan de, Pattern=het, Pattern=steken, Pattern=nog, Pattern=soort
+	Constrained: Pattern=de
+Turn ID=5| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : Euh even zien
+	Free: Pattern=Euh, Pattern=even
+	Constrained: 
+Turn ID=7| A | A : Euh het zijn aan de rechterkant zijn er een rond plaat eigenlijk die er vanaf hangen
+	Free: Pattern=Euh, Pattern=het, Pattern=er, Pattern=een rond, Pattern=zijn, Pattern=aan de rechterkant, Pattern=die
+	Constrained: Pattern=een, Pattern=de, Pattern=rond, Pattern=aan de
+Turn ID=8| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=9| A | A : en aan de linkerkant hebben je één ja dat zijn een buigen uitstulping eigenlijk
+	Free: Pattern=dat zijn, Pattern=ja, Pattern=aan de, Pattern=een, Pattern=hebben, Pattern=en
+	Constrained: Pattern=de, Pattern=dat, Pattern=zijn
+Turn ID=10| A | A : dus hij komen wel rechtuit maar dat ding zelf zijn krom
+	Free: Pattern=dat, Pattern=dus, Pattern=komen, Pattern=ding, Pattern=zijn, Pattern=maar
+	Constrained: 
+Turn ID=11| A | A : en dan steeds naar boven iets wat smal beginnen en breed eindigen eigenlijk
+	Free: Pattern=en dan, Pattern=iets wat, Pattern=en
+	Constrained: Pattern=iets, Pattern=en, Pattern=wat
+Turn ID=12| A | A : helemaal links zijn dat
+	Free: Pattern=links, Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=13| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=14| B | B : ja dus links iets hoog en dan rechts iets laag en dan op dat linker ding een soort punt die erin zitten
+	Free: Pattern=dat, Pattern=punt, Pattern=en dan, Pattern=op, Pattern=ding, Pattern=links, Pattern=die, Pattern=een soort, Pattern=rechts, Pattern=iets, Pattern=dus, Pattern=ja
+	Constrained: Pattern=en, Pattern=soort, Pattern=een
+Turn ID=15| A | A : ja ja die ja ja
+	Free: Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=16| B | B : Oh ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=dat, Pattern=Oh, Pattern=zijn
+Turn ID=17| B | B : euh dit zijn die een met die twee ding aan de zijkant
+	Free: Pattern=aan de, Pattern=ding, Pattern=een, Pattern=zijn die, Pattern=met, Pattern=die, Pattern=euh dit zijn
+	Constrained: Pattern=de, Pattern=zijn, Pattern=die, Pattern=euh
+Turn ID=18| B | B : dus link en rechts iets
+	Free: Pattern=iets, Pattern=en, Pattern=rechts, Pattern=dus
+	Constrained: 
+Turn ID=19| B | B : en dan op de linker een puntig iets wat erin steken
+	Free: Pattern=iets wat, Pattern=de, Pattern=en dan, Pattern=op, Pattern=puntig, Pattern=een, Pattern=steken
+	Constrained: Pattern=iets, Pattern=en, Pattern=wat
+Turn ID=20| A | A : O ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=21| A | A : euh deze hebben dat rond plateau en die buigen uitstulping links met daarover die puntig
+	Free: Pattern=dat, Pattern=euh deze hebben, Pattern=puntig, Pattern=links, Pattern=plateau, Pattern=met, Pattern=die, Pattern=en, Pattern=rond
+	Constrained: Pattern=deze hebben, Pattern=hebben, Pattern=euh
+Turn ID=22| B | B : Euh wachten nog een keer
+	Free: Pattern=Euh, Pattern=nog, Pattern=een
+	Constrained: 
+Turn ID=23| A | A : deze hebben aan de rechterkant zo'n rond plateau
+	Free: Pattern=zo'n, Pattern=aan de rechterkant, Pattern=rond, Pattern=plateau, Pattern=deze hebben
+	Constrained: Pattern=de, Pattern=hebben, Pattern=aan de
+Turn ID=24| A | A : en aan de linkerkant een balk die rond lopen
+	Free: Pattern=aan de, Pattern=een, Pattern=balk, Pattern=die, Pattern=en, Pattern=rond
+	Constrained: Pattern=de
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : en daar steken zo'n toeter uit die zo in een punt lopen
+	Free: Pattern=zo'n, Pattern=in, Pattern=die, Pattern=en, Pattern=steken, Pattern=een punt
+	Constrained: Pattern=punt, Pattern=een
+Turn ID=27| B | B : even kijken hoor rechts zo'n plateau
+	Free: Pattern=plateau, Pattern=zo'n, Pattern=rechts, Pattern=even
+	Constrained: 
+Turn ID=28| A | A : nee ja rechts plateau en links een balk en dan daar komen die toeter uit die zo smal beginnen en wat bred eindigen
+	Free: Pattern=en dan, Pattern=komen, Pattern=plateau, Pattern=balk, Pattern=en, Pattern=ja rechts, Pattern=die, Pattern=wat, Pattern=en links een
+	Constrained: Pattern=een, Pattern=links, Pattern=en, Pattern=rechts, Pattern=ja
+Turn ID=29| B | B : Oh ja en dan aan de bovenkant nog zo'n soort schroef
+	Free: Pattern=zo'n, Pattern=en dan, Pattern=aan de, Pattern=Oh ja, Pattern=nog, Pattern=soort
+	Constrained: Pattern=de, Pattern=Oh, Pattern=en, Pattern=ja
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : Oh ja euh
+	Free: Pattern=Oh ja, Pattern=euh
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=32| B | B : euh deze hebben links en rechts iets
+	Free: Pattern=euh deze hebben, Pattern=links, Pattern=en, Pattern=rechts, Pattern=iets
+	Constrained: Pattern=deze hebben, Pattern=hebben, Pattern=euh
+Turn ID=33| B | B : en dan in het linker komen er zo'n punt
+	Free: Pattern=punt, Pattern=zo'n, Pattern=en dan, Pattern=komen, Pattern=het, Pattern=in, Pattern=er
+	Constrained: Pattern=en
+Turn ID=34| B | B : Zeggen maar een punt wat erin steken
+	Free: Pattern=een punt, Pattern=steken, Pattern=wat, Pattern=maar
+	Constrained: Pattern=punt, Pattern=een
+Turn ID=35| B | B : dus ja rechts hebben het een soort rond zitten aan de rechterkant
+	Free: Pattern=het een, Pattern=dus, Pattern=hebben, Pattern=een soort, Pattern=rond, Pattern=aan de rechterkant, Pattern=ja rechts
+	Constrained: Pattern=soort, Pattern=aan de, Pattern=een, Pattern=het, Pattern=de, Pattern=rechts, Pattern=ja
+Turn ID=36| A | A : Euh met dat rond plateau ding
+	Free: Pattern=dat, Pattern=ding, Pattern=Euh, Pattern=plateau, Pattern=met, Pattern=rond
+	Constrained: 
+Turn ID=37| A | A : nee
+	Free: 
+	Constrained: 
+Turn ID=38| B | B : en link
+	Free: Pattern=en
+	Constrained: 
+Turn ID=39| B | B : ja een soort hoeken balk
+	Free: Pattern=een soort, Pattern=ja, Pattern=balk
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=40| B | B : en dan in dat linker balk komen een soort punt
+	Free: Pattern=dat, Pattern=punt, Pattern=en dan, Pattern=komen, Pattern=in, Pattern=balk, Pattern=een soort
+	Constrained: Pattern=en, Pattern=soort, Pattern=een
+Turn ID=41| A | A : Oh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=dat, Pattern=Oh, Pattern=zijn
+Turn ID=42| B | B : iets met een punt
+	Free: Pattern=een punt, Pattern=iets, Pattern=met
+	Constrained: Pattern=punt, Pattern=een
+Turn ID=43| A | A : euh dit zijn weer met dat euh ronde plateau aan de rechterkant
+	Free: Pattern=dat, Pattern=euh, Pattern=plateau, Pattern=met, Pattern=aan de rechterkant, Pattern=euh dit zijn
+	Constrained: Pattern=de, Pattern=zijn, Pattern=euh, Pattern=aan de
+Turn ID=44| A | A : en die puntig die daar uitsteken aan de linkerkant
+	Free: Pattern=aan de, Pattern=en, Pattern=puntig, Pattern=die
+	Constrained: Pattern=de
+Turn ID=45| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=46| B | B : euh dit zijn die met een rechts een rond en links een hoekig iets en dan met zo'n punt op die linker
+	Free: Pattern=punt, Pattern=zo'n, Pattern=en dan, Pattern=op, Pattern=een, Pattern=zijn die, Pattern=met, Pattern=die, Pattern=en links een, Pattern=een rond, Pattern=euh dit zijn, Pattern=rechts, Pattern=iets
+	Constrained: Pattern=een, Pattern=links, Pattern=euh, Pattern=die, Pattern=en, Pattern=rond, Pattern=zijn
+Turn ID=47| B | B : zo'n puntig iets
+	Free: Pattern=iets, Pattern=zo'n, Pattern=puntig
+	Constrained: 
+Turn ID=48| A | A : Oh die Euh waar zijn die ? waar zijn die
+	Free: Pattern=zijn die, Pattern=Euh, Pattern=Oh, Pattern=die
+	Constrained: Pattern=die, Pattern=zijn
+Turn ID=49| A | A : Oh daar
+	Free: Pattern=Oh
+	Constrained: 

@@ -1,0 +1,71 @@
+A|0| A: _ik vinden_ dit _een_ beetje _op een_ _sushi chef_ _lijken_ 
+A|1| A: met _een_ dienblad 
+A|2| A: met zo'n bakje erbovenop met twee uitstekend 
+B|3| B: _ja_ 
+B|4| B: _ja_ [ik] zien hem al 
+B|5| B: _ja_ 
+B|6| B: _ja_ [ik vinden] _het_ veel [op een] bank [lijken] 
+A|7| A: [ja] kunnen ook 
+B|8| B: maar inderdaad oké 
+B|9| B: [ja] dat zijn 
+B|10| B: _ik hebben_ _het_ [sushi] blad 
+A|11| A: _Oh_ 
+A|12| A: _ik hebben de_ sushi-chef met [het] dienblad 
+B|13| B: [Oh] [ja] even kijken 
+B|14| B: _ik hebben de sushichef_ 
+A|15| A: [ik hebben de sushichef] 
+B|16| B: [ik hebben de] [sushi chef] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik vinden dit een beetje op een sushi chef lijken
+	Free: Pattern=sushi chef, Pattern=ik vinden, Pattern=lijken, Pattern=een, Pattern=op een
+	Constrained: Pattern=een, Pattern=sushi, Pattern=ik
+Turn ID=1| A | A : met een dienblad
+	Free: Pattern=een
+	Constrained: 
+Turn ID=2| A | A : met zo'n bakje erbovenop met twee uitstekend
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : ja ik zien hem al
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=5| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja ik vinden het veel op een bank lijken
+	Free: Pattern=ja, Pattern=ik vinden, Pattern=lijken, Pattern=het, Pattern=op een
+	Constrained: Pattern=een, Pattern=ik
+Turn ID=7| A | A : ja kunnen ook
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : maar inderdaad oké
+	Free: 
+	Constrained: 
+Turn ID=9| B | B : ja dat zijn
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : ik hebben het sushi blad
+	Free: Pattern=ik hebben, Pattern=het, Pattern=sushi
+	Constrained: Pattern=ik
+Turn ID=11| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| A | A : ik hebben de sushi-chef met het dienblad
+	Free: Pattern=ik hebben de, Pattern=het
+	Constrained: Pattern=ik hebben, Pattern=ik
+Turn ID=13| B | B : Oh ja even kijken
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=14| B | B : ik hebben de sushichef
+	Free: Pattern=ik hebben de sushichef
+	Constrained: Pattern=ik hebben, Pattern=ik hebben de, Pattern=ik
+Turn ID=15| A | A : ik hebben de sushichef
+	Free: Pattern=ik hebben de sushichef
+	Constrained: Pattern=ik hebben, Pattern=ik hebben de, Pattern=ik
+Turn ID=16| B | B : ik hebben de sushi chef
+	Free: Pattern=ik hebben de, Pattern=sushi chef
+	Constrained: Pattern=ik hebben, Pattern=sushi, Pattern=ik

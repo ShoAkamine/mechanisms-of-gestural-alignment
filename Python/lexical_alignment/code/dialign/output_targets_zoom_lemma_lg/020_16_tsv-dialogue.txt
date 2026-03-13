@@ -1,0 +1,163 @@
+B|0| B: _eh oké_ _deze_ v 
+B|1| B: _Oh_ _die_ vinden ik _het_ moeilijk net bij _het_ omschrijven 
+B|2| B: _oké_ _deze hebben_ in totaal drie stekel _aan de zijkant_ 
+A|3| A: huh 
+B|4| B: voor _aan de_ rechterkant _zitten_ er _één_ _die_ _zijn_ _vierkant_ 
+B|5| B: _aan de_ linkerkant _zitten_ er _één_ _die_ _zijn_ rond _maar_ _een_ beetje als _een soort_ van _handvat_ 
+B|6| B: _en dan_ half achter _zitten_ ook nog _iets_ rond 
+B|7| B: _en _aan_ de bovenkant_ steken ook _een soort_ van rondvormig langwerpig _handvat_ ding _uit_ 
+A|8| A: [eh oké] dus 
+A|9| A: Zit [zijn] _dat_ wat op [de bovenkant] [en] op [de] zij zeggen [maar] [aan de] voorkant [zitten] _hetzelfde_ 
+B|10| B: _ja_ _ja_ 
+A|11| A: Oké 
+A|12| A: [en dan] [het] [en dan] rechts [zitten] [een soort] [vierkant] [iets] 
+B|13| B: _ja_ _met die_ klein [vierkant] allemaal _die_ _steeds_ klein worden 
+A|14| A: [ja] 
+B|15| B: [ja] 
+A|16| A: Oké _dat zijn_ 
+A|17| A: Eh [deze hebben] [een] [handvat] op [de bovenkant] 
+A|18| A: Precies _hetzelfde_ [handvat] [aan de] voorkant 
+A|19| A: Zeggen [maar] links [aan de] voorkant 
+B|20| B: [ja] 
+A|21| A: [en aan] rechts [hebben] [het] _dat_ [die] [vierkant] _dat_ [steeds] veel aflopen 
+B|22| B: [ja] ik ik [hebben] hem vinden 
+B|23| B: [dat zijn] 
+A|24| A: [Oh] 
+B|25| B: [eh] _dit zijn die met_ _twee_ dezelfde _één_ boven _en één aan de zijkant_ [die] dezelfde [handvat] [hebben] 
+A|26| A: [ja] 
+B|27| B: [en dan] weer _met die_ blok [aan de] rechterkant 
+B|28| B: [en dan] [aan de] linkerkant 
+A|29| A: [eh] [zijn] 
+A|30| A: oh [zijn] 
+B|31| B: [ja] 
+A|32| A: [dit zijn die [met] die] [twee] handvatt [één] op [de bovenkant] [en één] [uit] [de] voorkant 
+B|33| B: [ja] 
+B|34| B: [eh] [dit zijn] _met de twee handvat_ [die] [hetzelfde] [zijn] 
+B|35| B: [de] [een] boven [en] [de] _één aan de zijkant_ [zitten] 
+A|36| A: Eh [met de twee handvat] 
+A|37| A: [één [aan de] bovenkant] [en één aan de zijkant] 
+A|38| A: [en] 
+B|39| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh oké deze v
+	Free: Pattern=eh oké, Pattern=deze
+	Constrained: Pattern=oké, Pattern=eh
+Turn ID=1| B | B : Oh die vinden ik het moeilijk net bij het omschrijven
+	Free: Pattern=Oh, Pattern=het, Pattern=die
+	Constrained: 
+Turn ID=2| B | B : oké deze hebben in totaal drie stekel aan de zijkant
+	Free: Pattern=aan de zijkant, Pattern=deze hebben, Pattern=oké
+	Constrained: Pattern=de, Pattern=deze, Pattern=aan de, Pattern=hebben
+Turn ID=3| A | A : huh
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : voor aan de rechterkant zitten er één die zijn vierkant
+	Free: Pattern=aan de, Pattern=één, Pattern=zijn, Pattern=vierkant, Pattern=die, Pattern=zitten
+	Constrained: Pattern=de
+Turn ID=5| B | B : aan de linkerkant zitten er één die zijn rond maar een beetje als een soort van handvat
+	Free: Pattern=aan de, Pattern=een, Pattern=één, Pattern=handvat, Pattern=een soort, Pattern=die, Pattern=zitten, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=de, Pattern=een
+Turn ID=6| B | B : en dan half achter zitten ook nog iets rond
+	Free: Pattern=en dan, Pattern=iets, Pattern=zitten
+	Constrained: Pattern=en
+Turn ID=7| B | B : en aan de bovenkant steken ook een soort van rondvormig langwerpig handvat ding uit
+	Free: Pattern=uit, Pattern=handvat, Pattern=een soort, Pattern=aan de bovenkant, Pattern=en aan
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=een, Pattern=en
+Turn ID=8| A | A : eh oké dus
+	Free: Pattern=eh oké
+	Constrained: Pattern=oké, Pattern=eh
+Turn ID=9| A | A : Zit zijn dat wat op de bovenkant en op de zij zeggen maar aan de voorkant zitten hetzelfde
+	Free: Pattern=dat, Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=hetzelfde, Pattern=zitten, Pattern=en, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=de
+Turn ID=10| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=12| A | A : en dan het en dan rechts zitten een soort vierkant iets
+	Free: Pattern=iets, Pattern=en dan, Pattern=het, Pattern=zitten, Pattern=een soort, Pattern=vierkant
+	Constrained: Pattern=en, Pattern=een
+Turn ID=13| B | B : ja met die klein vierkant allemaal die steeds klein worden
+	Free: Pattern=met die, Pattern=ja, Pattern=steeds, Pattern=die, Pattern=vierkant
+	Constrained: Pattern=die
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : Oké dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=17| A | A : Eh deze hebben een handvat op de bovenkant
+	Free: Pattern=de bovenkant, Pattern=deze hebben, Pattern=handvat, Pattern=een
+	Constrained: Pattern=deze, Pattern=hebben, Pattern=de
+Turn ID=18| A | A : Precies hetzelfde handvat aan de voorkant
+	Free: Pattern=aan de, Pattern=handvat, Pattern=hetzelfde
+	Constrained: Pattern=de
+Turn ID=19| A | A : Zeggen maar links aan de voorkant
+	Free: Pattern=aan de, Pattern=maar
+	Constrained: Pattern=de
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : en aan rechts hebben het dat die vierkant dat steeds veel aflopen
+	Free: Pattern=dat, Pattern=het, Pattern=die, Pattern=vierkant, Pattern=en aan, Pattern=steeds, Pattern=hebben
+	Constrained: Pattern=en
+Turn ID=22| B | B : ja ik ik hebben hem vinden
+	Free: Pattern=ja, Pattern=hebben
+	Constrained: 
+Turn ID=23| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=24| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=25| B | B : eh dit zijn die met twee dezelfde één boven en één aan de zijkant die dezelfde handvat hebben
+	Free: Pattern=twee, Pattern=één, Pattern=handvat, Pattern=dit zijn die met, Pattern=die, Pattern=eh, Pattern=hebben, Pattern=en één aan de zijkant
+	Constrained: Pattern=de, Pattern=aan de, Pattern=aan de zijkant, Pattern=één aan de, Pattern=één, Pattern=die, Pattern=en, Pattern=en één, Pattern=zijn, Pattern=één aan de zijkant, Pattern=dit zijn
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : en dan weer met die blok aan de rechterkant
+	Free: Pattern=en dan, Pattern=aan de, Pattern=met die
+	Constrained: Pattern=de, Pattern=die, Pattern=en
+Turn ID=28| B | B : en dan aan de linkerkant
+	Free: Pattern=en dan, Pattern=aan de
+	Constrained: Pattern=en, Pattern=de
+Turn ID=29| A | A : eh zijn
+	Free: Pattern=zijn, Pattern=eh
+	Constrained: 
+Turn ID=30| A | A : oh zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| A | A : dit zijn die met die twee handvatt één op de bovenkant en één uit de voorkant
+	Free: Pattern=met die, Pattern=twee, Pattern=de, Pattern=uit, Pattern=de bovenkant, Pattern=één, Pattern=dit zijn die met, Pattern=en één
+	Constrained: Pattern=de, Pattern=één, Pattern=die, Pattern=en, Pattern=zijn, Pattern=dit zijn
+Turn ID=33| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : eh dit zijn met de twee handvat die hetzelfde zijn
+	Free: Pattern=hetzelfde, Pattern=die, Pattern=eh, Pattern=dit zijn, Pattern=met de twee handvat, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=handvat, Pattern=de, Pattern=zijn
+Turn ID=35| B | B : de een boven en de één aan de zijkant zitten
+	Free: Pattern=de, Pattern=een, Pattern=zitten, Pattern=en, Pattern=één aan de zijkant
+	Constrained: Pattern=de, Pattern=aan de, Pattern=aan de zijkant, Pattern=één aan de, Pattern=één
+Turn ID=36| A | A : Eh met de twee handvat
+	Free: Pattern=met de twee handvat
+	Constrained: Pattern=twee, Pattern=handvat, Pattern=de
+Turn ID=37| A | A : één aan de bovenkant en één aan de zijkant
+	Free: Pattern=en één aan de zijkant, Pattern=aan de bovenkant, Pattern=één aan de
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=aan de zijkant, Pattern=één aan de, Pattern=één, Pattern=en, Pattern=en één, Pattern=één aan de zijkant
+Turn ID=38| A | A : en
+	Free: Pattern=en
+	Constrained: 
+Turn ID=39| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

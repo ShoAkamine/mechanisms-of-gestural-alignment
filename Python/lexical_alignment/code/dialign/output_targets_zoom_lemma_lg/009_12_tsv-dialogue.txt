@@ -1,0 +1,291 @@
+A|0| A: _ik_ _mogen_ me waarschijnlijk niet voorstellen 
+A|1| A: _dat_ _weten ik_ weer niet 
+A|2| A: _maar_ 
+B|3| B: hoi 
+A|4| A: leuk dit 
+A|5| A: _het_ zijn heel gek _dat_ _jij_ mij _kunnen_ zien _en_ _ik_ jou niet 
+A|6| A: _ik hebben_ echt geen idee 
+B|7| B: _ja_ 
+A|8| A: Oké 
+A|9| A: _hebben_ _jij_ al _een_ scherm voor _je_ 
+B|10| B: _ja_ 
+A|11| A: Oké _ik_ ook 
+A|12| A: _en_ _ik hebben een_ rood rood 
+B|13| B: Hebben [jij] 
+B|14| B: _Oh ja_ 
+A|15| A: [ja] 
+A|16| A: oké _dan_ moeten _ik_ _denken_ _gewoon_ 
+A|17| A: oh nee wachten 
+A|18| A: [jij] moeten vragen stellen _of_ wat 
+B|19| B: [ja] [jij] [mogen] [het] [denken] [ik] [gewoon] omschrijven 
+A|20| A: _of_ 
+A|21| A: OKé 
+A|22| A: [ja] oké gaan [ik] doen 
+A|23| A: [ik] zien _een_ 
+A|24| A: _ja ik_ vinden [het] allemaal _kop_ eigenlijk 
+B|25| B: mhm 
+A|26| A: ehm _met_ _een_ soort [ja] hoe _zeggen_ _je_ _dat_ _handvat_ _met_ _daarop_ _een_ _schoorsteen_ 
+A|27| A: één _en die_ lopen soort van zo 
+A|28| A: _je_ _kunnen_ mij zien 
+A|29| A: soort van zo 
+B|30| B: [en] dus [zeggen] [maar] _de schoorsteen_ staan _op het handvat_ [of] staan hij _op het_ [kop] 
+A|31| A: [ja] [op het handvat] 
+A|32| A: [op het handvat] 
+A|33| A: [en] [het] _hebben_ ook _nog een_ ander _uitsteeksel_ _met_ _een_ soort _rond_ 
+A|34| A: soort van zo 
+B|35| B: zo'n plat _rond waar je iets op kunnen bijzetten_ [zeggen] [maar] 
+A|36| A: [ja] 
+A|37| A: _ja ja_ 
+B|38| B: [ja ja] [dan] [weten ik] hem [denken] [ik] 
+A|39| A: [ja] oké Toppie 
+B|40| B: [dan] [mogen] [ik] [gewoon] [zeggen] toch 
+A|41| A: [je] moeten volgens mij [ja] [de] letter [of] zo 
+A|42| A: _en dan_ [op] _die_ knop 
+B|43| B: [ja [ik] hebben] 
+B|44| B: [ja [ik] _hebben] cijfer_ 
+B|45| B: ok 
+A|46| A: [Oh] [je] [hebben cijfer] 
+B|47| B: [ik hebben _een] bakje met_ zo'n [rond] _plateau_ _waar je iets_ [kunnen] opzetten 
+B|48| B: [en dan] [nog _een] steel_ 
+B|49| B: [en dan] [daarop] zitten [nog] zo'n tuu _naar boven_ 
+A|50| A: even kijken [een bakje met] [een] [plateau] [en] [een steel] 
+A|51| A: Eh 
+B|52| B: [dat] [rond] plateaut zitten [zeggen] [maar] aan [de] rechterkant 
+B|53| B: [en dan] [nog _een] uitsteeksel_ _naar links_ 
+B|54| B: [en die] [hebben] zo'n _tuut naar boven_ 
+A|55| A: [een] uitstekster [naar links] [met] [een] [tuut naar boven] 
+A|56| A: ah [met] [een] soort [schoorsteen] 
+B|57| B: [ja ja] 
+A|58| A: ah [ja ik] [weten] wat [je] bedoelen 
+A|59| A: Oké [ik hebben een] soort [kop] [met] [een] [rond waar je iets op kunnen bijzetten] 
+A|60| A: [en] [een uitsteeksel] [met] [daarop] [die] [schoorsteen] 
+B|61| B: _Oh ja_ 
+B|62| B: _eh_ [ja] 
+B|63| B: [ik hebben] [dat] [rond] [plateau] eraan 
+B|64| B: [met] _de schoorsteen_ 
+A|65| A: even kijken [schoorsteen] [schoorsteen] even kijken [waar] zijn [de schoorsteen] 
+A|66| A: even zoeken [ja] T 
+A|67| A: [eh] _ik hebben de schoorsteen_ 
+B|68| B: _Oh ja_ 
+B|69| B: [ik hebben de schoorsteen] 
+A|70| A: [schoorsteen] 
+A|71| A: [Oh ja] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ik mogen me waarschijnlijk niet voorstellen
+	Free: Pattern=ik, Pattern=mogen
+	Constrained: 
+Turn ID=1| A | A : dat weten ik weer niet
+	Free: Pattern=weten ik, Pattern=dat
+	Constrained: Pattern=ik, Pattern=weten
+Turn ID=2| A | A : maar
+	Free: Pattern=maar
+	Constrained: 
+Turn ID=3| B | B : hoi
+	Free: 
+	Constrained: 
+Turn ID=4| A | A : leuk dit
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : het zijn heel gek dat jij mij kunnen zien en ik jou niet
+	Free: Pattern=dat, Pattern=kunnen, Pattern=het, Pattern=ik, Pattern=en, Pattern=jij
+	Constrained: 
+Turn ID=6| A | A : ik hebben echt geen idee
+	Free: Pattern=ik hebben
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=7| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : hebben jij al een scherm voor je
+	Free: Pattern=je, Pattern=jij, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=10| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : Oké ik ook
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=12| A | A : en ik hebben een rood rood
+	Free: Pattern=ik hebben een, Pattern=en
+	Constrained: Pattern=een, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=13| B | B : Hebben jij
+	Free: Pattern=jij
+	Constrained: 
+Turn ID=14| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=15| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : oké dan moeten ik denken gewoon
+	Free: Pattern=dan, Pattern=denken, Pattern=ik, Pattern=gewoon
+	Constrained: 
+Turn ID=17| A | A : oh nee wachten
+	Free: 
+	Constrained: 
+Turn ID=18| A | A : jij moeten vragen stellen of wat
+	Free: Pattern=jij, Pattern=of
+	Constrained: 
+Turn ID=19| B | B : ja jij mogen het denken ik gewoon omschrijven
+	Free: Pattern=denken, Pattern=ja, Pattern=gewoon, Pattern=het, Pattern=mogen, Pattern=ik, Pattern=jij
+	Constrained: 
+Turn ID=20| A | A : of
+	Free: Pattern=of
+	Constrained: 
+Turn ID=21| A | A : OKé
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ja oké gaan ik doen
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=23| A | A : ik zien een
+	Free: Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=24| A | A : ja ik vinden het allemaal kop eigenlijk
+	Free: Pattern=ja ik, Pattern=kop, Pattern=het
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=25| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : ehm met een soort ja hoe zeggen je dat handvat met daarop een schoorsteen
+	Free: Pattern=ja, Pattern=een, Pattern=schoorsteen, Pattern=met, Pattern=je, Pattern=dat, Pattern=daarop, Pattern=zeggen, Pattern=handvat
+	Constrained: 
+Turn ID=27| A | A : één en die lopen soort van zo
+	Free: Pattern=en die
+	Constrained: Pattern=die, Pattern=en
+Turn ID=28| A | A : je kunnen mij zien
+	Free: Pattern=je, Pattern=kunnen
+	Constrained: 
+Turn ID=29| A | A : soort van zo
+	Free: 
+	Constrained: 
+Turn ID=30| B | B : en dus zeggen maar de schoorsteen staan op het handvat of staan hij op het kop
+	Free: Pattern=op het handvat, Pattern=of, Pattern=maar, Pattern=op het, Pattern=kop, Pattern=zeggen, Pattern=en, Pattern=de schoorsteen
+	Constrained: Pattern=de, Pattern=op, Pattern=het, Pattern=schoorsteen, Pattern=handvat, Pattern=op het
+Turn ID=31| A | A : ja op het handvat
+	Free: Pattern=op het handvat, Pattern=ja
+	Constrained: Pattern=het, Pattern=handvat, Pattern=op het, Pattern=op
+Turn ID=32| A | A : op het handvat
+	Free: Pattern=op het handvat
+	Constrained: Pattern=het, Pattern=handvat, Pattern=op het, Pattern=op
+Turn ID=33| A | A : en het hebben ook nog een ander uitsteeksel met een soort rond
+	Free: Pattern=nog een, Pattern=uitsteeksel, Pattern=een, Pattern=het, Pattern=hebben, Pattern=met, Pattern=en, Pattern=rond
+	Constrained: Pattern=nog, Pattern=een
+Turn ID=34| A | A : soort van zo
+	Free: 
+	Constrained: 
+Turn ID=35| B | B : zo'n plat rond waar je iets op kunnen bijzetten zeggen maar
+	Free: Pattern=rond waar je iets op kunnen bijzetten, Pattern=zeggen, Pattern=maar
+	Constrained: Pattern=kunnen, Pattern=waar, Pattern=op, Pattern=rond, Pattern=je, Pattern=waar je iets
+Turn ID=36| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=37| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=38| B | B : ja ja dan weten ik hem denken ik
+	Free: Pattern=denken, Pattern=ja ja, Pattern=weten ik, Pattern=dan, Pattern=ik
+	Constrained: Pattern=ja, Pattern=ik, Pattern=weten
+Turn ID=39| A | A : ja oké Toppie
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : dan mogen ik gewoon zeggen toch
+	Free: Pattern=dan, Pattern=gewoon, Pattern=mogen, Pattern=zeggen, Pattern=ik
+	Constrained: 
+Turn ID=41| A | A : je moeten volgens mij ja de letter of zo
+	Free: Pattern=je, Pattern=de, Pattern=ja, Pattern=of
+	Constrained: 
+Turn ID=42| A | A : en dan op die knop
+	Free: Pattern=en dan, Pattern=die, Pattern=op
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=43| B | B : ja ik hebben
+	Free: Pattern=ja ik, Pattern=ik hebben
+	Constrained: Pattern=ja, Pattern=ik, Pattern=hebben
+Turn ID=44| B | B : ja ik hebben cijfer
+	Free: Pattern=ja ik, Pattern=ik hebben, Pattern=hebben cijfer
+	Constrained: Pattern=ja, Pattern=ik, Pattern=hebben
+Turn ID=45| B | B : ok
+	Free: 
+	Constrained: 
+Turn ID=46| A | A : Oh je hebben cijfer
+	Free: Pattern=hebben cijfer, Pattern=je, Pattern=Oh
+	Constrained: Pattern=hebben
+Turn ID=47| B | B : ik hebben een bakje met zo'n rond plateau waar je iets kunnen opzetten
+	Free: Pattern=kunnen, Pattern=plateau, Pattern=ik hebben een, Pattern=een bakje met, Pattern=rond, Pattern=waar je iets
+	Constrained: Pattern=ik hebben, Pattern=waar, Pattern=een, Pattern=hebben, Pattern=met, Pattern=ik, Pattern=je
+Turn ID=48| B | B : en dan nog een steel
+	Free: Pattern=en dan, Pattern=nog een, Pattern=een steel
+	Constrained: Pattern=dan, Pattern=een, Pattern=en, Pattern=nog
+Turn ID=49| B | B : en dan daarop zitten nog zo'n tuu naar boven
+	Free: Pattern=en dan, Pattern=naar boven, Pattern=nog, Pattern=daarop
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=50| A | A : even kijken een bakje met een plateau en een steel
+	Free: Pattern=een, Pattern=plateau, Pattern=een bakje met, Pattern=en, Pattern=een steel
+	Constrained: Pattern=met, Pattern=een
+Turn ID=51| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=52| B | B : dat rond plateaut zitten zeggen maar aan de rechterkant
+	Free: Pattern=dat, Pattern=de, Pattern=zeggen, Pattern=rond, Pattern=maar
+	Constrained: 
+Turn ID=53| B | B : en dan nog een uitsteeksel naar links
+	Free: Pattern=en dan, Pattern=naar links, Pattern=nog een, Pattern=een uitsteeksel
+	Constrained: Pattern=nog, Pattern=een, Pattern=en, Pattern=uitsteeksel, Pattern=dan
+Turn ID=54| B | B : en die hebben zo'n tuut naar boven
+	Free: Pattern=tuut naar boven, Pattern=en die, Pattern=hebben
+	Constrained: Pattern=die, Pattern=en, Pattern=naar boven
+Turn ID=55| A | A : een uitstekster naar links met een tuut naar boven
+	Free: Pattern=tuut naar boven, Pattern=naar links, Pattern=met, Pattern=een
+	Constrained: Pattern=naar boven
+Turn ID=56| A | A : ah met een soort schoorsteen
+	Free: Pattern=schoorsteen, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=57| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=58| A | A : ah ja ik weten wat je bedoelen
+	Free: Pattern=ja ik, Pattern=je, Pattern=weten
+	Constrained: Pattern=ja, Pattern=ik
+Turn ID=59| A | A : Oké ik hebben een soort kop met een rond waar je iets op kunnen bijzetten
+	Free: Pattern=een, Pattern=kop, Pattern=ik hebben een, Pattern=met, Pattern=rond waar je iets op kunnen bijzetten
+	Constrained: Pattern=ik hebben, Pattern=kunnen, Pattern=waar, Pattern=op, Pattern=een, Pattern=hebben, Pattern=ik, Pattern=rond, Pattern=je, Pattern=waar je iets
+Turn ID=60| A | A : en een uitsteeksel met daarop die schoorsteen
+	Free: Pattern=daarop, Pattern=schoorsteen, Pattern=met, Pattern=die, Pattern=en, Pattern=een uitsteeksel
+	Constrained: Pattern=uitsteeksel, Pattern=een
+Turn ID=61| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=62| B | B : eh ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=63| B | B : ik hebben dat rond plateau eraan
+	Free: Pattern=ik hebben, Pattern=dat, Pattern=rond, Pattern=plateau
+	Constrained: Pattern=ik, Pattern=hebben
+Turn ID=64| B | B : met de schoorsteen
+	Free: Pattern=de schoorsteen, Pattern=met
+	Constrained: Pattern=de, Pattern=schoorsteen
+Turn ID=65| A | A : even kijken schoorsteen schoorsteen even kijken waar zijn de schoorsteen
+	Free: Pattern=de schoorsteen, Pattern=schoorsteen, Pattern=waar
+	Constrained: Pattern=de, Pattern=schoorsteen
+Turn ID=66| A | A : even zoeken ja T
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=67| A | A : eh ik hebben de schoorsteen
+	Free: Pattern=ik hebben de schoorsteen, Pattern=eh
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=schoorsteen, Pattern=ik, Pattern=de schoorsteen
+Turn ID=68| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=69| B | B : ik hebben de schoorsteen
+	Free: Pattern=ik hebben de schoorsteen
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=schoorsteen, Pattern=ik, Pattern=de schoorsteen
+Turn ID=70| A | A : schoorsteen
+	Free: Pattern=schoorsteen
+	Constrained: 
+Turn ID=71| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh

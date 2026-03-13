@@ -1,0 +1,131 @@
+A|0| A: ehm oeh deze _hebben_ _aan_ deze _hebben_ _aan de_ voorkant _hebben_ _hij_ niks 
+A|1| A: _maar_ _hij_ _hebben_ _aan de_ bovenkant _een _soort_ van_ _omgekeerde druppel_ 
+A|2| A: _en _aan de_ achterkant_ _hebben_ _hij_ _een_ cirkel 
+A|3| A: _en_ dan _aan de linkerkant_ nog _een_ staaf 
+B|4| B: _aan de achterkant [een_ soort] [omgekeerde druppel] 
+A|5| A: nee [aan de] bovenkant [een _soort] van_ [omgekeerde druppel] 
+B|6| B: [aan de] boven 
+B|7| B: Oké 
+A|8| A: _en [aan de_ achterkant een] half cirkel 
+A|9| A: _Ehm_ 
+B|10| B: _Oh_ [en [aan de] linkerkant] inderdaad zitten [een] uitsteeksel 
+B|11| B: [en] [hij] _staan_ op [een soort] voe 
+A|12| A: _ja_ _ja_ [een _soort] van_ _ja_ hoe noemen je _dat_ 
+B|13| B: Oké 
+A|14| A: _ik_ weten _het_ niet 
+B|15| B: [ja] I don't know 
+B|16| B: [maar] [dat] zijn nummer voor mij 
+B|17| B: [Ehm] [ik] [hebben] _die_ _die_ op [het] [soort van] raar voetje _staan_ 
+B|18| B: _met_ _die_ [omgekeerde druppel] erin 
+B|19| B: [en] [dat] rond erachter 
+A|20| A: even kijken waar [die] [staan] 
+A|21| A: [Oh] [ja] 
+A|22| A: ehm [met] _de omgekeerd druppel_ 
+A|23| A: [en] [de] stok 
+B|24| B: [ja] nummer 
+B|25| B: [de omgekeerd druppel] 
+A|26| A: oeh waar staat-ie 
+A|27| A: eh [de omgekeerd druppel] 
+B|28| B: nummer 
+B|29| B: [de omgekeerd druppel] 
+A|30| A: ah [druppel] 
+A|31| A: Eh 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : ehm oeh deze hebben aan deze hebben aan de voorkant hebben hij niks
+	Free: Pattern=aan de, Pattern=hij, Pattern=aan, Pattern=hebben
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=1| A | A : maar hij hebben aan de bovenkant een soort van omgekeerde druppel
+	Free: Pattern=aan de, Pattern=omgekeerde druppel, Pattern=hebben, Pattern=hij, Pattern=een soort, Pattern=soort van, Pattern=maar
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=druppel
+Turn ID=2| A | A : en aan de achterkant hebben hij een cirkel
+	Free: Pattern=aan de achterkant, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=en aan de
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de, Pattern=en
+Turn ID=3| A | A : en dan aan de linkerkant nog een staaf
+	Free: Pattern=aan de linkerkant, Pattern=een, Pattern=en
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| B | B : aan de achterkant een soort omgekeerde druppel
+	Free: Pattern=aan de achterkant een, Pattern=omgekeerde druppel, Pattern=een soort
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=een, Pattern=druppel, Pattern=de, Pattern=aan
+Turn ID=5| A | A : nee aan de bovenkant een soort van omgekeerde druppel
+	Free: Pattern=omgekeerde druppel, Pattern=aan de, Pattern=soort van, Pattern=een soort
+	Constrained: Pattern=aan, Pattern=een, Pattern=de, Pattern=druppel
+Turn ID=6| B | B : aan de boven
+	Free: Pattern=aan de
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=7| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : en aan de achterkant een half cirkel
+	Free: Pattern=aan de achterkant een, Pattern=en aan de
+	Constrained: Pattern=aan de achterkant, Pattern=aan de, Pattern=een, Pattern=en, Pattern=de, Pattern=aan
+Turn ID=9| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=10| B | B : Oh en aan de linkerkant inderdaad zitten een uitsteeksel
+	Free: Pattern=aan de linkerkant, Pattern=en aan de, Pattern=een, Pattern=Oh
+	Constrained: Pattern=aan, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=11| B | B : en hij staan op een soort voe
+	Free: Pattern=een soort, Pattern=hij, Pattern=en, Pattern=staan
+	Constrained: Pattern=een
+Turn ID=12| A | A : ja ja een soort van ja hoe noemen je dat
+	Free: Pattern=soort van, Pattern=een soort, Pattern=dat, Pattern=ja
+	Constrained: Pattern=een
+Turn ID=13| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : ik weten het niet
+	Free: Pattern=het, Pattern=ik
+	Constrained: 
+Turn ID=15| B | B : ja I don't know
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| B | B : maar dat zijn nummer voor mij
+	Free: Pattern=dat, Pattern=maar
+	Constrained: 
+Turn ID=17| B | B : Ehm ik hebben die die op het soort van raar voetje staan
+	Free: Pattern=Ehm, Pattern=staan, Pattern=het, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=soort van
+	Constrained: 
+Turn ID=18| B | B : met die omgekeerde druppel erin
+	Free: Pattern=omgekeerde druppel, Pattern=die, Pattern=met
+	Constrained: Pattern=druppel
+Turn ID=19| B | B : en dat rond erachter
+	Free: Pattern=dat, Pattern=en
+	Constrained: 
+Turn ID=20| A | A : even kijken waar die staan
+	Free: Pattern=die, Pattern=staan
+	Constrained: 
+Turn ID=21| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=22| A | A : ehm met de omgekeerd druppel
+	Free: Pattern=de omgekeerd druppel, Pattern=met
+	Constrained: Pattern=druppel, Pattern=de
+Turn ID=23| A | A : en de stok
+	Free: Pattern=de, Pattern=en
+	Constrained: 
+Turn ID=24| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : de omgekeerd druppel
+	Free: Pattern=de omgekeerd druppel
+	Constrained: Pattern=druppel, Pattern=de
+Turn ID=26| A | A : oeh waar staat-ie
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : eh de omgekeerd druppel
+	Free: Pattern=de omgekeerd druppel
+	Constrained: Pattern=druppel, Pattern=de
+Turn ID=28| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : de omgekeerd druppel
+	Free: Pattern=de omgekeerd druppel
+	Constrained: Pattern=druppel, Pattern=de
+Turn ID=30| A | A : ah druppel
+	Free: Pattern=druppel
+	Constrained: 
+Turn ID=31| A | A : Eh
+	Free: 
+	Constrained: 

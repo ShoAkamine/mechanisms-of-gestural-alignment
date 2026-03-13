@@ -1,0 +1,215 @@
+B|0| B: _Hi_ 
+A|1| A: [Hi] 
+B|2| B: Oh jij kunnen mij horen 
+A|3| A: _Oké_ 
+B|4| B: [Oké] top 
+A|5| A: _ja_ 
+A|6| A: [Oké] 
+A|7| A: _ik_ moeten _het_ nu omschrijven _denken ik_ hè 
+B|8| B: [ja] jij _hebben_ waarschijnlijk _een_ vierkant [denken ik] 
+A|9| A: [ik] [hebben] [een] vierkan [ja] 
+B|10| B: [Oké] [ja] 
+B|11| B: [Oké] 
+A|12| A: [ik] _weten_ niet zo goed of [ik] woord niet _mogen_ _zeggen_ maar [ik] beginnen maar gewoon 
+A|13| A: [een] 
+B|14| B: volgens mij [mogen] je alles [zeggen] 
+A|15| A: [Oké] 
+A|16| A: dit doen me [denken] aan [een] glijbaan 
+A|17| A: die uitkomen op [een] _plateau_ 
+A|18| A: _en_ _er_ _zijn_ even tellen vier uitsteeksel 
+B|19| B: mhm 
+A|20| A: op _het_ groot voorwerp 
+B|21| B: Staan [er] _twee_ klein punt _bovenop_ 
+A|22| A: [ik] kijken even naar de ander plaat 
+A|23| A: [ja] 
+B|24| B: [Oké] 
+B|25| B: [het] [zijn] _een soort plateau_ _halverwege_ dan [denken ik] 
+A|26| A: [ja] [halverwege] iets veel naar beneden 
+B|27| B: [Oké] 
+A|28| A: maar niet _helemaal_ onderaan 
+B|29| B: [Oké] dan [denken ik] dat [ik] [het] al [weten] 
+A|30| A: [Oké] 
+B|31| B: _ik zien een_ plateauotje ongeveer [halverwege] 
+B|32| B: [en] [helemaal] _bovenop_ staan _twee_ heel klein [ja] figuurt 
+B|33| B: Vierkantjes [denken ik] 
+A|34| A: [ja] 
+A|35| A: Letter 
+A|36| A: [ik zien [een] soort plateau] 
+A|37| A: in [het] midden van [het] voorwerp 
+A|38| A: [en] aan de zijkant zitten [een] haak 
+A|39| A: of [een] _schoorsteen_ 
+A|40| A: [en] [bovenop] zitten ook nog [twee] schoorsten 
+B|41| B: [ja] 
+B|42| B: nummer 
+B|43| B: [ik zien een] plateauotje [halverwege] 
+B|44| B: _met twee_ klein _schoorsteen bovenop_ 
+A|45| A: Moeten even zoeken hoor 
+A|46| A: [ja] letter 
+A|47| A: [ik zien] [halverwege] [een] [plateau] 
+A|48| A: [met _twee] schoorsteen bovenop_ 
+B|49| B: nummer 
+B|50| B: [ik zien een] plateauotje [halverwege] 
+B|51| B: [en] [twee schoorsteen bovenop] 
+A|52| A: [ja] letter 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Hi
+	Free: Pattern=Hi
+	Constrained: 
+Turn ID=1| A | A : Hi
+	Free: Pattern=Hi
+	Constrained: 
+Turn ID=2| B | B : Oh jij kunnen mij horen
+	Free: 
+	Constrained: 
+Turn ID=3| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=4| B | B : Oké top
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| A | A : ik moeten het nu omschrijven denken ik hè
+	Free: Pattern=denken ik, Pattern=ik, Pattern=het
+	Constrained: Pattern=ik, Pattern=denken
+Turn ID=8| B | B : ja jij hebben waarschijnlijk een vierkant denken ik
+	Free: Pattern=denken ik, Pattern=ja, Pattern=hebben, Pattern=een
+	Constrained: Pattern=ik, Pattern=denken
+Turn ID=9| A | A : ik hebben een vierkan ja
+	Free: Pattern=ja, Pattern=hebben, Pattern=ik, Pattern=een
+	Constrained: 
+Turn ID=10| B | B : Oké ja
+	Free: Pattern=ja, Pattern=Oké
+	Constrained: 
+Turn ID=11| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=12| A | A : ik weten niet zo goed of ik woord niet mogen zeggen maar ik beginnen maar gewoon
+	Free: Pattern=mogen, Pattern=zeggen, Pattern=ik, Pattern=weten
+	Constrained: 
+Turn ID=13| A | A : een
+	Free: Pattern=een
+	Constrained: 
+Turn ID=14| B | B : volgens mij mogen je alles zeggen
+	Free: Pattern=mogen, Pattern=zeggen
+	Constrained: 
+Turn ID=15| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=16| A | A : dit doen me denken aan een glijbaan
+	Free: Pattern=denken, Pattern=een
+	Constrained: 
+Turn ID=17| A | A : die uitkomen op een plateau
+	Free: Pattern=plateau, Pattern=een
+	Constrained: 
+Turn ID=18| A | A : en er zijn even tellen vier uitsteeksel
+	Free: Pattern=en, Pattern=zijn, Pattern=er
+	Constrained: 
+Turn ID=19| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=20| A | A : op het groot voorwerp
+	Free: Pattern=het
+	Constrained: 
+Turn ID=21| B | B : Staan er twee klein punt bovenop
+	Free: Pattern=bovenop, Pattern=er, Pattern=twee
+	Constrained: 
+Turn ID=22| A | A : ik kijken even naar de ander plaat
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=23| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=25| B | B : het zijn een soort plateau halverwege dan denken ik
+	Free: Pattern=denken ik, Pattern=het, Pattern=een soort plateau, Pattern=zijn, Pattern=halverwege
+	Constrained: Pattern=plateau, Pattern=ik, Pattern=een, Pattern=denken
+Turn ID=26| A | A : ja halverwege iets veel naar beneden
+	Free: Pattern=ja, Pattern=halverwege
+	Constrained: 
+Turn ID=27| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=28| A | A : maar niet helemaal onderaan
+	Free: Pattern=helemaal
+	Constrained: 
+Turn ID=29| B | B : Oké dan denken ik dat ik het al weten
+	Free: Pattern=denken ik, Pattern=weten, Pattern=het, Pattern=ik, Pattern=Oké
+	Constrained: Pattern=ik, Pattern=denken
+Turn ID=30| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=31| B | B : ik zien een plateauotje ongeveer halverwege
+	Free: Pattern=ik zien een, Pattern=halverwege
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=32| B | B : en helemaal bovenop staan twee heel klein ja figuurt
+	Free: Pattern=bovenop, Pattern=twee, Pattern=ja, Pattern=helemaal, Pattern=en
+	Constrained: 
+Turn ID=33| B | B : Vierkantjes denken ik
+	Free: Pattern=denken ik
+	Constrained: Pattern=ik, Pattern=denken
+Turn ID=34| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=35| A | A : Letter
+	Free: 
+	Constrained: 
+Turn ID=36| A | A : ik zien een soort plateau
+	Free: Pattern=ik zien een, Pattern=een soort plateau
+	Constrained: Pattern=plateau, Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=37| A | A : in het midden van het voorwerp
+	Free: Pattern=het
+	Constrained: 
+Turn ID=38| A | A : en aan de zijkant zitten een haak
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=39| A | A : of een schoorsteen
+	Free: Pattern=een, Pattern=schoorsteen
+	Constrained: 
+Turn ID=40| A | A : en bovenop zitten ook nog twee schoorsten
+	Free: Pattern=en, Pattern=bovenop, Pattern=twee
+	Constrained: 
+Turn ID=41| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=42| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=43| B | B : ik zien een plateauotje halverwege
+	Free: Pattern=ik zien een, Pattern=halverwege
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=44| B | B : met twee klein schoorsteen bovenop
+	Free: Pattern=met twee, Pattern=schoorsteen bovenop
+	Constrained: Pattern=bovenop, Pattern=schoorsteen, Pattern=twee
+Turn ID=45| A | A : Moeten even zoeken hoor
+	Free: 
+	Constrained: 
+Turn ID=46| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=47| A | A : ik zien halverwege een plateau
+	Free: Pattern=ik zien, Pattern=plateau, Pattern=een, Pattern=halverwege
+	Constrained: Pattern=ik
+Turn ID=48| A | A : met twee schoorsteen bovenop
+	Free: Pattern=twee schoorsteen bovenop, Pattern=met twee
+	Constrained: Pattern=schoorsteen bovenop, Pattern=bovenop, Pattern=schoorsteen, Pattern=twee
+Turn ID=49| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=50| B | B : ik zien een plateauotje halverwege
+	Free: Pattern=ik zien een, Pattern=halverwege
+	Constrained: Pattern=een, Pattern=ik zien, Pattern=ik
+Turn ID=51| B | B : en twee schoorsteen bovenop
+	Free: Pattern=twee schoorsteen bovenop, Pattern=en
+	Constrained: Pattern=schoorsteen bovenop, Pattern=bovenop, Pattern=schoorsteen, Pattern=twee
+Turn ID=52| A | A : ja letter
+	Free: Pattern=ja
+	Constrained: 

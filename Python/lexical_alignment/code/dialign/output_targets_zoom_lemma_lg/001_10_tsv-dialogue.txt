@@ -1,0 +1,103 @@
+B|0| B: _ehm_ deze _hebben_ één lang arm _en_ één kort arm best wel dik 
+B|1| B: _en_ _aan_ _die_ arm zitten bollet 
+A|2| A: Oh _ja_ 
+B|3| B: _en_ dan daarachter zitten nog _een_ soort _paddenstoel_ _die_ _zijn_ omge zakken 
+A|4| A: Yes 
+A|5| A: [ehm] dit [zijn] weer _de_ [die] [een] _met de_ twee _armp_ _de_ _met_ het bolle eraan _en _de omgevallen paddenstoel_ zeggen maar_ 
+B|6| B: [ja] _dat zijn_ nummer 
+B|7| B: Ehm _ik hebben_ degeen [met de] [armp] [met de] bollet [en de omgevallen paddenstoel] 
+B|8| B: nou [ja] [de] half omgevalol 
+A|9| A: Yes 
+A|10| A: Oh mijn scherm [zijn] weer veranderen 
+B|11| B: [ja] bijna ook 
+A|12| A: _eh ik hebben_ weer [die] [met] [die] twee [armp] [en] [dat] cirkel eraan [en de omgevallen paddenstoel] 
+B|13| B: waar staan [die] 
+B|14| B: [ja] 
+B|15| B: [eh ik hebben] degeen [met de] arm [met de] rond [en de] [paddenstoel] 
+A|16| A: [ehm] [de] [de] satelliet 
+B|17| B: nee [de omgevallen paddenstoel zeggen maar] 
+B|18| B: [en de] [armp] 
+A|19| A: ah [ja] [ja] [ja] [ja] tuurlijk we moeten [ja] 
+A|20| A: Yes [dat zijn] 
+B|21| B: Oké 
+A|22| A: [ehm] [ik hebben] weer [die] [een] [met] [die] twee [armp] [en] [die] [omgevallen paddenstoel] 
+A|23| A: [aan] [de] achterkant 
+B|24| B: [ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben één lang arm en één kort arm best wel dik
+	Free: Pattern=ehm, Pattern=en, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : en aan die arm zitten bollet
+	Free: Pattern=en, Pattern=die, Pattern=aan
+	Constrained: 
+Turn ID=2| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : en dan daarachter zitten nog een soort paddenstoel die zijn omge zakken
+	Free: Pattern=een, Pattern=paddenstoel, Pattern=die, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : ehm dit zijn weer de die een met de twee armp de met het bolle eraan en de omgevallen paddenstoel zeggen maar
+	Free: Pattern=een, Pattern=armp, Pattern=die, Pattern=zijn, Pattern=de omgevallen paddenstoel zeggen maar, Pattern=de, Pattern=met de, Pattern=ehm, Pattern=en de omgevallen paddenstoel, Pattern=met
+	Constrained: Pattern=de, Pattern=omgevallen paddenstoel, Pattern=met, Pattern=en, Pattern=paddenstoel, Pattern=en de
+Turn ID=6| B | B : ja dat zijn nummer
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=7| B | B : Ehm ik hebben degeen met de armp met de bollet en de omgevallen paddenstoel
+	Free: Pattern=en de omgevallen paddenstoel, Pattern=ik hebben, Pattern=met de, Pattern=armp
+	Constrained: Pattern=de, Pattern=hebben, Pattern=omgevallen paddenstoel, Pattern=met, Pattern=en, Pattern=paddenstoel, Pattern=en de
+Turn ID=8| B | B : nou ja de half omgevalol
+	Free: Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=9| A | A : Yes
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : Oh mijn scherm zijn weer veranderen
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=11| B | B : ja bijna ook
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : eh ik hebben weer die met die twee armp en dat cirkel eraan en de omgevallen paddenstoel
+	Free: Pattern=dat, Pattern=armp, Pattern=die, Pattern=eh ik hebben, Pattern=en, Pattern=en de omgevallen paddenstoel, Pattern=met
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=omgevallen paddenstoel, Pattern=en, Pattern=paddenstoel, Pattern=en de
+Turn ID=13| B | B : waar staan die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : eh ik hebben degeen met de arm met de rond en de paddenstoel
+	Free: Pattern=eh ik hebben, Pattern=en de, Pattern=met de, Pattern=paddenstoel
+	Constrained: Pattern=ik hebben, Pattern=de, Pattern=hebben, Pattern=met, Pattern=en
+Turn ID=16| A | A : ehm de de satelliet
+	Free: Pattern=ehm, Pattern=de
+	Constrained: 
+Turn ID=17| B | B : nee de omgevallen paddenstoel zeggen maar
+	Free: Pattern=de omgevallen paddenstoel zeggen maar
+	Constrained: Pattern=de, Pattern=paddenstoel, Pattern=omgevallen paddenstoel
+Turn ID=18| B | B : en de armp
+	Free: Pattern=en de, Pattern=armp
+	Constrained: Pattern=en, Pattern=de
+Turn ID=19| A | A : ah ja ja ja ja tuurlijk we moeten ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=21| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=22| A | A : ehm ik hebben weer die een met die twee armp en die omgevallen paddenstoel
+	Free: Pattern=ik hebben, Pattern=een, Pattern=armp, Pattern=omgevallen paddenstoel, Pattern=die, Pattern=en, Pattern=ehm, Pattern=met
+	Constrained: Pattern=paddenstoel, Pattern=hebben
+Turn ID=23| A | A : aan de achterkant
+	Free: Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=24| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

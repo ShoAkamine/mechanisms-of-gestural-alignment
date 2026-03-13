@@ -1,0 +1,195 @@
+B|0| B: Euh _ja_ nou dus _voor mij zijn_ _het_ _zo'n_ cup _die bijna helemaal door_ _een_ vlakte _heen zijn zakken_ 
+B|1| B: Euh 
+A|2| A: _met_ [een] langwerpig neus 
+A|3| A: oh _nee [die_ bijna helemaal door] [het] _oppervlakte_ [heen zijn zakken] 
+B|4| B: Euh 
+B|5| B: _ja_ precies 
+B|6| B: dus _dat_ je _nog_ _maar_ 
+A|7| A: _Euhm_ _met twee_ _van_ [die] _Euhm_ [ja] _Euhm_ Schroeforen Schroeforen 
+B|8| B: [ja] voet _zeggen maar_ 
+B|9| B: [Euhm] 
+B|10| B: nou [het] _zijn zeggen maar_ je _hebben_ _zeggen maar_ 
+B|11| B: [het] vlak _zijn zeggen maar_ als [een] soort [van] klein _bijtafel_ [met twee] poot _en_ daardoorheen [zijn] _de_ _Cup_ _zeggen maar_ [bijna helemaal] 
+B|12| B: Euh [ja] daardoorheen gezakken _zeggen maar_ 
+A|13| A: [een] [bijtafel] 
+B|14| B: mhm 
+A|15| A: [ja] [hebben] hij _dan_ ook [twee] [van] [die] _staaf op zijn hoofd_ 
+B|16| B: _de_ Euh De _Cup_ 
+B|17| B: [nee _die] hebben_ niet [twee] [staaf op zijn hoofd] 
+A|18| A: Oh wachten _even_ 
+A|19| A: _ja ik_ zien hem al 
+B|20| B: [ja] 
+A|21| A: _dat [zijn_ zeggen maar] [met twee] [van] [die] haken [nog] _aan de_ zijkant 
+B|22| B: [ja] [ja] 
+A|23| A: [ja] _en dan_ [nog] [zo'n] euhm omgekeerde _piramide aan de voorkant_ 
+A|24| A: [ja] oké 
+A|25| A: toch 
+B|26| B: [ja] [ja] kloppen 
+B|27| B: _ja die_ omgekeerd [piramide aan de voorkant] 
+A|28| A: Oké 
+A|29| A: [ja] oké 
+B|30| B: [ja] 
+A|31| A: Oké _dan hebben ik_ [nog] [zeggen maar] waar jij [het] net over [hebben] [die] [helemaal door] [het] _oppervlakte_ [heen zijn zakken] 
+B|32| B: [ja] _ja die_ [met] [het] bijzettafelt [zeggen maar] 
+A|33| A: [ja] exact 
+B|34| B: [ja] [dat zijn] 
+B|35| B: Euh [ja ik] [hebben] euh [die] _Cup_ [die] [zeggen maar] [door] [dat] bijzettafel [heen] zakt 
+A|36| A: Oké 
+A|37| A: Oké _dan hebben ik_ [de] te ver doorgezakt [Cup] 
+B|38| B: [ja] [van] [het] bijzettafel 
+A|39| A: [ja] 
+B|40| B: [dat zijn] _voor mij_ 
+B|41| B: [even] kijken 
+A|42| A: [voor mij zijn] [dat] 
+B|43| B: Euh 
+B|44| B: [en [dan] hebben ik] diegene [die] [door] [dat] [oppervlakte] [zijn] [heen] [zakken] Euh [door] [dat] bijzettafel 
+A|45| A: [ja [die] [hebben] ik] ook 
+A|46| A: Oké [helemaal] doorgezakt [Cup] 
+B|47| B: [ja] [even] kijken [dat zijn] [voor mij] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh ja nou dus voor mij zijn het zo'n cup die bijna helemaal door een vlakte heen zijn zakken
+	Free: Pattern=die bijna helemaal door, Pattern=voor mij zijn, Pattern=zo'n, Pattern=ja, Pattern=een, Pattern=het, Pattern=heen zijn zakken
+	Constrained: Pattern=zakken, Pattern=bijna helemaal, Pattern=helemaal, Pattern=door, Pattern=helemaal door, Pattern=heen, Pattern=voor mij, Pattern=die, Pattern=zijn
+Turn ID=1| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : met een langwerpig neus
+	Free: Pattern=een, Pattern=met
+	Constrained: 
+Turn ID=3| A | A : oh nee die bijna helemaal door het oppervlakte heen zijn zakken
+	Free: Pattern=die bijna helemaal door, Pattern=oppervlakte, Pattern=het, Pattern=nee die, Pattern=heen zijn zakken
+	Constrained: Pattern=zakken, Pattern=bijna helemaal, Pattern=helemaal, Pattern=door, Pattern=helemaal door, Pattern=heen, Pattern=die, Pattern=zijn
+Turn ID=4| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : dus dat je nog maar
+	Free: Pattern=maar, Pattern=dat, Pattern=nog
+	Constrained: 
+Turn ID=7| A | A : Euhm met twee van die Euhm ja Euhm Schroeforen Schroeforen
+	Free: Pattern=ja, Pattern=die, Pattern=van, Pattern=Euhm, Pattern=met twee
+	Constrained: Pattern=twee, Pattern=met
+Turn ID=8| B | B : ja voet zeggen maar
+	Free: Pattern=zeggen maar, Pattern=ja
+	Constrained: Pattern=maar
+Turn ID=9| B | B : Euhm
+	Free: Pattern=Euhm
+	Constrained: 
+Turn ID=10| B | B : nou het zijn zeggen maar je hebben zeggen maar
+	Free: Pattern=zijn zeggen maar, Pattern=zeggen maar, Pattern=het, Pattern=hebben
+	Constrained: Pattern=zeggen maar, Pattern=maar, Pattern=zijn
+Turn ID=11| B | B : het vlak zijn zeggen maar als een soort van klein bijtafel met twee poot en daardoorheen zijn de Cup zeggen maar bijna helemaal
+	Free: Pattern=bijna helemaal, Pattern=de, Pattern=Cup, Pattern=zijn zeggen maar, Pattern=een, Pattern=zeggen maar, Pattern=het, Pattern=met twee, Pattern=bijtafel, Pattern=zijn, Pattern=van, Pattern=en
+	Constrained: Pattern=twee, Pattern=helemaal, Pattern=zeggen maar, Pattern=met, Pattern=zijn, Pattern=maar
+Turn ID=12| B | B : Euh ja daardoorheen gezakken zeggen maar
+	Free: Pattern=zeggen maar, Pattern=ja
+	Constrained: Pattern=maar
+Turn ID=13| A | A : een bijtafel
+	Free: Pattern=bijtafel, Pattern=een
+	Constrained: 
+Turn ID=14| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : ja hebben hij dan ook twee van die staaf op zijn hoofd
+	Free: Pattern=twee, Pattern=ja, Pattern=dan, Pattern=staaf op zijn hoofd, Pattern=hebben, Pattern=die, Pattern=van
+	Constrained: Pattern=zijn
+Turn ID=16| B | B : de Euh De Cup
+	Free: Pattern=de, Pattern=Cup
+	Constrained: 
+Turn ID=17| B | B : nee die hebben niet twee staaf op zijn hoofd
+	Free: Pattern=staaf op zijn hoofd, Pattern=nee die, Pattern=die hebben, Pattern=twee
+	Constrained: Pattern=zijn, Pattern=die, Pattern=hebben
+Turn ID=18| A | A : Oh wachten even
+	Free: Pattern=even
+	Constrained: 
+Turn ID=19| A | A : ja ik zien hem al
+	Free: Pattern=ja ik
+	Constrained: Pattern=ja
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : dat zijn zeggen maar met twee van die haken nog aan de zijkant
+	Free: Pattern=dat zijn, Pattern=nog, Pattern=aan de, Pattern=zijn zeggen maar, Pattern=met twee, Pattern=die, Pattern=van
+	Constrained: Pattern=dat, Pattern=twee, Pattern=de, Pattern=zeggen maar, Pattern=met, Pattern=zijn, Pattern=maar
+Turn ID=22| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja en dan nog zo'n euhm omgekeerde piramide aan de voorkant
+	Free: Pattern=piramide aan de voorkant, Pattern=nog, Pattern=zo'n, Pattern=ja, Pattern=en dan
+	Constrained: Pattern=dan, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=24| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : toch
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ja ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| B | B : ja die omgekeerd piramide aan de voorkant
+	Free: Pattern=piramide aan de voorkant, Pattern=ja die
+	Constrained: Pattern=de, Pattern=die, Pattern=aan de, Pattern=ja
+Turn ID=28| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=29| A | A : ja oké
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| A | A : Oké dan hebben ik nog zeggen maar waar jij het net over hebben die helemaal door het oppervlakte heen zijn zakken
+	Free: Pattern=nog, Pattern=oppervlakte, Pattern=zeggen maar, Pattern=hebben, Pattern=heen zijn zakken, Pattern=helemaal door, Pattern=het, Pattern=dan hebben ik, Pattern=die
+	Constrained: Pattern=zakken, Pattern=hebben, Pattern=heen, Pattern=hebben ik, Pattern=helemaal, Pattern=door, Pattern=dan, Pattern=zijn, Pattern=maar
+Turn ID=32| B | B : ja ja die met het bijzettafelt zeggen maar
+	Free: Pattern=ja die, Pattern=ja, Pattern=zeggen maar, Pattern=het, Pattern=met
+	Constrained: Pattern=die, Pattern=maar, Pattern=ja
+Turn ID=33| A | A : ja exact
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=34| B | B : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=35| B | B : Euh ja ik hebben euh die Cup die zeggen maar door dat bijzettafel heen zakt
+	Free: Pattern=dat, Pattern=Cup, Pattern=door, Pattern=zeggen maar, Pattern=hebben, Pattern=heen, Pattern=die, Pattern=ja ik
+	Constrained: Pattern=maar, Pattern=ja
+Turn ID=36| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=37| A | A : Oké dan hebben ik de te ver doorgezakt Cup
+	Free: Pattern=dan hebben ik, Pattern=de, Pattern=Cup
+	Constrained: Pattern=hebben ik, Pattern=hebben, Pattern=dan
+Turn ID=38| B | B : ja van het bijzettafel
+	Free: Pattern=het, Pattern=van, Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=40| B | B : dat zijn voor mij
+	Free: Pattern=dat zijn, Pattern=voor mij
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=41| B | B : even kijken
+	Free: Pattern=even
+	Constrained: 
+Turn ID=42| A | A : voor mij zijn dat
+	Free: Pattern=voor mij zijn, Pattern=dat
+	Constrained: Pattern=voor mij, Pattern=zijn
+Turn ID=43| B | B : Euh
+	Free: 
+	Constrained: 
+Turn ID=44| B | B : en dan hebben ik diegene die door dat oppervlakte zijn heen zakken Euh door dat bijzettafel
+	Free: Pattern=zakken, Pattern=dat, Pattern=en dan, Pattern=door, Pattern=oppervlakte, Pattern=heen, Pattern=zijn, Pattern=dan hebben ik, Pattern=die
+	Constrained: Pattern=en, Pattern=hebben ik, Pattern=dan, Pattern=hebben
+Turn ID=45| A | A : ja die hebben ik ook
+	Free: Pattern=hebben ik, Pattern=ja die, Pattern=die hebben
+	Constrained: Pattern=die, Pattern=hebben, Pattern=ja
+Turn ID=46| A | A : Oké helemaal doorgezakt Cup
+	Free: Pattern=helemaal, Pattern=Cup
+	Constrained: 
+Turn ID=47| B | B : ja even kijken dat zijn voor mij
+	Free: Pattern=dat zijn, Pattern=voor mij, Pattern=even, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn

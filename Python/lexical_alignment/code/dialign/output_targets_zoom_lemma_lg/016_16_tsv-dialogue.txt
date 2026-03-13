@@ -1,0 +1,223 @@
+A|0| A: bij _deze_ _zitten_ _bovenop_ 
+A|1| A: _een_ _ja_ _jij_ _noemen_ _het_ volgens mij _een_ balpen _en_ _ik_ _noemen_ _het_ _pilaren_ 
+A|2| A: _maar_ op _de_ kop erin _net_ _als_ bij _die_ _ander_ 
+A|3| A: _er_ _zitten_ achter soort van slurf 
+A|4| A: dan _zitten_ _links_ ook weer _een_ pilaar _die_ _er_ op dezelfde manier _in_ _zitten_ 
+A|5| A: zonder _zijn_ kop 
+A|6| A: _en aan de_ voorkant _zitten_ eigenlijk allemaal vierhoekjes op elkaar 
+A|7| A: _als_ soort van arm wat eruit steken 
+B|8| B: Oké dus bovenin [en] [links] [zitten] [er] zo'n bowlingpion 
+A|9| A: _ja_ zonder ook hoofd zonder _het_ bovenkant erop zeggen _maar_ 
+B|10| B: _ja _ja_ ja_ 
+A|11| A: [ja] 
+B|12| B: [ja] [ik] _denken_ [ik] weten welk _je_ _bedoelen_ 
+B|13| B: [maar] [ik] _denken dat_ [de] _één_ keer daar [zijn] [er] _één_ [die] _hebben_ [net] [een] iets [ander] vorm 
+B|14| B: daar [die] [noemen] [ik] [de] vulpen 
+A|15| A: ah 
+B|16| B: [en] misschien _dat we_ [die] fout _hebben_ 
+B|17| B: dus _ja die_ [zijn] niet helemaal zo rond [als] [deze] 
+B|18| B: [maar] veel [een] _een rui_ 
+A|19| A: [een rui] oké 
+B|20| B: [ik] weten niet of [ik] weten niet of _je_ [die] _komen_ 
+B|21| B: [maar] [in] ieder geval laten _we_ [het] nu [de] [de] bowlingkegel [noemen] 
+A|22| A: [ja] [zijn] goed 
+B|23| B: _dit zijn_ nummer 
+B|24| B: [die] [jij] omschrijven 
+A|25| A: [ja] 
+B|26| B: _dit zijn_ [die] _met twee_ bowlingkegel 
+B|27| B: zowel erbovenop [als] _aan de linkerkant_ 
+B|28| B: [en _aan de] rechterkant_ [zitten] _een toren_ 
+A|29| A: even kijken 
+A|30| A: Oh _ja [aan de_ rechterkant] [zijn] [een toren] 
+A|31| A: [en] dan [hebben] hij daarachter nog [een] soort van schenkding van [een] theekop achtig 
+A|32| A: _dat zijn_ ook nog [een] buisje 
+B|33| B: _ja aan de linkerkant_ 
+A|34| A: [ja aan de linkerkant] sorry [dat] [bedoelen] [ik] [ja] 
+B|35| B: _ja _ja_ ja_ 
+A|36| A: _dat zijn_ 
+A|37| A: even kijken [dit zijn] degeen waar [de] bowlingbal op [de] kop [in] [zitten] 
+A|38| A: [en aan de] zijkant eruit [komen] 
+A|39| A: [denken [dat] we] weer [een] ronde ver [zijn] 
+B|40| B: [ja] 
+A|41| A: [en] dan weer [die] [ja die] [die] hoe [noemen] [je] [dat] [het] trappe [aan de] voorkant 
+B|42| B: [die] dus _met twee_ bowlingballen zowel [de] [als] [aan de linkerkant] [ja] 
+A|43| A: [ja ja] 
+B|44| B: Oké nummer 
+B|45| B: _dit zijn met_ [die] _twee_ bowlingbalol [er] [bovenop] 
+B|46| B: [en [aan de] linkerkant] [en] rechts zo'n [toren] 
+A|47| A: [ja] _dat zijn_ 
+A|48| A: [dit zijn [met] _twee] kegel_ erin 
+A|49| A: [één] [bovenop] [en] [één] [links] op [zijn] kop 
+B|50| B: [dat zijn] 
+B|51| B: [dit zijn] [de] [twee] [pilaren] 
+B|52| B: [de] [een] of [ja] [de] [twee kegel] 
+B|53| B: [de] [een] boven [en] [de] [ander] link 
+A|54| A: Oh [ja ja] [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : bij deze zitten bovenop
+	Free: Pattern=zitten, Pattern=deze, Pattern=bovenop
+	Constrained: 
+Turn ID=1| A | A : een ja jij noemen het volgens mij een balpen en ik noemen het pilaren
+	Free: Pattern=pilaren, Pattern=ja, Pattern=een, Pattern=het, Pattern=ik, Pattern=en, Pattern=noemen, Pattern=jij
+	Constrained: 
+Turn ID=2| A | A : maar op de kop erin net als bij die ander
+	Free: Pattern=net, Pattern=de, Pattern=als, Pattern=die, Pattern=ander, Pattern=maar
+	Constrained: 
+Turn ID=3| A | A : er zitten achter soort van slurf
+	Free: Pattern=zitten, Pattern=er
+	Constrained: 
+Turn ID=4| A | A : dan zitten links ook weer een pilaar die er op dezelfde manier in zitten
+	Free: Pattern=een, Pattern=links, Pattern=in, Pattern=er, Pattern=die, Pattern=zitten
+	Constrained: 
+Turn ID=5| A | A : zonder zijn kop
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=6| A | A : en aan de voorkant zitten eigenlijk allemaal vierhoekjes op elkaar
+	Free: Pattern=en aan de, Pattern=zitten
+	Constrained: Pattern=aan de, Pattern=en, Pattern=de
+Turn ID=7| A | A : als soort van arm wat eruit steken
+	Free: Pattern=als
+	Constrained: 
+Turn ID=8| B | B : Oké dus bovenin en links zitten er zo'n bowlingpion
+	Free: Pattern=links, Pattern=zitten, Pattern=en, Pattern=er
+	Constrained: 
+Turn ID=9| A | A : ja zonder ook hoofd zonder het bovenkant erop zeggen maar
+	Free: Pattern=maar, Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=10| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja ik denken ik weten welk je bedoelen
+	Free: Pattern=denken, Pattern=ja, Pattern=bedoelen, Pattern=ik, Pattern=je
+	Constrained: 
+Turn ID=13| B | B : maar ik denken dat de één keer daar zijn er één die hebben net een iets ander vorm
+	Free: Pattern=de, Pattern=een, Pattern=hebben, Pattern=één, Pattern=die, Pattern=er, Pattern=denken dat, Pattern=net, Pattern=ik, Pattern=ander, Pattern=zijn, Pattern=maar
+	Constrained: Pattern=dat, Pattern=denken
+Turn ID=14| B | B : daar die noemen ik de vulpen
+	Free: Pattern=noemen, Pattern=die, Pattern=de, Pattern=ik
+	Constrained: 
+Turn ID=15| A | A : ah
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : en misschien dat we die fout hebben
+	Free: Pattern=dat we, Pattern=en, Pattern=die, Pattern=hebben
+	Constrained: Pattern=dat, Pattern=we
+Turn ID=17| B | B : dus ja die zijn niet helemaal zo rond als deze
+	Free: Pattern=ja die, Pattern=zijn, Pattern=deze, Pattern=als
+	Constrained: Pattern=die, Pattern=ja
+Turn ID=18| B | B : maar veel een een rui
+	Free: Pattern=een rui, Pattern=maar, Pattern=een
+	Constrained: Pattern=een
+Turn ID=19| A | A : een rui oké
+	Free: Pattern=een rui
+	Constrained: Pattern=een
+Turn ID=20| B | B : ik weten niet of ik weten niet of je die komen
+	Free: Pattern=die, Pattern=je, Pattern=komen, Pattern=ik
+	Constrained: 
+Turn ID=21| B | B : maar in ieder geval laten we het nu de de bowlingkegel noemen
+	Free: Pattern=de, Pattern=het, Pattern=in, Pattern=we, Pattern=maar, Pattern=noemen
+	Constrained: 
+Turn ID=22| A | A : ja zijn goed
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : dit zijn nummer
+	Free: Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=24| B | B : die jij omschrijven
+	Free: Pattern=jij, Pattern=die
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : dit zijn die met twee bowlingkegel
+	Free: Pattern=met twee, Pattern=dit zijn, Pattern=die
+	Constrained: Pattern=zijn, Pattern=twee
+Turn ID=27| B | B : zowel erbovenop als aan de linkerkant
+	Free: Pattern=aan de linkerkant, Pattern=als
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=28| B | B : en aan de rechterkant zitten een toren
+	Free: Pattern=aan de rechterkant, Pattern=en aan de, Pattern=een toren, Pattern=zitten
+	Constrained: Pattern=toren, Pattern=de, Pattern=aan de, Pattern=een, Pattern=en
+Turn ID=29| A | A : even kijken
+	Free: 
+	Constrained: 
+Turn ID=30| A | A : Oh ja aan de rechterkant zijn een toren
+	Free: Pattern=ja aan de, Pattern=aan de rechterkant, Pattern=een toren, Pattern=zijn
+	Constrained: Pattern=toren, Pattern=aan de, Pattern=een, Pattern=de, Pattern=ja
+Turn ID=31| A | A : en dan hebben hij daarachter nog een soort van schenkding van een theekop achtig
+	Free: Pattern=en, Pattern=hebben, Pattern=een
+	Constrained: 
+Turn ID=32| A | A : dat zijn ook nog een buisje
+	Free: Pattern=dat zijn, Pattern=een
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=33| B | B : ja aan de linkerkant
+	Free: Pattern=ja aan de linkerkant
+	Constrained: Pattern=aan de, Pattern=ja aan de, Pattern=aan de linkerkant, Pattern=de, Pattern=ja
+Turn ID=34| A | A : ja aan de linkerkant sorry dat bedoelen ik ja
+	Free: Pattern=dat, Pattern=ja, Pattern=ja aan de linkerkant, Pattern=bedoelen, Pattern=ik
+	Constrained: Pattern=aan de, Pattern=ja aan de, Pattern=aan de linkerkant, Pattern=de, Pattern=ja
+Turn ID=35| B | B : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=36| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=37| A | A : even kijken dit zijn degeen waar de bowlingbal op de kop in zitten
+	Free: Pattern=dit zijn, Pattern=zitten, Pattern=de, Pattern=in
+	Constrained: Pattern=zijn
+Turn ID=38| A | A : en aan de zijkant eruit komen
+	Free: Pattern=en aan de, Pattern=komen
+	Constrained: Pattern=aan de, Pattern=en, Pattern=de
+Turn ID=39| A | A : denken dat we weer een ronde ver zijn
+	Free: Pattern=dat we, Pattern=denken dat, Pattern=zijn, Pattern=een
+	Constrained: Pattern=dat, Pattern=we, Pattern=denken
+Turn ID=40| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=41| A | A : en dan weer die ja die die hoe noemen je dat het trappe aan de voorkant
+	Free: Pattern=dat, Pattern=ja die, Pattern=aan de, Pattern=het, Pattern=die, Pattern=en, Pattern=je, Pattern=noemen
+	Constrained: Pattern=die, Pattern=de, Pattern=ja
+Turn ID=42| B | B : die dus met twee bowlingballen zowel de als aan de linkerkant ja
+	Free: Pattern=met twee, Pattern=als, Pattern=die, Pattern=aan de linkerkant, Pattern=de, Pattern=ja
+	Constrained: Pattern=de, Pattern=aan de, Pattern=twee
+Turn ID=43| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=44| B | B : Oké nummer
+	Free: 
+	Constrained: 
+Turn ID=45| B | B : dit zijn met die twee bowlingbalol er bovenop
+	Free: Pattern=bovenop, Pattern=twee, Pattern=dit zijn met, Pattern=die, Pattern=er
+	Constrained: Pattern=dit zijn, Pattern=zijn
+Turn ID=46| B | B : en aan de linkerkant en rechts zo'n toren
+	Free: Pattern=aan de linkerkant, Pattern=en aan de, Pattern=en, Pattern=toren
+	Constrained: Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=47| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=48| A | A : dit zijn met twee kegel erin
+	Free: Pattern=dit zijn met, Pattern=twee kegel, Pattern=met twee
+	Constrained: Pattern=dit zijn, Pattern=twee, Pattern=zijn
+Turn ID=49| A | A : één bovenop en één links op zijn kop
+	Free: Pattern=bovenop, Pattern=links, Pattern=één, Pattern=en, Pattern=zijn
+	Constrained: 
+Turn ID=50| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=51| B | B : dit zijn de twee pilaren
+	Free: Pattern=dit zijn, Pattern=de, Pattern=twee, Pattern=pilaren
+	Constrained: Pattern=zijn
+Turn ID=52| B | B : de een of ja de twee kegel
+	Free: Pattern=twee kegel, Pattern=de, Pattern=ja, Pattern=een
+	Constrained: Pattern=twee
+Turn ID=53| B | B : de een boven en de ander link
+	Free: Pattern=en, Pattern=ander, Pattern=de, Pattern=een
+	Constrained: 
+Turn ID=54| A | A : Oh ja ja dat zijn
+	Free: Pattern=ja ja, Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn, Pattern=ja

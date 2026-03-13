@@ -1,0 +1,171 @@
+B|0| B: _Oké_ dan hebben _ik_ nu 
+B|1| B: deze vinden _ik_ 
+B|2| B: _eh_ _ja_ geen idee 
+B|3| B: _hij_ hebben in ieder geval _een_ _driehoek_ _bovenop_ 
+B|4| B: _hij _zijn_ heel_ asymmetrisch 
+B|5| B: _hij_ hebben links _een_ soort uitsteeksel 
+B|6| B: dan aan de voorkant komen er ook _een_ _heel raar_ 
+A|7| A: _Oh_ 
+B|8| B: _zijn_ niet _het _zijn_ _echt_ een_ _driehoek_ 
+A|9| A: [echt een] punt [echt een] [een] puntig [driehoek] 
+B|10| B: [echt een] punthoek 
+B|11| B: [echt een] _piramide_ soort van 
+A|12| A: _ja ja ja_ 
+B|13| B: _en_ dan links onderin hebben _hij_ ook [een] soort van rond weer 
+A|14| A: _ja oké_ [ik] weten hem [ja] 
+B|15| B: [ja] top 
+A|16| A: [ja] [ik] weten hem _die_ [zijn [heel] raar] 
+B|17| B: [ja ja ja] 
+A|18| A: [zijn] [het] 
+A|19| A: [hij zijn] [het zijn] 
+A|20| A: ehm [ja] _dit [zijn_ echt] _die heel raar_ 
+A|21| A: _met die piramide_ [bovenop] 
+B|22| B: [Oh] [ja] 
+A|23| A: [en] _die heel raar_ _gewoon_ 
+B|24| B: [ja] [en] nog één zo'n ding links aan de zijkant 
+A|25| A: [ja ja] 
+B|26| B: _eh_ [ja] precies 
+B|27| B: _Oké_ _nummer_ 
+B|28| B: _eh dit zijn_ [gewoon] [die heel raar] 
+B|29| B: [met die piramide] op de bovenkant 
+A|30| A: [die] _ja oké_ [nummer] 
+A|31| A: [dit zijn] [die heel raar] 
+B|32| B: [ja oké] 
+A|33| A: Duidelijk 
+B|34| B: _eh_ [ja] 
+B|35| B: [nummer] 
+B|36| B: [dit zijn] de [heel raar] 
+A|37| A: [Oké] 
+A|38| A: even kijken horen 
+A|39| A: daar 
+A|40| A: [eh dit zijn] [die heel raar] 
+B|41| B: [oké] [zijn] [nummer] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké dan hebben ik nu
+	Free: Pattern=ik, Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : deze vinden ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=2| B | B : eh ja geen idee
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=3| B | B : hij hebben in ieder geval een driehoek bovenop
+	Free: Pattern=hij, Pattern=een, Pattern=driehoek, Pattern=bovenop
+	Constrained: 
+Turn ID=4| B | B : hij zijn heel asymmetrisch
+	Free: Pattern=hij zijn, Pattern=zijn heel
+	Constrained: Pattern=hij, Pattern=zijn
+Turn ID=5| B | B : hij hebben links een soort uitsteeksel
+	Free: Pattern=hij, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : dan aan de voorkant komen er ook een heel raar
+	Free: Pattern=heel raar, Pattern=een
+	Constrained: 
+Turn ID=7| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=8| B | B : zijn niet het zijn echt een driehoek
+	Free: Pattern=driehoek, Pattern=zijn echt, Pattern=echt een, Pattern=het zijn, Pattern=zijn
+	Constrained: Pattern=het, Pattern=een, Pattern=zijn
+Turn ID=9| A | A : echt een punt echt een een puntig driehoek
+	Free: Pattern=echt een, Pattern=een, Pattern=driehoek
+	Constrained: Pattern=een
+Turn ID=10| B | B : echt een punthoek
+	Free: Pattern=echt een
+	Constrained: Pattern=een
+Turn ID=11| B | B : echt een piramide soort van
+	Free: Pattern=echt een, Pattern=piramide
+	Constrained: Pattern=een
+Turn ID=12| A | A : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=13| B | B : en dan links onderin hebben hij ook een soort van rond weer
+	Free: Pattern=hij, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=14| A | A : ja oké ik weten hem ja
+	Free: Pattern=ja oké, Pattern=ja, Pattern=ik
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=15| B | B : ja top
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja ik weten hem die zijn heel raar
+	Free: Pattern=ja, Pattern=die, Pattern=heel raar, Pattern=zijn heel, Pattern=ik
+	Constrained: Pattern=zijn
+Turn ID=17| B | B : ja ja ja
+	Free: Pattern=ja ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=18| A | A : zijn het
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=19| A | A : hij zijn het zijn
+	Free: Pattern=het zijn, Pattern=hij zijn
+	Constrained: Pattern=hij, Pattern=het, Pattern=zijn
+Turn ID=20| A | A : ehm ja dit zijn echt die heel raar
+	Free: Pattern=die heel raar, Pattern=zijn echt, Pattern=dit zijn, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=die, Pattern=heel raar
+Turn ID=21| A | A : met die piramide bovenop
+	Free: Pattern=met die piramide, Pattern=bovenop
+	Constrained: Pattern=die, Pattern=piramide
+Turn ID=22| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=23| A | A : en die heel raar gewoon
+	Free: Pattern=die heel raar, Pattern=gewoon, Pattern=en
+	Constrained: Pattern=heel raar, Pattern=die
+Turn ID=24| B | B : ja en nog één zo'n ding links aan de zijkant
+	Free: Pattern=ja, Pattern=en
+	Constrained: 
+Turn ID=25| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=26| B | B : eh ja precies
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=27| B | B : Oké nummer
+	Free: Pattern=Oké, Pattern=nummer
+	Constrained: 
+Turn ID=28| B | B : eh dit zijn gewoon die heel raar
+	Free: Pattern=die heel raar, Pattern=eh dit zijn, Pattern=gewoon
+	Constrained: Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn, Pattern=heel raar
+Turn ID=29| B | B : met die piramide op de bovenkant
+	Free: Pattern=met die piramide
+	Constrained: Pattern=die, Pattern=piramide
+Turn ID=30| A | A : die ja oké nummer
+	Free: Pattern=ja oké, Pattern=die, Pattern=nummer
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=31| A | A : dit zijn die heel raar
+	Free: Pattern=die heel raar, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=die, Pattern=heel raar
+Turn ID=32| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=33| A | A : Duidelijk
+	Free: 
+	Constrained: 
+Turn ID=34| B | B : eh ja
+	Free: Pattern=ja, Pattern=eh
+	Constrained: 
+Turn ID=35| B | B : nummer
+	Free: Pattern=nummer
+	Constrained: 
+Turn ID=36| B | B : dit zijn de heel raar
+	Free: Pattern=dit zijn, Pattern=heel raar
+	Constrained: Pattern=zijn
+Turn ID=37| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=38| A | A : even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=39| A | A : daar
+	Free: 
+	Constrained: 
+Turn ID=40| A | A : eh dit zijn die heel raar
+	Free: Pattern=die heel raar, Pattern=eh dit zijn
+	Constrained: Pattern=die, Pattern=eh, Pattern=zijn, Pattern=dit zijn, Pattern=heel raar
+Turn ID=41| B | B : oké zijn nummer
+	Free: Pattern=oké, Pattern=nummer, Pattern=zijn
+	Constrained: 

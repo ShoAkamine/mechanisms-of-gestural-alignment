@@ -1,0 +1,287 @@
+B|0| B: eh _oké_ _dan_ _hebben_ ik hier weer _zeggen maar_ _het_ _kop_ 
+B|1| B: Eh bovenop _en_ link onderop _komen_ _soort_ van dezelfde _twee_ uitsteeksel _soort_ van _ovaal_ 
+B|2| B: _en dan_ _hebben_ _hij_ achterin _ook een_ 
+B|3| B: _hij hebben_ vier uitsteeksel in totaal 
+A|4| A: _ja_ 
+B|5| B: _twee_ dezelfde bovenop _en_ link 
+B|6| B: _en_ _aan de_ rechterkant 
+A|7| A: Wacht boven 
+B|8| B: bovenop _een_ _soort_ van lang lang [ja] niet helemaal echt _een ovaal_ _maar_ wel _een_ _soort_ van lang lang uitsteeksel 
+A|9| A: [ovaal] 
+A|10| A: [ja] 
+A|11| A: [ja] 
+A|12| A: [ja] 
+B|13| B: _en dan_ recht _zijn_ _een_ _soort_ van _een_ piramide van blok 
+A|14| A: [zijn] _dat_ [het] [soort] _gebouw_ _die_ op [de] [kop] staan tegenaan 
+B|15| B: naast elkaar 
+B|16| B: _ja _ja_ ja kloppen_ 
+B|17| B: _en dan_ _aan de achterkant_ _hebben_ _hij_ _ook_ nog _een_ [soort] van slurf dingetje of _zo_ _een_ arm eruit steken 
+A|18| A: gewoon [een] olifantenslurf 
+B|19| B: [ja] 
+A|20| A: [en dan] boven [een ovaal] [en] naar _links_ toe [een ovaal] 
+B|21| B: [ja] [die] [zijn] hetzelfde 
+B|22| B: [ja] 
+A|23| A: _ja oké_ 
+A|24| A: _dat_ [zijn] 
+B|25| B: [ja] 
+A|26| A: [ja] 
+A|27| A: _dit zijn_ _het gebouw_ tegen 
+A|28| A: [aan de] voorkant [zeggen maar] 
+A|29| A: [maar] [hij hebben] [aan de achterkant] [ook een] olifantenslurf 
+A|30| A: [en dan] omhoog [en] naar _links_ _twee ovalen_ 
+A|31| A: zo'n uitsteekselding 
+B|32| B: eh [ja] [het gebouw] [en] [de] uitzending 
+B|33| B: [en] [de] uitsteek 
+B|34| B: _ja ja_ 
+A|35| A: [ja] 
+B|36| B: _en die twee ovalen_ [die] [zijn] hetzelfde toch 
+B|37| B: bovenop [en] link 
+A|38| A: [ja ja kloppen] 
+B|39| B: [ja oké] 
+B|40| B: Eh 
+B|41| B: _ehm dit zijn_ weer [dat] [de] mok met rechts gaan [het gebouw] erin 
+B|42| B: _en dan twee_ uitsteeksel [aan de] bovenkant [en] [links] [aan de] zijkant [die] hetzelfde [zijn] 
+A|43| A: [ja] 
+B|44| B: [en dan] nog weer [die] slurf _er_ [soort] van achterlangs 
+A|45| A: [ja] 
+A|46| A: [ja ja] duidelijk 
+A|47| A: [dat] [zijn] 
+A|48| A: [ehm dit zijn] [die] [zeggen maar] _dat gebouw_ 
+A|49| A: [aan de] [het] [komen] vanuit [de] voorkant [er] tegenaan 
+A|50| A: [en dan [twee] ovalen] 
+A|51| A: één naar boven [en] één naar [links] 
+A|52| A: [en die] olifant slurven [zo] naar achter 
+B|53| B: Oh [ja ja] 
+B|54| B: nummer 
+B|55| B: eh [ja] [dit zijn] weer [de] mok 
+B|56| B: met rechtsvoorkomen [dat gebouw] eruit 
+B|57| B: [en] bovenaan [en] linksvooraan [komen] _die twee_ [soort] van ovaalvormig uitsteeksel 
+A|58| A: Mok 
+A|59| A: [ovalen] 
+A|60| A: [en dan] [die] olifantenslurf 
+B|61| B: [en die] slurf 
+A|62| A: [ja] 
+B|63| B: [ja] precies 
+A|64| A: Oké 
+A|65| A: [dat] [zijn] 
+A|66| A: [ehm dit zijn] [dat gebouw] 
+A|67| A: [aan de] voorkant [zeggen maar] 
+A|68| A: [en dan] [de] olifantslurf [aan de achterkant] 
+A|69| A: [en die twee ovalen] 
+B|70| B: [ja] nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh oké dan hebben ik hier weer zeggen maar het kop
+	Free: Pattern=oké, Pattern=dan, Pattern=zeggen maar, Pattern=het, Pattern=hebben, Pattern=kop
+	Constrained: Pattern=maar
+Turn ID=1| B | B : Eh bovenop en link onderop komen soort van dezelfde twee uitsteeksel soort van ovaal
+	Free: Pattern=soort, Pattern=twee, Pattern=komen, Pattern=ovaal, Pattern=en
+	Constrained: 
+Turn ID=2| B | B : en dan hebben hij achterin ook een
+	Free: Pattern=en dan, Pattern=ook een, Pattern=hij, Pattern=hebben
+	Constrained: Pattern=dan, Pattern=een, Pattern=en, Pattern=ook
+Turn ID=3| B | B : hij hebben vier uitsteeksel in totaal
+	Free: Pattern=hij hebben
+	Constrained: Pattern=hij, Pattern=hebben
+Turn ID=4| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=5| B | B : twee dezelfde bovenop en link
+	Free: Pattern=twee, Pattern=en
+	Constrained: 
+Turn ID=6| B | B : en aan de rechterkant
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de
+Turn ID=7| A | A : Wacht boven
+	Free: 
+	Constrained: 
+Turn ID=8| B | B : bovenop een soort van lang lang ja niet helemaal echt een ovaal maar wel een soort van lang lang uitsteeksel
+	Free: Pattern=soort, Pattern=ja, Pattern=een, Pattern=een ovaal, Pattern=maar
+	Constrained: Pattern=een, Pattern=ovaal
+Turn ID=9| A | A : ovaal
+	Free: Pattern=ovaal
+	Constrained: 
+Turn ID=10| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| B | B : en dan recht zijn een soort van een piramide van blok
+	Free: Pattern=en dan, Pattern=een, Pattern=soort, Pattern=zijn
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=14| A | A : zijn dat het soort gebouw die op de kop staan tegenaan
+	Free: Pattern=dat, Pattern=soort, Pattern=de, Pattern=gebouw, Pattern=het, Pattern=kop, Pattern=die, Pattern=zijn
+	Constrained: 
+Turn ID=15| B | B : naast elkaar
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : ja ja ja kloppen
+	Free: Pattern=ja ja kloppen, Pattern=ja ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=17| B | B : en dan aan de achterkant hebben hij ook nog een soort van slurf dingetje of zo een arm eruit steken
+	Free: Pattern=aan de achterkant, Pattern=soort, Pattern=en dan, Pattern=ook, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=zo
+	Constrained: Pattern=dan, Pattern=de, Pattern=aan de, Pattern=en
+Turn ID=18| A | A : gewoon een olifantenslurf
+	Free: Pattern=een
+	Constrained: 
+Turn ID=19| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=20| A | A : en dan boven een ovaal en naar links toe een ovaal
+	Free: Pattern=en dan, Pattern=een ovaal, Pattern=links, Pattern=en
+	Constrained: Pattern=dan, Pattern=een, Pattern=ovaal, Pattern=en
+Turn ID=21| B | B : ja die zijn hetzelfde
+	Free: Pattern=zijn, Pattern=die, Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=25| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=27| A | A : dit zijn het gebouw tegen
+	Free: Pattern=dit zijn, Pattern=het gebouw
+	Constrained: Pattern=gebouw, Pattern=zijn, Pattern=het
+Turn ID=28| A | A : aan de voorkant zeggen maar
+	Free: Pattern=zeggen maar, Pattern=aan de
+	Constrained: Pattern=maar, Pattern=de
+Turn ID=29| A | A : maar hij hebben aan de achterkant ook een olifantenslurf
+	Free: Pattern=aan de achterkant, Pattern=hij hebben, Pattern=ook een, Pattern=maar
+	Constrained: Pattern=de, Pattern=een, Pattern=hebben, Pattern=hij, Pattern=aan de, Pattern=ook
+Turn ID=30| A | A : en dan omhoog en naar links twee ovalen
+	Free: Pattern=twee ovalen, Pattern=en dan, Pattern=links, Pattern=en
+	Constrained: Pattern=dan, Pattern=ovalen, Pattern=twee, Pattern=en
+Turn ID=31| A | A : zo'n uitsteekselding
+	Free: 
+	Constrained: 
+Turn ID=32| B | B : eh ja het gebouw en de uitzending
+	Free: Pattern=het gebouw, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=gebouw, Pattern=het
+Turn ID=33| B | B : en de uitsteek
+	Free: Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=34| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=35| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=36| B | B : en die twee ovalen die zijn hetzelfde toch
+	Free: Pattern=en die twee ovalen, Pattern=zijn, Pattern=die
+	Constrained: Pattern=en die, Pattern=twee ovalen, Pattern=twee, Pattern=die twee, Pattern=ovalen, Pattern=die, Pattern=en
+Turn ID=37| B | B : bovenop en link
+	Free: Pattern=en
+	Constrained: 
+Turn ID=38| A | A : ja ja kloppen
+	Free: Pattern=ja ja kloppen
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=39| B | B : ja oké
+	Free: Pattern=ja oké
+	Constrained: Pattern=ja, Pattern=oké
+Turn ID=40| B | B : Eh
+	Free: 
+	Constrained: 
+Turn ID=41| B | B : ehm dit zijn weer dat de mok met rechts gaan het gebouw erin
+	Free: Pattern=ehm dit zijn, Pattern=het gebouw, Pattern=de, Pattern=dat
+	Constrained: Pattern=dit zijn, Pattern=gebouw, Pattern=zijn, Pattern=het
+Turn ID=42| B | B : en dan twee uitsteeksel aan de bovenkant en links aan de zijkant die hetzelfde zijn
+	Free: Pattern=aan de, Pattern=links, Pattern=die, Pattern=en, Pattern=en dan twee, Pattern=zijn
+	Constrained: Pattern=twee, Pattern=de, Pattern=en dan, Pattern=dan, Pattern=en
+Turn ID=43| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=44| B | B : en dan nog weer die slurf er soort van achterlangs
+	Free: Pattern=en dan, Pattern=soort, Pattern=die, Pattern=er
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=45| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=46| A | A : ja ja duidelijk
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=47| A | A : dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=48| A | A : ehm dit zijn die zeggen maar dat gebouw
+	Free: Pattern=ehm dit zijn, Pattern=dat gebouw, Pattern=zeggen maar, Pattern=die
+	Constrained: Pattern=dat, Pattern=gebouw, Pattern=dit zijn, Pattern=zijn, Pattern=maar
+Turn ID=49| A | A : aan de het komen vanuit de voorkant er tegenaan
+	Free: Pattern=de, Pattern=aan de, Pattern=komen, Pattern=het, Pattern=er
+	Constrained: Pattern=de
+Turn ID=50| A | A : en dan twee ovalen
+	Free: Pattern=en dan twee, Pattern=twee ovalen
+	Constrained: Pattern=twee, Pattern=en dan, Pattern=dan, Pattern=ovalen, Pattern=en
+Turn ID=51| A | A : één naar boven en één naar links
+	Free: Pattern=links, Pattern=en
+	Constrained: 
+Turn ID=52| A | A : en die olifant slurven zo naar achter
+	Free: Pattern=en die, Pattern=zo
+	Constrained: Pattern=die, Pattern=en
+Turn ID=53| B | B : Oh ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=54| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=55| B | B : eh ja dit zijn weer de mok
+	Free: Pattern=dit zijn, Pattern=de, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=56| B | B : met rechtsvoorkomen dat gebouw eruit
+	Free: Pattern=dat gebouw
+	Constrained: Pattern=gebouw, Pattern=dat
+Turn ID=57| B | B : en bovenaan en linksvooraan komen die twee soort van ovaalvormig uitsteeksel
+	Free: Pattern=die twee, Pattern=soort, Pattern=komen, Pattern=en
+	Constrained: Pattern=die, Pattern=twee
+Turn ID=58| A | A : Mok
+	Free: 
+	Constrained: 
+Turn ID=59| A | A : ovalen
+	Free: Pattern=ovalen
+	Constrained: 
+Turn ID=60| A | A : en dan die olifantenslurf
+	Free: Pattern=en dan, Pattern=die
+	Constrained: Pattern=dan, Pattern=en
+Turn ID=61| B | B : en die slurf
+	Free: Pattern=en die
+	Constrained: Pattern=die, Pattern=en
+Turn ID=62| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=63| B | B : ja precies
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=64| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=65| A | A : dat zijn
+	Free: Pattern=zijn, Pattern=dat
+	Constrained: 
+Turn ID=66| A | A : ehm dit zijn dat gebouw
+	Free: Pattern=ehm dit zijn, Pattern=dat gebouw
+	Constrained: Pattern=dit zijn, Pattern=gebouw, Pattern=zijn, Pattern=dat
+Turn ID=67| A | A : aan de voorkant zeggen maar
+	Free: Pattern=zeggen maar, Pattern=aan de
+	Constrained: Pattern=maar, Pattern=de
+Turn ID=68| A | A : en dan de olifantslurf aan de achterkant
+	Free: Pattern=aan de achterkant, Pattern=en dan, Pattern=de
+	Constrained: Pattern=dan, Pattern=de, Pattern=aan de, Pattern=en
+Turn ID=69| A | A : en die twee ovalen
+	Free: Pattern=en die twee ovalen
+	Constrained: Pattern=en die, Pattern=twee ovalen, Pattern=twee, Pattern=die twee, Pattern=ovalen, Pattern=die, Pattern=en
+Turn ID=70| B | B : ja nummer
+	Free: Pattern=ja
+	Constrained: 

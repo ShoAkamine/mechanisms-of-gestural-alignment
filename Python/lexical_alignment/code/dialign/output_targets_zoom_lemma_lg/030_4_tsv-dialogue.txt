@@ -1,0 +1,107 @@
+A|0| A: _Euh_ _ja_ dat zijn _het_ mijn beurt toch 
+A|1| A: _euh_ dit zijn _euh_ _een_ soort van verticaal _stopcontact_ aan _de_ rechterkant 
+A|2| A: linksonder zitten _een_ klein staart 
+A|3| A: linksmidden zitten _een_ heel klein vleugel 
+A|4| A: _en_ bovenop zitten _een_ ves _een_ klein _hoed_ 
+A|5| A: soort van maar die vallen niet heel erg op 
+A|6| A: _Oké_ maar _euh_ _het_ veel kenmerkend zijn aan _de_ rechterkant zijn _een_ soort van _stopcontact_ alleen _dan_ boven elkaar 
+B|7| B: [Euh] 
+B|8| B: even denken horen 
+A|9| A: alsof _het_ 
+B|10| B: Oh [en] [een] [hoed] [een] plat [hoed] 
+A|11| A: _ja_ 
+B|12| B: [euh] volgens mij hebben ik deze omschrijven als _Angry_ Bird 
+A|13| A: ah _ja_ _ja_ daar lijken _het_ wel op _ja_ 
+B|14| B: [Oké] 
+A|15| A: Klopt 
+B|16| B: nou [dan] hebben ik [de] _Angry_ Bird of [het] [stopcontact] 
+A|17| A: [Euh] yes 
+A|18| A: _Angry Birds_ 
+A|19| A: Stopcontact naar rechts 
+B|20| B: [ja] 
+B|21| B: [euh] [de] [Angry Birds] [en] [het] [stopcontact] 
+A|22| A: [Euh] 
+A|23| A: [Angry Birds] 
+B|24| B: [ja] 
+B|25| B: [euh] [de] [Angry Birds] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Euh ja dat zijn het mijn beurt toch
+	Free: Pattern=ja, Pattern=Euh, Pattern=het
+	Constrained: 
+Turn ID=1| A | A : euh dit zijn euh een soort van verticaal stopcontact aan de rechterkant
+	Free: Pattern=een, Pattern=euh, Pattern=stopcontact, Pattern=de
+	Constrained: 
+Turn ID=2| A | A : linksonder zitten een klein staart
+	Free: Pattern=een
+	Constrained: 
+Turn ID=3| A | A : linksmidden zitten een heel klein vleugel
+	Free: Pattern=een
+	Constrained: 
+Turn ID=4| A | A : en bovenop zitten een ves een klein hoed
+	Free: Pattern=hoed, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=5| A | A : soort van maar die vallen niet heel erg op
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : Oké maar euh het veel kenmerkend zijn aan de rechterkant zijn een soort van stopcontact alleen dan boven elkaar
+	Free: Pattern=de, Pattern=dan, Pattern=een, Pattern=stopcontact, Pattern=het, Pattern=euh, Pattern=Oké
+	Constrained: 
+Turn ID=7| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=8| B | B : even denken horen
+	Free: 
+	Constrained: 
+Turn ID=9| A | A : alsof het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=10| B | B : Oh en een hoed een plat hoed
+	Free: Pattern=hoed, Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=11| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : euh volgens mij hebben ik deze omschrijven als Angry Bird
+	Free: Pattern=Angry, Pattern=euh
+	Constrained: 
+Turn ID=13| A | A : ah ja ja daar lijken het wel op ja
+	Free: Pattern=ja, Pattern=het
+	Constrained: 
+Turn ID=14| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| A | A : Klopt
+	Free: 
+	Constrained: 
+Turn ID=16| B | B : nou dan hebben ik de Angry Bird of het stopcontact
+	Free: Pattern=de, Pattern=dan, Pattern=stopcontact, Pattern=het, Pattern=Angry
+	Constrained: 
+Turn ID=17| A | A : Euh yes
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=18| A | A : Angry Birds
+	Free: Pattern=Angry Birds
+	Constrained: Pattern=Angry
+Turn ID=19| A | A : Stopcontact naar rechts
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| B | B : euh de Angry Birds en het stopcontact
+	Free: Pattern=de, Pattern=stopcontact, Pattern=het, Pattern=euh, Pattern=Angry Birds, Pattern=en
+	Constrained: Pattern=Angry
+Turn ID=22| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=23| A | A : Angry Birds
+	Free: Pattern=Angry Birds
+	Constrained: Pattern=Angry
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : euh de Angry Birds
+	Free: Pattern=Angry Birds, Pattern=euh, Pattern=de
+	Constrained: Pattern=Angry

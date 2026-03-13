@@ -1,0 +1,115 @@
+A|0| A: _Oh_ 
+A|1| A: _Euh_ 
+A|2| A: _Oké_ 
+A|3| A: ik _hebben_ nu ook _een_ plaat 
+B|4| B: oke 
+A|5| A: Euhm _er_ zitten _een_ rechtopstaan _balk_ _aan de voorkant_ 
+A|6| A: _en_ _het_ lijken eigenlijk op _een_ euhm soort _man_ _die_ _die balk_ _gaan knuffelen_ 
+A|7| A: _met_ twee armp _aan de_ zijkant _en_ _een_ ballet _die_ _er bovenop_ _liggen_ 
+B|8| B: [Euh] 
+B|9| B: [Oh] _ja_ _dus_ _dat_ rond balletje [liggen] [er bovenop] [en] [die balk] _staan_ gewoon _rechtop_ toch 
+B|10| B: [en] _dat_ rechter 
+A|11| A: [ja] [die] [staan] 
+B|12| B: _ja dat_ Rechteruitstopping _zijn_ iets kort _dan_ linker 
+A|13| A: [Euh] [ja] 
+B|14| B: [ja] 
+B|15| B: [Oké] _dan_ _zijn_ [het] 
+B|16| B: [Euh] deze [hebben] links [en] rechts [een] haak _en dan_ [aan de voorkant] [een] [balk] [en] [bovenop] [een] _bal_ 
+A|17| A: [ja _dat] zijn_ 
+A|18| A: ik [hebben] nu [dat] _euh_ [ja] wat lijken op [dat] _man_ wat [die balk] _gaan knuffelen_ 
+A|19| A: [dus] [die] _bal die_ [bovenop] [liggen] [en dan] [de] [balk] [die] [rechtop] ervoor [staan] 
+B|20| B: [Oh] [ja] 
+B|21| B: [Euh] dit [zijn] [die] [met] [die] [euh] [bal die] [gaan knuffelen] 
+A|22| A: Euhm _dat zijn_ 
+A|23| A: ik [hebben] nu weer [dat] knuffel knuffelmanne 
+B|24| B: [Oh] [ja] 
+B|25| B: [Euh] [dat zijn] [het] [knuffelen] [man] 
+A|26| A: Yes [Euh] 
+A|27| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=1| A | A : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=2| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=3| A | A : ik hebben nu ook een plaat
+	Free: Pattern=een, Pattern=hebben
+	Constrained: 
+Turn ID=4| B | B : oke
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : Euhm er zitten een rechtopstaan balk aan de voorkant
+	Free: Pattern=aan de voorkant, Pattern=er, Pattern=balk, Pattern=een
+	Constrained: Pattern=aan de, Pattern=de
+Turn ID=6| A | A : en het lijken eigenlijk op een euhm soort man die die balk gaan knuffelen
+	Free: Pattern=die balk, Pattern=een, Pattern=het, Pattern=die, Pattern=en, Pattern=gaan knuffelen, Pattern=man
+	Constrained: Pattern=knuffelen, Pattern=die, Pattern=balk
+Turn ID=7| A | A : met twee armp aan de zijkant en een ballet die er bovenop liggen
+	Free: Pattern=aan de, Pattern=een, Pattern=er bovenop, Pattern=met, Pattern=die, Pattern=en, Pattern=liggen
+	Constrained: Pattern=er, Pattern=de, Pattern=bovenop
+Turn ID=8| B | B : Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=9| B | B : Oh ja dus dat rond balletje liggen er bovenop en die balk staan gewoon rechtop toch
+	Free: Pattern=dat, Pattern=die balk, Pattern=staan, Pattern=er bovenop, Pattern=rechtop, Pattern=en, Pattern=dus, Pattern=ja, Pattern=liggen, Pattern=Oh
+	Constrained: Pattern=er, Pattern=bovenop, Pattern=die, Pattern=balk
+Turn ID=10| B | B : en dat rechter
+	Free: Pattern=dat, Pattern=en
+	Constrained: 
+Turn ID=11| A | A : ja die staan
+	Free: Pattern=staan, Pattern=ja, Pattern=die
+	Constrained: 
+Turn ID=12| B | B : ja dat Rechteruitstopping zijn iets kort dan linker
+	Free: Pattern=ja dat, Pattern=zijn, Pattern=dan
+	Constrained: Pattern=dat, Pattern=ja
+Turn ID=13| A | A : Euh ja
+	Free: Pattern=Euh, Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : Oké dan zijn het
+	Free: Pattern=zijn, Pattern=dan, Pattern=het, Pattern=Oké
+	Constrained: 
+Turn ID=16| B | B : Euh deze hebben links en rechts een haak en dan aan de voorkant een balk en bovenop een bal
+	Free: Pattern=bovenop, Pattern=bal, Pattern=en dan, Pattern=een, Pattern=Euh, Pattern=hebben, Pattern=balk, Pattern=en, Pattern=aan de voorkant
+	Constrained: Pattern=dan, Pattern=de, Pattern=en, Pattern=aan de
+Turn ID=17| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja dat
+	Constrained: Pattern=zijn, Pattern=dat, Pattern=ja
+Turn ID=18| A | A : ik hebben nu dat euh ja wat lijken op dat man wat die balk gaan knuffelen
+	Free: Pattern=dat, Pattern=die balk, Pattern=ja, Pattern=hebben, Pattern=euh, Pattern=gaan knuffelen, Pattern=man
+	Constrained: Pattern=knuffelen, Pattern=die, Pattern=balk
+Turn ID=19| A | A : dus die bal die bovenop liggen en dan de balk die rechtop ervoor staan
+	Free: Pattern=bovenop, Pattern=en dan, Pattern=rechtop, Pattern=balk, Pattern=die, Pattern=liggen, Pattern=de, Pattern=dus, Pattern=staan, Pattern=bal die
+	Constrained: Pattern=dan, Pattern=en, Pattern=die, Pattern=bal
+Turn ID=20| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=21| B | B : Euh dit zijn die met die euh bal die gaan knuffelen
+	Free: Pattern=bal die, Pattern=Euh, Pattern=euh, Pattern=met, Pattern=die, Pattern=zijn, Pattern=gaan knuffelen
+	Constrained: Pattern=knuffelen, Pattern=die, Pattern=bal
+Turn ID=22| A | A : Euhm dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=23| A | A : ik hebben nu weer dat knuffel knuffelmanne
+	Free: Pattern=dat, Pattern=hebben
+	Constrained: 
+Turn ID=24| B | B : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=25| B | B : Euh dat zijn het knuffelen man
+	Free: Pattern=dat zijn, Pattern=Euh, Pattern=het, Pattern=man, Pattern=knuffelen
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=26| A | A : Yes Euh
+	Free: Pattern=Euh
+	Constrained: 
+Turn ID=27| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat

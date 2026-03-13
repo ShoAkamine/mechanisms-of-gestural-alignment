@@ -1,0 +1,143 @@
+B|0| B: Ehhm 
+B|1| B: oké deze 
+B|2| B: Hebben 
+B|3| B: _aan de bovenkant_ lijken _het_ net net _één_ sprie _haar_ zeggen maar _wat_ er uitsteken 
+A|4| A: Mhmm 
+B|5| B: _en_ dan 
+B|6| B: Hebben hij _aan de_ zijkant Ehh _een_ bol _neus_ 
+B|7| B: _en_ _door die_ _neus_ zitten _een soort_ 
+B|8| B: pilaar _weer_ doorheen steken zeggen maar 
+A|9| A: _ja_ _met _de_ schijf_ [aan] [een] [de] _van_ beide _kant_ 
+B|10| B: [ja] _aan de_ _aan de_ [een] [kant] [de schijf] [ja] [van] _die_ pilaar 
+A|11| A: [ja] _dat zijn_ 
+A|12| A: Ehm 
+A|13| A: jij omschrijven [het] _in_ [de] [één] ronde als _een pluk haar_ _dat_ uitzak bovenop 
+B|14| B: [ja] 
+A|15| A: [en] [een] bal _met_ 
+A|16| A: [een] balk [door die] bal _heen_ _met_ daaraan [weer] [een] 
+B|17| B: [ja] [ja] [ja] 
+B|18| B: [dat zijn] 
+B|19| B: _Eeh_ 
+B|20| B: deze hebben [dat] [pluk haar] [en] [die] _neus [met_ de] pilaar _door de neus_ [heen] 
+A|21| A: [ja] 
+A|22| A: [Eeh] 
+A|23| A: Pluk je [haar] [aan de bovenkant] _met een_ [neus _met] [een_ soort] piercing erdoorheen 
+B|24| B: [ja] 
+A|25| A: laugh 
+B|26| B: ehh 
+B|27| B: [ja] 
+B|28| B: ehh 
+B|29| B: dit [zijn] [met [een] pluk haar] [in] [die] [neus] [en] [die] neuspiercing 
+A|30| A: Yes [dat zijn] 
+A|31| A: Ehmm 
+A|32| A: Pluk je [haar] [met] 
+A|33| A: iets [wat] [door de neus] gaan 
+B|34| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ehhm
+	Free: 
+	Constrained: 
+Turn ID=1| B | B : oké deze
+	Free: 
+	Constrained: 
+Turn ID=2| B | B : Hebben
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : aan de bovenkant lijken het net net één sprie haar zeggen maar wat er uitsteken
+	Free: Pattern=het, Pattern=één, Pattern=wat, Pattern=aan de bovenkant, Pattern=haar
+	Constrained: Pattern=aan, Pattern=de, Pattern=aan de
+Turn ID=4| A | A : Mhmm
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : en dan
+	Free: Pattern=en
+	Constrained: 
+Turn ID=6| B | B : Hebben hij aan de zijkant Ehh een bol neus
+	Free: Pattern=aan de, Pattern=neus, Pattern=een
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=7| B | B : en door die neus zitten een soort
+	Free: Pattern=door die, Pattern=een soort, Pattern=en, Pattern=neus
+	Constrained: Pattern=die, Pattern=een
+Turn ID=8| B | B : pilaar weer doorheen steken zeggen maar
+	Free: Pattern=weer
+	Constrained: 
+Turn ID=9| A | A : ja met de schijf aan een de van beide kant
+	Free: Pattern=kant, Pattern=een, Pattern=van, Pattern=de schijf, Pattern=de, Pattern=met de, Pattern=aan, Pattern=ja
+	Constrained: Pattern=de, Pattern=met
+Turn ID=10| B | B : ja aan de aan de een kant de schijf ja van die pilaar
+	Free: Pattern=kant, Pattern=ja, Pattern=aan de, Pattern=een, Pattern=die, Pattern=van, Pattern=de schijf
+	Constrained: Pattern=aan, Pattern=de
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=12| A | A : Ehm
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : jij omschrijven het in de één ronde als een pluk haar dat uitzak bovenop
+	Free: Pattern=dat, Pattern=de, Pattern=een pluk haar, Pattern=het, Pattern=één, Pattern=in
+	Constrained: Pattern=pluk haar, Pattern=een, Pattern=haar
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : en een bal met
+	Free: Pattern=en, Pattern=met, Pattern=een
+	Constrained: 
+Turn ID=16| A | A : een balk door die bal heen met daaraan weer een
+	Free: Pattern=door die, Pattern=een, Pattern=heen, Pattern=met, Pattern=weer
+	Constrained: Pattern=die
+Turn ID=17| B | B : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=19| B | B : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=20| B | B : deze hebben dat pluk haar en die neus met de pilaar door de neus heen
+	Free: Pattern=dat, Pattern=door de neus, Pattern=met de, Pattern=heen, Pattern=die, Pattern=pluk haar, Pattern=neus met, Pattern=en
+	Constrained: Pattern=haar, Pattern=neus, Pattern=met, Pattern=de
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| A | A : Eeh
+	Free: Pattern=Eeh
+	Constrained: 
+Turn ID=23| A | A : Pluk je haar aan de bovenkant met een neus met een soort piercing erdoorheen
+	Free: Pattern=met een, Pattern=neus met, Pattern=een soort, Pattern=aan de bovenkant, Pattern=haar
+	Constrained: Pattern=aan de, Pattern=een, Pattern=neus, Pattern=met, Pattern=de, Pattern=aan
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| A | A : laugh
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ehh
+	Free: 
+	Constrained: 
+Turn ID=29| B | B : dit zijn met een pluk haar in die neus en die neuspiercing
+	Free: Pattern=een pluk haar, Pattern=in, Pattern=neus, Pattern=die, Pattern=met een, Pattern=en, Pattern=zijn
+	Constrained: Pattern=pluk haar, Pattern=met, Pattern=een, Pattern=haar
+Turn ID=30| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=31| A | A : Ehmm
+	Free: 
+	Constrained: 
+Turn ID=32| A | A : Pluk je haar met
+	Free: Pattern=met, Pattern=haar
+	Constrained: 
+Turn ID=33| A | A : iets wat door de neus gaan
+	Free: Pattern=door de neus, Pattern=wat
+	Constrained: Pattern=neus, Pattern=de
+Turn ID=34| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

@@ -1,0 +1,103 @@
+A|0| A: _deze_ hebben _aan de bovenkant_ _een soort van_ laag langwerpig rechthoek erop zitten 
+A|1| A: en _aan de_ zijkant _ja_ je kunnen _het_ zien als _een soort van_ 
+A|2| A: _ja_ wat _zijn_ _het_ ? _een_ 
+A|3| A: _van_ _die_ dinget _aan de_ zijkant _zo_ _die een beetje_ _zo_ lopen schuin naar beneden 
+B|4| B: _Oh_ lijken [het] _op_ [een soort van] _raket_ of [zo] 
+A|5| A: _ja_ _ja_ precies _ja_ 
+B|6| B: [ja] 
+B|7| B: [ja] _met_ [een] _balk_ [aan de bovenkant] toch 
+A|8| A: _die_ 
+A|9| A: [ja] [ja] 
+B|10| B: Oké oké [het] [zijn] 
+B|11| B: oké [deze] [zijn] [de] [een] [die een beetje] _op_ [een] _raket_ lijken 
+B|12| B: _met_ [een soort van] _balk op_ [zijn] hoofd 
+A|13| A: [Oh] [ja] 
+A|14| A: ehm dus 
+A|15| A: ehm dit [zijn] [het] [raket] [met] [het] [balk op] [de bovenkant] 
+B|16| B: [ja] 
+B|17| B: even kijken o [ja] 
+B|18| B: [deze] [zijn] [de] [een] [die] [op] [een] [raket] lijken [met] [een] [balk op] [zijn] hoofd 
+A|19| A: _dat zijn_ 
+A|20| A: dit [zijn] [het] [raket] 
+B|21| B: eh waar [zijn] [dat] 
+B|22| B: O [dat zijn] 
+B|23| B: [deze] [zijn] [die] [raket] 
+A|24| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : deze hebben aan de bovenkant een soort van laag langwerpig rechthoek erop zitten
+	Free: Pattern=aan de bovenkant, Pattern=een soort van, Pattern=deze
+	Constrained: Pattern=de, Pattern=aan de, Pattern=de bovenkant, Pattern=een, Pattern=van
+Turn ID=1| A | A : en aan de zijkant ja je kunnen het zien als een soort van
+	Free: Pattern=een soort van, Pattern=aan de, Pattern=het, Pattern=ja
+	Constrained: Pattern=de, Pattern=van, Pattern=een
+Turn ID=2| A | A : ja wat zijn het ? een
+	Free: Pattern=het, Pattern=ja, Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=3| A | A : van die dinget aan de zijkant zo die een beetje zo lopen schuin naar beneden
+	Free: Pattern=zo, Pattern=die, Pattern=van, Pattern=aan de, Pattern=die een beetje
+	Constrained: Pattern=een, Pattern=de, Pattern=die
+Turn ID=4| B | B : Oh lijken het op een soort van raket of zo
+	Free: Pattern=op, Pattern=raket, Pattern=het, Pattern=zo, Pattern=een soort van, Pattern=Oh
+	Constrained: Pattern=van, Pattern=een
+Turn ID=5| A | A : ja ja precies ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : ja met een balk aan de bovenkant toch
+	Free: Pattern=ja, Pattern=een, Pattern=balk, Pattern=met, Pattern=aan de bovenkant
+	Constrained: Pattern=de bovenkant, Pattern=aan de, Pattern=de
+Turn ID=8| A | A : die
+	Free: Pattern=die
+	Constrained: 
+Turn ID=9| A | A : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| B | B : Oké oké het zijn
+	Free: Pattern=het, Pattern=zijn
+	Constrained: 
+Turn ID=11| B | B : oké deze zijn de een die een beetje op een raket lijken
+	Free: Pattern=de, Pattern=raket, Pattern=een, Pattern=zijn, Pattern=deze, Pattern=op, Pattern=die een beetje
+	Constrained: Pattern=die, Pattern=een
+Turn ID=12| B | B : met een soort van balk op zijn hoofd
+	Free: Pattern=een soort van, Pattern=balk op, Pattern=met, Pattern=zijn
+	Constrained: Pattern=balk, Pattern=een, Pattern=van, Pattern=op
+Turn ID=13| A | A : Oh ja
+	Free: Pattern=ja, Pattern=Oh
+	Constrained: 
+Turn ID=14| A | A : ehm dus
+	Free: 
+	Constrained: 
+Turn ID=15| A | A : ehm dit zijn het raket met het balk op de bovenkant
+	Free: Pattern=balk op, Pattern=het, Pattern=met, Pattern=zijn, Pattern=de bovenkant, Pattern=raket
+	Constrained: Pattern=de, Pattern=balk, Pattern=op
+Turn ID=16| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : even kijken o ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=18| B | B : deze zijn de een die op een raket lijken met een balk op zijn hoofd
+	Free: Pattern=de, Pattern=op, Pattern=balk op, Pattern=raket, Pattern=een, Pattern=met, Pattern=die, Pattern=zijn, Pattern=deze
+	Constrained: Pattern=balk, Pattern=op
+Turn ID=19| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=20| A | A : dit zijn het raket
+	Free: Pattern=het, Pattern=raket, Pattern=zijn
+	Constrained: 
+Turn ID=21| B | B : eh waar zijn dat
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=22| B | B : O dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=23| B | B : deze zijn die raket
+	Free: Pattern=deze, Pattern=raket, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=24| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

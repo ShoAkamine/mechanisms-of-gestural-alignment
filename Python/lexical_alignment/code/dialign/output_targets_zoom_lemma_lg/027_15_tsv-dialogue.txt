@@ -1,0 +1,79 @@
+A|0| A: het kop hebben twee identiek stok bovenaan 
+A|1| A: wat het een beetje op een _krab_ doen lijken 
+A|2| A: en het _zijn_ het enig _object_ _met_ twee van die stok bovenaan 
+A|3| A: dus als je daar op _zijn_ kant 
+B|4| B: Oké 
+B|5| B: [object] 
+B|6| B: deze _dat zijn_ _de krab_ 
+A|7| A: _ja_ _met_ die twee streep 
+B|8| B: [met] [ja] 
+A|9| A: [ja] [ja] [ja] 
+A|10| A: [object] 
+A|11| A: [de krab] 
+B|12| B: nummer 
+B|13| B: [de krab] 
+A|14| A: [ja] [object] 
+A|15| A: [de krab] 
+B|16| B: nummer 
+B|17| B: [de krab] 
+A|18| A: [dat zijn] [object] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : het kop hebben twee identiek stok bovenaan
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : wat het een beetje op een krab doen lijken
+	Free: Pattern=krab
+	Constrained: 
+Turn ID=2| A | A : en het zijn het enig object met twee van die stok bovenaan
+	Free: Pattern=met, Pattern=object, Pattern=zijn
+	Constrained: 
+Turn ID=3| A | A : dus als je daar op zijn kant
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=4| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=6| B | B : deze dat zijn de krab
+	Free: Pattern=de krab, Pattern=dat zijn
+	Constrained: Pattern=krab, Pattern=zijn
+Turn ID=7| A | A : ja met die twee streep
+	Free: Pattern=met, Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : met ja
+	Free: Pattern=met, Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=11| A | A : de krab
+	Free: Pattern=de krab
+	Constrained: Pattern=krab
+Turn ID=12| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : de krab
+	Free: Pattern=de krab
+	Constrained: Pattern=krab
+Turn ID=14| A | A : ja object
+	Free: Pattern=object, Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : de krab
+	Free: Pattern=de krab
+	Constrained: Pattern=krab
+Turn ID=16| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=17| B | B : de krab
+	Free: Pattern=de krab
+	Constrained: Pattern=krab
+Turn ID=18| A | A : dat zijn object
+	Free: Pattern=dat zijn, Pattern=object
+	Constrained: Pattern=zijn

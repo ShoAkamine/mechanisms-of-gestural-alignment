@@ -1,0 +1,59 @@
+B|0| B: _Euh_ deze _hebben_ links en rechts een soort _kralen_ 
+B|1| B: een soort pipi-lankhuis eigenlijk 
+A|2| A: ah _ja_ 
+A|3| A: ah _ja_ oké _dat zijn_ 
+A|4| A: ik [hebben] nu _die met_ _die_ kralenketting 
+B|5| B: Oh [ja] het [zijn] 
+A|6| A: Oké 
+B|7| B: _Euh_ dit [zijn] [die met] _de_ krael 
+A|8| A: [Euh] [ja] _dat zijn_ 
+A|9| A: ik [hebben] nu [de] [kralen] ketting 
+B|10| B: [Euh] [dat zijn] 
+B|11| B: dit [zijn] [met] [de] krael aan [de] zijkant 
+A|12| A: Yes [dat zijn] 
+A|13| A: ik [hebben] weer [de] kralenketting 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Euh deze hebben links en rechts een soort kralen
+	Free: Pattern=kralen, Pattern=Euh, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : een soort pipi-lankhuis eigenlijk
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : ah ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| A | A : ah ja oké dat zijn
+	Free: Pattern=dat zijn, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=4| A | A : ik hebben nu die met die kralenketting
+	Free: Pattern=die met, Pattern=hebben, Pattern=die
+	Constrained: Pattern=met, Pattern=die
+Turn ID=5| B | B : Oh ja het zijn
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=6| A | A : Oké
+	Free: 
+	Constrained: 
+Turn ID=7| B | B : Euh dit zijn die met de krael
+	Free: Pattern=die met, Pattern=Euh, Pattern=de, Pattern=zijn
+	Constrained: Pattern=met, Pattern=die
+Turn ID=8| A | A : Euh ja dat zijn
+	Free: Pattern=dat zijn, Pattern=Euh, Pattern=ja
+	Constrained: Pattern=zijn
+Turn ID=9| A | A : ik hebben nu de kralen ketting
+	Free: Pattern=kralen, Pattern=de, Pattern=hebben
+	Constrained: 
+Turn ID=10| B | B : Euh dat zijn
+	Free: Pattern=dat zijn, Pattern=Euh
+	Constrained: Pattern=zijn
+Turn ID=11| B | B : dit zijn met de krael aan de zijkant
+	Free: Pattern=met, Pattern=de, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : Yes dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn
+Turn ID=13| A | A : ik hebben weer de kralenketting
+	Free: Pattern=de, Pattern=hebben
+	Constrained: 

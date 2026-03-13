@@ -1,0 +1,147 @@
+A|0| A: oké _deze_ _zijn_ _een_ kop _die_ _hebben twee_ _soort_ van _lepelt_ _die_ erin hangen 
+B|1| B: mhm 
+A|2| A: _ehm_ eén lepeltje _zijn_ _een soort_ van _vierkant_ 
+A|3| A: _en_ _die_ _ander_ _hebben_ _een_ _wat_ _ander_ _vorm_ 
+A|4| A: er zitten _een soort_ van bolle _op_ _de_ romp 
+A|5| A: _en_ _een_ driehoekig uitsteeksel 
+B|6| B: Lijken [een] beetje [op] zo'n penseel of zo 
+A|7| A: eh _ja_ 
+B|8| B: Hebben hij _ook_ _één_ [hebben] hij _ook een_ groot rond neus om _het_ zo te zeggen 
+A|9| A: Neus _ja ja_ precies _die_ _zijn het_ 
+B|10| B: Oké [ja] dan [zijn het] 
+B|11| B: [ehm] [deze] [hebben twee] dinget [op] [zijn] hoofd 
+B|12| B: _één_ _rechthoekig_ 
+B|13| B: _en één met_ _dat_ [die] aan [de] onderkant [wat] klein [zijn] [en] [de] bovenkant [wat] groot 
+A|14| A: _ja _ja_ ja_ 
+B|15| B: [wat] [ja] vinden ik [een] beetje [op] [een soort] penseel lijken 
+A|16| A: [zijn] [een] 
+B|17| B: [en] hij [hebben] zo'n groot groot neus zeggen _maar_ 
+A|18| A: [ja] [dat] [zijn] 
+A|19| A: _ehm dit zijn_ [ook een] kop [maar] _met twee lepelt_ erin 
+A|20| A: [een] [rechthoekig] [en één _met] twee_ _vorm ja_ 
+B|21| B: [ja] 
+B|22| B: [ja] 
+B|23| B: [ehm dit zijn] [die] [een] [met] [die] [twee] dinget [op] [zijn] hoofd 
+B|24| B: waarvan [de] [een] [vierkant] [zijn] [en] [de] [ander] [een] tweedelig rond [vorm] veel rond [vorm ja] 
+A|25| A: [ja] [het] [het] kop _met twee_ lepel 
+B|26| B: je weten wel welk ik bedoelen 
+A|27| A: [zijn] [dat] 
+B|28| B: [ja ja] 
+A|29| A: eh [dit zijn] [de] kop [met] [de] [twee] _verschillend_ lepel erin 
+B|30| B: Oh [ja] 
+B|31| B: [ja] 
+B|32| B: nummer 
+B|33| B: [ehm dit zijn] [die] [met twee lepelt] 
+B|34| B: [die] [verschillend] [zijn] 
+A|35| A: [ja] [dit zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : oké deze zijn een kop die hebben twee soort van lepelt die erin hangen
+	Free: Pattern=soort, Pattern=hebben twee, Pattern=een, Pattern=die, Pattern=lepelt, Pattern=zijn, Pattern=deze
+	Constrained: Pattern=hebben, Pattern=twee
+Turn ID=1| B | B : mhm
+	Free: 
+	Constrained: 
+Turn ID=2| A | A : ehm eén lepeltje zijn een soort van vierkant
+	Free: Pattern=een soort, Pattern=zijn, Pattern=vierkant, Pattern=ehm
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=3| A | A : en die ander hebben een wat ander vorm
+	Free: Pattern=vorm, Pattern=een, Pattern=hebben, Pattern=die, Pattern=wat, Pattern=ander, Pattern=en
+	Constrained: 
+Turn ID=4| A | A : er zitten een soort van bolle op de romp
+	Free: Pattern=een soort, Pattern=op, Pattern=de
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=5| A | A : en een driehoekig uitsteeksel
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=6| B | B : Lijken een beetje op zo'n penseel of zo
+	Free: Pattern=op, Pattern=een
+	Constrained: 
+Turn ID=7| A | A : eh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| B | B : Hebben hij ook één hebben hij ook een groot rond neus om het zo te zeggen
+	Free: Pattern=ook een, Pattern=ook, Pattern=het, Pattern=hebben, Pattern=één
+	Constrained: Pattern=ook, Pattern=een
+Turn ID=9| A | A : Neus ja ja precies die zijn het
+	Free: Pattern=zijn het, Pattern=ja ja, Pattern=die
+	Constrained: Pattern=zijn, Pattern=het, Pattern=ja
+Turn ID=10| B | B : Oké ja dan zijn het
+	Free: Pattern=zijn het, Pattern=ja
+	Constrained: Pattern=zijn, Pattern=het
+Turn ID=11| B | B : ehm deze hebben twee dinget op zijn hoofd
+	Free: Pattern=op, Pattern=hebben twee, Pattern=ehm, Pattern=zijn, Pattern=deze
+	Constrained: Pattern=hebben, Pattern=twee
+Turn ID=12| B | B : één rechthoekig
+	Free: Pattern=rechthoekig, Pattern=één
+	Constrained: 
+Turn ID=13| B | B : en één met dat die aan de onderkant wat klein zijn en de bovenkant wat groot
+	Free: Pattern=dat, Pattern=en één met, Pattern=de, Pattern=die, Pattern=wat, Pattern=en, Pattern=zijn
+	Constrained: Pattern=en, Pattern=één, Pattern=met
+Turn ID=14| A | A : ja ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=15| B | B : wat ja vinden ik een beetje op een soort penseel lijken
+	Free: Pattern=ja, Pattern=op, Pattern=een, Pattern=wat, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een
+Turn ID=16| A | A : zijn een
+	Free: Pattern=zijn, Pattern=een
+	Constrained: 
+Turn ID=17| B | B : en hij hebben zo'n groot groot neus zeggen maar
+	Free: Pattern=en, Pattern=hebben, Pattern=maar
+	Constrained: 
+Turn ID=18| A | A : ja dat zijn
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : ehm dit zijn ook een kop maar met twee lepelt erin
+	Free: Pattern=ehm dit zijn, Pattern=met twee lepelt, Pattern=ook een, Pattern=maar
+	Constrained: Pattern=twee, Pattern=ook, Pattern=een, Pattern=met twee, Pattern=lepelt, Pattern=zijn, Pattern=dit zijn, Pattern=ehm, Pattern=met
+Turn ID=20| A | A : een rechthoekig en één met twee vorm ja
+	Free: Pattern=en één met, Pattern=rechthoekig, Pattern=een, Pattern=vorm ja, Pattern=met twee
+	Constrained: Pattern=vorm, Pattern=twee, Pattern=ja, Pattern=één, Pattern=met, Pattern=en
+Turn ID=21| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| B | B : ehm dit zijn die een met die twee dinget op zijn hoofd
+	Free: Pattern=twee, Pattern=op, Pattern=een, Pattern=met, Pattern=die, Pattern=ehm dit zijn, Pattern=zijn
+	Constrained: Pattern=dit zijn, Pattern=zijn, Pattern=ehm
+Turn ID=24| B | B : waarvan de een vierkant zijn en de ander een tweedelig rond vorm veel rond vorm ja
+	Free: Pattern=vorm, Pattern=de, Pattern=een, Pattern=vorm ja, Pattern=ander, Pattern=en, Pattern=zijn, Pattern=vierkant
+	Constrained: Pattern=vorm, Pattern=ja
+Turn ID=25| A | A : ja het het kop met twee lepel
+	Free: Pattern=met twee, Pattern=het, Pattern=ja
+	Constrained: Pattern=twee, Pattern=met
+Turn ID=26| B | B : je weten wel welk ik bedoelen
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : zijn dat
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=28| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=29| A | A : eh dit zijn de kop met de twee verschillend lepel erin
+	Free: Pattern=twee, Pattern=de, Pattern=verschillend, Pattern=met, Pattern=dit zijn
+	Constrained: Pattern=zijn
+Turn ID=30| B | B : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=32| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : ehm dit zijn die met twee lepelt
+	Free: Pattern=ehm dit zijn, Pattern=met twee lepelt, Pattern=die
+	Constrained: Pattern=twee, Pattern=met twee, Pattern=lepelt, Pattern=zijn, Pattern=dit zijn, Pattern=ehm, Pattern=met
+Turn ID=34| B | B : die verschillend zijn
+	Free: Pattern=zijn, Pattern=verschillend, Pattern=die
+	Constrained: 
+Turn ID=35| A | A : ja dit zijn
+	Free: Pattern=dit zijn, Pattern=ja
+	Constrained: Pattern=zijn

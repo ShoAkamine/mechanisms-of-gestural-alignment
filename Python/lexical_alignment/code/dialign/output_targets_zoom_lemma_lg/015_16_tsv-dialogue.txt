@@ -1,0 +1,187 @@
+A|0| A: Oh _ja_ 
+A|1| A: _de_ volgen _zijn_ 
+A|2| A: _ja_ ik _noemen_ _het_ _een_ _wc-borstel_ 
+A|3| A: want _het_ _zijn_ _een_ _mok_ _met_ daarbovenuit _een_ uitstekend handvat 
+A|4| A: _maar_ _aan de_ zijkant _hebben_ hij zo'n zelfde type handvat _ook_ zitten 
+B|5| B: [ja] _en_ [een] soort van verrekijker of zo [aan de] rechterkant ervan 
+A|6| A: [ja] correct 
+B|7| B: deze [hebben] jij al omschrijven 
+B|8| B: _dat zijn_ [met] [een] soort 
+B|9| B: [ja] hoe _zeggen_ _je_ _dat_ 
+B|10| B: [een] soort langwerpig uitsteeksel [aan _de] bovenkant_ 
+B|11| B: [maar] [ook] [aan de] voorkant 
+B|12| B: _die_ exact hetzelfde [zijn] 
+A|13| A: [ja] 
+B|14| B: [ja] 
+A|15| A: [ja] ik [hebben] hem 
+A|16| A: _en dan_ zo'n blokding [aan de] zijkant [dat] uitsteken 
+B|17| B: Exact 
+B|18| B: [ja] 
+A|19| A: _dit zijn_ [de] [zeggen] [maar] _de wc-borstel_ _weer_ 
+A|20| A: [die] zowel naar boven als naar [de] zijkant [die] Uitstulpsel [hebben] 
+A|21| A: [die] afgeron uitstulpsel 
+B|22| B: [ja] 
+A|23| A: [en] rechts [dat] uitgesteekt _blok_ 
+B|24| B: [ja] 
+B|25| B: Yes 
+B|26| B: [dit zijn] [weer] [de] [de] raar _met de_ twee uitsteeksel [die] exact hetzelfde [zijn] 
+B|27| B: [en] [het] groot stuk [aan de] rechterkant 
+B|28| B: [het] [blok] 
+B|29| B: dus één [met] [een] [ja] hoe [noemen] _je_ [dat] 
+B|30| B: [een] smal hoofd dus bovenop [de] [mok] 
+B|31| B: [en dan] precies [ook] daarvoor [aan de] linkerkant ervan 
+B|32| B: hetzelfde figuur 
+B|33| B: hoe [hebben] jij [die] toen omschrijven 
+A|34| A: bedoelen [je] [die] [die] [een] [met de] 
+A|35| A: [ja] [de bovenkant] [en] [de] zijkant link 
+B|36| B: precies [en dan] exact [ook] 
+A|37| A: [ja] 
+B|38| B: [ja] [ja] 
+A|39| A: [ja] ik [hebben] hem 
+A|40| A: [dit zijn] [zeggen] [maar] [de] wc borstel 
+A|41| A: [die] zowel er boven uit steekt als [aan de] zijkant 
+B|42| B: [ja] 
+B|43| B: [de wc-borstel] 
+A|44| A: [ja] 
+A|45| A: [dat zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : Oh ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=1| A | A : de volgen zijn
+	Free: Pattern=zijn, Pattern=de
+	Constrained: 
+Turn ID=2| A | A : ja ik noemen het een wc-borstel
+	Free: Pattern=ja, Pattern=een, Pattern=het, Pattern=wc-borstel, Pattern=noemen
+	Constrained: 
+Turn ID=3| A | A : want het zijn een mok met daarbovenuit een uitstekend handvat
+	Free: Pattern=een, Pattern=het, Pattern=met, Pattern=mok, Pattern=zijn
+	Constrained: 
+Turn ID=4| A | A : maar aan de zijkant hebben hij zo'n zelfde type handvat ook zitten
+	Free: Pattern=aan de, Pattern=hebben, Pattern=ook, Pattern=maar
+	Constrained: Pattern=de
+Turn ID=5| B | B : ja en een soort van verrekijker of zo aan de rechterkant ervan
+	Free: Pattern=aan de, Pattern=en, Pattern=ja, Pattern=een
+	Constrained: Pattern=de
+Turn ID=6| A | A : ja correct
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : deze hebben jij al omschrijven
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=8| B | B : dat zijn met een soort
+	Free: Pattern=dat zijn, Pattern=met, Pattern=een
+	Constrained: Pattern=dat, Pattern=zijn
+Turn ID=9| B | B : ja hoe zeggen je dat
+	Free: Pattern=je, Pattern=dat, Pattern=ja, Pattern=zeggen
+	Constrained: 
+Turn ID=10| B | B : een soort langwerpig uitsteeksel aan de bovenkant
+	Free: Pattern=aan de, Pattern=de bovenkant, Pattern=een
+	Constrained: Pattern=de
+Turn ID=11| B | B : maar ook aan de voorkant
+	Free: Pattern=aan de, Pattern=ook, Pattern=maar
+	Constrained: Pattern=de
+Turn ID=12| B | B : die exact hetzelfde zijn
+	Free: Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=13| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| A | A : ja ik hebben hem
+	Free: Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : en dan zo'n blokding aan de zijkant dat uitsteken
+	Free: Pattern=aan de, Pattern=en dan, Pattern=dat
+	Constrained: Pattern=en, Pattern=de
+Turn ID=17| B | B : Exact
+	Free: 
+	Constrained: 
+Turn ID=18| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| A | A : dit zijn de zeggen maar de wc-borstel weer
+	Free: Pattern=de, Pattern=zeggen, Pattern=de wc-borstel, Pattern=maar, Pattern=weer, Pattern=dit zijn
+	Constrained: Pattern=zijn, Pattern=de, Pattern=wc-borstel
+Turn ID=20| A | A : die zowel naar boven als naar de zijkant die Uitstulpsel hebben
+	Free: Pattern=hebben, Pattern=die, Pattern=de
+	Constrained: 
+Turn ID=21| A | A : die afgeron uitstulpsel
+	Free: Pattern=die
+	Constrained: 
+Turn ID=22| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : en rechts dat uitgesteekt blok
+	Free: Pattern=en, Pattern=dat, Pattern=blok
+	Constrained: 
+Turn ID=24| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=25| B | B : Yes
+	Free: 
+	Constrained: 
+Turn ID=26| B | B : dit zijn weer de de raar met de twee uitsteeksel die exact hetzelfde zijn
+	Free: Pattern=die, Pattern=zijn, Pattern=weer, Pattern=dit zijn, Pattern=de, Pattern=met de
+	Constrained: Pattern=zijn, Pattern=met, Pattern=de
+Turn ID=27| B | B : en het groot stuk aan de rechterkant
+	Free: Pattern=aan de, Pattern=het, Pattern=en
+	Constrained: Pattern=de
+Turn ID=28| B | B : het blok
+	Free: Pattern=het, Pattern=blok
+	Constrained: 
+Turn ID=29| B | B : dus één met een ja hoe noemen je dat
+	Free: Pattern=dat, Pattern=ja, Pattern=een, Pattern=met, Pattern=je, Pattern=noemen
+	Constrained: 
+Turn ID=30| B | B : een smal hoofd dus bovenop de mok
+	Free: Pattern=de, Pattern=mok, Pattern=een
+	Constrained: 
+Turn ID=31| B | B : en dan precies ook daarvoor aan de linkerkant ervan
+	Free: Pattern=aan de, Pattern=en dan, Pattern=ook
+	Constrained: Pattern=en, Pattern=de
+Turn ID=32| B | B : hetzelfde figuur
+	Free: 
+	Constrained: 
+Turn ID=33| B | B : hoe hebben jij die toen omschrijven
+	Free: Pattern=hebben, Pattern=die
+	Constrained: 
+Turn ID=34| A | A : bedoelen je die die een met de
+	Free: Pattern=met de, Pattern=je, Pattern=die, Pattern=een
+	Constrained: Pattern=met, Pattern=de
+Turn ID=35| A | A : ja de bovenkant en de zijkant link
+	Free: Pattern=de bovenkant, Pattern=en, Pattern=de, Pattern=ja
+	Constrained: Pattern=de
+Turn ID=36| B | B : precies en dan exact ook
+	Free: Pattern=en dan, Pattern=ook
+	Constrained: Pattern=en
+Turn ID=37| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=38| B | B : ja ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : ja ik hebben hem
+	Free: Pattern=hebben, Pattern=ja
+	Constrained: 
+Turn ID=40| A | A : dit zijn zeggen maar de wc borstel
+	Free: Pattern=dit zijn, Pattern=de, Pattern=zeggen, Pattern=maar
+	Constrained: Pattern=zijn
+Turn ID=41| A | A : die zowel er boven uit steekt als aan de zijkant
+	Free: Pattern=aan de, Pattern=die
+	Constrained: Pattern=de
+Turn ID=42| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=43| B | B : de wc-borstel
+	Free: Pattern=de wc-borstel
+	Constrained: Pattern=de, Pattern=wc-borstel
+Turn ID=44| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=45| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=dat, Pattern=zijn

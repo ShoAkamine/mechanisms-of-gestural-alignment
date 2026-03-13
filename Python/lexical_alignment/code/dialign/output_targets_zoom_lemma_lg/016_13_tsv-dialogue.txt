@@ -1,0 +1,103 @@
+B|0| B: _deze zijn_ hebben zo'n spiral doorheen lopen _met_ zes van _die_ bollet 
+B|1| B: drie _aan de_ linkerkant drie _aan de_ rechterkant 
+A|2| A: _ja_ 
+B|3| B: _en_ dan _zijn_ er nog zo'n _rond_ voorin 
+A|4| A: [en] hij liggen wat vlak _eronder_ 
+B|5| B: J-ja 
+A|6| A: _ja_ dat [zijn] 
+A|7| A: [deze zijn] degeen [met] het _vierkant_ vlak _aan de onderkant_ 
+A|8| A: [en] het [rond] ervoor op 
+B|9| B: Oké nummer 
+B|10| B: _dit zijn_ _die_ [met] _die_ [vierkant] _plaat aan de onderkant_ 
+A|11| A: _ja_ dat [zijn] 
+A|12| A: [dit zijn] degeen [met] het [vierkant] vlak _eronder_ 
+A|13| A: [en] [de] bolle [die] eruit komen [aan de] zijkant 
+B|14| B: [ja] 
+B|15| B: [dit zijn] [met] [die] [vierkant] _plaat_ [eronder] 
+B|16| B: [met] [die] zes bollet 
+A|17| A: [ja] dat [zijn] 
+B|18| B: [ja] [dit zijn] [de] laat ronde 
+A|19| A: [en] [dit zijn] degeen 
+A|20| A: echt 
+A|21| A: Oh nice 
+B|22| B: [ja] volgens mij wel 
+A|23| A: [dit zijn] degeen [met] het [plaat aan de onderkant] 
+B|24| B: Oké nummer 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : deze zijn hebben zo'n spiral doorheen lopen met zes van die bollet
+	Free: Pattern=deze zijn, Pattern=die, Pattern=met
+	Constrained: Pattern=zijn
+Turn ID=1| B | B : drie aan de linkerkant drie aan de rechterkant
+	Free: Pattern=aan de
+	Constrained: Pattern=de
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : en dan zijn er nog zo'n rond voorin
+	Free: Pattern=en, Pattern=zijn, Pattern=rond
+	Constrained: 
+Turn ID=4| A | A : en hij liggen wat vlak eronder
+	Free: Pattern=en, Pattern=eronder
+	Constrained: 
+Turn ID=5| B | B : J-ja
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=7| A | A : deze zijn degeen met het vierkant vlak aan de onderkant
+	Free: Pattern=aan de onderkant, Pattern=deze zijn, Pattern=vierkant, Pattern=met
+	Constrained: Pattern=de, Pattern=zijn, Pattern=aan de
+Turn ID=8| A | A : en het rond ervoor op
+	Free: Pattern=en, Pattern=rond
+	Constrained: 
+Turn ID=9| B | B : Oké nummer
+	Free: 
+	Constrained: 
+Turn ID=10| B | B : dit zijn die met die vierkant plaat aan de onderkant
+	Free: Pattern=die, Pattern=vierkant, Pattern=dit zijn, Pattern=plaat aan de onderkant, Pattern=met
+	Constrained: Pattern=de, Pattern=aan de, Pattern=aan de onderkant, Pattern=zijn, Pattern=plaat
+Turn ID=11| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=12| A | A : dit zijn degeen met het vierkant vlak eronder
+	Free: Pattern=dit zijn, Pattern=vierkant, Pattern=met, Pattern=eronder
+	Constrained: Pattern=zijn
+Turn ID=13| A | A : en de bolle die eruit komen aan de zijkant
+	Free: Pattern=aan de, Pattern=en, Pattern=die, Pattern=de
+	Constrained: Pattern=de
+Turn ID=14| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : dit zijn met die vierkant plaat eronder
+	Free: Pattern=met, Pattern=die, Pattern=eronder, Pattern=vierkant, Pattern=dit zijn, Pattern=plaat
+	Constrained: Pattern=zijn
+Turn ID=16| B | B : met die zes bollet
+	Free: Pattern=die, Pattern=met
+	Constrained: 
+Turn ID=17| A | A : ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=18| B | B : ja dit zijn de laat ronde
+	Free: Pattern=dit zijn, Pattern=ja, Pattern=de
+	Constrained: Pattern=zijn
+Turn ID=19| A | A : en dit zijn degeen
+	Free: Pattern=dit zijn, Pattern=en
+	Constrained: Pattern=zijn
+Turn ID=20| A | A : echt
+	Free: 
+	Constrained: 
+Turn ID=21| A | A : Oh nice
+	Free: 
+	Constrained: 
+Turn ID=22| B | B : ja volgens mij wel
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=23| A | A : dit zijn degeen met het plaat aan de onderkant
+	Free: Pattern=plaat aan de onderkant, Pattern=dit zijn, Pattern=met
+	Constrained: Pattern=de, Pattern=aan de, Pattern=aan de onderkant, Pattern=zijn, Pattern=plaat
+Turn ID=24| B | B : Oké nummer
+	Free: 
+	Constrained: 

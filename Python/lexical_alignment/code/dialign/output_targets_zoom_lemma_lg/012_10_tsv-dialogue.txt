@@ -1,0 +1,167 @@
+B|0| B: _Oké_ 
+B|1| B: _ja_ deze vinden _ik_ _dat_ _het_ _een_ beetje lijken alsof _hij_ _aan de_ achterkant _van_ _het_ _kop_ _een_ soort _van_ klepje of _een_ s-s-s-schermpje zitten 
+B|2| B: _die_ _je_ 
+B|3| B: _en_ _aan de_ _twee_ zijkant _hebben hij twee_ _van die_ paal _met_ _een_ _bolle_ erop 
+A|4| A: [Oké] 
+B|5| B: _aan_ allebei _de_ zijkant 
+A|6| A: [Oké] 
+A|7| A: _Oh_ [ik] denken [dat] [ik] _hem_ zien 
+A|8| A: ehm wachten [ik] 
+B|9| B: _ja_ jij _kunnen_ _het_ uitbeelden 
+A|10| A: [je] [kunnen] me zien hè 
+A|11| A: [ja] kloppen 
+B|12| B: [ja] 
+A|13| A: dus _dan_ [hij] [hebben] zeggen _maar_ [hij] doen dit 
+A|14| A: [en] _dan_ [hebben hij twee] bolal [aan de] [aan de] ander [aan] beide zijd zeggen _maar_ 
+B|15| B: [ja] [maar] [dan] niet _die_ _een_ _die_ _op_ _zo'n_ vierkant _plateau_ staan [maar] echt _zonder plateau_ 
+A|16| A: [ja] [zonder plateau] [en] [dan] nog [zo'n] plaat _daarachter_ 
+B|17| B: [ja] [dat] _zijn_ [hem] 
+A|18| A: [Oké] 
+A|19| A: _ik hebben_ hier [een] [kop] [met] _twee arm_ [en] _bollet_ [aan] [aan] [het] einde [van die] _arm_ 
+B|20| B: _zijn_ [dat] [met] [dat] scherm [daarachter] 
+A|21| A: [ja] 
+B|22| B: _Oh ja_ 
+B|23| B: [dat] _zijn_ 
+B|24| B: [ik hebben] nu [die] [twee arm] [met] [bollet] [en] [die] sch-dat scherm [aan de] achterkant 
+A|25| A: [Oh] 
+A|26| A: _ik hebben die_ pa [met] [die] [bolle] [op] [op] [die] [arm] 
+B|27| B: _Oh ja_ [en] [dat] scherm er achter 
+A|28| A: [ja] 
+B|29| B: Yes [dat] _zijn_ 
+A|30| A: [ja] 
+B|31| B: [ik hebben die] weer [die] [twee arm] [met] ballet [met] [dat] scherm erachter 
+A|32| A: [Oh ja] 
+A|33| A: [ik hebben] [de] mok [met] [twee arm] [en] [de] bal eraan 
+B|34| B: [Oh ja] [dat] _zijn_ 
+A|35| A: Surf 
+B|36| B: zullen we [dat] anders zonnepaneel 
+A|37| A: [ja] [op] zich 
+A|38| A: [ja] [zijn] goed 
+A|39| A: Zonnepaneel 
+B|40| B: [Oké] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=1| B | B : ja deze vinden ik dat het een beetje lijken alsof hij aan de achterkant van het kop een soort van klepje of een s-s-s-schermpje zitten
+	Free: Pattern=dat, Pattern=ja, Pattern=aan de, Pattern=een, Pattern=het, Pattern=ik, Pattern=van, Pattern=kop, Pattern=hij
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=2| B | B : die je
+	Free: Pattern=die, Pattern=je
+	Constrained: 
+Turn ID=3| B | B : en aan de twee zijkant hebben hij twee van die paal met een bolle erop
+	Free: Pattern=twee, Pattern=aan de, Pattern=een, Pattern=hebben hij twee, Pattern=bolle, Pattern=met, Pattern=van die, Pattern=en
+	Constrained: Pattern=twee, Pattern=hebben, Pattern=hij, Pattern=die, Pattern=van, Pattern=de, Pattern=aan
+Turn ID=4| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=5| B | B : aan allebei de zijkant
+	Free: Pattern=de, Pattern=aan
+	Constrained: 
+Turn ID=6| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=7| A | A : Oh ik denken dat ik hem zien
+	Free: Pattern=dat, Pattern=ik, Pattern=hem, Pattern=Oh
+	Constrained: 
+Turn ID=8| A | A : ehm wachten ik
+	Free: Pattern=ik
+	Constrained: 
+Turn ID=9| B | B : ja jij kunnen het uitbeelden
+	Free: Pattern=ja, Pattern=het, Pattern=kunnen
+	Constrained: 
+Turn ID=10| A | A : je kunnen me zien hè
+	Free: Pattern=je, Pattern=kunnen
+	Constrained: 
+Turn ID=11| A | A : ja kloppen
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=12| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=13| A | A : dus dan hij hebben zeggen maar hij doen dit
+	Free: Pattern=dan, Pattern=hebben, Pattern=hij, Pattern=maar
+	Constrained: 
+Turn ID=14| A | A : en dan hebben hij twee bolal aan de aan de ander aan beide zijd zeggen maar
+	Free: Pattern=aan, Pattern=aan de, Pattern=dan, Pattern=hebben hij twee, Pattern=en, Pattern=maar
+	Constrained: Pattern=twee, Pattern=hebben, Pattern=hij, Pattern=de, Pattern=aan
+Turn ID=15| B | B : ja maar dan niet die een die op zo'n vierkant plateau staan maar echt zonder plateau
+	Free: Pattern=zonder plateau, Pattern=zo'n, Pattern=ja, Pattern=op, Pattern=dan, Pattern=een, Pattern=plateau, Pattern=die, Pattern=maar
+	Constrained: Pattern=plateau
+Turn ID=16| A | A : ja zonder plateau en dan nog zo'n plaat daarachter
+	Free: Pattern=daarachter, Pattern=zonder plateau, Pattern=zo'n, Pattern=ja, Pattern=dan, Pattern=en
+	Constrained: Pattern=plateau
+Turn ID=17| B | B : ja dat zijn hem
+	Free: Pattern=dat, Pattern=zijn, Pattern=ja, Pattern=hem
+	Constrained: 
+Turn ID=18| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=19| A | A : ik hebben hier een kop met twee arm en bollet aan aan het einde van die arm
+	Free: Pattern=ik hebben, Pattern=bollet, Pattern=aan, Pattern=een, Pattern=het, Pattern=kop, Pattern=twee arm, Pattern=met, Pattern=arm, Pattern=van die, Pattern=en
+	Constrained: Pattern=twee, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=arm, Pattern=van
+Turn ID=20| B | B : zijn dat met dat scherm daarachter
+	Free: Pattern=dat, Pattern=zijn, Pattern=daarachter, Pattern=met
+	Constrained: 
+Turn ID=21| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=22| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=23| B | B : dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=24| B | B : ik hebben nu die twee arm met bollet en die sch-dat scherm aan de achterkant
+	Free: Pattern=ik hebben, Pattern=bollet, Pattern=aan de, Pattern=twee arm, Pattern=met, Pattern=die, Pattern=en
+	Constrained: Pattern=twee, Pattern=hebben, Pattern=ik, Pattern=arm, Pattern=de, Pattern=aan
+Turn ID=25| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=26| A | A : ik hebben die pa met die bolle op op die arm
+	Free: Pattern=op, Pattern=die, Pattern=ik hebben die, Pattern=arm, Pattern=bolle, Pattern=met
+	Constrained: Pattern=die, Pattern=ik hebben, Pattern=ik, Pattern=hebben
+Turn ID=27| B | B : Oh ja en dat scherm er achter
+	Free: Pattern=Oh ja, Pattern=en, Pattern=dat
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=28| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : Yes dat zijn
+	Free: Pattern=dat, Pattern=zijn
+	Constrained: 
+Turn ID=30| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=31| B | B : ik hebben die weer die twee arm met ballet met dat scherm erachter
+	Free: Pattern=dat, Pattern=twee arm, Pattern=met, Pattern=die, Pattern=ik hebben die
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=hebben, Pattern=die, Pattern=ik, Pattern=arm
+Turn ID=32| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=33| A | A : ik hebben de mok met twee arm en de bal eraan
+	Free: Pattern=ik hebben, Pattern=de, Pattern=twee arm, Pattern=met, Pattern=en
+	Constrained: Pattern=hebben, Pattern=arm, Pattern=twee, Pattern=ik
+Turn ID=34| B | B : Oh ja dat zijn
+	Free: Pattern=Oh ja, Pattern=dat, Pattern=zijn
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=35| A | A : Surf
+	Free: 
+	Constrained: 
+Turn ID=36| B | B : zullen we dat anders zonnepaneel
+	Free: Pattern=dat
+	Constrained: 
+Turn ID=37| A | A : ja op zich
+	Free: Pattern=ja, Pattern=op
+	Constrained: 
+Turn ID=38| A | A : ja zijn goed
+	Free: Pattern=zijn, Pattern=ja
+	Constrained: 
+Turn ID=39| A | A : Zonnepaneel
+	Free: 
+	Constrained: 
+Turn ID=40| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 

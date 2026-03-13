@@ -1,0 +1,59 @@
+B|0| B: eh deze hebben allemaal kralen _en_ _een_ rij 
+B|1| B: net als in _een_ zwembad 
+B|2| B: _met_ _voorop_ _een_ _een_ _een_ _rond_ schotel 
+A|3| A: na [en] hij staan op [een] plaat 
+B|4| B: ja kloppen 
+A|5| A: dat zijn 
+A|6| A: dit zijn die op _de_ plaat [met] die kralenarmpjes 
+B|7| B: ja 
+A|8| A: [met] dat [rond] [voorop] 
+B|9| B: eh [de] zwembadkralen 
+A|10| A: dit zijn die [met] die kralenketting 
+B|11| B: [de] kralen 
+A|12| A: dat zijn 
+A|13| A: [de] kralenketting 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : eh deze hebben allemaal kralen en een rij
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=1| B | B : net als in een zwembad
+	Free: Pattern=een
+	Constrained: 
+Turn ID=2| B | B : met voorop een een een rond schotel
+	Free: Pattern=met, Pattern=voorop, Pattern=een, Pattern=rond
+	Constrained: 
+Turn ID=3| A | A : na en hij staan op een plaat
+	Free: Pattern=en, Pattern=een
+	Constrained: 
+Turn ID=4| B | B : ja kloppen
+	Free: 
+	Constrained: 
+Turn ID=5| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=6| A | A : dit zijn die op de plaat met die kralenarmpjes
+	Free: Pattern=de, Pattern=met
+	Constrained: 
+Turn ID=7| B | B : ja
+	Free: 
+	Constrained: 
+Turn ID=8| A | A : met dat rond voorop
+	Free: Pattern=met, Pattern=voorop, Pattern=rond
+	Constrained: 
+Turn ID=9| B | B : eh de zwembadkralen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=10| A | A : dit zijn die met die kralenketting
+	Free: Pattern=met
+	Constrained: 
+Turn ID=11| B | B : de kralen
+	Free: Pattern=de
+	Constrained: 
+Turn ID=12| A | A : dat zijn
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : de kralenketting
+	Free: Pattern=de
+	Constrained: 

@@ -1,0 +1,91 @@
+A|0| A: heel simpel 
+A|1| A: die staat _lijken_ te staan _op een plateau_ _het_ kop 
+B|2| B: _de_ enig _ja_ 
+A|3| A: [ja] onderaan 
+B|4| B: Oké 
+B|5| B: _object_ 
+B|6| B: deze _zijn_ _de_ enig [op een plateau] 
+B|7| B: met [ja] [een] soort _fontein_ [lijken] [het] [ja] 
+A|8| A: [ja] 
+A|9| A: [ja] 
+A|10| A: [object] 
+A|11| A: _de mat_ 
+A|12| A: _en_ _de fontein_ 
+B|13| B: nummer 
+B|14| B: [de fontein] 
+B|15| B: [en] [het] [plateau] 
+A|16| A: [ja] 
+A|17| A: dat [zijn] [object] 
+A|18| A: [de fontein] [en] _de mat_ 
+B|19| B: nummer 
+B|20| B: [de fontein] [op] [de mat] 
+A|21| A: [ja] [object] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : heel simpel
+	Free: 
+	Constrained: 
+Turn ID=1| A | A : die staat lijken te staan op een plateau het kop
+	Free: Pattern=op een plateau, Pattern=het, Pattern=lijken
+	Constrained: Pattern=op, Pattern=plateau, Pattern=een
+Turn ID=2| B | B : de enig ja
+	Free: Pattern=ja, Pattern=de
+	Constrained: 
+Turn ID=3| A | A : ja onderaan
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=5| B | B : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=6| B | B : deze zijn de enig op een plateau
+	Free: Pattern=op een plateau, Pattern=de, Pattern=zijn
+	Constrained: Pattern=op, Pattern=plateau, Pattern=een
+Turn ID=7| B | B : met ja een soort fontein lijken het ja
+	Free: Pattern=ja, Pattern=lijken, Pattern=een, Pattern=het, Pattern=fontein
+	Constrained: 
+Turn ID=8| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=10| A | A : object
+	Free: Pattern=object
+	Constrained: 
+Turn ID=11| A | A : de mat
+	Free: Pattern=de mat
+	Constrained: Pattern=de
+Turn ID=12| A | A : en de fontein
+	Free: Pattern=de fontein, Pattern=en
+	Constrained: Pattern=de, Pattern=fontein
+Turn ID=13| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=14| B | B : de fontein
+	Free: Pattern=de fontein
+	Constrained: Pattern=de, Pattern=fontein
+Turn ID=15| B | B : en het plateau
+	Free: Pattern=en, Pattern=plateau, Pattern=het
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| A | A : dat zijn object
+	Free: Pattern=object, Pattern=zijn
+	Constrained: 
+Turn ID=18| A | A : de fontein en de mat
+	Free: Pattern=de mat, Pattern=de fontein, Pattern=en
+	Constrained: Pattern=de, Pattern=fontein
+Turn ID=19| B | B : nummer
+	Free: 
+	Constrained: 
+Turn ID=20| B | B : de fontein op de mat
+	Free: Pattern=de mat, Pattern=de fontein, Pattern=op
+	Constrained: Pattern=de, Pattern=fontein
+Turn ID=21| A | A : ja object
+	Free: Pattern=object, Pattern=ja
+	Constrained: 

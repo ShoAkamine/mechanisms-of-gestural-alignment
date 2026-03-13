@@ -1,0 +1,79 @@
+A|0| A: _eh_ _ja_ deze vinden _ik_ _een_ beetje lijken _op_ iets _met_ twee _vlecht_ 
+A|1| A: _en_ dan _een_ plat vierkant _en_ of sorry _een_ plat cirkel aan _de_ voorkant 
+B|2| B: Oh 
+B|3| B: [ja] 
+A|4| A: _en_ aan aan _de_ onderkant gewoon _een_ plat slaan vierkant 
+B|5| B: [ja] [ja] [ik] zien hem 
+B|6| B: _dat zijn_ 
+A|7| A: _die_ [zijn] het veel duidelijk denken [ik] 
+B|8| B: [ja] 
+B|9| B: _eh dit zijn die met die_ [vlecht] [die] [op] [een] _plateau_ staan 
+A|10| A: [dat zijn] 
+A|11| A: [eh dit zijn die met die] twee [vlecht] [op] [dat] [plateau] 
+B|12| B: Oké 
+B|13| B: _met de vlecht_ 
+B|14| B: [en] [die] [op] [een] [plateau] staan 
+A|15| A: Eh 
+A|16| A: [dit zijn die [met] de vlecht] 
+A|17| A: [en] [op] [plateau] 
+B|18| B: [eh] [de vlecht] 
+
+
+TURN DETAILS:
+Turn ID=0| A | A : eh ja deze vinden ik een beetje lijken op iets met twee vlecht
+	Free: Pattern=ja, Pattern=op, Pattern=een, Pattern=vlecht, Pattern=met, Pattern=eh, Pattern=ik
+	Constrained: 
+Turn ID=1| A | A : en dan een plat vierkant en of sorry een plat cirkel aan de voorkant
+	Free: Pattern=een, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=2| B | B : Oh
+	Free: 
+	Constrained: 
+Turn ID=3| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=4| A | A : en aan aan de onderkant gewoon een plat slaan vierkant
+	Free: Pattern=een, Pattern=en, Pattern=de
+	Constrained: 
+Turn ID=5| B | B : ja ja ik zien hem
+	Free: Pattern=ik, Pattern=ja
+	Constrained: 
+Turn ID=6| B | B : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=7| A | A : die zijn het veel duidelijk denken ik
+	Free: Pattern=ik, Pattern=zijn, Pattern=die
+	Constrained: 
+Turn ID=8| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=9| B | B : eh dit zijn die met die vlecht die op een plateau staan
+	Free: Pattern=op, Pattern=een, Pattern=eh dit zijn die met die, Pattern=vlecht, Pattern=plateau, Pattern=die
+	Constrained: Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=10| A | A : dat zijn
+	Free: Pattern=dat zijn
+	Constrained: Pattern=zijn, Pattern=dat
+Turn ID=11| A | A : eh dit zijn die met die twee vlecht op dat plateau
+	Free: Pattern=dat, Pattern=op, Pattern=eh dit zijn die met die, Pattern=vlecht, Pattern=plateau
+	Constrained: Pattern=dit zijn die met, Pattern=met, Pattern=die, Pattern=eh, Pattern=zijn
+Turn ID=12| B | B : Oké
+	Free: 
+	Constrained: 
+Turn ID=13| B | B : met de vlecht
+	Free: Pattern=met de vlecht
+	Constrained: Pattern=de vlecht, Pattern=vlecht, Pattern=met, Pattern=de
+Turn ID=14| B | B : en die op een plateau staan
+	Free: Pattern=op, Pattern=een, Pattern=plateau, Pattern=die, Pattern=en
+	Constrained: 
+Turn ID=15| A | A : Eh
+	Free: 
+	Constrained: 
+Turn ID=16| A | A : dit zijn die met de vlecht
+	Free: Pattern=dit zijn die met, Pattern=met de vlecht
+	Constrained: Pattern=de, Pattern=de vlecht, Pattern=vlecht, Pattern=met, Pattern=die, Pattern=zijn
+Turn ID=17| A | A : en op plateau
+	Free: Pattern=op, Pattern=en, Pattern=plateau
+	Constrained: 
+Turn ID=18| B | B : eh de vlecht
+	Free: Pattern=de vlecht, Pattern=eh
+	Constrained: Pattern=vlecht, Pattern=de

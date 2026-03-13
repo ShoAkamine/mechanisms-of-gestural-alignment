@@ -1,0 +1,155 @@
+B|0| B: Ok _ik hebben een_ _kop_ _en_ _die_ _hebben _een_ soort_ _rond neus_ 
+A|1| A: _ja_ 
+A|2| A: _ja_ 
+B|3| B: gewoon erop 
+B|4| B: _en dan_ nog twee ding bovenaan 
+B|5| B: _en_ de _een_ zijn recht _en_ de ander zijn _een_ beetje _een_ bijzonder vormpje 
+B|6| B: _en dan_ nog n uitsteeksel naar links 
+A|7| A: _ja_ 
+A|8| A: [ik] weten het _ja_ 
+B|9| B: nou top 
+A|10| A: Oké _ik hebben nu [een_ soort] verfkwast [en] _een stuk_ hout _of_ zo in het [kop] 
+A|11| A: _met een_ [rond neus] er op 
+B|12| B: _Oh ja_ _en dan_ nog [een stuk] naar links 
+A|13| A: [en] _één_ 
+A|14| A: [ja] 
+B|15| B: [ja] 
+A|16| A: [ja] 
+B|17| B: [ik hebben nu een] [kop] [met] weer zo'n [rond neus] 
+B|18| B: _en dan_ twee dinget bovenuit steken 
+B|19| B: [en] nog [één] opzij 
+A|20| A: _ja ja_ 
+A|21| A: [ik hebben] [neus] 
+A|22| A: voorop zeggen maar 
+A|23| A: [en dan] [een] kwas [en] _of_ nee [een] kwastje [en] [een stuk] hout _of_ [en] [een] arm 
+B|24| B: Eh [en] de [neus] zijn [rond] [of] niet 
+A|25| A: [ja] 
+B|26| B: Wacht even kijken horen 
+A|27| A: [die] groot [rond neus] [die] hier voorop zitten [ja] 
+B|28| B: _Oh _ja_ _ja ja_ ja_ 
+B|29| B: [ja] 
+B|30| B: eh [ik hebben] [die] [een] [met een] [neus] dat [rond] 
+B|31| B: [en dan] dus n _kwast_ _erin_ [en] n balk _erin_ 
+A|32| A: [Oh ja] wachten [ja ja ja] 
+B|33| B: [en] nog [één] 
+A|34| A: [ja ja] 
+A|35| A: [ik hebben een] [rond] voorop 
+A|36| A: [en] [een soort] [kwast] [met een] hou [erin] 
+B|37| B: [ja] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : Ok ik hebben een kop en die hebben een soort rond neus
+	Free: Pattern=hebben een, Pattern=rond neus, Pattern=kop, Pattern=ik hebben een, Pattern=die, Pattern=een soort, Pattern=en
+	Constrained: Pattern=ik hebben, Pattern=hebben een, Pattern=een, Pattern=neus, Pattern=ik, Pattern=rond
+Turn ID=1| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=2| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=3| B | B : gewoon erop
+	Free: 
+	Constrained: 
+Turn ID=4| B | B : en dan nog twee ding bovenaan
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=5| B | B : en de een zijn recht en de ander zijn een beetje een bijzonder vormpje
+	Free: Pattern=een, Pattern=en
+	Constrained: 
+Turn ID=6| B | B : en dan nog n uitsteeksel naar links
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=7| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=8| A | A : ik weten het ja
+	Free: Pattern=ja, Pattern=ik
+	Constrained: 
+Turn ID=9| B | B : nou top
+	Free: 
+	Constrained: 
+Turn ID=10| A | A : Oké ik hebben nu een soort verfkwast en een stuk hout of zo in het kop
+	Free: Pattern=of, Pattern=ik hebben nu een, Pattern=een stuk, Pattern=kop, Pattern=een soort, Pattern=en
+	Constrained: Pattern=een, Pattern=ik hebben, Pattern=ik
+Turn ID=11| A | A : met een rond neus er op
+	Free: Pattern=met een, Pattern=rond neus
+	Constrained: Pattern=een, Pattern=met, Pattern=neus, Pattern=rond
+Turn ID=12| B | B : Oh ja en dan nog een stuk naar links
+	Free: Pattern=en dan, Pattern=een stuk, Pattern=Oh ja
+	Constrained: Pattern=een, Pattern=en, Pattern=ja
+Turn ID=13| A | A : en één
+	Free: Pattern=één, Pattern=en
+	Constrained: 
+Turn ID=14| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=15| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=16| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=17| B | B : ik hebben nu een kop met weer zo'n rond neus
+	Free: Pattern=ik hebben nu een, Pattern=rond neus, Pattern=met, Pattern=kop
+	Constrained: Pattern=ik hebben, Pattern=een, Pattern=neus, Pattern=ik, Pattern=rond
+Turn ID=18| B | B : en dan twee dinget bovenuit steken
+	Free: Pattern=en dan
+	Constrained: Pattern=en
+Turn ID=19| B | B : en nog één opzij
+	Free: Pattern=één, Pattern=en
+	Constrained: 
+Turn ID=20| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=21| A | A : ik hebben neus
+	Free: Pattern=ik hebben, Pattern=neus
+	Constrained: Pattern=ik
+Turn ID=22| A | A : voorop zeggen maar
+	Free: 
+	Constrained: 
+Turn ID=23| A | A : en dan een kwas en of nee een kwastje en een stuk hout of en een arm
+	Free: Pattern=of, Pattern=en dan, Pattern=een, Pattern=een stuk, Pattern=en
+	Constrained: Pattern=een, Pattern=en
+Turn ID=24| B | B : Eh en de neus zijn rond of niet
+	Free: Pattern=en, Pattern=of, Pattern=neus, Pattern=rond
+	Constrained: 
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| B | B : Wacht even kijken horen
+	Free: 
+	Constrained: 
+Turn ID=27| A | A : die groot rond neus die hier voorop zitten ja
+	Free: Pattern=rond neus, Pattern=ja, Pattern=die
+	Constrained: Pattern=neus, Pattern=rond
+Turn ID=28| B | B : Oh ja ja ja ja
+	Free: Pattern=ja ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=29| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=30| B | B : eh ik hebben die een met een neus dat rond
+	Free: Pattern=ik hebben, Pattern=een, Pattern=neus, Pattern=die, Pattern=met een, Pattern=rond
+	Constrained: Pattern=een, Pattern=met, Pattern=ik
+Turn ID=31| B | B : en dan dus n kwast erin en n balk erin
+	Free: Pattern=en dan, Pattern=kwast, Pattern=erin, Pattern=en
+	Constrained: Pattern=en
+Turn ID=32| A | A : Oh ja wachten ja ja ja
+	Free: Pattern=ja ja ja, Pattern=Oh ja
+	Constrained: Pattern=ja ja, Pattern=ja
+Turn ID=33| B | B : en nog één
+	Free: Pattern=één, Pattern=en
+	Constrained: 
+Turn ID=34| A | A : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=35| A | A : ik hebben een rond voorop
+	Free: Pattern=ik hebben een, Pattern=rond
+	Constrained: Pattern=een, Pattern=hebben een, Pattern=ik hebben, Pattern=ik
+Turn ID=36| A | A : en een soort kwast met een hou erin
+	Free: Pattern=kwast, Pattern=met een, Pattern=een soort, Pattern=en, Pattern=erin
+	Constrained: Pattern=een, Pattern=met
+Turn ID=37| B | B : ja
+	Free: Pattern=ja
+	Constrained: 

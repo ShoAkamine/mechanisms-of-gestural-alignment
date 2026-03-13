@@ -1,0 +1,111 @@
+B|0| B: _ehm_ mijne nu _hebben_ _een_ heel groot _vierkant_ 
+B|1| B: _Ehm_ 
+B|2| B: _een_ beetje _waar _het_ gezicht _zullen_ moeten zitten_ 
+B|3| B: dus _aan de_ rechterkant _en_ dan vooruitwijzen 
+B|4| B: _en_ dan _hebben_ hij _een soort_ _van_ antenne _op_ zijn _hoofd_ _zitten_ 
+B|5| B: _met_ _een_ zeggen maar _een soort_ _van_ balk _met_ _een plat_ cirkel 
+A|6| A: _ja_ 
+B|7| B: _en_ _aan de linkerkant_ _zitten_ _twee_ dezelfde object dus _een_ beetje _een kubus op_ _een kubus op_ _een kubus_ 
+A|8| A: _ja ja_ _ik_ weten [het] 
+A|9| A: [ehm] er [zitten] [een soort] platgedrukt [vierkant] [op] [de] plek _waar je het gezicht zullen_ _waar je het gezicht zullen verwachten_ 
+A|10| A: [ehm] er komen boven [een soort] cilindervormig ding uit [met] daarop nog [een plat] drukken stomp 
+A|11| A: [en] links [van] [het] hoofdlichaam komen [twee] 
+A|12| A: _ja_ zoeken [een kubus op] [kubus] [kubus] uit 
+B|13| B: [ja] 
+B|14| B: [ja ja] 
+B|15| B: zijn [het] 
+B|16| B: _ik hebben die_ _die_ _aan_ [waar je het gezicht zullen verwachten] zeggen maar zo'n heel _plat vierkant_ _hebben_ 
+B|17| B: [en] dan zo'n [soort] [van] veer [met] [een plat] cirkel bovenop _aan de_ bovenkant 
+A|18| A: [ja] 
+B|19| B: [en] dan _die twee kubus_ kubussen _kubus aan de_ zijkant 
+A|20| A: [ja] 
+A|21| A: [Ehm] 
+A|22| A: [ik hebben _die] met dat_ [plat vierkant] [op] [de] plek [waar je het gezicht zullen verwachten] 
+B|23| B: [ja] 
+B|24| B: [ik hebben] nu [die met dat] _vierkant waar [het_ gezicht _zullen] moeten_ zijn [en] _die twee_ keer [kubus] Kubus _kubus aan de linkerkant_ 
+A|25| A: [ja] 
+A|26| A: [Ehm] [ik hebben die] [vierkant waar het] [hoofd] [zullen moeten zitten] [met] [die twee kubus] [kubus] [kubus aan de linkerkant] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm mijne nu hebben een heel groot vierkant
+	Free: Pattern=vierkant, Pattern=een, Pattern=ehm, Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=2| B | B : een beetje waar het gezicht zullen moeten zitten
+	Free: Pattern=het gezicht zullen, Pattern=zullen moeten zitten, Pattern=waar het, Pattern=een
+	Constrained: Pattern=zitten, Pattern=het, Pattern=zullen moeten
+Turn ID=3| B | B : dus aan de rechterkant en dan vooruitwijzen
+	Free: Pattern=aan de, Pattern=en
+	Constrained: Pattern=de, Pattern=aan
+Turn ID=4| B | B : en dan hebben hij een soort van antenne op zijn hoofd zitten
+	Free: Pattern=op, Pattern=hebben, Pattern=zitten, Pattern=een soort, Pattern=hoofd, Pattern=van, Pattern=en
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=5| B | B : met een zeggen maar een soort van balk met een plat cirkel
+	Free: Pattern=een plat, Pattern=een, Pattern=met, Pattern=een soort, Pattern=van
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=6| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=7| B | B : en aan de linkerkant zitten twee dezelfde object dus een beetje een kubus op een kubus op een kubus
+	Free: Pattern=twee, Pattern=een kubus op, Pattern=zitten, Pattern=en, Pattern=aan de linkerkant, Pattern=een, Pattern=een kubus
+	Constrained: Pattern=kubus, Pattern=de, Pattern=aan, Pattern=op, Pattern=aan de, Pattern=een, Pattern=een kubus
+Turn ID=8| A | A : ja ja ik weten het
+	Free: Pattern=ja ja, Pattern=ik, Pattern=het
+	Constrained: Pattern=ja
+Turn ID=9| A | A : ehm er zitten een soort platgedrukt vierkant op de plek waar je het gezicht zullen waar je het gezicht zullen verwachten
+	Free: Pattern=de, Pattern=op, Pattern=ehm, Pattern=zitten, Pattern=vierkant, Pattern=waar je het gezicht zullen verwachten, Pattern=waar je het gezicht zullen, Pattern=een soort
+	Constrained: Pattern=soort, Pattern=een, Pattern=het, Pattern=het gezicht zullen, Pattern=waar je het gezicht zullen
+Turn ID=10| A | A : ehm er komen boven een soort cilindervormig ding uit met daarop nog een plat drukken stomp
+	Free: Pattern=een plat, Pattern=een soort, Pattern=ehm, Pattern=met
+	Constrained: Pattern=een, Pattern=soort
+Turn ID=11| A | A : en links van het hoofdlichaam komen twee
+	Free: Pattern=en, Pattern=twee, Pattern=het, Pattern=van
+	Constrained: 
+Turn ID=12| A | A : ja zoeken een kubus op kubus kubus uit
+	Free: Pattern=een kubus op, Pattern=ja, Pattern=kubus
+	Constrained: Pattern=een, Pattern=kubus, Pattern=een kubus, Pattern=op
+Turn ID=13| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=14| B | B : ja ja
+	Free: Pattern=ja ja
+	Constrained: Pattern=ja
+Turn ID=15| B | B : zijn het
+	Free: Pattern=het
+	Constrained: 
+Turn ID=16| B | B : ik hebben die die aan waar je het gezicht zullen verwachten zeggen maar zo'n heel plat vierkant hebben
+	Free: Pattern=plat vierkant, Pattern=aan, Pattern=hebben, Pattern=die, Pattern=ik hebben die, Pattern=waar je het gezicht zullen verwachten
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=het gezicht zullen, Pattern=die, Pattern=vierkant, Pattern=waar je het gezicht zullen, Pattern=ik
+Turn ID=17| B | B : en dan zo'n soort van veer met een plat cirkel bovenop aan de bovenkant
+	Free: Pattern=soort, Pattern=met, Pattern=aan de, Pattern=een plat, Pattern=van, Pattern=en
+	Constrained: Pattern=de, Pattern=een, Pattern=aan
+Turn ID=18| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=19| B | B : en dan die twee kubus kubussen kubus aan de zijkant
+	Free: Pattern=die twee kubus, Pattern=kubus aan de, Pattern=en
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=die twee, Pattern=die, Pattern=kubus, Pattern=de, Pattern=aan
+Turn ID=20| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=21| A | A : Ehm
+	Free: Pattern=Ehm
+	Constrained: 
+Turn ID=22| A | A : ik hebben die met dat plat vierkant op de plek waar je het gezicht zullen verwachten
+	Free: Pattern=plat vierkant, Pattern=de, Pattern=op, Pattern=die met dat, Pattern=ik hebben die, Pattern=waar je het gezicht zullen verwachten
+	Constrained: Pattern=ik hebben, Pattern=het, Pattern=hebben, Pattern=die, Pattern=vierkant, Pattern=het gezicht zullen, Pattern=met, Pattern=waar je het gezicht zullen, Pattern=ik
+Turn ID=23| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=24| B | B : ik hebben nu die met dat vierkant waar het gezicht zullen moeten zijn en die twee keer kubus Kubus kubus aan de linkerkant
+	Free: Pattern=ik hebben, Pattern=zullen moeten, Pattern=die twee, Pattern=en, Pattern=vierkant waar het, Pattern=kubus, Pattern=kubus aan de linkerkant, Pattern=het gezicht zullen, Pattern=die met dat
+	Constrained: Pattern=twee, Pattern=aan de, Pattern=waar het, Pattern=het, Pattern=hebben, Pattern=met, Pattern=die, Pattern=ik, Pattern=aan de linkerkant, Pattern=kubus aan de, Pattern=de, Pattern=aan, Pattern=vierkant, Pattern=kubus
+Turn ID=25| A | A : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=26| A | A : Ehm ik hebben die vierkant waar het hoofd zullen moeten zitten met die twee kubus kubus kubus aan de linkerkant
+	Free: Pattern=Ehm, Pattern=met, Pattern=ik hebben die, Pattern=vierkant waar het, Pattern=kubus, Pattern=hoofd, Pattern=die twee kubus, Pattern=kubus aan de linkerkant, Pattern=zullen moeten zitten
+	Constrained: Pattern=ik hebben, Pattern=twee, Pattern=aan de, Pattern=waar het, Pattern=zullen moeten, Pattern=hebben, Pattern=ik, Pattern=aan de linkerkant, Pattern=kubus aan de, Pattern=de, Pattern=aan, Pattern=het, Pattern=die twee, Pattern=die, Pattern=zitten, Pattern=vierkant, Pattern=kubus

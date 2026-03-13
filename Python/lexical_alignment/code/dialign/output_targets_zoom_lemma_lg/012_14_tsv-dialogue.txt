@@ -1,0 +1,123 @@
+B|0| B: ehm deze _hebben_ als neus één groot balk naar beneden 
+B|1| B: _en_ _hij_ _hebben_ twee van die armp die _een_ beetje krom staan 
+A|2| A: _Oh ja_ 
+B|3| B: _en _een_ bal op zijn hoofd_ 
+A|4| A: _Oh_ oké 
+B|5| B: _Oké_ 
+A|6| A: eh _ik_ [hebben] hier [een] beker met [een bal op zijn hoofd] [en] arm alsof [hij] [een] knuffel willen geven 
+A|7| A: [en een] paal 
+B|8| B: [ja] [ja] dat [zijn] 
+A|9| A: [Oké] 
+B|10| B: [Oh] die [hebben] [ik] nu ook 
+A|11| A: [Oh] 
+A|12| A: nou 
+A|13| A: Nice 
+A|14| A: [Oké] 
+A|15| A: eh dit [zijn] de 
+A|16| A: kruffend 
+A|17| A: iets wat [een] paal knuffelt zeggen maar 
+B|18| B: [Oh] 
+A|19| A: met de [bal op zijn hoofd] 
+B|20| B: [Oh ja] 
+B|21| B: dat [zijn] 
+B|22| B: nu [hebben] [ik] die _knuffelen_ 
+A|23| A: [Oh] oké 
+A|24| A: eh [ik] [hebben] de [knuffelen] paal 
+A|25| A: de 
+A|26| A: of [ja] niet de [knuffelen] paal maar [hij] willen [een] paal [knuffelen] 
+B|27| B: [ja] 
+B|28| B: [ja] 
+B|29| B: dat [zijn] 
+
+
+TURN DETAILS:
+Turn ID=0| B | B : ehm deze hebben als neus één groot balk naar beneden
+	Free: Pattern=hebben
+	Constrained: 
+Turn ID=1| B | B : en hij hebben twee van die armp die een beetje krom staan
+	Free: Pattern=hebben, Pattern=een, Pattern=hij, Pattern=en
+	Constrained: 
+Turn ID=2| A | A : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=3| B | B : en een bal op zijn hoofd
+	Free: Pattern=een bal op zijn hoofd, Pattern=en een
+	Constrained: Pattern=zijn, Pattern=een, Pattern=en, Pattern=bal op zijn hoofd
+Turn ID=4| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=5| B | B : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=6| A | A : eh ik hebben hier een beker met een bal op zijn hoofd en arm alsof hij een knuffel willen geven
+	Free: Pattern=een, Pattern=hebben, Pattern=hij, Pattern=ik, Pattern=en, Pattern=een bal op zijn hoofd
+	Constrained: Pattern=zijn, Pattern=bal op zijn hoofd, Pattern=een
+Turn ID=7| A | A : en een paal
+	Free: Pattern=en een
+	Constrained: Pattern=een, Pattern=en
+Turn ID=8| B | B : ja ja dat zijn
+	Free: Pattern=ja, Pattern=zijn
+	Constrained: 
+Turn ID=9| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=10| B | B : Oh die hebben ik nu ook
+	Free: Pattern=hebben, Pattern=ik, Pattern=Oh
+	Constrained: 
+Turn ID=11| A | A : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=12| A | A : nou
+	Free: 
+	Constrained: 
+Turn ID=13| A | A : Nice
+	Free: 
+	Constrained: 
+Turn ID=14| A | A : Oké
+	Free: Pattern=Oké
+	Constrained: 
+Turn ID=15| A | A : eh dit zijn de
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=16| A | A : kruffend
+	Free: 
+	Constrained: 
+Turn ID=17| A | A : iets wat een paal knuffelt zeggen maar
+	Free: Pattern=een
+	Constrained: 
+Turn ID=18| B | B : Oh
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=19| A | A : met de bal op zijn hoofd
+	Free: Pattern=bal op zijn hoofd
+	Constrained: Pattern=zijn
+Turn ID=20| B | B : Oh ja
+	Free: Pattern=Oh ja
+	Constrained: Pattern=ja, Pattern=Oh
+Turn ID=21| B | B : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
+Turn ID=22| B | B : nu hebben ik die knuffelen
+	Free: Pattern=hebben, Pattern=ik, Pattern=knuffelen
+	Constrained: 
+Turn ID=23| A | A : Oh oké
+	Free: Pattern=Oh
+	Constrained: 
+Turn ID=24| A | A : eh ik hebben de knuffelen paal
+	Free: Pattern=hebben, Pattern=ik, Pattern=knuffelen
+	Constrained: 
+Turn ID=25| A | A : de
+	Free: 
+	Constrained: 
+Turn ID=26| A | A : of ja niet de knuffelen paal maar hij willen een paal knuffelen
+	Free: Pattern=een, Pattern=ja, Pattern=hij, Pattern=knuffelen
+	Constrained: 
+Turn ID=27| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=28| B | B : ja
+	Free: Pattern=ja
+	Constrained: 
+Turn ID=29| B | B : dat zijn
+	Free: Pattern=zijn
+	Constrained: 
