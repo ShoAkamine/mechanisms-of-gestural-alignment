@@ -1,6 +1,8 @@
 DTW distance
 ================
-Last updated: 2026-02-16
+Last updated: 2026-10-19
+
+# 0. Setup
 
 ``` r
 pckgs <- c("plotly", "parallelly", "tidyverse", "plotrix", "hypr", 
@@ -27,27 +29,61 @@ knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, fig.path="figures
 
 ``` r
 ########### posterior_beta ############
-posterior_beta <- function(model, round_int=TRUE){
+posterior_beta <- function(model, round_int=TRUE, same_trial=FALSE){
   ### extract the posterior draws
-  posterior_beta <- model %>% 
-    spread_draws(`b_.*`, regex = TRUE) %>%
-    mutate(ao_sym = b_conditionAO_Asym + b_conditionAsym_Sym,
-           `ao_sym:round_c` = `b_conditionAO_Asym:round_c` + `b_conditionAsym_Sym:round_c`) %>%
-    pivot_longer(cols = c("b_Intercept",
-                          "ao_sym",
-                          "b_conditionAsym_Sym",
-                          "b_conditionAO_Asym",
-                          "b_round_c",
-                          "ao_sym:round_c",
-                          "b_conditionAsym_Sym:round_c",
-                          "b_conditionAO_Asym:round_c"),
-                 names_to = ".variable",
-                 values_to = ".value") %>%
-    mutate(intercept = str_detect(.variable, "Intercept"),
-           component = ifelse(str_detect(.variable, ":"), "Round", 
-                              ifelse(str_detect(.variable, "round"), "Round", 
-                                     ifelse(str_detect(.variable, "Intercept"), "Intercept",
-                                            "Visibility"))))
+  if (round_int) {
+    posterior_beta <- model %>% 
+      spread_draws(`b_.*`, regex = TRUE) %>%
+      mutate(ao_sym = b_conditionAO_Asym + b_conditionAsym_Sym,
+             `ao_sym:round_c` = `b_conditionAO_Asym:round_c` + `b_conditionAsym_Sym:round_c`) %>%
+      pivot_longer(cols = c("b_Intercept",
+                            "ao_sym",
+                            "b_conditionAsym_Sym",
+                            "b_conditionAO_Asym",
+                            "b_round_c",
+                            "ao_sym:round_c",
+                            "b_conditionAsym_Sym:round_c",
+                            "b_conditionAO_Asym:round_c"),
+                   names_to = ".variable",
+                   values_to = ".value") %>%
+      mutate(intercept = str_detect(.variable, "Intercept"),
+             component = ifelse(str_detect(.variable, ":"), "Round", 
+                                ifelse(str_detect(.variable, "round"), "Round", 
+                                       ifelse(str_detect(.variable, "Intercept"), "Intercept",
+                                              "Visibility"))))
+  } else if (same_trial) {
+    posterior_beta <- model %>% 
+      spread_draws(`b_.*`, regex = TRUE) %>%
+      mutate(ao_sym = b_conditionAO_Asym + b_conditionAsym_Sym,
+             `ao_sym:trial` = `b_conditionAsym_Sym:same_trialTRUE` + `b_conditionAO_Asym:same_trialTRUE`) %>%
+      pivot_longer(cols = c("b_Intercept",
+                            "ao_sym",
+                            "b_conditionAsym_Sym",
+                            "b_conditionAO_Asym",
+                            "b_same_trialTRUE",
+                            "ao_sym:trial",
+                            "b_conditionAsym_Sym:same_trialTRUE",
+                            "b_conditionAO_Asym:same_trialTRUE"),
+                   names_to = ".variable",
+                   values_to = ".value") %>%
+      mutate(intercept = str_detect(.variable, "Intercept"),
+             component = ifelse(str_detect(.variable, "Intercept"), "Intercept", 
+                                ifelse(str_detect(.variable, "trial"), "Across--Within", 
+                                       "Visibility")))
+  } else {
+    posterior_beta <- model %>% 
+      spread_draws(`b_.*`, regex = TRUE) %>%
+      mutate(ao_sym = b_conditionAO_Asym + b_conditionAsym_Sym) %>%
+      pivot_longer(cols = c("b_Intercept",
+                            "ao_sym",
+                            "b_conditionAsym_Sym",
+                            "b_conditionAO_Asym"),
+                   names_to = ".variable",
+                   values_to = ".value") %>%
+      mutate(intercept = str_detect(.variable, "Intercept"),
+             component = ifelse(str_detect(.variable, "Intercept"), "Intercept", 
+                                "Visibility"))
+  }
   
   posterior_beta = posterior_beta %>% filter(component != "Intercept")
   
@@ -61,13 +97,19 @@ posterior_beta <- function(model, round_int=TRUE){
                               "b_conditionAO_Asym:round_c" = "AO--Asym:Round",
                               "b_conditionAsym_Sym:round_c" = "Asym--Sym:Round",
                               "ao_sym:round_c" = "AO--Sym:Round",
+                              "b_same_trialTRUE" = "Across--Within",
+                              "b_conditionAO_Asym:same_trialTRUE" = "AO--Asym:Across--Within",
+                              "b_conditionAsym_Sym:same_trialTRUE" = "Asym--Sym:Across--Within",
+                              "ao_sym:trial" = "AO--Sym:Across--Within",
                               ),
            .variable = factor(.variable,
                               levels = c("AO--AsymAV", "AsymAV--SymAV", "AO--SymAV",
                                          "Round", "AO--Asym:Round", 
-                                         "Asym--Sym:Round", "AO--Sym:Round")),
+                                         "Asym--Sym:Round", "AO--Sym:Round",
+                                         "Across--Within", "AO--Asym:Across--Within",
+                                         "Asym--Sym:Across--Within", "AO--Sym:Across--Within")),
            component = factor(component, 
-                              levels = c("Intercept", "Visibility", "Round")))
+                              levels = c("Intercept", "Visibility", "Round", "Across--Within")))
   return(posterior_beta)
 }
 
@@ -89,7 +131,7 @@ plot_posterior <- function(df_post_beta, interaction=FALSE, include_intercept=FA
   p_posterior = ggplot(filter(df_post_beta, component != "Intercept"),
                        aes(x = .value, y = fct_rev(.variable),
                            fill = component)) +
-    geom_vline(xintercept = 0, size = 1) +
+    geom_vline(xintercept = 0, linewidth = 1) +
     stat_halfeye(aes(slab_alpha = intercept),
                  normalize = "panels",
                  slab_alpha = 0.5,
@@ -111,10 +153,10 @@ plot_posterior <- function(df_post_beta, interaction=FALSE, include_intercept=FA
           plot.title.position = "plot",
           panel.grid.major.x = element_line(color = "grey90",
                                             linetype = "solid",
-                                            size = 0.5),
+                                            linewidth = 0.5),
           panel.grid.major.y = element_line(color = "grey90",
                                             linetype = "solid",
-                                            size = 0.5),
+                                            linewidth = 0.5),
           plot.background = element_blank(),
           plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
     facet_wrap(vars(component), ncol = ncol_wrap,
@@ -131,7 +173,7 @@ plot_posterior <- function(df_post_beta, interaction=FALSE, include_intercept=FA
 
 
 ########### pp_update_plot ############
-pp_update_plot <- function(post_sample, interaction=TRUE){
+pp_update_plot <- function(post_sample, interaction=TRUE, same_trial=FALSE){
   sum = ifelse("b_condition_sumAO_Sym" %in% colnames(post_sample), T, F)
   
   intercept = ggplot(post_sample) +
@@ -151,6 +193,12 @@ pp_update_plot <- function(post_sample, interaction=TRUE){
     geom_density(aes(b_conditionAO_Asym), fill="#FC4E07", color="black",alpha=0.6) + 
     xlab('AO--Asym') +
     theme_classic()
+  cond3 = ggplot(post_sample) +
+    geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+    geom_density(aes(b_conditionAO_Asym + b_conditionAsym_Sym), 
+                 fill="#FC4E07", color="black",alpha=0.6) + 
+    xlab('AO--Sym') +
+    theme_classic()
   
   ### Round
   if (interaction) {
@@ -169,15 +217,56 @@ pp_update_plot <- function(post_sample, interaction=TRUE){
       geom_density(aes(`b_conditionAO_Asym:round_c`), fill="#FC4E07", color="black",alpha=0.6) + 
       xlab('Centered Round: AO--Asym') +
       theme_classic()
+    cond3_round = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(`b_conditionAsym_Sym:round_c` + `b_conditionAO_Asym:round_c`), 
+                   fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Centered Round: AO--Sym') +
+      theme_classic()
+  }
+  
+  ### Across-Within trial
+  if (same_trial) {
+    trial = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(b_same_trialTRUE), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Across--Within') +
+      theme_classic()
+    cond1_trial = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(`b_conditionAsym_Sym:same_trialTRUE`), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Across--Within: Asym--Sym') +
+      theme_classic()
+    cond2_trial = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(`b_conditionAO_Asym:same_trialTRUE`), fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Across--Within: AO--Asym') +
+      theme_classic()
+    cond3_trial = ggplot(post_sample) +
+      geom_density(aes(prior_b), fill="steelblue", color="black",alpha=0.6) +
+      geom_density(aes(`b_conditionAsym_Sym:same_trialTRUE` + `b_conditionAO_Asym:same_trialTRUE`), 
+                   fill="#FC4E07", color="black",alpha=0.6) + 
+      xlab('Across--Within: AO--Sym') +
+      theme_classic()
   }
   
   ### display the plots
   if (interaction==F){
-    gridExtra::grid.arrange(intercept, cond1, cond2, ncol=2)
-  } else {
-    gridExtra::grid.arrange(intercept, cond1, cond2, round, 
-                            cond1_round, cond2_round, 
+    gridExtra::grid.arrange(intercept, 
+                            cond1, cond2, cond3, 
                             ncol=2)
+  } else if (same_trial==T){
+    gridExtra::grid.arrange(intercept, 
+                            cond1, cond2, cond3,
+                            trial,
+                            cond1_trial, cond2_trial, cond3_trial,
+                            ncol=4)
+  } else {
+    gridExtra::grid.arrange(intercept, 
+                            cond1, cond2, cond3,
+                            round, 
+                            cond1_round, cond2_round, cond3_round,
+                            ncol=4)
   }
 }
 
@@ -189,9 +278,9 @@ interactive_plot <- function(p){
 }
 ```
 
-# =====Data preparation=====
+# 1. Data preparation
 
-## Load data
+## 1.1. Load data
 
 ### df_dtw
 
@@ -208,15 +297,18 @@ df_dtw = read_csv("data/dtw_distance_mirrored.csv") %>%
          target = target_2,
          across(fct_columns, as.factor),
          round = round_2,
-         speaker = speaker_2) %>% 
+         speaker = speaker_2,
+         same_trial = as.character(trial_1) == as.character(trial_2),
+         time_diff = (begin_time_2 - end_time_1) / 1000) %>% 
   dplyr::select(pair, round, target, comparison_id, 
-                average_distance_xyz, speaker, referent:duration_2) %>% 
+                average_distance_xyz, speaker, referent:duration_2, 
+                same_trial, time_diff) %>% 
   filter(!is.na(round))
 
 head(df_dtw)
 ```
 
-    ## # A tibble: 6 × 33
+    ## # A tibble: 6 × 35
     ##   pair  round target comparison_id average_distance_xyz speaker referent
     ##   <fct> <fct>  <dbl>         <dbl>                <dbl> <fct>   <fct>   
     ## 1 1     2          9             1               0.0707 B       09B     
@@ -225,7 +317,7 @@ head(df_dtw)
     ## 4 1     1          6             4               0.142  A       06D     
     ## 5 1     2          6             5               0.386  A       06C     
     ## 6 1     3          6             6               0.211  B       06B     
-    ## # ℹ 26 more variables: speaker_1 <fct>, round_1 <fct>, trial_1 <fct>,
+    ## # ℹ 28 more variables: speaker_1 <fct>, round_1 <fct>, trial_1 <fct>,
     ## #   director_1 <chr>, target_1 <fct>, accuracy_1 <lgl>,
     ## #   A_gesture_referent_1 <chr>, B_gesture_referent_1 <chr>,
     ## #   A_gesture_referent2_1 <chr>, B_gesture_referent2_1 <chr>,
@@ -253,14 +345,16 @@ head(df_condition_info)
     ## 5    5     SymAV
     ## 6    6    AsymAV
 
-## Merge dataframes
+## 1.2. Merge dataframes
 
 ``` r
 ### merge dataframes
 df = df_dtw %>% 
   left_join(df_condition_info, by="pair") %>%
   dplyr::select(comparison_id, pair, condition, round, 
-                speaker, target, referent, average_distance_xyz) %>% 
+                speaker, target, referent, 
+                time_diff, same_trial,
+                average_distance_xyz) %>% 
   mutate(condition_sum = condition,
          round_c = as.integer(round) - mean(as.integer(round))) #centered round
 
@@ -272,9 +366,9 @@ df = df %>%
 
 <br>
 
-# =====Summarize data=====
+# 2. Summarize data
 
-## Group by pair \* speaker
+## 2.1. Group by pair \* speaker
 
 ### mean by condition
 
@@ -376,7 +470,7 @@ df_by_cond_round
 
 <br>
 
-## Speaker B only
+## 2.2. Speaker B only
 
 ``` r
 #=====condition=====
@@ -405,11 +499,45 @@ df_by_cond_round_B = df %>%
 
 <br>
 
+## 2.3. Temporal distance
+
+``` r
+### overall
+df %>% 
+  summarize(mean = mean(time_diff),
+            median = median(time_diff),
+            sd = sd(time_diff),
+            se = std.error(time_diff))
+```
+
+    ## # A tibble: 1 × 4
+    ##    mean median    sd    se
+    ##   <dbl>  <dbl> <dbl> <dbl>
+    ## 1  255.   199.  239.  7.63
+
+``` r
+### by `same_trial`
+df %>% 
+  group_by(same_trial) %>% 
+  summarize(mean = mean(time_diff),
+            median = median(time_diff),
+            sd = sd(time_diff),
+            se = std.error(time_diff))
+```
+
+    ## # A tibble: 2 × 5
+    ##   same_trial  mean median    sd    se
+    ##   <lgl>      <dbl>  <dbl> <dbl> <dbl>
+    ## 1 FALSE      306.  224.   232.   8.15
+    ## 2 TRUE        10.6   6.02  13.3  1.02
+
+<br>
+
 ------------------------------------------------------------------------
 
-# =====Data visualization=====
+# 3. Data visualization
 
-## per speaker
+## 3.1. per speaker
 
 ### rcp: dtw distance by condition
 
@@ -527,7 +655,7 @@ interactive_plot(bp_distance_by_cond_round)
 
 <br>
 
-## speaker B only
+## 3.2. speaker B only
 
 ### rcp: dtw distance by condition
 
@@ -650,9 +778,9 @@ interactive_plot(bp_distance_by_cond_round)
 
 ------------------------------------------------------------------------
 
-# =====DTW distance=====
+# 4. Modeling
 
-## —Causal model—
+## 4.1. Causal model
 
 We assume the following causal model:
 
@@ -673,8 +801,8 @@ grViz(
 )
 ```
 
-<div class="grViz html-widget html-fill-item" id="htmlwidget-8c7b7fe1ae8b6cdf8191" style="width:384px;height:384px;"></div>
-<script type="application/json" data-for="htmlwidget-8c7b7fe1ae8b6cdf8191">{"x":{"diagram":"digraph {\n  graph [ranksep = 0.3]\n  node [shape = plaintext]\n    X [label = Visibility, fontcolor = forestgreen]\n    Y [label = DTW_distance, fontcolor = darkorange]\n    Z [label = Round]\n  edge [minlen = 2.5]\n    {X -> Y\n    Z -> Y}\n  {rank = same; X; Y}\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-78cf9d8fb93ef85ddeae" style="width:384px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-78cf9d8fb93ef85ddeae">{"x":{"diagram":"digraph {\n  graph [ranksep = 0.3]\n  node [shape = plaintext]\n    X [label = Visibility, fontcolor = forestgreen]\n    Y [label = DTW_distance, fontcolor = darkorange]\n    Z [label = Round]\n  edge [minlen = 2.5]\n    {X -> Y\n    Z -> Y}\n  {rank = same; X; Y}\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 Based on the causal inference theory, including the visibility only as
 fixed effects can estimate its causal effect on DTW distance. As adding
@@ -683,7 +811,7 @@ rounds as well.
 
 <br>
 
-## —Contrast coding—
+## 4.2. Contrast coding
 
 ``` r
 ### visibility condition: difference coding
@@ -719,9 +847,9 @@ contrasts(df$condition) = contr.hypothesis(h_cond)
 
 <br>
 
-## Log-normal: \[ppB\] condition \* round_c
+## 4.3. Log-normal: \[ppB\] condition \* round_c
 
-### Prior specification
+### 4.3.1. Prior specification
 
 The mediapipe estimates the locations of each keypoint in the video
 frame with a number between 0 (top, left) and 1 (bottom, right). As we
@@ -777,7 +905,7 @@ priors_rslope_dtw = c(
 
 <br>
 
-### Prior predictive check
+### 4.3.2. Prior predictive check
 
 ``` r
 mln_dtw_prior = brm(average_distance_xyz ~ 1 + condition * round_c +
@@ -793,14 +921,14 @@ pp_check(mln_dtw_prior, ndraws = 100) +
                   ylim = c(0, 10))
 ```
 
-![](figures_md/speakerB/dtw/unnamed-chunk-16-1.png)<!-- -->
+![](figures_md/speakerB/dtw/ppc_m1_prior-1.png)<!-- -->
 
 The prior predictive check shows that the model is able to generate data
 that is consistent with the observed data.
 
 <br>
 
-### Fit the model
+### 4.3.3. Fit the model
 
 ``` r
 mln_dtw = brm(average_distance_xyz ~ 1 + condition * round_c +
@@ -888,7 +1016,7 @@ reliable effect on the dtw distance.
 
 <br>
 
-### Posterior predictive check
+### 4.3.4. Posterior predictive check
 
 ``` r
 pp_check(model, ndraws = 100, 
@@ -896,14 +1024,14 @@ pp_check(model, ndraws = 100,
   coord_cartesian(xlim = c(0, 3))
 ```
 
-![](figures_md/speakerB/dtw/ppd_m1-1.png)<!-- -->
+![](figures_md/speakerB/dtw/ppc_m1-1.png)<!-- -->
 
 The posterior predictive check shows that the model is able to generate
 data that is overall consistent with the observed data.
 
 <br>
 
-### Posterior distributions
+### 4.3.5. Posterior distributions
 
 ``` r
 df_post_beta = posterior_beta(model)
@@ -941,7 +1069,7 @@ p_pd
 
 <br>
 
-### Prior-posterior update plot
+### 4.3.6. Prior-posterior update plot
 
 ``` r
 post_sample = as_draws_df(model)
@@ -952,7 +1080,7 @@ pp_update_plot(post_sample)
 
 <br>
 
-### Hypothesis testing: Bayes factor
+### 4.3.7. Hypothesis testing: Bayes factor
 
 ``` r
 ### varying priors for sensitivity analysis
@@ -1017,13 +1145,34 @@ df_results = df_results %>%
                                     "AO--SymAV:Round", "AO--AsymAV:Round", "AsymAV--SymAV:Round")),
          Predictor = factor(ifelse(grepl("Round", Effect), "Round", "Visibility"),
                             levels = c("Visibility", "Round")),
-         across(where(is.numeric), ~ round(., 3))) %>% 
-  dplyr::select(size, sd, prior, 
-                Effect, Predictor,
-                Estimate, Est.Error,
-                `CI.Lower`, `CI.Upper`, BF10) %>%
+         across(where(is.numeric), ~ round(., 3)),
+         Star = ifelse(BF10 >= 100 | BF10 <= 1/100, "****",
+                       ifelse(BF10 >= 30 | BF10 <= 1/30, "***",
+                              ifelse(BF10 >= 10 | BF10 <= 1/10, "**",
+                                     ifelse(BF10 >= 3 | BF10 <= 1/3, "*", "")))),
+         Star = ifelse(BF10 < 1, str_replace_all(Star, "[*]", "="), Star)) %>% 
+  dplyr::select(size, sd, prior, Effect, Predictor,
+                # Estimate, Est.Error, `CI.Lower`, `CI.Upper`,
+                Post.Prob, BF10, Star) %>%
   arrange(Effect, sd)
+         
+df_results
 ```
+
+    ## # A tibble: 35 × 8
+    ##    size     sd prior      Effect     Predictor  Post.Prob  BF10 Star 
+    ##    <chr> <dbl> <chr>      <fct>      <fct>          <dbl> <dbl> <chr>
+    ##  1 xs     0.05 N(0, 0.05) AO--SymAV  Visibility     0.501 0.994 ""   
+    ##  2 s      0.1  N(0, 0.1)  AO--SymAV  Visibility     0.549 0.822 ""   
+    ##  3 m      0.2  N(0, 0.2)  AO--SymAV  Visibility     0.658 0.521 ""   
+    ##  4 l      0.3  N(0, 0.3)  AO--SymAV  Visibility     0.744 0.344 ""   
+    ##  5 xl     0.5  N(0, 0.5)  AO--SymAV  Visibility     0.82  0.22  "="  
+    ##  6 xs     0.05 N(0, 0.05) AO--AsymAV Visibility     0.529 0.889 ""   
+    ##  7 s      0.1  N(0, 0.1)  AO--AsymAV Visibility     0.597 0.676 ""   
+    ##  8 m      0.2  N(0, 0.2)  AO--AsymAV Visibility     0.715 0.399 ""   
+    ##  9 l      0.3  N(0, 0.3)  AO--AsymAV Visibility     0.782 0.279 "="  
+    ## 10 xl     0.5  N(0, 0.5)  AO--AsymAV Visibility     0.852 0.174 "="  
+    ## # ℹ 25 more rows
 
 ``` r
 #### Plot BFs ####
@@ -1062,7 +1211,7 @@ p_bf
 
 <br>
 
-### Back-transformation
+### 4.3.8. Back-transformation
 
 ``` r
 ### obtain model predictions
@@ -1077,7 +1226,7 @@ pred_int = avg_predictions(model, by = c("round_c","condition"),
 
 <br>
 
-### Visualize model predictions together with data
+### 4.3.9. Visualize model predictions together with data
 
 ``` r
 bp_distance_model = 
@@ -1096,7 +1245,7 @@ bp_distance_model
 ![](figures_md/speakerB/dtw/pred_plot-1.png)<!-- -->
 
 ``` r
-ggsave("figures/speakerB/dtw/bp_distance_model.svg", width=4, height=3.5, dpi=600)
+ggsave("figures/speakerB/dtw/bp_distance_model.pdf", width=4, height=3.5, dpi=600)
 
 
 bp_distance_by_cond_round_model = 
@@ -1115,14 +1264,14 @@ bp_distance_by_cond_round_model
 ![](figures_md/speakerB/dtw/pred_plot-2.png)<!-- -->
 
 ``` r
-ggsave("figures/speakerB/dtw/bp_distance_by_cond_round_model.svg", width=6.5, height=3.5, dpi=600)
+ggsave("figures/speakerB/dtw/bp_distance_by_cond_round_model.pdf", width=6.5, height=3.5, dpi=600)
 ```
 
 <br>
 
 ------------------------------------------------------------------------
 
-# =====Merge plots=====
+# 5. Merge plots
 
 ``` r
 design = "AAAABBBBBBB
@@ -1139,7 +1288,561 @@ free(bp_distance_model) +
 
 ``` r
 # save the plot
-ggsave("figures/speakerB/dtw/dtw_combined.svg", width=12, height=9)
+ggsave("figures/speakerB/dtw/dtw_combined.pdf", width=12, height=9)
+```
+
+<br>
+
+------------------------------------------------------------------------
+
+# ===Supplementary analysis===
+
+Here, we will perform the same analysis as above but separately on two
+subsets of the full data: referentially aligned gestures that occurred
+within the same trial and those that occurred across rounds. This
+analysis is to check whether the effects of visibility changes when the
+time interval between the gestures is shorter.
+
+# 6. Summarize data
+
+## 6.1. DTW distance
+
+``` r
+#=====condition=====
+df_by_cond_B_trial = df %>% 
+  group_by(same_trial, condition) %>% 
+  summarize_data()
+
+df_by_cond_B_trial
+```
+
+    ## # A tibble: 6 × 8
+    ##   same_trial condition     n mean_dis sd_dis  se_dis lci_dis uci_dis
+    ##   <lgl>      <fct>     <int>    <dbl>  <dbl>   <dbl>   <dbl>   <dbl>
+    ## 1 FALSE      SymAV       314    0.300  0.139 0.00783   0.285   0.316
+    ## 2 FALSE      AsymAV      311    0.296  0.131 0.00743   0.282   0.311
+    ## 3 FALSE      AO          187    0.297  0.136 0.00995   0.277   0.317
+    ## 4 TRUE       SymAV        73    0.281  0.154 0.0180    0.245   0.317
+    ## 5 TRUE       AsymAV       64    0.303  0.131 0.0164    0.270   0.336
+    ## 6 TRUE       AO           34    0.307  0.127 0.0218    0.263   0.351
+
+<br>
+
+## 6.2. Temporal distance
+
+``` r
+### overall
+df %>% 
+  summarize(mean = mean(time_diff),
+            median = median(time_diff),
+            sd = sd(time_diff),
+            se = std.error(time_diff))
+```
+
+    ## # A tibble: 1 × 4
+    ##    mean median    sd    se
+    ##   <dbl>  <dbl> <dbl> <dbl>
+    ## 1  255.   199.  239.  7.63
+
+``` r
+### by `same_trial`
+df %>% 
+  group_by(same_trial) %>% 
+  summarize(mean = mean(time_diff),
+            median = median(time_diff),
+            sd = sd(time_diff),
+            se = std.error(time_diff),
+            n = n())
+```
+
+    ## # A tibble: 2 × 6
+    ##   same_trial  mean median    sd    se     n
+    ##   <lgl>      <dbl>  <dbl> <dbl> <dbl> <int>
+    ## 1 FALSE      306.  224.   232.   8.15   812
+    ## 2 TRUE        10.6   6.02  13.3  1.02   171
+
+<br>
+
+# 7. Data visualization
+
+### bp: dtw distance by condition
+
+``` r
+bp_distance_trial = df %>%
+  ggplot(aes(x = condition, y = average_distance_xyz,
+             fill = condition)) +
+  geom_jitter(aes(x = stage(start = condition)),
+              size = 0.15, alpha = 0.15, width = 0.07, height = 0) +
+  geom_boxplot(width = .3,
+               outlier.shape = NA, 
+               alpha = 0.7, 
+               color = "black") +
+  geom_point(data = df_by_cond_B_trial, 
+             aes(y = mean_dis), 
+             shape = 21, size = 3, fill = "white") +
+  labs(x="Visibility", 
+       y="DTW distance",
+       title = "A. DTW distance across visibility") +
+  scale_y_continuous(limits = c(0, 0.9)) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.background = element_blank(),
+        strip.text = element_text(size = 13, face = 'bold'),
+        plot.title = element_text(face = 'bold'),
+        plot.title.position = "plot", # left align the title
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+  facet_wrap(~same_trial, 
+             labeller = labeller(same_trial = c("FALSE" = "Across rounds", 
+                                                "TRUE" = "Within trial")))
+
+bp_distance_trial
+```
+
+![](figures_md/speakerB/dtw/bp_distance_B_trial-1.png)<!-- -->
+
+<br>
+
+# 8. Modelling
+
+## 8.1. Contrast coding
+
+``` r
+### visibility condition: difference coding
+h_cond = hypr(AO_Asym = AsymAV ~ AO,
+              Asym_Sym = SymAV ~ AsymAV,
+              levels = levels(df$condition))
+h_cond
+```
+
+    ## hypr object containing 2 null hypotheses:
+    ##  H0.AO_Asym: 0 = AsymAV - AO
+    ## H0.Asym_Sym: 0 = SymAV - AsymAV
+    ## 
+    ## Call:
+    ## hypr(AO_Asym = ~AsymAV - AO, Asym_Sym = ~SymAV - AsymAV, levels = c("SymAV", 
+    ## "AsymAV", "AO"))
+    ## 
+    ## Hypothesis matrix (transposed):
+    ##        AO_Asym Asym_Sym
+    ## SymAV   0       1      
+    ## AsymAV  1      -1      
+    ## AO     -1       0      
+    ## 
+    ## Contrast matrix:
+    ##        AO_Asym Asym_Sym
+    ## SymAV   1/3     2/3    
+    ## AsymAV  1/3    -1/3    
+    ## AO     -2/3    -1/3
+
+``` r
+contrasts(df$condition) = contr.hypothesis(h_cond)
+
+
+### same_trial: across rounds as the reference level
+contrasts(df$same_trial)
+```
+
+    ##       TRUE
+    ## FALSE    0
+    ## TRUE     1
+
+<br>
+
+## 8.2. Log-normal: \[ppB\] condition (within-trial alignment)
+
+### 8.2.1 Prior specification
+
+Here, we will use the same priors as in the previous analysis. Because
+the number of instances of within-trial alignment is few (n = 171), we
+will use a simpler model with predictors for the `visibility condition`
+and `same_trial` only.
+
+``` r
+priors_rint_dtw = c(
+  prior(normal(-0.7, 0.5), class = Intercept),
+  prior(normal(0, 0.2), class = b),
+  prior(normal(0, 0.2), class = sd),
+  prior(normal(0, 0.5), class = sigma))
+```
+
+<br>
+
+### 8.2.2. Prior predictive check
+
+``` r
+mln_dtw_trial_prior = brm(average_distance_xyz ~ 
+                            1 + condition * same_trial +
+                            (1|pair) + (1|target),
+                          family = lognormal(),
+                          prior = priors_rint_dtw,
+                          sample_prior = "only",
+                          data = df,
+                          file = "models/speakerB/dtw/mln_dtw_trial_prior")
+
+pp_check(mln_dtw_trial_prior, ndraws = 100,
+         type = "dens_overlay_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 3),
+                  ylim = c(0, 10))
+```
+
+![](figures_md/speakerB/dtw/ppc_mln_dtw_trial_prior-1.png)<!-- -->
+
+The prior predictive check shows that the model is able to generate data
+that is consistent with the observed data.
+
+<br>
+
+### 8.2.3. Fit the model
+
+``` r
+mln_dtw_trial = brm(average_distance_xyz ~ 
+                      1 + condition * same_trial +
+                      (1|pair) + (1|target),
+                    family = lognormal(),
+                    prior = priors_rint_dtw,
+                    data = df,
+                    sample_prior = T,
+                    warmup = nwu, iter = niter,
+                    control = list(adapt_delta = 0.9,
+                                   max_treedepth = 15),
+                    file = "models/speakerB/dtw/mln_dtw_trial")
+
+model = mln_dtw_trial
+summary(model)
+```
+
+    ##  Family: lognormal 
+    ##   Links: mu = identity 
+    ## Formula: average_distance_xyz ~ 1 + condition * same_trial + (1 | pair) + (1 | target) 
+    ##    Data: df (Number of observations: 983) 
+    ##   Draws: 4 chains, each with iter = 20000; warmup = 2000; thin = 1;
+    ##          total post-warmup draws = 72000
+    ## 
+    ## Multilevel Hyperparameters:
+    ## ~pair (Number of levels: 41) 
+    ##               Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+    ## sd(Intercept)     0.13      0.03     0.09     0.19 1.00    24526    41498
+    ## 
+    ## ~target (Number of levels: 16) 
+    ##               Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+    ## sd(Intercept)     0.06      0.03     0.01     0.12 1.00    20652    17314
+    ## 
+    ## Regression Coefficients:
+    ##                                  Estimate Est.Error l-95% CI u-95% CI Rhat
+    ## Intercept                           -1.29      0.04    -1.36    -1.22 1.00
+    ## conditionAO_Asym                    -0.03      0.07    -0.17     0.11 1.00
+    ## conditionAsym_Sym                   -0.03      0.07    -0.16     0.10 1.00
+    ## same_trialTRUE                      -0.02      0.04    -0.10     0.06 1.00
+    ## conditionAO_Asym:same_trialTRUE     -0.03      0.09    -0.21     0.16 1.00
+    ## conditionAsym_Sym:same_trialTRUE    -0.10      0.08    -0.25     0.06 1.00
+    ##                                  Bulk_ESS Tail_ESS
+    ## Intercept                           27368    39376
+    ## conditionAO_Asym                    28999    42701
+    ## conditionAsym_Sym                   25260    38407
+    ## same_trialTRUE                      79059    56270
+    ## conditionAO_Asym:same_trialTRUE     67893    57032
+    ## conditionAsym_Sym:same_trialTRUE    67598    55343
+    ## 
+    ## Further Distributional Parameters:
+    ##       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+    ## sigma     0.46      0.01     0.44     0.48 1.00    84296    55884
+    ## 
+    ## Draws were sampled using sample(hmc). For each parameter, Bulk_ESS
+    ## and Tail_ESS are effective sample size measures, and Rhat is the potential
+    ## scale reduction factor on split chains (at convergence, Rhat = 1).
+
+``` r
+bayestestR::hdi(model)
+```
+
+    ## Highest Density Interval
+    ## 
+    ## Parameter                        |        95% HDI
+    ## -------------------------------------------------
+    ## (Intercept)                      | [-1.36, -1.22]
+    ## conditionAO_Asym                 | [-0.17,  0.11]
+    ## conditionAsym_Sym                | [-0.16,  0.10]
+    ## same_trialTRUE                   | [-0.11,  0.06]
+    ## conditionAO_Asym:same_trialTRUE  | [-0.21,  0.15]
+    ## conditionAsym_Sym:same_trialTRUE | [-0.26,  0.06]
+
+``` r
+# bayestestR::hdi(model, ci = 0.89)
+```
+
+The coefficients show that the visibility condition did not have a
+reliable effect on the dtw distance.
+
+<br>
+
+### 8.2.4. Posterior predictive check
+
+``` r
+pp_check(model, ndraws = 100, 
+         type = "dens_overlay_grouped", group = "condition") +
+  coord_cartesian(xlim = c(0, 3))
+```
+
+![](figures_md/speakerB/dtw/ppc_mln_dtw_trial-1.png)<!-- -->
+
+The posterior predictive check shows that the model is able to generate
+data that is overall consistent with the observed data.
+
+<br>
+
+### 8.2.5. Posterior distributions
+
+``` r
+df_post_beta = posterior_beta(model, round_int = F, same_trial = T)
+
+# summarize the posterior distribution
+post_beta_summary = df_post_beta %>%
+  group_by(.variable) %>%
+  summarize(mean = mean(.value),
+            est_error = sd(.value),
+            lci = quantile(.value, 0.025),
+            uci = quantile(.value, 0.975))
+post_beta_summary
+```
+
+    ## # A tibble: 7 × 5
+    ##   .variable                   mean est_error    lci    uci
+    ##   <fct>                      <dbl>     <dbl>  <dbl>  <dbl>
+    ## 1 AO--AsymAV               -0.0324    0.0709 -0.172 0.108 
+    ## 2 AsymAV--SymAV            -0.0300    0.0653 -0.162 0.0955
+    ## 3 AO--SymAV                -0.0624    0.0728 -0.208 0.0793
+    ## 4 Across--Within           -0.0225    0.0412 -0.103 0.0586
+    ## 5 AO--Asym:Across--Within  -0.0285    0.0938 -0.212 0.156 
+    ## 6 Asym--Sym:Across--Within -0.0953    0.0801 -0.251 0.0631
+    ## 7 AO--Sym:Across--Within   -0.124     0.0998 -0.319 0.0717
+
+``` r
+# visualize the posterior distribution
+p_pd = plot_posterior(df_post_beta, interaction = F,
+                      xlim_cond=0.3, xlim_round=0.3,
+                      title = "B. Posterior distributions",
+                      ncol_wrap = 1)
+p_pd
+```
+
+![](figures_md/speakerB/dtw/pd_mln_dtw_trial-1.png)<!-- -->
+
+<br>
+
+### 8.2.6. Prior-posterior update plot
+
+``` r
+post_sample = as_draws_df(model)
+pp_update_plot(post_sample, same_trial=TRUE)
+```
+
+![](figures_md/speakerB/dtw/update_mln_dtw_trial-1.png)<!-- -->
+
+<br>
+
+### 8.2.7. Hypothesis testing: Bayes factor
+
+``` r
+### varying priors for sensitivity analysis
+prior_size = c("xs", "s", "m", "l", "xl")
+prior_sd = c(0.05, 0.1, 0.2, 0.3, 0.5)
+
+### list of hypotheses
+hps = c("conditionAO_Asym = 0",
+        "conditionAsym_Sym = 0",
+        "conditionAO_Asym + conditionAsym_Sym = 0",
+        "same_trialTRUE = 0",
+        "conditionAO_Asym:same_trialTRUE = 0",
+        "conditionAsym_Sym:same_trialTRUE = 0",
+        "conditionAO_Asym:same_trialTRUE + conditionAsym_Sym:same_trialTRUE = 0")
+effects = c("AO--AsymAV", "AsymAV--SymAV", "AO--SymAV",
+            "Across--Within", 
+            "AO--AsymAV:Across--Within", "AsymAV--SymAV:Across--Within", 
+            "AO--SymAV:Across--Within")
+
+for (i in 1:length(prior_sd)){
+  new_prior = set_prior(paste0("normal(0,", prior_sd[i], ")"), class = "b")
+  
+  fname = paste0("models/speakerB/dtw/mln_dtw_trial_", prior_size[i])
+  fname = gsub("_m", "", fname) # remove "_m" for the medium prior
+  
+  fit = update(model, 
+               prior = new_prior, 
+               file = fname)
+  
+  ### compute BFs for all hypotheses and store them as dataframe
+  for (j in 1:length(hps)){
+    h = hypothesis(fit, hps[j])
+    # transform the result to dataframe
+    result = data_frame(h$hypothesis) %>%
+      mutate(size = prior_size[i],
+             sd = prior_sd[i],
+             Effect = effects[j])
+    # combine the result
+    if (i==1 & j==1){
+      df_results = result
+    } else {
+      df_results = rbind(df_results, result)}
+  }
+}
+
+df_results = df_results %>%
+  mutate(prior = paste0("N(0, ", sd, ")"),
+         BF10 = 1 / abs(Evid.Ratio),
+         Effect = factor(Effect,
+                         levels = c("AO--SymAV", "AO--AsymAV", "AsymAV--SymAV",
+                                    "Across--Within", 
+                                    "AO--SymAV:Across--Within", "AO--AsymAV:Across--Within", 
+                                    "AsymAV--SymAV:Across--Within")),
+         # Predictor = factor(ifelse(grepl(":", Effect), "Interaction",
+         #                           ifelse(grepl("Across", Effect), "Across--Within", "Visibility")),
+         #                    levels = c("Visibility", "Across--Within", "Interaction")),
+         Predictor = factor(ifelse(grepl("Across", Effect), "Across--Within", "Visibility"),
+                            levels = c("Visibility", "Across--Within")),
+         across(where(is.numeric), ~ round(., 3)),
+         Star = ifelse(BF10 >= 100 | BF10 <= 1/100, "****",
+                       ifelse(BF10 >= 30 | BF10 <= 1/30, "***",
+                              ifelse(BF10 >= 10 | BF10 <= 1/10, "**",
+                                     ifelse(BF10 >= 3 | BF10 <= 1/3, "*", "")))),
+         Star = ifelse(BF10 < 1, str_replace_all(Star, "[*]", "="), Star)) %>% 
+  dplyr::select(size, sd, prior, Effect, Predictor,
+                # Estimate, Est.Error, `CI.Lower`, `CI.Upper`,
+                Post.Prob, BF10, Star) %>%
+  arrange(Effect, sd)
+
+df_results
+```
+
+    ## # A tibble: 35 × 8
+    ##    size     sd prior      Effect     Predictor  Post.Prob  BF10 Star 
+    ##    <chr> <dbl> <chr>      <fct>      <fct>          <dbl> <dbl> <chr>
+    ##  1 xs     0.05 N(0, 0.05) AO--SymAV  Visibility     0.514 0.947 ""   
+    ##  2 s      0.1  N(0, 0.1)  AO--SymAV  Visibility     0.607 0.647 ""   
+    ##  3 m      0.2  N(0, 0.2)  AO--SymAV  Visibility     0.741 0.35  ""   
+    ##  4 l      0.3  N(0, 0.3)  AO--SymAV  Visibility     0.802 0.247 "="  
+    ##  5 xl     0.5  N(0, 0.5)  AO--SymAV  Visibility     0.867 0.153 "="  
+    ##  6 xs     0.05 N(0, 0.05) AO--AsymAV Visibility     0.531 0.882 ""   
+    ##  7 s      0.1  N(0, 0.1)  AO--AsymAV Visibility     0.612 0.634 ""   
+    ##  8 m      0.2  N(0, 0.2)  AO--AsymAV Visibility     0.722 0.384 ""   
+    ##  9 l      0.3  N(0, 0.3)  AO--AsymAV Visibility     0.784 0.275 "="  
+    ## 10 xl     0.5  N(0, 0.5)  AO--AsymAV Visibility     0.853 0.172 "="  
+    ## # ℹ 25 more rows
+
+``` r
+#### Plot BFs ####
+p_bf = ggplot(df_results, 
+       aes(x = factor(sd), y = BF10, group = Effect)) +
+  geom_hline(yintercept = 1, linetype="dashed") +
+  geom_point(aes(color=Effect)) +
+  geom_line(aes(color=Effect)) +
+  labs(x = "SD for the prior",
+       title = "C. Bayes factors for the effects on DTW distance") +
+  facet_wrap(vars(Predictor),
+             labeller = labeller(Predictor = c("Visibility" = "Visibility (Across)"))) +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 15, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.text = element_text(size = 10),
+        legend.title = element_blank(),
+        legend.position = "top",
+        strip.text = element_text(size = 13, face = 'bold'),
+        strip.background = element_blank(),
+        plot.title.position = "plot", # left align the title
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines")) +
+  scale_y_log10("Bayes factor (BF10)",
+                # limits = c(0.1, 3),
+                breaks = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100),
+                labels = c(0.001, 0.03, 0.01, 0.1, 0.33, 1, 3, 10, 30, 100)) +
+  guides(color = guide_legend(ncol = 2))
+
+p_bf
+```
+
+![](figures_md/speakerB/dtw/bf_mln_dtw_trial-1.png)<!-- -->
+
+The Bayes factors show that the data provided anecdotal to moderate
+evidence for the null hypothesis that the visibility condition did not
+have a reliable effect on the dtw distance. However, because the
+direction of the effect is not consistent across the different priors
+(except for `AO--AsymAV`), we conclude that the data did not provide
+strong evidence for null or alternative hypothesis.
+
+<br>
+
+### 8.2.8. Back-transformation
+
+``` r
+### obtain model predictions
+pred_cond = avg_predictions(model, by = c("same_trial", "condition"),
+                            re_formula = NA)
+pred_cond
+```
+
+    ## 
+    ##  same_trial condition Estimate 2.5 % 97.5 %
+    ##       FALSE    SymAV     0.297 0.269  0.327
+    ##       FALSE    AsymAV    0.306 0.277  0.339
+    ##       FALSE    AO        0.316 0.282  0.355
+    ##        TRUE    SymAV     0.270 0.236  0.309
+    ##        TRUE    AsymAV    0.306 0.266  0.352
+    ##        TRUE    AO        0.325 0.273  0.388
+    ## 
+    ## Type: response
+
+<br>
+
+### 8.2.9. Visualize model predictions together with data
+
+``` r
+bp_distance_model_trial = 
+  bp_distance_trial +
+  geom_ribbon(data = pred_cond,
+              aes(x = condition, y = estimate,
+                  ymin = conf.low, ymax = conf.high, group = 1),
+              fill = "black", alpha = 0.2) +
+  geom_line(data = pred_cond,
+            aes(x = condition, y = estimate, group = 1),
+            color = "black", size = 0.8)
+
+bp_distance_model_trial
+```
+
+![](figures_md/speakerB/dtw/pred_plot_trial-1.png)<!-- -->
+
+``` r
+ggsave("figures/speakerB/dtw/bp_distance_model_trial.pdf", width=6, height=3.5, dpi=600)
+```
+
+<br>
+
+# 9. Merge plots
+
+``` r
+design = "AAAA####
+          BBBBCCCC"
+
+free(bp_distance_model_trial) + 
+  free(p_pd) + 
+  free(p_bf) +
+  plot_layout(design = design, heights = c(0.8,1.2))
+```
+
+![](figures_md/speakerB/dtw/merged_plots_trial-1.png)<!-- -->
+
+``` r
+# save the plot
+ggsave("figures/speakerB/dtw/dtw_combined_trial.pdf", width=12, height=9)
 ```
 
 ------------------------------------------------------------------------
@@ -1152,7 +1855,7 @@ sessionInfo()
 
     ## R version 4.5.2 (2025-10-31)
     ## Platform: aarch64-apple-darwin20
-    ## Running under: macOS Tahoe 26.2
+    ## Running under: macOS Tahoe 26.6.2
     ## 
     ## Matrix products: default
     ## BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
@@ -1171,47 +1874,49 @@ sessionInfo()
     ## other attached packages:
     ##  [1] svglite_2.2.2          ppcor_1.1              MASS_7.3-65           
     ##  [4] doParallel_1.0.17      iterators_1.0.14       foreach_1.5.2         
-    ##  [7] emmeans_2.0.1          marginaleffects_0.31.0 tidybayes_3.0.7       
-    ## [10] bayestestR_0.17.0      brms_2.23.0            Rcpp_1.1.1            
+    ##  [7] emmeans_2.0.4          marginaleffects_0.31.0 tidybayes_3.0.7       
+    ## [10] bayestestR_0.17.0      brms_2.23.0            Rcpp_1.1.2            
     ## [13] rsvg_2.7.0             DiagrammeRsvg_0.1      patchwork_1.3.2       
-    ## [16] DiagrammeR_1.0.11      dagitty_0.3-4          ggh4x_0.3.1           
-    ## [19] RColorBrewer_1.1-3     ggthemes_5.2.0         hypr_0.2.8            
+    ## [16] DiagrammeR_1.0.12      dagitty_0.3-4          ggh4x_0.3.1           
+    ## [19] RColorBrewer_1.1-3     ggthemes_7.0.0         hypr_0.2.8            
     ## [22] plotrix_3.8-13         lubridate_1.9.4        forcats_1.0.1         
-    ## [25] stringr_1.6.0          dplyr_1.1.4            purrr_1.2.1           
+    ## [25] stringr_1.6.0          dplyr_1.2.1            purrr_1.2.2           
     ## [28] readr_2.1.6            tidyr_1.3.2            tibble_3.3.1          
-    ## [31] tidyverse_2.0.0        parallelly_1.46.1      plotly_4.11.0         
-    ## [34] ggplot2_4.0.1         
+    ## [31] tidyverse_2.0.0        parallelly_1.48.0      plotly_4.12.1         
+    ## [34] ggplot2_4.0.3         
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] gridExtra_2.3         inline_0.3.21         rlang_1.1.7          
-    ##  [4] magrittr_2.0.4        otel_0.2.0            matrixStats_1.5.0    
-    ##  [7] compiler_4.5.2        loo_2.9.0             reshape2_1.4.5       
-    ## [10] systemfonts_1.3.1     vctrs_0.6.5           crayon_1.5.3         
-    ## [13] pkgconfig_2.0.3       arrayhelpers_1.1-0    fastmap_1.2.0        
-    ## [16] backports_1.5.0       labeling_0.4.3        utf8_1.2.6           
-    ## [19] cmdstanr_0.9.0.9000   rmarkdown_2.30        tzdb_0.5.0           
-    ## [22] pracma_2.4.6          ps_1.9.1              ragg_1.5.0           
-    ## [25] bit_4.6.0             xfun_0.55             jsonlite_2.0.0       
-    ## [28] collapse_2.1.6        R6_2.6.1              StanHeaders_2.32.10  
-    ## [31] stringi_1.8.7         boot_1.3-32           estimability_1.5.1   
-    ## [34] rstan_2.32.7          knitr_1.51            pacman_0.5.1         
-    ## [37] bayesplot_1.15.0      Matrix_1.7-4          timechange_0.3.0     
-    ## [40] tidyselect_1.2.1      rstudioapi_0.17.1     abind_1.4-8          
-    ## [43] yaml_2.3.12           codetools_0.2-20      processx_3.8.6       
-    ## [46] curl_7.0.0            pkgbuild_1.4.8        plyr_1.8.9           
-    ## [49] lattice_0.22-7        withr_3.0.2           bridgesampling_1.2-1 
-    ## [52] S7_0.2.1              posterior_1.6.1       coda_0.19-4.1        
-    ## [55] evaluate_1.0.5        RcppParallel_5.1.11-1 ggdist_3.3.3         
-    ## [58] pillar_1.11.1         tensorA_0.36.2.1      stats4_4.5.2         
-    ## [61] checkmate_2.3.3       insight_1.4.4         distributional_0.5.0 
-    ## [64] generics_0.1.4        vroom_1.6.7           hms_1.1.4            
-    ## [67] rstantools_2.6.0      scales_1.4.0          xtable_1.8-4         
-    ## [70] glue_1.8.0            lazyeval_0.2.2        tools_4.5.2          
-    ## [73] data.table_1.18.0     visNetwork_2.1.4      mvtnorm_1.3-3        
-    ## [76] grid_4.5.2            QuickJSR_1.8.1        datawizard_1.3.0     
-    ## [79] colorspace_2.1-2      nlme_3.1-168          cli_3.6.5            
-    ## [82] textshaping_1.0.4     svUnit_1.0.8          viridisLite_0.4.2    
-    ## [85] Brobdingnag_1.2-9     V8_8.0.1              gtable_0.3.6         
-    ## [88] digest_0.6.39         htmlwidgets_1.6.4     farver_2.1.2         
-    ## [91] htmltools_0.5.9       lifecycle_1.0.5       httr_1.4.7           
-    ## [94] bit64_4.6.0-1
+    ##   [1] tensorA_0.36.2.1      rstudioapi_0.17.1     jsonlite_2.0.0       
+    ##   [4] datawizard_1.3.0      magrittr_2.0.5        TH.data_1.1-5        
+    ##   [7] estimability_1.5.1    farver_2.1.2          rmarkdown_2.30       
+    ##  [10] ragg_1.5.0            vctrs_0.7.3           htmltools_0.5.9      
+    ##  [13] distributional_0.5.0  curl_8.0.0            StanHeaders_2.32.10  
+    ##  [16] pracma_2.4.6          htmlwidgets_1.6.4     plyr_1.8.9           
+    ##  [19] sandwich_3.1-1        zoo_1.8-15            lifecycle_1.0.5      
+    ##  [22] pkgconfig_2.0.3       Matrix_1.7-4          R6_2.6.1             
+    ##  [25] fastmap_1.2.0         rbibutils_2.4.1       collapse_2.1.6       
+    ##  [28] digest_0.6.39         colorspace_2.1-2      ps_1.9.1             
+    ##  [31] textshaping_1.0.4     labeling_0.4.3        timechange_0.3.0     
+    ##  [34] httr_1.4.7            abind_1.4-8           compiler_4.5.2       
+    ##  [37] bit64_4.8.6           withr_3.0.3           S7_0.2.1             
+    ##  [40] backports_1.5.0       inline_0.3.21         QuickJSR_1.8.1       
+    ##  [43] pkgbuild_1.4.8        loo_2.9.0             tools_4.5.2          
+    ##  [46] otel_0.2.0            glue_1.8.1            nlme_3.1-168         
+    ##  [49] grid_4.5.2            cmdstanr_0.9.0.9000   checkmate_2.3.3      
+    ##  [52] reshape2_1.4.5        generics_0.1.4        gtable_0.3.6         
+    ##  [55] tzdb_0.5.0            data.table_1.18.6.1   hms_1.1.4            
+    ##  [58] utf8_1.2.6            pillar_1.11.1         ggdist_3.3.3         
+    ##  [61] vroom_1.6.7           posterior_1.6.1       splines_4.5.2        
+    ##  [64] lattice_0.22-7        survival_3.8-3        bit_4.6.0            
+    ##  [67] tidyselect_1.2.1      knitr_1.51            reformulas_0.4.3.1   
+    ##  [70] arrayhelpers_1.1-0    gridExtra_2.3         V8_8.0.1             
+    ##  [73] stats4_4.5.2          xfun_0.55             bridgesampling_1.2-1 
+    ##  [76] matrixStats_1.5.0     rstan_2.32.7          visNetwork_2.1.4     
+    ##  [79] stringi_1.8.9         yaml_2.3.12           pacman_0.5.1         
+    ##  [82] boot_1.3-32           evaluate_1.0.5        codetools_0.2-20     
+    ##  [85] cli_3.6.6             RcppParallel_5.1.11-1 Rdpack_2.6.6         
+    ##  [88] xtable_1.8-4          systemfonts_1.3.1     processx_3.8.6       
+    ##  [91] coda_0.19-4.1         svUnit_1.0.8          rstantools_2.6.0     
+    ##  [94] bayesplot_1.15.0      Brobdingnag_1.2-9     viridisLite_0.4.2    
+    ##  [97] mvtnorm_1.3-3         scales_1.4.0          insight_1.5.0        
+    ## [100] crayon_1.5.3          rlang_1.3.0           multcomp_1.4-32

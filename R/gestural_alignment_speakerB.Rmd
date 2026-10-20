@@ -22,7 +22,7 @@ editor_options:
 pckgs <- c("plotly", "parallelly", "tidyverse", "plotrix", "hypr", 
            "ggthemes", "RColorBrewer", "ggh4x", "dagitty", "DiagrammeR", "patchwork",
            "DiagrammeRsvg", "rsvg", "brms", "bayestestR", "tidybayes",
-           "marginaleffects", "emmeans", "doParallel", "ppcor", "svglite")
+           "marginaleffects", "emmeans", "doParallel", "ppcor")
 pacman::p_load(pckgs, character.only = TRUE)
 
 
@@ -775,7 +775,7 @@ interactive_plot(bp_iconic_by_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/iconic/bp_cond.svg", dpi=600, width=6, height=4)
+ggsave("figures/speakerB/iconic/bp_cond.pdf", dpi=600, width=6, height=4)
 ```
 
 <br>
@@ -812,10 +812,48 @@ interactive_plot(bp_mean_iconic_by_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/iconic/bp_mean_cond.svg", dpi=600, width=4, height=3.5)
+ggsave("figures/speakerB/iconic/bp_mean_cond.pdf", dpi=600, width=4, height=3.5)
 ```
 
 <br>
+
+### pp: mean by condition
+```{r pp_mean_iconic_by_cond}
+pp_mean_iconic_by_cond = 
+  ggplot(data=trial_info_cond, 
+         aes(x=condition, y=mean_num_iconic, fill=condition)) +
+  geom_errorbar(data = trial_info_cond, 
+                aes(ymin = lci_num_iconic, 
+                    ymax = uci_num_iconic), 
+                width = 0.1, size = 0.8) +
+  geom_point(data = trial_info_cond, 
+             aes(y = mean_num_iconic), 
+             shape = 21, size = 4) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_y_continuous(limits = c(0, 1.2),
+                     breaks = c(0, 1, 0.5)) +
+  labs(x = "Visibility",
+       y = "Mean N. iconic gesture per trial") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 13, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 14, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+pp_mean_iconic_by_cond
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/iconic/pp_mean_iconic_by_cond.pdf", width=4, height=3.5)
+```
+
+<br>
+
 
 ### bp: mean by condition x round
 ```{r bp_mean_iconic_by_round_cond}
@@ -844,7 +882,7 @@ bp_mean_iconic_by_round_cond
 The figure shows that the decline in iconic gestures across rounds does not follow a linear pattern. This suggests that log-transformed round may improve the model fit.
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/iconic/bp_mean_round_cond.svg", dpi=600, width=6, height=4)
+ggsave("figures/speakerB/iconic/bp_mean_round_cond.pdf", dpi=600, width=6, height=4)
 ```
 
 
@@ -887,7 +925,41 @@ interactive_plot(bp_mean_iconic_rate)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/iconic/bp_mean_iconic_rate.svg", width=6, height=4, dpi=600)
+ggsave("figures/speakerB/iconic/bp_mean_iconic_rate.pdf", width=6, height=4, dpi=600)
+```
+
+<br>
+
+### pp: mean by condition
+```{r pp_mean_iconic_rate}
+pp_mean_iconic_rate = 
+  ggplot(data=trial_info_cond, 
+         aes(x=condition, y=mean_iconic_per_100words, fill=condition)) +
+  geom_errorbar(aes(ymin = lci_iconic_per_100words, 
+                    ymax = uci_iconic_per_100words), 
+                width = 0.1, size = 0.8) +
+  geom_point(shape = 21, size = 4) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_y_continuous(limits = c(0, 4),
+                     breaks = seq(0, 4, 2)) +
+  labs(x = "Visibility",
+       y = "Mean iconic gesture rate") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 13, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 14, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+pp_mean_iconic_rate
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/iconic/pp_mean_iconic_rate.pdf", width=4, height=3.5)
 ```
 
 <br>
@@ -926,7 +998,7 @@ bp_mean_iconic_rate_cond_round
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/iconic/bp_mean_rate_cond_round.svg", width=6, height=4, dpi=600)
+ggsave("figures/speakerB/iconic/bp_mean_rate_cond_round.pdf", width=6, height=4, dpi=600)
 ```
 
 <br>
@@ -1158,7 +1230,7 @@ plot_posterior(df_post_beta, interaction = F,
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave(file="figures/speakerB/iconic/posterior_nb_iconic_rate.svg", width=6, height=5, dpi=600)
+ggsave(file="figures/speakerB/iconic/posterior_nb_iconic_rate.pdf", width=6, height=5, dpi=600)
 ```
 
 <br>
@@ -1273,7 +1345,7 @@ p_bf
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/iconic/bf_iconic_rate.svg", width=8, height=4, dpi=600)
+ggsave("figures/speakerB/iconic/bf_iconic_rate.pdf", width=8, height=4, dpi=600)
 ```
 
 <br>
@@ -1315,7 +1387,7 @@ bp_mean_iconic_rate_model =
             color = "black", size = 0.8)
 
 bp_mean_iconic_rate_model
-ggsave("figures/speakerB/iconic/bp_mean_iconic_rate_model.svg", width=4, height=3.5)
+ggsave("figures/speakerB/iconic/bp_mean_iconic_rate_model.pdf", width=4, height=3.5)
 
 
 bp_mean_iconic_rate_cond_round_model = 
@@ -1333,7 +1405,7 @@ bp_mean_iconic_rate_cond_round_model =
   scale_color_manual(values = c("#ED6B06", "#00786A", "darkgrey"))
 
 bp_mean_iconic_rate_cond_round_model
-ggsave("figures/speakerB/iconic/bp_mean_iconic_rate_cond_round_model.svg", width=6, height=4)
+ggsave("figures/speakerB/iconic/bp_mean_iconic_rate_cond_round_model.pdf", width=6, height=4)
 ```
 
 <br>
@@ -1430,7 +1502,7 @@ interactive_plot(bp_mean_gest_alignment)
 
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/gest_alignment/bp_mean_cpt_cond.svg", width=6, height=4, dpi=600)
+ggsave("figures/speakerB/gest_alignment/bp_mean_cpt_cond.pdf", width=6, height=4, dpi=600)
 ```
 
 <br>
@@ -1693,7 +1765,7 @@ lex_gest_cor
 Although the data shows a clear positive correlation between lexical alignment and gestural alignment, the model predictions show that the effect is relatively small. This is likely due to the inclusion of other predictors in the model (e.g., n_iconic_gestures, role), which account for some of the variance in gestural alignment.
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/gest_alignment/corr_lex_gest_align.svg", width=5, height=4, dpi=600)
+ggsave("figures/speakerB/gest_alignment/corr_lex_gest_align.pdf", width=5, height=4, dpi=600)
 ```
 
 <br>
@@ -1741,20 +1813,29 @@ effect_size_prop_summary
 
 
 ### generate model predictions per condition
-df_pred = post_sample %>% 
-  mutate(SymAV = exp(b_Intercept + 1/3*b_conditionAO_Asym + 2/3*b_conditionAsym_Sym),
-         AsymAV = exp(b_Intercept + 1/3*b_conditionAO_Asym - 1/3*b_conditionAsym_Sym),
-         AO = exp(b_Intercept -2/3*b_conditionAO_Asym -1/3*b_conditionAsym_Sym)) %>% 
-  dplyr::select(SymAV, AsymAV, AO) %>%
-  pivot_longer(cols = everything(), 
-               names_to = "condition", values_to = "predicted") %>%
-  mutate(condition = factor(condition, 
-                            levels = c("SymAV", "AsymAV", "AO"))) %>% 
-  group_by(condition) %>%
-  summarize(mean = mean(predicted),
-            median = median(predicted),
-            ci_lower = quantile(predicted, 0.025),
-            ci_upper = quantile(predicted, 0.975))
+# df_pred = post_sample %>% 
+#   mutate(SymAV = exp(b_Intercept + 1/3*b_conditionAO_Asym + 2/3*b_conditionAsym_Sym),
+#          AsymAV = exp(b_Intercept + 1/3*b_conditionAO_Asym - 1/3*b_conditionAsym_Sym),
+#          AO = exp(b_Intercept -2/3*b_conditionAO_Asym -1/3*b_conditionAsym_Sym)) %>% 
+#   dplyr::select(SymAV, AsymAV, AO) %>%
+#   pivot_longer(cols = everything(), 
+#                names_to = "condition", values_to = "predicted") %>%
+#   mutate(condition = factor(condition, 
+#                             levels = c("SymAV", "AsymAV", "AO"))) %>% 
+#   group_by(condition) %>%
+#   summarize(mean = mean(predicted),
+#             median = median(predicted),
+#             ci_lower = quantile(predicted, 0.025),
+#             ci_upper = quantile(predicted, 0.975))
+
+df_pred = avg_predictions(model, by = "condition", 
+                          ndraws = 1000, type = "response") %>% 
+  as_tibble() %>% 
+  mutate(condition = factor(condition, levels = c("SymAV", "AsymAV", "AO"))) %>% 
+  dplyr::select(condition, estimate, conf.low, conf.high) %>% 
+  rename(mean = estimate,
+         ci_lower = conf.low,
+         ci_upper = conf.high)
 
 df_pred
 ```
@@ -1841,7 +1922,44 @@ interactive_plot(bp_mean_gest_alignment_prop_by_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave(file="figures/speakerB/gest_alignment/bp_mean_prop_cond.svg", width=4, height=3.5)
+ggsave(file="figures/speakerB/gest_alignment/bp_mean_prop_cond.pdf", width=4, height=3.5)
+```
+
+<br>
+
+### pp: mean by condition
+```{r pp_mean_prop_cond}
+pp_mean_gest_alignment_prop_by_cond = 
+  ggplot(data=trial_info_cond, 
+         aes(x=condition, y=mean_gest_align_prop, fill=condition)) +
+  geom_errorbar(data = trial_info_cond, 
+                aes(ymin = lci_gest_align_prop, 
+                    ymax = uci_gest_align_prop), 
+                width = 0.1, size = 0.8) +
+  geom_point(data = trial_info_cond, 
+             aes(y = mean_gest_align_prop), 
+             shape = 21, size = 4) +
+  scale_fill_manual(values = c("#ED6B06", "#00786A", "darkgrey")) +
+  scale_y_continuous(limits = c(0, 0.6),
+                     breaks = c(0, 0.25, 0.5)) +
+  labs(x = "Visibility",
+       y = "Mean gest align rate") +
+  theme_clean(base_size = 15) +
+  theme(axis.text.x = element_text(colour = "black", size = 14),
+        axis.text.y = element_text(colour = "black", size = 14),
+        axis.title = element_text(size = 13, face = 'bold'),
+        axis.title.x = element_text(vjust = -2),
+        axis.title.y = element_text(vjust = 2),
+        legend.position = "none",
+        strip.text = element_text(size = 14, face = 'bold'),
+        plot.background = element_blank(),
+        plot.margin = unit(c(1.1,1.1,1.1,1.1), "lines"))
+
+pp_mean_gest_alignment_prop_by_cond
+```
+
+```{r, include=FALSE, echo=FALSE}
+ggsave(file="figures/speakerB/gest_alignment/pp_mean_prop_cond.pdf", width=4, height=3.5)
 ```
 
 <br>
@@ -1883,7 +2001,7 @@ interactive_plot(bp_mean_gest_alignment_prop_by_round_cond)
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave(file="figures/speakerB/gest_alignment/bp_mean_prop_cond_round.svg", width=6.5, height=3.5, dpi=600)
+ggsave(file="figures/speakerB/gest_alignment/bp_mean_prop_cond_round.pdf", width=6.5, height=3.5, dpi=600)
 ```
 
 <br>
@@ -2157,7 +2275,7 @@ p_pd
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/gest_alignment/posterior_prop_nb.svg", width=10, height=4)
+ggsave("figures/speakerB/gest_alignment/posterior_prop_nb.pdf", width=10, height=4)
 ```
 
 <br>
@@ -2188,7 +2306,7 @@ pp_update_rate
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/gest_alignment/pp_update_rate.svg", width=10, height=4)
+ggsave("figures/speakerB/gest_alignment/pp_update_rate.pdf", width=10, height=4)
 ```
 
 <br>
@@ -2333,7 +2451,7 @@ p_bf_rate
 ```
 
 ```{r, include=FALSE, echo=FALSE}
-ggsave("figures/speakerB/gest_alignment/bf_rate.svg", width=10, height=6)
+ggsave("figures/speakerB/gest_alignment/bf_rate.pdf", width=10, height=6)
 ```
 
 <br>
@@ -2501,7 +2619,7 @@ bp_mean_gest_alignment_prop_model =
   theme(plot.title.position = "plot")
 
 bp_mean_gest_alignment_prop_model
-ggsave("figures/speakerB/gest_alignment/bp_mean_prop_cond_model.svg", width=4, height=4)
+ggsave("figures/speakerB/gest_alignment/bp_mean_prop_cond_model.pdf", width=4, height=4)
 
 
 ### visibility x round
@@ -2518,7 +2636,7 @@ bp_mean_gest_alignment_prop_by_round_cond_model =
   theme(plot.title.position = "plot")
 
 bp_mean_gest_alignment_prop_by_round_cond_model
-ggsave("figures/speakerB/gest_alignment/bp_mean_prop_cond_round_model.svg", width=8, height=4)
+ggsave("figures/speakerB/gest_alignment/bp_mean_prop_cond_round_model.pdf", width=8, height=4)
 ```
 
 <br>
@@ -2537,7 +2655,7 @@ free(bp_mean_gest_alignment_prop_model) + #A
               heights = c(0.6,1,1))
 
 # save the plot
-ggsave("figures/speakerB/gest_alignment/gest_align_combined.svg", width=12, height=13)
+ggsave("figures/speakerB/gest_alignment/gest_align_combined.pdf", width=12, height=13)
 ```
 
 
